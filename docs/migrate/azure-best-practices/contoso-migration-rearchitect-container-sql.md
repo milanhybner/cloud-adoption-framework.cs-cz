@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6b9d2e5f4b230358985d04aca075cb89e8214422
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829940"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024469"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Změna architektury místní aplikace na kontejner Azure a službu Azure SQL Database
 
@@ -61,7 +61,7 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
 
-- Pro databázovou vrstvu aplikace společnost Contoso porovnala Azure SQL Database s SQL Serverem na základě informací v [tomto článku](/azure/sql-database/sql-database-features). Rozhodla se využít Azure SQL Database, a to hned z několika důvodů:
+- Pro databázovou vrstvu aplikace společnost Contoso porovnala Azure SQL Database s SQL Serverem na základě informací v [tomto článku](https://docs.microsoft.com/azure/sql-database/sql-database-features). Rozhodla se využít Azure SQL Database, a to hned z několika důvodů:
   - Azure SQL Database je spravovaná relační databázová služba. Zajišťuje předvídatelný výkon na několika úrovních služeb, a to s téměř nulovou správou. Mezi její další výhody patří dynamická škálovatelnost bez výpadků, integrovaná inteligentní optimalizace a globální škálovatelnost a dostupnost.
   - Společnost Contoso využije jednoduchý nástroj Data Migration Assistant (DMA) k vyhodnocení a migraci místní databáze do Azure SQL.
   - Prostřednictvím programu Software Assurance může společnost Contoso vyměnit stávající licence za snížené sazby pro SQL Database, a to pomocí programu Zvýhodněné hybridní využití Azure pro SQL Server. Výsledné úspory by mohly dosáhnout až 30 %.
@@ -103,7 +103,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Poskytuje inteligentní, plně spravovanou relační cloudovou databázovou službu. | Náklady závisejí na funkcích, propustnosti a velikosti. [Další informace](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Ukládá image pro všechny typy kontejnerových nasazení. | Náklady závisí na funkcích, úložišti a délce využití. [Další informace](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Sestavuje a provozuje vždy funkční, škálovatelné distribuované aplikace. | Náklady závisejí na velikosti, umístění a době trvání výpočetních uzlů. [Další informace](https://azure.microsoft.com/pricing/details/service-fabric).
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -114,8 +114,8 @@ Contoso k realizaci tohoto scénáře potřebuje:
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Firma Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | [Přečtěte si víc](contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
-**Požadavky na vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15.5](https://www.visualstudio.com)<br/><br/> – Povolené úlohy .NET<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 nebo novější](/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows
+**Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
+**Požadavky na vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15.5](https://www.visualstudio.com)<br/><br/> – Povolené úlohy .NET<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 nebo novější](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows
 
 <!-- markdownlint-enable MD033 -->
 
@@ -166,8 +166,8 @@ Správci společnosti Contoso zřídí databázi SQL Azure.
 
 **Potřebujete další pomoc?**
 
-- [Pomoc](/azure/sql-database/sql-database-get-started-portal) se zřizováním SQL Database
-- [Další informace](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) o omezeních prostředků virtuálních jader
+- [Pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) se zřizováním SQL Database
+- [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) o omezeních prostředků virtuálních jader
 
 ## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>Krok 2: Vytvoření ACR a zřízení kontejneru Azure
 
@@ -298,7 +298,7 @@ Aby se mohli připojit k Azure SQL Database, správci společnosti Contoso nasta
 
 **Potřebujete další pomoc?**
 
-[Seznamte se](/azure/sql-database/sql-database-firewall-configure) s vytvářením a správou pravidel brány firewall pro Azure SQL Database.
+[Seznamte se](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure) s vytvářením a správou pravidel brány firewall pro Azure SQL Database.
 
 ### <a name="migrate"></a>Migrace
 
@@ -582,23 +582,23 @@ Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje 
 
 ### <a name="security"></a>Zabezpečení
 
-- Správci Contoso potřebují zajistit, že nová databáze **SmartHotel-Registration** je zabezpečená. [Další informace](/azure/sql-database/sql-database-security-overview).
+- Správci Contoso potřebují zajistit, že nová databáze **SmartHotel-Registration** je zabezpečená. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Měli by zejména aktualizovat kontejner, aby využíval SSL s certifikáty.
-- Měli by zvážit použití služby Key Vault k ochraně tajných kódů pro aplikace Service Fabric. [Další informace](/azure/service-fabric/service-fabric-application-secret-management).
+- Měli by zvážit použití služby Key Vault k ochraně tajných kódů pro aplikace Service Fabric. [Další informace](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management).
 
 ### <a name="backups"></a>Zálohování
 
-- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](/azure/sql-database/sql-database-automated-backups).
-- Správci Contoso by měli zvážit implementaci skupin převzetí služeb při selhání a zajistit tak regionální převzetí služeb při selhání pro databázi. [Další informace](/azure/sql-database/sql-database-geo-replication-overview).
-- Pro SKU ACR úrovně Premium mohou využít výhody geografické replikace. [Další informace](/azure/container-registry/container-registry-geo-replication).
+- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Správci Contoso by měli zvážit implementaci skupin převzetí služeb při selhání a zajistit tak regionální převzetí služeb při selhání pro databázi. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
+- Pro SKU ACR úrovně Premium mohou využít výhody geografické replikace. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
 - Contoso musí zvážit nasazení webové aplikace v hlavní oblasti Východní USA 2 a v oblasti Střední USA, až bude dostupná funkce Web App for Containers. Správci Contoso mohou nakonfigurovat Traffic Manager, aby zajistili převzetí služeb při selhání v případě regionálních výpadků.
-- Cosmos DB se zálohuje automaticky. Contoso si o tomto procesu [čte](/azure/cosmos-db/online-backup-and-restore), aby se dozvěděla víc.
+- Cosmos DB se zálohuje automaticky. Contoso si o tomto procesu [čte](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore), aby se dozvěděla víc.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
-- Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
+- Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](/azure/cost-management/overview) o službě Azure Cost Management
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

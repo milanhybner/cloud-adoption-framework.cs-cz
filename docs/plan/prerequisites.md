@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828679"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022327"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Kontrolní seznam požadavků pro efektivní plán přijetí do cloudu
 
@@ -21,7 +21,7 @@ Plán je platný jenom jako data, která jsou do něj vložená. Aby byl plán p
 
 ## <a name="strategic-inputs"></a>Strategické vstupy
 
-Přesné strategické vstupy se zajišťují, že prováděná práce přispívá k dosažení obchodních výsledků. [Oddíl strategie prostředí pro přijetí](../business-strategy/index.md) do cloudu poskytuje řadu cvičení pro vývoj jasné strategie. Výstupy těchto cvičení jsou popsány v rámci plánu přijetí do cloudu. Před vývojem plánu se ujistěte, že jsou v důsledku těchto cvičení správně definovány následující položky:
+Přesné strategické vstupy se zajišťují, že prováděná práce přispívá k dosažení obchodních výsledků. [Oddíl strategie prostředí pro přijetí](../strategy/index.md) do cloudu poskytuje řadu cvičení pro vývoj jasné strategie. Výstupy těchto cvičení jsou popsány v rámci plánu přijetí do cloudu. Před vývojem plánu se ujistěte, že jsou v důsledku těchto cvičení správně definovány následující položky:
 
 - **Jasné motivaci**: Proč Přijímám Cloud?
 - **Definované obchodní výsledky**: Jaké výsledky očekáváme od přijetí cloudu?

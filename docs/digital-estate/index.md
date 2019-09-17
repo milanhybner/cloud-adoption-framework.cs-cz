@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817838"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023472"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ Analýza digitálních aktiv podporuje aktivity přechodu na cloud. Kromě toho 
 
 Pokud chcete dokončit analýzu digitálních aktiv, postupujte následovně:
 
-1. [Určete přístup k analýze](approach.md).
-1. [Shromážděte inventář aktuálního stavu](inventory.md).
-1. [Racionalizujte prostředky v digitálních aktivech](rationalize.md).
-1. [Porovnejte prostředky s cloudovými nabídkami a vypočítejte cenu](calculate.md).
+1. [Určete přístup k analýze](./approach.md).
+1. [Shromážděte inventář aktuálního stavu](./inventory.md).
+1. [Racionalizujte prostředky v digitálních aktivech](./rationalize.md).
+1. [Porovnejte prostředky s cloudovými nabídkami a vypočítejte cenu](./calculate.md).
 
 Finanční modely a backlogy migrace je možné upravit, aby odrážely racionalizovaná a oceněná aktiva.
 
@@ -56,4 +56,4 @@ Finanční modely a backlogy migrace je možné upravit, aby odrážely racional
 Než začne plánování digitálních aktiv, musíte určit, jaký přístup se má použít.
 
 > [!div class="nextstepaction"]
-> [Přístupy k plánování digitálních aktiv](approach.md)
+> [Přístupy k plánování digitálních aktiv](./approach.md)

@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906318"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024416"
 ---
 # <a name="mainframe-application-migration"></a>Migrace aplikace na sálové počítače
 
@@ -51,7 +51,7 @@ Cloudová prostředí Batch využívají paralelní výpočetní a vysokorychlos
 
 ### <a name="data-ingestion-systems"></a>Systémy přijímání dat
 
-Sálové počítače ingestují velké dávky dat z maloobchodních, finančních služeb, výroby a dalších řešení pro zpracování. V Azure můžete k kopírování dat do a z umístění úložiště použít jednoduché nástroje příkazového řádku, jako je [AzCopy](/azure/storage/common/storage-use-azcopy) . Můžete také použít službu [Azure Data Factory](/azure/data-factory/introduction) , která vám umožní ingestovat data z různorodých úložišť dat a vytvářet a plánovat pracovní postupy řízené daty.
+Sálové počítače ingestují velké dávky dat z maloobchodních, finančních služeb, výroby a dalších řešení pro zpracování. V Azure můžete k kopírování dat do a z umístění úložiště použít jednoduché nástroje příkazového řádku, jako je [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . Můžete také použít službu [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) , která vám umožní ingestovat data z různorodých úložišť dat a vytvářet a plánovat pracovní postupy řízené daty.
 
 Kromě prostředí emulace poskytuje Azure platformu jako službu (PaaS) a analytické služby, které mohou rozšiřovat stávající Sálová prostředí.
 
@@ -63,7 +63,7 @@ Monitory TP jsou k dispozici od různých dodavatelů a běží na virtuálních
 
 !["Zvednutí a posunutí" migrace sálového prostředí do Azure pomocí softwaru pro emulaci](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-V Azure se prostředí emulace používají ke spuštění Správce TRANSAKČNÍho programu a dávkových úloh, které používají JCL. V datové vrstvě je DB2 nahrazuje [Azure SQL Database](/azure/sql-database/sql-database-technical-overview), i když je možné použít také Microsoft SQL Server, DB2 LUW nebo Oracle Database. Emulátor podporuje rychlé zprávy, VSAM a SEQ. Nástroje pro správu systému z sálového počítače jsou nahrazené službami Azure a softwarem od jiných dodavatelů, kteří se spouštějí na virtuálních počítačích.
+V Azure se prostředí emulace používají ke spuštění Správce TRANSAKČNÍho programu a dávkových úloh, které používají JCL. V datové vrstvě je DB2 nahrazuje [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), i když je možné použít také Microsoft SQL Server, DB2 LUW nebo Oracle Database. Emulátor podporuje rychlé zprávy, VSAM a SEQ. Nástroje pro správu systému z sálového počítače jsou nahrazené službami Azure a softwarem od jiných dodavatelů, kteří se spouštějí na virtuálních počítačích.
 
 Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Příklad:
 
@@ -75,7 +75,7 @@ Funkce pro zpracování obrazovky a zadávání formulářů se běžně impleme
 
 Operace dávkového zpracování v Azure se liší od typického prostředí Batch na sálových počítačích. Dávkové úlohy sálového počítače jsou obvykle sériové a závisí na počtu IOPS poskytovaných páteřním základem pro výkon. Cloudová prostředí Batch využívají paralelní výpočetní a vysokorychlostní sítě pro výkon.
 
-Pokud chcete optimalizovat výkon služby Batch pomocí Azure, zvažte možnosti [výpočtů](/azure/virtual-machines/windows/overview), [úložiště](/azure/storage/blobs/storage-blobs-introduction), [sítě](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)a [monitorování](/azure/azure-monitor/overview) podle následujících pokynů.
+Pokud chcete optimalizovat výkon služby Batch pomocí Azure, zvažte možnosti [výpočtů](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [úložiště](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [sítě](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)a [monitorování](https://docs.microsoft.com/azure/azure-monitor/overview) podle následujících pokynů.
 
 ### <a name="compute"></a>Compute
 
@@ -93,7 +93,7 @@ Použije
 
 Použije
 
-- [Azure Premium SSD](/azure/virtual-machines/windows/premium-storage) nebo [Azure Ultra SSD](/azure/virtual-machines/windows/disks-ultra-ssd) pro maximální počet dostupných IOPS.
+- [Azure Premium SSD](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) nebo [Azure Ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) pro maximální počet dostupných IOPS.
 
 - Prokládání více disků za účelem většího počtu IOPS na velikost úložiště.
 
@@ -101,11 +101,11 @@ Použije
 
 ### <a name="networking"></a>Sítě
 
-- K minimalizaci latence použijte [urychlené síťové sítě Azure](/azure/virtual-network/create-vm-accelerated-networking-powershell) .
+- K minimalizaci latence použijte [urychlené síťové sítě Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) .
 
 ### <a name="monitoring"></a>Monitorování
 
-- Pomocí nástrojů pro monitorování, [Azure monitor](/azure/azure-monitor/overview), [Azure Application Insights](/azure/application-insights/app-insights-overview)a dokonce i v protokolech Azure můžete správcům umožnit monitorovat jakýkoli výkon dávkových běhů a vyhnout se kritickým bodům.
+- Pomocí nástrojů pro monitorování, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)a dokonce i v protokolech Azure můžete správcům umožnit monitorovat jakýkoli výkon dávkových běhů a vyhnout se kritickým bodům.
 
 ## <a name="migrate-development-environments"></a>Migrace vývojových prostředí
 
@@ -125,7 +125,7 @@ Distribuované architektury cloudu spoléhají na jinou sadu vývojářských n�
 
 ## <a name="migrate-databases-and-data"></a>Migrace databází a dat
 
-Migrace aplikace obvykle zahrnuje opětovné hostování datové vrstvy. Můžete migrovat SQL Server, open source a další relační databáze na plně spravovaná řešení v Azure, jako je například [Azure SQL Database Managed instance](/azure/sql-database/sql-database-managed-instance), [Azure Database Service for PostgreSQL](/azure/postgresql/overview)a [Azure Database for MySQL](/azure/mysql/overview) s [ Azure Database Migration Service](/azure/dms/dms-overview).
+Migrace aplikace obvykle zahrnuje opětovné hostování datové vrstvy. Můžete migrovat SQL Server, open source a další relační databáze na plně spravovaná řešení v Azure, jako je například [Azure SQL Database Managed instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)a [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) s [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Můžete například migrovat, pokud Datová vrstva sálového počítače používá:
 
@@ -159,7 +159,7 @@ Kromě toho může každá úroveň také poskytovat vhodné služby pro zotaven
 
 Následující obrázek ukazuje možné nasazení Azure pomocí primární a sekundární lokality. V primární lokalitě se produkční, pracovní a testovací virtuální počítače nasazují s vysokou dostupností. Sekundární lokalita je určena pro zálohování a zotavení po havárii.
 
-![Možné nasazení Azure pomocí primární a sekundární lokality](../../_images/mainframe-migration/migration-backup-DR.png)
+![Možné nasazení Azure pomocí primární a sekundární lokality](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Provedení dvoufázové sálového počítače do Azure
 
@@ -167,7 +167,7 @@ Přesunutí řešení z sálového počítače do Azure může zahrnovat *dvouf�
 
 Běžným scénářem je přesun aplikace do Azure a zachování dat používaných aplikací na sálovém počítači. Konkrétní software se používá k tomu, aby aplikace v Azure měly přístup k datům z sálového počítače. V rámci široké škály řešení je zajištěna integrace mezi Azure a stávajícími sálovými prostředími, Podpora hybridních scénářů a migrace v průběhu času. Na svou cestu vám může pomáhat partneři Microsoftu, nezávislí dodavatelé softwaru a systémové integrátory.
 
-Jednou z možností je [Microsoft Host Integration Server](/host-integration-server), řešení, které poskytuje architekturu distribuované relační databáze (DRDA), která se vyžaduje pro aplikace v Azure pro přístup k datům v DB2, která zůstávají na sálovém počítači. Další možnosti pro integraci z sálového počítače do Azure zahrnují řešení od IBM, Attunity, Codit, dalších dodavatelů a možností open source.
+Jednou z možností je [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), řešení, které poskytuje architekturu distribuované relační databáze (DRDA), která se vyžaduje pro aplikace v Azure pro přístup k datům v DB2, která zůstávají na sálovém počítači. Další možnosti pro integraci z sálového počítače do Azure zahrnují řešení od IBM, Attunity, Codit, dalších dodavatelů a možností open source.
 
 ## <a name="partner-solutions"></a>Partnerská řešení
 
@@ -179,8 +179,8 @@ Azure poskytuje prověřenou, vysoce dostupnou a škálovatelnou infrastrukturu 
 
 Další informace naleznete v následujících materiálech:
 
-- [Začínáme s Azure](/azure)
+- [Začínáme s Azure](https://docs.microsoft.com/azure)
 
 - [Nasazení IBM DB2 pureScale v Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Dokumentace k Host Integration Server](/host-integration-server)
+- [Dokumentace k Host Integration Server](https://docs.microsoft.com/host-integration-server)

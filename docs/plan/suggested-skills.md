@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828692"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025323"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Začínáme s cestou připravenosti dovedností
 
@@ -24,7 +24,7 @@ Zaměstnanci oddělení IT můžou nervózním o svých rolích a pozicích, pro
 
 Rozhraní pro přijetí do cloudu vás seznámí s úplným životním cyklem pro kompletní přijetí. V rámci tohoto rámce jsou k dispozici čtenáři příležitostí k sestavování nezbytných dovedností. Abychom vám pomohli začít na této cestě, jsou k dispozici články o připravenosti dovedností, které jsou pro snazší přístup k dispozici v následující osnově. Každé z následujících odkazů se mapuje na dovednosti potřebné k úspěšnému provedení v každé z těchto fází přijetí.
 
-- **[Strategie](../business-strategy/suggested-skills.md):** Vývoj dovedností potřebných pro přípravu plánu migrace, který je k disoperaci. Zahrnuje to obchodní odůvodnění a další požadované dovednosti při plánování firmy.
+- **[Strategie](../strategy/suggested-skills.md):** Vývoj dovedností potřebných pro přípravu plánu migrace, který je k disoperaci. Zahrnuje to obchodní odůvodnění a další požadované dovednosti při plánování firmy.
 - **[Plán](./suggested-skills.md):** Vývoj dovedností potřebných pro přípravu plánu migrace, který je k disoperaci. Zahrnuje to obchodní odůvodnění a další požadované dovednosti při plánování firmy.
 - **[Připraveno](../ready/suggested-skills.md):** Vývoj dovedností potřebných k přípravě podnikání, kultury, lidí a prostředí pro změny.
 

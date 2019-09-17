@@ -8,9 +8,9 @@ Následující rozhodnutí pocházejí od týmů mimo tým zásad správného ř
 ### <a name="identity-baseline"></a>Standardní hodnoty identit
 
 Základní výchozím bodem pro všechny zásady správného řízení je standardní hodnota identity. Než se pokusíte použít zásady správného řízení, musí být navázána identita. Vytvořená strategie identity se pak vynutila řešeními zásad správného řízení.
-V této příručce zásad správného řízení implementuje tým správy identit vzor **[synchronizace adresářů](/azure/architecture/cloud-adoption/decision-guides/identity/overview#directory-synchronization)** :
+V této příručce zásad správného řízení implementuje tým správy identit vzor **[synchronizace adresářů](../../../../decision-guides/identity/index.md#directory-synchronization)** :
 
-- RBAC vám poskytne služba Azure Active Directory (Azure AD), pomocí synchronizace adresářů nebo stejného přihlašování, které jste implementovali během migrace společnosti na Office 365. Pokyny k implementaci najdete v tématu [Referenční architektura pro integraci služby Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+- RBAC vám poskytne služba Azure Active Directory (Azure AD), pomocí synchronizace adresářů nebo stejného přihlašování, které jste implementovali během migrace společnosti na Office 365. Pokyny k implementaci najdete v tématu [Referenční architektura pro integraci služby Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
 - Tenant Azure AD bude také řídit ověřování a přístup pro prostředky nasazené do Azure.
 
 V rámci nástroje MVP pro kontrolu zásad správného řízení vynutil tým zásad správného použití replikovaného klienta prostřednictvím nástrojů pro řízení předplatného, které jsou popsané dále v tomto článku. V budoucích iteracích může tým zásad správného řízení ve službě Azure AD vyhovět bohatě nástrojů pro rozšiřování této možnosti.
@@ -19,9 +19,9 @@ V rámci nástroje MVP pro kontrolu zásad správného řízení vynutil tým z�
 
 Softwarově definovaná síť je důležitý počáteční aspekt standardních hodnot zabezpečení. Zřizování MVP pro řízení MVP závisí na počátečních rozhodnutích od týmu správy zabezpečení a definování způsobu, jakým se dají sítě bezpečně konfigurovat.
 
-Vzhledem k nedostatku požadavků je zabezpečení IT přehráváno v bezpečí a vyžadovalo **[DMZ vzor cloudu](/azure/architecture/cloud-adoption/decision-guides/software-defined-network/cloud-dmz)** . To znamená, že zásady správného řízení nasazení Azure samy budou velmi lehké.
+Vzhledem k nedostatku požadavků se zabezpečení IT hraje v bezpečí a vyžaduje vzor **[Cloud DMZ](../../../../decision-guides/software-defined-network/cloud-dmz.md)** . To znamená, že zásady správného řízení nasazení Azure samy budou velmi lehké.
 
-- Předplatná Azure se můžou připojovat k existujícímu datovému centru prostřednictvím sítě VPN, ale musí dodržovat všechny existující zásady zásad správného řízení IT, které se týkají připojení zóny demilitarizovaná k chráněným prostředkům. Pokyny k implementaci týkající se připojení k síti VPN najdete v tématu [Referenční architektura sítě VPN](/azure/architecture/reference-architectures/hybrid-networking/vpn).
+- Předplatná Azure se můžou připojovat k existujícímu datovému centru prostřednictvím sítě VPN, ale musí dodržovat všechny existující zásady zásad správného řízení IT, které se týkají připojení zóny demilitarizovaná k chráněným prostředkům. Pokyny k implementaci týkající se připojení k síti VPN najdete v tématu [Referenční architektura sítě VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
 - Rozhodnutí týkající se podsítě, brány firewall a směrování jsou momentálně odvoditelné na jednotlivé zájemce týkající se aplikací a úloh.
 - Před vypuštěním libovolných chráněných dat nebo úloh, které jsou důležité pro kritické úlohy, se vyžaduje další analýza.
 
@@ -32,14 +32,14 @@ Tým zásad správného řízení cloudu proaktivně pozvaní členů sítě a t
 ### <a name="security-baseline-encryption"></a>Základní hodnoty zabezpečení: Šifrování
 
 Šifrování je další základní rozhodnutí v rámci oboru standardních hodnot zabezpečení. Protože společnost v současnosti zatím neukládá žádná chráněná data v cloudu, tým zabezpečení se rozhodl o méně agresivním vzoru pro šifrování.
-V tomto okamžiku je **[vzor nativního cloudu pro šifrování](/azure/architecture/cloud-adoption/decision-guides/encryption/overview#key-management)** navržený, ale nevyžaduje se u žádného vývojového týmu.
+V tomto okamžiku je **[vzor nativního cloudu pro šifrování](../../../../decision-guides/encryption/index.md#key-management)** navržený, ale nevyžaduje se u žádného vývojového týmu.
 
 - Nejsou nastavené žádné požadavky zásad správného řízení, které se týkají použití šifrování, protože aktuální podnikové zásady nepovolují v cloudu kritická nebo chráněná data.
 - Před uvolněním chráněných dat nebo úloh, které jsou důležité pro kritické úlohy, se vyžaduje další analýza.
 
 ## <a name="policy-enforcement"></a>Vynucování zásad
 
-První rozhodnutí o urychlení nasazení je vzor pro vynucení. V tomto mluveném komentáři se tým zásad správného řízení rozhodl implementovat **[automatizovaný vzor vynucení](/azure/architecture/cloud-adoption/decision-guides/policy-enforcement/overview#automated-enforcement)** .
+První rozhodnutí o urychlení nasazení je vzor pro vynucení. V tomto mluveném komentáři se tým zásad správného řízení rozhodl implementovat **[automatizovaný vzor vynucení](../../../../decision-guides/policy-enforcement/index.md#automated-enforcement)** .
 
 - Azure Security Center budou zpřístupněny pro týmy zabezpečení a identity pro monitorování rizik zabezpečení. Oba týmy také nejspíš používají Security Center k identifikaci nových rizik a vylepšení podnikových zásad.
 - Pro řízení vynucování ověřování se ve všech předplatných vyžaduje RBAC.

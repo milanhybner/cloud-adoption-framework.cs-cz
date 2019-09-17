@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905290"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025160"
 ---
 # <a name="azure-fundamental-concepts"></a>Základní koncepty Azure
 
@@ -69,7 +69,7 @@ Při vytváření můžete předplatné Azure přidružit k existujícímu tenan
 
 E-mailový účet lze přidružit k několika předplatným Azure. Správce účtu může předplatné převést na jiný účet.
 
-Podrobný popis rolí definovaných v Azure najdete v článku [Role klasického správce předplatného, role Azure RBAC a role správce Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Podrobný popis rolí definovaných v Azure najdete v článku [Role klasického správce předplatného, role Azure RBAC a role správce Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Předplatná a oblasti
 
@@ -84,13 +84,13 @@ Předplatné není vázané na konkrétní oblast Azure. Každý prostředek Azu
 
 Následující materiály obsahují podrobné informace o konceptech rozebraných v tomto článku:
 
-- [Jak funguje Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Správa přístupu k prostředkům v Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Přehled Azure Resource Manageru](/azure/azure-resource-manager/resource-group-overview)
-- [Řízení přístupu k prostředkům Azure na základě role (RBAC)](/azure/role-based-access-control/overview)
-- [Představení služby Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Přiřazení nebo přidání předplatného Azure do tenanta Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologie pro Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Jak funguje Azure?](../../getting-started/what-is-azure.md)
+- [Správa přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Přehled Azure Resource Manageru](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Řízení přístupu k prostředkům Azure na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Představení služby Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Přiřazení nebo přidání předplatného Azure do tenanta Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologie pro Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Předplatná, licence, účty a tenanti pro cloudové nabídky Microsoftu](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Další postup

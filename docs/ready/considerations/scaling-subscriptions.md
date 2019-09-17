@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905361"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025146"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Škálování s využitím několika předplatných Azure
 
@@ -39,7 +39,7 @@ Další předplatná můžou vyžadovat i další situace. Při rozšiřování 
 
 - Předplatná mají různá omezení pro různé typy prostředků. Například počet virtuálních sítí v předplatném je omezený. Když předplatné dosáhne jakéhokoli omezení, budete muset vytvořit další předplatné a umístit sem nové prostředky.
 
-  Další informace najdete v tématu [Limity, kvóty a omezení předplatného a služeb Azure](/azure/azure-subscription-service-limits).
+  Další informace najdete v tématu [Limity, kvóty a omezení předplatného a služeb Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Každé předplatné může implementovat vlastní zásady pro nasaditelné typy prostředků a podporované oblasti.
 
@@ -59,7 +59,7 @@ Další předplatná můžou vyžadovat i další situace. Při rozšiřování 
 
 Další předplatná se také můžete rozhodnout vytvořit z jiných obchodních či technických důvodů specifických pro vaši organizaci. Mohou existovat další náklady související s příchozím přenosem dat a výchozím přenosem dat mezi předplatnými.
 
-Řadu typů prostředků můžete přesouvat z jednoho předplatného do jiného, nebo můžete k migraci prostředků do jiného předplatného použít automatizovaná nasazení. Další informace najdete v tématu [Přesunutí prostředků do nové skupiny prostředků nebo předplatného](/azure/azure-resource-manager/resource-group-move-resources).
+Řadu typů prostředků můžete přesouvat z jednoho předplatného do jiného, nebo můžete k migraci prostředků do jiného předplatného použít automatizovaná nasazení. Další informace najdete v tématu [Přesunutí prostředků do nové skupiny prostředků nebo předplatného](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Správa více předplatných
 
@@ -76,7 +76,7 @@ Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplat
 
 Když se spoléháte na tento model dědičnosti, můžete uspořádat předplatná v hierarchii tak, aby každé předplatné odpovídalo příslušným zásadám a ovládacím prvkům zabezpečení.
 
-![Čtyři úrovně rozsahu pro uspořádání prostředků Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Čtyři úrovně rozsahu pro uspořádání prostředků Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Všechna přiřazení přístupu nebo zásad v kořenové skupině pro správu se použijí pro všechny prostředky v rámci příslušného adresáře. Pečlivě zvažte, které položky v tomto oboru definujete. Zahrňte pouze ta přiřazení, která potřebujete.
 
@@ -86,26 +86,26 @@ Když přesunete předplatné do existující skupiny pro správu, zdědí zása
 
 ![Příklad hierarchie skupiny pro správu](../../_images/ready/management-group-hierarchy.png)
 
-Další informace najdete v tématu [Uspořádání vašich prostředků s využitím skupin pro správu Azure](/azure/governance/management-groups).
+Další informace najdete v tématu [Uspořádání vašich prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Tipy pro vytváření nových předplatných
 
 - Určete, kdo bude za vytváření nových předplatných zodpovědný.
 - Určete, které prostředky budou standardní součástí předplatného.
 - Určete, jak by měla všechna standardní předplatná vypadat. Mezi požadavky patří přístup RBAC, zásady, značky a prostředky infrastruktury.
-- Pokud je to možné, použijte k vytvoření nových předplatných [instanční objekt](/azure/azure-resource-manager/grant-access-to-create-subscription). Definujte skupinu zabezpečení, která může vyžadovat nová předplatná prostřednictvím automatizovaného pracovního postupu.
+- Pokud je to možné, použijte k vytvoření nových předplatných [instanční objekt](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Definujte skupinu zabezpečení, která může vyžadovat nová předplatná prostřednictvím automatizovaného pracovního postupu.
 - Pokud jste zákazníkem se smlouvou Enterprise, požádejte podporu Azure, aby pro vaši organizaci zablokovala vytváření předplatných bez smlouvy Enterprise.
 
 ## <a name="related-resources"></a>Související prostředky
 
 - [Základní koncepty Azure.](./fundamental-concepts.md)
-- [Uspořádání prostředků s využitím skupin pro správu Azure.](/azure/governance/management-groups)
-- [Zvýšení úrovně přístupu pro správu všech předplatných Azure a skupin pro správu](/azure/role-based-access-control/elevate-access-global-admin)
-- [Přesun prostředků Azure do jiné skupiny prostředků nebo předplatného](/azure/azure-resource-manager/resource-group-move-resources)
+- [Uspořádání prostředků s využitím skupin pro správu Azure.](https://docs.microsoft.com/azure/governance/management-groups)
+- [Zvýšení úrovně přístupu pro správu všech předplatných Azure a skupin pro správu](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
+- [Přesun prostředků Azure do jiné skupiny prostředků nebo předplatného](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Přečtěte si téma týkající se [doporučených konvencí pro tvorbu názvů a značek](./name-and-tag.md), které byste měli při nasazování prostředků Azure dodržovat.
+Přečtěte si téma týkající se [doporučených konvencí pro tvorbu názvů a značek](./naming-and-tagging.md), které byste měli při nasazování prostředků Azure dodržovat.
 
 > [!div class="nextstepaction"]
-> [Doporučené konvence pro tvorbu názvů a značek](./name-and-tag.md)
+> [Doporučené konvence pro tvorbu názvů a značek](./naming-and-tagging.md)

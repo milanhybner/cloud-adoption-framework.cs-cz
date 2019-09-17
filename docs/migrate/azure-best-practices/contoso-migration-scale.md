@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 30a510d5acd5773253524200ea65e52a3325e10d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829615"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023998"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -46,7 +46,7 @@ Po stanovení cílů a požadavků společnost Contoso zkontroluje IT zázemí a
 
 ## <a name="current-deployment"></a>Aktuální nasazení
 
-Po naplánování a nastavení [infrastruktury Azure](contoso-migration-infrastructure.md) a vyzkoušení různých kombinací migrace v rámci testování konceptu podle tabulky výše je společnost Contoso připravená pustit se do úplné migrace do Azure ve velkém měřítku. Tady je seznam toho, co chce společnost Contoso migrovat.
+Po naplánování a nastavení [infrastruktury Azure](./contoso-migration-infrastructure.md) a vyzkoušení různých kombinací migrace v rámci testování konceptu podle tabulky výše je společnost Contoso připravená pustit se do úplné migrace do Azure ve velkém měřítku. Tady je seznam toho, co chce společnost Contoso migrovat.
 
 <!--markdownlint-disable MD033 -->
 
@@ -123,7 +123,7 @@ Kandidát pro testování konceptu | Ano / Ne | Dá se aplikace použít pro tes
 Technický dluh | Žádný / Nějaký / Závažný | Provozuje nebo používá daná položka inventáře nějaký produkt, platformu nebo operační systém s ukončenou podporou?
 Důsledky pro bránu firewall | Ano / Ne | Komunikuje aplikace s internetem nebo externím provozem?  Integruje se s bránou firewall?
 Problémy se zabezpečením | Ano / Ne | Existují známé problémy se zabezpečením aplikace?  Používá aplikace nešifrovaná data nebo zastaralé platformy?
-Strategie migrace | Změna hostitele / Refaktoring / Změna architektury / Nové sestavení | Jaký druh migrace je pro aplikaci potřebný? Jak se aplikace nasadí do Azure? [Další informace](contoso-migration-overview.md#migration-patterns).
+Strategie migrace | Změna hostitele / Refaktoring / Změna architektury / Nové sestavení | Jaký druh migrace je pro aplikaci potřebný? Jak se aplikace nasadí do Azure? [Další informace](./contoso-migration-overview.md#migration-patterns).
 Technická složitost | 1–5 | Jak složitá je migrace? Tato hodnota by měla být definovaná týmem DevOps ve společnosti Contoso a relevantními partnery.
 Obchodní důležitost | 1–5 | Jak důležitá je aplikace pro firmu? Aplikaci pro malou pracovní skupinu se například může přiřadit skóre jedna, zatímco kritické aplikaci používané v celé organizaci skóre pět. Toto skóre bude mít vliv na úroveň priority migrace.
 Priorita migrace | 1/2/3 | Jaká je priorita migrace aplikace?
@@ -156,7 +156,7 @@ Služba Azure Migrate pomáhá zjistit a posoudit místní virtuální počíta�
 Vzhledem k rozsahu této migrace musí společnost Contoso využít službu Azure Migrate správným způsobem.
 
 - Společnost Contoso provede pomocí služby Azure Migrate posouzení jednotlivých aplikací. Tím se zajistí, že Azure Migrate vrátí na Azure Portal aktuální data.
-- Správci společnosti Contoso si přečtou informace o [nasazení služby Azure Migrate ve velkém měřítku](/azure/migrate/how-to-scale-assessment).
+- Správci společnosti Contoso si přečtou informace o [nasazení služby Azure Migrate ve velkém měřítku](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment).
 - Společnost Contoso se seznámí s omezeními služby Azure Migrate shrnutými v následující tabulce.
 
 **Akce** | **Omezení**
@@ -209,8 +209,8 @@ Je také nutné vzít v úvahu data, zejména vzhledem k objemu databází, kter
 
 Společnost Contoso pro migraci primárně používá několik služeb a nástrojů Azure:
 
-- [Azure Site Recovery](/azure/site-recovery/site-recovery-overview): Orchestruje zotavení po havárii a migruje místní virtuální počítače do Azure.
-- [Azure Database Migration Service](/azure/dms/dms-overview): Migruje místní databáze, například SQL Server, MySQL a Oracle, do Azure.
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): Orchestruje zotavení po havárii a migruje místní virtuální počítače do Azure.
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview): Migruje místní databáze, například SQL Server, MySQL a Oracle, do Azure.
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -219,7 +219,7 @@ Azure Site Recovery je primární služba Azure pro orchestraci zotavení po hav
 1. Služba Site Recovery umožňuje (orchestruje) replikaci z vašich místních lokalit do Azure.
 2. Po nastavení a spuštění replikace můžou služby místních počítačů převzít počítače v Azure a migrace se může dokončit.
 
-Společnost Contoso už [dokončila testování konceptu](contoso-migration-rehost-vm.md), aby zjistila, jak může služba Site Recovery pomoct s migrací do cloudu.
+Společnost Contoso už [dokončila testování konceptu](./contoso-migration-rehost-vm.md), aby zjistila, jak může služba Site Recovery pomoct s migrací do cloudu.
 
 ##### <a name="using-site-recovery-at-scale"></a>Použití služby Site Recovery ve velkém měřítku
 
@@ -233,7 +233,7 @@ Společnost Contoso plánuje spustit několik migrací metodou „lift and shift
 
 ###### <a name="gather-on-premises-information"></a>Shromažďování informací o místním prostředí
 
-Společnost Contoso může pomocí [Plánovače nasazení služby Site Recovery](/azure/site-recovery/site-recovery-deployment-planner) provést tyto kroky:
+Společnost Contoso může pomocí [Plánovače nasazení služby Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-deployment-planner) provést tyto kroky:
 
 - Může pomocí tohoto nástroje vzdáleně profilovat virtuální počítače, aniž by to mělo dopad na produkční prostředí. To pomáhá stanovit požadavky na šířku pásma a úložiště pro replikaci a převzetí služeb.
 - Společnost Contoso může tento nástroj spustit i bez instalace jakýchkoliv komponent služby Site Recovery.
@@ -262,10 +262,10 @@ Společnost Contoso musí zjistit, jak tyto komponenty nasadit, na základě po�
 --- | ---
 **Maximální denní četnost změn** | Jeden procesový server může zpracovat denní četnost změn až do 2 TB. Vzhledem k tomu, že virtuální počítač může používat jenom jeden procesový server, je maximální denní četnost změn dat, která je podporovaná pro replikovaný virtuální počítač, 2 TB.
 **Maximální propustnost** | Standardní účet úložiště Azure může zpracovávat maximálně 20 000 požadavků za sekundu a vstupně-výstupní operace za sekundu (IOPS) replikovaného virtuálního počítače by měly být v rámci tohoto limitu. Pokud má například virtuální počítač 5 disků a každý z nich vygeneruje na virtuálním počítači 120 IOPS (o velikosti 8 kB), pak bude v rámci limitu IOPS na disk v Azure (500).<br/><br/> Potřebný počet účtů úložiště můžete zjistit tak, že celkový počet vstupně-výstupních operací zdrojových počítačů za sekundu vydělíte 20 000. Replikovaný počítač může v Azure patřit jenom do jednoho účtu úložiště.
-**Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> Procesor: 16 virtuálních procesorů (2 sokety × 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Četnost změny dat: 1 až 2 TB<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
+**Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> Procesor: 16 virtuálních procesorů (2 sokety × 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Četnost změny dat: 1 až 2 TB<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
 **Procesový server** | Contoso nasadí samostatný, vyhrazený procesový server, který dokáže replikovat 100 až 200 virtuálních počítačů:<br/><br/> Procesor: 16 virtuálních procesorů (2 sokety × 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Četnost změny dat: 1 až 2 TB<br/><br/> Procesový server bude hodně vytížený, takže by měl být umístěný na hostiteli ESXi, který dokáže zpracovat vstupně-výstupní diskové operace, síťový provoz a výkon procesoru potřebné pro replikaci. Společnost Contoso bude pro tento účel uvažovat o vyhrazeném hostiteli.
-**Sítě** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. S ohledem na rychlost a prioritu migrace se společnost Contoso rozhodla použít prémiové úložiště SSD.<br/><br/>
+**Sítě** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
+**Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. S ohledem na rychlost a prioritu migrace se společnost Contoso rozhodla použít prémiové úložiště SSD.<br/><br/>
 Rozhodla se používat spravované disky pro všechny virtuální počítače nasazené do Azure. Požadovaný počet vstupně-výstupních operací za sekundu rozhodne, jestli se budou používat disky HDD úrovně Standard, SSD úrovně Standard nebo SSD úrovně Premium.<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -309,7 +309,7 @@ V zájmu co nejlepšího zužitkování investice do cloudu bude společnost Con
 - Toto licencované řešení vytvořila společnost Cloudyn, která je nyní pobočkou Microsoftu. Společnosti Contoso umožní transparentně a přesně spravovat útraty v cloudu. Poskytuje nástroje pro monitorování, přidělování a snižování nákladů na cloud.
 - Služba Azure Cost Management poskytuje jednoduché sestavy na řídicím panelu, které pomáhají s přidělováním, rozdělováním, analýzou a interním zúčtováním nákladů.
 - Služba Cost Management pomáhá optimalizovat výdaje za cloud díky identifikaci málo využitých prostředků, které pak společnost Contoso může spravovat a upravovat.
-- Přečtěte si [další informace](/azure/cost-management/overview) o službě Azure Cost Management.
+- Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ![Správa nákladů](./media/contoso-migration-scale/cost-management.png)
 
@@ -350,16 +350,16 @@ Společnost Contoso potřebuje mít přehled o stavu a výkonu nově migrovanýc
 
 - Pomocí těchto nástrojů může snadno shromáždit data z různých zdrojů a získat podrobné přehledy. Může například měřit využití procesoru, disků a paměti u virtuálních počítačů, zobrazit aplikace a síťové závislosti napříč několika virtuálními počítači nebo sledovat výkon aplikací.
 - Pomocí těchto nástrojů pro monitorování cloudu může společnost Contoso podniknout potřebné kroky a provést integraci s řešeními pro služby.
-- Přečtěte si [další informace](/azure/monitoring-and-diagnostics/monitoring-overview) o monitorování Azure.
+- Přečtěte si [další informace](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview) o monitorování Azure.
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Provozní kontinuita a zotavení po havárii
 
 Společnost Contoso bude pro svoje prostředky v Azure potřebovat strategii pro provozní kontinuitu a zotavení po havárii (BCDR).
 
-- Azure poskytuje [integrované funkce BCDR](/azure/architecture/resiliency/disaster-recovery-azure-applications), které zajistí, aby data byla v bezpečí a aplikace nebo služby v provozu.
+- Azure poskytuje [integrované funkce BCDR](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications), které zajistí, aby data byla v bezpečí a aplikace nebo služby v provozu.
 - Kromě využití integrovaných funkcí chce společnost Contoso zajistit, aby se mohla zotavit v případě selhání, vyhnout se nákladným výpadkům v podniku, splnit cíle v oblasti dodržování předpisů a chránit data před ransomwarem a lidskými chybami. Použijte následující postup:
   - Společnost Contoso nasadí službu Azure Backup jako nákladově efektivní řešení pro zálohování prostředků v Azure. Díky její integraci může zálohování cloudu nastavit v pár jednoduchých krocích.
-  - Společnost Contoso nastaví zotavení po havárii pro virtuální počítače Azure pomocí služby Azure Site Recovery. Ta bude zajišťovat replikaci, převzetí služeb při selhání a navrácení služeb po obnovení mezi zadanými oblastmi Azure. Tím se zajistí, aby aplikace běžící na virtuálních počítačích Azure zůstaly dostupné v sekundární oblasti společnosti Contoso, pokud dojde k výpadku v primární oblasti. [Další informace](/azure/site-recovery/azure-to-azure-quickstart).
+  - Společnost Contoso nastaví zotavení po havárii pro virtuální počítače Azure pomocí služby Azure Site Recovery. Ta bude zajišťovat replikaci, převzetí služeb při selhání a navrácení služeb po obnovení mezi zadanými oblastmi Azure. Tím se zajistí, aby aplikace běžící na virtuálních počítačích Azure zůstaly dostupné v sekundární oblasti společnosti Contoso, pokud dojde k výpadku v primární oblasti. [Další informace](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ## <a name="conclusion"></a>Závěr
 

@@ -11,19 +11,19 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 48f73d7c7f2e7f3bba8183464c786a3e0744807c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905488"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022380"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Hvězdicová síťová topologie
 
 *Hvězdicová architektura* je síťový model pro efektivnější správu běžné komunikace nebo požadavků na zabezpečení. Pomáhá také vyhnout se omezením předplatného Azure. Tento model řeší následující aspekty:
 
 - **Finanční úspora a efektivita správy**. Díky centralizaci služeb, které můžou být sdílené více úlohami, například virtuálními síťovými zařízeními a servery DNS, na jednom místě, může IT minimalizovat prostředky a úsilí vynaložené na správu.
-- **Překonání omezení předplatného**. Velké cloudové úlohy můžou vyžadovat použití více prostředků, než je povoleno v rámci jednoho předplatného Azure. (Viz [omezení předplatného][Limits].) Peering úloh virtuálních sítí z různých předplatných do centra může tyto limity překonat.
+- **Překonání omezení předplatného**. Velké cloudové úlohy můžou vyžadovat použití více prostředků, než je povoleno v rámci jednoho předplatného Azure. Peering úloh virtuálních sítí z různých předplatných do centra může tyto limity překonat. Další informace najdete v tématu [omezení předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Oddělení oblastí zájmu.** Jednotlivé úlohy můžete nasazovat mezi centrální IT týmy a týmy pro úlohy.
 
 Menší cloudové aktiva nemusí využívat výhody plynoucí z přidané struktury a možností, které tento model nabízí. Pokud však plánujete rozsáhlejší přechod na cloud, měli byste zvážit implementaci hvězdicové síťové architektury, pokud se vás týkají některé z výše uvedených aspektů.
@@ -31,8 +31,8 @@ Menší cloudové aktiva nemusí využívat výhody plynoucí z přidané strukt
 > [!NOTE]
 > Lokalita referenčních architektur Azure obsahuje ukázkové šablony, které můžete použít jako základ pro implementaci vlastních sítí s hvězdicovou topologií:
 >
-> - [Implementace hvězdicové síťové topologie v Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementace hvězdicové síťové topologie se sdílenými službami v Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementace hvězdicové síťové topologie v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementace hvězdicové síťové topologie se sdílenými službami v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Přehled
 
@@ -45,7 +45,7 @@ Centrum je centrální zóna sítě, která řídí a kontroluje příchozí neb
 Centrum často obsahuje společné komponenty služby, které využívají paprsky. Mezi běžné centrální služby patří například:
 
 - Infrastruktura Windows Server Active Directory, která je vyžadována pro ověřování uživatelů třetích stran, kteří získávají přístup z nedůvěryhodných sítí předtím, než získají přístup k úlohám v paprsku. Včetně související služby Active Directory Federation Services (AD FS).
-- Služba DNS pro překlad názvů pro úlohy v paprscích, pro přístup k prostředkům v místní síti a na internetu, pokud se nepoužívá [Azure DNS][DNS].
+- Služba DNS pro překlad názvů pro úlohy v paprscích, pro přístup k prostředkům v místní síti a na internetu, pokud se nepoužívá [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview).
 - Infrastruktura veřejných klíčů (PKI) pro implementaci jednotného přihlašování k úlohám.
 - Řízení toku provozu TCP a UDP mezi síťovými zónami v paprscích a internetem.
 - Řízení toku mezi paprsky a místní sítí.
@@ -61,7 +61,7 @@ Paprsky můžou také oddělit a povolit různé skupiny v rámci vaší organiz
 
 V Azure je každá komponenta bez ohledu na typ nasazená v předplatném Azure. Izolace komponent Azure v různých předplatných Azure může uspokojit požadavky různých oborů podnikání, jako je například nastavení odlišných úrovní přístupu a autorizace.
 
-Jednoduchá implementace hvězdicové topologie může škálovat velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. (Příkladem je maximální počet peeringů virtuálních sítí. Podrobnosti naleznete v tématu [Limity, kvóty a omezení předplatného a služeb Azure][Limits].)
+Jednoduchá implementace hvězdicové topologie může škálovat velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. (Příkladem je maximální počet peeringů virtuálních sítí. Podrobnosti najdete v tématu [limity, kvóty a omezení předplatného a služeb Azure] [limity].
 
 V případech, kdy omezení můžou být problémem, můžete architekturu dále škálovat rozšířením modelu jednoduché hvězdicové topologie na cluster sítí s hvězdicovou topologií. Pomocí peeringu virtuálních sítí, Azure ExpressRoute, virtuální sítě WAN nebo sítě S2S VPN můžete propojit více center v jedné nebo několika oblastech Azure.
 
@@ -83,53 +83,48 @@ Paprsky je taky možné propojit s paprskem, který funguje jako centrum. Tento 
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "Příklady překrytí komponent"
-[1]: ./images/network-hub-spoke-high-level.png "Příklad vysoké úrovně hvězdicové topologie"
-[2]: ./images/network-hub-spokes-cluster.png "Cluster sítí s hvězdicovou topologií"
-[3]: ./images/network-spoke-to-spoke.png "Propojení mezi paprsky"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "Diagram na úrovni bloku hvězdicové topologie"
-[5]: ./images/network-users-groups-subsciptions.png "Uživatelé, skupiny, předplatná a projekty"
-[6]: ./images/network-infrastructure-high-level.png "Diagram vysoké úrovně infrastruktury"
-[7]: ./images/network-highlevel-perimeter-networks.png "Diagram vysoké úrovně infrastruktury"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "Peering virtuálních sítí a hraniční sítě"
-[9]: ./images/network-high-level-diagram-monitoring.png "Diagram vysoké úrovně pro monitorování"
-[10]: ./images/network-high-level-workloads.png "Diagram vysoké úrovně pro úlohu"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Příklady překrytí komponent"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Příklad vysoké úrovně hvězdicové topologie"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster sítí s hvězdicovou topologií"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Propojení mezi paprsky"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram na úrovni bloku hvězdicové topologie"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Uživatelé, skupiny, předplatná a projekty"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagram vysoké úrovně infrastruktury"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagram vysoké úrovně infrastruktury"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Peering virtuálních sítí a hraniční sítě"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagram vysoké úrovně pro monitorování"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagram vysoké úrovně pro úlohu"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[VNet]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[DMZ]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[PIP]: /azure/virtual-network/resource-groups-networking#public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[WAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: ../../reference/azure-scaffold.md
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[DMZ]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/resource-groups-networking#public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[WAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833476"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025408"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Správa změn v průběhu přírůstkové migrace
 
-V tomto článku se předpokládá, že procesy migrace jsou z povahy věcí přírůstkové a běží paralelně s [procesem řízení](../../../governance/index.md). Stejné pokyny se ale můžou použít k naplnění počátečních úkolů ve struktuře členění práce pro účely tradičního kaskádového řízení změn.
+V tomto článku se předpokládá, že procesy migrace jsou z povahy věcí přírůstkové a běží paralelně s [procesem řízení](../../../govern/index.md). Stejné pokyny se ale můžou použít k naplnění počátečních úkolů ve struktuře členění práce pro účely tradičního kaskádového řízení změn.
 
 ## <a name="release-backlog"></a>Backlog vydání
 

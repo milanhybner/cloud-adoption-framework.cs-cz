@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829147"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023334"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,17 +36,13 @@ V rámci každého stojanu nebo clusteru je většina serverů určena ke spouš
 
 Každá instance kontroleru prostředků infrastruktury je připojená k jiné sadě serverů, na kterých je spuštěný software orchestrace cloudu, obvykle označovaný jako **front-end**. Front-end hostuje webové služby, rozhraní RESTful API a interní databáze Azure používané pro všechny funkce, které Cloud provádí.
 
-Například front-end hostuje služby, které zpracovávají žádosti zákazníků o přidělení prostředků Azure, jako jsou [virtuální počítače](/azure/virtual-machines), a služby, jako je [Cosmos DB](/azure/cosmos-db/introduction). Za prvé, front-end ověří uživatele a ověří, jestli má uživatel oprávnění přidělit požadované prostředky. V takovém případě front-end zkontroluje databázi, aby vyhledala serverovou skříň s dostatečnou kapacitou, a pak řadiči prostředků infrastruktury na daném stojanu přidělí prostředky.
+Například front-end hostuje služby, které zpracovávají žádosti zákazníků o přidělení prostředků Azure, jako jsou [virtuální počítače](https://docs.microsoft.com/azure/virtual-machines), a služby, jako je [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Za prvé, front-end ověří uživatele a ověří, jestli má uživatel oprávnění přidělit požadované prostředky. V takovém případě front-end zkontroluje databázi, aby vyhledala serverovou skříň s dostatečnou kapacitou, a pak řadiči prostředků infrastruktury na daném stojanu přidělí prostředky.
 
 Proto je Azure velkou kolekcí serverů a síťových hardwarových zařízení, na kterých je spuštěná složitá sada distribuovaných aplikací pro orchestraci konfigurace a provozu virtualizovaného hardwaru a softwaru na těchto serverech. Je to orchestrace, která zajišťuje, že Azure&mdash;už nebude zodpovědný za údržbu a upgrade hardwaru, protože Azure to vše udělá na pozadí.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Teď, když rozumíte interním Azure, se dozvíte o řízení prostředků cloudu.
 
 > [!div class="nextstepaction"]
-> [Další informace o správě prostředků](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [Další informace o správě prostředků](../govern/resource-consistency/what-is-governance.md)

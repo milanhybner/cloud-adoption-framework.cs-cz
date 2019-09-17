@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99255722c28b9bb6c33f78e226cb8135e7c7be17
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b358c4d07e4adb30c0420c9d1b3bc85c25e9ce95
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825988"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024943"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Osvědčené postupy pro úlohy ocenění a změny velikosti migrovat do Azure
 
@@ -55,9 +55,9 @@ K předpovědi měsíčních nákladů na migrované úlohy můžete využít n�
 **Další informace:**
 
 - [Použití](https://azure.microsoft.com/pricing/calculator) cenovou kalkulačku Azure.
-- [Získejte přehled](/azure/migrate/migrate-overview) Azure Migrate.
-- [Informace](/azure/migrate/concepts-assessment-calculation) o posouzení Azure Migrate
-- [Další informace](/azure/dms/dms-overview) o službě Azure Database Migration Service
+- [Získejte přehled](https://docs.microsoft.com/azure/migrate/migrate-overview) Azure Migrate.
+- [Informace](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) o posouzení Azure Migrate
+- [Další informace](https://docs.microsoft.com/azure/dms/dms-overview) o službě Azure Database Migration Service
 
 ## <a name="best-practice-right-size-vms"></a>Osvědčený postup: Správná velikost virtuálních počítačů
 
@@ -78,9 +78,9 @@ Při nasazování virtuálních počítačů Azure si můžete zvolit z různýc
 
 **Víc se uč:**
 
-- [Další informace](/azure/virtual-machines/windows/sizes) o velikostech mapování na typy a velikosti a typy virtuálních počítačů.
-- [Plánování](/azure/cloud-services/cloud-services-sizes-specs) velikostí virtuálních počítačů
-- [Přehled](/azure/migrate/contoso-migration-assessment) ukázkového hodnocení pro fiktivní společnost Contoso
+- [Další informace](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) o velikostech mapování na typy a velikosti a typy virtuálních počítačů.
+- [Plánování](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs) velikostí virtuálních počítačů
+- [Přehled](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment) ukázkového hodnocení pro fiktivní společnost Contoso
 
 ## <a name="best-practice-select-the-right-storage"></a>Osvědčený postup: Výběr správného úložiště
 
@@ -149,12 +149,12 @@ Azure poskytuje různé typy účtů úložiště a úrovně výkonu.
 **Víc se uč:**
 
 - [Kontrola](https://azure.microsoft.com/pricing/details/storage) ceny za Azure Storage.
-- [Další informace o](/azure/storage/common/storage-import-export-service) Azure Import/Export pro migraci velkého objemu dat v objektech BLOB Azure a soubory.
-- [Porovnání](/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) objekty BLOB, soubory a disku úložiště datové typy.
-- [Další informace](/azure/storage/blobs/storage-blob-storage-tiers) o úrovně přístupu.
-- [Kontrola](/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) různé typy účtů úložiště.
-- Další informace o [redundance úložiště](/azure/storage/common/storage-redundancy), [LRS](/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), a [Přístupem jen pro čtení](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
-- [Další informace](/azure/storage/files/storage-files-introduction) o Azure Files
+- [Další informace o](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export pro migraci velkého objemu dat v objektech BLOB Azure a soubory.
+- [Porovnání](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) objekty BLOB, soubory a disku úložiště datové typy.
+- [Další informace](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) o úrovně přístupu.
+- [Kontrola](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) různé typy účtů úložiště.
+- Další informace o [redundance úložiště](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), a [Přístupem jen pro čtení](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- [Další informace](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) o Azure Files
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Osvědčený postup: Využití výhod zvýhodněného hybridního využití Azure
 
@@ -166,7 +166,7 @@ Integrované portfolio typu místní nebo Azure produktu Microsoft generuje výh
 
 - [Podívejte se na](https://azure.microsoft.com/pricing/hybrid-benefit) Kalkulačka úspor Hybrid Benefit.
 - [Další informace](https://azure.microsoft.com/pricing/hybrid-benefit) o Hybrid Benefit pro Windows Server.
-- [Doprovodné materiály](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) k cenám pro virtuální počítače Azure s SQL Serverem
+- [Doprovodné materiály](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) k cenám pro virtuální počítače Azure s SQL Serverem
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Osvědčený postup: Použití rezervovaných instancí virtuálních počítačů
 
@@ -184,9 +184,9 @@ Pomocí služby Azure Reserved VM instances, si Předplatíte jeden nebo tři ro
 
 **Víc se uč:**
 
-- [Další informace o](/azure/billing/billing-save-compute-costs-reservations) Azure rezervace.
+- [Další informace o](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure rezervace.
 - [Čtení](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq) rezervované instance – nejčastější dotazy.
-- [Doprovodné materiály k cenám](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) pro virtuální počítače Azure s SQL Serverem
+- [Doprovodné materiály k cenám](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) pro virtuální počítače Azure s SQL Serverem
 
 ## <a name="best-practice-aggregate-cloud-spend-across-subscriptions"></a>Osvědčený postup: Agregace výdajů na cloud napříč předplatnými
 
@@ -196,9 +196,9 @@ K tomuto účelu můžete použít Azure Cost Management API. Potom po agregace 
 
 **Víc se uč:**
 
-- [Získejte přehled](/azure/billing/billing-consumption-api-overview) rozhraní Azure Consumption API.
-- [Další informace o](/power-bi/desktop-connect-azure-consumption-insights) připojení k Azure Consumption Insights v Power BI Desktopu.
-- [Zjistěte, jak](/azure/billing/billing-manage-access) spravovat přístup k fakturačních údajů pro Azure pomocí řízení přístupu na základě role (RBAC).
+- [Získejte přehled](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) rozhraní Azure Consumption API.
+- [Další informace o](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) připojení k Azure Consumption Insights v Power BI Desktopu.
+- [Zjistěte, jak](https://docs.microsoft.com/azure/billing/billing-manage-access) spravovat přístup k fakturačních údajů pro Azure pomocí řízení přístupu na základě role (RBAC).
 
 ## <a name="after-migration"></a>Po migraci
 
@@ -241,11 +241,11 @@ Ve službě Cost Management můžete provádět tyto akce:
 
 **Další informace:**
 
-- [Získejte přehled](/azure/cost-management/overview) služby Azure Cost Management.
-- [Zjistěte, jak](/azure/cost-management/cost-mgt-best-practices) optimalizovat vaše cloudové investice ve službě Azure Cost Management.
-- [Zjistěte, jak](/azure/cost-management/use-reports) pomocí sestav Azure Cost Management.
-- [Získejte kurz](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) na optimalizaci nákladů od doporučení.
-- [Přehled](/rest/api/consumption/budgets) rozhraní API služby Azure Consumption
+- [Získejte přehled](https://docs.microsoft.com/azure/cost-management/overview) služby Azure Cost Management.
+- [Zjistěte, jak](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) optimalizovat vaše cloudové investice ve službě Azure Cost Management.
+- [Zjistěte, jak](https://docs.microsoft.com/azure/cost-management/use-reports) pomocí sestav Azure Cost Management.
+- [Získejte kurz](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) na optimalizaci nákladů od doporučení.
+- [Přehled](https://docs.microsoft.com/rest/api/consumption/budgets) rozhraní API služby Azure Consumption
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Osvědčený postup: Monitorování využití prostředků
 
@@ -259,9 +259,9 @@ V Azure platíte za to, co používáte, a to pouze tehdy, když prostředky vyu
 
 **Víc se uč:**
 
-- Získejte přehled o [Azure Monitor](/azure/azure-monitor/overview) a [Azure Advisoru](/azure/advisor/advisor-overview).
-- [Získat](/azure/advisor/advisor-cost-recommendations) nákladů doporučení Advisoru.
-- [Další informace o [optimalizaci nákladů na základě doporučení](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) a [prevenci neočekávaných poplatků](/azure/billing/billing-getting-started)]
+- Získejte přehled o [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) a [Azure Advisoru](https://docs.microsoft.com/azure/advisor/advisor-overview).
+- [Získat](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) nákladů doporučení Advisoru.
+- [Další informace o [optimalizaci nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) a [prevenci neočekávaných poplatků](https://docs.microsoft.com/azure/billing/billing-getting-started)]
 - Další informace o [sadě nástrojů Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Osvědčený postup: Implementace rozpočtů skupin prostředků
@@ -273,8 +273,8 @@ Skupiny prostředků se často používají k vyjádření hranic nákladů. Spo
 
 **Víc se uč:**
 
-- [Zjistěte, jak](/azure/billing/billing-cost-management-budget-scenario) Správa nákladů s rozpočty Azure.
-- [Kurz](/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) vytváření a správy rozpočtu Azure
+- [Zjistěte, jak](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) Správa nákladů s rozpočty Azure.
+- [Kurz](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) vytváření a správy rozpočtu Azure
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Osvědčený postup: Optimalizace uchovávání pomocí služby Azure Monitor
 
@@ -288,7 +288,7 @@ Po přesunu prostředků do Azure a povolení protokolování diagnostiky se gen
 
 **Víc se uč:**
 
-- [Další informace](/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) o monitorování využití a odhadovaných nákladů
+- [Další informace](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) o monitorování využití a odhadovaných nákladů
 
 ## <a name="best-practice-optimize-storage"></a>Osvědčený postup: Optimalizace úložiště
 
@@ -301,8 +301,8 @@ Identifikace a přesunutím zastaralá data do oblastí levnější úložiště
 
 **Víc se uč:**
 
-- [Další informace](/azure/storage/blobs/storage-blob-storage-tiers) o úrovně přístupu.
-- [Přehled](/azure/azure-monitor/overview) řešení StorSimple a [cen řešení StorSimple](https://azure.microsoft.com/pricing/details/storsimple)
+- [Další informace](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) o úrovně přístupu.
+- [Přehled](https://docs.microsoft.com/azure/azure-monitor/overview) řešení StorSimple a [cen řešení StorSimple](https://azure.microsoft.com/pricing/details/storsimple)
 
 ## <a name="best-practice-automate-vm-optimization"></a>Osvědčený postup: Automatizace optimalizace virtuálního počítače
 
@@ -312,10 +312,10 @@ Virtuální počítač můžete optimalizovat pomocí služby Azure Automation, 
 
 **Další informace:**
 
-- [Zjistěte, jak](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) použít vertikální automatické škálování.
+- [Zjistěte, jak](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) použít vertikální automatické škálování.
 - [Plán](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) automatické spuštění virtuálního počítače.
-- [Zjistěte, jak](/azure/automation/automation-solution-vm-management) spuštěním a zastavením virtuálních počítačů mimo špičku ve službě Azure Automation.
-- [Další informace] o [službě Azure Advisor](/azure/advisor/advisor-overview) a [sadě nástrojů Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)
+- [Zjistěte, jak](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) spuštěním a zastavením virtuálních počítačů mimo špičku ve službě Azure Automation.
+- [Další informace] o [službě Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) a [sadě nástrojů Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)
 
 ## <a name="best-practices-use-logic-apps-and-runbooks-with-budgets-api"></a>Osvědčené postupy: Použití služby Logic Apps a runbooků s rozhraní API pro rozpočty
 
@@ -329,8 +329,8 @@ Azure poskytuje rozhraní REST API, které má přístup k fakturačním údajů
 
 **Víc se uč:**
 
-- [Další informace](/rest/api/consumption/budgets) o rozhraní API rozpočtů.
-- [Přehled](/azure/billing/billing-usage-rate-card-overview) využití Azure pomocí rozhraní API pro rozpočty
+- [Další informace](https://docs.microsoft.com/rest/api/consumption/budgets) o rozhraní API rozpočtů.
+- [Přehled](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) využití Azure pomocí rozhraní API pro rozpočty
 
 ## <a name="best-practice-implement-serverless-technologies"></a>Osvědčený postup: Implementace bezserverových technologií
 
@@ -347,5 +347,5 @@ Po migraci a po důkladném přezkoumání těchto typů úloh můžete zvážit
 
 Přečtěte si doporučené postupy:
 
-- [Osvědčené postupy](migrate-best-practices-security-management.md) pro zabezpečení a správu po migraci.
-- [Osvědčené postupy](migrate-best-practices-networking.md) sítě po migraci.
+- [Osvědčené postupy](./migrate-best-practices-security-management.md) pro zabezpečení a správu po migraci.
+- [Osvědčené postupy](./migrate-best-practices-networking.md) sítě po migraci.

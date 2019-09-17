@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829290"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023502"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Shromáždění dat inventáře pro digitální majetek
 
-Vývoj inventáře je prvním krokem při [plánování digitálních nemovitostí](index.md). V tomto procesu se pro pozdější analýzu a racionalizaci shromažďují seznam assetů IT, které podporují konkrétní obchodní funkce. V tomto článku se předpokládá, že pro plánování je nejvhodnější nejdůležitější přístup k analýze. Další informace najdete v tématu [přístupy k plánování digitálního majetku](./approach.md).
+Vývoj inventáře je prvním krokem při [plánování digitálních nemovitostí](./index.md). V tomto procesu se pro pozdější analýzu a racionalizaci shromažďují seznam assetů IT, které podporují konkrétní obchodní funkce. V tomto článku se předpokládá, že pro plánování je nejvhodnější nejdůležitější přístup k analýze. Další informace najdete v tématu [přístupy k plánování digitálního majetku](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Vezměte v úvahu soupis digitálního majetku.
 
@@ -38,4 +38,4 @@ V první iteraci je inventarizace jenom zřídka dokončená. Důrazně doporuč
 Po zkompilování a ověření inventáře je možné ho racionální. Racionalizace inventáře je dalším krokem k plánování digitální nemovitosti.
 
 > [!div class="nextstepaction"]
-> [Racionalizovat digitální nemovitosti](rationalize.md)
+> [Racionalizovat digitální nemovitosti](./rationalize.md)

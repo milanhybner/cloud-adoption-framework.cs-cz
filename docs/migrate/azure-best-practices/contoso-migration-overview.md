@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6af51f1fa6526e2ea7cf13a824c7834d631aa59
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820580"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024955"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Příklady a vzory migrace aplikací
 
@@ -59,49 +59,49 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Posouzení vhodnosti místních prostředků k migraci do Azure](contoso-migration-assessment.md) | Tento článek ukazuje, jak spustit posouzení místní aplikace běžící na VMware. V příkladu vzorová organizace posuzuje virtuální počítače aplikace pomocí služby Azure Migrate a databázi SQL Serveru aplikace pomocí Data Migration Assistanta.
+[Posouzení vhodnosti místních prostředků k migraci do Azure](./contoso-migration-assessment.md) | Tento článek ukazuje, jak spustit posouzení místní aplikace běžící na VMware. V příkladu vzorová organizace posuzuje virtuální počítače aplikace pomocí služby Azure Migrate a databázi SQL Serveru aplikace pomocí Data Migration Assistanta.
 
 ### <a name="infrastructure"></a>Infrastruktura
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Nasazení infrastruktury Azure](contoso-migration-infrastructure.md) | V tomto článku se dozvíte, jak organizace může připravit svoji místní infrastrukturu a infrastrukturu Azure pro migraci. Na příklad infrastruktury zavedený v tomto článku odkazují další ukázky uvedené v této části.
+[Nasazení infrastruktury Azure](./contoso-migration-infrastructure.md) | V tomto článku se dozvíte, jak organizace může připravit svoji místní infrastrukturu a infrastrukturu Azure pro migraci. Na příklad infrastruktury zavedený v tomto článku odkazují další ukázky uvedené v této části.
 
 ### <a name="windows-server-workloads"></a>Úlohy Windows Serveru
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Změna hostitele aplikace na virtuální počítače Azure](contoso-migration-rehost-vm.md) | V tomto článku najdete příklad migrace místních virtuálních počítačů aplikace do virtuálních počítačů Azure pomocí služby Site Recovery.
-[Změna architektury aplikace na kontejnery Azure a služby Azure SQL Database](contoso-migration-rearchitect-container-sql.md) | Tento článek přináší příklad migrace aplikace při změně architektury webové vrstvy aplikace na kontejner Windows spuštěný ve službě Azure Service Fabric a databáze s využitím Azure SQL Database.
+[Změna hostitele aplikace na virtuální počítače Azure](./contoso-migration-rehost-vm.md) | V tomto článku najdete příklad migrace místních virtuálních počítačů aplikace do virtuálních počítačů Azure pomocí služby Site Recovery.
+[Změna architektury aplikace na kontejnery Azure a služby Azure SQL Database](./contoso-migration-rearchitect-container-sql.md) | Tento článek přináší příklad migrace aplikace při změně architektury webové vrstvy aplikace na kontejner Windows spuštěný ve službě Azure Service Fabric a databáze s využitím Azure SQL Database.
 
 ### <a name="linux-workloads"></a>Linuxové úlohy
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Změna hostitele linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL](contoso-migration-rehost-linux-vm-mysql.md) | Tento článek přináší příklad migrace aplikace hostované na Linuxu na virtuální počítače Azure pomocí Site Recovery. Migruje databázi aplikace do služby Azure Database for MySQL pomocí MySQL Workbenche.
-[Změna hostitele linuxové aplikace na virtuální počítače Azure](contoso-migration-rehost-linux-vm.md) | V tomto příkladu se dozvíte, jak pomocí služby Site Recovery provést migraci linuxové aplikace do virtuálních počítačů Azure metodou „lift and shift“.
+[Změna hostitele linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | Tento článek přináší příklad migrace aplikace hostované na Linuxu na virtuální počítače Azure pomocí Site Recovery. Migruje databázi aplikace do služby Azure Database for MySQL pomocí MySQL Workbenche.
+[Změna hostitele linuxové aplikace na virtuální počítače Azure](./contoso-migration-rehost-linux-vm.md) | V tomto příkladu se dozvíte, jak pomocí služby Site Recovery provést migraci linuxové aplikace do virtuálních počítačů Azure metodou „lift and shift“.
 
 ### <a name="sql-server-workloads"></a>Úlohy SQL Serveru
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Změna hostitele aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database](contoso-migration-rehost-vm-sql-managed-instance.md) | V tomto článku najdete příklad migrace do Azure metodou „lift and shift“ pro místní aplikaci. Zahrnuje migraci virtuálního počítače front-endu aplikace pomocí služby [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) a migraci databáze aplikace do spravované instance Azure SQL Database s využitím [Azure Database Migration Service](/azure/dms/dms-overview).
-[Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server](contoso-migration-rehost-vm-sql-ag.md) | Tento příklad ukazuje, jak migrovat aplikaci a data pomocí virtuálních počítačů s SQL Serverem hostovaných v Azure. K migraci virtuálních počítačů aplikace používá Site Recovery a k migraci databáze aplikace do clusteru SQL Server, který je chráněný skupinou dostupnosti Always On, používá službu Azure Database Migration Service.
+[Změna hostitele aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database](./contoso-migration-rehost-vm-sql-managed-instance.md) | V tomto článku najdete příklad migrace do Azure metodou „lift and shift“ pro místní aplikaci. Zahrnuje migraci virtuálního počítače front-endu aplikace pomocí služby [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) a migraci databáze aplikace do spravované instance Azure SQL Database s využitím [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Tento příklad ukazuje, jak migrovat aplikaci a data pomocí virtuálních počítačů s SQL Serverem hostovaných v Azure. K migraci virtuálních počítačů aplikace používá Site Recovery a k migraci databáze aplikace do clusteru SQL Server, který je chráněný skupinou dostupnosti Always On, používá službu Azure Database Migration Service.
 
 ### <a name="aspnet--php--java-apps"></a>Aplikace v ASP.NET/PHP/Javě
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Refaktoring aplikace do webové aplikace Azure a Azure SQL Database](contoso-migration-refactor-web-app-sql.md) | Tento příklad ukazuje, jak migrovat místní aplikaci založenou na Windows do webové aplikace Azure, a databázi aplikace migruje do instance Azure SQL Serveru pomocí Data Migration Assistanta.
-[Refaktoring linuxové aplikace do více oblastí pomocí služeb Azure App Service, Azure Traffic Manager a Azure Database for MySQL](contoso-migration-refactor-linux-app-service-mysql.md) | Tento příklad ukazuje, jak místní linuxovou aplikaci migrovat do webové aplikace Azure ve více oblastech Azure pomocí Azure Traffic Manageru integrovaného s GitHubem pro průběžné doručování. Databáze aplikace se migruje do instance Azure Database for MySQL.
-[Opětovné sestavení aplikace v Azure](contoso-migration-rebuild.md) | Tento článek obsahuje příklad opětovného sestavení místní aplikace pomocí celé řady spravovaných služeb a funkcí Azure, včetně Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services a Azure Cosmos DB.
-[Refaktoring Team Foundation Serveru do sady Azure DevOps Services](contoso-migration-tfs-vsts.md) | Tento článek ukazuje příklad migrace místního nasazení Team Foundation Serveru do Azure DevOps Services v Azure.
+[Refaktoring aplikace do webové aplikace Azure a Azure SQL Database](./contoso-migration-refactor-web-app-sql.md) | Tento příklad ukazuje, jak migrovat místní aplikaci založenou na Windows do webové aplikace Azure, a databázi aplikace migruje do instance Azure SQL Serveru pomocí Data Migration Assistanta.
+[Refaktoring linuxové aplikace do více oblastí pomocí služeb Azure App Service, Azure Traffic Manager a Azure Database for MySQL](./contoso-migration-refactor-linux-app-service-mysql.md) | Tento příklad ukazuje, jak místní linuxovou aplikaci migrovat do webové aplikace Azure ve více oblastech Azure pomocí Azure Traffic Manageru integrovaného s GitHubem pro průběžné doručování. Databáze aplikace se migruje do instance Azure Database for MySQL.
+[Opětovné sestavení aplikace v Azure](./contoso-migration-rebuild.md) | Tento článek obsahuje příklad opětovného sestavení místní aplikace pomocí celé řady spravovaných služeb a funkcí Azure, včetně Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services a Azure Cosmos DB.
+[Refaktoring Team Foundation Serveru do sady Azure DevOps Services](./contoso-migration-tfs-vsts.md) | Tento článek ukazuje příklad migrace místního nasazení Team Foundation Serveru do Azure DevOps Services v Azure.
 
 ### <a name="migration-scaling"></a>Škálování migrace
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Škálování migrace do Azure](contoso-migration-scale.md) | Tento článek popisuje, jak se ukázková organizace připravuje na škálování kompletní migrace do Azure.
+[Škálování migrace do Azure](./contoso-migration-scale.md) | Tento článek popisuje, jak se ukázková organizace připravuje na škálování kompletní migrace do Azure.
 
 ### <a name="demo-apps"></a>Ukázkové aplikace
 

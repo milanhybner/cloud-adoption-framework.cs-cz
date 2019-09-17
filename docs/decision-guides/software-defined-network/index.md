@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817957"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023735"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Průvodce rozhodováním ohledně softwarově definovaných sítí
 
@@ -22,9 +22,9 @@ Softwarově definované sítě představují síťovou architekturu, která umo�
 
 ## <a name="networking-decision-guide"></a>Průvodce rozhodováním ohledně sítí
 
-![Diagram možností sítí od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Diagram možností sítí od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Přejít na: [Jenom PaaS](paas-only.md) | [Model nativní pro cloud](cloud-native.md) | [DMZ v cloudu](cloud-dmz.md) [Hybridní model](hybrid.md) | [Model hvězdicové architektury](hub-spoke.md) | [Další informace](#learn-more)
+Přejít na: [Jenom PaaS](./paas-only.md) | [Model nativní pro cloud](./cloud-native.md) | [DMZ v cloudu](./cloud-dmz.md) [Hybridní model](./hybrid.md) | [Model hvězdicové architektury](./hub-spoke.md) | [Další informace](#learn-more)
 
 Softwarově definované sítě poskytují několik možností s různými úrovněmi cen a složitosti. Ve výše uvedeném průvodci zjišťováním najdete odkaz, na kterém si můžete tyto možnosti rychle přizpůsobit tak, aby co nejlépe vyhovovaly konkrétním obchodním a technologických strategiím.
 
@@ -53,18 +53,18 @@ Při plánování, kterou architekturu virtuálních sítí nebo kombinaci archi
 
 Další informace o hlavních architekturách softwarově definovaných sítí:
 
-- **[Jenom PaaS](paas-only.md):** Většina produktů PaaS (platforma jako služba) podporuje omezenou sadu integrovaných síťových funkcí a k zajištění podpory požadavků úloh nemusí vyžadovat explicitně softwarově definované sítě.
-- **[Model nativní pro cloud](cloud-native.md):** Nativní cloudová architektura podporuje cloudové úlohy prostřednictvím virtuálních sítí využívajících výchozí softwarově definované síťové možnosti cloudové platformy a nezávislých na místních nebo jiných externích prostředcích.
-- **[DMZ v cloudu](cloud-dmz.md):** Podporuje omezené možnosti připojení mezi místními a cloudovými sítěmi. Zabezpečení těchto připojení zajišťuje implementace zóny DMZ, která pečlivě kontroluje provoz mezi těmito dvěma prostředími.
-- **[Hybridní model](hybrid.md):** Architektura hybridních cloudových sítí umožňuje přístup z virtuálních sítí v důvěryhodných cloudových prostředích k místním prostředkům a naopak.
-- **[Hvězdicová architektura](hub-spoke.md):** Hvězdicová architektura umožňuje centrálně spravovat externí připojení a sdílené služby, izolovat jednotlivé úlohy a překonávat případná omezení předplatného.
+- **[Jenom PaaS](./paas-only.md):** Většina produktů PaaS (platforma jako služba) podporuje omezenou sadu integrovaných síťových funkcí a k zajištění podpory požadavků úloh nemusí vyžadovat explicitně softwarově definované sítě.
+- **[Model nativní pro cloud](./cloud-native.md):** Nativní cloudová architektura podporuje cloudové úlohy prostřednictvím virtuálních sítí využívajících výchozí softwarově definované síťové možnosti cloudové platformy a nezávislých na místních nebo jiných externích prostředcích.
+- **[DMZ v cloudu](./cloud-dmz.md):** Podporuje omezené možnosti připojení mezi místními a cloudovými sítěmi. Zabezpečení těchto připojení zajišťuje implementace zóny DMZ, která pečlivě kontroluje provoz mezi těmito dvěma prostředími.
+- **[Hybridní model](./hybrid.md):** Architektura hybridních cloudových sítí umožňuje přístup z virtuálních sítí v důvěryhodných cloudových prostředích k místním prostředkům a naopak.
+- **[Hvězdicová architektura](./hub-spoke.md):** Hvězdicová architektura umožňuje centrálně spravovat externí připojení a sdílené služby, izolovat jednotlivé úlohy a překonávat případná omezení předplatného.
 
 ## <a name="learn-more"></a>Další informace
 
 Další informace o softwarově definovaných sítích v Azure najdete tady:
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). Základní funkce softwarově definovaných sítí v Azure zajišťuje služba Azure Virtual Network, která funguje jako cloudová obdoba fyzických místních sítí. Virtuální sítě fungují také jak výchozí hranice izolace mezi prostředky na platformě.
-- [Osvědčené postupy Azure pro zabezpečení sítě](/azure/security/azure-security-network-security-best-practices). Doporučení od týmu zabezpečení Azure ke konfiguraci virtuálních sítí za účelem minimalizace ohrožení zabezpečení.
+- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). Základní funkce softwarově definovaných sítí v Azure zajišťuje služba Azure Virtual Network, která funguje jako cloudová obdoba fyzických místních sítí. Virtuální sítě fungují také jak výchozí hranice izolace mezi prostředky na platformě.
+- [Osvědčené postupy Azure pro zabezpečení sítě](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Doporučení od týmu zabezpečení Azure ke konfiguraci virtuálních sítí za účelem minimalizace ohrožení zabezpečení.
 
 ## <a name="next-steps"></a>Další kroky
 

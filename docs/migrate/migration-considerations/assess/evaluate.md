@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b6e395839d00130c43e74f1c4071ef55d27a7286
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825702"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024646"
 ---
 # <a name="evaluate-workload-readiness"></a>Vyhodnocení připravenosti úloh
 
@@ -27,16 +27,16 @@ Záměrem tohoto článku není zaznamenat všechny možné vyhodnocovací aktiv
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Běžné aktivity při vyhodnocení infrastruktury
 
-- Požadavky na VMware: [Projděte si požadavky služby Azure Site Recovery, které se týkají VMware](/azure/site-recovery/vmware-physical-azure-support-matrix).
-- Požadavky na Hyper-V: [Projděte si požadavky služby Azure Site Recovery, které se týkají Hyper-V](/azure/site-recovery/hyper-v-azure-support-matrix).
+- Požadavky na VMware: [Projděte si požadavky služby Azure Site Recovery, které se týkají VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
+- Požadavky na Hyper-V: [Projděte si požadavky služby Azure Site Recovery, které se týkají Hyper-V](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
 
 Nezapomeňte zdokumentovat všechny rozdíly v konfiguraci hostitele, v konfiguraci replikovaných virtuálních počítačů, dále požadavky na úložiště a konfiguraci sítě.
 
 ## <a name="common-database-evaluation-activities"></a>Běžné aktivity při vyhodnocení databáze
 
 - Zdokumentujte cíle bodu a doby obnovení u aktuálně nasazené databáze. Použijete je při [aktivitách spojených s návrhem architektury](./architect.md) a pomůžou vám při rozhodování.
-- Zdokumentujte požadavky na konfiguraci vysoké dostupnosti. Pokud potřebujete pomoc pochopit požadavky SQL Serveru, podívejte se do [příručky o vysoce dostupných řešeních SQL Serveru](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Vyhodnocení kompatibility PaaS. [Příručka o migraci dat do Azure](https://datamigration.microsoft.com) mapuje místní databáze na kompatibilní řešení Azure PaaS, například na [Cosmos DB](/azure/cosmos-db) nebo [Azure DB](/azure/sql-database) pro [MySQL](/azure/mysql), [Postgres](/azure/postgresql) nebo [MariaDB](/azure/mariadb).
+- Zdokumentujte požadavky na konfiguraci vysoké dostupnosti. Pokud potřebujete pomoc pochopit požadavky SQL Serveru, podívejte se do [příručky o vysoce dostupných řešeních SQL Serveru](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
+- Vyhodnocení kompatibility PaaS. [Příručka o migraci dat do Azure](https://datamigration.microsoft.com) mapuje místní databáze na kompatibilní řešení Azure PaaS, například na [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) nebo [Azure DB](https://docs.microsoft.com/azure/sql-database) pro [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) nebo [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Pokud je kompatibilita PaaS možná bez nutnosti nápravy, obraťte se na tým zodpovědný za [činnosti týkající se architektury](./architect.md). Migrace PaaS jsou výrazně časově úspornější a snižují celkové náklady na vlastnictví většiny cloudových řešení.
 - Pokud je kompatibilita PaaS sice možná, ale vyžaduje nápravu, obraťte se na týmy zodpovědné za [architektonické aktivity](./architect.md) a [nápravné aktivity](../migrate/remediate.md). V mnoha scénářích, které se týkají databázových řešení, můžou výhody migrací PaaS převážit delší dobu potřebnou k nápravě.
 - U každé migrované databáze zdokumentujte její velikost a četnost změn.

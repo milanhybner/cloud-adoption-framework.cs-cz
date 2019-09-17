@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905614"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022734"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie pro zásady správného řízení nebo dodržování předpisů
 
@@ -27,11 +27,11 @@ Při požadavku na zásady správného řízení nebo dodržování předpisů j
 
 Konfigurace základního prostředí Azure se při integraci požadavků na zásady správného řízení nebo dodržování předpisů může významně změnit. Abyste měli představu o tom, jak se předpoklady změní, je důležité pochopit charakter těchto požadavků. Před zahájením jakékoli migrace, která vyžaduje zásady správného řízení nebo dodržování předpisů, by se měl zvolit některý přístup a implementovat v cloudovém prostředí. Následuje přehled několika přístupů, které se během migrace běžně používají:
 
-**Obecný přístup k zásadám správného řízení:** U většiny organizací představuje [model zásad správného řízení architektury přechodu na cloud](../../governance/journeys/index.md) dostatečný přístup, který sestává z implementace minimálního realizovatelného produktu (MVP) následované cílenými iteracemi vyspělosti zásad správného řízení, které řeší konkrétní rizika identifikovaná v plánu přechodu. Tento přístup poskytuje minimální nástroje potřebné ke stanovení konzistentních zásad správného řízení, aby se tým mohl s těmito nástroji seznámit. Následně se rozšíří na nástroje, které řeší obecné záležitosti zásad správného řízení.
+**Obecný přístup k zásadám správného řízení:** U většiny organizací představuje [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md) dostatečný přístup, který sestává z implementace minimálního realizovatelného produktu (MVP) následované cílenými iteracemi vyspělosti zásad správného řízení, které řeší konkrétní rizika identifikovaná v plánu přechodu. Tento přístup poskytuje minimální nástroje potřebné ke stanovení konzistentních zásad správného řízení, aby se tým mohl s těmito nástroji seznámit. Následně se rozšíří na nástroje, které řeší obecné záležitosti zásad správného řízení.
 
-**Podrobné plány dodržování předpisů ISO 27001:** U zákazníků, kteří musí splňovat standardy dodržování předpisů ISO, mohou [ukázky podrobných plánů sdílených služeb ISO 27001](/azure/governance/blueprints/samples/iso27001-shared/index) sloužit jako efektivnější MVP, které v iterativním procesu dříve poskytují větší omezení zásad správného řízení. [Ukázka App Service Environment/SQL Database ISO 27001](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozšiřuje tento podrobný plán o mapování kontrol a nasazení společné architektury pro prostředí aplikace. Další vydané podrobné plány dodržování předpisů zde budou rovněž zmíněny.
+**Podrobné plány dodržování předpisů ISO 27001:** U zákazníků, kteří musí splňovat standardy dodržování předpisů ISO, mohou [ukázky podrobných plánů sdílených služeb ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) sloužit jako efektivnější MVP, které v iterativním procesu dříve poskytují větší omezení zásad správného řízení. [Ukázka App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozšiřuje tento podrobný plán o mapování kontrol a nasazení společné architektury pro prostředí aplikace. Další vydané podrobné plány dodržování předpisů zde budou rovněž zmíněny.
 
-**Virtuální datové centrum:** Situace může vyžadovat robustnější výchozí bod zásad správného řízení. V takových případech uvažujte o [virtuálním datacentru Azure](https://docs.microsoft.com/azure/architecture/vdc). Tento přístup se během přechodu do cloudu na podnikové úrovni navrhuje běžně, zejména v případech s více než 10 000 prostředky. Je to také faktická volba pro komplexní scénáře zásad správného řízení, kdy se vyžaduje zajištění dodržování předpisů třetích stran ve velkém objemu, hluboké znalosti domén nebo parita s vyspělými zásadami správného řízení IT a požadavky dodržování předpisů.
+**Virtuální datové centrum:** Situace může vyžadovat robustnější výchozí bod zásad správného řízení. V takových případech uvažujte o [virtuálním datacentru Azure](../../reference/vdc.md). Tento přístup se během přechodu do cloudu na podnikové úrovni navrhuje běžně, zejména v případech s více než 10 000 prostředky. Je to také faktická volba pro komplexní scénáře zásad správného řízení, kdy se vyžaduje zajištění dodržování předpisů třetích stran ve velkém objemu, hluboké znalosti domén nebo parita s vyspělými zásadami správného řízení IT a požadavky dodržování předpisů.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Volba partnerství pro dokončení předpokladů
 
@@ -49,19 +49,19 @@ Během posuzování je potřeba učinit další rozhodnutí, aby bylo vše v sou
 
 Požadavky na posouzení zásad správného řízení a dodržování předpisů jsou příliš zákaznicky specifické, takže nelze poskytnout obecné pokyny pro skutečný postup posuzování. Doporučuje se však, aby tento proces obsahoval úkoly a čas na „uvedení do souladu s požadavky na dodržování předpisů a zásady správného řízení“. Další informace o těchto požadavcích najdete pod následujícími odkazy:
 
-Chcete-li lépe porozumět zásadám správného řízení, přečtěte si přehled [Pět disciplín zásad správného řízení v cloudu](/azure/architecture/cloud-adoption/governance/governance-disciplines). Tato část Architektury přechodu na cloud obsahuje také šablony pro dokumentaci zásad, pokynů a požadavků pro každý z těchto pěti oddílů:
+Chcete-li lépe porozumět zásadám správného řízení, přečtěte si přehled [Pět disciplín zásad správného řízení v cloudu](../../govern/governance-disciplines.md). Tato část Architektury přechodu na cloud obsahuje také šablony pro dokumentaci zásad, pokynů a požadavků pro každý z těchto pěti oddílů:
 
-- [Správa nákladů](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [Standardní hodnoty zabezpečení](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [Konzistence prostředků](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [Standardní hodnoty identit](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [Zrychlení nasazení](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [Správa nákladů](../../govern/cost-management/template.md)
+- [Standardní hodnoty zabezpečení](../../govern/security-baseline/template.md)
+- [Konzistence prostředků].. /.. /govern/resource-consistency/template.md)
+- [Směrný plán identity]... /.. /govern/identity-baseline/template.md)
+- [Zrychlení nasazení](../../govern/deployment-acceleration/template.md)
 
-Rady k vytvoření pokynů pro zásady správného řízení na základě modelu zásad správného řízení Architektury přechodu na cloud najdete v článku [Implementace strategie zásad správného řízení v cloudu](/azure/architecture/cloud-adoption/governance/corporate-policy).
+Rady k vytvoření pokynů pro zásady správného řízení na základě modelu zásad správného řízení Architektury přechodu na cloud najdete v článku [Implementace strategie zásad správného řízení v cloudu](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimalizace a zvýšení úrovně změn procesů
 
-Během optimalizace a povýšení se doporučuje, aby si tým zásad správného řízení cloudu vyhradil čas na otestování a ověření souladu se standardy zásad správného řízení a dodržování předpisů. V tomto kroku je také vhodné předat týmu zásad správného řízení cloudu procesy pro výběr šablon, které by u budoucích projektů mohly dále [urychlit nasazení](/azure/architecture/cloud-adoption/governance/deployment-acceleration).
+Během optimalizace a povýšení se doporučuje, aby si tým zásad správného řízení cloudu vyhradil čas na otestování a ověření souladu se standardy zásad správného řízení a dodržování předpisů. V tomto kroku je také vhodné předat týmu zásad správného řízení cloudu procesy pro výběr šablon, které by u budoucích projektů mohly dále [urychlit nasazení](../../govern/deployment-acceleration/index.md).
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Navrhované akce během procesu optimalizace a převedení
 

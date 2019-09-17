@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bd31f07a24a17a50953eff54856118e9b22d054e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0569dd472e3dd85c13bb3872a351d6eec4868e39
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819384"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025181"
 ---
 # <a name="compute-design-decisions"></a>Rozhodnutí o návrhu výpočtů
 
@@ -28,7 +28,7 @@ Pro každou aplikaci nebo službu, kterou nasadíte do cílového prostředí, p
 ![Rozhodovací strom výpočetních služeb Azure](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> Další informace o posouzení výpočetních možností pro jednotlivé aplikace nebo služby najdete v [příručce Aplikační architektura v Azure](/azure/architecture/guide/technology-choices/compute-overview).
+> Další informace o posouzení výpočetních možností pro jednotlivé aplikace nebo služby najdete v [příručce Aplikační architektura v Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).
 
 ### <a name="key-questions"></a>Klíčové otázky
 
@@ -36,11 +36,11 @@ Zodpovězení následujících otázek týkajících se vašich úloh vám pomů
 
 - **Vytváříte nové aplikace a služby, nebo migrujete z existujících místních úloh?** Vývoj nových aplikací v rámci přechodu do cloudu vám umožní plně využít moderní cloudové technologie pro hostování od fáze návrhu dále.
 - **Pokud migrujete existující úlohy, dokážou využít výhod moderních cloudových technologií?** Migrace místních úloh vyžaduje analýzu: Můžete existující aplikace a služby snadno optimalizovat tak, aby využívaly moderní cloudové technologie, nebo bude pro vaše úlohy lepší migrace metodou *lift and shift*?
-- **Dokážou vaše aplikace nebo služby využívat kontejnery?** Pokud jsou vaše aplikace dobrými kandidáty na hostování v kontejnerech, můžete vyžít efektivitu prostředků, škálovatelnost a funkce orchestrace, které nabízí služba [Azure Container Services](https://azure.microsoft.com/product-categories/containers). K trvalém uložení kontejnerizovaných aplikací lze využít služby [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) a [Azure Files](/azure/storage/files/storage-files-introduction).
-- **Jsou vaše aplikace založené na webu nebo rozhraní API a využívají PHP, ASP.NET, Node. js nebo podobné technologie?** Webové aplikace je možné nasadit na spravované instance [Azure App Service](/azure/app-service/overview), takže pro účely hostování nemusíte provozovat virtuální počítače.
-- **Budete potřebovat úplnou kontrolu nad operačním systémem a hostitelským prostředím vaší úlohy?** Pokud potřebujete mít kontrolu nad hostitelským prostředím včetně operačního systému, disků, místně běžícího softwaru a dalších konfigurací, můžete k hostování aplikací a služeb použít službu [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines). Kromě volby velikosti virtuálních počítačů a úrovní výkonu bude mít vaše rozhodnutí týkající se virtuálního diskového úložiště vliv na výkon a smlouvy SLA související s úlohami založenými na infrastruktuře jako službě (IaaS). Další informace najdete v dokumentaci k [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview).
-- **Budou vaše úlohy zahrnovat funkce HPC (High Performance Computing)?** Služba [Azure Batch](/azure/batch/batch-technical-overview) zajišťuje plánování úloh a automatické škálování výpočetních prostředků jako službu platformy, což usnadňuje provozování rozsáhlých paralelních a HPC aplikací v cloudu.
-- **Budou vaše aplikace používat architekturu mikroslužeb?** Aplikace, které používají architekturu založenou na mikroslužbách, mohou využívat několik optimalizovaných výpočetních technologií. Pro soběstačné úlohy řízené událostmi lze pomocí služby [Azure Functions](/azure/azure-functions/functions-overview) vytvořit škálovatelné bezserverové aplikace, které nepotřebují infrastrukturu. Pro aplikace, které vyžadují větší kontrolu nad prostředím, ve kterém běží mikroslužby, můžete použít služby kontejneru, mezi které patří [Azure Container Instances](/azure/container-instances/container-instances-overview), [Azure Kubernetes](/azure/aks/intro-kubernetes) a [Azure Service Fabric](/azure/service-fabric/service-fabric-overview).
+- **Dokážou vaše aplikace nebo služby využívat kontejnery?** Pokud jsou vaše aplikace dobrými kandidáty na hostování v kontejnerech, můžete vyžít efektivitu prostředků, škálovatelnost a funkce orchestrace, které nabízí služba [Azure Container Services](https://azure.microsoft.com/product-categories/containers). K trvalém uložení kontejnerizovaných aplikací lze využít služby [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) a [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
+- **Jsou vaše aplikace založené na webu nebo rozhraní API a využívají PHP, ASP.NET, Node. js nebo podobné technologie?** Webové aplikace je možné nasadit na spravované instance [Azure App Service](https://docs.microsoft.com/azure/app-service/overview), takže pro účely hostování nemusíte provozovat virtuální počítače.
+- **Budete potřebovat úplnou kontrolu nad operačním systémem a hostitelským prostředím vaší úlohy?** Pokud potřebujete mít kontrolu nad hostitelským prostředím včetně operačního systému, disků, místně běžícího softwaru a dalších konfigurací, můžete k hostování aplikací a služeb použít službu [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines). Kromě volby velikosti virtuálních počítačů a úrovní výkonu bude mít vaše rozhodnutí týkající se virtuálního diskového úložiště vliv na výkon a smlouvy SLA související s úlohami založenými na infrastruktuře jako službě (IaaS). Další informace najdete v dokumentaci k [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
+- **Budou vaše úlohy zahrnovat funkce HPC (High Performance Computing)?** Služba [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) zajišťuje plánování úloh a automatické škálování výpočetních prostředků jako službu platformy, což usnadňuje provozování rozsáhlých paralelních a HPC aplikací v cloudu.
+- **Budou vaše aplikace používat architekturu mikroslužeb?** Aplikace, které používají architekturu založenou na mikroslužbách, mohou využívat několik optimalizovaných výpočetních technologií. Pro soběstačné úlohy řízené událostmi lze pomocí služby [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) vytvořit škálovatelné bezserverové aplikace, které nepotřebují infrastrukturu. Pro aplikace, které vyžadují větší kontrolu nad prostředím, ve kterém běží mikroslužby, můžete použít služby kontejneru, mezi které patří [Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview), [Azure Kubernetes](https://docs.microsoft.com/azure/aks/intro-kubernetes) a [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview).
 
 > [!NOTE]
 > Většina výpočetních služeb Azure se používá v kombinaci s Azure Storage. V [pokynech pro rozhodování o úložišti](./storage-guidance.md) najdete informace související s úložištěm.
@@ -79,7 +79,7 @@ Součástí vašeho úsilí o dodržování předpisů může být kontrola nad 
 
 Při přípravě cílového prostředí můžete stanovit kontrolní mechanismy, které omezují, jaké prostředky mohou jednotliví uživatelé nasazovat. Tyto kontrolní mechanismy vám pomohou s řízením nákladů a omezením rizik zabezpečení a zároveň umožní vývojářům a IT týmům nasazovat a konfigurovat prostředky potřebné pro podporu vašich úloh.
 
-Po zjištění a zdokumentování požadavků na cílové prostředí můžete pomocí [Azure Policy](/azure/governance/policy/overview) určit výpočetní prostředky, které uživatelé mohou vytvářet. Kontrolní mechanismy mohou mít formu [povolení nebo zákazu vytváření různých typů výpočetních prostředků](/azure/governance/policy/samples/allowed-resource-types). Uživatele můžete například omezit tak, aby mohli vytvářet jen prostředky Azure App Service nebo Azure Functions. Pomocí zásad můžete také řídit přípustné možnosti při vytváření prostředku, například [omezit, jaké cenové úrovně virtuálních počítačů lze zřídit](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) nebo [povolit jen konkrétní image virtuálních počítačů](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
+Po zjištění a zdokumentování požadavků na cílové prostředí můžete pomocí [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) určit výpočetní prostředky, které uživatelé mohou vytvářet. Kontrolní mechanismy mohou mít formu [povolení nebo zákazu vytváření různých typů výpočetních prostředků](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Uživatele můžete například omezit tak, aby mohli vytvářet jen prostředky Azure App Service nebo Azure Functions. Pomocí zásad můžete také řídit přípustné možnosti při vytváření prostředku, například [omezit, jaké cenové úrovně virtuálních počítačů lze zřídit](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) nebo [povolit jen konkrétní image virtuálních počítačů](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
 
-Zásady mohou být vymezené na prostředky, skupiny prostředků, předplatná a skupiny pro správu. Tyto zásady můžete začlenit do definic [Azure Blueprint](/azure/governance/blueprints/overview) a opakovaně je používat v rámci svého cloudu.
+Zásady mohou být vymezené na prostředky, skupiny prostředků, předplatná a skupiny pro správu. Tyto zásady můžete začlenit do definic [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) a opakovaně je používat v rámci svého cloudu.
 

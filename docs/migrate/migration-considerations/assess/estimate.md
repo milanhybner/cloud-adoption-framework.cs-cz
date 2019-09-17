@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819488"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025437"
 ---
 # <a name="estimate-cloud-costs"></a>Odhad nákladů na cloud
 
@@ -23,7 +23,7 @@ V průběhu migrace může rozhodovací a realizační kroky ovlivňovat několi
 
 Velikost vašich digitálních aktiv má přímý vliv na rozhodnutí týkající se migrace. Náklady na migraci, která zahrnuje méně než 250 virtuálních počítačů, se odhadují snadněji než náklady na migraci s více než 10 000 počítači. Pro první migraci důrazně doporučujeme zvolit menší sadu funkcí. Váš tým se tak bude moct naučit odhadnout náklady na jednoduchou migraci a teprve pak se pokusí odhadnout výdaje na rozsáhlejší a složitější migraci.
 
-Upozorňujeme však, že i migrace malého rozsahu, které zahrnují jednu sadu funkcí, mohou vyžadovat různě velké množství podpůrných prostředků. Pokud migrujete méně než tisíc virtuálních počítačů, pro shromažďování dat o inventáři a odhad nákladů vám pravděpodobně bude stačit nástroj, jako je [Azure Migrate](/azure/migrate/migrate-overview). Další nástroje, které můžete použít pro kalkulaci nákladů, najdete v článku zaměřeném na [výpočet nákladů na digitální aktiva](../../../digital-estate/calculate.md).
+Upozorňujeme však, že i migrace malého rozsahu, které zahrnují jednu sadu funkcí, mohou vyžadovat různě velké množství podpůrných prostředků. Pokud migrujete méně než tisíc virtuálních počítačů, pro shromažďování dat o inventáři a odhad nákladů vám pravděpodobně bude stačit nástroj, jako je [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Další nástroje, které můžete použít pro kalkulaci nákladů, najdete v článku zaměřeném na [výpočet nákladů na digitální aktiva](../../../digital-estate/calculate.md).
 
 Pokud plánujete migraci digitálních aktiv s více než tisícovkou jednotek, odhad nákladů můžete provést tak, že proces rozdělíte do čtyř nebo pěti iterací. V případě rozsáhlejších aktiv nebo pokud potřebujete přesnější odhad, bude situace nejspíš vyžadovat komplexnější přístup, který je popsaný v části [Digitální aktiva](../../../digital-estate/index.md) v dokumentu Architektura přechodu na cloud.
 

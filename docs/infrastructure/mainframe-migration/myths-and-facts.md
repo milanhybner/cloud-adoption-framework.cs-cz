@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a3e1c7cd0003191838f08569b18de4626745745
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 42981c9d3e8a87579033fbd0bd01c912d79c937f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70830993"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024396"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mýty sálového počítače a fakta
 
@@ -46,4 +46,4 @@ Díky porovnání nabízí Azure alternativní platformu, která dokáže poskyt
 ## <a name="next-steps"></a>Další postup
 
 > [!div class="nextstepaction"]
-> [Přepnutí z sálových počítačů do Azure](migration-strategies.md)
+> [Přepnutí z sálových počítačů do Azure](./migration-strategies.md)

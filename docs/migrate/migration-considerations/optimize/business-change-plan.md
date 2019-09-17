@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833398"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025476"
 ---
 # <a name="business-change-plan"></a>Plán obchodních změn
 
@@ -25,7 +25,7 @@ Plány přijetí uživateli se zaměřují na to, jak uživatelé přijímají n
 
 I když se můžou přístupy lišit, jsou ve většině plánů přijetí uživateli přítomné obecné motivy. Tyto motivy jsou obvykle založené na přístupu pomocí řízení rizik a usnadnění, který odpovídá postupnému vylepšování. Easonova matice znázorněná na obrázku níže představuje hnací mechanismy za těmito motivy v rámci spektra typů přijetí.
 
-![Easonova matice týkající se aspektů přijetí uživateli](../../../_images/eason-matrix.jpg)
+![Easonova matice týkající se aspektů přijetí uživateli](../../../_images/migrate/eason-matrix.jpg)
 
 *Easonova matice týkající se typů přijetí uživateli.*
 
@@ -37,8 +37,8 @@ Plán obchodních změn se dívá dál za technickou změnu a předpokládá, ž
 
 **Otázky proti směru toku.** Otázky proti směru toku zkoumají dopady nebo změny, které nastanou před přijetím uživateli:
 
-- Byl očekávaný [obchodní výsledek](../../../business-strategy/business-outcomes/index.md) kvantifikován?
-- Mapuje se obchodní dopad na definované [metriky učení](../../../business-strategy/learning-metrics.md)?
+- Byl očekávaný [obchodní výsledek](../../../strategy/business-outcomes/index.md) kvantifikován?
+- Mapuje se obchodní dopad na definované [metriky učení](../../../strategy/learning-metrics.md)?
 - Které obchodní procesy a týmy využívají výhody tohoto technického řešení?
 - Kdo v podniku může nejlépe poskytnout zkušené uživatele pro testování a zpětnou vazbu?
 - Byli ovlivnění vedoucí pracovníci zapojeni do stanovení priorit a plánování migrace?

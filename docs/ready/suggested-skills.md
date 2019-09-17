@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819150"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025118"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Program připravenosti dovedností během přípravné fáze na cestě k migraci
 
@@ -24,7 +24,7 @@ Během přípravné fáze na cestě k migraci je cílem se připravit na nacház
 V závislosti na motivacích a obchodních výsledcích spojených s přechodem na cloud mohou vedoucí za účelem podpory různých funkcí potřebovat vytvořit nové organizační struktury nebo virtuální týmy. Následující články vám pomohou rozvinout dovednosti, které jsou potřebné k vytvoření struktury těchto týmů v souladu s požadovanými výsledky:
 
 - [Počáteční sladění organizace:](./index.md) Přehled sladění organizace a různých týmových struktur pro podporu konkrétních cílů.
-- [Rozbití sil a poddanství:](../organization/fiefdoms-silos.md) Seznamte se se dvěma běžnými organizačními antivzory a způsoby, jak tým dovést k produktivní spolupráci.
+- [Rozbití sil a poddanství:](../organize/fiefdoms-silos.md) Seznamte se se dvěma běžnými organizačními antivzory a způsoby, jak tým dovést k produktivní spolupráci.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Studijní programy pro připravenost prostředí (techniky)
 

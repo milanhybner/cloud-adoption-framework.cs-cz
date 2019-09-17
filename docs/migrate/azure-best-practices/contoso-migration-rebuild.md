@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821165"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025132"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Opětovné sestavení místní aplikace v Azure
 
@@ -109,7 +109,7 @@ Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje:
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v jednom z předchozích článků. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | [Přečtěte si](contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
+**Infrastruktura Azure** | [Přečtěte si](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
 **Předpoklady pro vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15.5](https://www.visualstudio.com)<br/><br/> Povolené úlohy .NET<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows.
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Správci společnosti Contoso zřídí tyto služby takto:
     ![AKS](./media/contoso-migration-rebuild/aks2.png)
 4. V editoru Visual Studio Code vyberou **Zobrazit** > **Integrovaný terminál** a otevřou integrovaný terminál.
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
-5. V integrovaném terminálu PowerShellu se přihlásí do Azure pomocí příkazu Connect-AzureRmAccount. [Přečtěte si další informace](/powershell/azure/get-started-azureps) o tom, jak začít používat PowerShell.
+5. V integrovaném terminálu PowerShellu se přihlásí do Azure pomocí příkazu Connect-AzureRmAccount. [Přečtěte si další informace](https://docs.microsoft.com/powershell/azure/get-started-azureps) o tom, jak začít používat PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 6. Ověří Azure CLI tak, že spustí příkaz **az login** a postupem podle pokynů provedou ověření pomocí webového prohlížeče. [Přečtěte si další informace](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) o přihlašování pomocí Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 ### <a name="security"></a>Zabezpečení
 
-- Společnost Contoso musí zajistit bezpečnost nových databází. [Další informace](/azure/sql-database/sql-database-security-overview).
+- Společnost Contoso musí zajistit bezpečnost nových databází. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Aplikaci je nutné aktualizovat, aby používala protokol SSL s certifikáty. Instance kontejneru by se měla znovu nasadit, aby reagovala na portu 443.
-- Společnost Contoso by měla zvážit použití služby Key Vault k ochraně důvěrných dat aplikací využívajících Service Fabric. [Další informace](/azure/service-fabric/service-fabric-application-secret-management).
+- Společnost Contoso by měla zvážit použití služby Key Vault k ochraně důvěrných dat aplikací využívajících Service Fabric. [Další informace](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management).
 
 ### <a name="backups-and-disaster-recovery"></a>Zálohování a zotavení po havárii
 
-- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](/azure/sql-database/sql-database-automated-backups).
-- Společnost Contoso by měla zvážit implementaci skupin pro převzetí služeb SQL při selhání a zajistit tak regionální převzetí služeb při selhání databáze. [Další informace](/azure/sql-database/sql-database-geo-replication-overview).
-- Společnost Contoso může použít geografickou replikaci skladové položky ACR Premium. [Další informace](/azure/container-registry/container-registry-geo-replication).
-- Databáze Cosmos DB se zálohuje automaticky. Společnost Contoso může získat [další informace](/azure/cosmos-db/online-backup-and-restore) o tomto procesu.
+- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Společnost Contoso by měla zvážit implementaci skupin pro převzetí služeb SQL při selhání a zajistit tak regionální převzetí služeb při selhání databáze. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
+- Společnost Contoso může použít geografickou replikaci skladové položky ACR Premium. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
+- Databáze Cosmos DB se zálohuje automaticky. Společnost Contoso může získat [další informace](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) o tomto procesu.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
-- Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
+- Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 

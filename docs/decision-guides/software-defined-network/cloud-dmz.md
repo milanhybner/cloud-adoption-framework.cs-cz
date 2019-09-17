@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6dfee69d20afac27c735f2ff77abbadc2816ca26
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828341"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023605"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwarově definované sítě: Cloud DMZ
 
@@ -37,7 +37,7 @@ Nasazení cloudového DMZ zahrnuje tyto předpoklady:
 
 Při hledání implementace virtuální síťové architektury cloudové DMZ by týmy pro přijetí v cloudu měly brát v úvahu následující problémy:
 
-- Propojení místních sítí s cloudovou sítí zvyšuje složitost vašich požadavků na zabezpečení. I když jsou připojení mezi cloudovou sítí a místním prostředím zabezpečená, je stále potřeba zajistit zabezpečení cloudových prostředků. Všechny veřejné IP adresy vytvořené pro přístup ke cloudovým úlohám musí být správně zabezpečené pomocí [veřejné DMZ](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) nebo [Azure firewall](/azure/firewall).
+- Propojení místních sítí s cloudovou sítí zvyšuje složitost vašich požadavků na zabezpečení. I když jsou připojení mezi cloudovou sítí a místním prostředím zabezpečená, je stále potřeba zajistit zabezpečení cloudových prostředků. Všechny veřejné IP adresy vytvořené pro přístup ke cloudovým úlohám musí být správně zabezpečené pomocí [veřejné DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) nebo [Azure firewall](https://docs.microsoft.com/azure/firewall).
 - Architektura cloudu DMZ se běžně používá jako krokování, zatímco připojení je dál zabezpečené a zarovnává se bezpečnostní zásady mezi místními a cloudovou sítí a umožňuje širší přijetí hybridní síťové architektury s plnou škálou. Může se ale vztahovat i na izolovaná nasazení s konkrétními požadavky na zabezpečení, identitu a připojení, které DMZ přístup ke cloudu.
 
 ## <a name="learn-more"></a>Víc se uč

@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825494"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022646"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Srovnávací testování a změna velikosti cloudových prostředků
 
@@ -36,7 +36,7 @@ Během migrace používejte kvalifikované odhady a s určením velikosti experi
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Srovnávací testování a optimalizace pomocí služby Azure Cost Management
 
-Služba [Azure Cost Management](/azure/cost-management/overview), kterou licencuje Cloudyn, pobočka Microsoftu, spravuje útratu v cloudu s transparentností a přesností. Tato služba sleduje, přiděluje a optimalizuje náklady na cloud a provádí srovnávací testy.
+Služba [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview), kterou licencuje Cloudyn, pobočka Microsoftu, spravuje útratu v cloudu s transparentností a přesností. Tato služba sleduje, přiděluje a optimalizuje náklady na cloud a provádí srovnávací testy.
 
 Historická data můžou pomoct spravovat náklady díky analýze využití a nákladů v čase, aby se identifikovaly trendy, které se pak používají k předpovědi budoucích nákladů. Cost Management obsahuje také užitečné sestavy odhadovaných nákladů. Přidělování nákladů spravuje náklady díky analýze nákladů na základě zásad označování. Přidělování nákladů můžete použít také pro metody showback a chargeback. Můžete tak zobrazit využití prostředků a související náklady a ovlivnit chování spotřeby nebo spotřebu účtovat zákazníkům tenanta. Řízení přístupu pomáhá snižovat náklady tím, že zajišťuje, aby uživatelé a týmy měly přístup pouze k datům služby Cost Management, která potřebují. Upozorňování pomáhá snižovat náklady pomocí automatických upozornění na neobvyklé nebo nadměrné výdaje. Upozornění můžou také automaticky informovat ostatní účastníky na anomálie ve výdajích a rizika nadměrných výdajů. Různé sestavy podporují upozornění na základě rozpočtu a prahových hodnot nákladů.
 
@@ -44,7 +44,7 @@ Historická data můžou pomoct spravovat náklady díky analýze využití a n�
 
 Pomocí služby Cost Management můžete určit optimální využití virtuálních počítačů, identifikovat nečinné virtuální počítače nebo odebrat nečinné virtuální počítače a nepřipojené disky. Pomocí informací v sestavách optimalizace velikosti a neefektivity můžete vytvořit plán pro zmenšení nebo odebrání nečinných virtuálních počítačů.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po otestování a optimalizaci úlohy je čas na [přípravu úlohy na povýšení](./ready.md).
 

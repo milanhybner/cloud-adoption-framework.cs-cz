@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906012"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023415"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Začínáme s cestou k migraci do cloudu
 
@@ -70,7 +70,7 @@ Migrace do cloudu se často považují za jeden projekt v širším programu, ab
 
 Cloudová strategie a plánování je metodologie, která se zaměřuje na zarovnání obchodních výsledků, priorit a omezení za účelem vytvoření jasné strategie a plánu migrace. Výsledný plán (nebo nevyřízené položky migrace) popisuje přístup k migraci a modernizaci v rámci portfolia IT, který může zahrnovat celá datacentra, několik úloh nebo různé kolekce infrastruktury, aplikací a dat. Řádná správa portfolia IT v rámci úsilí o implementaci v cloudu vám pomůže vyřídit požadované obchodní výsledky.
 
-![Přehled architektury přechodu na cloud](../_images/cloud-adoption-framework-overview.png)
+![Přehled architektury přechodu na cloud](../_images/caf-overview.png)
 
 **Začínáme:** Zbývající část tohoto článku připravuje čtecí modul na správnou aplikaci cloudové strategie rozhraní pro přijetí do cloudu a metodologie plánování. Popisuje také další zdroje informací a odkazy, které mohou čtenářům usnadnit přístup k úsilí o implementaci cloudu.
 
@@ -80,14 +80,14 @@ Strategii cloudu a metodologie plánování pro cloudový vývoj jsou založené
 
 Jak je znázorněno na obrázku výše, toto rozhraní zarovnává strategická rozhodnutí s malým počtem obsažených procesů, které fungují v iterativním modelu. Jak je popsáno v lineárním dokumentu, každý z následujících procesů se očekává do začátku paralelně s iteracemi cloudové implementace. Odkazy na jednotlivé procesy budou pomoci při definování koncového stavu a způsobů, jak se má ukončit do požadovaného koncového stavu:
 
-- **[Plán](../business-strategy/index.md):** Pokud je technická implementace zarovnána s jasnými obchodními cíli, je mnohem snazší měřit a sjednotit úspěch napříč několika úsilími v oblasti implementace cloudu, bez ohledu na technické rozhodnutí.
+- **[Plán](../strategy/index.md):** Pokud je technická implementace zarovnána s jasnými obchodními cíli, je mnohem snazší měřit a sjednotit úspěch napříč několika úsilími v oblasti implementace cloudu, bez ohledu na technické rozhodnutí.
 - **[Připraveno](../ready/index.md):** Příprava podnikání, jazykové verze, lidí a prostředí pro změny vede k úspěchu v každém úsilí a zrychluje implementaci a změny projektů.
 - **Přechod:** Zajistěte správnou implementaci požadovaných změn napříč IT a obchodními procesy, abyste dosáhli obchodních výsledků.
   - **[Migrace](../migrate/index.md):** Iterativní provádění [metodologie implementace v cloudu](#cloud-implementation) , která se řídí testovaným procesem vyhodnocování, migrace, optimalizace a zabezpečení & pro vytvoření opakovaného procesu pro migraci úloh.
 - **[Provoz](../operating-model/index.md):** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
-  - **[Uspořádání](../organization/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
-  - **[Řízení](../governance/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
-  - **[Správa](../operations/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.
+  - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
+  - **[Řízení](../govern/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
+  - **[Správa](../manage/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.
 
 V rámci této migrace se tato architektura bude používat k řešení nejednoznačnosti, správě změn a seznámení s různými funkčními týmy prostřednictvím realizace obchodních výsledků.
 
@@ -140,6 +140,6 @@ Rozhraní pro přijetí do cloudu je řešením životního cyklu. Je navržený
 >
 > [Migrace](../migrate/index.md)
 >
-> [Jednat](../operations/index.md)
+> [Správa](../manage/index.md)
 >
-> [Bude](../governance/index.md)
+> [Bude](../govern/index.md)

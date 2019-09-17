@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825377"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025419"
 ---
 # <a name="decisions-that-affect-migrations"></a>Rozhodnutí, která ovlivňují migraci
 
@@ -49,7 +49,7 @@ Tato část Architektury přechodu na cloud obsahuje teorii, která čtenářům
 
 ## <a name="effort"></a>Úsilí
 
-Migrační úsilí se může značně lišit v závislosti na velikosti a složitosti zahrnutých úloh. Migrace menší úlohy obsahující několik stovek virtuálních počítačů je taktický proces, který lze implementovat pomocí automatizovaných nástrojů, jako je [Azure Migrate](/azure/migrate/migrate-overview). Naopak migrace velkého podniku s desítkami tisíc úloh vyžaduje vysoce strategický proces a může zahrnovat rozsáhlý refaktoring, opětovné sestavení a nahrazení stávajících aplikací s integrací funkcí PaaS (platforma jako služba) a SaaS (software jako služba). [Identifikace a vyvážení rozsahu](../../expanded-scope/balance-the-portfolio.md) plánovaných migrací je nezbytné.
+Migrační úsilí se může značně lišit v závislosti na velikosti a složitosti zahrnutých úloh. Migrace menší úlohy obsahující několik stovek virtuálních počítačů je taktický proces, který lze implementovat pomocí automatizovaných nástrojů, jako je [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Naopak migrace velkého podniku s desítkami tisíc úloh vyžaduje vysoce strategický proces a může zahrnovat rozsáhlý refaktoring, opětovné sestavení a nahrazení stávajících aplikací s integrací funkcí PaaS (platforma jako služba) a SaaS (software jako služba). [Identifikace a vyvážení rozsahu](../../expanded-scope/balance-the-portfolio.md) plánovaných migrací je nezbytné.
 
 Předtím, než učiníte rozhodnutí, která by mohla mít dlouhodobý vliv na aktuální program migrace, je nezbytné dojít ke shodě u následujících rozhodnutí.
 

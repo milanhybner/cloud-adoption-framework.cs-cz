@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 9264a6c44ecd134dc8e25d68d35015d02d845cca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829875"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024179"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
@@ -111,9 +111,9 @@ Společnost Contoso provede migraci webové a datové vrstvy své aplikace Smart
 
 Služba | Popis | Náklady
 --- | --- | ---
-[Azure Database Migration Service](/azure/dms/dms-overview) | Služba Azure Database Migration Service umožňuje bezproblémovou migraci z více databázových zdrojů na datové platformy Azure s minimální dobou vyřazení z provozu. | Informace o [podporovaných oblastech](/azure/dms/dms-overview#regional-availability) a [cenách služby Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration)
-[Spravovaná instance Azure SQL Database](/azure/sql-database/sql-database-managed-instance) | Spravovaná instance je spravovaná databázová služba, která představuje plně spravovanou instanci SQL Serveru v cloudu Azure. Využívá stejný kód jako nejnovější verze databázového stroje SQL Serveru a nabízí nejnovější funkce, vylepšení výkonu a opravy zabezpečení. | Za používání spravované instance SQL Database v Azure se účtují poplatky podle kapacity. Další informace o [cenách spravované instance](https://azure.microsoft.com/pricing/details/sql-database/managed)
-[Azure Site Recovery](/azure/site-recovery) | Služba Site Recovery orchestruje a spravuje migraci a zotavení po havárii pro virtuální počítače Azure a místní virtuální počítače a fyzické servery. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. Další informace o [poplatcích a cenách za Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery)
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Služba Azure Database Migration Service umožňuje bezproblémovou migraci z více databázových zdrojů na datové platformy Azure s minimální dobou vyřazení z provozu. | Informace o [podporovaných oblastech](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) a [cenách služby Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration)
+[Spravovaná instance Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Spravovaná instance je spravovaná databázová služba, která představuje plně spravovanou instanci SQL Serveru v cloudu Azure. Využívá stejný kód jako nejnovější verze databázového stroje SQL Serveru a nabízí nejnovější funkce, vylepšení výkonu a opravy zabezpečení. | Za používání spravované instance SQL Database v Azure se účtují poplatky podle kapacity. Další informace o [cenách spravované instance](https://azure.microsoft.com/pricing/details/sql-database/managed)
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Služba Site Recovery orchestruje a spravuje migraci a zotavení po havárii pro virtuální počítače Azure a místní virtuální počítače a fyzické servery. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. Další informace o [poplatcích a cenách za Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery)
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -124,10 +124,10 @@ Společnost Contoso a další uživatelé musí v tomto scénáři splňovat ná
 Požadavky | Podrobnosti
 --- | ---
 **Registrace spravované instance verze Preview** | Musíte mít zaregistrovanou omezenou verzi Public Preview spravované instance SQL Database. K [registraci](https://portal.azure.com#create/Microsoft.SQLManagedInstance) potřebujete předplatné Azure. Dokončení registrace může trvat několik dnů, takže se nezapomeňte zaregistrovat před tím, než začnete nasazovat tento scénář.
-**Předplatné Azure** | Při vyhodnocování v prvním článku této série už byste měli mít vytvořené předplatné. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste jeho správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si téma [Správa přístupu ke službě Site Recovery s využitím řízení přístupu na základě role](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](contoso-migration-infrastructure.md).
-**Site Recovery (místní)** | Vaše místní instance vCenter Serveru by měly používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.<br/><br/> Virtuální počítače musí splňovat [požadavky Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Podporované konfigurace [sítě](/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)
-**Database Migration Service** | Pro službu Azure Database Migration Service potřebujete [kompatibilní místní zařízení VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Místní zařízení VPN musíte mít možnost konfigurovat. Zařízení musí mít externí veřejnou IPv4 adresu. Tato adresa nesmí být umístěná za zařízením NAT.<br/><br/> Ujistěte se, že máte přístup k místní databázi SQL Serveru.<br/><br/> Brána Windows Firewall by měla mít přístup ke zdrojovému databázovému stroji. Informace o [konfiguraci brány Windows Firewall pro přístup k databázovému stroji](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)<br/><br/> Pokud je před databázovým počítačem brána firewall, přidejte pravidla, která povolí přístup k databázi a souborům přes port SMB 445.<br/><br/> Přihlašovací údaje použité pro připojení ke zdrojové instanci SQL Serveru a cílové spravované instanci musí být členy role serveru sysadmin.<br/><br/> V místní databázi potřebujete sdílenou síťovou složku, kterou může služba Azure Database Migration Service použít k zálohování zdrojové databáze.<br/><br/> Ujistěte se, že účet služby, ve kterém je spuštěná zdrojová instance SQL Serveru, má pro tuto sdílenou síťovou složku oprávnění k zápisu.<br/><br/> Poznamenejte si uživatele Windows a jeho heslo s oprávněním Úplné řízení ke sdílené síťové složce. Služba Azure Database Migration Service zosobní tyto přihlašovací údaje uživatele za účelem nahrání záložních souborů do kontejneru služby Azure Storage.<br/><br/> V rámci instalace SQL Serveru Express se ve výchozím nastavení protokol TCP/IP nastaví jako **zakázaný**. Nezapomeňte ho povolit.
+**Předplatné Azure** | Při vyhodnocování v prvním článku této série už byste měli mít vytvořené předplatné. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste jeho správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si téma [Správa přístupu ke službě Site Recovery s využitím řízení přístupu na základě role](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
+**Site Recovery (místní)** | Vaše místní instance vCenter Serveru by měly používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.<br/><br/> Virtuální počítače musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Podporované konfigurace [sítě](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)
+**Database Migration Service** | Pro službu Azure Database Migration Service potřebujete [kompatibilní místní zařízení VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Místní zařízení VPN musíte mít možnost konfigurovat. Zařízení musí mít externí veřejnou IPv4 adresu. Tato adresa nesmí být umístěná za zařízením NAT.<br/><br/> Ujistěte se, že máte přístup k místní databázi SQL Serveru.<br/><br/> Brána Windows Firewall by měla mít přístup ke zdrojovému databázovému stroji. Informace o [konfiguraci brány Windows Firewall pro přístup k databázovému stroji](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)<br/><br/> Pokud je před databázovým počítačem brána firewall, přidejte pravidla, která povolí přístup k databázi a souborům přes port SMB 445.<br/><br/> Přihlašovací údaje použité pro připojení ke zdrojové instanci SQL Serveru a cílové spravované instanci musí být členy role serveru sysadmin.<br/><br/> V místní databázi potřebujete sdílenou síťovou složku, kterou může služba Azure Database Migration Service použít k zálohování zdrojové databáze.<br/><br/> Ujistěte se, že účet služby, ve kterém je spuštěná zdrojová instance SQL Serveru, má pro tuto sdílenou síťovou složku oprávnění k zápisu.<br/><br/> Poznamenejte si uživatele Windows a jeho heslo s oprávněním Úplné řízení ke sdílené síťové složce. Služba Azure Database Migration Service zosobní tyto přihlašovací údaje uživatele za účelem nahrání záložních souborů do kontejneru služby Azure Storage.<br/><br/> V rámci instalace SQL Serveru Express se ve výchozím nastavení protokol TCP/IP nastaví jako **zakázaný**. Nezapomeňte ho povolit.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -153,10 +153,10 @@ Společnost Contoso k nastavení spravované instance Azure SQL Database potřeb
 - Po vytvoření spravované instance by společnost Contoso neměla do podsítě přidávat žádné prostředky.
 - K podsíti nesmí být přidružená skupina zabezpečení sítě.
 - Podsíť musí mít tabulku směrování definovanou uživatelem. Jediná přiřazená trasa by měla být internetová trasa dalšího segmentu směrování 0.0.0.0/0.
-- Volitelný vlastní server DNS: Pokud je ve virtuální síti Azure určený vlastní server DNS, musí se na příslušný seznam přidat IP adresa rekurzivního překladače Azure (například 168.63.129.16). Informace o [konfiguraci vlastního serveru DNS pro spravovanou instanci](/azure/sql-database/sql-database-managed-instance-custom-dns)
+- Volitelný vlastní server DNS: Pokud je ve virtuální síti Azure určený vlastní server DNS, musí se na příslušný seznam přidat IP adresa rekurzivního překladače Azure (například 168.63.129.16). Informace o [konfiguraci vlastního serveru DNS pro spravovanou instanci](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)
 - K podsíti nesmí být přidružený žádný koncový bod služby (úložiště ani SQL). Ve virtuální síti by měly být zakázané koncové body služeb.
-- Podsíť musí mít minimálně 16 IP adres. Informace o [nastavení velikosti podsítě spravované instance](/azure/sql-database/sql-database-managed-instance-vnet-configuration)
-- V hybridním prostředí společnosti Contoso se vyžaduje vlastní nastavení DNS. Společnost nakonfiguruje nastavení DNS tak, aby se používal jeden nebo několik serverů Azure DNS společnosti. Další informace o [přizpůsobení DNS](/azure/sql-database/sql-database-managed-instance-custom-dns)
+- Podsíť musí mít minimálně 16 IP adres. Informace o [nastavení velikosti podsítě spravované instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration)
+- V hybridním prostředí společnosti Contoso se vyžaduje vlastní nastavení DNS. Společnost nakonfiguruje nastavení DNS tak, aby se používal jeden nebo několik serverů Azure DNS společnosti. Další informace o [přizpůsobení DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>Nastavení virtuální sítě pro spravovanou instanci
 
@@ -188,10 +188,10 @@ Správci společnosti Contoso nastaví virtuální síť následovně:
 
 **Potřebujete další pomoc?**
 
-- Přehled [spravované instance SQL Database](/azure/sql-database/sql-database-managed-instance)
-- Informace o [vytvoření virtuální sítě pro spravovanou instanci SQL Database](/azure/sql-database/sql-database-managed-instance-vnet-configuration)
-- Informace o [nastavení partnerského vztahu](/azure/virtual-network/virtual-network-manage-peering)
-- Informace o [aktualizaci nastavení DNS služby Azure Active Directory](/azure/active-directory-domain-services/active-directory-ds-getting-started-dns)
+- Přehled [spravované instance SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)
+- Informace o [vytvoření virtuální sítě pro spravovanou instanci SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration)
+- Informace o [nastavení partnerského vztahu](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)
+- Informace o [aktualizaci nastavení DNS služby Azure Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started-dns)
 
 ### <a name="set-up-routing"></a>Nastavení směrování
 
@@ -220,7 +220,7 @@ Společnost Contoso zvažuje tyto faktory:
 
 **Potřebujete další pomoc?**
 
-Informace o [nastavení tras pro spravovanou instanci](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal)
+Informace o [nastavení tras pro spravovanou instanci](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal)
 
 ### <a name="create-a-managed-instance"></a>Vytvoření Managed Instance
 
@@ -240,7 +240,7 @@ Teď můžou správci společnosti Contoso zřídit spravovanou instanci SQL Dat
 
 **Potřebujete další pomoc?**
 
-Informace o [zřízení spravované instance](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal)
+Informace o [zřízení spravované instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal)
 
 ## <a name="step-2-prepare-the-azure-database-migration-service"></a>Krok 2: Příprava služby Azure Database Migration Service
 
@@ -271,8 +271,8 @@ Pak provedou následující kroky:
 
 **Potřebujete další pomoc?**
 
-- Informace o [nastavení služby Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
-- Informace o [vytvoření a používání SAS](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)
+- Informace o [nastavení služby Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
+- Informace o [vytvoření a používání SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)
 
 ## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>Krok 3: Příprava Azure pro službu Site Recovery
 
@@ -284,7 +284,7 @@ Společnost Contoso k nastavení služby Site Recovery pro migraci virtuálního
 
 Správci společnosti Contoso nastaví Site Recovery následujícím způsobem:
 
-1. Vzhledem k tomu, že je virtuální počítač webovým front-endem aplikace SmartHotel360, společnost Contoso provede převzetí služeb při selhání do své stávající produkční sítě (**VNET-PROD-EUS2**) a podsítě (**PROD-FE-EUS2**). Síť a podsíť se nacházejí v primární oblasti Východní USA 2. Společnost Contoso tuto síť nastavila při [nasazování infrastruktury Azure](contoso-migration-infrastructure.md).
+1. Vzhledem k tomu, že je virtuální počítač webovým front-endem aplikace SmartHotel360, společnost Contoso provede převzetí služeb při selhání do své stávající produkční sítě (**VNET-PROD-EUS2**) a podsítě (**PROD-FE-EUS2**). Síť a podsíť se nacházejí v primární oblasti Východní USA 2. Společnost Contoso tuto síť nastavila při [nasazování infrastruktury Azure](./contoso-migration-infrastructure.md).
 2. Vytvoří účet úložiště (**contosovmsacc20180528**). Společnost Contoso použije účet pro obecné účely. Společnost Contoso vybere úložiště úrovně Standard a replikaci do místně redundantního úložiště.
 
     ![Site Recovery – Vytvoření účtu úložiště](media/contoso-migration-rehost-vm-sql-managed-instance/asr-storage.png)
@@ -295,7 +295,7 @@ Správci společnosti Contoso nastaví Site Recovery následujícím způsobem:
 
 **Potřebujete další pomoc?**
 
-Informace o [nastavení Azure pro Site Recovery](/azure/site-recovery/tutorial-prepare-azure)
+Informace o [nastavení Azure pro Site Recovery](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)
 
 ## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>Krok 4: Příprava místního prostředí VMware pro Site Recovery
 
@@ -319,7 +319,7 @@ Správci společnosti Contoso tento účet nastaví pomocí těchto úloh:
 
 **Potřebujete další pomoc?**
 
-Informace o [vytvoření a přiřazení role pro automatické zjišťování](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)
+Informace o [vytvoření a přiřazení role pro automatické zjišťování](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)
 
 ### <a name="prepare-an-account-for-mobility-service-installation"></a>Příprava účtu pro instalaci služby Mobility Service
 
@@ -332,7 +332,7 @@ Na virtuálním počítači, který chce společnost Contoso replikovat, musí b
 
 **Potřebujete další pomoc?**
 
-Informace o [vytvoření účtu pro nabízenou instalaci služby Mobility Service](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)
+Informace o [vytvoření účtu pro nabízenou instalaci služby Mobility Service](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Příprava připojení k virtuálním počítačům Azure po převzetí služeb při selhání
 
@@ -432,8 +432,8 @@ Po nastavení zdroje a cíle správci společnosti Contoso vytvoří zásadu rep
 
 **Potřebujete další pomoc?**
 
-- Podrobný popis těchto kroků najdete v článku [Nastavení zotavení po havárii pro místní virtuální počítače VMware](/azure/site-recovery/vmware-azure-tutorial).
-- K dispozici jsou také podrobné pokyny, které vám pomůžou [nastavit zdrojové prostředí](/azure/site-recovery/vmware-azure-set-up-source), [nasadit konfigurační server](/azure/site-recovery/vmware-azure-deploy-configuration-server) a [nakonfigurovat nastavení replikace](/azure/site-recovery/vmware-azure-set-up-replication).
+- Podrobný popis těchto kroků najdete v článku [Nastavení zotavení po havárii pro místní virtuální počítače VMware](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- K dispozici jsou také podrobné pokyny, které vám pomůžou [nastavit zdrojové prostředí](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [nasadit konfigurační server](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) a [nakonfigurovat nastavení replikace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 
 ### <a name="enable-replication"></a>Povolení replikace
 
@@ -460,7 +460,7 @@ Teď můžou správci společnosti Contoso zahájit replikaci virtuálního poč
 
 **Potřebujete další pomoc?**
 
-Podrobný popis těchto kroků najdete v článku [Povolení replikace](/azure/site-recovery/vmware-azure-enable-replication).
+Podrobný popis těchto kroků najdete v článku [Povolení replikace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-6-migrate-the-database"></a>Krok 6: Migrace databáze
 
@@ -557,9 +557,9 @@ V posledním kroku tohoto procesu migrace správci společnosti Contoso aktualiz
 
 **Potřebujete další pomoc?**
 
-- Informace o [spuštění testovacího převzetí služeb při selhání](/azure/site-recovery/tutorial-dr-drill-azure)
-- Informace o [vytvoření plánu obnovení](/azure/site-recovery/site-recovery-create-recovery-plans)
-- Informace o [převzetí služeb při selhání do Azure](/azure/site-recovery/site-recovery-failover)
+- Informace o [spuštění testovacího převzetí služeb při selhání](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)
+- Informace o [vytvoření plánu obnovení](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)
+- Informace o [převzetí služeb při selhání do Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)
 
 ## <a name="clean-up-after-migration"></a>Vyčištění po migraci
 
@@ -584,24 +584,24 @@ Bezpečnostní tým společnosti Contoso zkontroluje virtuální počítače Azu
 
 - Tým zkontroluje skupiny zabezpečení sítě sloužící k řízení přístupu k virtuálnímu počítači. Skupiny zabezpečení sítě pomáhají zajistit, aby do aplikace přicházel pouze povolený provoz.
 - Bezpečnostní tým společnosti Contoso také zvažuje zabezpečení dat na disku pomocí služeb Azure Disk Encryption a Azure Key Vault.
-- Tým povolí detekci hrozeb ve spravované instanci. Detekce hrozeb při zjištění hrozby odešle bezpečnostnímu týmu nebo do systému oddělení služeb společnosti Contoso upozornění, že se má vytvořit lístek. Další informace o [detekci hrozeb u spravované instance](/azure/sql-database/sql-database-managed-instance-threat-detection)
+- Tým povolí detekci hrozeb ve spravované instanci. Detekce hrozeb při zjištění hrozby odešle bezpečnostnímu týmu nebo do systému oddělení služeb společnosti Contoso upozornění, že se má vytvořit lístek. Další informace o [detekci hrozeb u spravované instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-threat-detection)
 
      ![Zabezpečení spravované instance – Detekce hrozeb](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Další informace o postupech zabezpečení virtuálních počítačů najdete v tématu [Osvědčené postupy zabezpečení pro úlohy IaaS v Azure](/azure/security/azure-security-best-practices-vms).
+Další informace o postupech zabezpečení virtuálních počítačů najdete v tématu [Osvědčené postupy zabezpečení pro úlohy IaaS v Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
 
 ### <a name="bcdr"></a>Provozní kontinuita a zotavení po havárii
 
 V zájmu zajištění provozní kontinuity a zotavení po havárii (BCDR) společnost Contoso provede tyto akce:
 
-- Zabezpečení dat: Společnost Contoso zálohuje data na virtuálních počítačích pomocí služby Azure Backup. [Další informace](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Zajištění nepřetržitého provozu aplikací: Společnost Contoso replikuje virtuální počítače aplikace v Azure do sekundární oblasti pomocí Site Recovery. [Další informace](/azure/site-recovery/azure-to-azure-quickstart).
-- Společnost Contoso se blíže seznamuje se správou spravované instance SQL včetně [zálohování databází](/azure/sql-database/sql-database-automated-backups).
+- Zabezpečení dat: Společnost Contoso zálohuje data na virtuálních počítačích pomocí služby Azure Backup. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Zajištění nepřetržitého provozu aplikací: Společnost Contoso replikuje virtuální počítače aplikace v Azure do sekundární oblasti pomocí Site Recovery. [Další informace](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- Společnost Contoso se blíže seznamuje se správou spravované instance SQL včetně [zálohování databází](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - Společnost Contoso má stávající licenci pro virtuální počítač WEBVM. Aby mohla využít ceny programu Zvýhodněné hybridní využití Azure, společnost Contoso stávající virtuální počítač převede.
-- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Cost Management je multicloudové řešení správy nákladů, které společnosti Contoso pomáhá využívat a spravovat Azure a další cloudové prostředky. Další informace o službě [Azure Cost Management](/azure/cost-management/overview)
+- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Cost Management je multicloudové řešení správy nákladů, které společnosti Contoso pomáhá využívat a spravovat Azure a další cloudové prostředky. Další informace o službě [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview)
 
 ## <a name="conclusion"></a>Závěr
 

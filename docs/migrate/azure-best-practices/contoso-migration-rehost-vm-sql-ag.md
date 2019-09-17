@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 32a24f51a44c088331ea47a65a5d71e3d02cedf4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820333"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024336"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Změna hostitele místní aplikace na virtuální počítače Azure a skupinu dostupnosti AlwaysOn pro SQL Server
 
@@ -97,7 +97,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 **Služba** | **Popis** | **Náklady**
 --- | --- | ---
 [Pomocník s migrací dat](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA se spouští místně z místního počítače s SQL Serverem a migruje databáze přes síť site-to-site VPN do Azure. | Nástroj DMA je zdarma ke stažení.
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery orchestruje a spravuje migraci a zotavení po havárii pro virtuální počítače Azure a místní virtuální počítače a fyzické servery. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. [Další informace](https://azure.microsoft.com/pricing/details/site-recovery) o poplatcích a cenách
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery orchestruje a spravuje migraci a zotavení po havárii pro virtuální počítače Azure a místní virtuální počítače a fyzické servery. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. [Další informace](https://azure.microsoft.com/pricing/details/site-recovery) o poplatcích a cenách
 
 ## <a name="migration-process"></a>Proces migrace
 
@@ -122,9 +122,9 @@ Tady je seznam toho, co společnost Contoso musí udělat k realizaci tohoto sc�
 
 **Požadavky** | **Podrobnosti**
 --- | ---
-**Předplatné Azure** | Společnost Contoso již vytvořila předplatné v dřívějším článku této série. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | [Přečtěte si víc](contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.<br/><br/> Přečtěte si další informace o konkrétních požadavcích na [síť](/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) pro Site Recovery.
-**Site Recovery (místní)** | Místní server vCenter by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.<br/><br/> Virtuální počítače musí splňovat [požadavky Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Podporované konfigurace [sítě](/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)<br/><br/> Virtuální počítače, které chcete replikovat, musí splňovat [požadavky Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
+**Předplatné Azure** | Společnost Contoso již vytvořila předplatné v dřívějším článku této série. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.<br/><br/> Přečtěte si další informace o konkrétních požadavcích na [síť](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) pro Site Recovery.
+**Site Recovery (místní)** | Místní server vCenter by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.<br/><br/> Virtuální počítače musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Podporované konfigurace [sítě](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)<br/><br/> Virtuální počítače, které chcete replikovat, musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -175,8 +175,8 @@ Správci společnosti Contoso nastaví cluster následujícím způsobem:
 
 **Potřebujete další pomoc?**
 
-- [Pomoc](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) se zřizováním virtuálního počítače s SQL Serverem
-- [Informace](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) o konfiguraci virtuálních počítačů pro různé skladové položky SQL Serveru
+- [Pomoc](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) se zřizováním virtuálního počítače s SQL Serverem
+- [Informace](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) o konfiguraci virtuálních počítačů pro různé skladové položky SQL Serveru
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>Krok 2: Nasazení a nastavení clusteru
 
@@ -246,8 +246,8 @@ Když jsou skupiny dostupnosti AlwaysOn povolené, společnost Contoso může na
 
 **Potřebujete další pomoc?**
 
-- [Informace](/windows-server/failover-clustering/deploy-cloud-witness) o disku s kopií cloudu a nastavení účtu úložiště pro něj
-- [Pokyny](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) k nastavení clusteru a vytvoření skupiny dostupnosti
+- [Informace](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) o disku s kopií cloudu a nastavení účtu úložiště pro něj
+- [Pokyny](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) k nastavení clusteru a vytvoření skupiny dostupnosti
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>Krok 3: Nasazení nástroje Azure Load Balancer
 
@@ -305,8 +305,8 @@ Pravidlo vytvoří následujícím způsobem:
 
 **Potřebujete další pomoc?**
 
-- [Přehled](/azure/load-balancer/load-balancer-overview) nástroje Azure Load Balancer
-- [Informace](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) o vytvoření nástroje pro vyrovnávání zatížení
+- [Přehled](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) nástroje Azure Load Balancer
+- [Informace](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) o vytvoření nástroje pro vyrovnávání zatížení
 
 ## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>Krok 4: Příprava Azure pro službu Site Recovery
 
@@ -318,7 +318,7 @@ Contoso potřebuje k nasazení Site Recovery tyto komponenty Azure:
 
 Správci společnosti Contoso je nastaví následujícím způsobem:
 
-1. Společnost Contoso už vytvořila síť nebo podsíť, kterou může použít pro Site Recovery, když [nasazovala infrastrukturu Azure](contoso-migration-rehost-vm-sql-ag.md).
+1. Společnost Contoso už vytvořila síť nebo podsíť, kterou může použít pro Site Recovery, když [nasazovala infrastrukturu Azure](./contoso-migration-rehost-vm-sql-ag.md).
 
     - Aplikace SmartHotel360 je produkční aplikace a virtuální počítač WEBVM se bude migrovat do produkční sítě Azure (VNET-PROD-EUS2) v primární oblasti Východní USA 2.
     - Virtuální počítač WEBVM se umístí do skupiny prostředků ContosoRG, která se používá pro produkční prostředky, a do produkční podsítě (PROD-FE-EUS2).
@@ -336,7 +336,7 @@ Správci společnosti Contoso je nastaví následujícím způsobem:
 
 **Potřebujete další pomoc?**
 
-[Informace](/azure/site-recovery/tutorial-prepare-azure) o nastavení Azure pro Site Recovery.
+[Informace](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) o nastavení Azure pro Site Recovery.
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Krok 5: Příprava místního prostředí VMware pro Site Recovery
 
@@ -390,8 +390,8 @@ Kromě toho musejí při spuštění převzetí služeb při selhání zkontrolo
 
 **Potřebujete další pomoc?**
 
-- [Informace](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) o vytváření a přiřazování rolí pro automatické zjišťování
-- [Informace](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) o vytvoření účtu pro nabízenou instalaci služby Mobility
+- [Informace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) o vytváření a přiřazování rolí pro automatické zjišťování
+- [Informace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) o vytvoření účtu pro nabízenou instalaci služby Mobility
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Krok 6: Replikace místních virtuálních počítačů do Azure pomocí Site Recovery
 
@@ -497,9 +497,9 @@ Teď můžou správci společnosti Contoso zahájit replikaci virtuálního poč
 
 **Potřebujete další pomoc?**
 
-- Podrobný popis všech těchto kroků najdete v článku [Nastavení zotavení po havárii pro místní virtuální počítače VMware](/azure/site-recovery/vmware-azure-tutorial).
-- K dispozici jsou také podrobné pokyny, které vám pomůžou [nastavit zdrojové prostředí](/azure/site-recovery/vmware-azure-set-up-source), [nasadit konfigurační server](/azure/site-recovery/vmware-azure-deploy-configuration-server) a [nakonfigurovat nastavení replikace](/azure/site-recovery/vmware-azure-set-up-replication).
-- Můžete si přečíst další informace o [povolení replikace](/azure/site-recovery/vmware-azure-enable-replication).
+- Podrobný popis všech těchto kroků najdete v článku [Nastavení zotavení po havárii pro místní virtuální počítače VMware](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- K dispozici jsou také podrobné pokyny, které vám pomůžou [nastavit zdrojové prostředí](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [nasadit konfigurační server](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) a [nakonfigurovat nastavení replikace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Můžete si přečíst další informace o [povolení replikace](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>Krok 7: Instalace nástroje Data Migration Assistant (DMA)
 
@@ -577,9 +577,9 @@ Vše je nastavené a společnost Contoso teď má v Azure funkční skupinu dost
 
 **Potřebujete další pomoc?**
 
-- Informace o vytvoření [skupiny dostupnosti](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) a [naslouchacího procesu](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)
-- Ruční [nastavení clusteru pro používání IP adresy nástroje pro vyrovnávání zatížení](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)
-- [Další informace](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) o vytvoření a používání SAS
+- Informace o vytvoření [skupiny dostupnosti](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) a [naslouchacího procesu](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)
+- Ruční [nastavení clusteru pro používání IP adresy nástroje pro vyrovnávání zatížení](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)
+- [Další informace](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) o vytvoření a používání SAS
 
 ## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Krok 8: Migrace virtuálního počítače pomocí Site Recovery
 
@@ -631,9 +631,9 @@ V posledním kroku tohoto procesu migrace správci společnosti Contoso aktualiz
 
 **Potřebujete další pomoc?**
 
-- [Informace](/azure/site-recovery/tutorial-dr-drill-azure) o spuštění testovacího převzetí služeb při selhání
-- [Informace](/azure/site-recovery/site-recovery-create-recovery-plans) o vytvoření plánu obnovení
-- [Informace](/azure/site-recovery/site-recovery-failover) o převzetí služeb při selhání do Azure
+- [Informace](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) o spuštění testovacího převzetí služeb při selhání
+- [Informace](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) o vytvoření plánu obnovení
+- [Informace](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) o převzetí služeb při selhání do Azure
 
 ## <a name="clean-up-after-migration"></a>Vyčištění po migraci
 
@@ -659,20 +659,20 @@ Bezpečnostní tým společnosti Contoso zkontroluje virtuální počítače Azu
 - Tým zváží zabezpečení dat na disku pomocí služeb Azure Disk Encryption a Key Vault.
 - Tým by měl vyhodnotit transparentní šifrování dat a pak ho povolit v databázi SmartHotel360 běžící v nové skupině dostupnosti SQL. [Další informace](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-[Další informace](/azure/security/azure-security-best-practices-vms) o postupech zabezpečení pro virtuální počítače
+[Další informace](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) o postupech zabezpečení pro virtuální počítače
 
 ## <a name="bcdr"></a>BCDR
 
  V zájmu zajištění provozní kontinuity a zotavení po havárii (BCDR) společnost Contoso provede tyto akce:
 
-- Zabezpečení dat: Společnost Contoso zálohuje data na virtuálních počítačích WEBVM, SQLAOG1 a SQLAOG2 pomocí služby Azure Backup. [Další informace](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Společnost Contoso se také naučí, jak pomocí služby Azure Storage zálohovat SQL Server přímo do úložiště objektů blob. [Další informace](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
-- Zajištění nepřetržitého provozu aplikací: Společnost Contoso replikuje virtuální počítače aplikace v Azure do sekundární oblasti pomocí Site Recovery. [Další informace](/azure/site-recovery/azure-to-azure-quickstart).
+- Zabezpečení dat: Společnost Contoso zálohuje data na virtuálních počítačích WEBVM, SQLAOG1 a SQLAOG2 pomocí služby Azure Backup. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Společnost Contoso se také naučí, jak pomocí služby Azure Storage zálohovat SQL Server přímo do úložiště objektů blob. [Další informace](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
+- Zajištění nepřetržitého provozu aplikací: Společnost Contoso replikuje virtuální počítače aplikace v Azure do sekundární oblasti pomocí Site Recovery. [Další informace](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 1. Společnost Contoso má stávající licence pro virtuální počítač WEBVM a bude využívat Zvýhodněné hybridní využití Azure. Společnost Contoso převede stávající virtuální počítače Azure, aby mohla tyto ceny využít.
-2. Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](/azure/cost-management/overview) o službě Azure Cost Management
+2. Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

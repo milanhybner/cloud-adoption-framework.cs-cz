@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833554"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024728"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Program připravenosti dovedností během migrační fáze na cestě k migraci
 
@@ -23,16 +23,16 @@ Během migrační fáze jakékoli cesty k migraci existují čtyři samostatné 
 
 ## <a name="prerequisites-skilling-resources"></a>Materiály předpokladů dovedností
 
-Implementace migračních procesů bude založena na dovednostech získaných během fází [plánování](../../business-strategy/suggested-skills.md) a [připravenosti](../../organization/suggested-skills.md) na cestě k migraci.
+Implementace migračních procesů bude založena na dovednostech získaných během fází [plánování](../../strategy/suggested-skills.md) a [připravenosti](../../organize/suggested-skills.md) na cestě k migraci.
 
 ## <a name="assess-skilling-resources"></a>Vyhodnocení materiálů s dovednostmi
 
 Následující nástroje mohou týmu pomoci při provádění aktivit vyhodnocení:
 
 - [Vyvážení portfolia](./balance-the-portfolio.md): Zajistěte rovnováhu a správné rozdělení investic v rámci portfolia aplikací.
-- [Vytvoření obchodního odůvodnění](../../business-strategy/cloud-migration-business-case.md): Vytvořte a pochopte obchodní odůvodnění, které řídí snahu o migraci do cloudu.
+- [Vytvoření obchodního odůvodnění](../../strategy/cloud-migration-business-case.md): Vytvořte a pochopte obchodní odůvodnění, které řídí snahu o migraci do cloudu.
 - [Racionalizace digitálních aktiv](../../digital-estate/rationalize.md): Racionalizujte prostředky v digitálních aktivech.
-- [Vyhodnocení portfolia aplikací](/learn/modules/app-and-infra-migration-and-modernization): Kritéria pro rozhodování týkající se možností migrace nebo inovace v rámci portfolia aplikací
+- [Vyhodnocení portfolia aplikací](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Kritéria pro rozhodování týkající se možností migrace nebo inovace v rámci portfolia aplikací
 - [Posuzování a plánování migrace do Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): Kurz PluralSight, který pomůže s vyhodnocením místních úloh
 
 Během procesů vyhodnocování budou architekti vyzváni k vytvoření řešení pro jednotlivé úlohy. Následující materiály týkající se dovedností pomohou architekty na tyto úkoly připravit:
@@ -45,7 +45,7 @@ Během procesů vyhodnocování budou architekti vyzváni k vytvoření řešen�
 
 Následující kurz může připravit tým na aktivity migrace:
 
-- [Migrace do Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure): Migrace virtuálních počítačů do Azure pomocí Azure Site Recovery
+- [Migrace do Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): Migrace virtuálních počítačů do Azure pomocí Azure Site Recovery
 - [Změna hostitele úloh na Azure](https://aka.ms/rehostcourse): Kurz PluralSight, který diváky naučí změnit hostitele úloh na Azure
 - [Migrace fyzických a virtuálních serverů do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): Kurz PluralSight pro migraci serverů do Azure
 - [Import a export dat do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): Kurz PluralSight týkající se přesunu dat do Azure a z Azure
@@ -63,7 +63,7 @@ Následující nástroje mohou týmu pomáhat při hledání způsobů zabezpeč
 
 - [Zabezpečení a správa úloh v Azure](../azure-best-practices/migrate-best-practices-security-management.md): Osvědčené postupy pro zabezpečení a správu úloh v Azure
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Vraťte se ke [kontrolnímu seznamu pro rozšířený rozsah](./index.md) a ověřte si, že vaše metoda migrace plně vyhovuje.
 

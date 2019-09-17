@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c3d25b0a4e421b2fa8ea5e88f6385a91721713ca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819592"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022855"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrovat do Azure
 
@@ -48,9 +48,9 @@ Když vytvoříte virtuální sítě jako součást migrace, je důležité napl
 
 **Víc se uč:**
 
-- [Získejte přehled](/azure/virtual-network/virtual-networks-overview) virtuálních sítí Azure.
-- [Čtení](/azure/virtual-network/virtual-networks-faq) sítě – nejčastější dotazy.
-- [Přečtěte si](/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) o omezeních sítí.
+- [Získejte přehled](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) virtuálních sítí Azure.
+- [Čtení](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) sítě – nejčastější dotazy.
+- [Přečtěte si](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) o omezeních sítí.
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Osvědčený postup: Implementace hvězdicové topologie sítě
 
@@ -72,9 +72,9 @@ Zvažte použití těchto zdrojů:
 
 **Víc se uč:**
 
-- [Přečtěte si informace o](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) hvězdicové topologii.
-- Získejte doporučení pro síť pro provoz Azure [Windows](/azure/architecture/reference-architectures/n-tier/windows-vm) a [Linux](/azure/architecture/reference-architectures/n-tier/linux-vm) virtuálních počítačů.
-- [Přečtěte si](/azure/virtual-network/virtual-network-peering-overview) o peeringu virtuálních sítí.
+- [Přečtěte si informace o](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) hvězdicové topologii.
+- Získejte doporučení pro síť pro provoz Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) a [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) virtuálních počítačů.
+- [Přečtěte si](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) o peeringu virtuálních sítí.
 
 ## <a name="best-practice-design-subnets"></a>Osvědčený postup: Návrh podsítí
 
@@ -99,8 +99,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Virtuální počítače databáze
 
 **Víc se uč:**
 
-- [Přečtěte si](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) o navrhování podsítí.
-- [Zjistěte](/azure/migrate/contoso-migration-infrastructure), jak fiktivní společnost (Contoso) připravila svoji síťovou infrastrukturu pro migraci.
+- [Přečtěte si](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) o navrhování podsítí.
+- [Zjistěte](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure), jak fiktivní společnost (Contoso) připravila svoji síťovou infrastrukturu pro migraci.
 
 ## <a name="best-practice-set-up-a-dns-server"></a>Osvědčený postup: Nastavení serveru DNS
 
@@ -119,8 +119,8 @@ Když nasadíte virtuální síť, Azure ve výchozím nastavení přidá server
 
 **Víc se uč:**
 
-- [Další informace o](/azure/migrate/contoso-migration-infrastructure) překlad názvů při použití vlastního serveru DNS.
-- [Přečtěte si](/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) o pravidlech a omezeních pro pojmenování DNS.
+- [Další informace o](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) překlad názvů při použití vlastního serveru DNS.
+- [Přečtěte si](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) o pravidlech a omezeních pro pojmenování DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Osvědčený postup: Nastavení zón dostupnosti
 
@@ -143,7 +143,7 @@ Zóny dostupnosti zvyšují vysokou dostupnost a chrání vaše aplikace a data 
 
 **Víc se uč:**
 
-- [Získejte přehled](/azure/availability-zones/az-overview) zón dostupnosti.
+- [Získejte přehled](https://docs.microsoft.com/azure/availability-zones/az-overview) zón dostupnosti.
 
 ## <a name="design-hybrid-cloud-networking"></a>Návrh hybridní cloudové sítě
 
@@ -154,7 +154,7 @@ Pro úspěšnou migraci je velmi důležité pro připojení k Azure v místním
 
 **Víc se uč:**
 
-- [Přečtěte si](/azure/architecture/reference-architectures/hybrid-networking/vpn) další informace o hybridních cloudových sítích.
+- [Přečtěte si](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) další informace o hybridních cloudových sítích.
 
 ## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Osvědčený postup: Implementace vysoce dostupného site-to-site VPN
 
@@ -186,13 +186,13 @@ Při nastavování site-to-site VPN:
 
 **Víc se uč:**
 
-- [Kontrola](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibilní s místními zařízeními VPN.
-- [Získejte přehled](/azure/vpn-gateway/vpn-gateway-about-vpngateways) bran VPN.
-- [Další informace o](/azure/vpn-gateway/vpn-gateway-highlyavailable) vysoce dostupných připojení VPN.
-- [Další informace o](/azure/vpn-gateway/vpn-gateway-plan-design) plánování a navrhování bránu VPN.
-- [Kontrola](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) nastavení služby VPN gateway.
-- [Kontrola](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) SKU brány.
-- [Přečtěte si](/azure/vpn-gateway/vpn-gateway-bgp-overview) o nastavení protokolu BGP s branami Azure VPN.
+- [Kontrola](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibilní s místními zařízeními VPN.
+- [Získejte přehled](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) bran VPN.
+- [Další informace o](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable) vysoce dostupných připojení VPN.
+- [Další informace o](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design) plánování a navrhování bránu VPN.
+- [Kontrola](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) nastavení služby VPN gateway.
+- [Kontrola](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) SKU brány.
+- [Přečtěte si](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview) o nastavení protokolu BGP s branami Azure VPN.
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Osvědčený postup: Konfigurace brány pro brány VPN
 
@@ -216,7 +216,7 @@ Pro více připojení VPN je Azure Virtual WAN síťová služba poskytující o
 - Azure WAN integrovaný řídicí panel poskytuje okamžitý přehled o řešení problémů, které šetří čas a poskytují snadný způsob, jak sledovat ve velkém měřítku připojení site-to-site.
 
 **Další informace:** 
-[Přečtěte si](/azure/virtual-wan/virtual-wan-about) o Azure Virtual WAN.
+[Přečtěte si](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) o Azure Virtual WAN.
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Osvědčený postup: Implementace ExpressRoute pro klíčová připojení
 
@@ -232,8 +232,8 @@ Nasazení připojení ExpressRoute obvykle zahrnuje angažování poskytovatel s
 
 **Další informace:**
 
-- [Přečtěte si přehled](/azure/expressroute/expressroute-introduction) ExpressRoute.
-- [Přečtěte si](/azure/expressroute/expressroute-erdirect-about) o ExpressRoute Direct.
+- [Přečtěte si přehled](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) ExpressRoute.
+- [Přečtěte si](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) o ExpressRoute Direct.
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Osvědčený postup: Optimalizace směrování ExpressRoute s využitím komunit BGP
 
@@ -276,7 +276,7 @@ Abyste optimalizovali směrování pro uživatele obou poboček, musíte vědět
 
 **Další informace:**
 
-- [Přečtěte si](/azure/expressroute/expressroute-optimize-routing) o optimalizaci směrování.
+- [Přečtěte si](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) o optimalizaci směrování.
 
 ## <a name="securing-vnets"></a>Zabezpečení virtuálních sítí
 
@@ -284,8 +284,8 @@ Zodpovědnost za zabezpečení virtuálních sítí je sdílená mezi Microsofte
 
 **Další informace:**
 
-- [Získejte přehled](/azure/security/azure-security-network-security-best-practices) osvědčených postupů pro zabezpečení sítě.
-- [Zjistěte](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security), jak navrhovat zabezpečené sítě.
+- [Získejte přehled](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) osvědčených postupů pro zabezpečení sítě.
+- [Zjistěte](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security), jak navrhovat zabezpečené sítě.
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Osvědčený postup: Implementace hraniční sítě Azure
 
@@ -306,7 +306,7 @@ Následující obrázek znázorňuje příklad hraniční síti jedinou podsít�
 
 **Víc se uč:**
 
-- [Přečtěte si](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o nasazení hraniční sítě mezi Azure a vaším místním datacentrem.
+- [Přečtěte si](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o nasazení hraniční sítě mezi Azure a vaším místním datacentrem.
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Osvědčený postup: Filtrování provozu virtuálních sítí pomocí skupin zabezpečení sítě
 
@@ -346,8 +346,8 @@ Značky služeb vyžadují ruční práce z pravidla přiřazení do skupin slu�
 
 **Víc se uč:**
 
-- [Přečtěte si informace o](/azure/virtual-network/security-overview) skupin zabezpečení sítě.
-- [Podívejte se](/azure/virtual-network/security-overview#service-tags) na značky služby, které jsou k dispozici pro skupiny zabezpečení sítě.
+- [Přečtěte si informace o](https://docs.microsoft.com/azure/virtual-network/security-overview) skupin zabezpečení sítě.
+- [Podívejte se](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) na značky služby, které jsou k dispozici pro skupiny zabezpečení sítě.
 
 ## <a name="best-practice-use-application-security-groups"></a>Osvědčený postup: Použití skupin zabezpečení aplikace
 
@@ -386,7 +386,7 @@ Allow-Database-BusinessLogic | Povoluje provoz ze skupiny zabezpečení aplikace
 
 **Víc se uč:**
 
-- [Přečtěte si](/azure/virtual-network/security-overview#application-security-groups) o skupinách zabezpečení aplikace.
+- [Přečtěte si](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) o skupinách zabezpečení aplikace.
 
 ### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Osvědčený postup: Zabezpečení přístupu k PaaS pomocí koncových bodů služby virtuální sítě
 
@@ -401,7 +401,7 @@ Koncové body služby virtuální sítě rozšiřují privátní adresní prosto
 
 **Víc se uč:**
 
-- [Přečtěte si](/azure/virtual-network/virtual-network-service-endpoints-overview) o koncových bodech služby virtuální sítě.
+- [Přečtěte si](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) o koncových bodech služby virtuální sítě.
 
 ## <a name="best-practice-control-public-ip-addresses"></a>Osvědčený postup: Řízení veřejných IP adres
 
@@ -417,8 +417,8 @@ Veřejné IP adresy v Azure je možné přidružit k virtuálním počítačům,
 
 **Víc se uč:**
 
-- [Další informace o](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) veřejné IP adresy v Azure.
-- [Přečtěte si další informace](/azure/security-center/security-center-just-in-time) o přístupu k virtuálnímu počítači podle potřeby v Azure Security Center.
+- [Další informace o](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) veřejné IP adresy v Azure.
+- [Přečtěte si další informace](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) o přístupu k virtuálnímu počítači podle potřeby v Azure Security Center.
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Využití funkcí zabezpečení Azure pro sítě
 
@@ -441,8 +441,8 @@ Azure Firewall je spravovaná cloudová služba síťového zabezpečení, kter�
 
 **Víc se uč:**
 
-- [Získejte přehled](/azure/firewall/overview) ze Brána Firewall služby Azure.
-- [Přečtěte si](/azure/firewall/fqdn-tags) o značkách plně kvalifikovaného názvu domény.
+- [Získejte přehled](https://docs.microsoft.com/azure/firewall/overview) ze Brána Firewall služby Azure.
+- [Přečtěte si](https://docs.microsoft.com/azure/firewall/fqdn-tags) o značkách plně kvalifikovaného názvu domény.
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Osvědčený postup: Nasazení Firewallu webových aplikací (WAF)
 
@@ -459,8 +459,8 @@ Firewall webových aplikací (WAF) je funkce služby Azure Application Gateway.
 
 **Víc se uč:**
 
-- [Další informace o](/azure/application-gateway/waf-overview) WAF.
-- [Podívejte se](/azure/application-gateway/application-gateway-waf-configuration) na omezení a vyloučení WAF.
+- [Další informace o](https://docs.microsoft.com/azure/application-gateway/waf-overview) WAF.
+- [Podívejte se](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) na omezení a vyloučení WAF.
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>Osvědčený postup: Implementace Azure Network Watcheru
 
@@ -478,8 +478,8 @@ Azure Network Watcher poskytuje nástroje pro monitorování prostředků a komu
 
 **Víc se uč:**
 
-- [Získejte přehled](/azure/network-watcher) služby Network Watcher.
-- [Další informace](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) protokoly toků NSG.
+- [Získejte přehled](https://docs.microsoft.com/azure/network-watcher) služby Network Watcher.
+- [Další informace](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) protokoly toků NSG.
 
 ## <a name="use-partner-tools-in-the-azure-marketplace"></a>Použití nástrojů partnerů na webu Azure Marketplace
 
@@ -510,11 +510,11 @@ Doporučujeme používat jednu sadu Azure brány firewall (nebo síťová virtu�
 
 **Víc se uč:**
 
-- [Další informace o](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) pomocí síťových virtuálních zařízení ve virtuální síti Azure.
+- [Další informace o](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) pomocí síťových virtuálních zařízení ve virtuální síti Azure.
 
 ## <a name="next-steps"></a>Další postup
 
 Přečtěte si doporučené postupy:
 
-- [Osvědčené postupy](migrate-best-practices-security-management.md) pro zabezpečení a správu po migraci.
-- [Osvědčené postupy](migrate-best-practices-costs.md) cost Management po migraci.
+- [Osvědčené postupy](./migrate-best-practices-security-management.md) pro zabezpečení a správu po migraci.
+- [Osvědčené postupy](./migrate-best-practices-costs.md) cost Management po migraci.

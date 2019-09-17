@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833736"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022271"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
 
@@ -44,7 +44,7 @@ Pokud se rozhodnete, že nepotřebujete racionalizaci digitální nemovitosti, d
 
 V předchozím článku [plán přijetí do cloudu a Azure DevOps](./template.md)jste v Azure DevOps vytvořili plán pro přijetí do cloudu.
 
-Nyní můžete reprezentovat úlohy ve sílu 10 seznamu v plánu přijetí v cloudu. Nejjednodušší způsob, jak to provést, je hromadné úpravy v Microsoft Excelu. Informace o přípravě pracovní stanice pro hromadnou úpravu najdete v tématu [hromadné přidání nebo úprava pracovních položek pomocí aplikace Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Nyní můžete reprezentovat úlohy ve sílu 10 seznamu v plánu přijetí v cloudu. Nejjednodušší způsob, jak to provést, je hromadné úpravy v Microsoft Excelu. Informace o přípravě pracovní stanice pro hromadnou úpravu najdete v tématu [hromadné přidání nebo úprava pracovních položek pomocí aplikace Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 Krok 5 v tomto článku vám ukáže, jak vybrat **Vstupní seznam**. Místo toho vyberte **seznam dotazů**. Pak v rozevíracím seznamu **Vybrat dotaz** vyberte dotaz **šablony úlohy** . Tento dotaz načte všechny úsilí související s migrací jedné úlohy do tabulky.
 
@@ -103,7 +103,7 @@ Na základě sestavených dat by tým cloudové strategie a tým pro přijetí v
 
 Po kontrole by měly být oba týmy pohodlné s potvrzením výsledných priorit. Tato sada dokumentovaných, ověřených a potvrzených priorit je nevyřízené položky pro přijetí do cloudu s určenou prioritou.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pro všechny úlohy v nevyřízených položkách pro přijetí do cloudu, je teď tým připravený na [Zarovnání prostředků](./assets.md).
 

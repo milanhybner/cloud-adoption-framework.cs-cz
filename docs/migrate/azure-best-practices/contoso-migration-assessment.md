@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 021dccdbabc7d2c51b26e98b7bc6380f3a2aa8d3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821074"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025023"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Posouzení místních úloh pro migraci do Azure
 
@@ -24,7 +24,7 @@ Tento článek ukazuje, jak fiktivní společnost Contoso posuzuje místní apli
 
 Společnost Contoso zvažuje migraci do Azure a potřebuje tak technické a finanční posouzení k určení, jestli jsou její místní úlohy vhodnými kandidáty pro migraci do cloudu. Konkrétně chce tým společnosti Contoso posoudit kompatibilitu počítačů a databází s migrací. Chce odhadnout kapacitu a náklady, které bude provoz prostředků společnosti Contoso v Azure vyžadovat.
 
-Společnost Contoso začne tím, že posoudí dvě ze svých místních aplikací uvedené v následující tabulce, na kterých se lépe seznámí s příslušnými technologiemi. Společnost provede posouzení pro scénáře migrace, při kterých se změní hostitel aplikací a aplikace se refaktorují pro migraci. Další informace o změně hostitele a refaktorování najdete v [přehledu příkladů migrace](contoso-migration-overview.md).
+Společnost Contoso začne tím, že posoudí dvě ze svých místních aplikací uvedené v následující tabulce, na kterých se lépe seznámí s příslušnými technologiemi. Společnost provede posouzení pro scénáře migrace, při kterých se změní hostitel aplikací a aplikace se refaktorují pro migraci. Další informace o změně hostitele a refaktorování najdete v [přehledu příkladů migrace](./contoso-migration-overview.md).
 
 <!-- markdownlint-disable MD033 -->
 
@@ -74,8 +74,8 @@ Společnost Contoso k posouzení migrace použije nástroje Microsoftu. Tyto ná
 Technologie | Popis | Náklady
 --- | --- | ---
 [Pomocník s migrací dat](/sql/dma/dma-overview?view=ssdt-18vs2017) | Společnost Contoso využije nástroj Data Migration Assistant k vyhodnocení a detekci problémů s kompatibilitou, které můžou ovlivnit fungování databází v Azure. Data Migration Assistant vyhodnotí paritu funkcí mezi zdroji a cíli SQL. Doporučí vylepšení z hlediska výkonu a spolehlivosti. | Nástroj Data Migration Assistant je zdarma ke stažení.
-[Azure Migrate](/azure/migrate/migrate-overview) | Společnost Contoso využije službu Azure Migrate k posouzení svých virtuálních počítačů VMware. Azure Migrate posoudí vhodnost těchto počítačů k migraci. Poskytne odhad velikostí a nákladů při jejich provozu v Azure. | Od května 2018 je služba Azure Migrate bezplatná.
-[Mapa služeb](/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate využívá Service Map k zobrazení závislostí mezi počítači, které chce společnost migrovat. | Service Map je součástí protokolů služby Azure Monitor. V současné době může společnost Contoso využívat Service Map po dobu 180 dnů bez poplatků.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Společnost Contoso využije službu Azure Migrate k posouzení svých virtuálních počítačů VMware. Azure Migrate posoudí vhodnost těchto počítačů k migraci. Poskytne odhad velikostí a nákladů při jejich provozu v Azure. | Od května 2018 je služba Azure Migrate bezplatná.
+[Mapa služeb](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate využívá Service Map k zobrazení závislostí mezi počítači, které chce společnost migrovat. | Service Map je součástí protokolů služby Azure Monitor. V současné době může společnost Contoso využívat Service Map po dobu 180 dnů bez poplatků.
 
 V tomto scénáři společnost Contoso stáhne a spustí nástroj Data Migration Assistant a provede posouzení místní databáze SQL Serveru pro svou cestovní aplikaci. Pomocí služby Azure Migrate a mapování závislostí společnost Contoso posoudí virtuální počítače aplikace před jejich migrací do Azure.
 
@@ -110,8 +110,8 @@ Společnost Contoso a další uživatelé musí splňovat následující požada
 - Alespoň dva místní virtuální počítače VMware, na jednom z nichž běží databáze SQL Serveru.
 - Oprávnění k instalaci agentů Azure Migrate na všech virtuálních počítačích
 - Virtuální počítače by měly mít přímé připojení k internetu.
-  - Internetový přístup můžete omezit na [požadované adresy URL](/azure/migrate/concepts-collector).
-  - Pokud vaše virtuální počítače nemají připojení k internetu, je potřeba na ně nainstalovat [bránu Azure Log Analytics](/azure/azure-monitor/platform/gateway) a směrovat přes ni provoz agentů.
+  - Internetový přístup můžete omezit na [požadované adresy URL](https://docs.microsoft.com/azure/migrate/concepts-collector).
+  - Pokud vaše virtuální počítače nemají připojení k internetu, je potřeba na ně nainstalovat [bránu Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/gateway) a směrovat přes ni provoz agentů.
 - Plně kvalifikovaný název domény virtuálního počítače, na kterém je spuštěná instance SQL Serveru, pro účely posouzení databáze.
 - Brána Windows Firewall na virtuálním počítači s SQL Serverem by měla umožňovat externí připojení na portu TCP 1433 (výchozí nastavení). Toto nastavení umožní připojení nástroje Data Migration Assistant.
 
@@ -218,7 +218,7 @@ Společnost Contoso importováním souboru ve formátu .ova zkontroluje, že má
 
 ### <a name="verify-ports"></a>Ověření portů
 
-Posouzení společnosti Contoso využívá mapování závislostí. Mapování závislostí vyžaduje, aby na virtuálních počítačích, které se budou posuzovat, byl nainstalovaný agent. Agent se na jednotlivých virtuálních počítačích musí být schopný připojit k Azure z portu TCP 443. Informace o [požadavcích na připojení](/azure/log-analytics/log-analytics-concept-hybrid)
+Posouzení společnosti Contoso využívá mapování závislostí. Mapování závislostí vyžaduje, aby na virtuálních počítačích, které se budou posuzovat, byl nainstalovaný agent. Agent se na jednotlivých virtuálních počítačích musí být schopný připojit k Azure z portu TCP 443. Informace o [požadavcích na připojení](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid)
 
 ## <a name="step-4-discover-vms"></a>Krok 4: Vyhledání virtuálních počítačů
 
@@ -279,7 +279,7 @@ Před nasazením virtuálního počítače společnost Contoso zkontroluje, jest
     **Příklad:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Vygenerovaná hodnota hash by měla odpovídat hodnotám hash uvedeným v části [Ověření zabezpečení](/azure/migrate/tutorial-assess-vmware#verify-security) v kurzu [Posouzení virtuálních počítačů VMware pro migraci](/azure/migrate/tutorial-assess-vmware).
+3. Vygenerovaná hodnota hash by měla odpovídat hodnotám hash uvedeným v části [Ověření zabezpečení](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) v kurzu [Posouzení virtuálních počítačů VMware pro migraci](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
 
 ### <a name="create-the-collector-appliance"></a>Vytvoření zařízení kolektoru
 
@@ -449,7 +449,7 @@ Společnost Contoso teď může ověřit závislosti počítačů a vytvořit sk
 
 2. Společnost Contoso zobrazí posouzení výběrem možností **Správa** > **Posouzení**.
 
-Společnost Contoso používá výchozí nastavení posouzení, ale toto [nastavení si můžete upravit](/azure/migrate/how-to-modify-assessment).
+Společnost Contoso používá výchozí nastavení posouzení, ale toto [nastavení si můžete upravit](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 
 ### <a name="analyze-the-vm-assessment"></a>Analýza posouzení virtuálních počítačů
 
@@ -517,6 +517,6 @@ Toto zobrazení informuje o celkových nákladech na výpočetní kapacitu a úl
 
 V tomto scénáři společnost Contoso pomocí nástroje Data Migration Assistant posoudila databázi své aplikace SmartHotel360. Pomocí služby Azure Migrate posoudila místní virtuální počítače. Společnost Contoso zkontrolovala posouzení, aby se ujistila, že jsou místní prostředky připravené na migraci do Azure.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Po posouzení této úlohy jako potenciálního kandidáta na migraci může společnost Contoso začít připravovat místní infrastrukturu a infrastrukturu Azure na migraci. Příklad toho, jak společnost Contoso provádí tyto procesy, najdete v článku o [nasazení infrastruktury Azure](contoso-migration-infrastructure.md) v části s osvědčenými postupy pro architekturu přechodu na cloud věnované migraci.
+Po posouzení této úlohy jako potenciálního kandidáta na migraci může společnost Contoso začít připravovat místní infrastrukturu a infrastrukturu Azure na migraci. Příklad toho, jak společnost Contoso provádí tyto procesy, najdete v článku o [nasazení infrastruktury Azure](./contoso-migration-infrastructure.md) v části s osvědčenými postupy pro architekturu přechodu na cloud věnované migraci.

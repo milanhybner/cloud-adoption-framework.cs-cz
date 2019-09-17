@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829238"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023448"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Povolit úspěch napříč jakoukoli cestou k přijetí cloudu
 
@@ -22,12 +22,12 @@ Rozhraní pro přijetí Microsoft Cloud pro Azure je k dispozici jako bezplatný
 
 V rámci této architektury je povolený klíčový motiv. Následující kontrolní seznam obsahuje řadu témat, která by měla být vložena do jakéhokoli úsilí o přijetí do cloudu, aby bylo zajištěno úspěch cesty v rámci očí i firmy:
 
-- **Rozhraní** Stanovení jasných [obchodních výsledků](../business-strategy/business-outcomes/index.md), definovaného [plánu digitální nemovitosti](../digital-estate/index.md)a dobře pochopitelného [přijímání](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)nevyřízených položek.
+- **Rozhraní** Stanovení jasných [obchodních výsledků](../strategy/business-outcomes/index.md), definovaného [plánu digitální nemovitosti](../digital-estate/index.md)a dobře pochopitelného [přijímání](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)nevyřízených položek.
 - **K** Zajistěte připravenost pracovníků prostřednictvím [dovedností a studijních plánů](../ready/technical-skills.md).
 - **Jednat** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
-  - **[Uspořádání](../organization/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
-  - **Bude** Přiřaďte správné [obory zásad správného řízení](../governance/index.md) , aby se konzistentně vyrovnaly řízení nákladů, zmírnění rizik, dodržování předpisů a standardních hodnot zabezpečení v rámci veškerého přijetí cloudu.
-  - **Správa:** Probíhající [operace](../operations/index.md) portfolia IT, aby se minimalizovala přerušení podnikových procesů a zajistila se stabilita IT portfolia.
+  - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
+  - **Bude** Přiřaďte správné [obory zásad správného řízení](../govern/index.md) , aby se konzistentně vyrovnaly řízení nákladů, zmírnění rizik, dodržování předpisů a standardních hodnot zabezpečení v rámci veškerého přijetí cloudu.
+  - **Správa:** Průběžná [provozní Správa](../manage/index.md) portfolia IT, aby se minimalizovala přerušení podnikových procesů a zajistila se stabilita IT portfolia.
   - **Pracovníky** Zarovnejte správné [partnerství a možnosti podpory](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Další nástroje
@@ -38,7 +38,7 @@ Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata,
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
@@ -155,7 +155,7 @@ Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata,
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V ozbrojených seznámcích s tím, že je v cloudu pro přijetí aspektů důležité, pravděpodobnost úspěchu při [migraci](./migrate.md) nebo [inovacích](./innovate.md) bude mnohem vyšší.
 

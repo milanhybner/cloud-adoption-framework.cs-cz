@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fc992a4c00a1acd99481d6090563ecef38c5fedb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70832306"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025099"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services
 
@@ -47,7 +47,7 @@ Tým společnosti Contoso pro přechod na cloud přesně specifikoval cíle tét
 - Sada TFS se bude migrovat do Azure DevOps Services.
 - V současné době má společnost Contoso jednu kolekci TFS s názvem `ContosoDev`, která se bude migrovat do organizace sady Azure DevOps Services s názvem `contosodevmigration.visualstudio.com`.
 - Do Azure DevOps Services se budou migrovat projekty, pracovní položky, chyby a iterace z loňského roku.
-- Společnost Contoso využije službu Azure Active Directory, kterou nastavila při [nasazení infrastruktury Azure](contoso-migration-infrastructure.md) na začátku plánování migrace.
+- Společnost Contoso využije službu Azure Active Directory, kterou nastavila při [nasazení infrastruktury Azure](./contoso-migration-infrastructure.md) na začátku plánování migrace.
 
 ![Architektura scénáře](./media/contoso-migration-tfs-vsts/architecture.png)
 
@@ -71,8 +71,8 @@ Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 
 **Požadavky** | **Podrobnosti**
 --- | ---
-**Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](contoso-migration-infrastructure.md).
+**Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 **Místní server TFS** | Je třeba, aby místní server používal TFS 2018 Upgrade 2, nebo aby byl v rámci tohoto procesu upgradován.
 
 ## <a name="scenario-steps"></a>Kroky scénáře
@@ -95,15 +95,15 @@ Contoso dokončí migraci tímto způsobem:
 
 **Potřebujete další pomoc?**
 
-- [Seznámení se službou Azure Storage](/azure/storage/common/storage-introduction)
-- [Vytvoření účtu úložiště](/azure/storage/common/storage-create-storage-account)
+- [Seznámení se službou Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)
+- [Vytvoření účtu úložiště](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
 
 ## <a name="step-2-upgrade-tfs"></a>Krok 2: Upgrade TFS
 
 Správce společnosti Contoso upgraduje server TFS na TFS 2018 Update 2. Než začne:
 
 - Stáhne [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads).
-- Ověří [požadavky na hardware](/tfs/server/requirements) a pročte si [poznámky k verzi](/visualstudio/releasenotes/tfs2018-relnotes) a [možná úskalí upgradu](/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Ověří [požadavky na hardware](https://docs.microsoft.com/tfs/server/requirements) a pročte si [poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) a [možná úskalí upgradu](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Upgrade provede takto:
 
@@ -128,7 +128,7 @@ Upgrade provede takto:
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> Některé upgrady TFS musí po dokončení upgradu spustit Průvodce konfigurací funkcí. [Další informace](/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
+> Některé upgrady TFS musí po dokončení upgradu spustit Průvodce konfigurací funkcí. [Další informace](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
 
 **Potřebujete další pomoc?**
 
@@ -464,13 +464,13 @@ Po dokončení migrace chce společnost Contoso přesunout správu zdrojového k
 
 **Potřebujete další pomoc?**
 
-[Další informace](/azure/devops/repos/git/import-from-TFVC?view=vsts) o importu z TFVC
+[Další informace](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) o importu z TFVC
 
 ## <a name="clean-up-after-migration"></a>Vyčištění po migraci
 
 Po dokončení migrace společnost Contoso musí provést toto:
 
-- Přečíst si článek o tom, co je třeba provést [po importu](/azure/devops/articles/migration-post-import?view=vsts). Tento článek obsahuje informace o dalších aktivitách importu.
+- Přečíst si článek o tom, co je třeba provést [po importu](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts). Tento článek obsahuje informace o dalších aktivitách importu.
 - Odstranit úložiště TFVC, nebo je umístit do režimu jen pro čtení. Základy kódu se nesmí používat, ale lze do nich nahlížet kvůli historii.
 
 ## <a name="post-migration-training"></a>Školení po migraci

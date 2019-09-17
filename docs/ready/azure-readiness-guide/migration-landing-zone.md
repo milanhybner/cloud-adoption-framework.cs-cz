@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819462"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025210"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 
@@ -33,7 +33,7 @@ Na následujícím obrázku je znázorněn podrobný plán cílové zóny migrac
 ![Sladění podrobného plánu](../../_images/ready/blueprint-overview.png)
 
 - Písmeno A je umístěné uvnitř křivky, která označuje rozsah tohoto podrobného plánu. Tento rozsah má vyjadřovat, že tento podrobný plán pokrývá omezenou složitost architektury, ale je založený na relativně průměrných požadavcích na dodržování předpisů.
-- Zákazníkům, kteří mají vysoký stupeň složitosti a přísné požadavky na dodržování předpisů, může lépe vyhovovat rozšířený podrobný plán partnera nebo jeden ze [vzorových podrobných plánů založených na standardech](/azure/governance/blueprints/samples/).
+- Zákazníkům, kteří mají vysoký stupeň složitosti a přísné požadavky na dodržování předpisů, může lépe vyhovovat rozšířený podrobný plán partnera nebo jeden ze [vzorových podrobných plánů založených na standardech](https://docs.microsoft.com/azure/governance/blueprints/samples/).
 - Většina požadavků zákazníků spadá někam mezi tyto dva extrémy. Písmeno B představuje proces popsaný v článcích o [aspektech cílových zón](../considerations/index.md). Pro zákazníky v této oblasti můžete použít průvodce rozhodováním obsažené v těchto článcích k identifikaci uzlů, které se mají přidat do podrobného plánu cílové zóny migrace architektury přechodu na cloud. Tento přístup umožňuje přizpůsobit podrobný plán vašim potřebám.
 
 ## <a name="use-this-blueprint"></a>Použití tohoto podrobného plánu
@@ -67,7 +67,7 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 |Skupiny prostředků|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../considerations/scaling-subscriptions.md)         |
 |Data|Není k dispozici|[Výběr správné varianty SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Storage|Není k dispozici|[Pokyny k Azure Storage](../considerations/storage-guidance.md)         |
-|Standardy pojmenování a označování|Není k dispozici|[Osvědčené postupy pojmenování a označování](../considerations/name-and-tag.md)         |
+|Standardy pojmenování a označování|Není k dispozici|[Osvědčené postupy pojmenování a označování](../considerations/naming-and-tagging.md)         |
 |Správa nákladů|Není k dispozici|[Sledování nákladů](../azure-best-practices/track-costs.md)|
 |Compute|Není k dispozici|[Možnosti služby Compute](../considerations/compute-decisions.md)|
 
@@ -79,7 +79,7 @@ Ukázky podrobných plánů jsou k dispozici také na portálu. Podrobnosti o na
 
 Pokyny k přizpůsobení, které by se měly provést v tomto podrobném plánu nebo v výsledné cílové zóně, najdete v článcích o [aspektech cílových zón](../considerations/index.md).
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Po nasazení cílové zóny migrace budete připravení migrovat úlohy do Azure.
 Pokyny k nástrojům a procesům, které jsou potřeba k migraci první úlohy, najdete v [Průvodci migrací do Azure](../../migrate/azure-migration-guide/index.md).

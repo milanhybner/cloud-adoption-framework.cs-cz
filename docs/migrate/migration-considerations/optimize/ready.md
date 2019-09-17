@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825481"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022631"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Příprava migrované aplikace pro produkční prostředí
 
@@ -21,7 +21,7 @@ Jakmile zvýšíte úroveň sady funkcí, provoz generovaný jejími uživateli 
 
 ## <a name="validate-the-business-change-plan"></a>Ověření plánu obchodních změn
 
-Transformace probíhá ve chvíli, kdy firemní uživatelé nebo zákazníci využívají technické řešení, které zjednodušuje procesy, díky kterým se zvyšuje obchodní úspěch organizace. Fáze posouzení připravenosti představuje vhodnou příležitost pro ověření [plánu obchodních změn](business-change-plan.md) a zajištění důkladného školení obchodních a technických týmů, kterých se změnách budou podílet. Je potřeba splnit především následující body související s technologickou stránkou plánu změn:
+Transformace probíhá ve chvíli, kdy firemní uživatelé nebo zákazníci využívají technické řešení, které zjednodušuje procesy, díky kterým se zvyšuje obchodní úspěch organizace. Fáze posouzení připravenosti představuje vhodnou příležitost pro ověření [plánu obchodních změn](./business-change-plan.md) a zajištění důkladného školení obchodních a technických týmů, kterých se změnách budou podílet. Je potřeba splnit především následující body související s technologickou stránkou plánu změn:
 
 - Je nutné dokončit (nebo alespoň naplánovat) školení koncových uživatelů.
 - Uživatelé musí mít informace o všech schválených výpadcích.

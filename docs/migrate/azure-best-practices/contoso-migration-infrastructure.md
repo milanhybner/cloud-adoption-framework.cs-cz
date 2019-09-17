@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d8328560830fe817cb4691632b6c0e38f55d9953
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906409"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024342"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury pro migraci
 
@@ -41,9 +41,9 @@ Než společnost Contoso provede migraci do Azure, je zásadně důležité při
 Než se začneme zabývat infrastrukturou, možná byste si rádi přečetli pár základních informací o možnostech Azure, o kterých se v tomto článku zmiňujeme:
 
 - K dispozici je několik možností, jak zakoupit přístup k Azure, včetně průběžných plateb, smluv Enterprise (EA), otevřených licencí od prodejců Microsoftu nebo od partnerů Microsoftu označovaných jako poskytovatelé cloudových řešení (CSP). Seznamte se s [možnostmi nákupu](https://azure.microsoft.com/pricing/purchase-options) a přečtěte si, [jak jsou uspořádaná předplatná Azure](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
-- Podívejte se na přehled [správy identit a přístupu](https://www.microsoft.com/trustcenter/security/identity) v Azure. Konkrétně se můžete seznámit s [Azure AD a rozšířením místní služby Active Directory do cloudu](/azure/active-directory/identity-fundamentals). Můžete si stáhnout užitečnou elektronickou knihu o [správě identit a přístupu (IAM) v hybridním prostředí](https://azure.microsoft.com/resources/hybrid-cloud-identity).
-- Azure poskytuje robustní síťovou infrastrukturu s možnostmi hybridního připojení. Podívejte se na přehled [sítí a řízení přístupu k sítím](/azure/security/security-network-overview).
-- Přečtěte si úvod do [zabezpečení Azure](/azure/security/azure-security) a informace o vytvoření plánu [zásad správného řízení](/azure/security/governance-in-azure).
+- Podívejte se na přehled [správy identit a přístupu](https://www.microsoft.com/trustcenter/security/identity) v Azure. Konkrétně se můžete seznámit s [Azure AD a rozšířením místní služby Active Directory do cloudu](https://docs.microsoft.com/azure/active-directory/identity-fundamentals). Můžete si stáhnout užitečnou elektronickou knihu o [správě identit a přístupu (IAM) v hybridním prostředí](https://azure.microsoft.com/resources/hybrid-cloud-identity).
+- Azure poskytuje robustní síťovou infrastrukturu s možnostmi hybridního připojení. Podívejte se na přehled [sítí a řízení přístupu k sítím](https://docs.microsoft.com/azure/security/security-network-overview).
+- Přečtěte si úvod do [zabezpečení Azure](https://docs.microsoft.com/azure/security/azure-security) a informace o vytvoření plánu [zásad správného řízení](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ## <a name="on-premises-architecture"></a>Místní architektura
 
@@ -77,12 +77,12 @@ Společnost Contoso si vybrala [smlouvu Enterprise (EA)](https://azure.microsoft
 Po platbě za Azure musí společnost Contoso zjistit, jak spravovat předplatná Azure. Contoso má smlouvu EA, takže počet předplatných Azure, která může vytvořit, není ničím omezený.
 
 - Registrace Azure Enterprise určuje způsob, jak bude společnost pracovat se službami Azure, a definuje základní strukturu zásad správného řízení.
-- Společnost Contoso v první řadě definovala strukturu registrace Enterprise, která se označuje jako vygenerované podnikové uživatelské prostředí. Při návrhu tohoto prostředí společnost Contoso postupovala podle principů popsaných v [tomto článku](/azure/azure-resource-manager/resource-manager-subscription-governance).
+- Společnost Contoso v první řadě definovala strukturu registrace Enterprise, která se označuje jako vygenerované podnikové uživatelské prostředí. Při návrhu tohoto prostředí společnost Contoso postupovala podle principů popsaných v [tomto článku](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance).
 - Prozatím se společnost Contoso rozhodla použít funkční přístup ke správě předplatných.
   - V rámci podniku bude mít jedno oddělení IT, které bude řídit rozpočet na Azure. Tato skupina bude jedinou skupinou s předplatnými.
   - Contoso tento model v budoucnu rozšíří, takže se do registrace Enterprise přidají další podnikové skupiny, které budou tvořit oddělení.
   - Uvnitř oddělení IT vytvořila společnost Contoso dvě předplatná, produkční a vývojářské.
-  - Pokud bude Contoso v budoucnu potřebovat další předplatná, bude pro ně muset spravovat přístup, zásady a dodržování předpisů. To společnost Contoso zajistí zavedením [skupin pro správu Azure](/azure/azure-resource-manager/management-groups-overview), které budou představovat další úroveň nad předplatnými.
+  - Pokud bude Contoso v budoucnu potřebovat další předplatná, bude pro ně muset spravovat přístup, zásady a dodržování předpisů. To společnost Contoso zajistí zavedením [skupin pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview), které budou představovat další úroveň nad předplatnými.
 
   ![Podniková struktura](./media/contoso-migration-infrastructure/enterprise-structure.png)
 
@@ -116,7 +116,7 @@ Důležitým krokem při vytváření infrastruktury Azure je udělování a ř�
 - Za tím účelem vytvoří službu Active Directory založenou na Azure.
 - Společnost Contoso nemá systém Office 365, takže musí zřídit novou službu Azure AD.
 - Office 365 používá službu Azure AD ke správě uživatelů. Kdyby společnost Contoso používala Office 365, už by měla tenanta Azure AD a mohla ho použít jako primární adresář.
-- [Přečtěte si další informace](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) o Azure AD pro Office 365 a [zjistěte](/azure/active-directory/active-directory-how-subscriptions-associated-directory), jak přidat předplatné do existujícího tenanta Azure AD.
+- [Přečtěte si další informace](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) o Azure AD pro Office 365 a [zjistěte](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory), jak přidat předplatné do existujícího tenanta Azure AD.
 
 ### <a name="create-an-azure-ad"></a>Vytvoření Azure AD
 
@@ -196,9 +196,9 @@ V budoucnu bude Contoso podle potřeby přidávat další skupiny prostředků. 
 Společnost Contoso chce poskytnout společnou identitu pro přístup k prostředkům v místním prostředí i v cloudu. Za tím účelem integruje místní službu Active Directory se službou Azure AD. Tento model nabízí tyto výhody:
 
 - Uživatelé a organizace můžou využívat jednu identitu pro přístup k místním aplikacím i cloudovým službám, jako je Office 365 nebo tisíce dalších webů na internetu.
-- Správci můžou využít skupiny ve službě Active Directory k implementaci [řízení přístupu na základě role (RBAC)](/azure/role-based-access-control/role-assignments-portal) v Azure.
+- Správci můžou využít skupiny ve službě Active Directory k implementaci [řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) v Azure.
 
-V zájmu usnadnění integrace používá společnost Contoso [nástroj Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect). Když nástroj nainstalujete a nakonfigurujete na řadiči domény, synchronizuje identity místní služby Active Directory do Azure AD.
+V zájmu usnadnění integrace používá společnost Contoso [nástroj Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). Když nástroj nainstalujete a nakonfigurujete na řadiči domény, synchronizuje identity místní služby Active Directory do Azure AD.
 
 ### <a name="download-the-tool"></a>Stažení nástroje
 
@@ -222,7 +222,7 @@ V zájmu usnadnění integrace používá společnost Contoso [nástroj Azure AD
 
 Všimněte si, že:
 
-- Společnost Contoso má přímé připojení k Azure. Pokud je vaše místní služba Active Directory za proxy serverem, přečtěte si tento [článek](/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
+- Společnost Contoso má přímé připojení k Azure. Pokud je vaše místní služba Active Directory za proxy serverem, přečtěte si tento [článek](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
 
 - Po první synchronizaci se v adresáři Azure AD objeví objekty místní služby Active Directory.
 
@@ -234,7 +234,7 @@ Všimněte si, že:
 
 ### <a name="set-up-rbac"></a>Nastavení RBAC
 
-[Řízení přístupu na základě role (RBAC)](/azure/role-based-access-control/role-assignments-portal) v Azure umožňuje podrobnou správu přístupu. Pomocí řízení přístupu na základě role v Azure můžete uživatelům poskytnout jenom takovou úroveň přístupu, jakou potřebují ke své práci. Role RBAC přiřazujete uživatelům, skupinám a aplikacím na příslušné úrovni. Role se dají přidělovat na úrovni předplatného, skupiny prostředků nebo konkrétního prostředku.
+[Řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) v Azure umožňuje podrobnou správu přístupu. Pomocí řízení přístupu na základě role v Azure můžete uživatelům poskytnout jenom takovou úroveň přístupu, jakou potřebují ke své práci. Role RBAC přiřazujete uživatelům, skupinám a aplikacím na příslušné úrovni. Role se dají přidělovat na úrovni předplatného, skupiny prostředků nebo konkrétního prostředku.
 
 Správci společnosti Contoso teď přiřadí role skupinám Active Directory, které synchronizovali z místního prostředí.
 
@@ -254,7 +254,7 @@ Prostředky Azure se nasazují v rámci oblastí.
 - Oblasti jsou uspořádané do zeměpisných oblastí a v rámci příslušných zeměpisných hranic se dodržují požadavky na rezidenci dat, suverenitu, dodržování předpisů a zajištění odolnosti.
 - Oblast se skládá ze sady datacenter. Tato datacentra jsou nasazená v rámci hranic s definovanou latencí a propojená prostřednictvím vyhrazené oblastní sítě s nízkou latencí.
 - Každá oblast Azure kvůli odolnosti spárovaná s jinou oblastí.
-- Přečtěte si o [oblastech Azure](https://azure.microsoft.com/global-infrastructure/regions) a zjistěte, [jak jsou oblasti spárované](/azure/best-practices-availability-paired-regions).
+- Přečtěte si o [oblastech Azure](https://azure.microsoft.com/global-infrastructure/regions) a zjistěte, [jak jsou oblasti spárované](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
 Společnost Contoso si vybrala primární oblast Východní USA 2 (umístěnou ve Virginii) a sekundární oblast Střední USA (umístěnou v Iowě). Vedlo ji k tomu několik důvodů:
 
@@ -276,7 +276,7 @@ Skupiny dostupnosti pomáhají chránit aplikace a data před výpadkem místní
 - Domény selhání představují základní hardware se společným zdrojem napájení a síťovým přepínačem v rámci datacentra. Virtuální počítače v jedné skupině dostupnosti jsou distribuované napříč různými doménami selhání, aby se minimalizovaly výpadky způsobené jedním hardwarem nebo selháním sítě.
 - Aktualizační domény představují základní hardwarové komponenty, u kterých je možné ve stejnou chvíli provést údržbu nebo restart. Skupiny dostupnosti taky distribuují virtuální počítače napříč několika aktualizačními doménami, aby se zajistilo, že bude vždy funkční aspoň jedna instance.
 
-Společnost Contoso bude implementovat sady dostupnosti všude tam, kde úlohy virtuálních počítačů vyžadují vysokou dostupnost. [Další informace](/azure/virtual-machines/windows/manage-availability).
+Společnost Contoso bude implementovat sady dostupnosti všude tam, kde úlohy virtuálních počítačů vyžadují vysokou dostupnost. [Další informace](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability).
 
 **Zóny dostupnosti:**
 
@@ -287,7 +287,7 @@ Zóny dostupnosti pomáhají chránit aplikace a data proti selhání, které by
 - Ve všech povolených oblastech existují minimálně tři samostatné zóny.
 - Fyzické oddělení zón v rámci oblasti chrání aplikace a data před selháním datacenter.
 
-Contoso bude nasazovat zóny dostupnosti podle toho, jak budou aplikace vyžadovat škálovatelnost, vysokou dostupnost a odolnost. [Další informace](/azure/availability-zones/az-overview).
+Contoso bude nasazovat zóny dostupnosti podle toho, jak budou aplikace vyžadovat škálovatelnost, vysokou dostupnost a odolnost. [Další informace](https://docs.microsoft.com/azure/availability-zones/az-overview).
 
 ### <a name="set-up-backup"></a>Nastavení zálohování
 
@@ -299,9 +299,9 @@ Azure Backup umožňuje zálohovat a obnovovat disky virtuálních počítačů 
 - Zálohy jsou konzistentní vzhledem k aplikacím a zajišťují transakční konzistenci zálohovaných dat a spuštění aplikací po obnovení.
 - Pro případ selhání místního hardwaru podporuje služba Azure Backup místně redundantní úložiště (LRS) pro replikaci více kopií zálohovaných dat v datacentru.
 - V případě výpadku na úrovni oblasti služba Azure Backup podporuje také geograficky redundantní úložiště (GRS) a replikuje data záloh do sekundární spárované oblasti.
-- Azure Backup šifruje přenášená data pomocí AES 256. Zálohovaná neaktivní uložená data jsou zašifrovaná pomocí [šifrování služby Storage (SSE)](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- Azure Backup šifruje přenášená data pomocí AES 256. Zálohovaná neaktivní uložená data jsou zašifrovaná pomocí [šifrování služby Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
 
-Společnost Contoso bude u všech produkčních virtuálních počítačů používat službu Azure Backup s geograficky redundantním úložištěm, která zajistí zálohování dat úloh a možnost jejich rychlé obnovy v případě výpadku nebo jiné události. [Další informace](/azure/backup/backup-introduction-to-azure-backup).
+Společnost Contoso bude u všech produkčních virtuálních počítačů používat službu Azure Backup s geograficky redundantním úložištěm, která zajistí zálohování dat úloh a možnost jejich rychlé obnovy v případě výpadku nebo jiné události. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 
 ### <a name="set-up-disaster-recovery"></a>Nastavení zotavení po havárii
 
@@ -313,7 +313,7 @@ Služba Azure Site Recovery pomáhá zajistit kontinuitu podnikových procesů t
 - V případě výpadku v primární oblasti převezmou vaši aplikaci nebo službu instance virtuálních počítačů replikované v sekundární oblasti, čímž se možné přerušení služeb omezí na minimum.
 - Jakmile se obnoví normální provoz, aplikace nebo služby se můžou vrátit na virtuální počítače v primární oblasti.
 
-Contoso implementuje Azure Site Recovery u všech produkčních virtuálních počítačů používaných pro kritické úlohy, aby zajistila co nejmenší přerušení služeb v případě výpadku primární oblasti. [Víc se uč](/azure/site-recovery/site-recovery-overview)
+Contoso implementuje Azure Site Recovery u všech produkčních virtuálních počítačů používaných pro kritické úlohy, aby zajistila co nejmenší přerušení služeb v případě výpadku primární oblasti. [Víc se uč](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
 ## <a name="step-4-design-a-network-infrastructure"></a>Krok 4: Návrh síťové infrastruktury
 
@@ -325,7 +325,7 @@ Společnost Contoso má vytvořený návrh oblastí a teď se může zamyslet na
 
 ### <a name="plan-hybrid-network-connectivity"></a>Plánování hybridního připojení k síti
 
-Společnost Contoso se rozhodovala mezi [několika architekturami](/azure/architecture/reference-architectures/hybrid-networking) hybridních sítí mezi Azure a místním datacentrem. [Přečtěte si další informace](/azure/architecture/reference-architectures/hybrid-networking/considerations) o porovnávání možností.
+Společnost Contoso se rozhodovala mezi [několika architekturami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) hybridních sítí mezi Azure a místním datacentrem. [Přečtěte si další informace](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) o porovnávání možností.
 
 Připomínáme, že místní síťovou infrastrukturu společnosti Contoso v současné době tvoří datacentrum v New Yorku a místní pobočky ve východní části USA. Všechna pracoviště mají připojení k internetu na podnikové úrovni. Každá pobočka je tedy připojená k datacentru přes tunel VPN IPSec na internetu.
 
@@ -336,8 +336,8 @@ Společnost Contoso se nakonec rozhodla implementovat hybridní připojení tím
 1. Vytvoří nové připojení VPN typu site-to-site mezi datacentrem společnosti Contoso v New Yorku a oběma oblastmi Azure, Východní USA 2 a Střední USA.
 2. Datový provoz poboček mířící do virtuálních sítí Azure bude procházet hlavním datacentrem společnosti Contoso.
 3. Když někdy společnost Contoso vertikálně navýší kapacitu nasazení Azure, vytvoří mezi datacentrem a oblastmi Azure připojení ExpressRoute. Až k tomu dojde, společnost Contoso si nechá připojení VPN typu site-to-site jenom pro účely převzetí služeb při selhání.
-    - [Přečtěte si další informace](/azure/architecture/reference-architectures/hybrid-networking/considerations) o volbě mezi hybridním řešením se sítí VPN a se službou ExpressRoute.
-    - Podívejte se na [umístění a podporu služby ExpressRoute](/azure/expressroute/expressroute-locations-providers).
+    - [Přečtěte si další informace](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) o volbě mezi hybridním řešením se sítí VPN a se službou ExpressRoute.
+    - Podívejte se na [umístění a podporu služby ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers).
 
 **Jenom síť VPN:**
 
@@ -349,7 +349,7 @@ Společnost Contoso se nakonec rozhodla implementovat hybridní připojení tím
 
 ### <a name="design-the-azure-network-infrastructure"></a>Návrh síťové infrastruktury Azure
 
-Je zásadně důležité, aby společnost Contoso navrhla sítě tak, aby bylo nasazení zabezpečené a škálovatelné. Kvůli tomu společnost Contoso zvolila dlouhodobý přístup a navrhuje virtuální sítě tak, aby byly odolné a připravené pro podniky. [Přečtěte si další informace](/azure/virtual-network/virtual-network-vnet-plan-design-arm) o plánování virtuálních sítí.
+Je zásadně důležité, aby společnost Contoso navrhla sítě tak, aby bylo nasazení zabezpečené a škálovatelné. Kvůli tomu společnost Contoso zvolila dlouhodobý přístup a navrhuje virtuální sítě tak, aby byly odolné a připravené pro podniky. [Přečtěte si další informace](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) o plánování virtuálních sítí.
 
 Společnost Contoso se rozhodla, že obě oblasti propojí pomocí modelu sítě typu hub-to-hub:
 
@@ -364,7 +364,7 @@ Azure poskytuje partnerské vztahy sítí pro propojení virtuálních sítí a 
 - Provoz mezi virtuálními sítěmi probíhá na páteřní síti Microsoftu. Komunikace mezi partnerskými virtuálními sítěmi nevyžaduje veřejný internet, brány ani šifrování.
 - Partnerský vztah poskytuje nízkou latenci a velkou šířku pásma při propojení prostředků v různých virtuálních sítích.
 
-[Získejte další informace](/azure/virtual-network/virtual-network-peering-overview) o partnerských vztazích sítí.
+[Získejte další informace](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) o partnerských vztazích sítí.
 
 #### <a name="hub-to-hub-across-regions"></a>Propojení oblastí typu hub-to-hub
 
@@ -404,7 +404,7 @@ Společnost Contoso má vytvořenou topologii sítě a směrování a teď můž
 - Contoso implementuje v Azure privátní síť třídy A (0.0.0.0 až 127.255.255.255). To je možné díky tomu, že místní prostředí má adresní prostor privátních adres třídy B 172.160.0/16, což dává společnosti Contoso jistotu, že se rozsahy adres nebudou překrývat.
 - Společnost nasadí virtuální sítě v primární a sekundární oblasti.
 - Společnost Contoso použije konvenci vytváření názvů, která zahrnuje předponu **VNET** a zkratku oblasti **EUS2** nebo **CUS**. Vzhledem k tomuto standardu budou mít centrální sítě název **VNET-HUB-EUS2** (Východní USA 2) a **VNET-HUB-CUS** (Střední USA).
-- Společnost Contoso nemá [řešení IPAM](/windows-server/networking/technologies/ipam/ipam-top), takže potřebuje naplánovat směrování sítě bez překladu adres (NAT).
+- Společnost Contoso nemá [řešení IPAM](https://docs.microsoft.com/windows-server/networking/technologies/ipam/ipam-top), takže potřebuje naplánovat směrování sítě bez překladu adres (NAT).
 
 #### <a name="virtual-networks-in-east-us-2"></a>Virtuální sítě v oblasti Východní USA 2
 
@@ -554,7 +554,7 @@ K tomu, aby se produkční sítě společnosti Contoso z obou oblastí navzájem
 
 ### <a name="set-up-dns"></a>Nastavení DNS
 
-Při nasazování prostředků ve virtuálních sítích si můžete vybrat z několika možností překladu názvů domén. Můžete použít překlad adres poskytovaný Azure nebo zajistit servery DNS pro překlad. To, který typ překladu názvů použijete, závisí na tom, jak spolu vaše prostředky potřebují vzájemně komunikovat. Získejte [další informace](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution) o službě Azure DNS.
+Při nasazování prostředků ve virtuálních sítích si můžete vybrat z několika možností překladu názvů domén. Můžete použít překlad adres poskytovaný Azure nebo zajistit servery DNS pro překlad. To, který typ překladu názvů použijete, závisí na tom, jak spolu vaše prostředky potřebují vzájemně komunikovat. Získejte [další informace](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution) o službě Azure DNS.
 
 Správci společnosti Contoso se rozhodli, že služba Azure DNS není v hybridním prostředí dobrou volbou. Místo ní použijí místní servery DNS.
 
@@ -584,7 +584,7 @@ Po aktualizaci nastavení sítě můžou správci společnosti Contoso začít v
 2. V každém umístění vytvoří pro virtuální počítač skupiny dostupnosti. Skupiny dostupnosti mají tyto funkce:
 
     - Dbají na to, aby prostředky infrastruktury Azure rozdělovaly virtuální počítače do různých infrastruktur v dané oblasti Azure.
-    - dávají společnosti Contoso nárok na 99,95% smlouvu SLA pro virtuální počítače v Azure. [Další informace](/azure/virtual-machines/windows/tutorial-availability-sets).
+    - dávají společnosti Contoso nárok na 99,95% smlouvu SLA pro virtuální počítače v Azure. [Další informace](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets).
 
     ![Skupina dostupnosti](./media/contoso-migration-infrastructure/availability-group.png)
 
@@ -638,7 +638,7 @@ Služba Active Directory má z hlediska sítí zásadní význam a je potřeba j
 
 ## <a name="step-5-plan-for-governance"></a>Krok 5: Plánování zásad správného řízení
 
-Azure poskytuje v rámci různých služeb a platformy Azure řadu ovládacích prvků pro zásady správného řízení. [Přečtěte si další informace](/azure/security/governance-in-azure) o základních principech různých možností.
+Azure poskytuje v rámci různých služeb a platformy Azure řadu ovládacích prvků pro zásady správného řízení. [Přečtěte si další informace](https://docs.microsoft.com/azure/security/governance-in-azure) o základních principech různých možností.
 
 Během konfigurace identit a řízení přístupu už společnost Contoso začala řešit některé aspekty zásad správného řízení a zabezpečení. V podstatě existují tři oblasti, které je potřeba vzít v úvahu:
 
@@ -650,7 +650,7 @@ Během konfigurace identit a řízení přístupu už společnost Contoso začal
 
 Služba Azure Policy vyhodnocuje vaše prostředky a vyhledává mezi nimi ty, které nejsou v souladu s vašimi definicemi zásad. Například můžete mít zásadu, která povoluje jenom určité typy virtuálních počítačů nebo vyžaduje, aby měly prostředky určitou značku.
 
-Zásady určují definici zásady a přiřazení zásady určuje rozsah, ve kterém se má určitá zásada použít. Rozsah může sahat od skupiny pro správu až po skupinu prostředků. [Přečtěte si](/azure/governance/policy/tutorials/create-and-manage) o vytváření a správě zásad.
+Zásady určují definici zásady a přiřazení zásady určuje rozsah, ve kterém se má určitá zásada použít. Rozsah může sahat od skupiny pro správu až po skupinu prostředků. [Přečtěte si](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) o vytváření a správě zásad.
 
 Společnost Contoso chce začít jen s dvěma zásadami:
 
@@ -696,7 +696,7 @@ Společnost Contoso implementuje zámky následujícím způsobem:
 - Každá komponenta produkčního prostředí nebo komponenta pro převzetí služeb při selhání se musí nacházet ve skupině prostředků, která má zámek ReadOnly. To znamená, že pokud chcete upravit nebo odstranit produkční položky, je potřeba zámek odebrat.
 - Neprodukční skupiny prostředků budou mít zámky CanNotDelete. To znamená, že autorizovaní uživatelé můžou číst nebo upravovat prostředek, ale nemůžou ho odstranit.
 
-[Přečtěte si další informace](/azure/azure-resource-manager/resource-group-lock-resources) o zámcích.
+[Přečtěte si další informace](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) o zámcích.
 
 ### <a name="set-up-tagging"></a>Nastavení značek
 
@@ -728,9 +728,9 @@ Zabezpečení je v cloudu zcela zásadní a Azure poskytuje rozsáhlou nabídku 
 
 Společnost Contoso musí zohlednit několik aspektů:
 
-- **Azure Security Center:** Azure Security Center zajišťuje jednotnou správu zabezpečení a pokročilou ochranu před hrozbami napříč hybridními cloudovými úlohami. Se službou Security Center můžete používat zásady zabezpečení napříč úlohami, omezit vystavení hrozbám a detekovat útoky a reagovat na ně. [Další informace](/azure/security-center/security-center-intro).
-- **Skupiny zabezpečení sítě (NSG):** Skupina zabezpečení sítě je jakýsi filtr (brána firewall) obsahující seznam pravidel zabezpečení, která prostředkům připojeným k virtuálním sítím Azure povolují nebo odpírají síťový provoz. [Další informace](/azure/virtual-network/security-overview).
-- **Šifrování dat:** Azure Disk Encryption je funkce, která pomáhá šifrovat disky virtuálních počítačů IaaS s Windows a Linuxem. [Další informace](/azure/security/azure-security-encryption-atrest).
+- **Azure Security Center:** Azure Security Center zajišťuje jednotnou správu zabezpečení a pokročilou ochranu před hrozbami napříč hybridními cloudovými úlohami. Se službou Security Center můžete používat zásady zabezpečení napříč úlohami, omezit vystavení hrozbám a detekovat útoky a reagovat na ně. [Další informace](https://docs.microsoft.com/azure/security-center/security-center-intro).
+- **Skupiny zabezpečení sítě (NSG):** Skupina zabezpečení sítě je jakýsi filtr (brána firewall) obsahující seznam pravidel zabezpečení, která prostředkům připojeným k virtuálním sítím Azure povolují nebo odpírají síťový provoz. [Další informace](https://docs.microsoft.com/azure/virtual-network/security-overview).
+- **Šifrování dat:** Azure Disk Encryption je funkce, která pomáhá šifrovat disky virtuálních počítačů IaaS s Windows a Linuxem. [Další informace](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
 
 ### <a name="work-with-the-azure-security-center"></a>Práce se službou Azure Security Center
 

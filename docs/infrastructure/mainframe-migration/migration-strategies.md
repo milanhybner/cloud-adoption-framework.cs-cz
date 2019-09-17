@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70831357"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024380"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Přepnutí z sálových počítačů do Azure
 
@@ -48,7 +48,7 @@ Díky porovnání Azure nabízí smlouvy o úrovni služeb (SLA) založené na z
 
 Azure poskytuje další dostupnost tím, že replikuje data z více úložných zařízení, a to buď místně, nebo v jiných geografických oblastech. V případě selhání založeného na Azure mají výpočetní prostředky přístup k replikovaným datům na místní nebo regionální úrovni.
 
-Když použijete prostředky Azure Platform as a Service (PaaS), jako je například [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) a [Azure Cosmos Database](/azure/cosmos-db/introduction), může Azure automaticky zpracovávat převzetí služeb při selhání. Pokud používáte infrastrukturu Azure jako službu (IaaS), převzetí služeb při selhání se spoléhá na konkrétní systémové funkce, jako je SQL Server třeba funkce služby Always On, instance clusteringu s podporou převzetí služeb při selhání a skupiny dostupnosti.
+Když použijete prostředky Azure Platform as a Service (PaaS), jako je například [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) a [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction), může Azure automaticky zpracovávat převzetí služeb při selhání. Pokud používáte infrastrukturu Azure jako službu (IaaS), převzetí služeb při selhání se spoléhá na konkrétní systémové funkce, jako je SQL Server třeba funkce služby Always On, instance clusteringu s podporou převzetí služeb při selhání a skupiny dostupnosti.
 
 ## <a name="scalability"></a>Škálovatelnost
 
@@ -60,7 +60,7 @@ CF také nabízí vysoce spárované výpočetní prostředky, zatímco funkce �
 
 Zákazníci z sálových počítačů obvykle udržují weby pro zotavení po havárii nebo využívají nebo nezávislého poskytovatele sálového počítače při haváriích. Synchronizace s webem pro obnovení po havárii se obvykle provádí prostřednictvím offline kopií dat. Obě možnosti účtují vysoké náklady.
 
-Automatizovaná geografická redundance je také k dispozici prostřednictvím spojovacího zařízení v rámci sálového počítače, a to i v případě skvělého výdaje a je obvykle vyhrazena pro klíčové systémy. Azure naopak nabízí snadno implementované a nákladově efektivní možnosti pro [zálohování](/azure/backup/backup-introduction-to-azure-backup), [obnovu](/azure/site-recovery/site-recovery-overview)a [redundanci](/azure/storage/common/storage-redundancy) na místních nebo regionálních úrovních nebo prostřednictvím geografické redundance.
+Automatizovaná geografická redundance je také k dispozici prostřednictvím spojovacího zařízení v rámci sálového počítače, a to i v případě skvělého výdaje a je obvykle vyhrazena pro klíčové systémy. Azure naopak nabízí snadno implementované a nákladově efektivní možnosti pro [zálohování](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [obnovu](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)a [redundanci](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na místních nebo regionálních úrovních nebo prostřednictvím geografické redundance.
 
 ## <a name="storage"></a>Storage
 
@@ -73,7 +73,7 @@ Mezi typy fyzického úložiště pro sálové počítače patří:
 - **Centrální úložiště:** Nachází se přímo na sálovém procesoru, označované také jako procesor nebo reálné úložiště.
 - **Pomocné úložiště:** Tento typ se nachází odděleně od sálového počítače, ale obsahuje úložiště v DASDs a také se označuje jako stránkovací úložiště.
 
-Cloud nabízí řadu flexibilních, škálovatelných možností a platíte jenom za tyto možnosti, které potřebujete. [Azure Storage](/azure/storage/common/storage-introduction) nabízí rozsáhle škálovatelné úložiště objektů pro datové objekty, službu systému souborů pro Cloud, spolehlivé úložiště pro zasílání zpráv a NoSQL úložiště. U virtuálních počítačů poskytují spravované a nespravované disky Trvalé a zabezpečené úložiště na disku.
+Cloud nabízí řadu flexibilních, škálovatelných možností a platíte jenom za tyto možnosti, které potřebujete. [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) nabízí rozsáhle škálovatelné úložiště objektů pro datové objekty, službu systému souborů pro Cloud, spolehlivé úložiště pro zasílání zpráv a NoSQL úložiště. U virtuálních počítačů poskytují spravované a nespravované disky Trvalé a zabezpečené úložiště na disku.
 
 ## <a name="mainframe-development-and-testing"></a>Vývoj a testování sálového počítače
 
@@ -85,7 +85,7 @@ Prostředí pro emulaci a kompilátory jsou dostupné na platformách x86, takž
 
 Po vývoji a testování řešení v Azure a připravených k nasazení do sálového počítače budete muset zkopírovat kód do sálového počítače a zkompilovat ho tam.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Migrace aplikace na sálové počítače](application-strategies.md)
+> [Migrace aplikace na sálové počítače](./application-strategies.md)

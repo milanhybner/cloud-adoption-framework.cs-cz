@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829368"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023622"
 ---
 # <a name="cloud-rationalization"></a>Racionalizace cloudu
 
-Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího způsobu, jak migrovat nebo modernizovat jednotlivé assety v cloudu. Další informace o procesu racionalizace najdete v tématu [co je to Digital nemovitosti?](index.md).
+Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího způsobu, jak migrovat nebo modernizovat jednotlivé assety v cloudu. Další informace o procesu racionalizace najdete v tématu [co je to Digital nemovitosti?](./index.md).
 
 ## <a name="rationalization-context"></a>Kontext racionalizace
 
@@ -161,4 +161,4 @@ Kvalitativní faktory analýzy:
 Souhrnně můžete použít tyto pět RS k racionalizaci v digitální nemovitosti, které vám pomůžou při rozhodování o budoucím stavu jednotlivých aplikací.
 
 > [!div class="nextstepaction"]
-> [Co je to digitální majetek?](index.md)
+> [Co je to digitální majetek?](./index.md)

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825351"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025374"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Příprava na technicky složité prostředí: Agilní správa změn
 
@@ -46,7 +46,7 @@ Backlog migrace umožňuje sledovat portfolio vašich nejdůležitějších sad 
 
 Sady funkcí obsažené v backlogu migrace nebudou na začátku pravděpodobně splňovat kritéria INVEST popsaná v předchozí části. Budou představovat logické seskupení prostředků z počátečního inventáře a bude se od nich odvíjet budoucí práce. Jako zástupné symboly nemusí být technicky přesné, ale budou sloužit jako základ pro koordinaci postupu s firmou.
 
-![Vztah mezi backlogy migrace, uvolněných prostředků a iterace v průběhu procesu migrace](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Vztah mezi backlogy migrace, uvolněných prostředků a iterace v průběhu procesu migrace](../../../_images/migrate/backlog-relationships.png)
 
 *Backlogy migrace, uvolněných prostředků a iterace zaznamenávají během procesů migrace různé úrovně činností.*
 
@@ -119,7 +119,7 @@ Výsledek sprintu zachycuje a dokumentuje změny provedené v sadě funkcí, tak
 - **Schválení pro provoz:** Vlastník aplikace a pracovníci IT oddělení zodpovědní za správu sady funkcí po jejím nasazení s konečnou platností odsouhlasí, že je připravená na provoz.
 - **Schválení architektury:** Vlastník sady funkcí a tým přechodu na cloud potvrdí všechny změny architektury, které jsou potřebné pro hostování jednotlivých prostředků.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po nastavení modelů pro správu změn je třeba vyřešit poslední požadavek, kterým je [kontrola backlogu migrace](./migration-backlog-review.md).
 

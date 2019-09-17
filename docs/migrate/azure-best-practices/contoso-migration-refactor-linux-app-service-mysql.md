@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 494bb830337540c79554905ef4e2e6f2c9c9ccd1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820398"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024215"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refaktoring linuxové aplikace do více oblastí pomocí služeb Azure App Service, Traffic Manager a Azure Database for MySQL
 
@@ -87,7 +87,7 @@ Contoso dokončí proces migrace následujícím způsobem:
 --- | --- | ---
 [Azure App Service](https://azure.microsoft.com/services/app-service) | Služba běží a škáluje aplikace pomocí služby Azure PaaS pro weby. | Cena vychází z velikosti instancí a potřebných funkcí. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Nástroj pro vyrovnávání zatížení, který pomocí DNS směruje uživatele do Azure nebo na externí weby a služby. | Cena vychází z počtu přijatých dotazů DNS a počtu monitorovaných koncových bodů. | [Další informace](https://azure.microsoft.com/pricing/details/traffic-manager).
-[Azure Database for MySQL](/azure/mysql) | Tato databáze je založená na opensourcovém stroji MySQL Server. Poskytuje plně spravovanou podnikovou komunitní databázi MySQL jako službu pro vývoj a nasazení aplikací. | Cena vychází z požadavků na výpočetní výkon, úložiště a zálohování. [Další informace](https://azure.microsoft.com/pricing/details/mysql).
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Tato databáze je založená na opensourcovém stroji MySQL Server. Poskytuje plně spravovanou podnikovou komunitní databázi MySQL jako službu pro vývoj a nasazení aplikací. | Cena vychází z požadavků na výpočetní výkon, úložiště a zálohování. [Další informace](https://azure.microsoft.com/pricing/details/mysql).
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -98,7 +98,7 @@ Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Firma Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](contoso-migration-infrastructure.md).
+**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -138,8 +138,8 @@ Správci Contoso zřídí dvě webové aplikace (jednu v každé oblasti) využ�
 
 **Potřebujete další pomoc?**
 
-- Seznamte se s [webovými aplikacemi Azure App Service](/azure/app-service/overview).
-- Seznamte se se službou [Azure App Service v Linuxu](/azure/app-service/containers/app-service-linux-intro).
+- Seznamte se s [webovými aplikacemi Azure App Service](https://docs.microsoft.com/azure/app-service/overview).
+- Seznamte se se službou [Azure App Service v Linuxu](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="step-2-set-up-traffic-manager"></a>Krok 2: Nastavení Traffic Manageru
 
@@ -159,8 +159,8 @@ Správci Contoso nastaví Traffic Manager tak, aby příchozí webové žádosti
 
 **Potřebujete další pomoc?**
 
-- Seznamte se s [Traffic Managerem](/azure/traffic-manager/traffic-manager-overview).
-- Seznamte se se [směrováním provozu do prioritního koncového bodu](/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
+- Seznamte se s [Traffic Managerem](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+- Seznamte se se [směrováním provozu do prioritního koncového bodu](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Krok 3: Zřízení Azure Database for MySQL
 
@@ -284,7 +284,7 @@ V posledním kroku tohoto procesu migrace nakonfigurují správci Contoso u webo
     ![Konfigurace aplikace](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. Zopakují výše uvedený postup u sekundární webové aplikace (**osticket-cus**).
-6. Po nakonfigurování je lokalita přístupná přes profil Traffic Manageru. Název DNS je nové umístění aplikace osTicket. [Další informace](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
+6. Po nakonfigurování je lokalita přístupná přes profil Traffic Manageru. Název DNS je nové umístění aplikace osTicket. [Další informace](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
 
     ![Konfigurace aplikace](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -327,14 +327,14 @@ Aplikace je teď spuštěná a firma Contoso ji teď potřebuje v nové infrastr
 
 ### <a name="security"></a>Zabezpečení
 
-Tým zabezpečení Contoso zkontroloval aplikaci a určil případné problémy se zabezpečením. Zjistil, že u komunikace mezi aplikací osTicket a instancí databáze MySQL není nakonfigurovaný protokol SSL. Touto konfigurací bude potřeba zajistit, aby provoz databáze nebylo možné prolomit. [Další informace](/azure/mysql/howto-configure-ssl).
+Tým zabezpečení Contoso zkontroloval aplikaci a určil případné problémy se zabezpečením. Zjistil, že u komunikace mezi aplikací osTicket a instancí databáze MySQL není nakonfigurovaný protokol SSL. Touto konfigurací bude potřeba zajistit, aby provoz databáze nebylo možné prolomit. [Další informace](https://docs.microsoft.com/azure/mysql/howto-configure-ssl).
 
 ### <a name="backups"></a>Zálohování
 
 - Webové aplikace osTicket neobsahují stavová data, takže je není potřeba zálohovat.
-- Nepotřebují konfigurovat zálohování databáze. Azure Database for MySQL automaticky vytváří a ukládá zálohy serveru. U databáze se používá geografická redundance, takže je odolná a připravená k produkci. Zálohy lze použít k obnovení serveru do určitého bodu v čase. [Další informace](/azure/mysql/concepts-backup).
+- Nepotřebují konfigurovat zálohování databáze. Azure Database for MySQL automaticky vytváří a ukládá zálohy serveru. U databáze se používá geografická redundance, takže je odolná a připravená k produkci. Zálohy lze použít k obnovení serveru do určitého bodu v čase. [Další informace](https://docs.microsoft.com/azure/mysql/concepts-backup).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - U nasazení PaaS nejsou žádné licenční problémy.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.

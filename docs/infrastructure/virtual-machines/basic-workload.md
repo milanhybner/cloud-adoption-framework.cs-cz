@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5e241e550f2fd79fcd7de48a0b041809340b78
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70830473"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024368"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Nasazení základní úlohy v Azure
 
@@ -30,26 +30,26 @@ Tato izolace také umožňuje další koncept, který se označuje jako DevOps. 
 *Základní* úloha je obvykle definovaná jako jediná webová aplikace nebo virtuální síť s virtuálním počítačem (VM).
 
 > [!NOTE]
-> Tato příručka nepokrývá vývoj aplikací. Další informace o vývoji aplikací v Azure najdete v tématu [Průvodce architekturou aplikací Azure](/azure/architecture/guide).
+> Tato příručka nepokrývá vývoj aplikací. Další informace o vývoji aplikací v Azure najdete v tématu [Průvodce architekturou aplikací Azure](https://docs.microsoft.com/azure/architecture/guide).
 
 Bez ohledu na to, jestli je zatížení webová aplikace nebo virtuální počítač, vyžaduje každé z těchto nasazení *skupinu prostředků*. Uživatel s oprávněním k vytvoření skupiny prostředků musí provést před provedením následujících kroků.
 
 ## <a name="basic-web-application-paas"></a>Základní webová aplikace (PaaS)
 
-V případě základní webové aplikace vyberte jednu z 5 minut rychlých startů z [dokumentace k Web Apps](/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) a postupujte podle těchto kroků.
+V případě základní webové aplikace vyberte jednu z 5 minut rychlých startů z [dokumentace k Web Apps](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) a postupujte podle těchto kroků.
 
 > [!NOTE]
 > Někteří průvodci rychlým startem nasadí skupinu prostředků standardně. V takovém případě není nutné vytvořit skupinu prostředků explicitně. V opačném případě nasaďte webovou aplikaci do skupiny prostředků vytvořené výše.
 
-Po nasazení jednoduché úlohy si můžete přečíst další informace o osvědčených postupech pro nasazení [základní webové aplikace](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) do Azure.
+Po nasazení jednoduché úlohy si můžete přečíst další informace o osvědčených postupech pro nasazení [základní webové aplikace](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) do Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Virtuální počítač s jedním systémem Windows nebo Linux (IaaS)
 
-Pro jednoduché úlohy, které běží na virtuálním počítači, je prvním krokem nasazení virtuální sítě. Všechny prostředky infrastruktury jako služby (IaaS) v Azure, jako jsou virtuální počítače, nástroje pro vyrovnávání zatížení a brány, vyžadují virtuální síť. Přečtěte si o [virtuálních sítích Azure](/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json)a pak postupujte podle pokynů pro [nasazení Virtual Network do Azure pomocí portálu](/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Když zadáte nastavení pro virtuální síť v Azure Portal, nezapomeňte zadat název skupiny prostředků vytvořené výše.
+Pro jednoduché úlohy, které běží na virtuálním počítači, je prvním krokem nasazení virtuální sítě. Všechny prostředky infrastruktury jako služby (IaaS) v Azure, jako jsou virtuální počítače, nástroje pro vyrovnávání zatížení a brány, vyžadují virtuální síť. Přečtěte si o [virtuálních sítích Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json)a pak postupujte podle pokynů pro [nasazení Virtual Network do Azure pomocí portálu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Když zadáte nastavení pro virtuální síť v Azure Portal, nezapomeňte zadat název skupiny prostředků vytvořené výše.
 
-V dalším kroku se rozhodujete, jestli se má nasadit jeden virtuální počítač s Windows nebo Linuxem. Pro virtuální počítače s Windows použijte postup [nasazení virtuálního počítače s Windows do Azure s portálem](/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Po zadání nastavení pro virtuální počítač v Azure Portal zadejte název skupiny prostředků vytvořené výše.
+V dalším kroku se rozhodujete, jestli se má nasadit jeden virtuální počítač s Windows nebo Linuxem. Pro virtuální počítače s Windows použijte postup [nasazení virtuálního počítače s Windows do Azure s portálem](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Po zadání nastavení pro virtuální počítač v Azure Portal zadejte název skupiny prostředků vytvořené výše.
 
-Až budete postupovat podle kroků a nasadíte virtuální počítač, můžete se seznámit s [osvědčenými postupy pro spuštění virtuálního počítače s Windows v Azure](/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). Pro virtuální počítač se systémem Linux použijte postup [nasazení virtuálního počítače se systémem Linux do Azure pomocí portálu](/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Můžete si taky přečíst další informace o [osvědčených postupech pro spuštění virtuálního počítače se systémem Linux v Azure](/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Až budete postupovat podle kroků a nasadíte virtuální počítač, můžete se seznámit s [osvědčenými postupy pro spuštění virtuálního počítače s Windows v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). Pro virtuální počítač se systémem Linux použijte postup [nasazení virtuálního počítače se systémem Linux do Azure pomocí portálu](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Můžete si taky přečíst další informace o [osvědčených postupech pro spuštění virtuálního počítače se systémem Linux v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Další kroky
 

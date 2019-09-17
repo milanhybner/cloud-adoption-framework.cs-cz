@@ -8,16 +8,16 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4b181faf89d8196c3bbecd153e92e6f44d076166
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906157"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022169"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
-[Budování nákladově orientované organizace](../../organization/cost-conscious-organization.md) vyžaduje viditelnost a správně definovaný přístup (nebo rozsah) k datům souvisejícím s náklady. Tento článek o osvědčených postupech popisuje rozhodnutí a implementační přístupy k vytváření mechanismů sledování.
+[Budování nákladově orientované organizace](../../organize/cost-conscious-organization.md) vyžaduje viditelnost a správně definovaný přístup (nebo rozsah) k datům souvisejícím s náklady. Tento článek o osvědčených postupech popisuje rozhodnutí a implementační přístupy k vytváření mechanismů sledování.
 
 ![Osnova procesu s ohledem na náklady](../../_images/ready/cost-optimization-process.png)
 
@@ -35,16 +35,16 @@ Označování je primární způsob, jak porozumět datům v jakémkoli vykazov�
 
 Prvním krokem při přesném sledování informací o nákladech napříč organizačními jednotkami, prostředími a projekty je definování standardu označování. Druhým krokem je zajištění konzistentního uplatňování tohoto standardu označování. Následující články vám mohou pomoci provést každý z těchto kroků:
 
-- [Vytvoření standardů pojmenování a označování](../considerations/name-and-tag.md)
-- [Vytvoření MVP pro zásady správného řízení pro vynucování standardů označování](../../governance/journeys/complex-enterprise/index.md)
+- [Vytvoření standardů pojmenování a označování](../considerations/naming-and-tagging.md)
+- [Vytvoření MVP pro zásady správného řízení pro vynucování standardů označování](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Organizace prostředků
 
-Existují různé přístupy k uspořádání prostředků. Tato část popisuje osvědčené postupy založené na potřebách velké firmy s nákladovými strukturami rozloženými napříč organizačními jednotkami, zeměpisnými oblastmi a organizacemi IT. Podobný osvědčený postup pro menší a méně složitou organizaci najdete v tématu [Cesta k zásadám správného řízení pro malé až střední firmy](../../governance/journeys/standard-enterprise/index.md).
+Existují různé přístupy k uspořádání prostředků. Tato část popisuje osvědčené postupy založené na potřebách velké firmy s nákladovými strukturami rozloženými napříč organizačními jednotkami, zeměpisnými oblastmi a organizacemi IT. Podobný osvědčený postup pro menší a méně složitou organizaci najdete v tématu [Cesta k zásadám správného řízení pro malé až střední firmy](../../govern/guides/standard/index.md).
 
 Pro velký podnik vytvoří následující model pro skupiny pro správu, předplatná a skupiny prostředků hierarchii, která umožní každému týmu mít správnou úroveň viditelnosti k plnění svých povinností. Pokud podnik potřebuje kontrolu nákladů, aby se zabránilo překročení rozpočtu, může na předplatná v této struktuře použít nástroje správného řízení, jako Azure Blueprints nebo Azure Policy, a rychle tak blokovat budoucí chyby v nákladech.
 
-![Diagram organizace prostředků pro velký podnik](../../_images/governance/large-enterprise-resource-organization.png)
+![Diagram organizace prostředků pro velký podnik](../../_images/govern/large-enterprise-resource-organization.png)
 
 V předchozím diagramu obsahuje kořen hierarchie skupiny pro správu uzel pro každou organizační jednotku. V tomto příkladu potřebuje nadnárodní společnost přehled o regionálních organizačních jednotkách, takže vytvoří uzel pro zeměpisnou oblast v rámci každé organizační jednotky v hierarchii.
 
@@ -60,7 +60,7 @@ Diagram zobrazuje osvědčené postupy, ale nezahrnuje tyto možnosti:
 Zbývající část tohoto článku předpokládá použití osvědčeného postupu popsaného v předchozím diagramu. Následující články vám můžou pomoct aplikovat přístup k organizaci prostředků, který nejlépe vyhovuje vaší společnosti:
 
 - [Škálování s využitím několika předplatných Azure](../considerations/scaling-subscriptions.md)
-- [Nasazení MVP pro zásady správného řízení k řízení standardů dobře spravovaného prostředí](../../governance/journeys/complex-enterprise/index.md)
+- [Nasazení MVP pro zásady správného řízení k řízení standardů dobře spravovaného prostředí](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Poskytnutí správné úrovně přístupu k nákladům
 
@@ -75,39 +75,39 @@ Obecně doporučujeme použít při přidělování osob k různým rolím a roz
 
 Azure Cost Management podporuje následující předdefinované role pro každý rozsah:
 
-- [Vlastník](/azure/role-based-access-control/built-in-roles#owner). Může zobrazit náklady a spravovat vše včetně konfigurace nákladů.
-- [Přispěvatel](/azure/role-based-access-control/built-in-roles#contributor). Může zobrazit náklady a spravovat vše včetně konfigurace nákladů, ale bez řízení přístupu.
-- [Čtenář](/azure/role-based-access-control/built-in-roles#reader). Může zobrazit vše, včetně údajů o nákladech a konfigurace, ale nemůže provádět žádné změny.
-- [Přispěvatel služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor). Může zobrazit náklady a spravovat jejich konfiguraci.
-- [Čtenář služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-reader) Může zobrazit data a konfiguraci nákladů.
+- [Vlastník](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Může zobrazit náklady a spravovat vše včetně konfigurace nákladů.
+- [Přispěvatel](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Může zobrazit náklady a spravovat vše včetně konfigurace nákladů, ale bez řízení přístupu.
+- [Čtenář](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader). Může zobrazit vše, včetně údajů o nákladech a konfigurace, ale nemůže provádět žádné změny.
+- [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor). Může zobrazit náklady a spravovat jejich konfiguraci.
+- [Čtenář služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) Může zobrazit data a konfiguraci nákladů.
 
-Obecně se doporučuje členům všech týmů přiřadit roli Přispěvatel služby Cost Management. Tato role uděluje přístup k vytváření a správě rozpočtů a exportů za účelem efektivnějšího monitorování a vykazování nákladů. Pro členy [týmu cloudové strategie](../../organization/cloud-strategy.md) byste však měli nastavit jen roli Čtenář služby Cost Management. a to proto, že v rámci nástroje Azure Cost Management nejsou zapojeni do stanovování rozpočtů.
+Obecně se doporučuje členům všech týmů přiřadit roli Přispěvatel služby Cost Management. Tato role uděluje přístup k vytváření a správě rozpočtů a exportů za účelem efektivnějšího monitorování a vykazování nákladů. Pro členy [týmu cloudové strategie](../../organize/cloud-strategy.md) byste však měli nastavit jen roli Čtenář služby Cost Management. a to proto, že v rámci nástroje Azure Cost Management nejsou zapojeni do stanovování rozpočtů.
 
 ### <a name="scope"></a>Scope
 
 Následující nastavení rozsahu a rolí vytvoří požadovanou viditelnost pro správu nákladů. Tento osvědčený postup může vyžadovat menší změny v souladu s rozhodnutím o organizaci prostředků.
 
-- [Tým přechodu na cloud](../../organization/cloud-adoption.md). Zodpovědnost za probíhající optimalizační změny vyžaduje přístup Přispěvatel služby Cost Management na úrovni skupiny prostředků.
+- [Tým přechodu na cloud](../../organize/cloud-adoption.md). Zodpovědnost za probíhající optimalizační změny vyžaduje přístup Přispěvatel služby Cost Management na úrovni skupiny prostředků.
 
-  - **Pracovní prostředí**. Tým pro přechod na cloud by již měl mít alespoň přístup [Přispěvatel](/azure/role-based-access-control/built-in-roles#contributor) ke všem ovlivněným skupinám prostředků, nebo alespoň ke skupinám souvisejícím s vývojem a testováním nebo probíhajícími aktivitami nasazení. Není vyžadováno žádné další nastavení rozsahu.
-  - **Provozní prostředí**. Po zřízení správného oddělení odpovědnosti tým přechodu na cloud pravděpodobně nebude mít nadále přístup ke skupinám prostředků souvisejících s jeho projekty. Skupiny prostředků, které podporují provozní instance svých úloh, budou potřebovat další rozsah, aby tento tým viděl dopad svých rozhodnutí na provozní náklady. Nastavení rozsahu [Přispěvatel služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor) pro skupiny provozních prostředků pro tento tým umožní týmu sledovat náklady a nastavovat rozpočty na základě využití a průběžných investic do podporovaných úloh.
+  - **Pracovní prostředí**. Tým pro přechod na cloud by již měl mít alespoň přístup [Přispěvatel](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) ke všem ovlivněným skupinám prostředků, nebo alespoň ke skupinám souvisejícím s vývojem a testováním nebo probíhajícími aktivitami nasazení. Není vyžadováno žádné další nastavení rozsahu.
+  - **Provozní prostředí**. Po zřízení správného oddělení odpovědnosti tým přechodu na cloud pravděpodobně nebude mít nadále přístup ke skupinám prostředků souvisejících s jeho projekty. Skupiny prostředků, které podporují provozní instance svých úloh, budou potřebovat další rozsah, aby tento tým viděl dopad svých rozhodnutí na provozní náklady. Nastavení rozsahu [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) pro skupiny provozních prostředků pro tento tým umožní týmu sledovat náklady a nastavovat rozpočty na základě využití a průběžných investic do podporovaných úloh.
 
-- [Tým cloudové strategie](../../organization/cloud-strategy.md). Zodpovědnost za sledování nákladů napříč více projekty a organizačními jednotkami vyžaduje přístup Čtenář služby Cost Management na kořenové úrovni hierarchie skupiny pro správu.
+- [Tým cloudové strategie](../../organize/cloud-strategy.md). Zodpovědnost za sledování nákladů napříč více projekty a organizačními jednotkami vyžaduje přístup Čtenář služby Cost Management na kořenové úrovni hierarchie skupiny pro správu.
 
-  - Přiřaďte tomuto týmu přístup [Čtenář služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-reader) ve skupině pro správu. Tím zajistíte nepřetržitou viditelnost všech nasazení přidružených k předplatným, která se řídí hierarchií této skupiny správy.
+  - Přiřaďte tomuto týmu přístup [Čtenář služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) ve skupině pro správu. Tím zajistíte nepřetržitou viditelnost všech nasazení přidružených k předplatným, která se řídí hierarchií této skupiny správy.
 
-- [Tým zásad správného řízení cloudu](../../organization/cloud-governance.md). Odpovědnost za správu nákladů, sladění rozpočtu a vykazování v rámci všech činností přechodu na cloud vyžaduje přístup Přispěvatel služby Cost Management na kořenové úrovni hierarchie skupiny pro správu.
+- [Tým zásad správného řízení cloudu](../../organize/cloud-governance.md). Odpovědnost za správu nákladů, sladění rozpočtu a vykazování v rámci všech činností přechodu na cloud vyžaduje přístup Přispěvatel služby Cost Management na kořenové úrovni hierarchie skupiny pro správu.
 
-  - V dobře spravovaném prostředí má tým zásad správného řízení cloudu pravděpodobně ještě vyšší úroveň přístupu, takže další přiřazení rozsahu [Přispěvatel pro Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
+  - V dobře spravovaném prostředí má tým zásad správného řízení cloudu pravděpodobně ještě vyšší úroveň přístupu, takže další přiřazení rozsahu [Přispěvatel pro Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
 
-- [CCoE](../../organization/cloud-center-excellence.md). Zodpovědnost za správu nákladů souvisejících se sdílenými službami vyžaduje přístup Přispěvatel služby Cost Management na úrovni předplatného. Kromě toho může tento tým vyžadovat přístup Přispěvatel služby Cost Management ke skupinám prostředků nebo předplatným, které obsahují prostředky nasazené automatizacemi CCoE, aby porozuměli tomu, jak tyto automatizace ovlivňují náklady.
+- [CCoE](../../organize/cloud-center-of-excellence.md). Zodpovědnost za správu nákladů souvisejících se sdílenými službami vyžaduje přístup Přispěvatel služby Cost Management na úrovni předplatného. Kromě toho může tento tým vyžadovat přístup Přispěvatel služby Cost Management ke skupinám prostředků nebo předplatným, které obsahují prostředky nasazené automatizacemi CCoE, aby porozuměli tomu, jak tyto automatizace ovlivňují náklady.
 
-  - **Sdílené služby**. Když je zapojen tým CCoE, osvědčeným postupem je, že prostředky spravované CCoE jsou podporovány z předplatného centralizované sdílené služby v rámci hvězdicové topologie sítě. V tomto scénáři má CCoE k tomuto předplatnému pravděpodobně přístup přispěvatele nebo vlastníka, takže další přiřazení rozsahu [Přispěvatel služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
-  - **Automatizace a řízení CCoE**. Tým CCoE obvykle poskytuje ovládací skripty a skripty pro automatizované nasazení týmům přechodu na cloud. Úkolem CCoE je porozumět tomu, jak tyto akcelerátory ovlivňují náklady. Aby tento přehled získal, tým potřebuje přístup [Přispěvatel služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor) k jakýmkoli skupinám prostředků nebo předplatným, které tyto akcelerátory spouští.
+  - **Sdílené služby**. Když je zapojen tým CCoE, osvědčeným postupem je, že prostředky spravované CCoE jsou podporovány z předplatného centralizované sdílené služby v rámci hvězdicové topologie sítě. V tomto scénáři má CCoE k tomuto předplatnému pravděpodobně přístup přispěvatele nebo vlastníka, takže další přiřazení rozsahu [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
+  - **Automatizace a řízení CCoE**. Tým CCoE obvykle poskytuje ovládací skripty a skripty pro automatizované nasazení týmům přechodu na cloud. Úkolem CCoE je porozumět tomu, jak tyto akcelerátory ovlivňují náklady. Aby tento přehled získal, tým potřebuje přístup [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) k jakýmkoli skupinám prostředků nebo předplatným, které tyto akcelerátory spouští.
 
 - **Tým cloudových operací**. Zodpovědnost za správu průběžných nákladů v provozních prostředích vyžaduje přístup Přispěvatel služby Cost Management ke všem provozním předplatným.
 
-  - Obecné doporučení přináší provozní a nevýrobní prostředky do samostatných předplatných, která se řídí uzly hierarchie skupiny pro správu, která je přidružená k produkčním prostředím. V dobře spravovaném prostředí již členové provozního týmu pravděpodobně mají oprávnění vlastníka nebo přispěvatele k provozním předplatným, takže role [Přispěvatel služby Cost Management](/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutná.
+  - Obecné doporučení přináší provozní a nevýrobní prostředky do samostatných předplatných, která se řídí uzly hierarchie skupiny pro správu, která je přidružená k produkčním prostředím. V dobře spravovaném prostředí již členové provozního týmu pravděpodobně mají oprávnění vlastníka nebo přispěvatele k provozním předplatným, takže role [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutná.
 
 ## <a name="additional-cost-management-resources"></a>Další prostředky pro správu nákladů
 
@@ -119,17 +119,17 @@ Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management
 
 ### <a name="use-azure-cost-management"></a>Práce s nástrojem Azure Cost Management
 
-- [Vytváření a správa rozpočtů](/azure/cost-management/tutorial-acm-create-budgets)
-- [Export dat o nákladech](/azure/cost-management/tutorial-export-acm-data)
-- [Optimalizace nákladů na základě doporučení](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Použití upozornění na náklady ke sledování využití a výdajů](/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Vytváření a správa rozpočtů](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
+- [Export dat o nákladech](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
+- [Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Použití upozornění na náklady ke sledování využití a výdajů](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Použití Azure Cost Management k řízení nákladů AWS
 
-- [Integrace sestavy nákladů a využití služby AWS](/azure/cost-management/aws-integration-set-up-configure)
-- [Správa nákladů AWS](/azure/cost-management/aws-integration-manage)
+- [Integrace sestavy nákladů a využití služby AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Správa nákladů AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Vytvoření přístupu, rolí a rozsahu
 
-- [Principy rozsahu správy nákladů](/azure/cost-management/understand-work-scopes)
-- [Nastavení rozsahu pro skupinu prostředků](/azure/role-based-access-control/quickstart-assign-role-user-portal)
+- [Principy rozsahu správy nákladů](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)
+- [Nastavení rozsahu pro skupinu prostředků](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal)

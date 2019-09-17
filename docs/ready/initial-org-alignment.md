@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819163"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021929"
 ---
 # <a name="initial-organization-alignment"></a>Počáteční stav organizace
 
@@ -43,7 +43,7 @@ Například tým cloudové strategie může být řízen technickým ředitelem 
 
 Kromě toho je důležité vytvořit dva další klíčové týmy: tým zásad správného řízení a tým zabezpečení. Ty jsou zodpovědné za návrh, implementaci a průběžné audity zásad správného řízení a zásad zabezpečení ve společnosti. Členové týmu zásad správného řízení musí mít zkušenosti s ochranou prostředků, správou nákladů, zásadami skupin a podobnými tématy. Členové týmu zabezpečení musí mít dobrý přehled o aktuálních oborových standardech v oblasti zabezpečení i požadavcích společnosti na zabezpečení.
 
-![Tým cloudové strategie s týmem zásad správného řízení a týmem zabezpečení](../_images/getting-started-overview-1.png)
+![Tým cloudové strategie s týmem zásad správného řízení a týmem zabezpečení](../_images/ready/getting-started-overview-1.png)
 
 Úkolem týmu zásad správného řízení je návrh a implementace cloudového modelu zásad správného řízení společnosti, stejně jako nasazení a údržba prostředků sdílené infrastruktury, které jsou součástí digitální transformace. Mezi tyto prostředky patří hardware, software a cloudové prostředky nutné k připojení místní sítě k virtuálním sítím v cloudu.
 
@@ -53,9 +53,9 @@ Tým zabezpečení je zodpovědný za návrh a implementaci cloudových zásad z
 
 V rámci dalšího kroku digitální transformace by členové týmu cloudové strategie měli zjistit, jakým způsobem změní cloudové technologie podnikání společnosti. Jedná se o fázi příprav a plánování změn, které budou mít vliv na vaši společnost, lidi a technologie. Je důležité, aby členové týmu cloudové strategie porozuměli novinkám a změnám, které cloudové prostředí (ve srovnání s místním prostředím) přinese.
 
-![Týmy cloudové strategie, zásad správného řízení a zabezpečení se seznamují s osvědčenými postupy pro provoz v cloudu.](../_images/getting-started-overview-2.png)
+![Týmy cloudové strategie, zásad správného řízení a zabezpečení se seznamují s osvědčenými postupy pro provoz v cloudu.](../_images/ready/getting-started-overview-2.png)
 
-Výchozím bodem pro porozumění cloudu je seznámení se se základními [principy fungování Azure](../getting-started/what-is-azure.md). Následně je potřeba se seznámit se [zásadami správného řízení v Azure](../governance/resource-consistency/what-is-governance.md), které vám umožní pochopit [principy správy přístupu k prostředkům](../governance/resource-consistency/azure-resource-access.md).
+Výchozím bodem pro porozumění cloudu je seznámení se se základními [principy fungování Azure](../getting-started/what-is-azure.md). Následně je potřeba se seznámit se [zásadami správného řízení v Azure](../govern/resource-consistency/what-is-governance.md), které vám umožní pochopit [principy správy přístupu k prostředkům](../govern/resource-consistency/resource-access-management.md).
 
 V rámci dalšího studia by si tým zásad správného řízení měl projít pojmy a průvodce návrhem v části obsahu věnované zásadám správného řízení. Části týkající se infrastruktury a úloh obsahují užitečné informace o typických architekturách a cloudových úlohách.
 
@@ -93,7 +93,7 @@ Teď, když jste stanovili cíle digitální transformace, přiřadili jim prior
 
 Tyto týmy projdou seznamy se základními řešeními a jejich prioritami a na jejich základě navrhnou jednotlivá řešení. Tento proces zahrnuje specifikaci nové infrastruktury a nových úloh. Také může dojít ke změnám rolí pracovníků a procesů, které se k nim vztahují. V této fázi je také důležité, aby každý z týmů návrhu přizval i tým zásad správného řízení a tým zabezpečení, aby mohly návrhy zkontrolovat. Všechny návrhy musí splňovat zásady a postupy definované týmem zásad správného řízení a týmem zabezpečení. Oba tyto týmy se také musí zúčastnit konečného schvalování každého návrhu.
 
-![Tým cloudové strategie dodá základní řešení týmům pro návrh a implementaci.](../_images/getting-started-overview-3.png)
+![Tým cloudové strategie dodá základní řešení týmům pro návrh a implementaci.](../_images/ready/getting-started-overview-3.png)
 
 Navrhnout jednotlivá řešení není úplně jednoduché. Při vytváření návrhů je nutné brát ohled i na jiné návrhy zpracovávané ostatními týmy. Pokud je například výsledkem několika návrhů migrace stávajících místních aplikací a služeb do cloudu, může být efektivnější je seskupit a navrhnout celkovou strategii migrace. Jindy naopak nemusí být migrace některých z místních aplikací a služeb možná – v takovém případě se může nabízet řešení nahradit je nově vyvinutými službami, anebo službami třetích stran. Jako efektivnější se ale může zdát jejich seskupení a zjištění, kde se navzájem překrývají, aby bylo možné určit, zda některá z aplikací třetích stran zajistí více než jedno řešení.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833723"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022311"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plán přijetí do cloudu a Azure DevOps
 
@@ -59,7 +59,7 @@ V zobrazení nevyřízených položek **náměty** se nachází jasné zobrazen�
 
 ## <a name="align-the-cloud-adoption-plan"></a>Zarovnání plánu přijetí do cloudu
 
-Stránky s přehledem pro fáze strategie a plánování životního cyklu přijetí v cloudu – každá odkazuje na [strategii rozhraní pro přijetí do cloudu a na šablonu plánování](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Tato šablona uspořádá rozhodnutí a datové body, které budou zarovnávat šablonu pro plán přijetí cloudu s vašimi konkrétními plány pro přijetí. Pokud jste to ještě neudělali, možná budete chtít dokončit cvičení týkající se [strategie](../business-strategy/index.md) a [plánování](../plan/index.md) před zarovnáním nového projektu.
+Stránky s přehledem pro fáze strategie a plánování životního cyklu přijetí v cloudu – každá odkazuje na [strategii rozhraní pro přijetí do cloudu a na šablonu plánování](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Tato šablona uspořádá rozhodnutí a datové body, které budou zarovnávat šablonu pro plán přijetí cloudu s vašimi konkrétními plány pro přijetí. Pokud jste to ještě neudělali, možná budete chtít dokončit cvičení týkající se [strategie](../strategy/index.md) a [plánování](../plan/index.md) před zarovnáním nového projektu.
 
 Následující články podporují zarovnání plánu přijetí do cloudu:
 

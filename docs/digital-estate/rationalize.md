@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829251"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023424"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
-Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](approach.md) a agregovaného inventáře může začít [](inventory.md)racionalizace v cloudu. [Racionalizace cloudu](rationalize.md) popisuje nejběžnější možnosti racionalizace.
+Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](./approach.md) a agregovaného inventáře může začít [](./inventory.md)racionalizace v cloudu. [Racionalizace cloudu](./rationalize.md) popisuje nejběžnější možnosti racionalizace.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradiční pohled na racionalizaci
 
@@ -30,7 +30,7 @@ Je snadné pochopit racionalizaci, když vizualizujete tradiční proces raciona
 
 **Kvalitativní analýza:** Další sada rozhodnutí vyžaduje lidské poznatky ve formě kvalitativní analýzy. Nejčastější dotazy, které jsou zde uvedeny, jsou často jedinečné pro řešení a můžou na ně odpovědět jenom obchodní strany a skupiny Power Users. Tato rozhodnutí obvykle odloží proces a výrazně zpomalují věci. Tato analýza obvykle spotřebovává 40 až 80 hodin FTE na aplikaci.
 
-Pokyny k vytvoření seznamu kvalitativních otázek analýzy najdete v tématu [přístupy k plánování digitálních nemovitostí](approach.md).
+Pokyny k vytvoření seznamu kvalitativních otázek analýzy najdete v tématu [přístupy k plánování digitálních nemovitostí](./approach.md).
 
 **Rozhodnutí o racionalizaci:** V případě praktického týmu racionalizace jsou kvalitativní a kvantitativní data vytvořena jasná rozhodnutí. Týmy s vysokým stupněm racionalizace by bohužel byly náročné na to, aby se mohli zajímat nebo přebírat v měsících.
 
@@ -60,7 +60,7 @@ V přírůstkovém procesu racionalizace může být pro počáteční zjišťov
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativní analýza: Zjednodušení rozhodnutí
 
-Bez ohledu na přístup ke zjišťování inventáře může kvantitativní analýza řídit počáteční rozhodnutí a předpoklady. To platí zejména při pokusu o identifikaci první úlohy nebo v případě, že cílem racionalizace je srovnání nákladů na vysoké úrovni. V přírůstkovém procesu racionalizace tým cloudové strategie a týmy přijímání v cloudu omezují [pět RS účelnosti](5-rs-of-rationalization.md) na dvě Stručná rozhodnutí a uplatňují tyto kvantitativní faktory. Tím se zjednoduší analýza a sníží se množství počátečních dat, která je potřeba ke změně jednotky.
+Bez ohledu na přístup ke zjišťování inventáře může kvantitativní analýza řídit počáteční rozhodnutí a předpoklady. To platí zejména při pokusu o identifikaci první úlohy nebo v případě, že cílem racionalizace je srovnání nákladů na vysoké úrovni. V přírůstkovém procesu racionalizace tým cloudové strategie a týmy přijímání v cloudu omezují [pět RS účelnosti](./5-rs-of-rationalization.md) na dvě Stručná rozhodnutí a uplatňují tyto kvantitativní faktory. Tím se zjednoduší analýza a sníží se množství počátečních dat, která je potřeba ke změně jednotky.
 
 Pokud se například organizace nachází v průběhu migrace IaaS do cloudu, můžete předpokládat, že většina úloh bude buď vyřazena, nebo bude znovu hostovat.
 
@@ -116,7 +116,7 @@ První zatížení je často nasazeno v experimentálním prostředí bez provoz
 
 ### <a name="qualitative-analysis"></a>Kvalitativní analýza
 
-Týmy pro přijetí do cloudu a tým cloudové strategie můžou spolupracovat na analýze těchto malých úloh. Tato spolupráce vytvoří kontrolované možnosti pro vytváření a testování kvalitativních kritérií analýzy. Menší populace vytvoří příležitost k prošetření ovlivněných uživatelů a k provedení podrobné kvalitativní analýzy za týden nebo méně. Pro běžné kvalitativní analytické faktory se podívejte na konkrétní cíl racionalizace v [5 RS of racionalizace](5-rs-of-rationalization.md).
+Týmy pro přijetí do cloudu a tým cloudové strategie můžou spolupracovat na analýze těchto malých úloh. Tato spolupráce vytvoří kontrolované možnosti pro vytváření a testování kvalitativních kritérií analýzy. Menší populace vytvoří příležitost k prošetření ovlivněných uživatelů a k provedení podrobné kvalitativní analýzy za týden nebo méně. Pro běžné kvalitativní analytické faktory se podívejte na konkrétní cíl racionalizace v [5 RS of racionalizace](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migrace
 
@@ -161,4 +161,4 @@ V některých případech může být finanční model příliš těsný, aby by
 Výstupem úsilí racionalizace je nevyřízené položky pro všechny prostředky, které jsou ovlivněny zvolenou transformací. Tyto nevyřízené položky teď můžou sloužit jako základ pro nákladové modely cloudových služeb.
 
 > [!div class="nextstepaction"]
-> [Zarovnávání nákladových modelů s digitální nemovitosti](calculate.md)
+> [Zarovnávání nákladových modelů s digitální nemovitosti](./calculate.md)
