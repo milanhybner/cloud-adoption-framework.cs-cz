@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2e1ba47201285559be784fafe6b39bdbde0c35ed
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817073"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023872"
 ---
 # <a name="identity-decision-guide"></a>Průvodce rozhodováním ohledně identity
 
 IT pracovníci v jakémkoli prostředí, ať už se jedná o místní, hybridní nebo výhradně cloudové prostředí, potřebují řídit, kteří správci, uživatelé a skupiny mají přístup k prostředkům. Služby pro správu identit a přístupu (IAM) umožňují spravovat řízení přístupu v cloudu.
 
-![Diagram možností identity od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/discovery-guides/discovery-guide-identity.png)
+![Diagram možností identity od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-identity.png)
 
 Přejít na: [Určení požadavků na integraci identit](#determine-identity-integration-requirements) | [Směrný plán cloudu](#cloud-baseline) | [Synchronizace adresářů](#directory-synchronization) | [Doménové služby hostované v cloudu](#cloud-hosted-domain-services) | [Active Directory Federation Services](#active-directory-federation-services) | [Další informace](#learn-more)
 
@@ -61,7 +61,7 @@ Azure AD je nativní systém správy identit a přístupu (IAM) umožňující u
 
 Synchronizace adresářů je často nejlepším řešením pro organizace se stávající místní infrastrukturou Active Directory, kterým umožňuje zachovat stávající správu uživatelů a přístupu a zároveň poskytuje požadované funkce IAM pro správu cloudových prostředků. Tento proces průběžně replikuje informace o adresářích mezi Azure AD a místními adresářovými službami a díky tomu umožňuje uživatelům používat společné přihlašovací údaje a zajišťuje konzistentní systém identit, rolí a oprávnění v celé organizaci.
 
-Poznámka: Je možné, že organizace, které přešly na Office 365, už mají implementovanou [synchronizaci adresářů](/office365/enterprise/set-up-directory-synchronization) mezi místní infrastrukturou Active Directory a službou Azure Active Directory.
+Poznámka: Je možné, že organizace, které přešly na Office 365, už mají implementovanou [synchronizaci adresářů](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) mezi místní infrastrukturou Active Directory a službou Azure Active Directory.
 
 **Předpoklady synchronizace adresářů:** Při použití řešení synchronizovaných identit se předpokládá následující:
 
@@ -91,16 +91,16 @@ V místním prostředí se pravděpodobně budou i nadále používat stávajíc
 
 Federace identit vytváří vztahy důvěryhodnosti mezi různými systémy správy identit a umožňuje využívat společné možnosti ověřování a autorizace. V rámci vaší organizace nebo vašich systémů identit spravovaných vašimi zákazníky nebo obchodními partnery pak můžete zajistit podporu možností jednotného přihlašování napříč různými doménami.
 
-Azure AD podporuje federaci místních domén Active Directory pomocí služby [Active Directory Federation Services](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Pokyny k implementaci v Azure najdete v referenční architektuře [Rozšíření služby AD FS do Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).
+Azure AD podporuje federaci místních domén Active Directory pomocí služby [Active Directory Federation Services](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Pokyny k implementaci v Azure najdete v referenční architektuře [Rozšíření služby AD FS do Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).
 
 ## <a name="learn-more"></a>Další informace
 
 Další informace o službách identit v Azure najdete tady:
 
 - [Azure AD:](https://azure.microsoft.com/services/active-directory) Azure AD zajišťuje cloudové služby identit. Umožňuje spravovat přístup k prostředkům Azure a řídit správu identit, registrace zařízení, zřizování uživatelů, přístup k aplikacím a ochranu dat.
-- [Azure AD Connect:](/azure/active-directory/hybrid/whatis-hybrid-identity) Nástroj Azure AD Connect umožňuje propojit instance služby Azure AD se stávajícími řešeními pro správu identit, a tím umožnit synchronizaci stávajícího adresáře v cloudu.
-- [Řízení přístupu na základě role (RBAC):](/azure/role-based-access-control/overview) Azure AD zajišťuje řízení přístupu na základě role pro efektivní a bezpečnou správu přístupu k prostředkům v rovině řízení. Úlohy a povinnosti jsou uspořádané do rolí, které se přiřazují uživatelům. Řízení přístupu na základě role umožňuje řídit, kdo má přístup k jednotlivým prostředkům a jaké akce s nimi může provádět.
-- [Azure AD Privileged Identity Management (PIM):](/azure/active-directory/privileged-identity-management/pim-configure) PIM zkracuje dobu expozice přístupových oprávnění k prostředkům a zlepšuje přehled o jejich využití prostřednictvím sestav a upozornění. Omezuje uživatele tím, že svá oprávnění můžou využívat podle potřeby, nebo přiřazováním oprávnění po kratší dobu, po které se automaticky odvolají.
+- [Azure AD Connect:](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity) Nástroj Azure AD Connect umožňuje propojit instance služby Azure AD se stávajícími řešeními pro správu identit, a tím umožnit synchronizaci stávajícího adresáře v cloudu.
+- [Řízení přístupu na základě role (RBAC):](https://docs.microsoft.com/azure/role-based-access-control/overview) Azure AD zajišťuje řízení přístupu na základě role pro efektivní a bezpečnou správu přístupu k prostředkům v rovině řízení. Úlohy a povinnosti jsou uspořádané do rolí, které se přiřazují uživatelům. Řízení přístupu na základě role umožňuje řídit, kdo má přístup k jednotlivým prostředkům a jaké akce s nimi může provádět.
+- [Azure AD Privileged Identity Management (PIM):](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) PIM zkracuje dobu expozice přístupových oprávnění k prostředkům a zlepšuje přehled o jejich využití prostřednictvím sestav a upozornění. Omezuje uživatele tím, že svá oprávnění můžou využívat podle potřeby, nebo přiřazováním oprávnění po kratší dobu, po které se automaticky odvolají.
 - [Integrace místních domén Active Directory se službou Azure Active Directory:](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad) Tato referenční architektura obsahuje příklad synchronizace adresářů mezi místními doménami Active Directory a službou Azure AD.
 - [Rozšíření služby Active Directory Domain Services (AD DS) do Azure:](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain) Tato referenční architektura obsahuje příklad nasazení serverů AD DS kvůli rozšíření doménových služeb na cloudové prostředky.
 - [Rozšíření služby Active Directory Federation Services (AD FS) do Azure:](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) V této referenční architektuře se služba Active Directory Federation Services (AD FS) nakonfiguruje tak, aby prováděla federované ověřování a autorizaci pro adresář Azure AD.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 39254fdf2dd5638978899308c4fe79cd40cf249f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816954"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023842"
 ---
 # <a name="migration-tools-decision-guide"></a>Průvodce rozhodováním ohledně nástrojů pro migraci
 
@@ -21,7 +21,7 @@ Strategie a nástroje, které použijete k migraci aplikace do Azure, budou do z
 
 Výběr migrace s využitím technologií PaaS (platforma jako služba) nebo IaaS (infrastruktura jako služba) vychází z rovnováhy mezi náklady, časovými nároky, stávajícím technickým dluhem a dlouhodobou návratností. Model IaaS často představuje nejrychlejší cestu ke cloudu, protože vyžaduje nejméně změn úloh. Model PaaS může vyžadovat úpravy datových struktur nebo zdrojového kódu, ale dosahuje výrazné dlouhodobé návratnosti v podobě nižších provozních nákladů a větší technické flexibility. V následujícím diagramu termín _modernizace_ odráží rozhodnutí během migrace modernizovat prostředek a modernizovaný prostředek migrovat na platformu PaaS.
 
-![Příklad rozhodovacího stromu pro výběr nástrojů pro migraci.](../../_images/migration/migration-tools-decision-tree.png)
+![Příklad rozhodovacího stromu pro výběr nástrojů pro migraci.](../../_images/migrate/migration-tools-decision-tree.png)
 
 ## <a name="key-questions"></a>Klíčové otázky
 
@@ -40,7 +40,7 @@ V souladu s důrazem, který architektura přechodu na cloud klade na [přírůs
 
 ## <a name="learn-more"></a>Další informace
 
-- **[Základy práce s cloudy: Přehled možností výpočetního prostředí Azure](/azure/architecture/guide/technology-choices/compute-overview)** . Tento článek obsahuje informace o funkcích ve variantách výpočetního prostředí Azure IaaS a PaaS.
-- **[Základy práce s cloudy: Volba správného úložiště dat](/azure/architecture/guide/technology-choices/data-store-overview)** . Tento článek popisuje dostupné možnosti úložiště PaaS na platformě Azure.
+- **[Základy práce s cloudy: Přehled možností výpočetního prostředí Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Tento článek obsahuje informace o funkcích ve variantách výpočetního prostředí Azure IaaS a PaaS.
+- **[Základy práce s cloudy: Volba správného úložiště dat](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Tento článek popisuje dostupné možnosti úložiště PaaS na platformě Azure.
 - **[Migrace s rozšířeným rozsahem: Požadavky na úložiště během migrace překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Tento článek popisuje alternativní mechanismy migrace dat pro scénáře, kdy migraci dat brání dostupná šířka pásma sítě.
-- **[SQL Database: Výběr správné varianty SQL Serveru v Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Tento článek obsahuje popis možností a obchodních odůvodnění pro rozhodnutí hostovat úlohy SQL Serveru v prostředí hostované infrastruktury (IaaS) nebo hostované služby (PaaS).
+- **[SQL Database: Výběr správné varianty SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Tento článek obsahuje popis možností a obchodních odůvodnění pro rozhodnutí hostovat úlohy SQL Serveru v prostředí hostované infrastruktury (IaaS) nebo hostované služby (PaaS).

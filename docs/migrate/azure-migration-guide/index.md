@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d370f8e868be1186aad17b89915f52ad0413d04d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816427"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022808"
 ---
 ::: zone target="chromeless"
 
@@ -67,7 +67,7 @@ Tento průvodce vám pomůže tyto otázky zodpovědět. Obsahuje návrhy úloh 
 
 ::: zone target="docs"
 
-Další informace o uspořádání a strukturování předplatných, správě nasazených prostředků a zajištění souladu s požadavky vyplývajícími z firemních zásad najdete v tématu [Zásady správného řízení v Azure](/azure/security/governance-in-azure).
+Další informace o uspořádání a strukturování předplatných, správě nasazených prostředků a zajištění souladu s požadavky vyplývajícími z firemních zásad najdete v tématu [Zásady správného řízení v Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ::: zone-end
 
@@ -112,8 +112,8 @@ Tyto metody se vzájemně nevylučují &mdash; vaše počáteční migrace můž
 
 ::: zone target="docs"
 
-Tyto metody se vzájemně nevylučují &mdash; vaše počáteční migrace může například využívat model **změny hostitele**, ale ve fázi optimalizace po migraci se můžete rozhodnout pro implementaci **refaktorování** nebo **změny architektury**. Tomuto se dále věnuje část [Optimalizace a transformace](optimize-and-transform.md) tohoto průvodce.
+Tyto metody se vzájemně nevylučují &mdash; vaše počáteční migrace může například využívat model **změny hostitele**, ale ve fázi optimalizace po migraci se můžete rozhodnout pro implementaci **refaktorování** nebo **změny architektury**. Tomuto se dále věnuje část [Optimalizace a transformace](./optimize-and-transform.md) tohoto průvodce.
 
 ::: zone-end
 
-![Infografika možností migrace](../../_images/migration/migration-options.png)
+![Infografika možností migrace](../../_images/migrate/migration-options.png)

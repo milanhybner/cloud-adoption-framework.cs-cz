@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817549"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023656"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Průvodce rozhodováním ohledně pojmenování a označování prostředků
 
@@ -26,7 +26,7 @@ Pokud nemáte jednoduchá nasazení, organizace cloudových prostředků je jedn
 
 ## <a name="tagging-decision-guide"></a>Průvodce rozhodováním ohledně označování
 
-![Diagram možností označování od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Diagram možností označování od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Přejít na: [Základní zásady vytváření názvů](#baseline-naming-conventions) | [Vzory označování prostředků](#resource-tagging-patterns) | [Další informace](#learn-more)
 
@@ -74,7 +74,7 @@ Následující běžné vzory označování uvádějí příklady možného pou�
 Další informace o vytváření názvů a označování v Azure najdete tady:
 
 - [Zásady vytváření názvů pro prostředky Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). V těchto pokynech najdete doporučené zásady vytváření názvů pro prostředky Azure.
-- [Používání značek k uspořádání prostředků Azure](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Značky v Azure můžete používat na úrovni skupin prostředků i jednotlivých prostředků. Ve všech účetních sestavách založených na použitých značkách tak můžete využít flexibilní možnosti nastavení úrovně podrobností.
+- [Používání značek k uspořádání prostředků Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Značky v Azure můžete používat na úrovni skupin prostředků i jednotlivých prostředků. Ve všech účetních sestavách založených na použitých značkách tak můžete využít flexibilní možnosti nastavení úrovně podrobností.
 
 ## <a name="next-steps"></a>Další kroky
 

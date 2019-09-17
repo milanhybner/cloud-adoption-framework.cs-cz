@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 276718f4a0fba49949db1b29f4ecfeee1238ad9c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: db21fb74e09e57f542a7a90f546afe01c68f7a81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817243"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025391"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Vytvoření provozního modelu pro cloud
 
@@ -26,13 +26,13 @@ Aktuální provozní modely je možné škálovat, aby podporovaly váš přecho
 
 Tato část architektury přechod na cloud poskytuje praktický provozní model, který pomáhá při netechnickém rozhodování. Tento provozní model se skládá ze tří metodologií, které pomůžou při vytváření vlastního provozního modelu cloudu:
 
-- [Řízení:](../governance/index.md) Zajistěte konzistenci v rámci úsilí o přechod. Srovnejte požadavky na zásady správného řízení a dodržování předpisů, abyste udržovali dobře spravované prostředí v rámci cloudu.
-- [Uspořádání:](../organization/index.md) Srovnejte uspořádání, aby byl zajištěn úspěch napříč provozním modelem a různými úsilími o přechod na cloud.
-- [Správa:](../operations/index.md) Srovnejte probíhající procesy provozní správy technologií kvůli maximalizaci dosažené hodnoty a minimalizaci přerušení služeb.
+- [Řízení:](../govern/index.md) Zajistěte konzistenci v rámci úsilí o přechod. Srovnejte požadavky na zásady správného řízení a dodržování předpisů, abyste udržovali dobře spravované prostředí v rámci cloudu.
+- [Uspořádání:](../organize/index.md) Srovnejte uspořádání, aby byl zajištěn úspěch napříč provozním modelem a různými úsilími o přechod na cloud.
+- [Správa:](../manage/index.md) Srovnejte probíhající procesy provozní správy technologií kvůli maximalizaci dosažené hodnoty a minimalizaci přerušení služeb.
 
 ## <a name="next-steps"></a>Další kroky
 
 Zásady správného řízení jsou obvyklým prvním krokem k vytvoření provozního modelu pro cloud.
 
 > [!div class="nextstepaction"]
-> [Další informace o zásadách správného řízení cloudu](../governance/index.md)
+> [Další informace o zásadách správného řízení cloudu](../govern/index.md)

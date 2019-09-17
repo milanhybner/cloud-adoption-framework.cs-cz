@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef608f27f75d5a47e3e23a568e576310b8962ea8
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817090"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023914"
 ---
 # <a name="encryption-decision-guide"></a>Průvodce rozhodováním ohledně šifrování
 
@@ -120,9 +120,9 @@ Prostředky, které vyžadují šifrování, byste měli určit na základě cel
 
 Další informace o šifrování a správě klíčů v Azure najdete tady:
 
-- [Přehled šifrování Azure](/azure/security/security-azure-encryption-overview). Podrobný popis způsobu, jakým Azure využívá šifrování k zabezpečení přenášených i neaktivních uložených dat.
-- [Azure Key Vault](/azure/key-vault/key-vault-overview). Služba Key Vault je hlavní systém pro správu klíčů, který umožňuje ukládání a správu kryptografických klíčů, tajných klíčů a certifikátů v Azure.
-- [Osvědčené postupy šifrování a zabezpečení dat v Azure](/azure/security/azure-security-data-encryption-best-practices). Popis osvědčených postupů šifrování a zabezpečení dat v Azure.
+- [Přehled šifrování Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Podrobný popis způsobu, jakým Azure využívá šifrování k zabezpečení přenášených i neaktivních uložených dat.
+- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Služba Key Vault je hlavní systém pro správu klíčů, který umožňuje ukládání a správu kryptografických klíčů, tajných klíčů a certifikátů v Azure.
+- [Osvědčené postupy šifrování a zabezpečení dat v Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Popis osvědčených postupů šifrování a zabezpečení dat v Azure.
 - [Důvěrné výpočetní operace v Azure](https://azure.microsoft.com/solutions/confidential-compute/). Iniciativa důvěrných výpočetních operací v Azure poskytuje nástroje a technologie umožňující vytvářet důvěryhodná spouštěcí prostředí nebo další mechanismy šifrování pro zabezpečení používaných dat.
 
 ## <a name="next-steps"></a>Další kroky

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817974"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023848"
 ---
 # <a name="architectural-decision-guides"></a>Průvodci rozhodováním ohledně architektury
 
@@ -42,11 +42,11 @@ Každá z následujících kategorií představuje základní technologii všech
 
 [Šifrování:](./encryption/index.md) Zabezpečte svá citlivá data s využitím šifrování a splňte tak požadavky vaší organizace na zabezpečení a dodržování předpisů.
 
-[Protokoly a generování sestav:](./log-and-report/index.md) Monitorujte data protokolů generovaná cloudovými prostředky. Analýzou dat můžete získat přehledy o stavu úloh z hlediska operací, údržby, a dodržování předpisů.
+[Protokoly a generování sestav:](./logging-and-reporting/index.md) Monitorujte data protokolů generovaná cloudovými prostředky. Analýzou dat můžete získat přehledy o stavu úloh z hlediska operací, údržby, a dodržování předpisů.
 
 ## <a name="next-steps"></a>Další kroky
 
 Zjistěte, proč předplatná a účtu slouží jako základ cloudového nasazení.
 
 > [!div class="nextstepaction"]
-> [Návrh předplatných](subscriptions/index.md)
+> [Návrh předplatných](./subscriptions/index.md)

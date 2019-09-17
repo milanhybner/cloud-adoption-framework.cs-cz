@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818161"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022619"
 ---
 # <a name="prerequisites-for-migration"></a>Požadavky na migraci
 
@@ -25,10 +25,10 @@ Zajištění obchodní, kulturní a technické připravenosti před zahájením 
 
 ## <a name="review-business-drivers"></a>Kontrola obchodních faktorů
 
-Před zahájením jakékoli migrace do cloudu si přečtěte pokyny k [plánování](../../../business-strategy/index.md) a zajištění [připravenosti](../../../ready/index.md) v architektuře přechodu na cloud a ujistěte se, že je vaše organizace připravená na procesy přechodu na cloud a migrace. Konkrétně si projděte obchodní požadavky a očekávané výsledky, které jsou důvodem k migraci:
+Před zahájením jakékoli migrace do cloudu si přečtěte pokyny k [plánování](../../../strategy/index.md) a zajištění [připravenosti](../../../ready/index.md) v architektuře přechodu na cloud a ujistěte se, že je vaše organizace připravená na procesy přechodu na cloud a migrace. Konkrétně si projděte obchodní požadavky a očekávané výsledky, které jsou důvodem k migraci:
 
 - [Začínáme: Migrace](../../../getting-started/migrate.md)
-- [Proč přecházíme na cloud?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [Proč přecházíme na cloud?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definice *dokončení*
 
@@ -56,7 +56,7 @@ Za splnění každé ze tří definic dokončení uvedených v předchozí čás
 
 Kromě odpovědnosti na nejvyšší úrovni existují akce, za které musí nést přímou odpovědnost určitý jednotlivec nebo skupina. Následuje několik takových povinností, které tyto aktivity ovlivňují:
 
-- **Stanovení obchodních priorit:** Přijetí obchodních rozhodnutí týkajících se úloh, které se mají migrovat, a obecných časových omezení. Další informace najdete v tématu [Motivace firem k migraci do cloudu](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Stanovení obchodních priorit:** Přijetí obchodních rozhodnutí týkajících se úloh, které se mají migrovat, a obecných časových omezení. Další informace najdete v tématu [Motivace firem k migraci do cloudu](../../../strategy/motivations.md).
 - **Připravenost na správu změn:** Stanovení a komunikace plánu sledování technických změn během migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
 - **Sladění s podnikovými uživateli:** Stanovení plánu přípravy komunity podnikových uživatelů na provedení migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
 - **Inventura a analýza digitálních aktiv:** Spuštění nástrojů potřebných k inventuře a analýze digitálních aktiv. Další informace najdete v popisu [digitálních aktiv](../../../digital-estate/index.md) v architektuře přechodu na cloud.

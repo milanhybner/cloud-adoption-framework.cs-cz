@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818127"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022572"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Nástroje pro monitorování a správu
 
@@ -26,7 +26,7 @@ Po dokončení migrace by se migrované prostředky měly spravovat v rámci kon
 - **Základní monitorování:** Základní monitorování poskytuje nezbytné elementární monitorování prostředků Azure. Tyto služby vyžadují minimální konfiguraci a shromažďují základní telemetrii, kterou používají služby monitorování úrovně Premium.
 - **Hloubkové monitorování aplikací a infrastruktury:** Služby Azure nabízejí řadu možností pro shromažďování dat monitorování a pro jejich analýzy na hlubší úrovni. Tyto služby využívají základní monitorování a běžné funkce v Azure. Nabízejí výkonné analytické nástroje pro práci se shromažďovanými daty a poskytují jedinečný přehled o vašich aplikacích a infrastruktuře.
 
-Další informace o [Azure Monitoru](/azure/azure-monitor/overview) pro monitorování migrovaných prostředků
+Další informace o [Azure Monitoru](https://docs.microsoft.com/azure/azure-monitor/overview) pro monitorování migrovaných prostředků
 
 ## <a name="security-monitoring"></a>Monitorování zabezpečení
 
@@ -39,7 +39,7 @@ Spolehněte se na službu Azure Security Center, která zajišťuje jednotné mo
 - **Upozornění a incidenty s určenou prioritou:** Zaměřte se nejprve na nejdůležitější hrozby díky upozorněním a incidentům zabezpečení s určenou prioritou.
 - **Integrovaná řešení zabezpečení:** Shromažďujte, prohledávejte a analyzujte data o zabezpečení z nejrůznějších zdrojů, včetně propojených partnerských řešení.
 
-Další informace o službě [Azure Security Center](/azure/security-center) pro zabezpečení migrovaných prostředků
+Další informace o službě [Azure Security Center](https://docs.microsoft.com/azure/security-center) pro zabezpečení migrovaných prostředků
 
 ## <a name="protect-assets-and-data"></a>Ochrana prostředků a dat
 
@@ -50,4 +50,4 @@ Azure Backup poskytuje způsob, jak chránit virtuální počítače, soubory a 
 - Zálohování databází SQL Serveru
 - Obnovení chráněných prostředků
 
-Další informace o [Azure Backupu](/azure/backup) pro ochranu migrovaných prostředků
+Další informace o [Azure Backupu](https://docs.microsoft.com/azure/backup) pro ochranu migrovaných prostředků

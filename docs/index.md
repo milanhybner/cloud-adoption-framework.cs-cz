@@ -8,18 +8,18 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: 888d45eacf15150586eda0e6ace771b1802ac673
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816665"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024440"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
 
 Architektura přechodu na cloud představuje jednotný přístup Microsoftu pro přechod na cloud v Azure, ve kterém jsou sloučené a sdílené osvědčené postupy zaměstnanců, partnerů a zákazníků Microsoftu. Tato architektura poskytuje podnikovým zákazníkům sadu nástrojů, pokynů a komentářů, které pomáhají utvářet technologické, obchodní a personální strategie pro řízení požadovaných obchodních výsledků během úsilí o přechod. Tyto pokyny odpovídají jednotlivým fázím a iteracím typického životního cyklu přechodu na cloud, aby byl zajištěný snadný přístup ke správným informacím ve správný čas.
 
-![Přehled architektury přechodu na cloud](./_images/cloud-adoption-framework-overview.png)
+![Přehled architektury přechodu na cloud](./_images/caf-overview.png)
 
 ## <a name="getting-started-executive-summaries"></a>Začínáme: Shrnutí
 
@@ -35,7 +35,7 @@ Každý oddíl architektury přechodu na cloud se mapuje na výše uvedený pře
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./business-strategy/index.md">
+        <a href="./strategy/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Migrujte a modernizujte stávající úlohy.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./governance/index.md">
+        <a href="./govern/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -130,7 +130,7 @@ Migrujte a modernizujte stávající úlohy.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organization/index.md">
+        <a href="./organize/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -154,12 +154,12 @@ Přiřaďte lidi pro účely povolení přechodu na cloud a provozu.
 
 Architektura přechodu na cloud se v současné době nabízí ve verzi Public Preview. Architektura přejde do fáze obecné dostupnosti, jakmile zcela splní zamýšlený záměr popsaný v následující části. V této verzi Preview jsou primární oblasti zaměření následující:
 
-- [Strategie přechodu na cloud](./business-strategy/index.md)
+- [Strategie přechodu na cloud](./strategy/index.md)
 - [Plánování přechodu na cloud](./plan/index.md)
 - [Migrace do cloudu](./migrate/index.md)
-- [Zásady správného řízení cloudu](./governance/journeys/index.md)
+- [Zásady správného řízení cloudu](./govern/guides/index.md)
 
-S blížící se obecnou dostupností budeme architekturu přechodu na cloud často rozšiřovat. V rámci tohoto rozšiřování doplníme podrobnosti v jednotlivých oddílech a přidáme i nový obsah. Další informace najdete v [plánu vývoje architektury přechodu na cloud](./appendix/roadmap.md).
+S blížící se obecnou dostupností budeme architekturu přechodu na cloud často rozšiřovat. V rámci tohoto rozšiřování doplníme podrobnosti v jednotlivých oddílech a přidáme i nový obsah. Další informace najdete v [plánu vývoje architektury přechodu na cloud](./reference/roadmap.md).
 
 ## <a name="intent"></a>Záměr
 
@@ -181,7 +181,7 @@ Jednotlivé části architektury přechodu na cloud představují různé specia
 
 Pokud váš podnik s Azure teprve začíná, přečtěte si nejdřív téma [Začínáme s architekturou přechodu na cloud](./getting-started/migrate.md). Tento přehled obsahuje doporučené pokyny pro digitální transformaci vašeho podniku, které vás provedou jednotlivými fázemi tohoto procesu.
 
-Pokud už váš podnik má zkušenosti s Azure a hledáte podrobnější pokyny nebo osvědčené postupy pro konkrétní oblasti, projděte si [přehled zásad správného řízení](./governance/index.md) a [průvodce rozhodováním ohledně architektury](./decision-guides/index.md). Další oddíly přidáme, až se bude blížit obecná dostupnost.
+Pokud už váš podnik má zkušenosti s Azure a hledáte podrobnější pokyny nebo osvědčené postupy pro konkrétní oblasti, projděte si [přehled zásad správného řízení](./govern/index.md) a [průvodce rozhodováním ohledně architektury](./decision-guides/index.md). Další oddíly přidáme, až se bude blížit obecná dostupnost.
 
 > [!div class="nextstepaction"]
 > [Začínáme](./getting-started/migrate.md)

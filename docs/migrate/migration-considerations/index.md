@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acee0d171be547910a0fd7892c794400ae2ee101
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817294"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024691"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migrace architektury přechodu na cloud
 
@@ -23,7 +23,7 @@ Tato část architektury přechodu na cloud vysvětluje principy skryté za jej�
 
 Migrace do cloudu představuje snahu o správu portfolia chytře zamaskovanou za technickou implementaci. Během procesu migrace budete přijímat rozhodnutí nějaké prostředky přesunout, do jiných investovat a zastaralé nebo nepoužívané prostředky vyřadit z provozu. Některé prostředky se v rámci tohoto procesu optimalizují, refaktorují nebo zcela nahradí. Všechna tato rozhodnutí by měla být v souladu s vašimi motivacemi k migraci do cloudu. Ty nejúspěšnější migrace jdou ještě o krok dál a zajišťují soulad těchto rozhodnutí s požadovanými obchodními výsledky.
 
-Předpokladem pro model migrace architektury přechodu na cloud je, aby vaše organizace dokončila proces zajištění obchodní připravenosti pro přechod na cloud. Před zahájením procesu migrace ve velkém měřítku si nezapomeňte přečíst pokyny k [plánování](../../business-strategy/index.md) a zajištění [připravenosti](../../ready/index.md) v architektuře přechodu na cloud a určete obchodní faktory nebo jiné odůvodnění migrace do cloudu a také případné požadavky na plánování nebo školení pro organizaci.
+Předpokladem pro model migrace architektury přechodu na cloud je, aby vaše organizace dokončila proces zajištění obchodní připravenosti pro přechod na cloud. Před zahájením procesu migrace ve velkém měřítku si nezapomeňte přečíst pokyny k [plánování](../../strategy/index.md) a zajištění [připravenosti](../../ready/index.md) v architektuře přechodu na cloud a určete obchodní faktory nebo jiné odůvodnění migrace do cloudu a také případné požadavky na plánování nebo školení pro organizaci.
 
 > [!NOTE]
 > Přestože je obchodní plánování důležité, stejně důležité je i růstové myšlení. Souběžně s širším obchodním plánováním týmu cloudové strategie doporučujeme, aby tým přechodu na cloud zahájil migraci první úlohy, která bude sloužit jako prekurzor pro rozsáhlejší migrace. Tato počáteční migrace umožní týmu získat praktické zkušenosti s obchodními a technickými problémy spojenými s migrací.
@@ -32,7 +32,7 @@ Předpokladem pro model migrace architektury přechodu na cloud je, aby vaše or
 
 Před zahájením migrace je důležité udělat si hrubou představu požadovaného koncového stavu. Následující diagram ukazuje místní výchozí bod infrastruktury, aplikací a dat, který definuje vaše *digitální aktiva*. Během procesu migrace se tyto prostředky převedou s využitím jedné z pěti strategií migrace popsaných v tématu [5R racionalizace](../../digital-estate/5-rs-of-rationalization.md).
 
-![Infografika možností migrace](../../_images/migration/migration-options.png)
+![Infografika možností migrace](../../_images/migrate/migration-options.png)
 
 Migrace a modernizace úloh sahají od jednoduchých migrací *změnou hostitele* (migrace metodou „lift and shift“) s využitím funkcí infrastruktury jako služby (IaaS), které nevyžadují změny kódu ani aplikací, přes *refaktorování* s minimálními změnami až po *změnu architektury*, při které se upraví a rozšíří kód a funkce aplikací tak, aby mohly využívat cloudové technologie.
 
@@ -47,7 +47,7 @@ V rámci strategií nativních pro cloud a zahrnujících platformu jako službu
 
 Model migrace architektury přechodu na cloud je založený na procesu inkrementální cloudové transformace. Předpokládá, že vaše organizace začne počáteční migrací do cloudu v omezeném rozsahu, kterou obecně označujeme jako první úlohu. S tím, jak vaše provozní týmy budou upřesňovat a zlepšovat procesy migrace, se tato činnost bude iterativně rozšiřovat o další úlohy.
 
-Nástroje pro migraci do cloudu, jako je [Azure Site Recovery](/azure/site-recovery/site-recovery-overview), můžou migrovat celá datacentra s desítkami tisíc virtuálních počítačů. Firmy a stávající IT operace jsou však málokdy schopné toto tempo změn zvládnout. Řada organizací proto rozděluje migraci do několika iterací a v každé iteraci přesouvá jednu úlohu (nebo kolekci úloh).
+Nástroje pro migraci do cloudu, jako je [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), můžou migrovat celá datacentra s desítkami tisíc virtuálních počítačů. Firmy a stávající IT operace jsou však málokdy schopné toto tempo změn zvládnout. Řada organizací proto rozděluje migraci do několika iterací a v každé iteraci přesouvá jednu úlohu (nebo kolekci úloh).
 
 Principy, na kterých stojí tento inkrementální model, vycházejí z provádění procesů a požadavků, na které odkazuje následující infografika.
 
