@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818263"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022241"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Osvědčené postupy pro připravenost pro Azure
 
@@ -24,7 +24,7 @@ Velkou část zajištění připravenosti pro cloud tvoří zajištění technic
 Následující pokyny použijte pro uspořádání a nasazení vašich aktiv v prostředí Azure:
 
 - [Základní koncepty Azure.](../considerations/fundamental-concepts.md) Seznámíte se se základními koncepty a termíny používanými v Azure. Dozvíte se také, jak tyto koncepty vzájemně souvisejí.
-- [Doporučené zásady označování a vytváření názvů.](../considerations/name-and-tag.md) Projděte si podrobná doporučení k vytváření názvů a označování prostředků. Tato doporučení podporují úsilí o přechod na podnikový cloud.
+- [Doporučené zásady označování a vytváření názvů.](../considerations/naming-and-tagging.md) Projděte si podrobná doporučení k vytváření názvů a označování prostředků. Tato doporučení podporují úsilí o přechod na podnikový cloud.
 - [Škálování s využitím několika předplatných Azure.](../considerations/scaling-subscriptions.md) Seznámíte se se strategiemi pro škálování s využitím několika předplatných Azure.
 - [Uspořádání prostředků s využitím skupin pro správu Azure.](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json) Zjistíte, jak skupiny pro správu spravují prostředky, role, zásady a nasazení napříč několika předplatnými.
 - [Vytvoření konzistentního hybridního cloudu.](../../infrastructure/misc/hybrid-consistency.md) Budete mít možnost vytvořit hybridní cloudová řešení, která poskytují výhody cloudových inovací a současně si zachovávají řadu výhod správy v místním prostředí.
