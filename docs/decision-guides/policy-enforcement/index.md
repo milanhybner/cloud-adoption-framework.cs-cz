@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817651"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023718"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Průvodce rozhodováním ohledně vynucování zásad
 
 Definování zásad organizace není efektivní, pokud je nejde vynucovat v celé organizaci. Klíčovým aspektem plánování migrace do jakéhokoli cloudu je určení nejlepší kombinace nástrojů, které poskytuje cloudová platforma, a stávajících IT procesů pro zajištění maximalizace dodržování zásad napříč všemi cloudovými aktivy.
 
-![Diagram možností vynucování zásad od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Diagram možností vynucování zásad od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Přejít na: [Základní doporučené postupy](#baseline-recommended-practices) | [Monitorování dodržování zásad](#policy-compliance-monitoring) | [Vynucování zásad](#policy-enforcement) | [Zásady pro celou organizaci](#cross-organization-policy) | [Automatizované vynucování](#automated-enforcement)
 
@@ -28,7 +28,7 @@ S tím, jak se budou rozšiřovat vaše cloudová aktiva, budete muset čelit od
 
 Pro méně rozsáhlá cloudová aktiva jsou obvykle dostačující mechanismy vynucování zásad na úrovni prostředku nebo předplatného, které poskytuje platforma. Rozsáhlejší nasazení ospravedlňují širší rozsah vynucování a můžou vyžadovat sofistikovanější mechanismy vynucování, které zahrnují standardy nasazení, seskupování a organizaci prostředků a integraci vynucování zásad se systémy protokolování a generování sestav.
 
-Primárními faktory při určování rozsahu procesů vynucování zásad jsou [požadavky vaší organizace na zásady správného řízení v cloudu](/azure/architecture/cloud-adoption/governance/overview), velikost a povaha cloudových aktiv a způsob, jakým [návrh předplatného](../subscriptions/index.md) odráží vaši organizaci. Rozšíření rozsahu vynucování může ospravedlnit zvýšení velikosti aktiv nebo větší potřeba centrální správy vynucování zásad.
+Primárními faktory při určování rozsahu procesů vynucování zásad jsou [požadavky vaší organizace na zásady správného řízení v cloudu](../../govern/index.md), velikost a povaha cloudových aktiv a způsob, jakým [návrh předplatného](../subscriptions/index.md) odráží vaši organizaci. Rozšíření rozsahu vynucování může ospravedlnit zvýšení velikosti aktiv nebo větší potřeba centrální správy vynucování zásad.
 
 ## <a name="baseline-recommended-practices"></a>Základní doporučené postupy
 
@@ -43,15 +43,15 @@ Začněte s plánováním vynucování zásad v cloudu tím, že prozkoumáte, j
 
 ## <a name="policy-compliance-monitoring"></a>Monitorování dodržování zásad
 
-Pokud se nechcete spoléhat jen na mechanismy vynucování zásad, které poskytuje platforma Azure, prvním krokem je zajistit možnost ověření, jestli jsou cloudové aplikace a služby v souladu se zásadami organizace. To zahrnuje implementaci oznamovacích funkcí, které upozorní odpovědné strany v případě, že prostředek přestane dodržovat předpisy. Důležitou součástí firemní strategie vynucování zásad je efektivní [protokolování a generování sestav](../log-and-report/index.md) stavu dodržování předpisů ze strany cloudových úloh.
+Pokud se nechcete spoléhat jen na mechanismy vynucování zásad, které poskytuje platforma Azure, prvním krokem je zajistit možnost ověření, jestli jsou cloudové aplikace a služby v souladu se zásadami organizace. To zahrnuje implementaci oznamovacích funkcí, které upozorní odpovědné strany v případě, že prostředek přestane dodržovat předpisy. Důležitou součástí firemní strategie vynucování zásad je efektivní [protokolování a generování sestav](../logging-and-reporting/index.md) stavu dodržování předpisů ze strany cloudových úloh.
 
-Jakmile se vaše cloudová aktiva začnou rozšiřovat, další nástroje, jako je [Azure Security Center](/azure/security-center), vám můžou poskytnout integrované zabezpečení a detekci hrozeb a pomoct s implementací centralizované správy zásad a upozorňování pro místní i cloudové prostředky.
+Jakmile se vaše cloudová aktiva začnou rozšiřovat, další nástroje, jako je [Azure Security Center](https://docs.microsoft.com/azure/security-center), vám můžou poskytnout integrované zabezpečení a detekci hrozeb a pomoct s implementací centralizované správy zásad a upozorňování pro místní i cloudové prostředky.
 
 ## <a name="policy-enforcement"></a>Vynucování zásad
 
 V Azure můžete uplatňovat konfigurační nastavení a pravidla vytváření prostředků, která vám pomůžou zajistit dodržování zásad, na úrovni skupiny pro správu, předplatného nebo skupiny prostředků.
 
-[Azure Policy](/azure/governance/policy/overview) je služba Azure umožňující vytvářet, přiřazovat a spravovat zásady. Tyto zásady vynucují na vašich prostředcích různá pravidla a účinky, aby tyto prostředky zůstaly kompatibilní s vašimi firemními standardy a smlouvami o úrovni služeb. Azure Policy vyhodnocuje prostředky z hlediska nedodržování přiřazených zásad. Například můžete chtít omezit velikost skladových položek virtuálních počítačů ve vašem prostředí. Po implementaci odpovídajících zásad se u nových i stávajících prostředků bude vyhodnocovat dodržování předpisů. Se správnými zásadami je možné zajistit dodržování předpisů u stávajících prostředků.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) je služba Azure umožňující vytvářet, přiřazovat a spravovat zásady. Tyto zásady vynucují na vašich prostředcích různá pravidla a účinky, aby tyto prostředky zůstaly kompatibilní s vašimi firemními standardy a smlouvami o úrovni služeb. Azure Policy vyhodnocuje prostředky z hlediska nedodržování přiřazených zásad. Například můžete chtít omezit velikost skladových položek virtuálních počítačů ve vašem prostředí. Po implementaci odpovídajících zásad se u nových i stávajících prostředků bude vyhodnocovat dodržování předpisů. Se správnými zásadami je možné zajistit dodržování předpisů u stávajících prostředků.
 
 ## <a name="cross-organization-policy"></a>Zásady pro celou organizaci
 
@@ -61,7 +61,7 @@ Vzhledem k tomu, že zásady souvisejí s organizační strukturou, musí s nimi
 
 ## <a name="automated-enforcement"></a>Automatizované vynucování
 
-Zatímco standardizované šablony nasazení jsou efektivní v menším měřítku, služba [Azure Blueprints](/azure/governance/blueprints/overview) umožňuje rozsáhlou standardizovanou orchestraci zřizování a nasazování řešení Azure. Úlohy napříč několika předplatnými je možné nasadit s konzistentním nastavením zásad pro všechny vytvořené prostředky.
+Zatímco standardizované šablony nasazení jsou efektivní v menším měřítku, služba [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) umožňuje rozsáhlou standardizovanou orchestraci zřizování a nasazování řešení Azure. Úlohy napříč několika předplatnými je možné nasadit s konzistentním nastavením zásad pro všechny vytvořené prostředky.
 
 K zajištění funkcí hybridního monitorování pro IT prostředí, ve kterých se integrují cloudové a místní prostředky, možná budete muset použít systémy protokolování a generování sestav. Vaše vlastní systémy monitorování provozu nebo systémy třetích stran můžou nabízet další možnosti vynucování zásad. V případě rozsáhlejších nebo vyspělejších cloudových aktiv zvažte, jak tyto systémy co nejlépe integrovat s cloudovými prostředky.
 
