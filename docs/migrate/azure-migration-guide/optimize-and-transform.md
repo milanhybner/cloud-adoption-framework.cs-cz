@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818893"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024733"
 ---
 # <a name="optimize-and-transform"></a>Optimalizace a transformace
 
@@ -60,13 +60,13 @@ Pokud měníte velikost virtuálních počítačů za provozu, může dojít k p
 
 ::: zone target="docs"
 
-- [Správa rezervací prostředků Azure](/azure/billing/billing-manage-reserved-vm-instance)
-- [Změna velikosti virtuálního počítače s Windows](/azure/virtual-machines/windows/resize-vm)
-- [Změna velikosti virtuálního počítače s Linuxem pomocí Azure CLI](/azure/virtual-machines/linux/change-vm-size)
+- [Správa rezervací prostředků Azure](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [Změna velikosti virtuálního počítače s Windows](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [Změna velikosti virtuálního počítače s Linuxem pomocí Azure CLI](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 Partneři můžou kontrolovat použití v Partnerském centru.
 
-- [Nastavení velikosti virtuálního počítače Microsoft Azure, která maximálně využívá rezervaci](/partner-center/azure-usage)
+- [Nastavení velikosti virtuálního počítače Microsoft Azure, která maximálně využívá rezervaci](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -126,8 +126,8 @@ K získání doporučení ohledně možné úspory nákladů také můžete pou�
 
 ::: zone target="docs"
 
-- [Kurz: Optimalizace nákladů na základě doporučení](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Jak zabránit neočekávaným poplatkům v rámci fakturace Azure a správy nákladů](/azure/billing/billing-getting-started)
-- [Prozkoumání a analýza nákladů pomocí služby Analýzy nákladů](/azure/cost-management/quick-acm-cost-analysis)
+- [Kurz: Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Jak zabránit neočekávaným poplatkům v rámci fakturace Azure a správy nákladů](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [Prozkoumání a analýza nákladů pomocí služby Analýzy nákladů](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

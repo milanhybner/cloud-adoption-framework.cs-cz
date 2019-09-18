@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818757"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022787"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -50,7 +50,7 @@ Pokud chcete provést migraci pomocí služby Azure Migrate, postupujte následo
 
 ### <a name="read-more"></a>Další informace
 
-- [Kurz služby Azure Migrate – Migrace fyzických nebo virtualizovaných serverů do Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Kurz služby Azure Migrate – Migrace fyzických nebo virtualizovaných serverů do Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Služba Azure Site Recovery může spravovat migraci místních prostředků do 
 Následující kroky popisují obecný proces použití Site Recovery k migraci:
 
 > [!TIP]
-> V závislosti na vašem scénáři se tyto kroky můžou mírně lišit. Další informace najdete v článku [Migrace místních počítačů do Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> V závislosti na vašem scénáři se tyto kroky můžou mírně lišit. Další informace najdete v článku [Migrace místních počítačů do Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 ### <a name="prepare-azure-site-recovery-service"></a>Příprava služby Azure Site Recovery
 
@@ -102,7 +102,7 @@ Následující kroky popisují obecný proces použití Site Recovery k migraci:
 
 Další informace naleznete v tématu:
 
-- [Migrace místních počítačů do Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrace místních počítačů do Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Služba je teď připravená migrovat podporované zdrojové databáze (napřík
 
 Další informace naleznete v tématu:
 
-- [Přehled služby Azure Database Migration Service](/azure/dms/dms-overview)
-- [Vytvoření instance služby Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Přehled služby Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Vytvoření instance služby Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Služba Azure Migrate na webu Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure Portal: Vytvoření projektu migrace](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Pokud chcete začít pracovat s nástrojem Data Migration Assistant, postupujte 
 1. Kliknutím na **Next** (Další) spusťte posouzení.
 1. Podívejte se na výsledky v rámci sady nástrojů Data Migration Assistant.
 
-V případě velkého podniku doporučujeme postupovat podle článku o [posouzení podnikových prostředků a konsolidaci posuzujících sestav pomocí nástroje DMA](/sql/dma/dma-consolidatereports). Podle něj můžete posoudit více serverů, sloučit sestavy a pak analyzovat výsledky pomocí poskytovaných sestav Power BI.
+V případě velkého podniku doporučujeme postupovat podle článku o [posouzení podnikových prostředků a konsolidaci posuzujících sestav pomocí nástroje DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports). Podle něj můžete posoudit více serverů, sloučit sestavy a pak analyzovat výsledky pomocí poskytovaných sestav Power BI.
 
 Další informace, včetně podrobných kroků použití, najdete v těchto článcích:
 
-- [Přehled nástroje Data Migration Assistant](/sql/dma/dma-overview)
-- [Posouzení podnikových prostředků a konsolidace posuzujících sestav pomocí nástroje DMA](/sql/dma/dma-consolidatereports)
-- [Analýza konsolidovaných posuzujících sestav vytvořených nástrojem Data Migration Assistant pomocí Power BI](/sql/dma/dma-powerbiassesreport)
+- [Přehled nástroje Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)
+- [Posouzení podnikových prostředků a konsolidace posuzujících sestav pomocí nástroje DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Analýza konsolidovaných posuzujících sestav vytvořených nástrojem Data Migration Assistant pomocí Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>Pomocník s migrací SQL Serveru
 
-Pomocník s migrací Microsoft SQL Serveru (SSMA) je nástroj určený k automatizaci migrace databází na SQL Server z aplikace Microsoft Access, DB2, MySQL, Oracle a SAP ASE. Obecný postup je shromáždit, posoudit a pak zkontrolovat pomocí těchto nástrojů informace. Vzhledem k rozdílům v procesu pro jednotlivé zdrojové systémy ale doporučujeme, abyste si prostudovali podrobnou [dokumentaci pro Pomocníka s migrací SQL Serveru](/sql/ssma/sql-server-migration-assistant).
+Pomocník s migrací Microsoft SQL Serveru (SSMA) je nástroj určený k automatizaci migrace databází na SQL Server z aplikace Microsoft Access, DB2, MySQL, Oracle a SAP ASE. Obecný postup je shromáždit, posoudit a pak zkontrolovat pomocí těchto nástrojů informace. Vzhledem k rozdílům v procesu pro jednotlivé zdrojové systémy ale doporučujeme, abyste si prostudovali podrobnou [dokumentaci pro Pomocníka s migrací SQL Serveru](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant).
 
 Další informace naleznete v tématu:
 
-- [Přehled Pomocníka s migrací SQL Serveru](/sql/ssma/sql-server-migration-assistant)
+- [Přehled Pomocníka s migrací SQL Serveru](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Pomocník pro experimentování s databázemi
 
@@ -194,7 +194,7 @@ Pomocník pro experimentování s databázemi obsahuje následující aktivity p
 
 Další informace naleznete v tématu:
 
-- [Přehled Pomocníka pro experimentování s databázemi](/sql/dea/database-experimentation-assistant-overview)
+- [Přehled Pomocníka pro experimentování s databázemi](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Nástroje pro migraci od třetích stran](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ Přechod na cloudové technologie představuje pro organizaci skvělou přílež
 
 # <a name="cost-managementtabmanagecost"></a>[Správa nákladů](#tab/ManageCost)
 
-Při a po migraci prostředků do cloudového prostředí je důležité provádět pravidelnou analýzu nákladů. To vám pomůže vyhnout se neočekávaným poplatkům za využití, protože proces migrace může přinášet zvýšené požadavky na využití služeb. Můžete také podle potřeby měnit velikost prostředků, aby byly náklady v rovnováze s vytížením (podrobnější informace najdete v oddílu o **[optimalizaci a transformaci](optimize-and-transform.md)** ).
+Při a po migraci prostředků do cloudového prostředí je důležité provádět pravidelnou analýzu nákladů. To vám pomůže vyhnout se neočekávaným poplatkům za využití, protože proces migrace může přinášet zvýšené požadavky na využití služeb. Můžete také podle potřeby měnit velikost prostředků, aby byly náklady v rovnováze s vytížením (podrobnější informace najdete v oddílu o **[optimalizaci a transformaci](./optimize-and-transform.md)** ).

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 294a426aef047bb7acd418c19574a4fd7e0b2320
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905637"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024811"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
@@ -70,8 +70,8 @@ Výsledný odhad, jehož příklad je uvedený níže, identifikuje měsíční 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Nastavení a kontrola posouzení pomocí Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../governance/journeys/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../governance/cost-management/index.md) a [vylepšování služby Cost Management ve velkém podniku](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+- [Nastavení a kontrola posouzení pomocí Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Odhad a optimalizace nákladů na virtuální počítače během migrace a po ní](#tab/EstimateOptimize)
 
@@ -91,7 +91,7 @@ Doporučení k nákladům pro prostředky (infrastrukturu, aplikace a data) v r�
 
 Služba Azure Cost Management dokáže poskytnout komplexnější pohled na vzory nákladů, včetně podrobného zobrazení nákladů a jejich trendů v průběhu času. V případě rozsáhlých nebo složitých migrací může toto zobrazení poskytnout přehledné informace potřebné k rozhodování o správě a snižování nákladů v širším měřítku.
 
-Požadavky: Zbývající část této karty předpokládá, že jste během dokončování průvodce připraveností pro Azure dokončili nastavení služby Azure Cost Management. Další podrobnosti o konfiguraci služby Azure Cost Management najdete v tomto [článku v průvodci připraveností pro Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/manage-costs). Jakmile jsou data k dispozici, můžete na jejich základě podle následujících kroků odhadovat měsíční náklady.
+Požadavky: Zbývající část této karty předpokládá, že jste během dokončování průvodce připraveností pro Azure dokončili nastavení služby Azure Cost Management. Další podrobnosti o konfiguraci služby Azure Cost Management najdete v tomto [článku v průvodci připraveností pro Azure](../../ready/azure-readiness-guide/manage-costs.md). Jakmile jsou data k dispozici, můžete na jejich základě podle následujících kroků odhadovat měsíční náklady.
 
 Data analýzy nákladů služby Azure Cost Management můžete pro svá předplatná načíst takto:
 
@@ -104,9 +104,9 @@ Tato analýza vám umožní zkontrolovat celkové náklady, rozpočet (pokud je 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../governance/journeys/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../governance/cost-management/index.md) a [postupného vylepšování služby Cost Management ve velkém podniku](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
-- Další informace o službě Azure Advisor najdete v článku o [snížení nákladů na služby pomocí Azure Advisoru](/azure/advisor/advisor-cost-recommendations).
-- Další informace o službě Azure Cost Management najdete v článcích o [principech oborů a práci s nimi](/azure/cost-management/understand-work-scopes) a o [prozkoumání a analýze nákladů pomocí analýzy nákladů](/azure/cost-management/quick-acm-cost-analysis).
+- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [postupného vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).
+- Další informace o službě Azure Advisor najdete v článku o [snížení nákladů na služby pomocí Azure Advisoru](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
+- Další informace o službě Azure Cost Management najdete v článcích o [principech oborů a práci s nimi](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) a o [prozkoumání a analýze nákladů pomocí analýzy nákladů](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
 # <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Tipy a triky pro optimalizaci nákladů](#tab/TipsTricks)
 
@@ -130,7 +130,7 @@ Promluvte si se svým zástupcem v Microsoftu a zjistěte, jak můžete využít
 
 ## <a name="azure-reservations"></a>Rezervace Azure
 
-[Rezervace Azure](/azure/billing/billing-save-compute-costs-reservations) umožňují předplatit si jednoletou nebo tříletou výpočetní kapacitu virtuálního počítače nebo databáze SQL. Díky předplacení můžete získat slevu na využívané prostředky. Rezervace Azure můžou při jednoletém nebo tříletém závazku s platbou předem významně snížit náklady na výpočetní výkon virtuálního počítače nebo databáze SQL, a to až o 72 procent oproti průběžným platbám. Rezervace poskytují slevu z faktury a neovlivňují běhový stav virtuálních počítačů nebo databází SQL.
+[Rezervace Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) umožňují předplatit si jednoletou nebo tříletou výpočetní kapacitu virtuálního počítače nebo databáze SQL. Díky předplacení můžete získat slevu na využívané prostředky. Rezervace Azure můžou při jednoletém nebo tříletém závazku s platbou předem významně snížit náklady na výpočetní výkon virtuálního počítače nebo databáze SQL, a to až o 72 procent oproti průběžným platbám. Rezervace poskytují slevu z faktury a neovlivňují běhový stav virtuálních počítačů nebo databází SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Zvýhodněné hybridní využití Azure
 
@@ -138,8 +138,8 @@ Pokud už máte licence na Windows Server nebo SQL Server ve svých místních n
 
 ## <a name="low-priority-vms-with-batch"></a>Virtuální počítače s nízkou prioritou ve službě Batch
 
-Pro procesy běžící na pozadí s nižší prioritou nabízí služba Batch možnost správy virtuálních počítačů pro služby na pozadí a snížení nákladů. Než ale zvolíte tuto levnější možnost, je důležité porozumět tomu, že použití [virtuálních počítačů s nízkou prioritou ve službě Batch](/azure/batch/batch-low-pri-vms) má dopad na výkon.
+Pro procesy běžící na pozadí s nižší prioritou nabízí služba Batch možnost správy virtuálních počítačů pro služby na pozadí a snížení nákladů. Než ale zvolíte tuto levnější možnost, je důležité porozumět tomu, že použití [virtuálních počítačů s nízkou prioritou ve službě Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) má dopad na výkon.
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../governance/journeys/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../governance/cost-management/index.md) a [zásad správného řízení při postupném vylepšování služby Cost Management ve velkém podniku](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [zásad správného řízení při postupném vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).

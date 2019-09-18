@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818485"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022011"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
@@ -25,7 +25,7 @@ Cloudové platformy, jako je Microsoft Azure, se mění rychleji, než na co je 
 
 Následující materiály vám pomohou držet krok s Azure:
 
-- [Azure Service Health](/azure/service-health/service-health-overview)
+- [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - Service Health a upozornění poskytují včasná oznámení o aktuálních problémech se službami, plánované údržbě a poradenství pro stav. Tento materiál obsahuje také informace o funkcích, které se z Azure odebírají.
 - [Aktualizace Azure](https://azure.microsoft.com/updates)
   - Přihlaste se k odběru aktualizací Azure, abyste dostávali oznámení o aktualizacích produktů. Krátké souhrny odkazují na další podrobnosti, což usnadňuje sledování aktualizací.

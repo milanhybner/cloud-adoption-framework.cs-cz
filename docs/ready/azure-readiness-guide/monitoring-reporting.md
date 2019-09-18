@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c3ae19f9d8115e7d07241d22074d26ae5592560
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818536"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022064"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitorování a generování sestav v Azure
 
@@ -35,10 +35,10 @@ Azure Monitor poskytuje jedno společné centrum pro všechna data monitorován�
 
  Zahájení monitorování pro:
 
-- [Aplikace](/azure/application-insights/app-insights-overview)
-- [Containers](/azure/monitoring/monitoring-container-overview)
-- [Virtual Machines](/azure/monitoring/monitoring-service-map)
-- [Sítě](/azure/networking/network-monitoring-overview)
+- [Aplikace](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+- [Containers](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
+- [Virtual Machines](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
+- [Sítě](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
 
 Pokud chcete monitorovat jiné prostředky, vyhledejte další řešení na webu Azure Marketplace.
 
@@ -46,7 +46,7 @@ Pokud chcete prozkoumat Azure Monitor, přejděte na [Azure Portal](https://port
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v [dokumentaci ke službě Azure Monitor](/azure/monitoring-and-diagnostics).
+Další informace najdete v [dokumentaci ke službě Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics).
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Pokud chcete nastavit upozornění služby Service Health, přejděte na [Azure 
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v [dokumentaci ke službě Azure Service Health](/azure/service-health).
+Další informace najdete v [dokumentaci ke službě Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -121,7 +121,7 @@ Pokud chcete prozkoumat Azure Advisor, přejděte na [Azure Portal](https://port
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v [dokumentaci k Azure Advisoru](/azure/advisor).
+Další informace najdete v [dokumentaci k Azure Advisoru](https://docs.microsoft.com/azure/advisor).
 
 ::: zone-end
 
@@ -151,6 +151,6 @@ Pokud chcete prozkoumat Azure Security Center, přejděte na web [Azure Portal](
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v [dokumentaci ke službě Azure Security Center](/azure/security-center).
+Další informace najdete v [dokumentaci ke službě Azure Security Center](https://docs.microsoft.com/azure/security-center).
 
 ::: zone-end

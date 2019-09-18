@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 89ce17ad531d1ab3ea3df3072aa93654bbe00696
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b5fd413b1492d1ef885103ee529b4bdfb68f4666
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818604"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025199"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Správa nákladů a fakturace prostředků Azure
 
@@ -67,9 +67,9 @@ Zobrazení vašich žádostí o podporu a jejich stavu:
 
 Další informace naleznete v tématu:
 
-- [Dokumentace ke správě nákladů a fakturaci Azure](/azure/billing)
+- [Dokumentace ke správě nákladů a fakturaci Azure](https://docs.microsoft.com/azure/billing)
 - [Architektura přechodu na cloud: Sledování nákladů napříč organizačními jednotkami, prostředími a projekty](../azure-best-practices/track-costs.md)
-- [Architektura přechodu na cloud: Zásady správného řízení nákladů](../../governance/cost-management/index.md)
+- [Architektura přechodu na cloud: Zásady správného řízení nákladů](../../govern/cost-management/index.md)
 
 ::: zone-end
 

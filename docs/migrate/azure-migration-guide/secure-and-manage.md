@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7d742242f2639708914927aedbf45d1c59020c7d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818723"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022744"
 ---
 # <a name="secure-and-manage"></a>Zabezpečení a správa
 
@@ -41,7 +41,7 @@ Azure Monitor maximalizuje dostupnost a výkon vašich aplikací tím, že posky
 
 ## <a name="read-more"></a>Další informace
 
-- [Přehled služby Azure Monitor](/azure/azure-monitor/overview)
+- [Přehled služby Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ Kombinace těchto přehledů vám poskytne ucelený pohled na stav služby Azure
 
 ## <a name="read-more"></a>Další informace
 
-Další informace najdete v [dokumentaci ke službě Azure Service Health](/azure/service-health).
+Další informace najdete v [dokumentaci ke službě Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Azure Advisor je přizpůsobený cloudový konzultant, který pomáhá dodržova
 
 ## <a name="read-more"></a>Další informace
 
-[Přehled](/azure/advisor/advisor-overview)
+[Přehled](https://docs.microsoft.com/azure/advisor/advisor-overview)
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ Azure Security Center je jednotný systém pro správu zabezpečení infrastrukt
 
 ## <a name="read-more"></a>Další informace
 
-[Přehled](/azure/security-center/security-center-intro)
+[Přehled](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ Azure Backup je služba Azure, kterou můžete využívat k zálohování (ochra
 
 ::: zone target="docs"
 
-[Přehled](/azure/backup/backup-introduction-to-azure-backup)
+[Přehled](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
 
 ::: zone-end
 
@@ -194,7 +194,7 @@ Po dokončení úlohy replikace můžete zkontrolovat stav replikace, ověřit n
 
 ## <a name="learn-more"></a>Další informace
 
-- [Přehled Azure Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Replikace virtuálního počítače Azure do jiné oblasti](/azure/site-recovery/azure-to-azure-quickstart)
+- [Přehled Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+- [Replikace virtuálního počítače Azure do jiné oblasti](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ::: zone-end

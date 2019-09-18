@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818638"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025241"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Zásady správného řízení, zabezpečení a dodržování předpisů v Azure
 
-Při vytváření podnikových zásad a plánování strategie zásad správného řízení můžete pomocí nástrojů a služeb, jako jsou Azure Policy, Azure Blueprints a Azure Security Center, prosazovat a automatizovat rozhodnutí organizace v zásad správného řízení. Než začnete s plánováním zásad správného řízení, identifikujte pomocí [nástroje Governance Benchmark](http://aka.ms/caf/gov/assess) možné mezery v přístupu vaší organizace k zásadám správného řízení. Další informace o vývoji procesů zásad správného řízení najdete v [pokynech pro zásady správného řízení Architektury přechodu na cloud pro Azure](../../governance/index.md).
+Při vytváření podnikových zásad a plánování strategie zásad správného řízení můžete pomocí nástrojů a služeb, jako jsou Azure Policy, Azure Blueprints a Azure Security Center, prosazovat a automatizovat rozhodnutí organizace v zásad správného řízení. Než začnete s plánováním zásad správného řízení, identifikujte pomocí [nástroje Governance Benchmark](http://aka.ms/caf/gov/assess) možné mezery v přístupu vaší organizace k zásadám správného řízení. Další informace o vývoji procesů zásad správného řízení najdete v [pokynech pro zásady správného řízení Architektury přechodu na cloud pro Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 Další informace naleznete v tématu:
 
-- [Azure Blueprint](/azure/governance/blueprints)
+- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [Architektura přechodu na cloud: Průvodce rozhodováním ohledně konzistence prostředků](../../decision-guides/resource-consistency/index.md)
-- [Ukázky podrobných plánů založené na standardech](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Ukázky podrobných plánů založené na standardech](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Použití zásady pro skupinu prostředků:
 
 Další informace naleznete v tématu:
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Architektura přechodu na cloud: Průvodce rozhodováním ohledně vynucování zásad](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Pokud chcete prozkoumat Azure Security Center, přejděte na web [Azure Portal](
 
 Další informace naleznete v tématu:
 
-- [Azure Security Center](/azure/security-center)
-- [Přístup k virtuálnímu počítači za běhu](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Přístup k virtuálnímu počítači za běhu](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Porovnání cenových úrovní Standard a Free](https://azure.microsoft.com/pricing/details/security-center)
-- [Architektura přechodu na cloud: Disciplína zásad správného řízení standardních hodnot zabezpečení](../../governance/security-baseline/index.md)
+- [Architektura přechodu na cloud: Disciplína zásad správného řízení standardních hodnot zabezpečení](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

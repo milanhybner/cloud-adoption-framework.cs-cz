@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818825"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022838"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
@@ -58,8 +58,8 @@ Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby A
 
 ### <a name="read-more"></a>Další informace
 
-- [Přehled služby Azure Migrate](/azure/migrate/migrate-services-overview)
-- [Migrace fyzických nebo virtualizovaných serverů do Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Přehled služby Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Migrace fyzických nebo virtualizovaných serverů do Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Služba Azure Migrate na webu Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby A
 
 Service Map automaticky rozpozná komponenty aplikace v systémech Windows a Linux a mapuje komunikaci mezi službami. Service Map zobrazuje vaše servery tak, jak o nich přemýšlíte, tzn. jako propojené systémy, které zajišťují důležité služby. Service Map zobrazuje propojení serverů, procesů, latenci příchozích a odchozích připojení a porty v libovolné architektuře propojené protokolem TCP. Kromě instalace agenta se nevyžaduje žádná konfigurace.
 
-Služba Azure Migrate používá službu Service Map ke zlepšení možností vytváření sestav a závislostí v celém prostředí. Veškeré podrobnosti o této integraci jsou popsány v tématu o [vizualizaci závislostí](/azure/migrate/concepts-dependency-visualization). Pokud používáte službu Azure Migration, nemusíte provádět žádné další kroky, abyste nakonfigurovali službu Service Map a získali výhody, které nabízí. Následující pokyny jsou pro vaši informaci, pokud budete chtít používat Service Map k jiným účelům nebo projektům.
+Služba Azure Migrate používá službu Service Map ke zlepšení možností vytváření sestav a závislostí v celém prostředí. Veškeré podrobnosti o této integraci jsou popsány v tématu o [vizualizaci závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Pokud používáte službu Azure Migration, nemusíte provádět žádné další kroky, abyste nakonfigurovali službu Service Map a získali výhody, které nabízí. Následující pokyny jsou pro vaši informaci, pokud budete chtít používat Service Map k jiným účelům nebo projektům.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Povolení vizualizace závislostí ve službě Service Map
 
 Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a nainstalovat agenty na každý místní počítač, který chcete analyzovat.
 
-- Na každém počítači musí být nainstalovaný [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows).
-- Na každý počítač je potřeba nainstalovat [agenta závislostí](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows).
+- Na každém počítači musí být nainstalovaný [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows).
+- Na každý počítač je potřeba nainstalovat [agenta závislostí](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows).
 - Pokud navíc máte počítače bez připojení k internetu, musíte na ně stáhnout a nainstalovat bránu Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Další informace
 
-- [Používání řešení Service Map v Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate a Service Map: Vizualizace závislostí](/azure/migrate/concepts-dependency-visualization)
+- [Používání řešení Service Map v Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate a Service Map: Vizualizace závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scénáře a účastníci](#tab/Scenarios)

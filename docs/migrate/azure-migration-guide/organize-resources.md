@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818740"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022770"
 ---
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
@@ -76,9 +76,9 @@ Vytvořte skupinu prostředků sdružující prostředky, jako jsou webové apli
 
 Další informace naleznete v tématu:
 
-- [Principy správy přístupu k prostředkům v Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Uspořádání prostředků s využitím skupin pro správu Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Omezení služeb předplatného](/azure/azure-subscription-service-limits)
+- [Principy správy přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Uspořádání prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Omezení služeb předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Správné standardy pro vytváření názvů pomáhají identifikovat prostředk
 
 ::: zone target="docs"
 
-Doporučujeme si projít a využít [pokyny ke vzorům a postupům](/azure/architecture/best-practices/naming-conventions).
+Doporučujeme si projít a využít [pokyny ke vzorům a postupům](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
 
 >[!TIP]
 >Nepoužívejte žádné speciální znaky (`-` nebo `_`) jako první ani poslední znak názvu. Většina ověřovacích pravidel kvůli těmto znakům selže.
@@ -151,7 +151,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 
 Každý prostředek nebo skupina prostředků může mít maximálně 15 párů název/hodnota značek. Toto omezení se však vztahuje pouze na značky použité přímo na prostředek nebo skupinu prostředků.
 
-Další informace o používání značek najdete v [Centru architektury Azure v zásadách vytváření názvů pro prostředky Azure](../../ready/considerations/name-and-tag.md#metadata-tags).
+Další informace o používání značek najdete v [Centru architektury Azure v zásadách vytváření názvů pro prostředky Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags).
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Použití značky na skupinu prostředků:
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v tématu [Používání značek k uspořádání prostředků Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Další informace najdete v tématu [Používání značek k uspořádání prostředků Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

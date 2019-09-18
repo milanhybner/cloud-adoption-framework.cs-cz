@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818502"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025228"
 ---
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
@@ -80,9 +80,9 @@ Další informace naleznete v tématu:
 
 - [Základy Azure](../considerations/fundamental-concepts.md)
 - [Škálování s využitím několika předplatných Azure](../considerations/scaling-subscriptions.md)
-- [Principy správy přístupu k prostředkům v Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Uspořádání prostředků s využitím skupin pro správu Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Omezení služeb předplatného](/azure/azure-subscription-service-limits)
+- [Principy správy přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Uspořádání prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Omezení služeb předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Správný standard pro vytváření názvů pomáhá identifikovat prostředky n
 
 - Provozní údaje by měly zajistit, aby názvy obsahovaly informace, které potřebuje tým IT. Použijte údaje identifikující úlohy, aplikace, prostředí, důležitost a další informace, které jsou užitečné pro správu prostředků.
 
-Různé typy prostředků mohou mít různé délkové limity a povolené znaky, z nichž mnohé jsou uvedené v [článku s osvědčenými postupy pro pojmenování v Azure](/azure/architecture/best-practices/naming-conventions). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../considerations/name-and-tag.md) v článku Architektura přechodu na cloud.
+Různé typy prostředků mohou mít různé délkové limity a povolené znaky, z nichž mnohé jsou uvedené v [článku s osvědčenými postupy pro pojmenování v Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../considerations/naming-and-tagging.md) v článku Architektura přechodu na cloud.
 
 Následující tabulka obsahuje vzory vytváření názvů pro několik ukázkových typů prostředků Azure.
 
@@ -161,7 +161,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 
 Každý prostředek nebo skupina prostředků může mít maximálně 15 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
 
-Další doporučení a příklady značek najdete v [pokynech k označování](../considerations/name-and-tag.md) v Architektuře přechodu na cloud.
+Další doporučení a příklady značek najdete v [pokynech k označování](../considerations/naming-and-tagging.md) v Architektuře přechodu na cloud.
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Použití značky na skupinu prostředků:
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v tématu [Používání značek k uspořádání prostředků Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Další informace najdete v tématu [Používání značek k uspořádání prostředků Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 
