@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026931"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223831"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standardní podniková příručka: Vysvětlení doporučených pokynů
 
@@ -61,7 +61,7 @@ Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se 
 
 Rozhodnutí o konzistenci prostředků určují nástroje, procesy a úsilí potřebné k zajištění konzistentního nasazení, konfigurace a správy prostředků Azure v rámci předplatného. V tomto mluveném komentáři je **[konzistence nasazení](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** zvolena jako vzor konzistence primárního prostředku.
 
-- Skupiny prostředků se vytvářejí pro aplikace, které používají přístup k životnímu cyklu: všechno, co se vytváří společně, se udržuje společně a může se jednat o jeden ze skupin prostředků.
+- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu: všechno, co se vytváří, udržuje a vyřazené společně, by mělo být na jednu skupinu prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy by se měla použít pro všechna předplatná z přidružené skupiny pro správu.
 - V rámci procesu nasazení by měly být šablony konzistence prostředků Azure pro skupinu prostředků uložené ve správě zdrojového kódu.
 - Každá skupina prostředků je přidružená ke konkrétnímu pracovnímu vytížení nebo aplikaci na základě výše popsaného přístupu k životnímu cyklu.
@@ -116,7 +116,7 @@ Pokud se některý ze vzorů vybraných v této příručce zásad správného �
 
 ## <a name="next-steps"></a>Další kroky
 
-Po implementaci této příručky se každý tým pro přijetí v cloudu může obrátit na zásady správného řízení zvuku. Tým zásad správného řízení cloudu bude paralelně fungovat a průběžně aktualizuje podnikové zásady a obory řízení.
+Po implementaci této příručky se každý tým pro přijetí v cloudu může obrátit na zásady správného řízení zvuku. Ve stejnou chvíli tým zásad správného řízení pro Cloud bude fungovat tak, aby průběžně aktualizoval podnikové zásady a obory řízení.
 
 Dva týmy použijí indikátory tolerance k identifikaci další sady vylepšení potřebných pro pokračování v podpoře přijetí do cloudu. Pro fiktivní společnost v tomto průvodci je dalším krokem zlepšení standardních hodnot zabezpečení pro podporu přesunu chráněných dat do cloudu.
 

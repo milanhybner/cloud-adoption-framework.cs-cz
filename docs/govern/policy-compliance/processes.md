@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Navažte procesy, aby se zajistilo dodržování podnikových zásad.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030247"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222042"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Ustanovení procesů dodržování zásad
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Po vytvoření příkazů cloudových zásad a návrh Průvodce návrhem budete muset vytvořit strategii pro zajištění, že nasazení v cloudu zůstane v souladu se svými požadavky na zásady. Tato strategie bude potřebovat, abyste zahrnovali probíhající kontrolu a komunikační procesy vašeho týmu zásad správného řízení pro Cloud, stanovili kritéria pro případy, kdy porušení zásad vyžadují akci a definovali požadavky na automatizované monitorování a systémy dodržování předpisů, které budou Odhalte porušení a triggery nápravy.
 
@@ -58,6 +54,8 @@ Dodržování zásad vyžaduje, aby pracovníci IT a vývojáři pochopili poža
 
 Jako změny zásad, pravidelná aktualizace dokumentace a školicí materiály a zajištění, aby úsilí o vzdělávání komunikovalo s aktualizovanými požadavky a pokyny pro příslušné IT pracovníky.
 
+V různých fázích cesty ke cloudu se můžete setkat s partnery a profesionálními školicími programy, aby vylepšili vzdělávání týmu, jak technicky, tak i procedurální. Kromě toho mnoho z nich vyhledá, že formální certifikace jsou cenné k vašemu portfoliu vzdělávání a měla by se zvážit.
+
 ### <a name="establish-escalation-paths"></a>Vytvoření cest eskalace
 
 Pokud prostředek nedodržuje předpisy, kdo obdrží oznámení? Pokud pracovníci IT zjistí problém s dodržováním zásad, na koho se obrátit? Ujistěte se, že je jasně definovaný proces eskalace týmu zásad správného řízení cloudu. Zajistěte, aby byly tyto komunikační kanály aktualizované, aby odrážely změny zaměstnanců a organizace.
@@ -91,7 +89,7 @@ Po definování aktivačních událostí a akcí narušení dodržování předp
 
 Pokyny k výběru nejlepšího vzoru monitorování pro vaše nasazení najdete v tématu [Průvodce pro protokolování a](../../decision-guides/logging-and-reporting/index.md) nastavování v cloudu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Přečtěte si další informace o dodržování legislativních předpisů v cloudu.
 

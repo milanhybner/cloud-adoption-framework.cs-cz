@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivace standardních hodnot zabezpečení a obchodní rizika
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027163"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222280"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivace standardních hodnot zabezpečení a obchodní rizika
 
@@ -22,7 +22,7 @@ Tento článek popisuje důvody, proč zákazníci obvykle přijímají pravidla
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>Je základní bezpečnostní plán relevantní?
+## <a name="security-baseline-relevancy"></a>Relevanci standardních hodnot zabezpečení
 
 Zabezpečení je klíčovým problémem pro jakékoli IT organizace. Cloudová nasazení čelí mnoha stejným bezpečnostním rizikům jako úlohy hostované v tradičních místních datových centrech. Nicméně povaha veřejných cloudových platforem s nedostatečným přímým vlastnictvím fyzického hardwaru, který ukládá a spouští vaše zatížení, znamená, že cloudové zabezpečení vyžaduje vlastní zásady a procesy.
 
@@ -44,7 +44,7 @@ Rizika se budou lišit mezi organizací, ale v následujícím seznamu jsou bě�
 - **Porušení dat:** Neúmyslná expozice nebo ztráta citlivých dat hostovaných v cloudu může vést ke ztrátě zákazníků, smluvním problémům nebo právním důsledkům.
 - **Přerušení služby:** Výpadky a další problémy s výkonem kvůli nezabezpečené infrastruktuře přerušují normální provoz a můžou způsobit ztrátu produktivity nebo ztráty podniku.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat obchodní rizika, která by mohla být zavedena aktuálním plánem přijetí cloudu.
 

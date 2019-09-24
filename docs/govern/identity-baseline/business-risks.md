@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivace standardních hodnot identity a obchodní rizika
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222187"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivace standardních hodnot identity a obchodní rizika
 
@@ -22,11 +22,11 @@ Tento článek popisuje důvody, proč zákazníci obvykle přijímají pravidla
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>Je základní hodnota identity relevantní?
+## <a name="identity-baseline-relevancy"></a>Relevanci úrovně identity
 
 Tradiční místní adresáře jsou navržené tak, aby podnikům umožnily přísně řídit oprávnění a zásady pro uživatele, skupiny a role v rámci svých interních sítí a datových center. To je obvykle určeno k podpoře implementace v jednom tenantovi a služeb, které platí pouze v místním prostředí.
 
-Cloudové identity Services mají možnost rozšířit možnosti ověřování organizace a řízení přístupu na Internet. Podporují víceklientské prostředí a dají se použít ke správě uživatelů a zásad přístupu napříč cloudovým aplikacemi a nasazeními. Veřejné cloudové platformy mají určitou formu služeb cloudových nativních identit, které podporují úlohy správy a nasazení a umožňují [různé úrovně integrace](../../decision-guides/identity/index.md) s vašimi stávajícími místními řešeními identity. Všechny tyto funkce můžou mít za následek složitější zásady identity cloudu, než vaše tradiční místní řešení vyžadují.
+Cloud identity Services rozšiřují ověřování a možnosti řízení přístupu organizace na Internet. Podporují víceklientské prostředí a dají se použít ke správě uživatelů a zásad přístupu napříč cloudovým aplikacemi a nasazeními. Veřejné cloudové platformy mají služby cloudových nativních identit, které podporují úlohy správy a nasazení a umožňují [různé úrovně integrace](../../decision-guides/identity/index.md) s vašimi stávajícími místními řešeními identity. Všechny tyto funkce můžou mít za následek složitější zásady identity cloudu, než vaše tradiční místní řešení vyžadují.
 
 Důležitost pravidla směrného plánu identity na nasazení v cloudu bude záviset na velikosti vašeho týmu a bude potřeba integrovat cloudové řešení identit do stávající místní služby identity. Počáteční testovací nasazení nemusí být v rámci organizace nebo správy uživatelů moc náročné, ale v případě, že vaše cloudové vlastnictví dojde k vyspělosti, budete pravděpodobně muset podporovat složitější integraci organizace a centralizovanou správu.
 
@@ -41,7 +41,7 @@ Rizika se budou lišit mezi organizací, ale v následujících případech slou
 - **Neschopnost sdílet prostředky s externími partnery.** Problémy s přidáním externích obchodních partnerů k vašim stávajícím řešením identity můžou zabránit efektivnímu sdílení prostředků a obchodní komunikaci.
 - **Místní závislosti identity.** V cloudu nemusí být k dispozici starší mechanismy ověřování nebo služba Multi-Factor Authentication jiného výrobce, aby se vyžadovalo jejich opětovné navýšení zátěže nebo další služby identit, které se mají nasadit do cloudu. Buď se může požadavek zpozdit, nebo zabránit v migraci a zvýšit náklady.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat obchodní rizika, která by mohla být zavedena aktuálním plánem přijetí cloudu.
 

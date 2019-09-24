@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028379"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221416"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Služby a nástroje pro správu serveru Azure
 
@@ -96,4 +96,4 @@ Další informace o cenách pro služby Azure Management Services najdete na tě
 - [Služba Azure File Sync](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Řešení Azure Update Management je bezplatné, ale v souvislosti s přijímáním dat se účtují malé náklady. Jako pravidlo palce je prvních 5 GB za měsíc přijímání dat za měsíc zdarma. Obecně se sleduje, že každý počítač používá přibližně 25 MB za měsíc. Takže přibližně 200 počítačů za měsíc jsou pokryty zdarma. Pro každý další server vynásobte počet dalších serverů o 25 MB za měsíc. Vynásobte to náklady na úložiště pro celkovou velikost úložiště, kterou potřebujete. [Náklady na úložiště jsou k dispozici zde](https://azure.microsoft.com/pricing/details/storage/). Každý další server by měl mít Jmenovitý dopad na náklady.
+> Řešení Azure Update Management je bezplatné, ale v souvislosti s přijímáním dat se účtují malé náklady. Jako pravidlo palce je prvních 5 GB za měsíc přijímání dat za měsíc zdarma. Obecně se sleduje, že každý počítač používá přibližně 25 MB za měsíc. Takže přibližně 200 počítačů za měsíc jsou pokryty zdarma. Pro každý další server vynásobte počet dalších serverů o 25 MB za měsíc. Vynásobte to náklady na úložiště pro celkovou velikost úložiště, kterou potřebujete. [Náklady na úložiště jsou k dispozici zde](https://azure.microsoft.com/pricing/details/storage). Každý další server by měl mít Jmenovitý dopad na náklady.

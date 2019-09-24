@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026938"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222297"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Příručka zásad správného řízení pro komplexní podniky: Několik vrstev zásad správného řízení
 
@@ -57,4 +57,3 @@ Důležitým aspektem každého z těchto nástrojů je možnost použít pro hi
 - **Týmy pro přijetí v cloudu:** Podrobné rozhodnutí a implementaci aplikací nebo úloh je možné provést v rámci každého týmu pro přijetí cloudu v rámci kontextu požadavků zásad správného řízení. V některých případech může tým také požádat o další šablony konzistence prostředků Azure, aby se urychlilo úsilí o přijetí.
 
 Podrobnosti o implementaci zásad správného řízení na jednotlivých úrovních budou vyžadovat koordinaci mezi jednotlivými týmy. Vylepšení zásad správného řízení MVP a zásad správného řízení popsaných v této příručce vám mohou pomoci při zarovnávání této koordinace.
-

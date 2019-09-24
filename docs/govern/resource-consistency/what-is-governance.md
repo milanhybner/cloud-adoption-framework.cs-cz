@@ -4,20 +4,20 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení řízení cloudových prostředků v Azure
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 083b18c0c8c5edc0dc21a198df32e8934929299c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029013"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221858"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-is-cloud-resource-governance"></a>Co jsou zásady správného řízení cloudových prostředků?
+# <a name="cloud-resource-governance"></a>Zásady správného řízení prostředků cloudu?
 
 V článku [Jak funguje Azure?](../../getting-started/what-is-azure.md)jste se dozvěděli, že Azure je kolekce serverů a síťových hardwarových počítačů, které používají virtualizovaný hardware a software jménem uživatelů. Azure umožňuje vývoj aplikací a oddělení IT ve vaší organizaci tak, aby se usnadnilo vytváření, čtení, aktualizace a odstraňování prostředků podle potřeby.
 
@@ -39,7 +39,7 @@ Zásady prostředků definují pravidla pro vytváření prostředků. Napříkl
 
 Při konfiguraci těchto nástrojů je důležité rovnováhu mezi zásadami správného řízení a pružností organizace. Přísnější zásady správného řízení, což je méně agilních vašich vývojářů a pracovníků IT. Omezující zásada zásad správného řízení může vyžadovat více ručních kroků, jako je vyžadování vývojářů vyplnit formulář nebo odeslat e-mail členovi týmu zásad správného řízení za účelem ručního vytvoření prostředku. Tým zásad správného řízení má konečnou kapacitu a může se stát kritickým týmem, což vede k tomu, že vývojové týmy čekají na jejich vytvoření v neproduktivním prostředí, nebo nepotřebné prostředky, které mají za následek nabíhání nákladů před jejich odstraněním.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když rozumíte konceptu zásad správného řízení prostředků cloudu, se dozvíte víc o tom, jak se spravuje přístup k prostředkům v Azure.
 

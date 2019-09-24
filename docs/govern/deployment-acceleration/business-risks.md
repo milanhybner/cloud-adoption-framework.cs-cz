@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s principem akcelerace nasazení v rámci strategie zásad správného řízení cloudu.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027508"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220718"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivace akcelerace a obchodní rizika pro nasazení
 
@@ -22,7 +22,7 @@ Tento článek popisuje důvody, proč zákazníci obvykle přijímají pravidla
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>Je akcelerace nasazení relevantní?
+## <a name="deployment-acceleration-relevancy"></a>Relevanci akcelerace nasazení
 
 Místní systémy se často nasazují pomocí standardních imagí nebo instalačních skriptů. Je obvykle potřeba další konfigurace, která může zahrnovat několik kroků nebo lidské intervence. Tyto ruční procesy jsou náchylné k chybám a často způsobují "posun konfigurace", který vyžaduje časově náročné odstraňování potíží a nápravné úlohy.
 
@@ -40,7 +40,7 @@ Obor akcelerace nasazení se pokusí vyřešit následující obchodní rizika. 
 - **Náklady na přetečení:** Neočekávané změny v konfiguraci systémových prostředků mohou ztížit identifikaci hlavní příčiny problémů, což vyvolává náklady na vývoj, provoz a údržbu.
 - **Neefektivita organizace:** Překážky mezi vývojem, provozem a týmy zabezpečení můžou způsobovat spoustu výzev k efektivnímu přijetí cloudových technologií a vývoji sjednoceného modelu zásad správného cloudu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat obchodní rizika, která by mohla být zavedena aktuálním plánem přijetí cloudu.
 

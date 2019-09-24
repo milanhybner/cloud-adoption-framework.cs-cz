@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru konzistence prostředků
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030925"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223023"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Vylepšení oboru konzistence prostředků
 
@@ -101,7 +101,7 @@ Migrace je přírůstkový proces, který se zaměřuje na přesun, testování 
 - Určete, jestli vaše organizace vyžaduje pro jednotky P & LS pro firmy jasné finanční zarovnání.
 - U globálních organizací implementujte požadavky na dodržování předpisů a požadavky na svrchovanost (SLA).
 - Pro agregaci cloudu nasaďte řešení brány k poskytovateli cloudu.
-- Pro nástroje, které neumožňují možnosti hybridního řešení nebo brány, proveďte úzce několik monitorování pomocí nástroje pro monitorování provozu.
+- Pro nástroje, které neumožňují možnosti hybridního řešení nebo brány, úzce propojíme monitorování s nástrojem Operational monitoring, který zahrnuje všechna datová centra a cloudy.
 
 ## <a name="operate-and-post-implementation"></a>Provoz a následné implementace
 
@@ -125,7 +125,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 - Vyhodnoťte nástroje protokolování a monitorování, abyste zjistili, jestli je potřeba upravit místní, cloudovou bránu nebo hybridní řešení.
 - V případě obchodních jednotek a geograficky distribuovaných skupin určete, jestli by vaše organizace měla zvážit použití dalších funkcí správy cloudu, jako jsou [skupiny pro správu Azure](https://docs.microsoft.com/azure/governance/management-groups) , aby lépe používaly centralizované zásady a splňovaly požadavky smlouvy SLA.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když rozumíte konceptu zásad správného řízení prostředků v cloudu, přejděte na Další informace o [tom, jak se v Azure spravuje přístup k prostředkům](./resource-access-management.md) v tématu Příprava na přípravu modelu zásad správného řízení pro [jednoduchou úlohu](./governance-simple-workload.md) nebo pro [více týmů](./governance-multiple-teams.md) . .
 

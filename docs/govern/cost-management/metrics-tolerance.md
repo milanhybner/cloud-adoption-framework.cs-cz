@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení služby Cost Management ve vztahu k zásadám správného řízení v cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220958"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metriky, ukazatele a tolerance rizik
 
-Tento článek je určený k tomu, aby vám pomohla při stanovení tolerance podnikového rizika v souvislosti s Cost Management. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro investici do splatnosti Cost Management disciplíny.
+Tento článek vám pomůže kvantifikovat toleranci obchodního rizika, protože se týká Cost Management. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro investici do splatnosti Cost Management disciplíny.
 
 ## <a name="metrics"></a>Metriky
 
@@ -48,7 +48,7 @@ Po zjištění [obchodních rizik](./business-risks.md)budete pracovat s vaší 
 - **Aktivační událost roční útraty:** Společnost s IT R & D rozpočet, který umožňuje vytrávit $X za rok na experimentování s cloudem za 1000. Můžou provozovat produkční úlohy v cloudu, ale budou se i nadále považovat za experimentální řešení, pokud rozpočet nepřekročí tuto částku. Po převzetí služeb se budou muset považovat za rozpočet jako investici do produkčního prostředí a úzce spravovat výdaje.
 - **Provozní náklady – nepříznivé (Neběžné):** Jako společnost se Averse na provozní výdaje a před nasazením úlohy pro vývoj/testování bude nutné, aby byly na svém místě Cost Management kontroly.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md), metriky dokumentů a indikátory tolerance, které odpovídají aktuálnímu plánu přijetí do cloudu.
 

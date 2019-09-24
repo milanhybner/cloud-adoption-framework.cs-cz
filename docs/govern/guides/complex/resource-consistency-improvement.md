@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení oboru konzistence prostředků'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030698"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223808"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení oboru konzistence prostředků
 
@@ -65,7 +65,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 5. Nástroje správy zásad správného řízení musí ověřit, jestli jsou shromažďovány odpovídající úrovně dat protokolování pro všechny klíčové aplikace nebo chráněná data.
 6. Proces zásad správného řízení musí ověřit, jestli je zálohování, obnovení a dodržování SLA správně implementované pro klíčové aplikace a chráněná data.
 7. Nástroje zásad správného řízení musí omezit nasazení virtuálních počítačů jenom na schválené image.
-8. Nástroje zásad správného řízení musí vymáhat, že automatické aktualizace jsou **zabráněno** na všech nasazených assetech, které podporují klíčové aplikace. Porušení musí být přezkoumána s provozními týmy správy a opraveny v souladu se zásadami provozu. Prostředky, které se automaticky neaktualizují, musí být zahrnuté do procesů, které vlastní IT operace.
+8. Nástroje zásad správného řízení musí vymáhat, že automatické aktualizace jsou **zabráněno** na všech nasazených assetech, které podporují klíčové aplikace. Porušení musí být přezkoumána s provozními týmy správy a opraveny v souladu se zásadami provozu. Prostředky, které se automaticky neaktualizují, musí být zahrnuty do procesů, které vlastní IT operace, pro rychlé a efektivní aktualizace těchto serverů.
 9. Nástroje řízení správného řízení musí ověřovat označování související s náklady, závažností, smlouvou SLA, aplikací a klasifikací dat. Všechny hodnoty musí být zarovnané na předdefinované hodnoty, které spravuje tým zásad správného řízení pro Cloud.
 10. Procesy zásad správného řízení musí zahrnovat audity v místě nasazení a v pravidelných cyklech, aby se zajistila konzistence napříč všemi prostředky.
 11. Trendy a zneužití, které by mohly ovlivnit nasazení v cloudu, by pravidelně kontroloval tým zabezpečení, aby poskytoval aktualizace nástroje pro základní hodnoty zabezpečení používané v cloudu.
@@ -85,25 +85,25 @@ Po zkušenostech tohoto fiktivního příkladu se předpokládá, že se změny 
 
 1. V rámci externí závislosti bude tým provozu cloudu potřebovat definovat nástroje pro monitorování provozu, provozní kontinuitu a zotavení po havárii (BCDR) a automatizované nástroje pro nápravu. Tým zásad správného řízení cloudu pak může podporovat potřebné procesy zjišťování.
     1. V tomto případě se v cloudovém provozním týmu zvolí Azure Monitor jako primární nástroj pro monitorování důležitých podnikových aplikací.
-    1. Tým také zvolí Azure Site Recovery jako primární nástroj BCDR.
-1. Implementace Azure Site Recovery.
-    1. Definujte a nasaďte Azure trezor pro procesy zálohování a obnovení.
-    1. Vytvořte šablonu správy prostředků Azure pro vytvoření trezoru v každém předplatném.
-1. Implementace Azure Monitor.
-    1. Po identifikaci důležitých předplatných se dá pracovní prostor Log Analytics vytvořit pomocí PowerShellu. Toto je proces předběžného nasazení.
+    2. Tým také zvolí Azure Site Recovery jako primární nástroj BCDR.
+2. Implementace Azure Site Recovery.
+    1. Definujte a nasaďte Azure Site Recovery trezor pro procesy zálohování a obnovení.
+    2. Vytvořte šablonu správy prostředků Azure pro vytvoření trezoru v každém předplatném.
+3. Implementace Azure Monitor.
+    1. Po určení důležitého předplatného se dá vytvořit pracovní prostor Log Analytics.
 
 **Předplatné pro přijetí individuálního cloudu:** Následující postup zajistí, že je každé předplatné zjistitelné řešením monitorování a je připravené k zařazení do BCDR postupů.
 
 1. Azure Policy pro klíčové uzly:
     1. Auditujte a vynuťte pouze použití standardních rolí.
-    1. Audituje a vynutil používání šifrování pro všechny účty úložiště.
-    1. Audituje a vynutil používání schválené podsítě sítě a virtuální sítě na síťové rozhraní.
-    1. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
-    1. Proveďte audit a vynuťte nasazení agentů Log Analytics pro virtuální počítače s Windows a Linux.
+    2. Audituje a vynutil používání šifrování pro všechny účty úložiště.
+    3. Audituje a vynutil používání schválené podsítě sítě a virtuální sítě na síťové rozhraní.
+    4. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
+    5. Proveďte audit a vynuťte nasazení agentů Log Analytics pro virtuální počítače s Windows a Linux.
 2. Podrobný plán Azure:
     1. Vytvořte podrobný plán s `mission-critical-workloads-and-protected-data`názvem. Tento podrobný plán bude používat prostředky kromě podrobného plánu dat.
-    1. Přidejte nové zásady Azure do podrobného plánu.
-    1. Použijte podrobný plán na jakékoli předplatné, které se očekává pro hostování důležité aplikace.
+    2. Přidejte nové zásady Azure do podrobného plánu.
+    3. Použijte podrobný plán na jakékoli předplatné, které se očekává pro hostování důležité aplikace.
 
 ## <a name="conclusion"></a>Závěr
 

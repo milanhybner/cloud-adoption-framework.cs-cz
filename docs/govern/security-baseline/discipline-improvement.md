@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru směrného plánu zabezpečení
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8ad6b84a67bb81459fbd78ebe413a93c1a58e099
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030547"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221716"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu zabezpečení
 
@@ -114,7 +114,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 - Měli byste mít zavedeny postupy pro rychlé zastavení neoprávněného přístupu a zakázání prostředků, které by mohl útočník ohrozit.
 - Pravidelně Projděte nejnovější osvědčené postupy zabezpečení a použijte doporučení pro vaše zásady zabezpečení, automatizaci a možnosti monitorování, pokud je to možné.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když rozumíte konceptu zásad správného řízení cloudového zabezpečení, přejděte na Další informace o [zásadách zabezpečení a osvědčených postupů, které Microsoft poskytuje](./azure-security-guidance.md) pro Azure.
 

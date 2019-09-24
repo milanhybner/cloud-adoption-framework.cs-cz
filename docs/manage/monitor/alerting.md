@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030710"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221379"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: Zobrazení výstrah
 
@@ -94,7 +94,7 @@ K tomuto pravidlu se říká několik důležitých poznámek pod čarou.
 
 **Telemetrie hostovaného operačního systému** má několik cest, které se mají do systému dostat.
 
-- Nejrychlejší způsob, jak upozornit na tato data, je importovat jako vlastní metriky. Použijte k tomu rozšíření Azure Diagnostics a pak použijte upozornění na metriku. Vlastní metriky jsou ale momentálně ve verzi Preview a jsou [dražší než jiné možnosti](https://azure.microsoft.com/pricing/details/monitor/).
+- Nejrychlejší způsob, jak upozornit na tato data, je importovat jako vlastní metriky. Použijte k tomu rozšíření Azure Diagnostics a pak použijte upozornění na metriku. Vlastní metriky jsou ale momentálně ve verzi Preview a jsou [dražší než jiné možnosti](https://azure.microsoft.com/pricing/details/monitor).
 
 - Nejlevnější, ale nejpomalejší metodou je odeslat je do úložiště Azure logs Kusto. Spuštění agenta Log Analytics na virtuálním počítači je nejlepší způsob, jak do tohoto úložiště získat veškerou metriku a data protokolu hostovaného operačního systému.
 
@@ -113,9 +113,9 @@ Pokud nepoužíváte Azure Monitor pro virtuální počítače, prozkoumejte ná
 
 - [Dynamické prahové hodnoty](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Dynamické prahové hodnoty prohledají aktivitu prostředku za časové období a vytvoří horní a dolní prahové hodnoty normální chování. Když je monitorovaná metrika mimo tyto prahové hodnoty, zobrazí se upozornění.
 
-- [Nepodepsané výstrahy](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Můžete vytvořit upozornění metriky, které používá kombinaci dvou různých vstupů ze dvou různých typů prostředků. Pokud třeba chcete vyvolat výstrahu, když je procesor virtuálního počítače větší než 90%, a počet zpráv v určité frontě Azure Service Bus zaznamenání, že virtuální počítač překročí určitou hodnotu, můžete to udělat bez vytvoření dotazu protokolu. To funguje jenom pro dva signály. Pokud máte složitější dotaz, zadáte data metriky do úložiště protokolu Azure Monitor a použijete dotaz protokolu.
+- [Nepodepsané výstrahy](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Můžete vytvořit upozornění metriky, které používá kombinaci dvou různých vstupů ze dvou různých typů prostředků. Pokud třeba chcete vyvolat výstrahu, když je procesor virtuálního počítače větší než 90%, a počet zpráv v určité frontě Azure Service Bus zaznamenání, že virtuální počítač překročí určitou hodnotu, můžete to udělat bez vytvoření dotazu protokolu. To funguje jenom pro dva signály. Pokud máte složitější dotaz, zadáte data metriky do úložiště protokolu Azure Monitor a použijete dotaz protokolu.
 
-- [Výstrahy](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/)s více prostředky Azure Monitor umožňuje jedno pravidlo výstrahy metriky, které se vztahuje na všechny prostředky virtuálních počítačů. Tato funkce vám může ušetřit čas, protože nemusíte vytvářet jednotlivé výstrahy pro každý virtuální počítač. Ceny za tento typ upozornění jsou stejné. Pokud jste vytvořili 50 upozornění pro monitorování využití procesoru pro virtuální počítače 50 nebo 1 výstrahu, která monitoruje využití procesoru u všech virtuálních počítačů 50, náklady budou stejné. Tyto typy výstrah můžete použít i v kombinaci s dynamickými prahovými hodnotami.
+- [Výstrahy](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)s více prostředky Azure Monitor umožňuje jedno pravidlo výstrahy metriky, které se vztahuje na všechny prostředky virtuálních počítačů. Tato funkce vám může ušetřit čas, protože nemusíte vytvářet jednotlivé výstrahy pro každý virtuální počítač. Ceny za tento typ upozornění jsou stejné. Pokud jste vytvořili 50 upozornění pro monitorování využití procesoru pro virtuální počítače 50 nebo 1 výstrahu, která monitoruje využití procesoru u všech virtuálních počítačů 50, náklady budou stejné. Tyto typy výstrah můžete použít i v kombinaci s dynamickými prahovými hodnotami.
 
 Pomocí těchto funkcí můžete ušetřit čas tím, že minimalizujete oznámení o výstrahách a správu základních výstrah.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nástroje pro základní identitu identity v Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8a0de3d3cc5174e3e18bdca4af8c7f314eead59d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72060f16add37d62a4747c5fe9d5aef49fe04c58
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030967"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222114"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Nástroje pro základní identitu identity v Azure
 
@@ -75,7 +75,7 @@ Následující tabulka obsahuje seznam nativních nástrojů, které mohou pomoc
 > [!NOTE]
 > Vlastní ovládací prvky ve službě Azure AD podmíněný přístup aktuálně nepodporují registraci zařízení.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Dokument [White paper k rozhraní Digital Transforming pro hybridní identitu](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US) popisuje kombinace a řešení pro výběr a integraci každé z těchto součástí.
 

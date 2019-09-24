@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025023"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221451"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Posouzení místních úloh pro migraci do Azure
 
@@ -242,8 +242,8 @@ Následujícím způsobem nastavte nový projekt Azure Migrate.
 
 6. V části *Podrobnosti o projektu* zadejte název projektu a zeměpisnou oblast, ve které chcete projekt vytvořit. Podporované oblasti: USA, Asie, Evropa, Austrálie, Spojené království, Kanada, Indie a Japonsko.
 
-    * Zeměpisná oblast projektu slouží pouze k ukládání metadat shromážděných z místních virtuálních počítačů.
-    * Při spouštění migrace můžete vybrat jakoukoli cílovou oblast.
+    - Zeměpisná oblast projektu slouží pouze k ukládání metadat shromážděných z místních virtuálních počítačů.
+    - Při spouštění migrace můžete vybrat jakoukoli cílovou oblast.
 
 7. Klikněte na **Další**.
 
@@ -312,16 +312,15 @@ Teď společnost Contoso spustí kolektor a vyhledá virtuální počítače. V 
 
     ![Azure Migrate Collector – Ověření požadavků](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Přihlaste se ke svému účtu **Azure** a vyberte předplatné a projekt migrace, který jste vytvořili dříve. Zadejte také název **zařízení**, abyste ho rozpoznali na webu Azure Portal. 
-7. V části **Zadejte podrobnosti vCenter Serveru** společnost Contoso zadá název (plně kvalifikovaný název domény) nebo IP adresu instance vCenter Serveru a přihlašovací údaje jen pro čtení, které se použijí ke zjišťování.
-8. Společnost Contoso vybere rozsah zjišťování virtuálních počítačů. Kolektor může vyhledat jen virtuální počítače v rámci zadaného rozsahu. Jako rozsah je možné nastavit konkrétní složku, datacentrum nebo cluster. 
+5. Přihlaste se ke svému účtu **Azure** a vyberte předplatné a projekt migrace, který jste vytvořili dříve. Zadejte také název **zařízení** , abyste ho mohli identifikovat v Azure Portal.
+6. V části **Zadejte podrobnosti vCenter Serveru** společnost Contoso zadá název (plně kvalifikovaný název domény) nebo IP adresu instance vCenter Serveru a přihlašovací údaje jen pro čtení, které se použijí ke zjišťování.
+7. Společnost Contoso vybere rozsah zjišťování virtuálních počítačů. Kolektor může vyhledat jen virtuální počítače v rámci zadaného rozsahu. Jako rozsah je možné nastavit konkrétní složku, datacentrum nebo cluster.
 
-    ![Zadejte podrobnosti vCenter Serveru](./media/contoso-migration-assessment/collector-connect-vcenter.png)
+    ![Zadání podrobností vCenter Serveru](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
+8. Kolektor teď zahájí zjišťování a shromáždí informace o prostředí společnosti Contoso.
 
-8. Kolektor teď zahájí zjišťování a shromáždí informace o prostředí společnosti Contoso. 
-
-    ![Zobrazit průběh shromažďování](./media/contoso-migration-assessment/migrate-disccovery.png)
+    ![Zobrazení průběhu shromažďování](./media/contoso-migration-assessment/migrate-disccovery.png)
 
 ### <a name="verify-vms-in-the-portal"></a>Kontrola virtuálních počítačů na portálu
 
@@ -349,8 +348,8 @@ Společnost Contoso před úpravou virtuálních počítačů vytvoří jejich k
 
 1. V části **Počítače** společnost Contoso vybere požadovaný počítač. Ve sloupci **Závislosti** společnost Contoso vybere možnost **Vyžaduje instalaci**.
 2. V podokně **Zjistit počítače** společnost Contoso:
-    - Stáhne agenta Microsoft Monitoring Agent (MMA) a agenta závislostí pro všechny virtuální počítače s Windows.
-    - Stáhne agenta MMA a agenta závislostí pro všechny virtuální počítače s Linuxem.
+    - Stáhne Microsoft Monitoring Agent (MMA) a Microsoft Dependency Agent pro každý virtuální počítač s Windows.
+    - Stáhne agenta MMA a závislostí pro každý virtuální počítač se systémem Linux.
 3. Společnost Contoso zkopíruje ID a klíč pracovního prostoru. Společnost Contoso potřebuje klíč a ID pracovního prostoru při instalaci agenta MMA.
 
     ![Stažení agenta](./media/contoso-migration-assessment/download-agents.png)
@@ -378,7 +377,7 @@ Společnost Contoso spustí instalaci na všech virtuálních počítačích.
 1. Společnost Contoso dvakrát klikne na staženého agenta závislostí.
 2. Společnost Contoso přijme licenční podmínky a počká na dokončení instalace.
 
-    ![Instalace agenta závislostí – Instalace](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Instalace Dependency Agent – instalace](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Instalace agentů na virtuálních počítačích s Linuxem
 
@@ -389,9 +388,11 @@ Společnost Contoso spustí instalaci na všech virtuálních počítačích.
 1. Společnost Contoso pomocí následujícího příkazu na všechny virtuální počítače nainstaluje knihovnu Python ctypes:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Společnost Contoso musí tento příkaz pro instalaci agenta MMA spustit jako uživatel root. Společnost Contoso se stane uživatelem root tak, že spustí následující příkaz a pak zadá heslo uživatele root:
 
     `sudo -i`
+
 3. Společnost Contoso nainstaluje agenta MMA:
     - Společnost Contoso v rámci příkazu zadá ID a klíč pracovního prostoru.
     - Příkazy jsou určené pro 64bitovou architekturu.
@@ -404,11 +405,11 @@ Společnost Contoso spustí instalaci na všech virtuálních počítačích.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Instalace agenta závislostí na virtuálních počítačích s Linuxem
 
-Po dokončení instalace agenta MMA společnost Contoso na virtuální počítače s Linuxem nainstaluje agenta závislostí:
+Po instalaci MMA nainstaluje contoso agenta závislostí na virtuální počítače se systémem Linux:
 
-1. Agent závislostí se na počítače s Linuxem instaluje skriptem prostředí se samorozbalovacím binárním souborem InstallDependencyAgent-Linux64.bin. Společnost Contoso tento soubor spustí pomocí příkazu sh nebo tak, že k samotnému souboru přidá oprávnění ke spuštění.
+1. Agent závislostí se instaluje do počítačů se systémem Linux pomocí InstallDependencyAgent-Linux64. bin, skriptu prostředí, který obsahuje samorozbalovací binární soubor. Společnost Contoso tento soubor spustí pomocí příkazu sh nebo tak, že k samotnému souboru přidá oprávnění ke spuštění.
 
-2. Společnost Contoso nainstaluje agenta závislostí pro Linux jako uživatel root:
+2. Contoso nainstaluje agenta závislostí pro Linux do kořenového adresáře:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s

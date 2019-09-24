@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Jaké doprovodné materiály k zabezpečení poskytuje společnost Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029575"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222914"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Jaké doprovodné materiály k zabezpečení poskytuje společnost Microsoft?
+# <a name="microsoft-security-guidance"></a>Doprovodné materiály k zabezpečení Microsoftu
 
-## <a name="security-guidance-and-tools"></a>Pokyny a nástroje zabezpečení
+## <a name="tools"></a>Nástroje
 
 Společnost Microsoft představila platformu a správce dodržování předpisů [Service trustu](https://servicetrust.microsoft.com) , která vám může pomáhat s těmito nástroji:
 
@@ -52,7 +52,7 @@ Tyto nástroje jsou navržené tak, aby pomáhaly organizacím, které splňují
 
 ## <a name="unique-intelligent-insights"></a>Jedinečné inteligentní přehledy
 
-Jak se rozroste objem a složitost signálů zabezpečení, určení, jestli jsou tyto signály věrohodné, a pak jednají, trvá moc dlouho. Microsoft nabízí nesrovnatelnou škálu služby Security Intelligence poskytované v cloudovém měřítku, které vám pomůžou rychle detekovat a opravovat hrozby.
+Jak se rozroste objem a složitost signálů zabezpečení, určení, jestli jsou tyto signály věrohodné, a pak jednají, trvá moc dlouho. Microsoft nabízí nesrovnatelnou škálu služby Security Intelligence poskytované v cloudovém měřítku, které vám pomůžou rychle detekovat a opravovat hrozby. [Další informace](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Azure Threat Intelligence
 

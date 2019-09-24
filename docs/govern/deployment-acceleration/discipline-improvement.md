@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru akcelerace nasazení
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030486"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220763"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Vylepšení oboru akcelerace nasazení
 
@@ -52,6 +52,7 @@ Tato fáze předběžných postupů řízení vypořádání mostů mezi obchodn
 
 - Pro nové cloudové aplikace zaveďte do začátku procesu vývoje plně automatizovaná nasazení. Tato investice bude zlepšit spolehlivost testovacích procesů a zajistí konzistenci napříč vývojovým, QA a produkčním prostředím.
 - Uložte všechny artefakty nasazení, jako jsou šablony nasazení nebo konfigurační skripty, pomocí platformy pro správu zdrojového kódu, jako je GitHub nebo Azure DevOps.
+- Ukládat všechny tajné klíče, hesla, certifikáty a připojovací řetězce v [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Před implementací [akcelerace nasazení sada nástrojů](./toolchain.md)zvažte pilotní test a ujistěte se, že vaše nasazení co nejvíc zjednodušuje. Použijte zpětnou vazbu z pilotních testů během fáze předinstalace a podle potřeby opakujte.
 - Vyhodnoťte logickou a fyzickou architekturu vašich aplikací a Identifikujte příležitosti pro automatizaci nasazení prostředků aplikace nebo zlepšení částí architektury pomocí dalších cloudových prostředků.
 - Aktualizujte dokument s pokyny pro architekturu tak, aby zahrnoval plány nasazení a přijetí uživatelů a distribuovat do klíčových účastníků.
@@ -95,7 +96,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 - Pravidelně kontrolujte nástroje pro konfiguraci a skripty, aby se zlepšily procesy a identifikovaly běžné problémy.
 - Pracujte s týmy pro vývoj, provoz a zabezpečení, které vám pomůžou narušovat DevSecOps postupy a rozdělují organizace, které vedou k neefektivitám.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když rozumíte konceptu zásad správného řízení identity v cloudu, Projděte si [základní sada nástrojů identity](./toolchain.md) a Identifikujte nástroje a funkce Azure, které budete potřebovat při vývoji pravidel zásad správného řízení identity na platformě Azure.
 

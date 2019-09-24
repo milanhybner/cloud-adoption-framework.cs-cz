@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesy kompatibility zásad akcelerace nasazení
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c127a1c8bc8bce7608f0e146b36785fcee82dc0b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222584"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy kompatibility zásad akcelerace nasazení
 
@@ -58,7 +58,7 @@ Následující triggery a akce vynucení poskytují příklady, které můžete 
 - **Konfigurace nových prostředků nedodržuje zásady.** Pracujte s DevOps týmy a vlastníky úloh a Projděte si zásady akcelerace nasazení během spuštění projektu, aby všichni členové pochopili relevantní požadavky zásad.
 - **Selhání nasazení nebo problémy s konfigurací způsobují zpoždění v plánech projektu.** Pracujte s vývojovými týmy a vlastníky úloh a zajistěte, aby tým pochopil, jak automatizovat nasazení cloudových prostředků pro zajištění konzistence a opakovatelnosti. Plně automatizovaná nasazení by se měla vyžadovat v předstihu v&mdash;cyklu vývoje, který se snaží dosáhnout pozdě v cyklu vývoje, obvykle vede k neočekávaným problémům a prodlevám.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat procesy a triggery, které se rovnají aktuálnímu plánu přijetí do cloudu.
 

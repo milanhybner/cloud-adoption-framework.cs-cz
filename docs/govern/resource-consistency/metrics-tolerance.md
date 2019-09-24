@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky konzistence prostředků, indikátory a tolerance rizik
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026678"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222943"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriky konzistence prostředků, indikátory a tolerance rizik
 
-Tento článek je určený k tomu, aby vám pomohly kvantifikovat tolerance podnikových rizik v souvislosti s konzistencí prostředků. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro zajištění investic do splatnosti oboru konzistence prostředků.
+Tento článek vám pomůže kvantifikovat toleranci obchodního rizika v souvislosti s konzistencí prostředků. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro zajištění investic do splatnosti oboru konzistence prostředků.
 
 ## <a name="metrics"></a>Metriky
 
@@ -33,7 +33,7 @@ Každá organizace má různé provozní scénáře, ale následující položky
 - **Stáří prostředků.** Čas od posledního nasazení nebo změny prostředku
 - **Virtuální počítače v kritickém stavu.** Počet nasazených virtuálních počítačů, u kterých se zjistí jeden nebo několik kritických problémů, které je potřeba řešit, aby se obnovily normální funkce.
 - **Výstrahy podle závažnosti.** Celkový počet výstrah na nasazeném prostředku rozepsaný podle závažnosti.
-- **Odkazy podsítě nejsou v pořádku.** Počet prostředků s problémy s připojením k síti.
+- **Síťová propojení ve špatném stavu.** Počet prostředků s problémy s připojením k síti.
 - **Poškozené koncové body služby.** Počet problémů s koncovými body externí sítě.
 - **Incidenty stavu služby poskytovatele cloudu.** Počet výpadků nebo incidentů výkonu způsobených poskytovatelem cloudu.
 - **Smlouvy o úrovni služeb.** To může zahrnovat závazky Microsoftu pro provozuschopnost a konektivitu služeb Azure, jakož i závazky, které společnost vytvořila pro externí a interní zákazníky.

@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222605"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Shromáždění dat inventáře pro digitální majetek
 
@@ -29,11 +29,14 @@ Inventář, který podporuje digitální změny v závislosti na požadované di
 
 - **Inovace dat:** Inovace dat s podporou cloudu se zaměřuje na produkt nebo službu. Inventář také obsahuje mapování příležitostí k přerušení trhu a také potřebných možností.
 
+- **Zabezpečení:** Inventář poskytuje zabezpečení, které vám pomůžou vyhodnocovat, chránit a monitorovat prostředky organizace.
+
+
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Přesnost a úplnost zásob
 
 V první iteraci je inventarizace jenom zřídka dokončená. Důrazně doporučujeme, aby tým cloudových strategií zarovnal zúčastněné strany a uživatele, aby ověřili inventář. Pokud je to možné, použijte další nástroje, jako je například analýza sítě a závislostí, k identifikaci prostředků, které odesílají provoz, ale nejsou v inventáři.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po zkompilování a ověření inventáře je možné ho racionální. Racionalizace inventáře je dalším krokem k plánování digitální nemovitosti.
 

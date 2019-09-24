@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023540"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222621"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Zarovnání nákladových modelů k digitální nemovitosti k odhadování nákladů na Cloud
 
@@ -24,7 +24,7 @@ Cenové nástroje Azure vám pomůžou se správou cloudových výdajů s transp
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate je možná nejúčinnějším přístupem k zarovnání modelu nákladů. Tento nástroj umožňuje [soupis](./inventory.md)digitálního majetku, [omezené racionalizace](./rationalize.md)a výpočty nákladů v jednom nástroji.
 
-- [Kalkulačka celkových nákladů na vlastnictví](https://azure.microsoft.com/pricing/tco/calculator/): Snižte celkové náklady na vlastnictví místní infrastruktury s využitím cloudové platformy Azure. Využijte kalkulačku celkových nákladů na Azure k odhadu úspory nákladů, které můžete realizovat migrací úloh aplikací do Azure. Zadáním stručného popisu místního prostředí získáte okamžitou sestavu.
+- [Kalkulačka celkových nákladů na vlastnictví](https://azure.microsoft.com/pricing/tco/calculator): Snižte celkové náklady na vlastnictví místní infrastruktury s využitím cloudové platformy Azure. Využijte kalkulačku celkových nákladů na Azure k odhadu úspory nákladů, které můžete realizovat migrací úloh aplikací do Azure. Zadáním stručného popisu místního prostředí získáte okamžitou sestavu.
 
 - [Cenová Kalkulačka Azure](https://azure.microsoft.com/pricing): Odhad očekávaných měsíčních faktur pomocí cenové kalkulačky. Pomocí fakturačního portálu vám kdykoli Sledujte skutečné využití účtu a faktury. Nastavením automatických e-mailových upozornění fakturace budete upozorněni na to, jestli vaše útrata překročí nakonfigurované množství.
 

@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024380"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221521"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Přepnutí z sálových počítačů do Azure
 
@@ -27,7 +27,7 @@ V této části najdete technické informace o tom, jak přepnout z sálové pla
 
 Neexistuje žádný vzorec univerzálního mapování, který neexistuje pro určení počtu virtuálních jednotek vCPU potřebných ke spouštění sálových úloh. Metrika milionů instrukcí za sekundu (MIPS) je ale často namapovaná na vCPU v Azure. MIPS měří celkovou výpočetní sílu sálového počítače tím, že poskytuje konstantní hodnotu počtu cyklů za sekundu pro daný počítač.
 
-Malá organizace může vyžadovat méně než 500 MIPS, zatímco velká organizace obvykle používá více než 5 000 MIPS. Při $1 000 na jedno MIPS má velké organizace při nasazení infrastruktury 5 000-MIPS přibližně $5 000 000. Odhad ročních nákladů na typické nasazení Azure této škály je přibližně jedna z deseti nákladů na infrastrukturu MIPS. Podrobnosti najdete v části Tabulka 4 v [Demystifying sálovém počítače – do Azure. Dokument](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) White paper o migraci
+Malá organizace může vyžadovat méně než 500 MIPS, zatímco velká organizace obvykle používá více než 5 000 MIPS. Při $1 000 na jedno MIPS má velké organizace při nasazení infrastruktury 5 000-MIPS přibližně $5 000 000. Odhad ročních nákladů na typické nasazení Azure této škály je přibližně jedna z deseti nákladů na infrastrukturu MIPS. Podrobnosti najdete v části Tabulka 4 v dokumentu White Paper [Demystifying pro migraci z sálového počítače do Azure](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) .
 
 Přesný výpočet MIPS pro vCPU s Azure závisí na typu vCPU a na přesném zatížení, které používáte. Studie srovnávacích testů ale poskytují dobrý základ pro odhad počtu a typu vCPU, který budete potřebovat. Nedávné srovnávací testy HPE zREF poskytují tyto odhady:
 

@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení obchodních rizik spojených s transformací cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027702"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223538"
 ---
 # <a name="evaluate-risk-tolerance"></a>Vyhodnocení tolerance rizik
 
@@ -47,7 +47,7 @@ Identifikace rizika je poměrně přímým procesem. Rizika související s IT j
 Abychom lépe pochopili toleranci rizik, prohlížíme zákaznická data. Pokud společnost v jakémkoli odvětví účtuje zákaznická data na nezabezpečeném serveru, je toto technické riziko napadených nebo odcizených dat zhruba stejné. Tolerance společnosti pro toto riziko se však bude rozlišovat volně, na základě povahy a potenciální hodnoty dat.
 
 - Společnosti v oblasti zdravotnictví a finance v USA se řídí tuhými požadavky jiných výrobců. Předpokládá se, že osobní údaje nebo údaje týkající se zdravotní péče jsou mimořádně důvěrné. Existují závažné důsledky pro tyto typy společností, pokud se týkají výše uvedeného scénáře rizika. Jejich tolerance bude extrémně nízká. Všechna zákaznická data publikovaná v síti nebo mimo ni budou muset řídit tyto zásady dodržování předpisů třetích stran.
-- Herní společnost, jejíž zákaznická data jsou omezená na uživatelské jméno, dobu přehrávání a vysoká skóre, se nepříznivě nesetkaly, pokud se o rizikovému chování zapojí výše. I když jsou všechna nezabezpečená data ohrožená, dopad tohoto rizika je malý. Proto tolerance rizika v tomto případě je vysoká.
+- Herní společnost, jejíž zákaznická data jsou omezená na uživatelské jméno, časy hraní a vysoké skóre, se neshoduje s tím, že by při zapojení do reputace byly významné důsledky oproti ztrátám. I když jsou všechna nezabezpečená data ohrožená, dopad tohoto rizika je malý. Proto tolerance rizika v tomto případě je vysoká.
 - Středně velký podnik, který poskytuje čisticím službám pro koberce na tisíce zákazníků, je mezi těmito dvěma extrémními tolerancemi. Zákaznická data můžou být robustnější, a to s podrobnostmi, jako je adresa nebo telefonní číslo. Obě by se daly považovat za osobní údaje a měly by se chránit. Některé požadavky zásad správného řízení ale nemusí mandating, že data jsou zabezpečená. Z perspektivy IT je odpověď jednoduchá a zabezpečení dat. Z obchodní perspektivy to nemusí být jednoduché. Firma bude potřebovat další podrobnosti předtím, než by bylo možné určit úroveň tolerance pro toto riziko.
 
 V další části se dozvíte několik ukázkových otázek, které by mohly přispět k tomu, že podnik určí úroveň tolerance rizika pro případ použití nad nebo ostatním.
@@ -56,12 +56,13 @@ V další části se dozvíte několik ukázkových otázek, které by mohly př
 
 V této části jsou uvedené otázky týkající se konverzace provoking ve třech kategoriích: dopad ztráty, pravděpodobnost ztráty a náklady na nápravu. Když podnik a IT partner řeší každou z těchto oblastí, je možné snadno určit rozhodnutí o vynaložení úsilí na správu rizik a celkovou toleranci vůči určitému riziku.
 
-**Dopad ztráty:** Otázky, které určují dopad rizika. Tyto otázky můžou být obtížné (někdy nemožné) na odpověď. Vyčíslení dopadu je nejlepší, ale někdy stačí pouze v konverzaci, aby bylo možné pochopit toleranci. Rozsahy jsou také přijatelné, zejména pokud obsahují předpoklady, které tyto rozsahy určily.
+**Dopad ztráty:** Otázky, které určují dopad rizika. Odpovědi na tyto otázky můžou být obtížné. Vyčíslení dopadu je nejlepší, ale někdy stačí pouze v konverzaci, aby bylo možné pochopit toleranci. Rozsahy jsou také přijatelné, zejména pokud obsahují předpoklady, které tyto rozsahy určily.
 
-- Ruší toto riziko požadavky jiných výrobců na dodržování předpisů?
-- Narušuje toto riziko interní podnikové zásady?
+- Mohlo by toto riziko porušovat požadavky jiných výrobců na dodržování předpisů?
+- Mohlo by toto riziko narušovat interní podnikové zásady?
+- Mohla by tato rizika způsobit ztrátu životnosti, limbu nebo vlastnosti?
 - Je možné, že tyto rizikové náklady zákazníci nebo podíl na trhu? Pokud ano, můžou se tyto náklady kvantifikovat?
-- Mohlo by toto riziko vytvořit negativní prostředí pro zákazníky? Mají tato prostředí vliv na prodej nebo výnosy?
+- Mohlo by toto riziko vytvořit negativní prostředí pro zákazníky? Mají tyto zkušenosti vliv na prodej nebo výnosy?
 - Mohlo by toto riziko vytvořit novou právní odpovědnost? Pokud ano, má tato ocenění přednost před započetím škod v těchto typech případů?
 - Mohlo dojít k zastavení obchodních operací? Pokud ano, jak dlouho budou operace provozu?
 - Mohl by toto riziko zpomalit obchodní operace? Pokud ano, jak pomalé a jak dlouho?
@@ -74,7 +75,7 @@ Tyto základní otázky budou mít spoustu dalších informací. Po prozkoumáv�
 
 **Náklady na nápravu rizik:** Otázky k určení nákladů na odebrání nebo jiné minimalizaci rizika. Tyto otázky mohou být poměrně přímé, zejména pokud jsou v rozsahu zastoupené.
 
-- Je nějaké řešení jasné? Co to stojí?
+- Existuje jasné řešení a k čemu stojí?
 - Existují možnosti prevence a minimalizace tohoto rizika? Jaký je rozsah nákladů na tato řešení?
 - Co je potřeba od firmy k výběru nejlepšího řešení pro vymazání?
 - Co je potřeba z firmy a ověřit náklady?

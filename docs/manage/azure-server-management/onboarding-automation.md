@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028393"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221368"
 ---
 # <a name="automate-onboarding"></a>Automatizace připojování
 
@@ -21,7 +21,7 @@ Pro zlepšení efektivity nasazení služeb správy serveru Azure zvažte automa
 
 ## <a name="onboarding-by-using-automation"></a>Připojování pomocí automatizace
 
-Tato příručka obsahuje podporu úložiště GitHub Sample Code [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), která poskytuje ukázkové skripty a šablony pro Azure Resource Manager, které vám pomůžou automatizovat nasazení služby Azure Server Management Services.
+Tato příručka obsahuje podporu úložiště GitHub Sample Code [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), která poskytuje ukázkové skripty a šablony pro Azure Resource Manager, které vám pomůžou automatizovat nasazení služby Azure Server Management Services.
 
 Tyto ukázkové soubory ilustrují použití rutin Azure PowerShell k automatizaci následujících úloh:
 
@@ -33,7 +33,7 @@ Tyto ukázkové soubory ilustrují použití rutin Azure PowerShell k automatiza
 
 4. Povolí Update Management a Change Tracking a inventář pro pracovní prostor.
 
-5. Připojení virtuálních počítačů Azure pomocí Azure Policy (zásada nainstaluje agenta Log Analytics a Dependency Agent na virtuálních počítačích Azure).
+5. Připojení virtuálních počítačů Azure pomocí Azure Policy (zásada nainstaluje agenta Log Analytics a agenta závislostí na virtuálních počítačích Azure).
 
 6. Připojování místních serverů instalací agenta Log Analytics.
 
@@ -54,7 +54,7 @@ New-AMSDeployment. ps1 můžete spustit pomocí následujícího příkazu:
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
 ```
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Naučte se, jak nastavit základní výstrahy pro upozorňování týmu na události a problémy správy klíčů.
 

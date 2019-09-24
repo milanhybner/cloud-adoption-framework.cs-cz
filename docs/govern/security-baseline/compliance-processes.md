@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesy dodržování předpisů zásad standardních hodnot zabezpečení
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6494f64b91a0a59f235efbc21030c65fa5e7ded8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5f5de9c25574e36648930ce6de835d73eb0685fa
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029574"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221785"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Procesy dodržování předpisů zásad standardních hodnot zabezpečení
 
@@ -59,7 +59,7 @@ Následující triggery a akce vynucení poskytují příklady, které vám pom�
 - **Zjistil se problém se stavem zabezpečení.** Zakáže přístup k žádným virtuálním počítačům, které mají známý přístup nebo zjištěné chyby zabezpečení malwaru, dokud nebude možné nainstalovat příslušné opravy nebo bezpečnostní software. Aktualizujte pokyny zásad na účet pro všechny nově zjištěné hrozby.
 - **Zjištěna ohrožení zabezpečení sítě.** Přístup k jakémukoli prostředku, který není výslovně povolený zásadami přístupu k síti, by měl aktivovat upozornění pro pracovníky zabezpečení IT a příslušného vlastníka úlohy. Sledujte pokyny k potížím a aktualizacím, pokud je nutná revize zásad pro zmírnění budoucích incidentů.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat procesy a triggery, které se rovnají aktuálnímu plánu přijetí do cloudu.
 

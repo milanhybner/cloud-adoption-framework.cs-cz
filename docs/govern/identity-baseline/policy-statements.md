@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Příkazy zásad ukázkového směrného plánu identity
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028721"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222127"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Příkazy zásad ukázkového směrného plánu identity
 
@@ -67,11 +67,11 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** Nasazení všech aplikací, které vyžadují ověřování zákazníků, musí používat schváleného poskytovatele identity, který je kompatibilní s primárním zprostředkovatelem identity pro interní uživatele.
 
-**Možné možnosti návrhu:** Implementujte [federaci s Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mezi interními a zákaznickými poskytovateli identity.
+**Možné možnosti návrhu:** Implementujte [federaci s Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mezi interními a zákaznickými poskytovateli identity nebo využijte [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) .
 
 ## <a name="identity-reviews"></a>Revize identity
 
-**Technické riziko:** V průběhu času může přidání nových cloudových nasazení a dalších otázek zabezpečení zvýšit riziko neoprávněného přístupu k zabezpečeným prostředkům.
+**Technické riziko:** V průběhu času se můžou přidáním nových cloudových nasazení a dalších otázek zabezpečení zvýšit riziko neoprávněného přístupu k zabezpečeným prostředkům.
 
 **Prohlášení o zásadách:** Procesy zásad správného řízení cloudu musí zahrnovat čtvrtletní kontrolu s týmy správy identit k identifikaci škodlivých aktérů nebo vzorů použití, které by měly být znemožněny konfigurací cloudového prostředku.
 

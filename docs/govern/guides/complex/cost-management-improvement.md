@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030483"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220182"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení Cost Management disciplíny
 
@@ -66,14 +66,14 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 V této části článku se vylepšit návrh MVP pro řízení a zahrnutí nových zásad Azure a implementace Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
 
 1. Proveďte změny v Azure Enterprise Portal, abyste mohli fakturovat správce oddělení pro kanadské nasazení.
-1. Implementujte Azure Cost Management.
+2. Implementujte Azure Cost Management.
     1. Vytvořte správnou úroveň oboru přístupu, která se má sjednotit podle vzoru předplatného a vzoru seskupení prostředků. Za předpokladu, že se přizpůsobuje přizpůsobení MVP MVP definovaného v předchozích článcích, vyžaduje přístup k **oboru účtu registrace** pro tým zásad správného řízení pro Cloud, který běží na vytváření sestav vysoké úrovně. Další týmy mimo zásady správného řízení, jako je tým kanadských zakázek, budou vyžadovat přístup k **oboru skupiny prostředků** .
-    1. Vytvořte rozpočet v Azure Cost Management.
-    1. Projděte si úvodní doporučení a vyjednání s nimi. Doporučuje se mít opakovaný proces pro podporu procesu vytváření sestav.
-    1. Nakonfigurujte a spusťte vytváření sestav Azure Cost Management, jak počáteční, tak i opakovaný.
-1. Azure Policy aktualizace.
+    2. Vytvořte rozpočet v Azure Cost Management.
+    3. Projděte si úvodní doporučení a vyjednání s nimi. Doporučuje se mít opakovaný proces pro podporu procesu vytváření sestav.
+    4. Nakonfigurujte a spusťte vytváření sestav Azure Cost Management, jak počáteční, tak i opakovaný.
+3. Azure Policy aktualizace.
     1. Audit značek, skupin pro správu, předplatných a hodnot skupin prostředků k identifikaci jakékoli odchylky.
-    1. Vytvořte možnosti velikosti SKU pro omezení nasazení na SKU uvedené v dokumentaci plánování nasazení.
+    2. Vytvořte možnosti velikosti SKU pro omezení nasazení na SKU uvedené v dokumentaci plánování nasazení.
 
 ## <a name="conclusion"></a>Závěr
 

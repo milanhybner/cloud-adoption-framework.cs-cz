@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023415"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223075"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Začínáme s cestou k migraci do cloudu
 
@@ -84,7 +84,7 @@ Jak je znázorněno na obrázku výše, toto rozhraní zarovnává strategická 
 - **[Připraveno](../ready/index.md):** Příprava podnikání, jazykové verze, lidí a prostředí pro změny vede k úspěchu v každém úsilí a zrychluje implementaci a změny projektů.
 - **Přechod:** Zajistěte správnou implementaci požadovaných změn napříč IT a obchodními procesy, abyste dosáhli obchodních výsledků.
   - **[Migrace](../migrate/index.md):** Iterativní provádění [metodologie implementace v cloudu](#cloud-implementation) , která se řídí testovaným procesem vyhodnocování, migrace, optimalizace a zabezpečení & pro vytvoření opakovaného procesu pro migraci úloh.
-- **[Provoz](../operating-model/index.md):** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
+- **[Provoz](../operate/index.md):** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
   - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
   - **[Řízení](../govern/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
   - **[Správa](../manage/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.

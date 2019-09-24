@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nástroje pro konzistenci prostředků v Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e67d172b936c37aefb6764a304aaaf8f6788ffbe
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029014"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222937"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Nástroje pro konzistenci prostředků v Azure
 
@@ -25,7 +25,7 @@ Následuje seznam nástrojů Azure, které mohou pomoci při vyspělosti zásad 
 | Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Nasazení prostředků                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
-| Správa prostředků                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
+| Spravovat prostředky                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
 | Nasazení prostředků pomocí šablon             | Ne  | Ano | Ne  | Ano | Ne  | Ne | Ne |
 | Nasazení orchestrace prostředí          | Ne  | Ne  | Ano | Ne  | Ne  | Ne | Ne |
 | Definování skupin prostředků                       | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
@@ -39,7 +39,7 @@ Následuje seznam nástrojů Azure, které mohou pomoci při vyspělosti zásad 
 | Použití značek u prostředků                      | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
 | Přiřadit pravidla Azure Policy                    | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
 | Použít automatizovanou nápravu                  | Ne  | Ne  | Ne  | Ano | Ne  | Ne | Ne |
-| Správa fakturace                               | Ano | Ne  | Ne  | Ne  | Ne  | Ne | Ne |
+| Spravovat fakturaci                               | Ano | Ne  | Ne  | Ne  | Ne  | Ne | Ne |
 | Plánování prostředků pro zotavení po havárii         | Ano | Ano | Ano | Ne  | Ne  | Ano | Ano |
 |Obnovení dat během výpadku nebo porušení SLA     | Ne | Ne  | Ne  | Ne  | Ne  | Ano | Ano |
 |Obnovení aplikací a dat během výpadku nebo porušení SLA     | Ne | Ne  | Ne  | Ne  | Ne  | Ano | Ano |
@@ -62,6 +62,6 @@ Při plánování nasazení budete muset zvážit, kde jsou uložená data proto
 > [!NOTE]
 > Organizace také používají nástroje DevOps třetích stran ke sledování úloh a prostředků. Další informace najdete v tématu [integrace nástrojů DevOps](https://azure.microsoft.com/products/devops-tool-integrations).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Naučte se vytvářet, přiřazovat a spravovat [definice zásad](https://docs.microsoft.com/azure/governance/policy) v Azure.

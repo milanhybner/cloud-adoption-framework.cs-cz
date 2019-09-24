@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028726"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222315"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu identity
 
@@ -79,20 +79,20 @@ Nové osvědčené postupy:
 - **Podrobný plán zabezpečení hybridní virtuální sítě:** Místní strana hybridní sítě by měla být nakonfigurovaná tak, aby umožňovala komunikaci mezi následujícím řešením a místními servery služby Active Directory. Tento osvědčený postup vyžaduje, aby DMZ povolil Active Directory Domain Services přes hranice sítě.
 - **Šablony Azure Resource Manager:**
     1. Definujte NSG pro blokování externích přenosů a povolte interní provoz.
-    1. Nasaďte dva virtuální počítače služby Active Directory ve dvojici s vyrovnáváním zatížení na základě zlaté image. Při prvním spuštění tento obrázek spustí skript PowerShellu, který se připojí k doméně a zaregistruje se pomocí doménových služeb. Další informace najdete v tématu věnovaném [rozšiřování Active Directory Domain Services (služba AD DS) do Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Nasaďte dva virtuální počítače služby Active Directory ve dvojici s vyrovnáváním zatížení na základě zlaté image. Při prvním spuštění tento obrázek spustí skript PowerShellu, který se připojí k doméně a zaregistruje se pomocí doménových služeb. Další informace najdete v tématu věnovaném [rozšiřování Active Directory Domain Services (služba AD DS) do Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Použijte NSG pro všechny prostředky.
 - Podrobný plán Azure:
     1. Vytvořte podrobný plán s `active-directory-virtual-machines`názvem.
-    1. Jednotlivé šablony a zásady služby Active Directory přidejte do podrobného plánu.
-    1. Publikovat podrobný plán do jakékoli příslušné skupiny pro správu.
-    1. Použijte podrobný plán na jakékoli předplatné, které vyžaduje starší verze nebo Multi-Factor Authentication třetí strany.
-    1. Instance Active Directory běžící v Azure se teď dá použít jako rozšíření místního řešení Active Directory, což umožňuje integraci s existujícím nástrojem Multi-Factor Authentication a poskytování ověřování založeného na deklaracích. existující funkce služby Active Directory.
+    2. Jednotlivé šablony a zásady služby Active Directory přidejte do podrobného plánu.
+    3. Publikovat podrobný plán do jakékoli příslušné skupiny pro správu.
+    4. Použijte podrobný plán na jakékoli předplatné, které vyžaduje starší verze nebo Multi-Factor Authentication třetí strany.
+    5. Instance Active Directory běžící v Azure se teď dá použít jako rozšíření místního řešení Active Directory, což umožňuje integraci s existujícím nástrojem Multi-Factor Authentication a poskytování ověřování založeného na deklaracích. existující funkce služby Active Directory.
 
 ## <a name="conclusion"></a>Závěr
 
 Přidáním těchto změn do MVP pro kontrolu zásad správného řízení můžete napravit mnoho rizik v tomto článku, což umožňuje každému týmu přijetí v rámci cloudu rychle přesunout za tento roadblock.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V případě, že se přijetí do cloudu pokračuje a přináší další obchodní hodnotu, rizika a potřeby zásad správného řízení cloudu se změní také. Níže jsou uvedené některé změny, ke kterým může dojít. U této fiktivní společnosti je další triggerem zahrnutí chráněných dat do plánu přijetí do cloudu. Tato změna vyžaduje další ovládací prvky zabezpečení.
 

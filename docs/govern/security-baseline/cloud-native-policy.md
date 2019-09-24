@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Základní zásady zabezpečení pro Cloud – nativní
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030705"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222895"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Základní zásady zabezpečení pro Cloud – nativní
 
 [Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na obecná témata zabezpečení, včetně ochrany sítě, digitálních prostředků, dat atd. Jak je uvedeno v [Průvodci přezkoumáním zásad](../policy-compliance/cloud-policy-review.md), rozhraní pro přijetí do cloudu zahrnuje tři úrovně **vzorových zásad**: Princip návrhu v cloudu, v rozlehlých sítích a v cloudu vyhovuje pro jednotlivé obory. Tento článek popisuje ukázkovou zásadu cloudového nativního řešení pro základnu standardních hodnot zabezpečení.
 
 > [!NOTE]
-> Společnost Microsoft není k dispozici pro diktování podnikových nebo firemních zásad. Tento článek je určený k tomu, abyste vám pomohli připravit se na interní kontrolu zásad. Před pokusem o její použití se předpokládá, že tyto ukázkové zásady budou rozšířeny, ověřeny a testovány proti podnikovým zásadám. Používání těchto ukázkových zásad, jak je, se nedoporučuje.
+> Společnost Microsoft není k dispozici pro diktování podnikových nebo firemních zásad. Tento článek vám pomůže připravit se na interní kontrolu zásad. Před pokusem o její použití se předpokládá, že tyto ukázkové zásady budou rozšířeny, ověřeny a testovány proti podnikovým zásadám. Nedoporučuje se používat Tato vzorová zásada jako.
 
 ## <a name="policy-alignment"></a>Zarovnání zásad
 
@@ -54,10 +54,10 @@ I když je důležité porozumět [směrnému plánu identity](../identity-basel
 
 Zásady nativní pro Cloud pro síťové ovládací prvky mohou zahrnovat požadavky podobné následujícímu:
 
-- Hybridní připojení k místním prostředkům (i když je technicky možné v Azure) se nemusí v zásadách nativního cloudu povolit. V případě potřeby se hybridní připojení ukáže jako nezbytné, což je robustnější ukázka zásad zabezpečení společnosti.
+- Hybridní připojení k místním prostředkům se nemusí v zásadách nativního cloudu povolit. V případě potřeby se hybridní připojení ukáže jako nezbytné, což je robustnější ukázka zásad zabezpečení společnosti.
 - Uživatelé mohou vytvořit zabezpečená připojení k a v rámci Azure pomocí virtuálních sítí a skupin zabezpečení sítě.
-- Nativní Windows Azure Firewall chrání hostitele před škodlivým síťovým provozem pomocí omezeného přístupu k portu. Dobrým příkladem těchto zásad je požadavek na blokování (nebo nepovolení) provozu přímo do virtuálního počítače přes port RDP-TCP/UDP 3389.
-- Služby, jako jsou Firewall webových aplikací Application Gateway Azure (WAF) a Azure DDoS Protection chrání aplikace a zajišťují dostupnost virtuálních počítačů spuštěných v Azure. Tyto funkce by neměly být vypnuté nebo nepoužívané.
+- Nativní Windows Azure Firewall chrání hostitele před škodlivým síťovým provozem pomocí omezeného přístupu k portu. Dobrým příkladem těchto zásad je požadavek na blokování (nebo nepovolení) přenosu přímo do virtuálního počítače přes SSH/RDP.
+- Služby, jako jsou Firewall webových aplikací Application Gateway Azure (WAF) a Azure DDoS Protection chrání aplikace a zajišťují dostupnost virtuálních počítačů spuštěných v Azure. Tyto funkce by neměly být zakázány.
 
 ### <a name="data-protection"></a>Ochrana dat
 
@@ -65,7 +65,7 @@ Jedním z klíčů k ochraně dat v cloudu je monitorování účtů možných s
 
 - Ovládací prvky šifrování dat jsou integrované do služeb z virtuálních počítačů do úložiště a SQL Database.
 - Vzhledem k tomu, že se data mezi cloudy a zákazníky pohybují, můžou být chráněná pomocí standardních šifrovacích protokolů.
-- Azure Key Vault umožňuje uživatelům chránit a řídit kryptografické klíče a další tajné kódy používané v cloudových aplikacích a službách.
+- Azure Key Vault umožňuje uživatelům chránit a řídit kryptografické klíče, hesla, připojovací řetězce a certifikáty používané v cloudových aplikacích a službách.
 - Azure Information Protection vám pomůže klasifikovat, označovat a chránit citlivá data v aplikacích.
 
 I když jsou tyto funkce integrované do Azure, každá z nich vyžaduje konfiguraci a může zvýšit náklady. Důrazně se navrhuje zarovnání jednotlivých funkcí nativního cloudu s [strategií klasifikace dat](../policy-compliance/data-classification.md) .
@@ -78,6 +78,7 @@ Sledování zabezpečení je proaktivní strategie, která Audituje vaše prost�
 - Průběžné monitorování a posuzování zabezpečení pro zajištění dodržování předpisů a nápravy jakýchkoli ohrožení zabezpečení.
 - Interaktivní nástroje a kontextová analýza hrozeb pro zjednodušené šetření.
 - Rozsáhlé protokolování a integrace s existujícími informacemi o zabezpečení
+- Omezuje potřebu nákladných, neintegrovaných a odstraněných řešení zabezpečení.
 
 ### <a name="extending-cloud-native-policies"></a>Rozšíření zásad nativních pro Cloud
 
@@ -87,9 +88,11 @@ I v případě této investice do nativního směrného plánu zabezpečení v c
 
 - **Zabezpečte virtuální počítače.** Zabezpečení by měla být nejvyšší prioritou každé organizace a její efektivita vyžaduje několik věcí. Musíte vyhodnotit stav zabezpečení, chránit před bezpečnostními hrozbami a pak rychle detekovat a reagovat na hrozby, ke kterým dojde.
 - **Ochrana obsahu virtuálního počítače.** Nastavení pravidelných automatizovaných záloh je nezbytné pro ochranu před chybami uživatelů. To ještě není dost, ale; musíte se také ujistit, že vaše zálohy jsou bezpečné z kyberútokům a jsou dostupné, když je potřebujete.
-- **Monitorování virtuálních počítačů a aplikací.** Tento model zahrnuje několik úloh, včetně přehledu o stavu vašich virtuálních počítačů, porozumění interakcím mezi nimi a vytváření způsobů monitorování aplikací, které tyto virtuální počítače spouštějí. Všechny tyto úlohy jsou nezbytné v případě, že vaše aplikace běží kolem času.
+- **Monitorujte aplikace.** Tento model zahrnuje několik úloh, včetně přehledu o stavu vašich virtuálních počítačů, porozumění interakcím mezi nimi a vytváření způsobů monitorování aplikací, které tyto virtuální počítače spouštějí. Všechny tyto úlohy jsou nezbytné v případě, že vaše aplikace běží kolem času.
+- **Zabezpečení a audit přístupu k datům.** Organizace by měly auditovat veškerý přístup k datům a využívat pokročilé možnosti strojového učení a volat odchylky od běžných vzorů přístupu.
+- **Postup převzetí služeb při selhání.** Cloudové operace s nízkou odolností proti chybám musí být schopné převzít služby při selhání nebo obnovení z kyberbezpečnosti nebo incidentu platformy. Tyto postupy se nesmí jednoduše zdokumentovat, ale měly by se procvičit čtvrtletně.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když jste si [prohlédli](../policy-compliance/cloud-policy-review.md) ukázkovou zásadu standardních hodnot zabezpečení pro nativní cloudová řešení, se vraťte do průvodce pro kontrolu zásad, kde můžete začít sestavovat v této ukázce, abyste mohli vytvořit vlastní zásady pro přijetí do cloudu.
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Šablona konzistence prostředků
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028384"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221916"
 ---
 # <a name="resource-consistency-template"></a>Šablona konzistence prostředků
 
-První krok implementace změny komunikuje s požadovanou změnou. Totéž platí při změně postupů zásad správného řízení. Níže uvedená šablona slouží jako výchozí bod pro dokumentování a komunikaci s příkazy zásad, které řídí provoz a správu IT v cloudu.
+První krok implementace změny komunikuje s tím, co je žádoucí. Totéž platí při změně postupů zásad správného řízení. Níže uvedená šablona slouží jako výchozí bod pro dokumentování a komunikaci s příkazy zásad, které řídí provoz a správu IT v cloudu.
 
 Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro zachycení obchodních rizik, tolerance rizik, procesy dodržování předpisů a nástroje potřebné k definování příkazů zásad konzistence prostředků vaší organizace.
 
@@ -31,7 +31,7 @@ Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Základní postupy zásad správného řízení začínají porozuměním obchodním rizikům. Přečtěte si článek o obchodních rizicích a začněte zdokumentovat obchodní rizika, která odpovídají vašemu aktuálnímu plánu přijetí do cloudu.
 

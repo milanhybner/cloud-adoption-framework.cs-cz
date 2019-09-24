@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025952"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223623"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -69,7 +69,7 @@ Pouze místní prostředí &ndash; předpoklady:
 
 ### <a name="gateway-aggregation"></a>Agregace pomocí brány
 
-Ve scénářích, kde je objem cloudových telemetrických dat příliš velký nebo stávající místní systémy monitorování vyžadují před zpracováním dat protokolů jejich úpravu, může být potřeba služba [agregace dat protokolů pomocí brány](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md).
+Ve scénářích, kde je objem cloudových telemetrických dat příliš velký nebo stávající místní systémy monitorování vyžadují před zpracováním dat protokolů jejich úpravu, může být potřeba služba [agregace dat protokolů pomocí brány](/azure/architecture/patterns/gateway-aggregation).
 
 K vašemu poskytovateli cloudu se nasadí služba brány. Příslušné aplikace a služby se pak nakonfigurují tak, aby odesílaly telemetrická data do brány, a ne do výchozího systému protokolování. Brána pak může data zpracovat (agregovat, kombinovat nebo jinak formátovat) a následně je odeslat do služby monitorování pro účely ingestování a analýzy.
 

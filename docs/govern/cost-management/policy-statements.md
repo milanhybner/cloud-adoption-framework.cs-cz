@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management ukázkové příkazy zásad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 563a36aa066b46eee5da2b422ba4cbc6bfc045fd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220936"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management ukázkové příkazy zásad
 
@@ -75,7 +75,7 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 - V Azure můžou [funkce přehledů Azure monitor](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance) pomáhat s analýzou využití systému.
 - K dispozici je několik možností seskupování a označování prostředků na základě rolí. V Azure byste měli zvolit [model konzistence prostředků](../../decision-guides/resource-consistency/index.md) ve spojení s týmem zásad správného řízení a použít ho u všech prostředků.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Použijte ukázky uvedené v tomto článku jako výchozí bod pro vývoj zásad, které řeší konkrétní podniková rizika, která odpovídají vašim plánům pro přijetí v cloudu.
 

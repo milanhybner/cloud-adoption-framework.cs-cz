@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standardní podniková příručka: Zlepšení pravidla směrného plánu zabezpečení'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027501"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223782"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standardní podniková příručka: Zlepšení pravidla směrného plánu zabezpečení
 
@@ -71,7 +71,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 
 1. Všechny nasazené prostředky musí být rozdělené do kategorií podle závažnosti a klasifikace dat. Klasifikace jsou přezkoumány týmem zásad správného řízení cloudu a vlastníkem aplikace před nasazením do cloudu.
 2. Aplikace, které ukládají nebo mají přístup k chráněným datům, se budou spravovat jinak než ty, které ne. Aby nedocházelo k neúmyslnému přístupu k chráněným datům, měly by být segmentované.
-3. Všechna chráněná data musí být v klidovém stavu zašifrovaná.
+3. Všechna chráněná data musí být v klidovém stavu zašifrovaná. I když se jedná o výchozí nastavení pro všechny účty Azure Storage, můžou být potřeba další strategie šifrování, včetně šifrování dat v rámci účtu úložiště, šifrování virtuálních počítačů a šifrování na úrovni databáze, pokud se využití SQL serveru používá ve virtuálním počítači (TDE a sloupec). šifrování).
 4. Zvýšená oprávnění v jakémkoli segmentu, který obsahuje chráněná data, by měla být výjimka. Jakékoli takové výjimky budou zaznamenány s týmem zásad správného řízení cloudu a budou pravidelně auditovány.
 5. Podsítě sítě obsahující chráněná data musí být izolované od všech ostatních podsítí. Síťový provoz mezi podsítěmi chráněných dat se pravidelně Audituje.
 6. K žádné podsíti obsahující chráněná data se dá přímo získat přímý pøístup přes veřejný Internet nebo přes datová centra. Přístup k těmto podsítím musí být směrován prostřednictvím zprostředkujících podsítí. Všechny přístupy do těchto podsítí se musí nacházet prostřednictvím řešení brány firewall, které umožňuje provádět kontrolu paketů a blokující funkce.
@@ -93,41 +93,41 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 Návrh MVP pro zásady správného řízení se změní, aby zahrnoval nové zásady Azure a implementaci Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
 
 1. Sítě a týmy zabezpečení IT budou definovat požadavky na síť. Tým zásad správného řízení pro Cloud bude tuto konverzaci podporovat.
-1. Identita a týmy zabezpečení IT budou definovat požadavky na identitu a provádět všechny nezbytné změny v místní implementaci služby Active Directory. Tým zásad správného řízení pro Cloud bude kontrolovat změny.
-1. Vytvořte v Azure DevOps úložiště, ve kterém se uloží a naplní všechny relevantní šablony Azure Resource Manager a skriptované konfigurace.
-1. Azure Security Center implementace:
+2. Identita a týmy zabezpečení IT budou definovat požadavky na identitu a provádět všechny nezbytné změny v místní implementaci služby Active Directory. Tým zásad správného řízení pro Cloud bude kontrolovat změny.
+3. Vytvořte v Azure DevOps úložiště, ve kterém se uloží a naplní všechny relevantní šablony Azure Resource Manager a skriptované konfigurace.
+4. Azure Security Center implementace:
     1. Nakonfigurujte Azure Security Center pro všechny skupiny pro správu, které obsahují chráněné klasifikace dat.
-    1. Nastavte Automatické zřizování na zapnuto ve výchozím nastavení, aby se zajistilo dodržování předpisů.
-    1. Navažte konfigurace zabezpečení operačního systému. Tým zabezpečení IT bude definovat konfiguraci.
-    1. Podporuje tým zabezpečení IT při prvotním použití Security Center. Převeďte Security Center k bezpečnostnímu týmu IT, ale Udržujte přístup za účelem neustálého zlepšování zásad správného řízení.
-    1. Vytvořte šablonu Správce prostředků, která odráží změny požadované pro Security Center konfiguraci v rámci předplatného.
-1. Aktualizovat zásady Azure pro všechna předplatná:
+    2. Nastavte Automatické zřizování na zapnuto ve výchozím nastavení, aby se zajistilo dodržování předpisů.
+    3. Navažte konfigurace zabezpečení operačního systému. Tým zabezpečení IT bude definovat konfiguraci.
+    4. Podporuje tým zabezpečení IT při prvotním použití Security Center. Převeďte Security Center k bezpečnostnímu týmu IT, ale Udržujte přístup za účelem neustálého zlepšování zásad správného řízení.
+    5. Vytvořte šablonu Správce prostředků, která odráží změny požadované pro Security Center konfiguraci v rámci předplatného.
+5. Aktualizovat zásady Azure pro všechna předplatná:
     1. Auditujte a vynutilte klíčovou a datovou klasifikaci napříč všemi skupinami pro správu a odběry k identifikaci všech předplatných s chráněnými klasifikacemi dat.
-    1. Auditujte a vynutili použití jenom schválených imagí.
-1. Aktualizujte zásady Azure pro všechna předplatná, která obsahují klasifikace chráněných dat:
+    2. Auditujte a vynutili použití jenom schválených imagí.
+6. Aktualizujte zásady Azure pro všechna předplatná, která obsahují klasifikace chráněných dat:
     1. Auditujte a vynuťte jenom standardní role Azure RBAC.
-    1. Auditujte a vynutili šifrování pro všechny účty úložiště a soubory v klidovém umístění na jednotlivých uzlech.
-    1. Audituje a vynutila použití NSG pro všechny síťové karty a podsítě. NSG budou definovat sítě a týmy zabezpečení IT.
-    1. Auditujte a vynutili použití schválené podsítě sítě a virtuální sítě na síťové rozhraní.
-    1. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
-    1. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
+    2. Auditujte a vynutili šifrování pro všechny účty úložiště a soubory v klidovém umístění na jednotlivých uzlech.
+    3. Audituje a vynutila použití NSG pro všechny síťové karty a podsítě. NSG budou definovat sítě a týmy zabezpečení IT.
+    4. Auditujte a vynutili použití schválené podsítě sítě a virtuální sítě na síťové rozhraní.
+    5. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
+    6. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
         1. Audit, zda webové servery Windows používají zabezpečené komunikační protokoly.
-        1. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
-1. Konfigurace brány firewall:
+        2. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
+7. Konfigurace brány firewall:
     1. Identifikujte konfiguraci Azure Firewall, která splňuje nezbytné požadavky na zabezpečení. Případně můžete identifikovat kompatibilní zařízení třetí strany, které je kompatibilní s Azure.
-    1. Vytvořte šablonu Správce prostředků pro nasazení brány firewall pomocí požadovaných konfigurací.
-1. Podrobný plán Azure:
+    2. Vytvořte šablonu Správce prostředků pro nasazení brány firewall pomocí požadovaných konfigurací.
+8. Podrobný plán Azure:
     1. Vytvořte nový podrobný plán s `protected-data`názvem.
-    1. Přidejte do podrobného plánu šablony brány firewall a Azure Security Center.
-    1. Přidejte nové zásady pro odběry chráněných dat.
-    1. Publikovat podrobný plán do jakékoli skupiny pro správu, která aktuálně plánuje hostování chráněných dat.
-    1. U každého ovlivněného předplatného můžete kromě existujících modrotisky použít nový plán.
+    2. Přidejte do podrobného plánu šablony brány firewall a Azure Security Center.
+    3. Přidejte nové zásady pro odběry chráněných dat.
+    4. Publikovat podrobný plán do jakékoli skupiny pro správu, která aktuálně plánuje hostování chráněných dat.
+    5. U každého ovlivněného předplatného můžete kromě existujících modrotisky použít nový plán.
 
 ## <a name="conclusion"></a>Závěr
 
 Přidání výše uvedených procesů a změn do MVP pro řízení správného řízení vám pomůže napravit mnoho rizik spojených se zabezpečením zásad správného řízení. Společně přidávají nástroje pro monitorování sítě, identity a zabezpečení potřebné k ochraně dat.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V případě, že se přijetí cloudu pokračuje a přináší další obchodní hodnoty, rizika a potřeby zásad správného řízení cloudu. Pro fiktivní společnost v tomto průvodci je dalším krokem podpora důležitých úloh. To je bod, když jsou potřebné ovládací prvky konzistence prostředků.
 

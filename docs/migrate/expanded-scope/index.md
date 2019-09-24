@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Kontrolní seznam pro rozšířený rozsah migrace do cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817328"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224356"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Rozšířený rozsah pro migraci do cloudu
 
@@ -27,7 +27,7 @@ Následující kontrolní seznam popisuje běžné složité oblasti, které mů
 
 - **Obchodní změny rozsahu:**
   - [Vyvážení portfolia](./balance-the-portfolio.md)
-  - [Podpora globálních trhů](./multiple-regions.md)
+  - [Podpora globálních trhů](../../decision-guides/regions/index.md)
   - Povědomí o nákladech během migrace *(připravujeme pro 3. čtvrtletí 2019)*
 - **Změny rozsahu na základě kultury:**
   - Procesy správy a schvalování změn *(připravujeme pro 3. čtvrtletí 2019)*

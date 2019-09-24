@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zarovnání Průvodce návrhem zásad správného nastavení cloudu k podnikovým zásadám
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030248"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223742"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Zarovnání Průvodce návrhem zásad správného nastavení cloudu k podnikovým zásadám
 
 Po [Definování zásad cloudu](./policy-definition.md) na základě [identifikovaných rizik](./business-risk.md)budete muset vygenerovat doprovodné materiály, které tyto zásady zarovnají vašim pracovníkům IT a vývojářům, na které se vztahují. Koncept Průvodce návrhem zásad správného řízení cloudu vám umožní určit konkrétní strukturální, technologické a procesní možnosti na základě příkazů zásad, které jste vygenerovali pro každý z [pěti oborů řízení](../governance-disciplines.md).
@@ -40,7 +33,7 @@ Pokud plánujete použít platformu Azure pro účely vašeho cloudu, rozhraní 
 
 Každé přijetí v cloudu má jedinečné cíle, priority a problémy, takže tyto ukázky by měly poskytnout dobrou šablonu pro převod zásad na doprovodné materiály. Vyberte nejbližší scénář pro vaši situaci jako výchozí bod a tvarovat ho tak, aby vyhovoval vašim konkrétním potřebám zásad.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 S pokyny pro návrh můžete vytvořit procesy přihlášené k zásadám, které zajistí dodržování zásad.
 

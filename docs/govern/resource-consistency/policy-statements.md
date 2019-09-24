@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ukázkové zásady konzistence prostředků – příkazy
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030046"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221986"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Ukázkové zásady konzistence prostředků – příkazy
 
@@ -74,8 +74,8 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Prohlášení o zásadách:** Implementují se tyto zásady:
 
-- Nástroje zásad správného řízení musí ověřit, že všechny prostředky související s důležitými aplikacemi nebo chráněnými daty jsou zahrnuté do monitorování pro vyčerpání a optimalizaci prostředků.
-- Nástroje správy zásad správného řízení musí ověřit, jestli jsou shromažďovány odpovídající úrovně dat protokolování pro všechny klíčové aplikace nebo chráněná data.
+- Nástroje řízení správného řízení musí ověřit, jestli jsou všechny prostředky zahrnuté do monitorování pro vyčerpání prostředků, zabezpečení, dodržování předpisů a optimalizaci.
+- Nástroje správy zásad správného řízení musí ověřit, jestli jsou shromažďovány odpovídající úrovně protokolovaných dat pro všechny aplikace a data.
 
 **Možné možnosti návrhu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) je výchozí služba monitorování v Azure a při nasazování prostředků se dá vymáhat konzistentní monitorování prostřednictvím [Azure modrotisky](https://docs.microsoft.com/azure/governance/blueprints) .
 
@@ -85,9 +85,9 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Prohlášení o zásadách:** Všechny klíčové aplikace a chráněná data musí mít implementovaná řešení pro zálohování a obnovení, aby se minimalizoval dopad na výpadky nebo chyby systému.
 
-**Možné možnosti návrhu:** Služba [Azure Site Recovery] poskytuje možnosti zálohování, obnovení a replikace určené k minimalizaci doby výpadku ve scénářích provozní kontinuity a zotavení po havárii (BCDR).
+**Možné možnosti návrhu:** Služba [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) poskytuje možnosti pro zálohování, obnovení a replikaci, které minimalizují dobu výpadku ve scénářích provozní kontinuity a zotavení po havárii (BCDR).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Použijte ukázky uvedené v tomto článku jako výchozí bod pro vývoj zásad, které řeší konkrétní podniková rizika, která odpovídají vašim plánům pro přijetí v cloudu.
 

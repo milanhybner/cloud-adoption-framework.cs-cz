@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky, ukazatele a tolerance standardních hodnot identity
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028318"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220435"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriky, ukazatele a tolerance standardních hodnot identity
 
-Tento článek je určený k tomu, aby vám pomohly kvantifikovat tolerance obchodního rizika v souvislosti s směrným plánem identity. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro investici do splatnosti oboru standardních hodnot identity.
+Tento článek vám pomůže kvantifikovat toleranci obchodního rizika v souvislosti s směrným plánem identity. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro investici do splatnosti oboru standardních hodnot identity.
 
 ## <a name="metrics"></a>Metriky
 
@@ -28,13 +28,13 @@ Následují příklady užitečných metrik, které byste měli shromáždit, ab
 
 - **Velikost systémů identit.** Celkový počet uživatelů, skupin nebo jiných objektů spravovaných prostřednictvím vašich systémů identit.
 - **Celková velikost infrastruktury adresářových služeb.** Počet adresářových struktur, domén a klientů používaných vaší organizací.
-- **Závislost na starších nebo místních mechanismech ověřování.** Počet úloh závislých na starších mechanismech ověřování nebo službách Multi-Factor Authentication Services třetích stran.
+- **Závislost na starších nebo místních mechanismech ověřování.** Počet úloh, které závisí na starších verzích nebo mechanismech třetích stran nebo ověřování Multi-Factor Authentication.
 - **Rozsah adresářových služeb nasazených v cloudu.** Počet doménových struktur adresářů, domén a klientů, které jste nasadili do cloudu.
 - **Servery služby Active Directory nasazené v cloudu.** Počet serverů služby Active Directory nasazených do cloudu.
 - **Organizační jednotky nasazené v cloudu** Počet organizačních jednotek (OU) služby Active Directory nasazených do cloudu.
 - **Rozsah federace** Počet systémů pro základní identitu, které jsou federované pro systémy vaší organizace.
 - **Uživatelé se zvýšenými oprávněními.** Počet uživatelských účtů s vyšším přístupem k prostředkům nebo nástrojům pro správu.
-- **Použití řízení přístupu na základě role.** Počet předplatných, skupin prostředků nebo individuálních prostředků, které nejsou spravované prostřednictvím řízení přístupu na základě role (RBAC).
+- **Použití řízení přístupu na základě role.** Počet předplatných, skupin prostředků nebo individuálních prostředků, které nejsou spravovány prostřednictvím řízení přístupu na základě role (RBAC) prostřednictvím skupin.
 - **Deklarace identity ověřování.** Počet úspěšných a neúspěšných pokusů o ověření uživatele
 - **Deklarace identity autorizace.** Počet úspěšných a neúspěšných pokusů uživatelů o přístup k prostředkům.
 - **Ohrožené účty.** Počet uživatelských účtů, které byly ohroženy.
@@ -56,11 +56,11 @@ Jakmile budete mít základnu, stanovte minimální srovnávací testy představ
 - **Aktivační událost RBAC** Společnost s v rámci _x%_ prostředků, které používají metody řízení přístupu na základě rolí, by měla zvážit investování do směrného plánu identity, aby identifikovala optimalizované způsoby přiřazování přístupu uživatelů k prostředkům.
 - **Aktivační událost při selhání ověřování.** Společnost, kde selhání ověřování představuje více než _x%_ pokusů, by měla investovat do směrného plánu identity, aby se zajistilo, že metody ověřování nejsou v oblasti externích útoků a že uživatelé mohou používat metody ověřování. správně.
 - **Aktivační událost při selhání autorizace** Společnost, kde jsou pokusy o přístup odmítnuty více než _x%_ času, by měly investovat do směrného plánu identity, aby se zlepšila aplikace a aktualizovala řízení přístupu a identifikovala potenciálně škodlivé pokusy o přístup.
-- **Došlo k ohrožení zabezpečení triggeru účtu.** Společnost s více než _x_ ohroženými účty by měla investovat do směrného plánu identity, aby vylepšila sílu a zabezpečení ověřovacích mechanismů a vylepšila mechanismy, aby opravila rizika související s ohroženými účty.
+- **Došlo k ohrožení zabezpečení triggeru účtu.** Společnost s více než 1 ohroženým účtem by měla investovat do směrného plánu identity, aby vylepšila sílu a zabezpečení ověřovacích mechanismů a vylepšila mechanismy, aby opravila rizika související s ohroženými účty.
 
 Přesné metriky a triggery, které používáte k měření tolerance rizika a úroveň investic do směrného plánu identity, budou specifické pro vaši organizaci, ale výše uvedené příklady by měly sloužit jako užitečnou základnu pro diskuzi v rámci týmu zásad správného řízení v cloudu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md), metriky dokumentů a indikátory tolerance, které odpovídají aktuálnímu plánu přijetí do cloudu.
 

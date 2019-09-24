@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 459d4255a959d2911f56dd08186b92c4e89317dd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029005"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221466"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fáze 1: Plánování požadavků pro služby Azure Server Management Services
 
@@ -48,7 +48,7 @@ Příklady zahrnuté v těchto pokynech předpokládají nasazení, které ješt
 
 Při přípravě pracovních prostorů a účtů, které vytvoříte pro služby správy, se podívejte na následující diskuzi o problémech:
 
-- Geografické oblasti **Azure a dodržování legislativních předpisů**. Oblasti Azure jsou uspořádanédo geografických oblastí. Zeměpisná oblast [Azure](https://azure.microsoft.com/global-infrastructure/geographies/) zajišťuje, že se nároky na data, svrchovanost, dodržování předpisů a odolnost proti chybám uplatňují v rámci zeměpisných hranic. Pokud se vaše úlohy vztahují na svrchovanost dat nebo jiné požadavky na dodržování předpisů, musí být tento pracovní prostor a účty Automation nasazené do oblastí v rámci stejné geografické oblasti Azure jako prostředky, které podporují.
+- Geografické oblasti **Azure a dodržování legislativních předpisů**. Oblasti Azure jsou uspořádanédo geografických oblastí. Zeměpisná oblast [Azure](https://azure.microsoft.com/global-infrastructure/geographies) zajišťuje, že se nároky na data, svrchovanost, dodržování předpisů a odolnost proti chybám uplatňují v rámci zeměpisných hranic. Pokud se vaše úlohy vztahují na svrchovanost dat nebo jiné požadavky na dodržování předpisů, musí být tento pracovní prostor a účty Automation nasazené do oblastí v rámci stejné geografické oblasti Azure jako prostředky, které podporují.
 - **Počet pracovních prostorů**. Jako princip vytváření identifikátorů GUID vytvořte minimální počet pracovních prostorů vyžadovaných pro jednotlivé geografické oblasti Azure. Doporučujeme aspoň jeden pracovní prostor pro každé geografické prostředí Azure, kde se nachází vaše výpočetní prostředky nebo prostředky úložiště. Toto počáteční zarovnání pomáhá zabránit budoucím problémům při migraci dat do různých geografických oblastí.
 - **Uchovávání dat a capping**. Při vytváření pracovních prostorů nebo účtů Automation možná budete muset vzít v úvahu zásady uchovávání dat nebo capping požadavky na data. Další informace o těchto principech a dalších doporučeních při plánování pracovních prostorů najdete [v tématu Správa dat protokolu a pracovních prostorů v Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
 - **Mapování oblastí** Propojení Log Analyticsho pracovního prostoru a účtu Azure Automation je podporované jenom mezi některými oblastmi Azure. Pokud je například pracovní prostor Log Analytics hostovaný v oblasti *EastUS* , musí se propojený účet Automation vytvořit v oblasti *EastUS2* , aby se mohl používat se službami pro správu. Pokud máte účet služby Automation, který byl vytvořen v jiné oblasti, nebude se moci připojit k pracovnímu prostoru v *EastUS*. Volba oblasti nasazení může významně ovlivnit požadavky na geografickou verzi Azure. V [tabulce mapování oblastí](https://docs.microsoft.com/azure/automation/how-to/region-mappings) se rozhodněte, která oblast by měla hostovat vaše pracovní prostory a účty Automation.

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky standardních hodnot zabezpečení, indikátory a tolerance rizik
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2eeab224a9f025b9e93cf407626455e74d69ccd4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029011"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222854"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metriky standardních hodnot zabezpečení, indikátory a tolerance rizik
 
-Tento článek je určený k tomu, aby vám pomohly kvantifikovat tolerance obchodního rizika v souvislosti se směrným plánem zabezpečení. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ, který zajistí investici do splatnosti pravidla standardních hodnot zabezpečení.
+Tento článek vám pomůže kvantifikovat toleranci obchodního rizika v souvislosti se směrným plánem zabezpečení. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ, který zajistí investici do splatnosti pravidla standardních hodnot zabezpečení.
 
 ## <a name="metrics"></a>Metriky
 
@@ -57,7 +57,7 @@ Jakmile budete mít základnu, stanovte minimální srovnávací testy představ
 
 Přesné metriky a triggery, které používáte k měření tolerance rizika a úroveň investic do směrného plánu zabezpečení, budou specifické pro vaši organizaci, ale výše uvedené příklady by měly sloužit jako užitečnou základnu pro diskuzi v rámci týmu zásad správného řízení v cloudu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md), metriky dokumentů a indikátory tolerance, které odpovídají aktuálnímu plánu přijetí do cloudu.
 

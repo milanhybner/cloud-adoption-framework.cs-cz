@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Vysvětlení konstrukcí správy přístupu k prostředkům v Azure: Azure Resource Manager, předplatná, skupiny prostředků a prostředky'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223039"
 ---
 # <a name="resource-access-management-in-azure"></a>Správa přístupu k prostředkům v Azure
 
@@ -33,7 +33,7 @@ V Azure pojem _prostředek_ odkazuje na entitu spravovanou Azure. Například vi
 
 ## <a name="what-is-an-azure-resource-group"></a>Co je skupina prostředků Azure?
 
-Každý prostředek v Azure musí patřit do [skupiny prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Skupina prostředků je jen logická konstrukce, která seskupuje více prostředků dohromady, aby se mohla spravovat jako jediná entita. Například prostředky, které sdílejí podobný životní cyklus, například prostředky pro [n-vrstvou aplikaci](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , lze vytvořit nebo odstranit jako skupinu.
+Každý prostředek v Azure musí patřit do [skupiny prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Skupina prostředků je jenom logická konstrukce, která seskupuje víc prostředků dohromady, aby se mohla spravovat jako jediná entita _založená na životním cyklu a zabezpečení_. Například prostředky, které sdílejí podobný životní cyklus, například prostředky pro [n-vrstvou aplikaci](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , lze vytvořit nebo odstranit jako skupinu. Další způsob: všechno, co je spojeno dohromady, bude spravováno společně a zastaralá dohromady, se spojí do skupiny prostředků.
 
 ![Diagram skupiny prostředků obsahující zdroj](../../_images/govern/design/governance-1-10.png)
 *obrázku 2 – skupina prostředků obsahuje prostředek.*
@@ -42,7 +42,7 @@ Skupiny prostředků a prostředky, které obsahují, jsou přidružené k **př
 
 ## <a name="what-is-an-azure-subscription"></a>Co je předplatné Azure?
 
-Předplatné Azure je podobné jako skupina prostředků v tom, že je to logická konstrukce, která seskupuje skupiny prostředků a jejich prostředky dohromady. Předplatné Azure je ale také přidružené k ovládacím prvkům, které používá Azure Resource Manager. Co to znamená? Podívá se na Azure Resource Manager, kde se dozvíte o vztahu mezi ním a předplatným Azure.
+Předplatné Azure je podobné jako skupina prostředků v tom, že je to logická konstrukce, která seskupuje skupiny prostředků a jejich prostředky dohromady. Předplatné Azure je ale také přidružené k ovládacím prvkům, které používá Azure Resource Manager. Podívá se na Azure Resource Manager, kde se dozvíte o vztahu mezi ním a předplatným Azure.
 
 ![Diagram předplatného](../../_images/govern/design/governance-1-11.png)
 Azure na*obrázku 3 – předplatné Azure*

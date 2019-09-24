@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky akcelerace nasazení, indikátory a tolerance rizik
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027929"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220706"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Metriky akcelerace nasazení, indikátory a tolerance rizik
 
-Tento článek je určený k tomu, aby vám pomohla omezit toleranci obchodních rizik v souvislosti s akcelerací nasazení. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ, který zajistí investici do splatnosti oboru akcelerace nasazení.
+Tento článek vám pomůže kvantifikovat toleranci obchodního rizika v souvislosti s akcelerací nasazení. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ, který zajistí investici do splatnosti oboru akcelerace nasazení.
 
 ## <a name="metrics"></a>Metriky
 
@@ -34,7 +34,7 @@ Rizika související s akcelerací nasazení jsou převážně v podstatě týka
 
 <!-- "en-us" location is required for the URL below. -->
 
-Zvažte, že budete mít na začátku svou cestu k přijetí cloudu DevOps nebo [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organizační jazykovou verzi. Tradiční firemní IT oddělení často vypracovali operace, zabezpečení a vývojové týmy, které často nespolupracují dobře nebo jsou dokonce Adversarial nebo nepřátelně navzájem. V brzké době se tyto výzvy uznávají a integrují klíčové účastníky z každého týmu, které vám pomůžou zajistit flexibilitu v průběhu vašeho cloudového přijetí a přitom zůstat zabezpečený a dobře řízený.
+Tradiční firemní IT oddělení často vypracovali operace, zabezpečení a vývojové týmy, které často nespolupracují dobře nebo jsou dokonce Adversarial nebo nepřátelně navzájem. V brzké době se tyto výzvy uznávají a integrují klíčové účastníky z každého týmu, které vám pomůžou zajistit flexibilitu v průběhu vašeho cloudového přijetí a přitom zůstat zabezpečený a dobře řízený. Proto by se jedna měla zvážit přijetí DevOps nebo [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organizační kultury na začátku v cestě k přijetí vašeho cloudu. 
 
 Spolupracujte se svým DevSecOps týmem a obchodními stranami a Identifikujte [obchodní rizika](./business-risks.md) související s konfigurací a pak určíte přijatelné standardní hodnoty pro odolnost proti riziku konfigurace. V této části doprovodné materiály k rozhraní pro přijetí do cloudu najdete příklady, ale podrobná rizika a směrné plány vaší společnosti nebo nasazení se nejspíš budou lišit.
 
@@ -44,7 +44,7 @@ Jakmile budete mít základnu, stanovte minimální srovnávací testy představ
 - **Aktivační události mimo dodržování předpisů:** Pokud počet prostředků nesplňujících požadavky překročí stanovenou prahovou hodnotu (buď jako celkový počet prostředků, nebo procento z celkového počtu prostředků), společnost by měla investovat do vylepšení oboru akcelerace nasazení, aby se zajistilo, že se každý prostředek Konfigurace zůstává v souladu s životním cyklem daného prostředku.
 - **Aktivační události plánu projektu:** Pokud čas nasadit prostředky společnosti a aplikace často překračuje prahovou hodnotu definovat, společnost by měla investovat do procesů zrychlení nasazení, aby zavedla nebo vylepšila automatizované nasazení za účelem zajištění konzistence a předvídatelnosti. Doba nasazení měřená ve dnech nebo dokonce i v týdnech obvykle indikuje strategii akcelerace nasazení, která je v podoptimálním prostředí.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md), metriky dokumentů a indikátory tolerance, které odpovídají aktuálnímu plánu přijetí do cloudu.
 

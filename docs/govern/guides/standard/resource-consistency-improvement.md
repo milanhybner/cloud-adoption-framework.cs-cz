@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222239"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standardní podniková příručka: Vylepšení konzistence prostředků
 
@@ -84,37 +84,37 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 V této části článku se změní návrh MVP zásad správného řízení tak, aby zahrnoval nové zásady Azure a implementaci Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
 
 1. Tým provozu cloudu bude definovat nástroje Operational monitoring a nástroje pro automatizované opravy. Tým zásad správného řízení pro Cloud bude tyto procesy zjišťování podporovat. V tomto případě se v cloudovém provozním týmu zvolí Azure Monitor jako primární nástroj pro monitorování důležitých podnikových aplikací.
-1. Vytvořte v Azure DevOps úložiště, ve kterém se uloží a naplní všechny relevantní šablony Správce prostředků a skriptované konfigurace.
-1. Implementace úložiště Azure:
-    1. Definujte a nasaďte Azure trezor pro procesy zálohování a obnovení.
-    1. Vytvořte šablonu Správce prostředků pro vytvoření trezoru v každém předplatném.
-1. Aktualizovat Azure Policy pro všechna předplatná:
+2. Vytvořte v Azure DevOps úložiště, ve kterém se uloží a naplní všechny relevantní šablony Správce prostředků a skriptované konfigurace.
+3. Implementace úložiště Azure Recovery Services:
+    1. Definujte a nasaďte Azure Recovery Services trezor pro procesy zálohování a obnovení.
+    2. Vytvořte šablonu Správce prostředků pro vytvoření trezoru v každém předplatném.
+4. Aktualizovat Azure Policy pro všechna předplatná:
     1. Auditujte a vynutilte kritickou a klasifikaci dat napříč všemi předplatnými k identifikaci všech předplatných s důležitými klíčovými prostředky.
-    1. Auditujte a vynutili použití jenom schválených imagí.
-1. Azure Monitor implementace:
-    1. Jakmile se identifikují důležité předplatné, vytvořte Azure Monitor pracovní prostor pomocí PowerShellu. Toto je proces předběžného nasazení.
-    1. Během testování nasazení nasadí tým operací cloudu nezbytné agenty a testy zjišťování.
-1. Aktualizuje Azure Policy pro všechna předplatná, která obsahují klíčové aplikace.
+    2. Auditujte a vynutili použití jenom schválených imagí.
+5. Azure Monitor implementace:
+    1. Jakmile se identifikují důležité úlohy, vytvořte Azure Monitor pracovní prostor.
+    2. Během testování nasazení nasadí tým operací cloudu nezbytné agenty a testy zjišťování.
+6. Aktualizuje Azure Policy pro všechna předplatná, která obsahují klíčové aplikace.
     1. Audituje a vynutila použití NSG pro všechny síťové karty a podsítě. Sítě a zabezpečení IT definují NSG.
-    1. Auditujte a vyvynuťte použití schválených podsítí sítě a virtuální sítě pro každé síťové rozhraní.
-    1. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
-    1. Audituje a vynutil nasazení Azure Monitor agentů pro všechny virtuální počítače.
-    1. Auditujte a vyjistěte, aby v předplatném existoval trezor Azure.
-1. Konfigurace brány firewall:
+    2. Auditujte a vyvynuťte použití schválených podsítí sítě a virtuální sítě pro každé síťové rozhraní.
+    3. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
+    4. Audituje a vynutil nasazení Azure Monitor agentů pro všechny virtuální počítače.
+    5. Proveďte audit a vyjistěte, aby v předplatném existovaly trezory služby Azure Recovery Services.
+7. Konfigurace brány firewall:
     1. Identifikujte konfiguraci Azure Firewall, která splňuje požadavky na zabezpečení. Případně můžete identifikovat zařízení třetí strany, které je kompatibilní s Azure.
     1. Vytvořte šablonu Správce prostředků pro nasazení brány firewall pomocí požadovaných konfigurací.
-1. Podrobný plán Azure:
+8. Podrobný plán Azure:
     1. Vytvořte nový plán Azure s názvem `protected-data`.
-    1. Přidejte do podrobného plánu šablony brány firewall a úložiště Azure.
-    1. Přidejte nové zásady pro odběry chráněných dat.
-    1. Publikujte podrobný plán do jakékoli skupiny pro správu, která je určená pro hostování důležitých aplikací.
-    1. Použijte nový podrobný plán na všechny ovlivněné předplatné i na existující plány.
+    2. Přidejte do podrobného plánu šablony brány firewall a úložiště Azure.
+    3. Přidejte nové zásady pro odběry chráněných dat.
+    4. Publikujte podrobný plán do jakékoli skupiny pro správu, která bude hostovat klíčové aplikace.
+    5. Použijte nový podrobný plán na všechny ovlivněné předplatné i na existující plány.
 
 ## <a name="conclusion"></a>Závěr
 
 Tyto další procesy a změny v rámci řízení MVP vám pomůžou napravit mnoho rizik spojených se zásadou správného řízení prostředků. Společně přidávají ovládací prvky pro obnovení, změnu velikosti a monitorování, které podporují cloudové operace.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V případě, že se přijetí do cloudu pokračuje a přináší další obchodní hodnotu, rizika a potřeby zásad správného řízení cloudu se změní také. V případě fiktivní společnosti v tomto průvodci je další aktivační událost v případě, že škálování nasazení přesáhne 100 prostředků do cloudu nebo měsíční útraty překračuje $1 000 za měsíc. V tomto okamžiku tým zásad správného řízení cloudu přidá ovládací prvky Cost Management.
 

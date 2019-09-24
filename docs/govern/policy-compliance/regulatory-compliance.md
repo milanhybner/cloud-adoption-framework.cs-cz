@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznámení s dodržováním předpisů
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028936"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222025"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Seznámení s dodržováním předpisů
 
-Toto je úvodní článek o dodržování předpisů, proto není určený pro implementaci strategie dodržování předpisů. Je jenom pro obecné povědomí. Podrobnější informace o [nabídkách dodržování předpisů Azure](https://aka.ms/allcompliance) jsou k dispozici na [webu Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx). Veškerá dokumentace ke stažení je navíc k dispozici pro některé zákazníky Azure na [portálu Microsoft Trust Service](https://servicetrust.microsoft.com).
+Toto je úvodní článek o dodržování předpisů, proto není určený pro implementaci strategie dodržování předpisů. Podrobnější informace o [nabídkách dodržování předpisů Azure](https://aka.ms/allcompliance) jsou k dispozici na [webu Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx). Veškerá dokumentace ke stažení je navíc k dispozici pro některé zákazníky Azure na [portálu Microsoft Trust Service](https://servicetrust.microsoft.com).
 
 Dodržování legislativních předpisů odkazuje na disciplínu a proces zajištění toho, aby společnost dodržovala právní předpisy, kterými se řídí orgány v jejich geografických nebo pravidelch, které musí dobrovolně přijmout oborové standardy. Pro dodržování předpisů v oblasti IT můžou lidé a procesy monitorovat firemní systémy ve snaze zjistit a zabránit porušení zásad a postupů, které vytvořily tyto zákony, předpisy a standardy. To zase platí pro nejrůznější procesy monitorování a vynucení. V závislosti na oboru a zeměpisné oblasti se můžou tyto procesy navzájem zdlouhavé a složitě.
 
@@ -42,7 +42,7 @@ Osobní údaje jsou informace, které se dají použít k identifikaci spotřebi
 
 ## <a name="gdpr"></a>GDPR
 
-Jedním z nejdůležitějších vývojů v této oblasti je poslední enactment v rámci Evropské Komise Obecné nařízení o ochraně osobních údajů (GDPR), která je určená k posílení ochrany dat pro jednotlivce v rámci Evropské unie. GDPR vyžaduje, aby data týkající se jednotlivců (například jméno, adresa domů, fotografie, e-mailová adresa, informace o bance, příspěvky na webech sociálních sítí, lékařské informace nebo IP adresy počítače) byla udržována na serverech v rámci EU a nepřenesly se. z nich. Také vyžaduje, aby společnosti oznámily jednotlivcům na všechna porušení dat a pověření, která mají společnosti inspektor ochrany dat (DPO). Jiné země mají nebo vyvíjí podobné typy předpisů.
+Jedním z nejdůležitějších vývojů v této oblasti je Obecné nařízení o ochraně osobních údajů (GDPR), která slouží k posílení ochrany dat pro jednotlivce v rámci Evropské unie. GDPR vyžaduje, aby data týkající se jednotlivců (například jméno, adresa domů, fotografie, e-mailová adresa, informace o bance, příspěvky na webech sociálních sítí, lékařské informace nebo IP adresy počítače) byla udržována na serverech v rámci EU a nepřenesly se. z nich. Také vyžaduje, aby společnosti oznámily jednotlivcům na všechna porušení dat a pověření, která mají společnosti inspektor ochrany dat (DPO). Jiné země mají nebo vyvíjí podobné typy předpisů.
 
 ## <a name="compliant-foundation-in-azure"></a>Vyhovující základ v Azure
 

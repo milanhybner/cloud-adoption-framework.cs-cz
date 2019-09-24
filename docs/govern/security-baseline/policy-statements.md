@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ukázkové příkazy zásad standardních hodnot zabezpečení
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221657"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Ukázkové příkazy zásad standardních hodnot zabezpečení
 
@@ -40,7 +40,7 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** Všechna chráněná data musí být v klidovém stavu zašifrovaná.
 
-**Potenciální možnost návrhu:** V článku [Přehled šifrování Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) najdete diskuzi o tom, jak se na platformě Azure provádějí šifrování na základě dat.
+**Potenciální možnost návrhu:** V článku [Přehled šifrování Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) najdete diskuzi o tom, jak se na platformě Azure provádějí šifrování na základě dat. Také je potřeba vzít v úvahu další ovládací prvky, jako je například šifrování dat a kontrola nad tím, jak lze změnit nastavení účtu úložiště.
 
 ## <a name="network-isolation"></a>Izolace sítě
 
@@ -54,17 +54,17 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Technické riziko:** Povolení přístupu k úlohám z veřejného Internetu představuje riziko vniknutí v důsledku neoprávněného vystavení dat nebo narušení podniku.
 
-**Prohlášení o zásadách:** K žádné podsíti obsahující chráněná data se dá přímo získat přímý pøístup přes veřejné Internet nebo přes datová centra. Přístup k těmto podsítím musí být směrován prostřednictvím mezilehlé podsítě. Veškerý přístup k těmto podsítím se musí nacházet prostřednictvím řešení brány firewall schopnýho provádět funkce kontroly a blokování paketů.
+**Prohlášení o zásadách:** K žádné podsíti obsahující chráněná data se dá přímo získat přímý pøístup přes veřejné Internet nebo přes datová centra. Přístup k těmto podsítím musí být směrován prostřednictvím zprostředkujících podsítí. Veškerý přístup k těmto podsítím se musí nacházet prostřednictvím řešení brány firewall schopnýho provádět funkce kontroly a blokování paketů.
 
-**Potenciální možnost návrhu:** V Azure Zabezpečte veřejné koncové body nasazením [DMZ mezi veřejným internetem a vaší cloudovou sítí](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Potenciální možnost návrhu:** V Azure Zabezpečte veřejné koncové body nasazením [DMZ mezi veřejným internetem a vaší cloudovou sítí](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Zvažte nasazení, konfiguraci a automatizaci [Azure firewall](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>DDoS Protection
 
 **Technické riziko:** K distribuovaným útokům DOS (Denial of Service) může dojít v případě výpadku.
 
-**Prohlášení o zásadách:** Nasaďte automatizované mechanismy pro zmírnění DDoS do všech veřejně přístupných koncových bodů sítě.
+**Prohlášení o zásadách:** Nasaďte automatizované mechanismy pro zmírnění DDoS do všech veřejně přístupných koncových bodů sítě. Žádný veřejný web, na který se IaaS, by neměl být vystavený pro Internet bez DDoS.
 
-**Potenciální možnost návrhu:** K minimalizaci výpadků způsobeného útoky DDoS použijte [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) .
+**Potenciální možnost návrhu:** [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard můžete použít k minimalizaci výpadků způsobených útoky DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Zabezpečené místní připojení
 
@@ -88,9 +88,9 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** Díky trendům a potenciálním útokům, které by mohly mít vliv na nasazení v cloudu, je třeba pravidelně kontrolovat bezpečnostní tým, aby poskytoval aktualizace nástroje pro základní hodnoty zabezpečení používané v cloudu.
 
-**Potenciální možnost návrhu:** Navažte běžnou schůzku kontroly zabezpečení, která zahrnuje relevantní členy týmu IT a zásad správného řízení. Projděte si stávající data a metriky zabezpečení a zaveďte mezery v aktuálních zásadách a nástrojích pro základní hodnoty zabezpečení a aktualizujte zásady tak, aby opravily všechna nová rizika.
+**Potenciální možnost návrhu:** Navažte běžnou schůzku kontroly zabezpečení, která zahrnuje relevantní členy týmu IT a zásad správného řízení. Projděte si stávající data a metriky zabezpečení a zaveďte mezery v aktuálních zásadách a nástrojích pro základní hodnoty zabezpečení a aktualizujte zásady tak, aby opravily všechna nová rizika. Využijte [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) a [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) k získání užitečných přehledů o nově vznikajících hrozbách, které jsou specifické pro vaše nasazení.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Použijte ukázky uvedené v tomto článku jako výchozí bod pro vývoj zásad, které řeší konkrétní bezpečnostní rizika, která odpovídají vašim plánům pro přijetí v cloudu.
 

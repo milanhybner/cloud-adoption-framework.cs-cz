@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivace konzistence prostředků a obchodní rizika
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027303"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222014"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivace konzistence prostředků a obchodní rizika
 
@@ -22,7 +22,7 @@ Tento článek popisuje důvody, proč zákazníci obvykle přijímají pravidla
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>Je relevantní konzistence prostředků?
+## <a name="resource-consistency-relevancy"></a>Relevanci konzistence prostředků
 
 Při nasazení prostředků a úloh Cloud nabízí větší flexibilitu a flexibilitu nad většinou tradičních místních datových center. Tyto potenciální cloudové výhody se ale také přidávají spárováním s potenciálními nevýhodami správy, které mohou vážně ohrozit úspěšnost vašeho cloudového přijetí. Jaké prostředky jste nasadili? Jaké týmy vlastní prostředky? Máte dostatek prostředků pro podporu úloh? Jak poznáte, jestli jsou úlohy v pořádku?
 
