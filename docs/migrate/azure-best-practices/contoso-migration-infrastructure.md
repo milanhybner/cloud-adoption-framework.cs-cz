@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024342"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224152"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury pro migraci
 
@@ -72,7 +72,7 @@ Společnost Contoso si vybrala [smlouvu Enterprise (EA)](https://azure.microsoft
 - Pokud Contoso z nějakého důvodu závazek překročí a utratí víc, Microsoft jí rozdíl vyfakturuje.
 - Veškeré náklady nad rámec závazku se budou účtovat podle stejných sazeb, jaké jsou uvedené ve smlouvě se společností Contoso. Za překročení závazku se neúčtují žádné pokuty.
 
-### <a name="manage-subscriptions"></a>Spravovat předplatná
+### <a name="manage-subscriptions"></a>Správa předplatných
 
 Po platbě za Azure musí společnost Contoso zjistit, jak spravovat předplatná Azure. Contoso má smlouvu EA, takže počet předplatných Azure, která může vytvořit, není ničím omezený.
 
@@ -496,7 +496,7 @@ Následující tabulka uvádí souhrn virtuálních sítí v oblasti Střední U
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Podsítě v produkční síti oblasti Střední USA (VNET-PROD-CUS)
 
-V sekundární oblasti Střední USA existuje produkční síť, stejně jako má svou produkční síť i primární oblast Východní USA 2.
+Paralelně s produkční sítí v primárním Východní USA 2 oblasti je produkční síť v sekundární Střed USA oblasti.
 
 **Podsíť** | **CIDR** | **Adresy** | **V podsíti**
 --- | --- | --- | ---
@@ -800,6 +800,6 @@ Při migraci do cloudu nejsou potřeba všechny kroky, které tady provedla spol
 
 Jakmile má společnost Contoso připravenou tuto infrastrukturu, může udělat další krok a vyzkoušet si migraci.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po vytvoření infrastruktury Azure je společnost Contoso připravená začít s migrací úloh do cloudu. V části s [přehledem vzorů a příkladů migrace](./contoso-migration-overview.md#windows-server-workloads) najdete řadu scénářů, které využívají jako cíl migrace tuto ukázkovou infrastrukturu.

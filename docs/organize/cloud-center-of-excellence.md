@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028309"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224336"
 ---
 # <a name="cloud-center-of-excellence"></a>Vedoucí centrum cloudu
 
@@ -32,7 +32,7 @@ CCoE vyžaduje spolupráci mezi všemi následujícími možnostmi:
 
 ## <a name="impact-and-cultural-change"></a>Dopad a kulturní změna
 
-Když je tato funkce správně strukturovaná a podporovaná, můžou účastníci zrychlit inovace a migrovat úsilí a zároveň snížit celkové náklady na změnu a zvýšit flexibilitu firmy. Po úspěšné implementaci může tato funkce způsobit výrazné snížení času na uvedení na trh. V případě vyspělosti týmových postupů se může zobrazit zvýšení kvality ukazatelů, včetně spolehlivosti, efektivity výkonu, zabezpečení, udržovatelnosti a spokojenosti zákazníků. Tyto zisky v efektivitě, flexibilitě a kvalitě jsou obzvláště důležité, pokud společnost plánuje implementaci úsilí zaměřeného na migraci do cloudu nebo chce Cloud používat k testování inovací spojených s rozlišením trhu.
+Když je tato funkce správně strukturovaná a podporovaná, můžou účastníci zrychlit inovace a migrovat úsilí a zároveň snížit celkové náklady na změnu a zvýšit flexibilitu firmy. Po úspěšné implementaci může tato funkce způsobit výrazné snížení času na uvedení na trh. Jako vyspělé týmové postupy se zlepšují indikátory kvality, včetně spolehlivosti, efektivity výkonu, zabezpečení, udržovatelnosti a spokojenosti zákazníků. Tyto zisky v efektivitě, flexibilitě a kvalitě jsou obzvláště důležité, pokud společnost plánuje implementaci úsilí zaměřeného na migraci do cloudu nebo chce Cloud používat k testování inovací spojených s rozlišením trhu.
 
 Po úspěšném vytvoření se v modelu CCoE vytvoří významný kulturní posun. Základem CCoE přístupu je to, že slouží jako zprostředkovatel, partner nebo zástupce firmy. Tento model je paradigma posunutí od tradičního zobrazení jako jednotka operací nebo abstrakcní vrstva mezi podnikem a IT prostředky.
 
@@ -130,7 +130,7 @@ Kromě toho doporučujeme, aby zúčastněné obchodní strany informovaly o pr�
 
 **Vytvořit vyrovnávací paměť:** Tým CCoE bude experimentovat s novými přístupy. Některé z těchto přístupů nebudou správně zarovnány se stávajícími operacemi nebo technickými omezeními. Existuje reálné riziko, že při selhání experimentů dochází k CCoEům nebo jiným týmům. Důležitá je podpora a ukládání do vyrovnávací paměti týmu z důsledků možností učení "rychlé selhání". Je stejně důležité, aby měl tým účet k růstu místo a zajistil, že se z těchto experimentů učí a vyhledává lepší řešení.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Cloudové centrum excelence vyžaduje [Možnosti cloudové platformy](./cloud-platform.md) i [Možnosti cloudové automatizace](./cloud-automation.md). Dalším krokem je zarovnat [Možnosti cloudové platformy](./cloud-platform.md).
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023998"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224092"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -298,11 +298,11 @@ Kromě DMS může společnost Contoso k identifikaci informací o virtuálních 
 - Mají skripty, které jim pomůžou s ručními migracemi. Ty jsou k dispozici v úložišti GitHub.
 - K migraci se můžou použít také různé [partnerské nástroje](https://azure.microsoft.com/migration/partners).
 
-## <a name="phase-3-optimize"></a>Fáze 3: Optimalizace
+## <a name="phase-3-optimize"></a>Fáze 3: Optimalizovat
 
 Jakmile společnost Contoso přesune prostředky do Azure, potřebuje je optimalizovat v zájmu zvýšení výkonu a maximalizovat návratnost investic pomocí nástrojů pro správu nákladů. Vzhledem k tomu, že Azure je služba, která se platí podle využití, je pro společnost Contoso důležité, aby rozuměla tomu, jaký mají systémy výkon, a zajistila, aby měly správnou velikost.
 
-### <a name="azure-cost-management"></a>Správa nákladů na Azure
+### <a name="azure-cost-management"></a>Azure Cost Management
 
 V zájmu co nejlepšího zužitkování investice do cloudu bude společnost Contoso využívat bezplatnou službu pro správu nákladů Azure Cost Management.
 

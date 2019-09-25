@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru směrného plánu identity
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027922"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220482"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu identity
 
@@ -46,7 +46,7 @@ Tato fáze předběžných postupů řízení vypořádání mostů mezi obchodn
 - Definujte role a přiřazení, které budou řídit správu identit a přístupu v cloudu.
 - Definujte místní skupiny a namapujte je na odpovídající cloudové role.
 - Poskytovatelé identit inventáře (včetně identit řízených databází používaných vlastními aplikacemi).
-- Zvažte možnosti pro konsolidaci nebo integraci zprostředkovatelů identity tam, kde duplicity existují, abyste zjednodušili celkové řešení identit.
+- Konsolidujte a integrujte zprostředkovatele identity tam, kde duplicity existují, abyste zjednodušili celkové řešení identit a snížili rizika.
 - Vyhodnoťte hybridní kompatibilitu stávajících zprostředkovatelů identity.
 - Pro zprostředkovatele identity, kteří nejsou kompatibilní s hybridem, vyhodnoťte možnosti konsolidace nebo nahrazení.
 
@@ -98,7 +98,7 @@ Migrace je přírůstkový proces, který se zaměřuje na přesun, testování 
 - Ověřte a upřesněte [strategii hybridních identit](../../decision-guides/identity/index.md).
 - Zajistěte, aby každá aplikace nebo úloha dál odpovídaly strategii identity před vydáním.
 - Ověřte, že jednotné přihlašování (SSO) a bezproblémové jednotné přihlašování fungují podle očekávání pro vaše aplikace.
-- Snižte nebo eliminujte počet alternativních úložišť identit, pokud je to možné.
+- Snižte nebo eliminujte počet alternativních úložišť identit.
 - Posoudí nutnost jakéhokoli úložiště identity v aplikaci nebo v databázi. Identity, které spadají mimo správného poskytovatele identity (první strana nebo třetí strana), můžou představovat riziko pro aplikaci a uživatele.
 - Povolte podmíněný přístup pro [místní federované aplikace](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuujte identitu napříč globálními oblastmi v několika centrech pomocí synchronizace mezi oblastmi.
@@ -120,6 +120,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 **Potenciální aktivity:**
 
 - Provádějte pravidelné audity zásad identity a postupů dodržování předpisů.
+- Zajistěte, aby u citlivých uživatelských účtů (generální ředitel, ředitel, náměstek atd.) byla vždy povolena aplikace Multi-Factor Authentication a neobvyklé pro zjišťování přihlášení.
 - Pravidelně kontrolují škodlivé objekty actor a porušení dat, zejména těch, které se týkají podvodů s totožností, jako je například potenciální převzetí účtu správce.
 - Nakonfigurujte Nástroj pro monitorování a vytváření sestav.
 - Zvažte lepší integraci se zabezpečením a systémy ochrany před podvody.
@@ -132,7 +133,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 - Pravidelně vytváří zprávu o dopadu, která zobrazuje změny metriky vytvořené systémem a odhad obchodních dopadů [strategie hybridních identit](../../decision-guides/identity/index.md).
 - Navázat integrované monitorování, které doporučuje [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Teď, když rozumíte konceptu zásad správného řízení identity v cloudu, Projděte si [základní sada nástrojů identity](./toolchain.md) a Identifikujte nástroje a funkce Azure, které budete potřebovat při vývoji pravidel zásad správného řízení identity na platformě Azure.
 

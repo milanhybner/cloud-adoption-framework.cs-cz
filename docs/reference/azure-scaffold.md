@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030044"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223983"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Uživatelské rozhraní Azure Enterprise: Zásady správného řízení pro předplatná
 
@@ -168,7 +168,7 @@ Jedním z prvních a nejdůležitějších otázek, se kterými se můžete dota
 
 Pokud chcete zabezpečit přístup k prostředkům, nakonfigurujete nejprve poskytovatele identity a pak nakonfigurujete role a přístup. Azure Active Directory (Azure AD), která je připojená k místní službě Active Directory, je základem identity Azure. To *znamená,* že Azure AD není stejný jako místní služba Active Directory a je důležité pochopit, co je TENANT Azure AD a jak se vztahuje k registraci v Azure. Projděte si dostupné [informace](../govern/resource-consistency/resource-access-management.md) , které vám pomůžou získat Solid Foundation v Azure AD a v místní službě Active Directory. Pokud chcete připojit a synchronizovat službu Active Directory s Azure AD, nainstalujte a nakonfigurujte [nástroj Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) v místním prostředí.
 
-![Diagram architektury](../_images/reference/ad-architecture.png)
+![Diagram architektury AD](../_images/reference/ad-architecture.png)
 
 Po prvním vydání Azure se pro řízení přístupu k předplatnému použila základní: Správce nebo spolusprávce. Přístup k předplatnému v klasickém modelu má implicitní přístup ke všem prostředkům na portálu. Tento nedostatek jemně odstupňovaného řízení vedlo k tomu, že se předplatným poskytuje úroveň přiměřeného řízení přístupu k registraci Azure. Toto šíření předplatných už není potřeba. Díky řízení přístupu na základě role (RBAC) můžete přiřadit uživatele ke standardním rolím, které poskytují společný přístup, jako je vlastník, přispěvatel nebo čtenář, nebo dokonce vytvořit vlastní role.
 
@@ -340,7 +340,7 @@ Poslední součástí referenčního modelu Azure pro generování uživatelské
 
 Azure nabízí interní funkce a funkce třetích stran z naší rozsáhlé partnerské sítě, která vám umožní mít efektivní potřebujete pomoc podporují zabezpečení. Důležitější je, že Microsoft poskytuje osvědčené postupy a pokyny ve formě [Azure Virtual datacentra (VDC)](./networking-vdc.md). Při přesunu z jedné úlohy do několika úloh, které používají hybridní funkce, vám průvodce VDC poskytne "recepty", které umožní flexibilní síť, která se bude zvětšovat jako vaše zatížení v Azure.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Zásady správného řízení jsou zásadní pro úspěch Azure. Tento článek se zaměřuje na technickou implementaci podnikového uživatelského rozhraní, ale jenom se dotýká širšího procesu a vztahů mezi komponentami. Zásady správného řízení zásad jsou vypočítány shora dolů a jsou určeny podle toho, co firma chce dosáhnout. Vytváření modelu zásad správného řízení pro Azure přirozeně zahrnuje i zástupce z něj, ale důležitější je, že by měl mít silné vyjádření od vedoucích obchodních skupin a zabezpečení a řízení rizik. V konečném případě je podniková generátor z důvodu zmírnění podnikového rizika, aby se usnadnila poslání a cíle organizace.
 

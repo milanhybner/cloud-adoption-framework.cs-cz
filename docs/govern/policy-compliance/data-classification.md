@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Co je klasifikace dat?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026681"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223581"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Následuje seznam klasifikací, které Microsoft používá. V závislosti na va
 
 ## <a name="tagging-data-classification-in-azure"></a>Označování klasifikace dat v Azure
 
-Každý poskytovatel cloudu by měl nabídnout mechanismus pro zaznamenávání metadat o jakémkoli prostředku. V případě Azure představují značky prostředků navrhovaný přístup k úložišti metadat a tyto značky se dají použít k použití informací o klasifikaci dat pro nasazené prostředky. I když označení cloudových prostředků podle klasifikace není náhradou za proces klasifikace formálních dat, poskytuje cenný nástroj pro správu prostředků a používání zásad.
+Značky prostředků jsou doporučeným přístupem k úložišti metadat a tyto značky lze použít k použití informací o klasifikaci dat pro nasazené prostředky. I když označení cloudových prostředků podle klasifikace není náhradou za proces klasifikace formálních dat, poskytuje cenný nástroj pro správu prostředků a používání zásad. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) je skvělé řešení, které vám usnadní klasifikaci samotných _dat_ bez ohledu na to, kde se nachází (na Prem, v Azure, někde jinde), a měla by se považovat za součást celkové strategie klasifikace.
 
 Další informace o označování prostředků v Azure najdete v článku o [použití značek k uspořádání prostředků Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak provádět kontrolu zásad cloudu.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028518"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223846"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Vzhledem k tomu, že společnosti uzavřely podnikové zásady IT, mají závisl
 Cloudové transformace vytvářejí přirozený bod inflexe pro přehodnocování starších rozhodnutí o zásadách v minulosti. Technické možnosti a výchozí procesy se výrazně mění v cloudu, stejně jako tato zděděná rizika. Pomocí předchozího příkladu zásady zálohování na pásku vzniklé rizikem jediného bodu selhání tím, že zachovají data na jednom místě a podnik potřebuje minimalizovat rizikový profil tím, že toto riziko sníží. V nasazení v cloudu existuje několik možností, které dodávají stejné zmírnění rizik, a to s mnohem kratšími cíli pro dobu obnovení (RTO). Příklad:
 
 - Řešení nativní pro Cloud by mohlo umožňovat geografickou replikaci Azure SQL Database.
-- Hybridní řešení může použít Azure Site Recovery k replikaci úloh IaaS do několika datových center.
+- Hybridní řešení může použít Azure Site Recovery k replikaci úloh IaaS do Azure.
 
 Při provádění transformace cloudu se často řídí mnoho nástrojů, služeb a procesů, které jsou k dispozici pro týmy pro přijetí v cloudu. Pokud jsou tyto zásady založené na starších technologiích, mohou bránit úsilí týmu o změnu. V nejhorším případě jsou důležité zásady zcela ignorovat z týmu migrace, aby bylo možné alternativní řešení. Ani to není přijatelný výsledek.
 
@@ -43,8 +43,8 @@ U každého z těchto oborů se v procesu kontroly postupuje takto:
 
 1. Projděte si stávající místní zásady týkající se konkrétního oboru a vyhledejte dva klíčové datové body: starší závislosti a zjištěná obchodní rizika.
 2. Vyhodnoťte každé z obchodních rizik tak, že požádáme o jednoduchou otázku: "Podniková rizika stále existují v cloudovém modelu?"
-3. Pokud riziko ještě existuje, přepište zásadu tím, že zdokumentujte nezbytné zmírnění, nikoli technické řešení.
-4. Projděte si aktualizované zásady s týmy pro přijetí cloudu, které vám pomohou pochopit možná řešení požadovaných rizik.
+3. Pokud riziko ještě existuje, přepište zásadu tím, že zadáte nezbytné omezení pro obchodování, nikoli technické řešení.
+4. Projděte si aktualizované zásady s týmy pro přijetí cloudu, které vám pomohou porozumět potenciálním technickým řešením pro požadované zmírnění.
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>Příklad kontroly zásad pro starší zásady
 
@@ -55,6 +55,7 @@ Pokud chcete zadat příklad procesu, zkuste znovu použít zásady zálohován�
   - Předpokládané obchodní riziko spojené s úložištěm záloh ve stejném fyzickém umístění jako produkční vybavení.
 - Je riziko stále k dispozici? Ano. I v cloudu závisí závislost na jednom zařízení k vytvoření rizika. Existuje nižší pravděpodobnost, že by toto riziko mělo vliv na firmu, než se nacházelo v místním řešení, ale riziko ještě existuje.
 - Přepište zásadu. V případě havárie v rámci datového centra musí existovat způsob obnovení produkčních systémů do 24 hodin výpadku v jiném datovém centru a v různých geografických umístěních.
+  - Je také důležité vzít v úvahu, že časová osa uvedená v předchozím požadavku mohla být nastavena technickými omezeními, která již nejsou v cloudu k dispozici. Před pouhým použitím starší verze RTO/RPO se ujistěte, že rozumíte technickým omezením a možnostem cloudu.
 - Projděte si týmy pro přijetí cloudu. V závislosti na implementovaném řešení existuje několik způsobů, jak řídit tyto zásady konzistence prostředků.
 
 ## <a name="next-steps"></a>Další kroky

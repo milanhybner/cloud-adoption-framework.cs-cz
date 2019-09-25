@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7db1ed24f23ff9ba931e556356c04b6bb127092a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027292"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224134"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,9 +63,9 @@ Mezi další příklady projektů pro první přijetí patří:
 - **Vývoj a testování:** Z místních prostředí můžete odebrat vývoj a testování, abyste vývojářům poskytovali řízení, flexibilitu a kapacitu samoobslužných služeb.
 - **Jednoduché aplikace (méně než pět):** Modernizovat a migrujte jednoduchou aplikaci, abyste rychle získali vývojářské a provozní prostředí.
 - **Výkonnostní Labs:** Pokud potřebujete vysoce škálovatelný výkon v nastavení testovacího prostředí, využijte Cloud k rychlému a nákladově efektivnímu zajišťování těchto cvičení po krátkou dobu.
-- **Datová platforma:** Vytvoření Data Lake s škálovatelným výpočetním prostředím pro analýzy, vytváření sestav nebo úlohy strojového učení.
+- **Datová platforma:** Vytvářejte Data Lake pomocí škálovatelných výpočetních prostředků pro analýzy, vytváření sestav nebo úloh strojového učení a migrujte do spravovaných databází pomocí metod výpisu a obnovení nebo služeb pro migraci dat.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po zahájení prvního projektu pro přijetí do cloudu může tým cloudové strategie změnit svůj pozornost na dlouhodobý [plán přijímání](../plan/index.md)do cloudu.
 

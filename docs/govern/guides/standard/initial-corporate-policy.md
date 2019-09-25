@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030697"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223661"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardní podniková příručka: Počáteční podniková zásada za strategii zásad správného řízení
 
@@ -33,13 +33,13 @@ V tomto mluveném komentáři tým zásad správného řízení cloudu sestává
 
 Současná tolerance pro riziko je vysoká a později pro investice do zásad správného řízení cloudu je nízká. V takovém případě indikátory tolerance slouží jako systém včasného varování, který aktivuje více investic času a energie. Pokud jsou pozorovány následující indikátory, měli byste vylepšit strategii zásad správného řízení.
 
-- **Cost Management:** Rozsah nasazení překračuje 100 prostředků do cloudu nebo měsíční útrata překračuje $1 000 USD za měsíc.
+- **Cost Management:** Škálování nasazení překračuje předem vymezené limity počtu prostředků nebo měsíčních nákladů.
 - **Základní hodnoty zabezpečení:** Zahrnutí chráněných dat v definovaných plánech přijetí do cloudu.
 - **Konzistence prostředků:** Zahrnutí všech klíčových aplikací v definovaných plánech přijetí do cloudu.
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Tato podniková zásada připraví tým zásad správného řízení cloudu, aby implementovala MVP pro řízení MVP, který bude základem pro přijetí. Dalším krokem je implementace tohoto MVP.
 

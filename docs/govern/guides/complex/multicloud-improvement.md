@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Velká příručka Enterprise: Zlepšení pro více cloudů'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030057"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220613"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Velká příručka Enterprise: Zlepšení pro více cloudů
 
 ## <a name="advancing-the-narrative"></a>Posunutí mluveného komentáře
 
-Společnost Microsoft rozpoznává, že zákazníci pro konkrétní účely přijímají více cloudů. Fiktivní společnost v tomto průvodci není žádná výjimka. Paralelně s cestou k přijetí Azure vedlo k úspěchu firmy při získávání malého, ale doplňkového podnikání. Tato firma spouští všechny své IT operace na jiném poskytovateli cloudu.
+Společnost Microsoft rozpoznává, že zákazníci mohou pro konkrétní účely přijmout více cloudů. Fiktivní společnost v tomto průvodci není žádná výjimka. Paralelně se svou cestou k přijetí Azure vedlo na úspěch firmy při získávání malého, ale doplňkového podnikání. Tato firma spouští všechny své IT operace na jiném poskytovateli cloudu.
 
 Tento článek popisuje, jak se při integraci nové organizace mění. Pro účely mluveného komentáře předpokládáme, že tato společnost dokončila všechny iterace zásad správného řízení, které jsou uvedené v této příručce pro zásady správného řízení.
 
@@ -64,25 +64,25 @@ Tato část článku vylepšuje návrh MVP zásad správného řízení, aby zah
 
 1. Připojte sítě. Je prováděno pomocí sítě a zabezpečení IT, které podporuje zásady správného řízení.
     1. Přidáním připojení od poskytovatele MPLS nebo pronajatého řádku do nového cloudu budou integrovány sítě. Přidávání směrovacích tabulek a konfigurací brány firewall bude řídit přístup a provoz mezi prostředími.
-1. Konsolidujte zprostředkovatele identity. V závislosti na zatíženích, která se hostují v sekundárním cloudu, je k dispozici celá řada možností konsolidace zprostředkovatele identity. Tady je několik příkladů:
+2. Konsolidujte zprostředkovatele identity. V závislosti na zatíženích, která se hostují v sekundárním cloudu, je k dispozici celá řada možností konsolidace zprostředkovatele identity. Tady je několik příkladů:
     1. Pro aplikace, které se ověřují pomocí OAuth 2, by se uživatelé ve službě Active Directory v sekundárním cloudu mohli jednoduše replikovat do stávajícího tenanta Azure AD.
-    1. Na druhé straně federace mezi dvěma místními zprostředkovateli identity by mohli uživatelé z nových domén služby Active Directory replikovat do Azure.
-1. Přidejte assety do Azure Site Recovery.
+    2. Na druhé straně federace mezi dvěma místními zprostředkovateli identity by mohli uživatelé z nových domén služby Active Directory replikovat do Azure.
+3. Přidejte assety do Azure Site Recovery.
     1. Azure Site Recovery byla sestavena jako hybridní a cloudový nástroj od začátku.
-    1. Virtuální počítače v sekundárním cloudu můžou být možné chránit stejnými Azure Site Recovery procesy, které se používají k ochraně místních prostředků.
-1. Přidejte assety do Azure Cost Management.
+    2. Virtuální počítače v sekundárním cloudu můžou být možné chránit stejnými Azure Site Recovery procesy, které se používají k ochraně místních prostředků.
+4. Přidejte assety do Azure Cost Management.
     1. Azure Cost Management byla sestavena jako cloudový nástroj od začátku.
-    1. Virtuální počítače v sekundárním cloudu můžou být kompatibilní s Azure Cost Management pro některé poskytovatele cloudu. Mohou platit další náklady.
-1. Přidejte assety do Azure Monitor.
+    2. Virtuální počítače v sekundárním cloudu můžou být kompatibilní s Azure Cost Management pro některé poskytovatele cloudu. Mohou platit další náklady.
+5. Přidejte assety do Azure Monitor.
     1. Azure Monitor byl vytvořen jako hybridní cloudový nástroj od začátku.
-    1. Virtuální počítače v sekundárním cloudu můžou být kompatibilní s agenty Azure Monitor, což umožňuje jejich zahrnutí do Azure Monitor pro monitorování provozu.
-1. Nástroje pro vynucení zásad správného řízení.
+    2. Virtuální počítače v sekundárním cloudu můžou být kompatibilní s agenty Azure Monitor, což umožňuje jejich zahrnutí do Azure Monitor pro monitorování provozu.
+6. Nástroje pro vynucení zásad správného řízení.
     1. Vynucování zásad správného řízení je specifické pro Cloud.
-    1. Podnikové zásady zřízené v příručce zásad správného řízení nejsou specifické pro Cloud. I když se implementace může od cloudu do cloudu lišit, můžete příkazy zásad použít pro sekundárního zprostředkovatele.
+    2. Podnikové zásady zřízené v příručce zásad správného řízení nejsou specifické pro Cloud. I když se implementace může od cloudu do cloudu lišit, můžete příkazy zásad použít pro sekundárního zprostředkovatele.
 
-Jak roste přijetí do cloudu, výše uvedený návrh zásad správného řízení bude i nadále vyspělý.
+Přijetí do více cloudů by mělo být obsaženo v závislosti na technických potřebách nebo konkrétních obchodních požadavcích. V důsledku toho roste více cloudových řešení, takže se jedná o složitost a bezpečnostní rizika.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V mnoha velkých společnostech je pět oborů řízení cloudu, které je možné přijmout, blokovat. V dalším článku se dozvíte několik dalších nápadů týkajících se zásad správného řízení týmu sport, které vám pomůžou zajistit dlouhodobou úspěšnost v cloudu.
 

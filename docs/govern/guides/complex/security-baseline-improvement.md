@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028724"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220549"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu zabezpečení
 
@@ -105,26 +105,26 @@ Nové osvědčené postupy spadají do dvou kategorií: Podniková IT oddělení
 **Vytváření předplatného podnikového centra IT a paprsků pro centralizaci standardních hodnot zabezpečení:** V tomto osvědčeném postupu je stávající kapacita zásad správného řízení zabalená pomocí [topologie centra a paprsků se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)s několika přidanými klíči z týmu zásad správného řízení cloudu.
 
 1. Úložiště Azure DevOps Vytvořte v Azure DevOps úložiště, ve kterém se uloží a naplní všechny relevantní šablony Azure Resource Manager a skriptované konfigurace.
-1. Šablona centra a paprsků:
+2. Šablona centra a paprsků:
     1. Pokyny v [topologii centra a paprsků s](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) referenční architekturou sdílených služeb lze použít ke generování šablon Správce prostředků pro prostředky požadované v podnikovém centru IT.
-    1. Pomocí těchto šablon se dá tato struktura provést opakovaně, a to v rámci centrální strategie zásad správného řízení.
-    1. Kromě aktuální referenční architektury se doporučuje, aby se vytvořila šablona skupiny zabezpečení sítě, která bude zachytávání všech požadavků na blokování portů nebo povolených požadavků pro virtuální síť pro hostování brány firewall. Tato skupina zabezpečení sítě se liší od předchozích skupin, protože se jedná o první skupinu zabezpečení sítě, která umožňuje veřejný provoz do virtuální sítě.
-1. Vytvořte zásady Azure. Vytvořte zásadu nazvanou `Hub NSG Enforcement` , která vynutila konfiguraci skupiny zabezpečení sítě přiřazenou k libovolné virtuální síti vytvořené v tomto předplatném. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
+    2. Pomocí těchto šablon se dá tato struktura provést opakovaně, a to v rámci centrální strategie zásad správného řízení.
+    3. Kromě aktuální referenční architektury se doporučuje, aby se vytvořila šablona skupiny zabezpečení sítě, která bude zachytávání všech požadavků na blokování portů nebo povolených požadavků pro virtuální síť pro hostování brány firewall. Tato skupina zabezpečení sítě se liší od předchozích skupin, protože se jedná o první skupinu zabezpečení sítě, která umožňuje veřejný provoz do virtuální sítě.
+3. Vytvořte zásady Azure. Vytvořte zásadu nazvanou `Hub NSG Enforcement` , která vynutila konfiguraci skupiny zabezpečení sítě přiřazenou k libovolné virtuální síti vytvořené v tomto předplatném. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
     1. Audit, zda webové servery Windows používají zabezpečené komunikační protokoly.
-    1. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
-1. Podnikový plán IT
+    2. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
+4. Podnikový plán IT
     1. Vytvořte podrobný plán Azure s `corporate-it-subscription`názvem.
-    1. Přidejte šablony hub a paprsků a `Hub NSG Enforcement` zásady.
-1. Probíhá rozbalování v hierarchii počátečních skupin pro správu.
+    2. Přidejte šablony hub a paprsků a `Hub NSG Enforcement` zásady.
+5. Probíhá rozbalování v hierarchii počátečních skupin pro správu.
     1. Pro každou skupinu pro správu, která požádala o podporu chráněných `corporate-it-subscription-blueprint` dat, plán poskytuje urychlené řešení rozbočovače.
-    1. Vzhledem k tomu, že skupiny pro správu v tomto fiktivním příkladu zahrnují kromě hierarchie obchodních jednotek i regionální hierarchii, bude tento podrobný plán nasazen v každé oblasti.
-    1. Pro každou oblast v hierarchii skupiny pro správu vytvořte předplatné s názvem `Corporate IT Subscription`.
-    1. Použijte podrobný `corporate-it-subscription-blueprint` plán na každou místní instanci.
-    1. Tím se vytvoří rozbočovač pro každou organizační jednotku v každé oblasti. Poznámka: Je možné dosáhnout dalších úspor nákladů, ale sdílet centra napříč obchodními jednotkami v každé oblasti.
-1. Integrace objektů zásad skupiny (GPO) přes konfiguraci požadovaného stavu (DSC):
+    2. Vzhledem k tomu, že skupiny pro správu v tomto fiktivním příkladu zahrnují kromě hierarchie obchodních jednotek i regionální hierarchii, bude tento podrobný plán nasazen v každé oblasti.
+    3. Pro každou oblast v hierarchii skupiny pro správu vytvořte předplatné s názvem `Corporate IT Subscription`.
+    4. Použijte podrobný `corporate-it-subscription-blueprint` plán na každou místní instanci.
+    5. Tím se vytvoří rozbočovač pro každou organizační jednotku v každé oblasti. Poznámka: Je možné dosáhnout dalších úspor nákladů, ale sdílet centra napříč obchodními jednotkami v každé oblasti.
+6. Integrace objektů zásad skupiny (GPO) přes konfiguraci požadovaného stavu (DSC):
     1. Převod objektu zásad skupiny na DSC – [projekt pro správu standardních hodnot Microsoft](https://github.com/Microsoft/BaselineManagement) v GitHubu může toto úsilí zrychlit. * Nezapomeňte úložiště DSC ukládat do úložiště paralelně s Správce prostředků šablonou.
-    1. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
-    1. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
+    2. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
+    3. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
 
 **Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** V takovém `Corporate IT Subscription`případě je možné v rámci každého předplatného, které je vyhrazeno pro podporu archetypes aplikací, využít i drobné změny v rámci správného zlepšení.
 
@@ -132,38 +132,38 @@ V předchozích iterativních změnách osvědčených postupů jsme definovali 
 
 1. Šablona partnerského vztahu k síti Tato šablona se bude navázat na virtuální síť v každém předplatném s virtuální sítí centra ve firemním předplatném.
     1. Referenční architektura z předchozí části, [topologie centra a paprsků se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)vygenerovala šablonu správce prostředků pro povolení partnerského vztahu virtuální sítě.
-    1. Tuto šablonu lze použít jako vodítko pro úpravu šablony DMZ z předchozí iterace zásad správného řízení.
-    1. V podstatě teď přidáváme partnerský vztah virtuálních sítí k virtuální síti DMZ, která byla dříve připojena k místnímu hraničnímu zařízení přes síť VPN.
-    1. Doporučuje se také odebrat síť VPN z této šablony a zajistit tak, že se žádný provoz nesměruje přímo do místního datového centra, aniž by to mělo předávat firemní předplatné IT a řešení brány firewall.
-    1. Azure Automation pro použití DSC na hostované virtuální počítače bude vyžadovat další [konfiguraci sítě](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) .
-1. Upravte skupinu zabezpečení sítě. Zablokuje všechny veřejné **a** přímé místní přenosy ve skupině zabezpečení sítě. Jediný příchozí provoz by měl projít partnerským vztahem virtuální sítě v podnikovém předplatném IT.
+    2. Tuto šablonu lze použít jako vodítko pro úpravu šablony DMZ z předchozí iterace zásad správného řízení.
+    3. Nyní přidáváme partnerský vztah virtuálních sítí k virtuální síti DMZ, která byla dříve připojena k místnímu hraničnímu zařízení přes síť VPN.
+    4. Doporučuje se také odebrat síť VPN z této šablony a zajistit tak, že se žádný provoz nesměruje přímo do místního datového centra, aniž by to mělo předávat firemní předplatné IT a řešení brány firewall. Tuto síť VPN můžete nastavit také jako okruh převzetí služeb při selhání v případě outge okruhu ExpressRoute.
+    5. Azure Automation pro použití DSC na hostované virtuální počítače bude vyžadovat další [konfiguraci sítě](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) .
+2. Upravte skupinu zabezpečení sítě. Zablokuje všechny veřejné **a** přímé místní přenosy ve skupině zabezpečení sítě. Jediný příchozí provoz by měl projít partnerským vztahem virtuální sítě v podnikovém předplatném IT.
     1. V předchozí iteraci se vytvořila skupina zabezpečení sítě, která blokuje veškerý veřejný provoz a seznam povolených interních přenosů. Teď chceme tuto skupinu zabezpečení sítě posunout o bit.
-    1. Nová konfigurace skupiny zabezpečení sítě by měla blokovat všechny veřejné přenosy společně se všemi přenosy z místního datacentra.
-    1. Provoz přicházející do této virtuální sítě by měl pocházet jenom z virtuální sítě na druhé straně partnerského uzlu virtuální sítě.
-1. Azure Security Center implementace:
+    2. Nová konfigurace skupiny zabezpečení sítě by měla blokovat všechny veřejné přenosy společně se všemi přenosy z místního datacentra.
+    3. Provoz přicházející do této virtuální sítě by měl pocházet jenom z virtuální sítě na druhé straně partnerského uzlu virtuální sítě.
+3. Azure Security Center implementace:
     1. Nakonfigurujte Azure Security Center pro všechny skupiny pro správu, které obsahují chráněné klasifikace dat.
-    1. Nastavte Automatické zřizování na zapnuto ve výchozím nastavení, aby se zajistilo dodržování předpisů.
-    1. Navažte konfigurace zabezpečení operačního systému. Zabezpečení IT pro definování konfigurace.
-    1. Při počátečním používání Azure Security Center podporují zabezpečení IT. Využijte k zabezpečení IT Security Center, ale Udržujte přístup pro účely průběžného zlepšování zásad správného řízení.
-    1. Vytvořte šablonu Správce prostředků odrážející změny požadované pro Azure Security Center konfiguraci v rámci předplatného.
-1. Aktualizuje Azure Policy pro všechna předplatná.
+    2. Nastavte Automatické zřizování na zapnuto ve výchozím nastavení, aby se zajistilo dodržování předpisů.
+    3. Navažte konfigurace zabezpečení operačního systému. Zabezpečení IT pro definování konfigurace.
+    4. Při počátečním používání Azure Security Center podporují zabezpečení IT. Využijte k zabezpečení IT Security Center, ale Udržujte přístup pro účely průběžného zlepšování zásad správného řízení.
+    5. Vytvořte šablonu Správce prostředků odrážející změny požadované pro Azure Security Center konfiguraci v rámci předplatného.
+4. Aktualizuje Azure Policy pro všechna předplatná.
     1. Auditování a vykonání kritické klasifikace a klasifikace dat napříč všemi skupinami pro správu a odběry k identifikaci všech předplatných s chráněnými klasifikacemi dat.
-    1. Používejte audit a vynuťte jenom schválené image operačního systému.
-    1. Proveďte audit a vystavování konfigurací hostů na základě požadavků zabezpečení pro každý uzel.
-1. Aktualizuje Azure Policy pro všechna předplatná, která obsahují chráněné klasifikace dat.
+    2. Používejte audit a vynuťte jenom schválené image operačního systému.
+    3. Proveďte audit a vystavování konfigurací hostů na základě požadavků zabezpečení pro každý uzel.
+5. Aktualizuje Azure Policy pro všechna předplatná, která obsahují chráněné klasifikace dat.
     1. Auditovat a vymáhat použití jenom standardních rolí
-    1. Auditovat a vymáhat šifrování pro všechny účty úložiště a soubory v klidovém umístění na jednotlivých uzlech.
-    1. Audit a prosazování aplikace nové verze skupiny zabezpečení sítě DMZ.
-    1. Audituje a vynutil používání schválené podsítě sítě a virtuální sítě na síťové rozhraní.
-    1. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
-1. Podrobný plán Azure:
+    2. Auditovat a vymáhat šifrování pro všechny účty úložiště a soubory v klidovém umístění na jednotlivých uzlech.
+    3. Audit a prosazování aplikace nové verze skupiny zabezpečení sítě DMZ.
+    4. Audituje a vynutil používání schválené podsítě sítě a virtuální sítě na síťové rozhraní.
+    5. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
+6. Podrobný plán Azure:
     1. Vytvořte podrobný plán Azure s `protected-data`názvem.
-    1. Přidejte do podrobného plánu šablony VNet peer, Network Security Group a Azure Security Center.
-    1. Ujistěte se, že šablona pro službu Active Directory z předchozí iterace **není** zahrnutá do podrobného plánu. Jakékoli závislosti na službě Active Directory poskytne firemní předplatné IT.
-    1. Ukončete všechny existující virtuální počítače služby Active Directory nasazené v předchozí iteraci.
-    1. Přidejte nové zásady pro odběry chráněných dat.
-    1. Publikovat podrobný plán do jakékoli skupiny pro správu, která je určená pro hostování chráněných dat.
-    1. Použijte nový podrobný plán na všechny ovlivněné předplatné společně s existujícími plány.
+    2. Přidejte do podrobného plánu šablony VNet peer, Network Security Group a Azure Security Center.
+    3. Ujistěte se, že šablona pro službu Active Directory z předchozí iterace **není** zahrnutá do podrobného plánu. Jakékoli závislosti na službě Active Directory poskytne firemní předplatné IT.
+    4. Ukončete všechny existující virtuální počítače služby Active Directory nasazené v předchozí iteraci.
+    5. Přidejte nové zásady pro odběry chráněných dat.
+    6. Publikovat podrobný plán do jakékoli skupiny pro správu, která bude hostovat chráněná data.
+    7. Použijte nový podrobný plán na všechny ovlivněné předplatné společně s existujícími plány.
 
 ## <a name="conclusion"></a>Závěr
 

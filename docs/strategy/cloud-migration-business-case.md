@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030469"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224191"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Vypracování obchodního odůvodnění migrace do cloudu
 
@@ -106,7 +106,7 @@ Pokud je návratnost investic nižší než 20%, berte v úvahu [plánování di
 
 Pokud je návratnost investic stále nezarovnané, obraťte se na svého obchodního zástupce Microsoftu nebo Zapojte [zkušeného partnera](https://azure.microsoft.com/migration/support).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Vytvoření finančního modelu pro transformaci cloudu](./financial-models.md)

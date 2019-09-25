@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Projděte si možnosti, které jsou k dispozici pro rationalizingi digitální nemovitosti.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023622"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223871"
 ---
 # <a name="cloud-rationalization"></a>Racionalizace cloudu
 
@@ -69,7 +69,7 @@ Mezi běžné ovladače můžou patřit:
 
 - Rychlejší a kratší aktualizace
 - Přenositelnost kódu
-- Vyšší efektivita cloudu (prostředky, rychlost, náklady)
+- Vyšší efektivita cloudu (prostředky, rychlost, náklady, spravované operace)
 
 Kvantitativní analytické faktory:
 
@@ -77,6 +77,7 @@ Kvantitativní analytické faktory:
 - Závislosti (síťový provoz)
 - Přenos uživatelů (zobrazení stránky, čas na stránce, doba načítání)
 - Vývojová platforma (jazyky, datové platformy, služby střední vrstvy)
+- Databáze (procesor, paměť, úložiště, verze)
 
 Kvalitativní faktory analýzy:
 
@@ -102,6 +103,7 @@ Kvantitativní analytické faktory:
 - Závislosti (síťový provoz)
 - Přenos uživatelů (zobrazení stránky, čas na stránce, doba načítání)
 - Vývojová platforma (jazyky, datové platformy, služby střední úrovně)
+- Databáze (procesor, paměť, úložiště, verze)
 
 Kvalitativní faktory analýzy:
 
@@ -125,6 +127,7 @@ Kvantitativní analytické faktory:
 - Závislosti (síťový provoz)
 - Přenos uživatelů (zobrazení stránky, čas na stránce, doba načítání)
 - Vývojová platforma (jazyky, datové platformy, služby střední úrovně)
+- Databáze (procesor, paměť, úložiště, verze)
 
 Kvalitativní faktory analýzy:
 
@@ -148,6 +151,7 @@ Kvantitativní analytické faktory:
 - Velikost virtuálního počítače (CPU, paměť, úložiště)
 - Závislosti (síťový provoz)
 - Prostředky k vyřazení
+- Databáze (procesor, paměť, úložiště, verze)
 
 Kvalitativní faktory analýzy:
 
@@ -156,7 +160,7 @@ Kvalitativní faktory analýzy:
 - Schémata dat
 - Vlastní nebo automatizované procesy
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Souhrnně můžete použít tyto pět RS k racionalizaci v digitální nemovitosti, které vám pomůžou při rozhodování o budoucím stavu jednotlivých aplikací.
 

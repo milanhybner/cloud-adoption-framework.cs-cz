@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management motivace a obchodních rizik
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029572"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223607"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motivace a obchodních rizik
 
@@ -37,11 +37,11 @@ Cost Management disciplína se snaží řešit základní obchodní rizika souvi
 Rizika se budou lišit mezi organizací, ale v následujících případech jsou k disdílným rizikům souvisejícím s náklady, které můžete použít jako výchozí bod pro diskuze v rámci týmu zásad správného řízení v cloudu:
 
 - **Řízení rozpočtu:** Neřízení rozpočtu může vést k nadměrné útratě s dodavatelem cloudu.
-- **Ztráta využití:** Předprodejní nebo předplacení, které se nepoužívá, může mít za následek navýšení investic.
+- **Ztráta využití:** Předprodejní nebo předplacení, která se nepoužívá, může způsobit ztrátu investic.
 - **Anomálie útraty:** Neočekávané špičky v obou směrech mohou být indikátory nesprávného použití.
-- **Přebytek zajištěných prostředků:** Při nasazení assetů v konfiguraci, která překračuje potřeby aplikace nebo virtuálního počítače, můžou zvýšit náklady a vytvořit odpad.
+- **Přebytek zajištěných prostředků:** Při nasazení prostředků v konfiguraci, která překračuje potřeby aplikace nebo virtuálního počítače, můžou vytvořit odpad.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pomocí [šablony pro správu cloudu](./template.md)můžete zdokumentovat obchodní rizika, která by mohla být zavedena aktuálním plánem přijetí cloudu.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027141"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220649"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Příručka zásad správného řízení pro komplexní podniky: Vysvětlení doporučených pokynů
 
@@ -59,13 +59,17 @@ Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se 
 
 ### <a name="resource-consistency"></a>Konzistence prostředků
 
-Rozhodnutí o konzistenci prostředků určují nástroje, procesy a úsilí potřebné k zajištění konzistentního nasazení, konfigurace a správy prostředků Azure v rámci předplatného. V tomto mluveném komentáři byla **[Hierarchická konzistence](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** zvolena jako vzor konzistence primárního prostředku.
+Rozhodnutí o konzistenci prostředků určují nástroje, procesy a úsilí potřebné k zajištění konzistentního nasazení, konfigurace a správy prostředků Azure v rámci předplatného. V tomto mluveném komentáři je **[konzistence nasazení](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** zvolena jako vzor konzistence primárního prostředku.
 
-- Skupiny prostředků by se měly vytvářet pro každou aplikaci. Skupiny pro správu by měly být vytvořeny pro každou aplikaci Archetype. Azure Policy by se měla použít pro všechna předplatná v přidružené skupině pro správu.
-- V rámci procesu nasazení by měly být šablony konzistence prostředků pro všechny prostředky uloženy ve správě zdrojového kódu.
-- Každá skupina prostředků by se měla zarovnat na konkrétní úlohu nebo aplikaci.
-- Definovaná hierarchie skupiny pro správu Azure by měla představovat odpovědnost za fakturaci a vlastnictví aplikace pomocí vnořených skupin.
-- Rozsáhlá implementace Azure Policy může překročit časové závazky týmu a v tomto okamžiku nesmí poskytnout mnohem větší hodnotu. Pro každou skupinu prostředků byste ale měli vytvořit a použít jednoduchou výchozí zásadu, která vynutila prvních několik příkazů zásad správného řízení cloudu. Slouží k definování implementace konkrétních požadavků zásad správného řízení. Tyto implementace je pak možné použít napříč všemi nasazenými prostředky.
+- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu: všechno, co se vytváří, udržuje a vyřazené společně, by mělo být na jednu skupinu prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Azure Policy by se měla použít pro všechna předplatná z přidružené skupiny pro správu.
+- V rámci procesu nasazení by měly být šablony konzistence prostředků Azure pro skupinu prostředků uložené ve správě zdrojového kódu.
+- Každá skupina prostředků je přidružená ke konkrétnímu pracovnímu vytížení nebo aplikaci na základě výše popsaného přístupu k životnímu cyklu.
+- Skupiny pro správu Azure umožňují aktualizovat návrhy zásad správného řízení, protože podniková zásada je vyspělá.
+- Rozsáhlá implementace Azure Policy může překročit časové závazky týmu a v tuto chvíli nemusí poskytovat skvělou hodnotu. Pro každou skupinu pro správu byste ale měli vytvořit a použít jednoduchou výchozí zásadu, která vynutila malý počet aktuálních příkazů zásad správného řízení cloudu. Tyto zásady definují implementaci konkrétních požadavků zásad správného řízení. Tyto implementace je pak možné použít napříč všemi nasazenými prostředky.
+
+>[!IMPORTANT]
+>Všechny prostředky ve skupině prostředků už nesdílejí stejný životní cyklus, měli byste je přesunout do jiné skupiny prostředků. Mezi příklady patří běžné databáze a síťové komponenty. I když můžou vycházet z vyvíjené aplikace, můžou sloužit i jiným účelům, a proto by měly existovat i v jiných skupinách prostředků.
 
 ### <a name="resource-tagging"></a>Označování prostředků
 
@@ -120,9 +124,9 @@ Pokud se některý ze vzorů zvolených v této příručce zásad správného �
 - [Vzory softwarově definovaných sítí](../../../decision-guides/software-defined-network/index.md)
 - [Vzory návrhu předplatného](../../../decision-guides/subscriptions/index.md)
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Po implementaci těchto pokynů může tým pro přijetí v cloudu pokračovat se základními základními zásadami správy. Tým zásad správného řízení cloudu bude paralelně fungovat a průběžně aktualizuje podnikové zásady a obory řízení.
+Po implementaci těchto pokynů může tým pro přijetí v cloudu pokračovat se základními základními zásadami správy. Ve stejnou chvíli tým zásad správného řízení pro Cloud bude fungovat tak, aby průběžně aktualizoval podnikové zásady a obory řízení.
 
 Oba týmy použijí indikátory tolerance k identifikaci další sady vylepšení potřebných pro pokračování v podpoře přijímání do cloudu. Dalším krokem této společnosti je přírůstkové zlepšování jejich standardních hodnot zásad správného řízení, které podporují aplikace se staršími verzemi nebo požadavky služby Multi-Factor Authentication od jiných výrobců.
 

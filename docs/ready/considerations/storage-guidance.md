@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021920"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224201"
 ---
 # <a name="storage-design-decisions"></a>Rozhodnutí o návrhu úložiště
 
@@ -39,7 +39,7 @@ Zodpovězení následujících otázek týkajících se vašich úloh vám pomů
 - **Budete potřebovat podporu úloh analýzy velkých objemů dat?** [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) je postavené na úložišti objektů blob v Azure. Data Lake Storage Gen 2 může podporovat funkce Data Lake pro rozsáhlá podniková data. Dokáže taky zvládnout ukládání petabajtů informací a současně udržovat stovky gigabitů propustnosti.
 - **Budete potřebovat poskytovat nativní cloudové sdílené složky?** Azure má dvě primární služby, které poskytují sdílené složky hostované v cloudu: Azure NetApp Files a Azure Files. Služba [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) poskytuje vysoce výkonné sdílené složky systému souborů NFS, které jsou vhodné pro běžné podnikové úlohy, jako je SAP. Služba [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) poskytuje sdílené složky, které jsou přístupné přes SMB 3.0 a HTTPS.
 - **Budete potřebovat podporu hybridního cloudového úložiště pro místní úlohy vysokovýkonného výpočetního prostředí (HPC)?** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) je řešení hybridního ukládání do mezipaměti, které můžete použít k rozšíření možností místní úložiště pomocí cloudového úložiště. Služba Avere vFXT for Azure je optimalizovaná pro úlohy HPC s vysokými nároky na čtení, které zahrnují výpočetní farmy s 1 000 až 40 000 procesorovými jádry. Avere vFXT pro Azure je možné integrovat s místním úložištěm připojeným k síti (NAS), úložištěm objektů blob v Azure nebo obojím.
-- **Budete potřebovat provádět rozsáhlou archivaci a synchronizaci místních dat do cloudu?** Produkty [Azure Data Box](https://docs.microsoft.com/azure/databox-family/) jsou navržené tak, aby vám pomohly přesunout velké objemy dat z místního prostředí do cloudu. [Azure Data box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) je virtuální zařízení, které se nachází v místní síti. Data Box Gateway vám pomůže spravovat rozsáhlou migraci dat do cloudu. Pokud potřebujete data analyzovat, transformovat nebo filtrovat, než je přesunete do cloudu, můžete použít [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) – fyzické zařízení využívající výpočetní funkce Edge s podporou AI, které je nasazené do místního prostředí. Data Box Edge zrychluje zpracování a zabezpečený přenos dat do Azure.
+- **Budete potřebovat provádět rozsáhlou archivaci a synchronizaci místních dat do cloudu?** Produkty [Azure Data Box](https://docs.microsoft.com/azure/databox-family) jsou navržené tak, aby vám pomohly přesunout velké objemy dat z místního prostředí do cloudu. [Azure Data box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) je virtuální zařízení, které se nachází v místní síti. Data Box Gateway vám pomůže spravovat rozsáhlou migraci dat do cloudu. Pokud potřebujete data analyzovat, transformovat nebo filtrovat, než je přesunete do cloudu, můžete použít [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) – fyzické zařízení využívající výpočetní funkce Edge s podporou AI, které je nasazené do místního prostředí. Data Box Edge zrychluje zpracování a zabezpečený přenos dat do Azure.
 - **Chcete rozšířit stávající místní sdílenou složku, aby používala cloudové úložiště?** [Synchronizace souborů Azure](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) umožňuje používat službu Azure Files jako rozšíření sdílených složek, které jsou hostovány na místních počítačích se systémem Windows Server. Synchronizační služba transformuje Windows Server na rychlou mezipaměť sdílené složky Azure. Umožňuje místním počítačům, které přistupují ke sdílené složce, používat libovolný protokol, který je dostupný na Windows Serveru.
 
 ## <a name="common-storage-scenarios"></a>Běžné scénáře využití úložiště

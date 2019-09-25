@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b99fbeca1d9761d16c780bf8329572e5b84fffe9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026522"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224014"
 ---
 # <a name="central-it-capabilities"></a>Centrální možnosti IT
 
@@ -111,13 +111,13 @@ Jeden z svých týmů pro přijetí v cloudu teď ale vyžaduje prostředí s vy
 
 **Jedna** Samotná klasifikace není dostatečná. Sdílené služby byly implementovány tak, aby konzistentně fungovaly citlivé a klíčové prostředky. Změna pravidel by způsobila ohrožení zásad správného řízení a dodržování předpisů, které jsou navržené pro prostředky, které vyžadují vyšší ochranu. K přijetí nemůže dojít na náklady na stabilitu, zabezpečení nebo řízení. To vedlo k vyjednávání s týmem přijetí k zodpovězení konkrétních otázek. Mohl DevOps tým pro toto prostředí poskytnout správu operací? Bude toto řešení vyžadovat přímý přístup k jiným interním prostředkům? Pokud tým pro přijetí v cloudu vyhovuje těmto kompromisům, může být přenos příchozích dat možný.
 
-**Oddělení** Vzhledem k tomu, že podnik může poskytovat svou vlastní správu probíhajících operací a vzhledem k tomu, že řešení není závislé na přímém přenosu do jiných interních prostředků, může být uzavřené v novém předplatném. Toto předplatné je také přidáno do samostatného uzlu nové hierarchie skupiny pro správu.
+**Oddělení** Vzhledem k tomu, že podnik může poskytovat svou vlastní správu probíhajících operací a vzhledem k tomu, že řešení nespoléhá na přímý provoz do jiných interních prostředků, může být uzavřené v novém předplatném. Toto předplatné je také přidáno do samostatného uzlu nové hierarchie skupiny pro správu.
 
 **Automatizace:** Dalším znaménkem splatnosti v tomto týmu jsou zásady automatizace. Tým používá Azure Policy pro automatizaci vynucování zásad. Používají také plány Azure k automatizaci nasazení běžných komponent platforem a vynutily dodržování definovaných standardních hodnot identity. U tohoto předplatného a dalších uživatelů v nové skupině pro správu se zásady a šablony mírně liší. Zásady blokující šířku pásma příchozího přenosu dat byly zrušeny. Nahradily se požadavky na směrování provozu prostřednictvím předplatného sdílených služeb, jako je jakýkoli příchozí přenos dat, pro zajištění izolace provozu. Vzhledem k tomu, že nástroje pro správu místních operací nemůžou získat přístup k tomuto předplatnému, už agenti pro tento nástroj nemusejí být. Všechny ostatní zásady správného řízení guardrails vyžadované jinými předplatnými v hierarchii skupin pro správu se pořád vynutily, což zajišťuje dostatečné guardrails.
 
 Vyspělý tvůrčí přístup týmu centrálního IT společnosti Contoso nabízí řešení, které neohrožuje zásady správného řízení nebo dodržování předpisů, ale přesto bylo podporováno jejich přijetí. Tento přístup ke službě Broker spíše než vlastnící cloudový nativní přístup k centralizovanému je prvním krokem k vytvoření skutečné cloudové centra excelence (CCoE). Přijetí tohoto přístupu k rychlému vytváření stávajících zásad umožní centralizovanou kontrolu v případě potřeby a guardrails zásad správného řízení, pokud je přijatelná větší flexibilita. Vyrovnávání těchto dvou hledisek snižuje rizika spojená s centrálním IT v cloudu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V rámci centrálního IT v cloudu je v dalším kroku k diskrokování obvykle volného spojení [cloudových operací](./cloud-operations.md). Dostupnost nástrojů pro správu operací v cloudu a nižší provozní náklady na PaaS řešení často vede k obchodním týmům (nebo speciálně DevOps týmům v rámci podniku) za předpokladu, že se jedná o zodpovědnost za cloudové operace.
 

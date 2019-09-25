@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Pokyny pro konfiguraci řízení zásad správného řízení Azure pro více týmů, více úloh a více prostředí.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028114"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223950"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
@@ -26,16 +26,17 @@ Požadavky:
   - Jednotlivec ve vaší organizaci zodpovědný za vlastnictví předplatných.
   - Osoba ve vaší organizaci, která je odpovědná za **prostředky sdílené infrastruktury** používané pro připojení místní sítě k virtuální síti Azure.
   - Dva uživatelé ve vaší organizaci odpovědní za správu **úloh**.
-- Podpora více **prostředí**. Prostředí je logické seskupení prostředků, jako jsou virtuální počítače, virtuální sítě a služby směrování provozu sítě. Tyto skupiny prostředků mají podobné požadavky na správu a zabezpečení a jsou obvykle používány pro konkrétní účel, jako je testování nebo produkce. V tomto příkladu je požadavek pro tři prostředí:
+- Podpora více **prostředí**. Prostředí je logické seskupení prostředků, jako jsou virtuální počítače, virtuální sítě a služby směrování provozu sítě. Tyto skupiny prostředků mají podobné požadavky na správu a zabezpečení a jsou obvykle používány pro konkrétní účel, jako je testování nebo produkce. V tomto příkladu je požadavek pro čtyři prostředí:
   - **Prostředí sdílené infrastruktury** , které zahrnuje prostředky sdílené úlohami v jiných prostředích. Například virtuální síť s podsítí brány, která poskytuje připojení místně.
   - **Produkční prostředí** s nejpřísnějšími zásadami zabezpečení. Může zahrnovat interní nebo externí úlohy.
-  - **Vývojové prostředí** pro testování konceptu a testování práce. Toto prostředí má zásady zabezpečení, dodržování předpisů a nákladů, které se liší od těch, které jsou v produkčním prostředí.
+  - **Neprodukční prostředí** pro vývoj a testování práce. Toto prostředí má zásady zabezpečení, dodržování předpisů a nákladů, které se liší od těch, které jsou v produkčním prostředí. V Azure to má podobu Enterprise pro vývoj/testování předplatného.
+  - **Prostředí izolovaného prostoru (sandbox)** pro testování konceptu a vzdělávání. Toto prostředí se obvykle přiřazuje jednomu zaměstnanci, který se účastní vývoje aktivit a má přísné procesní a provozní kontrolní mechanismy, aby se zabránilo vybudování firemních dat. V Azure mají tyto předplatné formu předplatných sady Visual Studio. Tato předplatná by _se taky neměla_ přivázat k podnikovým Azure Active Directory.
 - **Model oprávnění** s minimálním oprávněním, ke kterému nemají uživatelé ve výchozím nastavení žádná oprávnění. Model musí podporovat následující:
-  - Jeden důvěryhodný uživatel v oboru předplatného s oprávněním k přiřazení přístupových práv k prostředkům.
-  - Každému vlastníkovi úlohy je ve výchozím nastavení odepřen přístup k prostředkům. Přístupová práva k prostředkům jsou udělena explicitně jednomu důvěryhodnému uživateli v oboru předplatného.
-  - Přístup pro správu prostředků sdílené infrastruktury se omezí jenom na vlastníka sdílené infrastruktury.
-  - Přístup pro správu pro každou úlohu omezený na vlastníka úlohy.
-  - Podnik nechce spravovat role nezávisle na těchto třech prostředích, proto vyžaduje použití jenom [integrovaných rolí](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) dostupných v Azure řízení přístupu na základě role (RBAC). Pokud firma použila vlastní role RBAC, je potřeba k synchronizaci vlastních rolí v rámci tří prostředí použít další proces.
+  - Jeden důvěryhodný uživatel (kvazi účet služby) v oboru předplatného s oprávněním k přiřazení přístupových práv k prostředkům.
+  - Každému vlastníkovi úlohy je ve výchozím nastavení odepřen přístup k prostředkům. Přístupová práva k prostředkům jsou výslovně udělena jedním důvěryhodným uživatelem v oboru skupiny prostředků.
+  - Přístup pro správu prostředků sdílené infrastruktury omezený na vlastníci sdílené infrastruktury
+  - Přístup pro správu pro každé zatížení omezený na vlastníka úlohy (v produkčním prostředí) a zvýšení úrovně řízení jako vývoj se zvyšuje od vývoje k testování na fázi výroby.
+  - Společnost nechce spravovat role nezávisle na těchto třech hlavních prostředích, proto vyžaduje použití jenom [integrovaných rolí](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) dostupných v Azure řízení přístupu na základě role (RBAC). Pokud organizace naprosto vyžaduje vlastní role RBAC, budete potřebovat další procesy pro synchronizaci vlastních rolí v rámci tří prostředí.
 - Sledování nákladů podle názvu vlastníka úlohy, prostředí nebo obojího.
 
 ## <a name="identity-management"></a>Správa identit
@@ -54,7 +55,7 @@ Pokud se vaše organizace zaregistrovala k účtu Azure, byl přiřazen alespoň
 Identity uživatelů pro vlastníka účtu Azure i globálního správce služby Azure AD jsou uložené ve vysoce zabezpečeném systému identit, který je spravovaný Microsoftem. Vlastník účtu Azure má oprávnění k vytváření, aktualizaci a odstraňování předplatných. Globální správce Azure AD má oprávnění provádět mnoho akcí v Azure AD, ale v tomto průvodci se zaměříte na vytváření a odstraňování identity uživatelů.
 
 > [!NOTE]
-> Vaše organizace už může mít existujícího tenanta Azure AD, pokud máte k vašemu účtu existující licenci Office 365 nebo Intune.
+> Vaše organizace už může mít existujícího tenanta Azure AD, pokud máte k vašemu účtu existující licenci Office 365, Intune nebo Dynamics.
 
 Vlastník účtu Azure má oprávnění k vytváření, aktualizaci a odstraňování předplatných:
 
@@ -134,11 +135,11 @@ Pokud každý příklad porovnáte s požadavky, uvidíte, že oba příklady po
 
 Teď, když jste navrhli model oprávnění s minimálním oprávněním, pojďme přejít na, abyste se mohli podívat na některé praktické aplikace těchto modelů zásad správného řízení. Navrácení z požadavků, které musíte podporovat v následujících třech prostředích:
 
-1. **Sdílená infrastruktura:** Jedna skupina prostředků, kterou sdílí všechny úlohy. Jedná se o prostředky, jako jsou síťové brány, brány firewall a služby zabezpečení.
-2. **Vývojář** Několik skupin prostředků, které představují více úloh připravených k nevyužívání produktů Tyto prostředky se používají pro testování konceptů, testování a další vývojářské aktivity. Tyto prostředky můžou mít uvolněný model zásad správného řízení, který umožní zvýšenou flexibilitu vývojářů.
-3. **Produkční** Několik skupin prostředků, které představují několik produkčních úloh. Tyto prostředky se používají pro hostování privátních a veřejných artefaktů aplikace. Tyto prostředky mají typicky nejpřísnější modely zásad správného řízení a zabezpečení, aby chránily prostředky, kód aplikace a data před neoprávněným přístupem.
+1. **Sdílená infrastruktura:** Skupina prostředků sdílených všemi úlohami. Jedná se o prostředky, jako jsou síťové brány, brány firewall a služby zabezpečení.
+2. **Produkční** Několik skupin prostředků, které představují několik produkčních úloh. Tyto prostředky se používají pro hostování privátních a veřejných artefaktů aplikace. Tyto prostředky mají typicky nejpřísnější modely zásad správného řízení a zabezpečení, aby chránily prostředky, kód aplikace a data před neoprávněným přístupem.
+3. **Neprodukční:** Několik skupin prostředků, které představují více úloh připravených k nevyužívání produktů Tyto prostředky se používají pro vývoj a testování. tyto prostředky můžou mít ještě uvolněný model zásad správného řízení, který umožňuje zvýšenou flexibilitu vývojářů. Zabezpečení v rámci těchto skupin by mělo zvýšit hodnotu "produkce", kterou proces vývoje aplikace získá.
 
-Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít znát průběžné náklady na sdílenou **infrastrukturu**, náklady vzniklé jednotlivcům v prostředí **vývoje** i v produkčním prostředí a nakonec celkové náklady na **vývoj** a  **provozní**prostředí.
+Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít zjistit průběžné náklady na **sdílenou infrastrukturu**, náklady vzniklé jednotlivcům v prostředích, která **nejsou** v produkčním prostředí **, a nakonec** celkové náklady na **neprodukci** a  **provozní**prostředí.
 
 Již jste se dozvěděli o tom, že prostředky jsou vymezeny na dvě úrovně: **předplatné** a **Skupina prostředků**. Proto první rozhodnutí slouží k uspořádání prostředí podle předplatného. K dispozici jsou pouze dvě možnosti: jedno předplatné nebo více předplatných.
 
@@ -267,7 +268,7 @@ Teď, když jste implementovali model zásad správného řízení, můžete nas
 
 [Předdefinované role pro prostředky Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Další informace o nasazení základní infrastruktury](../../infrastructure/virtual-machines/basic-workload.md)

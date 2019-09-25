@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Pochopení podnikového rizika při migraci do cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030693"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220395"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Během transformace existují stejná relativní rizika.
 
 - Během předčasného experimentování je několik prostředků nasazených s malým množstvím dat, které není relevantní. Riziko je malé.
 - Při nasazení prvního zatížení se riziko trochu sníží. Toto riziko se dá snadno opravit tak, že vyberete podstatu aplikace s nízkým rizikem s malým uživatelským základem.
-- S tím, jak další úlohy přicházejí do režimu online, se rizika mění v každé vydané verzi. Nové aplikace budou jít o živá a změní se rizika.
+- S tím, jak další úlohy přicházejí do režimu online, se rizika mění v každé vydané verzi. Nové aplikace budou jít o živá a změní se jejich rizika.
 - Když společnost přináší první 10-20 aplikací v režimu online, profil rizika je mnohem jiný, než když aplikace 1000th přejdou do produkčního prostředí v cloudu.
 
 Prostředky, které se shromáždily v tradičním, místním majetku, se nejspíš časem sčítají. Splatnost podnikových a IT týmů se nejspíš rozrůstá podobným způsobem. Tento paralelní růst může vést k vytvoření některých zbytečných zavazadel zásad.
@@ -54,10 +54,10 @@ Přístup MVP naopak může týmu dovolit, aby definoval počáteční počáte�
 
 Následuje několik základních příkladů obchodních rizik, která lze zahrnout jako součást MVP:
 
-- Všechny prostředky jsou vystavené riziku ukončení (prostřednictvím chyby, chyby nebo údržby).
+- Všechny prostředky jsou ohroženy odstraněním (prostřednictvím chyby, chyby nebo údržby).
 - Všechny prostředky jsou ohrožené generováním příliš velkého množství útraty.
-- Všechny prostředky můžou být ohrožené slabými hesly.
-- Jakékoli assety se všemi otevřenými porty vystavenými Internetu jsou ohroženy ohrožením zabezpečení.
+- Všechny prostředky můžou být ohrožené slabými hesly nebo nezabezpečenými nastaveními.
+- Jakékoli assety s otevřenými porty vystavenými Internetu jsou ohroženy ohrožením zabezpečení.
 
 Výše uvedené příklady jsou určeny k navázání obchodních rizik MVP jako teorie. Skutečný seznam bude jedinečný pro každé prostředí.
 Jakmile se zřídí MVP pro obchodní riziko, dá se převést na [zásady](./index.md) , aby se každé riziko napravilo.

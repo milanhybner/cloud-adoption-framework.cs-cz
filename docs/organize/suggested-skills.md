@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029554"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224291"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Cesta k připravenosti dovedností během migrace v "připravené" fázi
 
@@ -44,9 +44,9 @@ V rámci připravené fáze musí technický personál vytvořit cílovou zónu 
 
 V rámci připravené fáze musí architekti navrhovat řešení, která jsou rozložená na všechna prostředí Azure. Následující prostředky je mohou připravit pro tyto úlohy:
 
-- [Základy pro cloudovou architekturu:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) PluralSight kurz, který vám může pomoci architektům správných základních řešení.
-- [Architektura Microsoft Azure:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) PluralSightý kurz na pozemní architekty v architektuře Azure.
-- [Návrhy migrace pro Microsoft Azure:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) PluralSight kurz, který usnadňuje architektům návrh řešení migrace.
+- [Základy pro cloudovou architekturu:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) PluralSight kurz, který vám může pomoci architektům správných základních řešení.
+- [Architektura Microsoft Azure:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) PluralSightý kurz na pozemní architekty v architektuře Azure.
+- [Návrhy migrace pro Microsoft Azure:](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) PluralSight kurz, který usnadňuje architektům návrh řešení migrace.
 
 ## <a name="deeper-skills-exploration"></a>Nabytí hlubších znalostí
 
@@ -75,4 +75,4 @@ Níže jsou uvedeny některé příklady cest výuky specifických pro role na M
 
 - [Vývojáři](/learn/browse/?roles=developer&term=infrastructure) mohou pomocí informací o prostředcích pomáhat během architektury, zásad správného řízení a aktivitách modernizace.
 
-Další studijní programy najdete ve [výukovém katalogu](/learn/browse/). Pomocí filtru role můžete v rámci své role zarovnat studijních cest.
+Další studijní programy najdete ve [výukovém katalogu](/learn/browse). Pomocí filtru role můžete v rámci své role zarovnat studijních cest.

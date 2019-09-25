@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024190"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224306"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL
 
@@ -279,7 +279,7 @@ Když jsou zdroj i cíl nastavené, jsou správci společnosti Contoso připrave
     - **Uchování bodu obnovení:** Výchozí hodnota je 24 hodin. Tato hodnota určuje délku intervalu uchovávání dat pro jednotlivé body obnovení. Replikované virtuální počítače můžete v rámci okna uchování obnovit do libovolného časového bodu.
     - **Frekvence snímků konzistentních vzhledem k aplikacím:** Výchozí hodnota je jedna hodina. Tato hodnota určuje četnost vytváření snímků konzistentních vzhledem k aplikacím.
 
-        ![Vytvoření zásad replikace](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
+        ![Vytvořit zásady replikace](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
 3. Tato zásada se automaticky přidruží ke konfiguračnímu serveru.
 
@@ -432,7 +432,7 @@ Teď Contoso musí provést tyto akce:
 - Odebrat místní virtuální počítače ze zálohovacích úloh.
 - Aktualizovat interní dokumentaci o nová umístění a IP adresy.
 - Zkontrolovat všechny prostředky, které spolupracují s místními virtuálními počítači, a aktualizovat všechna související nastavení nebo dokumentaci tak, aby odrážely novou konfiguraci.
-- Společnost Contoso využila službu Azure Migrate s mapováním závislostí k posouzení virtuálního počítače **OSTICKETWEB** z hlediska migrace. Teď by měli z tohoto virtuálního počítače odebrat agenty (Microsoft Monitoring Agent/Dependency Agent), které do něj za tímto účelem nainstalovali.
+- Společnost Contoso využila službu Azure Migrate s mapováním závislostí k posouzení virtuálního počítače **OSTICKETWEB** z hlediska migrace. Nyní by měli odebrat agenty (Microsoft Monitoring Agent a agenta Microsoft Dependency Agent), které jsou pro tento účel nainstalovány, z virtuálního počítače.
 
 ## <a name="review-the-deployment"></a>Kontrola nasazení
 

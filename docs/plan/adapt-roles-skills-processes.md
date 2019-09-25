@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 96eb90f5761fd53ab0c4e6b128c77e441c7b36cd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025340"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223923"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Přizpůsobení stávajících rolí, dovedností a procesů pro Cloud
 
@@ -57,4 +57,4 @@ Sledujte tyto závislosti a poznamenejte si procesy, které je budou podporovat.
 Zajištění správné podpory pro přeložené role je úsilí týmu. Pokud chcete s těmito pokyny pracovat, přečtěte si [Úvod k organizaci připravenosti organizace](../organize/index.md) a Identifikujte správné týmové struktury a účastníky.
 
 > [!div class="nextstepaction"]
-> [Identifikujte správné struktury týmu](./index.md)
+> [Identifikujte správné struktury týmu](../organize/index.md)

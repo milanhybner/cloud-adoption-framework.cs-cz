@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e95817396fb898c3460874e0e63bf793628a4d16
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 95b5e9cd4c2c6c1e525d6ce65038881147eedc06
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022057"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224252"
 ---
 # <a name="data-design-decisions"></a>Rozhodnutí o návrhu databází
 
@@ -33,11 +33,11 @@ Zodpovězení následujících otázek týkajících se vašich úloh vám pomů
 
 - **Potřebujete mít úplnou kontrolu nad vlastnictvím databázového softwaru nebo hostitelského operačního systému?** Některé situace vyžadují, abyste vlastnili nebo měli vysoký stupeň kontroly nad konfigurací softwaru a servery, na kterých se hostují vaše databázové úlohy. V těchto situacích můžete nasadit vlastní virtuální počítače IaaS (infrastruktura jako služba), abyste měli úplnou kontrolu nad nasazením a konfigurací datových služeb. Pokud tyto požadavky nemáte, mohou služby spravované databáze PaaS (platforma jako služba) snížit náklady na správu a provoz.
 - **Budou vaše úlohy používat technologii relačních databází?** Pokud ano, jakou technologii plánujete použít? Azure poskytuje spravované databázové funkce PaaS pro [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), [MySQL](https://docs.microsoft.com/azure/mysql/overview), [PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) a [MariaDB](https://docs.microsoft.com/azure/mariadb/overview).
-- **Budou vaše úlohy používat SQL Server?** V Azure mohou vaše úlohy běžet na [SQL Serveru ve službě Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/sql-server/), což je řešení IaaS, nebo v [hostované službě Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), což je řešení PaaS. Volba použité možnosti se primárně řídí otázkou, zda chcete spravovat databázi, instalovat opravy a provádět zálohování, nebo jestli tyto operace chcete delegovat na Azure. V některých situacích mohou problémy s kompatibilitou vyžadovat použití SQL Serveru hostovaného v řešení IaaS. Další informace o tom, jak zvolit správnou možnost pro vaše úlohy, najdete v tématu o [volbě správné možnosti SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
+- **Budou vaše úlohy používat SQL Server?** V Azure mohou vaše úlohy běžet na [SQL Serveru ve službě Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/sql-server), což je řešení IaaS, nebo v [hostované službě Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), což je řešení PaaS. Volba použité možnosti se primárně řídí otázkou, zda chcete spravovat databázi, instalovat opravy a provádět zálohování, nebo jestli tyto operace chcete delegovat na Azure. V některých situacích mohou problémy s kompatibilitou vyžadovat použití SQL Serveru hostovaného v řešení IaaS. Další informace o tom, jak zvolit správnou možnost pro vaše úlohy, najdete v tématu o [volbě správné možnosti SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
 - **Budou vaše úlohy používat databázové úložiště typu klíč/hodnota?** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) nabízí vysoce výkonné řešení datového úložiště typu klíč/hodnota s mezipamětí, které obsluhuje rychlé a škálovatelné aplikace. [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) poskytuje také funkce úložiště typu klíč/hodnota pro obecné účely.
 - **Budou vaše úlohy používat data dokumentů nebo grafů?** [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) je vícemodelová databázová služba, která podporuje širokou škálu datových typů a rozhraní API. Azure Cosmos DB poskytuje rovněž databázové funkce pro dokumenty a grafy.
 - **Budou vaše úlohy používat data v rodinách sloupců?** [Apache HBase v Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) využívá Apache Hadoop. Podporuje velké objemy nestrukturovaných a částečně strukturovaných dat v bezschématové databázi uspořádané podle rodin sloupců.
-- **Budou vaše úlohy vyžadovat funkce vysokokapacitní analýzy dat?** K efektivnímu ukládání a dotazování strukturovaných dat v řádu petabajtů můžete použít [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is). Pro úlohy s nestrukturovanými velkými objemy dat můžete použít [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) umožňující ukládání a analýzu petabajtových souborů a biliónů objektů.
+- **Budou vaše úlohy vyžadovat funkce vysokokapacitní analýzy dat?** K efektivnímu ukládání a dotazování strukturovaných dat v řádu petabajtů můžete použít [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is). Pro úlohy s nestrukturovanými velkými objemy dat můžete použít [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) umožňující ukládání a analýzu petabajtových souborů a biliónů objektů.
 - **Budou vaše úlohy vyžadovat funkce vyhledávacího modulu?** K vytvoření cloudových vyhledávacích indexů vylepšených o umělou inteligenci, které lze integrovat do vašich aplikací, můžete použít [Azure Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search).
 - **Budou vaše úlohy používat data časových řad?** Služba [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview) je určená k ukládání, vizualizaci a dotazování velkých objemů dat časových řad, jako jsou například data generovaná zařízeními IoT.
 
@@ -56,7 +56,7 @@ Následující tabulka obsahuje požadavky na několik běžných scénářů po
 | Potřebuji plně spravovanou škálovatelnou relační databázi PostgreSQL s vysokou dostupností a integrovaným zabezpečením bez dalších poplatků. | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
 | Chci hostovat podnikové aplikace SQL Serveru v cloudu a mít plnou kontrolu nad operačním systémem serveru. | [SQL Server na virtuálních počítačích](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
 | Potřebuji plně spravovaný elastický datový sklad se zabezpečením na všech úrovních škálování bez dalších poplatků. | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
-| Potřebuji prostředky úložiště datového jezera, které podporují clustery Hadoop nebo data HDFS. | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) |
+| Potřebuji prostředky úložiště datového jezera, které podporují clustery Hadoop nebo data HDFS. | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
 | Potřebuji vysokou propustnost a stálý přístup k datům s nízkou latenci pro podporu rychlých a škálovatelných aplikací. | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
 | Potřebuji plně spravovanou škálovatelnou relační databázi MariaDB s vysokou dostupností a integrovaným zabezpečením bez dalších poplatků. | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
 
