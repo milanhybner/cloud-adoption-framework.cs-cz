@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816393"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224375"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migrace do cloudu v architektuře přechodu na cloud
 
-Všechny [plány přechodu na cloud](../plan/index.md) na podnikové úrovni budou obsahovat úlohy, které neospravedlňují významné investice při vytváření nové obchodní logiky. Tyto úlohy jde přesunout do cloudu pomocí celé řady přístupů: Lift & Shift, Lift & Optimize nebo modernizace. Každý z nich je považován za migraci. Následující cvičení vám pomůžou vytvořit iterativní procesy k posouzení, migraci, optimalizaci, zabezpečení a správě těchto úloh.
+Všechny [plány přechodu na cloud](../plan/index.md) na podnikové úrovni budou obsahovat úlohy, které neospravedlňují významné investice při vytváření nové obchodní logiky. Tyto úlohy jde přesunout do cloudu pomocí celé řady přístupů: lift and shift, lift and optimize nebo modernizace. Za migraci se považují všechny tyto přístupy. Následující cvičení vám pomůžou vytvořit iterativní procesy k posouzení, migraci, optimalizaci, zabezpečení a správě těchto úloh.
 
 ## <a name="getting-started"></a>Začínáme
 
@@ -126,7 +126,7 @@ Migrace je aktivita úzce související s procesy. Při škálování úsilí o 
 
 ## <a name="iterative-migration-process"></a>Iterativní proces migrace
 
-Ve své podstatě migrace do cloudu sestává ze čtyř jednoduchých fází: Posouzení, migrace, optimalizace a zabezpečení a správa. V této části architektury CAF vás naučíme maximalizovat návratnost každé fáze procesu a přiřadit tyto fáze plánu přechodu na cloud. Tato fáze iterativního přístupu jsou znázorněné na následujícím obrázku:
+Ve své podstatě migrace do cloudu sestává ze čtyř jednoduchých fází: Posouzení, migrace, optimalizace a zabezpečení a správa. V této části architektury přechodu na cloud vás naučíme maximalizovat návratnost každé fáze procesu a dát tyto fáze do souladu s plánem přechodu na cloud. Tato fáze iterativního přístupu jsou znázorněné na následujícím obrázku:
 
 ![Model migrace architektury přechodu na cloud](../_images/operational-transformation-migrate.png)
 

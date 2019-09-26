@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s předplatnými cloudové platformy jako základní službou při migraci do Azure.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023636"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221005"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -67,13 +67,8 @@ Jak se cloudová stopa organizace zvětšuje, obvykle se vytvářejí další p�
 Každá organizace si volí jiný způsob kategorizace aplikací a předplatná často rozděluje v závislosti na konkrétních aplikacích nebo službách nebo podle archetypů aplikací. Tato kategorizace je často navržená tak, aby podporovala úlohy, u kterých se předpokládá využití většiny limitů prostředků předplatného, nebo oddělila klíčové úlohy, aby se zajistilo, že v rámci těchto limitů nebudou soupeřit s jinými úlohami. Mezi úlohy, u kterých by v rámci tohoto modelu mohlo být odůvodnitelné použití samostatného předplatného, patří:
 
 - Klíčové úlohy
-- Aplikace s chráněnými daty
-- Experimentální aplikace
-- Aplikace podléhající zákonným požadavkům (jako je HIPAA nebo FedRAMP)
-- Dávkové úlohy
-- Úlohy s velkým objemem dat, jako je Hadoop
-- Kontejnerizované úlohy využívající orchestrátory nasazení, jako je Kubernetes
-- Analytické úlohy
+- Aplikace, které jsou součástí „nákladů prodaného zboží“ (COGS) ve vaší společnosti. Příklad: Každá instance widgetu společnosti X obsahuje modul Azure IoT, který odesílá telemetrii. Může to vyžadovat vyhrazené předplatné pro účely účtování / zásad správného řízení v rámci COGS.
+- Aplikace podléhající zákonným požadavkům, jako je HIPAA nebo FedRAMP.
 
 ### <a name="functional-pattern"></a>Funkční model
 
@@ -97,7 +92,7 @@ Hierarchie skupin pro správu mohou mít až šest úrovní. Máte tak možnost 
 
 - [Správa přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Několik vrstev zásad správného řízení ve velkých firmách](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Několik geografických oblastí](../../migrate/expanded-scope/multiple-regions.md)
+- [Několik geografických oblastí](../regions/index.md)
 
 ## <a name="next-steps"></a>Další kroky
 

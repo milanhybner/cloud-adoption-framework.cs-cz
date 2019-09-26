@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Průvodce zásadami správného řízení pro komplexní firmy
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63b66858c023ff85e1ff6f8adc811540f3034e2d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026246"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220571"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Průvodce zásadami správného řízení pro komplexní firmy
 
@@ -40,9 +40,10 @@ Následující diagram znázorňuje hierarchii MVP zásad správného řízení 
 Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a skupin prostředků měly nasazovat do vhodné oblasti. Při plánování nasazení tým zásad správného řízení v cloudu vytvoří v hierarchii potřebné uzly pro týmy přechodu na cloud.
 
 1. Pro každou obchodní jednotku definujte skupinu pro správu s podrobnou hierarchií, která odráží geografii a typ prostředí (například produkční nebo neprodukční).
-1. Pro každou jedinečnou kombinaci obchodní jednotky, geografie, prostředí a kategorie aplikací vytvořte předplatné.
-1. Pro každou aplikaci vytvořte samostatnou skupinu prostředků.
-1. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/considerations/naming-and-tagging.md).
+2. Vytvořte produkční a neprodukční předplatné pro každou jedinečnou kombinaci diskrétní obchodní jednotky nebo zeměpisné oblasti. Při vytváření více předplatných je potřeba dávat pozor. Další podrobnosti najdete [tady](../../../decision-guides/subscriptions/index.md).
+3. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/considerations/naming-and-tagging.md).
+4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu: všechno, co se vyvíjí dohromady, se také dohromady spravuje a vyřazuje z provozu. Další informace o osvědčených postupech pro skupiny prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
+5. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram organizace prostředků velké firmy](../../../_images/govern/large-enterprise-resource-organization.png)
 

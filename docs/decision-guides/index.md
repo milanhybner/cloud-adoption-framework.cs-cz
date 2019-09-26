@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023848"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223889"
 ---
 # <a name="architectural-decision-guides"></a>Průvodci rozhodováním ohledně architektury
 
@@ -42,7 +42,9 @@ Každá z následujících kategorií představuje základní technologii všech
 
 [Šifrování:](./encryption/index.md) Zabezpečte svá citlivá data s využitím šifrování a splňte tak požadavky vaší organizace na zabezpečení a dodržování předpisů.
 
-[Protokoly a generování sestav:](./logging-and-reporting/index.md) Monitorujte data protokolů generovaná cloudovými prostředky. Analýzou dat můžete získat přehledy o stavu úloh z hlediska operací, údržby, a dodržování předpisů.
+[Protokolování a vytváření sestav](./logging-and-reporting/index.md) Monitorujte data protokolů generovaná cloudovými prostředky. Analýzou dat můžete získat přehledy o stavu úloh z hlediska operací, údržby, a dodržování předpisů.
+
+[Regionální pokyny:](./regions/index.md) Diskuze o vhodných rozhodovacích kritériích pro regionální umístění prostředků na platformě Azure
 
 ## <a name="next-steps"></a>Další kroky
 

@@ -53,6 +53,7 @@ Dokud se s cloudovým prostředím úplně nenaváže vztah důvěryhodnosti, je
     1. [Referenční architektura sítě VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) stanovuje vzor a model nasazení pro vytvoření služby VPN Gateway v Azure.
     2. Ověřte, že místní mechanismy zabezpečení a správy provozu pracují s připojenými cloudovými sítěmi jako s nedůvěryhodnými. Prostředky a služby hostované v cloudu by měly mít přístup pouze k autorizovaným místním službám.
     3. Ověřte, že je místní hraniční zařízení v místním datacentru kompatibilní s [požadavky služby Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) a že jeho konfigurace umožňuje přístup k veřejnému internetu.
+    4. Upozorňujeme, že tunely sítě VPN by se měly považovat za okruhy připravené pro produkční prostředí jenom pro ty nejjednodušší úlohy. Cokoli nad rámec několika jednoduchých úloh vyžadujících možnosti místního připojení by mělo využívat Azure ExpressRoute.
 1. V kořenové skupině pro správu vytvořte druhou definici podrobného plánu `secure-hybrid-vnet`.
     1. Jako artefakt k definici podrobného plánu přidejte šablonu Resource Manageru pro službu VPN Gateway.
     2. Jako artefakt k definici podrobného plánu přidejte šablonu Resource Manageru pro virtuální síť.

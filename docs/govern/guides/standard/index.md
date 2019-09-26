@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025824"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222383"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Průvodce zásadami správného řízení pro standardní firmy
 
@@ -41,8 +41,9 @@ Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a sku
 
 1. Jedna skupina pro správu pro každý typ prostředí (například produkční, vývojové a testovací)
 2. Dvě předplatná, jedno pro produkční a druhé pro neprodukční prostředí
-3. Odpovídající skupiny prostředků s využitím RBAC v rámci těchto předplatných
-4. Na všech úrovních této hierarchie seskupení by se měla používat [konzistentní terminologie](../../../ready/considerations/naming-and-tagging.md).
+3. Na všech úrovních této hierarchie seskupení by se měla používat [konzistentní terminologie](../../../ready/considerations/naming-and-tagging.md).
+4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu: všechno, co se vyvíjí dohromady, se také dohromady spravuje a vyřazuje z provozu. Další informace o osvědčených postupech pro skupiny prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
+5. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 
 Tady je příklad použití tohoto vzoru:
 

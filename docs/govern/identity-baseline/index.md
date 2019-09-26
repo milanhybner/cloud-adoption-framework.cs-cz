@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení standardních hodnot identit ve vztahu k zásadám správného řízení v cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025754"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222256"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Disciplína standardních hodnot identit
 
@@ -26,7 +26,7 @@ Standardní hodnoty identit jsou jednou z [pěti disciplín zásad správného �
 
 Tato část architektury přechodu na cloud popisuje přístup k vývoji disciplíny standardních hodnot identit jako součásti vaší strategie zásad správného řízení v cloudu. Primární cílovou skupinou pro tyto pokyny jsou cloudoví architekti a další členové týmu zásad správného řízení v cloudu ve vaší organizaci. Na diskuzích o rozhodnutích, zásadách a procesech, které vzejdou z této disciplíny, by se však měli podílet i relevantní členové IT týmů, které mají na starosti implementaci a správu řešení správy identit ve vaší organizaci.
 
-Pokud vaše organizace nemá interní specialisty na standardní hodnoty identit a zabezpečení, zvažte zapojení externích konzultantů do této disciplíny. Zvažte také využití [konzultačních služeb Microsoftu](https://www.microsoft.com/enterprise/services), služby přechodu na cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) nebo jiných externích odborníků na přechod na cloud při diskuzích o aspektech této disciplíny.
+Pokud vaše organizace nemá interní specialisty na standardní hodnoty identit a zabezpečení, zvažte zapojení externích konzultantů do této disciplíny. Při diskuzích o aspektech této disciplíny zvažte také využití [konzultačních služeb Microsoftu](https://www.microsoft.com/enterprise/services), služby přechodu na cloud [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) nebo jiných externích partnerů pro přechod na cloud.
 
 ## <a name="policy-statements"></a>Příkazy zásad
 

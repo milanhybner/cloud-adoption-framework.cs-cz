@@ -2,19 +2,19 @@
 title: Průvodce rozhodováním ohledně konzistence prostředků
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s konzistencí prostředků při plánování migrace do Azure.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221108"
 ---
 # <a name="resource-consistency-decision-guide"></a>Průvodce rozhodováním ohledně konzistence prostředků
 
@@ -32,16 +32,22 @@ S tím, jak se bude zvyšovat význam těchto faktorů, budou čím dál důlež
 
 [Skupiny prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) v Azure představují základní mechanismus pro organizaci prostředků umožňující logické seskupování prostředků v rámci předplatného.
 
-Skupiny prostředků fungují jako kontejnery prostředků se společným životním cyklem nebo sdílenými omezeními správy, jako jsou požadavky na zásady nebo řízení přístupu na základě role (RBAC). Skupiny prostředků není možné vnořovat a prostředky můžou patřit pouze do jedné skupiny prostředků. Některé akce se můžou provádět se všemi prostředky ve skupině prostředků. Například při odstranění skupiny prostředků se odeberou všechny prostředky v dané skupině. Obvyklé scénáře pro vytváření skupin prostředků se často dělí do dvou kategorií:
+Skupiny prostředků fungují jako kontejnery prostředků se společným životním cyklem A sdílenými omezeními správy, jako jsou požadavky na zásady nebo řízení přístupu na základě role (RBAC). Skupiny prostředků není možné vnořovat a prostředky můžou patřit pouze do jedné skupiny prostředků. Všechny akce řídicí roviny se provádějí se všemi prostředky ve skupině prostředků. Například při odstranění skupiny prostředků se také odstraní všechny prostředky v dané skupině. Pro správu skupin prostředků je vhodné zvážit následující otázky:
 
-- **Tradiční úlohy IT:** Nejčastěji seskupené podle položek v rámci stejného životního cyklu, například aplikace. Seskupení podle aplikace umožňuje správu jednotlivých aplikací.
-- **Flexibilní úlohy IT:** Zaměřují se na cloudové aplikace určené pro externí zákazníky. Tyto skupiny prostředků často odrážejí funkční vrstvy vývoje (například webová nebo aplikační vrstva) a správy.
+1. Vyvíjí se obsah skupin prostředků společně?
+1. Je obsah skupiny prostředků spravovaný, aktualizovaný a monitorovaný najednou, a to stejnými lidmi nebo týmy?
+1. Vyřazuje se obsah skupin prostředků z provozu společně?
+
+Pokud jste na libovolnou z výš uvedených otázek odpověděli _NE_, příslušný prostředek by měl být umístěný jinde, v jiné skupině prostředků.
+
+> [!IMPORTANT]
+> Skupina prostředků jsou také specifické pro jednotlivé oblasti. Pro prostředky je ale běžné, že jsou v různých oblastech v rámci stejné skupiny prostředků, protože se spravují dohromady, jak je popsáno výš. Další informace o výběru oblastí najdete [tady](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Konzistence nasazení
 
 Platforma Azure využívá základní mechanismus seskupování prostředků a poskytuje systém umožňující nasazovat prostředky do cloudového prostředí pomocí šablon. Pomocí šablon můžete vytvářet konzistentní zásady organizace a vytváření názvů při nasazování úloh a vynucovat aspekty vašeho návrhu nasazování a správy prostředků.
 
-[Šablony Azure Resource Manageru](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) umožňují opakovaně nasazovat prostředky v konzistentním stavu s využitím předem stanovené konfigurace a struktury skupin prostředků. Šablony Resource Manageru pomáhají definovat sadu standardů, které představují základ vašich nasazení.
+[Šablony Azure Resource Manageru](/azure/azure-resource-manager/template-deployment-overview) umožňují opakovaně nasazovat prostředky v konzistentním stavu s využitím předem stanovené konfigurace a struktury skupin prostředků. Šablony Resource Manageru pomáhají definovat sadu standardů, které představují základ vašich nasazení.
 
 Například můžete mít standardní šablonu pro nasazení úlohy webového serveru, která obsahuje dva virtuální počítače jako webové servery v kombinaci s nástrojem pro vyrovnávání zatížení pro distribuci provozu mezi těmito servery. Tuto šablonu pak můžete opakovaně používat k vytvoření sady virtuálních počítačů a nástroje pro vyrovnávání zatížení s identickou strukturou, kdykoli se bude tento typ úlohy vyžadovat, a bude vám stačit jenom změnit příslušný název nasazení a IP adresu.
 
