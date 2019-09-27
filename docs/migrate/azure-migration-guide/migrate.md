@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022787"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224068"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -196,6 +196,14 @@ Další informace naleznete v tématu:
 
 - [Přehled Pomocníka pro experimentování s databázemi](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Nástroj pro migraci dat Cosmos DB
+
+Nástroje pro migraci dat Azure Cosmos DB může importovat data z různých zdrojů do kolekcí a tabulek Azure Cosmos DB. Můžete importovat ze souborů JSON, CSV, SQL, MongoDB, služby Azure Table Storage, Amazon DynamoDB a dokonce i z kolekcí rozhraní SQL API služby Azure Cosmos DB. Nástroj pro migraci dat můžete použít také při migraci z kolekce s jedním oddílem do kolekce s více oddíly pro rozhraní SQL API.
+
+Další informace naleznete v tématu:
+
+- [Nástroj pro migraci dat Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Nástroje pro migraci od třetích stran](#tab/third-party-tools)
 
 S procesem migrace vám může pomoct několik nástrojů a služeb od nezávislých výrobců softwaru. Každý z nich nabízí různé výhody a silné stránky. Mezi tyto nástroje patří:
@@ -224,16 +232,28 @@ Movere je řešení pro zjišťování, které poskytuje data a přehledy potře
 
 [Další informace](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Partneři služby Cosmos DB
+
+Můžete si vybrat z široké nabídky zkušených partnerů v oblasti integrace systémů a příslušných nástrojů, které podporují vaše migrace Azure Cosmos DB pro vaše požadavky na databázi NoSQL.
+
+[Další informace](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Pokud chcete vyhledat organizace nabízející předem připravená partnerská technologická řešení, která by vyhovovala vašemu scénáři migrace, a získat více informací o dalších nástrojích a podpůrných službách pro migraci od třetích stran, navštivte [centrum pro migraci do Azure](https://azure.microsoft.com/migration/support).
+
+V [průvodci migrací databází do Azure](https://datamigration.microsoft.com) najdete řadu možností migrace databáze a podrobné pokyny k nativním nástrojům a nástrojům partnerů.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Nástroje pro řízení projektů](#tab/project-management-tools)
 
-Pokud projekty nikdo nesleduje a neřídí, je pravděpodobnější, že se dostanou do problémů. Myslíme si, že v zájmu zajištění úspěšného výsledku je důležité, abyste použili nějaký nástroj pro řízení projektů. K dispozici je mnoho různých nástrojů a projektoví manažeři ve vaší organizaci už možná mají nějaký oblíbený. Microsoft nabízí následující nástroje pro řízení projektů, které můžou ve spolupráci poskytovat širší možnosti:
+Pokud projekty nikdo nesleduje a neřídí, je pravděpodobnější, že se dostanou do problémů. Myslíme si, že v zájmu zajištění úspěšného výsledku je důležité, abyste použili nějaký nástroj pro řízení projektů. K dispozici je mnoho různých nástrojů a projektoví manažeři ve vaší organizaci už možná mají nějaký oblíbený.
+
+Azure DevOps je navrhovaným nástrojem pro správu projektů během migrace do cloudu. Aby bylo možné zrychlit využití Azure DevOps, architektura přechodu na cloud zahrnuje nástroj pro automatické nasazení šablony projektu. Tato šablona obsahuje úlohy, které se během migrace obvykle spouštějí. Pomocí [těchto pokynů](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) šablonu nasadíte. Pak můžete šablonu upravit tak, aby odrážela [úlohy](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) a [aktiva](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets), které se mají migrovat.
+
+Microsoft také nabízí následující nástroje pro řízení projektů, které můžou ve spolupráci poskytovat širší možnosti:
 
 - [Microsoft Planner](https://tasks.office.com): Poskytuje jednoduchý vizuální způsob, jak organizovat týmovou práci.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Poskytuje funkce pro řízení projektů a portfolia, správu kapacit zdrojů, finanční řízení a správu časových rozvrhů a plánů.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Nástroj pro týmovou spolupráci a komunikaci. Aplikace Teams se také může v zájmu vylepšení spolupráce integrovat s Plannerem a dalšími nástroji.
-- [Azure DevOps](https://dev.azure.com): Pomocí Azure DevOps můžete spravovat svou infrastrukturu jako kód nebo používat pracovní položky a panely k řízení projektů. Zkušenější organizace můžou využívat možnosti CI/CD.
+- [Azure DevOps](https://dev.azure.com): Šablona plánování architektury přechodu na cloud není pro použití Azure DevOps nutná. Službu můžete použít bez šablony a spravovat svou infrastrukturu jako kód nebo používat pracovní položky a panely k řízení projektů. Zkušenější organizace můžou využívat možnosti CI/CD.
 
 Nejedná se o jediné dostupné nástroje. V komunitě projektových manažerů se široce používá mnoho dalších nástrojů od třetích stran.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224398"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
@@ -75,7 +75,7 @@ Služba Azure Migrate používá službu Service Map ke zlepšení možností vy
 Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a nainstalovat agenty na každý místní počítač, který chcete analyzovat.
 
 - Na každém počítači musí být nainstalovaný [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows).
-- Na každý počítač je potřeba nainstalovat [agenta závislostí](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows).
+- Na každý počítač je potřeba nainstalovat [agenta závislostí Microsoftu](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows).
 - Pokud navíc máte počítače bez připojení k internetu, musíte na ně stáhnout a nainstalovat bránu Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a na
 
 - [Používání řešení Service Map v Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate a Service Map: Vizualizace závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scénáře a účastníci](#tab/Scenarios)
 
