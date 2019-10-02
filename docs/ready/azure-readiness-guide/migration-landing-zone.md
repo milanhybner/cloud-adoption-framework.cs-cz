@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak cílovou zónu migrace v Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223939"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811108"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 
@@ -75,7 +75,7 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 
 Přečtěte si další informace a Stáhněte si referenční ukázku v tématu Migrace cílové zóny v rámcové dokumentaci k nasazení nebo přizpůsobení ze [vzorků Azure modrotisky](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Ukázky podrobných plánů jsou k dispozici také na portálu. Podrobnosti o nasazení podrobného plánu najdete v tématu věnovaném službě [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Ukázky podrobných plánů jsou k dispozici také na portálu. Podrobnosti o tom, jak vytvořit podrobný plán, najdete v tématu [plány Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Pokyny k přizpůsobení, které by se měly provést v tomto podrobném plánu nebo v výsledné cílové zóně, najdete v článcích o [aspektech cílových zón](../considerations/index.md).
 

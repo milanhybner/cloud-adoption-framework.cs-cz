@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vytvořit týmové struktury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 09/27/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: dbc3c21876f61444f3927fe4c61cf1b4302625b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030687"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811093"
 ---
 # <a name="establish-team-structures"></a>Vytvořit týmové struktury
 
@@ -93,7 +93,7 @@ V nejvyšším stavu zralosti cloudové centrum kvality zarovnává týmy kolem 
 
 Hlavním rozdílem mezi touto strukturou a centrální strukturou IT je zaměření na samoobslužné služby. Týmy v této struktuře organizují s úmyslem delegovat řízení co nejvíce. Zarovnávání postupů zásad správného řízení a dodržování předpisů pro cloudová nativní řešení vytváří mechanismy guardrails a ochrany. Na rozdíl od centrálního IT modelu maximalizuje cloudový přístup inovace a minimalizuje provozní režii. Aby se tento model přijal, bude se od podnikání a vedoucího IT potřebovat vzájemná dohoda o modernizovat IT procesech. Tento model se pravděpodobně nevyskytuje organicky a často vyžaduje výkonnou podporu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po zarovnání na určitou fázi zralosti organizační struktury můžete použít [grafy RACI](./raci-alignment.md) k zarovnávání zodpovědnosti a zodpovědnosti napříč každým týmem.
 
