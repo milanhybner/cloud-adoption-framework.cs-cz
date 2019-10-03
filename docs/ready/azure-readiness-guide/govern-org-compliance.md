@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zjistěte, jak pro vaše prostředí Azure nastavit zásady správného řízení, zabezpečení a dodržování předpisů.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224268"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804487"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Zásady správného řízení, zabezpečení a dodržování předpisů v Azure
 
-Při vytváření podnikových zásad a plánování strategie zásad správného řízení můžete pomocí nástrojů a služeb, jako jsou Azure Policy, Azure Blueprints a Azure Security Center, prosazovat a automatizovat rozhodnutí organizace v zásad správného řízení. Než začnete s plánováním zásad správného řízení, identifikujte pomocí [nástroje Governance Benchmark](http://aka.ms/caf/gov/assess) možné mezery v přístupu vaší organizace k zásadám správného řízení. Další informace o vývoji procesů zásad správného řízení najdete v [pokynech pro zásady správného řízení Architektury přechodu na cloud pro Azure](../../govern/index.md).
+Při vytváření podnikových zásad a plánování strategie zásad správného řízení můžete pomocí nástrojů a služeb, jako jsou Azure Policy, Azure Blueprints a Azure Security Center, prosazovat a automatizovat rozhodnutí organizace v zásad správného řízení. Než začnete s plánováním zásad správného řízení, identifikujte pomocí [nástroje Governance Benchmark](https://cafbaseline.com) možné mezery v přístupu vaší organizace k zásadám správného řízení. Další informace o vývoji procesů zásad správného řízení najdete v [pokynech pro zásady správného řízení Architektury přechodu na cloud pro Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -77,8 +77,8 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 ::: zone target="docs"
 
-1. Přejděte na [Blueprints – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
+1. Přejděte na [Podrobné plány – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Vyberte definici podrobného plánu, kterou jste vytvořili v předchozích krocích.
 1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
 1. Zadejte číslo **Verze** (například _1.0_) a případné **Poznámky ke změnám** a pak vyberte **Publikovat**.
 
@@ -165,6 +165,7 @@ Další informace naleznete v tématu:
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Akce
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
