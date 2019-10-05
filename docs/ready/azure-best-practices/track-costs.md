@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022169"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967758"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -40,7 +40,7 @@ Prvním krokem při přesném sledování informací o nákladech napříč orga
 
 ### <a name="resource-organization"></a>Organizace prostředků
 
-Existují různé přístupy k uspořádání prostředků. Tato část popisuje osvědčené postupy založené na potřebách velké firmy s nákladovými strukturami rozloženými napříč organizačními jednotkami, zeměpisnými oblastmi a organizacemi IT. Podobný osvědčený postup pro menší a méně složitou organizaci najdete v tématu [Cesta k zásadám správného řízení pro malé až střední firmy](../../govern/guides/standard/index.md).
+Existují různé přístupy k uspořádání prostředků. Tato část popisuje osvědčené postupy založené na potřebách velké firmy s nákladovými strukturami rozloženými napříč organizačními jednotkami, zeměpisnými oblastmi a organizacemi IT. Podobný osvědčený postup pro menší, méně složitou organizaci je dostupný v [základní příručce Enterprise zásad správného řízení podniku](../../govern/guides/standard/index.md).
 
 Pro velký podnik vytvoří následující model pro skupiny pro správu, předplatná a skupiny prostředků hierarchii, která umožní každému týmu mít správnou úroveň viditelnosti k plnění svých povinností. Pokud podnik potřebuje kontrolu nákladů, aby se zabránilo překročení rozpočtu, může na předplatná v této struktuře použít nástroje správného řízení, jako Azure Blueprints nebo Azure Policy, a rychle tak blokovat budoucí chyby v nákladech.
 

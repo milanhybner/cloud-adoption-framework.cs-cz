@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022493"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967796"
 ---
 # <a name="initial-organization-alignment"></a>Počáteční stav organizace
 
@@ -25,7 +25,7 @@ Skutečné zarovnání organizace trvá čas. Stane se důležité, aby se navá
 
 ## <a name="initial-best-practice-structure"></a>Počáteční struktura osvědčených postupů
 
-Aby bylo možné vytvořit rovnováhu mezi rychlostmi a řízeními, doporučujeme, abyste při přijetí cloudu měli k dispozici minimálně tyto osoby , které umožňují spolupráci v cloudu a zásady *správného řízení cloudu*. To může být tým zaměstnanců, kteří sdílejí zodpovědnost za každou z těchto oblastí nebo *možností*. Může to být také pro jednotlivé osoby, které jsou pro výsledky a zodpovědné za práci. V obou případech jsou přijetí do cloudu a zásady správného řízení cloudu dvě možnosti, které zahrnují přirozený tření mezi rychlým pohybem a omezením rizik. Tady je postup, jak se dva týmy vejdou dohromady:
+Aby bylo možné vytvořit rovnováhu mezi rychlostmi a řízeními, doporučujeme, abyste při přijetí cloudu měli k dispozici minimálně tyto osoby, které umožňují spolupráci v *cloudu* a zásady *správného řízení cloudu*. To může být tým zaměstnanců, kteří sdílejí zodpovědnost za každou z těchto oblastí nebo *možností*. Může to být také pro jednotlivé osoby, které jsou pro výsledky a zodpovědné za práci. V obou případech jsou přijetí do cloudu a zásady správného řízení cloudu dvě možnosti, které zahrnují přirozený tření mezi rychlým pohybem a omezením rizik. Tady je postup, jak se dva týmy vejdou dohromady:
 
 ![Přechod do cloudu s využitím cloudové služby excelence](../_images/ready/org-ready-best-practice.png)
 
@@ -43,9 +43,11 @@ Za předpokladu, že navrhovaná struktura se zarovnává s vaším plánem při
 - Jaká osoba bude platná pro definování těchto řízení zásad správného řízení?
 - Existují další možnosti nebo osoby, které budou mít odpovědnost nebo odpovědnost v rámci plánu přijetí do cloudu?
 
-## <a name="next-steps"></a>Další postup
+Po zdokumentování odpovědí na tyto otázky můžete vytvořit [plány pro připravenost dovedností](./adapt-roles-skills-processes.md) k definování plánů pro přípravu těchto osob.
 
-Po zdokumentování odpovědí na tyto otázky můžete pokračovat v článku o připravenosti na [dovednosti](./adapt-roles-skills-processes.md) , abyste definovali plány pro přípravu těchto osob na práci.
+## <a name="next-steps"></a>Další kroky
+
+Naučte se plánovat přijímání v cloudu.
 
 > [!div class="nextstepaction"]
-> [Definovat plán připravenosti dovedností](./adapt-roles-skills-processes.md)
+> [Plánování přijetí cloudu](./plan-intro.md)

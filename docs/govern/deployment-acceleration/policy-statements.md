@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222658"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967686"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Ukázkové zásady akcelerace nasazení – příkazy
 
@@ -32,7 +32,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Prohlášení o zásadách:** Všechny prostředky nasazené do cloudu by se měly nasadit pomocí šablon nebo skriptů pro automatizaci, kdykoli to bude možné.
 
-**Možné možnosti návrhu:** [Azure Resource Manager šablony](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) poskytují přístup k nasazení prostředků do Azure prostřednictvím infrastruktury jako kódu. [Terraformu](https://docs.microsoft.com/azure/terraform/terraform-overview) můžete použít také jako konzistentní místní a cloudové nástroje pro nasazení.
+**Možné možnosti návrhu:** [Azure Resource Manager šablony](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) poskytují přístup k nasazení prostředků do Azure prostřednictvím infrastruktury jako kódu. [Terraformu](https://docs.microsoft.com/azure/terraform/terraform-overview) můžete použít také jako konzistentní místní a cloudové nástroje pro nasazení.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Nedostatečné viditelnosti systémových problémů
 

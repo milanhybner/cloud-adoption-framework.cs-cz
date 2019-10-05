@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224331"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967775"
 ---
 # <a name="role-based-access-control"></a>Řízení přístupu na základě role
 
@@ -28,7 +28,7 @@ Přehled osvědčených postupů RBAC v rámci strategie identity a zabezpečen�
 
 Pomocí [řízení přístupu na základě role](https://docs.microsoft.com/azure/role-based-access-control/overview) můžete v rámci svého týmu oddělit povinnosti a udělit pouze takový přístup ke konkrétním uživatelům, skupinám, instančním objektům nebo spravovaným identitám služby Azure Active Directory (Azure AD), který postačuje k provádění potřebných úloh. Místo toho, abyste komukoli udělili neomezený přístup k předplatnému nebo prostředkům Azure, můžete omezit oprávnění pro jednotlivé sady prostředků.
 
-[Definice rolí RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) obsahuje seznam operací povolených nebo zakázaných pro uživatele nebo skupiny přiřazené k této roli. [Rozsah ](/azure/role-based-access-control/index#scope) role určuje, na které prostředky se tato definovaná oprávnění vztahují. Rozsahy můžou být zadány na více úrovních: skupina pro správu, předplatné, skupina prostředků nebo prostředek. Rozsahy jsou strukturovány ve vztahu nadřazený/podřízený rozsah.
+[Definice rolí RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) obsahuje seznam operací povolených nebo zakázaných pro uživatele nebo skupiny přiřazené k této roli. [Rozsah ](/azure/role-based-access-control/overview#scope) role určuje, na které prostředky se tato definovaná oprávnění vztahují. Rozsahy můžou být zadány na více úrovních: skupina pro správu, předplatné, skupina prostředků nebo prostředek. Rozsahy jsou strukturovány ve vztahu nadřazený/podřízený rozsah.
 
 ![Hierarchie rozsahu RBAC](../../_images/azure-best-practices/rbac-scope.png)
 

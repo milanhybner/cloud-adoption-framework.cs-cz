@@ -1,7 +1,7 @@
 ---
 title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Velká příručka Enterprise: Zlepšení pro více cloudů'
+description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220613"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967655"
 ---
-# <a name="large-enterprise-guide-multicloud-improvement"></a>Velká příručka Enterprise: Zlepšení pro více cloudů
+# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů
 
 ## <a name="advancing-the-narrative"></a>Posunutí mluveného komentáře
 

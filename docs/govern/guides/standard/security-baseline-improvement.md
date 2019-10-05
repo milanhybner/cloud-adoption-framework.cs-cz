@@ -1,7 +1,7 @@
 ---
-title: 'Standardní podniková příručka: Zlepšení pravidla směrného plánu zabezpečení'
+title: 'Standardní příručka pro zásady správného řízení podniku: Zlepšení pravidla směrného plánu zabezpečení'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardní podniková příručka: Zlepšení pravidla směrného plánu zabezpečení'
+description: 'Standardní příručka pro zásady správného řízení podniku: Zlepšení pravidla směrného plánu zabezpečení'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223782"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967329"
 ---
-# <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standardní podniková příručka: Zlepšení pravidla směrného plánu zabezpečení
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardní příručka pro zásady správného řízení podniku: Zlepšení pravidla směrného plánu zabezpečení
 
 Tento článek popisuje mluvený komentář přidáním ovládacích prvků zabezpečení, které podporují přesun chráněných dat do cloudu.
 
@@ -117,7 +117,7 @@ Návrh MVP pro zásady správného řízení se změní, aby zahrnoval nové zá
     1. Identifikujte konfiguraci Azure Firewall, která splňuje nezbytné požadavky na zabezpečení. Případně můžete identifikovat kompatibilní zařízení třetí strany, které je kompatibilní s Azure.
     2. Vytvořte šablonu Správce prostředků pro nasazení brány firewall pomocí požadovaných konfigurací.
 8. Podrobný plán Azure:
-    1. Vytvořte nový podrobný plán s `protected-data`názvem.
+    1. Vytvořte nový podrobný plán s názvem `protected-data`.
     2. Přidejte do podrobného plánu šablony brány firewall a Azure Security Center.
     3. Přidejte nové zásady pro odběry chráněných dat.
     4. Publikovat podrobný plán do jakékoli skupiny pro správu, která aktuálně plánuje hostování chráněných dat.

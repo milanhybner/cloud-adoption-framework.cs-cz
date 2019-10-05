@@ -1,5 +1,5 @@
 ---
-title: 'Standardní podniková příručka: Mluvený komentář za strategii zásad správného řízení'
+title: 'Standardní příručka pro zásady správného řízení podniku: Mluvený komentář za strategii zásad správného řízení'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí v cloudu Standard.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026933"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967459"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Standardní podniková příručka: Mluvený komentář za strategii zásad správného řízení
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standardní příručka pro zásady správného řízení podniku: Mluvený komentář za strategii zásad správného řízení
 
 Následující komentáře popisují případ použití pro zásady správného řízení během cesty k [podnikovému přijetí ve standardní podnikové síti](./index.md). Před implementací cesty je důležité pochopit předpoklady a odůvodnění, které se projeví v tomto mluveném komentáři. Pak můžete strategii zásad správného řízení lépe sjednotit na cestu vaší organizace.
 
@@ -52,10 +52,10 @@ Následující změny se odhadují v následujících několika letech:
 - CIO prohlíží zásady osobních údajů a finančních dat, aby bylo možné budoucí cíle stavu.
 - Vývoj aplikací a týmy BI chtějí uvolnit cloudová řešení do provozu v příštích 24 měsících na základě vize pro zákaznickou zapojení a nové produkty.
 - Tento rok IT tým dokončí vyřazení úloh zotavení po havárii datacentra DR pomocí migrace 2 000 virtuálních počítačů do cloudu. Očekává se, že se v následujících pěti letech vyprodukuje odhadované ceny za 25M USD.
-    ![Místní náklady oproti nákladům na Azure, které demonstrují vrácení $25M USD za následující pět let](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    náklady na 0On a cenu za Azure a náklady na Azure, které demonstrují vrácení $25M USD za následující pět let @ no__t-1 @no__t
 - Společnost plánuje změnu způsobu jejich investic tím, že přemístí potvrzené kapitálové výdaje jako provozní náklady v rámci IT. Tato změna zajistí větší náklady a umožní jí zrychlit další plánované úsilí.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Společnost vyvinula podnikové zásady pro vytvoření obrazce implementace zásad správného řízení. Podniková zásada se řídí mnoha technickými rozhodnutími.
 

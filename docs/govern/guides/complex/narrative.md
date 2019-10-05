@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d1aaa76f36125819ebb8f5c6225dc74bb60aabf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028569"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967675"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka zásad správného řízení pro komplexní podniky: Podpora mluveného komentáře
 
-Následující mluvený komentář vytváří případ použití pro zásady [správného řízení během cesty k podnikovému přijetí ve velkém cloudu](./index.md). Před jednáním s doporučeními v průvodci je důležité pochopit předpoklady a příčiny, které se projeví v tomto mluveném komentáři. Pak můžete strategii zásad správného řízení lépe sjednotit na cestu k přijetí cloudu vaší organizace.
+Následující mluvený komentář vytváří případ použití pro zásady [správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu](./index.md). Před jednáním s doporučeními v průvodci je důležité pochopit předpoklady a příčiny, které se projeví v tomto mluveném komentáři. Pak můžete strategii zásad správného řízení lépe sjednotit na cestu k přijetí cloudu vaší organizace.
 
 ## <a name="back-story"></a>Příběh zpátky
 
@@ -58,10 +58,10 @@ Následující změny se odhadují v následujících několika letech:
 - CIO chce použít cloudovou migraci jako vynucenou funkci ke zvýšení konzistence a stability napříč obchodními jednotkami a geografickými oblastmi. Nicméně budoucí stav musí respektovat všechny požadavky na externí dodržování předpisů, které by vyžadovaly odchylku od standardních přístupů konkrétními IT týmy.
 - Pokud brzy experimenty ve vývoji aplikací a v BI ukazují přední indikátory úspěšnosti, je třeba, aby v příštích 24 měsících vyvolaly řešení malého množství produkčního prostředí do cloudu.
 - CIO a CFO přiřadili architekta a viceprezidenta infrastruktury, aby vytvořila analýzu nákladů a studii proveditelnosti. Tato snaha určí, jestli společnost může a má přesunout 5 000 prostředků do cloudu během příštích 36 měsíců. Úspěšná migrace umožní, aby CIO eliminovat dvě datová centra a snížila náklady prostřednictvím 100 milionů USD během pětiletého plánu. Pokud se tři až čtyři datacentra můžou setkat s podobnými výsledky, rozpočet se vrátí na černou, takže rozpočet CIO zajistí podporu inovativních iniciativ.
-    ![Místní náklady oproti nákladům na Azure, které demonstrují vrácení $100 milionů USD za následující pět let](../../../_images/govern/calculator-enterprise.png)
+    náklady na 0On a cenu za Azure a náklady na Azure, které demonstrují vrácení $100 milionů USD za následující pět let @ no__t-1 @no__t
 - Kromě těchto úspor z ceny společnost plánuje změnu správy některých investic do IT tím, že přemístí potvrzené kapitálové výdaje jako provozní náklady v rámci IT. Tato změna zajistí větší náklady, kterou může využít k urychlení dalších plánovaných úsilí.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Společnost vyvinula podnikové zásady pro vytvoření obrazce implementace zásad správného řízení. Podniková zásada se řídí mnoha technickými rozhodnutími.
 

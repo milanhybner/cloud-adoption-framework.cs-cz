@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221508"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967304"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Konfigurace škálovatelných služeb Azure Management Services
 
@@ -30,7 +30,7 @@ Zprovoznění služeb správy Azure na vaše servery zahrnuje dvě úlohy: nasaz
 
 Všechna řešení pro správu popsaná v tématu [nástroje a služby pro správu Azure](./tools-services.md) vyžadují, aby byl agent Log Analytics nainstalovaný na virtuálních počítačích Azure a na místních serverech. Virtuální počítače Azure můžete připojit ke škálování pomocí Azure Policy. Přiřaďte zásady, abyste měli jistotu, že je agent nainstalovaný na všech vašich virtuálních počítačích Azure a připojený ke správnému pracovnímu prostoru Log Analytics.
 
-Azure Policy má předdefinovanou iniciativu [zásad](/azure/governance/policy/index#initiative-definition) , která zahrnuje agenta Log Analytics i [agenta Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), který je vyžadován Azure monitor pro virtuální počítače.
+Azure Policy má předdefinovanou [iniciativu zásad](/azure/governance/policy/concepts/definition-structure#initiatives) , která zahrnuje agenta Log Analytics i [agenta Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), který je vyžadován Azure monitor pro virtuální počítače.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -50,7 +50,7 @@ Chcete-li přiřadit zásady uvedené v předchozí části:
 
 2. Na stránce **přiřadit zásadu** vyberte **obor** kliknutím na tlačítko se třemi tečkami (...) a pak vyberte buď skupinu pro správu nebo předplatné. Volitelně můžete vybrat skupinu prostředků. Obor určuje, k jakým prostředkům nebo skupině prostředků je zásada přiřazena. Pak zvolte **Vybrat** v dolní části stránky **Rozsah** .
 
-3. Vyberte tři tečky (...) vedle **definice zásady** a otevřete seznam dostupných definic. Definici iniciativy můžete filtrovat zadáním **Azure monitor** do vyhledávacího pole :
+3. Vyberte tři tečky (...) vedle **definice zásady** a otevřete seznam dostupných definic. Definici iniciativy můžete filtrovat zadáním **Azure monitor** do **vyhledávacího** pole:
 
     ![Snímek obrazovky rozhraní zásad portálu](./media/onboarding-at-scale2.png)
 
@@ -71,7 +71,7 @@ Po dokončení průvodce se přiřazení zásady nasadí do prostředí. Aby se 
 > [!NOTE]
 > Před zprovozněním serverů do služby Azure Management Services vytvořte požadovaný [Log Analytics pracovní prostor a účet Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) .
 
-U místních serverů budete muset stáhnout a nainstalovat [agenta Log Analytics a Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ručně a nakonfigurovat ho tak, aby se připojil ke správnému pracovnímu prostoru. To uděláte tak, že zadáte ID a informace klíče pracovního prostoru, které najdete v Log Analytics pracovním prostoru v Azure Portal a výběr **Nastavení** > **Upřesnit nastavení**.
+U místních serverů budete muset stáhnout a nainstalovat [agenta Log Analytics a Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ručně a nakonfigurovat ho tak, aby se připojil ke správnému pracovnímu prostoru. To uděláte tak, že zadáte ID pracovního prostoru a informace o klíči, které najdete v pracovním prostoru Log Analytics v Azure Portal a výběr **nastavení** > **Upřesnit nastavení**.
 
 ![Snímek obrazovky s rozšířenými nastaveními Log Analytics pracovního prostoru v Azure Portal](./media/onboarding-on-premises.png)
 
@@ -95,7 +95,7 @@ V této části jsou uvedené následující řešení:
 
 Pro všechny servery doporučujeme povolit řešení Update Management. Pro virtuální počítače Azure a místní servery je Update Management zdarma. Pokud povolíte Update Management prostřednictvím svého účtu Automation, v pracovním prostoru se vytvoří [Konfigurace oboru](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) . Musíte ručně aktualizovat obor tak, aby zahrnoval počítače zahrnuté službou aktualizace.
 
-Chcete-li pokrýt všechny existující servery i budoucí servery, je nutné odebrat konfiguraci oboru. Provedete to tak, že v Azure Portal zobrazíte svůj účet Automation a**na všech dostupných a budoucích počítačích**vyberete **Update Management** > **Spravovat povolení počítače** > . Povolením tohoto nastavení umožníte, aby se všechny virtuální počítače Azure připojené k pracovnímu prostoru používaly Update Management.
+Chcete-li pokrýt všechny existující servery i budoucí servery, je nutné odebrat konfiguraci oboru. Provedete to tak, že v Azure Portal zobrazíte svůj účet Automation a vyberete **Update Management** > **spravovat počítač** > **Povolit na všech dostupných a budoucích počítačích**. Povolením tohoto nastavení umožníte, aby se všechny virtuální počítače Azure připojené k pracovnímu prostoru používaly Update Management.
 
 ![Snímek obrazovky Update Management Azure Portal](./media/onboarding-configuration1.png)
 
@@ -148,7 +148,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, použijte následující p
 
 Přidání tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa a řešení zásad správného řízení** > .
+1. V Azure Portal otevřete **všechny služby** a vyberte **správa +** řízení  > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Activity Log Analytics** a vyberte ji.
 4. Vyberte **Vytvořit**.
@@ -161,14 +161,14 @@ Bude nutné zadat **název pracovního** prostoru, který jste vytvořili v pře
 
 Přidání tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa a řešení zásad správného řízení** > .
+1. V Azure Portal otevřete **všechny služby** a vyberte **správa +** řízení  > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Stav agenta Azure Log Analytics** a vyberte ho.
 4. Vyberte **Vytvořit**.
 
 Bude nutné zadat **název pracovního** prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
-Po vytvoření se v případě, že vyberete možnost **Zobrazit** > **řešení**, zobrazí instance prostředku pracovního prostoru **AgentHealthAssessment** .
+Po vytvoření se v instanci prostředku pracovního prostoru zobrazí **AgentHealthAssessment** , když vyberete možnost **Zobrazit** **řešení** > .
 
 ### <a name="antimalware-assessment"></a>Posouzení antimalwaru
 
@@ -176,14 +176,14 @@ Po vytvoření se v případě, že vyberete možnost **Zobrazit** > **řešení
 
 Přidání tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa a řešení zásad správného řízení** > .
+1. V Azure Portal otevřete **všechny služby** a vyberte **správa +** řízení  > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **antimalware Assessment** a vyberte ji.
 4. Vyberte **Vytvořit**.
 
 Bude nutné zadat **název pracovního** prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
-Po vytvoření se v instanci prostředku pracovního prostoru po výběru **Zobrazit** > **řešení**zobrazí Antimalwarový program.
+Po vytvoření se v instanci prostředku pracovního prostoru zobrazí **antimalwarová** aplikace, když vyberete možnost **Zobrazit** **řešení** > .
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor pro virtuální počítače
 
