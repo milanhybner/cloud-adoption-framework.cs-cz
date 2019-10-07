@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224588"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967696"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
@@ -110,7 +110,7 @@ Tento přístup je založený na kvantifikovatelných informacích. Z tohoto dů
 Pokud rozsah migrace zahrnuje více oblastí, měl by tým přechodu na cloud vyhodnotit následující aspekty připravenosti:
 
 - Suverenita dat může vyžadovat lokalizaci některých prostředků, může však existovat mnoho prostředků, které se nemusí řídit těmito omezeními souvisejícími s dodržováním předpisů. Aktivity, jako je protokolování, generování sestav, směrování sítě, identita a další centrální IT služby, můžou mít oprávnění být hostované jako sdílené služby v rámci více předplatných nebo dokonce i více oblastí. Doporučujeme, aby tým pro přechod do cloudu vyhodnotil u těchto služeb model sdílených služeb, jak je uvedeno v [referenční architektuře hvězdicové topologie se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services).
-- Při nasazování více instancí podobných prostředí by mohl objekt pro vytváření prostředí zajistit konzistenci, zlepšit zásady správného řízení a urychlit nasazení. [Cesta k zásadám správného řízení pro velké firmy](../../govern/guides/complex/index.md) zavádí přístup pro vytvoření prostředí, které se škáluje v rámci více oblastí.
+- Při nasazování více instancí podobných prostředí by mohl objekt pro vytváření prostředí zajistit konzistenci, zlepšit zásady správného řízení a urychlit nasazení. [Průvodce zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/index.md) zavádí přístup pro vytvoření prostředí, které se škáluje v rámci více oblastí.
 
 Jakmile tým stanoví vyhovující základní přístup a je k dispozici odpovídající připravenost, je třeba zvážit několik předpokladů řízených daty:
 

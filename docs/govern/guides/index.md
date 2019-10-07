@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025987"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967610"
 ---
 # <a name="cloud-governance-guides"></a>Průvodci zásadami správného řízení v cloudu
 
@@ -76,27 +76,27 @@ Pokud chcete zahájit cestu k zásadám správného řízení v cloudu, zvolte s
 
 ### <a name="business-characteristics"></a>Obchodní charakteristika
 
-| Charakteristika | Standardní organizace                                                                              | Komplexní firma                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Geografická oblast (země nebo geopolitická oblast) | Zákazníci nebo zaměstnanci sídlí převážně v jedné geografické oblasti.                                                      | Zákazníci nebo zaměstnanci sídlí v několika geografických oblastech nebo vyžadují suverénní cloudy.                                                             |
-| Dotčené obchodní jednotky                    | Obchodní jednotky, které sdílejí společnou infrastrukturu IT                                                                                    | Několik obchodních jednotek, které nesdílejí společnou infrastrukturu IT                                                                                        |
-| Rozpočet pro IT                                  | Jeden rozpočet                                                                                        | Rozpočet přidělený napříč obchodními jednotkami a měnami                                                                         |
-| Investice do IT                             | Investiční náklady se plánují pro jednotlivé roky a zpravidla zahrnují jenom základní údržbu. | Investiční náklady se plánují pro jednotlivé roky a zpravidla zahrnují údržbu a cyklus obnovení během tří až pěti let. |
+| Charakteristika | Standardní organizace | Komplexní firma |
+|---|---|---|
+| Geografická oblast (země nebo geopolitická oblast) | Zákazníci nebo zaměstnanci sídlí převážně v jedné geografické oblasti. | Zákazníci nebo zaměstnanci sídlí v několika geografických oblastech nebo vyžadují suverénní cloudy. |
+| Dotčené obchodní jednotky | Obchodní jednotky, které sdílejí společnou infrastrukturu IT | Několik obchodních jednotek, které nesdílejí společnou infrastrukturu IT |
+| Rozpočet pro IT | Jeden rozpočet | Rozpočet přidělený napříč obchodními jednotkami a měnami |
+| Investice do IT | Investiční náklady se plánují pro jednotlivé roky a zpravidla zahrnují jenom základní údržbu. | Investiční náklady se plánují pro jednotlivé roky a zpravidla zahrnují údržbu a cyklus obnovení během tří až pěti let. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>Aktuální stav před přijetím zásad správného řízení v cloudu
 
-| Stav | Standardní firma                                                                               | Komplexní firma                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Datové centrum nebo poskytovatelé hostingových služeb třetích stran | Méně než pět datových center                                                                                  | Více než pět datových center                                                                                                   |
-| Sítě                                  | Bez sítě WAN nebo 1 až 2 poskytovatelé WAN                                                                             | Složitá síť nebo globální síť WAN                                                                                             |
-| Identita                                    | Jedna doménová struktura, jedna doména. | Komplexní, několik doménových struktur, několik domén.  |
+| Stav | Standardní firma | Komplexní firma |
+|---|---|---|
+| Datové centrum nebo poskytovatelé hostingových služeb třetích stran | Méně než pět datových center | Více než pět datových center |
+| Sítě | Bez sítě WAN nebo 1 až 2 poskytovatelé WAN | Složitá síť nebo globální síť WAN |
+| Identita | Jedna doménová struktura, jedna doména. | Komplexní, několik doménových struktur, několik domén. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Požadovaný budoucí stav po postupné vylepšování zásad správného řízení cloudu
 
-| Stav | Standardní organizace                                                                        | Komplexní firma                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Správa nákladů – účtování cloudu           | Model showback. Fakturace je centralizovaná prostřednictvím IT.                                                | Model chargeback. Fakturace se dá distribuovat prostřednictvím zajišťování IT.                                  |
-| Standardní hodnoty zabezpečení – chráněná data           | IP adresy a finanční data společnosti. Omezená zákaznická data. Bez požadavků na dodržování předpisů třetích stran.     | Více kolekcí finančních a osobních dat zákazníků. Může být potřeba brát v úvahu dodržování předpisů třetích stran. |
+| Stav | Standardní organizace | Komplexní firma |
+|---|---|---|
+| Správa nákladů – účtování cloudu | Model showback. Fakturace je centralizovaná prostřednictvím IT. | Model chargeback. Fakturace se dá distribuovat prostřednictvím zajišťování IT. |
+| Standardní hodnoty zabezpečení – chráněná data | IP adresy a finanční data společnosti. Omezená zákaznická data. Bez požadavků na dodržování předpisů třetích stran. | Více kolekcí finančních a osobních dat zákazníků. Může být potřeba brát v úvahu dodržování předpisů třetích stran. |
 
 ## <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 
@@ -124,6 +124,6 @@ Další informace najdete na webu Architektura přechodu na cloud v části [Vir
 Zvolte jednoho z těchto průvodců:
 
 > [!div class="nextstepaction"]
-> [Standardní průvodce zásadami správného řízení](./standard/index.md)
+> [Průvodce zásadami správného řízení pro standardní firmy](./standard/index.md)
 >
 > [Průvodce zásadami správného řízení pro komplexní firmy](./complex/index.md)
