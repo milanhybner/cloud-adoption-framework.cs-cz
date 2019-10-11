@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024811"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967214"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
@@ -71,7 +71,7 @@ Výsledný odhad, jehož příklad je uvedený níže, identifikuje měsíční 
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Nastavení a kontrola posouzení pomocí Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).
+- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [vylepšování služby Cost Management v průvodci zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Odhad a optimalizace nákladů na virtuální počítače během migrace a po ní](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Tato analýza vám umožní zkontrolovat celkové náklady, rozpočet (pokud je 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [postupného vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).
+- Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [postupné vylepšování služby Cost Management v průvodci zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/cost-management-improvement.md).
 - Další informace o službě Azure Advisor najdete v článku o [snížení nákladů na služby pomocí Azure Advisoru](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Další informace o službě Azure Cost Management najdete v článcích o [principech oborů a práci s nimi](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) a o [prozkoumání a analýze nákladů pomocí analýzy nákladů](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
@@ -142,4 +142,4 @@ Pro procesy běžící na pozadí s nižší prioritou nabízí služba Batch mo
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [zásad správného řízení při postupném vylepšování služby Cost Management ve velkém podniku](../../govern/guides/complex/cost-management-improvement.md).
+Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [postupné vylepšování služby Cost Management v průvodci zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/cost-management-improvement.md).
