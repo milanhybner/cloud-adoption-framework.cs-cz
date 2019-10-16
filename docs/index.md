@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024440"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377940"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
 
@@ -159,7 +159,7 @@ Architektura přechodu na cloud se v současné době nabízí ve verzi Public P
 - [Migrace do cloudu](./migrate/index.md)
 - [Zásady správného řízení cloudu](./govern/guides/index.md)
 
-S blížící se obecnou dostupností budeme architekturu přechodu na cloud často rozšiřovat. V rámci tohoto rozšiřování doplníme podrobnosti v jednotlivých oddílech a přidáme i nový obsah. Další informace najdete v [plánu vývoje architektury přechodu na cloud](./reference/roadmap.md).
+S blížící se obecnou dostupností budeme architekturu přechodu na cloud často rozšiřovat. V rámci tohoto rozšiřování doplníme podrobnosti v jednotlivých oddílech a přidáme i nový obsah. Další informace najdete v [plánu vývoje architektury přechodu na cloud](./reference/index.md).
 
 ## <a name="intent"></a>Záměr
 

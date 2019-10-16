@@ -92,24 +92,24 @@
       items:
         - name: Přehled
           href: ready/index.md
-        - name: Průvodce připraveností pro Azure
+        - name: Průvodce nastavením Azure
           items:
             - name: Než začnete
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: Uspořádání prostředků
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: Správa přístupu
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: Správa nákladů a fakturace
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 'Plánování zásad správného řízení, zabezpečení a dodržování předpisů'
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: Používání monitorování a generování sestav
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: Udržování aktuálního stavu s Azure
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: Nasazení cílové zóny migrace
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: Aspekty cílové zóny
           items:
             - name: Přehled
@@ -404,196 +404,196 @@
           items:
             - name: Přehled
               href: innovate/index.md
+    - name: Řízení
+      items:
+        - name: Přehled
+          href: govern/index.md
+        - name: Metodologie
+          href: govern/methodology.md
+        - name: Srovnávací test
+          href: govern/benchmark.md
+        - name: Základ počátečních zásad správného řízení
+          href: govern/initial-foundation.md
+        - name: Vylepšení základních zásad správného řízení
+          href: govern/foundation-improvements.md
+        - name: Průvodci zásadami správného řízení
+          items:
+            - name: Přehled
+              href: govern/guides/index.md
+            - name: Průvodce zásadami správného řízení pro standardní firmy
+              items:
+                - name: Přehled
+                  href: govern/guides/standard/index.md
+                - name: Vyprávění
+                  href: govern/guides/standard/narrative.md
+                - name: Výchozí firemní zásady
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: Podrobné pokyny
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: Vylepšení disciplíny standardních hodnot zabezpečení
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: Vylepšení disciplíny konzistence prostředků
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: Vylepšení disciplíny správy nákladů
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: Scénáře s více cloudy
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: Průvodce zásadami správného řízení pro komplexní firmy
+              items:
+                - name: Přehled
+                  href: govern/guides/complex/index.md
+                - name: Vyprávění
+                  href: govern/guides/complex/narrative.md
+                - name: Výchozí firemní zásady
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: Podrobné pokyny
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: Vylepšení disciplíny standardních hodnot identit
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: Vylepšení disciplíny standardních hodnot zabezpečení
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: Vylepšení disciplíny konzistence prostředků
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: Vylepšení disciplíny správy nákladů
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: Scénáře s více cloudy
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: Několik vrstev zásad správného řízení
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: Požadavky na zásady správného řízení
+          items:
+            - name: Vyhodnocení firemních zásad
+              href: govern/corporate-policy.md
+            - name: Firemní zásady a dodržování předpisů připravené pro cloud
+              items:
+                - name: Zajištění připravenosti firemních zásad pro cloud
+                  href: govern/policy-compliance/index.md
+                - name: Principy obchodních rizik
+                  href: govern/policy-compliance/business-risk.md
+                - name: Vyhodnocení tolerance rizik
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: Definování firemních zásad
+                  href: govern/policy-compliance/policy-definition.md
+                - name: Souvislost návrhu a zásad
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: Ustanovení procesů dodržování zásad
+                  href: govern/policy-compliance/processes.md
+                - name: Dodržování legislativní předpisů
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: Připravenost zabezpečení cloudu
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: Kontrola zásad v cloudu
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: Klasifikace dat
+                  href: govern/policy-compliance/data-classification.md
+        - name: Disciplíny zásad správného řízení v cloudu
+          href: govern/governance-disciplines.md
+        - name: Implementace disciplín zásad správného řízení v cloudu
+          items:
+            - name: Správa nákladů
+              items:
+                - name: Přehled správy nákladů
+                  href: govern/cost-management/index.md
+                - name: Stažení šablony
+                  href: govern/cost-management/template.md
+                - name: Principy obchodních rizik
+                  href: govern/cost-management/business-risks.md
+                - name: Indikátory a metriky tolerance rizik
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: Ukázkové zásady správy nákladů
+                  href: govern/cost-management/policy-statements.md
+                - name: Procesy dodržování zásad
+                  href: govern/cost-management/compliance-processes.md
+                - name: Vylepšení správy nákladů
+                  href: govern/cost-management/discipline-improvement.md
+                - name: Nástroje Azure pro správu nákladů
+                  href: govern/cost-management/toolchain.md
+            - name: Standardní hodnoty zabezpečení
+              items:
+                - name: Přehled standardních hodnot zabezpečení
+                  href: govern/security-baseline/index.md
+                - name: Stažení šablony
+                  href: govern/security-baseline/template.md
+                - name: Principy obchodních rizik
+                  href: govern/security-baseline/business-risks.md
+                - name: Indikátory a metriky tolerance rizik
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: Ukázkové zásady standardních hodnot zabezpečení
+                  href: govern/security-baseline/policy-statements.md
+                - name: Procesy dodržování zásad
+                  href: govern/security-baseline/compliance-processes.md
+                - name: Vylepšení standardních hodnot zabezpečení
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: Standardní hodnoty zabezpečení nativní pro cloud
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: Další pokyny pro zabezpečení Azure
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: Nástroje Azure pro standardní hodnoty zabezpečení
+                  href: govern/security-baseline/toolchain.md
+            - name: Standardní hodnoty identit
+              items:
+                - name: Přehled standardních hodnot identit
+                  href: govern/identity-baseline/index.md
+                - name: Stažení šablony
+                  href: govern/identity-baseline/template.md
+                - name: Principy obchodních rizik
+                  href: govern/identity-baseline/business-risks.md
+                - name: Indikátory a metriky tolerance rizik
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: Ukázkové zásady standardních hodnot identit
+                  href: govern/identity-baseline/policy-statements.md
+                - name: Procesy dodržování zásad
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: Vylepšení standardních hodnot identit
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: Nástroje Azure pro standardní hodnoty identit
+                  href: govern/identity-baseline/toolchain.md
+            - name: Konzistence prostředků
+              items:
+                - name: Přehled konzistence prostředků
+                  href: govern/resource-consistency/index.md
+                - name: Stažení šablony
+                  href: govern/resource-consistency/template.md
+                - name: Principy obchodních rizik
+                  href: govern/resource-consistency/business-risks.md
+                - name: Indikátory a metriky tolerance rizik
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: Ukázkové zásady konzistence prostředků
+                  href: govern/resource-consistency/policy-statements.md
+                - name: Procesy dodržování zásad
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: Vylepšení konzistence prostředků
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: Nástroje Azure pro konzistenci prostředků
+                  href: govern/resource-consistency/toolchain.md
+                - name: Správa přístupu k prostředkům
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: Návrh zásad správného řízení pro jednoduchou úlohu
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: Návrh zásad správného řízení pro několik týmů
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: Zrychlení nasazení
+              items:
+                - name: Přehled zrychlení nasazení
+                  href: govern/deployment-acceleration/index.md
+                - name: Stažení šablony
+                  href: govern/deployment-acceleration/template.md
+                - name: Principy obchodních rizik
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: Indikátory a metriky tolerance rizik
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: Ukázkové zásady zrychlení nasazení
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: Procesy dodržování zásad
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: Vylepšení zrychlení nasazení
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: Nástroje Azure pro zrychlení nasazení
+                  href: govern/deployment-acceleration/toolchain.md
     - name: Provoz
       items:
         - name: Přehled
           href: operate/index.md
-        - name: Řízení
-          items:
-            - name: Přehled
-              href: govern/index.md
-            - name: Metodologie
-              href: govern/methodology.md
-            - name: Srovnávací test
-              href: govern/benchmark.md
-            - name: Základ počátečních zásad správného řízení
-              href: govern/initial-foundation.md
-            - name: Vylepšení základních zásad správného řízení
-              href: govern/foundation-improvements.md
-            - name: Průvodci zásadami správného řízení
-              items:
-                - name: Přehled
-                  href: govern/guides/index.md
-                - name: Průvodce zásadami správného řízení pro standardní firmy
-                  items:
-                    - name: Přehled
-                      href: govern/guides/standard/index.md
-                    - name: Vyprávění
-                      href: govern/guides/standard/narrative.md
-                    - name: Výchozí firemní zásady
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: Podrobné pokyny
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: Vylepšení disciplíny standardních hodnot zabezpečení
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: Vylepšení disciplíny konzistence prostředků
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: Vylepšení disciplíny správy nákladů
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: Scénáře s více cloudy
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: Průvodce zásadami správného řízení pro komplexní firmy
-                  items:
-                    - name: Přehled
-                      href: govern/guides/complex/index.md
-                    - name: Vyprávění
-                      href: govern/guides/complex/narrative.md
-                    - name: Výchozí firemní zásady
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: Podrobné pokyny
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: Vylepšení disciplíny standardních hodnot identit
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: Vylepšení disciplíny standardních hodnot zabezpečení
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: Vylepšení disciplíny konzistence prostředků
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: Vylepšení disciplíny správy nákladů
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: Scénáře s více cloudy
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: Několik vrstev zásad správného řízení
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: Požadavky na zásady správného řízení
-              items:
-                - name: Vyhodnocení firemních zásad
-                  href: govern/corporate-policy.md
-                - name: Firemní zásady a dodržování předpisů připravené pro cloud
-                  items:
-                    - name: Zajištění připravenosti firemních zásad pro cloud
-                      href: govern/policy-compliance/index.md
-                    - name: Principy obchodních rizik
-                      href: govern/policy-compliance/business-risk.md
-                    - name: Vyhodnocení tolerance rizik
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: Definování firemních zásad
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: Souvislost návrhu a zásad
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: Ustanovení procesů dodržování zásad
-                      href: govern/policy-compliance/processes.md
-                    - name: Dodržování legislativní předpisů
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: Připravenost zabezpečení cloudu
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: Kontrola zásad v cloudu
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: Klasifikace dat
-                      href: govern/policy-compliance/data-classification.md
-                - name: Disciplíny zásad správného řízení v cloudu
-                  href: govern/governance-disciplines.md
-                - name: Implementace disciplín zásad správného řízení v cloudu
-                  items:
-                    - name: Správa nákladů
-                      items:
-                        - name: Přehled správy nákladů
-                          href: govern/cost-management/index.md
-                        - name: Stažení šablony
-                          href: govern/cost-management/template.md
-                        - name: Principy obchodních rizik
-                          href: govern/cost-management/business-risks.md
-                        - name: Indikátory a metriky tolerance rizik
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: Ukázkové zásady správy nákladů
-                          href: govern/cost-management/policy-statements.md
-                        - name: Procesy dodržování zásad
-                          href: govern/cost-management/compliance-processes.md
-                        - name: Vylepšení správy nákladů
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: Nástroje Azure pro správu nákladů
-                          href: govern/cost-management/toolchain.md
-                    - name: Standardní hodnoty zabezpečení
-                      items:
-                        - name: Přehled standardních hodnot zabezpečení
-                          href: govern/security-baseline/index.md
-                        - name: Stažení šablony
-                          href: govern/security-baseline/template.md
-                        - name: Principy obchodních rizik
-                          href: govern/security-baseline/business-risks.md
-                        - name: Indikátory a metriky tolerance rizik
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: Ukázkové zásady standardních hodnot zabezpečení
-                          href: govern/security-baseline/policy-statements.md
-                        - name: Procesy dodržování zásad
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: Vylepšení standardních hodnot zabezpečení
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: Standardní hodnoty zabezpečení nativní pro cloud
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: Další pokyny pro zabezpečení Azure
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: Nástroje Azure pro standardní hodnoty zabezpečení
-                          href: govern/security-baseline/toolchain.md
-                    - name: Standardní hodnoty identit
-                      items:
-                        - name: Přehled standardních hodnot identit
-                          href: govern/identity-baseline/index.md
-                        - name: Stažení šablony
-                          href: govern/identity-baseline/template.md
-                        - name: Principy obchodních rizik
-                          href: govern/identity-baseline/business-risks.md
-                        - name: Indikátory a metriky tolerance rizik
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: Ukázkové zásady standardních hodnot identit
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: Procesy dodržování zásad
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: Vylepšení standardních hodnot identit
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: Nástroje Azure pro standardní hodnoty identit
-                          href: govern/identity-baseline/toolchain.md
-                    - name: Konzistence prostředků
-                      items:
-                        - name: Přehled konzistence prostředků
-                          href: govern/resource-consistency/index.md
-                        - name: Stažení šablony
-                          href: govern/resource-consistency/template.md
-                        - name: Principy obchodních rizik
-                          href: govern/resource-consistency/business-risks.md
-                        - name: Indikátory a metriky tolerance rizik
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: Ukázkové zásady konzistence prostředků
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: Procesy dodržování zásad
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: Vylepšení konzistence prostředků
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: Nástroje Azure pro konzistenci prostředků
-                          href: govern/resource-consistency/toolchain.md
-                        - name: Správa přístupu k prostředkům
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: Návrh zásad správného řízení pro jednoduchou úlohu
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: Návrh zásad správného řízení pro několik týmů
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: Zrychlení nasazení
-                      items:
-                        - name: Přehled zrychlení nasazení
-                          href: govern/deployment-acceleration/index.md
-                        - name: Stažení šablony
-                          href: govern/deployment-acceleration/template.md
-                        - name: Principy obchodních rizik
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: Indikátory a metriky tolerance rizik
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: Ukázkové zásady zrychlení nasazení
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: Procesy dodržování zásad
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: Vylepšení zrychlení nasazení
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: Nástroje Azure pro zrychlení nasazení
-                          href: govern/deployment-acceleration/toolchain.md
         - name: Uspořádání
           items:
             - name: Správa stavu organizace
@@ -681,7 +681,7 @@
     - name: Referenční informace
       items:
         - name: Plán architektury přechodu na cloud
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: Průvodci rozhodováním
           items:
             - name: Přehled

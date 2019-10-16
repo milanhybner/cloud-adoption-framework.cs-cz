@@ -2,19 +2,19 @@
 title: Průvodce rozhodováním ohledně pojmenování a označování prostředků
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s organizací a označováním prostředků jako základní službou při migraci do Azure.
-author: rotycenh
-ms.author: v-tyhopk
+author: alexbuckgit
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023656"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378020"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Průvodce rozhodováním ohledně pojmenování a označování prostředků
 
@@ -40,7 +40,7 @@ Schémata označování, mezi která patří zaměření sladěné s obchodní �
 
 Standardizované zásady vytváření názvů představují výchozí bod při organizaci prostředků hostovaných v cloudu. Vhodně strukturovaný systém vytváření názvů vám umožní rychle identifikovat prostředky pro účely správy i účetnictví. Pokud v jiných částech organizace již existují zásady vytváření názvů pro IT, zvažte, jestli by se jim měly vaše zásady vytváření názvů v cloudu přizpůsobit, nebo jestli byste měli zavést nové cloudové standardy.
 
-Mějte také na paměti, že různé typy prostředků Azure mají rozdílné [požadavky na pojmenování](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions). Vaše zásady vytváření názvů musí s těmito požadavky na pojmenování být kompatibilní.
+Mějte také na paměti, že různé typy prostředků Azure mají rozdílné [požadavky na pojmenování](../../ready/considerations/naming-and-tagging.md). Vaše zásady vytváření názvů musí s těmito požadavky na pojmenování být kompatibilní.
 
 ## <a name="resource-tagging-patterns"></a>Vzory označování prostředků
 
