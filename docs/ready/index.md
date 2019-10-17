@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816155"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378338"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Následující cvičení vás provedou procesem vytvoření cílové zóny pro p
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Následující cvičení vás provedou procesem vytvoření cílové zóny pro p
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Průvodce připraveností pro Azure</h3>
-Přečtěte si Průvodce připraveností pro Azure a seznamte se s nástroji a přístupy, které budete potřebovat při vytváření cílové zóny.
+                            <h3>Průvodce nastavením Azure</h3>
+Přečtěte si Průvodce nastavením Azure a seznamte se s nástroji a přístupy, které budete potřebovat při vytváření cílové zóny.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Přečtěte si Průvodce připraveností pro Azure a seznamte se s nástroji a p
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Ověřte úpravy cílové zóny proti oddílům osvědčených postupů, abyste 
 
 ## <a name="next-steps"></a>Další kroky
 
-Připravte se na přechod na cloud a projděte si [Průvodce připraveností pro Azure](./azure-readiness-guide/index.md).
+Připravte se na přechod na cloud a projděte si [Průvodce nastavením Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Průvodce připraveností pro Azure](./azure-readiness-guide/index.md)
+> [Průvodce nastavením Azure](./azure-setup-guide/index.md)

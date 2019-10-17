@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022619"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378395"
 ---
 # <a name="prerequisites-for-migration"></a>Požadavky na migraci
 
@@ -60,7 +60,7 @@ Kromě odpovědnosti na nejvyšší úrovni existují akce, za které musí nés
 - **Připravenost na správu změn:** Stanovení a komunikace plánu sledování technických změn během migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
 - **Sladění s podnikovými uživateli:** Stanovení plánu přípravy komunity podnikových uživatelů na provedení migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
 - **Inventura a analýza digitálních aktiv:** Spuštění nástrojů potřebných k inventuře a analýze digitálních aktiv. Další informace najdete v popisu [digitálních aktiv](../../../digital-estate/index.md) v architektuře přechodu na cloud.
-- **Připravenost na cloud:** Posouzení cílového prostředí pro nasazení, aby se zajistilo, že splňuje požadavky prvních několika kandidátských úloh. Další informace najdete v [průvodci zajištěním připravenosti pro Azure](../../../ready/azure-readiness-guide/index.md).
+- **Připravenost na cloud:** Posouzení cílového prostředí pro nasazení, aby se zajistilo, že splňuje požadavky prvních několika kandidátských úloh. Další informace najdete v [průvodci nastavením Azure](../../../ready/azure-setup-guide/index.md).
 
 S těmito povinnostmi vám pomůžou zbývající články v této sérii.
 

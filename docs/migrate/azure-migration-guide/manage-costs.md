@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967214"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378416"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
@@ -91,7 +91,7 @@ Doporučení k nákladům pro prostředky (infrastrukturu, aplikace a data) v r�
 
 Služba Azure Cost Management dokáže poskytnout komplexnější pohled na vzory nákladů, včetně podrobného zobrazení nákladů a jejich trendů v průběhu času. V případě rozsáhlých nebo složitých migrací může toto zobrazení poskytnout přehledné informace potřebné k rozhodování o správě a snižování nákladů v širším měřítku.
 
-Požadavky: Zbývající část této karty předpokládá, že jste během dokončování průvodce připraveností pro Azure dokončili nastavení služby Azure Cost Management. Další podrobnosti o konfiguraci služby Azure Cost Management najdete v tomto [článku v průvodci připraveností pro Azure](../../ready/azure-readiness-guide/manage-costs.md). Jakmile jsou data k dispozici, můžete na jejich základě podle následujících kroků odhadovat měsíční náklady.
+Požadavky: Zbývající část této karty předpokládá, že jste během dokončování průvodce nastavením Azure dokončili nastavení služby Azure Cost Management. Další podrobnosti o konfiguraci služby Azure Cost Management najdete v tomto [článku v průvodci nastavením Azure](../../ready/azure-setup-guide/manage-costs.md). Jakmile jsou data k dispozici, můžete na jejich základě podle následujících kroků odhadovat měsíční náklady.
 
 Data analýzy nákladů služby Azure Cost Management můžete pro svá předplatná načíst takto:
 
