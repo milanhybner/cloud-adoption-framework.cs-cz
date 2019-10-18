@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221108"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547880"
 ---
 # <a name="resource-consistency-decision-guide"></a>Průvodce rozhodováním ohledně konzistence prostředků
 
@@ -47,7 +47,7 @@ Pokud jste na libovolnou z výš uvedených otázek odpověděli _NE_, příslu�
 
 Platforma Azure využívá základní mechanismus seskupování prostředků a poskytuje systém umožňující nasazovat prostředky do cloudového prostředí pomocí šablon. Pomocí šablon můžete vytvářet konzistentní zásady organizace a vytváření názvů při nasazování úloh a vynucovat aspekty vašeho návrhu nasazování a správy prostředků.
 
-[Šablony Azure Resource Manageru](/azure/azure-resource-manager/template-deployment-overview) umožňují opakovaně nasazovat prostředky v konzistentním stavu s využitím předem stanovené konfigurace a struktury skupin prostředků. Šablony Resource Manageru pomáhají definovat sadu standardů, které představují základ vašich nasazení.
+[Šablony Azure Resource Manageru](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) umožňují opakovaně nasazovat prostředky v konzistentním stavu s využitím předem stanovené konfigurace a struktury skupin prostředků. Šablony Resource Manageru pomáhají definovat sadu standardů, které představují základ vašich nasazení.
 
 Například můžete mít standardní šablonu pro nasazení úlohy webového serveru, která obsahuje dva virtuální počítače jako webové servery v kombinaci s nástrojem pro vyrovnávání zatížení pro distribuci provozu mezi těmito servery. Tuto šablonu pak můžete opakovaně používat k vytvoření sady virtuálních počítačů a nástroje pro vyrovnávání zatížení s identickou strukturou, kdykoli se bude tento typ úlohy vyžadovat, a bude vám stačit jenom změnit příslušný název nasazení a IP adresu.
 
