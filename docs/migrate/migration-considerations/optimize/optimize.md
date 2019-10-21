@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022646"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548419"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Srovnávací testování a změna velikosti cloudových prostředků
 
@@ -30,7 +30,7 @@ V cloudu účetní a zřizovací modely eliminují časová zpoždění, která 
 Kdy by měla být aktiva optimalizovaná – během migrace, nebo po ní? Jednoduchá odpověď je *v obou případech*. Ale to není úplně přesné. Pro vysvětlení se podívejte na dva základní scénáře optimalizace velikosti prostředků:
 
 - **Plánovaná změna velikosti.** V průběhu nasazování je často aktivum příliš velké a nedostatečně využité a měla by se změnit jeho velikost. Určení, jestli se v takovém případě velikost aktiva úspěšně změnila, vyžaduje uživatelské akceptační testování po migraci. Pokud v průběhu testování zkušení uživatelé neobjeví ztráty výkonu nebo funkčnosti, můžete z toho vyvodit, že velikost aktiva je nastavená úspěšně.
-- **Optimalizace.** V případech, kdy je nutnost optimalizace nejasná, by IT týmy měly k řízení velikosti prostředků používat přístup řízený daty. Pomocí srovnávacích testů výkonu aktiva může IT tým dělat kvalifikovaná rozhodnutí týkající se nejvhodnější velikosti, služeb, škálování a architektury řešení. Můžou pak měnit velikost a testovat výkon jednotlivých teorií po migraci.
+- **Optimalizace.** V případech, kdy je nutnost optimalizace nejasná, by IT týmy měly k řízení velikosti prostředků používat přístup řízený daty. Pomocí srovnávacích testů výkonu prostředků může IT tým dělat kvalifikovaná rozhodnutí týkající se nejvhodnější velikosti, služeb, škálování a architektury řešení. Můžou pak měnit velikost a testovat výkon jednotlivých teorií po migraci.
 
 Během migrace používejte kvalifikované odhady a s určením velikosti experimentujte. Opravdová optimalizace prostředků ale vyžaduje data na základě skutečného výkonu v cloudovém prostředí. Aby mohlo dojít k opravdové optimalizaci, musí nejdřív IT tým implementovat přístupy k monitorování výkonu a využití prostředků.
 
