@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378395"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683781"
 ---
 # <a name="prerequisites-for-migration"></a>Požadavky na migraci
 
@@ -57,8 +57,8 @@ Za splnění každé ze tří definic dokončení uvedených v předchozí čás
 Kromě odpovědnosti na nejvyšší úrovni existují akce, za které musí nést přímou odpovědnost určitý jednotlivec nebo skupina. Následuje několik takových povinností, které tyto aktivity ovlivňují:
 
 - **Stanovení obchodních priorit:** Přijetí obchodních rozhodnutí týkajících se úloh, které se mají migrovat, a obecných časových omezení. Další informace najdete v tématu [Motivace firem k migraci do cloudu](../../../strategy/motivations.md).
-- **Připravenost na správu změn:** Stanovení a komunikace plánu sledování technických změn během migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
-- **Sladění s podnikovými uživateli:** Stanovení plánu přípravy komunity podnikových uživatelů na provedení migrace. Další informace k tomuto tématu budou k dispozici ve 3. čtvrtletí 2019.
+- **Připravenost na správu změn:** Stanovení a komunikace plánu sledování technických změn během migrace.
+- **Sladění s podnikovými uživateli:** Stanovení plánu přípravy komunity podnikových uživatelů na provedení migrace.
 - **Inventura a analýza digitálních aktiv:** Spuštění nástrojů potřebných k inventuře a analýze digitálních aktiv. Další informace najdete v popisu [digitálních aktiv](../../../digital-estate/index.md) v architektuře přechodu na cloud.
 - **Připravenost na cloud:** Posouzení cílového prostředí pro nasazení, aby se zajistilo, že splňuje požadavky prvních několika kandidátských úloh. Další informace najdete v [průvodci nastavením Azure](../../../ready/azure-setup-guide/index.md).
 
