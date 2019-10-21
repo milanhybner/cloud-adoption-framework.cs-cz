@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 208bab0093d8add065a8c8f5ad2b92d9ff012fe8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029553"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378044"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Příklady implementace uživatelského rozhraní Azure Enterprise
 
 > [!NOTE]
-> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu připraveném [](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-readiness-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
+> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
 
 Tento článek popisuje příklady, jak může podnik implementovat doporučení pro [generování uživatelského rozhraní Azure Enterprise](./azure-scaffold.md). Používá fiktivní společnost s názvem contoso k ilustraci osvědčených postupů pro běžné scénáře.
 
@@ -45,13 +45,13 @@ Společnost Contoso vytváří systém správy zdrojového kódu (BitBucket), kt
 
 Dave vytvoří předplatné pro podporu vývojářských nástrojů, které jsou společné napříč všemi obchodními jednotkami. Dave musí vytvořit smysluplné názvy pro předplatné a skupiny prostředků (pro aplikaci a sítě). Vytvoří následující předplatné a skupiny prostředků:
 
-| Položka | Name | Popis |
+| Položka | Name (Název) | Popis |
 | --- | --- | --- |
-| Subscription |Contoso ETS DeveloperTools – výroba |Podporuje běžné vývojářské nástroje |
-| Resource group |Bitbucket-prod-RG |Obsahuje aplikační webový server a databázový server. |
-| Resource group |corenetworks-prod-rg |Obsahuje virtuální sítě a připojení brány mezi lokalitami. |
+| Předplatné |Contoso ETS DeveloperTools – výroba |Podporuje běžné vývojářské nástroje |
+| Skupina prostředků |Bitbucket-prod-RG |Obsahuje aplikační webový server a databázový server. |
+| Skupina prostředků |corenetworks-prod-RG |Obsahuje virtuální sítě a připojení brány mezi lokalitami. |
 
-### <a name="role-based-access-control"></a>Řízení přístupu na základě role
+### <a name="role-based-access-control"></a>Řízení přístupu založené na rolích
 
 Po vytvoření předplatného Dave chce zajistit, aby příslušné týmy a vlastníci aplikací měli přístup k jejich prostředkům. Dave rozpozná, že každý tým má jiné požadavky. Pomocí skupin synchronizovaných z místní služby Active Directory společnosti Contoso Azure Active Directory a poskytuje správnou úroveň přístupu k týmům.
 
@@ -76,11 +76,11 @@ Pomocí [Azure Policy](https://docs.microsoft.com/azure/azure-policy/azure-polic
 
 | Pole | Efekt | Popis |
 | --- | --- | --- |
-| location |Ověřen |Audit vytváření prostředků v libovolné oblasti |
+| location |ověřen |Audit vytváření prostředků v libovolné oblasti |
 | type |odmítnout |Odepřít vytváření virtuálních počítačů řady G-series |
-| značky |odmítnout |Vyžadovat značku vlastníka aplikace |
-| značky |odmítnout |Vyžadovat značku nákladového střediska |
-| značky |Příloh |Připojí název značky **BusinessUnit** a hodnotu značky **ETS** všem prostředkům. |
+| tags |odmítnout |Vyžadovat značku vlastníka aplikace |
+| tags |odmítnout |Vyžadovat značku nákladového střediska |
+| tags |příloh |Připojí název značky **BusinessUnit** a hodnotu značky **ETS** všem prostředkům. |
 
 ### <a name="resource-tags"></a>Značky prostředků
 
@@ -91,7 +91,7 @@ Přidá následující [značky](https://docs.microsoft.com/azure/azure-resource
 | Název značky | Hodnota značky |
 | --- | --- |
 | ApplicationOwner |Jméno osoby, která spravuje tuto aplikaci |
-| Nákladové středisko |Nákladové středisko skupiny placené za využití Azure |
+| CostCenter |Nákladové středisko skupiny placené za využití Azure |
 | BusinessUnit |**ETS** (obchodní jednotka přidružená k předplatnému) |
 
 ### <a name="core-network"></a>Základní síť
@@ -100,11 +100,11 @@ Tým společnosti Contoso ETS Information Security and rizik Management kontrolu
 
 Vytvoří následující prostředky:
 
-| Typ prostředku | Name | Popis |
+| Typ prostředku | Name (Název) | Popis |
 | --- | --- | --- |
-| Virtuální sítě |Interní virtuální síť |Používá se s aplikací BitBucket a je připojená prostřednictvím ExpressRoute k podnikové síti společnosti Contoso. Podsíť (`bitbucket`) poskytuje aplikaci s určitým adresním prostorem IP adres. |
-| Virtuální sítě |externí virtuální síť |K dispozici pro budoucí aplikace, které vyžadují veřejné koncové body |
-| Skupina zabezpečení sítě |Bitbucket – NSG |Zajišťuje minimalizaci prostoru pro útok na tuto úlohu tím, že povoluje připojení pouze na portu 443 pro podsíť, ve které je aplikace`bitbucket`umístěná (). |
+| Virtual Network |Interní virtuální síť |Používá se s aplikací BitBucket a je připojená prostřednictvím ExpressRoute k podnikové síti společnosti Contoso. Podsíť (`bitbucket`) poskytuje aplikaci s konkrétním adresním prostorem IP adres. |
+| Virtual Network |externí virtuální síť |K dispozici pro budoucí aplikace, které vyžadují veřejné koncové body |
+| Skupina zabezpečení sítě |Bitbucket – NSG |Zajišťuje minimalizaci prostoru pro útok na tuto úlohu tím, že povoluje připojení pouze na portu 443 pro podsíť, ve které je aplikace umístěná (`bitbucket`). |
 
 ### <a name="resource-locks"></a>Zámky prostředků
 
@@ -112,7 +112,7 @@ Dave rozpozná, že připojení z podnikové sítě společnosti Contoso k inter
 
 Vytvoří následující [Zámek prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources):
 
-| Typ zámku | Resource | Popis |
+| Typ zámku | Prostředek | Popis |
 | --- | --- | --- |
 | **CanNotDelete** |Interní virtuální síť |Zabraňuje uživatelům odstranit virtuální síť nebo podsítě, ale nebrání přidání nových podsítí. |
 
@@ -120,7 +120,7 @@ Vytvoří následující [Zámek prostředků](https://docs.microsoft.com/azure/
 
 Dave nemá nic k automatizaci pro tuto aplikaci. I když vytvořil účet Azure Automation, nebude ho zpočátku používat.
 
-### <a name="azure-security-center"></a>Azure Security Center
+### <a name="azure-security-center"></a>Centrum zabezpečení Azure
 
 Společnost Contoso správa IT služeb potřebuje k rychlé identifikaci a manipulaci s hrozbami. Chtějí taky pochopit, jaké problémy možná existují.
 
@@ -134,10 +134,10 @@ Obchodní vedení v obchodní jednotce dodavatelských řetězců identifikoval 
 
 Dave se do Azure Enterprise Portal a zjistí, že oddělení dodavatelských řetězců již existuje. Vzhledem k tomu, že tento projekt je prvním vývojovým projektem týmu dodavatelských řetězců v Azure, Dave rozpoznává nutnost nového účtu pro vývojového týmu Alice. Vytvoří účet "R & D" pro svůj tým a přiřadí přístup k Alici. Alice se přihlásí prostřednictvím Azure Portal a vytvoří dvě předplatná: jeden pro vývoj serverů a druhý pro uložení provozních serverů. Postupuje podle dříve vytvořených standardů pojmenování při vytváření následujících předplatných:
 
-| Použití předplatného | Name |
+| Použití předplatného | Name (Název) |
 | --- | --- |
 | Vývoj |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
-| Provozní |Contoso SupplyChain Operations LoyaltyCard produkční prostředí |
+| Výroba |Contoso SupplyChain Operations LoyaltyCard produkční prostředí |
 
 ### <a name="policies"></a>Zásady
 
@@ -147,7 +147,7 @@ Pro **vývojové předplatné**vytvoří tyto zásady:
 
 | Pole | Efekt | Popis |
 | --- | --- | --- |
-| location |Ověřen |Audit vytváření prostředků v libovolné oblasti |
+| location |ověřen |Audit vytváření prostředků v libovolné oblasti |
 
 Neomezují typ SKU, který může uživatel vytvořit ve vývoji, a nevyžaduje značky pro žádné skupiny prostředků nebo prostředky.
 
@@ -156,9 +156,9 @@ Pro **produkční předplatné**vytvoří tyto zásady:
 | Pole | Efekt | Popis |
 | --- | --- | --- |
 | location |odmítnout |Odepření vytváření jakýchkoli prostředků mimo datacentra USA |
-| značky |odmítnout |Vyžadovat značku vlastníka aplikace |
-| značky |odmítnout |Značka vyžadovat oddělení |
-| značky |Příloh |Připojit značku ke každé skupině prostředků, která označuje produkční prostředí |
+| tags |odmítnout |Vyžadovat značku vlastníka aplikace |
+| tags |odmítnout |Značka vyžadovat oddělení |
+| tags |příloh |Připojit značku ke každé skupině prostředků, která označuje produkční prostředí |
 
 Neomezují typ SKU, který uživatel může vytvořit v produkčním prostředí.
 
@@ -170,7 +170,7 @@ Dave rozumí, že musí mít konkrétní informace pro identifikaci správných 
 | --- | --- |
 | ApplicationOwner |Jméno osoby, která spravuje tuto aplikaci |
 | Oddělení |Nákladové středisko skupiny placené za využití Azure |
-| EnvironmentType |**Produkční** prostředí (I když předplatné zahrnuje **produkci** v názvu, včetně této značky, umožňuje snadnou identifikaci při prohlížení prostředků na portálu nebo na faktuře.) |
+| EnvironmentType |**Výroba** (i když předplatné zahrnuje **produkční** prostředí v názvu, včetně této značky umožňuje snadnou identifikaci při prohlížení prostředků na portálu nebo na faktuře) |
 
 ### <a name="core-networks"></a>Základní sítě
 
@@ -178,16 +178,16 @@ Tým společnosti Contoso ETS Information Security and rizik Management kontrolu
 
 Pro **vývojové předplatné**vytvoří:
 
-| Typ prostředku | Name | Popis |
+| Typ prostředku | Name (Název) | Popis |
 | --- | --- | --- |
-| Virtuální sítě |Interní virtuální síť |Slouží jako prostředí pro vývoj věrnostních karet společnosti Contoso a je připojené prostřednictvím ExpressRoute k podnikové síti společnosti Contoso. |
+| Virtual Network |Interní virtuální síť |Slouží jako prostředí pro vývoj věrnostních karet společnosti Contoso a je připojené prostřednictvím ExpressRoute k podnikové síti společnosti Contoso. |
 
 Pro **produkční předplatné**vytvoří:
 
-| Typ prostředku | Name | Popis |
+| Typ prostředku | Name (Název) | Popis |
 | --- | --- | --- |
-| Virtuální sítě |externí virtuální síť |Hostuje aplikaci věrnostních karet a není přímo připojená k ExpressRoute společnosti Contoso. Kód je nabízen prostřednictvím svého systému zdrojového kódu přímo k PaaS službám. |
-| Skupina zabezpečení sítě |loyaltycard-nsg |Zajišťuje minimalizaci prostoru pro útok na tuto úlohu tím, že povoluje pouze komunikaci v rámci vázané komunikace na portu TCP 443. Společnost Contoso také provádí šetření pomocí brány firewall webových aplikací pro další ochranu. |
+| Virtual Network |externí virtuální síť |Hostuje aplikaci věrnostních karet a není přímo připojená k ExpressRoute společnosti Contoso. Kód je nabízen prostřednictvím svého systému zdrojového kódu přímo k PaaS službám. |
+| Skupina zabezpečení sítě |loyaltycard – NSG |Zajišťuje minimalizaci prostoru pro útok na tuto úlohu tím, že povoluje pouze komunikaci v rámci vázané komunikace na portu TCP 443. Společnost Contoso také provádí šetření pomocí brány firewall webových aplikací pro další ochranu. |
 
 ### <a name="resource-locks"></a>Zámky prostředků
 
@@ -195,7 +195,7 @@ Dave a Alice se rozhodnou, že přidá zámky prostředků na některé klíčov
 
 Vytvoří následující zámek:
 
-| Typ zámku | Resource | Popis |
+| Typ zámku | Prostředek | Popis |
 | --- | --- | --- |
 | **CanNotDelete** |externí virtuální síť |Aby uživatelé nemohli odstranit virtuální síť nebo podsítě. Zámek nebrání přidání nových podsítí. |
 
@@ -205,12 +205,12 @@ Alice a její vývojový tým mají rozsáhlé Runbooky pro správu prostředí 
 
 Chcete-li použít tyto sady Runbook, povolte [automatizaci](https://docs.microsoft.com/azure/automation/automation-intro).
 
-### <a name="azure-security-center"></a>Azure Security Center
+### <a name="azure-security-center"></a>Centrum zabezpečení Azure
 
 Společnost Contoso správa IT služeb potřebuje k rychlé identifikaci a manipulaci s hrozbami. Chtějí taky pochopit, jaké problémy možná existují.
 
 K splnění těchto požadavků Dave umožňuje Azure Security Center. Zajišťuje, že Azure Security Center sleduje prostředky a poskytuje přístup k týmům DevOps a zabezpečení.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 - Další informace o vytváření šablon Správce prostředků najdete v tématu [osvědčené postupy pro vytváření šablon Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-template-best-practices).

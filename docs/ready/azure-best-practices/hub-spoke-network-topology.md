@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022380"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549008"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Hvězdicová síťová topologie
 
@@ -75,7 +75,7 @@ Je možné implementovat komplexní vícevrstvé úlohy v jednom paprsku. Konfig
 
 Architekt může chtít nasadit vícevrstvé úlohy napříč několika virtuálními sítěmi. Pomocí peeringu virtuálních sítí se paprsky můžou připojit k ostatním paprskům ve stejném centru nebo v jiných centrech.
 
-Typickým příkladem tohoto scénáře je případ, kdy se servery pro zpracování aplikací nacházejí v jednom paprsku nebo virtuální síti. Databáze se nasadí v jiném paprsku nebo virtuální síti. V takovém případě je snadné propojit paprsky pomocí peeringu virtuálních sítí a vyhnout se tak přenosu přes centrum. Řešením je provést pečlivou kontrolu architektury a zabezpečení, abyste zajistili, že obejití centra neobejde důležité body zabezpečení nebo auditu, které mohou existovat pouze v centru.
+Typickým příkladem tohoto scénáře je případ, kdy se servery pro zpracování aplikací nacházejí v jednom paprsku nebo virtuální síti. Databáze se nasadí v jiném paprsku nebo virtuální síti. V takovém případě je snadné propojit paprsky pomocí peeringu virtuálních sítí a vyhnout se tak přenosu přes centrum. Řešením je provést pečlivou architekturu a kontrolu zabezpečení, abyste zajistili, že vynechání centra neobejde důležité zabezpečení nebo body auditování, které mohou existovat pouze v centru.
 
 ![Propojení paprsků k sobě navzájem a k centru][3]
 

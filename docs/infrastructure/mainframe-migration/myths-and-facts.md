@@ -1,19 +1,19 @@
 ---
-title: 'Migrace sálového počítače: Mýty a fakta'
+title: 'Migrace sálového počítače: mýty a fakta'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Migrujte aplikace z sálových prostředí do Azure, osvědčené, vysoce dostupné a škálovatelné infrastruktury pro systémy, které se aktuálně spouštějí na sálových počítačích.
+description: Migrujte aplikace z prostředí sálových počítačů do Azure, osvědčené, vysoce dostupné a škálovatelné infrastruktury pro systémy, které aktuálně běží na mainframech.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42981c9d3e8a87579033fbd0bd01c912d79c937f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4adf229b1ffca1d1360d197ab09a04f0d9584ef8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024396"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547918"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mýty sálového počítače a fakta
 
@@ -21,21 +21,21 @@ Sálové počítače jsou výrazně v historii výpočetního prostředí a zůs
 
 Spolehlivost, dostupnost a výpočetní výkon sálových počítačů se vychází z téměř mythicalch poměrů. Abyste vyhodnotili úlohy pro sálové počítače, které jsou pro Azure nejvhodnější, je nejdříve potřeba odlišit mýty od reality.
 
-## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>Mýtus Sálové počítače se nikdy neprovozují a mají minimálně pět devítky dostupnosti.
+## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>Mýtus: sálové počítače se nikdy neprovozují a mají minimálně pět devítky dostupnosti.
 
 Sálový hardware a operační systémy se zobrazují jako spolehlivé a stabilní. Je ale možné, že výpadky musí být naplánované pro údržbu a restartování (označované jako počáteční načtení programu nebo IPLs). Při zvážení těchto úloh se řešení sálového počítače často blíží dvěma nebo třem devítky dostupnosti, což je ekvivalentem vysoce špičkových serverů se systémem Intel.
 
 Sálové počítače také zůstávají jako zranitelné vůči haváriím jako jakékoli jiné servery a vyžadují, aby tyto typy selhání byly ošetřeny systémy nepřerušitelného zdroje napájení (UPS).
 
-## <a name="myth-mainframes-have-limitless-scalability"></a>Mýtus Sálové počítače mají neomezenou škálovatelnost.
+## <a name="myth-mainframes-have-limitless-scalability"></a>Mýtus: sálové počítače mají neomezenou škálovatelnost.
 
 Škálovatelnost sálového počítače závisí na kapacitě svého systémového softwaru, jako je třeba systém pro řízení informací o zákaznících (CICS), a na kapacitu nových instancí sálových strojů a úložišť. Některé velké společnosti, které používají sálové počítače, si přizpůsobily jejich CICS k výkonu a v ostatních případech vypěstují schopnost největších dostupných sálových počítačů.
 
-## <a name="myth-intel-based-servers-are-not-as-powerful-as-mainframes"></a>Mýtus Servery založené na technologii Intel nejsou tak výkonné jako sálové počítače.
+## <a name="myth-intel-based-servers-are-not-as-powerful-as-mainframes"></a>Mýtus: servery založené na technologii Intel nejsou tak výkonné jako sálové počítače.
 
 Nové základní-husté systémy založené na procesorech Intel mají tolik výpočetní kapacity jako sálové počítače.
 
-## <a name="myth-the-cloud-cant-accommodate-mission-critical-applications-for-large-companies-such-as-financial-institutions"></a>Mýtus Cloud nemůže pojmout klíčové aplikace pro velké společnosti, jako jsou finanční instituce.
+## <a name="myth-the-cloud-cant-accommodate-mission-critical-applications-for-large-companies-such-as-financial-institutions"></a>Mýtus: Cloud nemůže pojmout klíčové aplikace pro velké společnosti, jako jsou finanční instituce.
 
 I když se může jednat o některé izolované instance, u kterých cloudová řešení jsou krátká, je obvykle to proto, že se algoritmy aplikace nedají distribuovat. Tyto příklady jsou výjimky, nikoli pravidlo.
 
@@ -43,7 +43,7 @@ I když se může jednat o některé izolované instance, u kterých cloudová �
 
 Díky porovnání nabízí Azure alternativní platformu, která dokáže poskytovat ekvivalentní funkce a funkce sálového počítače, a to s mnohem nižšími náklady. Navíc platí, že celkové náklady na vlastnictví cloudového modelu založeného na předplatném, které jsou na základě využití založené na předplatném, je mnohem levnější než u sálových počítačů.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Přepnutí z sálových počítačů do Azure](./migration-strategies.md)

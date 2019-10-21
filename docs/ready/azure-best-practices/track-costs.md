@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967758"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548959"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -27,7 +27,7 @@ ms.locfileid: "71967758"
 
 Prostředky zahrnují všechny virtuální počítače, zdroje dat a aplikace nasazené do cloudu. Azure poskytuje několik mechanismů pro klasifikaci a organizování prostředků. V tématu o [škálování s více předplatnými Azure](../considerations/scaling-subscriptions.md) naleznete podrobné informace o možnostech organizace prostředků na základě více kritérií za účelem vytvoření dobře spravovaného prostředí. Tento článek se zaměřuje na použití základních konceptů Azure k zajištění viditelnosti nákladů na cloud.
 
-### <a name="classification"></a>Klasifikace
+### <a name="classification"></a>Classification
 
 *Označování*  je snadný způsob klasifikace prostředků. Označení přidruží metadata k prostředku. Tato metadata lze použít ke klasifikaci prostředků na základě různých datových bodů. Při používání značek ke klasifikaci prostředků v rámci řízení nákladů, společnosti často potřebují následující značky: organizační jednotka, oddělení, fakturační kód, zeměpisná oblast, prostředí, projekt a úloha nebo „kategorizace aplikací“. Azure Cost Management může tyto značky použít k vytváření různých zobrazení dat o nákladech.
 
@@ -83,7 +83,7 @@ Azure Cost Management podporuje následující předdefinované role pro každý
 
 Obecně se doporučuje členům všech týmů přiřadit roli Přispěvatel služby Cost Management. Tato role uděluje přístup k vytváření a správě rozpočtů a exportů za účelem efektivnějšího monitorování a vykazování nákladů. Pro členy [týmu cloudové strategie](../../organize/cloud-strategy.md) byste však měli nastavit jen roli Čtenář služby Cost Management. a to proto, že v rámci nástroje Azure Cost Management nejsou zapojeni do stanovování rozpočtů.
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Rozsah
 
 Následující nastavení rozsahu a rolí vytvoří požadovanou viditelnost pro správu nákladů. Tento osvědčený postup může vyžadovat menší změny v souladu s rozhodnutím o organizaci prostředků.
 
@@ -115,7 +115,7 @@ Azure Cost Management je dobře zdokumentovaný nástroj pro stanovení rozpočt
 
 ### <a name="get-started-with-azure-cost-management"></a>Začínáme s Azure Cost Management
 
-Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management, najdete v tématu pojednávajícím o [optimalizaci investic do cloudu pomocí Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json).
+Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management, najdete v tématu pojednávajícím o [optimalizaci investic do cloudu pomocí Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Práce s nástrojem Azure Cost Management
 

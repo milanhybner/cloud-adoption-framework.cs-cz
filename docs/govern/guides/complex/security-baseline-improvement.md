@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu zabezpečení'
+title: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu zabezpečení'
+description: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220549"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547601"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu zabezpečení
+# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
 Tento článek popisuje mluvený komentář přidáním ovládacích prvků zabezpečení, které podporují přesun chráněných dat do cloudu.
 
@@ -100,7 +100,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 
 V této části článku se změní návrh MVP zásad správného řízení tak, aby zahrnoval nové zásady Azure a implementaci Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
 
-Nové osvědčené postupy spadají do dvou kategorií: Podniková IT oddělení (centrum) a přijetí do cloudu (paprskový).
+Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a přijetí do cloudu (paprskový).
 
 **Vytváření předplatného podnikového centra IT a paprsků pro centralizaci standardních hodnot zabezpečení:** V tomto osvědčeném postupu je stávající kapacita zásad správného řízení zabalená pomocí [topologie centra a paprsků se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)s několika přidanými klíči z týmu zásad správného řízení cloudu.
 
@@ -109,24 +109,24 @@ Nové osvědčené postupy spadají do dvou kategorií: Podniková IT oddělení
     1. Pokyny v [topologii centra a paprsků s](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) referenční architekturou sdílených služeb lze použít ke generování šablon Správce prostředků pro prostředky požadované v podnikovém centru IT.
     2. Pomocí těchto šablon se dá tato struktura provést opakovaně, a to v rámci centrální strategie zásad správného řízení.
     3. Kromě aktuální referenční architektury se doporučuje, aby se vytvořila šablona skupiny zabezpečení sítě, která bude zachytávání všech požadavků na blokování portů nebo povolených požadavků pro virtuální síť pro hostování brány firewall. Tato skupina zabezpečení sítě se liší od předchozích skupin, protože se jedná o první skupinu zabezpečení sítě, která umožňuje veřejný provoz do virtuální sítě.
-3. Vytvořte zásady Azure. Vytvořte zásadu nazvanou `Hub NSG Enforcement` , která vynutila konfiguraci skupiny zabezpečení sítě přiřazenou k libovolné virtuální síti vytvořené v tomto předplatném. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
+3. Vytvořte zásady Azure. Vytvořte zásadu s názvem `Hub NSG Enforcement` k vykonání konfigurace skupiny zabezpečení sítě přiřazené k libovolné virtuální síti vytvořené v tomto předplatném. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
     1. Audit, zda webové servery Windows používají zabezpečené komunikační protokoly.
     2. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
 4. Podnikový plán IT
-    1. Vytvořte podrobný plán Azure s `corporate-it-subscription`názvem.
-    2. Přidejte šablony hub a paprsků a `Hub NSG Enforcement` zásady.
+    1. Vytvořte podrobný plán Azure s názvem `corporate-it-subscription`.
+    2. Přidejte šablony hub a paprsků a zásady `Hub NSG Enforcement`.
 5. Probíhá rozbalování v hierarchii počátečních skupin pro správu.
-    1. Pro každou skupinu pro správu, která požádala o podporu chráněných `corporate-it-subscription-blueprint` dat, plán poskytuje urychlené řešení rozbočovače.
+    1. Pro každou skupinu pro správu, která požádala o podporu chráněných dat, `corporate-it-subscription-blueprint` podrobného plánu poskytuje řešení urychleného centra.
     2. Vzhledem k tomu, že skupiny pro správu v tomto fiktivním příkladu zahrnují kromě hierarchie obchodních jednotek i regionální hierarchii, bude tento podrobný plán nasazen v každé oblasti.
     3. Pro každou oblast v hierarchii skupiny pro správu vytvořte předplatné s názvem `Corporate IT Subscription`.
-    4. Použijte podrobný `corporate-it-subscription-blueprint` plán na každou místní instanci.
-    5. Tím se vytvoří rozbočovač pro každou organizační jednotku v každé oblasti. Poznámka: Je možné dosáhnout dalších úspor nákladů, ale sdílet centra napříč obchodními jednotkami v každé oblasti.
+    4. Použijte `corporate-it-subscription-blueprint` podrobných plánů na každou místní instanci.
+    5. Tím se vytvoří rozbočovač pro každou organizační jednotku v každé oblasti. Poznámka: můžete dosáhnout dalších úspor nákladů, ale sdílet centra napříč obchodními jednotkami v každé oblasti.
 6. Integrace objektů zásad skupiny (GPO) přes konfiguraci požadovaného stavu (DSC):
     1. Převod objektu zásad skupiny na DSC – [projekt pro správu standardních hodnot Microsoft](https://github.com/Microsoft/BaselineManagement) v GitHubu může toto úsilí zrychlit. * Nezapomeňte úložiště DSC ukládat do úložiště paralelně s Správce prostředků šablonou.
     2. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
     3. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
 
-**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** V takovém `Corporate IT Subscription`případě je možné v rámci každého předplatného, které je vyhrazeno pro podporu archetypes aplikací, využít i drobné změny v rámci správného zlepšení.
+**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription` se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
 
 V předchozích iterativních změnách osvědčených postupů jsme definovali skupiny zabezpečení sítě k blokování veřejného provozu a povoleného interního provozu. Kromě toho Azure detailly dočasně vytvořil služby DMZ a funkce Active Directory. V této iteraci tyto assety přizpůsobíme trochu a vytvoříme novou verzi plánu Azure details.
 
@@ -157,7 +157,7 @@ V předchozích iterativních změnách osvědčených postupů jsme definovali 
     4. Audituje a vynutil používání schválené podsítě sítě a virtuální sítě na síťové rozhraní.
     5. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
 6. Podrobný plán Azure:
-    1. Vytvořte podrobný plán Azure s `protected-data`názvem.
+    1. Vytvořte podrobný plán Azure s názvem `protected-data`.
     2. Přidejte do podrobného plánu šablony VNet peer, Network Security Group a Azure Security Center.
     3. Ujistěte se, že šablona pro službu Active Directory z předchozí iterace **není** zahrnutá do podrobného plánu. Jakékoli závislosti na službě Active Directory poskytne firemní předplatné IT.
     4. Ukončete všechny existující virtuální počítače služby Active Directory nasazené v předchozí iteraci.

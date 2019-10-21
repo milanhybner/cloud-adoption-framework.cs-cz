@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224014"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549114"
 ---
 # <a name="central-it-capabilities"></a>Centrální možnosti IT
 
 Vzhledem k škálováním při přijetí do cloudu nemusí být možnost zásad správného řízení cloudu dostatečná, aby bylo možné řídit úsilí při přijímání. Když je přijetí postupný, týmy mají za následek ekologicky vyvíjet dovednosti a procesy potřebné k tomu, aby byly v průběhu času připravené pro Cloud.
 
-Pokud však tým pro přijetí v rámci jednoho cloudu využívá Cloud k dosažení vysokého obchodního výsledku, postupné přijetí je v některých případech jen zřídka. Úspěch následuje po úspěšném provedení. To platí také pro přijetí v cloudu, ale k tomu dochází v cloudovém měřítku. Když se přijetí do cloudu v poměrně krátké době rozšíří z jednoho týmu na několik týmů, je potřeba další podpora od stávajících zaměstnanců IT. Nicméně zaměstnanci nemusí mít školení a zkušenosti potřebné k podpoře cloudu s využitím nativních nástrojů IT pro Cloud. Tím se často řídí vytváření centrálního IT týmu, který řídí Cloud.
+Pokud však tým pro přijetí v rámci jednoho cloudu využívá Cloud k dosažení vysokého obchodního výsledku, postupné přijetí je v některých případech jen zřídka. Úspěch následuje po úspěšném provedení. To platí také pro přijetí v cloudu, ale k tomu dochází v cloudovém měřítku. Když se přijetí do cloudu rozšíří z jednoho týmu na více týmů relativně rychle, je potřeba další podpora od stávajících zaměstnanců IT. Nicméně zaměstnanci nemusí mít školení a zkušenosti potřebné k podpoře cloudu s využitím nativních nástrojů IT pro Cloud. Tím se často řídí vytváření centrálního IT týmu, který řídí Cloud.
 
 > [!CAUTION]
 > I když se jedná o běžný krok v rámci splatnosti, může představovat vysoké riziko pro přijetí a potenciálně blokovat inovace a úsilí při migraci, pokud není spravováno efektivně. V části rizika níže najdete informace o tom, jak zmírnit riziko centralizovaného řešení v rámci kulturního antipatternu.
@@ -57,7 +57,7 @@ Následující úkoly jsou obvykle spouštěny pravidelně:
   - [motivace pro přijetí do cloudu](../strategy/motivations.md)
   - [obchodní rizika](../govern/policy-compliance/risk-tolerance.md)
   - [racionalizace digitální nemovitosti](../digital-estate/index.md)
-- Umožňuje monitorovat plány a průběh přijetí v rámci nevyřízených [položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md)s určenou prioritou.
+- Umožňuje monitorovat plány a průběh přijetí v rámci [nevyřízených položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md)s určenou prioritou.
 - Identifikujte a určete prioritu změn platformy, které jsou potřeba pro podporu nevyřízených položek migrace.
 - Působit jako zprostředkující nebo převodní vrstva mezi potřebou pro přijetí do cloudu a stávajícími týmy IT.
 - Využijte stávající IT týmy, abyste urychlili možnosti platformy a umožnili jejich přijetí.
@@ -105,13 +105,13 @@ Tento příklad ilustruje postup, který vychází z vyspělého centrálního I
 
 Contoso, LLC přijalo centrální IT model pro podporu cloudových prostředků firmy. Pro dodávání tohoto modelu implementovaly těsné ovládací prvky pro různé sdílené služby, například připojení k síti příchozího přenosu dat. Tím se snižuje riziko úniku jejich cloudového prostředí a poskytlo se jediné zařízení se systémem "break-sklo", které zablokuje veškerý provoz v případě porušení. Zásady standardních hodnot zabezpečení mají stav, že všechny příchozí přenosy musí pocházet ze sdíleného zařízení spravovaného centrálním IT týmem.
 
-Jeden z svých týmů pro přijetí v cloudu teď ale vyžaduje prostředí s vyhrazeným a speciálně nakonfigurovaným připojením k síti příchozího přenosu dat, které využívá konkrétní cloudovou technologii. Nezralý centrální IT tým by jednoduše odmítl žádost a určila prioritu svých stávajících procesů během potřeb pro přijetí. Centrální tým IT společnosti Contoso je jiný. V tomto dilematem rychle identifikovali jednoduché řešení se čtyřmi částmi: Klasifikace, vyjednávání, izolace a automatizace.
+Jeden z svých týmů pro přijetí v cloudu teď ale vyžaduje prostředí s vyhrazeným a speciálně nakonfigurovaným připojením k síti příchozího přenosu dat, které využívá konkrétní cloudovou technologii. Nezralý centrální IT tým by jednoduše odmítl žádost a určila prioritu svých stávajících procesů během potřeb pro přijetí. Centrální tým IT společnosti Contoso je jiný. V tomto dilematem rychle identifikovali jednoduché řešení se čtyřmi částmi: klasifikace, vyjednávání, izolace a automatizace.
 
-**Mazal** Vzhledem k tomu, že tým pro přijetí cloudu byl v počátečních fázích vytváření nového řešení a neobsahuje žádná citlivá data ani důležité požadavky na technickou podporu, prostředky v prostředí byly klasifikovány jako nízké riziko a nekritické. Efektivní klasifikace je znaménkem zralosti v centrálním IT oddělení. Klasifikace všech prostředků a prostředí umožňuje vymazat zásady.
+**Klasifikace:** Vzhledem k tomu, že tým pro přijetí cloudu byl v počátečních fázích vytváření nového řešení a neobsahuje žádná citlivá data ani důležité požadavky na technickou podporu, prostředky v prostředí byly klasifikovány jako nízké riziko a nekritické. Efektivní klasifikace je znaménkem zralosti v centrálním IT oddělení. Klasifikace všech prostředků a prostředí umožňuje vymazat zásady.
 
-**Jedna** Samotná klasifikace není dostatečná. Sdílené služby byly implementovány tak, aby konzistentně fungovaly citlivé a klíčové prostředky. Změna pravidel by způsobila ohrožení zásad správného řízení a dodržování předpisů, které jsou navržené pro prostředky, které vyžadují vyšší ochranu. K přijetí nemůže dojít na náklady na stabilitu, zabezpečení nebo řízení. To vedlo k vyjednávání s týmem přijetí k zodpovězení konkrétních otázek. Mohl DevOps tým pro toto prostředí poskytnout správu operací? Bude toto řešení vyžadovat přímý přístup k jiným interním prostředkům? Pokud tým pro přijetí v cloudu vyhovuje těmto kompromisům, může být přenos příchozích dat možný.
+**Vyjednávání:** Samotná klasifikace není dostatečná. Sdílené služby byly implementovány tak, aby konzistentně fungovaly citlivé a klíčové prostředky. Změna pravidel by způsobila ohrožení zásad správného řízení a dodržování předpisů, které jsou navržené pro prostředky, které vyžadují vyšší ochranu. K přijetí nemůže dojít na náklady na stabilitu, zabezpečení nebo řízení. To vedlo k vyjednávání s týmem přijetí k zodpovězení konkrétních otázek. Mohl DevOps tým pro toto prostředí poskytnout správu operací? Bude toto řešení vyžadovat přímý přístup k jiným interním prostředkům? Pokud tým pro přijetí v cloudu vyhovuje těmto kompromisům, může být přenos příchozích dat možný.
 
-**Oddělení** Vzhledem k tomu, že podnik může poskytovat svou vlastní správu probíhajících operací a vzhledem k tomu, že řešení nespoléhá na přímý provoz do jiných interních prostředků, může být uzavřené v novém předplatném. Toto předplatné je také přidáno do samostatného uzlu nové hierarchie skupiny pro správu.
+**Izolace:** Vzhledem k tomu, že podnik může poskytovat svou vlastní správu probíhajících operací a vzhledem k tomu, že řešení nespoléhá na přímý provoz do jiných interních prostředků, může být uzavřené v novém předplatném. Toto předplatné je také přidáno do samostatného uzlu nové hierarchie skupiny pro správu.
 
 **Automatizace:** Dalším znaménkem splatnosti v tomto týmu jsou zásady automatizace. Tým používá Azure Policy pro automatizaci vynucování zásad. Používají také plány Azure k automatizaci nasazení běžných komponent platforem a vynutily dodržování definovaných standardních hodnot identity. U tohoto předplatného a dalších uživatelů v nové skupině pro správu se zásady a šablony mírně liší. Zásady blokující šířku pásma příchozího přenosu dat byly zrušeny. Nahradily se požadavky na směrování provozu prostřednictvím předplatného sdílených služeb, jako je jakýkoli příchozí přenos dat, pro zajištění izolace provozu. Vzhledem k tomu, že nástroje pro správu místních operací nemůžou získat přístup k tomuto předplatnému, už agenti pro tento nástroj nemusejí být. Všechny ostatní zásady správného řízení guardrails vyžadované jinými předplatnými v hierarchii skupin pro správu se pořád vynutily, což zajišťuje dostatečné guardrails.
 

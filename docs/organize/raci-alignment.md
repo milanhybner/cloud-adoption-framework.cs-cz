@@ -1,6 +1,6 @@
 ---
 title: Zarovnání odpovědností napříč týmy
-titleSuffix: Microsoft Cloud adoption Framework for Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Naučte se sjednotit zodpovědnosti mezi týmy.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 818d2fa74c480b8aee36c4d268ae7a83cb93fab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028801"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549075"
 ---
 # <a name="align-responsibilities-across-teams"></a>Zarovnání zodpovědnosti mezi týmy
 
@@ -51,7 +51,7 @@ Poslední řádek každé tabulky (kromě prvního) obsahuje odkaz na nejvíce z
 |Tým přijetí cloudu|Odpovědné|Odpovědné|Odpovědné|Odpovědné|Konzultované|Konzultované|Konzultované|Oznámeno|
 |Tým zásad správného řízení cloudu|Konzultované|Oznámeno|Oznámeno|Oznámeno|Odpovědné|Odpovědné|Odpovědné|Odpovědné|
 ||||||||||
-|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[](./cloud-center-of-excellence.md)-Zásady[správného řízení](./cloud-governance.md) pro CCoE Cloud|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová automatizace](./cloud-automation.md) CCoE|
+|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[zásad správného řízení cloudu](./cloud-governance.md)|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová automatizace](./cloud-automation.md) [CCoE](./cloud-center-of-excellence.md) -|
 
 ## <a name="central-it"></a>Centrální IT
 
@@ -71,7 +71,7 @@ Poslední řádek každé tabulky (kromě prvního) obsahuje odkaz na nejvíce z
 |Tým přijetí cloudu  |Odpovědné|Konzultované  |Zodpovídá|Odpovědné|Oznámeno   |Oznámeno   |Oznámeno   |Oznámeno   |
 |RACI modelu CCoE      |Konzultované  |Oznámeno   |Oznámeno   |Oznámeno   |Odpovědné|Odpovědné|Odpovědné|Odpovědné|
 ||||||||||
-|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[](./cloud-center-of-excellence.md)-Zásady[správného řízení](./cloud-governance.md) pro CCoE Cloud|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová automatizace](./cloud-automation.md) CCoE|
+|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[zásad správného řízení cloudu](./cloud-governance.md)|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová automatizace](./cloud-automation.md) [CCoE](./cloud-center-of-excellence.md) -|
 
 ## <a name="operational-alignment"></a>Provozní zarovnání
 
@@ -82,7 +82,7 @@ Poslední řádek každé tabulky (kromě prvního) obsahuje odkaz na nejvíce z
 |Tým cloudových operací|Konzultované  |Konzultované  |Zodpovídá|Odpovědné|Konzultované  |Oznámeno   |Odpovědné|Konzultované  |
 |RACI modelu CCoE      |Konzultované  |Oznámeno   |Oznámeno   |Oznámeno   |Odpovědné|Odpovědné|Zodpovídá|Odpovědné|
 ||||||||||
-|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[](./cloud-center-of-excellence.md)-Zásady[správného řízení](./cloud-governance.md) pro CCoE Cloud|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová automatizace](./cloud-automation.md) CCoE|
+|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[zásad správného řízení cloudu](./cloud-governance.md)|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová automatizace](./cloud-automation.md) [CCoE](./cloud-center-of-excellence.md) -|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Cloudové centrum excelence (CCoE)
 
@@ -95,9 +95,9 @@ Poslední řádek každé tabulky (kromě prvního) obsahuje odkaz na nejvíce z
 |Tým cloudové platformy  |Konzultované  |Oznámeno   |Oznámeno   |Konzultované  |Konzultované  |Odpovědné|Zodpovídá|Zodpovídá|
 |Tým Cloud Automation|Konzultované  |Oznámeno   |Oznámeno   |Oznámeno   |Konzultované  |Zodpovídá|Zodpovídá|Odpovědné|
 ||||||||||
-|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[](./cloud-center-of-excellence.md)-Zásady[správného řízení](./cloud-governance.md) pro CCoE Cloud|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová platforma](./cloud-platform.md) CCoE|[](./cloud-center-of-excellence.md)-[Cloudová automatizace](./cloud-automation.md) CCoE|
+|Zarovnaná schopnost cloudu|[Přijetí do cloudu](./cloud-adoption.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudová strategie](./cloud-strategy.md)|[Cloudové operace](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[zásad správného řízení cloudu](./cloud-governance.md)|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová platforma](./cloud-platform.md) [CCoE](./cloud-center-of-excellence.md) -|[Cloudová automatizace](./cloud-automation.md) [CCoE](./cloud-center-of-excellence.md) -|
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Chcete-li sledovat rozhodnutí o struktuře organizace v průběhu času, Stáhněte a upravte [šablonu tabulky RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx). Zkopírujte a upravte nejblíže zarovnaný vzorek z matric RACI v tomto článku.
 

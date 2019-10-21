@@ -1,25 +1,25 @@
 ---
 title: Co je potřeba k převedení migrovaného prostředku do produkčního prostředí?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci sad funkcí do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úlohy prováděné při migraci sady funkcí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb025eacb7743f470b15e2714ed65a05c21034a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0c5606c0081e01cd20456ec6490b4d6fcd7bd914
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825468"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548403"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Co je potřeba k převedení migrovaného prostředku do produkčního prostředí?
 
-Převedení do produkčního prostředí představuje dokončení migrace sady funkcí do cloudu. Po převedení prostředku a všech jeho závislostí dojde k přesměrování provozu do produkčního prostředí. Po přesměrování provozu se stanou místní prostředky zastaralými a budou se moct vyřadit z provozu.
+Propagace na produkční označení dokončí migraci úlohy do cloudu. Po převedení prostředku a všech jeho závislostí dojde k přesměrování provozu do produkčního prostředí. Po přesměrování provozu se stanou místní prostředky zastaralými a budou se moct vyřadit z provozu.
 
 Proces převedení se liší v závislosti na architektuře sady funkcí. Existuje však několik konzistentních požadavků a několik běžných úkolů. Tento článek je popisuje a slouží jako jakýsi kontrolní seznam před převedením.
 
@@ -27,13 +27,13 @@ Proces převedení se liší v závislosti na architektuře sady funkcí. Existu
 
 Před nasazením do produkčního prostředí je třeba provést, zdokumentovat a ověřit každý z následujících procesů:
 
-- **[Posouzení](../assess/index.md):** Posoudila se kompatibilita sady funkcí s cloudem.
-- **[Návrh architektury](../assess/architect.md):** Pro strukturu sady funkcí je navržená správná architektura podle zvoleného poskytovatele cloudu.
-- **[Replikace](../migrate/replicate.md):** Prostředky se replikovaly do cloudového prostředí.
-- **[Přípravná instance](../migrate/stage.md):** Replikované prostředky se obnovily v přípravné instanci cloudového prostředí.
-- **[Firemní testování](./business-test.md):** Sada funkcí byla plně otestovaná a ověřená firemními uživateli.
-- **[Firemní plán změn](./business-change-plan.md):** Firma nasdílela plán změn, které se mají udělat v souladu s převedením do produkčního prostředí. To by mělo zahrnovat plán přijetí uživateli, změny obchodních procesů, uživatele, kteří potřebují školení, a časové osy pro různé aktivity.
-- **[Připraveno](./ready.md):** Obecně řečeno je před převedením nutné provést řadu technických změn.
+- **[Vyhodnotit](../assess/index.md):** Pro zajištění kompatibility cloudu bylo vyhodnoceno zatížení.
+- **[Architekt](../assess/architect.md):** Struktura pracovního zatížení byla správně navržena tak, aby odpovídala zvolenému poskytovateli cloudu.
+- **[Replikovat](../migrate/replicate.md):** Prostředky byly replikovány do cloudového prostředí.
+- **[Fáze](../migrate/stage.md):** Replikované prostředky se obnovily ve dvoufázové instanci cloudového prostředí.
+- **[Firemní testování](./business-test.md):** Zatížení bylo plně testováno a ověřeno firemními uživateli.
+- **[Plán obchodní změny](./business-change-plan.md):** Firma sdílela plán změn, které se mají udělat v souladu s podporou produkčního prostředí; To by mělo zahrnovat plán přijetí uživateli, změny obchodních procesů, uživatele, kteří vyžadují školení, a časové osy pro různé aktivity.
+- **[Připraveno](./ready.md):** Obecně platí, že před povýšením je nutné provést řadu technických změn.
 
 ## <a name="best-practices-to-execute-prior-to-promotion"></a>Osvědčené postupy, které je potřeba provést před převedením
 
@@ -47,11 +47,11 @@ Jako součást procesu převedení bude pravděpodobně nutné dokončit a zdoku
 - **Klasifikace dat.** Ověřte klasifikaci dat, aby se zajistila implementace správných ochran a zásad.
 - **Ověření ředitelem pro zabezpečení informací.** Ujistěte se, že ředitel pro zabezpečení informací zkontroloval sadu funkcí, obchodní rizika, toleranci rizik a strategie jejich omezení.
 
-## <a name="final-step-promote"></a>Poslední krok: Převedení
+## <a name="final-step-promote"></a>Poslední krok: zvýšení úrovně
 
 Sady funkcí budou vyžadovat různé úrovně podrobných procesů kontroly a převedení. Běžným posledním krokem při všech převedeních do produkčního prostředí ale bývá přizpůsobení nastavení sítě. Až bude všechno ostatní připravené, aktualizujte záznamy DNS nebo IP adresy, abyste mohli směrovat provoz do migrované sady funkcí.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Převedení sady funkcí do produkčního prostředí signalizuje dokončení migrace. Paralelně s migrací je ale potřeba [vyřadit z provozu zastaralé prostředky](./decommission.md).
 

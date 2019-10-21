@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221565"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547284"
 ---
 # <a name="guest-configuration-policy"></a>Zásada konfigurace hosta
 
-Rozšíření [Konfigurace hosta](/azure/governance/policy/concepts/guest-configuration) Azure Policy umožňuje auditovat nastavení konfigurace na virtuálním počítači. Konfigurace hosta se momentálně podporuje jenom na virtuálních počítačích Azure.
+Rozšíření [Konfigurace hosta](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy umožňuje auditovat nastavení konfigurace na virtuálním počítači. Konfigurace hosta se momentálně podporuje jenom na virtuálních počítačích Azure.
 
 Seznam zásad konfigurace hosta můžete najít tak, že na stránce Azure Policyho portálu vyhledáte kategorii "konfigurace hostů". Seznam můžete také najít spuštěním této rutiny v okně PowerShellu:
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022311"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549186"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plán přijetí do cloudu a Azure DevOps
 
@@ -25,10 +25,10 @@ V tomto článku se dozvíte, jak rychle nasadit nevyřízené položky do Azure
 
 Pokud chcete nasadit plán pro přijetí do cloudu, otevřete [generátor ukázek Azure DevOps](https://aka.ms/adopt/plan/generator). Tento nástroj nasadí šablonu do vašeho tenanta Azure DevOps. Použití nástroje vyžaduje následující kroky:
 
-1. Ověřte, jestli je **vybrané pole šablony** nastavené na **plán přijetí**do cloudu. Pokud tomu tak není, vyberte možnost **Zvolit šablonu** a zvolte správnou šablonu.
+1. Ověřte, jestli je **vybrané pole šablony** nastavené na **plán přijetí do cloudu**. Pokud tomu tak není, vyberte možnost **Zvolit šablonu** a zvolte správnou šablonu.
 2. Z rozevíracího seznamu **Vybrat organizaci** vyberte svoji organizaci Azure DevOps.
 3. Zadejte název nového projektu. Plán přijetí do cloudu bude mít tento název při nasazení do vašeho tenanta Azure DevOps.
-4. Vyberte **vytvořit projekt** pro vytvoření nového projektu ve vašem tenantovi na základě šablony plánu. Indikátor průběhu zobrazuje pokrok v nasazení projektu.
+4. Vyberte **vytvořit projekt** pro vytvoření nového projektu ve vašem tenantovi na základě šablony plánu. Indikátor průběhu zobrazuje pokrok k nasazení projektu.
 5. Po dokončení nasazení vyberte možnost **Přejít do projektu** a zobrazí se nový projekt.
 
 Po vytvoření projektu pokračujte v této sérii článků, abyste viděli, jak můžete upravit šablonu, aby se narovnala vašemu plánu přijetí do cloudu.
@@ -45,10 +45,10 @@ Informace o přípravě pracovní stanice pro hromadnou úpravu najdete v témat
 
 Plán přijetí do cloudu organizuje aktivity podle typu aktivity:
 
-- **Náměty**: *Námětu* představuje celkovou fázi životního cyklu pro přijetí do cloudu.
-- **Funkce**: Funkce se používají k organizování konkrétních cílů v jednotlivých fázích. Například migrace konkrétního zatížení bude jedna funkce.
+- **Náměty**: *námětu* představuje celkovou fázi životního cyklu pro přijetí do cloudu.
+- **Funkce**: funkce se používají k organizování specifických cílů v jednotlivých fázích. Například migrace konkrétního zatížení bude jedna funkce.
 - **Uživatelské scénáře**: Skupina uživatelských scénářů pracuje na logických kolekcích aktivit na základě konkrétního cíle.
-- **Úkoly**: Úkoly představují skutečnou práci, která má být provedena.
+- **Úkoly**: úkoly představují skutečnou práci, která má být provedena.
 
 V každé vrstvě jsou aktivity seřazeny na základě závislostí. Aktivity jsou propojeny s články v rozhraní pro přijetí do cloudu, které umožňují objasnit cíl nebo úkol.
 
@@ -63,17 +63,17 @@ Stránky s přehledem pro fáze strategie a plánování životního cyklu přij
 
 Následující články podporují zarovnání plánu přijetí do cloudu:
 
-- [Úlohy](./workloads.md): Zarovnejte funkce v rámci Migrace do cloudu námětu a zachyťte každou úlohu, kterou chcete migrovat nebo moderním. Přidejte a upravte tyto funkce, abyste mohli zachytit úsilí k migraci prvních 10 úloh.
-- [Prostředky](./assets.md): Jednotlivé prostředky (virtuální počítače, aplikace nebo data) jsou reprezentovány uživatelskými příběhy v rámci jednotlivých úloh. Přidejte a upravte tyto uživatelské scénáře tak, aby byly v souladu s vaší digitální nemovitosti.
-- [Racionalizace](./review-rationalization.md): Při definování jednotlivých úloh je možné vyvolávat počáteční předpoklady pro tuto úlohu. To může mít za následek změny úkolů v rámci jednotlivých assetů.
-- [Vytvořit plány vydání](./iteration-paths.md): Cesty iterace vytvářejí plány vydání tak, že zarovnají úsilí s různými verzemi a iteracemi.
-- [Navázat časové osy](./timelines.md): Definováním počátečního a koncového data pro každou iteraci vytvoříte časovou osu pro správu celkového projektu.
+- [Úlohy](./workloads.md): zarovnání funkcí v rámci migrace do cloudu námětu pro zachycení jednotlivých úloh, které se mají migrovat nebo moderním. Přidejte a upravte tyto funkce, abyste mohli zachytit úsilí k migraci prvních 10 úloh.
+- [Prostředky](./assets.md): každý prostředek (virtuální počítač, aplikace nebo data) představuje uživatelské scénáře v rámci jednotlivých úloh. Přidejte a upravte tyto uživatelské scénáře tak, aby byly v souladu s vaší digitální nemovitosti.
+- [Racionalizace](./review-rationalization.md): při definování jednotlivých úloh je možné vyvolávat počáteční předpoklady pro tuto úlohu. To může mít za následek změny úkolů v rámci jednotlivých assetů.
+- [Vytváření plánů vydávání verzí](./iteration-paths.md): cesty iterace vytvářejí plány vydání tak, že zarovnají úsilí s různými verzemi a iteracemi.
+- [Navázat časové osy](./timelines.md): definování počátečního a koncového data pro každou iteraci vytvoří časovou osu pro správu celkového projektu.
 
 Tyto pět článků vám pomůžou s každou úlohou zarovnání potřebnou k zahájení správy snahy o přijetí. Další krok vám pomůže začít s cvičením na základě zarovnání.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Začněte zarovnávat projekt plánu definováním [a určením priorit úloh](./workloads.md).
+Začněte zarovnávat projekt plánu [definováním a určením priorit úloh](./workloads.md).
 
 > [!div class="nextstepaction"]
 > [Definování a stanovení priorit úloh](./workloads.md)

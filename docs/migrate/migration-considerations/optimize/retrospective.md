@@ -1,25 +1,25 @@
 ---
 title: Jak retrospektivní schůzky pomáhají budovat růstové myšlení?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úlohy prováděné při migraci sady funkcí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825455"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548374"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Jak retrospektivní schůzky pomáhají budovat růstové myšlení?
 
-„Kultura si dá strategii ke snídani“. I nejlepší migrační plán může být snadno zmařen, pokud nemá administrativní podporu a podporu ze strany vedení. Základem růstového myšlení je učení, růst a dokonce i selhání. Tyto faktory představují základ každého transformačního úsilí.
+„Kultura si dá strategii ke snídani“. Nejlepší plán migrace se dá snadno vrátit zpátky, pokud nemá technickou podporu a nedoporučuje se ho využít. Základem růstového myšlení je učení, růst a dokonce i selhání. Tyto faktory představují základ každého transformačního úsilí.
 
 Pokora a zvědavost jsou důležité zejména při obchodní transformaci. Digitální transformace vyžaduje obojí v dostatečném množství. Tyto znaky jsou posíleny pravidelnou introspekcí a prostředím podpory. Když zaměstnance povzbudíte, aby riskovali, nachází lepší řešení. Pokud zaměstnanci mohou dělat chyby a učit se, uspějí. Retrospektivní schůzky představují příležitost k takovému zkoumání a růstu.
 
@@ -49,7 +49,7 @@ Nový růst je hmatatelně vyjádřen změnami v backlogu vydaných verzí a bac
 
 Retrospektivní schůzka značí konec vydané verze nebo iterace, protože týmy získají zkušenosti a poznatky a upraví [backlog vydaných verzí a backlog iterací](../assess/release-iteration-backlog.md) tak, aby odrážely nové procesy a experimenty, které se mají otestovat. Tím se spustí další iterace procesy migrace.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Část [Zabezpečení a správa](../secure-and-manage/index.md) tohoto obsahu může čtenáři pomoci připravit se na přechod od migrace k operacím.
 

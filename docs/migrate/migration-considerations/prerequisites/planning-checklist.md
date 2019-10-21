@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022602"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378387"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí – ověření připravenosti prostředí před migrací
 
@@ -35,7 +35,7 @@ Bez ohledu na to, jestli se při prvotní migraci rozhodnete provést sladění 
 
 Pokud migraci hodláte sladit se strategií zásad správného řízení cloudu hned od začátku, budete muset použít [Pět disciplín zásad správného řízení v cloudu](../../../govern/governance-disciplines.md), které vám pomohou kvalifikovaně rozhodnout o zásadách, sadách nástrojů a prosazovacích mechanismech, které sladí vaše cloudové prostředí s celkovými podnikovými požadavky. Příklady implementace tohoto modelu pomocí služeb Azure najdete v [praktických průvodcích pro návrh zásad správného řízení](../../../govern/guides/index.md) v Architektuře přechodu na cloud.
 
-Pokud vaše prvotní migrace není přesně sladěná s obecnější strategií zásad správného řízení cloudu, je stále potřeba se postarat o obecnější problémy organizace, přístupu a plánování infrastruktury. S těmito rozhodnutími ohledně připravenosti na cloud vám pomůže [Průvodce připraveností pro Azure](../../../ready/azure-readiness-guide/index.md).
+Pokud vaše prvotní migrace není přesně sladěná s obecnější strategií zásad správného řízení cloudu, je stále potřeba se postarat o obecnější problémy organizace, přístupu a plánování infrastruktury. V [Průvodci nastavením Azure](../../../ready/azure-setup-guide/index.md) najdete nápovědu k těmto rozhodnutím o připravenosti na Cloud.
 
 > [!CAUTION]
 > Důrazně doporučujeme, abyste vytvořili strategii zásad správného řízení pro vše, co je nad rámec prvotní migrace úloh.
@@ -62,7 +62,7 @@ Vaše cloudové úlohy budou pro podporu koncových uživatelů a správcovskéh
 
 Služby cloudové identity jsou předpokladem pro nabízení správy identit a přístupu pro cloudové prostředky. Než budete pokračovat, slaďte svoji strategii správy identit s plány přechodu na cloud. Pokud například migrujete stávající místní prostředky, zvažte podporu hybridních identit pomocí [synchronizace adresářů](../../../decision-guides/identity/index.md), abyste během migrace a po ní používali konzistentní sadu uživatelských přihlašovacích údajů jak místně, tak v cloudovém prostředí.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pokud prostředí splňuje minimální požadavky, může být považováno za schválené pro připravenost na migraci. Článek [Kulturní komplikace a správa změn](./cultural-complexity.md) pomáhá sladěním rolí a zodpovědností zajistit správná očekávání během realizace plánu.
 

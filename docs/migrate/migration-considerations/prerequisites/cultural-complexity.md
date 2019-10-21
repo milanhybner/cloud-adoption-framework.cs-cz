@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 61acef963538ec7fc4e4c11432f2c2ddc64a738b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028714"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548348"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Příprava na kulturní komplikace: sladění rolí a zodpovědností
 
 Pochopení kultury potřebné k provozování existujících datacenter je důležité pro úspěch každé migrace. V některých organizacích připadá správa datacenter na centralizovaný provozní tým IT. V těchto centralizovaných týmech bývají role a zodpovědnosti v rámci týmu dobře definované a chápané. U větších podniků, zejména u těch, které jsou vázané požadavky na dodržování předpisů třetích stran, bývá tato kultura odlišná a komplikovaná. Kulturní komplikace mohou vést k překážkám, které je obtížné pochopit a jejichž překonání je časově náročné.
 
-V obou případech je vhodné investovat do dokumentování rolí a zodpovědností, které se vyžadují k dokončení migrace. Tento článek popisuje některé role a zodpovědnosti používané při migraci datacenter, a slouží jako šablona pro dokumentaci, která do realizace vnese jasno.
+V obou případech je vhodné investovat do dokumentace rolí a zodpovědností, které jsou potřeba k dokončení migrace. Tento článek popisuje některé role a zodpovědnosti používané při migraci datacenter, a slouží jako šablona pro dokumentaci, která do realizace vnese jasno.
 
 ## <a name="business-functions"></a>Obchodní funkce
 
@@ -30,8 +30,8 @@ Při jakékoli migraci existuje několik klíčových funkcí, které by pokud m
 | Posouzení | Obchodní cíle | Definujte požadované obchodní výsledky migračního úsilí. |
 | Posouzení | Priority | Zajistěte soulad s měnícími se obchodními prioritami a podmínkami na trhu. |
 | Posouzení | Zdůvodnění | Ověřte předpoklady, které stojí za změnou obchodních zdůvodnění. |
-| Posoudit | Riziko | Pomozte týmu přechodu na cloud pochopit dopad reálných obchodních rizik. |
-| Posoudit | Schválení | Zkontrolujte a schvalte obchodní dopad navrhovaných změn architektury. |
+| Posouzení | Riziko | Pomozte týmu přechodu na cloud pochopit dopad reálných obchodních rizik. |
+| Posouzení | Schválení | Zkontrolujte a schvalte obchodní dopad navrhovaných změn architektury. |
 | Optimalizace | Plán změn | Definujte ve firmě plán realizace změn včetně období nízké aktivity a zablokování změn. |
 | Optimalizace | Testování | Vyberte zkušené uživatele, kteří jsou schopni ověřit výkon a funkčnost. |
 | Zabezpečení a správa | Dopad přerušení | Pomozte týmu přechodu na cloud vyčíslit vliv na přerušení firemních procesů. |
@@ -50,10 +50,10 @@ Každý proces v rámci diskuse o principech migrace Architektury přechodu na c
 |---------|---------|---------|---------|
 | Požadavek | Digitální aktiva | Na základě obchodních výsledků slaďte existující inventář se základními předpoklady. | Tým cloudové strategie |
 | Požadavek | Backlog migrace | Určete prioritu posloupnosti úloh, které se mají migrovat. | Tým cloudové strategie |
-| Posoudit | Architektura | Rozebráním prvotních předpokladů definujte cílovou architekturu na základě metrik využití. | Tým přechodu na cloud |
-| Posoudit | Schválení | Schvalte navrhovanou architekturu. | Tým cloudové strategie |
+| Posouzení | Architektura | Rozebráním prvotních předpokladů definujte cílovou architekturu na základě metrik využití. | Tým přechodu na cloud |
+| Posouzení | Schválení | Schvalte navrhovanou architekturu. | Tým cloudové strategie |
 | Migrace | Přístup k replikaci | Zpřístupněním existujících místních hostitelů a prostředků zřiďte procesy replikace. | Tým přechodu na cloud |
-| Optimalizace | Připraven | Před povýšením ověřte, že systém splňuje požadavky na výkon a náklady. | Tým přechodu na cloud |
+| Optimalizace | Připravenost | Před povýšením ověřte, že systém splňuje požadavky na výkon a náklady. | Tým přechodu na cloud |
 | Optimalizace | Povýšení | Oprávnění k povýšení úlohy do produkce a přesměrování produkčního provozu. | Tým přechodu na cloud |
 | Zabezpečení a správa | Přechod provozu | Před provozními operacemi zdokumentujte produkční systémy. | Tým přechodu na cloud |
 
@@ -62,7 +62,7 @@ Každý proces v rámci diskuse o principech migrace Architektury přechodu na c
 
 ## <a name="next-steps"></a>Další kroky
 
-Jakmile je tým všeobecně seznámen s rolemi a zodpovědnostmi, je čas začít připravovat technické podrobnosti migrace. Znalost [technické složitosti a správy změn](./technical-complexity.md) může pomoci připravit tým přechodu na cloud na technické záludnosti migrace tím, že bude postupovat v souladu s procesem správy postupných změn.
+Pokud má tým všeobecně pochopit role a zodpovědnosti, je čas začít připravovat technické podrobnosti o migraci. Znalost [technické složitosti a správy změn](./technical-complexity.md) může pomoci připravit tým přechodu na cloud na technické záludnosti migrace tím, že bude postupovat v souladu s procesem správy postupných změn.
 
 > [!div class="nextstepaction"]
 > [Technická složitost a správa změn](./technical-complexity.md)

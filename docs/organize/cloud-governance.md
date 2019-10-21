@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224003"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549091"
 ---
 # <a name="cloud-governance-capabilities"></a>Možnosti zásad správného řízení cloudu
 
@@ -38,7 +38,7 @@ Schopnost zásad správného řízení cloudu identifikuje rizika související 
 
 ## <a name="key-responsibilities"></a>Klíčové zodpovědnosti
 
-Hlavním clem jakékoli schopnosti zásad správného řízení cloudu je vyrovnávat konkurenční síly při transformaci a zmírnění rizik. Řízení cloudu navíc zajišťuje, že při [přijímání](./cloud-adoption.md) v cloudu se dozvíte o datech a klasifikaci prostředků a pokynůch k architektuře, které řídí všechny přístupy k přijetí. Tým bude také spolupracovat s cloudovým [centrem kvality](./cloud-center-of-excellence.md) , aby bylo možné používat automatizované přístupy k řízení cloudových prostředí.
+Hlavním clem jakékoli schopnosti zásad správného řízení cloudu je vyrovnávat konkurenční síly při transformaci a zmírnění rizik. Řízení cloudu navíc zajišťuje, že při [přijímání v cloudu](./cloud-adoption.md) se dozvíte o datech a klasifikaci prostředků a pokynůch k architektuře, které řídí všechny přístupy k přijetí. Tým bude také spolupracovat s [cloudovým centrem kvality](./cloud-center-of-excellence.md) , aby bylo možné používat automatizované přístupy k řízení cloudových prostředí.
 
 Tyto úlohy obvykle provádí funkce zásad správného řízení cloudu na měsíční úrovni.
 

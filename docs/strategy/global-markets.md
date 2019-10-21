@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027938"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548620"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Je důležité porozumět tomu, které obchodní jednotky pracují v cizích zem
 
 ## <a name="employee-usage-patterns"></a>Vzorce používání zaměstnanců
 
-Je důležité pochopit, jak globální uživatelé přistupují k aplikacím, které nejsou hostované ve stejné zemi jako uživatel. Globální sítě WAN (sítě WAN) často směrují uživatele na základě stávajících síťových smluv. V tradičním místním světě některá omezení omezují návrh sítě WAN. Tato omezení můžou vést ke zhoršení uživatelského prostředí, pokud je před přijetím cloudu správně nerozumíte.
+Je důležité pochopit, jak globální uživatelé přistupují k aplikacím, které nejsou hostované ve stejné zemi jako uživatel. Globální sítě WAN směrují uživatele na základě stávajících síťových smluv. V tradičním místním světě některá omezení omezují návrh sítě WAN. Tato omezení můžou vést ke zhoršení uživatelského prostředí, pokud je před přijetím cloudu správně nerozumíte.
 
 V modelu cloudu se v komoditních připojeních k Internetu otevírá i mnoho nových možností. Komunikace s rozšiřováním zaměstnanců napříč různými geografickými oblastmi může přispět k návrhu řešení WAN v týmu, kteří vytvářejí pozitivní uživatelské prostředí **a** můžou snižovat náklady na síť.
 
@@ -41,7 +41,7 @@ V modelu cloudu se v komoditních připojeních k Internetu otevírá i mnoho no
 
 Je stejně důležité pochopit vzory využití externích uživatelů, jako jsou zákazníci nebo partneři. Podobně jako vzorce používání zaměstnanců můžou vzory využívání externích uživatelů negativně ovlivnit výkon nasazení v cloudu. Když se v cizí zemi nachází velká nebo důležitá uživatelská základna, může být vhodné zahrnout do celkového návrhu řešení strategii globálního nasazení.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po uskutečnění a předání celosvětového rozhodnutí na trhu je tým připraven zahájit [vytváření technických standardů](../digital-estate/index.md) na základě těchto metrik.
 Výsledkem bude [nevyřízené položky transformace nebo nevyřízené položky migrace](..//migrate/migration-considerations/prerequisites/technical-complexity.md).

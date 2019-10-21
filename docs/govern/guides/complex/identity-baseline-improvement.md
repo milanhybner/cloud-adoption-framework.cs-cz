@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu identity'
+title: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu identity'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu identity'
+description: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu identity'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222315"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547731"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pravidla směrného plánu identity
+# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu identity
 
 Tento článek popisuje mluvený komentář přidáním ovládacích prvků pro kontrolu základní identity do MVP pro řízení.
 
@@ -76,13 +76,13 @@ Návrh MVP pro zásady správného řízení zahrnuje nové zásady Azure a impl
 
 Nové osvědčené postupy:
 
-- **Podrobný plán zabezpečení hybridní virtuální sítě:** Místní strana hybridní sítě by měla být nakonfigurovaná tak, aby umožňovala komunikaci mezi následujícím řešením a místními servery služby Active Directory. Tento osvědčený postup vyžaduje, aby DMZ povolil Active Directory Domain Services přes hranice sítě.
+- Podrobný **plán zabezpečení hybridní virtuální sítě:** Místní strana hybridní sítě by měla být nakonfigurovaná tak, aby umožňovala komunikaci mezi následujícím řešením a místními servery služby Active Directory. Tento osvědčený postup vyžaduje, aby DMZ povolil Active Directory Domain Services přes hranice sítě.
 - **Šablony Azure Resource Manager:**
     1. Definujte NSG pro blokování externích přenosů a povolte interní provoz.
     2. Nasaďte dva virtuální počítače služby Active Directory ve dvojici s vyrovnáváním zatížení na základě zlaté image. Při prvním spuštění tento obrázek spustí skript PowerShellu, který se připojí k doméně a zaregistruje se pomocí doménových služeb. Další informace najdete v tématu věnovaném [rozšiřování Active Directory Domain Services (služba AD DS) do Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
-- Azure Policy: Použijte NSG pro všechny prostředky.
+- Azure Policy: použijte NSG pro všechny prostředky.
 - Podrobný plán Azure:
-    1. Vytvořte podrobný plán s `active-directory-virtual-machines`názvem.
+    1. Vytvořte podrobný plán s názvem `active-directory-virtual-machines`.
     2. Jednotlivé šablony a zásady služby Active Directory přidejte do podrobného plánu.
     3. Publikovat podrobný plán do jakékoli příslušné skupiny pro správu.
     4. Použijte podrobný plán na jakékoli předplatné, které vyžaduje starší verze nebo Multi-Factor Authentication třetí strany.

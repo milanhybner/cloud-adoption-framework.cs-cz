@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828731"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549023"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Časové osy v plánu přijetí v cloudu
 
-V předchozím článku v této sérii byly úlohy a úlohy přiřazené k vydaným [verzím a iteracím](./iteration-paths.md). Tato přiřazení docházejí k odhadům časové osy v tomto článku.
+V předchozím článku v této sérii byly úlohy a úlohy přiřazené k [vydaným verzím a iteracím](./iteration-paths.md). Tato přiřazení docházejí k odhadům časové osy v tomto článku.
 
-Struktury rozpisu práce (WBS) se běžně používají v sekvenčních nástrojích pro správu projektů. Představují způsob, jakým se v časovém intervalu dokončí závislé úlohy. Tyto struktury fungují dobře, když jsou úkoly sekvenční. Vzájemné závislosti v úlohách nalezených v rámci přijetí cloudu usnadňují správu takových struktur. Chcete-li vyplnit tuto mezeru, můžete odhadnout časové osy založené na přiřazeních cesty iterace skrytím složitosti.
+Struktury rozpisu práce (WBS) se běžně používají v sekvenčních nástrojích pro správu projektů. Představují způsob, jakým budou dokončeny závislé úkoly v průběhu času. Tyto struktury fungují dobře, když jsou úkoly sekvenční. Vzájemné závislosti v úlohách nalezených v rámci přijetí cloudu usnadňují správu takových struktur. Chcete-li vyplnit tuto mezeru, můžete odhadnout časové osy založené na přiřazeních cesty iterace skrytím složitosti.
 
 ## <a name="estimate-timelines"></a>Odhadnout časové osy
 

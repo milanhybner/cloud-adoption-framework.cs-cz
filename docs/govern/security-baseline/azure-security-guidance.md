@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222914"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548059"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,7 +42,7 @@ Tyto nástroje jsou navržené tak, aby pomáhaly organizacím, které splňují
   - Referenční architektury s modely hrozeb.
   - Řízení matic implementace.
   - Automatizace pro nasazení referenčních architektur.
-  - Prostředky ochrany osobních údajů: Dokumentace k posouzení dopadu na ochranu dat, žádosti o data subjektu (PSÚ) a oznámení o porušení dat se začlení do vlastního programu pro zodpovědnosti v podpoře Obecné nařízení o ochraně osobních údajů (GDPR).
+  - Zdroje informací o ochraně osobních údajů: dokumentace pro posouzení dopadu ochrany dat, žádosti subjektů údajů (PSÚ) a oznámení o porušení dat se začlení do vlastního programu pro zodpovědnosti v podpoře Obecné nařízení o ochraně osobních údajů (GDPR).
 - **Začínáme s GDPR:** Produkty a služby společnosti Microsoft můžou organizacím splňovat požadavky GDPR při shromažďování nebo zpracování osobních údajů. STP je navržený tak, aby vám poskytl informace o schopnostech služeb Microsoft, které můžete použít k řešení konkrétních požadavků služby GDPR. Dokumentace může přispět k GDPR zodpovědnosti a porozumění technickým a organizačním opatřením. Dokumentace k posouzení dopadu na ochranu dat, žádosti subjektů údajů (PSÚ) a oznámení o porušení dat se začlení do vlastního programu pro zodpovědnosti v podpoře GDPR.
   - **Žádosti subjektu údajů:** GDPR uděluje jednotlivcům (nebo subjektům údajů) určitá práva v souvislosti se zpracováním jejich osobních údajů. To zahrnuje právo opravit nepřesná data, vymazat data nebo omezit jejich zpracování, jakož i přijmout data a splnit požadavek na přenos dat na jiný kontroler.
   - **Porušení dat:** GDPR vyžaduje požadavky na oznámení pro řadiče a procesory dat v případě porušení osobních údajů. STP poskytuje informace o tom, jak se společnost Microsoft snaží zabránit narušením prvního místa, jak společnost Microsoft zjistí porušení a jak bude Microsoft reagovat v případě porušení a upozorní vás jako řadič dat.
@@ -60,7 +60,7 @@ Pomocí možnosti analýzy hrozeb, která je dostupná ve službě Security Cent
 
 Služba Security Center k sestavení této analýzy hrozeb používá data přicházející z několika zdrojů v rámci Microsoftu. Security Center používá tuto možnost k identifikaci potenciálních hrozeb pro vaše prostředí. Podokno Analýza hrozeb se skládá ze tří hlavních možností:
 
-- Typy zjištěných hrozeb
+- Zjištěné typy hrozeb
 - Původ hrozeb
 - Mapa analýzy hrozeb
 

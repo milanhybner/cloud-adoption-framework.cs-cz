@@ -9,24 +9,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023424"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547818"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
-Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](./approach.md) a agregovaného inventáře může začít [](./inventory.md)racionalizace v cloudu. [Racionalizace cloudu](./rationalize.md) popisuje nejběžnější možnosti racionalizace.
+Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](./approach.md) a agregovaného [inventáře](./inventory.md)může začít racionalizace v cloudu. [Racionalizace cloudu](./rationalize.md) popisuje nejběžnější možnosti racionalizace.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradiční pohled na racionalizaci
 
 Je snadné pochopit racionalizaci, když vizualizujete tradiční proces racionalizace jako složitý rozhodovací strom. Každý Asset v digitální nemovitosti se dodává prostřednictvím procesu, který má za následek jednu z pěti odpovědí (pět RS). Pro malé Estates tento proces funguje dobře. Pro větší Estates je neefektivní a může vést k významným zpožděním. Podívejme se na proces, kde zjistíte, proč. Pak budeme docházet k efektivnějšímu modelu.
 
-**Inventáře** Úplný soupis prostředků, včetně aplikací, softwaru, hardwaru, operačních systémů a metrik výkonu systému, je nutný k dokončení úplné racionalizace s využitím tradičních modelů.
+**Inventář:** Úplný soupis prostředků, včetně aplikací, softwaru, hardwaru, operačních systémů a metrik výkonu systému, je nutný k dokončení úplné racionalizace s využitím tradičních modelů.
 
-**Kvantitativní analýza:** Ve stromové struktuře se kvantitativní otázky řídí první vrstvou rozhodnutí. Mezi běžné otázky patří následující: Používá se tento prostředek ještě dnes? Pokud ano, je optimalizovaná a velikost správně? Jaké závislosti existují mezi prostředky? Tyto otázky jsou zásadní pro klasifikaci inventáře.
+**Kvantitativní analýza:** Ve stromové struktuře se kvantitativní otázky řídí první vrstvou rozhodnutí. Mezi běžné otázky patří následující: je prostředek používaný ještě dnes? Pokud ano, je optimalizovaná a velikost správně? Jaké závislosti existují mezi prostředky? Tyto otázky jsou zásadní pro klasifikaci inventáře.
 
 **Kvalitativní analýza:** Další sada rozhodnutí vyžaduje lidské poznatky ve formě kvalitativní analýzy. Nejčastější dotazy, které jsou zde uvedeny, jsou často jedinečné pro řešení a můžou na ně odpovědět jenom obchodní strany a skupiny Power Users. Tato rozhodnutí obvykle odloží proces a výrazně zpomalují věci. Tato analýza obvykle spotřebovává 40 až 80 hodin FTE na aplikaci.
 
@@ -48,7 +48,7 @@ Zbývající část tohoto článku popisuje alternativní přístup, označovan
 
 Kompletní racionalizace rozsáhlého digitálního majetku je náchylná k riziku a může způsobit zpoždění z důvodu jeho složitosti. Předpokladem pro přírůstkový přístup je to, že opožděná rozhodnutí rozdělují zatížení podniku, aby se snížilo riziko překážek. V průběhu času tento přístup vytvoří organické modely pro vývoj procesů a zkušeností potřebných k efektivnějšímu rozhodování o rozhodnutích racionalizace.
 
-### <a name="inventory-reduce-discovery-data-points"></a>Inventáře Omezení datových bodů zjišťování
+### <a name="inventory-reduce-discovery-data-points"></a>Inventář: omezení datových bodů zjišťování
 
 Několik organizací investuje čas, energii a náklady na zajištění přesného digitálního majetku v reálném čase. V případě ztráty, krádeže, aktualizačních cyklů a přihlašování zaměstnanců se často podrobná sledování prostředků zařízení koncových uživatelů. Technologie NÁVRATNOSTi správného inventáře serverů a aplikací v tradičním místním datacentru je ale často nízká. Většina organizací IT má další problémy, které je potřeba řešit, než sledování využívání dlouhodobých assetů v datovém centru.
 
@@ -58,13 +58,13 @@ Kontrola založená na agentech je nejčastěji citovaná prodleva. Robustní da
 
 V přírůstkovém procesu racionalizace může být pro počáteční zjišťování použito řešení bez agentů k urychlení prvotních rozhodnutí. V závislosti na úrovni složitosti prostředí se může stále vyžadovat řešení založené na agentech. Dá se ale odebrat z kritické cesty na změnu firmy.
 
-### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativní analýza: Zjednodušení rozhodnutí
+### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativní analýza: zjednodušení rozhodnutí
 
 Bez ohledu na přístup ke zjišťování inventáře může kvantitativní analýza řídit počáteční rozhodnutí a předpoklady. To platí zejména při pokusu o identifikaci první úlohy nebo v případě, že cílem racionalizace je srovnání nákladů na vysoké úrovni. V přírůstkovém procesu racionalizace tým cloudové strategie a týmy přijímání v cloudu omezují [pět RS účelnosti](./5-rs-of-rationalization.md) na dvě Stručná rozhodnutí a uplatňují tyto kvantitativní faktory. Tím se zjednoduší analýza a sníží se množství počátečních dat, která je potřeba ke změně jednotky.
 
 Pokud se například organizace nachází v průběhu migrace IaaS do cloudu, můžete předpokládat, že většina úloh bude buď vyřazena, nebo bude znovu hostovat.
 
-### <a name="qualitative-analysis-temporary-assumptions"></a>Kvalitativní analýza: Dočasné předpoklady
+### <a name="qualitative-analysis-temporary-assumptions"></a>Kvalitativní analýza: dočasné předpoklady
 
 Omezením počtu potenciálních výsledků je snazší získat počáteční rozhodnutí o budoucím stavu assetu. Když omezíte možnosti, snížíte tím také počet otázek, které v této úvodní fázi požádaly o firmu.
 
@@ -156,7 +156,7 @@ V průběhu času bude kombinace týmu pro přijetí cloudu a týmu cloudové st
 
 V některých případech může být finanční model příliš těsný, aby bylo rozhodnutí bez dodatečné racionalizace. V takových případech možná budete potřebovat obecnější přístup k racionalizaci.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Výstupem úsilí racionalizace je nevyřízené položky pro všechny prostředky, které jsou ovlivněny zvolenou transformací. Tyto nevyřízené položky teď můžou sloužit jako základ pro nákladové modely cloudových služeb.
 

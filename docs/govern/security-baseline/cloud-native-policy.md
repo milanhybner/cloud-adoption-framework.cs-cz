@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222895"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548034"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Základní zásady zabezpečení pro Cloud – nativní
 
-[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na obecná témata zabezpečení, včetně ochrany sítě, digitálních prostředků, dat atd. Jak je uvedeno v [Průvodci přezkoumáním zásad](../policy-compliance/cloud-policy-review.md), rozhraní pro přijetí do cloudu zahrnuje tři úrovně **vzorových zásad**: Princip návrhu v cloudu, v rozlehlých sítích a v cloudu vyhovuje pro jednotlivé obory. Tento článek popisuje ukázkovou zásadu cloudového nativního řešení pro základnu standardních hodnot zabezpečení.
+[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na obecná témata zabezpečení, včetně ochrany sítě, digitálních prostředků, dat atd. Jak je uvedeno v příručce pro [kontrolu zásad](../policy-compliance/cloud-policy-review.md), rozhraní pro přijetí do cloudu zahrnuje tři úrovně **vzorových zásad**: princip návrhu Cloud-Native, Enterprise a cloudu vyhovuje pro jednotlivé obory. Tento článek popisuje ukázkovou zásadu cloudového nativního řešení pro základnu standardních hodnot zabezpečení.
 
 > [!NOTE]
 > Společnost Microsoft není k dispozici pro diktování podnikových nebo firemních zásad. Tento článek vám pomůže připravit se na interní kontrolu zásad. Před pokusem o její použití se předpokládá, že tyto ukázkové zásady budou rozšířeny, ověřeny a testovány proti podnikovým zásadám. Nedoporučuje se používat Tato vzorová zásada jako.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967686"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547764"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Ukázkové zásady akcelerace nasazení – příkazy
 
@@ -32,7 +32,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Prohlášení o zásadách:** Všechny prostředky nasazené do cloudu by se měly nasadit pomocí šablon nebo skriptů pro automatizaci, kdykoli to bude možné.
 
-**Možné možnosti návrhu:** [Azure Resource Manager šablony](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) poskytují přístup k nasazení prostředků do Azure prostřednictvím infrastruktury jako kódu. [Terraformu](https://docs.microsoft.com/azure/terraform/terraform-overview) můžete použít také jako konzistentní místní a cloudové nástroje pro nasazení.
+**Možné možnosti návrhu:** [šablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) poskytují přístup s infrastrukturou jako kód pro nasazení vašich prostředků do Azure. [Terraformu](https://docs.microsoft.com/azure/terraform/terraform-overview) můžete použít také jako konzistentní místní a cloudové nástroje pro nasazení.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Nedostatečné viditelnosti systémových problémů
 
@@ -43,7 +43,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 - Pro všechny produkční systémy a komponenty budou identifikovány klíčové metriky a diagnostické míry a monitorovací a diagnostické nástroje budou na tyto systémy pravidelně sledovány provozními pracovníky.
 - Operace budou zvážit použití nástrojů pro monitorování a diagnostiku v neprodukčních prostředích, jako je například fázování a kontrola, které identifikují problémy se systémem před tím, než dojde v produkčním prostředí.
 
-**Možné možnosti návrhu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), která také zahrnuje Log Analytics a Application Insights, poskytuje nástroje pro shromažďování a analýzu telemetrie, které vám pomůžou pochopit, jak vaše aplikace provádí a aktivně identifikují problémy, které mají vliv na ně. prostředky, na kterých jsou závislé. [Protokol aktivit Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) navíc hlásí všechny změny, které se provedou na úrovni platformy, a měl by se monitorovat/auditovat kvůli neodpovídajícím změnám.
+**Možné možnosti návrhu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), což zahrnuje taky Log Analytics a Application Insights, poskytuje nástroje pro shromažďování a analýzu telemetrie, které vám pomůžou pochopit, jak aplikace pracují a proaktivují. Identifikujte problémy, které mají vliv na, a prostředky, na kterých jsou závislé. [Protokol aktivit Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) navíc hlásí všechny změny, které se provedou na úrovni platformy, a měl by se monitorovat/auditovat kvůli nekompatibilním změnám.
 
 ## <a name="configuration-security-reviews"></a>Revize zabezpečení konfigurace
 

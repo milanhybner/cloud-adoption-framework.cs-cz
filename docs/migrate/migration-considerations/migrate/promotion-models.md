@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 88f8d847a1eac05a1e291c8908fd9a161904f626
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825559"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548449"
 ---
 # <a name="promotion-models---single-step-staged-or-flight"></a>Modely povýšení – jeden krok, s fázemi nebo nasazení testovací verze
 
@@ -79,7 +79,7 @@ Tento model je podobný modelu povýšení s fázemi. Existuje však jeden zása
 - Zvolený nástroj pro migraci nemůže podporovat probíhající replikaci po migraci.
 - K synchronizaci datových platforem během časového rámce přípravy se vyžaduje sekundární způsob replikace dat.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po definování a přijetí modelu povýšení týmem přechodu na cloud může začít [náprava aktiv](./remediate.md).
 

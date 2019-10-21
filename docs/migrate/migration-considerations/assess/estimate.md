@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be4fe4616b4f0599075ceac2b9c0838949b350c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025437"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548487"
 ---
 # <a name="estimate-cloud-costs"></a>Odhad nákladů na cloud
 
@@ -25,17 +25,17 @@ Velikost vašich digitálních aktiv má přímý vliv na rozhodnutí týkajíc�
 
 Upozorňujeme však, že i migrace malého rozsahu, které zahrnují jednu sadu funkcí, mohou vyžadovat různě velké množství podpůrných prostředků. Pokud migrujete méně než tisíc virtuálních počítačů, pro shromažďování dat o inventáři a odhad nákladů vám pravděpodobně bude stačit nástroj, jako je [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Další nástroje, které můžete použít pro kalkulaci nákladů, najdete v článku zaměřeném na [výpočet nákladů na digitální aktiva](../../../digital-estate/calculate.md).
 
-Pokud plánujete migraci digitálních aktiv s více než tisícovkou jednotek, odhad nákladů můžete provést tak, že proces rozdělíte do čtyř nebo pěti iterací. V případě rozsáhlejších aktiv nebo pokud potřebujete přesnější odhad, bude situace nejspíš vyžadovat komplexnější přístup, který je popsaný v části [Digitální aktiva](../../../digital-estate/index.md) v dokumentu Architektura přechodu na cloud.
+Pro 1000 + jednotka Digital Estates je stále možné rozdělit odhad na čtyři nebo pět možných iterací, což zajistí, že se proces odhadu dá spravovat. V případě rozsáhlejších aktiv nebo pokud potřebujete přesnější odhad, bude situace nejspíš vyžadovat komplexnější přístup, který je popsaný v části [Digitální aktiva](../../../digital-estate/index.md) v dokumentu Architektura přechodu na cloud.
 
 ## <a name="accounting-models"></a>Účetní modely
 
 Účetní modely
 
-Pokud znáte tradiční procesy nákupů v oblasti IT, odhad nákladů v prostředí cloudu může působit nezvykle. V průběhu nasazení cloudových technologií se přechází z modelu s pevně stanovenými, strukturovanými výdaji na model s proměnlivými provozními náklady. V případě tradičního modelu s kapitálovými výdaji by se IT tým pokusil konsolidovat kupní sílu pro několik sad funkcí napříč různými programy tak, aby vytvořil centralizovaný fond sdílených výpočetních prostředků, které by mohly podporovat každé z těchto řešení. V prostředí, které používá model s provozními náklady na cloud, je možné vynakládat finanční prostředky tak, aby se přímo řešily požadavky jednotlivých sad funkcí, týmů nebo obchodních jednotek. Tento přístup umožňuje cíleněji vynakládat finanční prostředky na podporu interních zákazníků. Při odhadování nákladů je důležité vědět, o jaké části rozpočtu bude rozhodovat samotný IT tým.
+Pokud znáte tradiční procesy nákupů v oblasti IT, odhad nákladů v prostředí cloudu může působit nezvykle. V průběhu nasazení cloudových technologií se přechází z modelu s pevně stanovenými, strukturovanými výdaji na model s proměnlivými provozními náklady. V případě tradičního modelu s kapitálovými výdaji by se IT tým pokusil konsolidovat kupní sílu pro několik sad funkcí napříč různými programy tak, aby vytvořil centralizovaný fond sdílených výpočetních prostředků, které by mohly podporovat každé z těchto řešení. V prostředí, které používá model s provozními náklady na cloud, je možné vynakládat finanční prostředky tak, aby se přímo řešily požadavky jednotlivých sad funkcí, týmů nebo obchodních jednotek. Tento přístup umožňuje cíleněji vynakládat finanční prostředky na podporu interních zákazníků. Při odhadování nákladů je důležité, abyste nejprve pochopili, kolik z těchto nových možností monitorování účtů bude používat IT tým.
 
-Pokud chcete v oblasti financí pracovat podobně jako s původními metodami kalkulace kapitálových výdajů, pro výpočet základních ročních nákladů použijte výsledky některého z postupů uvedených ve výše uvedené části [Velikost digitálních aktiv](#digital-estate-size). Následně tyto roční náklady vynásobte obvyklou délkou cyklu pro aktualizaci podnikového hardwaru. Cyklus aktualizace hardwaru představuje období, po jehož uplynutí společnost nahrazuje stárnoucí hardware, a obvykle se měří v letech. Roční výdaje vynásobené cyklem aktualizace hardwaru vytvoří strukturu nákladů, která bude podobná investičnímu plánu kapitálových výdajů.
+Pokud chcete v oblasti financí pracovat podobně jako s původními metodami kalkulace kapitálových výdajů, pro výpočet základních ročních nákladů použijte výsledky některého z postupů uvedených ve výše uvedené části [Velikost digitálních aktiv](#digital-estate-size). Dále vynásobí tyto roční náklady obvyklým cyklem aktualizace hardwaru společnosti. Cyklus aktualizace hardwaru představuje období, po jehož uplynutí společnost nahrazuje stárnoucí hardware, a obvykle se měří v letech. Roční výdaje vynásobené cyklem aktualizace hardwaru vytvoří strukturu nákladů, která bude podobná investičnímu plánu kapitálových výdajů.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Jakmile bude odhad nákladů hotový, migrace může začít. Před jejím zahájením vám ale doporučujeme přečíst si [možnosti podpory a spolupráce s partnery](./partnership-options.md).
 

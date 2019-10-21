@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Počáteční podniková zásada za strategii zásad správného řízení'
+title: 'Příručka zásad správného řízení pro komplexní podniky: počáteční podniková zásada za strategii zásad správného řízení'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Počáteční podniková zásada za strategii zásad správného řízení'
+description: 'Příručka zásad správného řízení pro komplexní podniky: počáteční podniková zásada za strategii zásad správného řízení'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028125"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547685"
 ---
-# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Příručka zásad správného řízení pro komplexní podniky: Počáteční podniková zásada za strategii zásad správného řízení
+# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Příručka zásad správného řízení pro komplexní podniky: počáteční podniková zásada za strategii zásad správného řízení
 
 Následující podnikové zásady definují počáteční umístění zásad správného řízení, což je výchozí bod tohoto průvodce. Tento článek definuje předem připravená rizika, počáteční příkazy zásad a prvotní procesy pro vykonání příkazů zásad.
 
@@ -35,16 +35,16 @@ Po schůzce se dva členové týmu pro řízení IT požádali o oprávnění k 
 
 Aktuální tolerance rizika je vysoká a později pro investice do zásad správného řízení cloudu je nízká. V takovém případě indikátory tolerance slouží jako systém včasného varování, který aktivuje investici času a energie. Pokud jsou pozorovány následující indikátory, bylo by vhodné předem navýšit strategii zásad správného řízení.
 
-- **Cost Management:** Škálování nasazení překračuje 1 000 prostředků do cloudu nebo měsíční útrata překračuje $10 000 USD za měsíc.
+- **Cost management:** Škálování nasazení překračuje 1 000 prostředků do cloudu nebo měsíční útrata překračuje $10 000 USD za měsíc.
 - **Směrné plány identity:** Zahrnutí aplikací se staršími požadavky na službu Multi-Factor Authentication nebo třetích stran.
 - **Základní hodnoty zabezpečení:** Zahrnutí chráněných dat v definovaných plánech přijetí do cloudu.
 - **Konzistence prostředků:** Zahrnutí všech klíčových aplikací v definovaných plánech přijetí do cloudu.
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Tato podniková zásada připraví tým zásad správného řízení cloudu, aby implementovala MVP pro řízení MVP, který bude základem pro přijetí. Dalším krokem je implementace tohoto MVP.
 
 > [!div class="nextstepaction"]
-> [Vysvětlení doporučených pokynů](./prescriptive-guidance.md)
+> [Vysvětlené osvědčené postupy](./prescriptive-guidance.md)

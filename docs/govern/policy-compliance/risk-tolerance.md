@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223538"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547167"
 ---
 # <a name="evaluate-risk-tolerance"></a>Vyhodnocení tolerance rizik
 
@@ -30,7 +30,7 @@ Skutečná obchodní rizika jsou založena na podrobnostech specifických transf
 > [!IMPORTANT]
 > Než si přečtete následující, mějte na paměti, že je možné spravovat každé z těchto rizik. Cílem tohoto článku je informovat a připravit čtenáře pro lepší diskuzi o řízení rizik.
 
-- **Porušení dat:** Počet rizik přidružených k jakékoli transformaci představuje ochranu dat. Nevracení dat může způsobit značnou škodu vaší společnosti, což vede ke ztrátě zákazníků, snížení obchodu nebo dokonce právní zodpovědnosti. Jakékoli změny způsobu, jakým se data ukládají, zpracovávají nebo využívají, vytváří riziko. Cloudové transformace vytvářejí vysoký stupeň změny v souvislosti se správou dat, takže by riziko nemělo být pokaždé lehce. Jednotlivé [standardní hodnoty zabezpečení](../security-baseline/index.md), [klasifikace dat](./data-classification.md)a [přírůstkové racionalizace](../../digital-estate/rationalize.md#incremental-rationalization) mohou spravovat toto riziko.
+- **Porušení dat:** Hlavní riziko spojené s jakoukoli transformací je porušení dat. Nevracení dat může způsobit značnou škodu vaší společnosti, což vede ke ztrátě zákazníků, snížení obchodu nebo dokonce právní zodpovědnosti. Jakékoli změny způsobu, jakým se data ukládají, zpracovávají nebo využívají, vytváří riziko. Cloudové transformace vytvářejí vysoký stupeň změny v souvislosti se správou dat, takže by riziko nemělo být pokaždé lehce. Jednotlivé [standardní hodnoty zabezpečení](../security-baseline/index.md), [klasifikace dat](./data-classification.md)a [přírůstkové racionalizace](../../digital-estate/rationalize.md#incremental-rationalization) mohou spravovat toto riziko.
 
 - **Přerušení služby:** Firemní operace a prostředí pro zákazníky spoléhají na technické operace. Cloudové transformace vytvoří změnu v provozu IT. V některých organizacích je tato změna malá a snadno upravena. V jiných organizacích můžou tyto změny vyžadovat přesazování, rekurzi nebo nové přístupy k podpoře cloudových operací. Větší změna, tím větší je možný dopad na obchodní provoz a prostředí pro zákazníky. Správa tohoto rizika bude vyžadovat zapojení firmy do plánování transformace. Plánování vydání a první výběr úloh v článku [přírůstkové racionalizace](../../digital-estate/rationalize.md#incremental-rationalization) projednávají způsoby, jak zvolit úlohy pro transformační projekty. Role firmy v této aktivitě je určena k sdělování rizik obchodních operací se změnou prioritních úloh. Pomoc při výběru úloh, které mají nižší dopad na operace, sníží celkové riziko.
 
@@ -66,7 +66,7 @@ V této části jsou uvedené otázky týkající se konverzace provoking ve tř
 - Mohlo by toto riziko vytvořit novou právní odpovědnost? Pokud ano, má tato ocenění přednost před započetím škod v těchto typech případů?
 - Mohlo dojít k zastavení obchodních operací? Pokud ano, jak dlouho budou operace provozu?
 - Mohl by toto riziko zpomalit obchodní operace? Pokud ano, jak pomalé a jak dlouho?
-- V této fázi transformace je toto riziko vypnuto nebo se bude opakovat?
+- V této fázi transformace je toto riziko jednorázové nebo se bude opakovat?
 - Zvyšuje se riziko při transformaci v četnosti nebo zmenšování?
 - Zvyšuje riziko v průběhu času pravděpodobnost nebo snižuje pravděpodobnost?
 - Rozlišuje se rizikový čas v podstatě? Bude riziko úspěch nebo bude horší, pokud není vyřešeno?

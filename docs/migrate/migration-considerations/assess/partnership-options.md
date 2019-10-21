@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022687"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549173"
 ---
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
@@ -33,23 +33,23 @@ Během plánování, sestavování nebo migrace má společnost obecně čtyři 
 Pokud organizace plánuje migraci do Azure vlastními silami, vždy je tu Microsoft, aby na této cestě pomohl. Abychom usnadnili migraci do Azure, Microsoft a jeho partneři vyvinuli rozsáhlou sadu architektur, průvodců, nástrojů a služeb, které snižují riziko a urychlují migraci virtuálních počítačů, aplikací a databází. Tyto nástroje a služby podporují širokou škálu operačních systémů, programovacích jazyků, architektur a databází.
 
 - **Nástroje posouzení a migrace.** Azure poskytuje rozsáhlou řadu nástrojů, které se používají v různých fázích vaší transformaci na cloud, včetně posouzení vaší stávající infrastruktury. Další informace najdete v části Posouzení v dále uvedené kapitole Migrace.
-- **[Architektura přechodu na cloud od Microsoftu](../../index.md).** Tato architektura představuje strukturovaný přístup k přechodu a migraci do cloudu. Je založený na postupech osvědčených u mnoha zákaznických iniciativ podporovaných Microsoftem a organizuje se jako posloupnost kroků, od architektury a návrhu až po implementaci. U každého kroku vám podpůrné doprovodné materiály pomůžou s návrhem architektury vlastní aplikace.
+- **[Architektura přechodu na cloud od Microsoftu](../../index.md).** Tato architektura představuje strukturovaný přístup k přechodu a migraci do cloudu. Vychází z osvědčených postupů pro celou řadu zákaznických rezervací podporovaných společností Microsoft a organizuje se jako série kroků od architektury a návrhu až po implementaci. U každého kroku vám podpůrné doprovodné materiály pomůžou s návrhem architektury vlastní aplikace.
 - **[Vzory návrhu v cloudu](https://docs.microsoft.com/azure/architecture/patterns).** Azure poskytuje některé užitečné vzory cloudového návrhu pro sestavování spolehlivých, škálovatelných a zabezpečených úloh v cloudu. Každý vzor popisuje problém, ke kterému se vztahuje, důležité informace týkající se použití tohoto vzoru a příklad s využitím Azure. Většina vzorů zahrnuje ukázky nebo fragmenty kódu, které ukazují, jak tento vzor implementovat v Azure. Jsou ale relevantní pro libovolný distribuovaný systém bez ohledu na to, jestli je hostovaný v Azure nebo na jiných cloudových platformách.
 - **[Základy práce s cloudy](https://docs.microsoft.com/azure/architecture/guide).** Základy vám pomůžou naučit se základní přístupy k implementaci základních konceptů. Tato příručka pomáhá technikům zvážit řešení, která přesahují jednu službu Azure.
 - **[Ukázkové scénáře](https://docs.microsoft.com/azure/architecture/example-scenario).** Příručka obsahuje odkazy na implementace reálného zákazníka, přehled nástrojů, přístupů a procesů, které minulí zákazníci použili k dosažení konkrétních obchodních cílů.
-- **[Referenční architektury](https://docs.microsoft.com/azure/architecture/reference-architectures).** Referenční architektury jsou uspořádané podle scénáře a související architektury jsou seskupené dohromady. Každá architektura zahrnuje doporučené postupy a také důležité informace o škálovatelnosti, dostupnosti, možnostech správy a zabezpečení. Většina zahrnuje také nasaditelné řešení.
+- **[Referenční architektury](https://docs.microsoft.com/azure/architecture/reference-architectures).** Referenční architektury jsou uspořádané podle scénáře a související architektury jsou seskupené dohromady. Každá architektura zahrnuje osvědčené postupy spolu s důležitými informacemi o škálovatelnosti, dostupnosti, možnostech správy a zabezpečení. Většina zahrnuje také nasaditelné řešení.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
 Program [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure) poskytuje přímou asistenci odborníků na Azure a ve spolupráci s partnery pomáhá zákazníkům rychle a bez obav sestavovat řešení Azure. FastTrack přináší osvědčené postupy a nástroje z reálných zákaznických prostředí a pomáhá zákazníkům od instalace, konfigurace a vývoje po produkci řešení Azure, jako například:
 
-- Migrace datacenter
-- Windows Server v Azure
+- Migrace datacentra
+- Windows Server ve službě Azure
 - Linux v Azure
 - SAP v Azure
 - Provozní kontinuita a zotavení po havárii (BCDR)
 - Vysokovýkonné výpočetní prostředí*
-- Aplikace nativní pro cloud
+- Aplikace nativních pro cloud
 - DevOps
 - Modernizace aplikací
 - Analýzy v cloudovém měřítku**
@@ -78,13 +78,13 @@ Toto jsou hlavní fáze typického zapojení do programu FastTrack for Azure:
 
 ![Přístup k architektuře přechodu na cloud služeb Microsoftu](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Posouzení:** Služby Microsoftu využívají [jednotný přístup založený na datech a nástrojích](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), který se skládá z architektonických seminářů, informací o Azure v reálném čase, modelů hrozeb zabezpečení a identity a různých nástrojů, které poskytují přehled o výzvách, rizicích, doporučeních a problémech s existujícím prostředím Azure, přičemž klíčovým výstupem je [plán modernizace na vysoké úrovni](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Vyhodnotit:** Služby Microsoftu využívají [jednotný přístup založený na datech a základě nástrojů](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , který se skládá z architektonických seminářů, modelů Azure v reálném čase, modelů zabezpečení a identity a různých nástrojů, které poskytují přehled o výzvách, rizicích, doporučeních. a problémy s existujícím prostředím Azure s použitím klíčových výsledků, jako je například [plán modernizace vysoké úrovně](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Přechod:** Prostřednictvím [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) služeb Microsoftu můžete vytvářet základní návrhy Azure, vzory a architekturu zásad správného řízení tím, že své požadavky namapujete na nejvhodnější referenční architekturu a naplánujete, navrhnete a nasadíte infrastrukturu, správu, zabezpečení a identity potřebné pro úlohy.
+**Přijmout:** Prostřednictvím [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)pro služby Microsoftu můžete zřídit základní návrhy Azure, vzory a architekturu zásad správného řízení tím, že své požadavky namapujete na nejvhodnější referenční architekturu a naplánujete, navrhujete a nasazujete infrastrukturu. pro úlohy se vyžaduje Správa, zabezpečení a identita.
 
-**Migrace/optimalizace:** [Řešení modernizace cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) služeb Microsoftu nabízí komplexní přístup pro přesun aplikací a infrastruktury do Azure a jejich následnou optimalizaci a modernizaci, podpořenou zjednodušenou migrací.
+**Migrovat/optimalizovat:** [Řešení moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) pro služby Microsoftu nabízí komplexní přístup k přesunu aplikací a infrastruktury do Azure a také k optimalizaci a modernizovati v cloudu, kterou zajišťuje zjednodušená migrace.
 
-**Inovace:** [Řešení Cloud Center of vynikající verze společnosti Microsoft (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) nabízí DevOps výukovým Engagement a používá zásady DevOps v kombinaci s předm nativním cloudovým řízením služeb a bezpečnostními prvky zabezpečení, které vám pomůžou při firemních inovacích. Zvyšte flexibilitu a omezte čas na hodnotu v rámci zabezpečené, předvídatelné a flexibilní funkce pro poskytování služeb a provozu.
+Inovace **:** [Řešení Cloud Center of vynikající verze společnosti Microsoft (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) nabízí DevOps výukovým Engagement a používá zásady DevOps v kombinaci s předm nativním cloudovým řízením služeb a bezpečnostními prvky zabezpečení, které vám pomůžou při firemních inovacích. Zvyšte flexibilitu a omezte čas na hodnotu v rámci zabezpečené, předvídatelné a flexibilní funkce pro poskytování služeb a provozu.
 
 ## <a name="azure-support"></a>Podpora Azure
 
@@ -99,7 +99,7 @@ Získejte pomoc od partnerů s předem připravenými nebo vlastními řešením
 - **[Najděte partnera pro cloudová řešení](https://www.microsoft.com/solution-providers/home).** Certifikovaný partner CSP může pomoct plně využít výhod cloudu vyhodnocením obchodních cílů pro přechod na cloud, určením správného cloudového řešení, které vyhovuje obchodním potřebám a pomůže větší agilitě a efektivitě podnikání.
 - **[Najděte partnera pro spravované služby](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Partner pro spravované služby Azure (MSP) vás při přesunu podnikání do Azure pomůže provést všemi aspekty přechodu na cloud. Cloudoví partneři MSP ukáží zákazníkům všechny výhody, které přechod na cloud poskytuje, od konzultací po správu migrace a provozu. Fungují také jako jednotné místo pro obecnou podporu, zřizování a fakturaci, a to vše s flexibilním obchodním modelem průběžných plateb (PAYG).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po výběru partnera a strategie podpory je možné aktualizovat [backlogy vydání a iterace](./release-iteration-backlog.md) tak, aby odrážely plánované úsilí a přiřazení.
 

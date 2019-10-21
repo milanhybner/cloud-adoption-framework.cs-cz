@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů'
+title: 'Příručka zásad správného řízení pro komplexní podniky: lepší zlepšení cloudu'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů'
+description: 'Příručka zásad správného řízení pro komplexní podniky: lepší zlepšení cloudu'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967655"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547659"
 ---
-# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení pro více cloudů
+# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Příručka zásad správného řízení pro komplexní podniky: lepší zlepšení cloudu
 
 ## <a name="advancing-the-narrative"></a>Posunutí mluveného komentáře
 
@@ -80,7 +80,7 @@ Tato část článku vylepšuje návrh MVP zásad správného řízení, aby zah
     1. Vynucování zásad správného řízení je specifické pro Cloud.
     2. Podnikové zásady zřízené v příručce zásad správného řízení nejsou specifické pro Cloud. I když se implementace může od cloudu do cloudu lišit, můžete příkazy zásad použít pro sekundárního zprostředkovatele.
 
-Přijetí do více cloudů by mělo být obsaženo v závislosti na technických potřebách nebo konkrétních obchodních požadavcích. V důsledku toho roste více cloudových řešení, takže se jedná o složitost a bezpečnostní rizika.
+K nasazení v cloudu by se mělo zahrnout tam, kde je to potřeba, na základě technických potřeb nebo specifických podnikových požadavků. Vzhledem k tomu, že se nasazení s více cloudy zvětšuje, má tak složitost a bezpečnostní riziko.
 
 ## <a name="next-steps"></a>Další kroky
 

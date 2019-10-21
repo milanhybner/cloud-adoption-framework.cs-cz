@@ -1,7 +1,7 @@
 ---
-title: Průvodce monitorováním cloudu – přehled platforem monitorování
+title: 'Průvodce monitorováním cloudu: Přehled monitorovacích platforem'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
+description: Vyberte, kdy se má v Microsoft Azure použít Azure Monitor nebo System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026509"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547264"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>Průvodce monitorováním cloudu: Přehled našich monitorovacích platforem
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Průvodce monitorováním cloudu: Přehled monitorovacích platforem
 
-Společnost Microsoft poskytuje řadu možností monitorování ze dvou produktů: System Center Operations Manager, která byla navržená místně a pak se rozšířila do cloudu a Azure Monitor, která byla navržena pro Cloud, ale může také monitorovat místní systémy. Tyto dvě nabídky poskytují základní monitorovací služby, jako jsou například výstrahy, sledování doby provozu služby, monitorování stavu aplikace a infrastruktury, diagnostika a analýza.
+Microsoft poskytuje řadu možností monitorování ze dvou produktů: System Center Operations Manager, které byly navrženy místně a pak se rozšířily do cloudu a Azure Monitor, která byla navržena pro Cloud, ale může také monitorovat místní systémy. . Tyto dvě nabídky poskytují základní monitorovací služby, jako jsou například výstrahy, sledování doby provozu služby, monitorování stavu aplikace a infrastruktury, diagnostika a analýza.
 
 Mnoho organizací si přechodu nejnovější postupy pro DevOps flexibilitu a cloudové inovace pro správu prostředí heterogenní. I když jsou ještě obavy o jejich schopnost dělat vhodná a odpovědná rozhodnutí týkající se monitorování těchto úloh.
 
@@ -34,7 +34,7 @@ Po vydání Azure v 2010 byl k dispozici monitorování cloudových služeb s ag
 
 Application Insights bylo zavedeno k posunu se změnami v odvětví, kde bylo rostoucí šíření cloudových, mobilních a IoT zařízení a zavedení postupů DevOps. Z monitorování výkonu aplikací v Operations Manager ke službě v Azure, kde poskytuje bohatě sledující webové aplikace napsané v různých jazycích. V 2015 byla oznámena verze Preview Application Insights pro sadu Visual Studio a později byla známa jako Application Insights. Shromažďuje podrobnosti o výkonu aplikace, požadavcích a výjimkách a trasováních.
 
-V 2015 se služba Azure Operational Insights všeobecně zpřístupnila. Dodávala službu Analysis Services Log Analytics, která shromáždila a prohledala data z počítačů v Azure, v Prem nebo v jiných cloudových prostředích a připojená k System Center Operations Manager. Byly nabídnuty sady Intelligence, které dodávaly různé konfigurace pro správu a monitorování, které obsahují kolekci dotazů a analytické logiky, vizualizace a pravidla shromažďování dat pro takové scénáře jako audit zabezpečení, stav posouzení a správa výstrah.  Novější verze Azure Operational Insights se staly známými jako Log Analytics.  
+V 2015 se služba Azure Operational Insights všeobecně zpřístupnila. Dodávala službu Analysis Services Log Analytics, která shromáždila a prohledala data z počítačů v Azure, v místním nebo jiném cloudovém prostředí a připojená k System Center Operations Manager. Byly nabídnuty sady Intelligence, které dodávaly různé konfigurace pro správu a monitorování, které obsahují kolekci dotazů a analytické logiky, vizualizace a pravidla shromažďování dat pro takové scénáře jako audit zabezpečení, stav posouzení a správa výstrah. Novější verze Azure Operational Insights se staly známými jako Log Analytics.  
 
 V 2016 byl ve verzi Preview Azure Monitor oznámena Ignite. Poskytovala společné rozhraní pro shromažďování metrik platforem, protokoly diagnostiky prostředků a události protokolu aktivit na úrovni předplatného ze všech služeb Azure, které začali používat rozhraní. Dříve měla každá služba Azure vlastní metodu monitorování.
 
@@ -118,7 +118,7 @@ Všechna data shromážděná pomocí Azure Monitor jsou uložená jako protokol
 
 Vzhledem k tomu, že monitorování odděluje shromažďování dat od akcí proti těmto datům, nemusí být schopné v mnoha případech poskytovat výstrahy téměř v reálném čase. Pro upozornění na data protokolu se dotazy spouštějí podle opakujícího se plánu definovaného v upozornění. Díky tomuto chování může Azure Monitor snadno korelovat data ze všech monitorovaných zdrojů a interaktivně analyzovat data různými způsoby. To je užitečné hlavně při provádění analýz hlavní příčiny a určení, kde k problému může dojít.
 
-## <a name="health-monitoring"></a>Monitorování stavu
+## <a name="health-monitoring"></a>Sledování stavu
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -132,7 +132,7 @@ Azure Monitor neposkytuje uživatelsky definované metody implementace modelu sl
 
 - **Azure monitor pro virtuální počítače** poskytuje prostředí pro monitorování stavu pro hostované virtuální počítače Azure, podobně jako Operations Manager při monitorování virtuálních počítačů se systémem Windows a Linux. Vyhodnotí stav klíčových komponent operačního systému z perspektivy dostupnosti a výkonu a určí aktuální stav. Když zjistí, že virtuální počítač hosta má trvalé využívání prostředků, kapacitu místa na disku nebo problém související s funkcí základního operačního systému, vygeneruje výstrahu, která tento stav zaznamená do vaší pozornosti.
 
-- **Azure monitor pro kontejnery** monitorují výkon a stav služeb Azure Kubernetes nebo Azure Container Instances. Z řadiče, uzly a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik shromažďuje metriky paměti a procesoru. Také shromažďuje protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předem definovaná kritéria stavu na základě shromážděných údajů o výkonu vám pomůžou zjistit, jestli došlo k potížím s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
+- **Azure monitor pro kontejnery** monitorují výkon a stav služeb Azure Kubernetes nebo Azure Container Instances. Shromažďuje metriky paměti a procesoru z řadičů, uzlů a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik. Také shromažďuje protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předem definovaná kritéria stavu na základě shromážděných údajů o výkonu vám pomůžou zjistit, jestli došlo k potížím s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
 
 ## <a name="analyzing-data"></a>Analýza dat
 
@@ -152,7 +152,7 @@ Operations Manager poskytuje čtyři základní způsoby, jak analyzovat data po
 
 Azure Monitor má výkonný analytický modul, který umožňuje interaktivně pracovat s daty protokolů a kombinovat je s dalšími daty monitorování pro vývoj a další analýzu dat. Zobrazení a řídicí panely umožňují vizualizovat data dotazů různými způsoby z Azure Portal a importovat je do Power BI. Mezi řešení monitorování patří dotazy a zobrazení, která prezentují data, která shromažďuje. Přehledy, jako jsou Application Insights, Azure Monitor pro virtuální počítače a Azure Monitor pro kontejnery, zahrnují přizpůsobené vizualizace pro podporu scénářů interaktivního monitorování.
 
-## <a name="alerting"></a>Zobrazení výstrah
+## <a name="alerting"></a>Upozorňování
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -166,7 +166,7 @@ Azure Monitor umožňuje vytvářet výstrahy na základě metriky překračují
 
 I když monitorovací řešení můžou zahrnovat pravidla výstrah, obvykle je vytvoříte na základě vašich požadavků.
 
-## <a name="workflows"></a>Workflows
+## <a name="workflows"></a>Pracovní postupy
 
 ### <a name="operations-manager"></a>Operations Manager
 

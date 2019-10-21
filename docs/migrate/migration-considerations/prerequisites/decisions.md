@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025419"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548308"
 ---
 # <a name="decisions-that-affect-migrations"></a>Rozhodnutí, která ovlivňují migraci
 
@@ -55,7 +55,7 @@ Předtím, než učiníte rozhodnutí, která by mohla mít dlouhodobý vliv na 
 
 ### <a name="effort-type"></a>Typ úsilí
 
-Při migraci významného rozsahu (nad 250 virtuálních počítačů) se prostředky migrují pomocí různých možností přechodu, které jsou rozebrány v odůvodnění pěti R: *Rehost* (Změna hostitele), *Refactor* (Refaktoring), *Rearchitect* (Změna architektury), *Rebuild* (Opětovné sestavení) a *Replace* (Nahrazení).
+V jakékoli migraci významné škály (> 250 virtuálních počítačů) se assety migrují s využitím nejrůznějších možností přechodu, které jsou popsané v pěti RS odůvodnění: opětovné *hostování*, *refaktorování*, *rearchitekt*, *opětovné sestavení*a *nahrazení*.
 
 Některé úlohy se modernizují prostřednictvím procesu *opětovného sestavení* nebo *změny architektury*, kdy vzniknou modernější aplikace s novými funkcemi a technickými možnostmi. Jiné prostředky procházejí procesem *refaktoringu*, kdy se například přesunou do kontejnerů nebo jiných modernějších hostingových a provozních metod, které nemusí nezbytně ovlivnit základ kódu daného řešení. Virtuální počítače a jiné prostředky, které jsou dobře zavedené, procházejí procesem *změny hostitele*, kdy se tyto prostředky přenesou z datacentra do cloudu. Některé úlohy by potenciálně bylo možné migrovat do cloudu, ale místo toho by měly být *nahrazeny* cloudovými službami typu SaaS, které splňují stejné potřeby, například pomocí Office 365 jako alternativy k migraci instancí Exchange Serveru.
 
@@ -86,11 +86,11 @@ Než budete pokračovat, zdokumentujte následující předpoklady a nasdílejte
 - Rozsah úsilí
 - Načasování
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Jakmile je s tímto procesem seznámen tým, je čas na posouzení technických předpokladů. [Kontrolní seznam pro plánování migračního prostředí](./planning-checklist.md) pomáhá zajistit připravenost technické základny na migraci.
+Po pochopení procesu mezi týmem je čas zkontrolovat technické požadavky. [Kontrolní seznam pro plánování migračního prostředí](./planning-checklist.md) pomáhá zajistit připravenost technické základny na migraci.
 
-Jakmile je s tímto procesem seznámen tým, je čas na posouzení technických předpokladů v [kontrolním seznamu pro plánování migrace], který pomůže zajistit připravenost technické základny na migraci.
+Jakmile se proces rozrozumí týmu, jeho čas na kontrolu technických požadavků v [kontrolní seznam pro plánování migrace] pomůže zajistit, aby byl technický základ připravený k migraci.
 
 > [!div class="nextstepaction"]
 > [Posouzení kontrolního seznamu pro plánování migrace](./planning-checklist.md)

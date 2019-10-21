@@ -1,23 +1,23 @@
 ---
 title: Vyvážení portfolia
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Vyvážení portfolia
+description: Štíhlé vyvážení cloudového portfolia
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825754"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548579"
 ---
 # <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
-Přijetí cloudu je snahou o správu portfolia chytře zamaskovanou za technickou implementaci. Stejně jako všechna cvičení k řízení portfolia je i jeho vyvážení nepostradatelným prvkem k dosažení úspěchu. Na strategické úrovni to znamená vyvážení migrace, inovace a experimentování za účelem co nejlepšího využití cloudu. V případě, že se snaha o přijetí cloudu příliš vychýlí jedním nebo druhým směrem, vloudí se do snahy o migraci složitost. Tento článek provede čtenáře přístupy k dosažení rovnováhy v portfoliu.
+Přijetí cloudu je snahou o správu portfolia chytře zamaskovanou za technickou implementaci. Stejně jako u jakéhokoli cvičení řízení portfolia je vyrovnávání portfolia důležité. Na strategické úrovni to znamená vyvážení migrace, inovace a experimentování za účelem co nejlepšího využití cloudu. V případě, že se snaha o přijetí cloudu příliš vychýlí jedním nebo druhým směrem, vloudí se do snahy o migraci složitost. Tento článek provede čtenáře přístupy k dosažení rovnováhy v portfoliu.
 
 ## <a name="general-scope-expansion"></a>Obecné rozšíření rozsahu
 
@@ -66,13 +66,13 @@ Pokud je odpověď na kteroukoli otázku záporná, může být vhodné vytvoři
 
 ## <a name="suggested-prerequisites"></a>Doporučené požadavky
 
-Požadavky, které jsou uvedené v průvodci směrným plánem, by měly být dostačující i pro řešení tohoto složitého tématu. Inventář prostředků a digitální majetek by ale mezi těmito požadavky měly být zvýrazněné a označené tučně, protože tato data budou řídit následující činnosti.
+Požadavky, které jsou uvedené v průvodci směrným plánem, by měly být dostačující i pro řešení tohoto složitého tématu. Inventář assetů a digitální nemovitosti by však měly být zvýrazněny a v rámci těchto požadavků označeny tučně, protože tato data budou řídit následující činnosti.
 
 ## <a name="assess-process-changes"></a>Vyhodnocení změn procesu
 
 Vyvážení portfolia vyžaduje další kvalitativní analýzu během procesu vyhodnocování, což pomůže jednoduché racionalizaci portfolia.
 
-### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu vyhodnocení
+### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu posouzení
 
 Na základě dat z tabulky v části [zdokumentování obchodních výsledků](#documenting-business-outcomes) existuje pravděpodobné riziko, že se portfolio příliš odkloní k modelu realizace se zaměřením na migraci. Pokud byly nejvyšší prioritou zkušenosti zákazníků, bude pravděpodobnější portfolio s velkým důrazem na inovace. Ani jedno není správné nebo špatné, ale příliš velké odklonění v jednom směru má obvykle za následek snížení návratnosti, zbytečné zvýšení složitosti a prodloužení doby realizace související se snahou o přijetí cloudu.
 
@@ -107,11 +107,11 @@ Racionalizace portfolia vyžaduje různorodé technické snahy. Pro týmy pro p�
 
 Doporučujeme, aby se tyto různorodé snahy rozdělovaly v rámci dvou nebo více týmů pro přijetí cloudu. Když jako příklad realizace použijeme model dvou týmů, je Tým 1 týmem pro migraci a Tým 2 je týmem pro inovaci. V případě větších snah se tyto týmy můžou dál rozdělit k řešení dalších přístupů, jako jsou snahy o nahrazení/PaaS nebo o menší refaktoring. Tady je popis dovedností a rolí potřebných ke změně hostitele, refaktoringu nebo menšímu refaktoringu:
 
-**Změna hostitele:** Změna hostitele vyžaduje, aby členové týmu implementovali změny zaměřené na infrastrukturu. Obecně se používá nástroj jako Azure Site Recovery k migraci virtuálních počítačů nebo jiných prostředků do Azure. Tato práce je vhodná pro správce datacenter nebo implementátory IT. Pro tuto práci ve velkém měřítku je dobře strukturovaný tým pro migraci do cloudu. Je to nejrychlejší přístup k migraci stávajících prostředků ve většině scénářů.
+Opětovné **hostování:** Opětovné hostování vyžaduje, aby členové týmu implementovali infrastruktury zaměřené na změny. Obecně se používá nástroj jako Azure Site Recovery k migraci virtuálních počítačů nebo jiných prostředků do Azure. Tato práce je vhodná pro správce datacenter nebo implementátory IT. Pro tuto práci ve velkém měřítku je dobře strukturovaný tým pro migraci do cloudu. Je to nejrychlejší přístup k migraci stávajících prostředků ve většině scénářů.
 
 **Refaktoring:** Refaktoring vyžaduje, aby členové týmu změnili zdrojový kód, změnili architekturu aplikace nebo přijali nové cloudové služby. Obecně tato snaha využívá vývojářské nástroje jako sada Visual Studio a nástroje kanálu nasazení jako Azure DevOps k opětovnému nasazení modernizovaných aplikací do Azure. Tato práce se dobře hodí pro role vývoje aplikací nebo role vývoje kanálu DevOps. Nejlépe strukturovaný pro tuto práci je tým pro cloudové inovace. Může trvat déle, než se v tomto přístupu stávající prostředky nahradí cloudovými prostředky, aplikace ale můžou využít výhod funkcí nativních pro cloud.
 
-**Menší refaktoring:** Některé aplikace se dají modernizovat menším refaktoringem na úrovni dat nebo aplikací. Tato práce vyžaduje, aby členové týmu nasadili data do cloudových datových platforem nebo provedli drobné změny konfigurace v aplikaci. To může vyžadovat omezenou podporu pro odborníky na problematiku dat nebo vývoje aplikací. Tato práce se ale podobá práci prováděné implementátory IT při nasazování aplikací třetích stran. Tato práce je vhodná pro tým pro migraci do cloudu nebo tým pro cloudovou strategii. I když tato snaha není zdaleka tak rychlá jako migrace se změnou hostitele, zabere méně času než refaktoring.
+**Vedlejší refaktoring:** Některé aplikace mohou být moderní s menším refaktoringem na úrovni dat nebo aplikací. Tato práce vyžaduje, aby členové týmu nasadili data do cloudových datových platforem nebo provedli drobné změny konfigurace v aplikaci. To může vyžadovat omezenou podporu pro odborníky na problematiku dat nebo vývoje aplikací. Tato práce se ale podobá práci prováděné implementátory IT při nasazování aplikací třetích stran. Tato práce je vhodná pro tým pro migraci do cloudu nebo tým pro cloudovou strategii. I když tato snaha není zdaleka tak rychlá jako migrace se změnou hostitele, zabere méně času než refaktoring.
 
 Během migrace se doporučuje, aby se snahy rozdělily třemi způsoby uvedenými výše a aby tyto snahy prováděl vhodný tým ve vhodné iteraci. I když se doporučuje, aby bylo portfolio diverzifikované, je také vhodné, aby snahy zůstaly velmi soustředěné a oddělené.
 
@@ -119,11 +119,11 @@ Během migrace se doporučuje, aby se snahy rozdělily třemi způsoby uvedeným
 
 Během procesů optimalizace a propagace v rámci snahy o migraci nejsou potřeba žádné další změny.
 
-## <a name="secure-and-manage-process-changes"></a>Zabezpečení a správa změn procesů
+## <a name="secure-and-manage-process-changes"></a>Změny procesu zabezpečení a správy
 
 Během procesů zabezpečení a správy v rámci snahy o migraci nejsou potřeba žádné další změny.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Vraťte se ke [kontrolnímu seznamu pro rozšířený rozsah](./index.md) a ověřte si, že vaše metoda migrace plně vyhovuje.
 

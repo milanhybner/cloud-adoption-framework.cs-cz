@@ -1,7 +1,7 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: Vysvětlení doporučených pokynů'
+title: 'Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Seznamte se s doporučenými pokyny pro zásady správného řízení ve standardních podnicích.
+description: Seznamte se s osvědčenými postupy pro zásady správného řízení ve standardních podnicích.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967494"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547494"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Standardní příručka pro zásady správného řízení podniku: Vysvětlení doporučených pokynů
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy
 
-Příručka zásad správného řízení začíná sadou počátečních [podnikových zásad](./initial-corporate-policy.md). Tyto zásady se používají k vytvoření MVP pro řízení správného řízení, které odráží [Doporučené postupy](./index.md).
+Příručka zásad správného řízení začíná sadou počátečních [podnikových zásad](./initial-corporate-policy.md). Tyto zásady se používají ke zřízení MVP pro řízení správného řízení, který odráží [osvědčené postupy](./index.md).
 
 V tomto článku probereme strategie vysoké úrovně, které jsou potřeba k vytvoření MVP pro řízení. Základem MVP v rámci zásad správného řízení je obor [akcelerace nasazení](../../deployment-acceleration/index.md) . Nástroje a vzory použité v této fázi budou umožňovat přírůstková vylepšení nutná k rozšíření zásad správného řízení v budoucnu.
 
@@ -38,7 +38,7 @@ Implementace MVP v rámci zásad správného řízení má závislosti na identi
 
 Tuto implementaci je také možné popsat pomocí jednoduchého kontrolního seznamu:
 
-1. Vyžádat rozhodnutí týkající se základních závislostí: Identita, sítě, monitorování a šifrování.
+1. Vyžádá si rozhodnutí týkající se základních závislostí: identita, sítě, monitorování a šifrování.
 2. Určete vzor, který se použije při vynucování podnikových zásad.
 3. Určete vhodné vzory zásad správného řízení pro konzistenci prostředků, označování prostředků a obory protokolování a generování sestav.
 4. Implementujte nástroje zásad správného řízení zarovnané na vybraný model vynucení zásad, abyste mohli použít závislá rozhodnutí a rozhodnutí o zásadách správného řízení.
@@ -61,7 +61,7 @@ Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se 
 
 Rozhodnutí o konzistenci prostředků určují nástroje, procesy a úsilí potřebné k zajištění konzistentního nasazení, konfigurace a správy prostředků Azure v rámci předplatného. V tomto mluveném komentáři je **[konzistence nasazení](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** zvolena jako vzor konzistence primárního prostředku.
 
-- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu: všechno, co se vytváří, udržuje a vyřazené společně, by mělo být na jednu skupinu prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu. Všechny položky, které se vytvářejí, udržují a vyřazené dohromady, by měly být umístěné v jedné skupině prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy by se měla použít pro všechna předplatná z přidružené skupiny pro správu.
 - V rámci procesu nasazení by měly být šablony konzistence prostředků Azure pro skupinu prostředků uložené ve správě zdrojového kódu.
 - Každá skupina prostředků je přidružená ke konkrétnímu pracovnímu vytížení nebo aplikaci na základě výše popsaného přístupu k životnímu cyklu.
@@ -78,7 +78,7 @@ Rozhodnutí označování prostředků určují, jak se metadata v rámci předp
 - Nasazené prostředky by měly být označeny:
   - Klasifikace dat
   - Závažnost
-  - SLA
+  - Smlouva SLA
   - Prostředí
 - Tyto čtyři hodnoty budou řídit řízení, provoz a rozhodnutí o zabezpečení.
 - Pokud je tato příručka zásad správného řízení implementovaná pro obchodní jednotku nebo tým v rámci většího podniku, měla by označení obsahovat také metadata fakturační jednotky.

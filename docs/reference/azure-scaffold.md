@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223983"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548778"
 ---
-# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Uživatelské rozhraní Azure Enterprise: Zásady správného řízení pro předplatná
+# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
 > [!NOTE]
-> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu připraveném [](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-readiness-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
+> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
 
 Podniky stále stále přijímají veřejný cloud pro zajištění flexibility a flexibility. Spoléhají na síly cloudu, aby vygenerovaly výnosy a optimalizují využití prostředků pro firmu. Microsoft Azure poskytuje spoustu služeb a schopností, které podniky sestavují jako stavební bloky pro řešení nejrůznějších úloh a aplikací.
 
@@ -34,7 +34,7 @@ Tento článek poskytuje výchozí bod pro technické odborníky, který řeší
 
 ## <a name="need-for-governance"></a>Nutné pro řízení
 
-Při přechodu na Azure musíte vyřešit téma zásad správného řízení včas, abyste zajistili úspěšné použití cloudu v rámci podniku. Čas a bureaucracy vytváření komplexního systému zásad správného řízení (bohužel) znamená, že některé obchodní skupiny přecházejí přímo na poskytovatele bez nutnosti podnikového oddělení IT. Tento přístup může nechat podnik otevřený, aby mohl ohrozit zabezpečení, pokud prostředky nejsou správně spravované. Charakteristiky&mdash;zajištění flexibility, flexibility a cen&mdash;na základě spotřeby jsou důležité pro obchodní skupiny, které potřebují rychle splnit požadavky zákazníků (interní i externí). Podniková IT oddělení ale musí zajistit, aby data a systémy byly efektivně chráněné.
+Při přechodu na Azure musíte vyřešit téma zásad správného řízení včas, abyste zajistili úspěšné použití cloudu v rámci podniku. Čas a bureaucracy vytváření komplexního systému zásad správného řízení (bohužel) znamená, že některé obchodní skupiny přecházejí přímo na poskytovatele bez nutnosti podnikového oddělení IT. Tento přístup může nechat podnik otevřený, aby mohl ohrozit zabezpečení, pokud prostředky nejsou správně spravované. Charakteristiky veřejného cloudu &mdash;agility, flexibility a ceny založené na spotřebě &mdash;are důležité pro obchodní skupiny, které potřebují rychle splnit požadavky zákazníků (interní i externí). Podniková IT oddělení ale musí zajistit, aby data a systémy byly efektivně chráněné.
 
 Při vytváření sestavení se používá generování uživatelského rozhraní pro vytvoření základu struktury. Toto uživatelské rozhraní provede základní osnovu a poskytuje kotevní body pro připojení dalších trvalých systémů. Podniková generátorová aplikace je stejná: sada flexibilních ovládacích prvků a možností Azure, které poskytují strukturu pro prostředí, a kotvy služeb postavených na veřejném cloudu. Poskytuje tvůrcům (IT a firemním skupinám) základ pro vytváření a připojování nových služeb, které zajišťují rychlost doručování.
 
@@ -53,7 +53,7 @@ Následující obrázek ukazuje komponenty uživatelského rozhraní. Základ sp
 
 Základem tohoto uživatelského rozhraní je hierarchie a vztah registrace Azure Enterprise k předplatným a skupinám prostředků. Podniková registrace definuje tvar a používání služeb Azure v rámci vaší společnosti ze smluvního hlediska. V rámci smlouva Enterprise můžete prostředí dále rozdělit do oddělení, účtů, předplatných a skupin prostředků, aby odpovídaly struktuře vaší organizace.
 
-![Hierarchie](../_images/reference/agreement.png)
+![hierarchie](../_images/reference/agreement.png)
 
 Předplatné Azure je základní jednotkou, kde jsou všechny prostředky obsažené. Definuje také několik omezení v rámci Azure, jako je počet jader, virtuálních sítí a dalších prostředků. Skupiny prostředků slouží k dalšímu upřesnění modelu předplatného a k zajištění více přirozeného seskupení prostředků.
 
@@ -79,7 +79,7 @@ I když má každý z těchto vzorů své místo, je pro svou flexibilitu při m
 
 ### <a name="azure-management-groups"></a>Skupiny pro správu Azure
 
-Microsoft teď poskytuje další způsob modelování hierarchie: [Skupiny pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Skupiny pro správu jsou flexibilnější než oddělení a účty a můžou být vnořené až na šest úrovní. Skupiny pro správu vám umožní vytvořit hierarchii oddělenou od fakturační hierarchie, a to výhradně pro efektivní správu prostředků. Skupiny pro správu mohou zrcadlit svou fakturační hierarchii a často se společnostmi spouštějí. Výkon skupin pro správu je ale při jejich používání k modelování vaší organizace, seskupení souvisejících předplatných (bez ohledu na jejich umístění ve fakturační hierarchii) a přiřazování běžných rolí, zásad a iniciativ. Možné příklady:
+Microsoft teď poskytuje další způsob modelování hierarchie: [skupiny pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Skupiny pro správu jsou flexibilnější než oddělení a účty a můžou být vnořené až na šest úrovní. Skupiny pro správu vám umožní vytvořit hierarchii oddělenou od fakturační hierarchie, a to výhradně pro efektivní správu prostředků. Skupiny pro správu mohou zrcadlit svou fakturační hierarchii a často se společnostmi spouštějí. Výkon skupin pro správu je ale při jejich používání k modelování vaší organizace, seskupení souvisejících předplatných (bez ohledu na jejich umístění ve fakturační hierarchii) a přiřazování běžných rolí, zásad a iniciativ. Možné příklady:
 
 - **Výroba vs. nevýroba.** Některé podniky vytvářejí skupiny pro správu, které identifikují své výrobní a neproduktivní odběry. Skupiny pro správu těmto uživatelům umožňují snadnější správu rolí a zásad. Například předplatné mimo produkt může vývojářům dovolit přístup přispěvatelům, ale v produkčním prostředí mají jenom přístup čtenář.
 - **Interní služby a externí služby.** Podniky mají často různé požadavky, zásady a role pro interní služby a služby s přístupem zákazníků.
@@ -91,10 +91,10 @@ Dobře navržené skupiny pro správu jsou společně s Azure Policy a iniciativ
 Při rozhodování o vašich odděleních a účtech (nebo skupinách pro správu) se primárně naučíte, jak budete dělit prostředí Azure, aby odpovídalo vaší organizaci. Předplatná však představují situaci, kde se skutečně pracuje, a vaše rozhodnutí zde ovlivňují zabezpečení, škálovatelnost a fakturaci. Mnoho organizací se při jejich průvodcích dívá na tyto vzory:
 
 - **Aplikace/služba:** Předplatná reprezentují aplikaci nebo službu (portfolio aplikací).
-- **Nejčastější** Předplatná představuje životní cyklus služby, jako je například výroba nebo vývoj.
-- **Oddělení:** Předplatná představují oddělní v rámci organizace.
+- **Životní cyklus:** Předplatná představuje životní cyklus služby, jako je například výroba nebo vývoj.
+- **Oddělení:** Předplatná reprezentují oddělení v organizaci.
 
-První dva vzorce jsou nejčastěji používané a obě jsou důrazně Doporučené. Přístup k životnímu cyklu je vhodný pro většinu organizací. V tomto případě se jedná o obecné doporučení k používání dvou základních předplatných `Nonproduction`, `Production` a pak skupiny prostředků, které dále oddělují prostředí.
+První dva vzorce jsou nejčastěji používané a obě jsou důrazně Doporučené. Přístup k životnímu cyklu je vhodný pro většinu organizací. V tomto případě obecně doporučujeme použít dvě základní předplatná `Production` a `Nonproduction` a potom skupiny prostředků použít k dalšímu oddělení prostředí.
 
 ### <a name="resource-groups"></a>Skupiny prostředků
 
@@ -129,7 +129,7 @@ Značky prostředků jsou úzce zarovnané na standardy pojmenování. Protože 
 > [!IMPORTANT]
 > Značky mohou obsahovat osobní údaje a mohou podklesnout předpisy GDPR. Pečlivě Naplánujte správu značek. Pokud hledáte Obecné informace o GDPR, přečtěte si část GDPR na [portálu Trust Service](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Značky se používají v mnoha způsobech nad rámec fakturace a správy. Často se používají jako součást automatizace (viz další část). To může způsobit konflikty, pokud se nepovažují za přední. Doporučeným postupem je určit všechny běžné značky na úrovni podniku (například ApplicationOwner a CostCenter) a použít je konzistentně při nasazení prostředků pomocí automatizace.
+Značky se používají v mnoha způsobech nad rámec fakturace a správy. Často se používají jako součást automatizace (viz další část). To může způsobit konflikty, pokud se nepovažují za přední. Osvědčeným postupem je určit všechny běžné značky na úrovni podniku (například ApplicationOwner a CostCenter) a použít je konzistentně při nasazení prostředků pomocí automatizace.
 
 ## <a name="azure-policy-and-initiatives"></a>Azure Policy a iniciativy
 
@@ -139,7 +139,7 @@ Zásady a iniciativy jsou ještě výkonnější, pokud se používají se skupi
 
 ### <a name="common-uses-of-resource-manager-policies"></a>Běžné použití Správce prostředkůch zásad
 
-Zásady a iniciativy jsou výkonným nástrojem v sadě Azure Toolkit. Zásady umožňují společnostem poskytovat ovládací prvky pro "tradiční" úlohy, které umožňují stabilitu potřebnou pro obchodní aplikace a zároveň umožňují agilní úlohy&mdash;, například vývoj zákaznických aplikací. bez zveřejnění podniku za účelem dalšího rizika. Nejběžnějšími vzorci pro zásady jsou:
+Zásady a iniciativy jsou výkonným nástrojem v sadě Azure Toolkit. Zásady umožňují společnostem poskytovat ovládací prvky pro běžné úlohy IT, které umožňují stabilitu potřebnou pro obchodní aplikace a zároveň umožňují "agilní" úlohy &mdash;for například, vývoj zákaznických aplikací bez zveřejnění podniku pro další riziko. Nejběžnějšími vzorci pro zásady jsou:
 
 - **Geografické dodržování předpisů a suverenita dat.** Azure obsahuje stále rostoucí seznam oblastí po celém světě. Podniky často potřebují zajistit, aby prostředky v konkrétním oboru zůstaly v geografické oblasti pro řešení zákonných požadavků.
 - **Vyhněte se zveřejňování serverů veřejně.** Azure Policy může zakázat nasazení určitých typů prostředků. Je běžné vytvořit zásadu, která zamítne vytvoření veřejné IP adresy v rámci určitého oboru, a vyhne se nezamýšlené expozici serveru na internetu.
@@ -160,27 +160,27 @@ Iniciativy poskytují podnikům možnost seskupovat logické zásady a sledovat 
 
 Po vytvoření zásad a jejich seskupení do logických iniciativ musíte zásadu přiřadit k oboru bez ohledu na to, jestli se jedná o skupinu pro správu, předplatné nebo dokonce skupinu prostředků. Přiřazení umožňují také vyloučit podobory z přiřazení zásady. Pokud například odepřete vytváření veřejných IP adres v rámci předplatného, můžete vytvořit přiřazení s vyloučením pro skupinu prostředků připojenou k chráněnému DMZ.
 
-Najdete v něm několik příkladů zásad, které ukazují, jak se dají zásady a iniciativy použít u různých prostředků v Azure [](https://github.com/Azure/azure-policy) v tomto úložišti GitHubu.
+Najdete v něm několik příkladů zásad, které ukazují, jak se dají zásady a iniciativy použít u různých prostředků v Azure v tomto úložišti [GitHubu](https://github.com/Azure/azure-policy) .
 
-## <a name="identity-and-access-management"></a>Správa identit a přístupu
+## <a name="identity-and-access-management"></a>Správa identit a přístupu
 
 Jedním z prvních a nejdůležitějších otázek, se kterými se můžete dotazovat při zahájení s veřejným cloudem, je "kdo má mít přístup k prostředkům?" a "Jak lze řídit tento přístup?" Řízení přístupu k Azure Portal a prostředkům na portálu je důležité pro dlouhodobou bezpečnost vašich assetů v cloudu.
 
-Pokud chcete zabezpečit přístup k prostředkům, nakonfigurujete nejprve poskytovatele identity a pak nakonfigurujete role a přístup. Azure Active Directory (Azure AD), která je připojená k místní službě Active Directory, je základem identity Azure. To *znamená,* že Azure AD není stejný jako místní služba Active Directory a je důležité pochopit, co je TENANT Azure AD a jak se vztahuje k registraci v Azure. Projděte si dostupné [informace](../govern/resource-consistency/resource-access-management.md) , které vám pomůžou získat Solid Foundation v Azure AD a v místní službě Active Directory. Pokud chcete připojit a synchronizovat službu Active Directory s Azure AD, nainstalujte a nakonfigurujte [nástroj Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) v místním prostředí.
+Pokud chcete zabezpečit přístup k prostředkům, nakonfigurujete nejprve poskytovatele identity a pak nakonfigurujete role a přístup. Azure Active Directory (Azure AD), která je připojená k místní službě Active Directory, je základem identity Azure. To znamená, že Azure AD *není stejný* jako místní služba Active Directory a je důležité pochopit, co je TENANT Azure AD a jak se vztahuje k registraci v Azure. Projděte si dostupné [informace](../govern/resource-consistency/resource-access-management.md) , které vám pomůžou získat Solid Foundation v Azure AD a v místní službě Active Directory. Pokud chcete připojit a synchronizovat službu Active Directory s Azure AD, nainstalujte a nakonfigurujte [nástroj Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) v místním prostředí.
 
 ![Diagram architektury AD](../_images/reference/ad-architecture.png)
 
-Po prvním vydání Azure se pro řízení přístupu k předplatnému použila základní: Správce nebo spolusprávce. Přístup k předplatnému v klasickém modelu má implicitní přístup ke všem prostředkům na portálu. Tento nedostatek jemně odstupňovaného řízení vedlo k tomu, že se předplatným poskytuje úroveň přiměřeného řízení přístupu k registraci Azure. Toto šíření předplatných už není potřeba. Díky řízení přístupu na základě role (RBAC) můžete přiřadit uživatele ke standardním rolím, které poskytují společný přístup, jako je vlastník, přispěvatel nebo čtenář, nebo dokonce vytvořit vlastní role.
+Po prvním vydání Azure byly řízení přístupu k předplatnému základní: správce nebo spolusprávce. Přístup k předplatnému v klasickém modelu má implicitní přístup ke všem prostředkům na portálu. Tento nedostatek jemně odstupňovaného řízení vedlo k tomu, že se předplatným poskytuje úroveň přiměřeného řízení přístupu k registraci Azure. Toto šíření předplatných už není potřeba. Díky řízení přístupu na základě role (RBAC) můžete přiřadit uživatele ke standardním rolím, které poskytují společný přístup, jako je vlastník, přispěvatel nebo čtenář, nebo dokonce vytvořit vlastní role.
 
 Při implementaci přístupu založeného na rolích se důrazně doporučuje následující:
 
 - Řízení správce nebo spolusprávce předplatného, protože tyto role mají rozsáhlá oprávnění. Pokud potřebují ke spravovaným nasazením Azure Classic, stačí přidat vlastníka předplatného jako spolusprávce.
 - Skupiny pro správu použijte k přiřazení [rolí](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview#management-group-access) napříč několika předplatnými a snížení zatížení při jejich správě na úrovni předplatného.
 - Přidejte uživatele Azure do skupiny (například vlastníci aplikace X) ve službě Active Directory. Pomocí synchronizovaných skupin poskytněte členům skupiny příslušná práva ke správě skupiny prostředků obsahující aplikaci.
-- Dodržujte princip udělení nejnižších **oprávnění** potřebných k provedení očekávané práce.
+- Dodržujte princip udělení **nejnižších oprávnění** potřebných k provedení očekávané práce.
 
 > [!IMPORTANT]
->Zvažte použití [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) a možností [podmíněného přístupu](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , které poskytují lepší zabezpečení a lepší přehled o akcích správy napříč vaším Azure. odběru. Tyto možnosti pocházejí z platné licence Azure AD Premium (v závislosti na funkci) k dalšímu zabezpečení a správě vaší identity. Azure AD PIM umožňuje přístup pro správu za běhu s pracovním postupem schválení a také úplné auditování aktivací a aktivit správců. Azure Multi-Factor Authentication je další kritická schopnost, která umožňuje dvoustupňové ověřování pro přihlášení k Azure Portal. V kombinaci s ovládacími prvky podmíněného přístupu můžete efektivně spravovat riziko ohrožení bezpečnosti.
+>Zvažte použití [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), možností Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) a [podmíněného přístupu](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) k zajištění lepšího zabezpečení a lepší viditelnosti akcí správy napříč vaším Azure. odběru. Tyto možnosti pocházejí z platné licence Azure AD Premium (v závislosti na funkci) k dalšímu zabezpečení a správě vaší identity. Azure AD PIM umožňuje přístup pro správu za běhu s pracovním postupem schválení a také úplné auditování aktivací a aktivit správců. Azure Multi-Factor Authentication je další kritická schopnost a umožňuje dvoustupňové ověřování pro přihlášení k Azure Portal. V kombinaci s ovládacími prvky podmíněného přístupu můžete efektivně spravovat riziko ohrožení bezpečnosti.
 
 Plánování a příprava pro vaše identity a řízení přístupu a následující osvědčené postupy pro správu identit Azure ([odkaz](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) představuje jednu z osvědčených strategií pro zmírnění rizik, které můžete využít, a měla by se pro každé nasazení považovat za povinnou.
 
@@ -188,7 +188,7 @@ Plánování a příprava pro vaše identity a řízení přístupu a následuj�
 
 Jeden z největších blokování na přijetí do cloudu se tradičně dotýká zabezpečení. Správci rizik IT a bezpečnostní oddělení musí zajistit, aby prostředky v Azure byly ve výchozím nastavení chráněné a zabezpečené. Azure poskytuje možnosti, které můžete použít k ochraně prostředků při odhalování a odstraňování hrozeb na těchto prostředcích.
 
-### <a name="azure-security-center"></a>Azure Security Center
+### <a name="azure-security-center"></a>Centrum zabezpečení Azure
 
 Kromě rozšířené ochrany před internetovými útoky nabízí [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) jednotný přehled o stavu zabezpečení prostředků v celém prostředí. Azure Security Center je otevřená platforma, která umožňuje partnerům Microsoftu vytvářet software, který se připojuje a vylepšuje jeho schopnosti. Základní schopnosti Azure Security Center (bezplatná úroveň) poskytují vyhodnocení a doporučení, která zlepšují stav zabezpečení. Jeho placené úrovně umožňují další a cenné možnosti, jako je například přístup správce za běhu a adaptivní řízení aplikací (přidávání do seznamu povolených).
 
@@ -228,23 +228,23 @@ Shromažďování a analýza telemetrie, která poskytuje přehled o aktivitách
 
 Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále vylepšeny. Azure poskytuje možnosti **sdíleného**, **základního**a **hloubkového** monitorování prostředků Azure prostřednictvím služeb uvedených v následujícím diagramu.
 
-![sledování](../_images/reference/monitoring.png)
+![Sledovaný](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Sdílené možnosti
 
-- **Generoval** Můžete shromažďovat všechny protokoly, události a metriky z prostředků Azure, ale bez možnosti upozorňování na kritické podmínky a jednání, jsou tato data užitečná jenom pro historické účely a forenzní. Výstrahy Azure proaktivně upozorňují na podmínky, které definujete napříč všemi vašimi aplikacemi a infrastrukturou. Pravidla upozornění můžete vytvářet napříč protokoly, událostmi a metrikami, které pomocí skupin akcí upozorňují na sady příjemců. Skupiny akcí také poskytují možnost automatizace nápravy pomocí externích akcí, jako jsou Webhooky, pro spouštění Azure Automation runbooků a Azure Functions.
+- **Výstrahy:** Můžete shromažďovat všechny protokoly, události a metriky z prostředků Azure, ale bez možnosti upozorňování na kritické podmínky a jednání, jsou tato data užitečná jenom pro historické účely a forenzní. Výstrahy Azure proaktivně upozorňují na podmínky, které definujete napříč všemi vašimi aplikacemi a infrastrukturou. Pravidla upozornění můžete vytvářet napříč protokoly, událostmi a metrikami, které pomocí skupin akcí upozorňují na sady příjemců. Skupiny akcí také poskytují možnost automatizace nápravy pomocí externích akcí, jako jsou Webhooky, pro spouštění Azure Automation runbooků a Azure Functions.
 
-- **Řídicí panely** Řídicí panely umožňují agregovat zobrazení monitorování a kombinovat data napříč prostředky a předplatnými, které vám poskytnou přehled o telemetrie prostředků Azure v celém podniku. Můžete vytvářet a konfigurovat vlastní zobrazení a sdílet je s ostatními. Můžete například vytvořit řídicí panel skládající se z různých dlaždic pro správce databáze a poskytnout informace napříč všemi databázovými službami Azure, včetně Azure SQL DB, Azure DB for PostgreSQL a Azure DB for MySQL.
+- **Řídicí panely:** Řídicí panely umožňují agregovat zobrazení monitorování a kombinovat data napříč prostředky a předplatnými, které vám poskytnou přehled o telemetrie prostředků Azure v celém podniku. Můžete vytvářet a konfigurovat vlastní zobrazení a sdílet je s ostatními. Můžete například vytvořit řídicí panel skládající se z různých dlaždic pro správce databáze a poskytnout informace napříč všemi databázovými službami Azure, včetně Azure SQL DB, Azure DB for PostgreSQL a Azure DB for MySQL.
 
 - **Průzkumník metrik:** Metriky jsou číselné hodnoty generované prostředky Azure (například% CPU nebo disk v/v), které poskytují přehled o provozu a výkonu vašich prostředků. Pomocí Průzkumník metrik můžete definovat a odesílat metriky, které vás zajímají Log Analytics pro agregaci a analýzu.
 
 ### <a name="core-monitoring"></a>Základní monitorování
 
-- **Azure Monitor:** Azure Monitor je základní služba platformy, která poskytuje jeden zdroj pro monitorování prostředků Azure. Rozhraní Azure Portal Azure Monitor poskytuje centralizované můstky pro všechny funkce monitorování v rámci Azure, včetně hloubkového monitorování Application Insights, Log Analytics, monitorování sítě, řešení pro správu a Mapy služeb. Díky Azure Monitor můžete vizualizovat metriky a protokoly, které pocházejí z prostředků Azure napříč celou cloudovou službou, dotazování, směrování, archivace a reagovat na ně. Kromě portálu můžete načíst data prostřednictvím rutin monitorování PowerShellu, rozhraní příkazového řádku pro více platforem nebo Azure Monitor rozhraní REST API.
+- **Azure monitor:** Azure Monitor je základní služba platformy, která poskytuje jeden zdroj pro monitorování prostředků Azure. Rozhraní Azure Portal Azure Monitor poskytuje centralizované můstky pro všechny funkce monitorování v rámci Azure, včetně hloubkového monitorování Application Insights, Log Analytics, monitorování sítě, řešení pro správu a Mapy služeb. Díky Azure Monitor můžete vizualizovat metriky a protokoly, které pocházejí z prostředků Azure napříč celou cloudovou službou, dotazování, směrování, archivace a reagovat na ně. Kromě portálu můžete načíst data prostřednictvím rutin monitorování PowerShellu, rozhraní příkazového řádku pro více platforem nebo Azure Monitor rozhraní REST API.
 
 - **Azure Advisor:** Azure Advisor průběžně monitorovat telemetrii napříč předplatnými a prostředími a poskytuje doporučení týkající se osvědčených postupů pro optimalizaci prostředků Azure za účelem úspory peněz a zlepšení výkonu, zabezpečení a dostupnosti prostředků. vytváření aplikací.
 
-- **Stav služeb:** Azure Service Health identifikuje všechny problémy se službami Azure, které můžou ovlivnit vaše aplikace, a pomůže vám při plánování plánovaných časových období údržby.
+- **Service Health:** Azure Service Health identifikuje všechny problémy se službami Azure, které můžou ovlivnit vaše aplikace, a pomůže vám při plánování plánovaných časových období údržby.
 
 - **Protokol aktivit:** Protokol aktivit popisuje všechny operace s prostředky ve vašich předplatných. Poskytuje záznam pro audit k určení "What", "kdo" a "when" pro všechny operace CREATE, Update a DELETE u prostředků. Události protokolu aktivit jsou uloženy v platformě a jsou k dispozici pro dotaz na 90 dní. Protokoly aktivit můžete ingestovat do Log Analytics pro delší dobu uchování a hlubší dotazování a analýzu napříč několika prostředky.
 
@@ -260,14 +260,14 @@ Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále 
 
 - **Řešení pro správu:** Řešení pro správu jsou zabalené sady logiky, přehledů a předdefinovaných Log Analytics dotazů pro aplikace nebo služby. Spoléhají na Log Analytics jako základem pro ukládání a analýzu dat událostí. Ukázková řešení pro správu zahrnují kontejnery monitorování a analýzy Azure SQL Database.
 
-- **Service Map:** Service Map poskytuje grafické zobrazení komponent infrastruktury, jejich procesů a vzájemných závislostí na jiných počítačích a externích procesech. Provádí integraci událostí, údajů o výkonu a řešení pro správu v Log Analytics.
+- **Service map:** Service Map poskytuje grafické zobrazení komponent infrastruktury, jejich procesů a vzájemných závislostí na jiných počítačích a externích procesech. Provádí integraci událostí, údajů o výkonu a řešení pro správu v Log Analytics.
 
 > [!TIP]
 > Před vytvořením jednotlivých výstrah vytvořte a udržujte sadu sdílených skupin akcí, které se dají používat v rámci výstrah Azure. To vám umožní centrálně udržovat životní cyklus seznamů příjemců, způsob doručení oznámení (e-mail, telefonní čísla SMS) a Webhooky k externím akcím (Azure Automation Runbooky, Azure Functions/Logic Apps, ITSM).
 
 ## <a name="cost-management"></a>Správa nákladů
 
-Jednou z hlavních změn, které se projeví při přesunu z místního cloudu do veřejného cloudu, je přechod z kapitálu (nákup hardwaru) na provozní výdaje (při jejich používání platí za službu). Tento přepínač také vyžaduje pečlivé řízení vašich nákladů. Výhodou cloudu je, že můžete v podstatě a v podstatě ovlivnit náklady na službu, kterou používáte, a to jenom v případě, že ji vypínáte nebo měníte jejich velikost, když ji nepotřebujete. Úmyslné řízení vašich nákladů v cloudu je doporučený postup a jeden z nich je denně vyspělým zákazníkům.
+Jednou z hlavních změn, které se projeví při přesunu z místního cloudu do veřejného cloudu, je přechod z kapitálu (nákup hardwaru) na provozní výdaje (při jejich používání platí za službu). Tento přepínač také vyžaduje pečlivé řízení vašich nákladů. Výhodou cloudu je, že můžete v podstatě a v podstatě ovlivnit náklady na službu, kterou používáte, a to jenom v případě, že ji vypínáte nebo měníte jejich velikost, když ji nepotřebujete. Úmyslné řízení vašich nákladů v cloudu je osvědčeným postupem a jedním z nich je každý den v vyspělých zákaznících.
 
 Microsoft poskytuje několik nástrojů, které vám umožní vizualizovat, sledovat a spravovat vaše náklady. Poskytujeme také kompletní sadu rozhraní API, která vám umožní přizpůsobit a integrovat správu nákladů do vlastních nástrojů a řídicích panelů. Tyto nástroje se volně seskupují do možností Azure Portal a externích možností.
 
@@ -276,7 +276,7 @@ Microsoft poskytuje několik nástrojů, které vám umožní vizualizovat, sled
 Tyto nástroje poskytují rychlé informace o nákladech a také možnost provádět akce.
 
 - **Náklady na prostředky předplatného:** V zobrazení [Analýza nákladů Azure](https://docs.microsoft.com/azure/cost-management/overview) získáte rychlý přehled o vašich nákladech a o denních výdajích podle prostředků nebo skupin prostředků na portálu.
-- **Azure Cost Management:** Tento produkt je výsledkem nákupu Cloudyn společností Microsoft a umožňuje spravovat a analyzovat útraty Azure a také to, co strávíte na jiných poskytovatelích veřejného cloudu. Existují bezplatné i placené úrovně s velkou spoustou možností, jak je vidět v [přehledu](https://docs.microsoft.com/azure/cost-management/overview).
+- **Azure cost management:** Tento produkt je výsledkem nákupu Cloudyn společností Microsoft a umožňuje spravovat a analyzovat útraty Azure a také to, co strávíte na jiných poskytovatelích veřejného cloudu. Existují bezplatné i placené úrovně s velkou spoustou možností, jak je vidět v [přehledu](https://docs.microsoft.com/azure/cost-management/overview).
 - **Rozpočty Azure a skupiny akcí:** Znalost toho, co něco stojí a co s tím dělá, dokud nebylo nedávno více ručního cvičení. Díky zavedení rozpočtů Azure a jeho rozhraní API je teď možné vytvářet akce (jak je vidět v [tomto příkladu](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)), když náklady narazí na prahovou hodnotu. Například vypínáte skupinu prostředků "test", když má za to 100% svého rozpočtu nebo [jiný příklad].
 - **Azure Advisor** Znalost toho, jaké jsou náklady jenom na polovinu výročí; Druhá polovina má na vědomí, co dělat s těmito informacemi. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) poskytuje doporučení k akcím, které je potřeba provést za účelem úspory peněz, zvýšení spolehlivosti nebo dokonce i zvýšení zabezpečení.
 
@@ -286,7 +286,7 @@ Tyto nástroje poskytují rychlé informace o nákladech a také možnost prová
 
 - **Rozhraní API pro vyčerpání:** [Rozhraní API pro spotřebu](/rest/api/consumption) poskytují programový přístup k datům o nákladech a využití navíc k informacím o rozpočtech, rezervovaných instancích a poplatkům na webu Marketplace. Tato rozhraní API jsou přístupná jenom pro podnikové registrace a některé webové přímé odběry, ale poskytují možnost integrovat vaše nákladová data do vlastních nástrojů a datových skladů. [K těmto rozhraním API můžete přistupovat taky přes Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
 
-Zákazníci, kteří jsou dlouhodobým a vyspělým cloudovým uživatelům, dodržují některé vysoce doporučené postupy:
+Zákazníci, kteří jsou dlouhodobým a vyspělým cloudovým uživatelům, používají určité osvědčené postupy:
 
 - **Aktivně monitorujte náklady.** Organizace, které jsou vyspělými uživateli Azure, neustále monitorují náklady a v případě potřeby mohou provádět akce. Některé organizace si dokonce vyhradou analýzu a navrhují změny v používání a tyto osoby se účtují při prvním vyhledání nevyužitého clusteru HDInsight, který je spuštěný v měsících.
 - **Použijte rezervované instance virtuálních počítačů.** Další klíčovou principemou pro správu nákladů v cloudu je použití pravého nástroje pro úlohu. Pokud máte virtuální počítač s IaaS, který musí zůstat nepřetržitě, pak se při použití rezervované instance virtuálního počítače ušetří vaše významné peníze. Hledání správného zůstatku mezi automatizací vypnutí virtuálních počítačů a využitím rezervovaných instancí virtuálních počítačů se zachováním a analýzou.
@@ -295,7 +295,7 @@ Zákazníci, kteří jsou dlouhodobým a vyspělým cloudovým uživatelům, dod
 
 Cost Management je disciplína, která je základem efektivního a efektivního provozu veřejného cloudu. Podniky, které dosahují úspěchu, můžou řídit jejich náklady a odpovídat na jejich skutečnou poptávku, místo toho, aby nemuseli překupovat a doufá že poptávku.
 
-## <a name="automate"></a>Automatizovat
+## <a name="automate"></a>Automatizace
 
 Jednou z mnoha možností, které odlišují dobu zralosti organizací pomocí poskytovatelů cloudu, je úroveň automatizace, kterou si zazahrnuli. Automatizace je nikdy nekonečný proces a když vaše organizace přesouvá do cloudu, je to Libovolná oblast, kterou potřebujete k investicím prostředků a času při sestavování. Automatizace obsluhuje mnoho účelů, včetně konzistentního zavedení prostředků (kde se přizpůsobuje přímo k dalšímu základnímu principu uživatelského rozhraní, šablonám a DevOps) k nápravě problémů. Automatizace je "propojovací tkáň" rozhraní Azure a propojuje jednotlivé oblasti.
 
@@ -334,7 +334,7 @@ Poslední součástí referenčního modelu Azure pro generování uživatelské
 - **Skupiny zabezpečení** jsou rozsáhlá sada pravidel, která poskytují možnost povolit nebo odepřít příchozí a odchozí provoz z prostředků Azure. [Skupiny zabezpečení](https://docs.microsoft.com/azure/virtual-network/security-overview) se skládají z pravidel zabezpečení, která se dají rozšířit pomocí **značek služeb** (které definují běžné služby Azure, jako je Azure Key Vault nebo Azure SQL Database), a **skupin zabezpečení aplikací** (které definují a aplikace struktura, například webové servery nebo aplikační servery).
 
 > [!TIP]
-> Ve skupinách zabezpečení sítě používejte značky služeb a skupiny zabezpečení aplikací, nejen ke zlepšení čitelnosti vašich pravidel&mdash;, která jsou zásadní pro porozumění dopadu&mdash;, ale také k zajištění efektivního mikrosegmentace v rámci větší podsíť, což snižuje neustálému zvětšování a zvyšuje flexibilitu.
+> Používejte značky služeb a skupiny zabezpečení aplikací ve skupinách zabezpečení sítě, nejen ke zlepšení čitelnosti vašich pravidel, &mdash;which je důležité pochopit, co &mdash;but taky povolit efektivní mikrosegmentaci v rámci větší podsítě. zmenšení neustálému zvětšování a zvýšení flexibility.
 
 ### <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 

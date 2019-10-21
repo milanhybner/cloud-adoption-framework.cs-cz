@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení Cost Management disciplíny'
+title: 'Příručka zásad správného řízení pro komplexní podniky: vylepšení Cost Management disciplíny'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení Cost Management disciplíny'
+description: 'Příručka zásad správného řízení pro komplexní podniky: vylepšení Cost Management disciplíny'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220182"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547699"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení Cost Management disciplíny
+# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: vylepšení Cost Management disciplíny
 
 Tento článek popisuje mluvený komentář přidáním řízení nákladů do zásad správného řízení pro minimální životaschopný produkt (MVP).
 

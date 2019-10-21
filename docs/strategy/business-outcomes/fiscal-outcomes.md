@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ac62364b6117e4744b0432a5c4fbb46b7ee914b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031007"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548692"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Příklady fiskální výsledků
 
 Na nejvyšší úrovni se finanční konverzace skládají ze tří základních konceptů:
 
-- **Tržby**: V důsledku prodeje zboží nebo služeb bude do firmy přijít více peněz.
-- **Náklady:** V rámci vytváření, uvádění na trh, prodeji nebo poskytování zboží nebo služeb bude méně peněz.
-- **Zisk**: I když jsou některé z nich vzácné, můžou se u některých transformací zvýšit výnosy i snížit náklady. Toto je výsledek zisku.
+- **Tržby**: v důsledku prodeje zboží nebo služeb budou do firmy zacházet peníze.
+- **Náklady**: v rámci vytváření, uvádění na trh, prodeji nebo poskytování zboží nebo služeb bude vyčerpáno méně peněz.
+- **Zisk**: i když jsou vzácné, některé transformace můžou zvýšit výnosy i snížit náklady. Toto je výsledek zisku.
 
 Zbývající část tohoto článku vysvětluje tyto daňové výsledky v kontextu transformace cloudu.
 
@@ -35,13 +35,13 @@ Zbývající část tohoto článku vysvětluje tyto daňové výsledky v kontex
 
 Cloud může přispět k vytváření příležitostí k poskytování nových produktů zákazníkům nebo k novému poskytování stávajících produktů novým způsobem. Nové streamy příjmů jsou inovativní, podnikatelé a zajímavé pro spoustu lidí v obchodním světě. Nové streamy příjmů jsou také náchylné k selhání a považují se za vysoce rizikové mnoho společností. V případě, že je jejich výsledky navržena v souvislosti s tržbami, pravděpodobně dojde k rezistenci. Pokud chcete k těmto výsledkům přidružit důvěryhodnost, partner s podnikovým vedoucím, který je prověřený jako inovační. Ověření datového proudu výnosů včas v procesu pomáhá předcházet překážek z firmy.
 
-- **Příklad**: Společnost vydávala knihy po dobu více než sto let. Zaměstnanec společnosti si uvědomuje, že obsah může být elektronicky dodán. Zaměstnanec vytvoří zařízení, které se dá prodávat v knihkupectví, což umožňuje, aby se stejné knihy stáhly přímo, aby se $Xa v nové knize Prodej.
+- **Příklad**: společnost vydala prodej knih po dobu více než sto let. Zaměstnanec společnosti si uvědomuje, že obsah může být elektronicky dodán. Zaměstnanec vytvoří zařízení, které se dá prodávat v knihkupectví, což umožňuje, aby se stejné knihy stáhly přímo, aby se $Xa v nové knize Prodej.
 
 ### <a name="revenue-increases"></a>Nárůst výnosů
 
 V případě globálního škálování a digitálního dosahu může Cloud pomáhat firmám zvýšit tržby z existujících streamů příjmů. Tento typ výsledku je často vyrovnaný od zarovnání k prodejnímu nebo marketingovému vedoucímu.
 
-- **Příklad**: Společnost, která prodává widgety, by mohla prodávat další widgety, pokud prodejci můžou bezpečně přistupovat k digitálnímu katalogu společnosti a k úrovním zásob. Tato data jsou bohužel jenom v systému ERP společnosti, ke kterému se dá dostat jenom přes zařízení připojená přes síť. Vytvořením fasády služeb pro rozhraní s ERP a vystavení seznamu katalogu a necitlivých úrovní zásob do aplikace v cloudu by mohli prodejci získat přístup k potřebným datům během pracoviště pomocí zákazníka. Rozšíření místní služby Active Directory pomocí Azure Active Directory (Azure AD) a integrace přístupu na základě role do aplikace umožní společnosti zajistit, aby data zůstala v bezpečí. Tento jednoduchý projekt může ovlivnit tržby z existující produktové řady o _x%_ .
+- **Příklad**: společnost, která prodává widgety, by mohla prodávat další widgety, pokud prodejci můžou bezpečně přistupovat k digitálnímu katalogu společnosti a k úrovním zásob. Tato data jsou bohužel jenom v systému ERP společnosti, ke kterému se dá dostat jenom přes zařízení připojená přes síť. Vytvořením fasády služeb pro rozhraní s ERP a vystavení seznamu katalogu a necitlivých úrovní zásob do aplikace v cloudu by mohli prodejci získat přístup k potřebným datům během pracoviště pomocí zákazníka. Rozšíření místní služby Active Directory pomocí Azure Active Directory (Azure AD) a integrace přístupu na základě role do aplikace umožní společnosti zajistit, aby data zůstala v bezpečí. Tento jednoduchý projekt může ovlivnit tržby z existující produktové řady o _x%_ .
 
 ### <a name="profit-increases"></a>Zisk se zvyšuje
 
@@ -53,9 +53,9 @@ Zřídka se jedná o jedno úsilí současně zvýšit výnosy a snížit nákla
 
 Cloud Computing může snížit kapitálové výdaje na hardware a software, nastavovat datová centra, spouštět datacentra na pracovišti atd. Náklady na racky serverů, kulatou elektřinu pro napájení a chlazení a odborníky na IT, kteří spravují infrastrukturu, rychle přidávají. Vypnutí datacentra může snížit závazky kapitálových výdajů. Tato možnost se obvykle označuje jako "získávání z podnikového datacentra." Snížení nákladů se obvykle měří v dolarech v aktuálním rozpočtu, což může zahrnovat jeden až pět let v závislosti na tom, jak ředitel spravuje finanční informace.
 
-- **Příklad #1**: Datové centrum společnosti spotřebovává vysoké procento ročního rozpočtu na IT. Rozhodne se provést migraci do cloudu a přenese prostředky v tomto datovém centru do řešení infrastruktury jako služby (IaaS), čímž se vytvoří snížení nákladů na tři roky.
-- **Příklad #2**: Holdingová společnost nedávno získala novou firmu. V rámci akvizice výrazy určují, že by nová entita měla být z aktuálních datových center odebrána do šesti měsíců. Pokud to neuděláte, bude výsledkem 1 000 000 USD za měsíc holdingové společnosti. Přesunutí digitálních prostředků do cloudu v rámci migrace do cloudu může umožňovat rychlé vyřazení starých prostředků z provozu.
-- **Příklad #3**: Podniková daňová společnost, která se v průběhu prvních tří měsíců v roce v rámci svých ročních příjmů dorazí na 70 procent svých ročních výnosů. Ve zbytku roku je jeho investice do značné klidové velikosti poměrně neaktivní. Migrace do cloudu by mohla dovolit nasazovat výpočetní nebo hostitelskou kapacitu potřebnou pro tyto tři měsíce. Během zbývajících devíti měsíců se IaaS náklady výrazně snížily tím, že se zmenší výpočetní nároky.
+- **Příklad #1**: datacentrum společnosti spotřebovává vysoké procento ročního rozpočtu na IT. Rozhodne se provést migraci do cloudu a přenese prostředky v tomto datovém centru do řešení infrastruktury jako služby (IaaS), čímž se vytvoří snížení nákladů na tři roky.
+- **Příklad #2**: holdingová společnost nedávno získala novou firmu. V rámci akvizice výrazy určují, že by nová entita měla být z aktuálních datových center odebrána do šesti měsíců. Pokud to neuděláte, bude výsledkem 1 000 000 USD za měsíc holdingové společnosti. Přesunutí digitálních prostředků do cloudu v rámci migrace do cloudu může umožňovat rychlé vyřazení starých prostředků z provozu.
+- **Příklad #3**: podniková daňová společnost, která se v průběhu prvních tří měsíců v roce dorazí na zákazníky v 70 procentech ročních příjmů. Ve zbytku roku je jeho investice do značné klidové velikosti poměrně neaktivní. Migrace do cloudu by mohla dovolit nasazovat výpočetní nebo hostitelskou kapacitu potřebnou pro tyto tři měsíce. Během zbývajících devíti měsíců se IaaS náklady výrazně snížily tím, že se zmenší výpočetní nároky.
 
 ### <a name="example-coverdell"></a>Příklad: Coverdell
 
@@ -70,7 +70,7 @@ Coverdell modernizes své infrastruktury a zaznamenejte úspory nákladů pomoc�
 
 Ukončení datového centra může také zabránit tomu, že se zabrání budoucím aktualizačním cyklům. Cyklus obnovování je proces nákupu nového hardwaru a softwaru, který nahradí místní systémy. V Azure jsou hardware a operační systém rutinně udržované, opravené a aktualizované bez dalších nákladů na zákazníky. Z tohoto hlediska může ředitel odebrat plánované budoucí výdaje z dlouhodobých finančních předpovědí. Vyhněte se nákladům se měří v dolarech. Liší se od snížení nákladů a obecně se zaměřuje na budoucí rozpočet, který ještě není plně schválený.
 
-- **Příklad**: Firemní datacentrum je pro prodloužení platnosti zapůjčené po dobu šesti měsíců. Datové centrum bylo v provozu po dobu osmi let. Před 4 lety byly všechny servery aktualizovány a virtualizované, náklady na miliony dolarů společnosti. V příštím roce společnost plánuje znovu aktualizovat hardware a software. Migrace prostředků v tomto datovém centru jako součást migrace do cloudu umožňuje vyhnout se nákladům odebráním plánované aktualizace z předpokládaného rozpočtu příštího roku. Snížení nákladů také může snížit náklady na zapůjčení v reálném čase.
+- **Příklad**: datacentrum společnosti je pro prodloužení platnosti zapůjčení po dobu šesti měsíců. Datové centrum bylo v provozu po dobu osmi let. Před 4 lety byly všechny servery aktualizovány a virtualizované, náklady na miliony dolarů společnosti. V příštím roce společnost plánuje znovu aktualizovat hardware a software. Migrace prostředků v tomto datovém centru jako součást migrace do cloudu umožňuje vyhnout se nákladům odebráním plánované aktualizace z předpokládaného rozpočtu příštího roku. Snížení nákladů také může snížit náklady na zapůjčení v reálném čase.
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Náklady na velká a provozní výdaje
 
@@ -91,7 +91,7 @@ Než však přiřadíte cestu k transformaci s tímto typem kapitálu a převode
 
 Pokud je žádoucí model nákladů na operační systém, může být následujícím příkladem životaschopný obchodní výsledek:
 
-- **Příklad**: Vaše datacentrum společnosti se v současnosti za další tři roky vyplatí v hodnotě _x USD_ za rok. Očekává se, že budete potřebovat další _y USD_ k aktualizaci hardwaru v příštím roce. Kapitálové výdaje můžeme převést na model provozní výdaje, a to i v hodnotě _z USD_ za měsíc, což umožňuje lepší správu a zodpovědnost za provozní náklady na provoz technologie.
+- **Příklad**: datacentrum společnosti se v současnosti za následující tři roky odpisuje v _× USD_ za rok. Očekává se, že budete potřebovat další _y USD_ k aktualizaci hardwaru v příštím roce. Kapitálové výdaje můžeme převést na model provozní výdaje, a to i v hodnotě _z USD_ za měsíc, což umožňuje lepší správu a zodpovědnost za provozní náklady na provoz technologie.
 
 ## <a name="next-steps"></a>Další kroky
 

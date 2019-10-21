@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028940"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547392"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologie zásad správného řízení pro Cloud
 
@@ -24,21 +24,21 @@ Rozhraní pro přijetí do cloudu poskytuje příručky pro zásady správného 
 
 ## <a name="envision-an-end-state"></a>Vize koncového stavu
 
-Cesta bez cíle je pouhé bloudění. Před provedením prvního kroku je důležité udělat si hrubou představu požadovaného koncového stavu. Následující infografika poskytuje referenční rámec koncového stavu. Neukazuje váš výchozí bod, ale potenciální cíl.
+Cesta bez cíle je pouhé bloudění. Než začnete s prvním krokem, je důležité, abyste navázali přibližnou vizi koncového stavu. Následující infografika poskytuje referenční rámec koncového stavu. Není to výchozí bod, ale zobrazuje váš potenciální cíl.
 
 ![Infografika modelu zásad správného řízení architektury přechodu na cloud](../_images/operational-transformation-govern-highres.png)
 
 Model zásad správného řízení architektury přechodu na cloud identifikuje nejdůležitější části této cesty. Každá oblast souvisí s jiným typem rizik, kterým firmy při využívání většího počtu cloudových služeb čelí. Průvodce zásadami správného řízení v rámci této architektury identifikuje nutné akce pro tým zásad správného řízení v cloudu. Jednotlivé principy modelu zásad správného řízení architektury přechodu na cloud jsou popsány podrobněji. Obecně mezi ně patří:
 
-**Firemní zásady:** Firemní zásady jsou základem zásad správného řízení cloudu. Průvodce zásadami správného řízení se soustředí na konkrétní aspekty firemních zásad:
+**Podnikové zásady:** Podnikové zásady jednotky zásad správného řízení cloudu Průvodce zásadami správného řízení se soustředí na konkrétní aspekty firemních zásad:
 
-- **Obchodní rizika:** Zjištění a pochopení firemních rizik
-- **Zásady a dodržování předpisů:** Převedení rizik na prohlášení o zásadách, která podporují všechny požadavky dodržování předpisů
-- **Procesy:** Zajištění dodržování uvedených zásad
+- **Obchodní rizika:** Identifikace a porozumění podnikovým rizikům.
+- **Zásady a dodržování předpisů:** Převod rizik na příkazy zásad, které podporují požadavky na dodržování předpisů.
+- **Procesy:** Zajištění dodržování uvedených zásad.
 
-**Pět disciplín zásad správného řízení v cloudu:** Tyto disciplíny podporují firemní zásady. Každá z disciplín chrání firmu před potenciálními nástrahami:
+**Pět oborů řízení cloudu:** Tyto disciplíny podporují podnikové zásady. Každá z disciplín chrání firmu před potenciálními nástrahami:
 
-- Cost Management
+- Správa nákladů
 - Standardní hodnoty zabezpečení
 - Konzistence prostředků
 - Standardní hodnoty identit
@@ -50,7 +50,7 @@ Firemní zásady slouží jako včasný varovný systém pro detekci potenciáln
 
 Vzhledem k tomu, že požadavky zásad správného řízení se budou v průběhu cesty přechodu na cloud měnit, vyžaduje to jiný přístup k zásadám správného řízení. Firmy *před provedením prvního kroku* už nemohou čekat, až malý tým nastaví ochranné mantinely a vytvoří plány pro každý úsek cesty. Obchodní výsledky se očekávají mnohem rychleji a bez problémů. Zásady správného řízení IT se také musí rychle přizpůsobovat a držet krok s obchodními požadavky, aby zůstaly relevantní i během přechodu na cloud a nedošlo ke vzniku „stínového IT“.
 
-Přístup využívající **inkrementální zásady správného řízení** umožňuje všechny tyto vlastnosti zajistit. Inkrementální zásady správného řízení využívají malou sadu firemních zásad, procesů a nástrojů k vytvoření základu pro přechod a zásady správného řízení. Tento základ se označuje jako **MVP (Minimum Viable Product)** . MVP umožňuje týmu zásad správného řízení rychle začlenit zásady správného řízení do implementací v průběhu celého trvání přechodu na cloud. MVP je možné během procesu přechodu na cloud vytvořit kdykoli. Osvědčilo se ale vytvořit ho co nejdříve.
+Přístup využívající **inkrementální zásady správného řízení** umožňuje všechny tyto vlastnosti zajistit. Inkrementální zásady správného řízení využívají malou sadu firemních zásad, procesů a nástrojů k vytvoření základu pro přechod a zásady správného řízení. Tento základ se označuje jako **MVP (Minimum Viable Product)** . MVP umožňuje týmu zásad správného řízení rychle začlenit zásady správného řízení do implementací v průběhu celého trvání přechodu na cloud. MVP je možné během procesu přechodu na cloud vytvořit kdykoli. Je ale dobrým zvykem, jak co nejdříve přijmout MVP.
 
 Možnost rychle reagovat na měnící se rizika umožňuje týmu zásad správného řízení v cloudu pracovat novými způsoby. Členové týmu zásad správného řízení v cloudu se mohou jako průzkumníci zapojit do týmu cloudové strategie, zajistit si náskok před týmy přechodu na cloud, vytyčovat trasy a rychle vytvářet ochranné mantinely pro správu rizik souvisejících s plány přechodu. Tyto vrstvy zásady správného řízení za běhu se označují jako **iterace zásad správného řízení**. Při použití tohoto přístupu má vývoj strategie zásad správného řízení vždy o krok náskok před týmy přechodu na cloud.
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025374"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548279"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Příprava na technicky složité prostředí: Agilní správa změn
 
@@ -31,16 +31,16 @@ Dokument Architektura přechodu na cloud často pracuje s pojmem _sada funkcí_.
 
 INVEST představuje v řadě agilních metodologií běžný akronym pro zápis uživatelských scénářů nebo položek produktových backlogů. Obě tyto položky jsou výstupem nástrojů pro agilní řízení projektů. Měrnou jednotkou výstupu migrace je migrovaná sada funkcí. Architektura pro přechod do cloudu pracuje s akronymem INVEST trochu volněji a vytváří na jeho základě koncept pro definici sad funkcí:
 
-- **Independent (Nezávislost):** Sada funkcí by neměla mít žádné nepřístupné závislosti. Aby bylo možné sadu funkcí považovat za migrovanou, všechny závislosti by měly být přístupné a měly by být součástí procesu migrace.
-- **Negotiable (Možnost změn):** Když se provede další zjišťování, definice sady funkcí se změní. Architekti, kteří plánují migraci, můžou měnit faktory týkající se závislostí. Mezi body, které můžou podléhat změnám, patří předběžné uvolnění funkcí do produkčního prostředí, zpřístupnění funkcí prostřednictvím hybridní sítě nebo balíčkování všech závislostí do jednoho uvolnění prostředků.
-- **Valuable (Hodnota):** Hodnota se v sadě funkcí měří podle schopnosti zajistit uživatelům přístup k produkčnímu prostředí.
-- **Estimable (Možnost odhadu):** Mělo by být možné předem odhadnout počet všech závislostí, prostředků, dobu trvání migrace, výkonnost cloudu a náklady na něj a tento odhad by měl být vytvořen dřív, než začne samotná migrace.
-- **Small (Malý počet):** Cílem je zabalit sady funkcí do jednoho sprintu. Ne vždy je to ale možné. Místo toho se doporučuje plánovat sprinty a uvolnění prostředků tak, aby se co nejvíce zkrátil čas potřebný k přesunu sady funkcí do produkčního prostředí.
-- **Testable (Možnost testování):** Vždy by měl být definovaný způsob, jak otestovat a ověřit dokončení migrace jednotlivých sad funkcí.
+- **Nezávislé:** Úlohy by neměly mít žádné nepřístupné závislosti. Aby bylo možné sadu funkcí považovat za migrovanou, všechny závislosti by měly být přístupné a měly by být součástí procesu migrace.
+- **Obchodovatelné:** Po provedení dalšího zjišťování se definice úlohy změní. Architekti, kteří plánují migraci, můžou měnit faktory týkající se závislostí. Mezi body, které můžou podléhat změnám, patří předběžné uvolnění funkcí do produkčního prostředí, zpřístupnění funkcí prostřednictvím hybridní sítě nebo balíčkování všech závislostí do jednoho uvolnění prostředků.
+- **Důležité:** Hodnota v úloze je měřena možností poskytnout uživatelům přístup k produkčnímu zatížení.
+- **Estimable:** Všechny závislosti, prostředky, čas migrace, výkon a náklady na Cloud by měly být estimable a měly by být odhadované před migrací.
+- **Malé:** Cílem je zabalit úlohy v jednom sprintu. Ne vždy je to ale možné. Místo toho se doporučuje plánovat sprinty a uvolnění prostředků tak, aby se co nejvíce zkrátil čas potřebný k přesunu sady funkcí do produkčního prostředí.
+- **Testovatelné:** Vždy by měl být definován způsob testování nebo ověřování dokončení migrace úlohy.
 
 Smyslem tohoto akronymu není jeho přísné dodržování. Měl by sloužit jako návod pro definování pojmu _sada funkcí_.
 
-## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog migrace: Sladění obchodních priorit a načasování
+## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog migrace: zarovnání obchodních priorit a časování
 
 Backlog migrace umožňuje sledovat portfolio vašich nejdůležitějších sad funkcí, které jsou určené pro migraci. Před zahájením migrace by tým cloudové strategie a tým přechodu na cloud měly provést kontrolu aktuálního [stavu digitálního prostředí](../../../digital-estate/index.md) a shodnout se na seznamu prioritních sad funkcí, které se budou migrovat. Tento seznam bude sloužit jako výchozí backlog migrace.
 
@@ -63,7 +63,7 @@ V případě všech backlogů migrace by se tým zodpovědný za správu změn m
 - **Název sady funkcí**
 - **Počáteční inventář:** Všechny prostředky potřebné k tomu, aby sada funkcí pracovala správně, včetně například virtuálních počítačů, IT zařízení, dat, aplikací a kanálů nasazení. Tyto informace budou pravděpodobně nepřesné.
 
-## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Backlog vydání prostředků: Sladění obchodních změn a koordinace technických aspektů
+## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Nevyřízené položky verze: zarovnání firemní změny a technická koordinace
 
 V kontextu migrace představuje _uvolnění prostředků_ nasazení jedné nebo několika sad funkcí do produkčního prostředí. Uvolnění prostředků obvykle zahrnuje několik iterací nebo technických kroků. Z pohledu obchodních změn ale představuje jednu iteraci. Jakmile bude určený počet sad funkcí připravený pro nasazení v produkčním prostředí, dojde k uvolnění prostředků. Rozhodnutí vytvořit balíček uvolněných prostředků se přijme, pokud migrované sady funkcí mají dostatečnou obchodní hodnotu, která zdůvodní provedení změn v podnikovém prostředí. Uvolnění prostředků probíhá v souladu s [plánem obchodních změn](../optimize/business-change-plan.md) a po dokončení [firemního testování](../optimize/business-test.md). Tým cloudové strategie zodpovídá za plánování a dohled nad uvolněním požadovaných podnikových prostředků.
 
@@ -86,13 +86,13 @@ Tým cloudové strategie a tým přechodu na cloud by měly spolupracovat a ke v
 
 ### <a name="release-backlog-cadence"></a>Backlog uvolněných prostředků a tempo jejich uvolňování
 
-Pokud je migrace dobře připravená, prostředky se uvolňují pravidelným tempem. Rychlost práce týmu přechodu na cloud se často ustálí a prostředky se pak uvolňují po každých dvou až čtyřech iteracích (přibližně jednou za měsíc až dva). Tento proces by se ale neměl zrychlovat na úkor kvality práce. Nastavení umělého tempa uvolňování prostředků může negativně ovlivnit schopnost týmu přechodu na cloud dosahovat konzistentních výsledků.
+Pokud je migrace dobře připravená, prostředky se uvolňují pravidelným tempem. Rychlost práce týmu přechodu na cloud se často ustálí a prostředky se pak uvolňují po každých dvou až čtyřech iteracích (přibližně jednou za měsíc až dva). Tento proces by se ale neměl zrychlovat na úkor kvality práce. Vytváření tempem umělé verze může negativně ovlivnit schopnost týmu přijetí cloudu dosáhnout konzistentní propustnosti.
 
 Aby se stabilizoval dopad na podnik, tým cloudové strategie by měl ve spolupráci s firmou nastavit proces měsíčního uvolňování prostředků a pravidelně s ní komunikovat. Také by měl zajistit, aby si zákazník uvědomoval, že může trvat několik měsíců, než se nastaví pravidelné tempo uvolňování prostředků.
 
-## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Backlog sprintu nebo iterace: Sladění plánu a realizace technických změn
+## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Nevyřízené položky sprintu nebo iterace: zarovnání technické změny a úsilí
 
-*Sprint* neboli *iterace* představuje konzistentní, časově vázanou jednotku práce. V procesu migrace se často měří ve dvoutýdenních přírůstcích. Vyskytují se ale i případy týdenních nebo čtyřtýdenních iterací. Vytvoření časově vázaných iterací vynutí pravidelné intervaly pro dokončení dílčích úloh a umožní častěji upravovat plány na základě nově zjištěných informací. Pro každý sprint jsou obvykle v backlogu migrace definované úlohy týkající se posouzení, migrace a optimalizace sad funkcí. Tyto jednotky práce by se měly sledovat a spravovat ve stejném nástroji pro řízení projektů jako backlog migrace a uvolnění prostředků. Tento postup zajistí konzistenci napříč všemi úrovněmi správy změn.
+*Sprint* neboli *iterace* představuje konzistentní, časově vázanou jednotku práce. V procesu migrace se často měří ve dvoutýdenních přírůstcích. Nejedná se však o nevyslechnutí, aby bylo možné mít iterace na týden nebo čtyři týdny. Vytvoření časově vázaných iterací vynutí pravidelné intervaly pro dokončení dílčích úloh a umožní častěji upravovat plány na základě nově zjištěných informací. Pro každý sprint jsou obvykle v backlogu migrace definované úlohy týkající se posouzení, migrace a optimalizace sad funkcí. Tyto jednotky práce by se měly sledovat a spravovat ve stejném nástroji pro řízení projektů jako backlog migrace a uvolnění prostředků. Tento postup zajistí konzistenci napříč všemi úrovněmi správy změn.
 
 *Backlog sprintu* neboli *backlog iterace* se skládá z technických úloh, které se mají provést v jednom sprintu nebo iteraci v rámci migrace jednotlivých prostředků. Tyto úlohy by měly vycházet ze seznamu sad funkcí, u kterých probíhá migrace. Pokud pro řízení projektů používáte nástroje, jako je například Azure DevOps (dřív Visual Studio Online), pracovní položky ve sprintu jsou podřízené položkám v produktovém backlogu v backlogu uvolnění prostředků a námětům v backlogu migrace. Vztahy nadřazených a podřízených položek zajišťují lepší přehled na všech úrovních správy změn.
 

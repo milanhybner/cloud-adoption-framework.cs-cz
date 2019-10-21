@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05d9441eb8867ff47ad23ccc44a9b58d8e010499
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833502"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549192"
 ---
-# <a name="business-priorities---maintaining-alignment"></a>Obchodní priority – zachování souladu
+# <a name="business-priorities-maintaining-alignment"></a>Obchodní priority: zachování zarovnání
 
 *Transformace* se často definuje jako dramatická nebo spontánní změna. Na úrovni správní rady může změna vypadat jako dramatická transformace. Pro ty, kteří se procesem změny zabývají v organizaci, je ale pojem transformace poněkud zavádějící. Na této úrovni se transformace popisuje spíše jako série vhodně realizovaných přechodů od jednoho stavu k jinému.
 
@@ -49,7 +49,7 @@ Během realizace plánu obchodních změn monitoruje tým cloudové strategie po
 
 Při změně na trhu spolupracuje tým cloudové strategie s firmou, aby porozuměl tomu, jak na tyto změny nejlépe reagovat. Pokud tato reakce vyžaduje změnu v prioritách migrace, upraví se backlog migrace. Úlohy, které měly dříve nižší prioritu, se tak přesunou nahoru.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Díky správně sladěným obchodním prioritám může tým přechodu na cloud bez obav začít [vyhodnocovat úlohy](./evaluate.md) pro vývoj architektury a plánů migrace.
 

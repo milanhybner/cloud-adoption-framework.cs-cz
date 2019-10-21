@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b15cee23f81027e3b5597079e61fcc7ac0e534e2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021929"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548739"
 ---
 # <a name="initial-organization-alignment"></a>Počáteční stav organizace
 
@@ -35,7 +35,7 @@ Základní proces digitální transformace je následující:
 <!--6. Develop processes for operating in the cloud to make solutions more robust in terms of availability, resiliency, and security.
 1. Optimize solutions for performance, scalability, and cost efficiency.-->
 
-## <a name="step-1-create-a-cloud-strategy-team"></a>Krok 1: Vytvoření týmu cloudové strategie
+## <a name="step-1-create-a-cloud-strategy-team"></a>Krok 1: vytvoření týmu cloudové strategie
 
 Prvním krokem při digitální transformaci společnosti je zapojení nejvyšších manažerů z celé organizace do týmu cloudové strategie. Tento tým sestává z nejvyšších manažerů z oblasti financí, infrastruktury IT a aplikací. Jednotlivé týmy mohlo přispět ve fázi cloudové analýzy a experimentování.
 
@@ -49,7 +49,7 @@ Kromě toho je důležité vytvořit dva další klíčové týmy: tým zásad s
 
 Tým zabezpečení je zodpovědný za návrh a implementaci cloudových zásad zabezpečení společnosti a úzce spolupracuje s týmem zásad správného řízení. Má k dispozici rozšíření hranice zabezpečení místní sítě, aby bylo možné zahrnout virtuální sítě v cloudu. To může mít podobu nakládání s branami firewall pro příchozí i odchozí provoz v cloudové virtuální síti, stejně jako zajišťování, že nástroje a zásady neumožní nasazení neautorizovaných prostředků.
 
-## <a name="step-2-learn-whats-new-in-the-cloud"></a>Krok 2: Seznámení se s novinkami cloudu
+## <a name="step-2-learn-whats-new-in-the-cloud"></a>Krok 2: Podívejte se, co je nového v cloudu
 
 V rámci dalšího kroku digitální transformace by členové týmu cloudové strategie měli zjistit, jakým způsobem změní cloudové technologie podnikání společnosti. Jedná se o fázi příprav a plánování změn, které budou mít vliv na vaši společnost, lidi a technologie. Je důležité, aby členové týmu cloudové strategie porozuměli novinkám a změnám, které cloudové prostředí (ve srovnání s místním prostředím) přinese.
 
@@ -59,7 +59,7 @@ Výchozím bodem pro porozumění cloudu je seznámení se se základními [prin
 
 V rámci dalšího studia by si tým zásad správného řízení měl projít pojmy a průvodce návrhem v části obsahu věnované zásadám správného řízení. Části týkající se infrastruktury a úloh obsahují užitečné informace o typických architekturách a cloudových úlohách.
 
-## <a name="step-3-identify-gaps-in-business-strategy"></a>Krok 3: Určení mezer v obchodní strategii
+## <a name="step-3-identify-gaps-in-business-strategy"></a>Krok 3: identifikace mezer v obchodní strategii
 
 V rámci dalšího kroku by měl tým cloudové strategie vytvořit seznam obchodních problémů, které bude nutné digitální transformací vyřešit. Společnost může mít například místní datové centrum, jehož hardwaru končí životnost a potřebuje výměnu. Může mít také potíže s uváděním nových funkcí a služeb na trh a zaostávat tak za konkurencí. Tyto mezery představují _cíle_ digitální transformace vaší organizace.
 
@@ -87,7 +87,7 @@ Jakmile vytvoříte seznam všech mezer v obchodní strategii a stanovíte pro n
 
 Výstupem tohoto procesu pak bude seřazený seznam základních řešení sladěných s obchodními kategoriemi.
 
-## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>Krok 4: Přidružení základních řešení k obchodním skupinám a návrh řešení
+## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>Krok 4: zarovnejte řešení na vysoké úrovni s obchodními skupinami a navrhněte řešení
 
 Teď, když jste stanovili cíle digitální transformace, přiřadili jim prioritu a navrhli základní řešení, bude dalším krokem týmu cloudové strategie sladit každé ze základních řešení s týmy návrhu a implementace v oblasti jednotlivých obchodních skupin.
 
@@ -99,11 +99,11 @@ Navrhnout jednotlivá řešení není úplně jednoduché. Při vytváření ná
 
 Po vytvoření řešení přejde tým do implementační fáze každého návrhu. Tuto fázi lze provést za pomocí standardních procesů řízení projektů.
 
-## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>Krok 5: Přizpůsobení stávajících rolí, dovedností a procesů cloudovému prostředí
+## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>Krok 5: přizpůsobení stávajících rolí, dovedností a procesů pro Cloud
 
 V každé fázi historie IT byly nejvýznamnější oborové změny často spojené se změnami rolí pracovníků. Během přechodu ze sálových počítačů na model klient/server z velké části vymizely role pracovníků obsluhy počítače, které nahradili správci systému. Když přišla éra virtualizace, poptávka po pracovnících obsluhujících fyzické servery poklesla, ale naopak vyvstala potřeba odborníků na virtualizaci. Podobně se role pravděpodobně změní s tím, jak instituce přechází na cloud computing. Například odborníci na datová centra budou možná vystřídáni finančními analytiky pro cloud. Dokonce i tam, kde názvy pracovních pozic v oboru IT zůstaly nezměněné, došlo k velkému posunu v každodenních pracovních rolích.
 
-Když si pracovníci oddělení IT uvědomí, že podpora cloudových řešení vyžaduje odlišný soubor dovedností, mohou pociťovat obavy ohledně svých rolí a pozic. Ti, kteří aktivně objevují nové cloudové technologie a učí se jim, ale obavy mít nemusí. Naopak mohou přijetí cloudových služeb vést a pomoci organizaci poznat a přijmout související změny.
+Když si pracovníci oddělení IT uvědomí, že podpora cloudových řešení vyžaduje odlišný soubor dovedností, mohou pociťovat obavy ohledně svých rolí a pozic. Ale agilní zaměstnanci, kteří se seznámili a učí nové cloudové technologie, nemusí mít k dispozici obavy. Naopak mohou přijetí cloudových služeb vést a pomoci organizaci poznat a přijmout související změny.
 
 ### <a name="capturing-concerns"></a>Zachycení obav
 
@@ -131,7 +131,7 @@ Tyto závislosti představují nové procesy, které vaše organizace implementu
 
 Sledujte tyto závislosti a poznamenejte si procesy, které je podporují (a také to, zda takové procesy už existují). Pokud procesy vyžadují nástroje, zkontrolujte, že časová osa jejich nasazení odpovídá celkovému plánu digitální transformace.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Digitální transformace je iterativní proces a s každou iterací se zúčastněné týmy stávají efektivnějšími.
 

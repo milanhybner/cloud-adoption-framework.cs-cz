@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d6c52336f6bf02641cefd6d848ed319e8d3cc100
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a4f8c76abb36d0b3f410ed4d2027f9307d6c1f0c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026494"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548668"
 ---
 # <a name="examples-of-performance-outcomes"></a>Příklady výsledků výkonu
 
@@ -27,13 +27,13 @@ Největší služby cloud computingu běží v celosvětové síti zabezpečený
 
 Vyměňte svou firmu a snižte náklady pomocí energeticky hospodárné infrastruktury, která zahrnuje více než 100 vysoce zabezpečených zařízení po celém světě, které jsou propojeny jednou z největších sítí na zemi. Azure má víc globálních oblastí než jakýkoli jiný poskytovatel cloudu. To se týká škálování, které je potřeba k tomu, aby se aplikace blížily uživatelům po celém světě, zachovaly zachovávání dat a poskytovaly zákazníkům komplexní možnosti dodržování předpisů a odolnosti proti chybám.
 
-- **Příklad 1**: Společnost služby pracovala s poskytovatelem hostingu, který hostuje více prostředků Provozní infrastruktury. Tyto systémy utrpěly časté výpadky a nízký výkon. Společnost migrovali své prostředky do Azure a využila tak výhody řízení a výkonu v cloudu. Prostoje, o kterou utrpělo, je přibližně 15 000 USD za minutu výpadku. Díky čtyř až osmi hodinám výpadku za měsíc se tato organizační transformace dá snadno zarovnat do kategorie.
+- **Příklad 1**: společnost služeb pracovala s poskytovatelem hostingu, který hostuje více prostředků Provozní infrastruktury. Tyto systémy utrpěly časté výpadky a nízký výkon. Společnost migrovali své prostředky do Azure a využila tak výhody řízení a výkonu v cloudu. Prostoje, o kterou utrpělo, je přibližně 15 000 USD za minutu výpadku. Díky čtyř až osmi hodinám výpadku za měsíc se tato organizační transformace dá snadno zarovnat do kategorie.
 
-- **Příklad 2**: Zákaznická investiční společnost byla v počátečních fázích úsilí o inovaci aplikací s podporou cloudu. Agilní procesy a DevOps byly dostatečně ve splatnosti, ale výkon aplikace byl nárazové. V rámci vyspělé transformace společnost zahájila program pro monitorování a automatizaci velikosti podle požadavků na použití. Společnost byla schopna eliminovat problémy s velikostí pomocí nástrojů pro správu výkonu Azure, což vede k nárůstu počtu transakcí v překvapivé 5 procent.
+- **Příklad 2**: zákaznická investiční společnost byla v počátečních fázích úsilí o inovaci aplikací s podporou cloudu. Agilní procesy a DevOps byly dostatečně ve splatnosti, ale výkon aplikace byl nárazové. V rámci vyspělé transformace společnost zahájila program pro monitorování a automatizaci velikosti podle požadavků na použití. Společnost byla schopna eliminovat problémy s velikostí pomocí nástrojů pro správu výkonu Azure, což vede k nárůstu počtu transakcí v překvapivé 5 procent.
 
 ## <a name="reliability"></a>Spolehlivost
 
-S cloud computingem je zálohování dat, zotavení po havárii a kontinuita podnikových procesů mnohem snadnější a méně nákladné, protože data jde zrcadlit na víc redundantních míst v rámci sítě poskytovatele cloudu.
+Cloud Computing umožňuje zálohování dat, zotavení po havárii a kontinuitu podnikových aplikací, protože data se můžou zrcadlit na několika redundantních webech v síti poskytovatele cloudu.
 
 Jednou z těchto důležitých funkcí je zajistit, aby firemní data nebyla nikdy ztracena a aplikace zůstaly dostupné i přes havárie serveru, výpadky napájení nebo přírodní katastrofy. Vaše data můžete chránit a obnovovat tak, že je zálohujete do Azure.
 
@@ -41,7 +41,7 @@ Azure Backup je jednoduché řešení, které snižuje náklady na infrastruktur
 
 Azure Site Recovery usnadňuje testování zotavení po havárii replikací aplikací mezi oblastmi Azure. Můžete také replikovat místní virtuální počítače VMware a Hyper-V a fyzické servery do Azure, aby byly dostupné, pokud dojde k výpadku primární lokality. A v případě opětovného spuštění můžete úlohy obnovit do primární lokality.
 
-- **Příklad**: Olejová a plynová společnost používala technologie Azure k implementaci úplného Site Recovery. Společnost se rozhodla plně využívat Cloud pro každodenní operace, ale funkce pro zotavení po havárii a kontinuitu provozu (DRBC) cloudu ještě chrání svoje datacentrum. Protože hurikán vytvořil stovky mil, jejich partnerský partner zahájil obnovování lokality do Azure. Předtím, než se doplní, všechny klíčové prostředky byly v Azure spuštěné a zabraňují případným výpadkům.
+- **Příklad**: olejová a plynová společnost používala technologie Azure k implementaci úplného Site Recovery. Společnost se rozhodla plně využívat Cloud pro každodenní operace, ale funkce pro zotavení po havárii a kontinuitu provozu (DRBC) cloudu ještě chrání svoje datacentrum. Protože hurikán vytvořil stovky mil, jejich partnerský partner zahájil obnovování lokality do Azure. Předtím, než se doplní, všechny klíčové prostředky byly v Azure spuštěné a zabraňují případným výpadkům.
 
 ## <a name="next-steps"></a>Další kroky
 

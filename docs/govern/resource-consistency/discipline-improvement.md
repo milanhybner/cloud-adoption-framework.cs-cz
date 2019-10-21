@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223023"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548087"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Vylepšení oboru konzistence prostředků
 
@@ -130,6 +130,6 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 Teď, když rozumíte konceptu zásad správného řízení prostředků v cloudu, přejděte na Další informace o [tom, jak se v Azure spravuje přístup k prostředkům](./resource-access-management.md) v tématu Příprava na přípravu modelu zásad správného řízení pro [jednoduchou úlohu](./governance-simple-workload.md) nebo pro [více týmů](./governance-multiple-teams.md) . .
 
 > [!div class="nextstepaction"]
-> [Další informace o správě přístupu k prostředkům v Azure](./resource-access-management.md)
-> [informace o smlouvách o úrovni služeb pro Azure](https://azure.microsoft.com/support/legal/sla)
-> získáte v informacích[o protokolování, generování sestav a monitorování](../../decision-guides/logging-and-reporting/index.md) .
+> Přečtěte [si o správě přístupu k prostředkům v azure](./resource-access-management.md) 
+> [informace o smlouvách o úrovni služeb pro Azure](https://azure.microsoft.com/support/legal/sla) 
+> [informace o protokolování, vytváření sestav a monitorování](../../decision-guides/logging-and-reporting/index.md) .

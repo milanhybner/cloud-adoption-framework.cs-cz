@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Začínáme s cestou k migraci do cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223075"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547822"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Začínáme s cestou k migraci do cloudu
 
 Přečtěte si, jak pomocí rozhraní pro přijetí Microsoft Cloud pro Azure zahájit cestu k migraci do cloudu. Tato architektura poskytuje komplexní pokyny pro přechod úloh starších verzí aplikací pomocí inovativních cloudových technologií.
 
-## <a name="executive-summary"></a>Výkonné shrnutí
+## <a name="executive-summary"></a>Shrnutí vedoucího
 
 Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace, které se týkají ucelené cesty k přijetí do cloudu, počínaje cílovým obchodním výstupem a zarovnáním připravenosti na Cloud a posouzením jasně definovaných obchodních cílů. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na dokončení migrace místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
 
@@ -52,7 +52,7 @@ Připravují se všechny účastníky v rámci úsilí o migraci s vědomím mot
 
 Rozhraní pro přijetí do cloudu vytvoří na nejvyšší úrovni plán, který je připravený, aby bylo možné seskupit typy úsilí požadované v rámci jakéhokoli přijetí v cloudu. Tento výkonný souhrn se sestavuje na tomto toku vysoké úrovně za účelem vytvoření iterativních procesů, které usnadňují navýšení/posunutí a optimalizaci úsilí **a** úsilí v rámci modernizace v jediném přístupu napříč všemi aktivitami migrace cloudu.
 
-Tento přístup se skládá ze dvou metodologií nebo oblastí zaostření: Strategie cloudu & plánování a implementace cloudu. [Motivace](#motivations) nebo požadovaná obchodní výsledek migrace do cloudu často určuje, kolik týmů by měl investovat do [strategie a plánování](#cloud-strategy-and-planning) a [implementace](#cloud-implementation). Tyto podněty můžou také ovlivnit rozhodování, aby se prováděly postupně nebo paralelně.
+Tento přístup se skládá ze dvou metodologií nebo oblastí zaostření: strategie cloudu & plánování a implementace cloudu. [Motivace](#motivations) nebo požadovaná obchodní výsledek migrace do cloudu často určuje, kolik týmů by měl investovat do [strategie a plánování](#cloud-strategy-and-planning) a [implementace](#cloud-implementation). Tyto podněty můžou také ovlivnit rozhodování, aby se prováděly postupně nebo paralelně.
 
 ## <a name="cloud-implementation"></a>Implementace cloudu
 
@@ -64,7 +64,7 @@ Zaměření na toto úsilí je migrace nebo modernizace úloh. Úloha je kolekce
 
 Migrace do cloudu se často považují za jeden projekt v širším programu, aby se zjednodušily IT operace, náklady nebo složitost. Metodologie implementace v cloudu pomáhá sjednotit technické úsilí v rámci série migrací úloh na vyšší úroveň obchodních hodnot, které jsou uvedené v cloudové strategii a plánu.
 
-**Začínáme:** Pokud chcete začít s cloudovou implementací, [Průvodce migrací Azure](../migrate/azure-migration-guide/index.md) a [Průvodce připravenou na Azure](../ready/azure-readiness-guide/index.md) vytvoří přehled nástrojů a procesů vysoké úrovně, které jsou potřeba k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Další aspekty by se měly předávat [rozšířenému kontrolnímu seznamu oboru](../migrate/expanded-scope/index.md), [osvědčeným postupům pro migraci](../migrate/azure-best-practices/index.md) a [úvahám](../migrate/migration-considerations/index.md), které umožňují zarovnat základní pokyny k jedinečným omezením, procesům, týmu struktury a cíle.
+**Začínáme:** Pokud chcete začít s cloudovou implementací, průvodce [migrací Azure](../migrate/azure-migration-guide/index.md) a [Průvodce nastavením Azure](../ready/azure-setup-guide/index.md) popisují nástroje a procesy vysoké úrovně, které jsou potřeba k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Další aspekty by se měly předávat [rozšířenému kontrolnímu seznamu oboru](../migrate/expanded-scope/index.md), [osvědčeným postupům pro migraci](../migrate/azure-best-practices/index.md) a [úvahám](../migrate/migration-considerations/index.md), které umožňují zarovnat základní pokyny k jedinečným omezením, procesům, týmu struktury a cíle.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategie a plánování cloudu
 
@@ -82,12 +82,12 @@ Jak je znázorněno na obrázku výše, toto rozhraní zarovnává strategická 
 
 - **[Plán](../strategy/index.md):** Pokud je technická implementace zarovnána s jasnými obchodními cíli, je mnohem snazší měřit a sjednotit úspěch napříč několika úsilími v oblasti implementace cloudu, bez ohledu na technické rozhodnutí.
 - **[Připraveno](../ready/index.md):** Příprava podnikání, jazykové verze, lidí a prostředí pro změny vede k úspěchu v každém úsilí a zrychluje implementaci a změny projektů.
-- **Přechod:** Zajistěte správnou implementaci požadovaných změn napříč IT a obchodními procesy, abyste dosáhli obchodních výsledků.
-  - **[Migrace](../migrate/index.md):** Iterativní provádění [metodologie implementace v cloudu](#cloud-implementation) , která se řídí testovaným procesem vyhodnocování, migrace, optimalizace a zabezpečení & pro vytvoření opakovaného procesu pro migraci úloh.
-- **[Provoz](../operate/index.md):** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
-  - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
-  - **[Řízení](../govern/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
-  - **[Správa](../manage/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.
+- **Přijmout:** Zajistěte správnou implementaci požadovaných změn napříč IT a obchodními procesy, abyste dosáhli obchodních výsledků.
+  - **[Migrace](../migrate/index.md):** iterativní provádění [metodologie implementace v cloudu](#cloud-implementation) , která se řídí testovaným procesem vyhodnocování, migrace, optimalizace a zabezpečení & pro vytvoření opakovaného procesu pro migraci úloh.
+  - Inovace  **[](../innovate/index.md):** Využijte provozní hodnoty prostřednictvím inovačních aktivit, které rozšiřují nové technické dovednosti a rozšířené obchodní možnosti.
+- **[Řídit](../govern/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
+- **[Spravovat](../manage/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.
+- **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
 
 V rámci této migrace se tato architektura bude používat k řešení nejednoznačnosti, správě změn a seznámení s různými funkčními týmy prostřednictvím realizace obchodních výsledků.
 
@@ -114,7 +114,7 @@ Cloudová strategie a plánování často cílí na širokou škálu úloh a apl
 
 - Obchodní aplikace
 - Zákaznické aplikace
-- Aplikace třetí strany
+- Aplikace třetích stran
 - Platformy pro analýzu dat
 - Globálně distribuovaná řešení
 - Vysoce škálovatelná řešení
@@ -129,17 +129,23 @@ Technologie migrované do cloudu se průběžně rozšiřují jako poskytovatel�
 - SAP v Azure
 - Analýza (datový sklad, Data Lake)
 
-## <a name="next-steps-lifecycle-solution"></a>Další kroky: Řešení životního cyklu
+## <a name="next-steps-lifecycle-solution"></a>Další kroky: řešení životního cyklu
 
 Rozhraní pro přijetí do cloudu je řešením životního cyklu. Je navržený tak, aby pomáhal čtenářům, kteří právě začínají svoji cestu, a také čtenářům, kteří se do migrace nacházejí hluboko. V takovém případě je obsah velmi kontextu a specifických pro cílovou skupinu. Další kroky jsou nejlépe zarovnané na proces vysoké úrovně, který čtenář chce zlepšit.
 
 > [!div class="nextstepaction"]
+> [Strategie](../strategy/index.md)
+>
 > [Plánování](../plan/index.md)
 >
 > [K](../ready/index.md)
 >
 > [Migrace](../migrate/index.md)
 >
-> [Správa](../manage/index.md)
+> [Inovace](../innovate/index.md)
 >
 > [Bude](../govern/index.md)
+>
+> [Správa](../manage/index.md)
+>
+> [Přehled](../organize/index.md)

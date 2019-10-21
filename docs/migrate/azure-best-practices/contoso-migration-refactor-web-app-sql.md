@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c94ad845571c5007f14773268d383764cdc89a6c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0118fcf3ca5b724a90d5e68482bfe6fe1a7e6abb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025050"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548202"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoring místní aplikace do webové aplikace Azure App Service a databáze SQL Azure
 
@@ -55,7 +55,7 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
 - Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
 - Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
 
@@ -78,7 +78,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Pro migraci do Azure nebude potřeba měnit kód aplikace SmartHotel360.<br/><br/> Společnost Contoso může využít své investice do Software Assurance pomocí programu Zvýhodněné hybridní využití Azure pro SQL Server i Windows Server.<br/><br/> Po dokončení migrace už nebude nutné podporovat Windows Serveru 2008 R2. [Další informace](https://support.microsoft.com/lifecycle).<br/><br/> Contoso může nakonfigurovat webovou vrstvu aplikace s využitím několika instancí, takže už nebude kritickým prvkem způsobujícím selhání.<br/><br/> Databáze už nebude záviset na zastarávajícím SQL Serveru 2008 R2.<br/><br/> SQL Database podporuje dané technické požadavky. Společnost Contoso vyhodnotila místní databázi pomocí Data Migration Assistanta a zjistila, že je kompatibilní.<br/><br/> Azure SQL Database má integrovanou odolnost proti chybám, kterou Contoso nemusí nastavovat. Tím se zajistí, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Azure App Service podporuje pro každou webovou aplikaci jenom jedno nasazení. To znamená, že se musí zřídit dvě webové aplikace (jedna pro web a druhá pro službu WCF).<br/><br/> Pokud společnost Contoso k migraci své databáze použije Data Migration Assistanta, a ne službu Azure Database Migration Service, nebude mít připravenou infrastrukturu pro migraci databází ve velkém měřítku. Společnost Contoso bude muset vytvořit další oblast, aby se zajistilo převzetí služeb při selhání, když primární oblast není k dispozici.
+**Nevýhody** | Azure App Service podporuje pro každou webovou aplikaci jenom jedno nasazení. To znamená, že se musí zřídit dvě webové aplikace (jedna pro web a druhá pro službu WCF).<br/><br/> Pokud společnost Contoso používá Data Migration Assistant místo Azure Database Migration Service k migraci své databáze, nebude mít infrastrukturu připravenou pro migraci databází se škálováním. Společnost Contoso bude muset vytvořit další oblast, aby se zajistilo převzetí služeb při selhání, když primární oblast není k dispozici.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -102,7 +102,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tvorba výkonných cloudových aplikací s využitím plně spravované platformy | Náklady závisejí na velikosti, umístění a využití. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Contoso k realizaci tohoto scénáře potřebuje:
 
@@ -121,14 +121,14 @@ Contoso provede migraci takto:
 
 > [!div class="checklist"]
 >
-> - **Krok 1: Zřízení instance služby SQL Database v Azure.** Společnost Contoso zřídí instanci SQL v Azure. Po dokončení migraci webu aplikace do Azure bude na tuto instanci odkazovat webová aplikace služby WCF.
-> - **Krok 2: Migrace databáze s využitím DMA.** Společnost Contoso migruje databázi aplikace pomocí Data Migration Assistanta.
-> - **Krok 3: Zřízení webových aplikací.** Společnost Contoso zřídí dvě webové aplikace.
-> - **Krok 4: Nastavení služby Azure DevOps.** Contoso vytvoří nový projekt Azure DevOps a naimportuje úložiště Git.
+> - **Krok 1: zřízení instance SQL Database v Azure** Společnost Contoso zřídí instanci SQL v Azure. Po dokončení migraci webu aplikace do Azure bude na tuto instanci odkazovat webová aplikace služby WCF.
+> - **Krok 2: migrace databáze pomocí DMA.** Společnost Contoso migruje databázi aplikace pomocí Data Migration Assistanta.
+> - **Krok 3: zřízení webových aplikací** Společnost Contoso zřídí dvě webové aplikace.
+> - **Krok 4: nastavte Azure DevOps.** Contoso vytvoří nový projekt Azure DevOps a naimportuje úložiště Git.
 > - **Krok 5: Konfigurace připojovacích řetězců.** Contoso nakonfiguruje připojovací řetězce tak, aby webová aplikace webové vrstvy, webová aplikace služby WCF a instance SQL mohly vzájemně komunikovat.
-> - **Krok 6: Nastavení kanálů buildu a verze.** V posledním kroku společnost Contoso vytvoří kanály buildu a verze pro vytvoření aplikace a nasadí je do dvou samostatných webových aplikací.
+> - **Krok 6: nastavte kanály sestavení a vydání.** V posledním kroku společnost Contoso vytvoří kanály buildu a verze pro vytvoření aplikace a nasadí je do dvou samostatných webových aplikací.
 
-## <a name="step-1-provision-an-azure-sql-database"></a>Krok 1: Zřízení Azure SQL Database
+## <a name="step-1-provision-an-azure-sql-database"></a>Krok 1: zřízení Azure SQL Database
 
 1. Správci Contoso se rozhodují vytvořit SQL Database v Azure.
 
@@ -136,7 +136,7 @@ Contoso provede migraci takto:
 
 2. Zadají název databáze, který odpovídá databázi spuštěné na místním virtuálním počítači (**SmartHotel.Registration**). Umístí tuto databázi do skupiny prostředků ContosoRG. Jedná se o skupinu prostředků, kterou používají pro produkční prostředky v Azure.
 
-    ![Provision SQL](media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
+    ![Zřízení SQL](media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
 
 3. V primární oblasti nastaví novou instanci SQL Serveru (**sql-smarthotel-eus2**).
 
@@ -160,7 +160,7 @@ Contoso provede migraci takto:
 - [Pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) se zřizováním SQL Database
 - [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) o omezeních prostředků virtuálních jader
 
-## <a name="step-2-migrate-the-database-with-dma"></a>Krok 2: Migrace databáze s využitím DMA
+## <a name="step-2-migrate-the-database-with-dma"></a>Krok 2: migrace databáze pomocí DMA
 
 Správci Contoso budou migrovat databázi SmartHotel360 pomocí DMA.
 
@@ -209,7 +209,7 @@ Správci Contoso budou migrovat databázi SmartHotel360 pomocí DMA.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-9.png)
 
-## <a name="step-3-provision-web-apps"></a>Krok 3: Zřízení webových aplikací
+## <a name="step-3-provision-web-apps"></a>Krok 3: zřízení webových aplikací
 
 Migrace databáze je dokončená a teď správci Contoso mohou zřídit dvě webové aplikace.
 
@@ -227,7 +227,7 @@ Migrace databáze je dokončená a teď správci Contoso mohou zřídit dvě web
 
 4. Když jsou hotoví, přejdou na adresu aplikací a ověří jejich úspěšné vytvoření.
 
-## <a name="step-4-set-up-azure-devops"></a>Krok 4: Nastavení služby Azure DevOps
+## <a name="step-4-set-up-azure-devops"></a>Krok 4: nastavení Azure DevOps
 
 Contoso pro tuto aplikaci potřebuje sestavit kanály a infrastrukturu DevOps. Správci Contoso k tomuto účelu vytvoří nový projekt DevOps, naimportují kód a potom nastaví kanály buildu a verze.
 
@@ -266,7 +266,7 @@ Správci společnosti Contoso musí zajistit, aby spolu webové aplikace a datab
 
 5. Po provedení změn v kódu musí správci tyto změny potvrdit. Pomocí Team Exploreru v sadě Visual Studio je potvrdí a sesynchronizují.
 
-## <a name="step-6-set-up-build-and-release-pipelines-in-azure-devops"></a>Krok 6: Nastavení kanálů buildu a verze v Azure DevOps
+## <a name="step-6-set-up-build-and-release-pipelines-in-azure-devops"></a>Krok 6: nastavení kanálů sestavení a vydání v Azure DevOps
 
 Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli provést proces sestavení a vydání.
 
@@ -288,7 +288,7 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
 5. Tím se aktivuje první build. Vyberou číslo buildu, aby mohli celý proces sledovat. Po dokončení si mohou projít zpětnou vazbu k tomuto procesu, vybrat **Artefakty** a projít si výsledky buildu.
 
-    ![Zkontrolovat](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![Revize](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. Výsledky buildu obsahuje složka **Drop**.
 
@@ -319,7 +319,7 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
 12. V kanálu > **Artifacts** vyberou **+Add an artifact** (Přidat artefakt) a vyberou, že budou sestavovat s využitím kanálu **ContosoSmarthotel360Refactor**.
 
-     ![Sestavení](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Zkontrolují, že ikona blesku na artefaktu je zaškrtnutá, aby byla povolená aktivační událost průběžného nasazování.
 

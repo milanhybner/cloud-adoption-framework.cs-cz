@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221379"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548598"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: Zobrazení výstrah
+# <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: upozorňování
 
 Pro roky si IT organizace struggled, aby pomohly bojovat proti únavě výstrahám vytvořeným nástroji pro monitorování nasazenými v podniku. Řada systémů generuje velmi velký objem výstrah, často se považují za nevýznamné, zatímco ostatní jsou relevantní, ale jsou buď předané, nebo ignorované. V důsledku toho struggled IT a vývojářské operace, aby splnily kvalitu na úrovni služby, kterou přislíbili interním nebo externím zákazníkům. Je důležité pochopit stav vaší infrastruktury a aplikací, aby se zajistila spolehlivost. Je potřeba identifikovat příčiny rychle, minimalizovat snížení úrovně služeb a přerušení nebo snížit dopad nebo snížit počet incidentů.
 
@@ -79,9 +79,9 @@ Azure Monitor zahrnují podporu pro integraci s dalšími monitorovacími platfo
 
 [Řešení pro správu](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) většinou ukládají svá data v úložišti protokolů Azure. Tyto dvě výjimky jsou Azure Monitor pro virtuální počítače a Azure Monitor pro kontejnery. Následující tabulka popisuje možnosti upozorňování na základě konkrétního datového typu a místa, kde je uložený.
 
-Řešení| Datový typ | Chování výstrahy
+Řešení| Data type | Chování výstrahy
 :---|:---|:---
-Azure Monitor pro kontejnery | Vypočtená Průměrná data o výkonu z uzlů a lusky se zapisují do úložiště metrik. | Upozornění na metriku můžete vytvořit, pokud chcete být upozorňováni na základě variace měřeného výkonu využití agregovaného v časovém intervalu.
+Azure Monitor pro kontejnery | Vypočtená Průměrná data o výkonu z uzlů a lusky se zapisují do úložiště metrik. | Upozornění na metriku můžete vytvořit, pokud chcete být upozorňováni na základě variace měřené míry využití, agregovaně v čase.
 || Vypočtená údaje o výkonu, které používají percentily z uzlů, řadičů, kontejnerů a lusků, se zapisují do úložiště Logs. Do úložiště protokolů se zapisují také protokoly kontejnerů a informace o inventáři. | Pokud chcete být upozorňováni na základě variace měřeného využití z clusterů a kontejnerů, vytvořte výstrahy dotazování protokolu. Výstrahy dotazů na protokol se dají nakonfigurovat taky na základě počtu fází a počtu uzlů stavu.
 Azure Monitor pro virtuální počítače | Kritéria stavu jsou metriky zapsané do úložiště metrik. | Výstrahy jsou generovány při změně stavu z stavu v pořádku do stavu není v pořádku. Podporuje jenom skupiny akcí nakonfigurované pro odesílání oznámení SMS nebo e-mailem.
 || Data protokolu o namapování a data protokolů výkonu hostovaného operačního systému se zapisují do úložiště Logs. | Vytváření výstrah dotazů protokolu.
@@ -100,13 +100,13 @@ K tomuto pravidlu se říká několik důležitých poznámek pod čarou.
 
 - Do obou úložišť můžete posílat tak, že na stejném virtuálním počítači spustíte rozšíření i agenta. Pak můžete rychle vygenerovat výstrahu, ale také použít data hostovaného operačního systému jako součást složitějších hledání v kombinaci s jinou telemetrie.
 
-**Import dat z místního prostředí.** Pokud se snažíte dotazovat a monitorovat mezi počítači, které běží v Azure a v místním prostředí, můžete k shromažďování dat hostovaného operačního systému použít agenta Log Analytics. Pak můžete k metrikám využít funkci s názvem [logs](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) a zjednodušit tyto metriky do úložiště metrik. Tato metoda obchází část procesu příjmu do úložiště protokolů Azure a proto je v databázi metrik k dispozici dříve.
+**Import dat z místního prostředí.** Pokud se snažíte dotazovat a monitorovat mezi počítači, které běží v Azure a v místním prostředí, můžete k shromažďování dat hostovaného operačního systému použít agenta Log Analytics. Pak můžete k [metrikám](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) využít funkci s názvem Logs a zjednodušit tyto metriky do úložiště metrik. Tato metoda obchází část procesu příjmu do úložiště protokolů Azure a proto je v databázi metrik k dispozici dříve.
 
 ### <a name="minimize-alerts"></a>Minimalizovat výstrahy
 
 Pokud použijete řešení jako Azure Monitor pro virtuální počítače a vyhledáte výchozí kritéria stavu, která monitorují přijatelné nároky na výkon, nevytvářejte v závislosti na stejných čítačích výkonu překrývající se výstrahy nebo dotazování protokolu metriky.
 
-Pokud nepoužíváte Azure Monitor pro virtuální počítače, prozkoumejte následující funkce, které vám usnadní vytváření výstrah a správu oznámení.  
+Pokud nepoužíváte Azure Monitor pro virtuální počítače, prozkoumejte následující funkce, které vám usnadní vytváření výstrah a správu oznámení.
 
 > [!NOTE]
 > Tyto funkce se vztahují jenom na výstrahy metriky. To znamená, že výstrahy na základě dat odesílaných do databáze metrik Azure Monitor. Nevztahují se na další typy výstrah. Jak už bylo zmíněno dříve, primárním cílem výstrah metriky je rychlost. Pokud se při získání výstrahy za méně než 5 minut nejedná o primární obavy, můžete místo toho použít výstrahu dotazu protokolu.

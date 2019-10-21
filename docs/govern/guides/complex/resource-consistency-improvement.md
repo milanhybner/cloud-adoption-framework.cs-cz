@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení oboru konzistence prostředků'
+title: 'Příručka zásad správného řízení pro komplexní podniky: vylepšení oboru konzistence prostředků'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Příručka zásad správného řízení pro komplexní podniky: Zlepšení oboru konzistence prostředků'
+description: 'Příručka zásad správného řízení pro komplexní podniky: vylepšení oboru konzistence prostředků'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/19/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5b381bf483937e2edfbf503063fd4e520203b819
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223808"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547633"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: Zlepšení oboru konzistence prostředků
+# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: vylepšení oboru konzistence prostředků
 
 Tento článek popisuje mluvený komentář přidáním ovládacích prvků konzistence prostředků do MVP pro kontrolu zásad správného řízení pro podporu důležitých aplikací.
 
@@ -101,7 +101,7 @@ Po zkušenostech tohoto fiktivního příkladu se předpokládá, že se změny 
     4. Audituje a vynutil omezení uživatelem definovaných směrovacích tabulek.
     5. Proveďte audit a vynuťte nasazení agentů Log Analytics pro virtuální počítače s Windows a Linux.
 2. Podrobný plán Azure:
-    1. Vytvořte podrobný plán s `mission-critical-workloads-and-protected-data`názvem. Tento podrobný plán bude používat prostředky kromě podrobného plánu dat.
+    1. Vytvořte podrobný plán s názvem `mission-critical-workloads-and-protected-data`. Tento podrobný plán bude používat prostředky kromě podrobného plánu dat.
     2. Přidejte nové zásady Azure do podrobného plánu.
     3. Použijte podrobný plán na jakékoli předplatné, které se očekává pro hostování důležité aplikace.
 

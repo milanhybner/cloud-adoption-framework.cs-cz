@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9eee6f81922c88304c0ca5bf7edd6572daf493d8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029006"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547312"
 ---
 # <a name="common-azure-policy-examples"></a>Příklady běžných Azure Policy
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) vám může pomáhat při použití zásad správného řízení pro vaše cloudové prostředky. Tato služba vám může přispět k vytváření guardrails, která zajistí dodržování požadavků zásad správného řízení na úrovni společnosti. Zásady vytvoříte pomocí rutin Azure Portal nebo PowerShellu. Tento článek popisuje příklady rutin PowerShellu.
 
 > [!NOTE]
-> Při Azure Policy nejsou zásady vynucování (**deployIfNotExists**) automaticky nasazeny do stávajících virtuálních počítačů. Náprava se vyžaduje, aby tyto virtuální počítače zůstaly v souladu s dodržováním předpisů. Další informace najdete v tématu napravení nevyhovujících [prostředků pomocí Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Při Azure Policy nejsou zásady vynucování (**deployIfNotExists**) automaticky nasazeny do stávajících virtuálních počítačů. Náprava se vyžaduje, aby tyto virtuální počítače zůstaly v souladu s dodržováním předpisů. Další informace najdete v tématu [napravení nevyhovujících prostředků pomocí Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Příklady běžných zásad
 
@@ -36,7 +36,7 @@ Nebo můžete spustit tuto rutinu a najít zásadu:
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte `$SubscriptionID` hodnotu tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -51,7 +51,7 @@ $policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyparam
 ```
 
-Stejný skript můžete použít k aplikování dalších zásad popsaných v tomto článku. Stačí nahradit identifikátor GUID na řádku, který je `$AllowedLocationPolicy` nastaven identifikátorem GUID zásady, kterou chcete použít.
+Stejný skript můžete použít k aplikování dalších zásad popsaných v tomto článku. Stačí nahradit GUID na řádku, který nastaví `$AllowedLocationPolicy` identifikátorem GUID zásady, kterou chcete použít.
 
 ### <a name="block-certain-resource-types"></a>Blokovat určité typy prostředků
 
@@ -75,7 +75,7 @@ Pomocí této zásady můžete nasadit rozšíření Microsoft IaaSAntimalware s
 
 Identifikátor GUID zásad je `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte `$SubscriptionID` hodnotu tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -89,7 +89,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Přečtěte si o dalších dostupných nástrojích a službách pro správu serveru.
 

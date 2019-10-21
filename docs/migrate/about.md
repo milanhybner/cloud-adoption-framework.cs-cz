@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829953"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547239"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migrace do cloudu v architektuře přechodu na cloud pro Azure od Microsoftu
 
@@ -28,19 +28,19 @@ Pokyny v této části architektury přechodu na cloud jsou určené ke dvěma �
 
 Tento obsah je určený pro tým přechodu na cloud. Také je relevantní pro cloudové architekty, kteří potřebují vyvinout pevný základ pro migraci do cloudu.
 
-## <a name="intended-audience"></a>Zamýšlená cílová skupina
+## <a name="intended-audience"></a>Plánovaná cílová skupina
 
 Pokyny v architektuře přechodu na cloud mají vliv na obchodní aktivity, technologie a kulturu podniků. Tato část významně ovlivňuje vlastníky aplikací, pracovníky správy změn (například PMO a pracovníky agilní správy), finanční a obchodní vedoucí pracovníky a tým přechodu na cloud. Mezi těmito osobami existují různé závislosti a cloudoví architekti využívající tyto pokyny proto budou muset zvolit přístup, který je usnadní. Usnadnění pro tyto týmy může být jednorázové, ale v některých případech může vést k opakovaným interakcím s těmito dalšími osobami.
 
 Cloudový architekt slouží jako vizionář a zprostředkovatel, který má tyto cílové skupiny dát dohromady. Obsah v této kolekci průvodců je určený k tomu, aby cloudovým architektům pomohl usnadnit správnou konverzaci se správnou cílovou skupinou, která umožní přijetí nezbytných rozhodnutí. Obchodní transformace, kterou umožňuje cloud, závisí na roli cloudového architekta, který pomáhá s přijímáním obchodních a IT rozhodnutí.
 
-**Specializace cloudových architektů v této části:** Jednotlivé části architektury přechodu na cloud představují různé specializace nebo varianty role cloudových architektů. Tato část je určená pro cloudové architekty s odbornými znalostmi v oblasti stávajícího místního prostředí a způsobu, jakým ovlivňuje možnosti migrace.
+**Specializace cloudového architekta v této části:** Každá část rozhraní pro přijetí do cloudu představuje jinou specializaci nebo variantu role architekta cloudu. Tato část je určená pro cloudové architekty s odbornými znalostmi v oblasti stávajícího místního prostředí a způsobu, jakým ovlivňuje možnosti migrace.
 
-**Rozdělení povinností:** V mnoha společnostech existuje rozdělení povinností kvůli omezení přístupu k produkčním systémům nebo segmentům podnikového prostředí. V takovém případě bude proces migrace ještě složitější. V některých případech můžou tyto role a zodpovědnosti vyžadovat několik cloudových architektů, aby pokryli celý proces migrace.
+**Oddělení povinností:** V mnoha společnostech existuje oddělení povinností k omezení přístupu k produkčním systémům nebo segmentům podnikového prostředí. V takovém případě bude proces migrace ještě složitější. V některých případech můžou tyto role a zodpovědnosti vyžadovat několik cloudových architektů, aby pokryli celý proces migrace.
 
-**Možnosti partnerství:** Napříč těmito procesy se budou týmy učit nové dovednosti a přístupy k technickému provádění. Rozšiřování technických dovedností mezi stávající členy týmu je během provádění jednou možností. Druhou je přijetí dalších zaměstnanců. Partnerství s třetími stranami často přináší výrazné zrychlení a snížení rizik. [Možnosti partnerství](./migration-considerations/assess/partnership-options.md) můžou při rozhodování o výběru nejlepšího partnerství pomáhat.
+**Možnosti partnerství:** Napříč těmito procesy se budou týmy učit nové dovednosti a přístupy k technickému provádění. Rozšiřování technických dovedností mezi stávajícími členy týmu je jedna možnost při provádění. Druhou je přijetí dalších zaměstnanců. Partnerství s třetími stranami často přináší výrazné zrychlení a snížení rizik. [Možnosti partnerství](./migration-considerations/assess/partnership-options.md) můžou při rozhodování o výběru nejlepšího partnerství pomáhat.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Čtenářům, kteří podle tohoto průvodce chtějí postupovat od začátku do konce, tento obsah pomůže vyvinout robustní strategii migrace do cloudu. Pokyny čtenáře provedou teorií a implementací takové strategie.
 

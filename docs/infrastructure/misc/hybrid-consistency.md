@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821646"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547199"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Vytvoření konzistentního hybridního cloudu
 
@@ -25,8 +25,8 @@ Modely hybridního nasazení během migrace můžou snížit rizika a přispíva
 
 Použití hybridního cloudového řešení umožňuje organizacím škálovat výpočetní prostředky. Eliminuje také nutnost provádět obrovské kapitálové výdaje za účelem zpracování krátkodobých špiček v poptávce. Změny vaší firmy mohou řídit nutnost uvolnit místní prostředky pro citlivá data nebo aplikace. Zrušení zřízení cloudových prostředků je jednodušší, rychlejší a levnější. Platíte jenom za prostředky, které vaše organizace dočasně používá, a nemusíte kupovat a spravovat další prostředky. Tento přístup snižuje množství zařízení, která by mohla zůstat nečinná po dlouhou dobu. Hybridní cloud computing přináší všechny výhody flexibility cloud computingu, škálovatelnosti a cenovou efektivitu s nejnižšími možnými riziky při expozici dat.
 
-![Vytváření hybridní cloudové konzistence napříč identitami, správou, zabezpečením, daty](../../_images/hybrid-consistency.png)
-, vývojem a DevOps*obrázkem 1 – vytváření hybridních cloudových konzistencí napříč identitami, správou, zabezpečením, daty, vývojem a DevOps.*
+na![Creatingte konzistenci hybridního cloudu napříč identitami, správou, zabezpečením, daty, vývojem a DevOps ](../../_images/hybrid-consistency.png)
+*Obrázek 1 – vytváření hybridní konzistence cloudu napříč identitami, správou, zabezpečením, daty, vývojem a DevOps*
 
 Skutečné hybridní cloudové řešení musí poskytovat čtyři komponenty, z nichž každý přináší významné výhody:
 

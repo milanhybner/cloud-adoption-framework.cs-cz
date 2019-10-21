@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833528"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549224"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Schválení změn architektury před migrací
 
@@ -21,9 +21,9 @@ Během procesu posuzování migrace prochází každá úloha vyhodnocením, ná
 
 ## <a name="business-impact-and-approval"></a>Obchodní dopad a schválení
 
-Při migraci se některé věci pravděpodobně změní takovým způsobem, který ovlivní firmu. Některým změnám se nedokážete vyhnout, ale můžete se vyhnout překvapením způsobeným nezveřejněnými nebo nezdokumentovanými změnami. Abyste si při provádění migrace udrželi podporu účastníků, je důležité se vyhýbat překvapením. Překvapení vlastníci aplikací nebo firemní účastníci můžou zpomalit nebo úplně zastavit vaši snahu o zavedení cloudu.
+Při migraci se některé věci pravděpodobně změní takovým způsobem, který ovlivní firmu. I když se změnou někdy nelze vyhnout, překvapením v důsledku nezveřejňovaného nebo nedokumentované změny by měly být. Aby bylo možné udržovat podporu účastníků v průběhu migrace, je důležité se vyhnout překvapením. Překvapení vlastníci aplikací nebo firemní účastníci můžou zpomalit nebo úplně zastavit vaši snahu o zavedení cloudu.
 
-Proto je před migrací důležité připravit firemního vlastníka úlohy na případné změny, které můžou ovlivnit obchodní procesy. Může jít například o tyto změny:
+Před migrací je důležité připravit firemního vlastníka pracovního procesu pro všechny změny, které by mohly mít vliv na obchodní procesy, jako jsou například změny:
 
 - Smlouvy o úrovni služeb.
 - Přístupové vzorce nebo požadavky na zabezpečení, které ovlivňují koncového uživatele.
@@ -66,7 +66,7 @@ Před posouzením první úlohy musí tým cloudové strategie zdokumentovat oč
 
 Pokud to jde, je potřeba technické změny rozpoznat a zdokumentovat během procesu posuzování. Bez ohledu na schvalovací proces musí tým přechodu na cloud angažovat schvalovatele co nejdříve. Čím dříve může schvalování změny začít, tím menší pravděpodobnost je, že schvalovací proces zablokuje aktivity při migraci.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Tyto osvědčené postupy mají usnadnit integraci správného schvalování do vaší migrace, abyste riskovali co nejméně. Jakmile tým přechodu na cloud schválí změny úloh, je připraven na [migraci úloh](../migrate/index.md).
 

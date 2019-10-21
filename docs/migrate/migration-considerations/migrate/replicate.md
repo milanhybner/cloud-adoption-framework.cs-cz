@@ -1,19 +1,19 @@
 ---
 title: Jakou roli hraje replikace a synchronizace v procesu migrace?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úlohy prováděné při migraci sady funkcí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e65631f0adf2584bbf0ee24b10d20df73ece715
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833411"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549127"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Pro spouštění a správu procesů replikace a synchronizace musí být impleme
 Při plánování replikace jakýchkoli binárních zdrojů do nového cíle je při plánování a provádění vhodné zvážit několik základních zákonů.
 
 - **Rychlost světla.** Při přesunu velkého objemu dat je optické vlákno stále nejrychlejší možností. Tyto kabely bohužel můžou přesouvat data pouze dvoutřetinovou rychlostí, než je rychlost světla. To znamená, že neexistuje žádná metoda okamžité nebo neomezené replikace dat.
-- **Rychlost kanálu sítě WAN.** Víc omezující než rychlost přesunu dat je šířka pásma pro odesílání, která definuje objem dat za sekundu, který se dá přenést existující sítí WAN společnosti do cílového datového centra.
+- **Rychlost kanálu sítě WAN.** Víc než rychlost přesunu dat je šířka pásma pro odesílání, která definuje objem dat za sekundu, který se dá přenést v existující síti WAN společnosti na cílové datové centrum.
 - **Rychlost rozšíření sítě WAN.** Pokud to dovolují rozpočty, můžete do řešení sítě WAN společnosti přidat další šířku pásma. Nákup, zřízení a integrace dalších optických připojení ale může trvat týdny nebo měsíce.
 - **Rychlost disků.** Pokud by se data mohla pohybovat rychleji a neexistoval žádný limit šířky pásma mezi zdrojovým binárním souborem a cílovým místem, může být fyzika stále omezením. Data je možné replikovat pouze tak rychle, jak je lze číst ze zdrojových disků. Čtení každé jedničky a nuly z každého rotujícího disku v datovém centru vyžaduje čas.
 - **Rychlost lidských výpočtů.** Disky a světla jsou rychlejší než procesy lidského rozhodování. Když musí skupina lidí spolupracovat a společně rozhodovat, výsledky budou přicházet ještě pomaleji. Replikace nemůže nikdy překonat prodlevy související s lidskou inteligencí.
@@ -47,7 +47,7 @@ Každý z těchto fyzikálních zákonů vede k následujícím rizikům, která
 - **Kumulativní účinek odchylky disků.** Od okamžiku replikace až po povýšení aktiva do produkčního prostředí musí zdrojové a cílové binární soubory zůstat synchronizované. *Odchylka* binárních souborů spotřebovává další šířku pásma, protože všechny změny binárního souboru se musí replikovat opakovaně. Během synchronizace musí být do výpočtu celkového úložiště migrace zahrnuté všechny odchylky binárních souborů. Čím déle bude trvat zvýšení úrovně aktiva do produkčního prostředí, tím dojde k větší kumulativní odchylce. Synchronizace více aktiv znamená větší využití šířky pásma. U každého aktiva, které se drží ve stavu synchronizace, se ztrácí další kus z celkové dostupné šířky pásma migrace.
 - **Čas na obchodní změnu.** Jak je uvedeno v předchozím bodu, Kumulativní účinek odchylky disků, doba synchronizace má kumulativní negativní vliv na rychlost migrace. Pro rychlost migrace je rozhodující upřednostnění backlogu migrace a rozšířená příprava pro [plán obchodních změn](../optimize/business-change-plan.md). Nejvýznamnějším testem obchodní a technické shody během migrace je tempo povýšení. Čím rychleji jde aktivum povýšit do produkčního prostředí, tím nižší bude vliv odchylky disků na šířku pásma a tím víc šířky pásma a času se dá přidělit replikaci další úlohy.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po dokončení replikace můžou začít [přípravné aktivity](./stage.md).
 

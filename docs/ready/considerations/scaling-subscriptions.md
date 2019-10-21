@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025146"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548786"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Škálování s využitím několika předplatných Azure
 
@@ -45,7 +45,7 @@ Další předplatná můžou vyžadovat i další situace. Při rozšiřování 
 
 - U předplatných v oblastech veřejného cloudu a v oblastech cloudových i státních organizací se liší omezení. Tato omezení jsou často řízena různými úrovněmi klasifikace dat v prostředích.
 
-- Pokud z důvodů zabezpečení nebo dodržování předpisů úplně oddělíte různé sady uživatelů, můžete vyžadovat samostatná předplatná. Organizace státní správy mohou například potřebovat omezit přístup k předplatnému pouze na občany.
+- Pokud z důvodů zabezpečení nebo dodržování předpisů úplně oddělíte různé sady uživatelů, můžete vyžadovat samostatná předplatná. Organizace státní správy například můžou potřebovat omezit přístup předplatného jenom na občany.
 
 - Různá předplatná mohou mít různé typy nabídek, z nichž každá má své vlastní podmínky a výhody.
 
@@ -67,7 +67,7 @@ Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezá
 
 Skupiny pro správu umožňují efektivní správu přístupu, zásad a dodržování předpisů u předplatných organizace. Každá skupina pro správu je kontejnerem pro jedno nebo více předplatných.
 
-Skupiny pro správu jsou uspořádány v jedné hierarchii. Tuto hierarchii definujete v tenantovi Azure Active Directory (Azure AD), abyste ji srovnali se strukturou a potřebami vaší organizace. Nejvyšší úroveň se označuje jako *kořenová skupina pro správu*. V hierarchii můžete definovat až šest úrovní skupin pro správu. Každé předplatné je obsaženo pouze v jedné skupině pro správu.
+Skupiny pro správu jsou uspořádány v jedné hierarchii. Tuto hierarchii definujete v tenantovi Azure Active Directory (Azure AD), která se bude zarovnávat se strukturou a potřebami vaší organizace. Nejvyšší úroveň se označuje jako *kořenová skupina pro správu*. V hierarchii můžete definovat až šest úrovní skupin pro správu. Každé předplatné je obsaženo pouze v jedné skupině pro správu.
 
 Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplatná, skupiny prostředků a prostředky. Jakýkoli přístup nebo zásady použité na jedné úrovni v hierarchii se dědí úrovněmi pod ní. Vlastník prostředku nebo vlastník předplatného nemůže zděděné zásady změnit. Toto omezení pomáhá zlepšit zásady správného řízení.
 
@@ -76,7 +76,7 @@ Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplat
 
 Když se spoléháte na tento model dědičnosti, můžete uspořádat předplatná v hierarchii tak, aby každé předplatné odpovídalo příslušným zásadám a ovládacím prvkům zabezpečení.
 
-![Čtyři úrovně rozsahu pro uspořádání prostředků Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Čtyři úrovně rozsahu pro uspořádání prostředků Azure](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 Všechna přiřazení přístupu nebo zásad v kořenové skupině pro správu se použijí pro všechny prostředky v rámci příslušného adresáře. Pečlivě zvažte, které položky v tomto oboru definujete. Zahrňte pouze ta přiřazení, která potřebujete.
 
@@ -96,7 +96,7 @@ Další informace najdete v tématu [Uspořádání vašich prostředků s využ
 - Pokud je to možné, použijte k vytvoření nových předplatných [instanční objekt](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Definujte skupinu zabezpečení, která může vyžadovat nová předplatná prostřednictvím automatizovaného pracovního postupu.
 - Pokud jste zákazníkem se smlouvou Enterprise, požádejte podporu Azure, aby pro vaši organizaci zablokovala vytváření předplatných bez smlouvy Enterprise.
 
-## <a name="related-resources"></a>Související prostředky
+## <a name="related-resources"></a>Související materiály
 
 - [Základní koncepty Azure.](./fundamental-concepts.md)
 - [Uspořádání prostředků s využitím skupin pro správu Azure.](https://docs.microsoft.com/azure/governance/management-groups)
