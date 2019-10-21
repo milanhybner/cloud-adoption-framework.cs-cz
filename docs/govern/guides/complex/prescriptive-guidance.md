@@ -1,7 +1,7 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Vysvětlení doporučených pokynů'
+title: 'Příručka zásad správného řízení pro komplexní podniky: vysvětlení osvědčených postupů'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Seznamte se s doporučenými pokyny pro zásady správného řízení ve složitých podnicích.
+description: Seznamte se s osvědčenými postupy pro zásady správného řízení ve složitých podnicích.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220649"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547641"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Příručka zásad správného řízení pro komplexní podniky: Vysvětlení doporučených pokynů
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Příručka zásad správného řízení pro komplexní podniky: vysvětlení osvědčených postupů
 
 Příručka zásad správného řízení začíná sadou počátečních [podnikových zásad](./initial-corporate-policy.md). Tyto zásady se používají k vytvoření minimálního životaschopného produktu (MVP) pro zásady správného řízení, které odráží [osvědčené postupy](./index.md).
 
@@ -38,7 +38,7 @@ Implementace MVP v rámci zásad správného řízení má závislosti na identi
 
 Tuto implementaci je také možné popsat pomocí jednoduchého kontrolního seznamu:
 
-1. Vyžádat rozhodnutí týkající se základních závislostí: Identita, síť a šifrování.
+1. Vyžádá si rozhodnutí týkající se základních závislostí: identita, síť a šifrování.
 1. Určete vzor, který se použije při vynucování podnikových zásad.
 1. Určete vhodné vzory zásad správného řízení pro konzistenci prostředků, označování prostředků a obory protokolování a generování sestav.
 1. Implementujte nástroje zásad správného řízení zarovnané na vybraný model vynucení zásad, abyste mohli použít závislá rozhodnutí a rozhodnutí o zásadách správného řízení.
@@ -54,14 +54,14 @@ Tým zásad správného řízení cloudu bude zodpovědný za následující roz
 Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se předplatná Azure získají strukturovaná a jak se skupiny pro správu Azure budou používat k efektivní správě přístupu, zásad a dodržování předpisů pro toto předplatné. V tomto mluveném komentáři tým zásad správného řízení vybral vzor návrhu **[smíšeného](../../../decision-guides/subscriptions/index.md#mixed-patterns)** předplatného.
 
 - Vzhledem k novým požadavkům na prostředky Azure by se mělo zřídit "oddělení" pro každou hlavní organizační jednotku v jednotlivých provozních zeměpisných oblastech. V rámci každého oddělení by se pro každou aplikaci Archetype vytvořit předplatné.
-- Archetype aplikací je způsob seskupení aplikací s podobnými potřebami. Mezi běžné příklady patří: Aplikace s chráněnými daty, řízené aplikace (například HIPAA nebo FedRAMP), aplikace s nízkým rizikem, aplikace s místními závislostmi, SAP nebo jiné sálové aplikace v Azure nebo aplikace, které šíří místní SAP nebo sálové počítače vyrovnání. Každá organizace má jedinečné potřeby na základě klasifikace dat a typů aplikací, které podporují firmu. Mapování závislostí digitální nemovitosti může přispět k definování aplikace archetypes v organizaci.
+- Archetype aplikací je způsob seskupení aplikací s podobnými potřebami. Mezi běžné příklady patří: aplikace s chráněnými daty, řízené aplikace (například HIPAA nebo FedRAMP), aplikace s nízkým rizikem, aplikace s místními závislostmi, SAP nebo jiné sálové aplikace v Azure nebo aplikace, které rozšiřuje místní aplikace SAP nebo sálové. Každá organizace má jedinečné potřeby na základě klasifikace dat a typů aplikací, které podporují firmu. Mapování závislostí digitální nemovitosti může přispět k definování aplikace archetypes v organizaci.
 - Společná konvence pojmenování by se měla schválit v rámci návrhu předplatného na základě výše uvedených dvou odrážek.
 
 ### <a name="resource-consistency"></a>Konzistence prostředků
 
 Rozhodnutí o konzistenci prostředků určují nástroje, procesy a úsilí potřebné k zajištění konzistentního nasazení, konfigurace a správy prostředků Azure v rámci předplatného. V tomto mluveném komentáři je **[konzistence nasazení](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** zvolena jako vzor konzistence primárního prostředku.
 
-- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu: všechno, co se vytváří, udržuje a vyřazené společně, by mělo být na jednu skupinu prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Skupiny prostředků se vytvářejí pro aplikace využívající přístup k životnímu cyklu. Všechny položky, které se vytvářejí, udržují a vyřazené dohromady, by měly být umístěné v jedné skupině prostředků. Další informace o skupinách prostředků najdete [tady](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy by se měla použít pro všechna předplatná z přidružené skupiny pro správu.
 - V rámci procesu nasazení by měly být šablony konzistence prostředků Azure pro skupinu prostředků uložené ve správě zdrojového kódu.
 - Každá skupina prostředků je přidružená ke konkrétnímu pracovnímu vytížení nebo aplikaci na základě výše popsaného přístupu k životnímu cyklu.
@@ -77,10 +77,10 @@ Rozhodnutí označování prostředků určují, jak se metadata v rámci předp
 
 - Nasazené prostředky by měly být označeny hodnotami pro:
   - Oddělení/fakturační jednotka
-  - Geografie
+  - Geografické
   - Klasifikace dat
   - Závažnost
-  - SLA
+  - Smlouva SLA
   - Prostředí
   - Archetype aplikace
   - Aplikace
