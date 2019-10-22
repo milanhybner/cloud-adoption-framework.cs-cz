@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Inventář a viditelnost – cloudová správa a provoz
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fe46ec035bb732ec82931358c7e79b41b4f18bd5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: f5a2b84fead3adef17767f99d4079ac54fb421ea
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558061"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683610"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventář a viditelnost ve správě cloudu
 
