@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Příručka zásad správného řízení pro komplexní podniky: vylepšení oboru konzistence prostředků'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5b381bf483937e2edfbf503063fd4e520203b819
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547633"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683546"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: vylepšení oboru konzistence prostředků
 

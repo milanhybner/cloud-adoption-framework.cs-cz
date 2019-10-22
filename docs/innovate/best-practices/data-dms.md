@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloudové inovace – služba migrace dat
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7b6d9d2bb08bd4e3e34fe1cc67f4c6a006a75bb5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557398"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683418"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Shromažďování dat migrací a modernizací stávajících zdrojů dat
 
@@ -46,5 +46,5 @@ Pokud využíváte DMS pro migraci a modernizaci dat, je důležité pochopit ak
 |PostgreSQL|Azure Database for PostgreSQL|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MondoDB|Rozhraní API pro Azure Cosmos DB Mongo|DMS|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Rozsah možností PaaS & IaaS|Třetí strana nebo Azure Migrate|Některé|[Rozhodovací strom](../considerations/data-oracle-migration.md)|
-|Různé NoSQL databáze|Možnosti Cosmo DB nebo IaaS|Postupy migrace a Azure Migrate|Některé|[Rozhodovací strom](../considerations/data-no-sql-migration.md)|
+|Oracle|Rozsah možností PaaS & IaaS|Třetí strana nebo Azure Migrate|Některé|[Rozhodovací strom](../../migrate/expanded-scope/data-oracle-migration.md)|
+|Různé NoSQL databáze|Možnosti Cosmo DB nebo IaaS|Postupy migrace a Azure Migrate|Některé|[Rozhodovací strom](../../migrate/expanded-scope/data-no-sql-migration.md)|

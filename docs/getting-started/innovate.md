@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023404"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683482"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Inovace prostřednictvím zavedení do cloudu v rozhraní pro přijetí v cloudu
 
-Inovace je úzce propojená s migrací. Když úlohy vytvářejí příležitosti pro odlišení trhů, je běžné, že se tyto úlohy budou migrovat do cloudu a následně se podrobit úsilí o modernizaci. Jednou v modernizaci cloudu se dá zrychlit moderními přístupy založenými na cloudu, které umožňují také vývoj nových inovací.
-
-> [!NOTE]
-> Tato příručka je vyvíjena pro vydání verze Q3 2019 pro vydání v cloudu. Taxonomie a přístup níže se nejspíš změní. Následující informace ukazují obecný směr pokynů pro inovace.
+Migrace do cloudu je vynikající možností pro úlohy, které už v prostředí existují. Vytváření nových produktů a služeb vyžaduje jiný přístup. Metodologie inovací v rámci tohoto rámce zavádí přístup k Průvodci vývojem nových produktů a služeb.
 
 ## <a name="motivations-behind-innovation"></a>Motivace za inovacemi
 
@@ -34,21 +31,17 @@ Inovace by neměla být zvoleným umístěním přijetí pro všechny úlohy. Ta
 - Transformace produktů nebo služeb
 - Přerušení trhu novými produkty nebo službami
 
-## <a name="innovation-guidance"></a>Pokyny k inovacím
-
-Vzhledem k tomu, že se vyvíjí obsah pro inovace v rámci architektury pro přijetí do cloudu, bude poskytovat pokyny související s následujícími tématy:
-
-- Modernizovat stávající prostředky
-- Sestavování nových aplikací
-- Postupovat podle postupů, které podporují růst místo
-- Integrace strategií DevOps
-
-![Přehled architektury přechodu na cloud](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Běžné příklady úloh spojené s inovacemi v cloudu
 
 - Vlastní aplikace sestavené.
 - Prostředí založená na technologii.
-- IoT Integrace fyzických produktů a technologií.
-- Funkce okolního prostředí: Integrace nerušivé technologie do prostředí.
-- Cognitive Services: Velké objemy dat, AI, Machine Learning a prediktivní řešení.
+- IoT: integrace fyzických produktů a technologií.
+- Ambientní logika: integrace nerušivé technologie do prostředí.
+- Cognitive Services: velké objemy dat, AI, Machine Learning a prediktivní řešení.
+
+## <a name="next-steps"></a>Další kroky
+
+Zahajte cestu k inovaci pomocí [metodologie](../innovate/index.md)inovací.
+
+> [!div class="nextstepaction"]
+> [Zahájení inovační cesty](../innovate/index.md)

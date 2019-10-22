@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Doprovodné materiály k provozním základům
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/20/2018
+ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04afedc133d001405c5042b309a45c9b41f3268e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7dca64941a07e091cc6b107d8390970d0a19a4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026964"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683716"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Nastavení kontroly provozní vhodnosti
 
@@ -41,11 +41,11 @@ Procesy, které Microsoft sleduje, tvoří základ pro procesy uvedené v tomto 
 
 Jak jste se naučili při [zahájení práce](../getting-started/migrate.md), je prvním krokem v digitální transformaci podniku určení obchodních problémů, které je potřeba vyřešit přijetím Azure. Dalším krokem je určení vysoké úrovně řešení problému, jako je například migrace zatížení do cloudu nebo přizpůsobení stávající místní služby, která zahrnuje cloudové funkce. Nakonec je řešení navrženo a implementováno.
 
-Během tohoto procesu je fokus často na funkcích služby: sadu funkčních požadavků, které má služba provádět. Například služba doručování produktů vyžaduje funkce pro určení zdrojového a cílového umístění produktu, sledování produktu během doručování, zákaznických oznámení a dalších.
+Během tohoto procesu je fokus často na funkcích služby: sadu _funkčních_ požadavků, které má služba provádět. Například služba doručování produktů vyžaduje funkce pro určení zdrojového a cílového umístění produktu, sledování produktu během doručování, zákaznických oznámení a dalších.
 
 _Nefunkční_ požadavky naproti tomu se týkají vlastností, jako je [dostupnost](https://docs.microsoft.com/azure/architecture/checklist/availability)služby, [odolnost](https://docs.microsoft.com/azure/architecture/resiliency)a [škálovatelnost](https://docs.microsoft.com/azure/architecture/checklist/scalability). Tyto vlastnosti se liší od funkčních požadavků, protože nemají přímo vliv na konečnou funkci jakékoli konkrétní funkce ve službě. Nefunkční požadavky se ale týkají výkonu a kontinuity služby.
 
-V souvislosti se smlouvou o úrovni služeb (SLA) je možné zadat některé nefunkční požadavky. V případě kontinuity služeb může být například požadavek na dostupnost služby vyjádřen jako procento: "Dostupná 99,99% času". Jiné nefunkční požadavky se můžou obtížně definovat a můžou se změnit podle potřeby produkčních potřeb. Například služba zaměřená na spotřebitele se může stát neočekávanými nároky na propustnost po nárůstu oblíbenosti.
+V souvislosti se smlouvou o úrovni služeb (SLA) je možné zadat některé nefunkční požadavky. V případě kontinuity služeb může být například požadavek dostupnosti pro službu vyjádřen jako procento: "dostupný 99,99% času". Jiné nefunkční požadavky se můžou obtížně definovat a můžou se změnit podle potřeby produkčních potřeb. Například služba zaměřená na spotřebitele se může stát neočekávanými nároky na propustnost po nárůstu oblíbenosti.
 
 > [!NOTE]
 > Požadavky na odolnost proti chybám jsou podrobněji popsány v [návrhu spolehlivých aplikací Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Tento článek obsahuje vysvětlení konceptů, jako je cíl bodu obnovení (RPO), cíle obnovení (RTO), smlouvy SLA a dalších.
@@ -84,7 +84,7 @@ Fáze revize služby je základem kontroly provozní způsobilostí. Zahrnuje ty
 
 1. **Změřte metriky služeb**. Pomocí metriky Scorecard monitorujte služby, abyste zajistili, že služby splňují očekávání firmy. Jinými slovy je důležité monitorování služeb. Pokud nemůžete monitorovat sadu služeb s ohledem na nefunkční požadavky, zvažte, že odpovídající metriky Scorecard budou červené. V tomto případě je prvním krokem pro nápravu implementace vhodného monitorování služby. Pokud firma například očekává, že služba bude pracovat s 99,99% dostupností, ale není k dispozici žádná provozní telemetrie pro měření dostupnosti, Předpokládejme, že nesplňujete požadavek.
 
-2. Naplánujte nápravu. Pro každou operaci služby, pro kterou metriky spadají pod přijatelnou prahovou hodnotu, určete náklady na opravaí provozu provozu na přijatelnou úroveň. Pokud jsou náklady na Oprava služby větší, než je očekávané generování příjmů služby, přejděte k části a zvažte nehmotné náklady, jako je například prostředí zákazníka. Pokud například zákazníci mají potíže s umístěním úspěšné objednávky pomocí služby, mohou místo toho zvolit konkurenci.
+2. **Naplánujte nápravu**. Pro každou operaci služby, pro kterou metriky spadají pod přijatelnou prahovou hodnotu, určete náklady na opravaí provozu provozu na přijatelnou úroveň. Pokud jsou náklady na Oprava služby větší, než je očekávané generování příjmů služby, přejděte k části a zvažte nehmotné náklady, jako je například prostředí zákazníka. Pokud například zákazníci mají potíže s umístěním úspěšné objednávky pomocí služby, mohou místo toho zvolit konkurenci.
 
 3. **Implementujte nápravu**. Poté, co si vlastníci a inženýrské organizace přijměte plán, implementujte ho. Ohlaste stav implementace při každé kontrole metriky scorecard.
 
@@ -94,11 +94,11 @@ Tento proces je iterativní a v ideálním případě vaše společnost má tým
 
 Tým zodpovědný za kontrolu provozních způsobilostí se skládá z následujících rolí:
 
-- **Vlastník firmy**: Poskytuje znalost firmy k identifikaci a stanovení priorit každé klíčové obchodní operace. Tato role také porovnává náklady na zmírnění dopadů na firmu a při konečném rozhodování o nápravě jednotek.
+- **Vlastník firmy**: poskytuje znalosti firmy k identifikaci a stanovení priorit jednotlivých důležitých podnikových operací. Tato role také porovnává náklady na zmírnění dopadů na firmu a při konečném rozhodování o nápravě jednotek.
 
-- **Generální**Poradce pro firmy: Rozděluje obchodní operace na části diskrétní a mapuje tyto části na služby a infrastrukturu, ať už místně, nebo v cloudu. Role vyžaduje důkladné znalosti technologie přidružené k jednotlivým obchodním operacím.
+- **Obchodní**poradce: rozděluje obchodní operace na části diskrétní a mapuje tyto části na služby a infrastrukturu, ať už místně, nebo v cloudu. Role vyžaduje důkladné znalosti technologie přidružené k jednotlivým obchodním operacím.
 
-- **Vlastník technické**: Implementuje služby přidružené k obchodní operaci. Tito jednotlivci se můžou zúčastnit návrhu, implementace a nasazení jakýchkoli řešení pro nefunkční problémy, které jsou v rámci přezkumu zjištěny.
+- **Vlastník technického oddělení**: implementuje služby přidružené k obchodní operaci. Tito jednotlivci se můžou zúčastnit návrhu, implementace a nasazení jakýchkoli řešení pro nefunkční problémy, které jsou v rámci přezkumu zjištěny.
 
 - **Vlastník služby**. Provozuje aplikace a služby firmy. Tito jednotlivci shromažďují data o protokolování a využití pro tyto aplikace a služby. Tato data slouží k identifikaci problémů a k ověření oprav po jejich nasazení.
 
@@ -127,6 +127,6 @@ Přizpůsobte podrobnosti procesu a schůzky podle svých konkrétních potřeb.
 - [Deset principů návrhu pro aplikace Azure](https://docs.microsoft.com/azure/architecture/guide/design-principles).
     Tato část Průvodce architekturou aplikací Azure popisuje sadu principů návrhu, aby byla vaše aplikace lépe škálovatelná, odolná a spravovatelná.
 - [Navrhování odolných aplikací pro Azure](https://docs.microsoft.com/azure/architecture/resiliency).
-    Tato příručka začíná definicí pojmu odolnosti a souvisejících konceptů. Pak popisuje proces pro zajištění odolnosti pomocí strukturovaného přístupu po celou dobu životnosti aplikace, od návrhu a implementace až po nasazení a provoz.
+    Tato příručka začíná definicí pojmu _odolnosti_ a souvisejících konceptů. Pak popisuje proces pro zajištění odolnosti pomocí strukturovaného přístupu po celou dobu životnosti aplikace, od návrhu a implementace až po nasazení a provoz.
 - [Vzory návrhu cloudu](https://docs.microsoft.com/azure/architecture/patterns).
     Tyto vzory návrhu jsou užitečné pro technické týmy při sestavování aplikací na pilířích kvality softwaru.
