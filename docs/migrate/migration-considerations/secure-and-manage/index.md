@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022572"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683758"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Nástroje pro monitorování a správu
 
@@ -41,6 +41,16 @@ Spolehněte se na službu Azure Security Center, která zajišťuje jednotné mo
 
 Další informace o službě [Azure Security Center](https://docs.microsoft.com/azure/security-center) pro zabezpečení migrovaných prostředků
 
+## <a name="service-health-monitoring"></a>Monitorování stavu služby
+
+Azure Service Health nabízí upozornění a pokyny na míru v situacích, kdy vás ovlivňují problémy se službami Azure. Mohou vás upozornit, pomohou vám zjistit dopad případných potíží a upozorní vás na jejich vyřešení. Také vám pomohou připravit se na plánovanou údržbu a změny, které by mohly ovlivnit dostupnost vašich prostředků.
+
+- **Řídicí panel pro sledování stavu služby:** Projděte si celkový stav služeb a oblastí Azure s podrobnými informacemi o stávajících problémech se službami, chystané plánované údržbě a převodech služeb.
+- **Upozornění týkající se stavu služby:** Nakonfigurujte si upozornění, která budou vás a vaše týmy informovat v případě potíží se službou, jako je výpadek nebo chystaná plánovaná údržba.
+- **Historie stavu služby:** Projděte si předchozí problémy se službou a stáhněte si oficiální souhrny a sestavy od Microsoftu.
+
+Přečtěte si víc o službě [Azure Service Health](https://docs.microsoft.com/azure/service-health) a zajistěte si informovanost o stavu vašich migrovaných prostředků.
+
 ## <a name="protect-assets-and-data"></a>Ochrana prostředků a dat
 
 Azure Backup poskytuje způsob, jak chránit virtuální počítače, soubory a data. Azure Backup pomáhá s řadou funkcí, včetně následujících:
@@ -51,3 +61,13 @@ Azure Backup poskytuje způsob, jak chránit virtuální počítače, soubory a 
 - Obnovení chráněných prostředků
 
 Další informace o [Azure Backupu](https://docs.microsoft.com/azure/backup) pro ochranu migrovaných prostředků
+
+## <a name="optimize-resources"></a>Optimalizace prostředků
+
+Azure Advisor je průvodce s individuálními doporučeními pro osvědčené postupy Azure. Analyzuje vaše konfigurace a telemetrii využití a nabízí doporučení, která vám pomohou optimalizovat prostředky Azure a zajistit vysokou dostupnost, zabezpečení a výkon a efektivitu nákladů. Vložené akce Advisoru vám pomohou rychle a snadno zpracovat doporučení a optimalizovat vaše nasazení.
+
+- **Osvědčené postupy Azure:** Optimalizujte migrované prostředky z hlediska vysoké dostupnosti, zabezpečení,výkonu a nákladů.
+- **Podrobné pokyny:** Využijte možnost efektivního zpracování doporučení prostřednictvím rychlých odkazů s pokyny.
+- **Upozornění na nová doporučení:** Zajistěte si přehled o nových doporučeních, jako jsou další příležitosti k nastavení správné velikosti virtuálních počítačů a úspoře nákladů.
+
+Přečtěte si další informace o použití [Azure Advisoru ](https://docs.microsoft.com/azure/advisor/advisor-overview) při optimalizaci migrovaných prostředků.
