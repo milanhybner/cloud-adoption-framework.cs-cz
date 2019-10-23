@@ -10,19 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c344751d8db08a84efdcaddc32a48f6326d1ac3f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548928"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698508"
 ---
-# <a name="before-you-start"></a>Než začnete
-
 ::: zone target="docs"
+
+# <a name="azure-setup-guide-before-you-start"></a>Průvodce nastavením Azure: Než začnete
 
 > [!NOTE]
 > Tento průvodce poskytuje výchozí bod pro pokyny k inovacím v architektuře přechodu na cloud. Je k dispozici také v Centru rychlého startu Azure. Odkaz na Centrum rychlého startu Azure najdete v tipu v další části tohoto článku.
+
+::: zone-end
+
+::: zone target="docs"
+
+# <a name="before-you-start"></a>Než začnete
 
 ::: zone-end
 
@@ -30,8 +36,6 @@ Než začnete vytvářet a nasazovat řešení s využitím služeb Azure, budet
 
 Dozvíte se, jak provést tyto akce:
 
-::: zone target="chromeless"
-
 > [!div class="checklist"]
 >
 > - **Uspořádání prostředků:** Nastavte hierarchii správy pro konzistentní uplatňování řízení přístupu, zásad a dodržování předpisů u skupin prostředků a s využitím značek sledujte související prostředky.
@@ -40,19 +44,8 @@ Dozvíte se, jak provést tyto akce:
 > - **Plánování z hlediska zásad správného řízení, zabezpečení a dodržování předpisů:** Vynucujte a automatizujte zásady a nastavení zabezpečení, která vám pomůžou splňovat příslušné zákonné požadavky.
 > - **Používání monitorování a generování sestav:** Získejte přehled o prostředcích, který vám pomůže vyhledávat a řešit problémy, optimalizovat výkon nebo získat přehled o chování zákazníků.
 > - **Udržování aktuálního stavu s Azure:** Sledujte aktualizace produktů, abyste mohli aktivně spravovat změny.
-
-::: zone-end
 
 ::: zone target="docs"
-
-> [!div class="checklist"]
->
-> - **Uspořádání prostředků:** Nastavte hierarchii správy pro konzistentní uplatňování řízení přístupu, zásad a dodržování předpisů u skupin prostředků a s využitím značek sledujte související prostředky.
-> - **Správa přístupu:** S využitím správy přístupu na základě role zajistěte, aby uživatelé měli jen ta oprávnění, která skutečně potřebují.
-> - **Správa nákladů a fakturace:** Identifikujte typ vašeho předplatného a zjistěte, jak funguje fakturace, a podívejte se, jak můžete řídit náklady.
-> - **Plánování z hlediska zásad správného řízení, zabezpečení a dodržování předpisů:** Vynucujte a automatizujte zásady a nastavení zabezpečení, která vám pomůžou splňovat příslušné zákonné požadavky.
-> - **Používání monitorování a generování sestav:** Získejte přehled o prostředcích, který vám pomůže vyhledávat a řešit problémy, optimalizovat výkon nebo získat přehled o chování zákazníků.
-> - **Udržování aktuálního stavu s Azure:** Sledujte aktualizace produktů, abyste mohli aktivně spravovat změny.
 
 > [!TIP]
 > Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a vyberte **Úvod do nastavení Azure**. Potom postupujte podle podrobných pokynů.
