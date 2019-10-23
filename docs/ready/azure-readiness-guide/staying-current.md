@@ -10,18 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7345497c84ee673edaf7e5f66a050334586ccacb
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022011"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698460"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
 Cloudové platformy, jako je Microsoft Azure, se mění rychleji, než na co je většina organizací zvyklá. Rychlost této změny znamená, že organizace musí přizpůsobit lidi i procesy novému tempu. Pokud zodpovídáte za to, aby organizace tuto změnu stíhala, možná toho občas máte až nad hlavu. Materiály uvedené v této části vám s tímto úkolem pomohou.
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="top-resourcestabtopresources"></a>[Nejdůležitější materiály](#tab/TopResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Následující materiály vám pomohou držet krok s Azure:
 
@@ -29,10 +33,10 @@ Následující materiály vám pomohou držet krok s Azure:
   - Service Health a upozornění poskytují včasná oznámení o aktuálních problémech se službami, plánované údržbě a poradenství pro stav. Tento materiál obsahuje také informace o funkcích, které se z Azure odebírají.
 - [Aktualizace Azure](https://azure.microsoft.com/updates)
   - Přihlaste se k odběru aktualizací Azure, abyste dostávali oznámení o aktualizacích produktů. Krátké souhrny odkazují na další podrobnosti, což usnadňuje sledování aktualizací.
-  - Přihlaste se k odběru přes [RSS](https://azurecomcdn.azureedge.net/en-us/updates/feed).
+  - Přihlaste se k odběru přes [RSS](https://azurecomcdn.azureedge.net/updates/feed).
 - [Blog o Azure](https://azure.microsoft.com/blog)
   - Na blogu o Azure najdete nejdůležitější oznámení týkající se platformy Azure. Sledováním tohoto blogu získáte přehled o důležitých informacích.
-  - Přihlaste se k odběru přes [RSS](https://azurecomcdn.azureedge.net/en-us/blog/feed).
+  - Přihlaste se k odběru přes [RSS](https://azurecomcdn.azureedge.net/blog/feed).
 - Blogy o konkrétních službách
   - Jednotlivé služby Azure publikují blogy, které můžete sledovat, pokud se na tyto služby spoléháte.
   - K dispozici jsou blogy pro mnoho služeb Azure. Vyhledáváním na webu si najděte ty, které vás zajímají.
@@ -40,7 +44,11 @@ Následující materiály vám pomohou držet krok s Azure:
   - Tento web je neoficiální zdroj informací, který shrnuje většinu zde uvedených materiálů. Pomocí odkazů na jednotlivé služby získat podrobné informace a najdete blogy konkrétní služby.
   - Přihlaste se k odběru přes [RSS](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure).
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="additional-resourcestabadditionalresources"></a>[Další materiály](#tab/AdditionalResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Podrobnější obsah, díky kterému budete mít přehled o Azure, najdete ve zde uvedených materiálech:
 
