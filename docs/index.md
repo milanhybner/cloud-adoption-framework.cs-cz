@@ -7,29 +7,17 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 07/04/2019
-ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.date: 10/14/2019
+ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72377940"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547967"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
 
-Architektura přechodu na cloud představuje jednotný přístup Microsoftu pro přechod na cloud v Azure, ve kterém jsou sloučené a sdílené osvědčené postupy zaměstnanců, partnerů a zákazníků Microsoftu. Tato architektura poskytuje podnikovým zákazníkům sadu nástrojů, pokynů a komentářů, které pomáhají utvářet technologické, obchodní a personální strategie pro řízení požadovaných obchodních výsledků během úsilí o přechod. Tyto pokyny odpovídají jednotlivým fázím a iteracím typického životního cyklu přechodu na cloud, aby byl zajištěný snadný přístup ke správným informacím ve správný čas.
-
-![Přehled architektury přechodu na cloud](./_images/caf-overview.png)
-
-## <a name="getting-started-executive-summaries"></a>Začínáme: Shrnutí
-
-Pro zákazníky, kteří s architekturou přechodu na cloud teprve začínají, nabízíme tři úvodní články: [Migrace](./getting-started/migrate.md), [Inovace](./getting-started/innovate.md) a [Povolení](./getting-started/enable.md). Každý článek obsahuje shrnutí a základní cestu životním cyklem přechodu.
-
-Podrobnější pokyny najdete v textu u odkazů na jednotlivé fáze životního cyklu přechodu.
-
-## <a name="use-the-cloud-adoption-framework-throughout-the-adoption-lifecycle"></a>Použití architektury přechodu na cloud během celého cyklu přechodu
-
-Každý oddíl architektury přechodu na cloud se mapuje na výše uvedený přehledný diagram. Následující seznam vám pomůže vybrat oddíl, který nejlépe odpovídá vaší aktuální fázi životního cyklu přechodu na cloud.
+Architektura přechodu na cloud představuje jednotný přístup Microsoftu pro přechod na cloud v Azure, ve kterém jsou sloučené a sdílené osvědčené postupy zaměstnanců, partnerů a zákazníků Microsoftu. Tato architektura poskytuje zákazníkům sadu nástrojů, pokynů a komentářů, které pomáhají utvářet technologické, obchodní a personální strategie pro zajištění požadovaných obchodních výsledků během úsilí o přechod. Tyto pokyny odpovídají následujícím fázím přechodu na cloud, aby byl zajištěný snadný přístup ke správným informacím ve správný čas.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -98,12 +86,31 @@ Připravte cloudové prostředí na plánované změny.
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrace</h3>
 Migrujte a modernizujte stávající úlohy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovate/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Inovace</h3>
+Vyvíjejte nová nativní nebo hybridní řešení v cloudu.
                         </div>
                     </div>
                 </div>
@@ -130,13 +137,32 @@ Migrujte a modernizujte stávající úlohy.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
+        <a href="./manage/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Spravovat</h3>
+Provozní správa pro cloudová a hybridní řešení.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./organize/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -150,16 +176,11 @@ Přiřaďte lidi pro účely povolení přechodu na cloud a provozu.
     </li>
 </ul>
 
-## <a name="product-roadmap"></a>Plán vývoje produktu
+## <a name="understanding-the-lifecycle"></a>Vysvětlení životního cyklu
 
-Architektura přechodu na cloud se v současné době nabízí ve verzi Public Preview. Architektura přejde do fáze obecné dostupnosti, jakmile zcela splní zamýšlený záměr popsaný v následující části. V této verzi Preview jsou primární oblasti zaměření následující:
+Každá z výše uvedených fází je součástí životního cyklu širšího přechodu na cloud. Následující obrázek spojuje jednotlivé fáze a ukazuje celkový životní cyklus. Architektura přechodu na cloud je kompletní rámec životního cyklu, který zákazníky ve všech těchto fázích podporuje.
 
-- [Strategie přechodu na cloud](./strategy/index.md)
-- [Plánování přechodu na cloud](./plan/index.md)
-- [Migrace do cloudu](./migrate/index.md)
-- [Zásady správného řízení cloudu](./govern/guides/index.md)
-
-S blížící se obecnou dostupností budeme architekturu přechodu na cloud často rozšiřovat. V rámci tohoto rozšiřování doplníme podrobnosti v jednotlivých oddílech a přidáme i nový obsah. Další informace najdete v [plánu vývoje architektury přechodu na cloud](./reference/index.md).
+![Přehled architektury přechodu na cloud](./_images/caf-overview.png)
 
 ## <a name="intent"></a>Záměr
 
@@ -179,9 +200,7 @@ Jednotlivé části architektury přechodu na cloud představují různé specia
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Jak používat architekturu přechodu na cloud pro Azure od Microsoftu
 
-Pokud váš podnik s Azure teprve začíná, přečtěte si nejdřív téma [Začínáme s architekturou přechodu na cloud](./getting-started/migrate.md). Tento přehled obsahuje doporučené pokyny pro digitální transformaci vašeho podniku, které vás provedou jednotlivými fázemi tohoto procesu.
-
-Pokud už váš podnik má zkušenosti s Azure a hledáte podrobnější pokyny nebo osvědčené postupy pro konkrétní oblasti, projděte si [přehled zásad správného řízení](./govern/index.md) a [průvodce rozhodováním ohledně architektury](./decision-guides/index.md). Další oddíly přidáme, až se bude blížit obecná dostupnost.
+Pokud váš podnik s Azure teprve začíná, přečtěte si nejdřív téma [Začínáme s architekturou přechodu na cloud](./getting-started/migrate.md). Tento přehled obsahuje osvědčené postupy pro digitální transformaci vašeho podniku a provede vás jednotlivými fázemi tohoto procesu.
 
 > [!div class="nextstepaction"]
 > [Začínáme](./getting-started/migrate.md)

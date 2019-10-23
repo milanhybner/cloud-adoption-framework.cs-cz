@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023718"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547858"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Průvodce rozhodováním ohledně vynucování zásad
 
@@ -22,7 +22,7 @@ Definování zásad organizace není efektivní, pokud je nejde vynucovat v cel�
 
 ![Diagram možností vynucování zásad od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Přejít na: [Základní doporučené postupy](#baseline-recommended-practices) | [Monitorování dodržování zásad](#policy-compliance-monitoring) | [Vynucování zásad](#policy-enforcement) | [Zásady pro celou organizaci](#cross-organization-policy) | [Automatizované vynucování](#automated-enforcement)
+Přejít na: [Osvědčené postupy směrného plánu](#baseline-best-practices) | [Monitorování dodržování zásad](#policy-compliance-monitoring) | [Vynucování zásad](#policy-enforcement) | [Zásady pro celou organizaci](#cross-organization-policy) | [Automatizované vynucování](#automated-enforcement)
 
 S tím, jak se budou rozšiřovat vaše cloudová aktiva, budete muset čelit odpovídající potřebě udržovat a vynucovat zásady pro větší sadu prostředků a předplatných. S rozšiřováním vašich aktiv a zvyšováním požadavků vaší organizace na zásady bude potřeba rozšířit rozsah procesů vynucování zásad, aby se zajistilo konzistentní dodržování zásad a rychlá detekce jejich porušení.
 
@@ -30,7 +30,7 @@ Pro méně rozsáhlá cloudová aktiva jsou obvykle dostačující mechanismy vy
 
 Primárními faktory při určování rozsahu procesů vynucování zásad jsou [požadavky vaší organizace na zásady správného řízení v cloudu](../../govern/index.md), velikost a povaha cloudových aktiv a způsob, jakým [návrh předplatného](../subscriptions/index.md) odráží vaši organizaci. Rozšíření rozsahu vynucování může ospravedlnit zvýšení velikosti aktiv nebo větší potřeba centrální správy vynucování zásad.
 
-## <a name="baseline-recommended-practices"></a>Základní doporučené postupy
+## <a name="baseline-best-practices"></a>Osvědčené postupy směrného plánu
 
 V případě jednoho předplatného a jednoduchých cloudových nasazení je možné řadu firemních zásad vynucovat pomocí funkcí nativních pro prostředky a předplatná v Azure. Konzistentní používání modelů popsaných v [průvodcích rozhodováním](../index.md) architektury přechodu na cloud vám může pomoct stanovit základní úroveň dodržování zásad bez zvláštních investic do vynucování zásad. Mezi tyto funkce patří:
 

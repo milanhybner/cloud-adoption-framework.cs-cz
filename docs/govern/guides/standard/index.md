@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967637"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547590"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Průvodce zásadami správného řízení pro standardní firmy
 
 ## <a name="overview-of-best-practices"></a>Přehled osvědčených postupů
 
-Tento průvodce zásadami správného řízení sleduje zážitky fiktivní společnosti napříč různými fázemi vyspělosti zásad správného řízení. Vychází ze zkušeností skutečných zákazníků. Doporučené postupy vycházejí z omezení a potřeb fiktivní společnosti.
+Tento průvodce zásadami správného řízení sleduje zážitky fiktivní společnosti napříč různými fázemi vyspělosti zásad správného řízení. Vychází ze zkušeností skutečných zákazníků. Osvědčené postupy vycházejí z omezení a potřeb fiktivní společnosti.
 
-Jako rychlý výchozí bod tento přehled na základě podrobných pokynů definuje MVP (Minimum Viable Product) pro zásady správného řízení. Kromě toho obsahuje také odkazy na fáze vylepšení zásad správného řízení, které s tím, jak se objevují nová obchodní nebo technická rizika, implementují další doporučené postupy.
+Jako rychlý výchozí bod tento přehled na základě osvědčených postupů definuje MVP (Minimum Viable Product) pro zásady správného řízení. Kromě toho obsahuje také odkazy na fáze vylepšení zásad správného řízení, které s tím, jak se objevují nová obchodní nebo technická rizika, implementují další osvědčené postupy.
 
 > [!WARNING]
 > Tento MVP představuje základní výchozí bod vycházející z několika předpokladů. Dokonce i tato minimální sada osvědčených postupů je založená na firemních zásadách, které se řídí jedinečnými obchodními riziky a úrovněmi tolerance k rizikům. Pokud chcete zjistit, jestli pro vás platí tyto předpoklady, přečtěte si [delší příběh](./narrative.md), který následuje po tomto článku.

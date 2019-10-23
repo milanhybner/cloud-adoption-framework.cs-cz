@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967610"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547578"
 ---
 # <a name="cloud-governance-guides"></a>Průvodci zásadami správného řízení v cloudu
 
@@ -70,6 +70,8 @@ Pokud chcete zahájit cestu k zásadám správného řízení v cloudu, zvolte s
 
 > [!WARNING]
 > Situace může vyžadovat robustnější výchozí bod zásad správného řízení. V takových případech zvažte přístup [Virtuální datové centrum Azure](#azure-virtual-datacenter), který je stručně popsaný [níž](#azure-virtual-datacenter). Tento přístup se během úsilí o přechod na podnikové úrovni navrhuje běžně, zejména v případech s více než 10 000 prostředky. Je to také faktická volba pro komplexní scénáře zásad správného řízení, kdy se vyžaduje zajištění dodržování předpisů třetích stran ve velkém objemu, hluboké znalosti domén nebo parita s vyspělými zásadami správného řízení IT a požadavky dodržování předpisů.
+
+<!-- markdownlint-disable MD028 -->
 
 > [!NOTE]
 > Je nepravděpodobné, že by některý z průvodců kompletně odpovídal vaší situaci. Vyberte si nejpodobnější z nich a použijte ho jako výchozí bod. V rámci průvodce získáte další informace, které vám pomohou přizpůsobit vaše rozhodnutí tak, aby odpovídala konkrétním kritériím.

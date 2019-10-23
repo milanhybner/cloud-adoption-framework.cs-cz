@@ -10,24 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378367"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548928"
 ---
 # <a name="before-you-start"></a>Než začnete
 
 ::: zone target="docs"
+
 > [!NOTE]
-> Tato příručka poskytuje výchozí bod pro doprovodné materiály připravenosti v architektuře přechodu na cloud a je k dispozici také v Centru rychlého startu Azure. Odkaz najdete v tipu v článku.
+> Tento průvodce poskytuje výchozí bod pro pokyny k inovacím v architektuře přechodu na cloud. Je k dispozici také v Centru rychlého startu Azure. Odkaz na Centrum rychlého startu Azure najdete v tipu v další části tohoto článku.
 
 ::: zone-end
 
 Než začnete vytvářet a nasazovat řešení s využitím služeb Azure, budete muset připravit své prostředí. V této příručce představujeme funkce, které vám pomáhají s uspořádáním prostředků, řízením nákladů a se zabezpečením a správou vaší organizace. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu připravenosti architektury přechodu na cloud](../index.md).
 
-Co se naučíte:
+Dozvíte se, jak provést tyto akce:
 
 ::: zone target="chromeless"
 

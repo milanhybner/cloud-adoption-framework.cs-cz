@@ -212,24 +212,20 @@
               items:
                 - name: Kontrolní seznam pro rozšířený rozsah
                   href: migrate/expanded-scope/index.md
-                - name: Obchodní změny rozsahu
-                  items:
-                    - name: Vyvážení portfolia
-                      href: migrate/expanded-scope/balance-the-portfolio.md
-                    - name: Několik zeměpisných oblastí
-                      href: decision-guides/regions/index.md
-                - name: Změny rozsahu na základě kultury
-                  items:
-                    - name: Připravenost dovedností
-                      href: migrate/expanded-scope/suggested-skills.md
-                - name: Změny rozsahu na základě technické strategie
-                  items:
-                    - name: Několik datových center
-                      href: migrate/expanded-scope/multiple-datacenters.md
-                    - name: Požadavky na data překračují kapacitu sítě
-                      href: migrate/expanded-scope/network-capacity-exceeded.md
-                    - name: Zásady správného řízení a dodržování předpisů
-                      href: migrate/expanded-scope/governance-or-compliance.md
+                - name: Vyvážení portfolia
+                  href: migrate/expanded-scope/balance-the-portfolio.md
+                - name: Připravenost dovedností
+                  href: migrate/expanded-scope/suggested-skills.md
+                - name: Migrace hostitele VMWare
+                  href: migrate/expanded-scope/vmware-host.md
+                - name: Migrace SQL Serveru
+                  href: migrate/expanded-scope/sql-migration.md
+                - name: Několik datových center
+                  href: migrate/expanded-scope/multiple-datacenters.md
+                - name: Požadavky na data překračují kapacitu sítě
+                  href: migrate/expanded-scope/network-capacity-exceeded.md
+                - name: Zásady správného řízení a dodržování předpisů
+                  href: migrate/expanded-scope/governance-or-compliance.md
             - name: Osvědčené postupy
               items:
                 - name: Přehled
@@ -278,6 +274,150 @@
                               href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                         - name: Škálování migrace
                           href: migrate/azure-best-practices/contoso-migration-scale.md
+                - name: Osvědčené postupy pro migraci hostitelů vmware
+                  items:
+                    - name: Přehled
+                      href: migrate/azure-best-practices/vmware-host.md
+                    - name: Požadavky
+                      items:
+                        - name: Zabezpečení vašeho prostředí
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Správa privátního cloudu
+                          items:
+                            - name: Zvýšení úrovně oprávnění pro privátní cloud
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Nastavení úloh DNS a DHCP
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migrace úloh pomocí roztažené sítě vrstvy 2
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sítě privátního cloudu
+                          items:
+                            - name: Připojení VPN k privátnímu cloudu
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Místní síťové připojení s využitím ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Připojení virtuální sítě Azure s využitím ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Konfigurace překladu názvů DNS
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-dns-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Platforma VMware
+                          items:
+                            - name: Seznámení s modelem oprávnění privátního cloudu
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/learn-private-cloud-permissions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Zdroje identit VCenter
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-vcenter-identity?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Azure Application Gateway s virtuálními počítači VMware
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-application-gateway?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Konfigurace serveru vCenter privátního cloudu jako koncového bodu automatizace vRealize
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/configure-server-vrealize-automation-endpoint?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Zajištění vysoké dostupnosti aplikace ve VMware v Azure
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/ensuring-high-availability?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Volba metody vyrovnávání zatížení
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/load-balancers?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Integrace základních služeb Azure
+                          items:
+                            - name: Zdroj identity Azure AD v serveru vCenter privátního cloudu
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-ad?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Místní síťové připojení s využitím ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Připojení virtuální sítě Azure s využitím ExpressRoute
+                              href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Možnosti migrace a zotavení po havárii
+                      items:
+                        - name: Migrace virtuálních počítačů úloh do privátního cloudu
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrace s využitím Azure Data Boxu
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Zálohování virtuálních počítačů úloh
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Konfigurace privátního cloudu jako lokality pro zotavení po havárii s využitím Zerto
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Konfigurace privátního cloudu jako lokality pro zotavení po havárii s využitím VMware SRM
+                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Osvědčené postupy pro migraci SQL serverů
+                  items:
+                    - name: Přehled
+                      href: migrate/azure-best-practices/sql-migration.md
+                    - name: Průvodce migrací databází do Azure
+                      items:
+                        - name: Migrace SQL Serveru do Azure SQL DB
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrace SQL Serveru do Azure SQL DB MI
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrace SQL Serveru na SQL Server na virtuálních počítačích Azure
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Migrace SQL Serveru do Azure SQL Data Warehouse
+                          href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MySQL
+                          items:
+                            - name: Migrace MySQL do Azure SQL DB
+                              href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migrace MySQL do Azure DB for MySQL
+                              href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: PostgreSQL
+                          items:
+                            - name: Migrace PostgreSQL do Azure DB for PostgreSQL
+                              href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MariaDB
+                          items:
+                            - name: Migrace MariaDB do Azure DB for MariaDB
+                              href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: MongoDB
+                          items:
+                            - name: Migrace MongoDB do Azure Cosmos DB
+                              href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Cassandra
+                          items:
+                            - name: Migrace Cassandry do Azure Cosmos DB
+                              href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Oracle
+                          items:
+                            - name: Migrace Oracle do Azure SQL DB
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migrace Oracle do Azure DB for PostgreSQL
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Migrace Oracle do Azure SQL Data Warehouse
+                              href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: DB2
+                          items:
+                            - name: Migrace DB2 do Azure SQL DB
+                              href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: SAP ASE
+                          items:
+                            - name: Migrace SAP ASE do Azure SQL DB
+                              href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Access
+                          items:
+                            - name: Migrace Accessu do Azure SQL DB
+                              href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Kurzy ke službě Azure Database Migration Service (DMS)
+                      items:
+                        - name: Azure Database Migration Service
+                          href: 'https://docs.microsoft.com/azure/dms/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Offline migrace SQL Serveru do Azure SQL DB
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace SQL Serveru do Azure SQL DB
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Offline migrace SQL Serveru do Azure SQL DB MI
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace SQL Serveru do Azure SQL DB MI
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace AWS RDS SQL Serveru do Azure SQL DB nebo Azure SQL DB MI
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace MySQL do Azure DB for MySQL
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace AWS RDS MySQL do Azure DB for MySQL
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-mysql-server-azure-db-for-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace PostgreSQL do Azure DB for PostgreSQL
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace AWS RDS PostgreSQL do Azure DB for PostgreSQL
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-postgresql-server-azure-db-for-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Offline migrace MongoDB do rozhraní Mongo API služby Azure Cosmos DB
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace MongoDB do rozhraní Mongo API služby Azure Cosmos DB
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Online migrace Oracle do Azure DB for PostgreSQL
+                          href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Migrace mainframů
                       items:
                         - name: Přehled
@@ -318,7 +458,7 @@
                           href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Implementace zabezpečené hybridní síťové architektury v Azure
                           href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Osvědčené postupy zabezpečení IOT
+                        - name: Osvědčené postupy zabezpečení IoT
                           href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Zabezpečení databází PaaS v Azure
                           href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -404,6 +544,318 @@
           items:
             - name: Přehled
               href: innovate/index.md
+            - name: Průvodce inovacemi Azure
+              items:
+                - name: Úvod
+                  href: innovate/innovation-guide/index.md
+                - name: Příprava na zpětnou vazbu od zákazníků
+                  href: innovate/innovation-guide/adoption.md
+                - name: Demokratizace dat
+                  href: innovate/innovation-guide/data.md
+                - name: Zapojení přes aplikace
+                  href: innovate/innovation-guide/apps.md
+                - name: Posílení přechodu
+                  href: innovate/innovation-guide/ci-cd.md
+                - name: Interakce se zařízeními
+                  href: innovate/innovation-guide/devices.md
+                - name: Predikce a ovlivňování
+                  href: innovate/innovation-guide/predict.md
+            - name: Požadavky
+              items:
+                - name: Přehled
+                  href: innovate/considerations/index.md
+                - name: Konsensus ohledně obchodní hodnoty
+                  href: innovate/business-value.md
+                - name: Přechod u zákazníků
+                  items:
+                    - name: Smyčky zpětné vazby
+                      href: innovate/considerations/adoption.md
+                    - name: Sestavování s empatií vůči zákazníkům
+                      href: innovate/considerations/build.md
+                    - name: Měření dopadu na zákazníky
+                      href: innovate/considerations/measure.md
+                    - name: Učení se zákazníky
+                      href: innovate/considerations/learn.md
+                    - name: Výzvy a překážky pro zákazníky
+                      href: innovate/considerations/challenges.md
+                - name: Digitální vynález
+                  items:
+                    - name: Vývoj digitálních vynálezů
+                      href: innovate/considerations/invention.md
+                    - name: Demokratizace dat
+                      href: innovate/considerations/data.md
+                    - name: Zapojení přes aplikace
+                      href: innovate/considerations/apps.md
+                    - name: Posílení přechodu
+                      href: innovate/considerations/ci-cd.md
+                    - name: Interakce se zařízeními
+                      href: innovate/considerations/devices.md
+                    - name: Predikce a ovlivňování
+                      href: innovate/considerations/predict.md
+            - name: Osvědčené postupy inovací
+              items:
+                - name: Přehled a sada nástrojů Azure
+                  href: innovate/best-practices/index.md
+                - name: Demokratizace dat
+                  items:
+                    - name: Přehled
+                      href: innovate/best-practices/data.md
+                    - name: Sdílení dat s odborníky
+                      items:
+                        - name: Rychlé generování přehledů dat
+                          href: 'https://docs.microsoft.com/power-bi/service-insights?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sdílení dat se spolupracovníky a partnery
+                          href: 'https://docs.microsoft.com/power-bi/service-share-dashboards?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vkládání sestav na web nebo portál
+                          href: 'https://docs.microsoft.com/power-bi/service-embed-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vytváření nových pracovních prostorů v Power BI
+                          href: 'https://docs.microsoft.com/power-bi/service-create-the-new-workspaces?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Řízení dat
+                      items:
+                        - name: Klasifikace dat
+                          href: 'https://docs.microsoft.com/azure/cloud-adoption/governance/policy-compliance/data-classification.md'
+                        - name: Zabezpečení dat
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Anotace dat s použitím katalogu dat
+                          href: 'https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Dokumentování zdrojů dat s použitím katalogu dat
+                          href: 'https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Centralizace dat
+                      items:
+                        - name: Vytvoření a dotazování Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/create-data-warehouse-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Osvědčené postupy načítání dat do služby Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/guidance-for-loading-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vizualizace dat skladu pomocí Power BI
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-visualize-with-power-bi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Referenční architektura – Enterprise BI se službou SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Správa velkých objemů podnikových dat pomocí Azure Data Lake Storage
+                          href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Co je to datové jezero
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Shromažďování dat
+                      items:
+                        - name: 'Migrace místních dat do Azure z platforem SQL, Oracle nebo NoSQL'
+                          href: innovate/best-practices/data-dms.md
+                        - name: Integrace cloudových zdrojů dat s SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Načtení místních dat do Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Integrace dat – z datové továrny do OLAP
+                          href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Ingestování Stream Analytics do SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-integrate-azure-stream-analytics?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Referenční architektura – ingestování a analýza nových informačních kanálů
+                          href: 'https://docs.microsoft.com/azure/architecture/example-scenario/ai/newsfeed-ingestion?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Virtualizace dat s použitím Azure SQL Data Warehouse a Polybase
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/load-data-wideworldimportersdw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Zapojení přes aplikace
+                  items:
+                    - name: Přehled
+                      href: innovate/best-practices/apps.md
+                    - name: Model nativní pro cloud
+                      items:
+                        - name: Aplikace nativní pro cloud
+                          items:
+                            - name: Referenční řešení pro aplikace nativní pro cloud
+                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                            - name: Vytvoření aplikace v .Net Core s použitím SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Vytvoření aplikace v .Net s použitím SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Vytvoření aplikace v PHP s použitím MySQL
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Vytvoření Node.js s použitím MongoDB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Vytvoření aplikace pro iOS
+                              href: 'https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-ios-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Mikroslužby
+                          items:
+                            - name: 'Návrh, sestavování a provoz mikroslužeb v Azure'
+                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Referenční architektura pro mikroslužby se Service Fabric
+                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/service-fabric?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Referenční architektura pro mikroslužby s Azure Kubernetes Services (AKS)
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Příručka návrhu aplikací Azure
+                              href: 'https://docs.microsoft.com/azure/architecture/guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Migrace/modernizace a následná inovace
+                      items:
+                        - name: 'Migrace úloh (aplikace, virtuální počítače a data)'
+                          href: 'https://azure.microsoft.com/migration/'
+                        - name: Migrace existující aplikace s použitím prostředí Kubernetes Services spravovaného Azure (AKS)
+                          href: 'https://azure.microsoft.com/solutions/architecture/migrate-existing-applications-with-aks/'
+                        - name: Prodloužení platnosti starších dat prostřednictvím Azure Stack a aplikací nativních pro cloud
+                          href: 'https://azure.microsoft.com/solutions/architecture/unlock-legacy-data/'
+                    - name: Vývojáři služeb pro občany
+                      items:
+                        - name: Vytváření aplikací v PowerApps
+                          href: 'https://docs.microsoft.com/powerapps/maker?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vytvoření prvního pracovního postupu v Microsoft Flow
+                          href: 'https://docs.microsoft.com/flow/getting-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Používání AI Builderu
+                          href: 'https://docs.microsoft.com/powerapps/use-ai-builder?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Dodržování předpisů a ochrana osobních údajů pro řešení od vývojářů služeb pro občany
+                          href: 'https://docs.microsoft.com/power-platform/admin/wp-compliance-data-privacy?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Zásady ochrany před únikem informací pro řešení od vývojářů služeb pro občany
+                          href: 'https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Moderní webové prostředí
+                      items:
+                        - name: Referenční řešení pro aplikace nativní pro cloud
+                          href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                        - name: Vytvoření aplikace v .Net Core s použitím SQL DB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vytvoření aplikace v .Net s použitím SQL DB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vytvoření aplikace v PHP s použitím MySQL
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vytvoření Node.js s použitím MongoDB
+                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Aplikace nativní pro cloud
+                      items:
+                        - name: Architektura mikroslužeb
+                          items:
+                            - name: Referenční architektura pro mikroslužby s Azure Kubernetes Services (AKS)
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Containers
+                          items:
+                            - name: 'Návrh, sestavování a provoz mikroslužeb v Azure'
+                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Vytvoření clusteru Azure Red Hat OpenShift
+                              href: 'https://docs.microsoft.com/azure/openshift/tutorial-create-cluster?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Mikroslužby Spring Boot
+                          items:
+                            - name: Spuštění aplikace Azure Spring Cloudu
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-quickstart-launch-app-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Distribuované trasování s použitím Azure Spring Cloudu
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Svázání Azure Cosmos DB s aplikací Azure Spring Cloudu
+                              href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Posílení přechodu
+                  items:
+                    - name: Přehled
+                      href: innovate/best-practices/ci-cd.md
+                    - name: Sdílené řešení
+                      items:
+                        - name: Začínáme se sdíleným úložištěm – GitHub a Git
+                          href: 'https://guides.github.com/introduction/git-handbook'
+                        - name: Začínáme se sdíleným backlogem
+                          href: 'https://docs.microsoft.com/azure/devops/boards/backlogs/backlogs-boards-plans?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Synchronizace PowerApps s Azure DevOps
+                          href: 'https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Smyčky zpětné vazby
+                      items:
+                        - name: Správa zpětné vazby s použitím Azure DevOps
+                          href: 'https://docs.microsoft.com/azure/devops/project/feedback?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Kontinuální integrace
+                      items:
+                        - name: Průběžná integrace s využitím Azure Pipelines a GitHubu
+                          href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/'
+                    - name: Spolehlivé testování
+                      items:
+                        - name: Správa a sledování testovacích plánů
+                          href: 'https://docs.microsoft.com/azure/devops/test/track-test-status?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Nasazení řešení
+                      items:
+                        - name: Průběžné nasazování s využitím Azure Pipelines a GitHubu
+                          href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment/'
+                    - name: Integrované metriky
+                      items:
+                        - name: Monitorování aplikací ASP.NET
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Monitorování aplikací .Net Core
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/dotnetcore-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Monitorování aplikací Node.js
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/nodejs-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Monitorování mobilních aplikací
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/mobile-center-quickstart?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Monitorování webových aplikací
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/app/website-monitoring?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 'Monitorování virtuálních počítačů, které jsou hostiteli tradičních aplikací'
+                          href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-collect-azurevm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Interakce se zařízeními
+                  items:
+                    - name: Přehled
+                      href: innovate/best-practices/devices.md
+                    - name: Mobilní webové prostředí
+                      items:
+                        - name: Prodloužení platnosti starší verze aplikace pro zpracování deklarací identit s využitím webového a mobilního prostředí
+                          href: 'https://azure.microsoft.com/solutions/architecture/adding-a-modern-web-and-mobile-frontend-to-a-legacy-claims-processing-application/'
+                        - name: Optimalizace sestav pro sdílení dat v mobilní aplikaci
+                          href: 'https://docs.microsoft.com/power-bi/desktop-create-phone-report?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Rozšíření aplikace plátna PowerApps s využitím mobilního prostředí
+                          href: 'https://docs.microsoft.com/powerapps/user/run-app-client?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Rozšíření Microsoft Flow přidáním mobilního prostředí
+                          href: 'https://docs.microsoft.com/flow/create-mobile-task-flow?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Zabezpečení mobilního prostředí
+                          items:
+                            - name: 'Ochrana mobilních sestav prostřednictvím identifikace pomocí tváře, dotyku nebo hesla'
+                              href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Zabezpečení mobilních toků úloh pomocí Intune
+                              href: 'https://docs.microsoft.com/flow/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Zabezpečení dat v běžných datových službách
+                              href: 'https://docs.microsoft.com/power-platform/admin/wp-security?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Smíšená realita
+                      items:
+                        - name: Vývoj prostředí se smíšenou realitou s použitím Unity
+                          href: 'https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Rychlý přechod k přidání Azure Spatial Anchors do řešení se smíšenou realitou
+                          href: 'https://docs.microsoft.com/azure/spatial-anchors?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Integrovaná realita a IoT
+                      items:
+                        - name: Vizualizace dat senzorů s použitím Azure IoT v Power BI
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Vizualizace dat senzorů s použitím Azure IoT Hubu v rámci webového řešení
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Zabezpečení řešení IoT
+                          href: 'https://docs.microsoft.com/azure/security/fundamentals/iot-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Začínáme s Azure Sphere
+                          href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
+                        - name: Bezdrátové nasazování aplikací s Azure Sphere
+                          href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Začínáme s Azure Kinect DK
+                          href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Sestavení první aplikace s použitím Azure Kinect DK
+                          href: 'https://docs.microsoft.com/azure/Kinect-dk/build-first-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Upravená realita
+                      items:
+                        - name: Azure Digital Twins + HoloLens – úprava virtuální reality
+                          href: 'https://azure.microsoft.com/resources/videos/build-2019-azure-digital-twins-hololens-powering-the-next-generation-of-iot/'
+                        - name: Začínáme s Azure Digital Twins
+                          href: 'https://docs.microsoft.com/azure/digital-twins/about-digital-twins?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Monitorování budovy s využitím Digital Twins
+                          href: 'https://docs.microsoft.com/azure/digital-twins/tutorial-facilities-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Příručka Azure IoT pro komunikaci cloudu se zařízeními
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                        - name: Konfigurace Azure IoT pro komunikaci cloudu se zařízeními
+                          href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance'
+                - name: Predikce a ovlivňování
+                  items:
+                    - name: Přehled
+                      href: innovate/best-practices/predict.md
+                    - name: Vzory
+                      items:
+                        - name: Pracovní postup Azure Machine Learning
+                          href: 'https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Řešení Hadoop R Scaler
+                          href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Azure Machine Learning s Azure SQL Data Warehouse
+                          href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Predikce
+                      items:
+                        - name: Nasazování predikcí
+                          href: 'https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Nastavování clusterů HDInsight
+                          href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Interakce
+                      items:
+                        - name: Azure Machine Learning od fáze experimentu po provozní služby
+                          href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 'Azure Machine Learning: publikování ve webových službách pro spotřebovávání v aplikacích'
+                          href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Zprovoznění ML Services v Azure HDInsight
+                          href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize'
     - name: Řízení
       items:
         - name: Přehled
@@ -590,46 +1042,28 @@
                   href: govern/deployment-acceleration/discipline-improvement.md
                 - name: Nástroje Azure pro zrychlení nasazení
                   href: govern/deployment-acceleration/toolchain.md
-    - name: Provoz
+    - name: Spravovat
       items:
         - name: Přehled
-          href: operate/index.md
-        - name: Uspořádání
+          href: manage/index.md
+        - name: Průvodce správou Azure
           items:
-            - name: Správa stavu organizace
-              href: organize/index.md
-            - name: Požadované možnosti cloudu
-              items:
-                - name: Cloudová strategie
-                  href: organize/cloud-strategy.md
-                - name: Přechodu na cloud
-                  href: organize/cloud-adoption.md
-                - name: Zásady správného řízení cloudu
-                  href: organize/cloud-governance.md
-                - name: Centrální IT
-                  href: organize/central-it.md
-                - name: Cloudový provoz
-                  href: organize/cloud-operations.md
-                - name: Vedoucí centrum cloudu
-                  href: organize/cloud-center-of-excellence.md
-                - name: Cloudová platforma
-                  href: organize/cloud-platform.md
-                - name: Automatizace cloudu
-                  href: organize/cloud-automation.md
-            - name: Ustavení týmů
-              href: organize/organization-structures.md
-            - name: Přiřazení matice RACI
-              href: organize/raci-alignment.md
-            - name: Budování technických dovedností
-              href: organize/suggested-skills.md
-            - name: Vytvoření uspořádání s ohledem na náklady
-              href: organize/cost-conscious-organization.md
-            - name: Antivzory – léna IT a sila IT
-              href: organize/fiefdoms-silos.md
-        - name: Spravovat
+            - name: Než začnete
+              href: manage/azure-management-guide/index.md
+            - name: Inventarizace a zajištění přehledu
+              href: manage/azure-management-guide/inventory.md
+            - name: Provozní dodržování předpisů
+              href: manage/azure-management-guide/operational-compliance.md
+            - name: Ochrana a zotavení
+              href: manage/azure-management-guide/protect-recover.md
+            - name: Rozšířené možnosti směrného plánu
+              href: manage/azure-management-guide/enhanced-baseline.md
+            - name: Specializace podle platformy
+              href: manage/azure-management-guide/platform-specialization.md
+            - name: Specializace podle úloh
+              href: manage/azure-management-guide/workload-specialization.md
+        - name: Osvědčené postupy
           items:
-            - name: Přehled
-              href: manage/index.md
             - name: Správa serverů v Azure
               items:
                 - name: Úvod ke správě serverů v Azure
@@ -674,14 +1108,88 @@
                   href: manage/monitor/alerting.md
                 - name: Přehled monitorovacích platforem
                   href: manage/monitor/platform-overview.md
-            - name: Nastavení kontroly provozní vhodnosti
-              href: manage/operational-fitness-review.md
             - name: Centralizace operací správy
               href: manage/centralize-operations.md
+            - name: Nastavení kontroly provozní vhodnosti
+              href: manage/operational-fitness-review.md
+            - name: Vylepšování odolnosti platformy nebo úlohy
+              items:
+                - name: Kontrolní seznam k odolnosti pro služby Azure
+                  href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Analýza režimu selhání
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Zotavení z přerušení služeb na úrovni celé oblasti
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                - name: Zotavení z poškození nebo nechtěného odstranění dat
+                  href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-data-corruption?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+        - name: Aspekty správy
+          items:
+            - name: Přehled
+              href: manage/considerations/index.md
+            - name: Obchodní rovnováha
+              href: manage/considerations/business-alignment.md
+            - name: Definování důležitosti
+              href: manage/considerations/criticality.md
+            - name: Principy dopadů v oblasti obchodu
+              href: manage/considerations/impact.md
+            - name: Stanovení obchodních závazků
+              href: manage/considerations/commitment.md
+            - name: Disciplíny řízení
+              href: manage/considerations/discipline.md
+            - name: Inventarizace a zajištění přehledu
+              href: manage/considerations/inventory.md
+            - name: Provozní dodržování předpisů
+              href: manage/considerations/operational-compliance.md
+            - name: Ochrana a zotavení
+              href: manage/considerations/protect.md
+            - name: Provoz platforem
+              href: manage/considerations/platform.md
+            - name: Provoz úloh
+              href: manage/considerations/workload.md
+        - name: Rozšířená správa a návrh systému
+          href: manage/design-principles.md
+    - name: Uspořádání
+      items:
+        - name: Správa stavu organizace
+          href: organize/index.md
+        - name: Požadované možnosti cloudu
+          items:
+            - name: Cloudová strategie
+              href: organize/cloud-strategy.md
+            - name: Přechodu na cloud
+              href: organize/cloud-adoption.md
+            - name: Zásady správného řízení cloudu
+              href: organize/cloud-governance.md
+            - name: Centrální IT
+              href: organize/central-it.md
+            - name: Cloudový provoz
+              href: organize/cloud-operations.md
+            - name: Vedoucí centrum cloudu
+              href: organize/cloud-center-of-excellence.md
+            - name: Cloudová platforma
+              href: organize/cloud-platform.md
+            - name: Automatizace cloudu
+              href: organize/cloud-automation.md
+        - name: Ustavení týmů
+          href: organize/organization-structures.md
+        - name: Přiřazení matice RACI
+          href: organize/raci-alignment.md
+        - name: Budování technických dovedností
+          href: organize/suggested-skills.md
+        - name: Vytvoření uspořádání s ohledem na náklady
+          href: organize/cost-conscious-organization.md
+        - name: Antivzory – léna IT a sila IT
+          href: organize/fiefdoms-silos.md
     - name: Referenční informace
       items:
         - name: Plán architektury přechodu na cloud
           href: reference/index.md
+        - name: Provozní model
+          items:
+            - name: Přehled
+              href: operating-model/index.md
+            - name: Terminologie
+              href: operating-model/terms.md
         - name: Průvodci rozhodováním
           items:
             - name: Přehled

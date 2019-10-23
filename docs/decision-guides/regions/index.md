@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967696"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547848"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
@@ -63,9 +63,9 @@ Po zvážení síťové topologie, která bude nutná k zajištění provozu, bu
 
 - Zvažte robustnější připravenost a implementaci zásad správného řízení.
 - Sepište si ovlivněné geografické oblasti. Vytvořte si seznam ovlivněných oblastí a zemí.
-- Zdokumentujte si požadavky na suverenitu dat: Mají identifikované země požadavky na dodržování předpisů, které řídí suverenitu dat?
-- Zdokumentujte si uživatelskou základnu: Budou zaměstnanci, partneři nebo zákazníci v identifikované zemi ovlivněni migrací do cloudu?
-- Zdokumentujte si datacentra a prostředky: Existují v identifikované zemi nějaké prostředky, které by mohly být zahrnuty do migrace?
+- Zdokumentujte si požadavky na suverenitu dat. Mají identifikované země požadavky na dodržování předpisů, které řídí suverenitu dat?
+- Zdokumentujte si uživatelskou základnu. Budou zaměstnanci, partneři nebo zákazníci v identifikované zemi ovlivněni migrací do cloudu?
+- Zdokumentujte si datacentra a prostředky. Existují v identifikované zemi nějaké prostředky, které by mohly být zahrnuty do migrace?
 - Zdokumentujte regionální dostupnost jednotek SKU a požadavky převzetí služeb při selhání.
 
 Přizpůsobte změny v rámci procesu migrace tak, aby řešily tento úvodní soupis.

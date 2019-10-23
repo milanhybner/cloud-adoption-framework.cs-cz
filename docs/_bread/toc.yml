@@ -27,9 +27,13 @@
             - name: Inovace
               tocHref: /azure/cloud-adoption-framework/innovate/
               topicHref: /azure/cloud-adoption-framework/innovate
-        - name: Provoz
-          tocHref: /azure/cloud-adoption-framework/operate/
-          topicHref: /azure/cloud-adoption-framework/operate
+              items:
+                - name: Průvodce inovacemi Azure
+                  tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
+                  topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
+        - name: Provozní model
+          tocHref: /azure/cloud-adoption-framework/operating-model/
+          topicHref: /azure/cloud-adoption-framework/operating-model
           items:
             - name: Řízení
               tocHref: /azure/cloud-adoption-framework/govern/

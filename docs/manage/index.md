@@ -1,48 +1,146 @@
 ---
-title: Úvod do provozní správy
+title: Správa cloudu
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Seznámení s provozní správou v rámci architektury přechodu na cloud
+description: Správa cloudu v architektuře přechodu na cloud
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221436"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547290"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Vytvoření postupů provozní správy v cloudu
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>Správa cloudu v architektuře přechodu na cloud
 
-Přechod na cloud je katalyzátorem zajištění obchodních hodnot. Ale skutečné obchodní hodnoty se realizují prostřednictvím trvalého a stabilního provozu technologických aktiv nasazených do cloudu. Tato část architektury přechodu na cloud provádí čtenáře různými možnostmi přechodu na provozní správu v cloudu.
+Zajištění [cloudové strategie](../strategy/index.md) vyžaduje solidní plánování, připravenost a přijetí. Ale je to průběžný provoz digitálních aktiv, který zajišťuje konkrétní obchodní výsledky. Bez plánu spolehlivého a dobře spravovaného provozu cloudových řešení ale toto úsilí přinese jen malé výsledky. Následující cvičení vám pomohou rozvíjet obchodní a technické přístupy potřebné k zajištění cloudové správy, která je základem průběžných provozních operací.
 
-## <a name="actionable-best-practices"></a>Osvědčené postupy s praktickým využitím
+## <a name="getting-started"></a>Začínáme
 
-Moderní řešení provozní správy poskytují multicloudové zobrazení provozu. Aktiva spravovaná prostřednictvím následujících doporučených postupů se mohou nacházet v cloudu, v už existujícím datacentru nebo dokonce u konkurenčního poskytovatele cloudu. Tato architektura v současnosti zahrnuje dva referenční doporučené postupy pro zajištění vyspělé provozní správy v cloudu:
+V rámci přípravy na tuto fázi životního cyklu přechodu na cloud architektura navrhuje následující cvičení:
 
-- [Správa serverů v Azure:](./azure-server-management/index.md) Tento průvodce onboardingem slouží pro začlenění služeb a nástrojů nativních pro cloud, které jsou pro provozní správu potřeba.
-- [Hybridní monitorování:](./monitor/index.md) Celá řada zákazníků už značně investovala do System Center Operations Manageru. Těmto zákazníkům tento průvodce hybridním monitorováním pomáhá porovnat nástroje pro vytváření sestav nativní pro cloud s nástroji Operations Manageru. Toto porovnání usnadňuje rozhodování, které nástroje využít pro provozní správu.
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Vytvoření směrného plánu správy</h3>
+Definujte klasifikace závažnosti, nástroje pro správu cloudu a procesy potřebné k zajištění vašeho minimálního závazku pro provozní správu.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Definování obchodních závazků</h3>
+Zdokumentujte podporované úlohy, stanovte provozní závazky v rámci firmy a odsouhlaste si investice do správy cloudu pro jednotlivé úlohy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Rozšíření směrného plánu správy</h3>
+Na základě obchodních závazků a provozních rozhodnutí využijte uvedené osvědčené postupy k implementaci požadovaných nástrojů pro správu cloudu.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Pokročilé principy návrhu a provozu</h3>
+Platformy nebo úlohy, které vyžadují vyšší úroveň obchodních závazků, mohou vyžadovat hlubší revizi architektury, aby bylo možné pro ně zajistit potřebnou odolnost a spolehlivost.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>Cloudový provoz
+## <a name="scalable-cloud-management-methodology"></a>Škálovatelná metodika správy cloudu
 
-Oba tyto osvědčené postupy se zaměřují na budoucí metodologie pro provozní správu.
+Výše uvedené kroky vytvářejí akční přístupy pro zajištění metodiky správy architektury přechodu na cloud.
 
-![Metodologie Manage architektury přechodu na cloud (CAF)](../_images/manage/caf-manage.png)
+![Metodika správy v architektuře přechodu na cloud](../_images/manage/caf-manage.png)
 
-**Obchodní rovnováha:** V rámci metodologie Manage se všechny úlohy klasifikují z hlediska závažnosti a obchodní hodnoty. Tato klasifikace se dá následně měřit prostřednictvím analýz dopadu, které vypočítávají ztráty hodnoty související se snížením výkonu nebo přerušením provozu. Na základě tohoto měřitelného dopadu na výnosy mohou týmy zajišťující cloudový provoz v rámci firmy vytvořit prostředí, které vyvažuje náklady a výkon.
+## <a name="creating-a-balanced-cloud-portfolio"></a>Vytvoření vyrovnaného cloudového portfolia
 
-**Disciplíny cloudového provozu:** Jakmile je zajištěná obchodní rovnováha, je mnohem jednodušší sledovat odpovídající disciplíny cloudového provozu pro každou úlohu a vytvářet na jejich základě sestavy. Rozhodování v rámci jednotlivých disciplín pak může vést k závazkům, které jsou dobře srozumitelné z obchodního hlediska. Díky tomuto přístupu založenému na spolupráci se zainteresované strany stávají partnery při hledání správného poměru cena/výkon.
+Jak už bylo uvedeno v článku zaměřeném na [obchodní rovnováhu](./considerations/business-alignment.md), ne všechny úlohy jsou pro firmy klíčové. Každé portfolio zahrnuje různé úrovně potřeb provozní správy. Úsilí o zajištění obchodní rovnováhy pomáhá při podchycování dopadů na chod firmy a vyjednávání nákladů na správu, aby se zajistily nejvhodnější procesy a nástroje provozní správy.
 
-- **Inventarizace a zajištění přehledu:** Provozní správa vyžaduje přinejmenším možnost inventarizace aktiv a zajištění přehledu o stavu jejich spuštění.
-- **Provozní dodržování předpisů:** Klíčem k zajištění provozních očekávání je pravidelná správa konfigurace, rozsahu, nákladů a výkonu jednotlivých aktiv.
-- **Ochrana a zotavení:** Minimalizace provozních přerušení a zrychlené obnovení pomáhá zmírnit snížení výkonu a jeho dopad na náklady. Základními aspekty této disciplíny jsou detekce a obnovení.
-- **Provoz platforem:** Všechna prostředí IT obsahují sadu běžně využívaných platforem. Tyto platformy mohou zahrnovat úložiště dat, jako jsou SQL Server nebo HDInsight. Mezi další běžné platformy patří kontejnerová řešení jako Kubernetes nebo AKS. Zajištění vyspělosti provozu platforem se soustředí na přizpůsobení provozu na základě toho, jak jsou tyto běžné platformy nasazené, nakonfigurované a využívané jednotlivými úlohami.
-- **Provoz úloh:** Na nejvyšší úrovni provozní vyspělosti mohou týmy zajišťující cloudový provoz ladit provoz pro úlohy, které jsou pro obchodní úspěch zásadní. Pro tyto klíčové úlohy mohou dostupná data pomáhat při automatizaci nápravných akcí, nastavování velikosti nebo ochrany na základě jejich využití.
+## <a name="objective-of-this-content"></a>Cíle tohoto obsahu
 
-Při dalším podrobnějším architektonickém rozhodování ohledně jednotlivých úloh vám v rámci výše uvedených disciplín mohou pomoci další průvodci, například [Architektura pro kontrolu návrhu (kódový název: Principy návrhu v cloudu)](https://docs.microsoft.com/azure/architecture/reliability).
+Pokyny v této části architektury přechodu na cloud slouží dvěma účelům:
 
-Tato část architektury přechodu na cloud bude tato témata dále rozvíjet s cílem zajistit vyspělý cloudový provoz v rámci vaší organizace.
+- Poskytnutí příkladů praktických přístupů k provozní správě představujících běžná prostředí, se kterými se zákazníci často setkávají
+- Pomoc při vytváření individuálních řešení správy na základě obchodních závazků
+
+Tento obsah je určený pro použití týmem cloudového provozu. Je relevantní také pro cloudové architekty, kteří potřebují vyvinout pevný základ cloudového provozu nebo principy cloudových návrhů.
+
+## <a name="intended-audience"></a>Zamýšlená cílová skupina
+
+Obsah v architektuře přechodu na cloud má vliv na obchodní aktivity, technologie a kulturu podniků. Tato část architektury přechodu na cloud se ve velké míře věnuje vedoucím pracovníkům v oblasti provozu IT, zásad správného řízení IT, financí a obchodu a týmům starajícím se o sítě, identity a přechod na cloud. Mezi těmito osobami existují různé závislosti a cloudoví architekti využívající tyto pokyny proto budou muset zvolit přístup, který je usnadní. Jednání s těmito týmy obvykle nebývá jednorázové.
+
+Cloudový architekt slouží jako vizionář a zprostředkovatel, který má tyto cílové skupiny dát dohromady. Obsah v této kolekci průvodců je určený k tomu, aby cloudovým architektům pomohl usnadnit správnou konverzaci se správnou cílovou skupinou, která umožní přijetí nezbytných rozhodnutí. Obchodní transformace, kterou umožňuje cloud, závisí na schopnosti cloudového architekta pomáhat s přijímáním obchodních a IT rozhodnutí.
+
+**Specializace cloudových architektů v této části:** Jednotlivé části architektury přechodu na cloud představují různé specializace nebo varianty role cloudových architektů. Tato část architektury přechodu na cloud je určená pro cloudové architekty, kteří se zajímají o provoz a správu nasazovaných řešení. V rámci této architektury se tito specialisté často označují jako *provozní pracovníci cloudu* nebo souhrnně *tým cloudového provozu*.
+
+## <a name="use-this-guide"></a>Použití tohoto průvodce
+
+Pokud chcete postupovat podle tohoto průvodce od začátku do konce, tento obsah vám pomůže s vytvořením robustní strategie cloudového provozu. Pokyny vás provedou teorií a implementací takové strategie.
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>Další kroky
+
+Využijte tuto metodiku ke [stanovení jasných obchodních závazků](./considerations/business-alignment.md).
+
+> [!div class="nextstepaction"]
+> [Stanovení jasných obchodních závazků](./considerations/business-alignment.md)

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223623"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547905"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -58,7 +58,7 @@ Zajištění, aby aplikace a služby migrované do cloudu mohly využívat cloud
 
 Pro zajištění podpory tohoto přístupu je potřeba, aby vaše cloudové prostředky byly schopné komunikovat přímo s místními systémy prostřednictvím kombinace [hybridních sítí](../software-defined-network/hybrid.md) a [doménových služeb hostovaných v cloudu](../identity/index.md#cloud-hosted-domain-services). Cloudová virtuální síť pak bude fungovat jako síťové rozšíření místního prostředí. Díky tomu budou úlohy hostované v cloudu moct komunikovat přímo s místními systémy protokolování a generování sestav.
 
-Tento přístup využívá stávající investice do nástrojů pro monitorování s minimálními úpravami aplikací nebo služeb nasazených v cloudu. Často se jedná o nejrychlejší přístup k zajištění podpory monitorování během migrace typu „lift and shift“. Nebudou se však zachytávat data protokolů vygenerovaná cloudovými prostředky PaaS a SaaS a vynechají se všechny protokoly související s virtuálními počítači vygenerované samotnou cloudovou platformou, jako je například stav virtuálních počítačů. Tento model by proto měl být pouze dočasným řešením, dokud nedojde k implementaci ucelenějšího řešení hybridního monitorování.
+Tento přístup využívá stávající investice do nástrojů pro monitorování s minimálními úpravami aplikací nebo služeb nasazených v cloudu. Často se jedná o nejrychlejší přístup k zajištění podpory monitorování během migrace typu „lift and shift“. Nebudou se ale zachytávat data protokolů vygenerovaná cloudovými prostředky PaaS a SaaS a vynechají se všechny protokoly související s virtuálními počítači vygenerované samotnou cloudovou platformou, jako je například stav virtuálních počítačů. Tento model by proto měl být pouze dočasným řešením, dokud nedojde k implementaci ucelenějšího řešení hybridního monitorování.
 
 Pouze místní prostředí &ndash; předpoklady:
 
@@ -69,7 +69,7 @@ Pouze místní prostředí &ndash; předpoklady:
 
 ### <a name="gateway-aggregation"></a>Agregace pomocí brány
 
-Ve scénářích, kde je objem cloudových telemetrických dat příliš velký nebo stávající místní systémy monitorování vyžadují před zpracováním dat protokolů jejich úpravu, může být potřeba služba [agregace dat protokolů pomocí brány](/azure/architecture/patterns/gateway-aggregation).
+Ve scénářích, kde je objem cloudových telemetrických dat příliš velký nebo stávající místní systémy monitorování vyžadují před zpracováním dat protokolů jejich úpravu, může být potřeba služba [agregace dat protokolů pomocí brány](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation).
 
 K vašemu poskytovateli cloudu se nasadí služba brány. Příslušné aplikace a služby se pak nakonfigurují tak, aby odesílaly telemetrická data do brány, a ne do výchozího systému protokolování. Brána pak může data zpracovat (agregovat, kombinovat nebo jinak formátovat) a následně je odeslat do služby monitorování pro účely ingestování a analýzy.
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224033"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548465"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migrace architektury přechodu na cloud
 
@@ -30,7 +30,7 @@ Předpokladem pro model migrace architektury přechodu na cloud je, aby vaše or
 
 ## <a name="envision-an-end-state"></a>Vize koncového stavu
 
-Před zahájením migrace je důležité udělat si hrubou představu požadovaného koncového stavu. Následující diagram ukazuje místní výchozí bod infrastruktury, aplikací a dat, který definuje vaše *digitální aktiva*. Během procesu migrace se tyto prostředky převedou s využitím jedné z pěti strategií migrace popsaných v tématu [5R racionalizace](../../digital-estate/5-rs-of-rationalization.md).
+Před zahájením migrace je důležité udělat si hrubou představu o požadovaném koncovém stavu. Následující diagram ukazuje místní výchozí bod infrastruktury, aplikací a dat, který definuje vaše *digitální aktiva*. Během procesu migrace se tyto prostředky převedou s využitím jedné z pěti strategií migrace popsaných v tématu [5R racionalizace](../../digital-estate/5-rs-of-rationalization.md).
 
 ![Infografika možností migrace](../../_images/migrate/migration-options.png)
 

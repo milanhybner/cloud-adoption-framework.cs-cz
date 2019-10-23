@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d2f699596d6464deba81690827de00bab4a33520
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e816420e99bfb712db3ad8064b4c077df3edfcee
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026314"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548189"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Průvodce monitorováním cloudu: Úvod
 
@@ -36,7 +36,7 @@ Cílem této příručky je poskytnout podrobné referenční informace, které 
 * Nejvhodnější řešení pro monitorování hybridních a privátních úloh a úloh nativních pro Azure.
 * Doporučený způsob monitorování pro infrastrukturu a aplikace jako celek. Zahrnuje nasaditelná řešení pro tyto běžné úlohy migrace do Azure.
 
-Tato příručka není praktický průvodce použitím nebo konfigurací jednotlivých řešení a služeb Azure, ale na tyto zdroje odkazuje, když to jde a je to vhodné. Po přečtení této příručky porozumíte tomu, jak úspěšně provozovat úlohy s využitím doporučených postupů a vzorů.
+Tato příručka není praktický průvodce použitím nebo konfigurací jednotlivých řešení a služeb Azure, ale na tyto zdroje odkazuje, když to jde a je to vhodné. Po přečtení této příručky porozumíte tomu, jak úspěšně provozovat úlohy s využitím osvědčených postupů a vzorů.
 
 Pokud Azure Monitor a System Center Operations Manager neznáte a chtěli byste se s nimi nejdřív blíže seznámit a pochopit, čím jsou tak jedinečné a jaké jsou mezi nimi rozdíly, projděte si [přehled našich monitorovacích platforem](./platform-overview.md).
 
