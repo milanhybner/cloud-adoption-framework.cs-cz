@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s výběrem oblastí cloudových platforem.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547848"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769409"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
@@ -44,7 +44,7 @@ Když výše uvedenou problematiku probereme blíž, začnete rozumět tomu, jak
 
 Každé robustní cloudové nasazení vyžaduje dobře rozváženou síť, která bere v úvahu oblasti Azure. Po zvážení výše uvedených charakteristik pro určení, do kterých oblastí nasazovat, je potřeba nasadit síť. I když vyčerpávající diskuze na téma sítí přesahuje rozsah tohoto článku, je nutné vzít v úvahu některé okolnosti:
 
-1. Oblasti Azure se nasazují v párech. V případě závažného selhání oblasti je druhá oblast v rámci stejné geopolitické hranice* označená jako spárovaná oblast. Nasazení do spárovaných oblastí jako primární a sekundární strategie odolnosti je potřeba promyslet. \* Významnou výjimkou je Azure Brazílie, jejíž spárovanou oblastí je USA (střed) – jih. Další informace najdete [tady](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. Oblasti Azure se nasazují v párech. V případě závažného selhání oblasti je druhá oblast v rámci stejné geopolitické hranice* označená jako spárovaná oblast. Nasazení do spárovaných oblastí jako primární a sekundární strategie odolnosti je potřeba promyslet. \* Významnou výjimkou je Azure Brazílie, jejíž spárovanou oblastí je USA (střed) – jih. Další informace najdete v tématu [Spárované oblasti Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. Azure Storage podporuje [geograficky redundantní úložiště (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). To znamená, že se tři kopie vašich dat ukládají v rámci primární oblasti a tři další kopie se ukládají do spárované oblasti. Párování úložiště pro GRS nejde změnit.
     1. Tuto možnost spárované oblasti mohou využít služby, které se spoléhají na GRS služby Azure Storage. Je k tomu potřeba, aby vaše aplikace i síť tuto možnost podporovaly.
     1. Pokud neplánujete využívat GRS k zajištění potřeb vaší místní odolnosti, doporučuje se, abyste _NEVYUŽÍVALI_ spárovanou oblast jako sekundární. V případě regionálního selhání bude při migraci na prostředky v spárované oblasti vyvíjen velký tlak. Pokud se dokážete tomuto tlaku vyhnout, můžete si zajistit vyšší rychlost během obnovování, a to obnovením do alternativní lokality.
