@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9ac7b930018e8eb8a8d750692de808be943db0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558126"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805815"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Obchodní závazek ve správě cloudu
 
@@ -54,6 +54,8 @@ Operations Management směrného plánu bude sloužit jako počáteční výchoz
 
 V tradičním místním prostředí se náklady na správu prostředí běžně předpokládají jako SUNK náklady vlastněné IT operacemi. V cloudu je Správa záměrné rozhodnutím s přímým dopadem na rozpočtové účely. Náklady na jednotlivé funkce správy mohou být přímo přiděleny každému zatížení, které je nasazeno do cloudu. Tento přístup umožňuje lepší kontrolu, ale vytváří požadavek na týmy cloudových operací a týmy cloudových strategií, aby se nejdřív zavázali k dohodě.
 
+Organizace také mohou zvolit, že [některé z jejich probíhajících funkcí správy pro poskytovatele služeb](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Tito poskytovatelé služeb můžou využít [Azure Lighthouse](https://azure.com/lighthouse) a poskytnout tak větší přesnost a kontrolu nad tím, že budou poskytovat přístup ke svým prostředkům, společně s větší transparentností do akcí prováděných poskytovateli služeb.
+
 **Delegovaná odpovědnost:** Vzhledem k tomu, že není nutné centralizovat a předpokládat provozní režii, operace IT pro mnoho organizací zvažuje nové přístupy. Jedním ze společného přístupu se říká delegovaná odpovědnost. V cloudovém středisku modelu vynikajících platforem a automatizace platforem poskytují nástroje pro samoobslužné řízení, které můžou využívat firemní týmy s provozními službami, nezávisle na centrálním týmu IT. Tento přístup poskytuje obchodním zúčastněným účastníkům úplnou kontrolu nad rozpočty souvisejícími se správou. Umožňuje také CCoE, aby bylo zajištěno, že je správně implementována minimální sada guardrails. V tomto modelu funguje jako zprostředkovatel a příručka, která usnadňuje rozhodování v podniku. Obchodní operace, které přihlíží ke každodenním operacím závislých úloh.
 
 **Centralizovaná odpovědnost:** Požadavky na dodržování předpisů, technická složitost a některé modely sdílených služeb můžou vyžadovat centrální model IT. V tomto modelu nadále udržuje odpovědnost za správu operací. V takovém případě může být návrh prostředí, ovládací prvky pro správu a nástroj řízení přístupu centrálně spravován a kontrolován, což omezuje roli zúčastněných účastníků v rámci poskytování závazků pro správu. Díky tomu, že díky cloudovým přístupům a nákladům na architekturu získáte mnohem jednodušší centralizované oddělení IT, aby komunikovalo s náklady a úrovní správy pro jednotlivé úlohy.
@@ -66,7 +68,7 @@ První krok se zavazuje k přístupu k odpovědnosti, který bude tyto závazky 
 
 ## <a name="cloud-tenancy"></a>Cloudové architektury
 
-I když není doporučeno, není běžné, že podnik podporuje prostředky ve více klientech. Článek v Lighthouse pro víceklientské prostředí nabízí několik příkladů důvodů pro víceklientské prostředí Azure. V závislosti na příkladech v tomto článku se jedná o další závazek k architektuře.
+U většiny firem je správa jednodušší, pokud jsou všechny assety umístěny v jednom tenantovi. Některé organizace ale můžou potřebovat udržovat víc tenantů. Článek o [centralizaci operací správy pomocí Azure Lighthouse](../centralize-operations.md) nabízí několik příkladů, kdy podniky můžou vyžadovat víceklientské prostředí Azure.
 
 **Bude tato úloha umístěná v jednom tenantovi Azure, společně se všemi ostatními úlohami?**
 

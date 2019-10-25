@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 294ea288af478e0e451c9fd38663a26acb10359d
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 44bfe58f86a442a5129eee791e3da0f7a6b68031
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682596"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805791"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Úroveň správy napříč obory pro správu cloudu
 
@@ -33,6 +33,8 @@ Následující úrovně správy (kromě výše uvedeného obrázku) jsou několi
 - **Specializace úloh**: u pracovních procesů, které jsou skutečně důležité, může dojít k výraznému snížení nákladů na správu této úlohy. Specializace úloh využívá telemetrii úloh k určení dalších přístupů ke každodenní správě. Stejná data často označují vylepšení automatizace, nasazení a návrhu, která by vedla k větší stabilitě, spolehlivosti a odolnosti nad rámec toho, co je možné jenom s provozní správou.
 - **Nepodporované**: je stejně důležité, aby komunikovaly s běžnými procesy správy, které nebudou dodány v oborech správy cloudu pro jakékoli zatížení klasifikované jako nepodporované nebo nepostradatelné.
 
+Organizace se také mohou rozhodnout, že [externí funkce související s jednou nebo více z těchto úrovní správy k poskytovateli služeb](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Tito poskytovatelé služeb můžou využít [Azure Lighthouse](https://azure.com/lighthouse) k zajištění větší přesnosti a transparentnosti.
+
 Zbývající články v této sérii vysvětlují počet procesů, které se běžně v rámci každého z těchto pravidel vyskytují.
 V rámci paralelní [příručky Azure Management](../azure-management-guide/index.md) demonstruje nástroje, které můžou podporovat jednotlivé procesy. Pokud potřebujete pomoc s vytvářením standardních hodnot správy, začněte s průvodcem pro správu Azure. Po vytvoření směrného plánu Tato řada článků a doprovodné osvědčené postupy mohou pomoci tuto základnu rozšířit a definovat další úrovně podpory správy.
 
@@ -46,8 +48,8 @@ Ve většině případů se výše uvedená úroveň správy na úrovni standard
 - **Provozní dodržování předpisů:** Běžnou správou konfigurace, velikosti, nákladů a výkonu assetů je klíč pro udržení očekávání výkonu a standardních hodnot správy.
 - **Ochrana a obnovení:** Minimalizace provozních přerušení a urychlení obnovení každé z nich, aby se předešlo ztrátám výkonu a vlivům na výnosy. Zjišťování a obnovení jsou zásadními aspekty tohoto oboru v rámci všech standardních hodnot správy.
 
-Úroveň specializace platformy, kterou Správa přebírá z procesů a nástrojů zarovnaných k provozním oborům platformy.
-Podobně platí, že úroveň specializace úlohy správy se vyžádá z procesů a nástrojů zarovnaných k provozním oborům úloh.
+Úroveň specializace platformy, kterou Správa přebírá z procesů a nástrojů zarovnaných k provozním oborům platformy. Podobně platí, že úroveň specializace úlohy správy se vyžádá z procesů a nástrojů zarovnaných k provozním oborům úloh.
+
   
 ## <a name="next-steps"></a>Další kroky
 
