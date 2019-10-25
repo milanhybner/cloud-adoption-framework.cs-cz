@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221416"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888869"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Služby a nástroje pro správu serveru Azure
 
@@ -60,7 +60,7 @@ Pro data souborového serveru je [Azure File Sync](https://docs.microsoft.com/az
 
 Do této kategorie patří několik služeb. Můžou vám pomůžou automatizovat provozní úlohy, spravovat konfigurace serverů, měřit dodržování předpisů aktualizací, plánovat aktualizace a zjišťovat změny serverů. Tyto služby jsou jádrem podpory pokračujících operací.
 
-- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments) automatizuje nasazení oprav v celém prostředí, včetně nasazení instancí operačních systémů, které běží mimo Azure. Podporuje operační systémy Windows i Linux a sleduje klíčové chyby zabezpečení a neshodující se s operačním systémem a způsobuje chybějící opravy.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatizuje nasazení oprav v celém prostředí, včetně nasazení instancí operačních systémů, které běží mimo Azure. Podporuje operační systémy Windows i Linux a sleduje klíčové chyby zabezpečení a neshodující se s operačním systémem a způsobuje chybějící opravy.
 - [Change Tracking a inventář](https://docs.microsoft.com/azure/automation/change-tracking) nabízí přehled o softwaru, který je spuštěný ve vašem prostředí, a obsahuje všechny změny, ke kterým došlo.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umožňuje spouštět skripty Pythonu a PowerShell nebo Runbooky pro automatizaci úloh napříč vaším prostředím. Při použití s [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)můžete své Runbooky rozmístit i na místní prostředky.
 - [Konfigurace stavu Azure Automation](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umožňuje doručovat konfigurace požadovaných stavů prostředí PowerShell přímo z Azure. V takovém případě DSC umožňuje monitorovat a zachovávat konfigurace operačního systému a úloh v hostovaném operačním systému.
@@ -71,7 +71,7 @@ Při přijetí a přesunu do cloudu se vytvoří nové výzvy ke správě a při
 
 Návrh zásad správného řízení pro standardní organizace se často liší od návrhu zásad správného řízení pro komplexní podniky. Další informace o osvědčených postupech pro zásady správného řízení pro standardní organizaci najdete v tématu [standardní příručka zásad správného řízení](../../govern/guides/standard/index.md). Další informace o osvědčených postupech pro zásady správného řízení pro komplexní podnik najdete v tématu [Příručka zásad správného řízení pro komplexní podniky](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Informace o fakturaci
+## <a name="billing-information"></a>Fakturační údaje
 
 Další informace o cenách pro služby Azure Management Services najdete na těchto stránkách:
 

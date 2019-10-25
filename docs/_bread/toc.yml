@@ -19,6 +19,13 @@
         - name: Připraveno
           tocHref: /azure/cloud-adoption-framework/ready/
           topicHref: /azure/cloud-adoption-framework/ready
+          items:
+            - name: Osvědčené postupy
+              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+            - name: Osvědčené postupy
+              tocHref: /azure/security/fundamentals/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
         - name: Přijetí
           items:
             - name: Migrace

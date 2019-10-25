@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683280"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888895"
 ---
 # <a name="democratize-data"></a>Demokratizujte data
 
@@ -47,7 +47,7 @@ Sdílení dat může rychle vydávat MVP, který se dá použít v zákaznickýc
 Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Toto je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které by měly být zváženy, jakmile je zákazníkem hypotéza. Následuje několik příkladů těchto otázek:
 
 - **Je citlivá sdílená data?** [Data by se měla klasifikovat](../../govern/policy-compliance/data-classification.md) před jakýmkoli veřejným sdílením, aby se chránily zájmy zákazníků a společnosti.
-- **Pokud jsou data citlivá, jsou zabezpečená?** Ochrana citlivých dat by měla být požadavek na všechna democratized data. Příklad úlohy zaměřené na [zabezpečení datových řešení](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md) poskytuje několik odkazů na zabezpečení dat.
+- **Pokud jsou data citlivá, jsou zabezpečená?** Ochrana citlivých dat by měla být požadavek na všechna democratized data. Příklad úlohy zaměřené na [zabezpečení datových řešení](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) poskytuje několik odkazů na zabezpečení dat.
 - **Je data v katalogu?** Shromažďování podrobností o datech, která se sdílejí, bude pomoci při dlouhodobé správě dat. Nástroje pro dokumentování dat, jako je Azure Data Catalog, můžou tento proces v cloudu mnohem jednodušeji udělat. Pokyny týkající se [poznámek na data](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) a [dokumentaci zdrojů dat](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) vám pomůžou zrychlit proces.
 
 V případě, že democratization dat je důležité pro hypotézy zaměřené na zákazníky, by řízení sdílených dat mělo být někde v plánu vydávání verzí, aby se chránily zákazníci, spotřebitelé dat a společnost.

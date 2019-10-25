@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549091"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888840"
 ---
 # <a name="cloud-governance-capabilities"></a>Možnosti zásad správného řízení cloudu
 
@@ -63,7 +63,7 @@ Možnost zásad správného řízení cloudu je obvykle poskytována pracovním 
 Níže jsou zastoupeni účastníci, kteří se často účastní aktivit zásad správného řízení cloudu:
 
 - Vedoucí od střední správy a přímých přispěvatelů v klíčových rolích, které jsou určené k zastupování firmy, vám pomůžou vyhodnotit tolerance rizik.
-- Poskytované možnosti zásad správného řízení cloudu jsou rozšířením [schopností cloudové strategie](./cloud-strategy.md). Stejně jako CIO a obchodní vedoucí se očekává, že budou zapojeny do možností strategie cloudu, očekává se, že jejich přímé sestavy budou zapojeny do aktivit zásad správného řízení cloudu.
+- Možnosti zásad správného řízení cloudu se doručují rozšířením [schopností cloudové strategie](./cloud-strategy.md). Stejně jako CIO a obchodní vedoucí se očekává, že budou zapojeny do možností strategie cloudu, očekává se, že jejich přímé sestavy budou zapojeny do aktivit zásad správného řízení cloudu.
 - Podnikoví zaměstnanci, kteří jsou členy obchodní jednotky, kteří úzce pracují s vedením podnikového podnikání, by měli mít možnost rozhodovat o podnikovém a technickém riziku.
 - Zaměstnanci v oblasti informačních technologií (IT) a zabezpečení informací (jsou), kteří rozumí technickým aspektům transformace cloudu, můžou obsluhovat rotující kapacitu namísto konzistentního poskytovatele možností zásad správného řízení cloudu.
 
