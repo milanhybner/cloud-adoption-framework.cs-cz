@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023842"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888917"
 ---
 # <a name="migration-tools-decision-guide"></a>Průvodce rozhodováním ohledně nástrojů pro migraci
 
@@ -32,7 +32,7 @@ Zodpovězení následujících otázek vám pomůže při rozhodování na zákl
 - **Běží vaše aplikace v současné době na vyhrazených virtuálních počítačích nebo sdílí hosting s jinými aplikacemi?** Aplikace běžící na vyhrazených virtuálních počítačích je snadnější migrovat na varianty hostingu PaaS než aplikace běžící na sdílených serverech.
 - **Překročí migrace vašich dat šířku pásma vaší sítě?** Kapacita sítě mezi místními zdroji dat a Azure může představovat kritický bod migrace dat. Pokud data, která potřebujete přenést, čelí omezením šířky pásma, která brání efektivní nebo včasné migraci, pravděpodobně budete muset prozkoumat alternativní mechanismy přenosu nebo mechanismy offline přenosu. [Článek o replikaci migrace](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) v architektuře přechodu na cloud popisuje, jakým způsobem můžou omezení replikace ovlivnit migraci. V rámci posuzování migrace se spojte se svými IT týmy a ověřte, že šířka pásma místní sítě nebo sítě WAN dokáže zvládnout vaše požadavky na migraci. Projděte si také [rozšířený scénář migrace pro případ, kdy požadavky na úložiště během migrace překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Využívá vaše aplikace stávající kanál DevOps?** Azure Pipelines je v řadě případů možné snadno refaktorovat a umožnit nasazení aplikací do cloudových hostitelských prostředí.
-- **Mají vaše data složité požadavky na úložiště?** Produkční aplikace většinou vyžadují úložiště dat, které je vysoce dostupné, nabízí funkci AlwaysOn a podobné funkce pro zajištění dostupnosti a kontinuity služeb. Všechny varianty spravované databáze založené na modelu Azure PaaS, jako jsou služby Azure SQL Database, Azure Database for MySQL nebo Azure Cosmos DB, nabízejí smlouvy o úrovni služeb zajišťující 99,99% dostupnost. Naopak SQL Server založený na modelu IaaS na virtuálních počítačích Azure nabízí smlouvy o úrovni služeb zajišťující 99,95% dostupnost pro jednu instanci. Pokud vaše data není možné modernizovat pro varianty úložiště PaaS, zajištění vyšší dostupnosti IaaS bude zahrnovat složitější scénáře ukládání dat, například provoz clusterů SQL Serveru s technologií AlwaysOn a průběžnou synchronizaci dat mezi jednotlivými instancemi. To může zahrnovat výrazné náklady na hostování a údržbu. Proto je při zvažování možností migrace dat důležité najít rovnováhu mezi požadavky na dostupnost, obtížností modernizace a celkovým vlivem na rozpočet.
+- **Mají vaše data složité požadavky na úložiště?** Produkční aplikace většinou vyžadují úložiště dat, které je vysoce dostupné a nabízí funkci AlwaysOn a podobné funkce pro zajištění dostupnosti a kontinuity služeb. Všechny varianty spravované databáze založené na modelu Azure PaaS, jako jsou služby Azure SQL Database, Azure Database for MySQL nebo Azure Cosmos DB, nabízejí smlouvy o úrovni služeb zajišťující 99,99% dostupnost. Naopak SQL Server založený na modelu IaaS na virtuálních počítačích Azure nabízí smlouvy o úrovni služeb zajišťující 99,95% dostupnost pro jednu instanci. Pokud vaše data není možné modernizovat pro varianty úložiště PaaS, zajištění vyšší dostupnosti IaaS bude zahrnovat složitější scénáře ukládání dat, například provoz clusterů SQL Serveru s technologií AlwaysOn a průběžnou synchronizaci dat mezi jednotlivými instancemi. To může zahrnovat výrazné náklady na hostování a údržbu. Proto je při zvažování možností migrace dat důležité najít rovnováhu mezi požadavky na dostupnost, obtížností modernizace a celkovým vlivem na rozpočet.
 
 ## <a name="innovation-and-migration"></a>Inovace a migrace
 
