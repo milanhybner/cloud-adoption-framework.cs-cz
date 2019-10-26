@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547818"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915024"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
@@ -50,7 +50,7 @@ Kompletní racionalizace rozsáhlého digitálního majetku je náchylná k rizi
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Inventář: omezení datových bodů zjišťování
 
-Několik organizací investuje čas, energii a náklady na zajištění přesného digitálního majetku v reálném čase. V případě ztráty, krádeže, aktualizačních cyklů a přihlašování zaměstnanců se často podrobná sledování prostředků zařízení koncových uživatelů. Technologie NÁVRATNOSTi správného inventáře serverů a aplikací v tradičním místním datacentru je ale často nízká. Většina organizací IT má další problémy, které je potřeba řešit, než sledování využívání dlouhodobých assetů v datovém centru.
+Několik organizací investuje čas, energii a náklady na zajištění přesného digitálního majetku v reálném čase. Ztráty, krádeže, aktualizační cykly a registrace zaměstnanců často opravňují k podrobnému sledování prostředků zařízení koncových uživatelů. Technologie NÁVRATNOSTi správného inventáře serverů a aplikací v tradičním místním datacentru je ale často nízká. Většina organizací IT má další problémy, které je potřeba řešit, než sledování využívání dlouhodobých assetů v datovém centru.
 
 V cloudové transformaci se přímo korelují s provozními náklady. Pro správné plánování se vyžadují přesné údaje inventáře. Současné možnosti kontroly životního prostředí můžou zpozdit rozhodování na základě týdnů nebo měsíců. Pár štychů může zrychlit shromažďování dat.
 
