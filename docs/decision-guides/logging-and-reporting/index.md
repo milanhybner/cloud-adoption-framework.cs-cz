@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547905"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915046"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -26,7 +26,7 @@ Přejít na: [Plánování infrastruktury monitorování](#planning-your-monitor
 
 Inflexní bod při určování strategie cloudového protokolování a generování sestav vychází hlavně ze stávajících investic vaší organizace do provozních procesů a do určité míry i z vašich případných požadavků na podporu strategie s více cloudy.
 
-Aktivity v cloudu je možné protokolovat a generovat jejich sestavy několika způsoby. Dvě běžné možnosti softwaru jako služby (SaaS), které vycházejí z návrhu předplatného a počtu předplatných, jsou protokolování nativní pro cloud a centrální protokolování.
+Aktivity v cloudu je možné protokolovat a generovat jejich sestavy několika způsoby. Dvě běžné možnosti spravovaných služeb, které vycházejí z návrhu předplatného a počtu předplatných, jsou protokolování nativní pro cloud a centrální protokolování.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Plánování infrastruktury monitorování
 
