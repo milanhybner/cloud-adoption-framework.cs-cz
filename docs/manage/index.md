@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682712"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979892"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Správa cloudu v architektuře přechodu na cloud
 
-Zajištění [cloudové strategie](../strategy/index.md) vyžaduje solidní plánování, připravenost a přijetí. Ale je to průběžný provoz digitálních aktiv, který zajišťuje konkrétní obchodní výsledky. Bez plánu spolehlivého a dobře spravovaného provozu cloudových řešení ale toto úsilí přinese jen malé výsledky. Následující cvičení vám pomohou rozvíjet obchodní a technické přístupy potřebné k zajištění cloudové správy, která je základem průběžných provozních operací.
+Zajištění [cloudové strategie](../strategy/index.md) vyžaduje solidní plánování, připravenost a přijetí. Ale je to průběžný provoz digitálních aktiv, který zajišťuje konkrétní obchodní výsledky. Bez plánu spolehlivého a dobře spravovaného provozu cloudových řešení ale toto úsilí přinese jen malé výsledky. Následující cvičení pomáhají rozvíjet obchodní a technické přístupy potřebné k zajištění cloudové správy, která je základem průběžných provozních operací.
 
 ## <a name="getting-started"></a>Začínáme
 
@@ -126,11 +126,11 @@ Tento obsah je určený pro použití týmem cloudového provozu. Je relevantní
 
 ## <a name="intended-audience"></a>Zamýšlená cílová skupina
 
-Obsah v architektuře přechodu na cloud má vliv na obchodní aktivity, technologie a kulturu podniků. Tato část architektury přechodu na cloud se ve velké míře věnuje vedoucím pracovníkům v oblasti provozu IT, zásad správného řízení IT, financí a obchodu a týmům starajícím se o sítě, identity a přechod na cloud. Mezi těmito osobami existují různé závislosti a cloudoví architekti využívající tyto pokyny proto budou muset zvolit přístup, který je usnadní. Jednání s těmito týmy obvykle nebývá jednorázové.
+Obsah v architektuře přechodu na cloud má vliv na obchodní aktivity, technologie a kulturu podniků. Tato část architektury přechodu na cloud se ve velké míře věnuje vedoucím pracovníkům v oblasti provozu IT, zásad správného řízení IT, financí a obchodu a týmům starajícím se o sítě, identity a přechod na cloud. Mezi těmito osobami existují různé závislosti a cloudoví architekti využívající tyto pokyny proto musí volit přístup, který je usnadní. Jednání s těmito týmy obvykle nebývá jednorázové.
 
 Cloudový architekt slouží jako vizionář a zprostředkovatel, který má tyto cílové skupiny dát dohromady. Obsah v této kolekci průvodců je určený k tomu, aby cloudovým architektům pomohl usnadnit správnou konverzaci se správnou cílovou skupinou, která umožní přijetí nezbytných rozhodnutí. Obchodní transformace, kterou umožňuje cloud, závisí na schopnosti cloudového architekta pomáhat s přijímáním obchodních a IT rozhodnutí.
 
-**Specializace cloudových architektů v této části:** Jednotlivé části architektury přechodu na cloud představují různé specializace nebo varianty role cloudových architektů. Tato část architektury přechodu na cloud je určená pro cloudové architekty, kteří se zajímají o provoz a správu nasazovaných řešení. V rámci této architektury se tito specialisté často označují jako *provozní pracovníci cloudu* nebo souhrnně *tým cloudového provozu*.
+**Specializace cloudových architektů v této části:** Jednotlivé části architektury přechodu na cloud představují různé specializace nebo varianty role cloudových architektů. Tato část architektury přechodu na cloud je určená pro cloudové architekty, kteří se zajímají o provoz a správu řešení nasazení. V rámci této architektury se tito specialisté často označují jako *provozní pracovníci cloudu* nebo souhrnně *tým cloudového provozu*.
 
 ## <a name="use-this-guide"></a>Použití tohoto průvodce
 
@@ -140,7 +140,7 @@ Pokud chcete postupovat podle tohoto průvodce od začátku do konce, tento obsa
 
 ## <a name="next-steps"></a>Další kroky
 
-Využijte tuto metodiku ke [stanovení jasných obchodních závazků](./considerations/business-alignment.md).
+Využijte tuto metodiku ke stanovení jasných obchodních závazků.
 
 > [!div class="nextstepaction"]
 > [Stanovení jasných obchodních závazků](./considerations/business-alignment.md)
