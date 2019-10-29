@@ -1,27 +1,27 @@
 ---
-title: Začínáme s cestou k migraci do cloudu
+title: Zahájení cesty migrace do cloudu v Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Začínáme s cestou k migraci do cloudu
+description: Zahajte cestu migrace do cloudu v Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547822"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048317"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Začínáme s cestou k migraci do cloudu
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
-Přečtěte si, jak pomocí rozhraní pro přijetí Microsoft Cloud pro Azure zahájit cestu k migraci do cloudu. Tato architektura poskytuje komplexní pokyny pro přechod úloh starších verzí aplikací pomocí inovativních cloudových technologií.
+K zahájení cesty migrace do cloudu použijte rozhraní pro přijetí Microsoft Cloud pro Azure. Tato architektura poskytuje komplexní pokyny pro přechod úloh starších verzí aplikací do cloudu pomocí inovativních cloudových technologií.
 
 ## <a name="executive-summary"></a>Shrnutí vedoucího
 
-Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace, které se týkají ucelené cesty k přijetí do cloudu, počínaje cílovým obchodním výstupem a zarovnáním připravenosti na Cloud a posouzením jasně definovaných obchodních cílů. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na dokončení migrace místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
+Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace o cestě k přijetí cloudu, počínaje cílovým obchodním výsledkům a pak zarovnává připravenost a hodnocení cloudu s jasnými definovanými obchodními cíli. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na migraci místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
 
 Tato architektura je navržená hlavně pro cloudové architekty a týmy cloudové strategie, které provedou úsilí při přijímání v cloudu. Mnoho témat v tomto rozhraní je však relevantní pro jiné role napříč firmou. Cloudové architekty často slouží jako zprostředkovatelé k zapojení všech relevantních rolí. Tento souhrn výkonného vedení je navržený tak, aby před tím, než usnadnil konverzace, připravil různé role.
 

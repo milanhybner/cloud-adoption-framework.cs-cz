@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548828"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048401"
 ---
 # <a name="azure-fundamental-concepts"></a>Základní koncepty Azure
 
@@ -23,25 +23,25 @@ Poznejte základní koncepty a termíny používané v Azure a zjistěte, jak sp
 
 Než začnete vyvíjet úsilí o přechod do cloudu Azure, je užitečné poznat následující definice:
 
-- **Prostředek**: entita spravovaná pomocí Azure. Příkladem mohou být virtuální počítače Azure, virtuální sítě a účty úložiště.
-- **Předplatné**: logický kontejner pro vaše prostředky. Každý prostředek Azure je přidružený jen k jednomu předplatnému. Vytvoření předplatného je prvním krokem při přechodu na Azure.
-- **Účet Azure**: e-mailová adresa, kterou zadáte při vytváření předplatného Azure, je účet Azure pro toto předplatné. Strana přidružená k tomuto e-mailovému účtu zodpovídá za měsíční náklady, které nabíhají za prostředky v tomto předplatném. Při vytváření účtu Azure zadáváte kontaktní informace a platební údaje, jako je platební karta. Stejný účet Azure (e-mailovou adresu) můžete použít pro několik předplatných. Každé předplatné je přidružené jen k jednomu účtu Azure.
-- **Správce účtu**: strana přidružená k e-mailové adrese, která se používá k vytvoření předplatného Azure. Správce účtu zodpovídá za platby za všechny náklady vzniklé prostředky předplatného.
-- **Azure Active Directory** (Azure AD): cloudová služba pro správu identit a přístupu založená na Microsoftu. Azure AD umožňuje vašim zaměstnancům se přihlásit a získat přístup k prostředkům.
-- **Tenant Azure AD**: vyhrazená a důvěryhodná instance služby Azure AD. Tenant Azure AD se automaticky vytvoří, když si vaše organizace poprvé zaregistruje předplatné cloudových služeb Microsoftu, jako je Microsoft Azure, Microsoft Intune nebo Office 365. Tenant Azure představuje jednu organizaci.
-- **Adresář Azure AD**: každý tenant služby Azure AD má jeden, vyhrazený a důvěryhodný adresář. Tento adresář obsahuje uživatele, skupiny a aplikace tenanta. Slouží k provádění funkcí správy identit a přístupu pro prostředky tenanta. Adresář může být přidružen k několika předplatným, ale každé předplatné je přidruženo jen k jednomu adresáři.
-- **Skupiny prostředků**: logické kontejnery, které slouží k seskupení souvisejících prostředků v rámci předplatného. Každý prostředek může existovat jen v jedné skupině prostředků.
-- **Skupiny pro správu**: logické kontejnery, které používáte pro jedno nebo více předplatných. Definováním hierarchie skupin pro správu, předplatných, skupin prostředků a prostředků můžete efektivně spravovat přístup, zásady a dodržování předpisů prostřednictvím dědičnosti.
-- **Oblast**: sada datacenter Azure, která se nasazují do hraničního okruhu určeného pro latenci. Datacentra jsou propojena prostřednictvím vyhrazené oblastní sítě s nízkou latencí. Většina prostředků Azure se provozuje v konkrétní oblasti Azure.
+- **Prostředek:** Entita, která je spravovaná pomocí Azure. Příkladem mohou být virtuální počítače Azure, virtuální sítě a účty úložiště.
+- **Předplatné:** Logický kontejner pro vaše prostředky. Každý prostředek Azure je přidružený jen k jednomu předplatnému. Vytvoření předplatného je prvním krokem při přechodu na Azure.
+- **Účet Azure:** E-mailová adresa, kterou zadáte při vytváření předplatného Azure, je účet Azure pro předplatné. Strana přidružená k tomuto e-mailovému účtu zodpovídá za měsíční náklady, které nabíhají za prostředky v tomto předplatném. Při vytváření účtu Azure zadáváte kontaktní informace a platební údaje, jako je platební karta. Stejný účet Azure (e-mailovou adresu) můžete použít pro několik předplatných. Každé předplatné je přidružené jen k jednomu účtu Azure.
+- **Správce účtu:** Strana přidružená k e-mailové adrese, která se používá k vytvoření předplatného Azure. Správce účtu zodpovídá za platby za všechny náklady vzniklé prostředky předplatného.
+- **Azure Active Directory (Azure AD):** Cloudová služba pro správu identit a přístupu od Microsoftu. Azure AD umožňuje vašim zaměstnancům se přihlásit a získat přístup k prostředkům.
+- **Tenant Azure AD:** Vyhrazená a důvěryhodná instance služby Azure AD. Tenant Azure AD se automaticky vytvoří, když si vaše organizace poprvé zaregistruje předplatné cloudových služeb Microsoftu, jako je Microsoft Azure, Microsoft Intune nebo Office 365. Tenant Azure představuje jednu organizaci.
+- **Adresář služby Azure AD:** Každý tenant služby Azure AD má jeden, vyhrazený a důvěryhodný adresář. Tento adresář obsahuje uživatele, skupiny a aplikace tenanta. Slouží k provádění funkcí správy identit a přístupu pro prostředky tenanta. Adresář může být přidružen k několika předplatným, ale každé předplatné je přidruženo jen k jednomu adresáři.
+- **Skupiny prostředků:** Logické kontejnery, které slouží k seskupení souvisejících prostředků v rámci předplatného. Každý prostředek může existovat jen v jedné skupině prostředků.
+- **Skupiny pro správu:** Logické kontejnery, které používáte pro jedno nebo více předplatných. Definováním hierarchie skupin pro správu, předplatných, skupin prostředků a prostředků můžete efektivně spravovat přístup, zásady a dodržování předpisů prostřednictvím dědičnosti.
+- **Oblast:** Sada datacenter Azure, která je nasazená v hraničním prostředí definovaném pro latenci. Datacentra jsou propojena prostřednictvím vyhrazené oblastní sítě s nízkou latencí. Většina prostředků Azure se provozuje v konkrétní oblasti Azure.
 
 ## <a name="azure-subscription-purposes"></a>Účely předplatného Azure
 
 Předplatné Azure slouží k několika účelům. Předplatné Azure je:
 
-- **Právní smlouva**. Každé předplatné je přidružené k některé [nabídce Azure](https://azure.microsoft.com/support/legal/offer-details) (například k bezplatné zkušební verzi nebo průběžným platbám). Každá nabídka má konkrétní sazby, výhody a související podmínky a ujednání. Nabídku Azure si zvolíte při vytváření předplatného.
-- **Platební smlouva**. Při vytváření předplatného zadáváte platební údaje pro toto předplatné, například číslo platební karty. Náklady, které nabíhají za prostředky nasazené v tomto předplatném, se každý měsíc spočítají a fakturují daným způsobem platby.
-- **Hranice měřítka**. Pro předplatné jsou definované limity měřítka. Prostředky předplatného nemůžou překročit nastavené limity škálování. Existuje například limit počtu virtuálních počítačů, které můžete v jednom předplatném vytvořit.
-- **Hranice správy**. Předplatné může fungovat jako hranice správy, zabezpečení a zásad. Azure poskytuje pro splnění těchto potřeb také jiné mechanismy, například skupiny pro správu, skupiny prostředků a řízení přístupu na základě role.
+- **Právní smlouvu.** Každé předplatné je přidružené k některé [nabídce Azure](https://azure.microsoft.com/support/legal/offer-details) (například k bezplatné zkušební verzi nebo průběžným platbám). Každá nabídka má konkrétní sazby, výhody a související podmínky a ujednání. Nabídku Azure si zvolíte při vytváření předplatného.
+- **Platební smlouva.** Při vytváření předplatného zadáváte platební údaje pro toto předplatné, například číslo platební karty. Náklady, které nabíhají za prostředky nasazené v tomto předplatném, se každý měsíc spočítají a fakturují daným způsobem platby.
+- **Hranice stupnice.** Pro předplatné jsou definované limity měřítka. Prostředky předplatného nemůžou překročit nastavené limity škálování. Existuje například limit počtu virtuálních počítačů, které můžete v jednom předplatném vytvořit.
+- **Hranice správy.** Předplatné může fungovat jako hranice správy, zabezpečení a zásad. Azure poskytuje pro splnění těchto potřeb také jiné mechanismy, například skupiny pro správu, skupiny prostředků a řízení přístupu na základě role.
 
 ## <a name="azure-subscription-considerations"></a>Aspekty předplatného Azure
 

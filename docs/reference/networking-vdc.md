@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769547"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048251"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuální datacentra: Perspektiva sítě
 
@@ -321,17 +321,17 @@ Komponenty úloh se nacházejí v místě, kde jsou umístěny vaše skutečné 
 
 Možnosti úlohy jsou nekonečné. Níže jsou uvedené jenom některé z možných typů úloh:
 
-**Interní**obchodní aplikace: obchodní aplikace jsou počítačové aplikace kritické pro probíhající provoz podniku. Obchodní aplikace mají některé běžné charakteristiky:
+**Interní obchodní aplikace:** Obchodní aplikace jsou počítačové aplikace kritické pro probíhající provoz podniku. Obchodní aplikace mají některé běžné charakteristiky:
 
-- **Interaktivní** podle povahy. Data se zadávají a výsledky nebo sestavy se vrátí.
-- **Data řízená** &mdash;data náročná s častým přístupem k databázím nebo jiným úložištěm.
-- **Integrovaná** &mdash;offer integrace s jinými systémy v rámci organizace nebo mimo ni.
+- **Interaktivní podle povahy:** Data se zadávají a výsledky nebo sestavy se vrátí.
+- **Řízená daty:** Úlohy náročné na data s častým přístupem k databázím nebo jiným úložištěm.
+- **Integrováno:** Úlohy, které nabízejí integraci s jinými systémy v rámci organizace nebo mimo ni.
 
 **Weby směřující na zákazníky (Internet nebo interní)** : Většina aplikací, které komunikují s internetem, jsou weby. Azure nabízí možnost spuštění webu na virtuálním počítači s IaaS nebo na webu [Azure Web Apps][WebApps] (PaaS). Azure Web Apps podporuje integraci s virtuální sítě, která umožňuje nasazení Web Apps v síťové zóně s paprsky. Interní weby nepotřebují vystavit veřejný internetový koncový bod, protože prostředky jsou přístupné prostřednictvím privátních adres, které se nepoužívají z privátní virtuální sítě.
 
-**Velké objemy dat/analýzy**: když data potřebují škálovat až na velký svazek, databáze se nemusí správně škálovat. Technologie Hadoop nabízí systém pro paralelní spouštění distribuovaných dotazů na velkém počtu uzlů. Zákazníci mají možnost spouštět datové úlohy na virtuálních počítačích s IaaS nebo PaaS ([HDInsight][HDI]). HDInsight podporuje nasazení do virtuální sítě založené na umístění, která se dá nasadit do clusteru v paprsku virtuálního datacentra.
+**Velké objemy dat a analýza:** Pokud data potřebují škálovat až na velký svazek, nemusí se databáze správně škálovat. Technologie Hadoop nabízí systém pro paralelní spouštění distribuovaných dotazů na velkém počtu uzlů. Zákazníci mají možnost spouštět datové úlohy na virtuálních počítačích s IaaS nebo PaaS ([HDInsight][HDI]). HDInsight podporuje nasazení do virtuální sítě založené na umístění, která se dá nasadit do clusteru v paprsku virtuálního datacentra.
 
-**Události a zasílání zpráv**: [Azure Event Hubs][EventHubs] je služba ingestování telemetrie s škálovatelným škálováním, která shromažďuje, transformuje a ukládá miliony událostí. Jako platforma pro distribuované streamování nabízí nízkou latenci a konfigurovatelné časové uchovávání, což vám umožní ingestovat obrovské objemy telemetrie do Azure a číst tato data z více aplikací. Pomocí Event Hubs může jeden datový proud podporovat kanály založené na reálném čase i v dávce.
+**Události a zasílání zpráv:** [Azure Event Hubs][EventHubs] je služba ingestování telemetrie s škálovatelným škálováním, která shromažďuje, transformuje a ukládá miliony událostí. Jako platforma pro distribuované streamování nabízí nízkou latenci a konfigurovatelné časové uchovávání, což vám umožní ingestovat obrovské objemy telemetrie do Azure a číst tato data z více aplikací. Pomocí Event Hubs může jeden datový proud podporovat kanály založené na reálném čase i v dávce.
 
 Pomocí [Azure Service Bus][ServiceBus]můžete implementovat vysoce spolehlivou cloudovou službu pro zasílání zpráv mezi aplikacemi a službami. Nabízí asynchronní zprostředkované zasílání zpráv mezi klientem a serverem, strukturovaným zasíláním zpráv FIFO (First-in-first-out-First-Out) a funkcemi pro publikování a odběr.
 

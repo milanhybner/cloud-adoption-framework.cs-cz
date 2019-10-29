@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029023"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048388"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Jak používat šablonu výsledek podniku
 
@@ -51,19 +51,19 @@ Zjišťování je základní principem architektury Enterprise. Pokud je zjišť
 
 *Obrázek 3 – pět oblastí fokusu ve zjišťování: zúčastněné strany, výsledky, ovladače, klíčové ukazatele výkonu a možnosti.*
 
-**Zúčastněné strany**: Kdo v organizaci nejspíš uvidí největší hodnotu v určitém obchodním výsledku? Kdo s největší největší pravděpodobně podporuje tuto transformaci, zejména když něco získá obtížné nebo časově náročné? Kdo má největší podíl v úspěchu této transformace? Tato osoba je potenciálním účastníkem.
+**Zúčastněné strany:** Kdo v organizaci nejspíš uvidí největší hodnotu v určitém obchodním výsledku? Kdo s největší největší pravděpodobně podporuje tuto transformaci, zejména když něco získá obtížné nebo časově náročné? Kdo má největší podíl v úspěchu této transformace? Tato osoba je potenciálním účastníkem.
 
-**Obchodní výsledky**: Obchodní výsledek je stručný, definovaný a pozorovatelný výsledek nebo změna v obchodním výkonu, které podporuje konkrétní opatření. Jak chce zúčastněná společnost změnit firmu? Jak to bude mít vliv na firmu? Jaká je hodnota této transformace?
+**Obchodní výsledky:** Obchodní výsledek je stručný, definovaný a pozorovatelný výsledek nebo změna v obchodním výkonu, které podporuje konkrétní opatření. Jak chce zúčastněná společnost změnit firmu? Jak to bude mít vliv na firmu? Jaká je hodnota této transformace?
 
-**Obchodní ovladače**: Obchodní ovladače zachytí aktuální výzvu, která společnosti brání v dosažení požadovaných výsledků. Můžou také zachytit nové příležitosti, na které může firma využít správné řešení. Jak popíšete aktuální výzvy nebo budoucí stav podniku? Jaké obchodní funkce by se změnily tak, aby splňovaly požadované výsledky?
+**Obchodní ovladače:** Obchodní ovladače zachytí aktuální výzvu, která společnosti brání v dosažení požadovaných výsledků. Můžou také zachytit nové příležitosti, na které může firma využít správné řešení. Jak popíšete aktuální výzvy nebo budoucí stav podniku? Jaké obchodní funkce by se změnily tak, aby splňovaly požadované výsledky?
 
-**Klíčové ukazatele výkonu**: Jak bude tato změna změřena? Jak podnikání ví, jestli jsou úspěšné? Jak často bude tento klíčový ukazatel výkonu pozorován? Porozumění každému klíčovému ukazateli výkonu pomáhá povolit přírůstkovou změnu a experimentování.
+**Klíčové ukazatele výkonu:** Jak bude tato změna změřena? Jak podnikání ví, jestli jsou úspěšné? Jak často bude tento klíčový ukazatel výkonu pozorován? Porozumění každému klíčovému ukazateli výkonu pomáhá povolit přírůstkovou změnu a experimentování.
 
-**Možnosti**: Když definujete cestu k transformaci, jak budou technické možnosti zrychlit realizaci podnikového výsledku? Jaké aplikace musí být zahrnuté v transformaci k dosažení obchodních cílů? Jak různé aplikace nebo úlohy získají prioritu pro poskytování možností? Jakým způsobem je nutné rozšířit nebo rozlišit části řešení tak, aby splňovaly jednotlivé výsledky? Může dojít ke změně uspořádání přístupů (nebo časových os), aby se určila priorita obchodních výsledků s vysokým dopadem?
+**Možnosti:** Když definujete cestu k transformaci, jak budou technické možnosti zrychlit realizaci podnikového výsledku? Jaké aplikace musí být zahrnuté v transformaci k dosažení obchodních cílů? Jak různé aplikace nebo úlohy získají prioritu pro poskytování možností? Jakým způsobem je nutné rozšířit nebo rozlišit části řešení tak, aby splňovaly jednotlivé výsledky? Může dojít ke změně uspořádání přístupů (nebo časových os), aby se určila priorita obchodních výsledků s vysokým dopadem?
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
-Seznamte [](../learning-metrics.md) se s tím, jak se zaměříte na smysluplné výukové metriky.
+Seznamte se s tím, jak se [zaměříte](../learning-metrics.md) na smysluplné výukové metriky.
 
 > [!div class="nextstepaction"]
 > [Zarovnání technického úsilí](../learning-metrics.md)

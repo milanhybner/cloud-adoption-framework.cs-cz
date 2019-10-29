@@ -1,41 +1,43 @@
 ---
-title: Inovace prostřednictvím přijetí cloudu
+title: Inovace prostřednictvím zavedení do cloudu
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Inovace prostřednictvím přijetí cloudu
+description: Naučte se inovovat pomocí cloudového rozhraní pro přijetí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683482"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048440"
 ---
-# <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Inovace prostřednictvím zavedení do cloudu v rozhraní pro přijetí v cloudu
+# <a name="innovate-through-cloud-adoption"></a>Inovace prostřednictvím zavedení do cloudu
 
-Migrace do cloudu je vynikající možností pro úlohy, které už v prostředí existují. Vytváření nových produktů a služeb vyžaduje jiný přístup. Metodologie inovací v rámci tohoto rámce zavádí přístup k Průvodci vývojem nových produktů a služeb.
+Migrace do cloudu je vynikající možností pro vaše stávající úlohy. Vytváření nových produktů a služeb ale vyžaduje jiný přístup. Metodologie inovací v rozhraní pro přijetí do cloudu vytvoří přístup, který provede vývoj nových produktů a služeb.
 
 ## <a name="motivations-behind-innovation"></a>Motivace za inovacemi
 
-Inovace by neměla být zvoleným umístěním přijetí pro všechny úlohy. Tato cesta k přijetí do cloudu často vyžaduje větší investice do vlastního kódu a správy dat. Inovace také trvá bez ohledu na migraci nebo dokonce i mnoho forem modernizace. Tato cesta je však navržena v případě, že zákazníci cílí na následující typy obchodních výsledků:
+Inovace se nejedná o správnou cestu k přijetí pro každou úlohu. Cesta pro inovace obvykle vyžaduje větší investice do vlastního kódu a správy dat než jiné cesty. Inovace také trvá déle než migrace nebo jiné formy modernizace. Tato cesta se doporučuje, když zákazníci cílí na následující obchodní výsledky:
 
 - Příprava na nové technické možnosti
-- Škálování pro splnění požadavků na trh
-- Škálování pro splnění geografických požadavků
-- Sestavování nových technických možností
-- Zlepšení zkušeností a zapojení zákazníků
-- Transformace produktů nebo služeb
-- Přerušení trhu novými produkty nebo službami
+- Škálujte tak, aby splňovala požadavky na trh.
+- Škálujte tak, aby splňovala geografické požadavky.
+- Vytvářejte nové technické možnosti.
+- Zlepšení zkušeností a zapojení zákazníků.
+- Transformujte produkty nebo služby.
+- Narušování trhu novými produkty nebo službami.
 
-## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Běžné příklady úloh spojené s inovacemi v cloudu
+## <a name="workloads-associated-with-cloud-innovation"></a>Úlohy spojené s inovacemi v cloudu
+
+Mezi kandidátské úlohy pro inovace v cloudu patří:
 
 - Vlastní aplikace sestavené.
 - Prostředí založená na technologii.
-- IoT: integrace fyzických produktů a technologií.
+- Integrace fyzických produktů a technologií pomocí IoT.
 - Ambientní logika: integrace nerušivé technologie do prostředí.
 - Cognitive Services: velké objemy dat, AI, Machine Learning a prediktivní řešení.
 

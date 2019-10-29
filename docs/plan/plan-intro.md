@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833762"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048289"
 ---
 # <a name="plan-for-cloud-adoption"></a>Plánování přijetí cloudu
 
@@ -35,14 +35,14 @@ Modely akvizice v cloudu mění základní závislosti, které vedly k sekvenčn
 
 Tato řada článků vás provede jednotlivými kroky překladu strategie a úsilí do plánu pro přijetí do možného cloudu:
 
-1. **Požadavky**: Před vytvořením plánu potvrďte, že byly dokončeny všechny požadované kroky.
-2. **Definování a stanovení priorit úloh**: Nastavte prioritu prvních 10 úloh pro stanovení počátečních nevyřízených položek pro přijetí.
-3. **Zarovnat prostředky**: Určení prostředků (navrhovaných nebo existujících) potřebných k podpoře prioritních úloh.
-4. **Kontrola racionalizace**: Projděte si rozhodnutí o racionalizaci a upřesněte rozhodnutí o přijetí a umístění: Migrovat nebo inovovat.
-5. **Definovat iterace a verze**: *Iterace* jsou časové bloky, které jsou přiděleny k práci. *Verze* jsou definice práce, která se má provést před aktivací změny v produkčních procesech.
+1. **Požadavky:** Před vytvořením plánu potvrďte, že byly dokončeny všechny požadované kroky.
+2. **Definování a stanovení priorit úloh:** Nastavte prioritu prvních 10 úloh pro stanovení počátečních nevyřízených položek pro přijetí.
+3. **Zarovnat prostředky:** Určení prostředků (navrhovaných nebo existujících) potřebných k podpoře prioritních úloh.
+4. **Kontrola racionalizace:** Projděte si rozhodnutí o racionalizaci k upřesnění rozhodnutí o přijetí a umístění: migrace nebo inovace.
+5. **Definování iterací a verzí:** *iterace* jsou časové bloky, které jsou přiděleny k práci. *Verze* jsou definice práce, která se má provést před aktivací změny v produkčních procesech.
 6. **Odhadnout časové osy:** Vytvořte hrubou časovou osu pro účely plánování vydání na základě počátečních odhadů.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Před vytvořením plánu přijetí do cloudu zajistěte, aby byly splněné všechny [nezbytné požadavky](./prerequisites.md) .
 

@@ -1,7 +1,7 @@
 ---
-title: Umožnění úspěšnosti zákazníků napříč jakoukoli cestou k přijetí do cloudu
+title: Povolit úspěšnost zákazníků během cesty k přijetí do cloudu
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Umožnění úspěšnosti zákazníků napříč jakoukoli cestou k přijetí do cloudu
+description: Povolení úspěšnosti zákazníků v průběhu cesty k přijetí do cloudu
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,26 +9,26 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023448"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048339"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Povolit úspěch napříč jakoukoli cestou k přijetí cloudu
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Povolit úspěch během cesty k přijetí cloudu
 
-Rozhraní pro přijetí Microsoft Cloud pro Azure je k dispozici jako bezplatný nástroj pro samoobslužnou službu, který umožňuje čtenářům prostřednictvím různých úsilí o přijetí v cloudu. Cílem tohoto obsahu je pomáhat zákazníkům, kteří mají úspěch při realizaci obchodních cílů, které může Azure povolit. Tento obsah ale také respektuje, že čtenář může řešit obchodní, jazykové verze nebo technické výzvy, které mohou být široké a můžou být v podstatě pro cloudovou neutrální pozici. V takovém případě každá část tohoto návodu začíná prvním přístupem k Azure, ale řídí se neutrálními teoretickami v cloudu, která se dá škálovat napříč obchodními a technickými rozhodnutími.
+Rozhraní pro přijetí do cloudu je bezplatný samoobslužný nástroj, který pomáhá čtenářům prostřednictvím různých úsilí o přijetí do cloudu. Architektura pomůže zákazníkům podařit při realizaci obchodních cílů, které lze povolit pomocí Microsoft Azure. Tento obsah ale také rozpoznává, že čtenář může řešit rozsáhlé podnikové, jazykové verze nebo technické výzvy a v některých případech může vyžadovat cloudovou neneutrální pozici. Proto každá část tohoto návodu začíná prvním přístupem a pak je postupuje s neutrálními platformami, které se dají škálovat v mnoha obchodních a technických rozhodnutích.
 
-V rámci této architektury je povolený klíčový motiv. Následující kontrolní seznam obsahuje řadu témat, která by měla být vložena do jakéhokoli úsilí o přijetí do cloudu, aby bylo zajištěno úspěch cesty v rámci očí i firmy:
+V rámci této architektury je povolený klíčový motiv. Následující kontrolní seznam rozepisuje základní zásady pro přijetí do cloudu, které zajišťují, že je cesta k přijetí v rámci IT i firmy považována za úspěšnou:
 
-- **Rozhraní** Stanovení jasných [obchodních výsledků](../strategy/business-outcomes/index.md), definovaného [plánu digitální nemovitosti](../digital-estate/index.md)a dobře pochopitelného [přijímání](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)nevyřízených položek.
-- **K** Zajistěte připravenost pracovníků prostřednictvím [dovedností a studijních plánů](../ready/technical-skills.md).
-- **Jednat** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
+- **Plán:** Stanovení jasných [obchodních výsledků](../strategy/business-outcomes/index.md), jasně definovaného [plánu digitální nemovitosti](../digital-estate/index.md)a dobře srozumitelného [přijímání](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)nevyřízených položek.
+- **Připraveno:** Zajistěte připravenost pracovníků prostřednictvím [dovedností a studijních plánů](../ready/technical-skills.md).
+- **Provoz:** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
   - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
-  - **Bude** Přiřaďte správné [obory zásad správného řízení](../govern/index.md) , aby se konzistentně vyrovnaly řízení nákladů, zmírnění rizik, dodržování předpisů a standardních hodnot zabezpečení v rámci veškerého přijetí cloudu.
-  - **Správa:** Průběžná [provozní Správa](../manage/index.md) portfolia IT, aby se minimalizovala přerušení podnikových procesů a zajistila se stabilita IT portfolia.
-  - **Pracovníky** Zarovnejte správné [partnerství a možnosti podpory](../migrate/migration-considerations/assess/partnership-options.md).
+  - **Řídit:** Přiřaďte správné [obory zásad správného řízení](../govern/index.md) , aby se konzistentně vyrovnaly řízení nákladů, zmírnění rizik, dodržování předpisů a standardních hodnot zabezpečení v rámci veškerého přijetí cloudu.
+  - **Spravovat:** Průběžná [provozní Správa](../manage/index.md) portfolia IT, aby se minimalizovala přerušení podnikových procesů a zajistila se stabilita IT portfolia.
+  - **Podpora:** Zarovnejte správné [partnerství a možnosti podpory](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Další nástroje
 
@@ -124,7 +124,7 @@ Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata,
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Architecture Center</h3>
+                        <h3>Centrum architektury Azure</h3>
                         <p>Řešení architektury, referenční architektury, ukázkové scénáře, osvědčené postupy a vzory návrhu cloudu, které pomáhají v architektuře řešení běžících na Azure.</p>
                     </div>
                 </div>

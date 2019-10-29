@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683418"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047752"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Shromažďování dat migrací a modernizací stávajících zdrojů dat
 
@@ -25,7 +25,7 @@ Tento článek popisuje řadu přístupů, které jsou v souladu s procesem migr
 
 ## <a name="primary-toolset"></a>Primární sada nástrojů
 
-Při migraci a modernizaci dat, která se nacházejí v Prem, je nejběžnější volbou Azure Tool [služba migrace dat (DMS)](https://docs.microsoft.com/azure/dms) , která je součástí širšího [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) sada nástrojů. U stávajících SQL Server zdrojů dat mohl [Data Migration Assistant (DMA)](/sql/dma/dma-overview) poskytnout pomoc při posuzování a migraci menšího počtu datových struktur.
+Při migraci a modernizaci dat, která se nacházejí v Prem, je nejběžnější volbou Azure Tool [služba migrace dat (DMS)](https://docs.microsoft.com/azure/dms) , která je součástí širšího [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) sada nástrojů. U stávajících SQL Server zdrojů dat mohl [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview) poskytnout pomoc při posuzování a migraci menšího počtu datových struktur.
 
 Aby bylo možné podporovat migrace Oracle a NoSQL, je možné [službu migrace dat (DMS)](https://docs.microsoft.com/azure/dms) použít také pro určité typy zdrojů pro cílové databáze, jako je například Oracle k PostgreSQL nebo MongoDB Cosmos DB. Pro účely migrace na Cosmos DB, HDInsight nebo možnosti virtuálního počítače založeného na IaaS je běžné, že týmy pro přijímání využívají nástroje třetích stran nebo vlastní skripty migrace.
 

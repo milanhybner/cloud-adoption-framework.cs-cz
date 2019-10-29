@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548754"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048413"
 ---
 # <a name="storage-design-decisions"></a>Rozhodnutí o návrhu úložiště
 
@@ -61,7 +61,7 @@ Azure nabízí několik produktů a služeb pro různé možnosti úložiště. 
 | Používám kontejnery s trvalými svazky. | [Azure Files (Standard nebo Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure Disk Storage (SSD úrovně Standard, Premium nebo Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Možnosti ovladače pro svazky File (RWX) a blokové svazky (RWO) jsou k dispozici pro službu Azure Kubernetes Service (AKS) i pro vlastní nasazení Kubernetes. Trvalé svazky mohou být namapovány na disk Azure Disk Storage nebo na spravovanou sdílenou složku Azure Files. Volba mezi úrovní Premium a Standard závisí na požadavcích na úlohy pro trvalé svazky. |
 | Používám funkce Data Lake (jako je cluster Hadoop pro data HDFS). | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure Disk Storage (SSD úrovně Standard nebo Premium)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Funkce Data Lake Storage Gen 2 služby úložiště objektů blob v Azure poskytuje kompatibilitu HDFS na straně serveru a škálování v řádu petabajtů pro paralelní analýzy. Nabízí také vysokou dostupnost a spolehlivost. Software, jako je Cloudera, může v případě potřeby použít SSD úrovně Standard nebo Premium v hlavních nebo pracovních uzlech. |
 | Mám nasazené SAP nebo SAP HANA. | [Azure Disk Storage (SSD úrovně Premium nebo Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | SSD úrovně Ultra je optimalizovaná pro poskytování latence v milisekundách pro úlohy SAP úrovně 1. SSD úrovně Ultra je nyní ve verzi Preview. SSD úrovně Premium spojená s M-Series nabízí možnost obecné dostupnosti (GA). |
-| Mám lokalitu pro zotavení po havárii se striktním RPO/RTO, která se synchronizuje z mých primárních serverů. | [Objekty blob stránky v Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Replikační software používá objekty blob stránky v Azure, které umožňují cenově výhodnou replikaci do Azure bez nutnosti využití výpočetníchvirtuálních počítačů, dokud neproběhne převzetí služeb při selhání. Další informace najdete v [dokumentaci k Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Poznámka**: objekty blob stránky podporují maximálně 8 TB. |
+| Mám lokalitu pro zotavení po havárii se striktním RPO/RTO, která se synchronizuje z mých primárních serverů. | [Objekty blob stránky v Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Replikační software používá objekty blob stránky v Azure, které umožňují cenově výhodnou replikaci do Azure bez nutnosti využití výpočetníchvirtuálních počítačů, dokud neproběhne převzetí služeb při selhání. Další informace najdete v [dokumentaci k Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Poznámka:** Objekty blob stránky podporují maximálně 8 TB. |
 
 ### <a name="file-and-object-storage-scenarios"></a>Scénáře úložiště souborů a objektů
 

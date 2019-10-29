@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549186"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048221"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plán přijetí do cloudu a Azure DevOps
 
@@ -45,10 +45,10 @@ Informace o přípravě pracovní stanice pro hromadnou úpravu najdete v témat
 
 Plán přijetí do cloudu organizuje aktivity podle typu aktivity:
 
-- **Náměty**: *námětu* představuje celkovou fázi životního cyklu pro přijetí do cloudu.
-- **Funkce**: funkce se používají k organizování specifických cílů v jednotlivých fázích. Například migrace konkrétního zatížení bude jedna funkce.
-- **Uživatelské scénáře**: Skupina uživatelských scénářů pracuje na logických kolekcích aktivit na základě konkrétního cíle.
-- **Úkoly**: úkoly představují skutečnou práci, která má být provedena.
+- **Náměty:** *Námětu* představuje celkovou fázi životního cyklu pro přijetí do cloudu.
+- **Funkce:** Funkce se používají k organizování konkrétních cílů v jednotlivých fázích. Například migrace konkrétního zatížení bude jedna funkce.
+- **Uživatelské scénáře:** Skupina uživatelských scénářů pracuje na logických kolekcích aktivit na základě konkrétního cíle.
+- **Úkoly:** Úkoly představují skutečnou práci, která má být provedena.
 
 V každé vrstvě jsou aktivity seřazeny na základě závislostí. Aktivity jsou propojeny s články v rozhraní pro přijetí do cloudu, které umožňují objasnit cíl nebo úkol.
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 37bff0c476746efadb86a179f03d5d7951ea0b81
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980121"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047669"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Okolní prostředí: interakce se zařízeními
 
@@ -33,7 +33,7 @@ Standardní prostředí pro vývoj aplikací, které se používá ke splnění 
 
 Okolní prostředí obvykle vyžaduje více než webovou aplikaci pro tyto dny. Díky [měření](./measure.md) a [učení se zákazníkem](./learn.md) se chování, které aktivuje potřeby zákazníka, může pozorovat, sledovat a používat k sestavování více prostředí okolí. Následující seznam shrnuje několik přístupů k integraci ambientních řešení do vaší hypotézy. Další podrobnosti najdete v následujících odstavcích.
 
-- **[Mobilní](#mobile-experience)** prostředí: stejně jako u notebooků jsou mobilní aplikace v prostředí zákazníka obvykle běžné. V některých situacích to může poskytnout dostatečnou úroveň interaktivity, aby bylo řešení v okolí.
+- **[Mobilní prostředí](#mobile-experience):** Jako u notebooků se mobilní aplikace všudypřítomný v zákaznických prostředích. V některých situacích to může poskytnout dostatečnou úroveň interaktivity, aby bylo řešení v okolí.
 - **[Mixed reality](#mixed-reality):** V některých případech je třeba změnit typické okolí zákazníka, aby se interakce provedla v okolí. Tento faktor vytvoří něco z nepravdivého realitu, ve kterém zákazník komunikuje s řešením a má nezbytnou splnění. V tomto případě je řešení okolí v rámci falešné reality.
 - **[Integrovaná realita](#integrated-reality):** S ohledem na blížící se k true Ambience se integrovaná řešení realit zaměřují na použití zařízení, které existuje ve skutečnosti zákazníka, a integrovat řešení do jejich přirozených chování. Virtuální asistent je skvělým příkladem integrace realit do okolního prostředí. Neznámou možnost se týká Internet věcí (IoT) technologií, které integrují zařízení, která už existují v okolí zákazníka.
 - **[Upravená realita](#adjusted-reality):** Pokud některá z těchto ambientních řešení používají prediktivní analýzu v cloudu k definování a poskytování interakce se zákazníkem prostřednictvím přirozeného okolí, řešení má upravenou realitu.

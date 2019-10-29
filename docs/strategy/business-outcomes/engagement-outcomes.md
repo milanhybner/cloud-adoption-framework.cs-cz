@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030682"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047946"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Příklady výsledků zapojení zákazníků
 
@@ -29,7 +29,7 @@ Následují příklady a výsledky týkající se zapojení zákazníka:
 
 V rámci Obsessed transformací, jako je úsilí při inovacích aplikací s podporou cloudu, zákazníci reagují na přímou zapojení a možnost vidět jejich potřeby rychle ve vývojovém týmu. Doba cyklu je šest Sigma, který odkazuje na dobu od začátku do konce funkce. V případě obchodních vedoucích, kteří jsou zákazníky – Obsessed a investování do značné míry na zlepšení zapojení zákazníků, může být časem cyklu silný obchodní výsledek.
 
-- **Příklad**: Společnost poskytující služby, která poskytuje služby B2B (Business-to-Business), se snaží na konkurenčním trhu na trhu sdílet. Zákazníci, kteří opustili konkurenčního poskytovatele služeb, uvedli, že jejich příliš složité technické řešení je v konfliktu se svými obchodními procesy a je hlavním důvodem, proč je opustit. V takovém případě je čas cyklu nezbytný. V dnešní době trvá 12 měsíců, než funkce přejde z požadavku na vydání. Pokud je tento cyklus prioritou výkonného týmu, může být tento cyklus zmenšen na šest až devět měsíců. Prostřednictvím cloudové inovace aplikace, cloudové modely aplikací a integrace služby Azure DevOps bylo možné, že tým může zkrátit dobu trvání cyklu na jeden měsíc, což vývojářům podnikových a aplikačních aplikací umožní pracovat přímo s klientů.
+- **Příklad:** Společnost poskytující služby, která poskytuje služby B2B (Business-to-Business), se snaží na konkurenčním trhu na trhu sdílet. Zákazníci, kteří opustili konkurenčního poskytovatele služeb, uvedli, že jejich příliš složité technické řešení je v konfliktu se svými obchodními procesy a je hlavním důvodem, proč je opustit. V takovém případě je čas cyklu nezbytný. V dnešní době trvá 12 měsíců, než funkce přejde z požadavku na vydání. Pokud je tento cyklus prioritou výkonného týmu, může být tento cyklus zmenšen na šest až devět měsíců. Prostřednictvím cloudové inovace aplikace, cloudové modely aplikací a integrace služby Azure DevOps bylo možné, že tým může zkrátit dobu trvání cyklu na jeden měsíc, což vývojářům podnikových a aplikačních aplikací umožní pracovat přímo s klientů.
 
 > **ExakTime**
 >

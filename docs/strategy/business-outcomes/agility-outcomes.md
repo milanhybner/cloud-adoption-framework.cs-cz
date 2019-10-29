@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548701"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048073"
 ---
 # <a name="examples-of-agility-outcomes"></a>Příklady výsledků flexibility 
 
@@ -33,9 +33,9 @@ U provozovatelů a jejich zprovoznění může být flexibilita firmy rozdíl me
 
 Během úsilí při inovacích s povoleným cloudem je doba uvedení na trh klíčovým měřítkem možnosti řešit změny trhu. V mnoha případech může obchodní vedoucí mít existující rozpočet na vytvoření aplikace nebo spuštění nového produktu. Jasně komunikující zvýhodnění pro uvedení na trh může této vedoucí organizaci motivovat pro přesměrování rozpočtu na cestu transformace.
 
-- **Příklad 1**: Evropské oddělení společnosti založené na USA musí dodržovat předpisy GDPR, protože chrání zákaznická data v databázi, která podporuje operace Spojené království. Existující verze SQL nepodporuje nezbytné zabezpečení na úrovni řádků. Místní upgrade by byl příliš rušivý. Používání Azure SQL pro replikaci a upgrade databáze zákazníkovi přičítá nezbytnou míru dodržování předpisů v řádu týdnů.
+- **Příklad 1:** Evropské oddělení společnosti založené na USA musí dodržovat předpisy GDPR a chránit zákaznická data v databázi, která podporuje operace Spojené království. Existující verze SQL nepodporuje nezbytné zabezpečení na úrovni řádků. Místní upgrade by byl příliš rušivý. Používání Azure SQL pro replikaci a upgrade databáze zákazníkovi přičítá nezbytnou míru dodržování předpisů v řádu týdnů.
 
-- **Příklad 2**: logistická společnost zjistila nepoužitý segment trhu, ale vyžaduje novou verzi své aplikace nejdůležitější pro zachycení tohoto podílu na trhu. Jejich větší konkurent provedl stejné zjišťování. Při provádění inovace cloudové aplikace s podporou cloudu společnost zastává obsessioni zákazníků a DevOps vývojářem řízený přístup, aby mohl posílat pomalejší, starší verze konkurenta o _×_ měsíců. Tento skok na uvedení na trh je zabezpečený zákaznickou základnou.
+- **Příklad 2:** Logistická společnost zjistila nepoužitý segment trhu, ale vyžaduje novou verzi své aplikace nejdůležitější pro zachycení tohoto podílu na trhu. Jejich větší konkurent provedl stejné zjišťování. Při provádění inovace cloudové aplikace s podporou cloudu společnost zastává obsessioni zákazníků a DevOps vývojářem řízený přístup, aby mohl posílat pomalejší, starší verze konkurenta o _×_ měsíců. Tento skok na uvedení na trh je zabezpečený zákaznickou základnou.
 
 **Aurora zdravotní péče**: systém zdravotní péče se online služby do popisného digitálního prostředí. K transformaci svých digitálních služeb Aurora Health Health migrovali své weby na Microsoft Azure platformu a přijali strategii nepřetržité inovace.
 
@@ -48,7 +48,7 @@ Během úsilí při inovacích s povoleným cloudem je doba uvedení na trh klí
 
 Když podnik požaduje nové IT služby nebo se škáluje na stávající služby, může získání a zřízení nového hardwaru nebo virtuálních prostředků trvat týdny. Po migraci do cloudu se dá snadněji povolit samoobslužné zřizování, které umožní společnosti škálovat v hodinách.
 
-- **Příklad**: společnost zákaznická zabalené zboží vyžaduje vytvoření a započet stovek databázových clusterů za rok, aby splnily provozní požadavky firmy. Místní virtuální hostitelé se můžou zřídit rychle, ale proces obnovování virtuálních prostředků je pomalý a vyžaduje významnou dobu od týmu. V takovém případě starší verze místního prostředí trpí dispozici determinističtější a je možné, že nebudete mít jenom na vyžádání. Po migraci do cloudu může snadněji poskytovat skriptům samoobslužné zřizování prostředků s vrácení penězm přístupem k fakturaci. Díky tomu je možné, že se podnik přesune tak rychle, jak potřebují, ale pořád se účtuje za náklady na prostředky, které požadují. V cloudu se tak omezí nasazení jenom na rozpočet firmy.
+- **Příklad:** Společnost zákaznického zabaleného zboží vyžaduje vytvoření a započet stovek databázových clusterů za rok, aby splnily provozní požadavky firmy. Místní virtuální hostitelé se můžou zřídit rychle, ale proces obnovování virtuálních prostředků je pomalý a vyžaduje významnou dobu od týmu. V takovém případě starší verze místního prostředí trpí dispozici determinističtější a je možné, že nebudete mít jenom na vyžádání. Po migraci do cloudu může snadněji poskytovat skriptům samoobslužné zřizování prostředků s vrácení penězm přístupem k fakturaci. Díky tomu je možné, že se podnik přesune tak rychle, jak potřebují, ale pořád se účtuje za náklady na prostředky, které požadují. V cloudu se tak omezí nasazení jenom na rozpočet firmy.
 
 ## <a name="next-steps"></a>Další kroky
 
