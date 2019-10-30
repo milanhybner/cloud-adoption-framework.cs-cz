@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769327"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047454"
 ---
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-before-you-start"></a>Průvodce inovacemi Azure: Než začnete
 
 > [!NOTE]
-> Tento průvodce poskytuje výchozí bod pro pokyny k inovacím v architektuře přechodu na cloud. Je k dispozici také v Centru rychlého startu Azure. Odkaz na Centrum rychlého startu Azure najdete v tipu v další části tohoto článku.
+> Tento průvodce poskytuje výchozí bod pro pokyny k inovacím v architektuře přechodu na cloud. Je k dispozici také v [Centru rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade).
 
 ::: zone-end
 
@@ -32,9 +32,9 @@ ms.locfileid: "72769327"
 
 ::: zone-end
 
-Než začnete s vývojem inovativních řešení pomocí služeb Azure, musíte připravit vaše prostředí, které zahrnuje správu smyček zpětné vazby od zákazníků. V této příručce představujeme funkce, které vám pomohou zapojit zákazníky, sestavit řešení a řídit přechod. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu architektury přechodu na cloud věnovaném inovacím](../index.md).
+Než začnete s vývojem inovativních řešení pomocí služeb Azure, musíte připravit vaše prostředí, včetně přípravy správy smyček zpětné vazby od zákazníků. V této příručce představujeme funkce, které vám pomohou zapojit zákazníky, sestavit řešení a řídit přechod. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu architektury přechodu na cloud věnovaném inovacím](../index.md).
 
-Dozvíte se, jak provést tyto akce:
+V této příručce se naučíte tyto postupy:
 
 > [!div class="checklist"]
 >
@@ -48,7 +48,7 @@ Dozvíte se, jak provést tyto akce:
 ::: zone target="docs"
 
 > [!TIP]
-> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a vyberte **Úvod do nastavení Azure**. Potom postupujte podle podrobných pokynů.
+> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), vyberte **Průvodce inovacemi Azure** a potom postupujte podle podrobných pokynů.
 
 Další kroky: [Příprava na inovace s využitím sdíleného úložiště a nástrojů pro správu ideace](./adoption.md)
 

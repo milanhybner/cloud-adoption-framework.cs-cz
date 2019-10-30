@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548724"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048004"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Jaké obchodní výsledky jsou spojené s procesy transformace?
 
@@ -32,39 +32,39 @@ Následuje několik obchodních výsledků, které jsou obvykle impulzem k zahá
 - **Finanční vedení:** Zvýšení ziskovosti při současném zajištění dodržování předpisů
 - **Marketing:** Získávání a udržování zákazníků, budování reputace
 - **Prodej:** Posílení prodeje, zvýšení celoživotní hodnoty zákazníků
-- **Personální oddělení:** Udržování, nabírání a zlepšování možností zaměstnanců
+- **Lidské zdroje:** Udržování, nabírání a zlepšování možností zaměstnanců
 
-# <a name="sample-outcomes-by-category"></a>Ukázkové výsledky podle kategorie
+## <a name="sample-outcomes-by-category"></a>Ukázkové výsledky podle kategorie
 
 Řadě technicky smýšlejícím lidem může mluvení o obchodních výsledcích připadat jako cizí jazyk. Pro usnadnění překladu Microsoft v [architektuře obchodních výsledků](../index.md) spravuje sadu příkladů obchodních výsledků. Pomocí těchto ukázek můžete inspirovat a předvádět obchodní výsledky založené na skutečných procesech transformace.
 
 Abychom vám pomohli obchodní výsledky snáze určit, rozdělili jsme je do následujících kategorií. Tento přístup posiluje diskuze zaměřené na zajištění konsensu napříč obchodními jednotkami.
 
-## <a name="fiscal-outcomes"></a>Fiskální výsledky
+### <a name="fiscal-outcomes"></a>Fiskální výsledky
 
 Finanční neboli fiskální výsledky jsou pro většinu nejvyšších manažerů nejspolehlivějším obchodním výsledkem. Nejsou to však jediné obchodní výsledky.
 
 Zobrazit ukázky [fiskálních výsledků](./fiscal-outcomes.md)
 
-## <a name="agility-outcomes"></a>Výsledky z hlediska flexibility
+### <a name="agility-outcomes"></a>Výsledky z hlediska flexibility
 
 Nejdůležitější roli v dnešním rychle se měnícím obchodním prostředí hraje čas. Základním měřítkem obchodní flexibility je rychlost reakce na změny na trhu a jejich prosazování.
 
 Zobrazit ukázky [výsledků z hlediska flexibility](./agility-outcomes.md)
 
-## <a name="reach-outcomes"></a>Výsledky z hlediska dosahu
+### <a name="reach-outcomes"></a>Výsledky z hlediska dosahu
 
 Na neustále se zmenšujícím trhu je možné globální dosah (schopnost podporovat globální zákazníky a uživatele) měřit podle dodržování předpisů v geografických oblastech, které souvisí s obchodní činností.
 
 Zobrazit výsledky související s [globálním dosahem](./reach-outcomes.md)
 
-## <a name="customer-engagement-outcomes"></a>Výsledky z hlediska zapojení zákazníků
+### <a name="customer-engagement-outcomes"></a>Výsledky z hlediska zapojení zákazníků
 
 Na sociálních tržištích se vítězové a poražení mění nebývalým tempem. Klíčovým měřítkem zapojení zákazníků je schopnost reakce na potřeby uživatelů.
 
 Další informace o [výsledcích z hlediska zapojení uživatelů](./engagement-outcomes.md)
 
-## <a name="performance-outcomes"></a>Výsledky z hlediska výkonu
+### <a name="performance-outcomes"></a>Výsledky z hlediska výkonu
 
 Předpokládá se výkon a spolehlivost. Jejich kolísání může mít za následek bolestivé a dlouhotrvající poškození dobrého jména.
 

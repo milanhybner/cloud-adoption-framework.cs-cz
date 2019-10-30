@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888917"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047723"
 ---
 # <a name="migration-tools-decision-guide"></a>Průvodce rozhodováním ohledně nástrojů pro migraci
 
@@ -40,7 +40,7 @@ V souladu s důrazem, který architektura přechodu na cloud klade na [přírůs
 
 ## <a name="learn-more"></a>Další informace
 
-- **[Základy práce s cloudy: Přehled možností výpočetního prostředí Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Tento článek obsahuje informace o funkcích ve variantách výpočetního prostředí Azure IaaS a PaaS.
-- **[Základy práce s cloudy: Volba správného úložiště dat](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Tento článek popisuje dostupné možnosti úložiště PaaS na platformě Azure.
-- **[Migrace s rozšířeným rozsahem: Požadavky na úložiště během migrace překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Tento článek popisuje alternativní mechanismy migrace dat pro scénáře, kdy migraci dat brání dostupná šířka pásma sítě.
-- **[SQL Database: Výběr správné varianty SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Tento článek obsahuje popis možností a obchodních odůvodnění pro rozhodnutí hostovat úlohy SQL Serveru v prostředí hostované infrastruktury (IaaS) nebo hostované služby (PaaS).
+- **[Základy práce s cloudy: Přehled možností výpočetního prostředí Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Tento článek obsahuje informace o funkcích ve variantách výpočetního prostředí Azure IaaS a PaaS.
+- **[Základy práce s cloudy: Volba správného úložiště dat](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Tento článek popisuje dostupné možnosti úložiště PaaS na platformě Azure.
+- **[Migrace s rozšířeným rozsahem: Požadavky na úložiště při migraci překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md).** Tento článek popisuje alternativní mechanismy migrace dat pro scénáře, kdy migraci dat brání dostupná šířka pásma sítě.
+- **[SQL Database: Výběr správné varianty SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Tento článek obsahuje popis možností a obchodních odůvodnění pro rozhodnutí hostovat úlohy SQL Serveru v prostředí hostované infrastruktury (IaaS) nebo hostované služby (PaaS).
