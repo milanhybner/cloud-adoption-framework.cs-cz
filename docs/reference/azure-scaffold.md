@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548778"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058167"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
 > [!NOTE]
-> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
+> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a [informace o cílové zóně](../ready/considerations/index.md).
 
 Podniky stále stále přijímají veřejný cloud pro zajištění flexibility a flexibility. Spoléhají na síly cloudu, aby vygenerovaly výnosy a optimalizují využití prostředků pro firmu. Microsoft Azure poskytuje spoustu služeb a schopností, které podniky sestavují jako stavební bloky pro řešení nejrůznějších úloh a aplikací.
 

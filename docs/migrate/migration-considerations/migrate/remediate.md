@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833450"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058858"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Náprava prostředků před migrací
 
@@ -31,7 +31,7 @@ V každém firemním prostředí existuje technický dluh. Ten je do určité m�
 - **Změny konfigurace aplikace.** U migrovaných aplikací možná bude potřeba změnit proměnné, například síťové cesty, na související prostředky, změnit účet služby nebo aktualizovat související IP adresy.
 - **Dílčí změny síťových cest.** Možná bude potřeba upravit vzorce směrování, aby správně směrovaly přenosy uživatelů na nové prostředky.
     > [!NOTE]
-    > Nejedná se o produkční směrování na nové prostředky, ale o konfiguraci, která obecně umožňuje správné směrování na prostředky.
+    > Nejedná se o produkční směrování na nové prostředky, ale spíše na konfiguraci umožňující správné směrování na prostředky obecně.
 
 ## <a name="large-scale-remediation-tasks"></a>Rozsáhlé úlohy nápravy
 
@@ -57,7 +57,7 @@ Pokud odpovědi na tyto otázky nebudou příznivé, měli byste zvážit někte
 - **Automatizace.** V závislosti na požadavcích na úlohu a její nápravu můžete ke skriptování nasazení nových prostředků s výhodou použít přístup DevOps.
 - **Přestavba.** Pokud jsou náklady na nápravu velmi vysoké a stejně vysoká je i obchodní hodnota, může být úloha vhodná, abyste ji přestavěli nebo znovu vytvořili její architekturu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po dokončení nápravy jsou připravené [replikační činnosti](./replicate.md).
 

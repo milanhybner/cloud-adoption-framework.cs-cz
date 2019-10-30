@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 863f1270679a849d53bce04a8c2fded6019fc65f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548538"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058886"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
@@ -417,8 +417,8 @@ Veřejné IP adresy v Azure je možné přidružit k virtuálním počítačům,
 
 **Další informace:**
 
-- [Přečtěte si](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) o veřejných IP adresách v Azure.
-- [Přečtěte si další informace](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) o přístupu k virtuálnímu počítači podle potřeby v Azure Security Center.
+- [Veřejné IP adresy v Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Správa přístupu k virtuálnímu počítači pomocí za běhu](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Využití funkcí zabezpečení Azure pro sítě
 

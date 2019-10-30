@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547326"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058635"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL
 
@@ -446,7 +446,7 @@ Tým zabezpečení Contoso kontroluje virtuální počítač a data aplikaci a z
 - Zvažují také zabezpečení dat na discích virtuálních počítačů pomocí služeb Disk Encryption a Azure Key Vault.
 - Komunikace mezi virtuálním počítačem a instancí databáze není nakonfigurovaná pro SSL. Touto konfigurací bude potřeba zajistit, aby provoz databáze nebylo možné prolomit.
 
-[Přečtěte si víc](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) o postupech zabezpečení pro virtuální počítače.
+Další informace najdete v tématu [osvědčené postupy zabezpečení pro úlohy IaaS v Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

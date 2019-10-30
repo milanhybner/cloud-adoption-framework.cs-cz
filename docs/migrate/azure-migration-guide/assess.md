@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549264"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058801"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
@@ -58,7 +58,7 @@ Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby A
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>Další informace
+### <a name="learn-more"></a>Další informace
 
 - [Přehled služby Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrace fyzických nebo virtualizovaných serverů do Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a na
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>Další informace
+### <a name="learn-more"></a>Další informace
 
 - [Používání řešení Service Map v Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate a Service Map: Vizualizace závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ V tomto průvodci se zaměříme na následující scénáře:
 
 Když vytvoříte základní tým cloudové strategie, který sestavíte z těchto klíčových vedoucích účastníků, pomůže vám to připravit organizaci na osvojení cloudu, protože tento tým povede celý proces migrace do cloudu. Tento tým bude odpovědný za pochopení cloudových technologií a migračních procesů, zajistí obchodní odůvodnění migrací a určí nejlepší hlavní řešení používaná k migraci. Dále tým pomáhá identifikovat konkrétní aplikace a firemní účastníky a spolupracuje s nimi, aby zajistil jejich úspěšnou migraci.
 
-Další informace o přípravě organizace na migraci do cloudu najdete v článku o architektuře přechodu na cloud v [úvodním zařazení organizace](../../ready/initial-org-alignment.md).
+Další informace o přípravě organizace na migraci do cloudu najdete v článku o architektuře přechodu na cloud v [úvodním zařazení organizace](../../plan/initial-org-alignment.md).
 
 # <a name="timelinestabtimelines"></a>[Časové osy](#tab/Timelines)
 

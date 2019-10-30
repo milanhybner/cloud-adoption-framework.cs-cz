@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378044"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058056"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Příklady implementace uživatelského rozhraní Azure Enterprise
 
 > [!NOTE]
-> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a/nebo [informace o cílové zóně](../ready/considerations/index.md).
+> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a [informace o cílové zóně](../ready/considerations/index.md).
 
 Tento článek popisuje příklady, jak může podnik implementovat doporučení pro [generování uživatelského rozhraní Azure Enterprise](./azure-scaffold.md). Používá fiktivní společnost s názvem contoso k ilustraci osvědčených postupů pro běžné scénáře.
 
@@ -138,6 +138,8 @@ Dave se do Azure Enterprise Portal a zjistí, že oddělení dodavatelských ře
 | --- | --- |
 | Vývoj |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Výroba |Contoso SupplyChain Operations LoyaltyCard produkční prostředí |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Zásady
 

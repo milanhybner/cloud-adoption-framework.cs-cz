@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0b743ffbace5c2b246df6f03d7e5b23570277dd0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548138"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058230"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure
 
@@ -292,7 +292,7 @@ Tým zabezpečení společnosti Contoso kontroluje virtuální počítače OSTIC
 - V rámci řízení přístupu tým kontroluje skupiny zabezpečení sítě pro virtuální počítače. Skupiny zabezpečení sítě zajišťují, aby se k aplikaci dostal jen povolený provoz.
 - Tým také zvažuje zabezpečení dat na discích virtuálních počítačů pomocí služeb Disk Encryption a Azure Key Vault.
 
-[Přečtěte si víc](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) o postupech zabezpečení pro virtuální počítače.
+Další informace najdete v tématu [osvědčené postupy zabezpečení pro úlohy IaaS v Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1f43bdf0e0d58c40f11e45caf0221f7983c9624
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547523"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058667"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardní příručka pro zásady správného řízení podniku: vylepšení pravidla směrného plánu zabezpečení
 
@@ -36,7 +36,7 @@ Na začátku tohoto mluveného komentáře vývojové týmy aplikace i nadále p
 
 Od té doby se změnily některé věci, které budou mít vliv na zásady správného řízení:
 
-- Vývojový tým aplikace implementoval kanál CI/CD pro nasazení nativní cloudové aplikace s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravené pro produkční prostředí.
+- Vývojový tým aplikace implementoval kanál CI/CD pro nasazení nativní cloudové aplikace s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravená pro produkční prostředí.
 - Tým Business Intelligence v rámci IT aktivně vystavuje data v cloudu z logistiky, inventáře a zdrojů třetích stran. Tato data se používají k řízení nových předpovědi, která by mohla tvarovat obchodní procesy. Nicméně tyto předpovědi a přehledy nejsou vhodné, dokud se zákazníci a finanční data nedají integrovat do datové platformy.
 - IT tým pokračuje v plánech CIO a CFO na vyřazení datacentra DR. V datacentru DR bylo vyřazeno nebo Migrováno více než 1 000 prostředků 2 000.
 - Volně definované zásady týkající se osobních údajů a finančních dat byly moderní. Nové podnikové zásady jsou ale závislé na implementaci souvisejících zásad zabezpečení a zásad správného řízení. Týmy jsou stále zablokované.

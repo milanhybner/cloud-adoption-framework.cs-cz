@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547347"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058911"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury migrace
 
@@ -55,7 +55,7 @@ Tento diagram znázorňuje aktuální místní infrastrukturu společnosti Conto
 - V rámci USA má ještě tři další místní pobočky.
 - Hlavní datacentrum je připojené k internetu přes optické připojení Metro Ethernet (500 Mb/s).
 - Každá pobočka je místně připojená k internetu přes podnikové přípojky s tunely VPN IPSec, které vedou zpátky do hlavního datacentra. Díky tomu může být celá síť trvale připojená a má optimální připojení k internetu.
-- Hlavní datacentrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje software vCenter Server 6.5.
+- Hlavní datové centrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje software vCenter Server 6.5.
 - Společnost Contoso používá službu Active Directory pro správu identit a servery DNS ve vnitřní síti.
 - Řadiče domény v datacentru běží na virtuálních počítačích VMware. Řadiče domény v místních pobočkách běží na fyzických serverech.
 
@@ -325,7 +325,7 @@ Společnost Contoso má vytvořený návrh oblastí a teď se může zamyslet na
 
 ### <a name="plan-hybrid-network-connectivity"></a>Plánování hybridního připojení k síti
 
-Společnost Contoso se rozhodovala mezi [několika architekturami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) hybridních sítí mezi Azure a místním datacentrem. [Přečtěte si další informace](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) o porovnávání možností.
+Společnost Contoso se rozhodovala mezi [několika architekturami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) hybridních sítí mezi Azure a místním datacentrem. Další informace najdete v tématu [Volba řešení pro připojení místní sítě k Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Připomínáme, že místní síťovou infrastrukturu společnosti Contoso v současné době tvoří datacentrum v New Yorku a místní pobočky ve východní části USA. Všechna pracoviště mají připojení k internetu na podnikové úrovni. Každá pobočka je tedy připojená k datacentru přes tunel VPN IPSec na internetu.
 
@@ -638,7 +638,7 @@ Služba Active Directory má z hlediska sítí zásadní význam a je potřeba j
 
 ## <a name="step-5-plan-for-governance"></a>Krok 5: plánování zásad správného řízení
 
-Azure poskytuje v rámci různých služeb a platformy Azure řadu ovládacích prvků pro zásady správného řízení. [Přečtěte si další informace](https://docs.microsoft.com/azure/security/governance-in-azure) o základních principech různých možností.
+Azure poskytuje v rámci různých služeb a platformy Azure řadu ovládacích prvků pro zásady správného řízení. Další informace najdete v tématu [Možnosti zásad správného řízení Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 Během konfigurace identit a řízení přístupu už společnost Contoso začala řešit některé aspekty zásad správného řízení a zabezpečení. V podstatě existují tři oblasti, které je potřeba vzít v úvahu:
 
@@ -766,7 +766,7 @@ Společnost Contoso může pomocí skupin zabezpečení sítě omezit síťový 
   - Díky skupinám zabezpečení aplikace může společnost Contoso opakovaně uplatňovat zásady zabezpečení v požadovaném měřítku, bez potřeby ruční údržby explicitních IP adres. O složitost explicitních IP adres a několika skupin pravidel se stará platforma a vy se tak můžete zaměřit na obchodní logiku.
   - Skupinu zabezpečení aplikace může společnost Contoso zadat jako zdroj a cíl v pravidlu zabezpečení. Po definování zásady zabezpečení může společnost Contoso vytvořit virtuální počítače a přiřadit jejich síťové karty k určité skupině.
 
-Contoso bude implementovat kombinaci skupin zabezpečení sítě a skupin zabezpečení aplikace. Správa skupin zabezpečení sítě dělá společnosti Contoso starosti. Společnost se taky obává nadměrného využívání skupin zabezpečení sítě a toho, že se tím zkomplikuje práce provozního týmu. Provede to takto:
+Contoso bude implementovat kombinaci skupin zabezpečení sítě a skupin zabezpečení aplikace. Správa skupin zabezpečení sítě dělá společnosti Contoso starosti. Společnost se taky obává nadměrného využívání skupin zabezpečení sítě a toho, že se tím zkomplikuje práce provozního týmu. Proto bude společnost Contoso postupovat takto:
 
 - Veškerý provoz směřující do všech podsítí a z nich (sever/jih) se bude řídit pravidlem skupin zabezpečení sítě, s výjimkou podsítí GatewaySubnets v centrálních sítích.
 - Všechny brány firewall nebo řadiče domény budou chráněné jak skupinami zabezpečení sítě podsítí, tak skupinami zabezpečení sítě síťových karet.

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683455"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058614"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Nástroje pro zapojení přes aplikace v Azure
 
@@ -21,7 +21,7 @@ Jak je popsáno v tématu [zapojení přes aplikace](../considerations/apps.md),
 
 ![Přístup k rozhraní architektury pro přijetí do cloudu pro zapojení přes aplikace](../../_images/innovate/engage-via-apps.png)
 
-## <a name="alignment-to-the-methodology"></a>Zarovnání na metodologii
+## <a name="alignment-to-the-methodology"></a>Soulad s metodikou
 
 Tento typ digitálního vynálezu se dá zrychlit prostřednictvím každého níže uvedeného postupu, který je uvedený také výše. Technické pokyny pro zrychlení digitálního vynálezu jsou uvedené v obsahu na levé straně. Tyto články byly seskupeny do přístupů, aby bylo možné zarovnat doprovodné materiály k celkové metodologii:
 
@@ -31,7 +31,7 @@ V tomto článku se předpokládá, že všechny vynálezy, které výsledkem ap
 - **Inteligentní prostředí:** Vytvářejte moderní prostředí pomocí cloudových platforem pro rychlé nasazení a cykly krátké zpětné vazby. Rozšiřte webové aplikace na inzapékací Intelligence nebo dokonce Integrujte roboty.
 - **Nativní Cloud:** Vytvořte nový vynález, který přirozeně využívá výhod cloudových možností.
 
-Každá cesta vede k krátkodobým a dlouhodobým výhodám a nevýhodám. V případě, že se zásady správného řízení cloudu, cloudové operace a cloudové centrum vynikajících týmů připravují na podporu jednotlivých přístupů, je možné přijmout urychlení s minimálním dopadem na udržitelné obchodní operace.
+Každá cesta vede k krátkodobým a dlouhodobým výhodám a nevýhodám. V případě, že tým zásad správného řízení cloudu, tým cloudových operací a cloudové centrum excelence jsou připravené k podpoře každého přístupu, lze přijmout urychlení s minimálním dopadem na udržitelné obchodní operace.
 
 ## <a name="toolchain"></a>Sada nástrojů
 

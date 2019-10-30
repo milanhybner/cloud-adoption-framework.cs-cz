@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547219"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058655"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Změna hostitele místní aplikace na virtuální počítače Azure a skupinu dostupnosti AlwaysOn pro SQL Server
 
@@ -507,7 +507,7 @@ Správci společnosti Contoso budou pomocí DMA migrovat databázi SmartHotel360
 
 1. Tento nástroj si stáhnou z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) do místního virtuálního počítače s SQL Serverem (**SQLVM**).
 2. Na tomto virtuálním počítači spustí instalační program (DownloadMigrationAssistant.msi).
-3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit Microsoft Data Migration Assistanta).
+3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit nástroj Microsoft Data Migration Assistant).
 
 ## <a name="step-8-migrate-the-database-with-dma"></a>Krok 8: migrace databáze pomocí DMA
 
@@ -659,7 +659,7 @@ Bezpečnostní tým společnosti Contoso zkontroluje virtuální počítače Azu
 - Tým zváží zabezpečení dat na disku pomocí služeb Azure Disk Encryption a Key Vault.
 - Tým by měl vyhodnotit transparentní šifrování dat a pak ho povolit v databázi SmartHotel360 běžící v nové skupině dostupnosti SQL. [Další informace](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-[Přečtěte si víc](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) o postupech zabezpečení pro virtuální počítače.
+Další informace najdete v tématu [osvědčené postupy zabezpečení pro úlohy IaaS v Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>BCDR
 

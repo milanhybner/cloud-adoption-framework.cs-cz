@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547601"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058126"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
@@ -39,7 +39,7 @@ V předchozí fázi tohoto mluveného komentáře společnost začala postup vy�
 Od té doby se změnily některé věci, které budou mít vliv na zásady správného řízení:
 
 - Do cloudu byly nasazeny tisíce IT a firemních prostředků.
-- Vývojový tým aplikace implementoval kanál průběžné integrace a nasazování (CI/CD) pro nasazení nativní aplikace cloudu s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravené pro produkční prostředí.
+- Vývojový tým aplikace implementoval kanál průběžné integrace a nasazování (CI/CD) pro nasazení nativní aplikace cloudu s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravená pro produkční prostředí.
 - Tým Business Intelligence v rámci IT aktivně vystavuje data v cloudu z logistiky, inventáře a dat třetích stran. Tato data se používají k řízení nových předpovědi, která by mohla tvarovat obchodní procesy. Nicméně tyto předpovědi a přehledy nejsou vhodné, dokud se zákazníci a finanční data nedají integrovat do datové platformy.
 - IT tým pokračuje v plánech CIO a CFO, aby vyřazení dvou datových center. Téměř 3 500 prostředků ve dvou datacentrech bylo vyřazeno nebo Migrováno.
 - Zásady týkající se citlivých osobních a finančních dat byly moderní. Nové podnikové zásady jsou ale závislé na implementaci souvisejících zásad zabezpečení a zásad správného řízení. Týmy jsou stále zablokované.

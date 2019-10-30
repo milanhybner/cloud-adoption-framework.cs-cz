@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 71838c7125b95ff83d1ac087e4cb028add9d2299
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549253"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058789"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -50,7 +50,7 @@ Pokud chcete provést migraci pomocí služby Azure Migrate, postupujte následo
 
 <!-- TODO: TBA -->
 
-### <a name="read-more"></a>Další informace
+### <a name="learn-more"></a>Další informace
 
 - [Kurz služby Azure Migrate – Migrace fyzických nebo virtualizovaných serverů do Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 

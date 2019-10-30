@@ -1,5 +1,5 @@
 ---
-title: 'Softwarově definované sítě: Jenom PaaS'
+title: 'Softwarově definované sítě: jenom PaaS'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diskuzi o modelu PaaS, který je určený jenom pro softwarově definované sítě v cloudu.
 author: rotycenh
@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023549"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058737"
 ---
-# <a name="software-defined-networking-paas-only"></a>Softwarově definované sítě: Jenom PaaS
+# <a name="software-defined-networking-paas-only"></a>Softwarově definované sítě: jenom PaaS
 
 Při implementaci prostředku Platform as a Service (PaaS) proces nasazení automaticky vytvoří předpokládanou základní síť s omezeným počtem ovládacích prvků v této síti, včetně vyrovnávání zatížení, blokování portů a připojení k ostatním PaaS. orgány.
 
-V Azure můžete [nasadit](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) několik typů prostředků PaaS nebo je [připojit k](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) virtuální síti, což umožňuje integraci těchto prostředků se stávající infrastrukturou virtuální sítě. Další služby, například [App Service prostředí](https://docs.microsoft.com/azure/app-service/environment/intro), [služby Azure Kubernetes](https://docs.microsoft.com/azure/aks/intro-kubernetes)a [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) musí být nasazeny v rámci virtuální sítě. Ale v mnoha případech je PaaS jenom síť architektury, která se spoléhá jenom na výchozí možnosti nativního síťového připojení, které poskytují prostředky PaaS, stačí, aby splnily požadavky na konektivitu a správu provozu úlohy.
+V Azure můžete [nasadit](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) několik typů prostředků PaaS nebo je [připojit k](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) virtuální síti, což umožňuje integraci těchto prostředků se stávající infrastrukturou virtuální sítě. V rámci virtuální sítě musí být nasazené jiné služby, například [App Service prostředí](https://docs.microsoft.com/azure/app-service/environment/intro), [Služba Azure Kubernetes (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)a [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) . Ale v mnoha případech je PaaS jenom síť architektury, která se spoléhá jenom na výchozí možnosti nativního síťového připojení, které poskytují prostředky PaaS, stačí, aby splnily požadavky na konektivitu a správu provozu úlohy.
 
 Pokud zvažujete jenom PaaS síťovou architekturu, ujistěte se, že jste ověřili, že požadované předpoklady odpovídají vašim požadavkům.
 

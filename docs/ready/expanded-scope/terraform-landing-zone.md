@@ -1,5 +1,5 @@
 ---
-title: Cílová zóna s Terraformu
+title: Použití Terraformu k sestavení zón odpočívadla
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Naučte se používat Terraformu k sestavování zón odpočívadl.
 author: arnaudlh
@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b540e2f4ea2a9c7f091a5505a19ad61eac05c971
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049767"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058155"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Použití Terraformu k sestavení zón odpočívadla
 
-Kromě služeb Azure Native Services často zákazníci a partneři používají Terraformu Hashicorp k nasazení zón vykládku. V této části se dozvíte, jak pomocí cílové zóny prototypů nasadit základní protokolování, monitorování účtů a možnosti zabezpečení pro předplatné Azure.
+Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který zákazníci a partneři často používají, je Terraformu na nasazení Hashicorp. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Účel cílové zóny
 
