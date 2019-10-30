@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224398"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549264"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
 Při ideální migraci by každý prostředek (infrastruktura, aplikace nebo data) byl kompatibilní s cloudovou platformou a byl by připraven k migraci. Ve skutečnosti se ale všechno do cloudu migrovat nedá. Navíc ne každý prostředek je kompatibilní s cloudovými platformami. Proto než budete úlohu migrovat do cloudu, je důležité vyhodnotit nejen ji, ale také každý související prostředek (infrastrukturu, aplikace a data).
 
 Zdroje informací v této části vám pomůžou posoudit vaše prostředí, abyste dokázali určit, jestli je pro migraci vhodné a jaké metody připadají v úvahu.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Nástroje](#tab/Tools)
 

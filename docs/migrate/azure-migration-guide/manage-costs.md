@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378416"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683825"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
@@ -31,7 +31,7 @@ Mezi nástroje probírané v tomto článku patří:
 > - Azure Cost Management
 > - Azure Advisor
 
-Procesy popsané v tomto článku můžou vyžadovat spolupráci s manažery IT, finančním oddělením nebo vlastníky obchodních aplikací. Pokyny ke spolupráci s těmito rolemi najdete v článku o tom, jak v organizaci brát ohledy na náklady (který v rámci série o přechodu na cloud vyjde ve 3. čtvrtletí 2019).
+Procesy popsané v tomto článku můžou vyžadovat spolupráci s manažery IT, finančním oddělením nebo vlastníky obchodních aplikací.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Tyto manuální kalkulačky nákladů je možné využít samostatně pro předp
 
 Azure Migrate vypočítá **odhady měsíčních nákladů** na základě dat zachycených kolektorem a mapou služeb. Odhadované náklady je možné načíst takto:
 
-1. Na portálu přejděte do okna posouzení Azure Migrate.
-1. Na stránce **Přehled** projektu vyberte **+Vytvořit posouzení**.
-1. Kliknutím na **Zobrazit vše** zobrazíte vlastnosti posouzení.
-1. Vytvořte skupinu a pojmenujte ji.
-1. Vyberte virtuální počítače, které do ní chcete přidat.
-1. Kliknutím na tlačítko **Vytvořit posouzení** vytvoříte skupinu a posouzení.
-1. Po vytvoření můžete posouzení zobrazit v části Přehled > Řídicí panel.
-1. V části Podrobnosti o posouzení v okně navigace vyberte **Podrobnosti nákladů**.
+1. Na portálu přejděte na Posouzení Azure Migrate.
+2. Na stránce **Přehled** projektu vyberte **+Vytvořit posouzení**.
+3. Kliknutím na **Zobrazit vše** zobrazíte vlastnosti posouzení.
+4. Vytvořte skupinu a pojmenujte ji.
+5. Vyberte virtuální počítače, které do ní chcete přidat.
+6. Kliknutím na tlačítko **Vytvořit posouzení** vytvoříte skupinu a posouzení.
+7. Po vytvoření můžete posouzení zobrazit v části Přehled > Řídicí panel.
+8. V navigaci na portálu vyberte v části Podrobnosti o posouzení možnost **Podrobnosti nákladů**.
 
 Výsledný odhad, jehož příklad je uvedený níže, identifikuje měsíční náklady na výpočty a úložiště, které často představují největší část nákladů na cloud.
 
@@ -83,9 +83,9 @@ Během 24 hodin od migrace prostředků (infrastruktury, aplikací a dat) do Azu
 
 Doporučení k nákladům pro prostředky (infrastrukturu, aplikace a data) v rámci svého aktuálního předplatného získáte takto:
 
-1. Na portálu přejděte do okna **Azure Advisor**. Můžete to udělat tak, že v levém navigačním podokně webu Azure Portal kliknete na **Poradce**. Pokud položku Poradce v levém podokně nevidíte, vyberte **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Poradce**.
-1. Na řídicím panelu služby Advisor se zobrazí souhrn doporučení pro všechna vybraná předplatná. Předplatná, pro která chcete zobrazit doporučení, můžete zvolit pomocí rozevíracího seznamu filtru předplatných.
-1. Pokud chcete zobrazit doporučení k nákladům, vyberte kartu Náklady.
+1. Na portálu přejděte na **Azure Advisor**. Můžete to udělat tak, že v levém navigačním podokně webu Azure Portal kliknete na **Poradce**. Pokud položku Poradce v levém podokně nevidíte, vyberte **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Poradce**.
+2. Na řídicím panelu služby Advisor se zobrazí souhrn doporučení pro všechna vybraná předplatná. Předplatná, pro která chcete zobrazit doporučení, můžete zvolit pomocí rozevíracího seznamu filtru předplatných.
+3. Pokud chcete zobrazit doporučení k nákladům, vyberte kartu Náklady.
 
 ## <a name="azure-cost-management"></a>Azure Cost Management
 
@@ -95,10 +95,10 @@ Požadavky: Zbývající část této karty předpokládá, že jste během doko
 
 Data analýzy nákladů služby Azure Cost Management můžete pro svá předplatná načíst takto:
 
-1. Na portálu přejděte do okna **Správa nákladů a fakturace**. Pokud položku Správa nákladů a fakturace nevidíte v levém podokně, klikněte na **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Správa nákladů a fakturace**.
-1. V okně Správa nákladů a fakturace vyberte v levé navigaci možnost **Správa nákladů**. Tím můžete v otevřeném okně začít analyzovat a optimalizovat náklady na cloud.
-1. V okně Správa nákladů vyberte **Analýza nákladů**.
-    1. Pomocí možnosti **Obor** můžete v analýze nákladů přepnout na jiný obor.
+1. Na portálu přejděte na **Správa nákladů a fakturace**. Pokud položku Správa nákladů a fakturace nevidíte v levém podokně, klikněte na **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Správa nákladů a fakturace**.
+2. V části Správa nákladů a fakturace vyberte v levém navigačním podokně možnost **Správa nákladů** a můžete začít analyzovat a optimalizovat náklady na cloud.
+3. V části Správa nákladů vyberte **Analýza nákladů**.
+    a. Pomocí možnosti **Obor** můžete v analýze nákladů přepnout na jiný obor.
 
 Tato analýza vám umožní zkontrolovat celkové náklady, rozpočet (pokud je k dispozici) a kumulované náklady. Každý výpočet je možné zobrazit podle služby, podle prostředku a v průběhu času. Nejdůležitější je, že náklady je možné analyzovat pomocí značek. Správné pojmenování a označení prostředků (infrastruktury, aplikací a dat) je základním výchozím bodem všech procesů správného řízení a správy nákladů. Správné značky umožňují lepší správu nákladů a vedou k lepším výsledkům při optimalizaci výkonu a nákladů.
 

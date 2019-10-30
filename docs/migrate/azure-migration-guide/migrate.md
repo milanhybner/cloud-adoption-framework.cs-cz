@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224068"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549253"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
 V této fázi použijete výstup z fáze posouzení a zahájíte migraci prostředí. Tento návod vám pomůže identifikovat vhodné nástroje pro dosažení stavu „hotovo“, včetně nativních nástrojů, nástrojů třetích stran a nástrojů pro správu projektů.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[Nativní nástroje pro migraci](#tab/Tools)
 
@@ -202,7 +204,9 @@ Nástroje pro migraci dat Azure Cosmos DB může importovat data z různých zdr
 
 Další informace naleznete v tématu:
 
-- [Nástroj pro migraci dat Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Nástroj pro migraci dat Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Nástroje pro migraci od třetích stran](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ Movere je řešení pro zjišťování, které poskytuje data a přehledy potře
 
 Můžete si vybrat z široké nabídky zkušených partnerů v oblasti integrace systémů a příslušných nástrojů, které podporují vaše migrace Azure Cosmos DB pro vaše požadavky na databázi NoSQL.
 
-[Další informace](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[Další informace](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 Pokud chcete vyhledat organizace nabízející předem připravená partnerská technologická řešení, která by vyhovovala vašemu scénáři migrace, a získat více informací o dalších nástrojích a podpůrných službách pro migraci od třetích stran, navštivte [centrum pro migraci do Azure](https://azure.microsoft.com/migration/support).
 
