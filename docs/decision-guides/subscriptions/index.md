@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683505"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058725"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -26,7 +26,7 @@ Jak se vaše digitální aktiva v Azure budou rozšiřovat, budete pro splnění
 
 Tady je několik základních příkladů využití skupin pro správu k oddělení různých úloh:
 
-- **Produkční prostředí v porovnání s neprodukčním prostředím:** Některé podniky vytvářejí skupiny pro správu za účelem oddělení svých produkčních a neprodukčních předplatných. Skupiny pro správu těmto uživatelům umožňují snadnější správu rolí a zásad. Například v neprodukčním předplatném můžou mít vývojáři povolený přístup **přispěvatele**, ale v produkčním prostředí můžou mít pouze přístup **čtenáře**.
+- **Produkční úlohy v porovnání s neprodukčními:** Některé podniky vytvářejí skupiny pro správu za účelem oddělení svých produkčních a neprodukčních předplatných. Skupiny pro správu těmto uživatelům umožňují snadnější správu rolí a zásad. Například v neprodukčním předplatném můžou mít vývojáři povolený přístup **přispěvatele**, ale v produkčním prostředí můžou mít pouze přístup **čtenáře**.
 - **Interní služby v porovnání s externími službami:** Podobně jako v případě produkčních a neprodukčních úloh podniky pro interní služby a externí služby určené pro zákazníky často mají různé požadavky, zásady a role.
 
 Tento průvodce rozhodováním pomáhá porovnat různé přístupy k uspořádání hierarchie skupin pro správu.

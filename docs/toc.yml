@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Vytvoření konzistentního hybridního cloudu
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Rozšířený rozsah
+      items:
+        - name: Cílové zóny Terraformu
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Zabezpečení hranic sítě
+          href: reference/networking-vdc.md
     - name: Osvědčené postupy
       items:
         - name: Přehled
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Další osvědčené postupy
                   items:
-                    - name: Osvědčené postupy hraničního zabezpečení v Azure
-                      href: reference/networking-vdc.md
                     - name: Osvědčené postupy zabezpečení databáze v Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Osvědčené postupy šifrování a zabezpečení dat v Azure
@@ -707,7 +711,7 @@
                       items:
                         - name: 'Návrh, sestavování a provoz mikroslužeb v Azure'
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Referenční architektura pro mikroslužby s Azure Kubernetes Services (AKS)
+                        - name: Referenční architektura pro mikroslužby s Azure Kubernetes Service (AKS)
                           href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Referenční architektura – ukázka bezserverových mikroslužeb
                           href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'

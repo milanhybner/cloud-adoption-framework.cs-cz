@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683566"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058705"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Průvodce zásadami správného řízení pro komplexní firmy
 
@@ -39,7 +39,7 @@ Následující diagram znázorňuje hierarchii MVP zásad správného řízení 
 
 Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a skupin prostředků měly nasazovat do vhodné oblasti. Při plánování nasazení tým zásad správného řízení v cloudu vytvoří v hierarchii potřebné uzly pro týmy přechodu na cloud.
 
-1. Pro každou obchodní jednotku definujte skupinu pro správu s podrobnou hierarchií, která odráží geografii a typ prostředí (například produkční nebo neprodukční).
+1. Pro každou obchodní jednotku definujte skupinu pro správu s podrobnou hierarchií, která odráží geografii a typ prostředí (například produkční nebo neprodukční prostředí).
 2. Vytvořte produkční a neprodukční předplatné pro každou jedinečnou kombinaci diskrétní obchodní jednotky nebo zeměpisné oblasti. Při vytváření více předplatných je potřeba dávat pozor. Další podrobnosti najdete [tady](../../../decision-guides/subscriptions/index.md).
 3. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/considerations/naming-and-tagging.md).
 4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu: všechno, co se vyvíjí dohromady, se také dohromady spravuje a vyřazuje z provozu. Další informace o osvědčených postupech pro skupiny prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
