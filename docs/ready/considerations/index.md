@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224234"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239800"
 ---
 # <a name="landing-zone-considerations"></a>Aspekty cílových zón
 
@@ -27,10 +27,10 @@ Na tomto obrázku vidíte hlavní aspekty implementace nasazení jakékoli cílo
 
 Všechny cílové zóny poskytují strukturu pro možnosti hostování. Tato struktura je vytvořená explicitně prostřednictvím kontrol zásad správného řízení nebo přirozeně přijetím služeb v rámci cílové zóny. Následující články vám můžou pomoct přijmout rozhodnutí, která se pak projeví v podrobném plánu nebo jiných automatizačních skriptech, které vytvářejí cílovou zónu:
 
-- **[Rozhodnutí o výpočetních prostředcích.](./compute-decisions.md)** Slaďte možnosti výpočetních prostředků s účelem cílové zóny, abyste minimalizovali provozní složitost. Toto rozhodnutí je možné vynutit pomocí sad nástrojů automatizace, jako jsou iniciativy Azure Policy a podrobné plány cílové zóny.
-- **[Rozhodnutí o úložišti.](./storage-guidance.md)** Zvolte si nejvhodnější řešení úložiště Azure pro podporu požadavků vašich úlohy.
-- **[Rozhodnutí o síti.](./network-decisions.md)** Zvolte síťové služby, nástroje a architektury, které podporují požadavky vaší organizace na možnosti připojení, zásady správného řízení a úlohy.
-- **[Rozhodnutí o databázích.](./data-decisions.md)** Určete, která databázová technologie je nejvhodnější pro vaše požadavky na úlohy.
+- **[Rozhodnutí o výpočetních prostředcích.](./compute-options.md)** Slaďte možnosti výpočetních prostředků s účelem cílové zóny, abyste minimalizovali provozní složitost. Toto rozhodnutí je možné vynutit pomocí sad nástrojů automatizace, jako jsou iniciativy Azure Policy a podrobné plány cílové zóny.
+- **[Rozhodnutí o úložišti.](./storage-options.md)** Zvolte si nejvhodnější řešení úložiště Azure pro podporu požadavků vašich úlohy.
+- **[Rozhodnutí o síti.](./networking-options.md)** Zvolte síťové služby, nástroje a architektury, které podporují požadavky vaší organizace na možnosti připojení, zásady správného řízení a úlohy.
+- **[Rozhodnutí o databázích.](./data-options.md)** Určete, která databázová technologie je nejvhodnější pro vaše požadavky na úlohy.
 
 ## <a name="azure-fundamentals"></a>Základy Azure
 
@@ -47,6 +47,6 @@ Následující články pomáhají při rozhodování týkajícím se zásad spr
 
 - **Požadavky na náklady.** Na základě motivace organizace pro přechod na cloud a provozních závazků učiněných ohledně jejího prostředí můžou různé konfigurace správy nákladů vyžadovat pro tuto cílovou zónu změnu.
 - **Rozhodnutí o monitorování.** V závislosti na provozních požadavcích pro tuto cílovou zónu je možné nasadit různé monitorovací nástroje. Článek o rozhodnutích týkajících se monitorování pomůže určit nejvhodnější nástroje pro nasazení.
-- **Použití řízení přístupu na základě role.** [Řízení přístupu na základě role (RBAC)](../azure-best-practices/roles.md) v Azure nabízí jemně odstupňovanou správu přístupu na základě skupin pro prostředky uspořádané podle uživatelských rolí.
+- **Použití řízení přístupu na základě role.** [Řízení přístupu na základě role (RBAC)](../considerations/roles.md) v Azure nabízí jemně odstupňovanou správu přístupu na základě skupin pro prostředky uspořádané podle uživatelských rolí.
 - **Rozhodnutí o zásadách.** [Ukázky Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples) poskytují předem připravené podrobné plány dodržování předpisů, každý s předdefinovanými iniciativami zásad. Rozhodnutí o zásadách jsou zdrojem informací pro výběr nejlepšího podrobného plánu nebo iniciativy zásad na základě vašich požadavků a omezení.
-- **[Vytvoření konzistentního hybridního cloudu.](../../infrastructure/misc/hybrid-consistency.md)** Budete mít možnost vytvořit hybridní cloudová řešení, která vaší organizaci poskytnou výhody cloudových inovací a současně si zachovávají řadu výhod správy v místním prostředí.
+- **[Vytvoření konzistentního hybridního cloudu.](./hybrid-consistency.md)** Budete mít možnost vytvořit hybridní cloudová řešení, která vaší organizaci poskytnou výhody cloudových inovací a současně si zachovávají řadu výhod správy v místním prostředí.

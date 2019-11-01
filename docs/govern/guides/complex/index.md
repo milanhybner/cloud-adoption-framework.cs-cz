@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058705"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239726"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Průvodce zásadami správného řízení pro komplexní firmy
 
@@ -41,7 +41,7 @@ Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a sku
 
 1. Pro každou obchodní jednotku definujte skupinu pro správu s podrobnou hierarchií, která odráží geografii a typ prostředí (například produkční nebo neprodukční prostředí).
 2. Vytvořte produkční a neprodukční předplatné pro každou jedinečnou kombinaci diskrétní obchodní jednotky nebo zeměpisné oblasti. Při vytváření více předplatných je potřeba dávat pozor. Další podrobnosti najdete [tady](../../../decision-guides/subscriptions/index.md).
-3. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/considerations/naming-and-tagging.md).
+3. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/azure-best-practices/naming-and-tagging.md).
 4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu: všechno, co se vyvíjí dohromady, se také dohromady spravuje a vyřazuje z provozu. Další informace o osvědčených postupech pro skupiny prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
 5. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 

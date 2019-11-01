@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378020"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238855"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Průvodce rozhodováním ohledně pojmenování a označování prostředků
 
@@ -40,7 +40,7 @@ Schémata označování, mezi která patří zaměření sladěné s obchodní �
 
 Standardizované zásady vytváření názvů představují výchozí bod při organizaci prostředků hostovaných v cloudu. Vhodně strukturovaný systém vytváření názvů vám umožní rychle identifikovat prostředky pro účely správy i účetnictví. Pokud v jiných částech organizace již existují zásady vytváření názvů pro IT, zvažte, jestli by se jim měly vaše zásady vytváření názvů v cloudu přizpůsobit, nebo jestli byste měli zavést nové cloudové standardy.
 
-Mějte také na paměti, že různé typy prostředků Azure mají rozdílné [požadavky na pojmenování](../../ready/considerations/naming-and-tagging.md). Vaše zásady vytváření názvů musí s těmito požadavky na pojmenování být kompatibilní.
+Mějte také na paměti, že různé typy prostředků Azure mají rozdílné [požadavky na pojmenování](../../ready/azure-best-practices/naming-and-tagging.md). Vaše zásady vytváření názvů musí s těmito požadavky na pojmenování být kompatibilní.
 
 ## <a name="resource-tagging-patterns"></a>Vzory označování prostředků
 
