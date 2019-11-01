@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058725"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238787"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -22,7 +22,7 @@ Efektivní návrh předplatného pomáhá organizacím vytvořit strukturu pro u
 
 Každý prostředek v Azure, jako je třeba virtuální počítač nebo databáze, je přidružený k předplatnému. Zavádění Azure začíná vytvořením předplatného Azure, jeho přidružením k účtu a nasazením prostředků do tohoto předplatného. Přehled těchto pojmů najdete v článku věnovaném [základní koncepci Azure](../../ready/considerations/fundamental-concepts.md).
 
-Jak se vaše digitální aktiva v Azure budou rozšiřovat, budete pro splnění vašich požadavků pravděpodobně muset vytvořit další předplatná. Azure umožňuje definovat hierarchii skupin pro správu sloužící k uspořádání předplatných a snadno propojovat zásady s odpovídajícími prostředky. Další informace najdete v tématu věnovaném [škálování s využitím několika předplatných Azure](../../ready/considerations/scaling-subscriptions.md).
+Jak se vaše digitální aktiva v Azure budou rozšiřovat, budete pro splnění vašich požadavků pravděpodobně muset vytvořit další předplatná. Azure umožňuje definovat hierarchii skupin pro správu sloužící k uspořádání předplatných a snadno propojovat zásady s odpovídajícími prostředky. Další informace najdete v tématu věnovaném [škálování s využitím několika předplatných Azure](../../ready/azure-best-practices/scaling-subscriptions.md).
 
 Tady je několik základních příkladů využití skupin pro správu k oddělení různých úloh:
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: f493f53d2cc316a0e4ff7ae75211c5e41bc9d8a8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047723"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238823"
 ---
 # <a name="migration-tools-decision-guide"></a>Průvodce rozhodováním ohledně nástrojů pro migraci
 
@@ -42,5 +42,5 @@ V souladu s důrazem, který architektura přechodu na cloud klade na [přírůs
 
 - **[Základy práce s cloudy: Přehled možností výpočetního prostředí Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Tento článek obsahuje informace o funkcích ve variantách výpočetního prostředí Azure IaaS a PaaS.
 - **[Základy práce s cloudy: Volba správného úložiště dat](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Tento článek popisuje dostupné možnosti úložiště PaaS na platformě Azure.
-- **[Migrace s rozšířeným rozsahem: Požadavky na úložiště při migraci překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md).** Tento článek popisuje alternativní mechanismy migrace dat pro scénáře, kdy migraci dat brání dostupná šířka pásma sítě.
+- **[Migrace s rozšířeným rozsahem: Požadavky na data při migraci překračují kapacitu sítě](../../migrate/expanded-scope/network-capacity-exceeded.md).** Tento článek popisuje alternativní mechanismy migrace dat pro scénáře, kdy migraci dat brání dostupná šířka pásma sítě.
 - **[SQL Database: Výběr správné varianty SQL Serveru v Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Tento článek obsahuje popis možností a obchodních odůvodnění pro rozhodnutí hostovat úlohy SQL Serveru v prostředí hostované infrastruktury (IaaS) nebo hostované služby (PaaS).

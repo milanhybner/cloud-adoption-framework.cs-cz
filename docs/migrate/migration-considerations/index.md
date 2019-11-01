@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548465"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240271"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migrace architektury přechodu na cloud
 
@@ -34,7 +34,7 @@ Před zahájením migrace je důležité udělat si hrubou představu o požadov
 
 ![Infografika možností migrace](../../_images/migrate/migration-options.png)
 
-Migrace a modernizace úloh sahají od jednoduchých migrací *změnou hostitele* (migrace metodou „lift and shift“) s využitím funkcí infrastruktury jako služby (IaaS), které nevyžadují změny kódu ani aplikací, přes *refaktorování* s minimálními změnami až po *změnu architektury*, při které se upraví a rozšíří kód a funkce aplikací tak, aby mohly využívat cloudové technologie.
+Migrace a modernizace úloh sahají od jednoduchých migrací _změnou hostitele_ (označuje se také jako _migrace metodou lift and shift_) s využitím funkcí infrastruktury jako služby (IaaS), které nevyžadují změny kódu ani aplikací, přes _refaktoring_ s minimálními změnami až po _změnu architektury_, při které se upraví a rozšíří kód a funkce aplikací tak, aby mohly využívat cloudové technologie.
 
 V rámci strategií nativních pro cloud a zahrnujících platformu jako službu (PaaS) se místní úlohy *znovu sestaví* s využitím spravovaných služeb a nabídek platformy Azure. Úlohy, pro které existují ekvivalentní cloudové nabídky plně spravovaného softwaru jako služby (SaaS), je možné v rámci procesu migrace těmito službami zcela *nahradit*.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048525"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239990"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Před migrací prostředků do Azure je potřeba zvolit metodu migrace a funkce,
 
 Tento průvodce vás provede základy migrace aplikací a prostředků z místního prostředí do Azure. Je určený pro rozsahy migrace s minimální složitostí. Pokud chcete zjistit, jestli je tento průvodce vhodný pro vaši migraci, přejděte na kartu **Kdy použít tohoto průvodce**.
 
-Při migraci do Azure můžete migrovat své aplikace tak, jak jsou, s využitím řešení virtuálních počítačů založených na modelu IaaS (označuje se jako změna hostitele nebo migrace metodou „lift and shift“) nebo můžete využít flexibilitu používat spravované služby a další funkce nativní pro cloud k modernizaci vašich aplikací. Další informace o těchto možnostech najdete na kartě **Možnosti migrace**. Při vývoji vaší strategie migrace byste měli zvážit následující:
+Při migraci do Azure můžete migrovat své aplikace tak, jak jsou, s využitím řešení virtuálních počítačů založených na modelu IaaS (označuje se jako _změna hostitele_ nebo _migrace metodou lift and shift_) nebo můžete využít flexibilitu používat spravované služby a další funkce nativní pro cloud k modernizaci vašich aplikací. Další informace o těchto možnostech najdete na kartě **Možnosti migrace**. Při vývoji vaší strategie migrace byste měli zvážit následující:
 
 - Budou migrované aplikace fungovat v cloudu?
 - Jaká je nejlepší strategie (s ohledem na technologie, nástroje a migraci) pro aplikaci? Další informace najdete v [průvodci rozhodováním ohledně nástrojů pro migraci](../../decision-guides/migrate-decision-guide/index.md) architektury přechodu na Microsoft Cloud.
