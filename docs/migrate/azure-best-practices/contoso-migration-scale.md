@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548121"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238918"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -71,7 +71,7 @@ Tyto fáze neprobíhají v celé organizaci sériově. Každá část projektu m
 
 ## <a name="phase-1-assess"></a>Fáze 1: posouzení
 
-Společnost Contoso celý proces zahájí zjištěním a posouzením místních aplikací, dat a infrastruktury. Provede to takto:
+Společnost Contoso celý proces zahájí zjištěním a posouzením místních aplikací, dat a infrastruktury. Proto bude společnost Contoso postupovat takto:
 
 - Společnost Contoso potřebuje vyhledat aplikace, zmapovat závislosti mezi nimi a rozhodnout o pořadí a prioritě migrace.
 - Během posuzování vytvoří ucelený inventář aplikací a prostředků. Společně s novým inventářem bude společnost Contoso používat a aktualizovat existující databázi správy konfigurace (CMDB) a katalog služeb.
@@ -196,10 +196,10 @@ Existují čtyři široké strategie migrace, které může společnost Contoso 
 
 **Strategie** | **Podrobnosti** | **Použití**
 --- | --- | ---
-**Změna hostitele** | Tato možnost, často označovaná jako migrace metodou „lift and shift“, nevyžaduje žádné změny kódu a umožňuje rychle migrovat existující aplikace do Azure.<br/><br/> Aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik nebo nákladů spojených se změnami kódu. | Společnost Contoso může změnu hostitele použít pro méně strategické aplikace, které nevyžadují žádné změny kódu.
+**Změna hostitele** | Tato možnost se často označuje jako migrace _výtahu a posunutí_ , takže se rychle migruje stávající aplikace do Azure.<br/><br/> Aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik nebo nákladů spojených se změnami kódu. | Společnost Contoso může změnu hostitele použít pro méně strategické aplikace, které nevyžadují žádné změny kódu.
 **Refaktoring** | Tato strategie se také označuje jako „opětovné zabalení“ a vyžaduje minimální změny kódu nebo konfigurace aplikací. Ty jsou potřebné pro připojení aplikací k Azure PaaS a lepšímu využití možností cloudu. | Společnost Contoso může refaktorovat strategické aplikace, které si mají zachovat stejné základní funkce, ale mají se přesunout a běžet na platformě Azure, jako je Azure App Service.<br/><br/> Tato strategie vyžaduje minimální změny kódu.<br/><br/> Na druhé straně bude společnost Contoso muset udržovat platformu virtuálních počítačů, protože tu nebude spravovat společnost Microsoft.
 **Změna architektury** | Při této strategii se upravuje nebo rozšiřuje základ kódu aplikace a optimalizuje se její architektura pro cloudové možnosti a škálování.<br/><br/> Aplikace se zmodernizuje na odolnou, vysoce škálovatelnou architekturu s možností nezávislého nasazení.<br/><br/> Pomocí služeb Azure je možné tento proces zrychlit, s jistotou škálovat aplikace a snadno je spravovat.
-**Nové sestavení** | Při této strategii se aplikace znovu sestaví od základu s využitím nativních cloudových technologií.<br/><br/> Platforma Azure jako služba (PaaS) poskytuje kompletní prostředí pro vývoj a nasazení v cloudu. Eliminuje některé náklady a složité aspekty související s licencemi na software a odstraňuje potřebu základní aplikační infrastruktury, middlewaru a dalších prostředků. | Společnost Contoso může kritické aplikace přepsat od základů a využít výhody cloudových technologií, jako jsou bezserverový počítač nebo mikroslužby.<br/><br/> Společnost Contoso bude spravovat aplikace a služby, které vyvíjí, a Azure bude spravovat všechno ostatní.
+**Opětovné sestavení** | Při této strategii se aplikace znovu sestaví od základu s využitím nativních cloudových technologií.<br/><br/> Platforma Azure jako služba (PaaS) poskytuje kompletní prostředí pro vývoj a nasazení v cloudu. Eliminuje některé náklady a složité aspekty související s licencemi na software a odstraňuje potřebu základní aplikační infrastruktury, middlewaru a dalších prostředků. | Společnost Contoso může kritické aplikace přepsat od základů a využít výhody cloudových technologií, jako jsou bezserverový počítač nebo mikroslužby.<br/><br/> Společnost Contoso bude spravovat aplikace a služby, které vyvíjí, a Azure bude spravovat všechno ostatní.
 
 <!--markdownlint-enable MD033 -->
 
@@ -223,7 +223,7 @@ Společnost Contoso už [dokončila testování konceptu](./contoso-migration-re
 
 ##### <a name="using-site-recovery-at-scale"></a>Použití služby Site Recovery ve velkém měřítku
 
-Společnost Contoso plánuje spustit několik migrací metodou „lift and shift“. Aby se zajistilo, že vše bude fungovat, bude služba Site Recovery provádět replikaci po dávkách obsahujících kolem 100 virtuálních počítačů. Aby to šlo dobře připravit, musí společnost Contoso provést plánování kapacity pro navrhovanou migraci pomocí služby Site Recovery.
+Společnost Contoso plánuje provést několik migrací výtahu a posunutí. Aby se zajistilo, že vše bude fungovat, bude služba Site Recovery provádět replikaci po dávkách obsahujících kolem 100 virtuálních počítačů. Aby to šlo dobře připravit, musí společnost Contoso provést plánování kapacity pro navrhovanou migraci pomocí služby Site Recovery.
 
 - Společnost Contoso potřebuje shromáždit informace o svých objemech provozu. Zejména jde o toto:
   - Společnost Contoso potřebuje určit četnost změn virtuálních počítačů, které chce replikovat.

@@ -1,21 +1,21 @@
 ---
-title: Kontrolní seznam požadavků pro efektivní plán přijetí do cloudu
+title: Předpoklady pro efektivní plán přijetí cloudu
 titleSuffix: Microsoft Cloud Adoption Framework
-description: Kontrolní seznam požadavků pro efektivní plán přijetí do cloudu
+description: Seznamte se s požadavky na efektivní plán přijetí cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048510"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240232"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Kontrolní seznam požadavků pro efektivní plán přijetí do cloudu
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Předpoklady pro efektivní plán přijetí cloudu
 
 Plán je platný jenom jako data, která jsou do něj vložená. Aby byl plán přijetí do cloudu účinný, existují dvě kategorie vstupů: *strategické* a *taktické*. V následujících oddílech najdete přehled minimálních datových bodů vyžadovaných v jednotlivých kategoriích.
 

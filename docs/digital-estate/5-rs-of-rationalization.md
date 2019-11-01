@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223871"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238797"
 ---
 # <a name="cloud-rationalization"></a>Racionalizace cloudu
 
@@ -24,11 +24,11 @@ Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího
 
 "Pět RS of racionalizace" uvedená v tomto článku jsou skvělým způsobem, jak popsat potenciální budoucí stav pro všechny úlohy, které se považují za cloudový kandidát. Tento proces označování by však měl být před pokusem o racionalizovat prostředí přepnut do správného kontextu. Zkontrolujte následující mýty a poskytněte tak tento kontext:
 
-- **Mýtus V brzké fázi procesu je snadné učinit rozhodnutí o racionalizaci.** Přesná racionalizace vyžaduje důkladnou znalost úlohy a přidružených prostředků (aplikace, virtuální počítače a data). Co je nejdůležitější, přesné rozhodnutí o racionalizaci trvá v čase. Doporučujeme použít přírůstkový [proces racionalizace](./rationalize.md#incremental-rationalization).
+- **Mýtus: je snadné učinit rozhodnutí o racionalizaci v předstihu v průběhu procesu.** Přesná racionalizace vyžaduje důkladnou znalost úlohy a přidružených prostředků (aplikace, virtuální počítače a data). Co je nejdůležitější, přesné rozhodnutí o racionalizaci trvá v čase. Doporučujeme použít [přírůstkový proces racionalizace](./rationalize.md#incremental-rationalization).
 
-- **Mýtus Přijetí do cloudu musí čekat na racionalizaci všech úloh.** Rationalizing celé IT Portfolio nebo dokonce jedno datové centrum může zpozdit realizaci obchodních hodnot podle měsíců nebo i roků. Pokud je to možné, měli byste se vyhnout plné racionalizaci. Místo toho využijte [sílu 10 přístupů k vydání plánování](./rationalize.md#release-planning) , abyste se mohli rozhodnout o dalších 10 úlohách, které se plánované pro přijetí do cloudu.
+- **Mýtus: přijetí do cloudu musí čekat na racionalizaci všech úloh.** Rationalizing celé IT Portfolio nebo dokonce jedno datové centrum může zpozdit realizaci obchodních hodnot podle měsíců nebo i roků. Pokud je to možné, měli byste se vyhnout plné racionalizaci. Místo toho využijte [sílu 10 přístupů k vydání plánování](./rationalize.md#release-planning) , abyste se mohli rozhodnout o dalších 10 úlohách, které se plánované pro přijetí do cloudu.
 
-- **Mýtus Obchodní odůvodnění musí čekat na racionalizaci všech úloh.** Chcete-li vyvinout obchodní odůvodnění úsilí při přijetí do cloudu, udělejte na úrovni portfolia několik základních předpokladů. Pokud jsou motivace zarovnané na inovace, předpokládají se rearchitektura. V případě, že motivace je zarovnána k migraci, je nutné předpokládat opětovné hostování. Tyto předpoklady můžou urychlit proces obchodního odůvodnění. Předpoklady a jejich rozpočty jsou provedené během fáze hodnocení u cyklů přijetí jednotlivých úloh.
+- **Mýtus: obchodní odůvodnění musí počkat na racionalizaci všech úloh.** Chcete-li vyvinout obchodní odůvodnění úsilí při přijetí do cloudu, udělejte na úrovni portfolia několik základních předpokladů. Pokud jsou motivace zarovnané na inovace, předpokládají se rearchitektura. V případě, že motivace je zarovnána k migraci, je nutné předpokládat opětovné hostování. Tyto předpoklady můžou urychlit proces obchodního odůvodnění. Předpoklady a jejich rozpočty jsou provedené během fáze hodnocení u cyklů přijetí jednotlivých úloh.
 
 Teď si Projděte následující pět RS k racionalizaci, abyste se seznámili s dlouhodobým procesem. Při vývoji plánu přijetí do cloudu vyberte možnost, která nejlépe odpovídá vašim motivům, obchodním výsledkům a aktuálnímu stavu. Cílem v racionalizaci v digitální nemovitosti je nastavit směrný plán, aby se racionalizovat všechny úlohy.
 
@@ -38,7 +38,7 @@ Pět RS of racionalizace, které jsou zde uvedeny, popisují nejběžnější mo
 
 ## <a name="rehost"></a>Změna hostitele
 
-I když se říká migrace typu "výtah a Shift", přenáší úsilí o opětovné hostování aktuální stavový prostředek vybranému poskytovateli cloudu s minimální změnou na celkovou architekturu.
+I když se označuje jako migrace _výtahu a posunutí_ , přenáší úsilí o opětovné hostování aktuální stavový prostředek vybranému poskytovateli cloudu s minimální změnou na celkovou architekturu.
 
 Mezi běžné ovladače můžou patřit:
 
@@ -59,7 +59,7 @@ Kvalitativní faktory analýzy:
 - Kritické obchodní události
 - Závislosti procesů
 
-## <a name="refactor"></a>Refaktorovat
+## <a name="refactor"></a>Refaktoring
 
 Možnosti platformy jako služby (PaaS) můžou snižovat provozní náklady spojené s mnoha aplikacemi. Je vhodné trochu Refaktorovat aplikaci, aby odpovídala modelu založenému na PaaS.
 
@@ -111,7 +111,7 @@ Kvalitativní faktory analýzy:
 - Provozní náklady
 - Potenciální smyčky zpětné vazby a DevOps investice.
 
-## <a name="rebuild"></a>Znovu sestavit
+## <a name="rebuild"></a>Opětovné sestavení
 
 V některých scénářích je rozdíl mezi tím, že je nutné provést převzetí aplikace, může být příliš velký, aby se do ní dalo zabývat další investice. To platí zejména pro aplikace, které dříve splnily potřeby firmy, ale nyní jsou nepodporované nebo špatně zarovnané s aktuálními obchodními procesy. V tomto případě je vytvořen nový základ kódu pro zarovnávání s přístupem [nativním pro Cloud](https://azure.microsoft.com/overview/cloudnative) .
 

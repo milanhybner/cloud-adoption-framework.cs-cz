@@ -1,7 +1,7 @@
 ---
-title: Změna hostitele aplikace formou migrace na virtuální počítače Azure pomocí Azure Site Recovery
+title: Opětovné hostování aplikace na virtuálních počítačích Azure pomocí Azure Site Recovery
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Zjistěte, jak Contoso pomocí služby Azure Site Recovery provádí změnu hostitele místní aplikace formou migrace metodou „lift and shift“ z místních počítačů do Azure.
+description: Přečtěte si, jak contoso rehostuje místní aplikaci pomocí migrace a přesunutí místních počítačů do Azure pomocí služby Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 61f329bbd708417dc98994946eb4754682413a34
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058184"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239013"
 ---
-# <a name="rehost-an-on-premises-app-to-azure-vms"></a>Změna hostitele místní aplikace na virtuální počítače Azure
+# <a name="rehost-an-on-premises-app-on-azure-vms"></a>Opětovné hostování místní aplikace na virtuálních počítačích Azure
 
 Tento článek ukazuje, jak fiktivní společnost Contoso mění hostitele dvouúrovňové front-endové aplikace Windows .NET, která běží na virtuálních počítačích VMware, formou migrace virtuálních počítačů aplikace na virtuální počítače Azure.
 
@@ -75,7 +75,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 
 **Aspekty** | **Podrobnosti**
 --- | ---
-**Výhody** | Oba virtuální počítače aplikace se přesunou do Azure beze změn, takže bude migrace snadná.<br/><br/> Vzhledem k tomu, že Contoso použije pro oba virtuální počítače aplikace metodu „lift and shift“, nevyžaduje databáze aplikace žádné zvláštní nástroje pro konfiguraci a migraci.<br/><br/> Společnost Contoso může využít své investice do Software Assurance pomocí programu Zvýhodněné hybridní využití Azure.<br/><br/> Contoso bude mít virtuální počítače aplikace v Azure stále plně pod kontrolou.
+**Výhody** | Oba virtuální počítače aplikace se přesunou do Azure beze změn, takže bude migrace snadná.<br/><br/> Vzhledem k tomu, že společnost Contoso používá pro virtuální počítače s aplikacemi přístup typu výtah a Shift, nejsou pro databázi aplikací potřeba žádné speciální nástroje pro konfiguraci a migraci.<br/><br/> Společnost Contoso může využít své investice do Software Assurance pomocí programu Zvýhodněné hybridní využití Azure.<br/><br/> Contoso bude mít virtuální počítače aplikace v Azure stále plně pod kontrolou.
 **Nevýhody** | Virtuální počítače WEBVM a SQLVM používají Windows Server 2008 R2. Azure podporuje tento operační systém pro konkrétní role (červenec 2018). [Další informace](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> Webová a datová vrstva aplikace zůstanou jediným bodem převzetí služeb při selhání.<br/><br/> Virtuální počítač SQLVM používá systém SQL Server 2008 R2, který nemá standardní podporu. Je ale podporovaný pro virtuální počítače Azure (červenec 2018). [Další informace](https://support.microsoft.com/help/956893).<br/><br/> Contoso bude muset dál podporovat aplikaci jako virtuální počítače Azure, místo aby ji přesunula do spravované služby jako Azure App Service a Azure SQL Database.
 
 <!-- markdownlint-enable MD033 -->

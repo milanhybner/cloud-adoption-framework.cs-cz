@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022271"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240190"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
 
@@ -27,13 +27,13 @@ Omezení plánu na 10 úloh podporuje flexibilitu a zarovnání priorit při zm�
 
 V souvislosti s přijetím cloudu je zatížení kolekce prostředků IT (servery, virtuální počítače, aplikace, data nebo zařízení), které společně podporují definovaný proces. Úlohy mohou podporovat více než jeden proces. Úlohy můžou záviset i na dalších sdílených prostředcích a větších platformách. Pracovní vytížení ale by mělo mít definované hranice týkající se závislých prostředků a procesů, které závisí na zatížení. Úlohy je často možné vizuálně vymezit monitorováním síťového provozu mezi prostředky IT.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
-Strategické vstupy z kontrolního seznamu požadavků umožňují mnohem jednodušší provádění následujících úloh. Nápovědu k shromažďování dat popsaných v tomto článku najdete v [kontrolním seznamu požadovaných součástí](./prerequisites.md).
+Strategické vstupy ze seznamu požadovaných součástí vedou k tomu, že tyto úkoly jsou mnohem jednodušší. Nápovědu k shromažďování dat popsaných v tomto článku najdete v části [požadavky](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Stanovení priorit počátečních úloh
 
-Během postupu přírůstkového [racionalizace](../digital-estate/rationalize.md)by váš tým měl souhlasit s "výkonem 10" přístupu, který se skládá z 10 úloh priority. Tyto úlohy slouží jako počáteční hranice pro plánování přijetí.
+Během postupu [přírůstkového racionalizace](../digital-estate/rationalize.md)by váš tým měl souhlasit s "výkonem 10" přístupu, který se skládá z 10 úloh priority. Tyto úlohy slouží jako počáteční hranice pro plánování přijetí.
 
 Pokud se rozhodnete, že nepotřebujete racionalizaci digitální nemovitosti, doporučujeme, aby týmy pro přijetí v cloudu a tým cloudových strategií souhlasili se seznamem 10 aplikací, které budou sloužit jako prvotní zaměření migrace. Doporučujeme, aby tyto 10 úloh obsahovaly kombinaci jednoduchých úloh (méně než 10 prostředků v samostatném nasazení) a složitější úlohy. U těchto 10 úloh se spustí proces stanovení priorit úloh.
 
@@ -92,7 +92,7 @@ Po definování počátečních priorit a přidání úloh do plánu je možné 
 | Klasifikace dat | Vypíše klasifikaci citlivosti dat. |         |
 | Provozní geografické oblasti | Seznamte se s případnými geografickými oblastmi, ve kterých je zatížení nebo by mělo být hostováno. |         |
 | Aplikace | Zadejte počáteční seznam nebo počet všech aplikací, které jsou součástí této úlohy. |         |
-| virtuálních počítačů | Zadejte počáteční seznam nebo počet všech virtuálních počítačů nebo serverů, které jsou součástí úlohy. |         |
+| Virtuální počítače | Zadejte počáteční seznam nebo počet všech virtuálních počítačů nebo serverů, které jsou součástí úlohy. |         |
 | Zdroje dat | Zadejte počáteční seznam nebo počet všech zdrojů dat zahrnutých do úlohy. |         |
 | Závislosti | Vypíše všechny závislosti assetů, které nejsou součástí úlohy. |         |
 | Geografické oblasti provozu uživatelů | Seznamte se s geografickými oblastmi, které mají významnou kolekci uživatelských přenosů. |         |

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548308"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239935"
 ---
 # <a name="decisions-that-affect-migrations"></a>Rozhodnutí, která ovlivňují migraci
 
@@ -33,7 +33,7 @@ Tento předpoklad neznamená, že byste si měli vybrat jeden z těchto tří c�
 
 ### <a name="acting-on-migration-outcomes"></a>Činnost na základě výsledků migrace
 
-Pokud jsou provozní výsledky na prvním místě seznamu, bude váš tým moci tuto část Architektury přechodu na cloud využít. V této části se předpokládá, že jako primární klíčové ukazatele výkonu (KPI) potřebujete upřednostnit rychlost a úspory nákladů. V takovém případě by model migrace pro přechod na cloud byl dobře sladěn s výsledky. Model zaměřený na migraci se z důvodu využití datacentra a úspor nákladů značně opírá o migraci prostředků infrastruktury jako služby (IaaS) metodou „lift and shift“. V takovém modelu může dojít k modernizaci, jde ale o sekundární záměr, dokud nebude realizován primární úkol.
+Pokud jsou provozní výsledky na prvním místě seznamu, bude váš tým moci tuto část Architektury přechodu na cloud využít. V této části se předpokládá, že jako primární klíčové ukazatele výkonu (KPI) potřebujete upřednostnit rychlost a úspory nákladů. V takovém případě by model migrace pro přechod na cloud byl dobře sladěn s výsledky. Model zaměřený na migraci se silně vychází z migrace prostředků infrastruktury jako služby (IaaS) na přenesených a Shift, které umožňují vyčerpat datové centrum a snižovat náklady. V takovém modelu může dojít k modernizaci, jde ale o sekundární záměr, dokud nebude realizován primární úkol.
 
 ### <a name="acting-on-application-innovations"></a>Činnost na základě inovace aplikací
 

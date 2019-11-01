@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058501"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239169"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
@@ -78,7 +78,7 @@ Při návrhu řešení společnost Contoso provedla porovnání funkcí mezi slu
 
 - Cílem spravované instance je zajistit téměř 100% kompatibilitu s nejnovější verzí místního SQL Serveru. Microsoft doporučuje spravovanou instanci zákazníkům, kteří provozují SQL Server v místním prostředí nebo na virtuálních počítačích IaaS a chtějí migrovat své aplikace na plně spravovanou službu s minimálními změnami návrhu.
 - Společnost Contoso plánuje migrovat velký počet aplikací z místního prostředí na IaaS. Řadu z nich poskytují nezávislí výrobci softwaru. Společnost Contoso si uvědomuje, že oproti použití služby SQL Database, která nemusí být podporovaná, pomůže použití spravované instance zajistit pro tyto aplikace kompatibilitu databáze.
-- Společnost Contoso může jednoduše provést migraci metodou „lift and shift“ na spravovanou instanci s využitím plně automatizované služby Azure Database Migration Service. Po implementaci této služby ji společnost Contoso bude moct opakovaně používat k budoucím migracím databází.
+- Společnost Contoso může jednoduše provést migraci a přesun do spravované instance pomocí plně automatizovaného Azure Database Migration Service. Po implementaci této služby ji společnost Contoso bude moct opakovaně používat k budoucím migracím databází.
 - Spravovaná instance SQL podporuje agenta SQL Serveru, což je pro aplikaci SmartHotel360 zcela zásadní. Společnost Contoso potřebuje tuto kompatibilitu, jinak by musela změnit návrh plánů údržby, které aplikace potřebuje.
 - Prostřednictvím programu Software Assurance může společnost Contoso vyměnit ve spravované instanci SQL Database stávající licence za snížené sazby, a to pomocí programu Zvýhodněné hybridní využití Azure pro SQL Server. Společnost Contoso díky tomu může ušetřit až 30 % na spravované instanci.
 - Spravovaná instance SQL je plně obsažená ve virtuální síti, takže poskytuje větší izolaci a zabezpečení pro data společnosti Contoso. Společnost Contoso může získat výhody veřejného cloudu při současné izolaci prostředí od veřejného internetu.
@@ -103,7 +103,7 @@ Společnost Contoso provede migraci webové a datové vrstvy své aplikace Smart
 
 1. Společnost Contoso už má zřízenou svou infrastrukturu Azure, takže jí v tomto případě stačí přidat několik konkrétních komponent Azure.
 2. Datová vrstva se bude migrovat s využitím služby Azure Database Migration Service. Tato služba se připojí k místnímu virtuálnímu počítači s SQL Serverem přes připojení site-to-site VPN mezi datacentrem společnosti Contoso a Azure. Pak služba provede migraci databáze.
-3. Webová vrstva se bude migrovat metodou „lift and shift“ s využitím služby Site Recovery. Tento proces zahrnuje přípravu místního prostředí VMware, nastavení a povolení replikace a migraci virtuálních počítačů prostřednictvím převzetí jejich služeb při selhání do Azure.
+3. Webová vrstva se migruje pomocí migrace typu výtah a Shift pomocí Site Recovery. Tento proces zahrnuje přípravu místního prostředí VMware, nastavení a povolení replikace a migraci virtuálních počítačů prostřednictvím převzetí jejich služeb při selhání do Azure.
 
      ![Architektura migrace](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

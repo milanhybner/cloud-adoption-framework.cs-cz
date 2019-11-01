@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 8b925564b3186e153cdd9a8139499a83a1fd96ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058230"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239411"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure
 
@@ -69,8 +69,8 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 
 **Aspekty** | **Podrobnosti**
 --- | ---
-**Výhody** | Oba virtuální počítače aplikace se přesunou do Azure beze změn, takže bude migrace snadná.<br/><br/> Vzhledem k tomu, že Contoso použije pro oba virtuální počítače aplikace metodu „lift and shift“, nevyžaduje databáze aplikace žádné zvláštní nástroje pro konfiguraci a migraci.<br/><br/> Contoso bude mít virtuální počítače aplikace v Azure stále plně pod kontrolou. <br/><br/> Virtuální počítače aplikace používají Ubuntu 16.04-TLS, což je schválená distribuce systému Linux. [Další informace](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Nevýhody** | Webová a datová vrstva aplikace zůstanou jediným bodem převzetí služeb při selhání. <br/><br/> Contoso bude muset dále podporovat aplikaci jako virtuální počítače Azure, místo aby ji přesunula do spravované služby jako Azure App Service a Azure Database for MySQL.<br/><br/> Společnost Contoso si je vědoma toho, že když zachovává jednoduchost procesu pomocí migrace virtuálních počítačů metodou „lift and shift“, nevyužívá plně výhod funkcí poskytovaných službou [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (integrovaná vysoká dostupnost, předvídatelný výkon, jednoduché škálování, automatické zálohování a integrované zabezpečení).
+**Výhody** | Oba virtuální počítače aplikace se přesunou do Azure beze změn, takže bude migrace snadná.<br/><br/> Vzhledem k tomu, že společnost Contoso používá pro virtuální počítače s aplikacemi přístup typu výtah a Shift, nejsou pro databázi aplikací potřeba žádné speciální nástroje pro konfiguraci a migraci.<br/><br/> Contoso bude mít virtuální počítače aplikace v Azure stále plně pod kontrolou. <br/><br/> Virtuální počítače aplikace používají Ubuntu 16.04-TLS, což je schválená distribuce systému Linux. [Další informace](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Nevýhody** | Webová a datová vrstva aplikace zůstanou jediným bodem převzetí služeb při selhání. <br/><br/> Contoso bude muset dále podporovat aplikaci jako virtuální počítače Azure, místo aby ji přesunula do spravované služby jako Azure App Service a Azure Database for MySQL.<br/><br/> Společnost Contoso je vědomá tím, že při migraci virtuálních počítačů typu výtah a Shift zachovává jednoduché funkce, které nevyužívají [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (integrovaná vysoká dostupnost, předvídatelný výkon, jednoduché škálování, automatické zálohování a integrované zabezpečení).
 
 <!-- markdownlint-enable MD033 -->
 

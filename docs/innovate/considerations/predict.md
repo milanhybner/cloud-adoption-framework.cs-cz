@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 83165e21882b4979d0fb3b104fa4f2c12aed326c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682630"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239464"
 ---
-# <a name="predict-and-influence"></a>Předpověď a vliv
+# <a name="predict-and-influence"></a>Predikce a ovlivňování
 
 V digitálním hospodářství jsou dvě třídy aplikací: historické a prediktivní. Mnoho zákaznických potřeb je možné splnit výhradně pomocí historických dat, včetně dat téměř v reálném čase. Většina řešení se zaměřuje primárně na agregaci dat, a to v okamžiku. Pak tato data zpracovávají a sdílejí je zpátky zákazníkovi ve formě digitálního nebo okolního prostředí.
 
@@ -78,7 +78,7 @@ Přečtěte si další informace o interakcích v rámci [upraveného řešení 
 
 ## <a name="next-steps"></a>Další kroky
 
-Na základě znalostí získaných v souvislosti s [disciplínami inovací](./invention.md) v rámci [metodologie](./index.md) inovací víte, že máte k dispozici technické nástroje vyžadované k [sestavování pomocí soucit](./build.md).
+Na základě znalostí získaných v souvislosti s [disciplínami vynálezy](./invention.md) v rámci [metodologie inovací](./index.md) víte, že máte k dispozici technické nástroje vyžadované k [sestavování pomocí soucit](./build.md).
 
 > [!div class="nextstepaction"]
 > [Sestavení pomocí soucit](./build.md)

@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058155"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239760"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Použití Terraformu k sestavení zón odpočívadla
 
-Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který zákazníci a partneři často používají, je Terraformu na nasazení Hashicorp. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
+Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který zákazníci a partneři často používají, je Hashicorp Terraformu. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Účel cílové zóny
 
@@ -56,7 +56,7 @@ Při definování této počáteční cílové zóny byly zváženy následujíc
 - **Omezení předplatného:** Toto úsilí o přijetí pravděpodobně nepřekračuje [limity předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dva běžné indikátory jsou překročení 25 000 virtuálních počítačů nebo 10 000 vCPU.
 - **Dodržování předpisů:** Pro tuto cílovou zónu nejsou potřeba žádné požadavky na dodržování předpisů od jiných výrobců.
 - **Složitost architektury:** Složitost architektury nevyžaduje další produkční odběry.
-- **Sdílené služby:** V Azure nejsou žádné sdílené služby, které vyžadují, aby se toto předplatné zpracovalo jako paprskový v architektuře hvězdicové architektury.
+- **Sdílené služby:** V Azure nejsou žádné sdílené služby, které vyžadují, aby se toto předplatné zpracovalo jako paprskový uzel v architektuře hvězdicové architektury.
 
 Pokud tyto předpoklady odpovídají vašemu současnému prostředí, může být tento plán dobrým způsobem, jak začít vytvářet cílovou zónu.
 
@@ -67,17 +67,17 @@ V zóně pro vykládku Terraformu jsou zastoupena tato rozhodnutí:
 | Součást | Rozhodnutí | Alternativní přístupy |
 | --- | --- | --- |
 |Protokolování a monitorování | Bude použit pracovní prostor Azure Monitor Log Analytics. Dojde k zřízení účtu úložiště diagnostiky i centra událostí. |         |
-|Síť | Není k dispozici síť, která bude implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/network-decisions.md) |
+|Síť | Není k dispozici síť, která bude implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/networking-options.md) |
 |Identita | Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory. | [Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zásady | V této cílové zóně se v současné době předpokládá, že se nepoužívají žádné zásady Azure. | |
-|Návrh předplatného | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../considerations/scaling-subscriptions.md) |
-| Skupiny pro správu | Neuvedeno – Navrženo pro jedno produkční předplatné. |[Škálování předplatných](../considerations/scaling-subscriptions.md) |
-| Skupiny prostředků | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../considerations/scaling-subscriptions.md) |
+|Návrh předplatného | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
+| Skupiny pro správu | Neuvedeno – Navrženo pro jedno produkční předplatné. |[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
+| Skupiny prostředků | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Nevztahuje se | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Úložiště|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-guidance.md) |
-| Standardy pro vytváření názvů | Při vytvoření prostředí se vytvoří také jedinečná předpona. Tato předpona používá prostředky, které vyžadují globálně jedinečný název (například účty úložiště). Vlastní název se připojí s náhodnou příponou. Použití značky je udělené podle pokynů v následující tabulce. | [Osvědčené postupy pojmenování a označování](../considerations/naming-and-tagging.md) |
+|Úložiště|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md) |
+| Standardy pro vytváření názvů | Při vytvoření prostředí se vytvoří také jedinečná předpona. Tato předpona používá prostředky, které vyžadují globálně jedinečný název (například účty úložiště). Vlastní název se připojí s náhodnou příponou. Použití značky je udělené podle pokynů v následující tabulce. | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md) |
 | Správa nákladů | Nevztahuje se | [Sledování nákladů](../azure-best-practices/track-costs.md) |
-| Služby Compute | Nevztahuje se | [Možnosti služby Compute](../considerations/compute-decisions.md) |
+| Služby Compute | Nevztahuje se | [Možnosti služby Compute](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standardy označování
 

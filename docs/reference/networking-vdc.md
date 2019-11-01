@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048251"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240086"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuální datacentra: Perspektiva sítě
 
@@ -378,7 +378,7 @@ Protože používá DNS, Traffic Manager se dá použít jenom s veřejnými kon
 
 ### <a name="summary"></a>Souhrn
 
-Virtuální datacentrum je přístup k migraci datového centra, který umožňuje vytvořit škálovatelnou architekturu v Azure, která maximalizuje využití prostředků v cloudu, snižuje náklady a zjednodušuje řízení systému. Virtuální datové centrum vychází z topologie sítě rozbočovače a paprsků, která poskytuje společné sdílené služby v centru a povoluje v paprskech konkrétní aplikace a úlohy. Virtuální datové centrum také odpovídá struktuře rolí společnosti, kde různá oddělení, jako je centrální IT, DevOps a provoz a údržba, společně fungují při provádění jejich specifických rolí. Virtuální datacentrum splňuje požadavky na migraci typu "výtah a Shift", ale také poskytuje mnoho výhod nasazení nativních cloudů.
+Virtuální datacentrum je přístup k migraci datového centra, který umožňuje vytvořit škálovatelnou architekturu v Azure, která maximalizuje využití prostředků v cloudu, snižuje náklady a zjednodušuje řízení systému. Virtuální datové centrum vychází z topologie sítě rozbočovače a paprsků, která poskytuje společné sdílené služby v centru a povoluje v paprskech konkrétní aplikace a úlohy. Virtuální datové centrum také odpovídá struktuře rolí společnosti, kde různá oddělení, jako je centrální IT, DevOps a provoz a údržba, společně fungují při provádění jejich specifických rolí. Virtuální datacentrum splňuje požadavky na migraci výtahu a posunutí, ale také poskytuje mnoho výhod nasazení nativních cloudů.
 
 ## <a name="references"></a>Odkazy
 

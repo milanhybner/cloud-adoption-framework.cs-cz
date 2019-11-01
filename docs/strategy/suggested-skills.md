@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f9dc2a7276a8845ad19ce4196822b730e7a6502d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029431"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240017"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Cesta k připravenosti dovedností během fáze plánování cesty migrace
 
@@ -38,7 +38,7 @@ V následujících částech jsou uvedeny výukové postupy pro vývoj každé z
 
 Odůvodnění investice do využívání cloudu může vyžadovat hlubší analýzu a porozumění účetním postupům vaší organizace. Články v rámci obchodní odůvodnění vám můžou přispět k vývoji těchto dovedností:
 
-- [Obchodní případ migrace](./cloud-migration-business-case.md)do cloudu Navažte obchodní případ pro migraci do cloudu.
+- [Obchodní případ migrace do cloudu](./cloud-migration-business-case.md) Navažte obchodní případ pro migraci do cloudu.
 
 ## <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
@@ -81,24 +81,16 @@ Kromě těchto počátečních možností pro vývoj dovedností je k dispozici 
 
 Microsoft a partneři nabízejí různé možnosti, které všem cílovým skupinám pomůžou vyvíjet dovednosti se službami Azure:
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure) Nabízí školení od osob, které pomohly vybudovat Azure. V rámci základního přehledu o hloubkovém technickém školení si tyto kurzy můžou IT implementátori zjistit, jak používat Azure pro své podnikání.
-- [Microsoft IT pro Cloud Essentials](https://www.microsoft.com/azureessentials). Bezplatné roční předplatné, které zahrnuje cloudové služby, vzdělávání a výhody podpory. V cloudu pro IT specialisty poskytuje vývojářům IT praktické zkušenosti, cílené vzdělávací příležitosti a přístup k odborníkům v oblastech, které jsou nejvíce pro zvýšení znalostí a vytváření cest k postupu kariéry.
 - [Centrum IT pro Microsoft IT specialisty](https://www.microsoft.com/itpro). Bezplatný online materiál, který vám pomůže najít si místo v cloudové kariéře. Zjistěte, co oboroví specialisté navrhují pro vaši roli v cloudu a jaké dovednosti potřebujete. Studujte podle studijního plánu svým vlastním tempem a získejte dovednosti, které potřebujete nejvíce.
 
 Pro účely [Microsoft Azure školení a zkoušek pro certifikace](https://www.microsoft.com/learning/azure-certification.aspx)doporučujeme, abyste si vypnuli znalosti Azure s oficiálním uznáváním.
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn je nový přístup ke studiu. Připravenosti na nové úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získat body a úrovně a dosáhnout více
+Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávat body, úrovně a dosáhnout více
 
-Tady je několik příkladů studijních cest specifických pro role na Microsoft Learn:
+Tady je příklad přizpůsobených studijních cest, které odpovídají strategii Potion architektury pro přijetí do cloudu. 
 
-[Firemní uživatelé](/learn/browse/?roles=business-user) můžou při výzvě k účasti na plánování, testování a přijímání cloudových technologií vyzkoušet strmé výukovou křivku. Microsoft Learn moduly zaměřené na přijetí cloudových modelů a nástrojů můžou těmto uživatelům pomáhat při správě jejich podnikání prostřednictvím cloudových služeb.
+[Seznamte se s obchodní hodnotou Microsoft Azure](/learn/paths/learn-business-value-of-azure/): Toto výukové prostředí vás zabere na cestu, která začíná zobrazením, jak digitální transformace a výkon cloudu můžou transformovat vaše podnikání. Pokryjeme, jak Microsoft Azure cloudové služby můžou vaši organizaci v důvěryhodné cloudové platformě vysílat. Nakonec se zabalíme tak, že ukážeme, jak tuto cestu udělat v reálném čase pro vaši organizaci. 
 
-[Architekti řešení](/learn/browse/?roles=solution-architect) můžou interagovat se stovkami modulů a studijních cest. K dispozici jsou témata od základních služeb infrastruktury až po pokročilou transformaci dat.
-
-[Správci](/learn/browse/?roles=administrator) můžou pracovat s moduly, které se zaměřují na základy Azure, konfigurovat kontejnery a dokonce i pokročilou správu v cloudu.
-
-Při migraci prostředků do cloudu hrají důležitou roli [vývojáři](/learn/browse/?roles=developer&term=infrastructure). Vývojáři mohou získat informace o způsobech, jak pomáhat během architektury, zásad správného řízení a aktivitách modernizace.
-
-Pokud chcete zjistit další způsoby učení, Projděte si [katalog informací](/learn/browse). Pomocí filtru role můžete v rámci své role zarovnat studijních cest.
+Pokud chcete zjistit další způsoby učení, Projděte si [katalog informací](/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.

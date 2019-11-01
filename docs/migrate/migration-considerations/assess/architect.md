@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819501"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240240"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Architektura úloh před migrací
 
@@ -23,7 +23,7 @@ Tento článek navazuje na proces posouzení. Popisuje aktivity spojené s defin
 
 Následující předpoklady jsou typické při každé migraci:
 
-- **IaaS.** Často se předpokládá, že migrační úlohy spočívají primárně v přesunu virtuálních počítačů z fyzického do cloudového datacentra prostřednictvím migrace IaaS, která vyžaduje minimální opakovaný vývoj nebo konfiguraci. Tomuto typu migrace se také říká „lift and shift“. (Výjimky viz níže.)
+- **IaaS.** Často se předpokládá, že migrační úlohy spočívají primárně v přesunu virtuálních počítačů z fyzického do cloudového datacentra prostřednictvím migrace IaaS, která vyžaduje minimální opakovaný vývoj nebo konfiguraci. Tato metoda se označuje jako migrace _výtahu a posunutí_ . (Výjimky viz níže.)
 - **Konzistence architektury.** Změny základní architektury prováděné při migraci celou operaci výrazně komplikují. Ladění změněného systému na nové platformě přináší řadu proměnných, které můžou být obtížně oddělitelné. Proto by se při migraci měly provádět jen malé změny úloh a všechny změny musí být důkladně otestovány.
 - **Test vyřazení.** Migrace a hostování prostředků s sebou nesou provozní a případně i kapitálové výdaje. U migrovaných úloh se předpokládá, že bylo zkontrolováno a ověřeno jejich průběžné používání. Volba vyřazení nepoužívaných prostředků přináší okamžitou úsporu nákladů.
 - **Změna velikosti prostředků.** Předpokládá se, že jen některé místní prostředky plně využívají přidělené zdroje. Před migrací se předpokládá, že změníte velikost prostředků, aby odpovídaly požadavkům na jejich skutečné využití.
@@ -47,7 +47,7 @@ Některé scénáře můžou vyžadovat jinou architekturu než předpokládá s
 
 Ve všech uvedených scénářích je nejlepším možným řešením alternativní architektura.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Jakmile definujete novou architekturu, [můžete vypočítat přesný odhad nákladů](./estimate.md).
 

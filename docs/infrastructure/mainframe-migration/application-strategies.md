@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547945"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239450"
 ---
 # <a name="mainframe-application-migration"></a>Migrace aplikace na sálové počítače
 
@@ -27,7 +27,7 @@ Migrace aplikací obvykle zahrnuje jednu nebo více následujících strategií:
 
 - **Vyřadit z provozu:** Všechny aplikace, které už nepotřebujete, by měly být před migrací vyřazené.
 
-- **Znovu sestavit:** Některé organizace mají možnost zcela přepsát programy pomocí moderních technik. S ohledem na zvýšení nákladů a složitost tohoto přístupu není to tak běžné jako přístup "výtah a posun". Často po tomto typu migrace dává smysl začít nahrazovat moduly a kód pomocí transformačních modulů kódu.
+- **Znovu sestavit:** Některé organizace mají možnost zcela přepsát programy pomocí moderních technik. S ohledem na zvýšení nákladů a složitost tohoto přístupu není to tak běžné jako přístup výtahu a posunutí. Často po tomto typu migrace dává smysl začít nahrazovat moduly a kód pomocí transformačních modulů kódu.
 
 - **Nahradit:** Tento přístup nahrazuje sálové funkce pomocí ekvivalentních funkcí v cloudu. Software jako služba (SaaS) je jedna možnost, která používá řešení vytvořené speciálně pro podnikovou práci, jako jsou finance, lidské zdroje, výroba nebo plánování podnikových zdrojů. Kromě toho je teď k dispozici mnoho aplikací specifických pro konkrétní odvětví pro řešení problémů, které vlastní Sálová řešení používala k předchozímu řešení.
 
@@ -57,7 +57,7 @@ Kromě prostředí emulace poskytuje Azure platformu jako službu (PaaS) a analy
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>Migrace úloh OLTP do Azure
 
-Přístup "výtah a Shift" je možnost bez kódu pro rychlou migraci stávajících aplikací do Azure. Každá aplikace je migrována tak, jak je, což přináší výhody cloudu bez rizik nebo nákladů na provádění změn kódu. Tento přístup podporuje použití emulátoru pro monitorování TRANSAKČNÍho zpracování transakcí v Azure.
+Přístup ke zvedání a posunu je možnost bez kódu pro rychlou migraci stávajících aplikací do Azure. Každá aplikace je migrována tak, jak je, což přináší výhody cloudu bez rizik nebo nákladů na provádění změn kódu. Tento přístup podporuje použití emulátoru pro monitorování TRANSAKČNÍho zpracování transakcí v Azure.
 
 Monitory TP jsou k dispozici od různých dodavatelů a běží na virtuálních počítačích, jako je možnost infrastruktura jako služba (IaaS) v Azure. Následující diagramy před a po ukazují migraci online aplikace, kterou zajišťuje IBM DB2, systému správy relačních databází (DBMS) v rámci sálového počítače IBM z/OS. DB2 pro z/OS používá k ukládání dat a indexovaného sekvenčního přístupu (ISAM) pro ploché soubory (VSAM) soubory metody přístupu k virtuálnímu úložišti. Tato architektura také používá CICS pro monitorování transakcí.
 

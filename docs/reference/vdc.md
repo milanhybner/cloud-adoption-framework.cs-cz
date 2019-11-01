@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
-ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
+ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72001851"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239752"
 ---
 # <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 
@@ -36,7 +36,7 @@ ms.locfileid: "72001851"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Virtuální datové centrum Azure: Z pohledu sítě</a></h3>
+        <h3><a href="./networking-vdc.md">Virtuální datové centrum Azure: Z hlediska sítě</a></h3>
         <p>Tento online článek poskytuje přehled modelů a návrhů sítě umožňujících odstranit řadu překážek v podobě škálování architektury, výkonu a zabezpečení, se kterými se řada zákazníků setkává při úvahách o kompletním přechodu na cloudovou platformu.</p>
     </td>
 </tr>
@@ -44,7 +44,7 @@ ms.locfileid: "72001851"
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Virtuální datové centrum Azure: Průvodce metodou „lift and shift“</a></h3>
-        <p>Tento dokument white paper popisuje proces, který pracovníci IT zaměstnanců a tvůrci rozhodnutí můžou použít k identifikaci a plánování migrace aplikací a serverů do Azure pomocí přístupu "výtah a Shift", který minimalizuje náklady na další vývoj při optimalizaci cloudu. hostování možností.</p>
+        <p>Tento dokument white paper popisuje proces, který zaměstnanci oddělení IT a rozhodovací pracovníci můžou použít k identifikaci a plánování migrace aplikací a serverů do Azure s využitím přístupu výtahu a posunutí a minimalizace dalších nákladů na vývoj při optimalizaci cloudu. hostování možností.</p>
     </td>
 </tr>
 </table>

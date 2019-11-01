@@ -1,7 +1,7 @@
 ---
-title: Hvězdicová síťová topologie
+title: Topologie sítě centra a paprsků
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Hvězdicová síťová topologie
+description: Přečtěte si o topologiích sítě rozbočovač a paprsků.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549008"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239927"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Hvězdicová síťová topologie
+# <a name="hub-and-spoke-network-topology"></a>Topologie sítě centra a paprsků
 
 *Hvězdicová architektura* je síťový model pro efektivnější správu běžné komunikace nebo požadavků na zabezpečení. Pomáhá také vyhnout se omezením předplatného Azure. Tento model řeší následující aspekty:
 
@@ -26,21 +26,21 @@ ms.locfileid: "72549008"
 - **Překonání omezení předplatného**. Velké cloudové úlohy můžou vyžadovat použití více prostředků, než je povoleno v rámci jednoho předplatného Azure. Peering úloh virtuálních sítí z různých předplatných do centra může tyto limity překonat. Další informace najdete v tématu [omezení předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Oddělení oblastí zájmu.** Jednotlivé úlohy můžete nasazovat mezi centrální IT týmy a týmy pro úlohy.
 
-Menší cloudové aktiva nemusí využívat výhody plynoucí z přidané struktury a možností, které tento model nabízí. Pokud však plánujete rozsáhlejší přechod na cloud, měli byste zvážit implementaci hvězdicové síťové architektury, pokud se vás týkají některé z výše uvedených aspektů.
+Menší cloudové aktiva nemusí využívat výhody plynoucí z přidané struktury a možností, které tento model nabízí. Ale větší úsilí při přijetí cloudu by mělo zvážit implementaci síťové architektury hvězdicové a Paprskové sítě, pokud mají některé z výše uvedených otázek.
 
 > [!NOTE]
-> Lokalita referenčních architektur Azure obsahuje ukázkové šablony, které můžete použít jako základ pro implementaci vlastních sítí s hvězdicovou topologií:
+> Lokalita referenčních architektur Azure obsahuje příklady šablon, které můžete použít jako základ pro implementaci vlastních sítí s rozbočovačem a paprsky:
 >
-> - [Implementace hvězdicové síťové topologie v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementace hvězdicové síťové topologie se sdílenými službami v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementace síťové topologie centra a paprsků v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementace síťové topologie centra a paprsků se sdílenými službami v Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Přehled
 
-![Příklady hvězdicové síťová topologie][1]
+![Příklady síťové topologie centra a paprsků][1]
 
-Jak je znázorněno v diagramu, Azure podporuje dva typy návrhu hvězdicové topologie. Podporuje komunikaci, sdílené prostředky a centralizované zásady zabezpečení („Centrum VNet“ v diagramu), nebo typ virtuální sítě WAN („Virtuální síť WAN“ v diagramu) pro rozsáhlou komunikaci mezi pobočkami a mezi pobočkami a Azure.
+Jak je znázorněno v diagramu, Azure podporuje dva typy centrálního a paprskového návrhu. Podporuje komunikaci, sdílené prostředky a centralizované zásady zabezpečení („Centrum VNet“ v diagramu), nebo typ virtuální sítě WAN („Virtuální síť WAN“ v diagramu) pro rozsáhlou komunikaci mezi pobočkami a mezi pobočkami a Azure.
 
-Centrum je centrální zóna sítě, která řídí a kontroluje příchozí nebo výchozí provoz mezi zónami: internet, místní síť a paprsky. Hvězdicová topologie poskytuje oddělení IT efektivní způsob, jak vynucovat zásady zabezpečení v centrálním umístění. Také snižuje riziko neoprávněné konfigurace a vystavení hrozbám.
+Centrum je centrální zóna sítě, která řídí a kontroluje příchozí nebo výchozí provoz mezi zónami: internet, místní síť a paprsky. Topologie centra a paprsků dává vašemu oddělení IT účinný způsob, jak vynutilit zásady zabezpečení v centrálním umístění. Také snižuje riziko neoprávněné konfigurace a vystavení hrozbám.
 
 Centrum často obsahuje společné komponenty služby, které využívají paprsky. Mezi běžné centrální služby patří například:
 
@@ -61,7 +61,7 @@ Paprsky můžou také oddělit a povolit různé skupiny v rámci vaší organiz
 
 V Azure je každá komponenta bez ohledu na typ nasazená v předplatném Azure. Izolace komponent Azure v různých předplatných Azure může uspokojit požadavky různých oborů podnikání, jako je například nastavení odlišných úrovní přístupu a autorizace.
 
-Jednoduchá implementace hvězdicové topologie může škálovat velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. (Příkladem je maximální počet peeringů virtuálních sítí. Podrobnosti najdete v tématu [limity, kvóty a omezení předplatného a služeb Azure] [limity].
+Jednoduchá implementace hub a paprsků se dá škálovat až na velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. (Příkladem je maximální počet peeringů virtuálních sítí. Podrobnosti najdete v tématu [limity, kvóty a omezení předplatného a služeb Azure] [limity].
 
 V případech, kdy omezení můžou být problémem, můžete architekturu dále škálovat rozšířením modelu jednoduché hvězdicové topologie na cluster sítí s hvězdicovou topologií. Pomocí peeringu virtuálních sítí, Azure ExpressRoute, virtuální sítě WAN nebo sítě S2S VPN můžete propojit více center v jedné nebo několika oblastech Azure.
 
@@ -79,7 +79,7 @@ Typickým příkladem tohoto scénáře je případ, kdy se servery pro zpracov�
 
 ![Propojení paprsků k sobě navzájem a k centru][3]
 
-Paprsky je taky možné propojit s paprskem, který funguje jako centrum. Tento přístup vytvoří hierarchii se dvěma úrovněmi: paprsek na vyšší úrovni (úroveň 0) se změní na centrum pro paprsky nižší úrovně (úroveň 1) v hierarchii. Pro přesměrování provozu do centra se vyžadují paprsky implementace hvězdicové topologie, aby provoz mohl být směrován na místo určení v místní síti nebo veřejném internetu. Architektura se dvěma úrovněmi center přináší složité směrování, které odstraňuje výhody jednoduché hvězdicové topologie.
+Paprsky je taky možné propojit s paprskem, který funguje jako centrum. Tento přístup vytvoří hierarchii se dvěma úrovněmi: paprsek na vyšší úrovni (úroveň 0) se změní na centrum pro paprsky nižší úrovně (úroveň 1) v hierarchii. K přenosu provozu do centrálního centra se vyžadují paprsky s implementací rozbočovače a paprsku, aby se přenos mohl směrovat do svého cíle v místní síti nebo veřejné síti Internet. Architektura se dvěma úrovněmi Center přináší složité směrování, které odstraňuje výhody jednoduchého hvězdicové vztahu.
 
 <!-- images -->
 

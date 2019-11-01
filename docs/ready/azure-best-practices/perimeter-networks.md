@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022231"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240169"
 ---
 # <a name="perimeter-networks"></a>Sítě perimetru
 
@@ -42,9 +42,9 @@ Hraniční sítě využívají následující funkce a služby Azure:
 
 Za definování požadavků pro provoz hraničních sítí obvykle zodpovídají centrální tým IT a tým zabezpečení.
 
-![Příklad hvězdicové síťové topologie][7]
+![Příklad síťové topologie centra a paprsků][7]
 
-Předchozí diagramu znázorňuje ukázkovou [hvězdicovou síť](./hub-spoke-network-topology.md), která implementuje vynucování dvou hranic s přístupem k internetu a místní síti. Obě hranice se nacházejí v centru DMZ. V centru DMZ se hraniční síť pro přístup k internetu může škálovat, aby podporovala řadu obchodních aplikací. Ke škálování slouží několik farem WAF a instancí Azure Firewall, které pomáhají chránit paprskové virtuální sítě. Podle potřeby centrum taky umožňuje připojení prostřednictvím sítě VPN nebo Azure ExpressRoute.
+Předchozí diagram znázorňuje ukázkovou [síťovou topologii rozbočovače a paprsku](./hub-spoke-network-topology.md) , která implementuje vynucování dvou hraničních zařízení s přístupem k Internetu a místní sítí. Obě hranice se nacházejí v centru DMZ. V centru DMZ se hraniční síť pro přístup k internetu může škálovat, aby podporovala řadu obchodních aplikací. Ke škálování slouží několik farem WAF a instancí Azure Firewall, které pomáhají chránit paprskové virtuální sítě. Podle potřeby centrum taky umožňuje připojení prostřednictvím sítě VPN nebo Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Virtuální sítě
 
@@ -54,9 +54,9 @@ Hraniční sítě se obvykle vytvářejí pomocí [virtuální sítě][virtual-n
 
 Pomocí [uživatelem definovaných tras][user-defined-routes] můžou zákazníci nasazovat brány firewall, systémy IDS/IPS a další virtuální zařízení. Zákazníci pak můžou směrovat síťový provoz přes tato bezpečnostní zařízení a vynucovat tak zásady zabezpečení hranic a provádět auditování a kontrolu. Uživatelem definované trasy můžou být vytvořeny, aby bylo zaručeno, že provoz prochází určenými vlastními virtuálními počítači, firewally webových aplikací a nástroji pro vyrovnávání zatížení.
 
-Aby bylo ve výše uvedeném příkladu hvězdicové síťové topologie zaručeno, že provoz generovaný virtuálními počítači, které se nacházejí v paprscích, prochází správnými virtuálními zařízeními v centru, je potřeba, aby byla v podsítích paprsku uživatelem definovaná trasa. Tato trasa nastaví front-end IP adresu interního nástroje pro vyrovnávání zatížení jako další segment směrování. Interní nástroj pro vyrovnávání zatížení distribuuje interní provoz na virtuální zařízení (back-endový fond nástroje pro vyrovnávání zatížení).
+V příkladu sítě typu centrum a paprsky zaručujete, že provoz generovaný virtuálními počítači, které se nacházejí v paprskech, projde správnými virtuálními zařízeními v centru, vyžaduje trasu definovanou uživatelem, která je definovaná v podsítích paprsku. Tato trasa nastaví front-end IP adresu interního nástroje pro vyrovnávání zatížení jako další segment směrování. Interní nástroj pro vyrovnávání zatížení distribuuje interní provoz na virtuální zařízení (back-endový fond nástroje pro vyrovnávání zatížení).
 
-## <a name="azure-firewall"></a>Brána Azure Firewall
+## <a name="azure-firewall"></a>Azure Firewall
 
 [Azure Firewall][AzFW] je spravovaná cloudová služba, která chrání vaše prostředky ve virtuálních sítích Azure. Jde o plně stavovou spravovanou bránu firewall s integrovanou vysokou dostupností a neomezenou cloudovou škálovatelností. Můžete centrálně vytvářet, vynucovat a protokolovat zásady připojení k aplikacím a sítím napříč různými předplatnými a virtuálními sítěmi.
 
@@ -74,13 +74,13 @@ Farma bran firewall obvykle má v porovnání s WAF méně specializovaný softw
 
 Pro přenosy, které pocházejí z internetu, použijte jednu sadu instancí Azure Firewall (nebo síťová virtuální zařízení) a jinou sadu pro provoz pocházející z místních sítí. Použití jenom jedné sady bran firewall pro oba typy přenosů představuje bezpečnostní riziko, protože mezi těmito dvěma sadami síťových přenosů neexistuje žádná bezpečnostní hranice. Použitím samostatných vrstev bran firewall se snižuje složitost pravidel pro kontrolu zabezpečení a zlepšuje se přehled o tom, která pravidla platí pro jednotlivé příchozí žádosti v síti.
 
-## <a name="azure-load-balancer"></a>Azure Load Balancer
+## <a name="azure-load-balancer"></a>Nástroj pro vyrovnávání zatížení Azure
 
 [Azure Load Balancer][ALB] nabízí službu s vysokou dostupností vrstvy 4 (TCP/UDP), která může distribuovat příchozí provoz mezi instancemi služby definovanými v sadě pro vyrovnávání zatížení. Provoz odeslaný do nástroje pro vyrovnávání zatížení z front-endových koncových bodů (koncových bodů veřejných IP adres nebo koncových bodů privátních IP adres) se dá předistribuovat s překladem adresy do fondu back-endových IP adres (například síťová virtuální zařízení nebo virtuální počítače) nebo bez něj.
 
 Azure Load Balancer může také zkoumat stav různých instancí serveru. Pokud instance na test stavu nereaguje, nástroj pro vyrovnávání zatížení zastaví odesílání provozu na instanci serveru, která není v pořádku.
 
-Příkladem použití hvězdicové topologie sítě je nasazení externího nástroje pro vyrovnávání zatížení do centra i do paprsků. Nástroj pro vyrovnávání zatížení v centru efektivně směruje provoz do služeb v paprscích. Nástroje pro vyrovnávání zatížení v paprscích spravují provoz aplikací.
+Jako příklad použití síťové topologie centra a paprsků můžete nasadit externí nástroj pro vyrovnávání zatížení do středu i paprsků. Nástroj pro vyrovnávání zatížení v centru efektivně směruje provoz do služeb v paprscích. Nástroje pro vyrovnávání zatížení v paprscích spravují provoz aplikací.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 

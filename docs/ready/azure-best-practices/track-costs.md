@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548959"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240134"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548959"
 
 Řízení nákladů, podobně jako zásady správného řízení a jiné konstrukce správy, závisí na dobře spravovaném prostředí. Vytvoření takového prostředí (zejména složitého) vyžaduje konzistentní procesy v klasifikaci a organizaci všech prostředků.
 
-Prostředky zahrnují všechny virtuální počítače, zdroje dat a aplikace nasazené do cloudu. Azure poskytuje několik mechanismů pro klasifikaci a organizování prostředků. V tématu o [škálování s více předplatnými Azure](../considerations/scaling-subscriptions.md) naleznete podrobné informace o možnostech organizace prostředků na základě více kritérií za účelem vytvoření dobře spravovaného prostředí. Tento článek se zaměřuje na použití základních konceptů Azure k zajištění viditelnosti nákladů na cloud.
+Prostředky zahrnují všechny virtuální počítače, zdroje dat a aplikace nasazené do cloudu. Azure poskytuje několik mechanismů pro klasifikaci a organizování prostředků. V tématu o [škálování s více předplatnými Azure](../azure-best-practices/scaling-subscriptions.md) naleznete podrobné informace o možnostech organizace prostředků na základě více kritérií za účelem vytvoření dobře spravovaného prostředí. Tento článek se zaměřuje na použití základních konceptů Azure k zajištění viditelnosti nákladů na cloud.
 
 ### <a name="classification"></a>Classification
 
@@ -35,7 +35,7 @@ Označování je primární způsob, jak porozumět datům v jakémkoli vykazov�
 
 Prvním krokem při přesném sledování informací o nákladech napříč organizačními jednotkami, prostředími a projekty je definování standardu označování. Druhým krokem je zajištění konzistentního uplatňování tohoto standardu označování. Následující články vám mohou pomoci provést každý z těchto kroků:
 
-- [Vytvoření standardů pojmenování a označování](../considerations/naming-and-tagging.md)
+- [Vytvoření standardů pojmenování a označování](../azure-best-practices/naming-and-tagging.md)
 - [Vytvoření MVP pro zásady správného řízení pro vynucování standardů označování](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Organizace prostředků
@@ -59,7 +59,7 @@ Diagram zobrazuje osvědčené postupy, ale nezahrnuje tyto možnosti:
 
 Zbývající část tohoto článku předpokládá použití osvědčeného postupu popsaného v předchozím diagramu. Následující články vám můžou pomoct aplikovat přístup k organizaci prostředků, který nejlépe vyhovuje vaší společnosti:
 
-- [Škálování s využitím několika předplatných Azure](../considerations/scaling-subscriptions.md)
+- [Škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Nasazení MVP pro zásady správného řízení k řízení standardů dobře spravovaného prostředí](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Poskytnutí správné úrovně přístupu k nákladům
@@ -102,7 +102,7 @@ Následující nastavení rozsahu a rolí vytvoří požadovanou viditelnost pro
 
 - [CCoE](../../organize/cloud-center-of-excellence.md). Zodpovědnost za správu nákladů souvisejících se sdílenými službami vyžaduje přístup Přispěvatel služby Cost Management na úrovni předplatného. Kromě toho může tento tým vyžadovat přístup Přispěvatel služby Cost Management ke skupinám prostředků nebo předplatným, které obsahují prostředky nasazené automatizacemi CCoE, aby porozuměli tomu, jak tyto automatizace ovlivňují náklady.
 
-  - **Sdílené služby**. Když je zapojen tým CCoE, osvědčeným postupem je, že prostředky spravované CCoE jsou podporovány z předplatného centralizované sdílené služby v rámci hvězdicové topologie sítě. V tomto scénáři má CCoE k tomuto předplatnému pravděpodobně přístup přispěvatele nebo vlastníka, takže další přiřazení rozsahu [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
+  - **Sdílené služby**. Když je zajištěná cloudová centra excelence, osvědčeným postupem je, že prostředky spravované CCoE jsou podporovány od centralizovaného předplatného sdílené služby v rámci modelu hvězdicové a Paprskové. V tomto scénáři má CCoE k tomuto předplatnému pravděpodobně přístup přispěvatele nebo vlastníka, takže další přiřazení rozsahu [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
   - **Automatizace a řízení CCoE**. Tým CCoE obvykle poskytuje ovládací skripty a skripty pro automatizované nasazení týmům přechodu na cloud. Úkolem CCoE je porozumět tomu, jak tyto akcelerátory ovlivňují náklady. Aby tento přehled získal, tým potřebuje přístup [Přispěvatel služby Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) k jakýmkoli skupinám prostředků nebo předplatným, které tyto akcelerátory spouští.
 
 - **Tým cloudových operací**. Zodpovědnost za správu průběžných nákladů v provozních prostředích vyžaduje přístup Přispěvatel služby Cost Management ke všem provozním předplatným.
@@ -117,7 +117,7 @@ Azure Cost Management je dobře zdokumentovaný nástroj pro stanovení rozpočt
 
 Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management, najdete v tématu pojednávajícím o [optimalizaci investic do cloudu pomocí Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
-### <a name="use-azure-cost-management"></a>Práce s nástrojem Azure Cost Management
+### <a name="use-azure-cost-management"></a>Použití služby Azure Cost Management
 
 - [Vytváření a správa rozpočtů](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
 - [Export dat o nákladech](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
