@@ -1,5 +1,5 @@
 ---
-title: Modely povýšení – povýšení, příprava nebo nasazení testovací verze
+title: 'Propagační modely: jeden krok, připravený nebo let'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Pochopení dopadu povýšení na migrační aktivity
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548449"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564623"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>Modely povýšení – jeden krok, s fázemi nebo nasazení testovací verze
+# <a name="promotion-models-single-step-staged-or-flight"></a>Propagační modely: jeden krok, připravený nebo let
 
 O migraci úloh se často diskutuje jako o jediné aktivitě. Ve skutečnosti je to kolekce menších aktivit usnadňujících přesun digitálního aktiva do cloudu. Jednou z posledních aktivit v rámci migrace je povýšení aktiva do produkčního prostředí. Povýšení je bod, ve kterém se produkční systém mění pro koncové uživatele. Může to být často tak jednoduché jako změna síťového směrování a přesměrování koncových uživatelů na nové produkční aktivum. Povýšení je také bod, ve kterém se provoz IT nebo cloudu mění zaměření procesů provozní správy z předchozího produkčního systému na nové produkční systémy.
 

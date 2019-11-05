@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240017"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561644"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Cesta k připravenosti dovedností během fáze plánování cesty migrace
 
@@ -55,16 +55,16 @@ Převod obchodního případu a racionálního digitálního majetku na akční 
 
 V rámci připravené fáze vytvoří technický personál cílovou zónu umožňující hostování, provozování a řízení úloh, které byly migrovány do cloudu. Tyto výukové postupy vám můžou přispět k vývoji potřebných dovedností:
 
-- [Vytvořte účet Azure](/learn/modules/create-an-azure-account). První krok při používání Azure spočívá ve vytvoření účtu. Váš účet obsahuje služby Azure, které zřizujete, a zpracovává vaše osobní nastavení, jako je identita, fakturace a předvolby.
-- [Azure Portal](/learn/modules/tour-azure-portal). Projděte si funkce a služby na webu Azure Portal a přizpůsobte si portál.
-- [Seznámení s Azure](/learn/modules/welcome-to-azure). Seznamte se s Azure vytvořením a konfigurací svého prvního virtuálního počítače v cloudu.
-- [Seznámení se zabezpečením v Azure](/learn/modules/intro-to-security-in-azure). Seznamte se se základními koncepty ochrany vaší infrastruktury a dat při práci v cloudu. Poznejte svoje zodpovědnosti a zjistěte, o co se Azure postará za vás.
-- [Spravujte prostředky v Azure](/learn/paths/manage-resources-in-azure). Zjistěte, jak pomocí příkazového řádku Azure a webového portálu vytvářet, spravovat a řídit cloudové prostředky.
-- [Vytvořte virtuální počítač](/learn/modules/create-windows-virtual-machine-in-azure). Vytvořte virtuální počítač pomocí webu Azure Portal.
-- [Sítě Azure](/learn/modules/intro-to-azure-networking). Seznamte se se základy sítí Azure a o tom, jak sítě Azure pomáhají zlepšit odolnost a snižovat latenci.
-- [Možnosti Azure COMPUTE](/learn/modules/intro-to-azure-compute). Seznamte se s výpočetními službami Azure.
-- [Zabezpečte prostředky pomocí RBAC](/learn/modules/secure-azure-resources-with-rbac). Zabezpečte prostředky pomocí RBAC.
-- [Možnosti úložiště dat](/learn/modules/intro-to-data-in-azure/index). Přečtěte si o výhodách Azure Data Storage.
+- [Vytvořte účet Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). První krok při používání Azure spočívá ve vytvoření účtu. Váš účet obsahuje služby Azure, které zřizujete, a zpracovává vaše osobní nastavení, jako je identita, fakturace a předvolby.
+- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Projděte si funkce a služby na webu Azure Portal a přizpůsobte si portál.
+- [Seznámení s Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Seznamte se s Azure vytvořením a konfigurací svého prvního virtuálního počítače v cloudu.
+- [Seznámení se zabezpečením v Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Seznamte se se základními koncepty ochrany vaší infrastruktury a dat při práci v cloudu. Poznejte svoje zodpovědnosti a zjistěte, o co se Azure postará za vás.
+- [Spravujte prostředky v Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Zjistěte, jak pomocí příkazového řádku Azure a webového portálu vytvářet, spravovat a řídit cloudové prostředky.
+- [Vytvořte virtuální počítač](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). Vytvořte virtuální počítač pomocí webu Azure Portal.
+- [Sítě Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Seznamte se se základy sítí Azure a o tom, jak sítě Azure pomáhají zlepšit odolnost a snižovat latenci.
+- [Možnosti Azure COMPUTE](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Seznamte se s výpočetními službami Azure.
+- [Zabezpečte prostředky pomocí RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). Zabezpečte prostředky pomocí RBAC.
+- [Možnosti úložiště dat](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Přečtěte si o výhodách Azure Data Storage.
 
 ## <a name="organizational-skills"></a>Organizační dovednosti
 
@@ -89,8 +89,10 @@ Pro účely [Microsoft Azure školení a zkoušek pro certifikace](https://www.m
 
 Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávat body, úrovně a dosáhnout více
 
-Tady je příklad přizpůsobených studijních cest, které odpovídají strategii Potion architektury pro přijetí do cloudu. 
+Tady je příklad přizpůsobených studijních cest, které odpovídají strategii Potion architektury pro přijetí do cloudu.
 
-[Seznamte se s obchodní hodnotou Microsoft Azure](/learn/paths/learn-business-value-of-azure/): Toto výukové prostředí vás zabere na cestu, která začíná zobrazením, jak digitální transformace a výkon cloudu můžou transformovat vaše podnikání. Pokryjeme, jak Microsoft Azure cloudové služby můžou vaši organizaci v důvěryhodné cloudové platformě vysílat. Nakonec se zabalíme tak, že ukážeme, jak tuto cestu udělat v reálném čase pro vaši organizaci. 
+[Seznamte se s obchodní hodnotou Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): Toto výukové prostředí vás zabere na cestu, která začíná zobrazením, jak digitální transformace a výkon cloudu můžou transformovat vaše podnikání. Pokryjeme, jak Microsoft Azure cloudové služby můžou vaši organizaci v důvěryhodné cloudové platformě vysílat. Nakonec se zabalíme tak, že ukážeme, jak tuto cestu udělat v reálném čase pro vaši organizaci.
 
-Pokud chcete zjistit další způsoby učení, Projděte si [katalog informací](/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.
+## <a name="learn-more"></a>Další informace
+
+Pokud chcete zjistit další způsoby učení, Projděte si [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.

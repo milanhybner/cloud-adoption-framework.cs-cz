@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548279"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564549"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Příprava na technicky složité prostředí: Agilní správa změn
 
@@ -21,7 +21,7 @@ Pokud je možné zrušit a znovu vytvořit celé datové centrum pomocí jednoho
 
 Při přechodu na agilní model, který zdůrazňuje flexibilitu a iteraci, se k technické složitosti a správě změn přistupuje jinak než v případě tradičního vodopádového modelu, který se zaměřuje na lineární řadu jednotlivých kroků migrace. Tento článek popisuje špičkový přístup ke správě změn v rámci provádění migrace založené na agilních metodách. Po jeho přečtení byste měli mít obecnou představu o úrovních správy změn a o dokumentaci, která se týká inkrementální migrace. Informace, které tady najdete, slouží spolu s doplňujícím školením jako výchozí bod pro výběr a implementaci agilních postupů. Účelem tohoto článku je připravit cloudové architekty na diskuzi s projektovými manažery, aby mohli vysvětlit obecný koncept správy změn, který je součástí tohoto přístupu.
 
-## <a name="addressing-technical-complexity"></a>Řešení technické složitosti
+## <a name="address-technical-complexity"></a>Řešení technické složitosti
 
 Při změně jakéhokoli technického systému vnáší složitost a vzájemná závislost do projektových plánů prvek rizika. Migrace do cloudu není výjimkou. Když se tisíce &mdash;nebo desítky tisíc&mdash; prostředků přesouvají do cloudu, riziko se ještě zvyšuje. Detekce a mapování všech závislostí napříč rozsáhlým digitálním prostředím by trvalo roky. S takto dlouhým analytickým cyklem by se nespokojila snad žádná firma. Aby se vyrovnala potřeba analýzy a modernizace podnikové architektury, dokument Architektura přechodu na cloud se v oblasti správy produktových backlogů zaměřuje na model INVEST. Následující části shrnují tento typ modelu.
 
@@ -103,7 +103,7 @@ Tým přechodu na cloud bude v rámci každého sprintu nebo iterace usilovat o 
 V případě migrace malého rozsahu, na které pracuje jeden samostatný tým, může jeden sprint zahrnovat všechny čtyři fáze migrace jedné sady funkcí (*posouzení*, *migraci*, *optimalizaci*, *zabezpečení a správu*). Častěji se ale stává, že tyto procesy jsou rozdělené do samostatných pracovních položek v různých sprintech a spolupracuje na nich několik týmů. V závislosti na typu změn, jejich rozsahu a jednotlivých rolích můžou mít tyto sprinty různou podobu.
 
 - **Tovární přístup k migraci:** Migrace velkého rozsahu někdy vyžaduje přístup, který se v praxi podobá továrně. V tomto modelu se různé týmy věnují konkrétnímu procesu migrace (nebo podmnožině procesů). Po jeho dokončení se výstup sprintu jednoho týmu importuje do backlogu pro další tým. Toto je efektivní postup pro migrace velkého rozsahu typu změny hostitele, které zahrnují mnoho sad funkcí a týkají se tisíců virtuálních počítačů, které musí projít posouzením, návrhem architektury, odstraněním problémů a migrací. Podmínkou tohoto přístupu je ale nové homogenní prostředí s optimalizovanými procesy pro správu a schvalování změn.
-- **Migrace ve vlnách:** Dalším postupem, který se osvědčil u migrací velkého rozsahu, je model vln. V tomto případě není rozdělení práce tak jasné. Týmy se podílí na provádění migrace jednotlivých sad funkcí. Povaha jednotlivých sprintů se ale mění. V jednom sprintu může určitý tým provést posouzení a vytvořit návrh architektury. V jiném sprintu může stejný tým provést samotnou migraci. V následujícím sprintu se může soustředit na optimalizaci a uvolnění prostředků. Tento přístup umožňuje, aby si hlavní tým udržel přehled o sadách funkcí a všech procesech, kterými procházejí. Vzhledem k rozmanitosti odborných dovedností a změnám kontextu se může stát, že tým bude pracovat pomaleji a migrace bude trvat déle. Další významné prostoje můžou být způsobené překážkami, které se objeví během schvalovacích procesů. Při použití tohoto modelu je důležité, aby backlog uvolnění prostředků obsahoval možnosti, díky kterým bude práce postupovat i v době prostojů. Také je důležité, aby členové týmu zvládali různé role a byli vybavení dovednostmi potřebnými pro zpracování jednotlivých sprintů.
+- **Migrace ve vlnách:** Dalším postupem, který se osvědčil u migrací velkého rozsahu, je model vln. V tomto případě není rozdělení práce tak jasné. Týmy se podílí na provádění migrace jednotlivých sad funkcí. Povaha jednotlivých sprintů se ale mění. V jednom sprintu může určitý tým provést posouzení a vytvořit návrh architektury. V jiném sprintu může stejný tým provést samotnou migraci. V následujícím sprintu se může soustředit na optimalizaci a uvolnění prostředků. Tento přístup umožňuje, aby si hlavní tým udržel přehled o sadách funkcí a všech procesech, kterými procházejí. Vzhledem k rozmanitosti odborných dovedností a změnám kontextu se může stát, že tým bude pracovat pomaleji a migrace bude trvat déle. Další významné prostoje můžou být způsobené překážkami, které se objeví během schvalovacích procesů. Při použití tohoto modelu je důležité, aby backlog uvolnění prostředků obsahoval možnosti, díky kterým bude práce postupovat i v době prostojů. Je také důležité vymezit členy týmu a zajistit, aby se sady dovedností rovnaly s motivem každého sprintu.
 
 ### <a name="sprint-backlog-data-points"></a>Informace v backlogu sprintu
 

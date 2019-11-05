@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243133"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561781"
 ---
-# <a name="role-based-access-control"></a>Řízení přístupu založené na rolích
+# <a name="role-based-access-control"></a>Řízení přístupu na základě role
 
 Přístupová práva a oprávnění založená na skupině jsou osvědčeným postupem. Práce se skupinami namísto jednotlivých uživatelů zjednodušuje správu zásad přístupu, umožňuje jednotnou správu přístupu napříč týmy a snižuje riziko chyb při konfiguraci. Přiřazení uživatelů k příslušným skupinám a jejich odebírání pomáhá udržovat aktuální oprávnění konkrétního uživatele. [Řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) v Azure nabízí jemně odstupňovanou správu přístupu pro prostředky uspořádané podle uživatelských rolí.
 
@@ -41,7 +41,7 @@ Při plánování strategie řízení přístupu použijte model přístupu s mi
 > [!NOTE]
 > Čím konkrétnější nebo podrobnější oprávnění definujete, tím je pravděpodobnější, že řízení přístupu bude složité a obtížně spravovatelné. To platí hlavně v případě, že velikost vašich cloudových aktiv roste. Vyhněte se oprávněním pro konkrétní prostředky. Místo toho [použijte skupiny pro správu](https://docs.microsoft.com/azure/governance/management-groups) k řízení přístupu na podnikové úrovni a [skupiny prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) k řízení přístupu v rámci předplatných. Vyhněte se taky konkrétním uživatelským oprávněním. Místo toho přiřaďte přístup [ke skupinám v Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
-## <a name="using-built-in-rbac-roles"></a>Použití předdefinovaných rolí RBAC
+## <a name="use-built-in-rbac-roles"></a>Použití integrovaných rolí RBAC
 
 Azure poskytuje mnoho předdefinovaných definic rolí se třemi základními rolemi pro poskytnutí přístupu:
 
@@ -59,7 +59,7 @@ Další příklad použití předdefinovaných rolí ke správě přístupu k ur
 
 Úplný seznam dostupných předdefinovaných rolí najdete v tématu [předdefinované role pro prostředky Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
-## <a name="using-custom-roles"></a>Používání vlastních rolí
+## <a name="use-custom-roles"></a>Použití vlastních rolí
 
 Přestože předdefinované role v Azure podporují širokou škálu scénářů řízení přístupu, nemusí splňovat všechny potřeby vaší organizace nebo týmu. Pokud například máte jednu skupinu uživatelů odpovědných za správu virtuálních počítačů a prostředků Azure SQL Database, možná budete chtít vytvořit vlastní roli pro optimalizaci správy požadovaných řízení přístupu.
 

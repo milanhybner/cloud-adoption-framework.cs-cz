@@ -8,24 +8,24 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239760"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561685"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Použití Terraformu k sestavení zón odpočívadla
 
-Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který zákazníci a partneři často používají, je Hashicorp Terraformu. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
+Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který se zákazníkům a partnerům často používá k nasazení cílových zón, je Terraformu Hashicorp. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Účel cílové zóny
 
-Platforma pro nasazení v cloudu pro Terraformu má omezené sady odpovědností a funkcí, které vynutily protokolování, monitorování účtů a zabezpečení. Tuto cílovou zónu jsme navrhli pomocí standardních komponent, které se nazývají Terraformu moduly, aby se vynutila konzistence napříč prostředky nasazenými v prostředí.
+Platforma pro nasazení v cloudu pro Terraformu má omezené sady odpovědností a funkcí, které vynutily protokolování, monitorování účtů a zabezpečení. Tato cílová zóna používá standardní komponenty označované jako moduly Terraformu k zajištění konzistence napříč prostředky nasazenými v prostředí.
 
-## <a name="using-standard-modules"></a>Použití standardních modulů
+## <a name="use-standard-modules"></a>Použití standardních modulů
 
-Opakované použití komponent je základní princip infrastruktury jako kódu. Moduly jsou instrumentované při definování standardů a konzistence napříč nasazeními prostředků v rámci a napříč prostředími. Sada modulů použitá k nasazení této první zóny je k dispozici v oficiálním [registru terraformu](https://registry.terraform.io/search?q=aztfmod).
+Opakované použití komponent je základní princip infrastruktury jako kódu. Moduly jsou instrumentované při definování standardů a konzistence napříč nasazeními prostředků v rámci a napříč prostředími. Moduly, které se používají k nasazení této první zóny, jsou k dispozici v oficiálním [registru terraformu](https://registry.terraform.io/search?q=aztfmod).
 
 ## <a name="architecture-diagram"></a>Diagram architektury
 
@@ -37,13 +37,13 @@ První cílová zóna nasadí do vašeho předplatného tyto komponenty:
 
 Nasazené komponenty a jejich účel jsou následující:
 
-| Součást | zodpovědní |
+| Komponenta | zodpovědní |
 |---------|---------|
 | Skupiny prostředků | Základní skupiny prostředků, které jsou potřeba pro základ |
-| Protokolování aktivit | Auditování všech aktivit předplatného a archivace: </br> – Účet úložiště </br> -Event Hubs |  
-| Protokolování diagnostiky | Protokol všech operací se uchovává po dobu určitého počtu dnů: </br> – Účet úložiště </br> -Event Hubs |
+| Protokolování aktivit | Auditování všech aktivit předplatného a archivace: </br> – Účet úložiště </br> – Azure Event Hubs |  
+| Protokolování diagnostiky | Všechny protokoly operací uchovávané po určitý počet dnů: </br> – Účet úložiště </br> -Event Hubs |
 | Log Analytics | Ukládá všechny protokoly operací. </br> Nasazení běžných řešení pro hloubkové osvědčené postupy pro aplikace: </br> - NetworkMonitoring </br> - ADAssessment </br> – ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Security Center | Výstrahy a hygieny zabezpečení odeslané na e-mail a telefonní číslo |
+| Centrum zabezpečení Azure | Výstrahy a hygieny zabezpečení odeslané na e-mail a telefonní číslo |
 
 ## <a name="use-this-blueprint"></a>Použití tohoto podrobného plánu
 
@@ -64,34 +64,34 @@ Pokud tyto předpoklady odpovídají vašemu současnému prostředí, může b�
 
 V zóně pro vykládku Terraformu jsou zastoupena tato rozhodnutí:
 
-| Součást | Rozhodnutí | Alternativní přístupy |
+| Komponenta | Rozhodnutí | Alternativní přístupy |
 | --- | --- | --- |
-|Protokolování a monitorování | Bude použit pracovní prostor Azure Monitor Log Analytics. Dojde k zřízení účtu úložiště diagnostiky i centra událostí. |         |
-|Síť | Není k dispozici síť, která bude implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/networking-options.md) |
+|Protokolování a monitorování | Používá se pracovní prostor Azure Monitor Log Analytics. Účet úložiště diagnostiky i centrum událostí se zřídí. |         |
+|Síť | Není k dispozici síť, která je implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/networking-options.md) |
 |Identita | Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory. | [Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zásady | V této cílové zóně se v současné době předpokládá, že se nepoužívají žádné zásady Azure. | |
 |Návrh předplatného | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Skupiny pro správu | Neuvedeno – Navrženo pro jedno produkční předplatné. |[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Skupiny prostředků | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
-| Data | Nevztahuje se | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Úložiště|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md) |
-| Standardy pro vytváření názvů | Při vytvoření prostředí se vytvoří také jedinečná předpona. Tato předpona používá prostředky, které vyžadují globálně jedinečný název (například účty úložiště). Vlastní název se připojí s náhodnou příponou. Použití značky je udělené podle pokynů v následující tabulce. | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md) |
-| Správa nákladů | Nevztahuje se | [Sledování nákladů](../azure-best-practices/track-costs.md) |
-| Služby Compute | Nevztahuje se | [Možnosti služby Compute](../considerations/compute-options.md) |
+| Data | – | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|–|[Pokyny k Azure Storage](../considerations/storage-options.md) |
+| Standardy pro vytváření názvů | Při vytvoření prostředí se vytvoří také jedinečná předpona. Tato předpona používá prostředky, které vyžadují globálně jedinečný název (například účty úložiště). Vlastní název je připojen s náhodnou příponou. Použití značky je udělené podle pokynů v následující tabulce. | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md) |
+| Správa nákladů | – | [Sledování nákladů](../azure-best-practices/track-costs.md) |
+| Compute | – | [Možnosti služby Compute](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standardy označování
 
 U všech prostředků a skupin prostředků se musí vyskytovat následující sada minimálních značek:
 
-| Název značky | Popis | Klíč | Ukázková hodnota |
+| Název značky | Popis | Klíč | Příklad hodnoty |
 |--|--|--|--|
 | Organizační jednotka | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni | BusinessUnit | FINANCE, MARKETING, {název produktu}, CORP, SHAREd |
 | Nákladové středisko | Účetní nákladové středisko přidružené tomuto prostředku| CostCenter | Číslo |
-| Zotavení po havárii | Obchodní důležitost aplikace, úlohy nebo služby | DR | SE ZAPNUTÝM DR, BEZ DR |
+| Zotavení po havárii | Obchodní důležitost aplikace, úlohy nebo služby | DR | SE ZAPNUTÝM DR, BEZ DR |
 | Prostředí | Prostředí nasazení aplikace, úlohy nebo služby |  ENV | Prod, vývoj, QA, fáze, testování, školení |
 | Jméno vlastníka | Vlastník aplikace, úlohy nebo služby| Vlastník | e-mail |
 | Typ nasazení | Definuje způsob údržby prostředků. | Typ nasazení | Ruční, Terraformu |
-| Version | Verze nasazeného podrobného plánu | version | v 0,1 |
+| Verze | Verze podrobného plánu byla nasazena. | version | v 0,1 |
 | Název aplikace | Název přidružené aplikace, služby nebo úlohy přidružené k prostředku | ApplicationName | název aplikace |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Přizpůsobení a nasazení první cílové zóny
@@ -100,7 +100,7 @@ Můžete [klonovat cílovou zónu terraformu Foundation](https://github.com/micr
 
 Pojďme se podívat na různé oddíly proměnných.
 
-V tomto prvním objektu vytvoříme dvě skupiny prostředků v `southeastasia` oblasti s názvem "-hub-Core-s" a "-hub-Core-SEK" společně s předponou přidanou za běhu.
+V tomto prvním objektu vytvoříme dvě skupiny prostředků v `southeastasia` oblasti s názvem `-hub-core-sec` a `-hub-operations` spolu s předponou přidanou za běhu.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Dále určíme oblasti, ve kterých můžeme nastavit základ. Zde `southeastasia` budou použity k nasazení všech prostředků.
+Dále určíme oblasti, ve kterých můžeme nastavit základ. Zde se `southeastasia` používá k nasazení všech prostředků.
 
 ```hcl
 location_map = {
@@ -124,14 +124,14 @@ location_map = {
 }
 ```
 
-Pak určíme dobu uchovávání protokolů operací a protokolů předplatného Azure. Tato data budou uložená v samostatných účtech úložiště a v centru událostí, jejichž názvy jsou náhodně vygenerované, protože musí být jedinečné.
+Pak určíme dobu uchovávání protokolů operací a protokolů předplatného Azure. Tato data jsou uložená v samostatných účtech úložiště a v centru událostí, jejichž názvy jsou náhodně vygenerované, protože musí být jedinečné.
 
 ```hcl
 azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-Do tags_hub určíme minimální sadu značek, které budou aplikovány na všechny vytvořené prostředky.
+Do tags_hub určíme minimální sadu značek, které se aplikují na všechny vytvořené prostředky.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Pak zadáte název Log Analytics a sadu řešení, která budou analyzovat nasazení. Tady jsme zachovali monitorování sítě, AD Assessment a replikaci, DNS Analytics a Key Vault Analytics.
+Pak určíme název Log Analytics a sadu řešení, které analyzují nasazení. Tady jsme zachovali monitorování sítě, vyhodnocení a replikaci Active Directory (AD), DNS Analytics a Key Vault Analytics.
 
 ```hcl
 
@@ -189,13 +189,13 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Začínáme
+## <a name="get-started"></a>Začínáme
 
-Po kontrole konfigurace můžete nasadit konfiguraci, protože byste nasadili prostředí Terraformu. Doporučujeme však použít Rover, což je kontejner Docker, který umožňuje nasazení ze systému Windows, Linux nebo MacOS. Můžete začít s [úložištěm GitHub Rover](https://github.com/aztfmod/rover).
+Po kontrole konfigurace můžete nasadit konfiguraci stejným způsobem jako při nasazení prostředí Terraformu. Doporučujeme použít Rover, což je kontejner Docker, který umožňuje nasazení ze systému Windows, Linux nebo MacOS. Můžete začít s [úložištěm GitHub Rover](https://github.com/aztfmod/rover).
 
 ## <a name="next-steps"></a>Další kroky
 
-Základní cílová zóna definuje základy pro komplexní prostředí způsobem rozloženého. Tato edice poskytuje sadu velmi jednoduchých možností, které lze rozšířit o:
+Základní cílová zóna definuje základy pro komplexní prostředí způsobem rozloženého. Tato edice poskytuje sadu jednoduchých funkcí, které lze rozšířit o:
 
 - Přidání dalších modulů do podrobného plánu.
 - Vrstvení dalších zón pro vykládku nad ní.
@@ -205,4 +205,4 @@ Rozvětvení zón je dobrým zvykem pro odkládací systémy, správu verzí jed
 Budoucí referenční architektury demonstrují tento koncept pro topologii hvězdicové topologie.
 
 > [!div class="nextstepaction"]
-> [Kontrola ukázky cílové zóny v rámci použití Terraformu](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Kontrola ukázky cílové zóny Terraformu Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

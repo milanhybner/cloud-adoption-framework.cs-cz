@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058764"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566021"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
@@ -225,7 +225,7 @@ Tento model správy má výhody druhého výše uvedeného příkladu. Zásadní
 
 Proto můžete vybrat kterýkoli z těchto dvou příkladů modelů správy prostředků v závislosti na prioritě vašich požadavků. Pokud předpokládáte, že vaše organizace nedosáhne omezení služby pro jedno předplatné, můžete použít jedno předplatné s více skupinami prostředků. Naopak, pokud vaše organizace očekává mnoho úloh, může být více předplatných pro každé prostředí lepší.
 
-## <a name="implementing-the-resource-management-model"></a>Implementace modelu správy prostředků
+## <a name="implement-the-resource-management-model"></a>Implementace modelu správy prostředků
 
 Seznámili jste se s několika různými modely pro řízení přístupu k prostředkům Azure. Nyní vás provedete kroky potřebnými k implementaci modelu správy prostředků s jedním předplatným pro každou **sdílenou infrastrukturu**, **produkční**prostředí a **vývoj** prostředí z Průvodce návrhem. Budete mít jednoho **vlastníka předplatného** pro všechna tři prostředí. Jednotlivé úlohy se budou izolovat ve **skupině prostředků** s **vlastníkem úlohy** přidaným s rolí **přispěvatele** .
 
@@ -264,7 +264,7 @@ Postupujte následovně:
 
 Teď, když jste implementovali model zásad správného řízení, můžete nasadit své sdílené služby infrastruktury.
 
-## <a name="related-resources"></a>Související materiály
+## <a name="related-resources"></a>Související prostředky
 
 [Předdefinované role pro prostředky Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239752"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566674"
 ---
 # <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "73239752"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Virtuální datové centrum Azure: Průvodce metodou „lift and shift“</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Virtuální datové centrum Azure: Průvodce zvednutím a posunutím</a></h3>
         <p>Tento dokument white paper popisuje proces, který zaměstnanci oddělení IT a rozhodovací pracovníci můžou použít k identifikaci a plánování migrace aplikací a serverů do Azure s využitím přístupu výtahu a posunutí a minimalizace dalších nákladů na vývoj při optimalizaci cloudu. hostování možností.</p>
     </td>
 </tr>

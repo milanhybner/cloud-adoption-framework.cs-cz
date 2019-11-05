@@ -1,5 +1,5 @@
 ---
-title: Topologie sítě centra a paprsků
+title: Hvězdicová síťová topologie
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si o topologiích sítě rozbočovač a paprsků.
 author: tracsman
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239927"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566767"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Topologie sítě centra a paprsků
+# <a name="hub-and-spoke-network-topology"></a>Hvězdicová síťová topologie
 
 *Hvězdicová architektura* je síťový model pro efektivnější správu běžné komunikace nebo požadavků na zabezpečení. Pomáhá také vyhnout se omezením předplatného Azure. Tento model řeší následující aspekty:
 
@@ -61,7 +61,7 @@ Paprsky můžou také oddělit a povolit různé skupiny v rámci vaší organiz
 
 V Azure je každá komponenta bez ohledu na typ nasazená v předplatném Azure. Izolace komponent Azure v různých předplatných Azure může uspokojit požadavky různých oborů podnikání, jako je například nastavení odlišných úrovní přístupu a autorizace.
 
-Jednoduchá implementace hub a paprsků se dá škálovat až na velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. (Příkladem je maximální počet peeringů virtuálních sítí. Podrobnosti najdete v tématu [limity, kvóty a omezení předplatného a služeb Azure] [limity].
+Jednoduchá implementace hub a paprsků se dá škálovat až na velký počet paprsků. Ale jako u každého IT systému existují i zde omezení platformy. Nasazení centra je vázáno na konkrétní předplatné Azure, pro které platí omezení a limity. Jedním z příkladů je maximální počet partnerských vztahů virtuálních sítí. Další informace najdete v tématu [Limity, kvóty a omezení předplatného a služeb Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 V případech, kdy omezení můžou být problémem, můžete architekturu dále škálovat rozšířením modelu jednoduché hvězdicové topologie na cluster sítí s hvězdicovou topologií. Pomocí peeringu virtuálních sítí, Azure ExpressRoute, virtuální sítě WAN nebo sítě S2S VPN můžete propojit více center v jedné nebo několika oblastech Azure.
 

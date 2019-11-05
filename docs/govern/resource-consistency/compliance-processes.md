@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223719"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566041"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy dodržování předpisů v zásadách konzistence prostředků
 
@@ -50,7 +50,7 @@ Ujistěte se, že vaše týmy IT implementovaly automatizované monitorovací sy
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Aktivační události porušení a akce vynucení
 
-Vzhledem k tomu, že dodržování zásad konzistence prostředků může vést ke kritickému narušení služby nebo výraznému snížení nákladů, tým zásad správného řízení cloudu by měl mít přehled o incidentech, které nedodržují předpisy. Ujistěte se, že zaměstnanci oddělení IT mají jasné cesty pro eskalaci, aby tyto problémy nastavili členům týmu zásad správného řízení, které nejlépe vyhovují, aby identifikovali a ověřili, že problémy s zásadami jsou po zjištění
+Vzhledem k tomu, že dodržování zásad konzistence prostředků může vést ke kritickému narušení služby nebo výraznému snížení nákladů, tým zásad správného řízení cloudu by měl mít přehled o incidentech, které nedodržují předpisy. Ujistěte se, že zaměstnanci oddělení IT mají jasné cesty k eskalaci, aby se tyto problémy nastavily členům týmu zásad správného řízení, které nejlépe vyhovují tomu, aby identifikovali a ověřili, jestli jsou problémy se zásadami
 
 Po zjištění porušení byste měli provést akce, aby se zásady znovu zarovnaly co nejdřív. Váš IT tým může automatizovat aktivační události narušení pomocí nástrojů, které jsou uvedené v [Sada nástrojů konzistence prostředků pro Azure](./toolchain.md).
 

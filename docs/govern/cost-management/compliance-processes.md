@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220972"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564716"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Cost Management procesy dodržování zásad
 
@@ -42,7 +42,7 @@ Tento čtvrtletní proces plánování je vhodný čas k vyhodnocení aktuální
 
 Tyto základní procesy vám pomůžou sjednotit útratu a vytvořit základ pro Cost Management disciplíny.
 
-## <a name="ongoing-monitoring-processes"></a>Probíhající procesy monitorování
+## <a name="processes-for-ongoing-monitoring"></a>Procesy pro průběžné monitorování
 
 Úspěšná Cost Management strategie zásad správného řízení závisí na viditelnosti minulých, aktuálních a plánovaných budoucích výdajů souvisejících s cloudem. Bez možnosti analyzovat relevantní metriky a data o vašich stávajících nákladech nemůžete identifikovat změny vašich rizik nebo zjistit porušení rizik. Probíhající procesy zásad správného řízení popsané výše vyžadují kvalitní data, aby bylo zajištěno, že zásady je možné upravit tak, aby lépe chránily vaši infrastrukturu před měnícími se požadavky na podnik a Cloud
 
@@ -54,8 +54,8 @@ Po zjištění narušení byste měli provést akce vynucení, aby se zásady zn
 
 Následují příklady aktivačních událostí:
 
-- **Měsíční odchylky rozpočtu.** Prodiskutujte všechny odchylky v měsíčních útratách, které překračují 20% předpovědi – oproti skutečnému poměru k vedoucímu fakturační jednotky. Zaznamenejte řešení a změny v prognóze.
-- **Tempo přijetí.** Jakákoli odchylka na úrovni předplatného vyšší než 20% spustí kontrolu s vedoucím fakturační jednotky. Zaznamenejte řešení a změny v prognóze.
+- **Měsíční odchylky rozpočtu:** Prodiskutujte všechny odchylky v měsíčních útratách, které překračují 20% předpovědi – oproti skutečnému poměru k vedoucímu fakturační jednotky. Zaznamenejte řešení a změny v prognóze.
+- **Tempo přijetí:** Jakákoli odchylka na úrovni předplatného vyšší než 20% spustí kontrolu s vedoucím fakturační jednotky. Zaznamenejte řešení a změny v prognóze.
 
 ## <a name="next-steps"></a>Další kroky
 

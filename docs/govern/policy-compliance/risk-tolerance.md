@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547167"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566065"
 ---
 # <a name="evaluate-risk-tolerance"></a>Vyhodnocení tolerance rizik
 
@@ -38,7 +38,7 @@ Skutečná obchodní rizika jsou založena na podrobnostech specifických transf
 
 Výše uvedené jsou některé z nejběžnějších rizik zmíněných zákazníky. Tým zásad správného řízení cloudu a týmy pro přijetí v cloudu můžou začít vyvíjet profil rizika, protože úlohy se migrují a připravují na produkční verzi. Připravte se na konverzace, abyste mohli definovat, zdokonalovat a spravovat rizika na základě požadovaných obchodních výsledků a jejich transformačního úsilí.
 
-## <a name="understanding-risk-tolerance"></a>Princip tolerance rizik
+## <a name="understand-risk-tolerance"></a>Vysvětlení tolerance rizika
 
 Identifikace rizika je poměrně přímým procesem. Rizika související s IT jsou obecně standardně v různých oborech. Tolerance těchto rizik je však specifická pro každou organizaci. To je bod, ve kterém se v podnikových a IT konverzacích stává reagovat. Každá strana konverzace se v podstatě projeví v jiném jazyce. Následující porovnání a otázky jsou navržené tak, aby se spouštěly konverzace, které pomůžou každé straně lépe pochopit a vypočítat toleranci rizik.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223756"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566218"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy dodržování předpisů zásad standardních hodnot identity
 
@@ -40,7 +40,7 @@ Tento proces plánování je také vhodný čas k vyhodnocení aktuálního čle
 
 **Revize měsíčního auditu a vytváření sestav:** Po měsících proveďte audit všech nasazení cloudu, aby se zajistilo jejich pokračující sbližování se zásadami identity. Pomocí této kontroly můžete zkontrolovat přístup uživatelů proti obchodním změnám a zajistit tak, aby uživatelé měli správný přístup ke cloudovým prostředkům, a zajistili, že se strategie přístupu, jako je třeba RBAC, dodržují konzistentně. Identifikujte všechny privilegované účty a zdokumentujte jejich účel. Tento proces revize vytvoří zprávu pro tým cloudové strategie a každý tým pro přijetí v cloudu podrobně popisuje celkové dodržování zásad. Sestava je také uložená pro účely auditování a právní účely.
 
-## <a name="ongoing-monitoring-processes"></a>Probíhající procesy monitorování
+## <a name="processes-for-ongoing-monitoring"></a>Procesy pro průběžné monitorování
 
 Určení, jestli vaše strategie zásad správného řízení identity proběhne úspěšně, závisí na viditelnosti aktuálního a minulého stavu systémů identity. Bez možnosti analyzovat relevantní metriky a související data nasazení cloudu nemůžete identifikovat změny vašich rizik nebo zjistit porušení rizik. Probíhající procesy zásad správného řízení popsané výše vyžadují kvalitní data, abyste měli jistotu, že zásady je možné upravit tak, aby podporovaly měnící se potřeby vaší firmy.
 

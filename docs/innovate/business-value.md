@@ -8,71 +8,72 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 643da95396a4983c2642fabcf21340264d0cd1c9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683343"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565751"
 ---
-# <a name="building-consensus-on-the-business-value-of-innovation"></a>Sestavování konsensu na obchodní hodnotě inovací
+# <a name="build-consensus-on-the-business-value-of-innovation"></a>Sestavte se konsensem na obchodní hodnotě inovací
 
-Prvním krokem při vývoji nových inovací je určení způsobu, jakým se inovace budou řídit obchodními hodnotami. Toto cvičení požádá o řadu otázek, které zvýrazňují důležitost investování více času na definování obchodních hodnot.
+Prvním krokem při vývoji nových inovací je určení toho, jak můžou inovace určovat obchodní hodnotu. V tomto cvičení odpovíte na řadu otázek, které zvýrazňují důležitost investic v dostatečném čase, když vaše organizace definuje obchodní hodnotu.
 
 ## <a name="qualifying-questions"></a>Kvalifikační otázky
 
-Před vývojem jakýchkoli řešení (v cloudu nebo v místním prostředí) ověřte kritéria obchodních hodnot:
+Než začnete vyvíjet řešení (v cloudu nebo v místním prostředí), ověřte kritéria obchodních hodnot tak, že odpovíte na následující otázky:
 
-1. Co definovali zákazníci se snažíme s tímto řešením řešit?
-2. Jaké příležitosti by toto řešení vytvořilo pro firmu?
-3. Které obchodní výsledky by se mohly dosáhnout pomocí tohoto řešení?
-4. Jaké jsou motivace společnosti v tomto řešení?
+1. Co je to, co je potřeba pro zákazníka, kterou se snažíte vyřešit pomocí tohoto řešení?
+1. Jaké příležitosti by toto řešení vytvořilo pro vaši firmu?
+1. Které obchodní výsledky by se mohly dosáhnout pomocí tohoto řešení?
+1. Které z motivů vaší společnosti by se v tomto řešení dosloužily?
 
-Pokud jsou odpovědi na všechny čtyři otázky dobře zdokumentovány, možná nebudete potřebovat zbytek tohoto cvičení. Naštěstí lze tuto dokumentaci snadno otestovat. K otestování dokumentace i obecného zarovnání, hostování krátkého setkání s potvrzenými podnikovými účastníky a samostatné krátké schůze se zapojeným vývojářským týmem. Na obou schůzkách si položte čtyři otázky výše a porovnejte výsledky.
+Pokud jsou odpovědi na všechny čtyři otázky dobře zdokumentovány, možná nebudete muset dokončit zbytek tohoto cvičení. Naštěstí můžete snadno testovat jakoukoli dokumentaci. Nastavením dvou krátkých setkání otestujete dokumentaci i interní zarovnání vaší organizace. Pozvánky potvrzených obchodních účastníků na jednu schůzku a vytvoření samostatné schůzky s činným vývojářským týmem. Položte čtyři otázky výše na každou skupinu a potom porovnejte výsledky.
 
 > [!NOTE]
-> Stávající dokumentaci **by se neměla** sdílet s některým týmem před schůzí. Pokud ano, je nutné, aby se na rozhraní hypotéza měla odkazovat (nebo je ještě lepší) členy každé skupiny.
+> Stávající dokumentaci **by se neměla** sdílet s některým týmem před schůzí. Pokud ano, musí být v případě hodnoty true Alignment odkazováno nebo dokonce nahrazeno členy každé skupiny.
+
+<!-- -->
 
 > [!WARNING]
-> Neusnadňuje schůzku. Toto je test zarovnání, nikoli cvičení při vytváření přidružení. Při zahájení schůzky zajistěte, aby si účastníci dozvěděli, jak testovat směrové zarovnání se stávajícími smlouvami v rámci týmu. Navažte jenom časový limit. Potvrďte to pět minut na jednu otázku a nastavte časovač pro každou z nich. Zavřete tuto otázku během pěti minut, a to i v případě, že odpověď není odsouhlasená.
+> Neusnadňuje schůzku. Tento test je určení zarovnání; Nejedná se o cvičení při vytváření přidružení. Po zahájení schůzky připomenout účastníkům, že cílem je otestovat směrné zarovnání na stávající smlouvy v rámci týmu. Pro každou otázku navažte dobu pěti minut. Nastavte časovač a zavřete každou otázku po pěti minutách i v případě, že se účastníci nedohodli na odpovědi.
 
-Pokud jsou odpovědi v směrně zarovnané, ale představují různé jazyky a zájmy jednotlivých skupin, zvažte toto cvičení v Victory. Jste připraveni začít s vývojem řešení.
+Účet pro různé jazyky a zájmy jednotlivých skupin. Pokud výsledky testu jsou v odpovědích, které jsou směrně zarovnané, zvažte toto cvičení Victory. Jste připraveni přejít k vývoji řešení.
 
-Pokud je jedna nebo dvě odpovědi směrně zarovnané, poznáte, že se vaše pevná práce platíte. Už se lépe zarovnáváte od většiny organizací. Budoucí úspěch je velmi pravděpodobný, s menším pokračujícím investováním do zarovnání. V následujících částech najdete tipy, které vám pomůžou vytvořit další zarovnání.
+Pokud je jedna nebo dvě odpovědi směrně zarovnané, poznáte, že se vaše pevná práce platíte. Už jste lépe zarovnaná, než většina organizací. Budoucí úspěch je pravděpodobný s menšími pokračujícími investicemi do zarovnání. V následujících částech najdete tipy, které vám pomůžou vytvořit další zarovnání.
 
-Pokud se některý tým nepovede odpovědět na všechny čtyři otázky během třiceti minut, pak se v souvislosti s tímto úsilím a dalšími dalšími úsilími bude pravděpodobně jednat o velký dopad. Věnujte pečlivou pozornost každému z následujících částí.
+Pokud se jednomu týmu nepovede odpovědět na všechny čtyři otázky za 30 minut, pak se zarovnání a aspekty v následujících částech budou pravděpodobně významně dotknout tohoto úsilí a dalších. Věnujte pečlivou pozornost každému z následujících částí.
 
 ## <a name="address-the-big-picture-first"></a>Nejprve adresovat velký obrázek
 
-Rozhraní pro přijetí do cloudu následuje po předepsané cestě prostřednictvím strategie, plánování, připravenosti a přijetí. Inovace cloudu se vejdou do fáze přijetí tohoto procesu. V případě, že odpovědi na otázky 3 a 4 výše (výsledky a podněty) jsou špatně zarovnané, znamená to, že během fáze strategie životního cyklu přijetí do cloudu došlo k nějakému vynechání. V některých případech je pravděpodobně možné spustit několik následujících scénářů.
+Rozhraní pro přijetí do cloudu následuje po předepsané cestě v těchto fázích: strategii, plánování, připravenost a přijetí. Inovace cloudu se vejdou do fáze přijetí tohoto procesu. Odpovědi na [otázky týkající](#qualifying-questions) se tří a čtyř obav a motivů. Pokud jsou tyto odpovědi špatně zarovnané, indikuje to, že ve vaší organizaci nedošlo k nějakému postupu ve fázi strategie životního cyklu přijetí do cloudu. V některých případech je pravděpodobně možné spustit několik následujících scénářů.
 
-- **Možnost zarovnání:** Když obchodní účastníci nemůžou souhlasit s podněty k motivům a obchodním výsledkům, které souvisejí s úsilím na inovaci cloudu, je to příznakem větší výzvy. Cvičení ve [fázi cloudové strategie](../strategy/index.md) může být užitečné při vývoji sbližování mezi podnikovými stranami. Kromě toho se důrazně doporučuje, aby stejné zúčastněné strany tvořily [tým cloudové strategie](../organize/cloud-strategy.md) , který se pravidelně plní.
+- **Možnost zarovnání:** Pokud obchodní účastníci nemůžou souhlasit s podněty k motivům a obchodním výsledkům souvisejícím s úsilím na inovaci cloudu, je to příznakem větší výzvy. Cvičení ve [fázi cloudové strategie](../strategy/index.md) může být užitečné při vývoji sbližování mezi podnikovými stranami. Kromě toho se důrazně doporučuje, aby stejné zúčastněné strany tvořily [tým cloudové strategie](../organize/cloud-strategy.md) , který se pravidelně splní.
 
-- **Příležitost komunikace:** Když vývojový tým nemůže souhlasit s motivací a obchodními výsledky, může to být příznakem strategických komunikačních otvorů. Projděte si cloudovou strategii s týmem pro přijetí cloudu, kterou může tento blok rychle vyřešit. Za několik týdnů po kontrole by se tým měl dotazovat na tyto kvalifikační otázky.
+- **Příležitost komunikace:** Když vývojový tým nemůže souhlasit s motivací a obchodními výsledky, může to být příznakem strategických komunikačních otvorů. Tento problém můžete rychle vyřešit tak, že zkontrolujete cloudovou strategii s týmem přijímání v cloudu. Za několik týdnů po kontrole by se tým měl dotazovat na tyto kvalifikační otázky.
 
-- **Příležitost stanovení priorit:** Strategie cloudu je v podstatě předpokladem vedoucího ke špičkové úrovni. Nejlepší cloudové strategie jsou otevřené pro iteraci a zpětnou vazbu. Pokud obě týmy rozumí strategii, ale stále nemůžou poměrně zarovnávat odpovědi na tyto otázky, pak priority můžou být chybně zarovnané. Relace s týmem přijetí cloudu a týmem cloudové strategie by vám mohla povýšit úsilí obou skupin. V průběhu této relace tým pro přijetí do cloudu sdílí své zarovnané odpovědi na otázky týkající se velkých snímků. Odtud může konverzace mezi týmem přijímání v cloudu a týmem cloudové strategie zvýraznit příležitosti, aby lépe zarovnaly priority.
+- **Příležitost stanovení priorit:** Strategie cloudu je v podstatě předpokladem vedoucího ke špičkové úrovni. Nejlepší cloudové strategie jsou otevřené pro iteraci a zpětnou vazbu. Pokud obě týmy rozumí strategii, ale stále nemůžou poměrně zarovnávat odpovědi na tyto otázky, pak se priority můžou nesprávně zarovnávat. Uspořádejte relaci do týmu pro přijetí cloudu a týmu cloudové strategie. Tato relace může pomáhat při úsilí obou skupin. Tým přijetí do cloudu začíná sdílením jejich zarovnaných odpovědí s oprávněnými otázkami. Odtud může konverzace mezi týmem přijímání v cloudu a týmem cloudové strategie zvýraznit příležitosti, aby lépe zarovnaly priority.
 
-Tyto příležitosti pro velké obrázky často odhalují způsoby, jak toto řešení lépe zarovnat pomocí cloudové strategie. Toto cvičení má dva běžné výsledky:
+Tyto příležitosti pro velké obrázky často odhalují způsoby, jak lépe sjednotit inovativní řešení pomocí cloudové strategie. Toto cvičení má dva běžné výsledky:
 
-- Tyto konverzace můžou vést ke zlepšení cloudové strategie a lepší reprezentaci tohoto důležitého zákaznického potřeb. Tato změna může mít za následek vyšší administrativní podporu týmu.
-- V opačném případě může tato konverzace Ukázat, že investice do jiného řešení je vhodnější pro tým pro přijetí cloudu. V takovém případě zvažte migraci tohoto řešení ještě před tím, než budete pokračovat v investicích do inovací. Případně může to znamenat, že pro účely testování obchodní hodnoty je nutné nejprve použít vývojářský přístup k občanům. V obou případech pomůže týmu vyhnout se velkému investování s omezenými obchodními návratnostmi.
+- Tyto konverzace můžou vašemu týmu pomoci zlepšit cloudovou strategii vaší organizace a lépe představovat důležité potřeby zákazníků. Tato změna může mít za následek větší podporu vedoucího týmu.
+- V opačném případě můžou tyto konverzace Ukázat, že tým pro přijetí do cloudu by měl investovat do jiného řešení. V takovém případě zvažte migraci tohoto řešení ještě před tím, než budete pokračovat v investicích do inovací. Alternativně mohou tyto konverzace indikovat, že jste přijali přístup pro vývojáře občana k otestování obchodní hodnoty jako první. V obou případech pomůže vašemu týmu vyhnout se velkému investování s omezenými obchodními návratnostmi.
 
 ## <a name="address-solution-alignment"></a>Adresní zarovnání řešení
 
-Je poměrně běžné, že odpovědi na otázky 1 a 2 (potřebu zákazníka a obchodní příležitost) jsou špatně zarovnané. To je obzvláště běžné v rané fázi ideation a vývoje. Hledání rovnováhy mezi příliš velkou a příliš malou definicí je náročné pro mnoho vývojových týmů. V rámci architektury pro přijetí do cloudu se jako nejlepší způsob, jak na tyto otázky odpovědět, doporučují štíhlé přístupy, jako je například sestavení-měření-učení smyčka zpětné vazby. Následující seznam obsahuje příležitosti a přístupy k vytvoření zarovnání.
+Je poměrně běžné, že odpovědi na otázky 1 a dva mají být špatně zarovnané. V počátečních fázích ideation a vývoje je potřeba zákazníky a obchodní příležitost často vymezit zarovnání. Mnoho vývojových týmů je náročné na to, aby dosáhlo rovnováhy mezi příliš velkou a příliš nízkou definicí. Architektura pro přijetí do cloudu doporučuje štíhlé přístupy, jako je sestavení-měření – Přečtěte si smyčky zpětné vazby k zodpovězení těchto otázek. Následující seznam obsahuje příležitosti a přístupy k vytvoření zarovnání.
 
-- **Možnost hypotézy:** U různých zúčastněných stran a vývojových týmů je běžné mít příliš mnoho očekávání pro řešení. Pokud k tomu dojde, je podepsáno, že předpoklad je příliš Vague. Podle pokynů pro [sestavování s využitím zákaznických soucit](./considerations/build.md) vytvořte jasnou hypotézu.
-- **Možnost sestavení:** Pokud jsou týmy špatně zarovnané, protože nesouhlasí se způsobem, jak zákazníka vyřešit, obvykle to znamená, že tým je [opožděný s předčasné technický špičkou](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Aby se tým zaměřil na zákazníka, spusťte první iteraci a vytvořte malého MVP pro vyřešení části hypotézy. Další pokyny, jak týmu pomoci přejít vpřed, najdete v tématu [vývoj digitálních vynálezů](./considerations/invention.md).
-- **Výuková příležitost:** Pokud je jeden tým špatně zarovnaný, protože potřebují důkladné technické požadavky a rozsáhlé funkční požadavky, odhalí příležitost pro školení v agilních metodách. Když jazyková verze týmu není připravená na Agilní procesy, může být náročné na inovace a udržování tempa s trhem. Informace o školicích materiálech o DevOps a agilních postupech najdete v těchto tématech:
-  - [Vývoj postupů DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+- **Možnost hypotézy:** U různých zúčastněných stran a vývojových týmů je běžné mít příliš mnoho očekávání pro řešení. Nereálné očekávání mohou být znaménkem, že předpoklad je příliš Vague. Postupujte podle pokynů v části [sestavování se zákaznickým soucit](./considerations/build.md) a sestavte si jasnou hypotézu.
+- **Možnost sestavení:** Týmy můžou být špatně zarovnané, protože nesouhlasí se způsobem vyřešení potřeb zákazníků. Taková odsmlouva obvykle indikuje, že tým je [opožděný s předčasné technický špičkou](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Aby se tým zaměřil na zákazníka, spusťte první iteraci a vytvořte malý minimální produkt (MVP), který bude řešit část hypotézy. Další pokyny, jak týmu pomoci přejít vpřed, najdete v tématu [vývoj digitálních vynálezů](./considerations/invention.md).
+- **Výuková příležitost:** Tým buď může být špatně zarovnaný, protože potřebuje důkladné technické požadavky a rozsáhlé funkční požadavky. Tato potřeba může vést k příležitosti pro školení v agilních metodologiích. Pokud jazyková verze týmu není připravená na Agilní procesy, můžete najít inovace a udržet tempo na trhu.  Informace o školicích materiálech o DevOps a agilních postupech najdete v těchto tématech:
+  - [Rozvíjejte vaše postupy DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Sestavování aplikací pomocí Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
-  - [Nasazení aplikací s využitím Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/)
+  - [Nasazení aplikací s využitím Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
-Použití této metodologie a nástrojů pro správu nevyřízených položek v jednotlivých oddílech uvedených výše může pomoci při vytváření zarovnání řešení.
+Podle metodologie a nástrojů pro správu nevyřízených položek v jednotlivých částech tohoto článku vám může pomáhat při vytváření zarovnání řešení.
 
 ## <a name="next-steps"></a>Další kroky
 
-Jakmile je pozice obchodních hodnot dobře zarovnaná a je oznámená, je čas začít sestavovat vaše řešení. Pokyny k dalším krokům se vrátíte do [cvičení inovací](./index.md) .
-
+Až zarovnáte svou obchodní polohu a sdělíte ji, jste připraveni začít sestavovat své řešení.
 > [!div class="nextstepaction"]
 > [Další kroky se vrátíte do cvičení inovací.](./index.md)

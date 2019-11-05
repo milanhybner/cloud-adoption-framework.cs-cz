@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 93449f754e3908e092fa64c55ad62fc604b4ba5b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029416"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565436"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Povolit sledování a upozorňování na kritické změny
 
 Azure Change Tracking a inventář poskytuje výstrahy týkající se stavu konfigurace hybridního prostředí a změn v tomto prostředí. Můžete monitorovat důležité změny souboru, služby, softwaru a registru, které mohou mít vliv na nasazené servery.
 
-Ve výchozím nastavení služba Azure Automation Inventory Service nemonitoruje nastavení souborů nebo registru. Řešení nabízí seznam klíčů registru, které doporučujeme monitorovat. Pokud chcete zobrazit tento seznam, přejděte na účet Automation v Azure Portal a vyberte**nastavení úprav** **inventáře** > :
+Ve výchozím nastavení služba Azure Automation Inventory Service nemonitoruje nastavení souborů nebo registru. Řešení nabízí seznam klíčů registru, které doporučujeme monitorovat. Pokud chcete tento seznam zobrazit, přejděte na účet Automation v Azure Portal a vyberte **inventář** > **Upravit nastavení**.
 
 ![Snímek obrazovky zobrazení inventáře Azure Automation v Azure Portal](./media/change-tracking1.png)
 
@@ -81,7 +81,7 @@ Užitečné pro prostředí, která potřebují zamknout konfigurace softwaru.
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Konkrétní verze softwaru je nebo není nainstalovaná na počítači.
 
-Užitečné pro vyhodnocování zabezpečení. Všimněte si, že tento `ConfigurationData`dotaz odkazuje na, který obsahuje protokoly pro inventarizaci a oznamuje poslední nahlášený stav konfigurace, nikoli změny.
+Užitečné pro vyhodnocování zabezpečení. Všimněte si, že tento dotaz odkazuje na `ConfigurationData`, který obsahuje protokoly pro inventarizaci a oznamuje poslední nahlášený stav konfigurace, nikoli změny.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
@@ -97,7 +97,7 @@ Užitečné pro detekci změn známých klíčů registru.
 
 ## <a name="next-steps"></a>Další kroky
 
-Naučte se spravovat aktualizace svých serverů vytvořením [plánů aktualizací](./update-schedules.md) pomocí Azure Automation.
+Naučte se spravovat aktualizace svých serverů [vytvořením plánů aktualizací](./update-schedules.md) pomocí Azure Automation.
 
 > [!div class="nextstepaction"]
 > [Vytvoření plánů aktualizací](./update-schedules.md)

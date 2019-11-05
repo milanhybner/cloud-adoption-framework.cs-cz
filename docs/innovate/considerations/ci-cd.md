@@ -1,48 +1,48 @@
 ---
-title: 'Cloud innovation: Empower adoption'
+title: 'Inovace v cloudu: podpora přijetí'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introduction to Cloud innovation - Empower adoption
+description: Úvod do cloudových inovací – zajištění přijetí
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058584"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565695"
 ---
 # <a name="empower-adoption"></a>Posílení přechodu
 
-The ultimate test of innovation is customer reaction to your invention. Did the hypothesis prove true? Do customers use the solution? Does it scale to meet the needs of the desired percentage of users? Most importantly, do they keep coming back? None of these questions can be asked until the minimum viable product (MVP) solution has been deployed. In this article, we'll focus on the discipline of empowering adoption.
+Špičkový test inovace je reakce zákazníků na vynález. Prokázala se hypotéza jako true? Používají zákazníci řešení? Je potřeba se škálovat tak, aby splňovala požadavky požadovaného procenta uživatelů? Co je nejdůležitější, udělejte si zpátky? Žádná z těchto otázek se nemůže zeptat, dokud nebude nasazené řešení pro minimální životaschopné produkty (MVP). V tomto článku se zaměříme na obor, který umožňuje přijetí.
 
-## <a name="reducing-friction-to-adoption"></a>Reducing friction to adoption
+## <a name="reduce-friction-that-affects-adoption"></a>Snížení tření, které má vliv na přijetí
 
-There are a few key friction points to adoption that can be minimized through a combination of technology and processes. For readers with knowledge of continuous integration (CI) and continuous deployment (CD) or DevOps processes, the following will seem very familiar. This article intends to establish a starting point for cloud adoption teams, which will fuel innovation and feedback loops. Longer term, this starting point could foster more robust CI/CD or DevOps approaches as the products and teams mature.
+Existuje několik klíčových příchodů, které je potřeba přijmout, aby bylo možné je minimalizovat kombinací technologií a procesů. V případě čtenářů s vědomím procesů kontinuální integrace (CI) a průběžného nasazování (CD) nebo DevOps se zdá, že následuje velmi dobře. V tomto článku se zamýšlí zřídit výchozí bod pro týmy pro přijímání v cloudu, který bude poskytovat inovace na palivo a smyčky zpětné vazby. Delší období: Tento výchozí bod může podporovat robustnější přístup k CI/CD nebo DevOpsům, jako jsou produkty a týmy zralé.
 
-As described in [Measure for customer impact](./measure.md), positive validation of any hypothesis requires iteration and determination. You'll experience far more failures than wins during any innovation cycle. To se očekává. However, when a customer need, hypothesis, and solution align at scale, the world changes quickly. This article aims to minimize [technical spikes](./build.md#reduce-complexity-and-delay-technical-spikes) that slow innovation but still make sure you keep a few solid best practices in place. Doing so will help the team design for future success while delivering on current customer needs.
+Jak je popsáno v tématu [měření dopadu zákazníka](./measure.md), pozitivní ověření jakékoli hypotézy vyžaduje iteraci a určení. Během jakýchkoli inovačních cyklů dojde k většímu počtu chyb než WINS. To se očekává. Pokud ale zákazník potřebuje, hypotéza a řešení ve velkém měřítku, svět se rychle změní. V tomto článku se zaměřujeme na minimalizaci [technických špiček](./build.md#reduce-complexity-and-delay-technical-spikes) , které se pomalými inovacemi, ale pořád se ujistěte, že zachováte několik pevných osvědčených postupů. V takovém případě vám pomůže návrh týmu pro budoucí úspěch při dodávání aktuálních zákaznických potřeb.
 
-## <a name="empowering-adoption-the-maturity-model"></a>Empowering adoption: the maturity model
+## <a name="empowering-adoption-the-maturity-model"></a>Zajištění přijetí: model splatnosti
 
-The primary objective of the [Innovate methodology](./index.md) is to build customer partnerships and accelerate feedback loops, which will lead to market innovations. The following image and sections describe initial implementations that support this methodology.
+Hlavním cílem [metodologie](./index.md) inovace je vytvořit zákaznická partnerství a urychlit smyčky zpětné vazby, což vede k inovacím na trh. Následující obrázek a oddíly popisují počáteční implementace, které podporují tuto metodologii.
 
-![Empower adoption: the maturity model](../../_images/innovate/empower-adoption-maturity.png)
+![Přijetí pravomocí: model splatnosti](../../_images/innovate/empower-adoption-maturity.png)
 
-- [Shared solution](#shared-solution): Establish a centralized repository for all aspects of the solution.
-- [Feedback loops](#feedback-loops): Make sure that feedback loops can be managed consistently through iterations.
-- [Continuous integration](#continuous-integration): Regularly build and consolidate the solution.
-- [Reliable testing](#reliable-testing): Validate solution quality and expected changes to ensure the reliability of your testing metrics.
-- [Solution deployment](#solution-deployment): Deploy solutions so that the team can quickly share changes with customers.
-- [Integrated measurement](#integrated-measurements): Add learning metrics to the feedback loop for clear analysis by the full team.
+- [Sdílené řešení](#shared-solution): Vytvořte centralizované úložiště pro všechny aspekty řešení.
+- [Smyčky zpětné vazby](#feedback-loops): Ujistěte se, že smyčky zpětné vazby je možné spravovat konzistentně prostřednictvím iterací.
+- [Kontinuální integrace](#continuous-integration): pravidelně Sestavujte a Konsolidujte řešení.
+- [Spolehlivé testování](#reliable-testing): Ověřte kvalitu řešení a očekávané změny, abyste zajistili spolehlivost vašich testovacích metrik.
+- [Nasazení řešení](#solution-deployment): nasaďte řešení, aby tým mohl rychle sdílet změny se zákazníky.
+- [Integrovaná měření](#integrated-measurements): přidejte metriky učení do smyčky zpětné vazby pro účely jasného seskupení úplným týmem.
 
-To minimize technical spikes, assume that maturity will initially be low across each of these principles. But definitely plan ahead by aligning to tools and processes that can scale as hypotheses become more fine-grained. In Azure, the [GitHub](https://guides.github.com) and [Azure DevOps](https://docs.microsoft.com/azure/devops) allow small teams to get started with little friction. These teams might grow to include thousands of developers who collaborate on scale solutions and test hundreds of customer hypotheses. The remainder of this article illustrates the plan big/start small approach to empowering adoption across each of these principles.
+Aby se minimalizovaly technické špičky, Přepokládejme, že v každé z těchto principů bude tato splatnost v prvním stavu nízká. Ale bez omezení plánu Naplánujte na nástroje a procesy, které se můžou škálovat, protože hypotéza se bude podrobněji jemně rozrovnávat. V Azure můžou [GitHub](https://guides.github.com) a [Azure DevOps](https://docs.microsoft.com/azure/devops) začít pracovat malým týmem s malým třením. Tyto týmy se můžou rozrůstat, aby zahrnovaly tisíce vývojářů, kteří spolupracují na řešeních škálování a testují stovky zákaznických hypotéz. Zbývající část tohoto článku ukazuje, jak velký/počáteční malý přístup k zajištění toho, aby se v každém z těchto principů probíralo přijetí.
 
 ## <a name="shared-solution"></a>Sdílené řešení
 
-As described in [Measure for customer impact](./measure.md), positive validation of any hypothesis requires iteration and determination. You'll experience far more failures than wins during any innovation cycle. To se očekává. However, when a customer need, hypothesis, and solution align at scale, the world changes quickly.
+Jak je popsáno v tématu [měření dopadu zákazníka](./measure.md), pozitivní ověření jakékoli hypotézy vyžaduje iteraci a určení. Během jakýchkoli inovačních cyklů dojde k většímu počtu chyb než WINS. To se očekává. Pokud ale zákazník potřebuje, hypotéza a řešení ve velkém měřítku, svět se rychle změní.
 
 Při škálování inovace není k dispozici žádný hodnotný nástroj než sdílený základ kódu pro řešení. Bohužel neexistuje spolehlivý způsob, jak předpovídat tuto iteraci, nebo který MVP poskytne vítěznou kombinaci. To je důvod, proč není nikdy příliš brzy pro vytvoření sdíleného základu kódu nebo úložiště. Toto je [technický technický špička](./build.md#reduce-complexity-and-delay-technical-spikes) , který by se nikdy neměl zpozdit. Když tým projde různými řešeními MVP, sdílené úložiště umožňuje snadnou spolupráci a urychlení vývoje. Když změny řešení přetáhnete dolů metriky učení, Správa verzí vám umožní vrátit se zpět na dřívější, účinnější verzi řešení.
 
@@ -56,7 +56,7 @@ Každý bod zpětné vazby je potenciální řešení pro potřeby zákazníka. 
 
 [Azure DevOps](https://docs.microsoft.com/azure/devops) obsahuje způsoby [, jak vyžádat, poskytnout a spravovat zpětnou vazbu](https://docs.microsoft.com/azure/devops/project/feedback). Každý z těchto nástrojů slouží k centralizaci zpětné vazby, aby tým mohl provádět akce a poskytoval následný postup ve službě transparentní smyčky zpětné vazby.
 
-## <a name="continuous-integration"></a>Nepřetržitá integrace
+## <a name="continuous-integration"></a>Kontinuální integrace
 
 Vzhledem k tomu, že se přijímají škálování a hypotéza se přiblíží k skutečným inovacím ve velkém měřítku, může být počet menších hypotéz, který se má testovat, rychlejší rychleji. Pro přesné smyčky zpětné vazby a hladké procesy přijetí je důležité, aby každá z těchto hypotéz byla integrovaná a podpora primární hypotézy na základě inovace. To znamená, že se také musíte rychle přesunout na inovace a růst, což vyžaduje více vývojářů pro testování variací základní hypotézy. Pro účely pozdějšího vývoje můžete dokonce potřebovat více týmů vývojářů, přičemž každá z nich bude sdílet řešení. Nepřetržitá integrace je prvním krokem ke správě všech přesouvaných částí.
 
@@ -80,7 +80,7 @@ Nejužitečnější aspekt, který umožňuje přijetí, je možná vaše možno
 Existuje několik metod pro nasazení řešení. Následující představuje tři nejběžnější:
 
 - **Průběžné nasazování** je nejrozšířenější způsob, jak automaticky nasazuje změny kódu v produkčním prostředí. Pro vyspělé týmy, které testují vyspělé hypotézy, může být průběžné nasazování velmi cenné.
-- V počátečních fázích vývoje může být **průběžné doručování** vhodnější. Při průběžném doručování se všechny změny kódu automaticky nasadí do prostředí podobného produkčnímu prostředí. Vývojáři, tvůrci obchodních organizací a další členové týmu mohou použít toto prostředí k ověření, že je jejich práce připravená na provoz. Tuto metodu můžete také použít k otestování předpokladů se zákazníky, aniž by to mělo vliv na obchodní aktivity.
+- V počátečních fázích vývoje může být **průběžné doručování** vhodnější. Při průběžném doručování se všechny změny kódu automaticky nasadí do prostředí podobného produkčnímu prostředí. Vývojáři, tvůrci obchodních organizací a další členové týmu mohou použít toto prostředí k ověření, že je jejich práce připravená na provoz. Tuto metodu můžete také použít k otestování předpokladů se zákazníky, aniž by to ovlivnilo probíhající obchodní aktivity.
 - **Ruční nasazení** je nejméně důmyslný přístup k produktu Release Management. Jak název navrhuje, někdo v týmu ručně nasadí nejnovější změny kódu. Tento přístup je náchylný k chybám, nespolehlivě a považuje se za antipattern pomocí většiny sezónních technik.
 
 Během první iterace řešení MVP je běžné nasazení společné bez ohledu na předchozí posouzení. Když je řešení extrémně kapalina a zpětná vazba od zákazníka není známa, existuje významné riziko pro resetování celého řešení (nebo dokonce i základní hypotézy). Tady je obecné pravidlo pro ruční nasazení: žádné potvrzení od zákazníka, žádné automatizace nasazení.

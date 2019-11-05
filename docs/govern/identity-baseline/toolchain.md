@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42c0d24d36785615013076b54c0ec51cc2ec4cb4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047930"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566167"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Nástroje pro základní identitu identity v Azure
 
@@ -56,8 +56,8 @@ Následující tabulka obsahuje seznam nativních nástrojů, které mohou pomoc
 |Úvahu|Synchronizace hodnot hash hesel + bezproblémové jednotné přihlašování|Předávací ověřování + bezproblémové jednotné přihlašování|Federace se službou AD FS|
 |:-----|:-----|:-----|:-----|
 |Kde k ověřování dochází?|V cloudu|V cloudu po výměně zabezpečeného ověřování hesla pomocí místního ověřovacího agenta|Místní prostředí|
-|Jaké jsou požadavky na místní server nad rámec zřizovacího systému: Azure AD Connect?|Žádné|Jeden server pro každého dalšího ověřovacího agenta|Dva nebo více AD FS serverů<br><br>Dva nebo více serverů WAP v hraniční/DMZ síti|
-|Jaké jsou požadavky na místní Internet a sítě mimo zřizovací systém?|Žádné|[Odchozí internetový přístup](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) ze serverů používajících ověřovací agenty|[Příchozí internetový přístup](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) k serverům WAP v hraniční síti<br><br>Příchozí síťový přístup k serverům AD FS ze serverů WAP v hraniční síti<br><br>Vyrovnávání zatížení sítě|
+|Jaké jsou požadavky na místní server nad rámec zřizovacího systému: Azure AD Connect?|Žádný|Jeden server pro každého dalšího ověřovacího agenta|Dva nebo více AD FS serverů<br><br>Dva nebo více serverů WAP v hraniční/DMZ síti|
+|Jaké jsou požadavky na místní Internet a sítě mimo zřizovací systém?|Žádný|[Odchozí internetový přístup](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) ze serverů používajících ověřovací agenty|[Příchozí internetový přístup](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) k serverům WAP v hraniční síti<br><br>Příchozí síťový přístup k serverům AD FS ze serverů WAP v hraniční síti<br><br>Vyrovnávání zatížení sítě|
 |Existuje požadavek na certifikát SSL?|Ne|Ne|Ano|
 |Existuje nějaké řešení pro monitorování stavu?|Nepožaduje se|Stav agenta poskytnutý [centrem pro správu Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)|[Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs)|
 |Přihlašuje uživatelé k prostředkům cloudu jednotné přihlašování ze zařízení připojených k doméně v podnikové síti?|Ano, [bez problémů s jednotným PŘIhlašováním](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Ano, [bez problémů s jednotným PŘIhlašováním](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Ano|
@@ -77,6 +77,6 @@ Následující tabulka obsahuje seznam nativních nástrojů, které mohou pomoc
 
 ## <a name="next-steps"></a>Další kroky
 
-Dokument [White paper k rozhraní Digital Transforming pro hybridní identitu](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US) popisuje kombinace a řešení pro výběr a integraci každé z těchto součástí.
+Dokument [White paper k rozhraní Digital Transforming pro hybridní identitu](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) popisuje kombinace a řešení pro výběr a integraci každé z těchto součástí.
 
 [Nástroj Azure AD Connect](https://aka.ms/aadconnectwiz) vám pomůže integrovat místní adresáře do služby Azure AD.

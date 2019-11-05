@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915024"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564693"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
@@ -28,7 +28,7 @@ Je snadné pochopit racionalizaci, když vizualizujete tradiční proces raciona
 
 **Kvantitativní analýza:** Ve stromové struktuře se kvantitativní otázky řídí první vrstvou rozhodnutí. Mezi běžné otázky patří následující: je prostředek používaný ještě dnes? Pokud ano, je optimalizovaná a velikost správně? Jaké závislosti existují mezi prostředky? Tyto otázky jsou zásadní pro klasifikaci inventáře.
 
-**Kvalitativní analýza:** Další sada rozhodnutí vyžaduje lidské poznatky ve formě kvalitativní analýzy. Nejčastější dotazy, které jsou zde uvedeny, jsou často jedinečné pro řešení a můžou na ně odpovědět jenom obchodní strany a skupiny Power Users. Tato rozhodnutí obvykle odloží proces a výrazně zpomalují věci. Tato analýza obvykle spotřebovává 40 až 80 hodin FTE na aplikaci.
+**Kvalitativní analýza:** Další sada rozhodnutí vyžaduje lidské poznatky ve formě kvalitativní analýzy. Nejčastější dotazy, které jsou zde uvedeny, jsou často jedinečné pro řešení a mohou být zodpovězeny pouze obchodními stranami a skupinami Power Users. Tato rozhodnutí obvykle odloží proces a výrazně zpomalují věci. Tato analýza obvykle spotřebovává 40 až 80 hodin FTE na aplikaci.
 
 Pokyny k vytvoření seznamu kvalitativních otázek analýzy najdete v tématu [přístupy k plánování digitálních nemovitostí](./approach.md).
 

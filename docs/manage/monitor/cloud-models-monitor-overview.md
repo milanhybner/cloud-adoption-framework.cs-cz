@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979897"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564976"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu
 
@@ -88,7 +88,7 @@ Následující tabulka shrnuje požadavky, které Azure Monitor a System Center 
 |Monitorování moderní webové aplikace | Ano | Ne |
 |Starší verze monitorování webových aplikací | Ano, omezeno, se liší podle sady SDK<br> Podporuje monitorování starších verzí webových aplikací .NET a Java. | Ano, omezeno |
 |Monitorování kontejnerů služby Azure Kubernetes | Ano | Ne |
-|Monitorovat kontejnery Docker/Windows | Ano | Ne |
+|Monitorovat kontejnery Docker nebo Windows | Ano | Ne |
 |Sledování výkonu sítě | Ano | Ano, omezeno<br> Podporuje kontroly dostupnosti a shromažďuje základní statistiky ze síťových zařízení pomocí protokolu SNMP (Simple Network Management Protocol) od podnikové sítě.|
 |Interaktivní analýza dat | Ano | Ne<br> Spoléhá na SQL Server Reporting Services předem zakonzervované nebo vlastní sestavy, řešení vizualizace třetích stran nebo na vlastní Power BI implementaci. Operations Manager datový sklad má omezení škálování a výkonu. Integrujte s protokoly Azure Monitor jako alternativu pro požadavky na agregaci dat. Integraci můžete dosáhnout konfigurací konektoru Log Analytics.|
 |Komplexní diagnostika, analýza hlavní příčiny a včasné řešení potíží | Ano | Ano, omezeno<br> Podporuje ucelenou diagnostiku a řešení potíží pouze pro místní infrastrukturu a aplikace. Používá jiné součásti softwaru System Center nebo Partnerská řešení.|
@@ -131,7 +131,7 @@ I když je Operations Manager schopný monitorovat prostředky, které jsou host
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Nevýhody použití Operations Manager sám sebou
 
-- Analýza dat monitorování v Operations Manager se běžně provádí pomocí předem definovaných zobrazení, která jsou definovaná v sadách Management Pack, které máte přístup z konzoly, ze sestav služby SQL Server Reporting Services (SSRS) nebo vlastních zobrazení, která koncoví uživatelé vytvořili. Provádění ad-hoc analýz dat není možné v poli. Vytváření sestav Operations Manager je neflexibilní. Datový sklad, který poskytuje dlouhodobé uchovávání dat monitorování, není škálovatelný ani nefunguje správně. A odbornosti při psaní příkazů T-SQL, vývoj řešení Power BI nebo použití řešení třetích stran, je nutná k podpoře požadavků různých osoby v organizaci IT.
+- Analýza dat monitorování v Operations Manager se běžně provádí pomocí předdefinovaných zobrazení, která jsou k dispozici v sadách Management Pack, ze sestav služby SQL Server Reporting Services (SSRS) nebo ve vlastních zobrazeních, která koncoví uživatelé vytvořili. Analýza dat ad hoc není možná v poli. Vytváření sestav Operations Manager je neflexibilní. Datový sklad, který poskytuje dlouhodobé uchovávání dat monitorování, není škálovatelný ani nefunguje správně. A odbornosti při psaní příkazů T-SQL, vývoj řešení Power BI nebo použití řešení třetích stran, je nutná k podpoře požadavků různých osoby v organizaci IT.
 
 - Výstrahy v Operations Manager nepodporují složité výrazy nebo zahrnují logiku korelace. Aby se zabránilo snížení šumu, jsou výstrahy seskupené tak, aby zobrazovaly vztahy mezi nimi a identifikovaly jejich příčiny.
 
@@ -165,7 +165,7 @@ I když migrace do cloudu představuje mnoho výzev, zahrnuje také řadu příl
 
 - Povolte Azure Monitor pro virtuální počítače, Azure Monitor pro kontejnery a Application Insights k detekci a diagnostikování problémů mezi infrastrukturou a aplikacemi. Pro důkladnější analýzu a korelaci dat shromážděných z více komponent nebo závislostí, které podporují aplikaci, je nutné použít protokoly Azure Monitor.
 
-- Vytvářejte inteligentní výstrahy, které se můžou vztahovat na základní sadu aplikací a součástí služby, které vám pomůžou snížit šum s dynamickými prahovými hodnotami pro složité signály a využívat agregace výstrah založené na algoritmech strojového učení, které vám pomůžou rychle identifikovat chybu.
+- Vytvářejte inteligentní výstrahy, které se vztahují na základní sadu aplikací a součástí služeb. můžete tak snížit šum s dynamickými prahovými hodnotami pro složité signály a použít agregaci výstrah založenou na algoritmech strojového učení, které vám pomůžou problém rychle identifikovat.
 
 - Definujte knihovnu dotazů a řídicích panelů, které budou podporovat požadavky různých osoby v organizaci IT.
 
@@ -186,4 +186,4 @@ Pokud jste už investovali do Operations Manager, můžete k monitorování dost
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Shromáždění správných dat](./data-collection.md)
+> [Shromažďování vhodných dat](./data-collection.md)

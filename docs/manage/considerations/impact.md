@@ -1,65 +1,65 @@
 ---
-title: Kritická obchodní náročnost – Správa a provoz cloudu
+title: Obchodní dopad – cloudová správa a operace
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Kritická obchodní náročnost – Správa a provoz cloudu
+description: Obchodní dopad – cloudová správa a operace
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: be5cc97c7b42eb79f0ec9721376524dc2710e2c4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683637"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565147"
 ---
 # <a name="business-impact-in-cloud-management"></a>Dopad na firmu v Cloud managementu
 
-Předpokládejme nejlepší, připravte se na nejhorší. V rámci správy IT je bezpečné předpokládat, že úlohy vyžadované pro podporu obchodních operací budou k dispozici a budou v závislosti na vybrané závažnosti provádět v dohodnutých omezeních. Pokud ale chcete lépe spravovat investice, je důležité pochopit dopad, který podnikání obchoduje, když dojde k výpadku nebo snížení výkonu. Tato důležitost je znázorněná v následujícím grafu, který mapuje potenciální provozní přerušení konkrétních úloh na obchodní dopad výpadků v rámci relativní hodnoty stupnice.
+Předpokládejme nejlepší, připravte se na nejhorší. V rámci správy IT je bezpečné předpokládat, že úlohy vyžadované pro podporu obchodních operací budou k dispozici a budou na základě vybrané závažnosti provádět v rámci sjednaných omezení. Pokud ale chcete lépe spravovat investice, je důležité pochopit dopad na firmu, když dojde k výpadku nebo snížení výkonu. Tato důležitost je znázorněná v následujícím grafu, který namapuje potenciální provozní přerušení konkrétních úloh na provozní dopad výpadků v rámci relativní škály hodnot.
 
 ![Dopad na provozní přerušení](../../_images/manage/time-value-impact.png)
 
-Chcete-li vytvořit spravedlivý základ pro porovnání dopadu na různé úlohy v rámci portfolia, je navržena metrika času a hodnoty. Metrika Time/hodnota zachycuje nepříznivý dopad výpadku úloh. Obecně platí, že tento dopad se zaznamená jako přímá ztráta výnosů nebo provozních výnosů během typického období výpadku. Přesněji řečeno, výpočet množství ztracených výnosů za jednotku času. Nejběžnější metrika času a hodnoty je "dopad na hodinu", který měří provozní ztráty za hodinu výpadku.
+Pokud chcete vytvořit spravedlivý základ pro srovnání dopadu na různé úlohy v rámci portfolia, navrhne se metrika času a hodnoty. Metrika Time/hodnota zachycuje nepříznivý dopad výpadku úloh. Obecně platí, že tento dopad se zaznamená jako přímá ztráta výnosů nebo provozních výnosů během typického období výpadku. Přesněji řečeno, vypočítá množství ztracených výnosů za jednotku času. Nejběžnější metrika času/hodnoty má *dopad na hodinu*, což měří provozní ztráty za hodinu výpadku.
 
-Existuje několik přístupů, které lze použít k výpočtu dopadu. Kteroukoli z možností v následujících částech lze využít s podobnými výsledky. Při výpočtu chráněných ztrát v rámci portfolia je důležité použít stejný přístup pro každou úlohu.
+K výpočtu dopadu lze použít několik přístupů. K dosažení podobných výsledků můžete použít kteroukoli z možností v následujících částech. Při výpočtu chráněných ztrát v rámci portfolia je důležité použít stejný přístup pro každou úlohu.
 
 ## <a name="start-with-estimates"></a>Začínáme s odhady
 
-Aktuální operační modely mohou ztížit určení přesného dopadu. Naštěstí, několik systémů potřebuje vysoce přesný výpočet ztráty. V předchozím kroku: klasifikace závažnosti byla navržena tak, že všechny úlohy začínají výchozí hodnotou "střední závažnost". Středně kritické úlohy budou obecně dostávat standardní úroveň podpory správy s poměrně nízkým dopadem na provozní náklady. Jenom v případě, že úlohy vyžadují další prostředky provozní správy, bude potřeba mít přesný finanční dopad.
+Aktuální operační modely mohou ztížit určení přesného dopadu. Naštěstí, několik systémů potřebuje vysoce přesný výpočet ztráty. V předchozím kroku zařadíme *kritickou náročnost*a doporučujeme, abyste spustili všechny úlohy s výchozí *střední důležitostí*. Středně kritické úlohy obecně získávají standardní úroveň podpory správy s poměrně nízkým dopadem na provozní náklady. Jenom v případě, že úlohy vyžadují další prostředky provozní správy, budete potřebovat přesný finanční dopad.
 
-U všech standardizovaných úloh slouží dopad na firmu jako proměnná stanovení priorit při obnovování systémů během výpadku. Mimo tyto omezené situace bude mít dopad na firmu v prostředí Operations Management malé a žádné změny. 
+U všech standardizovaných úloh slouží dopad na firmu při obnovování systémů během výpadku jako proměnná stanovení priorit. Mimo tyto omezené situace má dopad na firmu malou změnu v prostředí Operations Management.
 
-## <a name="calculating-time"></a>Výpočet času
+## <a name="calculate-time"></a>Vypočítat čas
 
-V závislosti na povaze zátěže se můžou ztráty vypočítávat odlišně. V případě transakčních systémů s vysokým tempem, jako je třeba obchodní platforma v reálném čase, mohou být ztráty za milisekund významné. Méně často používané systémy, jako je třeba mzda, se nemusí používat každou hodinu. Zda je četnost použití vysoká nebo nízká, je důležité při výpočtu finančního dopadu normalizovat časovou proměnnou.
+V závislosti na povaze úlohy můžete vypočítat ztráty odlišně. V případě transakčních systémů s vysokým tempem, jako je třeba obchodní platforma v reálném čase, mohou být ztráty za milisekund významné. Méně často používané systémy, jako je třeba mzda, se nemusí používat každou hodinu. Bez ohledu na to, jestli je frekvence využití vysoká nebo nízká, je důležité při výpočtu finančního dopadu normalizovat časovou proměnnou.
 
-## <a name="calculating-total-impact"></a>Výpočet celkového dopadu
+## <a name="calculate-total-impact"></a>Vypočítat celkový dopad
 
-Když se požaduje další investice do správy, je důležitější, že dopad na firmu bude přesnější. Osnova popsaných odrážek se blíží k výpočtu ztrát v pořadí nejpřesnější (od nejpřesnější po nejpřesnější):
+Pokud chcete zvážit další investice do správy, je důležitější, že bude mít přesnější dopad na firmu. Následující tři přístupy k výpočtu ztrát jsou seřazené z nejpřesnější a nejpřesnější:
 
-- **Upravené ztráty:** Pokud v minulosti došlo k závažné ztrátě událostí, jako je hurikán nebo jiná přírodní katastrofa, může se při výpadku vypočítat skutečný počet ztrát. Tyto výpočty jsou založené na standardech pojišťovacího odvětví pro výpočet ztrát a řízení rizik. Použití upravených ztrát jako celkové množství ztrát v určitém časovém období může vést k velmi přesnému projekce.
+- **Upravené ztráty:** Pokud vaše firma v minulosti narazila na závažnou ztrátu, jako je hurikán nebo jiná přírodní katastrofa, mohl by při výpadku vypočítat skutečné ztráty. Tyto výpočty jsou založené na standardech pojišťovacího odvětví pro výpočet ztrát a řízení rizik. Použití upravených ztrát jako celkové množství ztrát v určitém časovém období může vést k velmi přesnému projekce.
 
-- **Historické ztráty:** Pokud se místní prostředí utrpělo z historických důvodů kvůli nestabilitě infrastruktury, může být obtížnější vypočítat ztráty. Ale vzorce úprav se pořád dají využít interně. K výpočtu historických historií Porovnejte rozdíly v prodeji, hrubých výnosech a provozní náklady v průběhu tří časových rámců: před, během a po výpadku. Pokud nejsou k dispozici žádná jiná data, prozkoumání těchto rozdílů může identifikovat přesnou hodnotu ztratí.
+- **Historické ztráty:** Pokud se vaše místní prostředí utrpělo historicky z výpadků infrastruktury, což vede k nestabilitě infrastruktury, může být obtížnější vypočítat ztráty. Ale stále můžete použít vzorce seřizovacího rozhraní interně. Pro výpočet historických ztrát Porovnejte rozdíly v prodeji, hrubých výnosech a provozní náklady v průběhu tří časových rámců: před, během a po výpadku. Prozkoumáním těchto rozdílů můžete identifikovat přesné ztráty, pokud nejsou k dispozici žádná jiná data.
 
-- **Úplný výpočet ztráty:** Pokud nejsou k dispozici žádná historická data, může být odvozena hodnota srovnávací ztráty. V tomto modelu určete průměrnou hrubou tržbu za hodinu pro obchodní jednotku. Za předpokladu, že kompletní výpadek systému odpovídá 100% ztráty výnosů, je nedostatečným předpokladem při projekci investic do předcházení ztrátám. Ale dá se použít jako hrubou základnu pro porovnávání dopadů na ztráty a stanovení priorit investic.
+- **Úplný výpočet ztráty:** Pokud nejsou k dispozici žádná historická data, můžete odvodit hodnotu srovnávací ztráty. V tomto modelu určíte průměrně hrubý výnos za hodinu pro obchodní jednotku. Když procházíte investicím, nemusíte předpokládat, že kompletní výpadek systému odpovídá 100% ztrátám výnosů. Tento předpoklad ale můžete použít jako hrubou základnu pro porovnání dopadů na ztráty a stanovení priorit investic.
 
-Než začnete vytvářet předpoklady týkající se výpočtů ztrát, spolupracujte se svým finančním oddělením a určete nejlepší přístup k výpočtu potenciálních ztrát spojených s výpadkem úloh.
+Než provedete určité předpoklady týkající se potenciálních ztrát, které jsou spojené s výpadky úloh, je vhodné pracovat s vaším finančním oddělením a určit nejlepší přístup k takovým výpočtům.
 
-## <a name="calculating-workload-impact"></a>Výpočet dopadu na úlohy
+## <a name="calculate-workload-impact"></a>Vypočítat dopad úloh
 
-Při využití historických dat pro výpočet ztrát může být k dispozici dostatek informací, které jasně určují dopad jednotlivých úloh na tyto ztráty. Toto hodnocení je tam, kde je partnerství s firmou naprosto důležité. Jakmile je celkový dopad vypočítán, musí mít tento dopad stejný atribut napříč jednotlivými úlohami. Tato distribuce dopadu by měla přijít z obchodních účastníků, kteří by měli souhlasit s relativním a kumulativním dopadem jednotlivých úloh. Tým by dál měl vyžádat zpětnou vazbu od obchodních vedoucích k ověření zarovnání. Výsledkem je, že konečný výsledek je stejný jako u emoce a odbornosti v závislosti na podstatách. Důležitost tohoto cvičení je taková, že představuje logiku a přesvědčeníi obchodních účastníků, kteří by měli mít k dispozici údaje o přidělení rozpočtu.
+Při výpočtu ztrát pomocí historických dat je možné, že budete mít k dispozici dostatek informací, abyste mohli jasně určit příspěvek jednotlivých úloh k těmto ztrátám. Provádění tohoto vyhodnocení je v případě, že partnerství v rámci podniku je naprosto důležité. Po výpočtu celkového dopadu musí být tento dopad na jednotlivé úlohy rozdělený. Tato distribuce dopadu by měla přijít z obchodních účastníků, kteří by měli souhlasit s relativním a kumulativním dopadem jednotlivých úloh. Z tohoto důvodu by váš tým měl vyžádat zpětnou vazbu od vedoucích firmy, aby ověřil zarovnání. Tato zpětná vazba je často stejná jako v části emoce a odborníci na danou problematiku. Je důležité, aby toto cvičení představovalo logiku a přesvědčeníi obchodních účastníků, kteří by měli mít k dispozici informace o přidělení rozpočtu.
 
-## <a name="using-the-template"></a>Použití šablony
+## <a name="use-the-template"></a>Použití šablony
 
-Následující postup se týká čtenářů, kteří používají [Sešit pro správu OPS](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) k naplánování správy cloudu.
+Pokud používáte [sešit Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) k plánování správy cloudu, zvažte následující:
 
-1. Každá úloha v "příkladu" nebo "vyčistit šablonu" by měla být aktualizována firmou s hodnotou "čas/hodnota dopadu" každého zatížení. Výchozí hodnota "čas/hodnota dopadu" představuje předpokládané ztráty za hodinu přidruženou k výpadku zatížení.
+- Každá z nich by měla aktualizovat každou úlohu v *příkladu* nebo *čistou šablonu* s *vlivem na čas a hodnotu* jednotlivých úloh. Ve výchozím nastavení má *dopad na čas a hodnotu* za hodinu, která je přidružena k výpadku zatížení.
 
 ## <a name="next-steps"></a>Další kroky
 
-Po definování dopadu [lze závazky zarovnávat](./commitment.md).
+Po definování dopadu firmy můžete [závazky zarovnávat](./commitment.md).
 
 > [!div class="nextstepaction"]
 > [Zarovnejte závazky správy s podnikem](./commitment.md)

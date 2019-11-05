@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240086"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566686"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuální datacentra: Perspektiva sítě
 
@@ -33,9 +33,9 @@ Zákazníci si můžou zvolit přístup k těmto cloudovým službám prostředn
 
 Ve svém okamžiku vzniká cloudová platforma, která je v podstatě platformou pro hostování veřejných aplikací. Podniky začaly pochopit hodnotu cloudu a začali přesunout interní obchodní aplikace do cloudu. Tyto typy aplikací dostanou dodatečné zabezpečení, spolehlivost, výkon a náklady, které vyžadují větší flexibilitu v případě doručování cloudových služeb. To paved způsob, jak nové infrastruktury a síťové služby navržené pro zajištění této flexibility, ale také nové funkce pro škálování, zotavení po havárii a další okolnosti.
 
-Cloudová řešení byla nejprve navržena tak, aby se ve veřejném spektru hostly jedna poměrně izolovaná aplikace. Tento přístup se dobře pracoval v několika letech. Pak se tyto výhody cloudových řešení objevily a v cloudu byly hostovány víc úloh na velkém rozsahu. Řešení potíží se zabezpečením, spolehlivostí, výkonem a náklady na nasazení v jedné nebo více oblastech se v průběhu životního cyklu cloudové služby stalo zásadním.
+Cloudová řešení byla nejprve navržena tak, aby se ve veřejném spektru hostly jedna poměrně izolovaná aplikace. Tento přístup se dobře pracoval v několika letech. Pak se tyto výhody cloudových řešení objevily a v cloudu byly hostovány víc úloh na velkém rozsahu. Řešení potíží se zabezpečením, spolehlivostí, výkonem a náklady na nasazení v jedné nebo několika oblastech se v celém životním cyklu cloudové služby stalo zásadním.
 
-Následující diagram nasazení v cloudu ukazuje příklad bezpečnostní mezery v **červeném poli**. **Žluté pole** zobrazuje místo pro optimalizaci síťových virtuálních zařízení napříč úlohami.
+Následující diagram nasazení v cloudu ukazuje příklad bezpečnostní mezery zvýrazněný červeně. Žluté pole zobrazuje místo pro optimalizaci síťových virtuálních zařízení napříč úlohami.
 
 ![0][0]
 
@@ -263,7 +263,7 @@ Pro provoz pocházející z Internetu doporučujeme použít jednu sadu instanc�
 
 Azure Load Balancer může zjistit stav různých instancí serveru i když instance nereaguje na sondu, nástroj pro vyrovnávání zatížení zastaví odesílání provozu do poškozené instance. Ve virtuálním datovém centru se externí nástroj pro vyrovnávání zatížení nasadí do centra a paprsků. V centru se nástroj pro vyrovnávání zatížení používá k efektivnímu směrování provozu do služeb v paprskech a v paprskech se ke správě provozu aplikací používají nástroje pro vyrovnávání zatížení.
 
-[**Přední dvířka Azure**][AFD] (AFD) jsou vysoce dostupná a škálovatelná platforma pro akceleraci webových aplikací, globální protokol HTTP Load Balancer, ochranu aplikací a Content Delivery Network. AFD běží ve více než 100 místech na hranici globální sítě Microsoftu a umožňuje sestavovat, provozovat a škálovat dynamickou webovou aplikaci a statický obsah. AFD poskytuje vaši aplikaci s výkonem koncových uživatelů, sjednocené oblasti údržby regionálního a razítka, automatizace BCDR, sjednocené informace o klientech a uživatelích, ukládání do mezipaměti a přehledy služeb. Platforma nabízí výkon, spolehlivost a podporu SLA, certifikace dodržování předpisů a auditované postupy zabezpečení, které jsou vyvíjené, provozované a nativně podporované v Azure.
+[Přední dvířka Azure (AFD)][AFD] jsou vysoce dostupná a škálovatelná platforma pro akceleraci webových aplikací, globální protokol HTTP Load Balancer, ochranu aplikací a Content Delivery Network. AFD běží ve více než 100 místech na hranici globální sítě Microsoftu a umožňuje sestavovat, provozovat a škálovat dynamickou webovou aplikaci a statický obsah. AFD poskytuje vaši aplikaci s výkonem koncových uživatelů, sjednocené oblasti údržby regionálního a razítka, automatizace BCDR, sjednocené informace o klientech a uživatelích, ukládání do mezipaměti a přehledy služeb. Platforma nabízí výkon, spolehlivost a podporu SLA, certifikace dodržování předpisů a auditované postupy zabezpečení, které jsou vyvíjené, provozované a nativně podporované v Azure.
 
 [**Application Gateway**][AppGW] Microsoft Azure Application Gateway je vyhrazené virtuální zařízení poskytující kontroler doručování aplikací (ADC) jako službu a nabízí různé možnosti vyrovnávání zatížení vrstvy 7 pro vaši aplikaci. Umožňuje optimalizovat produktivitu webové farmy tím, že v aplikační bráně převede snižování zátěže protokolu SSL náročné na procesor. Nabízí také další možnosti přesměrování vrstvy 7, jako je kruhové dotazování na distribuci příchozích přenosů, spřažení relací na základě souborů cookie, přesměrování založené na cestách URL a možnost hostování několika webů za jedinou službou Application Gateway. Firewall webových aplikací (WAF) je také součástí skladové položky WAF služby Application Gateway. Tato SKU poskytuje ochranu webových aplikací před běžnými ohroženími zabezpečení webu a zneužitím. Application Gateway je možné nakonfigurovat jako internetovou bránu nebo jen jako interní bránu, případně jako kombinaci obojího.
 
@@ -327,7 +327,7 @@ Možnosti úlohy jsou nekonečné. Níže jsou uvedené jenom některé z možn�
 - **Řízená daty:** Úlohy náročné na data s častým přístupem k databázím nebo jiným úložištěm.
 - **Integrováno:** Úlohy, které nabízejí integraci s jinými systémy v rámci organizace nebo mimo ni.
 
-**Weby směřující na zákazníky (Internet nebo interní)** : Většina aplikací, které komunikují s internetem, jsou weby. Azure nabízí možnost spuštění webu na virtuálním počítači s IaaS nebo na webu [Azure Web Apps][WebApps] (PaaS). Azure Web Apps podporuje integraci s virtuální sítě, která umožňuje nasazení Web Apps v síťové zóně s paprsky. Interní weby nepotřebují vystavit veřejný internetový koncový bod, protože prostředky jsou přístupné prostřednictvím privátních adres, které se nepoužívají z privátní virtuální sítě.
+**Weby směřující na zákazníky (Internet nebo interní):** Většina aplikací, které komunikují s internetem, je Web Sites. Azure nabízí možnost spuštění webu na virtuálním počítači s IaaS nebo na webu [Azure Web Apps][WebApps] (PaaS). Azure Web Apps podporuje integraci s virtuální sítě, která umožňuje nasazení Web Apps v síťové zóně s paprsky. Interní weby nepotřebují vystavit veřejný internetový koncový bod, protože prostředky jsou přístupné prostřednictvím privátních adres, které se nepoužívají z privátní virtuální sítě.
 
 **Velké objemy dat a analýza:** Pokud data potřebují škálovat až na velký svazek, nemusí se databáze správně škálovat. Technologie Hadoop nabízí systém pro paralelní spouštění distribuovaných dotazů na velkém počtu uzlů. Zákazníci mají možnost spouštět datové úlohy na virtuálních počítačích s IaaS nebo PaaS ([HDInsight][HDI]). HDInsight podporuje nasazení do virtuální sítě založené na umístění, která se dá nasadit do clusteru v paprsku virtuálního datacentra.
 
@@ -337,7 +337,7 @@ Pomocí [Azure Service Bus][ServiceBus]můžete implementovat vysoce spolehlivou
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Zajištění vysoké dostupnosti virtuálního datacentra: více virtuálních Datacenter
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Zajištění vysoké dostupnosti virtuálního datacentra: více virtuálních Datacenter
 
 V podstatě se tento článek zaměřuje na návrh jediného virtuálního datového centra, které popisuje základní komponenty a architekturu, které přispívají k odolnosti. Funkce Azure, jako je Azure Load Balancer, síťová virtuální zařízení, sady dostupnosti, sady škálování, spolu s dalšími mechanismy přispívají k systému, který umožňuje vytvářet v provozních službách pevné úrovně smlouvy SLA.
 
@@ -388,9 +388,9 @@ Následující funkce byly popsány v tomto dokumentu. Další informace získá
 
 |Síťové funkce|Vyrovnávání zatížení|Připojení|
 |-|-|-|
-|[Virtuální sítě Azure][VNet]</br>[Skupiny zabezpečení sítě][network-security-groups]</br>[Protokoly skupin zabezpečení sítě][nsg-log]</br>[Trasy definované uživatelem][user-defined-routes]</br>[Síťová virtuální zařízení][NVA]</br>[Veřejné IP adresy][PIP]</br>[DDoS Azure][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Přední dvířka Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Firewall webových aplikací] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[Partnerské vztahy virtuálních sítí][VNetPeering]</br>[Virtuální privátní síť][VPN]</br>[Virtuální síť WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Virtuální sítě Azure][VNet]</br>[Skupiny zabezpečení sítě][network-security-groups]</br>[Protokoly skupin zabezpečení sítě][nsg-log]</br>[Trasy definované uživatelem][user-defined-routes]</br>[Síťová virtuální zařízení][NVA]</br>[Veřejné IP adresy][PIP]</br>[DDoS Azure][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Firewall webových aplikací] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[Partnerské vztahy virtuálních sítí][VNetPeering]</br>[Virtuální privátní síť][VPN]</br>[Virtuální síť WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identita</br>|Sledování</br>|Doporučené postupy</br>|
+|Identita</br>|Monitorování</br>|Osvědčené postupy</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Základní ovládací prvky přístupu role][RBAC]</br>[Výchozí role Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Azure Monitor][Monitor]</br>[Protokoly aktivit][ActLog]</br>[Diagnostické protokoly][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Sledování výkonu sítě][NPM]|[Osvědčené postupy hraniční sítě][DMZ]</br>[Správa předplatných][SubMgmt]</br>[Správa skupin prostředků][RGMgmt]</br>[Omezení předplatného Azure][limits] </br></br></br>|
 

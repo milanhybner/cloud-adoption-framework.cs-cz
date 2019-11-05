@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967348"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566006"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Návrh zásad správného řízení pro jednoduchou úlohu
 
@@ -25,16 +25,17 @@ V rámci základní fáze přijetí je naším cílem nasazení jednoduché úlo
 - Správa identit pro jediného **vlastníka pracovního vytížení** , který zodpovídá za nasazení a údržbu jednoduchého zatížení. Vlastník úlohy vyžaduje oprávnění k vytváření, čtení, aktualizaci a odstraňování prostředků i oprávnění k delegování těchto práv jiným uživatelům v systému správy identit.
 - Spravujte všechny prostředky pro jednoduchou úlohu jako jednu jednotku správy.
 
-## <a name="licensing-azure"></a>Licencování Azure
+## <a name="azure-licensing"></a>Licencování Azure
 
 Než začnete navrhovat náš model zásad správného řízení, je důležité pochopit, jakým způsobem má Azure licenci. Důvodem je to, že účty pro správu spojené s vaší licencí Azure mají nejvyšší úroveň přístupu k prostředkům Azure. Tyto účty pro správu tvoří základ modelu zásad správného řízení.
 
 > [!NOTE]
-> Pokud má vaše organizace existující [smlouva Enterprise Microsoftu](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , která nezahrnuje Azure, je možné Azure přidat prostřednictvím peněžního závazku od začátku. Další informace najdete v tématu [licencování Azure pro podniky](https://azure.microsoft.com/pricing/enterprise-agreement) .
+> Pokud má vaše organizace existující [smlouva Enterprise Microsoftu](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , která nezahrnuje Azure, je možné Azure přidat prostřednictvím peněžního závazku od začátku. Další informace najdete v tématu [licencování Azure pro podnik](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Když se do smlouva Enterprise vaší organizace přidalo Azure, ve vaší organizaci se zobrazila výzva k vytvoření **účtu Azure**. Během procesu vytváření účtu se vytvořil **vlastník účtu Azure** a také tenant Azure Active Directory (Azure AD) s **globálním účtem správce** . Tenant Azure AD je logická konstrukce, která představuje zabezpečenou, vyhrazenou instanci Azure AD.
 
-účet ![Azure se správcem účtů Azure a globálním správcem služby Azure AD @ no__t-1*Obrázek 1 – účet Azure se správcem účtů a globálním správcem služby Azure AD.*
+![účtu Azure pomocí Správce účtů Azure a globálního správce Azure AD](../../_images/govern/design/governance-3-0.png)
+*Obrázek 1 – účet Azure se správcem účtů a globálním správcem služby Azure AD.*
 
 ## <a name="identity-management"></a>Správa identit
 
@@ -44,7 +45,8 @@ Náš požadavek je Správa identit pro jednoho **vlastníka pracovního vytíž
 
 Náš globální správce Azure AD vytvoří účet **vlastníka úlohy** pro vlastníka úlohy:
 
-![The globální správce Azure AD vytvoří účet vlastníka úlohy @ no__t-1*Obrázek 2 – globální správce Azure AD vytvoří uživatelský účet vlastníka úlohy.*
+![globální správce Azure AD vytvoří účet vlastníka úlohy](../../_images/govern/design/governance-1-2.png)
+*Obrázek 2 – globální správce Azure AD vytvoří uživatelský účet vlastníka úlohy.*
 
 Nemůžete přiřadit oprávnění k přístupu k prostředkům, dokud se tento uživatel nepřidá do **předplatného**, takže to provedete v následujících dvou částech.
 
@@ -54,23 +56,27 @@ S rostoucím počtem prostředků nasazených vaší organizací roste i složit
 
 Nejvyšší úroveň rozsahu správy prostředků je úroveň **předplatného** . Předplatné vytvoří **vlastník účtu**Azure, který zřídí finanční závazek a zodpovídá za vyplácení všech prostředků Azure přidružených k předplatnému:
 
-vlastník účtu Azure @no__t 0The vytvoří předplatné @ no__t-1*Obrázek 3 – vlastník účtu Azure vytvoří předplatné.*
+![vlastník účtu Azure vytvoří předplatné](../../_images/govern/design/governance-1-3.png)
+*Obrázek 3 – vlastník účtu Azure vytvoří předplatné.*
 
 Po vytvoření předplatného přidružuje **vlastník účtu** Azure klientovi Azure AD k předplatnému a tento TENANT Azure AD se použije k ověřování a autorizaci uživatelů:
 
-@no__t – vlastník účtu Azure přidružuje tenanta Azure AD k předplatnému @ no__t-1*Obrázek 4 – vlastník účtu Azure přidruží k předplatnému tenanta Azure AD.*
+![vlastník účtu Azure přidruží klienta Azure AD k předplatnému](../../_images/govern/design/governance-1-4.png)
+*Obrázek 4 – vlastník účtu Azure přidruží k předplatnému tenanta Azure AD.*
 
 Možná jste si všimli, že k předplatnému není aktuálně přidružený žádný uživatel, což znamená, že nikdo nemá oprávnění ke správě prostředků. Ve skutečnosti je vlastníkem předplatného **vlastník účtu** a má oprávnění provést jakoukoli akci s prostředkem v předplatném. V praktických případech je však **vlastníkem účtu** více, než je pravděpodobně finanční osoba ve vaší organizaci a neodpovídá za vytváření, čtení, aktualizaci a odstraňování prostředků – tyto úlohy bude provádět **vlastník úlohy**. Proto je nutné přidat **vlastníka úlohy** do předplatného a přiřadit oprávnění.
 
 Vzhledem k tomu, že **vlastník účtu** je aktuálně jediným uživatelem s oprávněním k přidání **vlastníka úlohy** do předplatného, přidá **vlastníka úlohy** do předplatného:
 
-vlastník účtu Azure @no__t 0The přidá do předplatného * * vlastníka úlohy * *. na obrázku 5 no__t-1*Obrázek 5 – vlastník účtu Azure přidá vlastníka úlohy do předplatného.*
+![vlastník účtu Azure přidá do předplatného * * vlastníka úlohy * *](../../_images/govern/design/governance-1-5.png)
+*Obrázek 5 – vlastník účtu Azure přidá vlastníka úlohy do předplatného.*
 
 **Vlastník účtu** Azure uděluje oprávnění **vlastníkovi úlohy** přiřazením role [řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) . Role RBAC určuje sadu oprávnění, které má **vlastník úlohy** pro konkrétní typ prostředku nebo sadu typů prostředků.
 
 Všimněte si, že v tomto příkladu přiřadil **vlastník účtu** [předdefinovanou roli **vlastníka** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):
 
-![The * * vlastník úlohy * * byla přiřazena předdefinovaná role vlastníka @ no__t-1*Obrázek 6 – vlastníkem úlohy byla přiřazena předdefinovaná role vlastníka.*
+![má uživatel * * vlastník úlohy * * přiřazenou předdefinovanou roli vlastníka](../../_images/govern/design/governance-1-6.png)
+*Obrázek 6 – vlastníkem úlohy byla přiřazena předdefinovaná role vlastníka.*
 
 Předdefinovaná role **vlastníka** uděluje všem oprávněním **vlastníka úlohy** v oboru předplatného.
 
@@ -81,21 +87,23 @@ Další úrovní rozsahu správy je úroveň **skupiny prostředků** . Skupina 
 
 Pro ilustraci tohoto problému se podívejme na to, co se stane, když **vlastník úlohy** vytvoří skupinu prostředků:
 
-![The * * vlastník úlohy * * vytvoří skupinu prostředků @ no__t-1*Obrázek 7 – vlastník úlohy vytvoří skupinu prostředků a zdědí integrovanou roli vlastníka v oboru skupiny prostředků.*
+![* * vlastník úlohy * * vytvoří skupinu prostředků](../../_images/govern/design/governance-1-7.png)
+*Obrázek 7 – vlastník úlohy vytvoří skupinu prostředků a zdědí integrovanou roli vlastníka v oboru skupiny prostředků.*
 
 Předdefinovaná role **vlastníka** znovu uděluje všem oprávněním **vlastníka úlohy** v oboru skupiny prostředků. Jak je popsáno výše, tato role dědí z úrovně předplatného. Pokud se tomuto uživateli v tomto oboru přiřadí jiná role, vztahuje se jenom na tento obor.
 
-Nejnižší úroveň rozsahu správy je na úrovni **prostředků** . Operace použité na úrovni prostředků se vztahují jenom na samotný prostředek. A znovu, oprávnění na úrovni prostředků se dědí z oboru skupiny prostředků. Podívejme se například na to, co se stane, když **vlastník úlohy** nasadí [virtuální síť](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) do skupiny prostředků:
+Nejnižší úroveň rozsahu správy je na úrovni **prostředků** . Operace použité na úrovni prostředků se vztahují jenom na samotný prostředek. Znovu jsou oprávnění na úrovni prostředků zděděná z oboru skupiny prostředků. Podívejme se například na to, co se stane, když **vlastník úlohy** nasadí [virtuální síť](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) do skupiny prostředků:
 
-![The * * vlastník úlohy * * vytvoří prostředek @ no__t-1*Obrázek 8 – vlastník úlohy vytvoří prostředek a zdědí integrovanou roli vlastníka v oboru prostředků.*
+![* * vlastník úlohy * * vytvoří prostředek](../../_images/govern/design/governance-1-8.png)
+*Obrázek 8 – vlastník úlohy vytvoří prostředek a zdědí integrovanou roli vlastníka v oboru prostředků.*
 
 **Vlastník úlohy** dědí roli vlastníka v oboru prostředků, což znamená, že vlastník úlohy má všechna oprávnění pro virtuální síť.
 
-## <a name="implementing-the-basic-resource-access-management-model"></a>Implementace základního modelu správy přístupu k prostředkům
+## <a name="implement-the-basic-resource-access-management-model"></a>Implementace základního modelu řízení přístupu k prostředkům
 
 Pojďme se podívat, jak implementovat dříve navržený model zásad správného řízení.
 
-Aby bylo možné začít, vaše organizace vyžaduje účet Azure. Pokud má vaše organizace existující [smlouva Enterprise Microsoftu](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , která nezahrnuje Azure, je možné Azure přidat prostřednictvím peněžního závazku od začátku. Další informace najdete v tématu [licencování Azure pro podniky](https://azure.microsoft.com/pricing/enterprise-agreement) .
+Aby bylo možné začít, vaše organizace vyžaduje účet Azure. Pokud má vaše organizace existující [smlouva Enterprise Microsoftu](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , která nezahrnuje Azure, je možné Azure přidat prostřednictvím peněžního závazku od začátku. Další informace najdete v tématu [licencování Azure pro podnik](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Po vytvoření účtu Azure určíte osobu ve vaší organizaci, která bude **vlastníkem účtu**Azure. Ve výchozím nastavení se vytvoří tenant Azure Active Directory (Azure AD). Váš **vlastník účtu** Azure musí [vytvořit uživatelský účet](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory) pro osobu ve vaší organizaci, která je **vlastníkem úlohy**.
 

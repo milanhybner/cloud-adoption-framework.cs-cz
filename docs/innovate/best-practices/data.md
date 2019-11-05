@@ -8,39 +8,64 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b9c868efb6f35472552778b583b638da59069edd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683408"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565846"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Nástroje pro demokratizujteí dat v Azure
 
-Jak je popsáno v teoretickém článku o [democratizing datech](../considerations/data.md), mnohé inovace se dají doručovat s minimálními technickými investicemi. K dispozici jsou dlouhé příklady hlavních inovací, které vyžadují trochu více než nezpracovaná data. Democratizing data o investicích se co nejvíce investují, aby vaši zákazníci mohli využívat data na svém stávajícím vědomí na velkých písmenech. Počínaje daty je rychlý způsob, jak otestovat hypotézu před rozbalením do širších, dražších digitálních vynálezů. Jak je upřesněna hypotéza a vynálezy začnou být přijaty ve velkém měřítku, níže uvedené procesy budou mít při přípravě na provozní podporu inovací k dispozici.
+Jak je popsáno v článku konceptu [democratizing dat](../considerations/data.md), můžete doručovat spoustu inovací s malým technickým investováním. Mnohé hlavní inovace vyžadují víc než nezpracovaná data. Democratizing data se investují co nejmenším prostředkem, který je potřeba k tomu, aby mohli zákazníci využívat data k využití jejich stávajících znalostí.
+
+Počínaje daty je rychlý způsob, jak otestovat hypotézu před rozbalením do širších, dražších digitálních vynálezů. Při sestavování více předpokladů a zahájení přijímání vynálezů ve velkém měřítku vám následující procesy pomůžou připravit se na provozní podporu inovací.
 
 ![Přístup k rozhraní architektury pro přijetí do cloudu pro democratizing data](../../_images/innovate/democratize-data.png)
 
-## <a name="alignment-to-the-methodology"></a>Zarovnání na metodologii
+## <a name="alignment-to-the-methodology"></a>Soulad s metodikou
 
-Tento typ digitálního vynálezu se dá zrychlit prostřednictvím každé fáze následujícího procesu, která je také navýšená. Technické pokyny pro zrychlení digitálního vynálezu jsou uvedené v obsahu na levé straně. Tyto články byly seskupeny do stejných fází, aby bylo možné zarovnat doprovodné materiály k celkové metodologii:
+Tento typ digitálního vynálezu lze zrychlit prostřednictvím každé fáze následujících procesů, jak je znázorněno na předchozím obrázku. Technické pokyny pro zrychlení digitálního vynálezu jsou uvedeny v obsahu na levé straně této stránky. Tyto články jsou seskupeny podle fáze, aby bylo možné zarovnat doprovodné materiály k celkové metodologii.
 
-- **Sdílet data:** První krok dat democratizing je sdílet otevřený.
+- **Sdílet data:** První krok democratizing dat je sdílet otevřený.
 - **Data upravující:** Před sdílením zajistěte, aby byla citlivá data zabezpečená, sledovaná a řízená.
-- **Centralizovaná data:** V některých případech je nutné poskytnout centralizaci platformy pro sdílení dat a zásady správného řízení.
+- **Centralizovaná data:** Někdy je potřeba poskytnout centralizovanou platformu pro sdílení dat a zásady správného řízení.
 - **Shromažďovat data:** Migrace, integrace, ingestování a virtualizace můžou každá shromažďovat existující data, která se mají centrálně spravovat, řídit a sdílet.
 
-Doporučuje se, aby týmy pro přijímání v cloudu přešly jenom do zásobníku, jak je potřeba k tomu, aby se při každé iteraci zaměřily na požadavky zákazníků nad architekturou. Prodlevy technických špiček na základě potřeb zákazníků urychlí ověřování vaší hypotézy. V takovém případě jsou všechny doprovodné materiály namapovány na čtyři procesy výše od nejvyššího dopadu zákazníků na nejvyšší technický dopad. V každé z nich se setkáte s pokyny k nejrůznějším potenciálním způsobům, které může Azure urychlit při [sestavování pomocí zákaznických soucit](../considerations/build.md).
+V každé iteraci by týmy pro přijetí v cloudu měly přejít pouze do zásobníku, protože vyžadují, aby se soustředit na požadavky zákazníků nad architekturou. Zpoždění technických špiček ve prospěch zákaznických potřeb zrychlí ověřování vaší hypotézy.
+
+Všechny doprovodné materiály se mapují na čtyři předchozí procesy. Pokyny od nejvyššího vlivu zákazníka na nejvyšší technický účinek. V každém procesu uvidíte doprovodné materiály k různým potenciálním způsobům, které Azure může využít k [sestavování pomocí zákaznických soucit](../considerations/build.md).
 
 ## <a name="toolchain"></a>Sada nástrojů
 
-V Azure se běžně využívají tyto nástroje k urychlení digitálního vynálezování v každé z výše uvedených fází: Power BI, Azure Data Catalog, Azure SQL Data Warehouse, Cosmos DB, databázích Azure pro PostgreSQL, MySQL, MariaDB, PostgreSQL, škálovatelné, Azure Data Lake, Azure Data Migration Service, Azure SQL Database (s nebo bez spravovaných instancí), Azure Data Factory, Azure Stream Analytics, služba SSIS (SQL Server Integration Services), Azure Stack, Azure SQL Stretch Database, StorSimple, Azure Files, Synchronizace souborů a PolyBase.
+V Azure se běžně používají následující nástroje k urychlení digitálního vynálezování v předchozích fázích:
 
-V rámci přístupů k vynálezu ve velkém měřítku budou aspekty každého řešení vyžadovat vylepšení a technickou splatnost. V takovém případě je pravděpodobnější, že budete potřebovat více těchto služeb. Prozatím můžete pomocí obsahu vlevo najít pokyny k nástrojům Azure relevantním pro proces potřebný k otestování hypotézy.
+- Power BI
+- Azure Data Catalog
+- Azure SQL Data Warehouse
+- Databáze Azure Cosmos
+- Azure Database for PostgreSQL
+- Azure Database for MySQL
+- Azure Database for MariaDB
+- Azure Database for PostgreSQL škálování
+- Azure Data Lake
+- Azure Database Migration Service
+- Azure SQL Database se spravovanými instancemi nebo bez nich
+- Azure Data Factory
+- Azure Stream Analytics
+- Služba SSIS (SQL Server Integration Services)
+- Azure Stack
+- SQL Server Stretch Database
+- Microsoft Azure StorSimple
+- Soubory Azure
+- Synchronizace souborů Azure
+- PolyBase
 
-## <a name="get-started"></a>Začít
+V rámci přístupů k vynálezu ve velkém měřítku vyžadují aspekty každého řešení vylepšení a technickou splatnost. Jak k tomu dojde, bude pravděpodobně vyžadováno více těchto služeb. Na levé straně této stránky můžete použít obsah pro doprovodné materiály k nástrojům Azure, které se týkají vašeho procesu testování hypotéz.
 
-Obsah na levé straně obsahuje mnoho článků, které vám pomohou začít s každým z těchto nástrojů v tomto sada nástrojů.
+## <a name="get-started"></a>Začínáme
+
+Obsah na levé straně této stránky popisuje mnoho článků. Tyto články vám pomůžou začít s každým z nástrojů v tomto sada nástrojů.
 
 > [!NOTE]
-> Některé odkazy mohou opustit rozhraní pro přijetí cloudu, aby lépe překročily rozsah této architektury.
+> Některé odkazy můžou opustit rozhraní pro přijetí cloudu, které vám pomůžou přesáhnout rámec tohoto rámce.

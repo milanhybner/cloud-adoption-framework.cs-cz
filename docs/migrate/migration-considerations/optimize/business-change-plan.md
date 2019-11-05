@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025476"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564601"
 ---
 # <a name="business-change-plan"></a>Plán obchodních změn
 
@@ -31,7 +31,7 @@ I když se můžou přístupy lišit, jsou ve většině plánů přijetí uživ
 
 Tyto motivy často vycházejí z předpokladu, že zavedení nových řešení pro uživatele by se mělo zaměřit hlavně na řízení rizik a usnadnění změny. Navíc se IT zaměřuje hlavně na riziko změny technologie a usnadnění této změny.
 
-## <a name="creating-business-change-plans"></a>Vytváření plánů obchodních změn
+## <a name="create-business-change-plans"></a>Vytvoření plánů pro změnu podniku
 
 Plán obchodních změn se dívá dál za technickou změnu a předpokládá, že každá vydaná verze v rámci procesu migrace vyvolává určitou úroveň změny obchodních procesů. Dívá se před a za technické změny. Následující otázky pomůžou účastníkům podívat se na přijetí uživateli z perspektivy obchodní změny, aby se maximalizoval obchodní dopad:
 
@@ -67,4 +67,4 @@ Po popsání a naplánování obchodní změny je možné začít s [obchodním 
 
 ## <a name="references"></a>Odkazy
 
-- Eason, K. (1988) _Information technology and organizational change_, New York: Taylor and Francis.
+- Eason, K. (1988) _informační technologie a organizační změna_, New York: Taylor a Francis.

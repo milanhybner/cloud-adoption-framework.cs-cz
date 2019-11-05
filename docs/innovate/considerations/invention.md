@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e1e9d693e7ca8de494ec2eb3e833ed3d0b07786f
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980030"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565672"
 ---
-# <a name="developing-digital-inventions"></a>Vývoj digitálních vynálezů
+# <a name="develop-digital-inventions"></a>Vývoj digitálních vynálezů
 
 Jak je popsáno v [části inovace v digitální ekonomice](./index.md), inovace vyžaduje rovnováhu *vynálezu* a *přijetí*. K zajištění jejich přijetí se vyžadují názory a připomínky zákazníků. Disciplíny popsané v další části definují řadu přístupů k vývoji digitálních vynálezů a přitom si zachovají přijetí a souciti zákazníků. Jednotlivé disciplíny jsou stručně popsány spolu s hlubšími odkazy na jednotlivé procesy.
 

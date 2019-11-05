@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547503"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566227"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardní příručka pro zásady správného řízení podniku: zlepšení cloudu
 
@@ -34,7 +34,7 @@ Od té doby se změnily některé věci, které budou mít vliv na zásady sprá
 
 - Identita je řízena místní instancí služby Active Directory. Hybridní identita se usnadňuje prostřednictvím replikace do Azure Active Directory.
 - Provoz IT nebo cloudové operace jsou převážně spravovány Azure Monitor a souvisejícími automatizacemi.
-- Zotavení po havárii/Kontinuita podnikových aplikací řídí instancemi trezoru Azure.
+- Zotavení po havárii a kontinuitu podnikových aplikací řídí instance služby Azure trezor.
 - Azure Security Center slouží k monitorování narušení zabezpečení a útoků.
 - K monitorování zásad správného řízení cloudu se používají Azure Security Center a Azure Monitor.
 - K automatizaci dodržování zásad se používají plány Azure, Azure Policy a skupiny pro správu Azure.

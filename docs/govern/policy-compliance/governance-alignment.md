@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223742"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566154"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Zarovnání Průvodce návrhem zásad správného nastavení cloudu k podnikovým zásadám
 
@@ -27,7 +27,7 @@ Průvodce návrhem cloudu by měl vzít v úvahu některé technické podrobnost
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Použití pomocných průvodců zásad správného řízení
+## <a name="use-the-actionable-governance-guides"></a>Použijte akční příručky pro akce zásad správného řízení.
 
 Pokud plánujete použít platformu Azure pro účely vašeho cloudu, rozhraní pro přijetí do cloudu poskytuje [akční příručky](../guides/index.md) , které ilustrují postupný přístup k modelu zásad správného řízení pro rozhraní pro přijetí cloudu. Tyto návody popisují řadu běžných scénářů přijetí, včetně obchodních rizik, požadavků na toleranci a příkazů zásad, které se přihlásily k vytvoření minimálního produktu pro řízení minimální životaschopnosti (MVP). Tyto příručky reprezentují přehled reálného prostředí pro zákazníky v rámci procesu přijetí cloudu v Azure.
 

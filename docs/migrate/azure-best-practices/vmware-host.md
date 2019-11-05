@@ -1,23 +1,23 @@
 ---
-title: Osvědčené postupy migrace hostitele VMWare pro Azure
+title: Osvědčené postupy migrace hostitele VMware pro Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Seznámení s osvědčenými postupy migrace hostitelů VMWare pro Azure
+description: Seznámení s osvědčenými postupy migrace hostitelů VMware pro Azure
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c14445dcdeaba16a01d5adbdab0a2c47feb57915
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b55fc8fa06a5e33fde12754e893dd2309407746b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558009"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564667"
 ---
-# <a name="vmware-host-migration-best-practices-for-azure"></a>Osvědčené postupy migrace hostitele VMWare pro Azure
+# <a name="vmware-host-migration-best-practices-for-azure"></a>Osvědčené postupy migrace hostitele VMware pro Azure
 
-Migrace celého hostitele VMWare do Azure může urychlit standardní metodologii migrace, která je popsána v rozhraní pro přijetí do cloudu a na obrázku níže.
+Migrace celého hostitele VMware do Azure může urychlit standardní metodologii migrace, která je popsána v rozhraní pro přijetí do cloudu a na obrázku níže.
 
 ![Model migrace architektury přechodu na cloud](../../_images/operational-transformation-migrate.png)
 
@@ -27,4 +27,4 @@ Migrace celého hostitele VMWare do Azure může urychlit standardní metodologi
 
 ## <a name="migration-best-practices"></a>Osvědčené postupy migrace
 
-Obsah vlevo popisuje několik osvědčených postupů napříč více webovými vlastnostmi společnosti Microsoft, které mohou pořídit provádění migrace hostitelů VMWare do řešení Azure VMWare (AVS). Záložka na tuto stránku pro rychlé odkazy na úplný seznam osvědčených postupů.
+Obsah vlevo popisuje několik osvědčených postupů napříč více webovými vlastnostmi společnosti Microsoft, které mohou pořídit provádění migrace hostitelů VMware do řešení Azure VMware (AVS). Záložka na tuto stránku pro rychlé odkazy na úplný seznam osvědčených postupů.

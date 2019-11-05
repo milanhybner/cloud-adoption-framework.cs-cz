@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048317"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564681"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
@@ -50,7 +50,7 @@ Připravují se všechny účastníky v rámci úsilí o migraci s vědomím mot
 
 ## <a name="migration-approach"></a>Postup migrace
 
-Rozhraní pro přijetí do cloudu vytvoří na nejvyšší úrovni plán, který je připravený, aby bylo možné seskupit typy úsilí požadované v rámci jakéhokoli přijetí v cloudu. Tento výkonný souhrn se sestavuje na tomto toku vysoké úrovně za účelem vytvoření iterativních procesů, které usnadňují navýšení/posunutí a optimalizaci úsilí **a** úsilí v rámci modernizace v jediném přístupu napříč všemi aktivitami migrace cloudu.
+Rozhraní pro přijetí do cloudu vytvoří na nejvyšší úrovni plán, který je připravený, aby bylo možné seskupit typy úsilí požadované v rámci jakéhokoli přijetí v cloudu. Tento výkonný souhrn se sestavuje na tomto toku vysoké úrovně za účelem vytvoření iterativních procesů, které můžou usnadnit optimalizaci úsilí a úsilí o modernizaci v rámci jediného přístupu napříč všemi aktivitami migrace do cloudu.
 
 Tento přístup se skládá ze dvou metodologií nebo oblastí zaostření: strategie cloudu & plánování a implementace cloudu. [Motivace](#motivations) nebo požadovaná obchodní výsledek migrace do cloudu často určuje, kolik týmů by měl investovat do [strategie a plánování](#cloud-strategy-and-planning) a [implementace](#cloud-implementation). Tyto podněty můžou také ovlivnit rozhodování, aby se prováděly postupně nebo paralelně.
 

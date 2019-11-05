@@ -8,18 +8,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058596"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565739"
 ---
 # <a name="build-with-customer-empathy"></a>Sestavování s empatií vůči zákazníkům
 
 "Nezbytnost je matka vynálezu." Tato proverb zachycuje indelibility lidského destilátu a náš přirozený disk k zásobám. Jak je vysvětleno v Oxford anglickém slovníku, "Pokud je potřeba něco v naléhavém případě, budete muset najít způsob, jak ho napravit nebo dosáhnout." Pár by tyto univerzální pravdivosti vynálezu zamítli. Jak je popsáno v [části inovace v digitální ekonomice](./index.md), inovace vyžaduje rovnováhu *vynálezu* a *přijetí*.
 
-V případě analogie se inovace procházejí z více než rozšířené rodiny. *Customer soucit je hrdým nadřazených inovací.* Vytvoření řešení, které řídí inovace, vyžaduje legitimní zákazníky&mdash;takovém, který zákazníkům udržuje zpátky, aby vyřešil kritické problémy. Tato řešení vycházejí z toho, co zákazník potřebuje, a ne podle svých potřeb nebo Whims. Abychom vyhledali pravdivé potřeby zákazníků, začneme s soucit &mdash;a hlubokou znalostí o zkušenostech zákazníka. Soucit je podvyvíjená dovednost pro mnoho inženýrů, manažerů produktů a dokonce i vedoucích pracovníků. Díky různorodým interakcím a rychlému tempu role cloudového architekta již začala podporovat tuto dovednost.
+V případě analogie se inovace procházejí z více než rozšířené rodiny. *Customer soucit je hrdým nadřazených inovací.* Vytvoření řešení, které řídí inovace, vyžaduje legitimní zákazníky&mdash;takovém, který zákazníkům udržuje zpátky, aby vyřešil kritické problémy. Tato řešení vycházejí z toho, co zákazník potřebuje, a ne podle svých potřeb nebo Whims. Abychom vyhledali pravdivé potřeby zákazníků, začneme s soucit&mdash;hlubokou znalostí o zkušenostech zákazníka. Soucit je podvyvíjená dovednost pro mnoho inženýrů, manažerů produktů a dokonce i vedoucích pracovníků. Díky různorodým interakcím a rychlému tempu role cloudového architekta již začala podporovat tuto dovednost.
 
 Proč je soucit tak důležité? Od první verze minimálního životaschopného produktu (MVP) až po obecnou dostupnost řešení na úrovni trhu pomáhá zákaznická soucit pochopit a sdílet zkušenosti zákazníka. Soucit nám pomáhá vytvořit lepší řešení. Důležitější je, že se nám lépe hodí pro řešení zásob, která budou podporovat přijetí. V digitální ekonomice můžou uživatelé, kteří můžou snadno empathize se zákaznickým potřebám, vytvořit jasnější budoucnost, která předefinuje a navede na trh.
 
@@ -56,7 +56,7 @@ Odtud odhadujte procentuální podíl celkového trhu, který se podobá výzvě
 
 Při každé iteraci smyčky sestavení-měření – učení se Váš pokus o sestavení pomocí soucit definuje MVP.
 
-MVP je nejmenší jednotkou úsilí (vynálezová, inženýrská, vývoj aplikací nebo architektura dat), která je nutná k vytvoření dostatečného řešení pro informace o _zákazníkovi_. Cílem každého MVP je otestovat některé nebo všechny předchozí hypotézy a získat zpětnou vazbu od zákazníka přímo. Výstup není atraktivní aplikace se všemi funkcemi potřebnými ke změně vašeho odvětví. Požadovaný výstup každé iterace je výuková příležitost &mdash;a možnost hlubšího testování hypotézy.
+MVP je nejmenší jednotkou úsilí (vynálezová, inženýrská, vývoj aplikací nebo architektura dat), která je nutná k vytvoření dostatečného řešení pro informace o _zákazníkovi_. Cílem každého MVP je otestovat některé nebo všechny předchozí hypotézy a získat zpětnou vazbu od zákazníka přímo. Výstup není atraktivní aplikace se všemi funkcemi potřebnými ke změně vašeho odvětví. Požadovaný výstup každé iterace je výuková příležitost&mdash;možnost hlubšího testování hypotézy.
 
 _Timeboxing_ je standardní způsob, jak zajistit, že produkt zůstane štíhlý. Ujistěte se například, že váš vývojový tým považuje řešení za možné vytvořit v jedné iteraci, která umožňuje rychlé testování. Chcete-li lépe pochopit použití rychlosti, iterací a vydání k definování minimálních prostředků, přečtěte si téma [plánování rychlosti, iterace, verze a cesty iterace](../../plan/iteration-paths.md).
 
@@ -81,7 +81,7 @@ V některých případech nejrychlejší cesta k inovacím znamená, že se tyto
 - Prediktivní algoritmus, který je chybný 99% času, ale ukazuje konkrétní požadované výsledky.
 - Zařízení IoT, které nekomunikuje bezpečně v produkčním měřítku, ale ukazuje hodnotu téměř dat v reálném čase v rámci procesu.
 - Aplikace vytvořená vývojářem občana k testování hypotézy nebo splnění potřeb menšího rozsahu.
-- Ruční proces, který znovu vytvoří výhody aplikace, aby následoval.
+- Ruční proces, který znovu vytvoří výhody, které má aplikace sledovat.
 - Drátový model nebo video, které jsou dostatečně podrobné, aby zákazník mohl pracovat.
 
 Vývoj MVP by neměl vyžadovat obrovské množství investic do vývoje. Z toho důvodu by měly být investice omezené, aby se minimalizoval počet testovaných hypotéz najednou. V každé iteraci a každé vydané verzi se pak řešení záměrně vylepšuje směrem k řešení připravenému ke škálování, které představuje více oborů vynálezu.

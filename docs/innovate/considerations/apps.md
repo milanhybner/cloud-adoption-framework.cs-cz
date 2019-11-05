@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047560"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565775"
 ---
 # <a name="engage-through-applications"></a>Zapojení aplikací
 
@@ -27,16 +27,16 @@ V některých případech je k dispozici pouze data pro změnu a splnění potř
 
 Týmy, které rychleji a přesně reagují na zpětnou vazbu od zákazníků, změny v trhu a příležitosti k inovacím, obvykle vedou na inovace na příslušné trhy. První princip inovativních aplikací se sestavuje v [přehledu růstu místo](./learn.md#growth-mindset): "sdílení kódu". V průběhu času se inovace vymění z kulturního zaměření. V případě trvalé inovace se vyžadují nejrůznější perspektivy a příspěvky.
 
-Aby bylo možné začít s inovacemi, měl by vývoj všech aplikací začínat sdíleným úložištěm kódu. Nejpoužívanějším nástrojem pro správu úložišť kódu je [GitHub](https://guides.github.com/), který umožňuje rychlé vytvoření sdíleného úložiště kódu. Alternativně je [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) sada nástrojů pro řízení verzí v Azure DevOps Services, které lze použít ke správě kódu. Azure Repos poskytuje dva typy správy verzí:
+Aby bylo možné začít s inovacemi, měl by vývoj všech aplikací začínat sdíleným úložištěm kódu. Nejpoužívanějším nástrojem pro správu úložišť kódu je [GitHub](https://guides.github.com), který umožňuje rychlé vytvoření sdíleného úložiště kódu. Alternativně je [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) sada nástrojů pro řízení verzí v Azure DevOps Services, které lze použít ke správě kódu. Azure Repos poskytuje dva typy správy verzí:
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): Správa distribuovaných verzí
-- [Správa verzí Team Foundation (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): Centralizovaná správa verzí
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): Správa distribuovaných verzí
+- [Správa verzí Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): Centralizovaná správa verzí
 
-## <a name="citizen-developers"></a>Vývojáři občanů
+## <a name="citizen-developers"></a>Vývojáři služeb pro občany
 
 Profesionální vývojáři jsou důležitou součástí inovací. V případě, že hypotéza prokáže přesné škálování, je nutné, aby profesionální vývojáři mohli stabilizovat a připravit řešení pro škálování. Většina zásad, na které se odkazuje v tomto článku, vyžaduje podporu pro profesionální vývojáře. Aktuální trendy bohužel navrhují větší poptávku pro profesionální vývojáře, než je vývojář. Kromě toho může být náklady a tempo inovace méně vhodné, pokud je pro profesionální vývoj považována za nezbytná. V reakci na tyto výzvy poskytují vývojáři občanů způsob škálování úsilí při vývoji a urychlení testování hypotéz.
 
-Použití vývojářů občanů může být životaschopné a efektivní, pokud je možné provést ověření počáteční hypotézy prostřednictvím nástrojů jako [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pro rozhraní aplikace, [Tvůrce AI](https://docs.microsoft.com//powerapps/use-ai-builder) pro procesy a předpovědi, [Microsoft Flow](https://docs.microsoft.com/flow) pro pracovní postupy a [výkon. BI](https://docs.microsoft.com/power-bi) pro spotřebu dat
+Použití vývojářů občanů může být životaschopné a efektivní, pokud je možné provést ověření počáteční hypotézy prostřednictvím nástrojů jako [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pro rozhraní aplikace, [Tvůrce AI](https://docs.microsoft.com/powerapps/use-ai-builder) pro procesy a předpovědi, [Microsoft Flow](https://docs.microsoft.com/flow) pro pracovní postupy a [výkon. BI](https://docs.microsoft.com/power-bi) pro spotřebu dat
 
 > [!NOTE]
 > Když se spoléháte na vývojáře občana k testování hypotézy, je vhodné mít k dispozici některé profesionální vývojáře, aby mohli poskytovat podporu, kontrolu a doprovodné materiály. Po ověření, že je hypotéza ve velkém měřítku, proces pro přechod aplikace do robustnějšího programovacího modelu zrychlí návratnost inovace. Díky zapojení profesionálních vývojářů v definicích procesů na začátku můžete později realizovat přechody čisticích procesů.
@@ -49,7 +49,7 @@ Inteligentní prostředí kombinují rychlost a škálování moderních webový
 
 Když je aplikace nebo zkušenosti nutná k uspokojení potřeb zákazníků, moderní webové aplikace mohou být nejrychlejší způsob, jak jít. Moderní webové prostředí můžou rychle vymezit interní nebo externí zákazníky a umožní rychlé opakování řešení.
 
-### <a name="infusing-intelligence"></a>Nematoucí inteligentní funkce
+### <a name="infusing-intelligence"></a>Začlenění chytrých funkcí
 
 Strojové učení a umělá logika jsou stále k dispozici vývojářům. Rozsáhlá dostupnost běžných rozhraní API s prediktivními funkcemi umožňuje vývojářům lépe vyhovovat potřebám zákazníka prostřednictvím rozšířeného přístupu k datům a předpovědi.
 
@@ -83,11 +83,11 @@ Rozšíření řešení je jedna běžná forma modernizace. Tento přístup mů
 
 - Stávající obchodní logika by měla splňovat (nebo se může jednat o schůzku), která je potřebná pro zákazníky.
 - Vylepšené prostředí bude lépe vyhovovat potřebám konkrétního zákaznického kohorta.
-- Obchodní logika vyžadovaná řešením pro minimální životaschopné produkty (MVP) byla centralizovaná, obvykle prostřednictvím [N-vrstvých](/azure/architecture/guide/architecture-styles/n-tier), webových služeb, rozhraní API nebo návrhu [mikroslužeb](/azure/architecture/guide/architecture-styles/microservices) . Tento přístup se skládá z balení stávajícího řešení v rámci nového prostředí hostovaného v cloudu. V Azure by toto řešení mohlo být v Azure App Services živé.
+- Obchodní logika vyžadovaná řešením pro minimální životaschopné produkty (MVP) byla centralizovaná, obvykle prostřednictvím [N-vrstvých](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), webových služeb, rozhraní API nebo návrhu [mikroslužeb](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Tento přístup se skládá z balení stávajícího řešení v rámci nového prostředí hostovaného v cloudu. V Azure by toto řešení mohlo být v Azure App Services živé.
 
 ### <a name="rebuild-an-existing-solution"></a>Opětovné sestavení stávajícího řešení
 
-Pokud aplikaci nelze snadno rozšířit, může být nutné řešení Refaktorovat. V tomto postupu se zatížení migruje do cloudu. Po dokončení migrace aplikace se její části upraví nebo duplikují jako webové služby nebo [mikroslužby](/azure/architecture/guide/architecture-styles/microservices), které jsou nasazeny paralelně s existujícím řešením. Řešení založené na paralelních službách by se mohlo nakládat jako s rozšířeným řešením. Toto řešení jednoduše zabalí stávající řešení s novým prostředím hostovaným v cloudu. V Azure by toto řešení mohlo být v Azure App Services živé.
+Pokud aplikaci nelze snadno rozšířit, může být nutné řešení Refaktorovat. V tomto postupu se zatížení migruje do cloudu. Po migraci aplikace se její části upraví nebo duplikují jako webové služby nebo [mikroslužby](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), které jsou nasazeny paralelně s existujícím řešením. Řešení založené na paralelních službách by se mohlo nakládat jako s rozšířeným řešením. Toto řešení jednoduše zabalí stávající řešení s novým prostředím hostovaným v cloudu. V Azure by toto řešení mohlo být v Azure App Services živé.
 
 > [!CAUTION]
 > Refaktoring nebo přeplánování řešení nebo centralizované obchodní logiky může rychle aktivovat časově náročné [technické špičky](./build.md#reduce-complexity-and-delay-technical-spikes)namísto zdroje hodnot zákazníků. Toto je riziko pro inovace, zejména v rané fázi ověřování hypotéz. V rámci navrhování řešení by měl být v rámci návrhu řešení k dispozici cesta k MVP, která nevyžaduje refaktoring stávajících řešení. Je vhodné zpozdit refaktoring, dokud se nebudete moct na škálování počáteční hypotézy ověřit.
@@ -98,7 +98,7 @@ Kromě moderních a inovativních přístupů k vytváření aplikací byly výz
 
 Typ modelu samoobslužné správy, který najdete v cloudovém centru špičkových služeb, umožňuje užší řízení a rychlejší iterace v rámci prostředí řešení. Tyto cíle se dosahují tak, že přenáší provozní kontrolu a odpovědnost na obchodní tým.
 
-Pokud se snažíte škálovat nebo splnit globální poptávku v existujícím řešení, je možné, že tento přístup vyhledáte dostatečně tak, abyste ověřili zákaznickou hypotézu. Po migraci řešení a mírné modernizaci může obchodní tým škálovat IT a testovat celou řadu hypotéz. Obvykle zahrnují zákazníky, kteří mají obavy o výkon, globální distribuci a jiné potřeby zákazníků, které brání IT operace.
+Pokud se snažíte škálovat nebo splnit globální poptávku v existujícím řešení, může být tento přístup dostačující pro ověření zákaznických předpokladů. Po migraci řešení a mírné modernizaci může obchodní tým škálovat IT a testovat celou řadu hypotéz. Obvykle zahrnují zákazníky, kteří mají obavy o výkon, globální distribuci a jiné potřeby zákazníků, které brání IT operace.
 
 ## <a name="reduce-overhead-and-management"></a>Snížení režie a správy
 

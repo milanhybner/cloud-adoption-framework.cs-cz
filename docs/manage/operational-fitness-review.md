@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e7dca64941a07e091cc6b107d8390970d0a19a4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683716"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564909"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Nastavení kontroly provozní vhodnosti
 
@@ -29,26 +29,26 @@ Existuje pět základních kategorií nefunkčních požadavků, které se nazý
 
 Proces pro kontrolu provozní vhodnosti zajišťuje, aby vaše nejdůležitější úlohy splňovaly očekávání vaší firmy s ohledem na pilíře kvality.
 
-Váš podnik by měl vytvořit proces pro kontrolu provozních požadavků, aby plně pochopil problémy, které vznikají při spouštění úloh v produkčním prostředí, určení způsobu nápravy těchto problémů a jejich řešení. Tento článek popisuje proces vysoké úrovně pro kontrolu provozní vhodnosti, který může vaše společnost využít k dosažení tohoto cíle.
+Vytvořte proces pro kontrolu provozní způsobilosti, abyste plně pochopili problémy, které vedou ke spouštění úloh v produkčním prostředí, a jak tyto problémy opravit a vyřešit. Tento článek popisuje proces vysoké úrovně pro kontrolu provozní vhodnosti, který může vaše společnost využít k dosažení tohoto cíle.
 
 ## <a name="operational-fitness-at-microsoft"></a>Provozní způsobilost v Microsoftu
 
-Od samého začátku je vývoj platformy Azure průběžným projektem, který provádí mnoho týmů v rámci Microsoftu. Je obtížné zajistit kvalitu a konzistenci pro projekt takové velikosti a složitosti. K vytvoření výčtu a implementaci základních nefunkčních požadavků je potřeba robustní proces.
+Od samého začátku bylo mnoho týmů v rámci Microsoftu zapojeno do vývoje platformy Azure. Je obtížné zajistit kvalitu a konzistenci pro projekt takové velikosti a složitosti. K vytvoření výčtu a implementaci základních nefunkčních požadavků pravidelně potřebujete robustní proces.
 
 Procesy, které Microsoft sleduje, tvoří základ pro procesy uvedené v tomto článku.
 
 ## <a name="understand-the-problem"></a>Pochopení problému
 
-Jak jste se naučili při [zahájení práce](../getting-started/migrate.md), je prvním krokem v digitální transformaci podniku určení obchodních problémů, které je potřeba vyřešit přijetím Azure. Dalším krokem je určení vysoké úrovně řešení problému, jako je například migrace zatížení do cloudu nebo přizpůsobení stávající místní služby, která zahrnuje cloudové funkce. Nakonec je řešení navrženo a implementováno.
+Jak jste se naučili při [zahájení práce](../getting-started/migrate.md), je prvním krokem v digitální transformaci podniku určení obchodních problémů, které je potřeba vyřešit přijetím Azure. Dalším krokem je určení vysoké úrovně řešení problému, jako je například migrace zatížení do cloudu nebo přizpůsobení stávající místní služby, která zahrnuje cloudové funkce. Nakonec navrhujete a implementujete řešení.
 
-Během tohoto procesu je fokus často na funkcích služby: sadu _funkčních_ požadavků, které má služba provádět. Například služba doručování produktů vyžaduje funkce pro určení zdrojového a cílového umístění produktu, sledování produktu během doručování, zákaznických oznámení a dalších.
+Během tohoto procesu je fokus často na funkcích služby: sadu _funkčních_ požadavků, které má služba provádět. Například služba doručování produktů vyžaduje funkce pro určení zdrojového a cílového umístění produktu, sledování produktu během doručování a odesílání oznámení zákazníkovi.
 
 _Nefunkční_ požadavky naproti tomu se týkají vlastností, jako je [dostupnost](https://docs.microsoft.com/azure/architecture/checklist/availability)služby, [odolnost](https://docs.microsoft.com/azure/architecture/resiliency)a [škálovatelnost](https://docs.microsoft.com/azure/architecture/checklist/scalability). Tyto vlastnosti se liší od funkčních požadavků, protože nemají přímo vliv na konečnou funkci jakékoli konkrétní funkce ve službě. Nefunkční požadavky se ale týkají výkonu a kontinuity služby.
 
-V souvislosti se smlouvou o úrovni služeb (SLA) je možné zadat některé nefunkční požadavky. V případě kontinuity služeb může být například požadavek dostupnosti pro službu vyjádřen jako procento: "dostupný 99,99% času". Jiné nefunkční požadavky se můžou obtížně definovat a můžou se změnit podle potřeby produkčních potřeb. Například služba zaměřená na spotřebitele se může stát neočekávanými nároky na propustnost po nárůstu oblíbenosti.
+V souvislosti se smlouvou o úrovni služeb (SLA) můžete zadat některé nefunkční požadavky. Například můžete zajistit kontinuitu služeb jako procento dostupnosti: "k dispozici 99,99% času". Jiné nefunkční požadavky se můžou obtížně definovat a můžou se změnit podle potřeby produkčních potřeb. Například služba zaměřená na spotřebitele se může stát neočekávanými nároky na propustnost po nárůstu oblíbenosti.
 
 > [!NOTE]
-> Požadavky na odolnost proti chybám jsou podrobněji popsány v [návrhu spolehlivých aplikací Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Tento článek obsahuje vysvětlení konceptů, jako je cíl bodu obnovení (RPO), cíle obnovení (RTO), smlouvy SLA a dalších.
+> Další podrobnosti o požadavcích na odolnost proti chybám najdete v tématu [navrhování spolehlivých aplikací Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Tento článek obsahuje vysvětlení konceptů, jako je cíl bodu obnovení (RPO), cíle obnovení (RTO) a smlouvy SLA.
 
 ## <a name="process-for-operational-fitness-review"></a>Proces pro kontrolu provozní vhodnosti
 
@@ -56,7 +56,7 @@ Klíčem k udržení výkonu a kontinuitě podnikových služeb je implementace 
 
 ![Přehled procesu pro kontrolu provozní vhodnosti](../_images/manage/ofr-flow.png)
 
-Na vysoké úrovni má proces dvě fáze. Ve *fázi předpoklady*jsou požadavky navázány a namapovány na podpůrné služby. K této fázi dochází zřídka: možná jednou nebo při zavedení nových operací. Výstup fáze "předpoklady" se používá ve *fázi toku*. Fáze toku probíhá častěji: doporučujeme měsíčně.
+Na vysoké úrovni má proces dvě fáze. Ve *fázi předpoklady*jsou požadavky navázány a namapovány na podpůrné služby. K této fázi dochází zřídka: možná jednou nebo při zavedení nových operací. Výstup fáze "předpoklady" se používá ve *fázi toku*. Fáze toku probíhá častěji, například měsíčně.
 
 ### <a name="prerequisites-phase"></a>Fáze předpokladů
 
@@ -66,15 +66,15 @@ Kroky v této fázi zachytí požadavky na pravidelnou kontrolu důležitých sl
 
     Termín *kritické* (nebo *důležité pro podnikání*) odráží vážný dopad na firmu, pokud je operace ovlivněná. Například online prodejce může mít obchodní operace, jako je například "povolit zákazníkovi přidat položku do nákupního košíku" nebo "zpracovat platbu platební karty." Pokud některé z těchto operací selžou, zákazník nemůže dokončit transakci a podnik nebude moci realizovat prodej.
 
-1. **Namapujte operace na služby**. Proveďte mapování důležitých obchodních operací na služby, které je podporují. V příkladu nákupního košíku se může jednat o několik služeb: Služba pro správu zásob, služba nákupního košíku a další. Za účelem zpracování platby prostřednictvím platební karty může místní platební služba komunikovat s třetí stranou služby pro zpracování plateb.
+1. **Namapujte operace na služby**. Proveďte mapování důležitých obchodních operací na služby, které je podporují. V příkladu nákupního košíku může být zahrnuto několik služeb, včetně služby pro správu skladových zásob a služby nákupního košíku. Za účelem zpracování platby prostřednictvím platební karty může místní platební služba komunikovat s třetí stranou služby pro zpracování plateb.
 
-1. **Analyzujte závislosti služby**. Většina obchodních operací vyžaduje orchestraci mezi více podpůrnými službami. Je důležité pochopit závislosti mezi službami a tokem nejdůležitějších transakcí pomocí těchto služeb.
+1. **Analyzujte závislosti služby**. Většina obchodních operací vyžaduje orchestraci mezi více podpůrnými službami. Je důležité pochopit závislosti mezi službami a tok nejdůležitějších transakcí pomocí těchto služeb.
 
     Zvažte také závislosti mezi místními službami a službami Azure. V příkladu nákupního košíku se služba pro správu zásob inventáře může hostovat místně a ingestovat data zadaná zaměstnanci z fyzického skladu. Může se ale stát, že se data mimo pracoviště ukládají do služby Azure, jako je například [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)nebo databáze, jako je například [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).
 
-Výstup z těchto aktivit je sada *metrik Scorecard* pro operace služeb. Metriky jsou zařazené do kategorií podle nefunkčních kritérií, jako je dostupnost, škálovatelnost a zotavení po havárii. Metriky přehledu výkonnostních metrik vyjadřují provozní kritéria, která by služba měla splnit. Tyto metriky je možné vyjádřit na libovolné úrovni členitosti, která je vhodná pro operaci služby.
+Výstup z těchto aktivit je sada *metrik Scorecard* pro operace služeb. Scorecard měří kritéria, například dostupnost, škálovatelnost a zotavení po havárii. Metriky přehledu výkonnostních metrik vyjadřují provozní kritéria, která očekáváte, že služba splňuje. Tyto metriky je možné vyjádřit na libovolné úrovni členitosti, která je vhodná pro operaci služby.
 
-Scorecard by měl být vyjádřen jednoduchým pojmem, aby bylo usnadněno smysluplné diskuze mezi vlastníky a inženýry firmy. Metrika přehledu výkonnostních metrik pro škálovatelnost by mohla být například vyjádřena zeleně pro splnění definovaných kritérií, žlutá pro neúspěšné splnění definovaných kritérií, ale aktivně implementuje plánovanou nápravu nebo červené pro neúspěšné splnění definovaných kritérií bez plánu. nebo akce.
+Scorecard by měl být vyjádřen jednoduchým pojmem, aby bylo usnadněno smysluplné diskuze mezi vlastníky a inženýry firmy. Například metrika přehledu výkonnostních metrik pro škálovatelnost může jednoduše zakódovat barvy. Zelená znamená splnění definovaných kritérií, žlutá znamená selhání při splnění definovaných kritérií, ale aktivně implementuje plánovanou nápravu a červená znamená, že neúspěšné splnění definovaných kritérií bez plánu nebo akce.
 
 Je důležité zdůraznit, že tyto metriky by měly přímo odpovídat obchodním potřebám.
 
@@ -82,11 +82,11 @@ Je důležité zdůraznit, že tyto metriky by měly přímo odpovídat obchodn�
 
 Fáze revize služby je základem kontroly provozní způsobilostí. Zahrnuje tyto kroky:
 
-1. **Změřte metriky služeb**. Pomocí metriky Scorecard monitorujte služby, abyste zajistili, že služby splňují očekávání firmy. Jinými slovy je důležité monitorování služeb. Pokud nemůžete monitorovat sadu služeb s ohledem na nefunkční požadavky, zvažte, že odpovídající metriky Scorecard budou červené. V tomto případě je prvním krokem pro nápravu implementace vhodného monitorování služby. Pokud firma například očekává, že služba bude pracovat s 99,99% dostupností, ale není k dispozici žádná provozní telemetrie pro měření dostupnosti, Předpokládejme, že nesplňujete požadavek.
+1. **Změřte metriky služeb**. Pomocí metriky Scorecard monitorujte služby, abyste zajistili, že služby splňují očekávání firmy. Monitorování služby je nezbytné. Pokud nemůžete monitorovat sadu služeb s ohledem na nefunkční požadavky, zvažte, že odpovídající metriky Scorecard budou červené. V tomto případě je prvním krokem pro nápravu implementace vhodného monitorování služby. Pokud firma například očekává, že služba bude pracovat s 99,99% dostupností, ale není k dispozici žádná provozní telemetrie pro měření dostupnosti, Předpokládejme, že nesplňujete požadavek.
 
 2. **Naplánujte nápravu**. Pro každou operaci služby, pro kterou metriky spadají pod přijatelnou prahovou hodnotu, určete náklady na opravaí provozu provozu na přijatelnou úroveň. Pokud jsou náklady na Oprava služby větší, než je očekávané generování příjmů služby, přejděte k části a zvažte nehmotné náklady, jako je například prostředí zákazníka. Pokud například zákazníci mají potíže s umístěním úspěšné objednávky pomocí služby, mohou místo toho zvolit konkurenci.
 
-3. **Implementujte nápravu**. Poté, co si vlastníci a inženýrské organizace přijměte plán, implementujte ho. Ohlaste stav implementace při každé kontrole metriky scorecard.
+3. **Implementujte nápravu**. Poté, co tým pro vlastníky a inženýrské organizace schválí plán, implementujte ho. Ohlaste stav implementace při každé kontrole metriky scorecard.
 
 Tento proces je iterativní a v ideálním případě vaše společnost má tým vyhrazený. Tento tým by měl pravidelně splňovat kontrolu stávajících projektů pro nápravu, vykázat základní revizi nových úloh a sledovat celkový přehled výkonnostních metrik podniku. Tým by měl také mít oprávnění k tomu, aby si nastavili nápravné týmy, pokud jsou na plánu nebo nevyhověli metrikám.
 
@@ -94,31 +94,31 @@ Tento proces je iterativní a v ideálním případě vaše společnost má tým
 
 Tým zodpovědný za kontrolu provozních způsobilostí se skládá z následujících rolí:
 
-- **Vlastník firmy**: poskytuje znalosti firmy k identifikaci a stanovení priorit jednotlivých důležitých podnikových operací. Tato role také porovnává náklady na zmírnění dopadů na firmu a při konečném rozhodování o nápravě jednotek.
+- **Vlastník firmy:** Poskytuje znalost firmy k identifikaci a stanovení priorit každé klíčové obchodní operace. Tato role také porovnává náklady na zmírnění dopadů na firmu a v konečném rozhodnutí se při nápravě řídí.
 
-- **Obchodní**poradce: rozděluje obchodní operace na části diskrétní a mapuje tyto části na služby a infrastrukturu, ať už místně, nebo v cloudu. Role vyžaduje důkladné znalosti technologie přidružené k jednotlivým obchodním operacím.
+- **Generální Poradce pro firmy:** Rozděluje obchodní operace na části diskrétní a mapuje tyto části na služby a infrastrukturu, ať už místně, nebo v cloudu. Role vyžaduje důkladné znalosti technologie přidružené k jednotlivým obchodním operacím.
 
-- **Vlastník technického oddělení**: implementuje služby přidružené k obchodní operaci. Tito jednotlivci se můžou zúčastnit návrhu, implementace a nasazení jakýchkoli řešení pro nefunkční problémy, které jsou v rámci přezkumu zjištěny.
+- **Vlastník technické:** Implementuje služby přidružené k obchodní operaci. Tito jednotlivci se můžou zúčastnit návrhu, implementace a nasazení jakýchkoli řešení pro nefunkční problémy, které jsou v rámci přezkumu zjištěny.
 
-- **Vlastník služby**. Provozuje aplikace a služby firmy. Tito jednotlivci shromažďují data o protokolování a využití pro tyto aplikace a služby. Tato data slouží k identifikaci problémů a k ověření oprav po jejich nasazení.
+- **Vlastník služby:** Provozuje aplikace a služby firmy. Tito jednotlivci shromažďují data o protokolování a využití pro tyto aplikace a služby. Tato data slouží k identifikaci problémů a k ověření oprav po jejich nasazení.
 
 ## <a name="review-meeting"></a>Zkontrolovat schůzku
 
-Doporučujeme, aby váš tým kontroloval pravidelné plnění. Tým může například plnit každý měsíc a pak na čtvrtletní bázi nahlásit stav a metriky na vyšší.
+Doporučujeme, aby váš tým kontroloval pravidelné plnění. Tým může například odpovídat měsíčně a pak čtvrtletním způsobem nahlásit stav a metriky na vyšší.
 
 Přizpůsobte podrobnosti procesu a schůzky podle svých konkrétních potřeb. Jako výchozí bod doporučujeme použít následující úlohy:
 
-1. Obchodní vlastník a Poradce pro firmy mají na výběr a určení nefunkčních požadavků na jednotlivé obchodní operace se vstupem od techniků a vlastníků služeb. V případě obchodních operací, které byly identifikovány dříve, je priorita přezkoumána a ověřena. Pro nové obchodní operace je přiřazena priorita v existujícím seznamu.
+1. Obchodní vlastník a Poradce pro firmy mají na výběr a určení nefunkčních požadavků na jednotlivé obchodní operace se vstupem od techniků a vlastníků služeb. V případě obchodních operací, které byly identifikovány dříve, zkontrolujte a ověřte prioritu. V případě nových obchodních operací přiřaďte prioritu v existujícím seznamu.
 
-2. Inženýri a vlastníci služeb mapují aktuální stav obchodních operací na odpovídající místní a cloudové služby. Mapování je seznam komponent v každé službě, které se orientují jako strom závislostí. Po vygenerování seznamu a stromu závislostí se určí kritické cesty prostřednictvím stromu.
+2. Inženýri a vlastníci služeb mapují aktuální stav obchodních operací na odpovídající místní a cloudové služby. Mapování je seznam komponent v každé službě, které se orientují jako strom závislostí. Vlastníci techniků a služeb pak určí kritické cesty prostřednictvím stromu.
 
-3. Vlastníci techniků a služeb si prozkoumají aktuální stav protokolování a monitorování provozu pro služby uvedené v předchozím kroku. Robustní protokolování a monitorování jsou kritické: identifikují součásti služby, které přispívají k selhání při plnění nefunkčních požadavků. Pokud není dostatek protokolování a monitorování, je nutné vytvořit a implementovat plán, aby bylo možné je umístit.
+3. Vlastníci techniků a služeb si prozkoumají aktuální stav protokolování a monitorování provozu pro služby uvedené v předchozím kroku. Robustní protokolování a monitorování jsou kritické: identifikují součásti služby, které přispívají k selhání při plnění nefunkčních požadavků. Pokud není dostatek protokolování a monitorování, tým je musí umístit na místo vytvořením a implementací plánu.
 
-4. Metriky Scorecard jsou vytvořeny pro nové obchodní operace. Přehled výkonnostních metrik se skládá ze seznamu součástí prvků pro každou službu identifikovanou v kroku 2. Je zarovnán podle nefunkčních požadavků a zahrnuje míru, jak dobře jednotlivé komponenty splňují požadavky.
+4. Tým vytvoří metriky scorecard pro nové obchodní operace. Přehled výkonnostních metrik se skládá ze seznamu součástí prvků pro každou službu identifikovanou v kroku 2. Je zarovnán podle nefunkčních požadavků a zahrnuje míru, jak dobře jednotlivé komponenty splňují požadavky.
 
-5. U komponent, které nesplňují požadavky nefungující podle potřeby, je navrženo řešení vysoké úrovně a přiřadí se mu technický vlastník. V tuto chvíli si vlastník a podnikatel firmy zřídí rozpočet na nápravnou práci na základě očekávaných výnosů obchodní operace.
+5. U komponent, které nevyhověly nefunkčním požadavkům, tým navrhuje řešení vysoké úrovně a přiřadí mu technického vlastníka. V tuto chvíli si vlastník a podnikatel firmy zřídí rozpočet na nápravnou práci na základě očekávaných výnosů obchodní operace.
 
-6. Nakonec je revize prováděna v probíhající nápravné práci. Každá metrika přehledu výkonnostních metrik pro probíhající práci je přezkoumána podle očekávaných kritérií. Pro součásti, které splňují kritéria metriky, vlastník služby prezentuje data protokolování a monitorování a potvrzuje, že jsou splněna kritéria. Pro ty součásti, které nesplňují kritéria metriky, každý technický vlastník vysvětluje problémy, které brání splnění kritérií, a prezentuje nové návrhy pro nápravu.
+6. Nakonec tým provede kontrolu průběžné nápravné práce. Každá metrika přehledu výkonnostních metrik pro probíhající práci je přezkoumána podle očekávaných kritérií. Pro součásti, které splňují kritéria metriky, vlastník služby prezentuje data protokolování a monitorování a potvrzuje, že jsou splněna kritéria. Pro ty součásti, které nesplňují kritéria metriky, každý technický vlastník vysvětluje problémy, které brání splnění kritérií, a prezentuje nové návrhy pro nápravu.
 
 ## <a name="recommended-resources"></a>Doporučené materiály
 

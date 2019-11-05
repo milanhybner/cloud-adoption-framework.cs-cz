@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8e58aea5c0d3b77cd194f8bd8919f43143ab18a4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979943"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565242"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Navázat postupy provozní správy v cloudu
 
@@ -32,15 +32,15 @@ Oba tyto osvědčené postupy se sestavují s metodologií pro řízení provozu
 
 ![Správa metodologie architektury pro přijetí do cloudu](../_images/manage/caf-manage.png)
 
-**Obchodní zarovnání**: v metodologii Správa jsou všechny úlohy klasifikované podle závažnosti a obchodní hodnoty. Tato klasifikace se dá následně měřit prostřednictvím analýz dopadu, které vypočítávají ztráty hodnoty související se snížením výkonu nebo přerušením provozu. Na základě tohoto měřitelného dopadu na výnosy mohou týmy zajišťující cloudový provoz v rámci firmy vytvořit prostředí, které vyvažuje náklady a výkon.
+**Zarovnání firmy:** Při správě metodologie jsou všechny úlohy klasifikované podle závažnosti a obchodní hodnoty. Tato klasifikace se dá následně měřit prostřednictvím analýz dopadu, které vypočítávají ztráty hodnoty související se snížením výkonu nebo přerušením provozu. Na základě tohoto měřitelného dopadu na výnosy mohou týmy zajišťující cloudový provoz v rámci firmy vytvořit prostředí, které vyvažuje náklady a výkon.
 
-**Obory cloudových operací**: po zarovnání firmy je mnohem snazší sledovat a sestavovat správné obory cloudových operací pro každou úlohu. Rozhodnutí v každé disciplíně je pak možné převést na závazky, které může snadno pochopit společnost. Díky tomuto přístupu založenému na spolupráci se zainteresované strany stávají partnery při hledání správného poměru cena/výkon.
+**Provozní obory cloudu:** Po zarovnání firmy je mnohem snazší sledovat a sestavovat správné obory cloudových operací pro každou úlohu. Rozhodnutí v každé disciplíně je pak možné převést na závazky, které může snadno pochopit společnost. Díky tomuto přístupu založenému na spolupráci se zainteresované strany stávají partnery při hledání správného poměru cena/výkon.
 
-- **Inventář a viditelnost**: minimální Správa operací vyžaduje, abyste nahlásili prostředky do inventarizace a vytvářeli přehled o stavu spuštění jednotlivých assetů.
-- **Provozní dodržování předpisů**: běžná Správa konfigurace, velikosti, nákladů a výkonu assetů je klíčem k udržení očekávání výkonu.
-- **Ochrana a obnovení**: minimalizace provozního přerušení a urychlení obnovení s tím, aby se zabránilo ztrátám výkonu a nepříznivým výnosům. Základními aspekty této disciplíny jsou detekce a obnovení.
-- **Operace platforem**: všechna IT prostředí obsahují sadu běžně používaných platforem. Tyto platformy můžou zahrnovat úložiště dat, například SQL Server nebo Azure HDInsight. Mezi další běžné platformy patří například řešení kontejnerů, jako je Azure Kubernetes Service (AKS). Bez ohledu na platformu se v operacích s platformou zaměřuje na přizpůsobení operací na základě způsobu nasazení, konfigurace a používání běžných platforem v úlohách.
-- **Provozní operace**: na nejvyšší úrovni provozní zralosti můžou týmy cloudových operací ladit operace s úlohami, které jsou zásadní pro úspěch firmy. Pro tyto úlohy s vysokou závažností může dostupná data pomoci při automatizaci nápravy, velikosti nebo ochrany úloh na základě jejich využití.
+- **Inventář a viditelnost:** Minimální Správa operací vyžaduje, aby bylo zajištěno inventarizaci prostředků a vytváření viditelnosti stavu spuštění jednotlivých assetů.
+- **Provozní dodržování předpisů:** Běžnou správou konfigurace, velikosti, nákladů a výkonu assetů je klíč k udržení očekávání výkonu.
+- **Ochrana a obnovení:** Minimalizace provozních přerušení a urychlení obnovení pomůžou podniku vyhnout se ztrátám výkonu a nepříznivým výnosům. Základními aspekty této disciplíny jsou detekce a obnovení.
+- **Operace platformy:** Všechna IT prostředí obsahují sadu běžně používaných platforem. Tyto platformy můžou zahrnovat úložiště dat, například SQL Server nebo Azure HDInsight. Mezi další běžné platformy patří například řešení kontejnerů, jako je Azure Kubernetes Service (AKS). Bez ohledu na platformu se v operacích s platformou zaměřuje na přizpůsobení operací na základě způsobu nasazení, konfigurace a používání běžných platforem v úlohách.
+- **Operace úlohy:** V nejvyšší provozní zralosti můžou cloudové týmy provozu ladit operace s úlohami, které jsou zásadní pro úspěch firmy. Pro tyto úlohy s vysokou závažností může dostupná data pomoci při automatizaci nápravy, velikosti nebo ochrany úloh na základě jejich využití.
 
 Další doprovodné materiály, jako je například [architektura pro kontrolu návrhu (název kódu: Principy návrhu cloudu)](https://docs.microsoft.com/azure/architecture/reliability), vám mohou pomoci při rozhodování o všech úlohách v rámci dříve popsaných oborů.
 

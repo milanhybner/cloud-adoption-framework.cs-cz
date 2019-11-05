@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8ea3610ed65ae45d924ca65ef26d249ed8343d0b
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979970"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565007"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Použití principů návrhu a pokročilých operací
 
-První tři obory správy cloudu popisují směrný plán správy. Základní plán správy musí zahrnovat standardní obchodní závazek pro minimalizaci obchodních přerušení a urychlení obnovení při přerušení služby. Většina standardních hodnot správy zahrnuje oborové zaměření na zachování "inventáře a viditelnosti", "provozní dodržování" a "ochranu a obnovení".
+První tři disciplíny správy cloudu popisují směrný plán správy. Základní plán správy musí zahrnovat standardní obchodní závazek pro minimalizaci obchodních přerušení a urychlení obnovení při přerušení služby. Většina standardních hodnot správy zahrnuje oborové zaměření na zachování "inventáře a viditelnosti", "provozní dodržování" a "ochranu a obnovení".
 
-Účelem směrného plánu správy je vytvořit konzistentní nabídku, která poskytuje minimální úroveň obchodního závazku pro všechny podporované úlohy. Tato standardní hodnota pro běžné a opakující se nabídky správy umožňuje týmu doručovat vysoce optimalizovanou míru provozní správy s minimální odchylkou. Tato standardní nabídka ale nemusí poskytovat dostatečný závazek k podnikání. 
+Účelem směrného plánu správy je vytvořit konzistentní nabídku, která poskytuje minimální úroveň obchodního závazku pro všechny podporované úlohy. Tato standardní hodnota pro běžné a opakující se nabídky správy umožňuje týmu doručovat vysoce optimalizovanou míru provozní správy s minimální odchylkou. Tato standardní nabídka ale nemusí poskytovat dostatečný závazek k podnikání.
 
 Diagram v další části znázorňuje tři způsoby, jak jít nad rámec standardních hodnot správy.
 
@@ -37,7 +37,7 @@ Jak je uvedeno v příručce pro správu Azure, rozšířená standardní hodnot
 
 ## <a name="management-specialization"></a>Specializace správy
 
-Aspekty úloh a operací platforem můžou vyžadovat změny v principech návrhu a architektury. Tyto změny můžou nějakou dobu trvat a můžou mít za následek zvýšené provozní výdaje. Aby bylo možné snížit počet úloh, které vyžadují takové investice, může vylepšený směrný plán správy zajistit dostatečné vylepšení obchodního závazku.
+Aspekty úloh a operací platforem můžou vyžadovat změny v principech návrhu a architektury. Tyto změny můžou nějakou dobu trvat a můžou mít za následek zvýšené provozní výdaje. Aby bylo možné snížit počet úloh, které vyžadují takové investice, může vylepšený směrný plán správy zajistit dostatečné vylepšení firemních závazků.
 
 Pro úlohy, které opravňují vyšší investice do splnění obchodního závazku, je specializace operací klíč.
 
@@ -45,21 +45,22 @@ Pro úlohy, které opravňují vyšší investice do splnění obchodního záva
 
 Existují dvě oblasti specializace:
 
-- **Specializace platforem**: investovat do probíhajících operací sdílené platformy a distribuovat investice do různých úloh.
-- **Specializace úloh**: investovat do probíhajících operací konkrétního zatížení, která je obecně rezervovaná pro klíčové úlohy.
+- **Specializace platformy:** Investovat do pokračujících operací sdílené platformy a distribuujte si investici napříč několika úlohami.
+- **Specializace úloh:** Investovat do probíhajících operací konkrétního zatížení, která je obecně rezervovaná pro klíčové úlohy.
 
 ### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Špičkové centrum IT nebo cloudové centra (CCoE)
 
 Rozhodnutí o specializaci platforem a specializaci úloh jsou založená na závažnosti a dopadu jednotlivých úloh. Nicméně tato rozhodnutí jsou také indikativní pro větší kulturní rozhodnutí mezi centrálními a CCoE organizačními modely IT.
 
-Specializace úloh často aktivuje kulturní změnu. Tradiční IT a centrální IT procesy sestavují proces, který může poskytovat podporu ve velkém měřítku. Podpora škálování je více dosažitelná pro opakující se služby, které se nacházejí ve standardních hodnotách správy, rozšířených standardních hodnotách nebo dokonce operacích platforem. Specializace úloh se často nemění. Tato nedostatečná škála usnadňuje centralizované organizaci IT poskytovat potřebnou podporu bez omezení organizačního měřítka.
+Specializace podle úloh často podněcuje kulturní změnu. Tradiční IT a centrální IT procesy sestavují proces, který může poskytovat podporu ve velkém měřítku. Podpora škálování je více dosažitelná pro opakující se služby, které se nacházejí ve standardních hodnotách správy, rozšířených standardních hodnotách nebo dokonce operacích platforem. Specializace úloh se často nemění. Tato nedostatečná škála usnadňuje centralizované organizaci IT poskytovat potřebnou podporu bez omezení organizačního měřítka.
 
-Cloudové centrum špičkového přístupu se dá využít i v případě, že se záměrné delegace zodpovědnosti a selektivní centralizace. Specializace úloh představuje lepší sbližování s přístupem k delegovaným zodpovědností CCoE. 
+Cloudové centrum špičkového přístupu se dá využít i v případě, že se záměrné delegace zodpovědnosti a selektivní centralizace. Specializace úloh představuje lepší sbližování s přístupem k delegovaným zodpovědností CCoE.
 
 Přirozené zarovnání rolí v CCoE je popsáno níže:
-- Tým cloudové platformy pomáhá vytvářet běžné platformy, které podporují více týmů pro přijímání v cloudu. 
-- Tým Cloud Automation rozšiřuje tyto platformy na nasaditelné prostředky v katalogu služeb. 
-- Správa cloudu zajišťuje centrálně standardní hodnoty pro správu a pomáhá podporovat používání katalogu služeb. 
+
+- Tým cloudové platformy pomáhá vytvářet běžné platformy, které podporují více týmů pro přijímání v cloudu.
+- Tým Cloud Automation rozšiřuje tyto platformy na nasaditelné prostředky v katalogu služeb.
+- Správa cloudu zajišťuje centrálně standardní hodnoty pro správu a pomáhá podporovat používání katalogu služeb.
 - Ale obchodní jednotka (ve formě týmu pro přijímání obchodních DevOps nebo cloudu pro přijetí do cloudu) udržuje zodpovědnost za každodenní operace úlohy, kanálu nebo výkonu.
 
 Vzhledem k tomu, že je možné zarovnat oblasti správy, mohou centrální IT a CCoE modely obecně doručovat specializaci platformy s minimálními kulturními změnami. Poskytování na specializaci úloh může být pro centrální IT týmy trochu složitější.
@@ -68,46 +69,46 @@ Vzhledem k tomu, že je možné zarovnat oblasti správy, mohou centrální IT a
 
 V rámci každé specializace se následující čtyři kroky doručí v rámci oboru, iterativního přístupu. Tento přístup vyžaduje partnerství mezi přijetím do cloudu, odborníky na cloudovou platformou, automatizací cloudu a odborníky na správu cloudu k vytvoření životaschopné a informované smyčky
 
-- **Zlepšení návrhu systému**: Vylepšete návrh běžných systémů (platforem) nebo specifických úloh pro efektivní minimalizaci přerušení.
-- **Automatizace nápravy**: některá vylepšení nejsou nákladově efektivní. V takových případech může být vhodnější automatizovat nápravu a snížit dopad přerušení.
-- **Škálované řešení**: v rámci navrhování a automatizované nápravy je možné tyto změny škálovat v celém prostředí prostřednictvím katalogu služeb.
-- **Průběžné vylepšování**: můžete použít různé nástroje pro monitorování k vyhledání přírůstkových vylepšení pro další předání systému, automatizace a škálování.
+- **Vylepšit návrh systému:** Vylepšete návrh běžných systémů (platforem) nebo specifických úloh pro efektivní minimalizaci přerušení.
+- **Automatizovaná náprava:** Některá vylepšení nejsou nákladově efektivní. V takových případech může být vhodnější automatizovat nápravu a snížit dopad přerušení.
+- **Škálovat řešení:** Díky vylepšení systémů a automatizované nápravy můžete škálovat tyto změny v celém prostředí prostřednictvím katalogu služeb.
+- **Nepřetržité zlepšování:** Můžete použít různé nástroje pro monitorování ke zjištění přírůstkových vylepšení, která se mají řešit při dalším průchodu návrhu, automatizace a škálování systému.
 
-### <a name="improve-system-design"></a>Vylepšení návrhu systému
+### <a name="improve-system-design"></a>Vylepšení návrhu systémů
 
-Zlepšení návrhu systému představuje nejúčinnější přístup ke zlepšení provozu jakékoli běžné platformy. Vylepšení návrhu systému můžou zvýšit stabilitu a snížit provozní přerušení. Návrh jednotlivých systémů je mimo rozsah pro zobrazení prostředí, které se provádí v rámci architektury cloudového přijetí. Jako doplněk k tomuto rozhraní nabízí architektura architektury Azure osvědčené postupy pro zlepšení odolnosti a návrhu konkrétního systému. Tato vylepšení návrhu můžete uplatnit na návrh systémů na platformu nebo konkrétní úlohu.
+Vylepšení návrhu systémů představuje nejúčinnější přístup k vylepšení provozu jakékoliv běžné platformy. Vylepšení návrhu systému můžou zvýšit stabilitu a snížit provozní přerušení. Návrh jednotlivých systémů je mimo rozsah pohledu na prostředí, který prezentujeme v rámci této řady článků o přechodu na cloud. Jako doplněk k těmto článkům nabízí rozhraní architektury Azure osvědčené postupy pro zlepšení odolnosti a návrhu specifického systému. Tato vylepšení návrhu můžete uplatnit na návrh systémů na platformu nebo konkrétní úlohu.
 
-Architektura architektury Azure se zaměřuje na zlepšení napříč pěti pilíři návrhu systému:
+Rozhraní architektury Azure se zaměřuje na vylepšení pěti pilířů návrhu systémů:
 
-- **Škálovatelnost**: škálování běžných prostředků platformy pro zpracování zvýšené zátěže.
-- **Dostupnost**: snížení úspěšnosti v podniku tím, že se zlepší potenciální doba provozu.
-- **Odolnost**proti chybám: zlepšení doby obnovení, aby se snížila doba přerušení.
-- **Zabezpečení**: Ochrana aplikací a dat před externími hrozbami.
-- **Správa**: provozní procesy specifické pro tyto běžné prostředky platforem.
+- **Škálovatelnost:** Škálování běžných prostředků platformy pro zpracování zvýšené zátěže.
+- **Dostupnost:** Snížení doby provozu tím, že zlepšíte potenciál v době provozu.
+- **Odolnost:** Zlepšení doby obnovení pro snížení doby trvání přerušení.
+- **Zabezpečení:** Ochrana aplikací a dat před externími hrozbami.
+- **Správa:** Provozní procesy specifické pro tyto běžné prostředky platforem.
 
-Většina obchodních přerušení je rovna určité formě technického dluhu nebo nedostatku architektury. U stávajících nasazení se vylepšení návrhu systémů dají zobrazit jako platby na stávající Technický dluh. U nových nasazení si můžete zobrazit vylepšení návrhu systémů, protože se vyhnete technickým dluhům. V další části, "Automatizovaná náprava", se podíváme na způsoby, jak řešit Technický dluh, který nemůže nebo neměl být řešen.
+Většina přerušení běžného chodu firmy vyplývá z určité formy technického dluhu nebo nedostatku v architektuře. U stávajících nasazení se vylepšení návrhu systémů dají vnímat jako splátky technického dluhu. U nových nasazení můžete na vylepšení návrhu systémů nahlížet jako na možnost, jak technickému dluhu předejít. V další části, "Automatizovaná náprava", se podíváme na způsoby, jak řešit Technický dluh, který nemůže nebo neměl být řešen.
 
 Další informace o [architektuře architektury Azure](https://docs.microsoft.com/azure/architecture/guide/pillars)vám pomůžou vylepšit návrh systému. Vzhledem k tomu, že se váš návrh systému zlepšuje, vraťte se do tohoto článku a najděte nové příležitosti, které vám pomůžou zlepšit a škálovat vylepšení ve vašem prostředí.
 
 ### <a name="automated-remediation"></a>Automatizovaná náprava
 
-Technický dluh nelze nebo neměl vyřešit. Řešení může být příliš nákladné, aby bylo možné ho opravit. Může být plánováno, ale může mít dlouhou dobu trvání projektu. Provozní přerušení nemusí mít žádný významný dopad na chod firmy, jinak se obchodní Priorita může rychle zotavit místo investice do odolnosti.
+Technický dluh nelze nebo neměl vyřešit. Řešení by například mohlo být příliš nákladné. Může být plánováno, ale může mít dlouhou dobu trvání projektu. Provozní přerušení nemusí mít žádný významný dopad na chod firmy, jinak se obchodní Priorita může rychle zotavit místo investice do odolnosti.
 
-Pokud rozlišení technického dluhu není požadovanou cestou, automatizovaná náprava je často požadovaným dalším krokem. Použití Azure Automation a Azure Monitor k detekci trendů a zajištění automatizované nápravy je nejběžnějším přístupem k automatizované nápravě.
+Pokud vyřešení technického dluhu není požadovaným postupem, je obvykle dalším požadovaným krokem automatizovaná náprava. Ta se obvykle zajišťuje pomocí služeb Azure Automation a Azure Monitor, které detekují trendy a poskytují automatizovanou nápravu.
 
 Pokyny k automatizované nápravě najdete v tématu [Azure Automation a upozornění](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Škálování řešení pomocí katalogu služeb
 
-Základem specializace platformy a operací platforem je dobře spravovaný katalog služeb. To je způsob, jakým jsou vylepšení pro navrhování a nápravu systémů škálovaná v rámci prostředí. Tým cloudové platformy a tým Cloud Automation si můžete na nejběžnější platformy v jakémkoli prostředí vytvořit opakovaně použitelná řešení. Pokud se ale tato řešení nepoužijí konzistentně, může Správa cloudu poskytovat jenom něco větší než základní nabídka.
+Základním kamenem specializace podle platformy a provozu platforem je dobře spravovaný katalog služeb. Jeho prostřednictvím se vylepšení návrhu systémů a nápravy škálují do celého prostředí. Týmy pro cloudové platformy a automatizaci cloudu společně vytvářejí opakovatelná řešení pro nejběžnější platformy v jakémkoliv prostředí. Pokud se ale tato řešení nepoužijí konzistentně, může Správa cloudu poskytovat jenom něco větší než základní nabídka.
 
-Aby bylo možné maximalizovat přijímání a minimalizaci režie údržby jakékoli optimalizované platformy, měla by být platforma přidána do katalogu služeb. Každá aplikace v katalogu se dá nasadit pro interní spotřebu prostřednictvím katalogu služeb nebo jako nabídka Marketplace pro externí zákazníky.
+Aby bylo možné maximalizovat přijímání a minimalizaci režie údržby jakékoli optimalizované platformy, měla by být platforma přidána do katalogu služeb. Každou aplikaci v katalogu služeb je možné nasadit pro interní použití prostřednictvím katalogu nebo nabídnout externím uživatelům přes Marketplace.
 
 Informace o publikování do katalogu služeb najdete v tématu série [publikování do katalogu služeb](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app).
 
-### <a name="continuous-improvement"></a>Nepřetržité zlepšování
+### <a name="continuous-improvement"></a>Průběžné vylepšování
 
-Specializace platformy a operace platforem jsou závislé na silných smyčkách zpětné vazby mezi týmy pro přijetí, platformu, automatizaci a správu. Na základě těchto smyček zpětné vazby v datech je každému týmu možné provádět rozhodnutí. Aby operace platforem dosáhly dlouhodobých obchodních závazků, je důležité využít přehledy, které jsou specifické pro centralizovanou platformu. Vzhledem k tomu, že kontejnery a SQL Server jsou dvě nejběžnější centrálně spravované platformy, zvažte, jak začít s shromažďováním dat průběžného zlepšování, a to pomocí následujících článků: 
+Specializace podle platformy i provoz platforem jsou silně závislé na smyčkách zpětné vazby mezi týmy přechodu, platforem, automatizace a správy. Zhmotnění těchto smyček zpětné vazby v datech umožňuje každému týmu přijímat moudrá rozhodnutí. Aby operace platforem dosáhly dlouhodobých obchodních závazků, je důležité využít přehledy, které jsou specifické pro centralizovanou platformu. Vzhledem k tomu, že kontejnery a SQL Server jsou dvě nejběžnější centrálně spravované platformy, zvažte, jak začít s shromažďováním dat průběžného zlepšování, a to pomocí následujících článků:
 
 - [Výkon kontejneru](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Výkon databáze PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

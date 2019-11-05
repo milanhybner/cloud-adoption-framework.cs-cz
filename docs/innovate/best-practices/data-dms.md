@@ -1,50 +1,62 @@
 ---
-title: 'Inovace cloudu: služba migrace dat'
+title: 'Inovace cloudu: Azure Database Migration Service'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Cloudové inovace – služba migrace dat
+description: Inovace v cloudu – Azure Database Migration Service
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 0b717222c7e5f1906330eb5b181d675f1247bb37
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047752"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565849"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Shromažďování dat migrací a modernizací stávajících zdrojů dat
 
-Společnosti mají často celou řadu existujících dat, která se dají [democratized](../considerations/data.md). Pokud zákazník hypotéza vyžaduje použití existujících dat k vytváření moderních řešení, může být prvním krokem migrace a modernizace dat pro přípravu vynálezů a inovací. V souladu se stávajícími úsilími migrace v rámci plánu přijetí do cloudu může být migrace a modernizace snazší provést v rámci [metodologie migrace](../../migrate/index.md).
+Společnosti mají často různé druhy stávajících dat, která můžou [Demokratizujte](../considerations/data.md). Když zákazník hypotéza vyžaduje použití existujících dat k vytváření moderních řešení, může být prvním krokem migrace a modernizace dat pro přípravu na vynálezy a inovace. V souladu se stávajícími úsilími migrace v rámci plánu přijetí do cloudu můžete snadněji provádět migraci a modernizaci v rámci [metodologie migrace](../../migrate/index.md).
 
 ## <a name="use-of-this-article"></a>Použití tohoto článku
 
-Tento článek popisuje řadu přístupů, které jsou v souladu s procesem migrace, ale můžou být nejlépe zarovnané na standardní migraci sada nástrojů. Během procesu posuzování v rámci metodologie migrace by tým pro přijetí v cloudu vyhodnotil aktuální stav a přeje si budoucí stav assetu migrovat. Pokud je tento proces součástí snahy inovace, mohou oba týmy při přijímání v cloudu použít tento článek k rozhodování.
+Tento článek popisuje řadu přístupů, které jsou v souladu s procesem migrace. Tyto přístupy můžete nejlépe zarovnat na standardní sada nástrojů migrace.
+
+Během procesu posuzování v rámci metodologie migrace vyhodnocuje tým přijetí do cloudu aktuální stav a požadovaný budoucí stav migrovaného assetu. Pokud je tento proces součástí snahy inovace, mohou oba týmy při přijímání v cloudu využít tento článek k tomu, aby tyto hodnocení pomohli.
 
 ## <a name="primary-toolset"></a>Primární sada nástrojů
 
-Při migraci a modernizaci dat, která se nacházejí v Prem, je nejběžnější volbou Azure Tool [služba migrace dat (DMS)](https://docs.microsoft.com/azure/dms) , která je součástí širšího [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) sada nástrojů. U stávajících SQL Server zdrojů dat mohl [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview) poskytnout pomoc při posuzování a migraci menšího počtu datových struktur.
+Když migrujete a modernizovatte místní data, je [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)nejběžnějším nástrojem Azure. Tato služba je součástí širší [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) sada nástrojů. U stávajících SQL Server zdrojů dat vám [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) může posuzovat a migrovat malý počet datových struktur.
 
-Aby bylo možné podporovat migrace Oracle a NoSQL, je možné [službu migrace dat (DMS)](https://docs.microsoft.com/azure/dms) použít také pro určité typy zdrojů pro cílové databáze, jako je například Oracle k PostgreSQL nebo MongoDB Cosmos DB. Pro účely migrace na Cosmos DB, HDInsight nebo možnosti virtuálního počítače založeného na IaaS je běžné, že týmy pro přijímání využívají nástroje třetích stran nebo vlastní skripty migrace.
+Aby bylo možné podporovat migrace Oracle a NoSQL, můžete také použít [Database Migration Service](https://docs.microsoft.com/azure/dms) pro určité typy databází typu zdroj-cíl. Mezi příklady patří Oracle to PostgreSQL a MongoDB to Cosmos DB. Týmy pro přijímání často využívají partnerské nástroje nebo vlastní skripty k migraci na Azure Cosmos DB, Azure HDInsight nebo možnosti virtuálních počítačů na základě infrastruktury jako služby (IaaS).
 
 ## <a name="considerations-and-guidance"></a>Pokyny a doprovodné materiály
 
-Pokud využíváte DMS pro migraci a modernizaci dat, je důležité pochopit aktuální platformu pro hostování dat (zdroje), verze a budoucí platformy a verze, které by nejlépe podporovaly zákaznickou hypotézu (cíl). Následující seznam uvádí zdrojové a cílové páry pro kontrolu s týmem migrace. Každá z nich zahrnuje výběr nástroje a odkaz na vodítko na základě těchto doporučení.
+Když použijete Database Migration Service pro migraci a modernizaci dat, je důležité pochopit:
 
-**Typ migrace:** Při offline migraci se spustí výpadek aplikace při spuštění migrace. V případě online migrace je doba výpadku omezená na dobu přímé migrace na konci migrace. Doporučujeme, abyste pochopili, co je to přijatelné provozní výpadky a otestovali offline migraci, abyste zjistili, jestli tento čas obnovení splňuje. Pokud ne, proveďte online migraci.
+- Aktuální platforma pro hostování zdroje dat.
+- Aktuální verze
+- Budoucí platforma a verze, které nejlépe podporují zákaznickou hypotézu nebo cíl.
+
+V následující tabulce jsou uvedeny zdrojové a cílové páry pro kontrolu s týmem migrace. Každý pár obsahuje možnost výběru nástroje a odkaz na související vodítko.
+
+### <a name="migration-type"></a>Typ migrace
+
+V případě offline migrace dojde při spuštění migrace k výpadku aplikace. V případě online migrace je doba výpadku omezená na dobu přímé migrace na konci migrace.
+
+Doporučujeme, abyste se rozhodli, že máte přijatelné provozní výpadky a otestujete offline migraci. Provedete to tak, abyste zkontrolovali, jestli doba obnovení vyhovuje přijatelnému výpadku. Pokud není čas obnovení přijatelný, proveďte online migraci.
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|DMS|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Azure SQL Database Managed Instance|DMS|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Azure SQL Database Managed Instance|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|SQL Server VP|Azure SQL Database (nebo spravovaná instance)|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
-|MySQL|Azure Database for MySQL|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
-|PostgreSQL|Azure Database for PostgreSQL|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MondoDB|Rozhraní API pro Azure Cosmos DB Mongo|DMS|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
-|MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|DMS|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Rozsah možností PaaS & IaaS|Třetí strana nebo Azure Migrate|Některé|[Rozhodovací strom](../../migrate/expanded-scope/data-oracle-migration.md)|
-|Různé NoSQL databáze|Možnosti Cosmo DB nebo IaaS|Postupy migrace a Azure Migrate|Některé|[Rozhodovací strom](../../migrate/expanded-scope/data-no-sql-migration.md)|
+|SQL Server|Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server VP|Azure SQL Database nebo Azure SQL Database spravované instance|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
+|MySQL|Azure Database for MySQL|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
+|PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
+|MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
+|MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
+|Oracle|Různé možnosti platformy jako služby (PaaS) a IaaS|Nástroj nebo Azure Migrate partnera|Offline nebo online|[Rozhodovací strom](../../migrate/expanded-scope/data-oracle-migration.md)|
+|Různé možnosti NoSQL DB|Možnosti Cosmo DB nebo IaaS|Postupy migrace a Azure Migrate|Offline nebo online|[Rozhodovací strom](../../migrate/expanded-scope/data-no-sql-migration.md)|

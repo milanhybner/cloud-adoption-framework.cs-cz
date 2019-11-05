@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240046"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565226"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
@@ -278,7 +278,7 @@ Abyste optimalizovali směrování pro uživatele obou poboček, musíte vědět
 
 - [Přečtěte si](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) o optimalizaci směrování.
 
-## <a name="securing-vnets"></a>Zabezpečení virtuálních sítí
+## <a name="secure-vnets"></a>Zabezpečení virtuální sítě
 
 Zodpovědnost za zabezpečení virtuálních sítí je sdílená mezi Microsoftem a vámi. Microsoft poskytuje mnoho síťových funkcí a služeb, které pomáhají zajistit zabezpečení zdrojů. K osvědčeným postupům při navrhování zabezpečení pro virtuální sítě patří implementace hraniční sítě, použití filtrování a skupin zabezpečení, zabezpečení přístupu k prostředkům a IP adresám a implementace ochrany před útoky.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058126"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566270"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
@@ -122,11 +122,11 @@ Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a
     4. Použijte `corporate-it-subscription-blueprint` podrobných plánů na každou místní instanci.
     5. Tím se vytvoří rozbočovač pro každou organizační jednotku v každé oblasti. Poznámka: můžete dosáhnout dalších úspor nákladů, ale sdílet centra napříč obchodními jednotkami v každé oblasti.
 6. Integrace objektů zásad skupiny (GPO) přes konfiguraci požadovaného stavu (DSC):
-    1. Převod objektu zásad skupiny na DSC – [projekt pro správu standardních hodnot Microsoft](https://github.com/Microsoft/BaselineManagement) v GitHubu může toto úsilí zrychlit. * Nezapomeňte úložiště DSC ukládat do úložiště paralelně s Správce prostředků šablonou.
+    1. Převod objektu zásad skupiny na DSC – [projekt pro správu standardních hodnot Microsoft](https://github.com/Microsoft/BaselineManagement) v GitHubu může toto úsilí zrychlit. Nezapomeňte úložiště DSC ukládat do úložiště paralelně s Správce prostředků šablonou.
     2. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
     3. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
 
-**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription` se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
+**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription`se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
 
 V předchozích iterativních změnách osvědčených postupů jsme definovali skupiny zabezpečení sítě k blokování veřejného provozu a povoleného interního provozu. Kromě toho Azure detailly dočasně vytvořil služby DMZ a funkce Active Directory. V této iteraci tyto assety přizpůsobíme trochu a vytvoříme novou verzi plánu Azure details.
 

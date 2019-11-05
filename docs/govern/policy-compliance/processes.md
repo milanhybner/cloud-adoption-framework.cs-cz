@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222042"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566117"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Po nasazení dalších prostředků a úloh bude tým zásad správného řízen
 
 Naplánujte vyhodnocení nových potenciálních rizik a příkazů zásad aktualizace a vodítek návrhu podle potřeby. Pracujte s pracovníky IT a týmy úloh a průběžně vyhodnoťte nové funkce a služby Azure. Také můžete naplánovat pravidelné revize každé z pěti oborů zásad správného řízení, abyste zajistili aktuálnost a dodržování zásad.
 
-### <a name="education"></a>Vzdělávání
+### <a name="education"></a>Education
 
 Dodržování zásad vyžaduje, aby pracovníci IT a vývojáři pochopili požadavky zásad, které mají vliv na jejich oblasti zodpovědnosti. Naplánujte vyhradit prostředky pro dokumentaci rozhodnutí a požadavky a informujte všechny příslušné týmy na návrhových průvodcích, které podporují vaše požadavky na zásady.
 
@@ -83,7 +83,7 @@ Některé příklady aktivačních událostí a akcí porušení:
 | Standardní hodnoty zabezpečení | Zjišťuje podezřelou aktivitu přihlášení uživatele. | Upozorněte tým zabezpečení IT a zakažte podezřelý uživatelský účet. |
 | Konzistence prostředků | Využití CPU pro úlohu je větší než 90%. | Upozorněte tým oddělení IT a nahorizontální navýšení kapacity pro zpracování zatížení. |
 
-## <a name="monitoring-and-compliance-automation"></a>Automatizace monitorování a dodržování předpisů
+## <a name="automation-of-monitoring-and-compliance"></a>Automatizace monitorování a dodržování předpisů
 
 Po definování aktivačních událostí a akcí narušení dodržování předpisů můžete začít s plánováním, jak nejlépe využít nástroje protokolování a vytváření sestav, a další funkce cloudové platformy, které vám pomůžou automatizovat strategii monitorování a dodržování zásad.
 

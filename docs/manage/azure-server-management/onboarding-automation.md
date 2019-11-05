@@ -1,54 +1,52 @@
 ---
-title: Automatizace zprovoznění a konfigurace výstrah
+title: Automatizace připojování
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Automatizace zprovoznění a konfigurace výstrah
+description: Automatizace připojování
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221368"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565390"
 ---
 # <a name="automate-onboarding"></a>Automatizace připojování
 
-Pro zlepšení efektivity nasazení služeb správy serveru Azure zvažte automatizaci nasazení služeb správy pomocí doporučení popsaných v předchozích částech tohoto návodu. Skript a ukázkové šablony, které jsou k dispozici v následujících částech, představují počáteční body pro vývoj vlastní automatizace procesů připojování.
+Pro zlepšení efektivity nasazení služeb správy serveru Azure zvažte možnost automatizace nasazení, jak je popsáno v předchozích částech tohoto návodu. Skript a ukázkové šablony, které jsou uvedené v následujících oddílech, představují počáteční body pro vývoj vlastní automatizace procesů připojování.
 
-## <a name="onboarding-by-using-automation"></a>Připojování pomocí automatizace
+V těchto pokynech se podporuje úložiště GitHub s ukázkovým kódem, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples). Úložiště poskytuje příklady skriptů a šablon Azure Resource Manager, které vám pomůžou automatizovat nasazení služeb Azure Server Management Services.
 
-Tato příručka obsahuje podporu úložiště GitHub Sample Code [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), která poskytuje ukázkové skripty a šablony pro Azure Resource Manager, které vám pomůžou automatizovat nasazení služby Azure Server Management Services.
+Ukázkové soubory ukazují, jak používat rutiny Azure PowerShell k automatizaci následujících úloh:
 
-Tyto ukázkové soubory ilustrují použití rutin Azure PowerShell k automatizaci následujících úloh:
+- Vytvořte [pracovní prostor Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Nebo použijte existující pracovní prostor, pokud splňuje požadavky. Podrobnosti najdete v tématu [plánování pracovních prostorů](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
-1. Vytvořte [pracovní prostor Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access) (nebo použijte existující pracovní prostor, pokud splňuje požadavky&mdash;, viz [plánování pracovního prostoru](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Vytvořte účet Automation. (Nebo použijte existující účet, pokud splňuje požadavky. Podrobnosti najdete v tématu [plánování pracovních prostorů](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
 
-2. Vytvořte účet Automation (nebo použijte existující účet, pokud splňuje požadavky&mdash;, viz [plánování pracovního prostoru](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Propojte účet Automation s pracovním prostorem Log Analytics. Pokud se připojujete pomocí Azure Portal, tento krok není povinný.
 
-3. Propojit účet Automation s pracovním prostorem Log Analytics (není nutné při připojování prostřednictvím portálu)
+- Pro pracovní prostor povolte Update Management a Change Tracking a inventář.
 
-4. Povolí Update Management a Change Tracking a inventář pro pracovní prostor.
+- Zprovoznění virtuálních počítačů Azure pomocí Azure Policy. Zásada nainstaluje agenta Log Analytics a Microsoft Dependency Agent na virtuální počítače Azure.
 
-5. Připojení virtuálních počítačů Azure pomocí Azure Policy (zásada nainstaluje agenta Log Analytics a agenta závislostí na virtuálních počítačích Azure).
+- Připojování místních serverů instalací agenta Log Analytics.
 
-6. Připojování místních serverů instalací agenta Log Analytics.
-
-Soubory popsané v následující tabulce se v této ukázce používají a můžete je přizpůsobit tak, aby podporovaly vlastní scénáře nasazení.
+V této ukázce se používají soubory popsané v následující tabulce. Můžete je přizpůsobit tak, aby podporovaly vlastní scénáře nasazení.
 
 | Název souboru | Popis |
 |-----------|-------------|
-| New-AMSDeployment. ps1 | Hlavní a orchestrující skript, který automatizuje registraci. Tento skript PowerShellu vyžaduje stávající předplatné, ale pokud neexistují, vytvoří se skupiny prostředků, umístění, pracovní prostor a účty Automation. |
+| New-AMSDeployment. ps1 | Hlavní a orchestrující skript, který automatizuje registraci. Vytvoří skupiny prostředků a účty umístění, pracovního prostoru a Automation, pokud už neexistují. Tento skript PowerShellu vyžaduje stávající předplatné. |
 | Pracovní prostor – AutomationAccount. JSON | Správce prostředků šablona, která nasazuje pracovní prostor a prostředky účtu služby Automation. |
-| WorkspaceSolutions.json | Správce prostředků šablona umožňující vaše požadovaná řešení v pracovním prostoru Log Analytics |
-| ScopeConfig.json | Správce prostředků šablona, která používá model výslovných přihlášení pro místní servery s řešením Change Tracking. Použití modelu výslovných výslovných přihlášení je volitelné. |
-| Enable-VMInsightsPerfCounters.ps1 | Skript prostředí PowerShell, který umožňuje VMInsight pro servery a nakonfiguruje čítače výkonu. |
-| ChangeTracking-Filelist.json | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
+| WorkspaceSolutions. JSON | Správce prostředků šablona umožňující požadovaná řešení v pracovním prostoru Log Analytics |
+| Prosím. JSON | Správce prostředků šablona, která používá model výslovných přihlášení pro místní servery s řešením Change Tracking. Použití modelu výslovných výslovných přihlášení je volitelné. |
+| Enable-VMInsightsPerfCounters. ps1 | PowerShellový skript, který umožňuje přehledy virtuálních počítačů pro servery a nakonfiguruje čítače výkonu. |
+| Sledování změn ve-Filelist. JSON | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
 
-New-AMSDeployment. ps1 můžete spustit pomocí následujícího příkazu:
+Pomocí následujícího příkazu spusťte New-AMSDeployment. ps1:
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

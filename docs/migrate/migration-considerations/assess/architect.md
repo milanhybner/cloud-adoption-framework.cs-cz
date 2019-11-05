@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240240"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566831"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Architektura úloh před migrací
 
@@ -37,7 +37,7 @@ Z výčtů předpokladů mohou vznikat překážky, které zpomalují průběh m
 - **Placení technických dluhů.** Některé zastaralé úlohy s sebou nesou vysoký technický dluh. Ten může dlouhodobě způsobovat problémy spočívající v rostoucích nákladech na hostování u poskytovatelů cloudu. Pokud technický dluh nepřirozeně zvyšuje náklady na hostování, je potřeba zvážit alternativní architektury.
 - **Vzorce uživatelských přenosů.** Stávající řešení můžou záviset na existujících vzorcích síťového směrování. Tyto vzorce můžou výrazně zpomalovat výkon. Navíc zavedení nového řešení hybridních sítí WAN může trvat týdny nebo měsíce. Proto je potřeba se na tyto překážky v procesu tvorby architektury včas připravit tím, že vezmete v úvahu vzorce přenosů dat a změny základních služeb infrastruktury.
 
-## <a name="accelerating-business-value"></a>Zrychlení obchodní hodnoty
+## <a name="accelerate-business-value"></a>Zrychlit obchodní hodnotu
 
 Některé scénáře můžou vyžadovat jinou architekturu než předpokládá strategie změny hostitele IaaS. Tady je několik příkladů:
 

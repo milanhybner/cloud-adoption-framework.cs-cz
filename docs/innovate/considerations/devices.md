@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047669"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565653"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Okolní prostředí: interakce se zařízeními
 
@@ -40,15 +40,15 @@ Okolní prostředí obvykle vyžaduje více než webovou aplikaci pro tyto dny. 
 
 Porozumění potřebě zákazníků a měření dopadu zákazníků vám pomůže určit, jestli je interakce zařízení nebo okolní prostředí nutná k ověření hypotézy. U každého z těchto datových bodů vám následující části pomůžou najít nejlepší řešení.
 
-## <a name="mobile-experience"></a>Mobilní prostředí
+## <a name="mobile-experience"></a>Mobilní webové prostředí
 
 V první fázi okolního prostředí se uživatel od počítače přesune jinam. Dnešní spotřebitelé a obchodní specialisté se dosouvají mezi mobilními a POČÍTAČovým zařízením plynule. Každá z platforem nebo zařízení, které zákazník používá, vytvoří nové možnosti. Přidání mobilního prostředí, které rozšiřuje primární řešení, je nejrychlejší způsob, jak vylepšit integraci do bezprostředního okolí zákazníka. I když je mobilní zařízení daleko od okolí, může to být blíže k bodu zákazníka, který potřebujete.
 
 Když jsou zákazníci mobilní a často mění umístění, mohou představovat nejrelevantnější formu prostředí pro konkrétní řešení. Za poslední desetiletí byly inovace často aktivované integrací stávajících řešení s mobilním prostředím.
 
-Azure App Services je skvělým příkladem tohoto přístupu. Během počátečních iterací se [funkce webové aplikace služby Azure App Services](/azure/app-service/overview) dá použít k otestování hypotézy. Protože je hypotéza složitější, [funkce mobilní aplikace služby Azure App Services](/azure/app-service-mobile/) může webovou aplikaci zvětšit tak, aby běžela na různých mobilních platformách.
+Azure App Services je skvělým příkladem tohoto přístupu. Během počátečních iterací se [funkce webové aplikace služby Azure App Services](https://docs.microsoft.com/azure/app-service/overview) dá použít k otestování hypotézy. Protože je hypotéza složitější, [funkce mobilní aplikace služby Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) může webovou aplikaci zvětšit tak, aby běžela na různých mobilních platformách.
 
-## <a name="mixed-reality"></a>Mixed realita
+## <a name="mixed-reality"></a>Smíšená realita
 
 Hybridní řešení realit reprezentují další úroveň zralosti pro okolní prostředí. Tento přístup rozšiřuje nebo replikuje okolí zákazníka; Vytvoří rozšíření realit pro zákazníka, který bude fungovat v rámci.
 
@@ -68,7 +68,7 @@ Toto prostředí je ideální, pokud je určitá forma zařízení konzistentně
 Příklady integrované reality v Azure můžou zahrnovat:
 
 - [Řešení azure Internet věcí (IoT)](https://docs.microsoft.com/azure/iot-fundamentals)– kolekce služeb v Azure, které každá pomoc při správě zařízení a tok dat z těchto zařízení do cloudu a back-endu koncovým uživatelům.
-- [Azure sphere](/azure-sphere)kombinace hardwaru a softwaru. Azure Sphere je innately zabezpečený způsob, jak umožnit stávajícímu zařízení bezpečně přenášet data mezi zařízením a řešeními IoT v Azure.
+- [Azure sphere](https://docs.microsoft.com/azure-sphere)kombinace hardwaru a softwaru. Azure Sphere je innately zabezpečený způsob, jak umožnit stávajícímu zařízení bezpečně přenášet data mezi zařízením a řešeními IoT v Azure.
 - [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk), senzory AI s pokročilými modely počítačových a řeči. Tyto senzory můžou shromažďovat vizuální a zvukové údaje z bezprostředního okolí a obdávat tyto vstupy do vašeho řešení.
 
 Pomocí všech tří z těchto nástrojů můžete shromažďovat data z přirozeného okolí a z hlediska potřeby zákazníka. Odtud vaše řešení může reagovat na tyto datové vstupy a vyřešit potřebu, někdy ještě předtím, než zákazník zaznamená, že došlo k triggeru pro tuto potřebu.
@@ -81,7 +81,7 @@ Virtuální asistenti a inteligentní reproduktory nabízejí skvělé příklad
 
 Produkční podlaha po celém světě poskytují další příklady upravené reality. V počátečních fázích integrované reality se na zařízeních zjistily podmínky, jako je třeba přehřívání, a pak se pomocí aplikace upozorní na člověka. V upravené realitě se zákazník může stále účastnit, ale smyčka zpětné vazby je užší. Na upravenou podlahovou základnu realit může jedno zařízení detekovat přehřívání v důležitém počítači někam podél čáry sestavení. Někde jinde na podlaze druhé zařízení zpomaluje produkci mírně, aby bylo možné počítač vychladnout a pak obnovit plný tempo při vyřešení podmínky. V takové situaci je zákazníkem druhý účastník. Zákazník používá vaši aplikaci k nastavení pravidel a pochopení, jak tato pravidla mají vliv na produkci, ale nejsou nutná pro smyčku zpětné vazby.
 
-Služby Azure popsané v [řešeních azure Internet věcí (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure sphere](/azure-sphere)a [Developer Kit pro Azure Kinect](https://docs.microsoft.com/azure/Kinect-dk) by mohly být součástí sady řešení s upravenou realitou. Vaše původní aplikace a obchodní logika by pak sloužily jako prostředník mezi vstupem v prostředí a změnou, která by se měla provádět ve fyzickém prostředí.
+Služby Azure popsané v [řešeních azure Internet věcí (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure sphere](https://docs.microsoft.com/azure-sphere)a [Developer Kit pro Azure Kinect](https://docs.microsoft.com/azure/Kinect-dk) by mohly být součástí sady řešení s upravenou realitou. Vaše původní aplikace a obchodní logika by pak sloužily jako prostředník mezi vstupem v prostředí a změnou, která by se měla provádět ve fyzickém prostředí.
 
 Digitální vlákna je dalším příkladem upravené reality. Tento pojem označuje digitální reprezentaci fyzického zařízení, které jsou k dispozici prostřednictvím počítačů, mobilních nebo hybridních formátů. Na rozdíl od méně sofistikovaných 3D modelů zobrazuje digitální vlákna data shromážděná ze skutečného zařízení ve fyzickém prostředí. Toto řešení umožňuje uživateli interakci s digitální reprezentací způsobem, který nebylo možné nikdy provést v reálném světě. V tomto přístupu fyzické zařízení upravují hybridní prostředí realit. Řešení však stále shromažďuje data z integrovaného řešení realit a používá tato data k vytvarování reality aktuálního okolí zákazníka.
 

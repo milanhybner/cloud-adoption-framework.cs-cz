@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047860"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565959"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Základní zásady zabezpečení pro Cloud – nativní
 
-[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na obecná témata zabezpečení, včetně ochrany sítě, digitálních prostředků, dat atd. Jak je uvedeno v příručce pro [kontrolu zásad](../policy-compliance/cloud-policy-review.md), rozhraní pro přijetí do cloudu zahrnuje tři úrovně **vzorových zásad**: cloudové nativní, podnikové a cloudové zásady pro jednotlivé obory. Tento článek popisuje ukázkovou zásadu cloudového nativního řešení pro základnu standardních hodnot zabezpečení.
+[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na obecná témata zabezpečení, včetně ochrany sítě, digitálních prostředků, dat atd. Jak je uvedeno v příručce pro [kontrolu zásad](../policy-compliance/cloud-policy-review.md), rozhraní pro přijetí do cloudu zahrnuje tři úrovně vzorových zásad: cloudové nativní, podnikové a cloudové zásady pro jednotlivé obory. Tento článek popisuje ukázkovou zásadu cloudového nativního řešení pro základnu standardních hodnot zabezpečení.
 
 > [!NOTE]
 > Společnost Microsoft není k dispozici pro diktování podnikových nebo firemních zásad. Tento článek vám pomůže připravit se na interní kontrolu zásad. Před pokusem o její použití se předpokládá, že tyto ukázkové zásady budou rozšířeny, ověřeny a testovány proti podnikovým zásadám. Nedoporučuje se používat Tato vzorová zásada jako.
@@ -82,7 +82,8 @@ Sledování zabezpečení je proaktivní strategie, která Audituje vaše prost�
 
 ### <a name="extending-cloud-native-policies"></a>Rozšíření zásad nativních pro Cloud
 
-Používání cloudu může snížit některé z bezpečnostních břemen. Microsoft poskytuje fyzické zabezpečení pro datacentra Azure a pomáhá chránit cloudovou platformu proti hrozbám infrastruktury, jako je DDoS útok. Vzhledem k tomu, že společnost Microsoft má každý den tisíce kyberbezpečnosti specialistů pracujících na zabezpečení, jsou prostředky pro detekci, prevenci a zmírnění kyberútokům značné. V současné době byly organizace v souvislosti s tím, že došlo k zabezpečení cloudu. nejdůležitější je vědět, že úroveň investic v lidech a specializované infrastruktuře od dodavatelů, jako je Microsoft, je Cloud bezpečnější než v místním prostředí. Datacenter.
+Používání cloudu může snížit některé z bezpečnostních břemen. Microsoft poskytuje fyzické zabezpečení pro datacentra Azure a pomáhá chránit cloudovou platformu proti hrozbám infrastruktury, jako je DDoS útok. Vzhledem k tomu, že společnost Microsoft má každý den tisíce kyberbezpečnosti specialistů pracujících na zabezpečení, jsou prostředky pro detekci, prevenci a zmírnění kyberútokům značné. I když se organizace použily pro starosti s tím, že Cloud byl zabezpečený, nejvíc teď chápe, že úroveň investic v lidech a specializované infrastruktuře od dodavatelů, jako je Microsoft, vede k bezpečnějšímu zabezpečení cloudu než většina místních datových center.
+Používání cloudu může snížit některé z bezpečnostních břemen. Microsoft poskytuje fyzické zabezpečení pro datacentra Azure a pomáhá chránit cloudovou platformu proti hrozbám infrastruktury, jako je DDoS útok. Vzhledem k tomu, že společnost Microsoft má každý den tisíce kyberbezpečnosti specialistů pracujících na zabezpečení, jsou prostředky pro detekci, prevenci a zmírnění kyberútokům značné. I když se organizace použily pro starosti s tím, že Cloud byl zabezpečený, nejvíc teď chápe, že úroveň investic v lidech a specializované infrastruktuře od dodavatelů, jako je Microsoft, vede k bezpečnějšímu zabezpečení cloudu než většina místních datových center.
 
 I v případě této investice do nativního směrného plánu zabezpečení v cloudu doporučujeme, aby všechny zásady standardních hodnot zabezpečení rozšířily výchozí zásady cloudu Native. Následují příklady rozšířených zásad, které je vhodné zvážit, i v cloudovém nativním prostředí:
 

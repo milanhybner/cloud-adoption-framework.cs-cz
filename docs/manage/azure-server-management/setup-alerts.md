@@ -8,20 +8,20 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5b11a97e78d5fcd1b2a2cc866f5a7062bc6a2977
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5d7469f8613b38ffdaefb41410409fba0c9109fd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029019"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565303"
 ---
 # <a name="set-up-basic-alerts"></a>Nastavení základních upozornění
 
-Klíčovou součástí správy prostředků je upozornění, když dojde k problémům. Upozornění vás aktivně informují o kritických stavech. Můžou být založené na triggerech z metrik, protokolů nebo problémů se stavem služby. V rámci připojování služeb pro správu Azure serveru můžete nastavit upozornění a oznámení, která vám pomůžou udržet vaše týmy IT vědět o případných problémech.
+Klíčovou součástí správy prostředků je upozornění, když dojde k problémům. Výstrahy proaktivně upozorňují na kritické podmínky na základě triggerů z metrik, protokolů nebo problémů se stavem služby. V rámci připojování služeb pro správu Azure serveru můžete nastavit výstrahy a oznámení, které vám pomůžou zajistit, aby vaši týmy IT věděli o všech problémech.
 
 ## <a name="azure-monitor-alerts"></a>Výstrahy Azure Monitor
 
-Azure Monitor nabízí [](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview) možnosti upozorňování, které vám upozorní e-mailem nebo zasíláním zpráv, když dojde k chybě. Tyto možnosti jsou založené na běžné platformě pro monitorování dat, která zahrnuje protokoly a metriky vygenerované vašimi servery a dalšími prostředky. Tato platforma umožňuje analyzovat data kombinovaná z několika prostředků pomocí běžné sady nástrojů v Azure Monitor, kterou můžete použít k aktivaci výstrah. Tyto triggery můžou zahrnovat:
+Azure Monitor nabízí funkce [upozorňování](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview) , které vám upozorní na to, že se něco pokazilo, prostřednictvím e-mailu nebo zprávy. Tyto možnosti jsou založené na běžné platformě pro monitorování dat, která zahrnuje protokoly a metriky vygenerované vašimi servery a dalšími prostředky. Pomocí běžné sady nástrojů v Azure Monitor můžete analyzovat data kombinovaná z několika prostředků a používat je k aktivaci výstrah. Tyto triggery můžou zahrnovat:
 
 - Hodnoty metriky.
 - Dotazy na hledání protokolu
@@ -29,15 +29,24 @@ Azure Monitor nabízí [](https://docs.microsoft.com/azure/azure-monitor/platfor
 - Stav základní platformy Azure.
 - Testuje dostupnost webu.
 
-Podrobnější popis zdrojů dat monitorování shromažďovaných touto službou najdete v [seznamu Azure monitor zdrojů dat](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources) .
+Podrobnější popis zdrojů dat monitorování, které tato služba shromažďuje, najdete v [seznamu Azure monitor zdrojů dat](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources) .
 
-Podrobnosti o ručním vytváření a správě výstrah pomocí portálu najdete v [dokumentaci k Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric).
+Podrobnosti o ručním vytváření a správě výstrah pomocí Azure Portal najdete v [dokumentaci k Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric).
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>Automatizované nasazení doporučených výstrah
 
-V této příručce doporučujeme povolit sadu 15 výstrah pro základní monitorování infrastruktury. Skripty pro nasazení najdete v [úložišti GitHub v sadě Azure Alert Toolkit](https://github.com/Microsoft/manageability-toolkits).
+V této příručce doporučujeme vytvořit sadu 15 výstrah pro základní monitorování infrastruktury. V [úložišti GitHub sady Azure Alert Toolkit](https://github.com/Microsoft/manageability-toolkits)najdete skripty pro nasazení.
 
-Tento balíček vytváří výstrahy pro nedostatek místa na disku, nedostatek dostupné paměti, vysokého využití procesoru, neočekávaného vypnutí, poškozených systémů souborů a běžných selhání hardwaru. Balíček používá jako příklad hardware serveru HP. Měli byste změnit nastavení v přidruženém konfiguračním souboru tak, aby odráželo váš hardware výrobce OEM. Do konfiguračního souboru můžete také přidat další čítače výkonu. Chcete-li nasadit balíček, spusťte soubor New-CoreAlerts. ps1.
+Tento balíček vytvoří výstrahy pro:
+
+- Nedostatek místa na disku
+- Nedostatek dostupné paměti
+- Vysoké využití procesoru
+- Neočekávaná vypnutí
+- Poškozené systémy souborů
+- Běžné chyby hardwaru
+
+Balíček používá jako příklad hardware serveru HP. Změňte nastavení v přidruženém konfiguračním souboru tak, aby odráželo váš hardware výrobce OEM. Do konfiguračního souboru můžete také přidat další čítače výkonu. Chcete-li nasadit balíček, spusťte soubor New-CoreAlerts. ps1.
 
 ## <a name="next-steps"></a>Další kroky
 

@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980076"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565705"
 ---
-# <a name="democratize-data"></a>Demokratizujte data
+# <a name="democratize-data"></a>Demokratizace dat
 
 Uhlí, olej a lidský potenciál byly tři nejdůležitější prostředky během revoluce v průmyslu. Tyto prostředky sestavily společnosti, posunuly trhy a nakonec změnily národy. V digitální ekonomice existují tři stejně důležité prostředky: data, zařízení a lidský potenciál. Každý z těchto prostředků má skvělé možnosti inovace. Pro jakékoli inovace v moderních obdobích jsou data novým olejem.
 
@@ -40,11 +40,11 @@ Primární nástroje pro sdílení dat přímo s příjemci dat zahrnují samoob
 > [!NOTE]
 > Než budete sdílet data, ujistěte se, že jste si přečetli následující oddíly. Sdílení dat může vyžadovat, aby zásady správného řízení poskytovaly ochranu pro sdílená data. Tato data se taky můžou rozložit mezi několika cloudy a můžou vyžadovat centralizaci. Většina dat se může dokonce nacházet v aplikacích, což bude vyžadovat shromažďování dat předtím, než je budete moct sdílet.
 
-### <a name="govern-data"></a>Řídit data
+### <a name="govern-data"></a>Řízení dat
 
 Sdílení dat může rychle vydávat MVP, který můžete použít v zákaznických konverzacích. Pokud ale chcete, aby se tato sdílená data mohla využít k užitečným znalostem, je potřeba trochu víc. Po ověření hypotézy prostřednictvím sdílení dat je v další fázi vývoje obvykle řízení dat.
 
-Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Například:
+Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Příklad:
 
 - **Je citlivá sdílená data?** [Data by se měla klasifikovat](../../govern/policy-compliance/data-classification.md) před jakýmkoli veřejným sdílením, aby se chránily zájmy zákazníků a společnosti.
 - **Pokud jsou data citlivá, jsou zabezpečená?** Ochrana citlivých dat by měla být požadavek na všechna democratized data. Příklad úlohy zaměřené na [zabezpečení datových řešení](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) poskytuje několik odkazů na zabezpečení dat.
@@ -80,7 +80,7 @@ Tyto různé formy dat můžete integrovat do centrálního úložiště dat v �
 
 **Virtualizovat:** Integrace a přijímání dat může někdy zpomalit inovace. Je-li řešení pro virtualizaci dat již k dispozici, může představovat přiměřenější přístup. Ingestování a integrace může způsobit i duplicitní požadavky na úložiště i vývoj, přidat latenci dat, zvýšit prostor pro útoky, aktivovat problémy s kvalitou a zvyšovat úsilí týkající se zásad správného řízení. Virtualizace dat je důležitější alternativa, která původní data opustí v jednom umístění a vytváří předávací dotazy nebo dotazy na zdrojová data uložená v mezipaměti.
 
-SQL Server 2017 a Azure SQL Data Warehouse obě [základní](/sql/relational-databases/polybase/polybase-guide) podpory, což je přístup k virtualizaci dat, který se nejčastěji používá v Azure.
+SQL Server 2017 a Azure SQL Data Warehouse obě [základní](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) podpory, což je přístup k virtualizaci dat, který se nejčastěji používá v Azure.
 
 ## <a name="next-steps"></a>Další kroky
 

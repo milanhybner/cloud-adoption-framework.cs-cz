@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979843"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564946"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Průvodce monitorováním cloudu: shromáždění správných dat
 
@@ -34,7 +34,7 @@ Způsob odpovědi na tyto otázky a kritéria pro upozorňování určují, jak 
 
 ## <a name="develop-a-monitoring-configuration"></a>Vývoj konfigurace monitorování
 
-Vlastník a tým monitorovací služby obvykle řídí společnou sadu aktivit pro vývoj konfigurace monitorování. Tyto činnosti začínají v počátečních fázích plánování, pokračují v testování a ověřování v neprodukčním prostředí a rozšiřuje se na nasazení v produkčním prostředí. Konfigurace monitorování jsou odvozeny ze známých režimů selhání, výsledků testů simulovaných selhání a zkušeností uživatelů v organizaci (oddělení služeb, provozu, inženýrů a vývojářů). Takové konfigurace předpokládají, že už služba existuje, migruje se do cloudu a není převedená do architektury.
+Vlastník a tým monitorovací služby obvykle řídí společnou sadu aktivit pro vývoj konfigurace monitorování. Tyto činnosti začínají v počátečních fázích plánování, pokračují v testování a ověřování v neprodukčním prostředí a rozšiřuje se na nasazení v produkčním prostředí. Konfigurace monitorování jsou odvozeny ze známých režimů selhání, výsledků testů simulovaných selhání a zkušeností uživatelů v organizaci (oddělení služeb, provozu, inženýrů a vývojářů). Takové konfigurace předpokládají, že už služba existuje, migruje se do cloudu a ještě není znovu navržená.
 
 Pro výsledky kvality na úrovni služby Sledujte stav a dostupnost těchto služeb včas v procesu vývoje. Pokud sledujete návrh této služby nebo aplikace jako dodatečně, vaše výsledky nebudou úspěšné.
 

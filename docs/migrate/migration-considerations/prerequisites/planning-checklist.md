@@ -1,5 +1,5 @@
 ---
-title: Migrační prostředí – kontrolní seznam pro plánování
+title: Kontrolní seznam pro plánování migračního prostředí
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ověřte před migrací připravenost prostředí.
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378387"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564569"
 ---
-# <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí – ověření připravenosti prostředí před migrací
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí: Ověření připravenosti na životní prostředí před migrací
 
 Jako počáteční krok v procesu migrace je potřeba vytvořit správné prostředí v cloudu pro příjem, hostování a podporu migrovaných prostředků. Tento článek obsahuje seznam toho, co je před migrací potřeba ověřit v aktuálním prostředí.
 

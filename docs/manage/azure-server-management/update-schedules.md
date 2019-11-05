@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e6e078859bb580794477328099b66d14009bdca
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5bb3e37073c3c5d7f401f6d6c706314172eecf88
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221409"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565268"
 ---
 # <a name="create-update-schedules"></a>Vytvoření plánů aktualizací
 
@@ -21,20 +21,20 @@ Plány aktualizací můžete spravovat pomocí Azure Portal nebo nových modulů
 
 Pokud chcete vytvořit plán aktualizace prostřednictvím Azure Portal, přečtěte si téma [Plánování nasazení aktualizace](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-Modul AZ. Automation teď podporuje konfiguraci správy aktualizací pomocí Azure PowerShell. [1.7.0 verzí](https://www.powershellgallery.com/packages/Az/1.7.0) modulu přidává podporu rutiny [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) , která umožňuje používat značky, umístění a uložená hledání ke konfiguraci plánů aktualizací pro flexibilní skupinu počítačů.
+Modul AZ. Automation teď podporuje konfiguraci správy aktualizací pomocí Azure PowerShell. [1.7.0 verze](https://www.powershellgallery.com/packages/Az/1.7.0) modulu přidává podporu rutiny [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) . Tato rutina vám umožní pomocí značek, umístění a uložených hledání nakonfigurovat plány aktualizací pro flexibilní skupinu počítačů.
 
 ## <a name="example-script"></a>Ukázkový skript
 
-Následující ukázkový skript ilustruje použití označování a dotazování k vytvoření dynamických skupin počítačů, na které můžete použít plány aktualizací. Provádí následující akce. Můžete se podívat na implementace konkrétních akcí při vytváření vlastních skriptů.
+Ukázkový skript v této části ukazuje použití značek a dotazování k vytváření dynamických skupin počítačů, na které můžete použít plány aktualizací. Provádí následující akce. Můžete se podívat na implementace konkrétních akcí při vytváření vlastních skriptů.
 
 - Vytvoří plán aktualizace Azure Automation, který spouští každou sobotu v 8:00.
 - Vytvoří dotaz pro počítače, které splňují tato kritéria:
-  - Nasazené v `westus`umístění `eastus`, nebo `eastus2` v Azure
-  - Mít pro ně použitou značkushodnotounastavenouna`Owner``JaneSmith`
-  - Mít pro ně použitou značkushodnotounastavenouna`Production``true`
-- Použije plán aktualizace na počítače s dotazem a nastaví dvakrát hodinový interval aktualizace.
+  - Nasazené v `westus`, `eastus`nebo `eastus2` umístění Azure
+  - Pro ně je použita značka `Owner` s hodnotou nastavenou na `JaneSmith`
+  - Pro ně je použita značka `Production` s hodnotou nastavenou na `true`
+- Aplikuje plán aktualizace na počítače s dotazem a nastaví dvakrát hodinový interval aktualizace.
 
-Před spuštěním ukázkového skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po spuštění skriptu budete muset zadat následující informace:
+Před spuštěním ukázkového skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po spuštění skriptu zadejte následující informace:
 
 - ID cílového předplatného
 - Cílová skupina prostředků
@@ -105,11 +105,11 @@ Před spuštěním ukázkového skriptu se budete muset přihlásit pomocí ruti
         -Duration (New-TimeSpan -Hours 2) `
         -AzureQuery $AzureQueries `
         -IncludedUpdateClassification Security,Critical
-    ```
+```
 
-## Next steps
+## <a name="next-steps"></a>Další kroky
 
-See examples of how to implement [common policies in Azure](./common-policies.md) that can help manage your servers.
+Podívejte se na příklady implementace [běžných zásad v Azure](./common-policies.md) , které vám pomůžou se správou vašich serverů.
 
 > [!div class="nextstepaction"]
-> [Common policies in Azure](./common-policies.md)
+> [Běžné zásady v Azure](./common-policies.md)

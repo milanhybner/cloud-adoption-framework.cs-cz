@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058086"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565728"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Běžné blokování a výzvy k inovacím
 
@@ -55,7 +55,7 @@ Metodologie inovací používá následující inovační obory, které vám pom
 - **Zdrojový kód a nasazení:** Spolupráce mezi vývojáři všech pokroků vylepšuje kvalitu i rychlost uvádění na trh. Integrace zpětné vazby a rychlé reakce na učení vedoucího trhu. Závazky na procesy sestavení, měření a učení vám pomůžou zrychlit rozhodování o přijímání nástrojů.
 - **Prediktivní řešení:** V digitální ekonomice stačí jednoduše vyhovět aktuálním potřebám vašich zákazníků. Zákazníci očekávají, že podniky budou předpovídat své další kroky a předpovídat jejich budoucí potřeby. Průběžné učení se často vyvíjí do nástrojů předpovědi. Složitost potřeb zákazníků a dostupnost dat vám pomůže definovat nejlepší nástroje a přístupy k předpovědi a ovlivnění.
 
-V digitální ekonomice čelí největšímu úsilí architektům, aby bylo jasné pochopit potřeby jejich vynálezu a přijetí a pak určili nejlepší cloudový nástroj pro poskytování těchto potřeb.
+V digitální ekonomice čelí největšímu úsilí architektům, aby bylo jasné pochopit potřeby jejich vynálezu a přijetí a pak určili nejlepší cloudové sada nástrojůy, které se budou dodávat na tyto potřeby.
 
 ## <a name="next-steps"></a>Další kroky
 
