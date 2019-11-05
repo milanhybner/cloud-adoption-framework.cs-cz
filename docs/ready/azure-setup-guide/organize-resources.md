@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379114"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980192"
 ---
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
@@ -159,7 +159,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 - **Automatizace:** Možná máte pravidelně spouštěné skripty, které provádějí akce na základě hodnoty značky, jako je „ČasVypnutí“ nebo „DatumZrušeníZřízení“.
 - **Fakturace:** Značky se můžou zobrazit na vaší faktuře. S jejich pomocí můžete fakturu segmentovat například pomocí značek „NákladovéStředisko“ nebo „PříjemceFaktury“.
 
-Každý prostředek nebo skupina prostředků může mít maximálně 15 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
+Každý prostředek nebo skupina prostředků může mít maximálně 50 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
 
 Další doporučení a příklady značek najdete v [pokynech k označování](../considerations/naming-and-tagging.md) v Architektuře přechodu na cloud.
 
