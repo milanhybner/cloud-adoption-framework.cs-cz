@@ -1,27 +1,27 @@
 ---
-title: Urychlení migrace pomocí hostitelů VMWare
+title: Urychlení migrace pomocí hostitelů VMware
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Urychlení migrace pomocí hostitelů VMWare
+description: Urychlení migrace pomocí hostitelů VMware
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980210"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566869"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>Urychlení migrace pomocí hostitelů VMWare
+# <a name="accelerate-migration-with-vmware-hosts"></a>Urychlení migrace pomocí hostitelů VMware
 
-Migrace celého hostitele VMWare může přesouvat více úloh a několik prostředků v rámci jedné migrace. Následující pokyny rozšiřují rozsah [příručky migrace do Azure](../azure-migration-guide/index.md) prostřednictvím migrace hostitele VMware. Většina úsilí požadovaná v tomto rozsahu rozšíření probíhá během navýšení požadavků a procesů migrace v rámci úsilí.
+Migrace celého hostitele VMware může přesouvat více úloh a několik prostředků v rámci jedné migrace. Následující pokyny rozšiřují rozsah [příručky migrace do Azure](../azure-migration-guide/index.md) prostřednictvím migrace hostitele VMware. Většina úsilí požadovaná v tomto rozsahu rozšíření probíhá během navýšení požadavků a procesů migrace v rámci úsilí.
 
-## <a name="suggested-prerequisites"></a>Navrhované předpoklady
+## <a name="suggested-prerequisites"></a>Doporučené požadavky
 
-Při migraci prvního hostitele VMWare do Azure musíte splnit několik požadavků na přípravu požadavků na identitu, síť a správu. Po splnění těchto požadavků by měl každý další hostitel vyžadovat, aby migrace významně nemusela být větší. Následující části obsahují další podrobnosti o požadavcích.
+Při migraci prvního hostitele VMware do Azure musíte splnit několik požadavků na přípravu požadavků na identitu, síť a správu. Po splnění těchto požadavků by měl každý další hostitel vyžadovat, aby migrace významně nemusela být větší. Následující části obsahují další podrobnosti o požadavcích.
 
 ### <a name="secure-your-azure-environment"></a>Zabezpečení prostředí Azure
 
@@ -44,15 +44,15 @@ Po navázání požadavků na správu můžete vytvořit privátní cloud sítě
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrace s plánem přijetí do cloudu
 
-Až splníte ostatní požadavky, měli byste zahrnout každého hostitele VMWare do [plánu přijetí do cloudu](../../plan/template.md). V rámci plánu přijetí do cloudu přidejte každého hostitele, který se má migrovat, jako [samostatnou úlohu](../../plan/workloads.md). V rámci každé úlohy přidejte virtuální počítače, které se mají migrovat jako [prostředky](../../plan/workloads.md). Chcete-li přidat úlohy a prostředky do plánu přijetí hromadně, přečtěte si téma [Přidání a úprava pracovních položek v aplikaci Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Až splníte ostatní požadavky, měli byste zahrnout každého hostitele VMware do [plánu přijetí do cloudu](../../plan/template.md). V rámci plánu přijetí do cloudu přidejte každého hostitele, který se má migrovat, jako [samostatnou úlohu](../../plan/workloads.md). V rámci každé úlohy přidejte virtuální počítače, které se mají migrovat jako [prostředky](../../plan/workloads.md). Chcete-li přidat úlohy a prostředky do plánu přijetí hromadně, přečtěte si téma [Přidání a úprava pracovních položek v aplikaci Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Změny procesu migrace
 
-Během každé iterace tým přijetí prostřednictvím nevyřízených položek provede migraci úloh s nejvyšší prioritou. Proces se ve skutečnosti nemění pro hostitele VMWare. Pokud je další úlohou backlogu hostitel VMWare, použije se tento nástroj jenom změna.
+Během každé iterace tým přijetí prostřednictvím nevyřízených položek provede migraci úloh s nejvyšší prioritou. Proces se ve skutečnosti nemění pro hostitele VMware. Pokud je další úlohou backlogu hostitel VMware, použije se tento nástroj jenom změna.
 
 V úsilí migrace můžete použít následující nástroje:
 
-- [Nativní nástroje VMWare](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Nativní nástroje VMware](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Další možností je migrovat úlohy pomocí převzetí služeb při selhání pro zotavení po havárii pomocí následujících nástrojů:

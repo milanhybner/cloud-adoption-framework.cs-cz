@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549114"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564280"
 ---
 # <a name="central-it-capabilities"></a>Centrální možnosti IT
 
@@ -93,7 +93,7 @@ Míry tohoto rizika představují rychlost a flexibilitu. Cloud zjednodušuje ry
 
 Řada oborů vyžaduje pevné dodržování předpisů třetí strany. Některé požadavky na dodržování předpisů stále vyžadují centralizovaný ovládací prvek IT. Doručení těchto měr dodržování předpisů může přidat čas do procesů nasazení, zejména pro nové technologie, které se v podstatě nepoužívaly. V těchto scénářích očekáváte zpoždění při nasazení v počátečních fázích přijetí. Podobné situace existují pro společnosti, které se týkají citlivých zákaznických dat, ale nemusí se řídit požadavkem na dodržování předpisů třetí strany.
 
-### <a name="operating-within-the-exceptions"></a>Fungování v rámci výjimek
+### <a name="operate-within-the-exceptions"></a>Provoz v rámci výjimek
 
 Když se vyžadují centralizované procesy IT a tyto procesy vytvoří vhodné kontrolní body při přijímání nových technologií, můžou se tyto kontrolní body pro inovace pořád řešit rychle. Požadavky zásad správného řízení a dodržování předpisů jsou navržené tak, aby chránily citlivé věci a nechránily všechno. Cloud poskytuje jednoduché mechanismy pro získání a nasazení izolovaných prostředků a současně zachovává správné guardrails.
 

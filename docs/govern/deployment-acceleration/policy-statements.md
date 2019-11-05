@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547764"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566353"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Ukázkové zásady akcelerace nasazení – příkazy
 
 Jednotlivé příkazy zásad cloudu jsou pokyny pro řešení konkrétních rizik zjištěných během procesu posouzení rizik. Tyto příkazy by měly poskytnout stručné shrnutí rizik a plánů, které je třeba řešit. Každá definice příkazu by měla obsahovat tyto informace:
 
-- **Technické riziko.** Souhrn rizika, které tato zásada bude řešit.
-- **Prohlášení o zásadách.** Jasné souhrnné vysvětlení požadavků zásad.
-- **Možnosti návrhu.** Užitečná doporučení, specifikace nebo další pokyny, které mohou týmy IT a vývojáři použít při implementaci těchto zásad.
+- **Technické riziko:** Souhrn rizika, které tato zásada bude řešit.
+- **Prohlášení o zásadách:** Jasné souhrnné vysvětlení požadavků zásad.
+- **Možnosti návrhu:** Užitečná doporučení, specifikace nebo další pokyny, které mohou týmy IT a vývojáři použít při implementaci těchto zásad.
 
 Následující ukázkové příkazy zásad řeší běžná obchodní rizika související s konfigurací. Tyto příkazy jsou příklady, na které můžete odkazovat při konceptech příkazů zásad, které řeší potřeby vaší organizace. Tyto příklady se nepovažují za podrobné a některé možnosti zásad se týkají každého identifikovaného rizika. Pracujte úzce s podnikáním a týmy IT a Identifikujte nejlepší zásady pro Vaši jedinečnou sadu rizik.
 

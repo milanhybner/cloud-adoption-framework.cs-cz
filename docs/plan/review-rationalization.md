@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833749"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564142"
 ---
 # <a name="review-rationalization-decisions"></a>Kontrola racionalizačních rozhodnutí
 
@@ -26,7 +26,7 @@ K ověření racionalizace rozhodnutí použijte následující otázky, které 
 
 ## <a name="innovation-indicators"></a>Indikátory inovace
 
-Pokud se v rámci společné recenze těchto otázek zobrazí odpověď "Ano", může být úlohou lepším kandidátem na inovace. Tato úloha by se nemohla migrovat přes model Shift/převedený nebo modernizovat. Místo toho se obchodní logika nebo datové struktury znovu vytvoří jako nová nebo znovu navržená aplikace. Tento přístup může být náročný na práci a časově náročné. Ale u úloh, které představují významné obchodní návratnost, se investice odůvodňuje.
+Pokud se v rámci společné recenze těchto otázek zobrazí odpověď "Ano", může být úlohou lepším kandidátem na inovace. Tato úloha by se nemohla migrovat přes model výtahu a Shift nebo modernizovat. Místo toho se obchodní logika nebo datové struktury vytvoří znovu jako nová nebo znovu navržená aplikace. Tento přístup může být náročný na práci a časově náročné. Ale u úloh, které představují významné obchodní návratnost, se investice odůvodňuje.
 
 - Vytvoří aplikace v tomto pracovním postupu rozlišení trhu?
 - Existují navrhované nebo schválené investice zaměřené na zlepšení prostředí přidružených k aplikacím v této zátěži?
@@ -67,7 +67,7 @@ Když spravujete plán přijetí cloudu v Azure DevOps, tato Správa se projeví
 
 V případě rozsáhlých složitých plánů přijetí s více různými projekty zvažte aktualizaci cesty iterace. Změna cesty k oblasti usnadňuje zobrazení úlohy pouze pro tým přiřazený k této cestě oblasti. Tato změna může usnadnit práci týmu pro přijetí cloudu tím, že snižuje počet viditelných úkolů. Přináší ale složitost pro procesy řízení projektu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 [Definujte iterace a vydání](./iteration-paths.md) pro zahájení plánování práce.
 

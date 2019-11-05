@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 894c4c7431533aa29ad7fcc1cd08046651987f10
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239790"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561752"
 ---
 # <a name="azure-fundamental-concepts"></a>Základní koncepty Azure
 
@@ -91,7 +91,7 @@ Následující materiály obsahují podrobné informace o konceptech rozebranýc
 - [Představení služby Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Přiřazení nebo přidání předplatného Azure do tenanta Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Topologie pro Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [Předplatná, licence, účty a tenanti pro cloudové nabídky Microsoftu](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Předplatná, licence, účty a tenanti pro cloudové nabídky Microsoftu](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Další kroky
 

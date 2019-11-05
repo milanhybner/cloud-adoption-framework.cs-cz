@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549227"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566913"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie pro zásady správného řízení nebo dodržování předpisů
 
@@ -38,14 +38,14 @@ Konfigurace základního prostředí Azure se při integraci požadavků na zás
 **Služby Microsoftu:** Služby společnosti Microsoft poskytují nabídky řešení, které se dají zarovnat k modelu zásad správného řízení v cloudu, plánů dodržování předpisů nebo k možnostem virtuálního datového centra, abyste zajistili nejvhodnější model zásad správného řízení nebo dodržování předpisů. Pomocí nabídky řešení [SCI (Secure Cloud Insights)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) vytvořte daty řízený obrázek zákaznického nasazení v Azure a během toho, co budete zjišťovat optimalizaci existujících architektur nasazení a eliminovat rizika související se zabezpečením a dostupností zásad správného řízení, ověřte vyspělost zákaznické implementace v Azure. Na základě těchto poznatků o zákazníkovi byste měli přijít s následujícími přístupy:
 
 - **Cloud Foundation:** Stanovte základní návrhy Azure, vzory a architekturu zásad správného řízení pomocí nabídky řešení [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) . Namapujte požadavky zákazníka na nejvhodnější referenční architekturu. Implementujte minimální realizovatelný produkt sestávající ze sdílených služeb a úloh IaaS.
-- **Modernizace cloudu:** Využijte řešení [cloudu pro moderní cloudy](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) , které nabízí ucelený přístup k přesunu aplikací, dat a infrastruktury do cloudu připraveného pro podniky a také k optimalizaci a modernizovatí v cloudu.
+- **Modernizace cloudu:** Řešení [moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) nabízíme jako ucelený přístup k přesunu aplikací, dat a infrastruktury do cloudu připraveného pro podniky a také k optimalizaci a modernizovatí po nasazení cloudu.
 - Inovace **pomocí cloudu:** Zapojte zákazníka prostřednictvím inovativního a jedinečného řešení [Cloud Center vynikajícího cloudu (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) , které vytvoří moderní organizaci IT, která umožní flexibilitu ve velkém měřítku s DevOps a přitom zůstává v řízení. Implementuje agilní přístup k zaznamenání firemních požadavků, opakovanému použití balíčků nasazení v souladu se zásadami zabezpečení, dodržování předpisů a správy služeb, a udržuje platformu Azure v souladu s provozními postupy.
 
 ## <a name="assess-process-changes"></a>Vyhodnocení změn procesu
 
 Během posuzování je potřeba učinit další rozhodnutí, aby bylo vše v souladu s požadovaným přístupem k zásadám správného řízení. Tým zásad správného řízení cloudu by měl všem členům týmu přechodu na cloud před posouzením úlohy poskytnout všechny zprávy o zásadách, pokyny k architektuře nebo požadavky na zásady správného řízení/dodržování předpisů.
 
-### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu posouzení
+### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu vyhodnocení
 
 Požadavky na posouzení zásad správného řízení a dodržování předpisů jsou příliš zákaznicky specifické, takže nelze poskytnout obecné pokyny pro skutečný postup posuzování. Doporučuje se však, aby tento proces obsahoval úkoly a čas na „uvedení do souladu s požadavky na dodržování předpisů a zásady správného řízení“. Další informace o těchto požadavcích najdete pod následujícími odkazy:
 

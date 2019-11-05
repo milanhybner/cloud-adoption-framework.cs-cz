@@ -1,5 +1,5 @@
 ---
-title: Motivací Proč se přesouváme do cloudu?
+title: 'Motivace: Proč se přesouváme do cloudu?'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloudové monitorování a přesun do cloudu
 author: BrianBlanchard
@@ -8,16 +8,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027083"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561608"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivací Proč se přesouváme do cloudu?
+# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivace: Proč se přesouváme do cloudu?
 
 "Proč se Přesouvám do cloudu?" je běžnou otázkou pro obchodní a technické účastníky. Pokud se jedná o odpověď, "naše deska (nebo CIO nebo vedoucí na úrovni C), abychom nás přesunuli do cloudu," je pravděpodobné, že podnik dosáhne požadovaných výsledků.
 
@@ -25,7 +25,7 @@ Tento článek pojednává o několika motivech za migraci do cloudu, které vá
 
 ## <a name="motivations"></a>Motivace
 
-Obchodní transformace, které podporuje přijetí do cloudu, můžou být řízené různými motivací. Je to i přesto, že je možné použít několik motivů najednou. Cílem seznamů v následující tabulce je pomáhat v sepalovacích nápadech týkajících se relevantních motivů. Odtud můžete určit prioritu a posoudit možné dopady motivace. V tomto článku doporučujeme, aby tým pro přijetí do cloudu splňovali různé vedoucí pracovníky a vedoucí firmy v níže uvedeném seznamu, abyste zjistili, které z těchto motivů jsou ovlivněny úsilím při přijetí cloudu.
+Obchodní transformace, které podporuje přijetí do cloudu, můžou být řízené různými motivací. Je pravděpodobnější, že se na stejnou dobu aplikuje několik motivů. Cílem seznamů v následující tabulce je pomáhat v sepalovacích nápadech týkajících se relevantních motivů. Odtud můžete určit prioritu a posoudit možné dopady motivace. V tomto článku doporučujeme, aby tým pro přijetí do cloudu splňovali různé vedoucí pracovníky a vedoucí firmy v níže uvedeném seznamu, abyste zjistili, které z těchto motivů jsou ovlivněny úsilím při přijetí cloudu.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -37,7 +37,7 @@ Obchodní transformace, které podporuje přijetí do cloudu, můžou být říz
 
 Vaše motivace pro přijetí do cloudu budou nejspíš do několika kategorií. Při sestavování seznamu motivů se pravděpodobně objeví trendy. Motivace je obvykle spojena s jednou klasifikací, než s ostatními. Pomocí předpřevládající klasifikace můžete pomáhat s vývojem strategie přijetí do cloudu.
 
-Když je odezva na kritické obchodní události nejvyšší prioritou, je důležité zapojit se do [implementace](../getting-started/migrate.md#cloud-implementation)v cloudu, často paralelně s strategií a plánováním úsilí. Provedení tohoto přístupu vyžaduje růst místo a ochotu pro iterativní vylepšit procesy na základě přímých lekcí, které se naučily.
+Když je odezva na kritické obchodní události nejvyšší prioritou, je důležité zapojit se do [implementace v cloudu](../getting-started/migrate.md#cloud-implementation), často paralelně s strategií a plánováním úsilí. Provedení tohoto přístupu vyžaduje růst místo a ochotu pro iterativní vylepšit procesy na základě přímých lekcí, které se naučily.
 
 Když je migrace nejvyšší prioritou, [strategie a plánování](../getting-started/migrate.md#cloud-strategy-and-planning) budou hrát důležitou roli včas v procesu. Doporučujeme [implementovat první úlohu](../getting-started/migrate.md#cloud-implementation) paralelně s plánováním, abyste týmu usnadnili pochopení a předvídání všech výukových křivek spojených s přijetím cloudu.
 
@@ -51,7 +51,7 @@ V této části se popisuje motiv *migrace* a *inovace* a jejich odpovídající
 
 ### <a name="migration"></a>Migrace
 
-Motivace *migrace* uvedená v seznamu v horní části tabulky motivace jsou nejběžnější, ale ne nutně nejdůležitější důvody pro přijetí cloudu. Tyto výsledky jsou důležité pro dosažení, ale ty se efektivně používají k přechodu na jiné, užitečnější worldviews. Tento důležitý první krok k přijetí cloudu se často označuje jako *migrace*do cloudu. Rozhraní odkazuje na strategii pro provádění migrace do cloudu pomocí termínu [migrace](../getting-started/migrate.md).
+Motivace *migrace* uvedená v seznamu v horní části tabulky motivace jsou nejběžnější, ale ne nutně nejdůležitější důvody pro přijetí cloudu. Tyto výsledky jsou důležité pro dosažení, ale ty se efektivně používají k přechodu na jiné, užitečnější worldviews. Tento důležitý první krok k přijetí cloudu se často označuje jako *migrace do cloudu*. Rozhraní odkazuje na strategii pro provádění migrace do cloudu pomocí termínu [migrace](../getting-started/migrate.md).
 
 Některé motivace se v souladu s strategií migrace dobře hodí. Podklady v horní části tohoto seznamu budou pravděpodobně výrazně menší než u konce seznamu.
 
@@ -77,7 +77,7 @@ Následující seznam obsahuje motivaci, která způsobí, že se organizace v o
 - Zlepšení zkušeností a zapojení zákazníků.
 - Transformace produktů nebo služeb.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Porozumění plánovaným obchodním výsledkům vám pomůže usnadnit konverzace, které potřebujete při dokumentaci motivů a podpory metrik, ve srovnání s vaší obchodní strategií. Potom si přečtěte přehled obchodních výsledků, které jsou běžně spojené s přesunem do cloudu.
 

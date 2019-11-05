@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224191"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566620"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Vypracování obchodního odůvodnění migrace do cloudu
 
@@ -22,19 +22,19 @@ Migrace do cloudu můžou vygenerovat včasnou návratnost investic z úsilí o 
 
 ## <a name="dispelling-cloud-migration-myths"></a>Mýty migrace do cloudu
 
-**Mýtus Cloud je vždycky levnější.** Často se předpokládá, že provozování Datacenter v cloudu je vždycky levnější než místní provoz. I když tento předpoklad může být obecně pravdivý, nejedná se vždy o případ. Někdy jsou cloudové provozní náklady vyšší. Tyto vyšší náklady jsou často způsobeny špatného řízení nákladů, nezarovnané systémové architektury, duplicity procesů, netypickými konfiguracemi systému nebo vyššími náklady na zaměstnance. Naštěstí můžete zmírnit mnohé z těchto problémů a vytvořit tak včasnou návratnost. Podle pokynů v tématu [sestavování obchodního odůvodnění](#building-the-business-justification) vám může pomoci detekovat a vyhnout se těmto chybovým zarovnáním. Přehláskování dalších mýty popsaných tady může také pomáhat.
+**Mýtus: Cloud je vždycky levnější.** Často se předpokládá, že provozování Datacenter v cloudu je vždycky levnější než místní provoz. I když tento předpoklad může být obecně pravdivý, nejedná se vždy o případ. Někdy jsou cloudové provozní náklady vyšší. Tyto vyšší náklady jsou často způsobeny špatného řízení nákladů, nezarovnané systémové architektury, duplicity procesů, netypickými konfiguracemi systému nebo vyššími náklady na zaměstnance. Naštěstí můžete zmírnit mnohé z těchto problémů a vytvořit tak včasnou návratnost. Podle pokynů v tématu [sestavování obchodního odůvodnění](#build-the-business-justification) vám může pomoci detekovat a vyhnout se těmto chybovým zarovnáním. Přehláskování dalších mýty popsaných tady může také pomáhat.
 
-**Mýtus Vše by mělo přejít do cloudu.** Některé obchodní ovladače ve skutečnosti můžou vést k výběru hybridního řešení. Před dokončením obchodního modelu je inteligentní, aby se dokončila první naplněná kvantitativní analýza, jak je popsáno v [článcích o digitální nemovitosti](../digital-estate/5-rs-of-rationalization.md). Další informace o jednotlivých kvantitativních ovladačích, které jsou zapojeny do racionalizace, najdete v části [5 RS of racionalizace](../digital-estate/5-rs-of-rationalization.md). Buď přístup použijete k získání dat inventáře a krátké kvantitativní analýzy k identifikaci úloh nebo aplikací, které by mohly mít za následek vyšší náklady v cloudu. Tyto přístupy můžou také identifikovat závislosti nebo vzory provozu, které by vyžadovaly hybridní řešení.
+**Mýtus: všechno by mělo přejít do cloudu.** Některé obchodní ovladače ve skutečnosti můžou vést k výběru hybridního řešení. Před dokončením obchodního modelu je inteligentní, aby se dokončila první naplněná kvantitativní analýza, jak je popsáno v [článcích o digitální nemovitosti](../digital-estate/5-rs-of-rationalization.md). Další informace o jednotlivých kvantitativních ovladačích, které jsou zapojeny do racionalizace, najdete v části [5 RS of racionalizace](../digital-estate/5-rs-of-rationalization.md). Buď přístup použijete k získání dat inventáře a krátké kvantitativní analýzy k identifikaci úloh nebo aplikací, které by mohly mít za následek vyšší náklady v cloudu. Tyto přístupy můžou také identifikovat závislosti nebo vzory provozu, které by vyžadovaly hybridní řešení.
 
-**Mýtus Zrcadlení v místním prostředí vám pomůže ušetřit peníze v cloudu.** Během plánování digitálního majetku není nevyslechnuta společnost, aby zjistila nevyužitou kapacitu o více než 50% zřízeného prostředí. Pokud jsou assety zřízené v cloudu tak, aby odpovídaly aktuálnímu zřizování, nákladové úspory se těžko uvědomují. Zvažte zmenšení velikosti nasazených assetů, které se budou zarovnávat se vzorci použití namísto vzorů zřizování.
+**Mýtus: zrcadlení v místním prostředí vám pomůže ušetřit peníze v cloudu.** Během plánování digitálního majetku není nevyslechnuta společnost, aby zjistila nevyužitou kapacitu o více než 50% zřízeného prostředí. Pokud jsou assety zřízené v cloudu tak, aby odpovídaly aktuálnímu zřizování, nákladové úspory se těžko uvědomují. Zvažte zmenšení velikosti nasazených assetů, které se budou zarovnávat se vzorci použití namísto vzorů zřizování.
 
-**Mýtus Náklady na server jsou v podnikových případech pro migraci do cloudu.** Někdy je tento předpoklad pravdivý. U některých společností je důležité snížit průběžné kapitálové výdaje související se servery. Ale závisí na několika faktorech. Společnosti, které mají pět let na osm let cyklus aktualizace hardwaru, nejsou pravděpodobně schopné při migraci do cloudu zobrazovat rychlé návratnosti. Společnosti, které mají normalizované nebo vynucené aktualizační cykly, můžou rychle narazit ukazatel na hranice. V obou případech mohou být dalšími výdaji finanční triggery, které opravňují k migraci. Tady je několik příkladů nákladů, které se obvykle přehledají, když společnosti přebírají zobrazení nákladů jenom na serveru nebo pro virtuální počítače:
+**Mýtus: Server vystavuje provozní případy migrace do cloudu.** Někdy je tento předpoklad pravdivý. U některých společností je důležité snížit průběžné kapitálové výdaje související se servery. Ale závisí na několika faktorech. Společnosti, které mají pět let na osm let cyklus aktualizace hardwaru, nejsou pravděpodobně schopné při migraci do cloudu zobrazovat rychlé návratnosti. Společnosti, které mají normalizované nebo vynucené aktualizační cykly, můžou rychle narazit ukazatel na hranice. V obou případech mohou být dalšími výdaji finanční triggery, které opravňují k migraci. Tady je několik příkladů nákladů, které se obvykle přehledají, když společnosti přebírají zobrazení nákladů jenom na serveru nebo pro virtuální počítače:
 
 - Náklady na software pro virtualizaci, servery a middleware můžou být rozsáhlé. Poskytovatelé cloudu eliminují některé z těchto nákladů. Mezi dva příklady poskytovatele cloudu snižující náklady na virtualizaci patří [zvýhodněné hybridní využití Azure](https://azure.microsoft.com/pricing/hybrid-benefit/#services) a programy [rezervací v Azure](https://azure.microsoft.com/reservations) .
 - Provozní ztráty způsobené výpadky můžou rychle překročit náklady na hardware a software. Pokud je vaše aktuální datacentrum nestabilní, pracujte s firmou a vyhodnotit dopad výpadků z hlediska nákladů na příležitosti nebo skutečných obchodních nákladů.
 - Náklady na životní prostředí můžou být také významné. V případě střední řady American je doma největší investice a nejvyšší náklady rozpočtu. Totéž platí pro datová centra často. Náklady na vlastnictví, zařízení a pomůcky reprezentují spravedlivou část místních nákladů. Když se datová centra vyřadí, můžou se tato zařízení změnit na účel, nebo se vaše podnikání může z těchto nákladů potenciálně uvolnit.
 
-**Mýtus Model s provozními náklady je lepší než model s kapitálovými náklady.** Jak je vysvětleno v článku o [fiskálních výsledcích](./business-outcomes/fiscal-outcomes.md) , může být dobrým modelem nákladů na operační systém. Ale některé obory zobrazují provozní výdaje negativně. Tady je několik příkladů, které aktivují užší integraci s účetními a obchodními jednotkami týkajícími se konverzace s provozními náklady:
+**Mýtus: model s provozními náklady je lepší než model s kapitálovými náklady.** Jak je vysvětleno v článku o [fiskálních výsledcích](./business-outcomes/fiscal-outcomes.md) , může být dobrým modelem nákladů na operační systém. Ale některé obory zobrazují provozní výdaje negativně. Tady je několik příkladů, které aktivují užší integraci s účetními a obchodními jednotkami týkajícími se konverzace s provozními náklady:
 
 - Když podnik uvidí kapitálové prostředky jako ovladač pro obchodní zhodnocení, snížení nákladů na velká písmena by mohla být negativním výsledkem. I když se nejedná o univerzální Standard, tento mínění se nejčastěji objevuje v maloobchodních, zpracovatelských a stavebních průmyslových odvětvích.
 - V případě privátního jmění nebo společnosti, která žádá o kapitálový výstup, se zvyšuje provozní náklady v podobě negativního výsledku.
@@ -44,7 +44,7 @@ U firmy je pravděpodobnější, že se provozní náklady budou lépe upřednos
 
 Než zadáte obchodní odůvodnění, které se zaměřuje na převod z kapitálu na provozní náklady, pochopte, co je pro vaši firmu lepší. Monitorování účtů a nákupů často usnadňuje zarovnávání zpráv s finančními cíli.
 
-**Mýtus Přechod na Cloud je podobný překlopení přepínače.** Migrace jsou ručně velmi náročné technické transformace. Při vývoji obchodního odůvodnění, zejména odůvodnění, která jsou citlivá na čas, vezměte v úvahu následující aspekty, které by mohly prodloužit dobu potřebnou k migraci prostředků:
+**Mýtus: přechod na Cloud je podobný překlopení přepínače.** Migrace jsou ručně velmi náročné technické transformace. Při vývoji obchodního odůvodnění, zejména odůvodnění, která jsou citlivá na čas, vezměte v úvahu následující aspekty, které by mohly prodloužit dobu potřebnou k migraci prostředků:
 
 - **Omezení šířky pásma:** Velikost pásma mezi aktuálním datacentrem a poskytovatelem cloudu bude během migrace řídit časové osy.
 - **Testování časových OS:** Testování aplikací s firmou pro zajištění připravenosti a výkonu může být časově náročné. Zarovnávání uživatelů a testovacích procesů je velmi důležité.
@@ -57,7 +57,7 @@ Technické a kulturní překážky mohou zpomalit přijetí v cloudu. V případ
 
 Pokud chcete maximalizovat připravenost a zmírnit rizika s časovou osou, připravujte vedoucí pracovníky na základě pevně zarovnávání obchodních hodnot a obchodních výsledků. Pomůžou účastníkům pochopit změny, které se budou pocházet s transformací. Musí být jasné a nastavovat reálná očekávání od začátku. Když lidé nebo technologie zpomalí proces, bude snazší zařadit vedoucí podporu.
 
-## <a name="building-the-business-justification"></a>Sestavování obchodního odůvodnění
+## <a name="build-the-business-justification"></a>Sestavení obchodního odůvodnění
 
 Následující postup definuje přístup k vývoji obchodních odůvodnění pro migrace do cloudu. Další informace o výpočtech a finančních výrazech najdete v článku o [finančních modelech](./financial-models.md).
 
@@ -73,7 +73,7 @@ Tuto rovnici můžeme rozbalit a získat tak pohled na vzorce pro vstupní prom�
 - Někteří poskytovatelé cloudu také poskytují cenové a rozdílové kalkulačky. [Kalkulačka celkové náklady na vlastnictví Azure](https://azure.com/tco) je jedním z příkladů.
 - Pro přesnější cenové struktury Vezměte v úvahu [plánování digitálního majetku](../digital-estate/index.md) .
 - Odhadnout náklady na migraci.
-- Odhad nákladů na všechny očekávané příležitosti školení. [Microsoft Learn](/learn) může být možné snížit náklady.
+- Odhad nákladů na všechny očekávané příležitosti školení. [Microsoft Learn](https://docs.microsoft.com/learn) může být možné snížit náklady.
 - V některých firmách může být potřeba zahrnout čas, který investovali stávající zaměstnanci, do počátečních nákladů. Pokyny pro finanční informace najdete v Office.
 - Prodiskutujte jakékoli další náklady nebo náklady na režie s financemi k ověření.
 

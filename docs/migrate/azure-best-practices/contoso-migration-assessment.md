@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221451"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566494"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Posouzení místních úloh pro migraci do Azure
 
@@ -45,7 +45,7 @@ Tento diagram znázorňuje současnou místní infrastrukturu společnosti Conto
 - V rámci USA má společnost Contoso ještě tři další místní pobočky.
 - Hlavní datacentrum je připojené k internetu přes optické připojení Metro Ethernet (500 Mb/s).
 - Každá pobočka je místně připojená k internetu přes podnikové přípojky s tunely VPN IPSec, které vedou zpátky do hlavního datacentra. Díky tomuto nastavení může být celá síť společnosti Contoso trvale připojená a má optimální připojení k internetu.
-- Hlavní datacentrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje vCenter Server 6.5.
+- Hlavní datové centrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje vCenter Server 6.5.
 - Společnost Contoso ke správě identit používá Active Directory. Společnost Contoso využívá servery DNS v interní síti.
 - Řadiče domény v datacentru běží na virtuálních počítačích VMware. Řadiče domény v místních pobočkách běží na fyzických serverech.
 
@@ -73,7 +73,7 @@ Společnost Contoso k posouzení migrace použije nástroje Microsoftu. Tyto ná
 
 Technologie | Popis | Náklady
 --- | --- | ---
-[Pomocník s migrací dat](/sql/dma/dma-overview?view=ssdt-18vs2017) | Společnost Contoso využije nástroj Data Migration Assistant k vyhodnocení a detekci problémů s kompatibilitou, které můžou ovlivnit fungování databází v Azure. Data Migration Assistant vyhodnotí paritu funkcí mezi zdroji a cíli SQL. Doporučí vylepšení z hlediska výkonu a spolehlivosti. | Nástroj Data Migration Assistant je zdarma ke stažení.
+[Pomocník s migrací dat](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Společnost Contoso využije nástroj Data Migration Assistant k vyhodnocení a detekci problémů s kompatibilitou, které můžou ovlivnit fungování databází v Azure. Data Migration Assistant vyhodnotí paritu funkcí mezi zdroji a cíli SQL. Doporučí vylepšení z hlediska výkonu a spolehlivosti. | Nástroj Data Migration Assistant je zdarma ke stažení.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Společnost Contoso využije službu Azure Migrate k posouzení svých virtuálních počítačů VMware. Azure Migrate posoudí vhodnost těchto počítačů k migraci. Poskytne odhad velikostí a nákladů při jejich provozu v Azure. | Od května 2018 je služba Azure Migrate bezplatná.
 [Mapa služeb](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate využívá Service Map k zobrazení závislostí mezi počítači, které chce společnost migrovat. | Service Map je součástí protokolů služby Azure Monitor. V současné době může společnost Contoso využívat Service Map po dobu 180 dnů bez poplatků.
 
@@ -98,7 +98,7 @@ V tomto scénáři společnost Contoso stáhne a spustí nástroj Data Migration
   - Na virtuálním počítači **OSTICKETWEB** běží Apache 2 a PHP 7.0.
   - Na virtuálním počítači **OSTICKETMYSQL** běží MySQL 5.7.22.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Společnost Contoso a další uživatelé musí splňovat následující požadavky pro posouzení:
 
@@ -121,17 +121,17 @@ Společnost Contoso provede posouzení následujícím způsobem:
 
 > [!div class="checklist"]
 >
-> - **Krok 1: Stažení a instalace nástroje Data Migration Assistant.** Společnost Contoso připraví nástroj Data Migration Assistant na posouzení místní databáze SQL Serveru.
-> - **Krok 2: Posouzení databáze pomocí nástroje Data Migration Assistant.** Společnost Contoso spustí posouzení databáze a provede jeho analýzu.
-> - **Krok 3: Příprava na posouzení virtuálních počítačů pomocí služby Azure Migrate.** Společnost Contoso nastaví místní účty a upraví nastavení VMware.
-> - **Krok 4: Zjišťování místních virtuálních počítačů pomocí služby Azure Migrate.** Společnost Contoso vytvoří virtuální počítač kolektoru Azure Migrate. Pak společnost Contoso spustí kolektor a vyhledá virtuální počítače k posouzení.
-> - **Krok 5: Příprava na analýzu závislostí pomocí služby Azure Migrate.** Společnost Contoso na virtuální počítače nainstaluje agenty Azure Migrate, aby mohla zobrazit mapování závislostí mezi virtuálními počítači.
-> - **Krok 6: Posouzení virtuálních počítačů pomocí služby Azure Migrate.** Společnost Contoso zkontroluje závislosti, seskupí virtuální počítače a spustí posouzení. Jakmile bude posouzení připravené, společnost Contoso v rámci přípravy na migraci provede analýzu posouzení.
+> - **Krok 1: Stáhněte a nainstalujte Data Migration Assistant.** Společnost Contoso připraví nástroj Data Migration Assistant na posouzení místní databáze SQL Serveru.
+> - **Krok 2: vyhodnocení databáze pomocí Data Migration Assistant.** Společnost Contoso spustí posouzení databáze a provede jeho analýzu.
+> - **Krok 3: Příprava na posouzení virtuálních počítačů pomocí Azure Migrate.** Společnost Contoso nastaví místní účty a upraví nastavení VMware.
+> - **Krok 4: zjištění místních virtuálních počítačů pomocí Azure Migrate.** Společnost Contoso vytvoří virtuální počítač kolektoru Azure Migrate. Pak společnost Contoso spustí kolektor a vyhledá virtuální počítače k posouzení.
+> - **Krok 5: Příprava na analýzu závislostí pomocí Azure Migrate.** Společnost Contoso na virtuální počítače nainstaluje agenty Azure Migrate, aby mohla zobrazit mapování závislostí mezi virtuálními počítači.
+> - **Krok 6: posouzení virtuálních počítačů pomocí Azure Migrate.** Společnost Contoso zkontroluje závislosti, seskupí virtuální počítače a spustí posouzení. Jakmile bude posouzení připravené, společnost Contoso v rámci přípravy na migraci provede analýzu posouzení.
 
     > [!NOTE]
     > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
 
-## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1: Stažení a instalace nástroje Data Migration Assistant
+## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1: stažení a instalace Data Migration Assistant
 
 1. Společnost Contoso si z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) stáhne nástroj Data Migration Assistant.
     - Nástroj Data Migration Assistant je možné nainstalovat na jakýkoli počítač, který se může připojit k instanci SQL Serveru. Společnost Contoso ho nemusí spouštět na počítači s SQL Serverem.
@@ -139,7 +139,7 @@ Společnost Contoso provede posouzení následujícím způsobem:
 2. Společnost Contoso spustí stažený instalační soubor (DownloadMigrationAssistant.msi) a zahájí instalaci.
 3. Před dokončením průvodce na stránce **Finish** (Dokončit) společnost Contoso vybere **Launch Microsoft Data Migration Assistant** (Spustit nástroj Microsoft Data Migration Assistant).
 
-## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Krok 2: Spuštění a analýza posouzení databáze pro SmartHotel360
+## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Krok 2: spuštění a analýza vyhodnocení databáze pro SmartHotel360
 
 Teď může společnost Contoso spustit posouzení a analyzovat svou místní databázi SQL Serveru pro aplikaci SmartHotel360.
 
@@ -188,7 +188,7 @@ Jakmile budou k dispozici, zobrazí se výsledky. Pokud společnost Contoso něj
     ![Data Migration Assistant – Sestava Feature recommendations (Doporučení funkcí)](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Společnost Contoso by pro všechny databáze SQL Serveru měla [povolit transparentní šifrování dat](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). To je ještě důležitější v případě, že je databáze v cloudu, a není hostovaná v místním prostředí. Transparentní šifrování dat by se mělo povolit až po migraci. Pokud je transparentní šifrování dat již povolené, společnost Contoso musí přenést certifikát nebo asymetrický klíč do hlavní databáze cílového serveru. Informace o [přesunu databáze chráněné transparentním šifrováním dat do jiné instance SQL Serveru](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)
+    > Společnost Contoso by pro všechny databáze SQL Serveru měla [povolit transparentní šifrování dat](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). To je ještě důležitější v případě, že je databáze v cloudu, a není hostovaná v místním prostředí. Transparentní šifrování dat by se mělo povolit až po migraci. Pokud je transparentní šifrování dat již povolené, společnost Contoso musí přenést certifikát nebo asymetrický klíč do hlavní databáze cílového serveru. Informace o [přesunu databáze chráněné transparentním šifrováním dat do jiné instance SQL Serveru](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)
 
 3. Společnost Contoso může posouzení exportovat ve formátu JSON nebo CSV.
 
@@ -196,10 +196,10 @@ Jakmile budou k dispozici, zobrazí se výsledky. Pokud společnost Contoso něj
 > V případě rozsáhlých posouzení:
 >
 > - Spusťte několik posouzení současně a zobrazte jejich stav na stránce **All assessments** (Všechna posouzení).
-> - Konsolidujte posouzení do [databáze SQL Serveru](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
-> - Konsolidujte posouzení do [sestavy Power BI](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
+> - Konsolidujte posouzení do [databáze SQL Serveru](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
+> - Konsolidujte posouzení do [sestavy Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
 
-## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Krok 3: Příprava na posouzení virtuálních počítačů pomocí služby Azure Migrate
+## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Krok 3: Příprava na posouzení virtuálních počítačů pomocí Azure Migrate
 
 Společnost Contoso musí vytvořit účet VMware, který služba Azure Migrate může použít k automatickému zjišťování virtuálních počítačů k posouzení, ověřit, že má oprávnění k vytvoření virtuálního počítače, poznamenat si porty, které je potřeba otevřít, a nastavit úroveň nastavení statistiky.
 
@@ -207,9 +207,9 @@ Společnost Contoso musí vytvořit účet VMware, který služba Azure Migrate 
 
 Zjišťování virtuálních počítačů vyžaduje na vCenter Serveru účet jen pro čtení, který má následující vlastnosti:
 
-- **Typ uživatele:** Alespoň uživatel jen pro čtení
-- **Oprávnění:** Pro objekt datacentra zaškrtněte políčko **Rozšířit na podřízené objekty**. Jako **Role** vyberte **Jen pro čtení**.
-- **Podrobnosti:** Uživatel je přiřazený na úrovni datacentra s přístupem ke všem objektům v datacentru.
+- **Typ uživatele:** Alespoň uživatel jen pro čtení.
+- **Oprávnění:** V případě objektu datacentra zaškrtněte políčko **rozšířit do podřízených objektů** . Jako **Role** vyberte **Jen pro čtení**.
+- **Podrobnosti:** Uživatel se přiřadí na úrovni datového centra a bude mít přístup ke všem objektům v datacentru.
 - Pokud chcete omezit přístup, přiřaďte podřízeným objektům (hostitelé vSphere, úložiště dat, virtuální počítače a sítě) roli **Žádný přístup** s objektem **Rozšířit na podřízený objekt**.
 
 ### <a name="verify-permissions-to-create-a-vm"></a>Ověření oprávnění k vytvoření virtuálního počítače
@@ -247,7 +247,7 @@ Následujícím způsobem nastavte nový projekt Azure Migrate.
 
 7. Klikněte na **Další**.
 
-8. V části **Vybrat nástroj pro posouzení** vyberte **Azure Migrate: Server Assessment** > **Další**.
+8. V **nástroji vybrat nástroj pro posouzení**vyberte **Azure Migrate: posouzení serveru** > **Další**.
 
     ![Azure Migrate – Nástroj pro posouzení](./media/contoso-migration-assessment/assessment-tool.png)
 
@@ -259,9 +259,9 @@ Následujícím způsobem nastavte nový projekt Azure Migrate.
 
 ### <a name="download-the-collector-appliance"></a>Stažení zařízení kolektoru
 
-1. V části **Cíle migrace** > **Servery** > **Azure Migrate: Hodnocení serverů** klikněte na **Zjistit**.
+1. V ** > ** **cíli migrace** > **Azure Migrate: posouzení serveru**, **klikněte na zjistit**.
 
-2. V části **Zjistit počítače** > **Máte počítače ve virtuální podobě?** klikněte na **Ano, s hypervisorem VMware vSphere**.
+2. V > **zjišťovat počítače** **jsou vaše počítače virtualizované?** klikněte na **Ano, pomocí VMware vSphere hypervisoru**.
 
 3. Pokud si chcete stáhnout soubor šablony .OVA, klikněte na **Stáhnout**.
 
@@ -279,7 +279,7 @@ Před nasazením virtuálního počítače společnost Contoso zkontroluje, jest
     **Příklad:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Vygenerovaná hodnota hash by měla odpovídat hodnotám hash uvedeným v části [Ověření zabezpečení](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) v kurzu [Posouzení virtuálních počítačů VMware pro migraci](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
+3. Vygenerovaná hodnota hash by měla odpovídat hodnotám hash uvedeným v části [ověření zabezpečení](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) v kurzu [vyhodnocení virtuálních počítačů VMware pro migraci](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
 ### <a name="create-the-collector-appliance"></a>Vytvoření zařízení kolektoru
 
@@ -305,7 +305,7 @@ Teď společnost Contoso spustí kolektor a vyhledá virtuální počítače. V 
     ![Konzola vSphere Client – Zástupce kolektoru](./media/contoso-migration-assessment/collector-shortcut-v2.png)
 
 3. Ve službě Azure Migrate Collector společnost Contoso vybere **Nastavit požadavky**. Společnost Contoso přijme licenční podmínky a přečte si informace třetích stran.
-4. Kolektor zkontroluje, že má virtuální počítač připojení k internetu, synchronizaci času a spuštění služby kolektoru. (Služba kolektoru je na virtuálním počítači nainstalovaná ve výchozím nastavení.) Společnost Contoso také nainstaluje sadu VMware vSphere Virtual Disk Development Kit.
+4. Kolektor zkontroluje, že má virtuální počítač připojení k internetu, synchronizaci času a spuštění služby kolektoru. (Ve výchozím nastavení je ve virtuálním počítači nainstalovaná služba kolektoru.) Contoso nainstaluje taky VMware vSphere sadu Virtual disk Development Kit.
 
     > [!NOTE]
     > Předpokládá se, že má virtuální počítač přímý přístup k internetu bez použití proxy.
@@ -394,6 +394,7 @@ Společnost Contoso spustí instalaci na všech virtuálních počítačích.
     `sudo -i`
 
 3. Společnost Contoso nainstaluje agenta MMA:
+
     - Společnost Contoso v rámci příkazu zadá ID a klíč pracovního prostoru.
     - Příkazy jsou určené pro 64bitovou architekturu.
     - ID a primární klíč pracovního prostoru se nacházejí v pracovním prostoru služby Log Analytics na webu Azure Portal. Stačí vybrat **Nastavení** a pak kartu **Připojené zdroje**.
@@ -415,7 +416,7 @@ Po instalaci MMA nainstaluje contoso agenta závislostí na virtuální počíta
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
     ```
 
-## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Krok 6: Spuštění a analýza posouzení virtuálních počítačů
+## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Krok 6: spuštění a analýza posouzení virtuálního počítače
 
 Společnost Contoso teď může ověřit závislosti počítačů a vytvořit skupinu. Pak pro tuto skupinu spustí posouzení.
 
@@ -469,7 +470,7 @@ Posouzení má hodnocení spolehlivosti od 1 do 5 hvězdiček (1 hvězdička je 
 - Hodnocení spolehlivosti je užitečné v případě, že provádíte *určování velikosti na základě výkonu*. Azure Migrate nemusí mít dostatek datových bodů k určení velikosti na základě využití. V případě *určování stejné velikosti jako v místním prostředí* je hodnocení spolehlivosti vždy 5 hvězdiček, protože Azure Migrate má k dispozici všechny datové body, které k určení velikosti virtuálního počítače potřebuje.
 - Tady je poskytnuté hodnocení spolehlivosti posouzení v závislosti na procentu dostupných datových bodů:
 
-   Dostupnost datových bodů | Míra spolehlivosti
+   Dostupnost datových bodů | Hodnocení spolehlivosti
    --- | ---
    0 až 20 % | 1 hvězdička
    21 až 40 % | 2 hvězdičky

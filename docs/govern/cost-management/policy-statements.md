@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220936"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566407"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management ukázkové příkazy zásad
 
 Jednotlivé příkazy zásad cloudu jsou pokyny pro řešení konkrétních rizik zjištěných během procesu posouzení rizik. Tyto příkazy by měly poskytnout stručné shrnutí rizik a plánů, které je třeba řešit. Každá definice příkazu by měla obsahovat tyto informace:
 
-- **Obchodní riziko.** Souhrn rizika, které tato zásada bude řešit.
-- **Prohlášení o zásadách.** Jasné souhrnné vysvětlení požadavků zásad.
-- **Možnosti návrhu.** Užitečná doporučení, specifikace nebo další pokyny, které mohou týmy IT a vývojáři použít při implementaci těchto zásad.
+- **Obchodní riziko:** Souhrn rizika, které tato zásada bude řešit.
+- **Prohlášení o zásadách:** Jasné souhrnné vysvětlení požadavků zásad.
+- **Možnosti návrhu:** Užitečná doporučení, specifikace nebo další pokyny, které mohou týmy IT a vývojáři použít při implementaci těchto zásad.
 
 Následující vzorové příkazy zásad řeší běžná obchodní rizika související s náklady. Tyto příkazy jsou příklady, na které můžete odkazovat při konceptech příkazů zásad, které řeší potřeby vaší organizace. Tyto příklady se nepovažují za podrobné a některé možnosti zásad se týkají každého identifikovaného rizika. Pracujte úzce s podnikáním a týmy IT a Identifikujte nejlepší zásady pro Vaši jedinečnou sadu rizik.
 

@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030045"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566761"
 ---
-# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipatterny organizace: Sila a fiefdoms
+# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipatterny organizace: sila a fiefdoms
 
 Úspěch v rámci jakékoli zásadní změny firemních postupů, jazykové verze nebo technologických operací vyžaduje růst místo. Na srdci růstu místo je přijetí změn a možnost vést k nejednoznačnosti.
 
@@ -64,7 +64,7 @@ I v toxických kulturách by snaha CCoE a tým zásad správného řízení clou
 
 Tento antipattern často vystává ze společného zaujetí pro konkrétní řešení. Siloy IT se pak posílí pokročilou dovedností týmu v důsledku investic do tohoto konkrétního řešení. Tato nadřazená dovednost může být akcelerátorem snahy o přijetí do cloudu, pokud se odolnost proti změnám může překonat. Může se také stát hlavním blokováním, pokud jsou sila rozčleněné nebo pokud členové týmu nemůžou přesně vyhodnotit možnosti. Naštěstí se siloy IT můžou často překonat bez jakýchkoli podstatných změn v organizačním diagramu.
 
-### <a name="addressing-resistance-from-it-silos"></a>Řešení rezistence od sila IT
+### <a name="address-resistance-from-it-silos"></a>Odolnost proti adresám od sila IT
 
 Siloy IT se dají řešit pomocí následujících přístupů. Nejlepší přístup bude záviset na hlavní příčině rezistence.
 
@@ -78,7 +78,7 @@ Experimentování a vystavení jsou výkonné nástroje pro rozdělení překá�
 
 Během revize konkurenčního řešení použijte postupy uvedené v tématu [definování podnikových zásad](../govern/corporate-policy.md) , které vám pomůžou zdokumentovat hmotná rizika experimentu a vytvořit zásady, které pomůžou silou týmu lépe vyhovovat vašemu budoucímu stavu. Tím zveřejníte tým pro nová řešení a posílíte budoucí řešení.
 
-**Mít "nejenom" hranici:** Týmy, které řídí přijetí v oblasti cloudu, usnadňují nabízení hranic tím, že budou zkoumat zajímavá a nová řešení nativní pro Cloud. Jedná se o jednu polovinu přístupu k odebrání hranic. To však může dál posílit silou IT. Příliš rychlé doručování změn a bez ohledu na stávající jazykové verze může způsobit nefunkční tření a vede k přirozené rezistenci.
+**Mít "** nejenom" hranici: Týmy, které řídí přijetí v oblasti cloudu, usnadňují nabízení hranic tím, že budou zkoumat zajímavá a nová řešení nativní pro Cloud. Jedná se o jednu polovinu přístupu k odebrání hranic. To však může dál posílit silou IT. Příliš rychlé doručování změn a bez ohledu na stávající jazykové verze může způsobit nefunkční tření a vede k přirozené rezistenci.
 
 Když siloy začnou odolat, je důležité mít bez hranice ve svých vlastních řešeních. Je potřeba mít na vědomí jednu jednoduchou pravdivost: Cloud-Native není vždy nejlepším řešením. Uvažujte o hybridních řešeních, která by vám mohla nabídnout možnost roztáhnout stávající investice do sila IT do budoucna.
 
@@ -112,16 +112,18 @@ Fiefdoms jsou obzvláště běžné v organizacích, které mají zkušenosti IT
 
 Obecně platí, že fiefdoms je výsledkem správce linky, který obavy ztrátu týmu a přidružené napájecí základny. Tyto vedoucí často mají smysl ke svému týmu a potřebují chránit své podřízené položky před negativními důsledky. Fráze, jako je například "Ochrana týmu před změnou" a "Ochrana týmu před přerušením procesu", mohou být indikátory překrytého manažera, který může vyžadovat větší podporu od vedoucího procesu.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Řešení rezistence od IT fiefdoms
+### <a name="address-resistance-from-it-fiefdoms"></a>Odolnost proti adresám od IT fiefdoms
 
-Fiefdoms může předvést určitý nárůst pomocí přístupů za účelem [vyřešení rezistence pro sila IT](#addressing-resistance-from-it-silos). Před pokusem o vyřešení rezistence od IT fiefdom doporučujeme, abyste před týmem nacházeli jako s silou IT. Pokud tyto typy přístupů nepřinesou značnou změnu, může být odolný tým trpící antipatternem IT fiefdom. Hlavní příčinou IT fiefdoms je poněkud složitější adresa, protože tento odolnost je zavedená od přímého manažera line (nebo vedoucího navýšení v organizačním grafu). Problémy, které jsou řízeny silou, jsou obvykle jednodušší k překonání.
+Fiefdoms může předvést určitý nárůst pomocí přístupů za účelem [vyřešení rezistence pro sila IT](#address-resistance-from-it-silos). Před pokusem o vyřešení rezistence od IT fiefdom doporučujeme, abyste před týmem nacházeli jako s silou IT. Pokud tyto typy přístupů nepřinesou značnou změnu, může být odolný tým trpící antipatternem IT fiefdom. Hlavní příčinou IT fiefdoms je poněkud složitější adresa, protože tento odolnost je zavedená od přímého manažera line (nebo vedoucího navýšení v organizačním grafu). Problémy, které jsou řízeny silou, jsou obvykle jednodušší k překonání.
 
 Pokud je pokračující odolnost od IT fiefdoms zablokuje úsilí o přijetí cloudu, může být vhodné vzít v kombinaci úsilí, aby vyhodnotila situaci se stávajícími vedoucími IT. Před provedením rozhodnutí by měli vedoucí IT pečlivě zvážit poznatky z [týmu cloudové strategie](./cloud-strategy.md), [cloudové centra excelence](./cloud-center-of-excellence.md)a [týmu zásad správného řízení cloudu](./cloud-governance.md) .
 
 > [!NOTE]
-> Vedoucí by nikdy neměli provádět změny v organizačním diagramu lehce. Měly by taky ověřovat a analyzovat zpětnou vazbu ze všech pomocných týmů. Transformativní úsilí, jako je třeba přijetí v cloudu, ale v některých případech pozměnila v případě, že se v tomto úsilí nevšimla nebo nevyřešila, dlouho. V případě, že fiefdoms brání úspěchu společnosti, je pravděpodobná změna vedoucího prvku.
+> Vedoucí by nikdy neměli provádět změny v organizačním diagramu lehce. Měly by taky ověřovat a analyzovat zpětnou vazbu ze všech pomocných týmů. Nicméně transformační úsilí, jako je třeba testování v cloudu, je v úmyslu zvětšit základní problémy, které se před tímto úsilím neinformovaly nebo nevyřešily dlouho. V případě, že fiefdoms brání úspěchu společnosti, je pravděpodobná změna vedoucího prvku.
 >
 > Naštěstí odebrání vedoucího procesu fiefdom často nekončí ukončením. Tyto silné zapálených vedoucí se často můžou po krátké době reflexe přesunout do role správy. Díky správné podpoře může být tato změna v pořádku pro vedoucí fiefdom a aktuální tým.
+
+<!-- -->
 
 > [!CAUTION]
 > Pro správce IT fiefdoms je ochrana týmu před rizikovou hodnotou jasného vedoucího. Mezi ochranou a izolací je ale dostačit čára. Pokud je tým zablokován z účasti na změnách v řízení, může mít psychologický a profesionální důsledky pro tým. Považovat za nevhodný nárok na změnu může být silná, zejména v době viditelné změny.
@@ -130,9 +132,9 @@ Pokud je pokračující odolnost od IT fiefdoms zablokuje úsilí o přijetí cl
 
 Fiefdoms může být znaménkem systémových potíží s vedoucími. Aby bylo možné překonat IT fiefdom, vedoucí oddělení IT potřebují schopnost provádět změny operací, odpovědností a občas i osob, které poskytují správu řádků konkrétních týmů. Pokud jsou tyto změny požadovány, je vhodné tyto změny řešit pomocí jasných a defensible datových bodů.
 
-K zajištění potřebné změny se může vyžadovat sblížení obchodních zúčastněných stran, motivů v podniku a výsledků firmy. Partnerství s [týmem cloudové strategie](./cloud-strategy.md), [cloudovou](./cloud-center-of-excellence.md)službou excelence a [týmem zásad správného řízení cloudu](./cloud-governance.md) můžou poskytovat datové body, které jsou potřebné pro defensible pozici. V případě potřeby by měly být tyto týmy zapojené do eskalace skupiny, aby se vyřešily výzvy, které se nedají řešit samotným vedoucím IT.
+K zajištění potřebné změny se může vyžadovat sblížení obchodních zúčastněných stran, motivů v podniku a výsledků firmy. Partnerství s [týmem cloudové strategie](./cloud-strategy.md), [cloudovou službou excelence](./cloud-center-of-excellence.md)a [týmem zásad správného řízení cloudu](./cloud-governance.md) můžou poskytovat datové body, které jsou potřebné pro defensible pozici. V případě potřeby by měly být tyto týmy zapojené do eskalace skupiny, aby se vyřešily výzvy, které se nedají řešit samotným vedoucím IT.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Přerušení práce v organizaci je úsilím týmu. K tomu, abyste mohli pracovat s těmito pokyny, Projděte si Úvod k organizaci připravenosti organizace a Identifikujte správné týmové struktury a účastníky:
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3f80454b864ae89f15a3be6d736192545683a0ed
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239281"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566524"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Opětovné hostování místní aplikace na virtuálních počítačích Azure a skupin dostupnosti Always On SQL Server
 
@@ -96,7 +96,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 
 **Služba** | **Popis** | **Náklady**
 --- | --- | ---
-[Pomocník s migrací dat](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA se spouští místně z místního počítače s SQL Serverem a migruje databáze přes síť site-to-site VPN do Azure. | Nástroj DMA je zdarma ke stažení.
+[Pomocník s migrací dat](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA se spouští místně z místního počítače s SQL Serverem a migruje databáze přes síť site-to-site VPN do Azure. | Nástroj DMA je zdarma ke stažení.
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery orchestruje a spravuje migraci a zotavení po havárii pro virtuální počítače Azure a místní virtuální počítače a fyzické servery. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. [Další informace](https://azure.microsoft.com/pricing/details/site-recovery) o poplatcích a cenách
 
 ## <a name="migration-process"></a>Proces migrace
@@ -657,7 +657,7 @@ Bezpečnostní tým společnosti Contoso zkontroluje virtuální počítače Azu
 
 - V rámci řízení přístupu tým zkontroluje skupiny zabezpečení sítě pro virtuální počítač. Skupiny zabezpečení sítě zajišťují, aby se k aplikaci dostal jen povolený provoz.
 - Tým zváží zabezpečení dat na disku pomocí služeb Azure Disk Encryption a Key Vault.
-- Tým by měl vyhodnotit transparentní šifrování dat a pak ho povolit v databázi SmartHotel360 běžící v nové skupině dostupnosti SQL. [Další informace](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
+- Tým by měl vyhodnotit transparentní šifrování dat a pak ho povolit v databázi SmartHotel360 běžící v nové skupině dostupnosti SQL. [Další informace](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
 Další informace najdete v tématu [osvědčené postupy zabezpečení pro úlohy IaaS v Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 

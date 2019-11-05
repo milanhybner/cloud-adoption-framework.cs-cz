@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239341"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566433"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Příklady a vzory migrace aplikací
 
@@ -88,7 +88,7 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 [Změna hostitele aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database](./contoso-migration-rehost-vm-sql-managed-instance.md) | V tomto článku najdete příklad migrace typu výtah a Shift do Azure pro místní aplikaci. Zahrnuje migraci virtuálního počítače front-endu aplikace pomocí služby [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) a migraci databáze aplikace do spravované instance Azure SQL Database s využitím [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Tento příklad ukazuje, jak migrovat aplikaci a data pomocí virtuálních počítačů s SQL Serverem hostovaných v Azure. K migraci virtuálních počítačů aplikace používá Site Recovery a k migraci databáze aplikace do clusteru SQL Server, který je chráněný skupinou dostupnosti Always On, používá službu Azure Database Migration Service.
 
-### <a name="aspnet--php--java-apps"></a>Aplikace v ASP.NET/PHP/Javě
+### <a name="aspnet-php-and-java-apps"></a>Aplikace ASP.NET, PHP a Java
 
 **Článek** | **Podrobnosti**
 --- | ---

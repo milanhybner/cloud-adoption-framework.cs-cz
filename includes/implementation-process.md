@@ -47,7 +47,7 @@ První rozhodnutí o urychlení nasazení je vzor pro vynucení. V tomto mluven�
 - I když se používají skupiny pro správu Azure, očekává se relativně jednoduchá hierarchie.
 - Plány Azure budou použity k nasazení a aktualizaci předplatných pomocí požadavků na RBAC, Správce prostředků šablon a Azure Policy napříč skupinami pro správu.
 
-## <a name="applying-the-dependent-patterns"></a>Použití závislých vzorů
+## <a name="apply-the-dependent-patterns"></a>Použití závislých vzorů
 
 Následující rozhodnutí reprezentují vzorce, které se mají vynucovat přes strategii vynucení zásad výše:
 

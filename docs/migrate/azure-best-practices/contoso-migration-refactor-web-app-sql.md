@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0118fcf3ca5b724a90d5e68482bfe6fe1a7e6abb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548202"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566574"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoring místní aplikace do webové aplikace Azure App Service a databáze SQL Azure
 
@@ -97,7 +97,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 
 **Služba** | **Popis** | **Náklady**
 --- | --- | ---
-[Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Společnost Contoso využije DMA k vyhodnocení a detekci problémů s kompatibilitou, které mohou ovlivnit fungování databáze v Azure. DMA vyhodnotí paritu funkcí mezi zdroji a cíli SQL a doporučí vylepšení výkonu a spolehlivosti. | Tento nástroj je zdarma ke stažení.
+[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Společnost Contoso využije DMA k vyhodnocení a detekci problémů s kompatibilitou, které mohou ovlivnit fungování databáze v Azure. DMA vyhodnotí paritu funkcí mezi zdroji a cíli SQL a doporučí vylepšení výkonu a spolehlivosti. | Tento nástroj je zdarma ke stažení.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Inteligentní, plně spravovaná relační cloudová databázová služba | Náklady závisejí na funkcích, propustnosti a velikosti. [Další informace](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tvorba výkonných cloudových aplikací s využitím plně spravované platformy | Náklady závisejí na velikosti, umístění a využití. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
@@ -168,7 +168,7 @@ Správci Contoso budou migrovat databázi SmartHotel360 pomocí DMA.
 
 1. Tento nástroj si stáhnou z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) do místního virtuálního počítače s SQL Serverem (**SQLVM**).
 2. Na tomto virtuálním počítači spustí instalační program (DownloadMigrationAssistant.msi).
-3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit Microsoft Data Migration Assistanta).
+3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit nástroj Microsoft Data Migration Assistant).
 
 ### <a name="migrate-the-database-with-dma"></a>Migrace databáze s využitím DMA
 

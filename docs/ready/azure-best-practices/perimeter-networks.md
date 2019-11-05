@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240169"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564021"
 ---
 # <a name="perimeter-networks"></a>Sítě perimetru
 
@@ -27,9 +27,9 @@ Aby hraniční sítě byly účinné, musí příchozí pakety projít přes bez
 Hraniční sítě využívají následující funkce a služby Azure:
 
 - [Virtuální sítě][virtual-networks], [trasy definované uživatelem][user-defined-routes] a [skupiny zabezpečení sítě][network-security-groups]
-- [Síťová virtuální zařízení][NVA] (NVA)
+- [Síťová virtuální zařízení (síťová virtuální zařízení)][NVA]
 - [Nástroj pro vyrovnávání zatížení Azure][ALB]
-- [Azure Application Gateway][AppGW] a [firewall webových aplikací][AppGWWAF] (WAF)
+- [Azure Application Gateway][AppGW] a [Firewall webových aplikací (WAF)][AppGWWAF]
 - [Veřejné IP adresy][PIP]
 - [Azure Front Door Service][AFD] s [firewallem webových aplikací][AFDWAF]
 - [Azure Firewall][AzFW]

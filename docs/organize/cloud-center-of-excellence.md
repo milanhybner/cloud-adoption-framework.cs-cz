@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224336"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564303"
 ---
 # <a name="cloud-center-of-excellence"></a>Vedoucí centrum cloudu
 
@@ -92,7 +92,7 @@ V systému Exchange pro tyto výhody může stávající funkce IT proměňovat 
 
 V zdravých společnostech předávaných v cloudu je tento proces vyjednávání dynamická konverzace mezi partnerskými a partnerskými týmy IT. Technické podrobnosti můžou být složité, ale dají se spravovat, když rozumí cíli a podporují CCoE úsilí. Pokud je menší než podpora, následující část týkající se povolení úspěchu CCoE může pomoci překonat kulturní blokování.
 
-## <a name="enabling-ccoe-success"></a>Povolení CCoE úspěšné
+## <a name="enable-ccoe-success"></a>Povolit úspěch CCoE
 
 Než budete pokračovat v tomto modelu, je důležité ověřit toleranci společnosti pro růst místo a je to dobré, aby se uvolnily střední zodpovědnosti. Jak je uvedeno výše, účelem CCoE je vyměňovat si řízení flexibility a rychlosti.
 

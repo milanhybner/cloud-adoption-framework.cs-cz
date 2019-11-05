@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549173"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564646"
 ---
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
@@ -82,7 +82,7 @@ Toto jsou hlavní fáze typického zapojení do programu FastTrack for Azure:
 
 **Přijmout:** Prostřednictvím [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)pro služby Microsoftu můžete zřídit základní návrhy Azure, vzory a architekturu zásad správného řízení tím, že své požadavky namapujete na nejvhodnější referenční architekturu a naplánujete, navrhujete a nasazujete infrastrukturu. pro úlohy se vyžaduje Správa, zabezpečení a identita.
 
-**Migrovat/optimalizovat:** [Řešení moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) pro služby Microsoftu nabízí komplexní přístup k přesunu aplikací a infrastruktury do Azure a také k optimalizaci a modernizovati v cloudu, kterou zajišťuje zjednodušená migrace.
+**Migrovat/optimalizovat:** [Řešení moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) pro služby Microsoftu nabízí ucelený přístup k přesunu aplikací a infrastruktury do Azure a také k optimalizaci a modernizovatí po nasazení cloudu, které zajišťuje zjednodušená migrace.
 
 Inovace **:** [Řešení Cloud Center of vynikající verze společnosti Microsoft (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) nabízí DevOps výukovým Engagement a používá zásady DevOps v kombinaci s předm nativním cloudovým řízením služeb a bezpečnostními prvky zabezpečení, které vám pomůžou při firemních inovacích. Zvyšte flexibilitu a omezte čas na hodnotu v rámci zabezpečené, předvídatelné a flexibilní funkce pro poskytování služeb a provozu.
 

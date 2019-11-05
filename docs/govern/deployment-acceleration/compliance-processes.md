@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222584"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566381"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy kompatibility zásad akcelerace nasazení
 
@@ -48,7 +48,7 @@ Ujistěte se, že vaše provozní týmy IT implementovaly automatizované monito
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Aktivační události porušení a akce vynucení
 
-Vzhledem k tomu, že neshoda se zásadami konfigurace může vést k důležitým rizikům při přerušení služeb, tým zásad správného řízení cloudu by měl mít přehled o závažných porušeních zásad. Ujistěte se, že zaměstnanci oddělení IT mají k dispozici jasné cesty pro eskalaci pro oznamování problémů s kompatibilitou konfigurace pro členy týmu zásad správného řízení, které nejlépe vyhovují, aby identifikovali a ověřili, že problémy s
+Vzhledem k tomu, že neshoda se zásadami konfigurace může vést k důležitým rizikům při přerušení služeb, tým zásad správného řízení cloudu by měl mít přehled o závažných porušeních zásad. Zajistěte, aby zaměstnanci oddělení IT měli jasné eskalační cesty pro vytváření sestav o problémech s dodržováním zásad konfigurace pro členy týmu zásad správného řízení, které nejlépe vyhovují tomu, aby identifikovali a ověřili, že při zjištění
 
 Po zjištění porušení byste měli provést akce, aby se zásady znovu zarovnaly co nejdřív. Váš IT tým může automatizovat aktivační události narušení pomocí nástrojů, které jsou uvedené v části [akcelerace nasazení sada nástrojů pro Azure](./toolchain.md).
 
@@ -56,7 +56,7 @@ Následující triggery a akce vynucení poskytují příklady, které můžete 
 
 - **Zjištěny neočekávané změny v konfiguraci.** Pokud se konfigurace prostředku neočekávaně změní, pracujte s pracovníky IT a vlastníky úloh a Identifikujte hlavní příčinu a vytvořte plán oprav.
 - **Konfigurace nových prostředků nedodržuje zásady.** Pracujte s DevOps týmy a vlastníky úloh a Projděte si zásady akcelerace nasazení během spuštění projektu, aby všichni členové pochopili relevantní požadavky zásad.
-- **Selhání nasazení nebo problémy s konfigurací způsobují zpoždění v plánech projektu.** Pracujte s vývojovými týmy a vlastníky úloh a zajistěte, aby tým pochopil, jak automatizovat nasazení cloudových prostředků pro zajištění konzistence a opakovatelnosti. Plně automatizovaná nasazení by se měla vyžadovat v předstihu v&mdash;cyklu vývoje, který se snaží dosáhnout pozdě v cyklu vývoje, obvykle vede k neočekávaným problémům a prodlevám.
+- **Selhání nasazení nebo problémy s konfigurací způsobují zpoždění v plánech projektu.** Pracujte s vývojovými týmy a vlastníky úloh a zajistěte, aby tým pochopil, jak automatizovat nasazení cloudových prostředků pro zajištění konzistence a opakovatelnosti. V předčasném vývojovém cyklu by se měla vyžadovat plně automatizovaná nasazení&mdash;se při pokusu o dosažení tohoto zpoždění v cyklu vývoje obvykle vede k neočekávaným problémům a prodlevám.
 
 ## <a name="next-steps"></a>Další kroky
 

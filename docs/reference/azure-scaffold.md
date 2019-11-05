@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058167"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561812"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -263,7 +263,7 @@ Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále 
 - **Service map:** Service Map poskytuje grafické zobrazení komponent infrastruktury, jejich procesů a vzájemných závislostí na jiných počítačích a externích procesech. Provádí integraci událostí, údajů o výkonu a řešení pro správu v Log Analytics.
 
 > [!TIP]
-> Před vytvořením jednotlivých výstrah vytvořte a udržujte sadu sdílených skupin akcí, které se dají používat v rámci výstrah Azure. To vám umožní centrálně udržovat životní cyklus seznamů příjemců, způsob doručení oznámení (e-mail, telefonní čísla SMS) a Webhooky k externím akcím (Azure Automation Runbooky, Azure Functions/Logic Apps, ITSM).
+> Před vytvořením jednotlivých výstrah vytvořte a udržujte sadu sdílených skupin akcí, které se dají používat v rámci výstrah Azure. To vám umožní centrálně udržovat životní cyklus seznamů příjemců, způsob doručení oznámení (e-mail, telefonní čísla SMS) a Webhooky k externím akcím (Azure Automation Runbooky, Azure Functions a Logic Apps, ITSM).
 
 ## <a name="cost-management"></a>Správa nákladů
 
@@ -284,7 +284,7 @@ Tyto nástroje poskytují rychlé informace o nákladech a také možnost prová
 
 - **Power BI Azure Consumption Insights:** Chcete vytvořit vlastní vizualizace pro vaši organizaci? Pokud ano, pak Azure Consumption Insights balíčku obsahu pro Power BI je vámi zvolený nástroj. Pomocí tohoto balíčku obsahu a Power BI můžete vytvořit vlastní vizualizace, které reprezentují vaši organizaci, dělat hlubší analýzu nákladů a přidávat je do dalších zdrojů dat pro další obohacení.
 
-- **Rozhraní API pro vyčerpání:** [Rozhraní API pro spotřebu](/rest/api/consumption) poskytují programový přístup k datům o nákladech a využití navíc k informacím o rozpočtech, rezervovaných instancích a poplatkům na webu Marketplace. Tato rozhraní API jsou přístupná jenom pro podnikové registrace a některé webové přímé odběry, ale poskytují možnost integrovat vaše nákladová data do vlastních nástrojů a datových skladů. [K těmto rozhraním API můžete přistupovat taky přes Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
+- **Rozhraní API pro vyčerpání:** [Rozhraní API pro spotřebu](https://docs.microsoft.com/rest/api/consumption) poskytují programový přístup k datům o nákladech a využití navíc k informacím o rozpočtech, rezervovaných instancích a poplatkům na webu Marketplace. Tato rozhraní API jsou přístupná jenom pro podnikové registrace a některé webové přímé odběry, ale poskytují možnost integrovat vaše nákladová data do vlastních nástrojů a datových skladů. [K těmto rozhraním API můžete přistupovat taky přes Azure CLI](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Zákazníci, kteří jsou dlouhodobým a vyspělým cloudovým uživatelům, používají určité osvědčené postupy:
 
@@ -303,7 +303,7 @@ Několik nástrojů vám může pomáhat při sestavování této funkce, od ná
 
 - **Azure Automation** Je cloudová funkce, která umožňuje vytvářet Runbooky (v PowerShellu nebo Pythonu) a umožňuje automatizovat procesy, konfigurovat prostředky a dokonce i použít opravy. [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) má rozsáhlou škálu funkcí pro různé platformy, které jsou pro vaše nasazení nedílnou součástí, ale jsou moc velké, aby je bylo možné zakrýt podrobněji.
 - **Event Grid** je plně spravovaný systém směrování událostí, který umožňuje reagovat na události v prostředí Azure. Stejně jako Azure Automation je připojená tkáň vyspělých cloudových organizací, [Event Grid](https://docs.microsoft.com/azure/event-grid) je propojovací tkáň dobré automatizace. Pomocí Event Grid můžete vytvořit jednoduchou akci bez serveru k odeslání e-mailu správci při každém vytvoření nového prostředku a zaznamenání tohoto prostředku do databáze. Stejné Event Grid mohou upozorňovat na odstranění prostředku a odebrat položku z databáze.
-- **Azure Cloud Shell** je interaktivní [prostředí](https://docs.microsoft.com/azure/cloud-shell/overview) založené na prohlížeči pro správu prostředků v Azure. Poskytuje kompletní prostředí pro PowerShell nebo bash, které se spustí podle potřeby (a udržuje se za vás), abyste měli konzistentní prostředí, ze kterého se mají spouštět skripty. Azure Cloud Shell poskytuje přístup k dalším klíčovým nástrojům, už je nainstalovaný – pro automatizaci vašeho prostředí včetně [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [terraformu](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) a rostoucího seznamu dalších [nástrojů](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) pro správu kontejnerů, databází (Sqlcmd) a aktuálnější.
+- **Azure Cloud Shell** je interaktivní [prostředí](https://docs.microsoft.com/azure/cloud-shell/overview) založené na prohlížeči pro správu prostředků v Azure. Poskytuje kompletní prostředí pro PowerShell nebo bash, které se spustí podle potřeby (a udržuje se za vás), abyste měli konzistentní prostředí, ze kterého se mají spouštět skripty. Azure Cloud Shell poskytuje přístup k dalším klíčovým nástrojům, už je nainstalovaný – pro automatizaci vašeho prostředí včetně [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [terraformu](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) a rostoucího seznamu dalších [nástrojů](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) pro správu kontejnerů, databází (Sqlcmd) a aktuálnější.
 
 Automatizace je úloha v plném rozsahu a rychle se stane jednou z nejdůležitějších provozních úloh v rámci vašeho cloudového týmu. Organizace, které přijímají přístup "automatizovat první", mají větší úspěšnost při používání Azure:
 

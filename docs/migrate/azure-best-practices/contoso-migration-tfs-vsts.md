@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025099"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566558"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services
 
@@ -24,9 +24,9 @@ Tento článek popisuje, jak fiktivní společnost Contoso refaktoruje svoje mí
 
 Tým vedení IT těsně spolupracoval s obchodními partnery na identifikaci budoucích cílů. Partneři se příliš nestarají o vývojářské nástroje a technologie, ale vypíchli tyto body:
 
-- **Software:** Bez ohledu na hlavní předmět podnikání jsou nyní všechny společnosti softwarovými společnostmi, a to včetně společnosti Contoso. Vedení podniku se zajímá o to, jak mohou informační technologie pomoci při vedení společnosti s využitím nových pracovních postupů pro uživatele a jak z nich mohou těžit zákazníci.
-- **Efektivita:** Společnost Contoso potřebuje zjednodušit procesy a zbavit se zbytečných postupů pro vývojáře i uživatele. To společnosti umožní efektivněji plnit požadavky zákazníků. Firma potřebuje zrychlit informační technologie bez utrácení peněz a času.
-- **Flexibilita:** Informační technologie společnosti Contoso musí reagovat na obchodní potřeby rychleji než trh, aby společnost v globální ekonomice dosáhla úspěchu. Informační technologie nesmí firmu nijak brzdit.
+- **Software:** Bez ohledu na základní firmu jsou nyní všechny společnosti softwarové společnosti, včetně společnosti Contoso. Vedení podniku se zajímá o to, jak mohou informační technologie pomoci při vedení společnosti s využitím nových pracovních postupů pro uživatele a jak z nich mohou těžit zákazníci.
+- **Efektivita:** Contoso potřebuje zjednodušit proces a odebrat zbytečné postupy pro vývojáře a uživatele. To společnosti umožní efektivněji plnit požadavky zákazníků. Firma potřebuje zrychlit informační technologie bez utrácení peněz a času.
+- **Flexibilita:** Společnost Contoso musí reagovat na obchodní potřeby a reagovat rychleji než na webu Marketplace a umožnit tak úspěch v globálním hospodářství. Informační technologie nesmí firmu nijak brzdit.
 
 ## <a name="migration-goals"></a>Cíle migrace
 
@@ -63,7 +63,7 @@ Contoso dokončí proces migrace následujícím způsobem:
 
 ![Proces migrace](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 
@@ -72,7 +72,7 @@ Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
+**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 **Místní server TFS** | Je třeba, aby místní server používal TFS 2018 Upgrade 2, nebo aby byl v rámci tohoto procesu upgradován.
 
 ## <a name="scenario-steps"></a>Kroky scénáře
@@ -81,12 +81,12 @@ Contoso dokončí migraci tímto způsobem:
 
 > [!div class="checklist"]
 >
-> - **Krok 1: Vytvoření účtu služby Azure Storage**. Tento účet úložiště se použije při procesu migrace.
-> - **Krok 2: Upgrade TFS.** Contoso upgraduje nasazení na TFS 2018 Upgrade 2.
-> - **Krok 3: Ověření kolekce**. Při přípravě na migraci společnost Contoso ověří kolekci TFS.
-> - **Krok 4: Vytvoření přípravného souboru**. Contoso vytvoří migrační soubory pomocí nástroje pro migraci TFS.
+> - **Krok 1: vytvoření účtu služby Azure Storage.** Tento účet úložiště se použije při procesu migrace.
+> - **Krok 2: upgrade TFS.** Contoso upgraduje nasazení na TFS 2018 Upgrade 2.
+> - **Krok 3: ověření kolekce.** Při přípravě na migraci společnost Contoso ověří kolekci TFS.
+> - **Krok 4: Sestavte soubor přípravy.** Contoso vytvoří migrační soubory pomocí nástroje pro migraci TFS.
 
-## <a name="step-1-create-a-storage-account"></a>Krok 1: vytvořit účet úložiště
+## <a name="step-1-create-a-storage-account"></a>Krok 1: vytvoření účtu úložiště
 
 1. Správce společnosti Contoso vytvoří na webu Azure Portal účet úložiště (**contosodevmigration**).
 2. Tento účet umístí do sekundární oblasti, kterou společnost používá pro převzetí služeb při selhání – USA – střed. Použije účet Standard pro obecné účely s místně redundantním úložištěm.
@@ -98,7 +98,7 @@ Contoso dokončí migraci tímto způsobem:
 - [Seznámení se službou Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)
 - [Vytvoření účtu úložiště](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
 
-## <a name="step-2-upgrade-tfs"></a>Krok 2: Upgrade TFS
+## <a name="step-2-upgrade-tfs"></a>Krok 2: upgrade TFS
 
 Správce společnosti Contoso upgraduje server TFS na TFS 2018 Update 2. Než začne:
 
@@ -132,9 +132,9 @@ Upgrade provede takto:
 
 **Potřebujete další pomoc?**
 
-Přečtěte si další informace o [upgradu TFS](/tfs/server/upgrade/get-started).
+Přečtěte si další informace o [upgradu TFS](https://docs.microsoft.com/tfs/server/upgrade/get-started).
 
-## <a name="step-3-validate-the-tfs-collection"></a>Krok 3: Ověření kolekce TFS
+## <a name="step-3-validate-the-tfs-collection"></a>Krok 3: ověření kolekce TFS
 
 Správce společnosti Contoso spustí u databáze kolekce ContosoDev nástroj pro migraci TFS, aby ji před migrací ověřil.
 
@@ -174,7 +174,7 @@ Správce společnosti Contoso spustí u databáze kolekce ContosoDev nástroj pr
 
     ![TFS](./media/contoso-migration-tfs-vsts/collection9.png)
 
-## <a name="step-4-create-the-migration-files"></a>Krok 4: Vytvoření migračních souborů
+## <a name="step-4-create-the-migration-files"></a>Krok 4: vytvoření souborů migrace
 
 Po dokončení ověří může správce společnosti Contoso pomocí nástroje pro migraci TFS vytvořit migrační soubory.
 
@@ -182,7 +182,7 @@ Po dokončení ověří může správce společnosti Contoso pomocí nástroje p
 
     `TfsMigrator prepare /collection:http://contosotfs:8080/tfs/ContosoDev /tenantDomainName:contosomigration.onmicrosoft.com /accountRegion:cus`
 
-     ![Příprava](./media/contoso-migration-tfs-vsts/prep1.png)
+     ![Připravit](./media/contoso-migration-tfs-vsts/prep1.png)
 
     Příprava provádí následující:
     - V kolekci vyhledá seznam všech uživatelů a naplní protokol mapování identit (**IdentityMapLog.csv**).
@@ -191,19 +191,19 @@ Po dokončení ověří může správce společnosti Contoso pomocí nástroje p
 
 2. Zobrazí se obrazovka přihlášení k Azure AD. Správce zadá přihlašovací údaje globálního správce.
 
-    ![Příprava](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![Připravit](./media/contoso-migration-tfs-vsts/prep2.png)
 
 3. Příprava se dokončí a nástroj zobrazí hlášení, že soubory importu se úspěšně vygenerovaly.
 
-    ![Příprava](./media/contoso-migration-tfs-vsts/prep3.png)
+    ![Připravit](./media/contoso-migration-tfs-vsts/prep3.png)
 
 4. Správce uvidí, že v nové složce se vytvořil soubor IdentityMapLog.csv a soubor import.json.
 
-    ![Příprava](./media/contoso-migration-tfs-vsts/prep4.png)
+    ![Připravit](./media/contoso-migration-tfs-vsts/prep4.png)
 
 5. Soubor import.json poskytuje nastavení importu. Obsahuje informace, jako jsou požadovaný název organizace a informace o účtu úložiště. Většina polí je už automaticky vyplněna. Některá pole vyžadují zadání ze strany uživatele. Správce společnosti Contoso otevře soubor a přidá název organizace sady Azure DevOps Services, která se má vytvořit: **contosodevmigration**. Pokud použije tento název, adresa URL sady Azure DevOps Services bude **contosodevmigration.visualstudio.com**.
 
-    ![Příprava](./media/contoso-migration-tfs-vsts/prep5.png)
+    ![Připravit](./media/contoso-migration-tfs-vsts/prep5.png)
 
     > [!NOTE]
     > Organizaci je třeba vytvořit před migrací. Po dokončení migrace ji můžete změnit.
@@ -214,9 +214,9 @@ Po dokončení ověří může správce společnosti Contoso pomocí nástroje p
     - Po migraci budou tyto identity v sadě Azure DevOps Services licencovány a zobrazí se jako uživatelé v organizaci.
     - V souboru jsou tyto identity označeny ve sloupci **Expected Import Status** (Očekávaný stav importu) jako **aktivní**.
 
-    ![Příprava](./media/contoso-migration-tfs-vsts/prep6.png)
+    ![Připravit](./media/contoso-migration-tfs-vsts/prep6.png)
 
-## <a name="step-5-migrate-to-azure-devops-services"></a>Krok 5: Migrace do Azure DevOps Services
+## <a name="step-5-migrate-to-azure-devops-services"></a>Krok 5: migrace na Azure DevOps Services
 
 Když je příprava hotová, může se správce společnosti Contoso soustředit na migraci. Po spuštění migrace přepne správu verzí z TFVC na Git.
 
@@ -266,7 +266,7 @@ Před začátkem správce společnosti Contoso pořídí místní zálohu SQL Se
 Správce společnosti Contoso vytvoří zálohu (balíček DACPAC) pro import do Azure DevOps Services.
 
 - DACPAC se vytvoří pomocí nástroje SqlPackage.exe v nástrojích SQL Server Data Tools. S nástroji SQL Server Data Tools se nainstaluje více verzí nástroje SqlPackage.exe, které se nacházejí ve složkách s názvy, jako jsou 120, 130 a 140. Pro přípravu balíčku DACPAC je důležité použít správnou verzi nástroje.
-- Importy TFS 2018 vyžadují použití nástroje SqlPackage.exe ze složky 140 nebo vyšší. Pro CONTOSOTFS se tento soubor nachází ve složce: **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- Importy TFS 2018 vyžadují použití nástroje SqlPackage.exe ze složky 140 nebo vyšší. V případě CONTOSOTFS je tento soubor umístěný ve složce **C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
 
 Správce společnosti Contoso vygeneruje balíček DACPAC takto:
 
@@ -276,15 +276,15 @@ Správce společnosti Contoso vygeneruje balíček DACPAC takto:
     SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
     ```
 
-    ![Zálohovat](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. Po spuštění příkazu se zobrazí následující zpráva.
 
-    ![Zálohovat](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. Správce ověří vlastnosti souboru DACPAC.
 
-    ![Zálohovat](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>Aktualizace souboru do úložiště
 
@@ -292,27 +292,27 @@ Vytvořený balíček DACPAC správce společnosti Contoso nahraje do služby Az
 
 1. Stáhne a následně nainstaluje [Průzkumník služby Azure Storage](https://azure.microsoft.com/features/storage-explorer).
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup5.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup5.png)
 
 2. Správce se připojí k předplatnému a vyhledá účet úložiště vytvořený pro migraci (**contosodevmigration**). Vytvoří nový kontejner objektů blob **azuredevopsmigration**.
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup6.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup6.png)
 
 3. Zadá soubor DACPAC, který se má nahrát jako objekt blob bloku.
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup7.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup7.png)
 
 4. Po nahrání souboru vybere název souboru > **Generovat SAS**. Rozbalí kontejnery objektů blob v účtu úložiště, vybere kontejner se soubory importu a vybere **Získat sdílený přístupový podpis**.
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup8.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup8.png)
 
 5. Přijme výchozí hodnoty a vybere **Vytvořit**. Tento podpis umožní přístup po dobu 24 hodin.
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup9.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup9.png)
 
 6. Správce zkopíruje adresu URL sdíleného přístupového podpisu, aby ho mohl použít nástroj pro migraci TFS.
 
-    ![Odeslat](./media/contoso-migration-tfs-vsts/backup10.png)
+    ![Nahrávání](./media/contoso-migration-tfs-vsts/backup10.png)
 
 > [!NOTE]
 > Migrace musí proběhnout v povoleném časovém intervalu, nebo vyprší platnost oprávnění.
@@ -324,9 +324,9 @@ Správce společnosti Contoso už dříve částečně vyplnil soubor specifikac
 
 Otevře soubor import.json a vyplní následující pole:
 
-- **Location:** Umístění klíče SAS, který byl vygenerován výše.
-- **Dacpac:** Nastavte název na soubor DACPAC, který jste nahráli do účtu úložiště. Nezapomeňte zahrnout příponu .dacpac.
-- **ImportType:** Pro tuto chvíli nastavte toto pole na DryRun.
+- **Umístění:** Umístění klíče SAS, který byl vygenerován výše.
+- **DACPAC:** Nastavte název souboru DACPAC, který jste nahráli do účtu úložiště. Nezapomeňte zahrnout příponu .dacpac.
+- **ImportType:** Nastavte na DryRun nyní.
 
 ![Nastavení importu](./media/contoso-migration-tfs-vsts/import1.png)
 
@@ -396,40 +396,40 @@ Po dokončení zkušebního běhu správce společnosti Contoso přejde k produk
 1. Na portálu Azure DevOps Services odstraní zkušební organizaci.
 2. Aktualizuje soubor import.json a nastaví **ImportType** na **ProductionRun**.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full1.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full1.png)
 
 3. Spustí migraci stejným způsobem jako v případě zkušebního běhu: `TfsMigrator import /importFile:C:\TFSMigrator\import.json`.
 4. Zobrazí se potvrzení migrace a upozornění, že data mohou být uložena v zabezpečeném umístění jako přípravná oblast po dobu maximálně sedmi dnů.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full2.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full2.png)
 
 5. Na přihlašovací obrazovce Azure AD správce zadá přihlašovací údaje správce společnosti Contoso.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full3.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full3.png)
 
 6. Zobrazí se zpráva s informacemi o importu.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full4.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full4.png)
 
 7. Přibližně po 15 minutách správce přejde na adresu URL a uvidí následující informace:
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full5.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full5.png)
 
 8. Po dokončení migrace se vedoucí vývoje společnosti Contoso přihlásí k Azure DevOps Services a zkontroluje, zda migrace proběhla správně. Po přihlášení správce uvidí, že projekty byly migrovány.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full6.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full6.png)
 
 9. Vedoucí vývoje otevře jeden z projektů a otevře **Pracovní položky** > **Přiřazeno mně**. Zobrazí se migrovaná data pracovní položky spolu s identitou.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full7.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full7.png)
 
 10. Vedoucí vývoje zkontroluje ostatní data pracovních položek.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full8.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full8.png)
 
 11. Vedoucí vývoje také zkontroluje ostatní projekty a kód, aby měl jistotu, že se migroval i zdrojový kód a historie.
 
-    ![Provozní](./media/contoso-migration-tfs-vsts/full9.png)
+    ![Výroba](./media/contoso-migration-tfs-vsts/full9.png)
 
 ### <a name="move-source-control-from-tfvc-to-git"></a>Přesunutí správy zdrojového kódu z TFVC do GITu
 

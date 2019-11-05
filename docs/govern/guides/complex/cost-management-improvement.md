@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547699"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566335"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: vylepšení Cost Management disciplíny
 
@@ -57,7 +57,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 - Všechny náklady na Cloud by se měly monitorovat na týden podle týmu zásad správného řízení pro Cloud. Vykazování odchylek mezi náklady na Cloud a plánem se sdílí s vedením IT a finančními službami měsíčně. Všechny náklady na Cloud a plán aktualizací by se měly kontrolovat s využitím IT a finančních prostředků měsíčně.
 - Všechny náklady musí být přiděleny obchodní funkci pro účely zodpovědnosti.
 - Cloudové prostředky by se měly průběžně monitorovat podle možností optimalizace.
-- Nástroje pro řízení cloudu musí omezit možnosti změny velikosti Assetu na schválený seznam konfigurací. Nástroj musí zajistit, aby všechny prostředky byly zjistitelné a sledované řešením pro monitorování nákladů.
+- Nástroje pro řízení cloudu musí omezit možnosti změny velikosti assetu na schválený seznam konfigurací. Nástroj musí zajistit, aby všechny prostředky byly zjistitelné a sledované řešením pro monitorování nákladů.
 - Během plánování nasazení by se měly zdokumentovat všechny požadované cloudové prostředky spojené s hostováním produkčních úloh. Tato dokumentace vám pomůže Upřesnit rozpočty a připravit další nástroje pro automatizaci, aby nedocházelo k používání dražších možností. Během tohoto procesu by se mělo předávat různým nástrojům diskontování nabízeným poskytovatelem cloudu, jako jsou rezervované instance nebo snížení nákladů na licence.
 - Všichni vlastníci aplikací se budou muset zúčastnit školení o postupech pro optimalizaci úloh, aby lépe ovládají náklady na Cloud.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029435"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566591"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Vytvoření finančního modelu pro cloudovou transformaci
 
@@ -28,13 +28,13 @@ Návratnost investic (návratnost investic) je často důležitou kritérií pro
 
 V dalších částech provedeme data, která budete potřebovat k výpočtu počátečních investic, a zisk z investování (příjmů).
 
-## <a name="calculating-initial-investment"></a>Výpočet počáteční investice
+## <a name="calculate-initial-investment"></a>Vypočítat počáteční investice
 
 Počáteční investice jsou kapitálové výdaje a provozní výdaje potřebné k dokončení transformace. Klasifikace nákladů se může lišit v závislosti na účetních modelech a preferencích CFO. Tato kategorie by ale obsahovala položky, jako jsou profesionální služby k transformaci, softwarové licence používané jenom během transformace, náklady na cloudové služby během transformace a potenciální náklady na zaměstnance placené při transformaci. .
 
 Pokud chcete vytvořit odhad počáteční investice, přidejte tyto náklady.
 
-## <a name="calculating-the-gain-from-investment"></a>Výpočet zisků z investice
+## <a name="calculate-the-gain-from-investment"></a>Vypočítat zisk z investice
 
 Výpočet zisků z investice často vyžaduje druhý vzorec, který je specifický pro obchodní výsledky a související technické změny. Výpočet výdělků je těžší než výpočet snížení nákladů.
 
@@ -105,7 +105,7 @@ Kapitálové výdaje se mírně liší od provozních nákladů. Obecně se tato
 
 Pokud je obnovovací cyklus schválen a rozpočtový, může převod cloudu přispět k eliminaci těchto nákladů. Pokud cyklus obnovení naplánujete, ale dosud neschválili, cloudová transformace by se mohla vyhnout velkým výdajům. Do rozdílové ceny budou přidány obě srážky.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Přečtěte si další informace o modelech [cloudového účetnictví](./cloud-accounting.md) .
 

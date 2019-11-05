@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548579"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566929"
 ---
 # <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
@@ -23,7 +23,7 @@ Přijetí cloudu je snahou o správu portfolia chytře zamaskovanou za technicko
 
 Toto téma má strategickou povahu. Proto je strategický také přístup v tomto článku použitý. Kvůli ukotvení strategie v rozhodnutích vycházejících z dat se v tomto článku předpokládá, že čtenář už vyhodnotil existující [digitální majetek](../../digital-estate/index.md) (nebo to právě provádí). Cílem tohoto přístupu je pomoci při vyhodnocování úloh, aby se zajistilo řádné vyvážení v rámci portfolia prostřednictvím kvalitativních otázek a vylepšení portfolia.
 
-### <a name="documenting-business-outcomes"></a>Zdokumentování obchodních výsledků
+### <a name="document-business-outcomes"></a>Dokumentace k obchodním výsledkům
 
 Před vyvážením portfolia je důležité zdokumentovat a sdílet obchodní výsledky, které motivují snahu o migraci do cloudu. Několik příkladů obecných obchodních výsledků souvisejících s migracemi do cloudu najdete ve [výkonném shrnutí migrace do cloudu](../../getting-started/migrate.md).
 
@@ -47,7 +47,7 @@ Pokyny týkající se [přírůstkové racionalizace digitálního majetku](../.
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Důležitost rozhodnutí o ukončení a vyřazení
 
-V tabulce v části [zdokumentování obchodních výsledků](#documenting-business-outcomes) výše chybí klíčový výsledek, který by podporoval nejdůležitější cíl snížení nákladů na IT. Když se kdekoli v seznamu obchodních výsledků nachází snížení nákladů na IT, je důležité vzít v úvahu potenciál ukončení nebo vyřazení úloh. V některých scénářích může úspora nákladů vycházet z toho, že se NEBUDOU migrovat úlohy, které si nevynucují krátkodobé investování. Někteří zákazníci hlásí úspory nákladů přesahující 20 % úspor celkových nákladů díky vyřazení nedostatečně využívaných úloh.
+V tabulce v části [zdokumentování obchodních výsledků](#document-business-outcomes) výše chybí klíčový výsledek, který by podporoval nejdůležitější cíl snížení nákladů na IT. Když se kdekoli v seznamu obchodních výsledků nachází snížení nákladů na IT, je důležité vzít v úvahu potenciál ukončení nebo vyřazení úloh. V některých scénářích může úspora nákladů vycházet z toho, že se NEBUDOU migrovat úlohy, které si nevynucují krátkodobé investování. Někteří zákazníci hlásí úspory nákladů přesahující 20 % úspor celkových nákladů díky vyřazení nedostatečně využívaných úloh.
 
 K vyvážení portfolia, které lépe odráží rozhodnutí o ukončení a vyřazení, se týmu cloudové strategie a týmu přechodu na cloud doporučuje, aby se v rámci procesů vyhodnocení a migrování u jednotlivých úloh ptali na tyto otázky:
 
@@ -72,9 +72,9 @@ Požadavky, které jsou uvedené v průvodci směrným plánem, by měly být do
 
 Vyvážení portfolia vyžaduje další kvalitativní analýzu během procesu vyhodnocování, což pomůže jednoduché racionalizaci portfolia.
 
-### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu posouzení
+### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu vyhodnocení
 
-Na základě dat z tabulky v části [zdokumentování obchodních výsledků](#documenting-business-outcomes) existuje pravděpodobné riziko, že se portfolio příliš odkloní k modelu realizace se zaměřením na migraci. Pokud byly nejvyšší prioritou zkušenosti zákazníků, bude pravděpodobnější portfolio s velkým důrazem na inovace. Ani jedno není správné nebo špatné, ale příliš velké odklonění v jednom směru má obvykle za následek snížení návratnosti, zbytečné zvýšení složitosti a prodloužení doby realizace související se snahou o přijetí cloudu.
+Na základě dat z tabulky v části [zdokumentování obchodních výsledků](#document-business-outcomes) existuje pravděpodobné riziko, že se portfolio příliš odkloní k modelu realizace se zaměřením na migraci. Pokud byly nejvyšší prioritou zkušenosti zákazníků, bude pravděpodobnější portfolio s velkým důrazem na inovace. Ani jedno není správné nebo špatné, ale příliš velké odklonění v jednom směru má obvykle za následek snížení návratnosti, zbytečné zvýšení složitosti a prodloužení doby realizace související se snahou o přijetí cloudu.
 
 Za účelem snížení složitosti se doporučuje dodržovat tradiční přístup k racionalizaci portfolia, ale v iterativním modelu. Následující kroky popisují kvalitativní model takového přístupu:
 
@@ -113,7 +113,7 @@ Opětovné **hostování:** Opětovné hostování vyžaduje, aby členové tým
 
 **Vedlejší refaktoring:** Některé aplikace mohou být moderní s menším refaktoringem na úrovni dat nebo aplikací. Tato práce vyžaduje, aby členové týmu nasadili data do cloudových datových platforem nebo provedli drobné změny konfigurace v aplikaci. To může vyžadovat omezenou podporu pro odborníky na problematiku dat nebo vývoje aplikací. Tato práce se ale podobá práci prováděné implementátory IT při nasazování aplikací třetích stran. Tato práce je vhodná pro tým pro migraci do cloudu nebo tým pro cloudovou strategii. I když tato snaha není zdaleka tak rychlá jako migrace se změnou hostitele, zabere méně času než refaktoring.
 
-Během migrace se doporučuje, aby se snahy rozdělily třemi způsoby uvedenými výše a aby tyto snahy prováděl vhodný tým ve vhodné iteraci. I když se doporučuje, aby bylo portfolio diverzifikované, je také vhodné, aby snahy zůstaly velmi soustředěné a oddělené.
+Během migrace by se mělo úsilí rozdělit třemi způsoby uvedenými výše a v příslušné iteraci provést vhodným týmem. I když byste portfolio měli rozrůznit, zajistěte také, aby úsilí zůstalo velmi zaměřené a oddělené.
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
 

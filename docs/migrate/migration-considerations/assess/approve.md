@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549224"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566849"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Schválení změn architektury před migrací
 
@@ -54,7 +54,7 @@ Následující osvědčené postupy pomůžou radě CAB zachovat si při migraci
 
 ### <a name="standardize-change"></a>Standardizace změn
 
-Tým přechodu na cloud možná nechce u každé úlohy migrované do cloudu podrobně zvažovat rozhodnutí týkající se architektury. A naopak zase může chtít použít migraci do cloudu jako katalyzátor opětovného uskutečnění starších rozhodnutí o architektuře. Pokud organizace migrují několik set virtuálních počítačů nebo několik desítek úloh, dají se oba přístupy správně uřídit. Ale při migraci datacentra, které čítá 1000 nebo více prostředků, se oba uvedené přístupy považují za vysoce riskantní, nevhodný postup, který výrazně snižuje pravděpodobnost úspěchu. Modernizace, refaktoring a vytvoření nové architektury vyžadují u každé aplikace různé sady dovedností a zcela jiné druhy změn. Tyto úkoly ve velké míře závisejí na lidském úsilí. Každá z těchto závislostí představuje pro migraci riziko.
+Tým přechodu na cloud možná nechce u každé úlohy migrované do cloudu podrobně zvažovat rozhodnutí týkající se architektury. A naopak zase může chtít použít migraci do cloudu jako katalyzátor opětovného uskutečnění starších rozhodnutí o architektuře. Pokud organizace migrují několik set virtuálních počítačů nebo několik desítek úloh, dají se oba přístupy správně uřídit. Ale při migraci datacentra, které čítá 1000 nebo více prostředků, se oba uvedené přístupy považují za vysoce riskantní, nevhodný postup, který výrazně snižuje pravděpodobnost úspěchu. Modernizaci, refaktoring a změna architektury každé aplikace vyžadují různé sady dovedností a značnou řadu změn a tyto úlohy vytvářejí závislosti na škále lidského úsilí. Každá z těchto závislostí představuje pro migraci riziko.
 
 Článek o [racionalizaci digitálních aktiv](../../../digital-estate/rationalize.md) vysvětluje základní předpoklady racionalizace digitálních aktiv a jejich dopad na flexibilitu a úsporu času. Standardizace změn přináší také další výhodu. Pokud zvolíte výchozí racionalizační přístup, kterým se migrace řídí, může rada CAB nebo vlastník produktu kontrolovat a schvalovat použití jedné změny na dlouhý seznam úloh. Tím se omezí technické schvalování každé úlohy jenom na ty, jejichž kompatibilita s cloudem vyžaduje výrazné změny architektury.
 

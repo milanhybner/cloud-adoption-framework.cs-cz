@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8623a845a6c8d8b0a8cc50d404ead85eae256134
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243185"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561876"
 ---
 # <a name="review-your-compute-options"></a>Kontrola možností COMPUTE
 
@@ -35,7 +35,7 @@ Pro každou aplikaci nebo službu, kterou nasadíte do cílového prostředí, p
 Zodpovězení následujících otázek týkajících se vašich úloh vám pomůže při rozhodování na základě rozhodovacího stromu výpočetních služeb Azure:
 
 - **Vytváříte nové aplikace a služby, nebo migrujete z existujících místních úloh?** Vývoj nových aplikací v rámci přechodu do cloudu vám umožní plně využít moderní cloudové technologie pro hostování od fáze návrhu dále.
-- **Pokud migrujete existující úlohy, dokážou využít výhod moderních cloudových technologií?** Migrace místních úloh vyžaduje analýzu: snadno optimalizujete stávající aplikace a služby, abyste mohli využívat moderní cloudové technologie, nebo pokud k vašim úlohám máte lepší přístup pomocí metody *typu a posunutí* ?
+- **Pokud migrujete existující úlohy, dokážou využít výhod moderních cloudových technologií?** Migrace místních úloh vyžaduje analýzu: snadno optimalizujete stávající aplikace a služby, abyste mohli využívat moderní cloudové technologie, nebo je přístup k zátěži _a posunu_ pro vaše úlohy lepší?
 - **Dokážou vaše aplikace nebo služby využívat kontejnery?** Pokud jsou vaše aplikace dobrými kandidáty na hostování v kontejnerech, můžete vyžít efektivitu prostředků, škálovatelnost a funkce orchestrace, které nabízí služba [Azure Container Services](https://azure.microsoft.com/product-categories/containers). K trvalém uložení kontejnerizovaných aplikací lze využít služby [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) a [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 - **Jsou vaše aplikace založené na webu nebo rozhraní API a využívají PHP, ASP.NET, Node. js nebo podobné technologie?** Webové aplikace je možné nasadit na spravované instance [Azure App Service](https://docs.microsoft.com/azure/app-service/overview), takže pro účely hostování nemusíte provozovat virtuální počítače.
 - **Budete potřebovat úplnou kontrolu nad operačním systémem a hostitelským prostředím vaší úlohy?** Pokud potřebujete mít kontrolu nad hostitelským prostředím včetně operačního systému, disků, místně běžícího softwaru a dalších konfigurací, můžete k hostování aplikací a služeb použít službu [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines). Kromě volby velikosti virtuálních počítačů a úrovní výkonu bude mít vaše rozhodnutí týkající se virtuálního diskového úložiště vliv na výkon a smlouvy SLA související s úlohami založenými na infrastruktuře jako službě (IaaS). Další informace najdete v dokumentaci k [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).

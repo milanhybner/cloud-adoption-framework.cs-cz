@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238918"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566444"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -174,7 +174,7 @@ Společnost Contoso použije Azure Migrate následujícím způsobem:
 
 #### <a name="database-tools"></a>Databázové nástroje
 
-Kromě služby Azure Migrate se společnost Contoso zaměří na použití nástrojů určených specificky pro posuzování databází. S posouzením databází SQL Serveru před migrací pomůžou nástroje, jako je [Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017).
+Kromě služby Azure Migrate se společnost Contoso zaměří na použití nástrojů určených specificky pro posuzování databází. S posouzením databází SQL Serveru před migrací pomůžou nástroje, jako je [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017).
 
 Data Migration Assistant (DMA) může společnosti Contoso pomoct zjistit, jestli jsou místní databáze kompatibilní s řadou databázových řešení Azure, jako je třeba služba Azure SQL Database, SQL Server spuštěný na virtuálním počítači Azure IaaS a spravovaná instance Azure SQL.
 
@@ -221,7 +221,7 @@ Azure Site Recovery je primární služba Azure pro orchestraci zotavení po hav
 
 Společnost Contoso už [dokončila testování konceptu](./contoso-migration-rehost-vm.md), aby zjistila, jak může služba Site Recovery pomoct s migrací do cloudu.
 
-##### <a name="using-site-recovery-at-scale"></a>Použití služby Site Recovery ve velkém měřítku
+##### <a name="use-site-recovery-at-scale"></a>Použití Site Recovery ve velkém měřítku
 
 Společnost Contoso plánuje provést několik migrací výtahu a posunutí. Aby se zajistilo, že vše bude fungovat, bude služba Site Recovery provádět replikaci po dávkách obsahujících kolem 100 virtuálních počítačů. Aby to šlo dobře připravit, musí společnost Contoso provést plánování kapacity pro navrhovanou migraci pomocí služby Site Recovery.
 
@@ -262,10 +262,10 @@ Společnost Contoso musí zjistit, jak tyto komponenty nasadit, na základě po�
 --- | ---
 **Maximální denní četnost změn** | Jeden procesový server může zpracovat denní četnost změn až do 2 TB. Vzhledem k tomu, že virtuální počítač může používat jenom jeden procesový Server, maximální denní četnost změn dat, která je podporovaná pro replikovaný virtuální počítač, je 2 TB.
 **Maximální propustnost** | Standardní účet úložiště Azure může zpracovávat maximálně 20 000 požadavků za sekundu a vstupně-výstupní operace za sekundu (IOPS) replikovaného virtuálního počítače by měly být v rámci tohoto limitu. Pokud má například virtuální počítač 5 disků a každý z nich vygeneruje na virtuálním počítači 120 IOPS (o velikosti 8 kB), pak bude v rámci limitu IOPS na disk v Azure (500).<br/><br/> Potřebný počet účtů úložiště můžete zjistit tak, že celkový počet vstupně-výstupních operací zdrojových počítačů za sekundu vydělíte 20 000. Replikovaný počítač může v Azure patřit jenom do jednoho účtu úložiště.
-**Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> CPU: 16 vCPU (2 sokety × 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
-**Procesový server** | Contoso nasadí samostatný, vyhrazený procesový server, který dokáže replikovat 100 až 200 virtuálních počítačů:<br/><br/> CPU: 16 vCPU (2 sokety × 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Procesový server bude hodně vytížený, takže by měl být umístěný na hostiteli ESXi, který dokáže zpracovat vstupně-výstupní diskové operace, síťový provoz a výkon procesoru potřebné pro replikaci. Společnost Contoso bude pro tento účel uvažovat o vyhrazeném hostiteli.
+**Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
+**Procesový server** | Contoso nasadí samostatný, vyhrazený procesový server, který dokáže replikovat 100 až 200 virtuálních počítačů:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Procesový server bude hodně vytížený, takže by měl být umístěný na hostiteli ESXi, který dokáže zpracovat vstupně-výstupní diskové operace, síťový provoz a výkon procesoru potřebné pro replikaci. Společnost Contoso bude pro tento účel uvažovat o vyhrazeném hostiteli.
 **Networking** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. S ohledem na rychlost a prioritu migrace se společnost Contoso rozhodla použít prémiové úložiště SSD.<br/><br/>
+**Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. V důsledku rychlosti a priority migrací se společnost Contoso rozhodla používat Premium SSD.<br/><br/>
 Rozhodla se používat spravované disky pro všechny virtuální počítače nasazené do Azure. Požadovaný počet vstupně-výstupních operací za sekundu rozhodne, jestli se budou používat disky HDD úrovně Standard, SSD úrovně Standard nebo SSD úrovně Premium.<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -281,7 +281,7 @@ Azure Database Migration Service (DMS) je plně spravovaná služba, která umo�
 
 DMS ale není jediným nástrojem pro migraci databází od Microsoftu. Pokud chcete, podívejte se na [porovnání nástrojů a služeb](https://blogs.msdn.microsoft.com/datamigration/2017/10/13/differentiating-microsofts-database-migration-tools-and-services).
 
-##### <a name="using-dms-at-scale"></a>Použití služby DMS ve velkém měřítku
+##### <a name="use-dms-at-scale"></a>Škálování pomocí DMS
 
 Společnost Contoso bude službu DMS používat při migraci z SQL Serveru.
 
@@ -291,7 +291,7 @@ Společnost Contoso bude službu DMS používat při migraci z SQL Serveru.
 
 - Další škálovací taktikou společnosti Contoso je dočasné navýšení kapacity cílové instance databáze Azure SQL nebo MySQL na SKU úrovně Premium během migrace dat. Tím se minimalizuje omezování databáze, které by mohlo ovlivnit aktivity přenosu dat při použití SKU nižší úrovně.
 
-##### <a name="using-other-tools"></a>Použití dalších nástrojů
+##### <a name="use-other-tools"></a>Použití dalších nástrojů
 
 Kromě DMS může společnost Contoso k identifikaci informací o virtuálních počítačích použít také další nástroje a služby.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240200"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564201"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Začínáme s cestou připravenosti dovedností
 
@@ -38,18 +38,15 @@ Rozhraní pro přijetí do cloudu vás seznámí s úplným životním cyklem pr
 
 Každá z předchozích tras výuky sdílí příležitosti pro více typů médií, aby se maximalizovalo získání znalostí.
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získat body a úrovně a dosáhnout více
 Tady je několik příkladů přizpůsobených studijních cest na Microsoft Learn, které jsou v souladu s oddílem plánu v architektuře pro přijetí v cloudu:
 
-[Vyvinuli jsme DevOps postupy](learn/paths/evolve-your-devops-practices/):D evops je sjednocení lidí, procesů a produktů, které umožní průběžné doručování hodnot koncovým uživatelům. Azure DevOps je sada služeb, která poskytuje nástroje, které potřebujete k tomu, abyste je mohli udělat jenom vy. Pomocí Azure DevOps můžete sestavovat, testovat a nasazovat libovolné aplikace, a to buď do cloudu, nebo místně.
+[Vyvinuli jsme DevOps postupy](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops je sjednocení lidí, procesů a produktů, které umožní průběžné doručování hodnot koncovým uživatelům. Azure DevOps je sada služeb, která poskytuje nástroje, které potřebujete k tomu, abyste je mohli udělat jenom vy. Pomocí Azure DevOps můžete sestavovat, testovat a nasazovat libovolné aplikace, a to buď do cloudu, nebo místně.
 
-[Azure pro datovou inženýry](learn/paths/azure-for-the-data-engineer/): Prozkoumejte, jak se vyvinula většina dat, a jak nástupem cloudových technologií nabízí nové příležitosti pro zkoumání firmy. Seznámíte se s různými technologiemi datových platforem, které jsou k dispozici, a jak může tato technologie využít výhod této technologie pro organizaci.     
+[Azure pro datovou inženýry](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Prozkoumejte, jak se vyvinula většina dat, a jak nástupem cloudových technologií nabízí nové příležitosti pro zkoumání firmy. Seznámíte se s různými technologiemi datových platforem, které jsou k dispozici, a jak může tato technologie využít výhod této technologie pro organizaci.
 
-Pokud chcete zjistit další způsoby učení, Projděte si [informace Catalog] (/Learn/Browse). Pomocí filtru role můžete v rámci své role zarovnat studijních cest.
+## <a name="learn-more"></a>Další informace
 
-
-
-
-
+Pokud chcete zjistit další způsoby učení, Projděte si [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Pomocí filtru role můžete v rámci své role zarovnat studijních cest.

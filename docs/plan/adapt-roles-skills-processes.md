@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223923"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564157"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Přizpůsobení stávajících rolí, dovedností a procesů pro Cloud
 
@@ -25,7 +25,7 @@ Zaměstnanci oddělení IT můžou nervózním o svých rolích a pozicích, pro
 
 Pokyny k vytvoření nové sady dovedností najdete v tématu věnovaném [cestě připravenosti dovedností](./suggested-skills.md).
 
-## <a name="capturing-concerns"></a>Zachycení obav
+## <a name="capture-concerns"></a>Zájmy zachycení
 
 Vzhledem k tomu, že se organizace připravuje na úsilí při přijímání v cloudu, každý tým by měl dokumentovat obavy, jak to vznikají:
 

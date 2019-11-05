@@ -1,21 +1,21 @@
 ---
-title: Rozhodnutí, která ovlivňují migraci
+title: Rozhodnutí ovlivňující migraci
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Důležitá rozhodnutí, která je potřeba provést v souvislosti s procesem migrace
+description: Důležitá rozhodnutí týkající se procesu migrace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239935"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564583"
 ---
-# <a name="decisions-that-affect-migrations"></a>Rozhodnutí, která ovlivňují migraci
+# <a name="decisions-that-affect-migration"></a>Rozhodnutí ovlivňující migraci
 
 V průběhu migrace ovlivňuje rozhodovací a realizační činnosti několik faktorů. Tento článek vysvětluje ústřední motiv těchto rozhodnutí a zkoumá několik otázek, které přetrvávají v diskusi o principech migrace v této části dokumentace Architektura přechodu na cloud.
 
@@ -24,26 +24,26 @@ V průběhu migrace ovlivňuje rozhodovací a realizační činnosti několik fa
 Účel nebo cíl jakéhokoli úsilí o přechod na cloud může mít významný vliv na navrhovaný přístup k realizaci.
 
 - **Migrace.** Příkladem provozních výsledků jsou naléhavé obchodní faktory, rychlost přijetí nebo úspora nákladů. Tyto výsledky jsou středobodem úsilí, které vytěžuje obchodní hodnotu z přechodné změny v IT nebo provozních modelech. Část Migrace se v Architektuře přechodu na cloud zaměřuje především na obchodní výsledky související s migrací.
-- **Inovace aplikací.** Příkladem přírůstkových výsledků je zlepšení zákaznického zážitku a rostoucí podíl na trhu. Tyto výsledky vyplývají ze sady postupných změn zaměřených na potřeby a přání aktuálních zákazníků.
-- **Inovace řízená daty.** Nové produkty nebo služby, zejména ty, které využívají sílu dat, jsou příkladem rozvratných výsledků. Tyto výsledky jsou výsledkem experimentů a předpovědí, které používají data k rozvrácení současného stavu na trhu.
+- **Inovace aplikací:** Příkladem přírůstkových výsledků je zlepšení zákaznického zážitku a rostoucí podíl na trhu. Tyto výsledky vyplývají ze sady postupných změn zaměřených na potřeby a přání aktuálních zákazníků.
+- **Inovace řízené daty:** Nové produkty nebo služby, zejména ty, které využívají sílu dat, jsou příkladem rozvratných výsledků. Tyto výsledky jsou výsledkem experimentů a předpovědí, které používají data k rozvrácení současného stavu na trhu.
 
 Žádná firma neusiluje jen o jeden z těchto výsledků. Bez provozu neexistují žádní zákazníci a naopak. Přechod na cloud se nijak neliší. Firmy se většinou snaží dosáhnout všech těchto výsledků, ale snaha soustředit se na všechny současně může vaše úsilí rozmělnit a zpomalit postup tam, kde by vaše firma měla největší prospěch.
 
 Tento předpoklad neznamená, že byste si měli vybrat jeden z těchto tří cílů, ale spíše týmu cloudové strategie a týmu přechodu na cloud pomoci stanovit sadu provozních priorit, kterými se bude realizace řídit po další tři až šest měsíců. Tyto priority se stanovují určením pořadí každé z těchto tří možností od *nejvýznamnějších* po *nejméně významné*, protože souvisejí s úsilím, kterým tento tým může přispět v dalším jednom nebo dvou čtvrtletích.
 
-### <a name="acting-on-migration-outcomes"></a>Činnost na základě výsledků migrace
+### <a name="act-on-migration-outcomes"></a>Působit na výsledky migrace
 
 Pokud jsou provozní výsledky na prvním místě seznamu, bude váš tým moci tuto část Architektury přechodu na cloud využít. V této části se předpokládá, že jako primární klíčové ukazatele výkonu (KPI) potřebujete upřednostnit rychlost a úspory nákladů. V takovém případě by model migrace pro přechod na cloud byl dobře sladěn s výsledky. Model zaměřený na migraci se silně vychází z migrace prostředků infrastruktury jako služby (IaaS) na přenesených a Shift, které umožňují vyčerpat datové centrum a snižovat náklady. V takovém modelu může dojít k modernizaci, jde ale o sekundární záměr, dokud nebude realizován primární úkol.
 
-### <a name="acting-on-application-innovations"></a>Činnost na základě inovace aplikací
+### <a name="act-on-application-innovations"></a>Působit na inovace aplikací
 
 Pokud mezi vaše primární faktory patří podíl na trhu a zákaznický zážitek, nemusí být tato část Architektury přechodu na cloud tou nejlepší pro vedení snah vašeho týmu. Inovace aplikací vyžaduje plán, který se zaměřuje na modernizaci a přechod úloh bez ohledu na podkladovou infrastrukturu. V takovém případě mohou být pokyny v této části informativní, ale nemusí představovat nejlepší přístup k základním rozhodnutím.
 
-### <a name="acting-on-data-innovations"></a>Činnost na základě inovací dat
+### <a name="act-on-data-innovations"></a>Působit na inovace dat
 
 Pokud jsou vaší prioritou na dalších zhruba šest měsíců data, experimenty, výzkum a vývoj nebo nové produkty, nemusí být tato část Architektury přechodu na cloud tou nejlepší pro vedení snah vašeho týmu. Při úsilí souvisejícím s inovací dat byste mohli využít pokyny týkající se migrace existujícího zdroje dat. Toto úsilí by se ale mělo více zaměřit na příchozí přenos dat a integraci dalších zdrojů dat. Rozšíření těchto pokynů o předpovědi a nové zkušenosti je mnohem důležitější než migrace prostředků IaaS.
 
-## <a name="balancing-the-portfolio"></a>Vyvážení portfolia
+## <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
 Tato část Architektury přechodu na cloud obsahuje teorii, která čtenářům pomůže porozumět různým přístupům k zavedení změny v rámci vyváženého portfolia. Článek o [vyvážení portfolia](../../expanded-scope/balance-the-portfolio.md) je jedním z příkladů rozšířeného rozsahu, jehož účelem je pomoci v činnostech souvisejících s touto teorií.
 

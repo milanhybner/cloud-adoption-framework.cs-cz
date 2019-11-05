@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048073"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566631"
 ---
-# <a name="examples-of-agility-outcomes"></a>Příklady výsledků flexibility 
+# <a name="examples-of-agility-outcomes"></a>Příklady výsledků flexibility
 
 Jak je popsáno v tématu [Přehled výsledků pro firmy](./index.md), může sloužit jako základ pro jakékoli případné konverzace při transformaci s firmou. Tento článek se zaměřuje na obchodní míru timeliest: flexibilita firmy. Porozumět firemní situaci na pracovišti a konkurenční na krajině vám může pomáhat při vyjadřujíí obchodních výsledků, které jsou cílem transformační cesty firmy.
 
@@ -37,7 +37,9 @@ Během úsilí při inovacích s povoleným cloudem je doba uvedení na trh klí
 
 - **Příklad 2:** Logistická společnost zjistila nepoužitý segment trhu, ale vyžaduje novou verzi své aplikace nejdůležitější pro zachycení tohoto podílu na trhu. Jejich větší konkurent provedl stejné zjišťování. Při provádění inovace cloudové aplikace s podporou cloudu společnost zastává obsessioni zákazníků a DevOps vývojářem řízený přístup, aby mohl posílat pomalejší, starší verze konkurenta o _×_ měsíců. Tento skok na uvedení na trh je zabezpečený zákaznickou základnou.
 
-**Aurora zdravotní péče**: systém zdravotní péče se online služby do popisného digitálního prostředí. K transformaci svých digitálních služeb Aurora Health Health migrovali své weby na Microsoft Azure platformu a přijali strategii nepřetržité inovace.
+### <a name="aurora-health-care"></a>Zdravotní péče Aurora
+
+Systém zdravotnictví transformuje online služby do popisného digitálního prostředí. K transformaci svých digitálních služeb Aurora Health Health migrovali své weby na Microsoft Azure platformu a přijali strategii nepřetržité inovace.
 
 > "Jako tým se zaměřujeme na vysoce kvalitní řešení a rychlost. Zvolíte-li Azure, bylo transformativní rozhodnutí pro nás. "  
 > Jamey Shiels  
