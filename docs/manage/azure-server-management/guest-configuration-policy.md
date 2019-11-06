@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547284"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656318"
 ---
 # <a name="guest-configuration-policy"></a>Zásada konfigurace hosta
 
-Rozšíření [Konfigurace hosta](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy umožňuje auditovat nastavení konfigurace na virtuálním počítači. Konfigurace hosta se momentálně podporuje jenom na virtuálních počítačích Azure.
+Pomocí rozšíření [Konfigurace hosta](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy můžete auditovat nastavení konfigurace na virtuálním počítači. Konfigurace hosta se momentálně podporuje jenom na virtuálních počítačích Azure.
 
-Seznam zásad konfigurace hosta můžete najít tak, že na stránce Azure Policyho portálu vyhledáte kategorii "konfigurace hostů". Seznam můžete také najít spuštěním této rutiny v okně PowerShellu:
+Seznam zásad konfigurace hosta najdete tak, že na stránce Azure Policyového portálu vyhledáte "konfigurace hosta". Nebo spuštěním této rutiny v okně PowerShellu Najděte seznam:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> Funkce konfigurace hosta se pravidelně aktualizuje, aby podporovala další sady zásad. Pravidelně kontrolujte nové podporované zásady a vyhodnoťte, jestli jsou vhodné pro vaše potřeby.
+> Funkce konfigurace hosta se pravidelně aktualizuje, aby podporovala další sady zásad. Pravidelně kontrolujte nové podporované zásady a vyhodnoťte, jestli budou užitečné.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Nasazení
 
-K nasazení těchto zásad můžete použít následující ukázkový skript prostředí PowerShell:
+Pomocí následujícího ukázkového skriptu PowerShellu nasaďte tyto zásady na:
 
 - Ověřte, že je správně nastavené nastavení zabezpečení hesla v počítačích se systémem Windows a Linux.
 - Ověřte, že se certifikáty na virtuálních počítačích s Windows neblíží vypršení platnosti.
 
- Před spuštěním tohoto skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po spuštění skriptu budete muset zadat název předplatného, na které chcete zásady použít.
+ Před spuštěním tohoto skriptu se přihlaste pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po spuštění skriptu musíte zadat název předplatného, na které chcete zásady použít.
 
 ```powershell
 

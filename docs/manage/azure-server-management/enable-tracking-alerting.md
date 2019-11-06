@@ -8,28 +8,28 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f3faa122039097dd6f0f4df1d6f5071b77816545
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565436"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656626"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Povolit sledování a upozorňování na kritické změny
 
-Azure Change Tracking a inventář poskytuje výstrahy týkající se stavu konfigurace hybridního prostředí a změn v tomto prostředí. Můžete monitorovat důležité změny souboru, služby, softwaru a registru, které mohou mít vliv na nasazené servery.
+Azure Change Tracking a inventář poskytují výstrahy týkající se stavu konfigurace hybridního prostředí a změny v tomto prostředí. Může ohlásit důležité změny souboru, služby, softwaru a registru, které mohou mít vliv na nasazené servery.
 
 Ve výchozím nastavení služba Azure Automation Inventory Service nemonitoruje nastavení souborů nebo registru. Řešení nabízí seznam klíčů registru, které doporučujeme monitorovat. Pokud chcete tento seznam zobrazit, přejděte na účet Automation v Azure Portal a vyberte **inventář** > **Upravit nastavení**.
 
 ![Snímek obrazovky zobrazení inventáře Azure Automation v Azure Portal](./media/change-tracking1.png)
 
-Další informace o jednotlivých klíčích registru najdete v tématu [sledování změn klíčů registru](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Můžete vyhodnotit a pak povolit každý klíč tak, že ho vyberete. Toto nastavení se použije u všech virtuálních počítačů povolených v aktuálním pracovním prostoru.
+Další informace o jednotlivých klíčích registru najdete v tématu [sledování změn klíčů registru](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Vyberte libovolný klíč, který chcete vyhodnotit, a pak ho povolte. Nastavení se použije na všechny virtuální počítače, které jsou povolené v aktuálním pracovním prostoru.
 
-Můžete také sledovat důležité změny souborů. Můžete například chtít sledovat soubor C:\Windows\System32\drivers\etc\hosts, protože OS používá nástroj k mapování názvů hostitelů na IP adresy. Změny v tomto souboru můžou způsobit problémy s připojením nebo přesměrovat provoz na nebezpečné weby.
+Službu můžete použít také ke sledování důležitých změn souborů. Můžete například chtít sledovat soubor C:\Windows\System32\drivers\etc\hosts, protože OS používá nástroj k mapování názvů hostitelů na IP adresy. Změny v tomto souboru můžou způsobit problémy s připojením nebo přesměrovat provoz na nebezpečné weby.
 
 Chcete-li povolit sledování obsahu souborů pro hostitele, postupujte podle kroků v části [Povolení sledování obsahu souborů](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking).
 
-Můžete také přidat výstrahu pro změny provedené v souborech, které sledujete. Řekněme například, že chcete nastavit výstrahu pro změny provedené v souboru Hosts. Začněte tím, že na panelu příkazů kliknete na Log Analytics **Log Analytics** , nebo když otevřete hledání protokolu pro propojený Log Analytics pracovní prostor. Až budete v Log Analytics, vyhledejte změny obsahu v souboru Hosts pomocí následujícího dotazu:
+Můžete také přidat výstrahu pro změny souborů, které sledujete. Řekněme například, že chcete nastavit výstrahu pro změny v souboru Hosts. Na panelu příkazů vyberte **Log Analytics** nebo vyhledejte v Log Analytics pracovním prostoru propojení. V Log Analytics pomocí následujícího dotazu vyhledejte změny v souboru hosts:
 
 ```kusto
 ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
@@ -51,13 +51,13 @@ Po nastavení logiky podmínky můžete přiřadit skupiny akcí k provádění 
 
 Po nastavení všech parametrů a logiky použijte upozornění pro prostředí.
 
-## <a name="more-tracking-and-alerting-examples"></a>Další příklady sledování a upozorňování
+## <a name="tracking-and-alerting-examples"></a>Příklady sledování a upozorňování
 
-Tady je několik dalších běžných scénářů pro sledování a upozorňování, které byste mohli chtít vzít v úvahu:
+V této části najdete další běžné scénáře sledování a upozorňování, které byste mohli chtít použít.
 
 ### <a name="driver-file-changed"></a>Soubor ovladače se změnil.
 
-Zjištění, zda jsou soubory ovladačů změněny, přidány nebo odebrány. Hodí se ke sledování změn důležitých systémových souborů.
+Pomocí následujícího dotazu zjistíte, jestli se soubory ovladačů změnily, přidaly nebo odebraly. Je užitečné ke sledování změn důležitých systémových souborů.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Files" and FileSystemPath contains " c:\\windows\\system32\\drivers\\"
@@ -65,7 +65,7 @@ Zjištění, zda jsou soubory ovladačů změněny, přidány nebo odebrány. Ho
 
 ### <a name="specific-service-stopped"></a>Konkrétní služba byla zastavena.
 
-Hodí se ke sledování změn pro důležité systémové služby.
+Pomocí následujícího dotazu můžete sledovat změny důležitých systémových služeb.
 
   ```kusto
   ConfigurationChange | where SvcState == "Stopped" and SvcName contains "w3svc"
@@ -73,7 +73,7 @@ Hodí se ke sledování změn pro důležité systémové služby.
 
 ### <a name="new-software-installed"></a>Nově nainstalovaný software
 
-Užitečné pro prostředí, která potřebují zamknout konfigurace softwaru.
+Pro prostředí, která potřebují uzamknout softwarové konfigurace, použijte následující dotaz.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Software" and ChangeCategory == "Added"
@@ -81,15 +81,15 @@ Užitečné pro prostředí, která potřebují zamknout konfigurace softwaru.
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Konkrétní verze softwaru je nebo není nainstalovaná na počítači.
 
-Užitečné pro vyhodnocování zabezpečení. Všimněte si, že tento dotaz odkazuje na `ConfigurationData`, který obsahuje protokoly pro inventarizaci a oznamuje poslední nahlášený stav konfigurace, nikoli změny.
+K vyhodnocení zabezpečení použijte následující dotaz. Tento dotaz odkazuje na `ConfigurationData`, která obsahuje protokoly pro inventarizaci a poskytuje poslední hlášený stav konfigurace, nikoli změny.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
   ```
 
-### <a name="known-dll-changed-through-registry"></a>Známá knihovna DLL se změnila prostřednictvím registru
+### <a name="known-dll-changed-through-the-registry"></a>Známá knihovna DLL se změnila prostřednictvím registru
 
-Užitečné pro detekci změn známých klíčů registru.
+Pomocí následujícího dotazu zjistíte změny známých klíčů registru.
 
   ```kusto
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
@@ -97,7 +97,7 @@ Užitečné pro detekci změn známých klíčů registru.
 
 ## <a name="next-steps"></a>Další kroky
 
-Naučte se spravovat aktualizace svých serverů [vytvořením plánů aktualizací](./update-schedules.md) pomocí Azure Automation.
+Naučte se, jak pomocí Azure Automation [vytvořit plány aktualizací](./update-schedules.md) pro správu aktualizací vašich serverů.
 
 > [!div class="nextstepaction"]
 > [Vytvoření plánů aktualizací](./update-schedules.md)

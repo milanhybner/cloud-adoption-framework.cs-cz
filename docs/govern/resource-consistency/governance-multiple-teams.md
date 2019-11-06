@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566021"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656693"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
@@ -259,12 +259,12 @@ Postupujte následovně:
 6. Vytvořte schvalovací proces pro **vlastníky úloh** , které vyžádají vytvoření skupin prostředků. Proces schvalování se dá implementovat mnoha způsoby, například přes e-maily, nebo můžete použít nástroj pro správu procesů, například [pracovní postupy SharePointu](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Proces schvalování může postupovat podle těchto kroků:
     - **Vlastník úlohy** připraví množství materiálů pro požadované prostředky Azure ve **vývojovém** prostředí, v **produkčním** prostředí nebo v obou a odešle je **vlastníkovi předplatného**.
     - **Vlastník předplatného** zkontroluje množství materiálů a ověří požadované prostředky, aby bylo zajištěno, že požadované prostředky jsou vhodné pro jejich plánované použití, například kontrolu, zda jsou požadované [velikosti virtuálních počítačů](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) . odstranění.
-    - Pokud žádost není schválena, **vlastník úlohy** se oznámí. Pokud je žádost schválená, **vlastník předplatného** [vytvoří požadovanou skupinu prostředků](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) podle [konvencí vytváření názvů](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)vaší organizace a [přidá **vlastníka úlohy** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) do role [ **přispěvatele** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) . a pošle oznámení **vlastníkovi úlohy** , že se vytvořila skupina prostředků.
+    - Pokud žádost není schválena, **vlastník úlohy** se oznámí. Pokud je žádost schválená, **vlastník předplatného** [vytvoří požadovanou skupinu prostředků](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) podle [konvencí vytváření názvů](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)vaší organizace a [přidá **vlastníka úlohy** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) do role [ **přispěvatele** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) . a pošle oznámení **vlastníkovi úlohy** , že se vytvořila skupina prostředků.
 7. Vytvořte schvalovací proces pro vlastníky úloh, které vyžádají připojení partnerského vztahu virtuální sítě od vlastníka sdílené infrastruktury. Stejně jako v předchozím kroku se tento proces schvalování dá implementovat pomocí e-mailu nebo nástroje pro správu procesů.
 
 Teď, když jste implementovali model zásad správného řízení, můžete nasadit své sdílené služby infrastruktury.
 
-## <a name="related-resources"></a>Související prostředky
+## <a name="related-resources"></a>Související materiály
 
 [Předdefinované role pro prostředky Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 

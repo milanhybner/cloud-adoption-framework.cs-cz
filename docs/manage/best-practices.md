@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565242"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656559"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Navázat postupy provozní správy v cloudu
 
@@ -42,6 +42,6 @@ Oba tyto osvědčené postupy se sestavují s metodologií pro řízení provozu
 - **Operace platformy:** Všechna IT prostředí obsahují sadu běžně používaných platforem. Tyto platformy můžou zahrnovat úložiště dat, například SQL Server nebo Azure HDInsight. Mezi další běžné platformy patří například řešení kontejnerů, jako je Azure Kubernetes Service (AKS). Bez ohledu na platformu se v operacích s platformou zaměřuje na přizpůsobení operací na základě způsobu nasazení, konfigurace a používání běžných platforem v úlohách.
 - **Operace úlohy:** V nejvyšší provozní zralosti můžou cloudové týmy provozu ladit operace s úlohami, které jsou zásadní pro úspěch firmy. Pro tyto úlohy s vysokou závažností může dostupná data pomoci při automatizaci nápravy, velikosti nebo ochrany úloh na základě jejich využití.
 
-Další doprovodné materiály, jako je například [architektura pro kontrolu návrhu (název kódu: Principy návrhu cloudu)](https://docs.microsoft.com/azure/architecture/reliability), vám mohou pomoci při rozhodování o všech úlohách v rámci dříve popsaných oborů.
+Další doprovodné materiály, jako je například [architektura pro kontrolu návrhu (název kódu: Principy návrhu cloudu)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), vám mohou pomoci při rozhodování o všech úlohách v rámci dříve popsaných oborů.
 
 Tato část rozhraní pro přijetí do cloudu bude sestavená na každém z předchozích témat, která vám pomůžou povýšit vyspělé cloudové operace v rámci vaší organizace.

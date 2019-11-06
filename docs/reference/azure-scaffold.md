@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561812"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656661"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -115,7 +115,7 @@ První pilíř uživatelského rozhraní je konzistentní standardní pojmenová
 > [!TIP]
 > Pro konvence pojmenování:
 >
-> - Projděte si, a kdykoli to bude možné, začněte aplikovat [pokyny k vzorům a postupům](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). V těchto pokynech se můžete rozhodnout pro smysluplný Standard pojmenování a poskytujeme rozsáhlé příklady.
+> - Projděte si, a kdykoli to bude možné, začněte aplikovat [pokyny k vzorům a postupům](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). V těchto pokynech se můžete rozhodnout pro smysluplný Standard pojmenování a poskytujeme rozsáhlé příklady.
 > - Použití zásad Správce prostředků, které vám pomůžou vymáhat standardy pojmenování.
 >
 > Mějte na paměti, že později je obtížné změnit názvy, a to za pár minut teď ušetříte problémy později.

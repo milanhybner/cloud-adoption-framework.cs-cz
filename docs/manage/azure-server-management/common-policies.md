@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7008809ef2e80cd5f1c263b705b46a37b6028482
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547312"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656409"
 ---
 # <a name="common-azure-policy-examples"></a>Příklady běžných Azure Policy
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) vám může pomáhat při použití zásad správného řízení pro vaše cloudové prostředky. Tato služba vám může přispět k vytváření guardrails, která zajistí dodržování požadavků zásad správného řízení na úrovni společnosti. Zásady vytvoříte pomocí rutin Azure Portal nebo PowerShellu. Tento článek popisuje příklady rutin PowerShellu.
 
 > [!NOTE]
-> Při Azure Policy nejsou zásady vynucování (**deployIfNotExists**) automaticky nasazeny do stávajících virtuálních počítačů. Náprava se vyžaduje, aby tyto virtuální počítače zůstaly v souladu s dodržováním předpisů. Další informace najdete v tématu [napravení nevyhovujících prostředků pomocí Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Při Azure Policy nejsou zásady vynucování (**deployIfNotExists**) automaticky nasazeny do stávajících virtuálních počítačů. Náprava se vyžaduje, aby byly virtuální počítače v souladu s předpisy. Další informace najdete v tématu [napravení nevyhovujících prostředků pomocí Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Příklady běžných zásad
 
@@ -28,15 +28,15 @@ V následujících částech jsou popsány některé běžně používané zása
 
 ### <a name="restrict-resource-regions"></a>Omezení oblastí prostředků
 
-Právní předpisy a dodržování předpisů budou často záviset na kontrole fyzického umístění, kde jsou prostředky nasazeny. Pomocí integrovaných zásad můžete uživatelům povolit vytváření prostředků jenom v seznamu povolených oblastí Azure. Tuto zásadu můžete najít na portálu tak, že na stránce definice zásad vyhledáte "umístění".
+Právní předpisy a dodržování zásad často závisí na kontrole fyzického umístění, kde jsou prostředky nasazeny. Pomocí předdefinovaných zásad můžete uživatelům povolit vytváření prostředků jenom v určitých povolených oblastech Azure.
 
-Nebo můžete spustit tuto rutinu a najít zásadu:
+Tuto zásadu na portálu najdete tak, že na stránce definice zásad vyhledáte "umístění". Nebo spuštěním této rutiny vyhledejte zásadu:
 
 ```powershell
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Následující skript ukazuje, jak přiřadit zásadu. Změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se přihlaste pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -51,13 +51,13 @@ $policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyparam
 ```
 
-Stejný skript můžete použít k aplikování dalších zásad popsaných v tomto článku. Stačí nahradit GUID na řádku, který nastaví `$AllowedLocationPolicy` identifikátorem GUID zásady, kterou chcete použít.
+Tento skript můžete použít také k použití dalších zásad, které jsou popsány v tomto článku. Stačí nahradit GUID na řádku, který nastaví `$AllowedLocationPolicy` identifikátorem GUID zásady, kterou chcete použít.
 
 ### <a name="block-certain-resource-types"></a>Blokovat určité typy prostředků
 
-Další běžná předdefinovaná zásada, která se používá k řízení nákladů, vám umožní blokovat určité typy prostředků. Tuto zásadu můžete najít na portálu tak, že na stránce definice zásad vyhledáte "povolené typy prostředků".
+K blokování určitých typů prostředků se taky dá použít další společná předdefinovaná zásada, která se používá k řízení nákladů.
 
-Nebo můžete spustit tuto rutinu a najít zásadu:
+Pokud chcete najít tuto zásadu na portálu, vyhledejte na stránce definice zásad "povolené typy prostředků". Nebo spuštěním této rutiny vyhledejte zásadu:
 
 ```powershell
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*allowed resource types") }
@@ -67,15 +67,15 @@ Jakmile určíte zásadu, kterou chcete použít, můžete upravit ukázku prost
 
 ### <a name="restrict-vm-size"></a>Omezení velikosti virtuálního počítače
 
-Azure nabízí rozsáhlou škálu velikostí virtuálních počítačů pro podporu různých typů úloh. K řízení rozpočtu můžete vytvořit zásadu, která umožňuje ve svých předplatných pouze podmnožinu velikostí virtuálních počítačů.
+Azure nabízí rozsáhlou škálu velikostí virtuálních počítačů pro podporu různých úloh. K řízení rozpočtu můžete vytvořit zásadu, která umožňuje ve svých předplatných pouze podmnožinu velikostí virtuálních počítačů.
 
 ### <a name="deploy-antimalware"></a>Nasazení antimalwarového programu
 
-Pomocí této zásady můžete nasadit rozšíření Microsoft IaaSAntimalware s výchozí konfigurací na virtuální počítače, které nejsou chráněné antimalwarem.
+Pomocí této zásady můžete nasadit rozšíření Microsoft *IaaSAntimalware* s výchozí konfigurací na virtuální počítače, které nejsou chráněné antimalwarem.
 
 Identifikátor GUID zásad je `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se budete muset přihlásit pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Následující skript ukazuje, jak přiřadit zásadu. Chcete-li použít skript, změňte hodnotu `$SubscriptionID` tak, aby odkazovala na předplatné, ke kterému chcete zásadu přiřadit. Před spuštěním skriptu se přihlaste pomocí rutiny [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -84,14 +84,14 @@ $scope = "/subscriptions/$SubscriptionID"
 
 $AntimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
-#Replace location “eastus” with the value you want to use.
+#Replace location “eastus” with the value that you want to use.
 New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $AntimalwarePolicy -Location eastus –AssignIdentity
 
 ```
 
 ## <a name="next-steps"></a>Další kroky
 
-Přečtěte si o dalších dostupných nástrojích a službách pro správu serveru.
+Seznamte se s dalšími dostupnými nástroji a službami pro správu serveru.
 
 > [!div class="nextstepaction"]
 > [Služby a nástroje pro správu serveru Azure](./tools-services.md)
