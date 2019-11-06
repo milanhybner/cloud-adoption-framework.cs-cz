@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221163"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566411"
 ---
 # <a name="cost-management-discipline-overview"></a>Disciplína služby Cost Management
 
@@ -33,7 +33,7 @@ Jako základ disciplíny služby Cost Management slouží užitečná prohláše
 > [!CAUTION]
 > Ukázkové zásady vycházejí z běžných zkušeností zákazníků. Pokud chcete tyto zásady lépe sladit s konkrétními požadavky na zásady správného řízení v cloudu, provedením následujících kroků můžete vytvořit prohlášení o zásadách, která splní vaše jedinečné obchodní potřeby.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Vývoj prohlášení zásad správného řízení služby Cost Management
+## <a name="develop-governance-policy-statements"></a>Vývoj prohlášení o zásadách správného řízení
 
 Následujících šest kroků umožňuje definovat zásady správného řízení nákladů ve vašem prostředí.
 

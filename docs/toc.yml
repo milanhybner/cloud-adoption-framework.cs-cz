@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: Připravenost dovedností
               href: migrate/expanded-scope/suggested-skills.md
-            - name: Migrace hostitele VMWare
+            - name: Migrace hostitele VMware
               href: migrate/expanded-scope/vmware-host.md
             - name: Migrace SQL Serveru
               href: migrate/expanded-scope/sql-migration.md
@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Škálování migrace
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Migrace hostitelů VMWare
+            - name: Migrace hostitelů VMware
               items:
                 - name: Přehled
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: Přehled
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: 'Rozhodnutí, která ovlivňují aktivity migrace'
+                - name: 'Rozhodnutí, která ovlivňují migraci'
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Kontrolní seznam pro plánování prostředí
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Souvislost rolí a zodpovědností
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Strukturování backlogů pro správu změn
+                - name: Flexibilní správa změn
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Kontrola backlogu migrace
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Zajištění priorit
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Vyhodnocení připravenosti úloh a prostředků
+                - name: Vyhodnocení připravenosti úloh
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Vytváření úloh
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Odhad nákladů na cloud
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Zapojení podpory a partnerů pro migraci
+                - name: Vysvětlení možností partnerství
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Správa přírůstkových procesů
+                - name: Správa změn
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Změna schvalovacích procesů
+                - name: Schválení změn architektury
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrace jednotlivých prostředků
               items:
                 - name: Přehled
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Modely povýšení – jeden krok, s fázemi nebo nasazení testovací verze'
+                - name: Propagační modely
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Úkoly pro nápravu
+                - name: Náprava prostředků
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replikace prostředků do cloudu
+                - name: Replikace prostředků
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Možnosti replikace
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Fáze úloh pro testování a povýšení
+                - name: Fáze úloh
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optimalizace a povýšení úloh
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Obchodní testování
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Srovnávací testy a optimalizace prostředků
+                - name: Srovnávací testování a změna velikosti prostředků
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Připravenost k povýšení
+                - name: Připravenost pro zvýšení úrovně
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Povýšení úloh do produkčního prostředí
+                - name: Zvýšení úrovně do produkčního prostředí
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Vyřazení zastaralých prostředků
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Retrospektiva
+                - name: Provádění retrospektiv
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Zabezpečení a správa úloh v produkčním prostředí
               items:

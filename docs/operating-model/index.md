@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683815"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564523"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Vytvoření provozního modelu pro cloud
 
@@ -36,7 +36,7 @@ Tato část architektury přechod na cloud poskytuje praktický provozní model,
 - [Správa:](../manage/index.md) Srovnejte probíhající procesy provozní správy technologií kvůli maximalizaci dosažené hodnoty a minimalizaci přerušení služeb.
 - [Uspořádání:](../organize/index.md) Jak zraje provozní model, zraje i organizace různých týmů a možností podporujících provozní model.
 
-## <a name="aligning-operating-models"></a>Srovnání provozních modelů
+## <a name="align-operating-models"></a>Srovnání provozních modelů
 
 Cloud a digitální ekonomika odhalily potřebu několika provozních modelů. Tato potřeba někdy vychází z nutnosti podporovat několik veřejných cloudů. Častěji je ale tato potřeba důsledkem přechodu z místní verze na cloudovou. V obou scénářích je třeba srovnat provozní modely z hlediska maximálního výkonu a minimální redundance.
 

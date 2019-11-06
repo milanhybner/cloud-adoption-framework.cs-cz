@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71025908"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564294"
 ---
-# <a name="managing-organizational-alignment"></a>Správa organizačního sladění
+# <a name="manage-organizational-alignment"></a>Správa organizačního sladění
 
 K přechodu na cloudu nemůže dojít bez dobře organizovaných lidí. Úspěšný přechod na cloud je výsledkem toho, že kvalifikovaní uživatelé dělají odpovídající práci, a to v souladu s jasně definovanými obchodními cíli a v dobře řízeném prostředí. K zajištění efektivního cloudového provozního modelu je důležité vytvořit organizační struktury s vhodným personálem. Tento článek popisuje přístup k vytváření a správě vhodných organizačních struktur ve čtyřech krocích.
 
@@ -130,7 +130,7 @@ Níže najdete seznam funkcí cloudu, které jsou potřeba k zajištění úspě
 - [Cloudová platforma:](./cloud-platform.md) Provoz a vyzrávání platformy
 - [Automatizace cloudu:](./cloud-automation.md) Zrychlení přechodu a inovací
 
-## <a name="maturing-organizational-structures"></a>Vyzrávání organizačních struktur
+## <a name="mature-organizational-structures"></a>Vyzrávání organizačních struktur
 
 Do určité míry jsou všechny výše uvedené funkce součástí každého úsilí o přechod na cloud, a to buď explicitně, nebo v souladu s definovanou strukturou týmu.
 Jak se potřeby přechodu rozšiřují, zvětšuje se i potřeba zajistit rovnováhu s strukturu. Ke splnění těchto potřeb organizace často využívají proces vyzrávání organizačních struktur.
@@ -139,7 +139,7 @@ Jak se potřeby přechodu rozšiřují, zvětšuje se i potřeba zajistit rovnov
 
 Další podrobnosti týkající se jednotlivých úrovní vyspělosti najdete v článku věnovaném [určení vyspělosti organizační struktury](./organization-structures.md).
 
-## <a name="aligning-raci-charts"></a>Sladění diagramů RACI
+## <a name="align-raci-charts"></a>Sladění diagramů RACI
 
 Na všech úrovních vyspělosti se zodpovědnost za různé funkce cloudu přesouvá na nové týmy. Tento přesun zodpovědnosti umožňuje zrychlení migrace a inovačních cyklů tím, že odstraňuje překážky jednotlivých změn a automatizuje je. Článek věnovaný [sladění RACI](./raci-alignment.md) obsahuje diagram RACI pro každou z referencovaných organizačních struktur a pomáhá zajistit vhodné sladění jednotlivých přiřazení.
 

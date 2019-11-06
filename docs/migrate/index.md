@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378269"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566866"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migrace do cloudu v architektuře přechodu na cloud
 
@@ -130,7 +130,7 @@ Ve své podstatě migrace do cloudu sestává ze čtyř jednoduchých fází: Po
 
 ![Model migrace architektury přechodu na cloud](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Vytvoření vyrovnaného cloudového portfolia
+## <a name="create-a-balanced-cloud-portfolio"></a>Vytvoření vyrovnaného cloudového portfolia
 
 Každé vyrovnané portfolio technologií obsahuje kombinaci prostředků v různých stavech. U některých aplikací se plánuje vyřazení z provozu a poskytuje se pro ně minimální podpora. Jiné aplikace nebo prostředky jsou podporované ve stavu údržby, ale funkce těchto řešení jsou stabilní. U novějších obchodních procesů změny podmínek na trhu pravděpodobně urychlí probíhající vylepšování nebo modernizaci funkcí. Když vzniknou nové příležitosti pro zajištění zdrojů příjmů, do prostředí se zavedou nové aplikace nebo prostředky. Vliv investic na příjmy a zisk se mění v každé fázi životního cyklu prostředku. Čím pozdější je fáze životního cyklu, tím menší je pravděpodobnost, že nová funkce nebo úsilí o modernizaci přinese výraznou návratnost investic.
 
