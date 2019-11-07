@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 72a3a5310ae0eaea52cffdec41ea2b1fb6c9a585
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239559"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565927"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
 
@@ -157,7 +157,7 @@ Provozní správa pro cloudová a hybridní řešení.
     </li>
 </ul>
 
-## <a name="understanding-the-lifecycle"></a>Vysvětlení životního cyklu
+## <a name="understand-the-lifecycle"></a>Vysvětlení životního cyklu
 
 Každá z výše uvedených fází je součástí životního cyklu širšího přechodu na cloud. Následující obrázek spojuje jednotlivé fáze a ukazuje celkový životní cyklus. Architektura přechodu na cloud je kompletní rámec životního cyklu, který zákazníky ve všech těchto fázích podporuje.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769409"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564812"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
@@ -29,7 +29,7 @@ Azure se skládá z mnoha oblastí po celém světě. Každá z [oblastí Azure]
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. Poznámka: V [Austrálii](https://azure.microsoft.com/global-infrastructure/australia) jsou dvě oblasti, které spravuje Microsoft, ale poskytují se pro australskou vládu a její zákazníky a dodavatele, a proto mají obdobná klientská omezení klientů jako ostatní suverénní cloudy.
 
-## <a name="operating-in-multiple-geographic-regions"></a>Provoz v několika geografických oblastech
+## <a name="operate-in-multiple-geographic-regions"></a>Provoz v několika geografických oblastech
 
 Když firmy působí ve více geografických oblastech, je to sice zásadní pro zajištění odolnosti, ale přináší to další úroveň složitosti. Tyto složitosti se manifestují ve čtyřech základních podobách:
 
@@ -44,17 +44,23 @@ Když výše uvedenou problematiku probereme blíž, začnete rozumět tomu, jak
 
 Každé robustní cloudové nasazení vyžaduje dobře rozváženou síť, která bere v úvahu oblasti Azure. Po zvážení výše uvedených charakteristik pro určení, do kterých oblastí nasazovat, je potřeba nasadit síť. I když vyčerpávající diskuze na téma sítí přesahuje rozsah tohoto článku, je nutné vzít v úvahu některé okolnosti:
 
-1. Oblasti Azure se nasazují v párech. V případě závažného selhání oblasti je druhá oblast v rámci stejné geopolitické hranice* označená jako spárovaná oblast. Nasazení do spárovaných oblastí jako primární a sekundární strategie odolnosti je potřeba promyslet. \* Významnou výjimkou je Azure Brazílie, jejíž spárovanou oblastí je USA (střed) – jih. Další informace najdete v tématu [Spárované oblasti Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
-    1. Azure Storage podporuje [geograficky redundantní úložiště (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). To znamená, že se tři kopie vašich dat ukládají v rámci primární oblasti a tři další kopie se ukládají do spárované oblasti. Párování úložiště pro GRS nejde změnit.
-    1. Tuto možnost spárované oblasti mohou využít služby, které se spoléhají na GRS služby Azure Storage. Je k tomu potřeba, aby vaše aplikace i síť tuto možnost podporovaly.
-    1. Pokud neplánujete využívat GRS k zajištění potřeb vaší místní odolnosti, doporučuje se, abyste _NEVYUŽÍVALI_ spárovanou oblast jako sekundární. V případě regionálního selhání bude při migraci na prostředky v spárované oblasti vyvíjen velký tlak. Pokud se dokážete tomuto tlaku vyhnout, můžete si zajistit vyšší rychlost během obnovování, a to obnovením do alternativní lokality.
-    > [!WARNING]
-    > Nepokoušejte se využít Azure GRS pro zálohování nebo obnovení virtuálních počítačů. Místo toho pro zajištění odolnosti vašich úloh IaaS využijte [Azure Backup](https://azure.microsoft.com/services/backup) a [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) společně s funkcí [Spravované disky](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
-2. Azure Backup a Azure Site Recovery spolu s návrhem vaší sítě zajišťují regionální odolnost pro potřeby zálohování dat a IaaS. Ujistěte se, že síť je optimalizovaná, aby přenosy dat zůstávaly na páteřní síti Microsoftu, a pokud je to možné, využijte [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Některé větší organizace s globálními nasazeními mohou místo toho ke směrování provozu mezi oblastmi používat [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction), což může vést k úspoře poplatků za místní výchozí přenos dat.
-3. Skupiny prostředků Azure jsou konstrukce specifické pro jednotlivé oblasti. Je ale obvyklé, že prostředky v rámci skupiny prostředků zasahují do více oblastí. V takovém případě je důležité vzít v úvahu, že v případě regionálního selhání v ovlivněné oblasti selžou operace řídicí roviny pro skupinu prostředků i v případě, že prostředky v jiných oblastech (v rámci této skupiny prostředků) budou i nadále fungovat. Může to mít vliv na návrh vaší sítě i skupin prostředků.
-4. Celá řada služeb PaaS v rámci Azure podporuje [koncové body webové služby](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) nebo [privátní propojení](https://docs.microsoft.com/azure/private-link/private-link-overview). Obě tato řešení podstatným způsobem ovlivňují síťové aspekty při úvahách o regionální odolnosti, migraci a zásadách správného řízení.
-5. Řada služeb PaaS se spoléhá na vlastní řešení regionální odolnosti. Například Azure SQL Database umožňuje snadno replikovat do N dalších oblastí stejně jako CosmosDB. Některé služby nejsou závislé na oblastech, například Azure DNS. Když zvažujete, které služby budete během procesu přechodu využívat, je potřeba, abyste dobře rozuměli možnostem převzetí služeb při selhání a postupu obnovení, který může být pro jednotlivé služby Azure potřeba.
-6. Kromě podpory zotavení po havárii nasazením do více oblastí řada organizací volí nasazování v modelu aktivní-aktivní, takže žádné převzetí služeb při selhání není nutné. To přináší i další výhodu – zajištění globálního vyrovnávání zatížení a vyšší odolnost proti chybám a náhlému zvýšení výkonu sítě. Aby bylo možné tento model využít, musí vaše aplikace podporovat konfiguraci aktivní-aktivní v několika oblastech.
+- Oblasti Azure se nasazují v párech. V případě závažného selhání oblasti je druhá oblast v rámci stejné geopolitické hranice* označená jako spárovaná oblast. Nasazení do spárovaných oblastí jako primární a sekundární strategie odolnosti je potřeba promyslet. \* Významnou výjimkou je Azure Brazílie, jejíž spárovanou oblastí je USA (střed) – jih. Další informace najdete v tématu [Spárované oblasti Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+
+  - Azure Storage podporuje [geograficky redundantní úložiště (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). To znamená, že se tři kopie vašich dat ukládají v rámci primární oblasti a tři další kopie se ukládají do spárované oblasti. Párování úložiště pro GRS nejde změnit.
+  - Tuto možnost spárované oblasti mohou využít služby, které se spoléhají na GRS služby Azure Storage. Je k tomu potřeba, aby vaše aplikace i síť tuto možnost podporovaly.
+  - Pokud neplánujete využívat GRS k zajištění potřeb vaší místní odolnosti, doporučuje se, abyste _NEVYUŽÍVALI_ spárovanou oblast jako sekundární. V případě regionálního selhání bude při migraci na prostředky v spárované oblasti vyvíjen velký tlak. Pokud se dokážete tomuto tlaku vyhnout, můžete si zajistit vyšší rychlost během obnovování, a to obnovením do alternativní lokality.
+  > [!WARNING]
+  > Nepokoušejte se využít Azure GRS pro zálohování nebo obnovení virtuálních počítačů. Místo toho pro zajištění odolnosti vašich úloh IaaS využijte [Azure Backup](https://azure.microsoft.com/services/backup) a [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) společně se [spravovanými disky Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
+
+- Azure Backup a Azure Site Recovery spolu s návrhem vaší sítě zajišťují regionální odolnost pro potřeby zálohování dat a IaaS. Ujistěte se, že síť je optimalizovaná, aby přenosy dat zůstávaly na páteřní síti Microsoftu, a pokud je to možné, využijte [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Některé větší organizace s globálními nasazeními mohou místo toho ke směrování provozu mezi oblastmi používat [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction), což může vést k úspoře poplatků za místní výchozí přenos dat.
+
+- Skupiny prostředků Azure jsou konstrukce specifické pro jednotlivé oblasti. Je ale obvyklé, že prostředky v rámci skupiny prostředků zasahují do více oblastí. V takovém případě je důležité vzít v úvahu, že v případě regionálního selhání v ovlivněné oblasti selžou operace řídicí roviny pro skupinu prostředků i v případě, že prostředky v jiných oblastech (v rámci této skupiny prostředků) budou i nadále fungovat. Může to mít vliv na návrh vaší sítě i skupin prostředků.
+
+- Celá řada služeb PaaS v rámci Azure podporuje [koncové body webové služby](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) nebo [privátní propojení](https://docs.microsoft.com/azure/private-link/private-link-overview). Obě tato řešení podstatným způsobem ovlivňují síťové aspekty při úvahách o regionální odolnosti, migraci a zásadách správného řízení.
+
+- Řada služeb PaaS se spoléhá na vlastní řešení regionální odolnosti. Například Azure SQL Database umožňuje snadno replikovat do N dalších oblastí stejně jako CosmosDB. Některé služby nejsou závislé na oblastech, například Azure DNS. Když zvažujete, které služby budete během procesu přechodu využívat, je potřeba, abyste dobře rozuměli možnostem převzetí služeb při selhání a postupu obnovení, který může být pro jednotlivé služby Azure potřeba.
+
+- Kromě podpory zotavení po havárii nasazením do více oblastí řada organizací volí nasazování v modelu aktivní-aktivní, takže žádné převzetí služeb při selhání není nutné. To přináší i další výhodu – zajištění globálního vyrovnávání zatížení a vyšší odolnost proti chybám a náhlému zvýšení výkonu sítě. Aby bylo možné tento model využít, musí vaše aplikace podporovat konfiguraci aktivní-aktivní v několika oblastech.
 
 > [!WARNING]
 > Oblasti Azure jsou vysoce dostupné konstrukce se smlouvami SLA pro služby, které v nich běží. V případě klíčových aplikací byste se ale měli vyhýbat závislosti na jedné oblasti. Vždy si naplánujte regionální selhání a vyzkoušejte si kroky pro zmírnění a obnovení.
@@ -70,7 +76,7 @@ Po zvážení síťové topologie, která bude nutná k zajištění provozu, bu
 
 Přizpůsobte změny v rámci procesu migrace tak, aby řešily tento úvodní soupis.
 
-## <a name="documenting-complexity"></a>Zdokumentování složitosti
+## <a name="document-complexity"></a>Složitost dokumentace
 
 Následující tabulka vám může pomoct při dokumentování zjištěných informací z výše uvedených kroků:
 
@@ -99,7 +105,7 @@ Vzhledem k tomu, že společnost podporuje zaměstnance, partnery a zákazníky 
 
 Umístění existujících datacenter může mít vliv na strategii migrace. Níže jsou uvedené některé z nejběžnějších dopadů:
 
-**Rozhodnutí týkající se architektury:** Cílová oblast nebo umístění je jedním z prvních kroků návrhu strategie migrace. To je často ovlivněno umístěním existujících prostředků. Dostupnost cloudových služeb a jednotková cena těchto služeb se navíc může v jednotlivých oblastech lišit. Pochopení současného a budoucího umístění prostředků má proto vliv na rozhodnutí týkající se architektury a může také ovlivnit odhady rozpočtu.
+**Rozhodnutí týkající se architektury:** Cílová oblast je jedním z prvních kroků návrhu strategie migrace. To je často ovlivněno umístěním existujících prostředků. Dostupnost cloudových služeb a jednotková cena těchto služeb se navíc může v jednotlivých oblastech lišit. Pochopení současného a budoucího umístění prostředků má proto vliv na rozhodnutí týkající se architektury a může také ovlivnit odhady rozpočtu.
 
 **Závislosti datacenter:** Na základě dat ve výše uvedené tabulce je pravděpodobné, že mezi různými datacentry po celém světě existují závislosti. V mnoha organizacích, které působí s tímto typem rozsahu, nemusí být tyto závislosti zdokumentovány nebo jim lidé nemusí dobře rozumět. Přístupy používané k vyhodnocení profilů uživatelů vám pomůžou některé z těchto závislostí identifikovat. Během procesu posuzování jsou navrhovány další kroky s cílem omezit rizika spojená s touto složitostí.
 
@@ -114,7 +120,7 @@ Pokud rozsah migrace zahrnuje více oblastí, měl by tým přechodu na cloud vy
 
 Jakmile tým stanoví vyhovující základní přístup a je k dispozici odpovídající připravenost, je třeba zvážit několik předpokladů řízených daty:
 
-- **Obecné zjišťování:** Vytvořte si tabulku pro [zdokumentování složitosti](#documenting-complexity), jak je uvedeno výše.
+- **Obecné zjišťování:** Vytvořte si tabulku pro [zdokumentování složitosti](#document-complexity), jak je uvedeno výše.
 - **Proveďte analýzu profilů uživatelů v každé ovlivněné zemi:** Je důležité, abyste v počáteční fázi procesu migrace porozuměli obecnému směrování u koncových uživatelů. Změna globálních pronajatých linek a přidávání připojení, jako je ExpressRoute, do cloudového datového centra může vyžadovat zpoždění v řádu měsíců. Tuto možnost proto vyřešte v rámci procesu co nejdříve.
 - **Počáteční racionalizace digitálních aktiv:** Vždy, když je do strategie migrace zavedena složitost, měla by být provedena počáteční racionalizace digitálních aktiv. Pomoc najdete v pokynech týkajících se [racionalizace digitálních aktiv](../../digital-estate/index.md).
   - **Další požadavky na digitální aktiva:** Stanovte zásady označování pro identifikaci všech úloh, které jsou ovlivněny požadavky na suverenitu dat. Požadované značky by měly začínat ve fázi racionalizace digitálních aktiv a pokračovat až do migrovaných prostředků.

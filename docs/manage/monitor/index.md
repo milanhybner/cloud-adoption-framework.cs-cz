@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979864"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564918"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Průvodce monitorováním cloudu: Úvod
 
@@ -34,7 +34,7 @@ Cílem této příručky je poskytnout podrobné referenční informace, které 
 
 * Monitorovací platformy Azure s přehledem a porovnáním jejich funkcí.
 * Nejvhodnější řešení pro monitorování hybridních a privátních úloh a úloh nativních pro Azure.
-* Doporučený způsob kompletního monitorování pro infrastrukturu a aplikace jako celek. Tento přístup zahrnuje nasaditelná řešení pro migraci těchto běžných úloh do Azure.
+* Doporučený způsob kompletního monitorování pro infrastrukturu a aplikace. Tento přístup zahrnuje nasaditelná řešení pro migraci těchto běžných úloh do Azure.
 
 Tato příručka není praktický článek zaměřený na použití nebo konfiguraci jednotlivých řešení a služeb Azure, ale na tyto zdroje odkazuje, když to jde a je to vhodné. Po jejím přečtení porozumíte tomu, jak úspěšně provozovat úlohy s využitím osvědčených postupů a vzorů.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222105"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565992"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Disciplína konzistence prostředků
 
@@ -35,7 +35,7 @@ Jako základ disciplíny konzistence prostředků slouží užitečná prohláš
 > [!CAUTION]
 > Ukázkové zásady vycházejí z běžných zkušeností zákazníků. Pokud chcete tyto zásady lépe sladit s konkrétními požadavky na zásady správného řízení v cloudu, provedením následujících kroků můžete vytvořit prohlášení o zásadách, která splní vaše jedinečné obchodní potřeby.
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>Vývoj prohlášení o zásadách správného řízení konzistence prostředků
+## <a name="develop-governance-policy-statements"></a>Vývoj prohlášení o zásadách správného řízení
 
 Následujících šest kroků nabízí příklady a potenciální možnosti ke zvážení při vývoji zásad správného řízení konzistence prostředků. Jednotlivé kroky můžete použít jako výchozí body pro diskuze s vaším týmem zásad správného řízení v cloudu a ovlivněnými obchodními a IT týmy v rámci vaší organizace za účelem vytvoření požadovaných zásad a procesů správy rizik spojených s konzistencí prostředků.
 

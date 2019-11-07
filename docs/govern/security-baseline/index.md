@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221762"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565947"
 ---
 # <a name="security-baseline-discipline-overview"></a>Disciplína standardních hodnot zabezpečení
 
@@ -35,7 +35,7 @@ Jako základ disciplíny standardních hodnot zabezpečení slouží praktická 
 > [!CAUTION]
 > Ukázkové zásady vycházejí z běžných zkušeností zákazníků. Pokud chcete tyto zásady lépe sladit s konkrétními požadavky na zásady správného řízení v cloudu, provedením následujících kroků můžete vytvořit prohlášení o zásadách, která splní vaše jedinečné obchodní potřeby.
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>Vývoj prohlášení o zásadách správného řízení standardních hodnot zabezpečení
+## <a name="develop-governance-policy-statements"></a>Vývoj prohlášení o zásadách správného řízení
 
 Následujících šest kroků nabízí příklady a potenciální možnosti ke zvážení při vývoji zásad správného řízení standardních hodnot zabezpečení. Jednotlivé kroky můžete použít jako výchozí body pro diskuze s vaším týmem zásad správného řízení v cloudu a ovlivněnými obchodními a IT týmy a týmy zabezpečení v rámci vaší organizace za účelem vytvoření požadovaných zásad a procesů správy rizik spojených se zabezpečením.
 

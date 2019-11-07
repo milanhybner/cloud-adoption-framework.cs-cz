@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238758"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564876"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -22,13 +22,13 @@ Všechny organizace potřebují mechanismy, jak informovat IT týmy o problémec
 
 ![Diagram možností protokolování, generování sestav a monitorování od nejjednodušších po nejsložitější, které odpovídají rychlým odkazům níže](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Přejít na: [Plánování infrastruktury monitorování](#planning-your-monitoring-infrastructure) | [Model nativní pro cloud](#cloud-native) | [Místní rozšíření](#on-premises-extension) | [Agregace pomocí brány](#gateway-aggregation) | [Hybridní monitorování (v místním prostředí)](#hybrid-monitoring-on-premises) | [Hybridní monitorování (v cloudu)](#hybrid-monitoring-cloud-based) | [Více cloudů](#multicloud) | [Další informace](#learn-more)
+Přejít na: [Plánování infrastruktury monitorování](#plan-your-monitoring-infrastructure) | [Model nativní pro cloud](#cloud-native) | [Místní rozšíření](#on-premises-extension) | [Agregace pomocí brány](#gateway-aggregation) | [Hybridní monitorování (v místním prostředí)](#hybrid-monitoring-on-premises) | [Hybridní monitorování (v cloudu)](#hybrid-monitoring-cloud-based) | [Více cloudů](#multicloud) | [Další informace](#learn-more)
 
 Inflexní bod při určování strategie cloudového protokolování a generování sestav vychází hlavně ze stávajících investic vaší organizace do provozních procesů a do určité míry i z vašich případných požadavků na podporu strategie s více cloudy.
 
 Aktivity v cloudu je možné protokolovat a generovat jejich sestavy několika způsoby. Dvě běžné možnosti spravovaných služeb, které vycházejí z návrhu předplatného a počtu předplatných, jsou protokolování nativní pro cloud a centrální protokolování.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Plánování infrastruktury monitorování
+## <a name="plan-your-monitoring-infrastructure"></a>Plánování infrastruktury monitorování
 
 Při plánování nasazení je potřeba zvážit, kam se budou ukládat data protokolování, a způsob integrace cloudových služeb generování sestav a monitorování se stávajícími procesy a nástroji.
 

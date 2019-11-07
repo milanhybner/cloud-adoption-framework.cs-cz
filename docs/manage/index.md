@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979892"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565016"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Správa cloudu v architektuře přechodu na cloud
 
@@ -111,7 +111,7 @@ Výše uvedené kroky vytvářejí akční přístupy pro zajištění metodiky 
 
 ![Metodika správy v architektuře přechodu na cloud](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Vytvoření vyrovnaného cloudového portfolia
+## <a name="create-a-balanced-cloud-portfolio"></a>Vytvoření vyváženého cloudového portfolia
 
 Jak už bylo uvedeno v článku zaměřeném na [obchodní rovnováhu](./considerations/business-alignment.md), ne všechny úlohy jsou pro firmy klíčové. Každé portfolio zahrnuje různé úrovně potřeb provozní správy. Úsilí o zajištění obchodní rovnováhy pomáhá při podchycování dopadů na chod firmy a vyjednávání nákladů na správu, aby se zajistily nejvhodnější procesy a nástroje provozní správy.
 

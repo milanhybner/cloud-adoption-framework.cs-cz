@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4d1ada9d47e54f4b0d3828ce93b2d55f3eda8a34
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4939464c80668ca175a4d7ac53fe2198610afc1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025712"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565369"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Přehled služeb pro správu serverů Azure
 
-Služby pro správu serverů Azure poskytují zákazníkům konzistentní prostředí pro správu jejich serverů ve velkém měřítku. Tyto služby zahrnují operační systémy Linux a Windows a můžete je použít v produkčním, vývojovém i testovacím prostředí. Navíc můžou podporovat virtuální počítače Azure IaaS, fyzické servery a virtuální počítače hostované místně nebo v jiných hostitelských prostředích. 
+Služby pro správu serverů Azure poskytují zákazníkům konzistentní prostředí pro správu jejich serverů ve velkém měřítku. Tyto služby zahrnují operační systémy Linux a Windows a můžete je použít v produkčním, vývojovém i testovacím prostředí. Navíc můžou podporovat virtuální počítače Azure IaaS, fyzické servery a virtuální počítače hostované místně nebo v jiných hostitelských prostředích.
 
-Služby zahrnuté v sadě služeb pro správu serverů Azure jsou uvedené na následujícím diagramu. 
+Služby zahrnuté v sadě služeb pro správu serverů Azure jsou uvedené na následujícím diagramu.
 
 ![Diagram provozního modelu Azure](./media/operations-diagram.png)
 
@@ -35,10 +35,10 @@ Pro zjednodušení jsme kategorizovali tyto pokyny do tří fází:
 
 Služby pro správu Azure nabízí následující výhody:
 
-- **Nativní pro Azure.** Služby pro správu jsou nativně integrované s Azure Resource Managerem. Neustále se vylepšují, aby poskytovaly nové funkce a možnosti.
-- **Windows a Linux.** Počítače s Windows a Linuxem mají stejné konzistentní prostředí pro správu.
-- **Hybridní.** Služby pro správu pokrývají virtuální počítače Azure IaaS i fyzické a virtuální servery hostované místně nebo v jiných hostitelských prostředích.
-- **Zabezpečení.** Microsoft věnuje značné prostředky na všechny formy zabezpečení. Tyto investice nejen chrání infrastrukturu cloudu Azure, ale také rozšiřují výsledné technologie a pomáhají chránit prostředky zákazníků bez ohledu na to, kde se nacházejí.
+- **Nativní pro Azure:** Služby pro správu jsou nativně integrované s Azure Resource Managerem. Neustále se vylepšují, aby poskytovaly nové funkce a možnosti.
+- **Windows a Linux:** Počítače s Windows a Linuxem mají stejné konzistentní prostředí pro správu.
+- **Hybridní model:** Služby pro správu pokrývají virtuální počítače Azure IaaS i fyzické a virtuální servery hostované místně nebo v jiných hostitelských prostředích.
+- **Zabezpečení:** Microsoft věnuje značné prostředky na všechny formy zabezpečení. Tyto investice nejen chrání infrastrukturu cloudu Azure, ale také rozšiřují výsledné technologie a pomáhají chránit prostředky zákazníků bez ohledu na to, kde se nacházejí.
 
 ## <a name="next-steps"></a>Další kroky
 

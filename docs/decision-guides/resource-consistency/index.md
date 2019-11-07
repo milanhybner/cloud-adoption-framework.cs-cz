@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683532"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564803"
 ---
 # <a name="resource-consistency-decision-guide"></a>Průvodce rozhodováním ohledně konzistence prostředků
 
@@ -32,7 +32,7 @@ S tím, jak se bude zvyšovat význam těchto faktorů, budou čím dál důlež
 
 [Skupiny prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) v Azure představují základní mechanismus pro organizaci prostředků umožňující logické seskupování prostředků v rámci předplatného.
 
-Skupiny prostředků fungují jako kontejnery prostředků se společným životním cyklem A sdílenými omezeními správy, jako jsou požadavky na zásady nebo řízení přístupu na základě role (RBAC). Skupiny prostředků není možné vnořovat a prostředky můžou patřit pouze do jedné skupiny prostředků. Všechny akce řídicí roviny se provádějí se všemi prostředky ve skupině prostředků. Například při odstranění skupiny prostředků se také odstraní všechny prostředky v dané skupině. Pro správu skupin prostředků je vhodné zvážit následující otázky:
+Skupiny prostředků fungují jako kontejnery prostředků se společným životním cyklem a také sdílenými omezeními správy, jako jsou požadavky na zásady nebo řízení přístupu na základě role (RBAC). Skupiny prostředků není možné vnořovat a prostředky můžou patřit pouze do jedné skupiny prostředků. Všechny akce řídicí roviny se provádějí se všemi prostředky ve skupině prostředků. Například při odstranění skupiny prostředků se také odstraní všechny prostředky v dané skupině. Pro správu skupin prostředků je vhodné zvážit následující otázky:
 
 1. Vyvíjí se obsah skupin prostředků společně?
 1. Je obsah skupiny prostředků spravovaný, aktualizovaný a monitorovaný najednou, a to stejnými lidmi nebo týmy?
@@ -41,7 +41,7 @@ Skupiny prostředků fungují jako kontejnery prostředků se společným život
 Pokud jste na libovolnou z výš uvedených otázek odpověděli _NE_, příslušný prostředek by měl být umístěný jinde, v jiné skupině prostředků.
 
 > [!IMPORTANT]
-> Skupina prostředků jsou také specifické pro jednotlivé oblasti. Pro prostředky je ale běžné, že jsou v různých oblastech v rámci stejné skupiny prostředků, protože se spravují dohromady, jak je popsáno výš. Další informace o výběru oblastí najdete [tady](../regions/index.md).
+> Skupiny prostředků jsou také specifické pro jednotlivé oblasti. Pro prostředky je ale běžné, že jsou v různých oblastech v rámci stejné skupiny prostředků, protože se spravují dohromady, jak je popsáno výš. Další informace o výběru oblastí najdete v [průvodci rozhodováním ohledně oblastí](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Konzistence nasazení
 

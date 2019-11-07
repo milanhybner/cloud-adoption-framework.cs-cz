@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547578"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566240"
 ---
 # <a name="cloud-governance-guides"></a>Průvodci zásadami správného řízení v cloudu
 
@@ -62,7 +62,7 @@ Pokud chcete zahájit cestu přechodu na cloud, vyberte si jednoho z následují
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Inkrementální přístup k zásadám správného řízení v cloudu
 
-## <a name="choosing-a-governance-guide"></a>Volba průvodce zásadami správného řízení
+## <a name="choose-a-governance-guide"></a>Volba průvodce zásadami správného řízení
 
 Tito průvodci předvádějí, jak implementovat MVP zásad správného řízení. Dál ukazují, jak tým zásad správného řízení v cloudu může pracovat v předstihu před týmy přechodu na cloud a stát se partnerem pro zrychlení tohoto úsilí. Model zásad správného řízení architektury přechodu na cloud prostřednictvím následných vylepšení a rozvoje řídí aplikaci zásad správného řízení od základů.
 

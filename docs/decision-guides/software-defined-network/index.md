@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023735"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564792"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Průvodce rozhodováním ohledně softwarově definovaných sítí
 
@@ -32,7 +32,7 @@ Inflexní bod v tomto průvodci závisí na několika klíčových rozhodnutích
 
 U malých nasazení v jedné oblasti s méně než 1 000 virtuálních počítačů je menší pravděpodobnost výrazného ovlivnění tímto inflexním bodem. Naopak rozsáhlá úsilí o přechod s více než 1 000 virtuálních počítačů, několika obchodními jednotkami nebo na několika geopolitických trzích může vaše rozhodnutí ohledně softwarově definovaných sítí a tento klíčový inflexní bod ovlivnit podstatným způsobem.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Výběr správných architektur virtuálních sítí
+## <a name="choose-the-right-virtual-networking-architectures"></a>Volba správných architektur virtuálních sítí
 
 Tato část navazuje na průvodce rozhodováním a měla by vám pomoct zvolit správné architektury virtuálních sítí.
 

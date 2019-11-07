@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58a01e02abad2de68fac9a94d2a2aa3ad22d32a1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: abbcdd7214673fdad47946ae77f7dd0bdb7c57af
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769146"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565502"
 ---
 ::: zone target="docs"
 
@@ -32,7 +32,7 @@ ms.locfileid: "72769146"
 
 ::: zone-end
 
-Průvodce správou Azure je navržený tak, aby aktivním zákazníkům Azure pomáhal s vytvořením směrného plánu správy k zajištění konzistence prostředků v Azure. Tento průvodce popisuje základní nástroje potřebné pro libovolné provozní prostředí Azure, zejména pro prostředí, která hostují citlivá data. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu připravenosti architektury přechodu na cloud](../index.md).
+Průvodce správou Azure pomáhá zákazníkům Azure s vytvořením směrného plánu správy k zajištění konzistence prostředků napříč Azure. Tento průvodce popisuje základní nástroje potřebné pro libovolné provozní prostředí Azure, zejména pro prostředí, která hostují citlivá data. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu připravenosti architektury přechodu na cloud](../index.md).
 
 ## <a name="scope-of-this-guide"></a>Rozsah této příručky
 
@@ -56,7 +56,7 @@ Směrný plán správy je minimální sada nástrojů a procesů, které by se m
 > [!TIP]
 > Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a vyberte **Průvodce správou Azure**. Potom postupujte podle podrobných pokynů.
 
-Další kroky: [Inventarizace a zajištění přehledu](./inventory.md)
+Dalším krokem je [inventarizace a zajištění přehledu](./inventory.md).
 
 ::: zone-end
 

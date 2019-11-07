@@ -9,18 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0d8ffd15dd0e42e7ba31760361dc970b63025eda
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72545109"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565624"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudové inovace v architektuře přechodu na cloud
 
-Každé portfolio IT má malou kolekci úloh a nápadů, které by mohly výrazně zlepšit postavení společnosti na trhu. I když se většina snah o přechod na cloud zaměřuje na migraci a modernizaci stávajících úloh, největší obchodní hodnota odvozená od přechodu na cloud pochází z inovačních aktivit, které odhalují nové technické dovednosti a rozšířené obchodní možnosti. Tato část architektury přechodu na cloud se soustředí na tu část tohoto portfolia, která zajišťuje největší návratnost investic.
+Každé portfolio IT obsahuje několik úloh a nápadů, které by mohly výrazně zlepšit postavení společnosti na trhu. Většina snah o přechod na cloud se zaměřuje na migraci a modernizaci stávajících úloh. Jsou to ale inovace, které mohou zajistit největší obchodní hodnotu. Inovace související s přechodem na cloud mohou odhalit nové technické dovednosti a rozšířené obchodní možnosti.
 
-## <a name="getting-started"></a>Začínáme
+Tato část architektury přechodu na cloud se soustředí na elementy ve vašem portfoliu, které zajišťují největší návratnost investic.
+
+## <a name="get-started"></a>Začínáme
 
 V rámci přípravy na tuto fázi životního cyklu přechodu na cloud architektura navrhuje následující cvičení:
 
@@ -39,7 +41,7 @@ V rámci přípravy na tuto fázi životního cyklu přechodu na cloud architekt
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Konsensus ohledně obchodní hodnoty</h3>
-Před rozhodováním o technických řešeních je důležité najít shodu na požadované obchodní hodnotě. Tato hodnota by se měla namapovat na cloudovou strategii. V rámci této přírůstkové metodiky je obchodní hodnota reprezentovaná hypotézou o zákaznických potřebách.
+Než rozhodnete o technických řešeních, zjistěte, jak nové inovace mohou nabízet nové možnosti obchodního zhodnocení. Zmapujte toto zhodnocení ve vaší cloudové strategii. V rámci této přírůstkové metodiky je obchodní hodnota reprezentovaná hypotézou o zákaznických potřebách.
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ Před rozhodováním o technických řešeních je důležité najít shodu na p
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Průvodce inovacemi Azure</h3>
-Řada nástrojů nativních pro cloud, které jsou dostupné v Azure, dokáže urychlit vývoj inovativních řešení. V závislosti na hypotéze o zákaznících je možné využít různé kombinace těchto nástrojů. Navrhuje se sestavit minimální životaschopný produkt (MVP) s využitím základních nástrojů.
+Azure zahrnuje řadu cloudových nástrojů, které mohou urychlit nasazování inovativních řešení. V závislosti na vaší hypotéze byste měli zvážit různé kombinace nástrojů. Navrhuje se vytvořit minimální životaschopný produkt (MVP) s využitím základních nástrojů.
                         </div>
                     </div>
                 </div>
@@ -77,7 +79,7 @@ Před rozhodováním o technických řešeních je důležité najít shodu na p
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Osvědčené postupy</h3>
-Ověřte, že architektonická rozhodnutí jsou v souladu s osvědčenými postupy pro každý nástroj v této sadě nástrojů. Tyto osvědčené postupy vám pomohou zrychlit vývoj řešení a poskytnou referenční informace pro solidní architektonické návrhy.
+Vaše architektonická rozhodnutí by měla být v souladu s osvědčenými postupy pro každý nástroj v této sadě nástrojů. Dodržování těchto pokynů vám pomůže zrychlit vývoj řešení a poskytne referenční informace pro solidní architektonické návrhy.
                         </div>
                     </div>
                 </div>
@@ -96,7 +98,7 @@ Ověřte, že architektonická rozhodnutí jsou v souladu s osvědčenými postu
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Smyčky zpětné vazby</h3>
-Během každé vývojové iterace nabízejí vyvíjená řešení způsob, jak se týmy mohou učit od zákazníků. Rychlé a přesné smyčky zpětné vazby se zákazníky usnadňují fáze testování, měření a učení a zkracují dobu uvedení na trh. Přečtěte si, jak Azure a GitHub urychlují smyčky zpětné vazby.
+Během jednotlivých iterací vyvíjená řešení nabízejí způsob, jakým se týmy mohou učit od zákazníků. Rychlé a přesné smyčky zpětné vazby se zákazníky vám pomohou lépe testovat, měřit a učit se a zkracují dobu uvedení na trh. Přečtěte si, jak Azure a GitHub urychlují smyčky zpětné vazby.
                         </div>
                     </div>
                 </div>
@@ -108,15 +110,15 @@ Během každé vývojové iterace nabízejí vyvíjená řešení způsob, jak s
 
 ## <a name="methodology-summary"></a>Souhrn metodiky
 
-[Část inovační metodiky věnovaná aspektům](./considerations/index.md) stanovuje běžný jazyk pro inovace napříč týmy pro vývoj aplikací, týmy DevOps a IT a obchodními týmy. Výše uvedená cvičení zajišťují praktickou část této metodiky během vývoje inovativních řešení.
+- [Přehled aspektů](./considerations/index.md) stanovuje běžný jazyk pro inovace napříč týmy pro vývoj aplikací, týmy DevOps a IT a obchodními týmy.
+- Cvičení uvedená v části [Začínáme](#get-started) pomáhají zajistit praktické využití této metodiky během vývoje inovativních řešení.
 
 ![Metodika inovací architektury přechodu na cloud](../_images/innovate/innovate-methodology.png)
 
-Tato metodika využívá stávající metodiky štíhlé výroby k vytvoření cloudově zaměřené konverzace ohledně přijetí u zákazníků a vědeckého modelu pro vytvoření obchodní hodnoty. Dává také do souladu stávající služby Azure se spravovatelnými rozhodovacími procesy a usnadňuje tak nalezení vhodných technických možností pro řešení konkrétních zákaznických potřeb nebo hypotéz.
+Tento přístup vychází ze stávající metodiky štíhlé výroby. Je navržený tak, aby vám pomohl vytvořit cloudově zaměřené konverzace ohledně přijetí u zákazníků a vědecký model pro vytvoření obchodní hodnoty. Tento přístup také mapuje stávající služby Azure na spravovatelné rozhodovací procesy. Usnadňuje tak nalezení vhodných technických možností pro řešení konkrétních zákaznických potřeb nebo hypotéz.
 
 ## <a name="next-steps"></a>Další kroky
 
-Prvním cvičením v rámci cloudových inovací je [zajištění konsensu ohledně obchodní hodnoty](./business-value.md).
-
+Prvním cvičením v rámci cloudových inovací je:
 > [!div class="nextstepaction"]
-> [Zajištění konsensu ohledně obchodní hodnoty](./business-value.md)
+> [Zajištění konsensu ohledně obchodní hodnoty inovace](./business-value.md)

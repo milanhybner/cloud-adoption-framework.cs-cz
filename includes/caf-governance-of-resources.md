@@ -20,8 +20,8 @@ Vlastní definice zásad se ukládají do skupiny pro správu nebo předplatnéh
 Vzhledem k tomu, že by zásady požadované k zajištění podpory MVP zásad správného řízení měly platit pro všechna aktuální předplatná, následující obchodní požadavky se implementují se pomocí kombinace integrovaných a vlastních definic vytvořených v kořenové skupině pro správu:
 
 1. Omezení seznamu dostupných přiřazení rolí na sadu předdefinovaných rolí Azure autorizovaných týmem zásad správného řízení v cloudu To bude vyžadovat [vlastní definici zásad](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Vyžadování použití následujících značek u všech prostředků: *Oddělení/fakturační jednotka*, *Geografická oblast*, *Klasifikace dat*, *Důležitost*, *Smlouva SLA*, *Prostředí*, *Archetyp aplikace*, *Aplikace* a *Vlastník aplikace*. To můžete zpracovat pomocí integrované definice Vyžadovat určenou značku.
-3. Vyžadování, aby značka *Aplikace* u prostředků odpovídala názvu příslušné skupiny prostředků To můžete zpracovat pomocí integrované definice Vyžadovat značku a její hodnotu.
+2. Vyžadování použití následujících značek u všech prostředků: *Oddělení/fakturační jednotka*, *Geografická oblast*, *Klasifikace dat*, *Důležitost*, *Smlouva SLA*, *Prostředí*, *Archetyp aplikace*, *Aplikace* a *Vlastník aplikace*. To můžete zpracovat pomocí integrované definice `Require specified tag`.
+3. Vyžaduje, aby značka `Application` u prostředků odpovídala názvu příslušné skupiny prostředků. To můžete zpracovat pomocí integrované definice Vyžadovat značku a její hodnotu.
 
 Informace o definování vlastních zásad najdete v [dokumentaci ke službě Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Pokyny a příklady vlastních zásad najdete na [webu s ukázkami pro službu Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) a v přidruženém [úložišti GitHub](https://github.com/Azure/azure-policy).
 
