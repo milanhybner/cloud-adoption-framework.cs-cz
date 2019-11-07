@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980192"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239812"
 ---
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
@@ -40,7 +40,7 @@ Nastavení správy, jako jsou zásady a řízení přístupu na základě role, 
 
 Obvykle je vhodné používat důležitá nastavení na vyšších úrovních a nastavení související s požadavky konkrétního projektu na nižších úrovních. Například můžete chtít zajistit, aby se všechny prostředky vaší organizace nasazovaly do konkrétních oblastí. Provedete to tak, že pro předplatné použijete zásadu, která udává povolená umístění. Když ostatní uživatelé ve vaší organizaci přidají nové skupiny prostředků a prostředky, automaticky se vynutí použití některého z povolených umístění. Další informace o zásadách najdete v částech tohoto průvodce věnovaných zásadám správného řízení, zabezpečení a dodržování předpisů.
 
-Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Se zvyšováním počtu používaných předplatných zvažte vytvoření hierarchie skupin pro správu, která zjednodušuje správu předplatných a prostředků. Další informace o správě více předplatných najdete v článku o [škálování s využitím několika předplatných Azure](../considerations/scaling-subscriptions.md).
+Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Se zvyšováním počtu používaných předplatných zvažte vytvoření hierarchie skupin pro správu, která zjednodušuje správu předplatných a prostředků. Další informace o správě více předplatných najdete v článku o [škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md).
 
 Při plánování strategie dodržování předpisů spolupracujte s lidmi, kteří ve vaší organizaci mají na starost zabezpečení a dodržování předpisů, správu IT, podnikovou architekturu, sítě, finance a pořizování.
 
@@ -79,7 +79,7 @@ Vytvořte skupinu prostředků sdružující prostředky, jako jsou webové apli
 Další informace naleznete v tématu:
 
 - [Základy Azure](../considerations/fundamental-concepts.md)
-- [Škálování s využitím několika předplatných Azure](../considerations/scaling-subscriptions.md)
+- [Škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Principy správy přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Uspořádání prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Omezení služeb předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Správný standard pro vytváření názvů pomáhá identifikovat prostředky n
 
 - Provozní údaje by měly zajistit, aby názvy obsahovaly informace, které potřebuje tým IT. Použijte údaje identifikující úlohy, aplikace, prostředí, důležitost a další informace, které jsou užitečné pro správu prostředků.
 
-Různé typy prostředků mohou mít různé délkové limity a povolené znaky, z nichž mnohé jsou uvedené v [článku s osvědčenými postupy pro pojmenování v Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../considerations/naming-and-tagging.md) v článku Architektura přechodu na cloud.
+Různé typy prostředků mohou mít různé délkové limity a povolené znaky, z nichž mnohé jsou uvedené v [článku s osvědčenými postupy pro pojmenování v Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../azure-best-practices/naming-and-tagging.md) v článku Architektura přechodu na cloud.
 
 Následující tabulka obsahuje vzory vytváření názvů pro několik ukázkových typů prostředků Azure.
 
@@ -161,7 +161,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 
 Každý prostředek nebo skupina prostředků může mít maximálně 50 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
 
-Další doporučení a příklady značek najdete v [pokynech k označování](../considerations/naming-and-tagging.md) v Architektuře přechodu na cloud.
+Další doporučení a příklady značek najdete v [pokynech k označování](../azure-best-practices/naming-and-tagging.md) v Architektuře přechodu na cloud.
 
 ::: zone target="docs"
 

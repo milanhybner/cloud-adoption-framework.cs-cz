@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058529"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565553"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Vytvoření sdílené datové složky:
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-Pomocí služby [Azure Open Datasets](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets) můžete vylepšit své analýzy a zahrnout do svých modelů například údaje o [svátcích](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays) či [počasí](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system) nebo [satelitní snímky](https://azure.microsoft.com/services/open-datasets/catalog/hls).
-
-Mezi další kroky patří [demokratizace obchodních procesů](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) a [podpora vývojářů služeb pro občany](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers).
 
 # <a name="insightstabinsights"></a>[Přehledy](#tab/Insights)
 

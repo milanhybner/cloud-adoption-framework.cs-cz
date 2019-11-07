@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce8b1f8509ab0e51c94913ef010eb35b22b8978
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dc52d39699e20a243a6d1156764e30063aea76a5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379029"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240122"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Správa přístupu k prostředí Azure s využitím řízení přístupu na základě role
 
@@ -29,7 +29,7 @@ Při plánování strategie řízení přístupu udělte uživatelům nejnižš�
 
 Při plánování metodologie řízení přístupu doporučujeme spolupracovat s lidmi, kteří ve vaší organizaci mají na starost zabezpečení a dodržování předpisů, správu IT a podnikovou architekturu.
 
-Architektura přechodu na cloud nabízí další tipy, jak v rámci nasazení cloudu [používat řízení přístupu na základě rolí](../azure-best-practices/roles.md).
+Architektura přechodu na cloud nabízí další tipy, jak v rámci nasazení cloudu [používat řízení přístupu na základě rolí](../considerations/roles.md).
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Udělení přístupu uživatele předplatnému:
 Další informace naleznete v tématu:
 
 - [Co je řízení přístupu na základě role (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Architektura přechodu na cloud: Použití řízení přístupu na základě rolí](../azure-best-practices/roles.md)
+- [Architektura přechodu na cloud: Použití řízení přístupu na základě rolí](../considerations/roles.md)
 
 ::: zone-end
