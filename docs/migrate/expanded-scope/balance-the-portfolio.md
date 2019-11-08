@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566929"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753474"
 ---
 # <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
@@ -76,7 +76,7 @@ Vyvážení portfolia vyžaduje další kvalitativní analýzu během procesu vy
 
 Na základě dat z tabulky v části [zdokumentování obchodních výsledků](#document-business-outcomes) existuje pravděpodobné riziko, že se portfolio příliš odkloní k modelu realizace se zaměřením na migraci. Pokud byly nejvyšší prioritou zkušenosti zákazníků, bude pravděpodobnější portfolio s velkým důrazem na inovace. Ani jedno není správné nebo špatné, ale příliš velké odklonění v jednom směru má obvykle za následek snížení návratnosti, zbytečné zvýšení složitosti a prodloužení doby realizace související se snahou o přijetí cloudu.
 
-Za účelem snížení složitosti se doporučuje dodržovat tradiční přístup k racionalizaci portfolia, ale v iterativním modelu. Následující kroky popisují kvalitativní model takového přístupu:
+Aby se snížila složitost, měli byste postupovat podle tradičního přístupu k racionalizaci portfolia, ale v iterativním modelu. Následující kroky popisují kvalitativní model takového přístupu:
 
 - Tým pro cloudovou strategii udržuje backlog úloh s určenou prioritou, které se mají migrovat.
 - Tým cloudové strategie a tým přechodu na cloud před dokončením každé verze pořádají schůzku k plánování verze.
@@ -89,8 +89,8 @@ Za účelem snížení složitosti se doporučuje dodržovat tradiční přístu
   - Budou data v rámci této úlohy přispívat k inovacím v souvislosti s BI, Machine Learning, IoT nebo souvisejícími technologiemi?
   - Je úloha kompatibilní s moderními aplikačními platformami, jako je Azure App Service?
 - Odpovědi na výše uvedené otázky a jakékoli další požadované kvalitativní analýzy by pak ovlivnily úpravy backlogu s určenou prioritou. Může jít třeba o tyto úpravy:
-  - Pokud se dá úloha nahradit řešením PaaS, je možné ji z backlogu pro migraci úplně odebrat. Minimálně by se formou úkolu zvýšila náležitá opatrnost při rozhodování mezi změnou hostitele a nahrazením, čímž by se dočasně snížila priorita úlohy z backlogu pro migraci.
-  - Pokud úloha prochází postupem vývoje (nebo by měla), může se nejlépe hodit do modelu refaktoringu / změny architektury / nového sestavení. Vzhledem k tomu, že inovace a migrace vyžadují jiné technické dovednosti, často se doporučuje, aby se aplikace určené pro přístup zahrnující refaktoring / změnu architektury / nové sestavení spravovaly pomocí backlogu pro inovace místo backlogu pro migraci.
+  - Pokud se dá úloha nahradit řešením PaaS, je možné ji z backlogu pro migraci úplně odebrat. Minimálně dodatečná opatrnost pro rozhodování mezi opětovným hostováním a nahrazením by se přidala jako úloha, dočasně se tím zkracuje priorita úlohy z nevyřízených položek migrace.
+  - Pokud je úloha (nebo by měla být) vyvíjena při vývoji vývoje, může být nejlépe přizpůsobená refaktorový model opětovného sestavování. Vzhledem k tomu, že inovace a migrace vyžadují různé technické dovednosti, aplikace, které se rovnají refaktoru opětovného sestavování, by měly být spravovány pomocí nevyřízených položek pro inovace, nikoli z nevyřízených položek migrace.
   - Pokud je úloha součástí inovace podřízeného systému, může být vhodné refaktorovat datovou platformu, ale ponechat vrstvy aplikace jako kandidáta na změnu hostitele. Menší refaktoring datové platformy úlohy se dá často řešit v backlogu pro migraci nebo inovaci. Tento výsledek racionalizace může vést k podrobnějším pracovním položkám v backlogu, ale jinak žádným změnám priorit.
   - Pokud úloha není strategická, ale je kompatibilní s moderními cloudovými platformami pro hostování aplikací, může být vhodné provést v aplikaci menší refaktoring, aby se nasadila jako moderní aplikace. To může přispět k celkovým úsporám díky snížení celkových licenčních požadavků na IaaS a OS migrace do cloudu.
   - Pokud je úloha aplikací třetí strany a její data se neplánují používat v rámci inovace podřízeného systému, může být nejlepší ponechat ji v backlogu jako možnost změny hostitele.
@@ -105,7 +105,7 @@ Během migrace můžou mít aktivity vyvažování portfolia negativní dopad na
 
 Racionalizace portfolia vyžaduje různorodé technické snahy. Pro týmy pro příjem cloudu je lákavé sladit tuto rozmanitost portfolia v rámci snah o migraci. Obchodní zúčastněné strany žádají, aby jeden tým pro přijetí cloudu řešil celý backlog pro migraci. To je jen zřídka vhodný přístup, v mnoha případech to může být kontraproduktivní.
 
-Doporučujeme, aby se tyto různorodé snahy rozdělovaly v rámci dvou nebo více týmů pro přijetí cloudu. Když jako příklad realizace použijeme model dvou týmů, je Tým 1 týmem pro migraci a Tým 2 je týmem pro inovaci. V případě větších snah se tyto týmy můžou dál rozdělit k řešení dalších přístupů, jako jsou snahy o nahrazení/PaaS nebo o menší refaktoring. Tady je popis dovedností a rolí potřebných ke změně hostitele, refaktoringu nebo menšímu refaktoringu:
+Tyto různorodé úsilí by se měly rozdělit do dvou nebo více týmů pro přijímání v cloudu. Když jako příklad realizace použijeme model dvou týmů, je Tým 1 týmem pro migraci a Tým 2 je týmem pro inovaci. V případě větších snah se tyto týmy můžou dál rozdělit k řešení dalších přístupů, jako jsou snahy o nahrazení/PaaS nebo o menší refaktoring. Tady je popis dovedností a rolí potřebných ke změně hostitele, refaktoringu nebo menšímu refaktoringu:
 
 Opětovné **hostování:** Opětovné hostování vyžaduje, aby členové týmu implementovali infrastruktury zaměřené na změny. Obecně se používá nástroj jako Azure Site Recovery k migraci virtuálních počítačů nebo jiných prostředků do Azure. Tato práce je vhodná pro správce datacenter nebo implementátory IT. Pro tuto práci ve velkém měřítku je dobře strukturovaný tým pro migraci do cloudu. Je to nejrychlejší přístup k migraci stávajících prostředků ve většině scénářů.
 

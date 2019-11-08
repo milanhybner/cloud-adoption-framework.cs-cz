@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566897"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753537"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Urychlení migrace migrací instance SQL Server
 
@@ -102,7 +102,7 @@ Navrhovaná cesta k migraci a synchronizaci používá kombinaci následujícíc
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Doprovodné materiály a kurzy pro navrhovaný proces migrace
 
-Volba nejlepšího návodu k migraci pomocí Database Migration Service je závislá na zdrojové a cílové platformě, kterou si zvolíte. Následující tabulka obsahuje odkazy na kurzy pro každý standardní přístup k migraci SQL Database pomocí Database Migration Service.
+Volba nejlepšího návodu k migraci pomocí Azure Database Migration Service je závislá na zdrojové a cílové platformě, kterou si zvolíte. Následující tabulka obsahuje odkazy na kurzy pro každý standardní přístup k migraci SQL Database pomocí Azure Database Migration Service.
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ Volba nejlepšího návodu k migraci pomocí Database Migration Service je závi
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Doprovodné materiály a kurzy pro různé služby pro ekvivalentní řešení PaaS
 
-Po přesunu databází z instance SQL Server do Database Migration Service se schéma a data dají znovu hostovat v rámci řady řešení PaaS. Na tomto serveru ale můžou pořád běžet jiné požadované služby. Následující tři kurzy vám pomůžou při přesunu SSIS, SSAS a SSRS na ekvivalentní PaaS služby v Azure.
+Po přesunu databází z instance SQL Server do Azure Database Migration Service se schéma a data dají znovu hostovat v rámci řady řešení PaaS. Na tomto serveru ale můžou pořád běžet jiné požadované služby. Následující tři kurzy vám pomůžou při přesunu SSIS, SSAS a SSRS na ekvivalentní PaaS služby v Azure.
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|

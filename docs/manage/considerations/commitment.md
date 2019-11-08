@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565196"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752890"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Obchodní závazek ve správě cloudu
 
@@ -42,7 +42,7 @@ V rámci vašeho rozhodovacího procesu bude zbývající část tohoto článku
 
 ## <a name="it-operations-prerequisites"></a>Požadavky na provoz IT
 
-[Příručka pro správu Azure](../azure-management-guide/index.md) popisuje nástroje pro správu, které jsou k dispozici v Azure. Předtím, než se dokončí závazek na firmu, by mělo určit přijatelný směrný plán správy standardní úrovně, který se má použít pro všechny spravované úlohy. Pro každou spravovanou úlohu v portfoliu IT pak vypočítá standardní náklady na správu na základě počtu jader procesoru, místa na disku a dalších proměnných souvisejících s prostředky. Také odhaduje složenou smlouvu SLA pro jednotlivé úlohy na základě architektury.
+[Příručka pro správu Azure](../azure-management-guide/index.md) popisuje nástroje pro správu, které jsou k dispozici v Azure. Než se pustíte do podnikání, měli byste určit přijatelný směrný plán správy standardní úrovně, který se má použít pro všechny spravované úlohy. Pro každou spravovanou úlohu v portfoliu IT pak vypočítá standardní náklady na správu na základě počtu jader procesoru, místa na disku a dalších proměnných souvisejících s prostředky. Také odhaduje složenou smlouvu SLA pro jednotlivé úlohy na základě architektury.
 
 > [!TIP]
 > Provozní týmy IT často používají pro počáteční složenou smlouvu SLA výchozí minimální hodnotu 99,9% doba provozu. Můžou se také rozhodnout normalizovat náklady na správu na základě průměrného zatížení, zejména pro řešení s minimálními nároky na protokolování a úložiště. Průměrné náklady na několik středně kritických úloh můžou poskytovat výchozí bod pro počáteční konverzace.

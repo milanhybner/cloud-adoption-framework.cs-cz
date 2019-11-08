@@ -1,5 +1,5 @@
 ---
-title: Průvodce monitorováním cloudu – upozorňování
+title: 'Průvodce monitorováním cloudu: upozorňování'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564982"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752744"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: upozorňování
 
@@ -88,7 +88,7 @@ Azure Monitor pro virtuální počítače | Kritéria stavu jsou metriky zapsan�
 
 ### <a name="fastest-speed-driven-by-cost"></a>Nejrychlejší rychlost řízená náklady
 
-Latence je jedním z nepostradatelných rozhodnutí při řízení výstrah a rychlé řešení problémů, které mají vliv na vaši službu. Pokud budete vyžadovat upozorňování téměř v reálném čase za pět minut, vyhodnoťte je jako první, pokud máte nebo můžete dostávat upozornění na telemetrii, kde je ve výchozím nastavení uložená. Obecně platí, že tato strategie je zároveň možnost nejlevnější, protože nástroj, který používáte, již do tohoto umístění odesílá svá data.
+Latence je jedním z nepostradatelných rozhodnutí při řízení výstrah a rychlé řešení problémů, které mají vliv na vaši službu. Pokud budete během pěti minut vyžadovat upozorňování téměř v reálném čase, vyhodnoťte je jako první, pokud máte nebo můžete dostávat upozornění na telemetrii, kde je ve výchozím nastavení uložená. Obecně platí, že tato strategie je zároveň možnost nejlevnější, protože nástroj, který používáte, již do tohoto umístění odesílá svá data.
 
 K tomuto pravidlu se říká několik důležitých poznámek pod čarou.
 

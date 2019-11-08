@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5ecf69235c27fbb45ad109609d8fd733dfc6187c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222605"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753270"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Shromáždění dat inventáře pro digitální majetek
 
@@ -30,7 +30,6 @@ Inventář, který podporuje digitální změny v závislosti na požadované di
 - **Inovace dat:** Inovace dat s podporou cloudu se zaměřuje na produkt nebo službu. Inventář také obsahuje mapování příležitostí k přerušení trhu a také potřebných možností.
 
 - **Zabezpečení:** Inventář poskytuje zabezpečení, které vám pomůžou vyhodnocovat, chránit a monitorovat prostředky organizace.
-
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Přesnost a úplnost zásob
 

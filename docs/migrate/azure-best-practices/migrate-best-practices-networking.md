@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565226"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753613"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
@@ -85,7 +85,7 @@ Izolace v rámci virtuální sítě se dosahuje její segmentací do jedné nebo
 - Vaše rozhodnutí o podsítích vycházejí z vašich technických a organizačních požadavků.
 - Podsítě se vytvářejí pomocí zápisu CIDR.
 - Při rozhodování o rozsahu sítě pro podsítě je důležité si uvědomit, že Azure si zabere pět IP adres z každé podsítě, které nejde použít. Pokud třeba vytvoříte nejmenší dostupnou podsíť /29 (s osmi IP adresami), Azure si zabere pět adres, takže máte jenom tři použitelné adresy, které je možné přiřadit hostitelům v podsíti.
-- Ve většině případů se doporučuje použít jako nejmenší podsíť /28.
+- Ve většině případů použijte jako nejnižší podsíť/28.
 
 **Příklad:**
 
@@ -160,8 +160,8 @@ Pro úspěšnou migraci je důležité připojit k Azure místní podnikové sí
 
 K implementaci site-to-site VPN nastavíte bránu VPN v Azure.
 
-- Brána VPN je specifický typ brány virtuální sítě, která se používá k posílání šifrovaného provozu mezi virtuální sítí Azure a místním umístěním přes veřejný internet.
-- Bránu VPN můžete použít také k posílání šifrovaného provozu mezi virtuálními sítěmi Azure po síti Microsoftu.
+- VPN Gateway je konkrétní typ brány virtuální sítě, která odesílá šifrovaný provoz mezi virtuální sítí Azure a místním umístěním přes veřejný Internet.
+- Brána VPN může také odesílat šifrovaný provoz mezi Azure virtuální sítě přes síť Microsoftu.
 - Každá virtuální síť může mít jenom jednu bránu VPN.
 - K jedné bráně VPN můžete vytvořit několik připojení. Když vytvoříte několik připojení, všechny tunely VPN sdílejí dostupnou šířku pásma brány.
 - Každá Azure VPN Gateway se skládá ze dvou instancí v konfiguraci aktivní-pohotovostní.
@@ -175,7 +175,7 @@ Při nastavování site-to-site VPN:
 
 - Potřebujete virtuální síť, jejíž rozsah adres se nepřekrývá s místní sítí, ke které se VPN připojí.
 - V síti vytvoříte podsíť brány.
-- Vytvoříte bránu VPN, určíte typ brány (VPN) a jestli je brána založená na zásadách nebo na směrování. Doporučuje se VPN založené na směrování, protože nabízí více funkcí a je připravenější na budoucnost.
+- Vytvoříte bránu VPN, určíte typ brány (VPN) a jestli je brána založená na zásadách nebo na směrování. SÍŤ VPN založená na trasách je považována za větší schopnost a budoucí kontrolu.
 - Vytvoříte místní síťovou bránu a nakonfigurujete místní zařízení VPN.
 - Vytvoříte připojení site-to-site VPN s podporou převzetí služeb při selhání mezi bránou virtuální sítě a místním zařízením. Použití VPN založeného na směrování umožňuje aktivní-pasivní nebo aktivní-aktivní připojení k Azure. Založení na směrování také podporuje souběžná připojení site-to-site (z libovolného počítače) i point-to-site (z jednoho počítače).
 - Určíte SKU brány, kterou chcete použít. To bude záviset na požadavcích na úlohy, propustnosti, funkcích a smlouvách SLA.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566913"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753554"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie pro zásady správného řízení nebo dodržování předpisů
 
@@ -47,7 +47,7 @@ Během posuzování je potřeba učinit další rozhodnutí, aby bylo vše v sou
 
 ### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu vyhodnocení
 
-Požadavky na posouzení zásad správného řízení a dodržování předpisů jsou příliš zákaznicky specifické, takže nelze poskytnout obecné pokyny pro skutečný postup posuzování. Doporučuje se však, aby tento proces obsahoval úkoly a čas na „uvedení do souladu s požadavky na dodržování předpisů a zásady správného řízení“. Další informace o těchto požadavcích najdete pod následujícími odkazy:
+Požadavky na posouzení zásad správného řízení a dodržování předpisů jsou příliš zákaznicky specifické, takže nelze poskytnout obecné pokyny pro skutečný postup posuzování. Proces by ale měl zahrnovat úlohy a časová přidělení pro "zarovnání na dodržování předpisů/požadavky zásad správného řízení". Další informace o těchto požadavcích najdete pod následujícími odkazy:
 
 Chcete-li lépe porozumět zásadám správného řízení, přečtěte si přehled [Pět disciplín zásad správného řízení v cloudu](../../govern/governance-disciplines.md). Tato část Architektury přechodu na cloud obsahuje také šablony pro dokumentaci zásad, pokynů a požadavků pro každý z těchto pěti oddílů:
 
@@ -61,15 +61,15 @@ Rady k vytvoření pokynů pro zásady správného řízení na základě modelu
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
 
-Během optimalizace a povýšení se doporučuje, aby si tým zásad správného řízení cloudu vyhradil čas na otestování a ověření souladu se standardy zásad správného řízení a dodržování předpisů. V tomto kroku je také vhodné předat týmu zásad správného řízení cloudu procesy pro výběr šablon, které by u budoucích projektů mohly dále [urychlit nasazení](../../govern/deployment-acceleration/index.md).
+V rámci optimalizačních a propagačních procesů tým zásad správného řízení cloudu měli investovat čas do testování a ověřování dodržování standardů dodržování předpisů a dodržování předpisů. V tomto kroku je také vhodné předat týmu zásad správného řízení cloudu procesy pro výběr šablon, které by u budoucích projektů mohly dále [urychlit nasazení](../../govern/deployment-acceleration/index.md).
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Navrhovaná akce během procesu optimalizace a povýšení
 
-Během tohoto procesu se doporučuje, aby se v plánu projektu přidělil týmu zásad správného řízení cloudu čas na kontrolu dodržování předpisů u všech úloh, které se plánují povýšit do produkce.
+Během tohoto procesu by měl plán projektu zahrnovat časovou kapacitu pro tým zásad správného řízení cloudu, aby mohl spustit kontrolu dodržování předpisů pro jednotlivé úlohy plánované pro zvýšení produkčního prostředí.
 
 ## <a name="next-steps"></a>Další kroky
 
-Poslední položka na [kontrolním seznamu pro rozšířený rozsah](./index.md) čtenáři doporučuje, aby se vrátil ke kontrolnímu seznamu a znovu pro účely migrace vyhodnotil všechny další požadavky na rozsah.
+Jako poslední položku v [rozbaleném kontrolním seznamu oboru](./index.md)se vraťte do kontrolního seznamu a znovu vyhodnoťte všechny další požadavky na rozsah pro účely migrace.
 
 > [!div class="nextstepaction"]
 > [Kontrolní seznam pro rozšířený rozsah](./index.md)

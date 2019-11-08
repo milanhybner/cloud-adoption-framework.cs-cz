@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656661"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753775"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -195,13 +195,13 @@ Kromě rozšířené ochrany před internetovými útoky nabízí [Azure Securit
 > [!TIP]
 >Azure Security Center je výkonný nástroj, který se pravidelně vylepšuje díky novým funkcím, které můžete použít ke zjišťování hrozeb a ochraně vašeho podniku. Důrazně doporučujeme vždy povolit Azure Security Center.
 
-### <a name="azure-resource-locks"></a>Zámky prostředků Azure
+### <a name="locks-for-azure-resources"></a>Zámky pro prostředky Azure
 
-Vzhledem k tomu, že vaše organizace přidává základní služby k předplatným, bude stále důležitější, aby nedocházelo k výpadkům firmy. Jedním z typů přerušení, které často vidíte, je nezamýšlené důsledky skriptů a nástrojů pracujících s předplatným Azure, které se nedaří odstranit. [Zámky prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) umožňují omezit operace u prostředků s vysokou hodnotou, kde jejich úprava nebo odstranění by významně ovlivnily. Zámky se aplikují na předplatné, skupinu prostředků nebo dokonce na jednotlivé prostředky. Běžným případem použití je použití zámků na základní prostředky, jako jsou virtuální sítě, brány, skupiny zabezpečení sítě a účty úložiště klíčů.
+Vzhledem k tomu, že vaše organizace přidává základní služby k předplatným, bude stále důležitější, aby nedocházelo k výpadkům firmy. K jednomu běžnému přerušení dochází, když skript nebo nástroj, který provádí v rámci předplatného Azure, neúmyslně odstraní prostředek. [Zamkne](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) omezení operací na vysoce hodnotových prostředcích, kde jejich změna nebo odstranění by významně ovlivnila. Můžete použít zámky u předplatných, skupin prostředků nebo jednotlivých prostředků. Použijte zámky na základní prostředky, jako jsou virtuální sítě, brány, skupiny zabezpečení sítě a účty úložiště klíčů.
 
-### <a name="secure-devops-toolkit"></a>Zabezpečená sada DevOps Toolkit
+### <a name="secure-devops-kit-for-azure"></a>Zabezpečená sada DevOps pro Azure
 
-Sada Secure DevOps Kit for Azure (AzSK) je kolekce skriptů, nástrojů, rozšíření a možností automatizace, které původně vytvořil vlastní IT tým Microsoftu a [vydali jako open source prostřednictvím GitHubu](https://github.com/azsk/DevOpsKit-docs). AzSK stravování do komplexního předplatného Azure a zabezpečení prostředků pro týmy, které využívají rozsáhlou automatizaci a hladce integrují zabezpečení do nativních pracovních postupů DevOps, pomáhají dosáhnout zabezpečení DevOps s těmito šesti oblastmi:
+Sada Secure DevOps Kit for Azure (AzSK) je kolekce skriptů, nástrojů, rozšíření a možností automatizace, které původně vytvořil vlastní IT tým Microsoftu a [vydali jako open source prostřednictvím GitHubu](https://github.com/azsk/devopskit-docs). AzSK stravování do komplexního předplatného Azure a zabezpečení prostředků pro týmy, které využívají rozsáhlou automatizaci a hladce integrují zabezpečení do nativních pracovních postupů DevOps, pomáhají dosáhnout zabezpečení DevOps s těmito šesti oblastmi:
 
 - Zabezpečení předplatného
 - Povolit zabezpečený vývoj
@@ -210,9 +210,9 @@ Sada Secure DevOps Kit for Azure (AzSK) je kolekce skriptů, nástrojů, rozší
 - Výstrahy a monitorování
 - Řízení rizik v cloudu
 
-![Sada nástrojů pro Azure DevOps](../_images/reference/secure-devops-kit.png)
+![Diagram s přehledem sady Secure DevOps Kit pro Azure](../_images/reference/secure-devops-kit.png)
 
-AzSK je bohatou sadou nástrojů, skriptů a informací, které jsou důležitou součástí úplného plánu zásad správného řízení Azure a jejich zahrnutím do vašeho uživatelského rozhraní je zásadní pro podporu cílů řízení rizik vaší organizace.
+AzSK je bohatá sada nástrojů, skriptů a informací, které jsou důležitou součástí úplného plánu zásad správného řízení Azure a jejich zahrnutí do vašeho uživatelského rozhraní je důležité pro podporu vašich organizací pro řízení rizik.
 
 ### <a name="azure-update-management"></a>Update Management Azure
 
@@ -228,7 +228,7 @@ Shromažďování a analýza telemetrie, která poskytuje přehled o aktivitách
 
 Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále vylepšeny. Azure poskytuje možnosti **sdíleného**, **základního**a **hloubkového** monitorování prostředků Azure prostřednictvím služeb uvedených v následujícím diagramu.
 
-![Sledovaný](../_images/reference/monitoring.png)
+![sledovaný](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Sdílené možnosti
 

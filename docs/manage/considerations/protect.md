@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 44e566d1f2936c51e61f8a1bd4211af2000f454b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565054"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752794"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrana a obnovení ve správě cloudu
 
@@ -31,7 +31,7 @@ Minimálně každý Asset, který podporuje určitou úlohu, by měl mít zákla
 
 ### <a name="recovery-time-objectives-rto"></a>Cíle pro čas obnovení (RTO)
 
-RTO je doba, po kterou by došlo k překročení doby, kterou by měla trvat k obnovení jakéhokoli systému do stavu před haváriemi. Pro každou úlohu by to zahrnoval dobu potřebnou k obnovení minimální nezbytné funkčnosti pro virtuální počítače a aplikace. Zahrnuje také množství času potřebného k obnovení dat vyžadovaných aplikacemi.
+V případě, že dojde k započetí havárií, doba obnovení je čas, který by měl trvat k obnovení jakéhokoli systému do stavu před haváriemi. Pro každou úlohu by to zahrnoval dobu potřebnou k obnovení minimální nezbytné funkčnosti pro virtuální počítače a aplikace. Zahrnuje také množství času potřebného k obnovení dat vyžadovaných aplikacemi.
 
 V rámci obchodních podmínek představuje RTO množství času, po který bude podnikový proces mimo provoz. Pro klíčové úlohy by měla být tato proměnná poměrně nízká, což umožňuje rychle obnovit obchodní procesy. U úloh s nižší prioritou nemusí standardní úroveň RTO mít znatelný dopad na výkon společnosti.
 
@@ -41,7 +41,7 @@ Základní plán správy by měl vytvořit standardní RTO pro nepostradatelné 
 
 Ve většině systémů pro správu cloudu jsou data pravidelně zachycena a ukládána prostřednictvím určité formy ochrany dat. Čas posledního zachycení dat je označován jako bod obnovení. Pokud dojde k chybě systému, může být obnovena pouze na nejnovější bod obnovení.
 
-Pokud má systém bod obnovení, který se měří v hodinách nebo dnech, může dojít k selhání systému při ztrátě dat za tyto hodiny nebo dny mezi posledním bodem obnovení a výpadkem. RPO za 1 den by teoreticky způsobilo ztrátu všech transakcí za den, který se zavede až k selhání.
+Pokud má systém bod obnovení, který se měří v hodinách nebo dnech, může dojít k selhání systému při ztrátě dat za tyto hodiny nebo dny mezi posledním bodem obnovení a výpadkem. Jednorázová operace RPO by teoreticky způsobila ztrátu všech transakcí za den, který vede k selhání.
 
 Pro důležité systémy je možné, že RPO, který se měří během minut nebo sekund, může být vhodnější použít k zamezení ztrátám v výnosech. Ale kratší cíl cíle má za následek zvýšení celkových nákladů na správu.
 
@@ -49,7 +49,7 @@ Pro lepší minimalizaci nákladů by se měly standardní hodnoty správy soust
 
 ## <a name="protect-and-recover-workloads"></a>Ochrana a obnovení úloh
 
-Většina úloh v IT prostředí podporuje velmi malý obchodní nebo technický proces. Systémy, které nemají systémovým dopadům na obchodní operace, nezaručují větší investice potřebné k rychlému obnovení nebo minimalizaci ztráty dat. Díky vytvoření směrného plánu může společnost jasně pochopit, jakou úroveň podpory obnovení je možné nabídnout v rámci konzistentního, spravovatelného cenového bodu. Toto porozumění pomáhá obchodním stranám zhodnotit hodnotu zvýšené investice do obnovení.
+Většina úloh v IT prostředí podporuje konkrétní obchodní nebo technické procesy. Systémy, které nemají systémovým dopadům na obchodní operace, nezaručují větší investice potřebné k rychlému obnovení nebo minimalizaci ztráty dat. Díky vytvoření směrného plánu může společnost jasně pochopit, jakou úroveň podpory obnovení je možné nabídnout v rámci konzistentního, spravovatelného cenového bodu. Toto porozumění pomáhá obchodním stranám zhodnotit hodnotu zvýšené investice do obnovení.
 
 Pro většinu týmů pro správu cloudu poskytuje rozšířená základní hodnota s konkrétními závazky RPO/RTO pro různé prostředky nejužitečnější cestu k vzájemným obchodním závazkům. V následujících částech najdete několik běžných rozšířených směrných plánů, které organizacím umožňují snadno přidat funkce ochrany a obnovení prostřednictvím opakovaného procesu.
 
@@ -57,7 +57,7 @@ Pro většinu týmů pro správu cloudu poskytuje rozšířená základní hodno
 
 Data se pravděpodobně z nejcennějších prostředků v digitální ekonomice. Možnost ochrany a obnovení dat efektivněji představuje nejběžnější rozšířené směrné plány. Pro data, která využívají provozní zatížení, může dojít ke ztrátě dat přímo na rozdíl od ztráty nebo ztráty ziskovosti. Obecně doporučujeme, aby týmy pro správu cloudu nabízely úroveň rozšířených standardních hodnot správy, které podporují běžné datové platformy.
 
-Než týmy pro správu cloudu implementují operace platforem, je běžné, že budou podporovat vylepšené operace s datovou platformou PaaS (Platform as a Service). Tým pro správu cloudu je třeba snadno vymáhat vyšší četnost zálohování nebo replikace více oblastí pro Azure SQL Database nebo Azure Cosmos DB řešení. To umožňuje vývojovému týmu snadno vylepšit RPO tím, že jednoduše modernizaci své datové platformy.
+Než týmy pro správu cloudu implementují operace platforem, je běžné, že budou podporovat vylepšené operace s datovou platformou PaaS (Platform as a Service). Tým pro správu cloudu je třeba snadno vymáhat vyšší četnost zálohování nebo replikace v rámci více oblastí pro Azure SQL Database nebo Azure Cosmos DB řešení. To umožňuje vývojovému týmu snadno zdokonalit RPO tím, že modernizaci své datové platformy.
 
 Další informace o tomto myšlenkovém procesu najdete v tématu [obor provozu platformy](./platform.md).
 
@@ -65,7 +65,7 @@ Další informace o tomto myšlenkovém procesu najdete v tématu [obor provozu 
 
 Většina úloh má určitou závislost na virtuálních počítačích, které hostují různé aspekty řešení. Aby úloha podporovala obchodní procesy po selhání systému, je potřeba rychle obnovit určitý počet virtuálních počítačů.
 
-Každé minuty výpadků na těchto virtuálních počítačích by mohlo být rovno ztrátám nebo nižší ziskovosti. Pokud má výpadek virtuálních počítačů přímý dopad na fiskální výkon firmy, je RTO velmi důležité. Virtuální počítače je možné rychleji obnovit pomocí replikace do sekundární lokality a automatizovaného obnovení, modelu, který se označuje jako model obnovení Hot-teple. V nejvyšší stav obnovení lze virtuální počítače replikovat do plně funkčního, sekundárního webového serveru. Tento dražší přístup se označuje jako model obnovení s vysokou dostupností nebo za horkou.
+Každou minutu výpadků na těchto virtuálních počítačích by mohlo dojít ke ztrátě výnosů nebo snížení ziskovosti. Pokud má výpadek virtuálních počítačů přímý dopad na fiskální výkon firmy, je RTO velmi důležité. Virtuální počítače je možné rychleji obnovit pomocí replikace do sekundární lokality a automatizovaného obnovení, modelu, který se označuje jako model obnovení Hot-teple. V nejvyšší stav obnovení lze virtuální počítače replikovat do plně funkčního, sekundárního webového serveru. Tento dražší přístup se označuje jako model obnovení s vysokou dostupností nebo za horkou.
 
 Každý z výše uvedených modelů snižuje RTO, což vede k rychlejšímu obnovení funkcí obchodních procesů. Každý model však také vede ke významně zvýšenému náklady na správu cloudu.
 
@@ -73,7 +73,7 @@ Další informace o tomto myšlenkovém procesu najdete v tématu [provozní obo
 
 ## <a name="next-steps"></a>Další kroky
 
-Po splnění této komponenty základního směrného plánu může tým ještě víc vymezit a vyhnout se výpadkům [operací platforem](./platform.md) a [úloh](./workload.md).
+Po splnění této komponenty základního směrného plánu může tým vypadat předem, aby nedocházelo k výpadkům v [operacích platforem](./platform.md) a [operacích úloh](./workload.md).
 
 > [!div class="nextstepaction"]
 > Operace s [platformou](./platform.md)

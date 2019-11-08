@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048289"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753394"
 ---
 # <a name="plan-for-cloud-adoption"></a>Plánování přijetí cloudu
 
@@ -21,7 +21,7 @@ Plán je základním požadavkem na úspěšné přijetí do cloudu. Plán přij
 
 ## <a name="align-strategy-and-planning"></a>Zarovnání strategie a plánování
 
-Plány přijetí do cloudu začínají jasně definovanou strategií. V takovém případě by měla strategie přizpůsobovat podněty, obchodní výsledky a obchodní odůvodnění pro účely přijetí cloudu. Tyto kladné návraty jsou pak vyvážené úsilím potřebným k jejich přijetí.
+Plány přijetí do cloudu začínají jasně definovanou strategií. Strategii by měla mít minimálně na přehled motivů, obchodních výsledků a obchodních odůvodnění pro účely přijetí cloudu. Tyto kladné návraty jsou pak vyvážené úsilím potřebným k jejich přijetí.
 
 Úsilí se začne s digitální nemovitosti (navrhovaná nebo stávající), která překládá strategii na větší hmotné úlohy a prostředky. Pak můžete tyto hmotné prvky namapovat na technickou práci. Odtud mohou pracovníci technického zpracování provádět i zkušení lidé ve správné organizační struktuře. Plán přijetí do cloudu kombinuje všechna tato témata do jednoho plánu, který je možné předpovědět, navýšit, implementovat a spravovat prostřednictvím agilních postupů pro správu projektů. Tato série článků vám pomůže vytvořit plán a nabízí několik šablon, které usnadňují práci s úlohou.
 

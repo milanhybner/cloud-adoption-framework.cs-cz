@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548015"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752166"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Pochopení standardních hodnot zabezpečení cloudu
 
@@ -27,7 +27,7 @@ Toto je úvodní článek v obecném tématu základního plánu zabezpečení c
 
 Zabezpečení cloudu je rozšíření tradičních postupů zabezpečení informací. Tradiční IT zabezpečení by zahrnovalo zásady a ovládací prvky řízení zabezpečení počítače, zabezpečení sítě, ochrany dat, využití informací a tak dále. V cloudu jsou potřeba stejné zásady a ovládací prvky. Během jakékoli transformace cloudu je potřeba, aby se ředitelka zabezpečení informací aktivně účastnila a pochopila cloudovou na šířku a zajistila tak, aby se starší zásady IT mapovaly na správné úrovně kontroly v cloudu.
 
-Minimální strategii cloudového zabezpečení byste měli zvážit v následujících tématech:
+Každá strategie cloudového zabezpečení by měla přinejmenším zvážit následující témata:
 
 - **Klasifikace dat.** Správná klasifikace dat pro pochopení jakýchkoli zdrojů dat, které jsou soukromé, chráněné nebo vysoce důvěrné. To vám pomůže se správou rizik během plánování.
 - **Naplánujte Scénář hybridního cloudu.** Porozumět způsobu, jakým se starší verze a místní sítě připojí ke cloudu, pomůžou ředitelka zabezpečení informací identifikovat a opravit rizika.

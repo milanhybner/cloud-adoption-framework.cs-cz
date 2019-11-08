@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566686"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753726"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuální datacentra: Perspektiva sítě
 
@@ -194,7 +194,7 @@ Předchozí diagram znázorňuje vztah mezi projekty organizace, uživateli a sk
 
 Obvykle je prostředí (nebo vrstva) systémem, ve kterém je nasazeno a spuštěno více aplikací. Velké podniky využívají vývojové prostředí (kde se provádějí změny a testují) a produkční prostředí (které používají koncoví uživatelé). Tato prostředí jsou oddělená, často s několika přípravnými prostředími mezi nimi, aby umožnila postupné nasazení (zavedení), testování a vrácení zpět, pokud dojde k problémům. Architektury nasazení se výrazně liší, ale obvykle se jedná o základní proces od vývoje (DEV) a končí v produkčním prostředí (kat).
 
-Společná architektura pro tyto typy prostředí s více vrstvami se skládá z Azure DevOps pro vývoj a testování, UAT pro přípravu a produkční prostředí. Organizace můžou k definování přístupu a práv k těmto prostředím využít jeden nebo víc tenantů Azure AD. Předchozí diagram znázorňuje případ, kdy se používají dva různé klienty Azure AD: jeden pro Azure DevOps a UAT a druhý výhradně pro produkční prostředí.
+Společná architektura pro tyto typy prostředí s více vrstvami se skládá z Azure DevOps pro vývoj a testování, UAT pro přípravu a produkční prostředí. Organizace můžou používat jeden nebo víc tenantů Azure AD k definování přístupu a práv k těmto prostředím. Předchozí diagram znázorňuje případ, kdy se používají dva různé klienty Azure AD: jeden pro Azure DevOps a UAT a druhý výhradně pro produkční prostředí.
 
 Existence různých tenantů Azure AD vynutila oddělení mezi prostředími. Stejnou skupinu uživatelů, jako je centrální IT, se musí ověřit pomocí jiného identifikátoru URI pro přístup k jinému klientovi Azure AD, aby se změnily role nebo oprávnění k Azure DevOps nebo produkčním prostředím projektu. Existence různých ověření uživatelů pro přístup k různým prostředím zkracuje možné výpadky a další problémy způsobené lidskými chybami.
 
@@ -390,7 +390,7 @@ Následující funkce byly popsány v tomto dokumentu. Další informace získá
 |-|-|-|
 |[Virtuální sítě Azure][VNet]</br>[Skupiny zabezpečení sítě][network-security-groups]</br>[Protokoly skupin zabezpečení sítě][nsg-log]</br>[Trasy definované uživatelem][user-defined-routes]</br>[Síťová virtuální zařízení][NVA]</br>[Veřejné IP adresy][PIP]</br>[DDoS Azure][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Firewall webových aplikací] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[Partnerské vztahy virtuálních sítí][VNetPeering]</br>[Virtuální privátní síť][VPN]</br>[Virtuální síť WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identita</br>|Monitorování</br>|Osvědčené postupy</br>|
+|Identita</br>|Sledování</br>|Doporučené postupy</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Základní ovládací prvky přístupu role][RBAC]</br>[Výchozí role Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Azure Monitor][Monitor]</br>[Protokoly aktivit][ActLog]</br>[Diagnostické protokoly][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Sledování výkonu sítě][NPM]|[Osvědčené postupy hraniční sítě][DMZ]</br>[Správa předplatných][SubMgmt]</br>[Správa skupin prostředků][RGMgmt]</br>[Omezení předplatného Azure][limits] </br></br></br>|
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547239"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751285"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migrace do cloudu v architektuře přechodu na cloud pro Azure od Microsoftu
 
@@ -44,7 +44,7 @@ Cloudový architekt slouží jako vizionář a zprostředkovatel, který má tyt
 
 Čtenářům, kteří podle tohoto průvodce chtějí postupovat od začátku do konce, tento obsah pomůže vyvinout robustní strategii migrace do cloudu. Pokyny čtenáře provedou teorií a implementací takové strategie.
 
-V prvním kroku se doporučuje, aby čtenáři pracovali s pomocí [průvodce migrací do Azure](./azure-migration-guide/index.md) a pochopili standardní sadu nástrojů a přístupů potřebných k migraci v běžném případu použití. Následně je možné základní pokyny rozšířit tak, aby vyhovovaly potřebám čtenářů prostřednictvím [složitých scénářů migrace](./expanded-scope/index.md), [osvědčených postupů migrace](./azure-best-practices/index.md) a [aspektech migrace](./migration-considerations/index.md).
+Jako první krok si Projděte [příručku k migraci Azure](./azure-migration-guide/index.md) , která vám pomůže pochopit standardní sadu nástrojů a přístupů potřebných k migraci v běžném případu použití. Následně je možné základní pokyny rozšířit tak, aby vyhovovaly potřebám čtenářů prostřednictvím [složitých scénářů migrace](./expanded-scope/index.md), [osvědčených postupů migrace](./azure-best-practices/index.md) a [aspektech migrace](./migration-considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Průvodce migrací do Azure](./azure-migration-guide/index.md)

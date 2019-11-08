@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564918"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752778"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Průvodce monitorováním cloudu: Úvod
 
-Cloud představuje zásadní posun ve způsobu, jakým podniky pořizují a využívají technologické prostředky. V minulosti podniky přebíraly vlastnictví všech úrovní technologií od infrastruktury až po software a také zodpovědnost za ně. V současnosti cloud nabízí podnikům možnost zřizovat a využívat prostředky podle potřeby.
+Cloud zásadně mění způsob, jakým podniky získávají a používají technologické prostředky. V minulosti podniky přebíraly vlastnictví všech úrovní technologií od infrastruktury až po software a také zodpovědnost za ně. V současnosti cloud nabízí podnikům možnost zřizovat a využívat prostředky podle potřeby.
 
 Přestože cloud nabízí takřka neomezenou flexibilitu, co se možností návrhu týče, podniky hledají prověřené a konsistentní metodiky pro osvojení cloudových technologií. Jednotlivé podniky přitom pro přechod na cloud mají různé cíle a časové rámce. To znamená, že nalezení jednoho řešení, které by fungovalo pro všechny, je téměř nemožné.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566227"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753063"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardní příručka pro zásady správného řízení podniku: zlepšení cloudu
 
@@ -85,4 +85,4 @@ K nasazení v cloudu by se mělo zahrnout tam, kde je to potřeba, na základě 
 
 ## <a name="conclusion"></a>Závěr
 
-Tato série článků popisuje přírůstkový vývoj osvědčených postupů zásad správného řízení, které jsou v souladu se zkušenostmi této fiktivní společnosti. Od začátku malého, ale s pravou základem, může se společnost rychle přesunout a zároveň použít správnou úroveň správného řízení ve správný čas. MVP sám o sobě nechránil zákazníka. Místo toho vytvořil základ pro správu rizik a přidání ochrany. Odtud jsou k dispozici vrstvy zásad správného řízení, které by opravily hmotná rizika. Přesná cesta, která je zde uvedena, nebude zarovnávat 100% s prostředími všech čtenářů. Místo toho slouží jako vzor pro přírůstkové řízení. Čtenář se doporučuje tvarovat tyto osvědčené postupy, aby vyhovovaly vlastním jedinečným omezením a požadavkům zásad správného řízení.
+Tato série článků popisuje přírůstkový vývoj osvědčených postupů zásad správného řízení, které jsou v souladu se zkušenostmi této fiktivní společnosti. Od začátku malého, ale s pravou základem, může se společnost rychle přesunout a zároveň použít správnou úroveň správného řízení ve správný čas. MVP sám o sobě nechránil zákazníka. Místo toho vytvořil základ pro správu rizik a přidání ochrany. Odtud jsou k dispozici vrstvy zásad správného řízení, které by opravily hmotná rizika. Přesná cesta, která je zde uvedena, nebude zarovnávat 100% s prostředími všech čtenářů. Místo toho slouží jako vzor pro přírůstkové řízení. Tyto osvědčené postupy byste měli tvarovat, abyste vyhovovali vlastním jedinečným omezením a požadavkům zásad správného řízení.

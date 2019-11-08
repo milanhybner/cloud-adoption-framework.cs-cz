@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 38dfd1951982e23cce2108ccc62877dae06d3cbe
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656559"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751625"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Navázat postupy provozní správy v cloudu
 
@@ -36,7 +36,7 @@ Oba tyto osvědčené postupy se sestavují s metodologií pro řízení provozu
 
 **Provozní obory cloudu:** Po zarovnání firmy je mnohem snazší sledovat a sestavovat správné obory cloudových operací pro každou úlohu. Rozhodnutí v každé disciplíně je pak možné převést na závazky, které může snadno pochopit společnost. Díky tomuto přístupu založenému na spolupráci se zainteresované strany stávají partnery při hledání správného poměru cena/výkon.
 
-- **Inventář a viditelnost:** Minimální Správa operací vyžaduje, aby bylo zajištěno inventarizaci prostředků a vytváření viditelnosti stavu spuštění jednotlivých assetů.
+- **Inventář a viditelnost:** Minimální Správa operací vyžaduje, aby bylo zajištěno inventarizaci prostředků a vytváření viditelnosti stavu spuštění každého prostředku.
 - **Provozní dodržování předpisů:** Běžnou správou konfigurace, velikosti, nákladů a výkonu assetů je klíč k udržení očekávání výkonu.
 - **Ochrana a obnovení:** Minimalizace provozních přerušení a urychlení obnovení pomůžou podniku vyhnout se ztrátám výkonu a nepříznivým výnosům. Základními aspekty této disciplíny jsou detekce a obnovení.
 - **Operace platformy:** Všechna IT prostředí obsahují sadu běžně používaných platforem. Tyto platformy můžou zahrnovat úložiště dat, například SQL Server nebo Azure HDInsight. Mezi další běžné platformy patří například řešení kontejnerů, jako je Azure Kubernetes Service (AKS). Bez ohledu na platformu se v operacích s platformou zaměřuje na přizpůsobení operací na základě způsobu nasazení, konfigurace a používání běžných platforem v úlohách.

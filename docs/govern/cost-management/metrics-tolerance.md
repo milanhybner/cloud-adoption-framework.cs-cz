@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220958"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752692"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metriky, ukazatele a tolerance rizik
 
@@ -41,12 +41,12 @@ V počátečních fázích přijetí cloudu budete pracovat s vaší firmou a ur
 
 Po zjištění [obchodních rizik](./business-risks.md)budete pracovat s vaší firmou a identifikovat srovnávací testy, které by mohly způsobit zvýšení těchto rizik. Tady je několik příkladů toho, jak se metriky, jako jsou uvedené výše, porovnávají s tolerancí standardních hodnot rizik, aby bylo jasné, že je potřeba další investovat do Cost Management.
 
-- **Řízený závazek (nejběžnější):** Společnost, která se zavazuje k útratě $X 000000 tento rok na dodavatele cloudu. Potřebují Cost Management disciplínu, aby firma nepřekročila své cíle útraty o více než 20% a aby využívala alespoň 90% tohoto závazku.
-- **Procentuální hodnota triggeru:** Společnost s cloudovou útratou, která je pro produkční systémy stabilní. Pokud se tyto změny zvýší o více než _x%_ , bude se cost management disciplína převažovat za moudrou.
-- **Nadřízená aktivační událost:** Společnost, která se domnívá jejich nasazená řešení, je nadřízená. Cost Management je prioritní investování, dokud nedokáže předvést správné sblížení zřizování a využití prostředků.
-- **Aktivační událost měsíčních výdajů:** Společnost, která se věnuje $x 000 za měsíc, se považují za proměnlivou cenu. Pokud útrata překročí tuto částku v daném měsíci, bude muset investovat do Cost Management.
-- **Aktivační událost roční útraty:** Společnost s IT R & D rozpočet, který umožňuje vytrávit $X za rok na experimentování s cloudem za 1000. Můžou provozovat produkční úlohy v cloudu, ale budou se i nadále považovat za experimentální řešení, pokud rozpočet nepřekročí tuto částku. Po převzetí služeb se budou muset považovat za rozpočet jako investici do produkčního prostředí a úzce spravovat výdaje.
-- **Provozní náklady – nepříznivé (Neběžné):** Jako společnost se Averse na provozní výdaje a před nasazením úlohy pro vývoj/testování bude nutné, aby byly na svém místě Cost Management kontroly.
+- **Řízený závazek (nejběžnější):** Společnost, která se zavazuje k útratě _$x 000000_ tento rok na dodavatele cloudu. Potřebují Cost Management disciplínu, aby firma nepřekročila své cíle útraty o více než 20% a aby využívala alespoň 90% jejich závazku.
+- **Procentuální hodnota triggeru:** Společnost s cloudovou útratou, která je pro produkční systémy stabilní. Pokud se změny projeví více než _x%_ , cost management disciplína je moudrá.
+- **Nadřízená aktivační událost:** Společnost, která se domnívá jejich nasazená řešení, je nadřízená. Cost Management je prioritní investování, dokud neukáže správné sblížení zřizování a využití prostředků.
+- **Aktivační událost měsíčních výdajů:** Společnost, která se věnuje _$x 000_ za měsíc, se považují za proměnlivou cenu. Pokud útrata překročí tuto částku v daném měsíci, bude muset investovat do Cost Management.
+- **Aktivační událost roční útraty:** Společnost s IT R & D rozpočet, který umožňuje vytrávit _$x_ za rok na experimentování s cloudem za 1000. Můžou provozovat produkční úlohy v cloudu, ale přesto se považují za experimentální řešení, pokud rozpočet nepřekročí tuto částku. Pokud dojde k překročení rozpočtu, bude se muset považovat za rozpočet jako investici do produkčního prostředí a úzce spravovat výdaje.
+- **Provozní náklady – nepříznivé (Neběžné):** Jako společnost se Averse na provozní výdaje a před nasazením úlohy pro vývoj a testování bude nutné, aby byly provedeny kontroly nákladů.
 
 ## <a name="next-steps"></a>Další kroky
 

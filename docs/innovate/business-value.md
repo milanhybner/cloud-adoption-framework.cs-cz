@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565751"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752015"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Sestavte se konsensem na obchodní hodnotě inovací
 
@@ -31,7 +31,7 @@ Než začnete vyvíjet řešení (v cloudu nebo v místním prostředí), ověř
 Pokud jsou odpovědi na všechny čtyři otázky dobře zdokumentovány, možná nebudete muset dokončit zbytek tohoto cvičení. Naštěstí můžete snadno testovat jakoukoli dokumentaci. Nastavením dvou krátkých setkání otestujete dokumentaci i interní zarovnání vaší organizace. Pozvánky potvrzených obchodních účastníků na jednu schůzku a vytvoření samostatné schůzky s činným vývojářským týmem. Položte čtyři otázky výše na každou skupinu a potom porovnejte výsledky.
 
 > [!NOTE]
-> Stávající dokumentaci **by se neměla** sdílet s některým týmem před schůzí. Pokud ano, musí být v případě hodnoty true Alignment odkazováno nebo dokonce nahrazeno členy každé skupiny.
+> Stávající **dokumentaci nesmí být** sdílena s týmem před schůzí. Pokud ano, musí být v případě hodnoty true Alignment odkazováno nebo dokonce nahrazeno členy každé skupiny.
 
 <!-- -->
 
@@ -66,7 +66,7 @@ Je poměrně běžné, že odpovědi na otázky 1 a dva mají být špatně zaro
 - **Možnost hypotézy:** U různých zúčastněných stran a vývojových týmů je běžné mít příliš mnoho očekávání pro řešení. Nereálné očekávání mohou být znaménkem, že předpoklad je příliš Vague. Postupujte podle pokynů v části [sestavování se zákaznickým soucit](./considerations/build.md) a sestavte si jasnou hypotézu.
 - **Možnost sestavení:** Týmy můžou být špatně zarovnané, protože nesouhlasí se způsobem vyřešení potřeb zákazníků. Taková odsmlouva obvykle indikuje, že tým je [opožděný s předčasné technický špičkou](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Aby se tým zaměřil na zákazníka, spusťte první iteraci a vytvořte malý minimální produkt (MVP), který bude řešit část hypotézy. Další pokyny, jak týmu pomoci přejít vpřed, najdete v tématu [vývoj digitálních vynálezů](./considerations/invention.md).
 - **Výuková příležitost:** Tým buď může být špatně zarovnaný, protože potřebuje důkladné technické požadavky a rozsáhlé funkční požadavky. Tato potřeba může vést k příležitosti pro školení v agilních metodologiích. Pokud jazyková verze týmu není připravená na Agilní procesy, můžete najít inovace a udržet tempo na trhu.  Informace o školicích materiálech o DevOps a agilních postupech najdete v těchto tématech:
-  - [Rozvíjejte vaše postupy DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+  - [Vývoj postupů DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Sestavování aplikací pomocí Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Nasazení aplikací s využitím Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
@@ -75,5 +75,6 @@ Podle metodologie a nástrojů pro správu nevyřízených položek v jednotliv�
 ## <a name="next-steps"></a>Další kroky
 
 Až zarovnáte svou obchodní polohu a sdělíte ji, jste připraveni začít sestavovat své řešení.
+
 > [!div class="nextstepaction"]
 > [Další kroky se vrátíte do cvičení inovací.](./index.md)

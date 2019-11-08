@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565640"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752995"
 ---
 # <a name="learn-with-customers"></a>Učení se zákazníky
 
@@ -56,4 +56,4 @@ Jako další krok pro porozumění této metodologii si můžou [běžné blokov
 > [!div class="nextstepaction"]
 > [Porozumění běžným blokováním a výzvám](./challenges.md)
 
-Některé z konceptů v tomto článku se sestavují na témata, která se poprvé popisují v [rámci štíhlého spuštění](http://theleanstartup.com/book), zapsaná službou Eric obnovení aplikace.
+Některé z konceptů v tomto článku se sestavují na témata, která se poprvé popisují v [rámci štíhlého spuštění](https://theleanstartup.com/book), zapsaná službou Eric obnovení aplikace.

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565592"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752980"
 ---
 # <a name="predict-and-influence"></a>Predikce a ovlivňování
 
@@ -46,7 +46,7 @@ Data jsou nejvíce prvky výše zmíněných vlastností. Každé z oborů pro v
 
 K disřadě zdrojů dat lze využít k zajištění prediktivních funkcí:
 
-## <a name="insights"></a>Insights
+## <a name="insights"></a>Poznatky
 
 Odborníci na danou problematiku využívají data týkající se potřeb zákazníků a chování při vývoji základních obchodních přehledů z studie nezpracovaných dat. Tyto přehledy můžou určit výskyty požadovaného chování zákazníka (nebo případně nežádoucí výsledky). Během iterací na předpovědi můžou tyto přehledy pomoci při identifikaci potenciálních relací, které by mohly nakonec vygenerovat pozitivní výsledky. Pokyny k povolení odborníků na danou problematiku pro vývoj přehledů najdete v tématu [Democratizing data](./data.md).
 

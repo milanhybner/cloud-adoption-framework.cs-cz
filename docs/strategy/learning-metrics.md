@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031005"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753787"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Výzvou se metrikami chování zákazníků je, že mohou být snadno ovlivněny
 
 ## <a name="data-innovation"></a>Inovace dat
 
-Změna odvětví, narušení trhů nebo transformace produktů nebo služeb může trvat i roky. V rámci cloudové inovace dat je experimentování klíč k měření úspěšnosti. Budou transparentní sdílením metrik předpovědi, jako je procento pravděpodobnosti, počet neúspěšných experimentů a množství vyškolených modelů. Selhání se nashromáždí rychleji než úspěch. Tyto metriky můžou být discouraging a je důležité, aby výkonný tým pochopil čas a investice potřebné k řádnému využití dat.
+Změna odvětví, narušení trhů nebo transformace produktů a služeb může trvat i roky. V rámci cloudové inovace dat je experimentování klíč k měření úspěšnosti. Budou transparentní sdílením metrik předpovědi, jako je procento pravděpodobnosti, počet neúspěšných experimentů a počet vyškolených modelů. Selhání se nashromáždí rychleji než úspěch. Tyto metriky můžou být discouraging a výkonný tým musí pochopit čas a investice potřebné k tomu, aby tyto metriky správně používaly.
 
 Na druhé straně jsou některé pozitivní indikátory často spojené s učením řízeným daty: centralizaci heterogenních datových sad, příchozí přenos dat a democratization dat. I když se tým učí o zítřejším zákazníkovi, můžou se skutečné výsledky vytvářet ještě dnes. Podpora výukových metrik může zahrnovat:
 
@@ -53,7 +53,7 @@ Na druhé straně jsou některé pozitivní indikátory často spojené s učen�
 
 Ještě hodnotný metrika je počet řídicích panelů vytvořených z kombinovaných zdrojů dat. Toto číslo odráží aktuální stav obchodních procesů, které jsou ovlivněny novými zdroji dat. Díky opětovnému sdílení nových zdrojů dat může vaše firma využít data pomocí nástrojů pro vytváření sestav, jako je Power BI, k tvorbě přírůstkových přehledů a změně firemních změn.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po zarovnávání výukových metrik jste připraveni začít vyhodnotit [digitální nemovitosti](../digital-estate/index.md) na základě těchto metrik. Výsledkem bude [nevyřízené položky transformace nebo nevyřízené položky migrace](../migrate/migration-considerations/prerequisites/technical-complexity.md).
 

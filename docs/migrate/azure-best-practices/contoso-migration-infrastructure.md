@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566500"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751842"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury migrace
 
@@ -643,7 +643,7 @@ Azure poskytuje v rámci různých služeb a platformy Azure řadu ovládacích 
 Během konfigurace identit a řízení přístupu už společnost Contoso začala řešit některé aspekty zásad správného řízení a zabezpečení. V podstatě existují tři oblasti, které je potřeba vzít v úvahu:
 
 - **Zásada:** Azure Policy aplikuje a vynutila pravidla a vlivy na vaše prostředky, aby prostředky zůstaly v souladu s podnikovými požadavky a SLA.
-- **Zámky:** Azure umožňuje uzamknout předplatná, skupiny prostředků a další prostředky, aby je bylo možné upravovat jenom s oprávněním.
+- **Zámky:** Azure umožňuje uzamknout předplatná, skupiny prostředků a další prostředky, aby je bylo možné upravovat pouze pomocí těch, které mají oprávnění k tomu.
 - **Značky:** Prostředky je možné řídit, auditovat a spravovat pomocí značek. Značky připojují k prostředkům metadata a poskytují informace o prostředcích nebo vlastnících.
 
 ### <a name="set-up-policies"></a>Nastavení zásad
@@ -654,7 +654,7 @@ Zásady určují definici zásady a přiřazení zásady určuje rozsah, ve kter
 
 Společnost Contoso chce začít jen s dvěma zásadami:
 
-- Chce mít zásadu, která zajistí, aby se směly prostředky nasazovat jenom do oblastí EUS2 a CUS.
+- Chce zásady zajistit, aby se prostředky mohly nasadit jenom v oblastech EUS2 a kapacitní jednotky.
 - Chce omezit skladové položky virtuálních počítačů jenom na schválené skladové položky. Cílem je zajistit, aby se nepoužívaly drahé skladové jednotky virtuálních počítačů.
 
 #### <a name="limit-resources-to-regions"></a>Omezení prostředků na oblasti
@@ -780,7 +780,7 @@ Skupiny zabezpečení sítě přidružené ke skupinám zabezpečení aplikace b
 
 **Akce** | **Název** | **Zdroj** | **Cíl** | **Port**
 --- | --- | --- | --- | ---
-Povolit | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Povolit | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Povolit | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Povolit | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Zamítnout | DenyAllInbound | Všechny | Všechny | Všechny

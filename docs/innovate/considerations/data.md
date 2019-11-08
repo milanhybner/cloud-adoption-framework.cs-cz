@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565705"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753033"
 ---
 # <a name="democratize-data"></a>Demokratizace dat
 
 Uhlí, olej a lidský potenciál byly tři nejdůležitější prostředky během revoluce v průmyslu. Tyto prostředky sestavily společnosti, posunuly trhy a nakonec změnily národy. V digitální ekonomice existují tři stejně důležité prostředky: data, zařízení a lidský potenciál. Každý z těchto prostředků má skvělé možnosti inovace. Pro jakékoli inovace v moderních obdobích jsou data novým olejem.
 
-V současné době jsou v každé společnosti k dispozici kapsy dat, které by bylo možné využít k efektivnějšímu nalezení a splnění potřeb zákazníků. Omlouváme se, ale proces dolování těchto dat pro účely inovace má dlouhou dobu náročné na čas. Mnohé z nejcennějších řešení potřebných pro zákazníky se nesplnění, protože k datům, která potřebují, nemůžou přistupovat žádné správné osoby.
+V současné době jsou v každé společnosti k dispozici kapsy dat, které by bylo možné použít k efektivnějšímu vyhledání a splnění potřeb zákazníků. Omlouváme se, ale proces dolování těchto dat pro účely inovace má dlouhou dobu náročné na čas. Mnohé z nejcennějších řešení potřebných pro zákazníky se nesplnění, protože k datům, která potřebují, nemůžou přistupovat žádné správné osoby.
 
 Democratization dat je proces získávání těchto dat do správných rukou k zajištění inovace. Tento proces může mít několik forem, ale obecně zahrnuje řešení pro ingestovaná nebo integrovaná neupravená data, centralizaci dat, sdílení dat a zabezpečení dat. Po úspěšném provedení těchto metod mohou odborníci na společnosti použít data k otestování hypotézy. V mnoha případech můžou týmy při přijímání v cloudu [sestavovat pomocí zákaznických soucit](./build.md) jenom data a rychle řešit stávající potřeby zákazníků.
 
@@ -33,7 +33,7 @@ Následující fáze vás provede rozhodnutími a přístupy potřebnými k při
 
 Při [sestavování pomocí zákaznických soucit](./build.md)budou všechny procesy zvyšovat potřebu zákazníků prostřednictvím technického řešení. Vzhledem k tomu, že democratizing data neobsahují žádnou výjimku, začneme sdílením dat. Aby Demokratizujte data, musí zahrnovat řešení, které sdílí data s příjemcem dat. Příjemce dat může být přímým zákazníkem nebo proxy serverem, který provádí rozhodnutí pro zákazníky. Schválení spotřebitelé dat mohou analyzovat, dotazování a sestavovat centralizované údaje bez podpory od zaměstnanců IT.
 
-Mnohé úspěšné inovace se spustily jako minimální životaschopné produkty (MVP), které dodávají jménem zákazníka ruční procesy řízené daty. V tomto modelu concierge je zaměstnanec dat příjemcem. Tento zaměstnanec používá data k podpoře zákazníka. Pokaždé, když zákazník zahájí ruční podporu, může být hypotéza testována a ověřena. Tento přístup je často nákladově efektivní způsob testování hypotézy zaměřené na zákazníky před tím, než budete investovat do integrovaných řešení.
+Mnohé úspěšné inovace byly spuštěny jako minimální životaschopný produkt (MVP), který poskytuje ruční procesy řízené daty jménem zákazníka. V tomto modelu concierge je zaměstnanec dat příjemcem. Tento zaměstnanec používá data k podpoře zákazníka. Pokaždé, když zákazník zahájí ruční podporu, může být hypotéza testována a ověřena. Tento přístup je často nákladově efektivní způsob testování hypotézy zaměřené na zákazníky před tím, než budete investovat do integrovaných řešení.
 
 Primární nástroje pro sdílení dat přímo s příjemci dat zahrnují samoobslužné vytváření sestav nebo data integrovaná do jiných prostředí pomocí nástrojů, jako je [Power BI](https://docs.microsoft.com/power-bi).
 
@@ -44,9 +44,9 @@ Primární nástroje pro sdílení dat přímo s příjemci dat zahrnují samoob
 
 Sdílení dat může rychle vydávat MVP, který můžete použít v zákaznických konverzacích. Pokud ale chcete, aby se tato sdílená data mohla využít k užitečným znalostem, je potřeba trochu víc. Po ověření hypotézy prostřednictvím sdílení dat je v další fázi vývoje obvykle řízení dat.
 
-Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Příklad:
+Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Například:
 
-- **Je citlivá sdílená data?** [Data by se měla klasifikovat](../../govern/policy-compliance/data-classification.md) před jakýmkoli veřejným sdílením, aby se chránily zájmy zákazníků a společnosti.
+- **Je citlivá sdílená data?** [Data by měla být klasifikována](../../govern/policy-compliance/data-classification.md) před veřejným sdílením, aby chránila zájmy zákazníků a společnosti.
 - **Pokud jsou data citlivá, jsou zabezpečená?** Ochrana citlivých dat by měla být požadavek na všechna democratized data. Příklad úlohy zaměřené na [zabezpečení datových řešení](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) poskytuje několik odkazů na zabezpečení dat.
 - **Je data v katalogu?** Shromažďování podrobností o datech, která se sdílejí, bude pomoci při dlouhodobé správě dat. Nástroje pro dokumentování dat, jako je Azure Data Catalog, můžou tento proces v cloudu mnohem jednodušeji udělat. Pokyny týkající se [poznámek na data](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) a [dokumentaci zdrojů dat](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) vám pomůžou zrychlit proces.
 
@@ -72,7 +72,7 @@ Pokud potřebujete, aby data byla centralizovaná za účelem vyřešení potře
 
 **Integrace:** Data, která se nacházejí v existujícím úložišti dat, můžete integrovat do centralizovaného úložiště dat pomocí tradičních technik přesunu dat. To je zvlášť běžné pro scénáře, které zahrnují cloudové úložiště dat. Tyto techniky zahrnují extrakci dat z existujícího úložiště dat a jejich načtení do centrálního úložiště dat. V určitém okamžiku tohoto procesu jsou data obvykle transformovaná tak, aby byla větší použitelnost a relevantní v centrálním úložišti.
 
-Cloudové nástroje tyto techniky přepnuly na nástroje pro platby za použití, čímž se sníží překážka záznamu pro shromažďování a centralizaci dat. Nástroje, jako je služba migrace dat a Data Factory, jsou v Azure dva příklady. Referenční architektura pro [datovou továrnu s úložištěm dat OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) je příkladem takového řešení.
+Cloudové nástroje tyto techniky přepnuly na nástroje pro platby za použití, čímž se sníží překážka záznamu pro shromažďování a centralizaci dat. Nástroje jako Azure Database Migration Service a Azure Data Factory jsou dva příklady. Referenční architektura pro [datovou továrnu s úložištěm dat OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) je příkladem takového řešení.
 
 **Přijímání:** Některá data se nenacházejí v existujícím úložišti dat. Když jsou tato přechodovaná data primárním zdrojem inovací, budete chtít zvážit alternativní přístupy. Přechodná data můžete najít v nejrůznějších existujících zdrojích, jako jsou aplikace, rozhraní API, datové streamy, zařízení IoT, blockchain, mezipaměť aplikace, multimediální obsah nebo dokonce i v plochých souborech.
 

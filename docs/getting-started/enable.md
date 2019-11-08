@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656594"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753295"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Povolit úspěch během cesty k přijetí cloudu
 
@@ -32,7 +32,7 @@ V rámci této architektury je povolený klíčový motiv. Následující kontro
 
 ## <a name="additional-tools"></a>Další nástroje
 
-Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata, která můžou úspěšně povolit. Tento článek popisuje několik běžných nástrojů, které můžou významně zlepšit úspěšnost nad rámec rozhraní pro přijetí do cloudu. Navázání zásad správného řízení cloudu, odolných architektur, technických dovedností a přístupu DevOps jsou důležité pro úspěch jakéhokoli úsilí o přijetí do cloudu. Čtenář doporučuje tuto stránku označit jako prostředek, aby se přenavštívila v rámci jakékoli cesty k přijetí cloudu.
+Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata, která můžou úspěšně povolit. Tento článek popisuje několik běžných nástrojů, které můžou významně zlepšit úspěšnost nad rámec rozhraní pro přijetí do cloudu. Navázání zásad správného řízení cloudu, odolných architektur, technických dovedností a přístupu DevOps jsou důležité pro úspěch jakéhokoli úsilí o přijetí do cloudu. Umožňuje označit tuto stránku jako prostředek, aby bylo možné přenavštěvovat celou cestu k přijetí do cloudu.
 
 <!-- markdownlint-disable MD033 -->
 

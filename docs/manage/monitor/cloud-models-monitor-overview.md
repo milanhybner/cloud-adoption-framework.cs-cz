@@ -1,5 +1,5 @@
 ---
-title: Průvodce monitorováním cloudu – strategie monitorování pro modely nasazení v cloudu
+title: 'Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564976"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752716"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu
 
@@ -30,12 +30,13 @@ Naše strategie zahrnuje podporu monitorování infrastruktury (výpočetní slu
 ## <a name="azure-cloud-monitoring"></a>Monitorování cloudu Azure
 
 Azure Monitor je služba Azure Native Platform, která poskytuje jeden zdroj pro monitorování prostředků Azure. Je navržená pro cloudová řešení, která:
-* Jsou postavené na Azure.
-* Podporují obchodní funkce založené na úlohách virtuálních počítačů nebo složitých architekturách, které používají mikroslužby a další prostředky platforem.
 
-Monitoruje všechny vrstvy zásobníku počínaje klientskými službami, jako jsou Azure Active Directory Domain Services, události na úrovni předplatného a Azure Service Health. 
+- Jsou postavené na Azure.
+- Podporují obchodní funkce založené na úlohách virtuálních počítačů nebo složitých architekturách, které používají mikroslužby a další prostředky platforem.
 
-Monitoruje také prostředky infrastruktury, jako jsou virtuální počítače, úložiště a síťové prostředky. V horní vrstvě monitoruje vaši aplikaci. 
+Monitoruje všechny vrstvy zásobníku počínaje klientskými službami, jako jsou Azure Active Directory Domain Services, události na úrovni předplatného a Azure Service Health.
+
+Monitoruje také prostředky infrastruktury, jako jsou virtuální počítače, úložiště a síťové prostředky. V horní vrstvě monitoruje vaši aplikaci.
 
 Monitorováním každé z těchto závislostí a shromažďováním správných signálů, které mohou vysílat, získáte přehled o tom, jaké aplikace a jaká klíčová infrastruktura potřebujete.
 
@@ -56,7 +57,7 @@ Tenant Azure | Azure Active Directory || Povolte protokolování diagnostiky a n
 
 ## <a name="hybrid-cloud-monitoring"></a>Monitorování hybridního cloudu
 
-Pro mnoho organizací se musí přejít do cloudu postupně, kde je hybridní cloudový model nejběžnějším prvním krokem v cestě. Pečlivě vyberete vhodnou podmnožinu aplikací a infrastruktury pro zahájení migrace, zatímco se vyhnete přerušení vaší firmy. Vzhledem k tomu, že nabízíme dvě monitorovací platformy, které podporují tento model cloudu, tvůrci rozhodnutí IT můžou být nejistí, jaké jsou nejlepší možnosti pro podporu jejich obchodních a provozních cílů. 
+Pro mnoho organizací se musí přejít do cloudu postupně, kde je hybridní cloudový model nejběžnějším prvním krokem v cestě. Pečlivě vyberete vhodnou podmnožinu aplikací a infrastruktury pro zahájení migrace, zatímco se vyhnete přerušení vaší firmy. Vzhledem k tomu, že nabízíme dvě monitorovací platformy, které podporují tento model cloudu, tvůrci rozhodnutí IT můžou být nejistí, jaké jsou nejlepší možnosti pro podporu jejich obchodních a provozních cílů.
 
 V této části řešíme nejistotu tím, že provedeme několik faktorů a nabídneme porozumění platformě, kterou je potřeba vzít v úvahu.
 
@@ -90,7 +91,7 @@ Následující tabulka shrnuje požadavky, které Azure Monitor a System Center 
 |Monitorování kontejnerů služby Azure Kubernetes | Ano | Ne |
 |Monitorovat kontejnery Docker nebo Windows | Ano | Ne |
 |Sledování výkonu sítě | Ano | Ano, omezeno<br> Podporuje kontroly dostupnosti a shromažďuje základní statistiky ze síťových zařízení pomocí protokolu SNMP (Simple Network Management Protocol) od podnikové sítě.|
-|Interaktivní analýza dat | Ano | Ne<br> Spoléhá na SQL Server Reporting Services předem zakonzervované nebo vlastní sestavy, řešení vizualizace třetích stran nebo na vlastní Power BI implementaci. Operations Manager datový sklad má omezení škálování a výkonu. Integrujte s protokoly Azure Monitor jako alternativu pro požadavky na agregaci dat. Integraci můžete dosáhnout konfigurací konektoru Log Analytics.|
+|Interaktivní analýza dat | Ano | Ne<br> Spoléhá na SQL Server Reporting Services zakonzervované nebo vlastní sestavy, řešení vizualizace třetích stran nebo na vlastní Power BI implementaci. Operations Manager datový sklad má omezení škálování a výkonu. Integrujte s protokoly Azure Monitor jako alternativu pro požadavky na agregaci dat. Integraci můžete dosáhnout konfigurací konektoru Log Analytics.|
 |Komplexní diagnostika, analýza hlavní příčiny a včasné řešení potíží | Ano | Ano, omezeno<br> Podporuje ucelenou diagnostiku a řešení potíží pouze pro místní infrastrukturu a aplikace. Používá jiné součásti softwaru System Center nebo Partnerská řešení.|
 |Interaktivní vizualizace (řídicí panely) | Ano | Ano, omezeno<br> Poskytuje základní řídicí panely s webovou konzolou HTML5 nebo pokročilé prostředí z partnerských řešení, jako jsou například čtvercová a Savision. |
 |Integrace s IT nebo DevOps nástroji | Ano | Ano, omezeno |
@@ -115,7 +116,7 @@ Pokud jste už investovali do Operations Manager, nemusíte se soustředit na pl
 
 K monitorování úloh, které běží v Azure, potřebujete:
 
-- [Sada Management Pack pro Azure](https://www.microsoft.com/download/details.aspx?id=50013). Shromažďuje metriky výkonu vydávané službami Azure, jako jsou webové a pracovní role, Application Insights testy dostupnosti (webové testy), Azure Service Bus atd. Management Pack používá REST API Azure ke sledování dostupnosti a výkonu těchto prostředků. Některé typy služeb Azure nemají žádné metriky nebo předem definované monitory v sadě Management Pack, ale můžete je i nadále monitorovat prostřednictvím vztahů definovaných v sadě Management Pack pro zjištěné služby.
+- [Sada Management Pack pro Azure](https://www.microsoft.com/download/details.aspx?id=50013). Shromažďuje metriky výkonu vydávané službami Azure, jako jsou webové a pracovní role, Application Insights testy dostupnosti (webové testy), Azure Service Bus atd. Management Pack používá REST API Azure ke sledování dostupnosti a výkonu těchto prostředků. Některé typy služeb Azure nemají žádné metriky ani předdefinovaná monitorování v sadě Management Pack, ale můžete je i nadále monitorovat prostřednictvím vztahů definovaných v sadě Management Pack pro zjištěné služby.
 
 - [Sada Management Pack pro Azure SQL Database](https://www.microsoft.com/download/details.aspx?id=38829) pro monitorování dostupnosti a výkonu databází SQL Azure a serverů Azure SQL Database s využitím dotazů Azure REST API a T-SQL k SQL Server systémových zobrazení.
 
@@ -137,7 +138,7 @@ I když je Operations Manager schopný monitorovat prostředky, které jsou host
 
 #### <a name="advantages-of-using-operations-manager-with-azure-monitor"></a>Výhody použití Operations Manager s Azure Monitor
 
-- Azure Monitor je způsob, jak obejít omezení Operations Manager. Doplňuje Operations Manager databázi datového skladu shromažďováním důležitých dat o výkonu a protokolu. Azure Monitor zajišťuje lepší analýzu, výkon (při dotazování velkého objemu dat) a uchovávání dat než datový sklad Operations Manager. 
+- Azure Monitor je způsob, jak obejít omezení Operations Manager. Doplňuje Operations Manager databázi datového skladu shromažďováním důležitých dat o výkonu a protokolu. Azure Monitor zajišťuje lepší analýzu, výkon (při dotazování velkého objemu dat) a uchovávání dat než datový sklad Operations Manager.
 
   Pomocí dotazovacího jazyka Azure Monitor můžete vytvářet mnohem složitější a sofistikované dotazy. Dotazy můžete spouštět v různých terabajtech dat během několika sekund. Data můžete rychle transformovat do výsečových grafů, časových grafů a mnoha dalších vizualizací. Pokud chcete tato data analyzovat, nebudete už omezeni tím, že pracujete se Operations Managermi sestavami, které jsou založené na SQL Server Reporting Services, vlastních dotazech SQL a dalších řešeních.
 
@@ -150,12 +151,11 @@ I když je Operations Manager schopný monitorovat prostředky, které jsou host
 - Pomocí funkce map Azure Monitor pro virtuální počítače můžete monitorovat metriky standardního připojení ze síťových připojení mezi virtuálními počítači Azure a místními virtuálními počítači. Tyto metriky zahrnují dobu odezvy, požadavky za minutu, propustnost provozu a odkazy. Můžete identifikovat neúspěšná připojení, řešit potíže, provádět ověřování migrace, provádět analýzu zabezpečení a ověřovat celou architekturu služby. Map může automaticky zjišťovat součásti aplikace v systémech Windows a Linux a namapovat komunikaci mezi službami. Tato automatizace vám pomůže identifikovat připojení a závislosti, které jste nevědomi, naplánovat a ověřit migraci do Azure a minimalizovat spekulací během řešení incidentů.
 
 - Pomocí Network Performance Monitor můžete monitorovat síťové připojení mezi:
+  - Vaše podniková síť a Azure.
+  - Klíčové vysoce vícevrstvé aplikace a mikroslužby.
+  - Uživatelská umístění a webové aplikace (HTTP/HTTPS).
 
-   - Vaše podniková síť a Azure.
-   - Klíčové vysoce vícevrstvé aplikace a mikroslužby.
-   - Uživatelská umístění a webové aplikace (HTTP/HTTPS).
-
-   Tato strategie nabízí viditelnost síťové vrstvy bez nutnosti SNMP. Může také existovat v mapování interaktivní topologie, topologie směrování mezi segmenty směrování tras mezi zdrojovým a cílovým koncovým bodem. Je lepší volbou než pokus o provedení stejného výsledku s monitorováním sítě v Operations Manager nebo s dalšími nástroji pro monitorování sítě aktuálně používanými ve vašem prostředí.
+Tato strategie nabízí viditelnost síťové vrstvy bez nutnosti SNMP. Může také existovat v mapování interaktivní topologie, topologie směrování mezi segmenty směrování tras mezi zdrojovým a cílovým koncovým bodem. Je lepší volbou než pokus o provedení stejného výsledku s monitorováním sítě v Operations Manager nebo s dalšími nástroji pro monitorování sítě aktuálně používanými ve vašem prostředí.
 
 ### <a name="monitor-with-azure-monitor"></a>Monitorování pomocí služby Azure Monitor
 
@@ -177,7 +177,7 @@ I když migrace do cloudu představuje mnoho výzev, zahrnuje také řadu příl
 
 ## <a name="private-cloud-monitoring"></a>Monitorování privátního cloudu
 
-Holistický sledování Azure Stack můžete dosáhnout pomocí System Center Operations Manager. Konkrétně můžete monitorovat úlohy spuštěné v tenantovi, na úrovni prostředků, na virtuálních počítačích a na hostování infrastruktury Azure Stack (fyzické servery a přepínače sítě). 
+Holistický sledování Azure Stack můžete dosáhnout pomocí System Center Operations Manager. Konkrétně můžete monitorovat úlohy spuštěné v tenantovi, na úrovni prostředků, na virtuálních počítačích a na hostování infrastruktury Azure Stack (fyzické servery a přepínače sítě).
 
 Můžete také dosáhnout holistický monitoring s kombinací [možností monitorování infrastruktury](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) , které jsou součástí Azure Stack. Tyto funkce vám pomůžou zobrazit stav a výstrahy Azure Stack oblasti a [služby Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) v Azure Stack, které pro většinu služeb poskytují metriky a protokoly infrastruktury základní úrovně.
 

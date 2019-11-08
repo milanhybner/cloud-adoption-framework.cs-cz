@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564959"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751675"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Průvodce monitorováním cloudu: Přehled monitorovacích platforem
 
@@ -26,7 +26,7 @@ Tento článek obsahuje podrobný přehled našich monitorovacích platforem, kt
 
 ## <a name="the-story-of-system-center-operations-manager"></a>Příběh System Center Operations Manager
 
-V 2000 jsme do pole Operations Management zadali Microsoft Operations Manager (MOM) 2000. V 2007 jsme zavedli novou inženýrskou verzi produktu s názvem System Center Operations Manager. Přesunuli jsme se nad rámec jednoduchého monitorování Windows serveru a soustřeďte se na robustní, komplexní monitorování služeb a aplikací, včetně platforem heterogenní, síťových zařízení a dalších závislostí aplikací nebo služeb. Je to vytvořená platforma pro monitorování na podnikové úrovni pro místní prostředí ve stejné třídě jako IBM Tivoli nebo HP Operations Manager v oboru. Zvětšila se podpora monitorování výpočetních prostředků a prostředků platforem, které běží v Azure, Amazon Web Services (AWS) a dalších poskytovatelích cloudu.
+V 2000 jsme do pole Operations Management zadali Microsoft Operations Manager (MOM) 2000. V 2007 jsme představili provedenou verzi produktu s názvem System Center Operations Manager. Přesunuli jsme se nad rámec jednoduchého monitorování Windows serveru a soustřeďte se na robustní, komplexní monitorování služeb a aplikací, včetně platforem heterogenní, síťových zařízení a dalších závislostí aplikací nebo služeb. Je to vytvořená platforma pro monitorování na podnikové úrovni pro místní prostředí ve stejné třídě jako IBM Tivoli nebo HP Operations Manager v oboru. Zvětšila se podpora monitorování výpočetních prostředků a prostředků platforem, které běží v Azure, Amazon Web Services (AWS) a dalších poskytovatelích cloudu.
 
 ## <a name="the-story-of-azure-monitor"></a>Příběh Azure Monitor
 
@@ -34,7 +34,7 @@ Po vydání Azure v 2010 byl k dispozici monitorování cloudových služeb s ag
 
 Application Insights bylo zavedeno k posunu se změnami v odvětví, kde došlo ke zvětšování rozšiřování cloudových, mobilních a IoT zařízení a zavedení postupů DevOps. Z monitorování výkonu aplikací v Operations Manager ke službě v Azure, kde poskytuje bohatě sledující webové aplikace napsané v různých jazycích. V 2015 byla oznámena verze Preview Application Insights pro sadu Visual Studio a později byla známa jako pouze Application Insights. Shromažďuje údaje o výkonu aplikace, požadavcích a výjimkách a trasováních.
 
-V 2015 se služba Azure Operational Insights všeobecně zpřístupnila. Dodávala službu Analysis Services Log Analytics, která shromáždila a prohledala data z počítačů v Azure, v místním prostředí nebo v jiných cloudových prostředích a připojená k System Center Operations Manager. Byly nabídnuty sady Intelligence, které dostaly řadu předbalených konfigurací správy a monitorování, které obsahovaly kolekci dotazů a analytických logik, vizualizací a pravidel shromažďování dat pro takové scénáře jako audit zabezpečení. posouzení stavu a správa výstrah. Později se Azure Operational Insights stal známým jako Log Analytics.  
+V 2015 se služba Azure Operational Insights všeobecně zpřístupnila. Dodávala službu Analysis Services Log Analytics, která shromáždila a prohledala data z počítačů v Azure, v místním prostředí nebo v jiných cloudových prostředích a připojená k System Center Operations Manager. Byly nabídnuty sady Intelligence, které dostaly řadu předbalených konfigurací správy a monitorování, které obsahují kolekci dotazů a analytických logik, vizualizací a pravidel shromažďování dat pro takové scénáře jako audit zabezpečení, stav posouzení a správa výstrah. Později se Azure Operational Insights stal známým jako Log Analytics.  
 
 V 2016 je verze Preview Azure Monitor oznámila na konferenci Microsoft Ignite. Poskytovala společné rozhraní pro shromažďování metrik platforem, protokoly diagnostiky prostředků a události protokolu aktivit na úrovni předplatného ze všech služeb Azure, které začali používat rozhraní. Dříve měla každá služba Azure vlastní metodu monitorování.
 
@@ -74,6 +74,8 @@ Azure Monitor je služba SaaS (software jako služba), kde veškerá infrastrukt
 
 ## <a name="data-collection"></a>Shromažďování dat
 
+<!-- markdownlint-disable MD024 -->
+
 ### <a name="operations-manager"></a>Operations Manager
 
 #### <a name="agents"></a>Agenti
@@ -90,7 +92,7 @@ Operations Manager provádí všechna monitorování pomocí pracovních postup�
 
 #### <a name="monitoring-configuration"></a>Konfigurace monitorování
 
-Sady Management Pack mohou obsahovat stovky pravidel, monitorování a pravidla zjišťování objektů. Agent spouští všechna tato nastavení monitorování ze všech použitých sad Management Pack, které jsou určeny podle pravidel zjišťování. Každá instance každého nastavení monitorování se spouští nezávisle a funguje okamžitě s daty, která shromažďuje. To je způsob, jakým Operations Manager může dosáhnout výstrahy téměř v reálném čase a aktuálního stavu monitorovaných prostředků.
+Sady Management Pack mohou obsahovat stovky pravidel, monitorování a pravidla zjišťování objektů. Agent spouští všechna tato nastavení monitorování ze všech použitých sad Management Pack, které jsou určeny podle pravidel zjišťování. Každá instance každého nastavení monitorování se spouští nezávisle a funguje okamžitě s daty, která shromažďuje. To je způsob, jakým Operations Manager může dosáhnout upozorňování téměř v reálném čase a aktuálního stavu monitorovaných prostředků.
 
 Monitor může například vzorkovat čítač výkonu každých pár minut. Pokud tento čítač překročí prahovou hodnotu, okamžitě nastaví stav cílového objektu, který okamžitě aktivuje výstrahu ve skupině pro správu. Naplánované pravidlo může sledovat konkrétní událost, která se má vytvořit, a okamžitě vyvolat výstrahu, když se tato událost vytvoří v místním protokolu událostí.
 
@@ -116,9 +118,9 @@ Azure Monitor odděluje shromažďování dat od akcí pořízených s těmito d
 
 Všechna data, která jsou shromážděna pomocí Azure Monitor, jsou uložena jako protokoly nebo metriky a různé funkce monitorování spoléhají na jednu z nich. Metriky obsahují číselné hodnoty v časových řadách, které jsou vhodné pro výstrahy téměř v reálném čase a rychlé zjišťování problémů. Protokoly obsahují text nebo číselná data a podporují ho výkonný dotazovací jazyk, který je vhodný zejména pro provádění složitých analýz.
 
-Vzhledem k tomu, že monitorování odděluje shromažďování dat od akcí proti těmto datům, nemusí být schopné v mnoha případech poskytovat upozornění téměř v reálném čase. Pro upozornění na data protokolu se dotazy spouštějí podle opakujícího se plánu definovaného v upozornění. Díky tomuto chování může Azure Monitor snadno korelovat data ze všech monitorovaných zdrojů a interaktivně analyzovat data různými způsoby. To je užitečné hlavně při provádění analýz hlavní příčiny a určení, kde k problému může dojít.
+Vzhledem k tomu, že monitorování odděluje shromažďování dat od akcí proti těmto datům, nemusí být schopné v mnoha případech poskytovat výstrahy prakticky v reálném čase. Pro upozornění na data protokolu se dotazy spouštějí podle opakujícího se plánu definovaného v upozornění. Díky tomuto chování může Azure Monitor snadno korelovat data ze všech monitorovaných zdrojů a interaktivně analyzovat data různými způsoby. To je užitečné hlavně při provádění analýz hlavní příčiny a určení, kde k problému může dojít.
 
-## <a name="health-monitoring"></a>Monitorování stavu
+## <a name="health-monitoring"></a>Sledování stavu
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -134,7 +136,7 @@ Azure Monitor neposkytuje uživatelsky definované metody implementace modelu sl
 
 - **Azure monitor pro kontejnery:** Monitoruje výkon a stav služby Azure Kubernetes nebo Azure Container Instances. Shromažďuje metriky paměti a procesoru z řadičů, uzlů a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik. Shromažďuje také protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předdefinovaná kritéria stavu, která jsou založená na shromážděných datech výkonu, vám pomůžou zjistit, jestli existuje problém s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
 
-## <a name="analyze-data"></a>Analýza dat
+## <a name="analyze-data"></a>Analyzujte data
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -152,7 +154,7 @@ Operations Manager poskytuje čtyři základní způsoby, jak analyzovat data po
 
 Pomocí výkonného analytického modulu Azure Monitor můžete interaktivně pracovat s daty protokolů a kombinovat je s dalšími daty monitorování pro účely trendů a dalších analýz dat. Zobrazení a řídicí panely umožňují vizualizovat data dotazů různými způsoby od Azure Portal a importovat je do Power BI. Mezi řešení monitorování patří dotazy a zobrazení, která prezentují data, která shromažďuje. Přehledy, jako jsou Application Insights, Azure Monitor pro virtuální počítače a Azure Monitor pro kontejnery, zahrnují přizpůsobené vizualizace pro podporu scénářů interaktivního monitorování.
 
-## <a name="alerting"></a>Zobrazení výstrah
+## <a name="alerting"></a>Upozorňování
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -162,7 +164,7 @@ Sady Management Pack zahrnují různá předdefinovaná pravidla výstrah pro r�
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Pomocí Azure Monitor můžete vytvářet výstrahy na základě metriky překračující prahovou hodnotu nebo na základě plánovaného výsledku dotazu. I když výstrahy založené na metrikách můžou dosáhnout téměř reálného času, plánované dotazy mají delší dobu odezvy v závislosti na rychlosti přijímání a indexování dat. Místo omezení na konkrétního agenta, výstrahy dotazování protokolu v Azure Monitor umožňují analyzovat data napříč všemi daty uloženými ve více pracovních prostorech. Tyto výstrahy také zahrnují data z konkrétní aplikace Application Insights pomocí dotazu mezi pracovními prostory.
+Pomocí Azure Monitor můžete vytvářet výstrahy na základě metriky překračující prahovou hodnotu nebo na základě plánovaného výsledku dotazu. I když výstrahy založené na metrikách můžou dosahovat výsledků téměř v reálném čase, plánované dotazy mají delší dobu odezvy v závislosti na rychlosti přijímání a indexování dat. Místo omezení na konkrétního agenta, výstrahy dotazování protokolu v Azure Monitor umožňují analyzovat data napříč všemi daty uloženými ve více pracovních prostorech. Tyto výstrahy také zahrnují data z konkrétní aplikace Application Insights pomocí dotazu mezi pracovními prostory.
 
 I když monitorovací řešení můžou zahrnovat pravidla výstrah, obvykle je vytváříte na základě vašich požadavků.
 

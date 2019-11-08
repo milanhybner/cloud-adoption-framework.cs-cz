@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566270"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753205"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
@@ -98,7 +98,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Přírůstkové zlepšení osvědčených postupů
 
-V této části článku se změní návrh MVP zásad správného řízení tak, aby zahrnoval nové zásady Azure a implementaci Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
+V této části se upraví návrh MVP pro řízení a zahrnutí nových zásad Azure a implementace Azure Cost Management. Tyto dvě změny návrhu společně budou plnit nové příkazy podnikové zásady.
 
 Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a přijetí do cloudu (paprskový).
 
@@ -108,7 +108,7 @@ Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a
 2. Šablona centra a paprsků:
     1. Pokyny v [topologii centra a paprsků s](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) referenční architekturou sdílených služeb lze použít ke generování šablon Správce prostředků pro prostředky požadované v podnikovém centru IT.
     2. Pomocí těchto šablon se dá tato struktura provést opakovaně, a to v rámci centrální strategie zásad správného řízení.
-    3. Kromě aktuální referenční architektury se doporučuje, aby se vytvořila šablona skupiny zabezpečení sítě, která bude zachytávání všech požadavků na blokování portů nebo povolených požadavků pro virtuální síť pro hostování brány firewall. Tato skupina zabezpečení sítě se liší od předchozích skupin, protože se jedná o první skupinu zabezpečení sítě, která umožňuje veřejný provoz do virtuální sítě.
+    3. Kromě aktuální referenční architektury by se měla vytvořit šablona skupiny zabezpečení sítě, která bude zachytávání všech požadavků na blokování portů nebo povolených požadavků pro virtuální síť pro hostování brány firewall. Tato skupina zabezpečení sítě se liší od předchozích skupin, protože se jedná o první skupinu zabezpečení sítě, která umožňuje veřejný provoz do virtuální sítě.
 3. Vytvořte zásady Azure. Vytvořte zásadu s názvem `Hub NSG Enforcement` k vykonání konfigurace skupiny zabezpečení sítě přiřazené k libovolné virtuální síti vytvořené v tomto předplatném. Použijte předdefinované zásady pro konfiguraci hostů následujícím způsobem:
     1. Audit, zda webové servery Windows používají zabezpečené komunikační protokoly.
     2. Auditovat správné nastavení zabezpečení hesla v počítačích se systémy Linux a Windows.
@@ -126,7 +126,7 @@ Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a
     2. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
     3. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
 
-**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription`se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
+**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription` se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
 
 V předchozích iterativních změnách osvědčených postupů jsme definovali skupiny zabezpečení sítě k blokování veřejného provozu a povoleného interního provozu. Kromě toho Azure detailly dočasně vytvořil služby DMZ a funkce Active Directory. V této iteraci tyto assety přizpůsobíme trochu a vytvoříme novou verzi plánu Azure details.
 
@@ -134,7 +134,7 @@ V předchozích iterativních změnách osvědčených postupů jsme definovali 
     1. Referenční architektura z předchozí části, [topologie centra a paprsků se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)vygenerovala šablonu správce prostředků pro povolení partnerského vztahu virtuální sítě.
     2. Tuto šablonu lze použít jako vodítko pro úpravu šablony DMZ z předchozí iterace zásad správného řízení.
     3. Nyní přidáváme partnerský vztah virtuálních sítí k virtuální síti DMZ, která byla dříve připojena k místnímu hraničnímu zařízení přes síť VPN.
-    4. Doporučuje se také odebrat síť VPN z této šablony a zajistit tak, že se žádný provoz nesměruje přímo do místního datového centra, aniž by to mělo předávat firemní předplatné IT a řešení brány firewall. Tuto síť VPN můžete nastavit také jako okruh převzetí služeb při selhání v případě outge okruhu ExpressRoute.
+    4. SÍŤ VPN by se taky měla z této šablony odebrat a zároveň zajistit, aby se žádný provoz nesměroval přímo do místního datového centra bez předávání podnikového a bezpečnostního řešení v podniku. Tuto síť VPN můžete nastavit také jako okruh převzetí služeb při selhání v případě outge okruhu ExpressRoute.
     5. Azure Automation pro použití DSC na hostované virtuální počítače bude vyžadovat další [konfiguraci sítě](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) .
 2. Upravte skupinu zabezpečení sítě. Zablokuje všechny veřejné **a** přímé místní přenosy ve skupině zabezpečení sítě. Jediný příchozí provoz by měl projít partnerským vztahem virtuální sítě v podnikovém předplatném IT.
     1. V předchozí iteraci se vytvořila skupina zabezpečení sítě, která blokuje veškerý veřejný provoz a seznam povolených interních přenosů. Teď chceme tuto skupinu zabezpečení sítě posunout o bit.

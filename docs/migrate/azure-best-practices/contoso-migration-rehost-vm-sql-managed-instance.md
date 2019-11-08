@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239169"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752831"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
@@ -387,7 +387,7 @@ Při nastavování zdrojového prostředí správci společnosti Contoso postupu
 3. Při prvním zapnutí virtuálního počítače se spustí prostředí instalace systému Windows Server 2016. Přijmou licenční smlouvu a zadají heslo správce.
 4. Po dokončení instalace se přihlásí k virtuálnímu počítači jako správce. Při prvním přihlášení se automaticky spustí nástroj pro konfiguraci služby Azure Site Recovery.
 5. V nástroji pro konfiguraci služby Site Recovery zadají název použitý k registraci konfiguračního serveru v trezoru.
-6. Nástroj zkontroluje připojení virtuálního počítače k Azure. Po navázání připojení vyberou **Přihlásit se** a přihlásí se k předplatnému Azure. Přihlašovací údaje musí umožňovat přístup k trezoru, ve kterém je zaregistrovaný konfigurační server.
+6. Tento nástroj zkontroluje připojení virtuálního počítače k Azure. Po navázání připojení vyberou **Přihlásit se** a přihlásí se k předplatnému Azure. Přihlašovací údaje musí umožňovat přístup k trezoru, ve kterém je zaregistrovaný konfigurační server.
 
     ![Registrace konfiguračního serveru](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565695"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752101"
 ---
 # <a name="empower-adoption"></a>Posílení přechodu
 
@@ -21,7 +21,7 @@ ms.locfileid: "73565695"
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Snížení tření, které má vliv na přijetí
 
-Existuje několik klíčových příchodů, které je potřeba přijmout, aby bylo možné je minimalizovat kombinací technologií a procesů. V případě čtenářů s vědomím procesů kontinuální integrace (CI) a průběžného nasazování (CD) nebo DevOps se zdá, že následuje velmi dobře. V tomto článku se zamýšlí zřídit výchozí bod pro týmy pro přijímání v cloudu, který bude poskytovat inovace na palivo a smyčky zpětné vazby. Delší období: Tento výchozí bod může podporovat robustnější přístup k CI/CD nebo DevOpsům, jako jsou produkty a týmy zralé.
+Existuje několik klíčových příchodů, které je potřeba přijmout, aby bylo možné je minimalizovat kombinací technologií a procesů. Pro čtenáře s poznatky o kontinuální integraci (CI) a procesu průběžného nasazování (CD) nebo DevOps se seznámíte s tímto. Tento článek zavádí výchozí bod pro týmy přijímání v cloudu, které se zajímá z smyček a zpětné vazby. V budoucnu by tento výchozí bod mohl podporovat robustnější přístup k CI/CD nebo DevOpsům, jako jsou produkty a týmy zralé.
 
 Jak je popsáno v tématu [měření dopadu zákazníka](./measure.md), pozitivní ověření jakékoli hypotézy vyžaduje iteraci a určení. Během jakýchkoli inovačních cyklů dojde k většímu počtu chyb než WINS. To se očekává. Pokud ale zákazník potřebuje, hypotéza a řešení ve velkém měřítku, svět se rychle změní. V tomto článku se zaměřujeme na minimalizaci [technických špiček](./build.md#reduce-complexity-and-delay-technical-spikes) , které se pomalými inovacemi, ale pořád se ujistěte, že zachováte několik pevných osvědčených postupů. V takovém případě vám pomůže návrh týmu pro budoucí úspěch při dodávání aktuálních zákaznických potřeb.
 
@@ -56,7 +56,7 @@ Každý bod zpětné vazby je potenciální řešení pro potřeby zákazníka. 
 
 [Azure DevOps](https://docs.microsoft.com/azure/devops) obsahuje způsoby [, jak vyžádat, poskytnout a spravovat zpětnou vazbu](https://docs.microsoft.com/azure/devops/project/feedback). Každý z těchto nástrojů slouží k centralizaci zpětné vazby, aby tým mohl provádět akce a poskytoval následný postup ve službě transparentní smyčky zpětné vazby.
 
-## <a name="continuous-integration"></a>Kontinuální integrace
+## <a name="continuous-integration"></a>Nepřetržitá integrace
 
 Vzhledem k tomu, že se přijímají škálování a hypotéza se přiblíží k skutečným inovacím ve velkém měřítku, může být počet menších hypotéz, který se má testovat, rychlejší rychleji. Pro přesné smyčky zpětné vazby a hladké procesy přijetí je důležité, aby každá z těchto hypotéz byla integrovaná a podpora primární hypotézy na základě inovace. To znamená, že se také musíte rychle přesunout na inovace a růst, což vyžaduje více vývojářů pro testování variací základní hypotézy. Pro účely pozdějšího vývoje můžete dokonce potřebovat více týmů vývojářů, přičemž každá z nich bude sdílet řešení. Nepřetržitá integrace je prvním krokem ke správě všech přesouvaných částí.
 
@@ -69,7 +69,7 @@ Další informace o [průběžné integraci](https://docs.microsoft.com/azure/de
 
 Vady v jakémkoli řešení mohou vytvořit falešně pozitivní nebo falešně negativní výsledek. Neočekávané chyby mohou snadno vést k chybné interpretaci metrik přijetí uživateli. Můžou také vygenerovat negativní zpětnou vazbu od zákazníků, kteří nepřesně reprezentují test vaší hypotézy.
 
-Během počátečních iterací řešení MVP se očekávají vady; Začátky můžou je dokonce najít endearing. V dřívějších verzích je testování přijetí obvykle neexistující. Jeden aspekt sestavování s soucit se ale bude týkat ověření potřeb a hypotéz. Obojí lze dokončit prostřednictvím testů jednotek na úrovni kódu a ručních testů přijetí před nasazením. Dohromady tyto prostředky poskytují spolehlivost při testování. S delší dobou byste se měli snažit automatizovat dobře definovanou řadu testů sestavení, jednotek a přijetí. Tím zajistíte spolehlivé metriky související s podrobnějším vylepšením pro hypotézu a výsledné řešení.
+Během počátečních iterací řešení MVP se očekávají vady; Začátky můžou je dokonce najít endearing. V dřívějších verzích je testování přijetí obvykle neexistující. Jeden aspekt sestavování s soucit se ale bude týkat ověření potřeb a hypotéz. Obojí lze dokončit prostřednictvím testů jednotek na úrovni kódu a ručních testů přijetí před nasazením. Dohromady tyto prostředky poskytují spolehlivost při testování. Měli byste usilovat o automatizaci dobře definované řady testů sestavení, jednotek a přijetí. Tím zajistíte spolehlivé metriky související s podrobnějším vylepšením pro hypotézu a výsledné řešení.
 
 Funkce [Azure test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) poskytuje nástroje pro vývoj a provoz testovacích plánů během ručního nebo automatizovaného provádění testu.
 

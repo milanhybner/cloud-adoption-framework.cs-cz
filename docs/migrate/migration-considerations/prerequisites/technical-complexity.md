@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564549"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753682"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Příprava na technicky složité prostředí: Agilní správa změn
 
@@ -50,7 +50,7 @@ Sady funkcí obsažené v backlogu migrace nebudou na začátku pravděpodobně 
 
 *Backlogy migrace, uvolněných prostředků a iterace zaznamenávají během procesů migrace různé úrovně činností.*
 
-V případě všech backlogů migrace by se tým zodpovědný za správu změn měl snažit získat pro všechny sady funkcí, které jsou součástí plánu, následující informace. Tato data by měla být k dispozici alespoň pro všechny sady funkcí, které jsou v procesu migrace prioritní pro následující dva nebo tři případy uvolnění prostředků.
+V případě všech backlogů migrace by se tým zodpovědný za správu změn měl snažit získat pro všechny sady funkcí, které jsou součástí plánu, následující informace. Minimálně tato data by měla být k dispozici pro všechny úlohy, které mají prioritu migrace v následujících dvou nebo třech verzích.
 
 ### <a name="migration-backlog-data-points"></a>Informace v backlogu migrace
 
@@ -107,7 +107,7 @@ V případě migrace malého rozsahu, na které pracuje jeden samostatný tým, 
 
 ### <a name="sprint-backlog-data-points"></a>Informace v backlogu sprintu
 
-Výsledek sprintu zachycuje a dokumentuje změny provedené v sadě funkcí, takže uzavírá smyčku správy změn. Po dokončení tohoto postupu je třeba zdokumentovat minimálně následující informace: Během provádění sprintu by tato dokumentace měla být dokončena společně s technickými pracovními položkami.
+Výsledek sprintu zachycuje a dokumentuje změny provedené v sadě funkcí, takže uzavírá smyčku správy změn. Po dokončení musí být zdokumentovány alespoň následující: Během provádění sprintu by tato dokumentace měla být dokončena společně s technickými pracovními položkami.
 
 - **Nasazené prostředky:** Všechny prostředky nasazené do cloudu, které hostují zatížení.
 - **Nápravné akce:** Jakékoli změny prostředků, které se mají připravit na migraci do cloudu.

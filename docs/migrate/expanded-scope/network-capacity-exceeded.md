@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239967"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753494"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Požadavky na data přesahují kapacitu sítě během migrace.
 
@@ -39,7 +39,7 @@ Existují také [partnerská řešení třetích stran](https://azuremarketplace
 
 I když u jedné nebo více úloh požadavky na úložiště překračují kapacitu sítě, přesto můžete použít Azure Data Box k offline přenosu dat.
 
-Microsoft se obecně přiklání k názoru, že doporučeným postupem je síťový přenos, samozřejmě pokud je síť k dispozici. Toto doporučení vychází z přenosových rychlostí. Přenos dat po síti (i při omezené šířce pásma) je většinou rychlejší než fyzické doručení stejného objemu dat s použitím offline přenosového mechanismu, jako je Data Box.
+Síťový přenos je doporučený přístup, pokud síť není k dispozici. Rychlost přenosu dat v síti, i když je šířka pásma omezená, je obvykle rychlejší než fyzicky dodávat stejný objem dat pomocí mechanismu přenosu offline, například Data Box.
 
 Pokud je k dispozici připojení k Azure, měli byste před použitím Data Boxu provést analýzu. Platí to hlavně tehdy, pokud máte na migraci úlohy omezený čas. Data Box se doporučuje jen tehdy, když čas na přenos potřebných dat přesahuje čas potřebný k naplnění, doručení a obnovení dat prostřednictvím Data Boxu.
 

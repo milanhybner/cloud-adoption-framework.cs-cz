@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565147"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752861"
 ---
 # <a name="business-impact-in-cloud-management"></a>Dopad na firmu v Cloud managementu
 
@@ -41,7 +41,7 @@ Pokud chcete zvážit další investice do správy, je důležitější, že bud
 
 - **Upravené ztráty:** Pokud vaše firma v minulosti narazila na závažnou ztrátu, jako je hurikán nebo jiná přírodní katastrofa, mohl by při výpadku vypočítat skutečné ztráty. Tyto výpočty jsou založené na standardech pojišťovacího odvětví pro výpočet ztrát a řízení rizik. Použití upravených ztrát jako celkové množství ztrát v určitém časovém období může vést k velmi přesnému projekce.
 
-- **Historické ztráty:** Pokud se vaše místní prostředí utrpělo historicky z výpadků infrastruktury, což vede k nestabilitě infrastruktury, může být obtížnější vypočítat ztráty. Ale stále můžete použít vzorce seřizovacího rozhraní interně. Pro výpočet historických ztrát Porovnejte rozdíly v prodeji, hrubých výnosech a provozní náklady v průběhu tří časových rámců: před, během a po výpadku. Prozkoumáním těchto rozdílů můžete identifikovat přesné ztráty, pokud nejsou k dispozici žádná jiná data.
+- **Historické ztráty:** Pokud se vaše místní prostředí utrpělo historicky z výpadků infrastruktury, což vede k nestabilitě infrastruktury, může být obtížnější vypočítat ztráty. Ale stále můžete použít vzorce seřizovacího rozhraní používané interně. Pro výpočet historických ztrát Porovnejte rozdíly v prodeji, hrubých výnosech a provozní náklady v průběhu tří časových rámců: před, během a po výpadku. Prozkoumáním těchto rozdílů můžete identifikovat přesné ztráty, pokud nejsou k dispozici žádná jiná data.
 
 - **Úplný výpočet ztráty:** Pokud nejsou k dispozici žádná historická data, můžete odvodit hodnotu srovnávací ztráty. V tomto modelu určíte průměrně hrubý výnos za hodinu pro obchodní jednotku. Když procházíte investicím, nemusíte předpokládat, že kompletní výpadek systému odpovídá 100% ztrátám výnosů. Tento předpoklad ale můžete použít jako hrubou základnu pro porovnání dopadů na ztráty a stanovení priorit investic.
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565007"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752760"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Použití principů návrhu a pokročilých operací
 
@@ -54,7 +54,7 @@ Rozhodnutí o specializaci platforem a specializaci úloh jsou založená na zá
 
 Specializace podle úloh často podněcuje kulturní změnu. Tradiční IT a centrální IT procesy sestavují proces, který může poskytovat podporu ve velkém měřítku. Podpora škálování je více dosažitelná pro opakující se služby, které se nacházejí ve standardních hodnotách správy, rozšířených standardních hodnotách nebo dokonce operacích platforem. Specializace úloh se často nemění. Tato nedostatečná škála usnadňuje centralizované organizaci IT poskytovat potřebnou podporu bez omezení organizačního měřítka.
 
-Cloudové centrum špičkového přístupu se dá využít i v případě, že se záměrné delegace zodpovědnosti a selektivní centralizace. Specializace úloh představuje lepší sbližování s přístupem k delegovaným zodpovědností CCoE.
+Cloudové centrum špičkového přístupu se dá využít i v případě, že záměrné delegace zodpovědnosti a selektivní centralizaci. Specializace úloh představuje lepší sbližování s přístupem k delegovaným zodpovědností CCoE.
 
 Přirozené zarovnání rolí v CCoE je popsáno níže:
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565728"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752006"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Běžné blokování a výzvy k inovacím
 
@@ -45,7 +45,7 @@ Cloud překoná mnohé z těchto problémů s vynálezem, protože poskytuje sam
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Vynálezení problémů v digitální ekonomice
 
-Dnešní výzvy k vynálezení dnešního dne se liší. Nekonečný potenciál cloudových technologií také přináší více možností implementace a hlubší informace o tom, jak se tyto implementace můžou využít.
+Dnešní výzvy k vynálezení dnešního dne se liší. Nekonečný potenciál cloudových technologií také přináší více možností implementace a hlubší informace o tom, jak se tyto implementace můžou použít.
 
 Metodologie inovací používá následující inovační obory, které vám pomůžou se zavedením vašich rozhodnutí o vynálezu a přijetí:
 

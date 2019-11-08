@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058667"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753056"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardní příručka pro zásady správného řízení podniku: vylepšení pravidla směrného plánu zabezpečení
 
@@ -71,7 +71,7 @@ Následující změny zásad vám pomůžou opravit nová rizika a implementaci 
 
 1. Všechny nasazené prostředky musí být rozdělené do kategorií podle závažnosti a klasifikace dat. Klasifikace jsou přezkoumány týmem zásad správného řízení cloudu a vlastníkem aplikace před nasazením do cloudu.
 2. Aplikace, které ukládají nebo mají přístup k chráněným datům, se budou spravovat jinak než ty, které ne. Aby nedocházelo k neúmyslnému přístupu k chráněným datům, měly by být segmentované.
-3. Všechna chráněná data musí být v klidovém stavu zašifrovaná. I když se jedná o výchozí nastavení pro všechny účty Azure Storage, můžou být potřeba další strategie šifrování, včetně šifrování dat v rámci účtu úložiště, šifrování virtuálních počítačů a šifrování na úrovni databáze, pokud se využití SQL serveru používá ve virtuálním počítači (TDE a sloupec). šifrování).
+3. Všechna chráněná data musí být v klidovém stavu zašifrovaná. I když se jedná o výchozí nastavení pro všechny účty Azure Storage, můžou být potřeba další strategie šifrování, včetně šifrování dat v rámci účtu úložiště, šifrování virtuálních počítačů a šifrování na úrovni databáze při použití SQL serveru ve virtuálním počítači (TDE a šifrování sloupce. ).
 4. Zvýšená oprávnění v jakémkoli segmentu, který obsahuje chráněná data, by měla být výjimka. Jakékoli takové výjimky budou zaznamenány s týmem zásad správného řízení cloudu a budou pravidelně auditovány.
 5. Podsítě sítě obsahující chráněná data musí být izolované od všech ostatních podsítí. Síťový provoz mezi podsítěmi chráněných dat se pravidelně Audituje.
 6. K žádné podsíti obsahující chráněná data se dá přímo získat přímý pøístup přes veřejný Internet nebo přes datová centra. Přístup k těmto podsítím musí být směrován prostřednictvím zprostředkujících podsítí. Všechny přístupy do těchto podsítí se musí nacházet prostřednictvím řešení brány firewall, které umožňuje provádět kontrolu paketů a blokující funkce.

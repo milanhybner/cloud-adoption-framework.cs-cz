@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222127"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753018"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Příkazy zásad ukázkového směrného plánu identity
 
@@ -67,7 +67,7 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** Nasazení všech aplikací, které vyžadují ověřování zákazníků, musí používat schváleného poskytovatele identity, který je kompatibilní s primárním zprostředkovatelem identity pro interní uživatele.
 
-**Možné možnosti návrhu:** Implementujte [federaci s Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mezi interními a zákaznickými poskytovateli identity nebo využijte [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) .
+**Možné možnosti návrhu:** Implementace [federace s Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mezi vašimi poskytovateli interního a zákaznických identit nebo použití [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Revize identity
 

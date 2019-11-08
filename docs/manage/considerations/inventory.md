@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 60c6b72590cc5f912572109f0cce10366413fdf0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 5b38b5d52ee5151a2ccd696f0049a9feea0d21a0
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565115"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752817"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventář a viditelnost ve správě cloudu
 
@@ -107,7 +107,7 @@ Bez ohledu na cloudovou platformu se k zajištění většiny provozních proces
 
 Data bez akcí vypočítávají jenom malý návrat. Správa cloudu se může rozšířit i na nástroje a procesy nativní pro Cloud. Aby bylo možné přizpůsobit širší procesy, může být nutné zvýšit úroveň správy cloudu tak, aby zahrnovala vytváření sestav, integraci správy služeb IT nebo centralizaci dat. Správa cloudu může během různých fází provozní zralosti zahrnovat jednu nebo více následujících možností.
 
-### <a name="report"></a>Sestava
+### <a name="report"></a>Zpráva
 
 Offline procesy a komunikace týkající se závazků obchodních účastníků často vyžadují vytváření sestav. Samoobslužné generování sestav nebo pravidelné generování sestav může být nezbytnou součástí rozšířeného směrného plánu správy.
 

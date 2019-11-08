@@ -1,19 +1,19 @@
 ---
 title: Jakou roli hraje replikace a synchronizace v procesu migrace?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úlohy prováděné při migraci sady funkcí do cloudu.
+description: Proces při migraci do cloudu, který se zaměřuje na migraci úloh do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549127"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753702"
 ---
 <!-- markdownlint-disable MD026 -->
 

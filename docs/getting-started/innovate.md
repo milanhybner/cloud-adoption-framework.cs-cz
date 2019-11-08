@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048440"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753112"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Inovace prostřednictvím zavedení do cloudu
 
@@ -21,7 +21,7 @@ Migrace do cloudu je vynikající možností pro vaše stávající úlohy. Vytv
 
 ## <a name="motivations-behind-innovation"></a>Motivace za inovacemi
 
-Inovace se nejedná o správnou cestu k přijetí pro každou úlohu. Cesta pro inovace obvykle vyžaduje větší investice do vlastního kódu a správy dat než jiné cesty. Inovace také trvá déle než migrace nebo jiné formy modernizace. Tato cesta se doporučuje, když zákazníci cílí na následující obchodní výsledky:
+Inovace se nejedná o správnou cestu k přijetí pro každou úlohu. Cesta pro inovace obvykle vyžaduje větší investice do vlastního kódu a správy dat než jiné cesty. Inovace také trvá déle než migrace nebo jiné formy modernizace. Pokud cílíte na následující obchodní výsledky, použijte tuto cestu:
 
 - Příprava na nové technické možnosti
 - Škálujte tak, aby splňovala požadavky na trh.
