@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752744"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912511"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: upozorňování
 
@@ -67,7 +67,7 @@ Azure Monitor má čtyři typy výstrah, které jsou spojené s úložištěm, v
 
 - [Upozornění protokolu aktivit](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): výstrahy na položkách v úložišti protokolu aktivit, s výjimkou Service Healthch dat.
 
-- [Výstraha Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): speciální typ výstrahy, a to jenom pro Service Health problémy, které pocházejí z úložiště protokolu aktivit.
+- [Výstraha Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): speciální typ výstrahy, která se používá jenom pro Service Health problémy, které pocházejí z úložiště protokolu aktivit, jako jsou výpadky a nadcházející plánovaná údržba. Upozorňujeme, že tento typ výstrahy je nakonfigurovaný prostřednictvím [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), což je doplňková služba pro Azure monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Povolit upozorňování prostřednictvím partnerských nástrojů
 
