@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816291"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753456"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Posouzení prostředků před migrací
 

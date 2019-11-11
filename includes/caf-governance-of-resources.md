@@ -19,8 +19,8 @@ Vlastní definice zásad se ukládají do skupiny pro správu nebo předplatnéh
 
 Vzhledem k tomu, že by zásady požadované k zajištění podpory MVP zásad správného řízení měly platit pro všechna aktuální předplatná, následující obchodní požadavky se implementují se pomocí kombinace integrovaných a vlastních definic vytvořených v kořenové skupině pro správu:
 
-1. Omezení seznamu dostupných přiřazení rolí na sadu předdefinovaných rolí Azure autorizovaných týmem zásad správného řízení v cloudu To bude vyžadovat [vlastní definici zásad](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Vyžadování použití následujících značek u všech prostředků: *Oddělení/fakturační jednotka*, *Geografická oblast*, *Klasifikace dat*, *Důležitost*, *Smlouva SLA*, *Prostředí*, *Archetyp aplikace*, *Aplikace* a *Vlastník aplikace*. To můžete zpracovat pomocí integrované definice `Require specified tag`.
+1. Omezte seznam dostupných přiřazení rolí na sadu předdefinovaných rolí Azure autorizovaných týmem zásad správného řízení v cloudu. To vyžaduje [vlastní definici zásad](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Vyžadování následujících značek u všech prostředků: *Oddělení/fakturační jednotka*, *Geografická oblast*, *Klasifikace dat*, *Důležitost*, *Smlouva SLA*, *Prostředí*, *Archetyp aplikace*, *Aplikace* a *Vlastník aplikace*. To můžete zpracovat pomocí integrované definice `Require specified tag`.
 3. Vyžaduje, aby značka `Application` u prostředků odpovídala názvu příslušné skupiny prostředků. To můžete zpracovat pomocí integrované definice Vyžadovat značku a její hodnotu.
 
 Informace o definování vlastních zásad najdete v [dokumentaci ke službě Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Pokyny a příklady vlastních zásad najdete na [webu s ukázkami pro službu Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) a v přidruženém [úložišti GitHub](https://github.com/Azure/azure-policy).
@@ -31,7 +31,7 @@ Zásady Azure můžou být přiřazené na úrovni skupiny prostředků, předpl
 
 Služba Azure Blueprints umožňuje konzistentní přiřazování zásad a rolí, používání šablon Resource Manageru a nasazování skupin prostředků do několika předplatných. Stejně jako definice zásad se definice podrobných plánů ukládají do skupin pro správu nebo předplatných a díky dědičnosti jsou k dispozici pro všechny podřízené prvky v hierarchii skupiny pro správu.
 
-Tým zásad správného řízení v cloudu se rozhodl implementovat vynucování požadovaných přiřazení Azure Policy a RBAC napříč předplatnými prostřednictvím služby Azure Blueprints a přidružených artefaktů.
+Tým zásad správného řízení v cloudu se rozhodl implementovat vynucování požadovaných přiřazení Azure Policy a RBAC napříč předplatnými prostřednictvím služby Azure Blueprints a přidružených artefaktů:
 
 1. V kořenové skupině pro správu vytvořte definici podrobného plánu `governance-baseline`.
 2. Do definice podrobného plánu přidejte následující artefakty podrobného plánu:
@@ -53,7 +53,7 @@ Dokud se s cloudovým prostředím úplně nenaváže vztah důvěryhodnosti, je
     1. [Referenční architektura sítě VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) stanovuje vzor a model nasazení pro vytvoření služby VPN Gateway v Azure.
     2. Ověřte, že místní mechanismy zabezpečení a správy provozu pracují s připojenými cloudovými sítěmi jako s nedůvěryhodnými. Prostředky a služby hostované v cloudu by měly mít přístup pouze k autorizovaným místním službám.
     3. Ověřte, že je místní hraniční zařízení v místním datacentru kompatibilní s [požadavky služby Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) a že jeho konfigurace umožňuje přístup k veřejnému internetu.
-    4. Upozorňujeme, že tunely sítě VPN by se měly považovat za okruhy připravené pro produkční prostředí jenom pro ty nejjednodušší úlohy. Cokoli nad rámec několika jednoduchých úloh vyžadujících možnosti místního připojení by mělo využívat Azure ExpressRoute.
+    4. Upozorňujeme, že tunely sítě VPN by se měly považovat za okruhy připravené pro produkční prostředí jenom pro ty nejjednodušší úlohy. Cokoli nad rámec několika jednoduchých úloh vyžadujících možnosti místního připojení by mělo používat Azure ExpressRoute.
 1. V kořenové skupině pro správu vytvořte druhou definici podrobného plánu `secure-hybrid-vnet`.
     1. Jako artefakt k definici podrobného plánu přidejte šablonu Resource Manageru pro službu VPN Gateway.
     2. Jako artefakt k definici podrobného plánu přidejte šablonu Resource Manageru pro virtuální síť.

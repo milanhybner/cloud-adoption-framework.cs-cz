@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564876"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753180"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -26,7 +26,7 @@ Přejít na: [Plánování infrastruktury monitorování](#plan-your-monitoring-
 
 Inflexní bod při určování strategie cloudového protokolování a generování sestav vychází hlavně ze stávajících investic vaší organizace do provozních procesů a do určité míry i z vašich případných požadavků na podporu strategie s více cloudy.
 
-Aktivity v cloudu je možné protokolovat a generovat jejich sestavy několika způsoby. Dvě běžné možnosti spravovaných služeb, které vycházejí z návrhu předplatného a počtu předplatných, jsou protokolování nativní pro cloud a centrální protokolování.
+Aktivity v cloudu je možné protokolovat a hlásit více způsoby. Dvě běžné možnosti spravovaných služeb, které vycházejí z návrhu předplatného a počtu předplatných, jsou protokolování nativní pro cloud a centrální protokolování.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Plánování infrastruktury monitorování
 
@@ -54,7 +54,7 @@ V menších nebo experimentálních nasazeních je pro jednotlivá předplatná 
 
 ### <a name="on-premises-extension"></a>Místní rozšíření
 
-Zajištění, aby aplikace a služby migrované do cloudu mohly využívat cloudová řešení protokolování a generování sestav, jako je Azure Monitor, může vyžadovat značné úsilí spojené s opakovaným vývojem. V těchto případech může být vhodné povolit těmto úlohám pokračovat v odesílání telemetrických dat do stávajících místních systémů.
+Zajištění, aby aplikace a služby migrované do cloudu používaly cloudová řešení protokolování a generování sestav, jako je Azure Monitor, může vyžadovat značné úsilí spojené s opakovaným vývojem. V těchto případech zvažte možnost povolit těmto úlohám pokračovat v odesílání telemetrických dat do stávajících místních systémů.
 
 Pro zajištění podpory tohoto přístupu je potřeba, aby vaše cloudové prostředky byly schopné komunikovat přímo s místními systémy prostřednictvím kombinace [hybridních sítí](../software-defined-network/hybrid.md) a [doménových služeb hostovaných v cloudu](../identity/index.md#cloud-hosted-domain-services). Cloudová virtuální síť pak bude fungovat jako síťové rozšíření místního prostředí. Díky tomu budou úlohy hostované v cloudu moct komunikovat přímo s místními systémy protokolování a generování sestav.
 

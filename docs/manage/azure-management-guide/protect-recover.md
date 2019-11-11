@@ -10,27 +10,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a79164435772f571849d0a836f43b53ce3bca087
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557002"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565418"
 ---
 # <a name="protect-and-recover-in-azure"></a>Ochrana a obnovení v Azure
 
-Ochrana a obnovení je třetí a finální disciplínou v jakémkoli směrném plánu cloudové správy.
+_Ochrana a obnovení_ je třetí a finální disciplínou v jakémkoli směrném plánu cloudové správy.
 
 ![Směrný plán cloudové správy](../../_images/manage/management-baseline.png)
 
-Cílem posledního článku, Provozní dodržování předpisů, bylo snížit pravděpodobnost přerušení firemního provozu. Cílem tohoto článku, Ochrana a obnovení, je zkrátit dobu trvání a dopad výpadků, kterým není možné předejít.
+Cílem článku [Provozní dodržování předpisů](./operational-compliance.md) bylo snížit pravděpodobnost přerušení firemního provozu. Cílem aktuálního článku je zkrátit dobu trvání a dopad výpadků, kterým není možné předejít.
 
-V následující tabulce je uvedeno navrhované minimum pro všechny směrné plány správy v jakémkoli podnikovém prostředí.
+V této tabulce je pro jednotlivá podniková prostředí uvedeno navrhované minimum pro jakýkoli směrný plán správy.
 
 |Proces  |Nástroj  |Účel  |
 |---------|---------|---------|
-|Ochrana dat|Azure Backup|Zálohování dat a virtuálních počítačů v cloudu|
-|Ochrana prostředí|Azure Security Center|
+|Ochrana dat|Azure Backup|Zálohujte data a virtuální počítače v cloudu.|
+|Ochrana prostředí|Azure Security Center|Posilte zabezpečení a poskytujte pokročilou ochranu před hrozbami napříč vašimi hybridními úlohami.|
 
 ::: zone target="docs"
 
@@ -43,13 +43,13 @@ V následující tabulce je uvedeno navrhované minimum pro všechny směrné pl
 
 ::: zone-end
 
-Azure Backup je služba Azure, kterou můžete využívat k zálohování (ochraně) a obnovování vašich dat v Microsoft Cloudu. Azure Backup nahrazuje současná řešení místního nebo odlehlého zálohování spolehlivým, bezpečným a cenově konkurenceschopným cloudovým řešením. Je možné ji také použít k ochraně a obnovování místních prostředků prostřednictvím jednoho konzistentního řešení.
+Pomocí Azure Backup můžete zálohovat, chránit a obnovovat svoje data v cloudu Microsoftu. Azure Backup nahrazuje současná řešení místního nebo odlehlého zálohování cloudovým řešením. Toto nové řešení je spolehlivé, bezpečné a cenově konkurenceschopné. Azure Backup vám může také pomoct ochránit a obnovovat místní prostředky prostřednictvím jednoho konzistentního řešení.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Povolení zálohování pro virtuální počítač Azure
 
 1. Na webu Azure Portal vyberte **Virtuální počítače** a vyberte virtuální počítač, který chcete replikovat.
-1. V části **Operace** vyberte **Zálohování**.
-1. Vytvořte nebo vyberte existující trezor služby Recovery Services.
+1. V podokně **Provoz** vyberte **Zálohovat**.
+1. Vytvořte nebo vyberte existující trezor služby Azure Recovery Services.
 1. Vyberte **Vytvořit (nebo upravit) nové zásady**.
 1. Nakonfigurujte plán a dobu uchování.
 1. Vyberte **OK**.
@@ -76,12 +76,11 @@ Azure Backup je služba Azure, kterou můžete využívat k zálohování (ochra
 
 Azure Site Recovery je zásadní součástí strategie zotavení po havárii.
 
-Služba Azure Site Recovery umožňuje replikovat virtuální počítače a úlohy hostované v primární oblasti Azure do kopie hostované v sekundární oblasti. Když ve vaší primární oblasti dojde k výpadku, můžete převzít služby při selhání do kopie v sekundární oblasti a dále přistupovat k aplikacím a službám odtud. Tento proaktivní přístup k obnovení může významně zkrátit dobu nutnou pro obnovení. Pokud už prostředí pro obnovení nepotřebujete, může se produkční provoz vrátit do původního prostředí.
+Site Recovery replikuje virtuální počítače a úlohy, které jsou hostované v primární oblasti Azure. Replikují se do kopie, která je hostovaná v sekundární oblasti. Když v primární oblasti dojde k výpadku, převezme služby při selhání kopie běžící v sekundární oblasti. Tam budete mít nadále přístup k vašim aplikacím a službám. Tento proaktivní přístup k obnovení může významně zkrátit dobu nutnou pro obnovení. Pokud už prostředí pro obnovení není potřeba, může se produkční provoz vrátit do původního prostředí.
 
-### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replikace virtuálního počítače Azure do jiné oblasti pomocí služby Site Recovery
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery"></a>Replikace virtuálního počítače Azure do jiné oblasti pomocí Site Recovery
 
-Následující kroky popisují proces použití služby Site Recovery k replikaci virtuálního počítače Azure do jiné oblasti (Azure-to-Azure):
-
+Následující kroky popisují proces použití Site Recovery k replikaci Azure do Azure, což je replikace virtuálního počítače Azure do jiné oblasti:
 >
 > [!TIP]
 > V závislosti na vašem scénáři se konkrétní kroky můžou mírně lišit.
@@ -90,9 +89,9 @@ Následující kroky popisují proces použití služby Site Recovery k replikac
 ### <a name="enable-replication-for-the-azure-vm"></a>Povolení replikace virtuálního počítače Azure
 
 1. Na webu Azure Portal vyberte **Virtuální počítače** a vyberte virtuální počítač, který chcete replikovat.
-1. V části **Operace** vyberte **Zotavení po havárii**.
-1. V části **Konfigurovat zotavení po havárii** > **Cílová oblast** vyberte cílovou oblast, do které chcete replikaci provést.
-1. Pro účely tohoto rychlého startu přijměte výchozí nastavení.
+1. V podokně **Provoz** vyberte **Zotavení po havárii**.
+1. Vyberte **Konfigurovat zotavení po havárii** > **Cílová oblast** a zvolte cílovou oblast, do které chcete replikaci provést.
+1. V tomto rychlém startu přijměte pro všechny ostatní možnosti výchozí hodnoty.
 1. Vyberte **Povolení replikace**, čímž spustíte úlohu, která povolí replikaci pro daný virtuální počítač.
 
 ::: zone target="chromeless"
@@ -106,7 +105,7 @@ Následující kroky popisují proces použití služby Site Recovery k replikac
 Po dokončení úlohy replikace můžete zkontrolovat stav replikace, ověřit nastavení replikace a otestovat nasazení.
 
 1. V nabídce virtuálního počítače vyberte **Zotavení po havárii**.
-2. Zkontrolujte stav replikace, vytvořené body obnovení a zdrojové a cílové oblasti na mapě.
+1. Zkontrolujte stav replikace, vytvořené body obnovení a zdrojové a cílové oblasti na mapě.
 
 ::: zone target="chromeless"
 

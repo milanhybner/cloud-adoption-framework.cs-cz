@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058110"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565565"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Pokud chceme vytvořit nové inovativní řešení, nemůžeme jen dát uživate
 - **Kvantitativní (zpětná vazba z testování):** Tato zpětná vazba měří akce, které chceme vidět.
 - **Kvalitativní (zpětná vazba od zákazníků):** Tato zpětná vazba nám slovy zákazníků ukáže, co dané metriky znamenají.
 
-Před integrací smyček zpětné vazby musíte pro své řešení mít sdílené úložiště. Prostřednictvím centralizovaného úložiště budete schopní zaznamenávat veškerou příchozí zpětnou vazbu k vašemu projektu a reagovat na ni. [GitHub](https://github.com/) je základna opensourcového softwaru. Představuje také jednu z nejvyužívanějších platforem pro hostování úložišť zdrojového kódu pro komerčně vyvíjené aplikace. Pokud s úložišti začínáte a potřebujete pomoc, zkuste si přečíst článek o [vytváření úložišť GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml).
+Před integrací smyček zpětné vazby musíte pro své řešení mít sdílené úložiště. Prostřednictvím centralizovaného úložiště budete schopní zaznamenávat veškerou příchozí zpětnou vazbu k vašemu projektu a reagovat na ni. [GitHub](https://github.com) je základna opensourcového softwaru. Představuje také jednu z nejvyužívanějších platforem pro hostování úložišť zdrojového kódu pro komerčně vyvíjené aplikace. Pokud s úložišti začínáte a potřebujete pomoc, zkuste si přečíst článek o [vytváření úložišť GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml).
 
 Všechny následující nástroje v Azure umožňují integraci (nebo jsou kompatibilní) s projekty hostovanými na GitHubu:
 
@@ -126,7 +126,7 @@ Zpětná vazba se zaznamenává jako uživatelské scénáře v backlogu (neboli
 ### <a name="action"></a>Akce
 
 Azure Boards a Azure Pipelines vyžadují portál nezávislý na GitHubu a Azure.
-Pokud chcete s některým z těchto nástrojů začít, přejděte na [Azure DevOps](https://dev.azure.com/).
+Pokud chcete s některým z těchto nástrojů začít, přejděte na [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Pokud chcete s některým z těchto nástrojů začít, přejděte na [Azure Dev
 
 Pokud chcete vytvořit projekt DevOps, postupujte takto:
 
-1. Přejděte na **projekt Azure DevOps**.
+1. Přejděte do **Azure DevOps Projects**.
 2. Vyberte **Vytvořit projekt DevOps**.
 3. Vyberte **Modul runtime, architektura a služba**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Pokud chcete vytvořit projekt DevOps, postupujte takto:
 
 Tyto články vám pomůžou centralizovat a spravovat zpětnou vazbu s využitím Azure Boards a GitHubu:
 
-- [Začínáme se službou Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards a GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Začínáme se službou Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards a GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Uzavření smyčky pomocí kanálů](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Reakcí na zpětnou vazbu nemusí vždy být přidání funkce, kterou zákazní
 
 Aktuální nasazení zobrazíte v kanálu takto:
 
-1. Přejděte na **App Service**.
+1. Přejděte na **App Services**.
 2. V seznamu vyberte požadovanou aplikaci.
 3. V části **Nasazení** podokna App Services vyberte **Deployment Center**.
 
@@ -171,7 +171,7 @@ Aktuální nasazení zobrazíte v kanálu takto:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

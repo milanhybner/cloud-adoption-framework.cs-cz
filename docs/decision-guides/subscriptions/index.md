@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238787"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753130"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -48,7 +48,7 @@ Jedno předplatné na účet může být dostačující pro organizace, které p
 
 ### <a name="production-and-nonproduction-pattern"></a>Model produkčního a neprodukčního prostředí
 
-Jakmile jste připravení nasadit úlohu do produkčního prostředí, měli byste přidat další předplatné. Pomůže vám udržet vaše produkční data a další aktiva mimo prostředí pro vývoj a testování. Můžete také snadno využít dvě různé sady zásad napříč prostředky ve dvou předplatných.
+Když jste připravení nasadit úlohu do produkčního prostředí, měli byste přidat další předplatné. Pomůže vám udržet vaše produkční data a další aktiva mimo prostředí pro vývoj a testování. Můžete také snadno využít dvě různé sady zásad napříč prostředky ve dvou předplatných.
 
 ![Model produkčních a neprodukčních předplatných](../../_images/ready/basic-subscription-model.png)
 

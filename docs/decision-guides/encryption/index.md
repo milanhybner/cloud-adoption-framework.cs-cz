@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564881"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753364"
 ---
 # <a name="encryption-decision-guide"></a>Průvodce rozhodováním ohledně šifrování
 
@@ -63,7 +63,7 @@ V případě přístupu spočívajícího v používání vlastního klíče vyg
 
 ### <a name="on-premises-hold-your-own-key"></a>Místní prostředí (držení vlastního klíče)
 
-V určitých scénářích můžou existovat legislativní nebo technické důvody nebo důvody vyplývající ze zásad, proč nemůžete ukládat klíče v cloudovém systému správy klíčů. V takových případech musíte generovat klíče s použitím místního hardwaru, ukládat a spravovat je pomocí místního systému správy klíčů a vytvořit mechanismus, kterým cloudovým prostředkům umožníte přístup k těmto klíčům pro účely šifrování. Nezapomeňte, že držení vlastního klíče nemusí být kompatibilní se všemi službami založenými na Azure.
+V určitých scénářích můžou existovat legislativní nebo technické důvody nebo důvody vyplývající ze zásad zakazující ukládání klíčů v cloudovém systému správy klíčů. V takových případech musíte generovat klíče s použitím místního hardwaru, ukládat a spravovat je pomocí místního systému správy klíčů a ustavit způsob, kterým cloudovým prostředkům umožníte přístup k těmto klíčům pro účely šifrování. Nezapomeňte, že držení vlastního klíče nemusí být kompatibilní se všemi službami založenými na Azure.
 
 **Předpoklady pro místní správu klíčů:** Při použití místního systému správy klíčů se předpokládá následující:
 
@@ -84,7 +84,7 @@ Při plánování zásad šifrování berte v úvahu několik různých stavů d
 
 Přenášená data jsou data přesouvaná mezi prostředky v interní síti, mezi datacentry nebo externími sítěmi nebo přes internet.
 
-Šifrování přenášených dat se obvykle provádí vyžadováním protokolů SSL/TLS pro provoz. Provoz mezi vašimi prostředky hostovanými v cloudu a externí sítí nebo veřejným internetem by vždy měl být šifrovaný. Prostředky PaaS obecně také pro provoz vynucují šifrování SSL/TLS ve výchozím nastavení. Rozhodnout, jestli se má vynucovat šifrování provozu mezi prostředky IaaS hostovanými v rámci vašich virtuálních sítí, by měly učinit vaše týmy přechodu na cloud a vlastníci úloh. Obecně to doporučujeme.
+Přenášená data se obvykle šifrují vyžadováním protokolů SSL/TLS pro síťový provoz. Vždycky šifrujte provoz mezi svými prostředky hostovanými v cloudu a externími sítěmi nebo veřejným internetem. Prostředky PaaS standardně vynucují šifrování SSL/TLS. Vaše týmy přechodu na cloud a vlastníci úloh by měli rozhodnout, jestli se má vynucovat šifrování provozu mezi prostředky IaaS hostovanými v rámci vašich virtuálních sítí.
 
 **Předpoklady pro šifrování přenášených dat:** Implementace vhodných zásad šifrování pro přenášená data předpokládá následující:
 

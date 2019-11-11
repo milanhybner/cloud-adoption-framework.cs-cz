@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8b7902910de3df729524b1625fe83b0681eeef5b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556781"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565466"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventarizace a získání přehledu v Azure
 
@@ -23,17 +23,17 @@ _Inventarizace a získání přehledu_ je první ze tří disciplín ve směrné
 
 ![Směrný plán cloudové správy](../../_images/manage/management-baseline.png)
 
-Tato disciplína je na prvním místě, protože při rozhodování o operacích je nezbytné shromažďovat správná provozní data. Týmy pro správu cloudu musí pochopit, co se spravuje a jak dobře tyto prostředky fungují. Tento článek popisuje různé nástroje, které poskytují inventarizaci i přehled stavu spuštění inventarizace.
+Tato disciplína je na prvním místě, protože při rozhodování o operacích je nezbytné shromažďovat správná provozní data. Týmy pro správu cloudu musí pochopit, co se spravuje a jak dobře se tyto prostředky provozují. Tento článek popisuje různé nástroje, které poskytují inventarizaci i přehled stavu spuštění inventarizace.
 
-V následující tabulce je pro jednotlivá podniková prostředí uvedeno navrhované minimum pro jakýkoli směrný plán správy.
+V následující tabulce je pro jednotlivá podniková prostředí uvedeno navrhované minimum pro směrný plán správy.
 
 |Proces  |Nástroj  |Účel  |
 |---------|---------|---------|
 |Monitorování stavu služeb Azure|Azure Service Health|Stav, výkon a diagnostika pro služby běžící v Azure|
 |Centralizace protokolů|Log Analytics|Centrální protokolování pro všechny účely získání přehledu|
 |Centralizace monitorování|Azure Monitor|Centrální monitorování provozních dat a trendů|
-|Inventář virtuálních počítačů a sledování změn|Azure Change Tracking a služba Inventory|Inventarizace virtuálních počítačů a monitorování změn na úrovni hostovaného operačního systému|
-|Service Health|Protokol aktivit Azure|Monitorování změn na úrovni předplatného|
+|Inventář virtuálních počítačů a sledování změn|Azure Change Tracking a Inventory|Inventarizace virtuálních počítačů a monitorování změn na úrovni hostovaného operačního systému|
+|Stav služeb|Protokol aktivit Azure|Monitorování změn na úrovni předplatného|
 |Monitorování hostovaného operačního systému|Azure Monitor pro virtuální počítače|Monitorování změn a výkonu virtuálních počítačů|
 |Monitorování sítě|Azure Network Watcher|Monitorování změn a výkonu sítě|
 |Monitorování systému DNS|DNS Analytics|Zabezpečení, výkon a operace systému DNS|
@@ -49,9 +49,9 @@ V následující tabulce je pro jednotlivá podniková prostředí uvedeno navrh
 
 ::: zone-end
 
-Azure Service Health poskytuje přizpůsobené zobrazení stavu služeb a oblastí Azure, které využíváte. Informace o aktivních problémech se odešle do služby Service Health, aby vám pomohla porozumět dopadu na vaše prostředky. Pravidelné aktualizace vám umožní sledovat, jak se problém řeší.
+Azure Service Health poskytuje přizpůsobené zobrazení stavu vašich služeb a oblastí Azure. Informace o aktivních problémech se odešle do služby Service Health, aby vám pomohla porozumět dopadu na vaše prostředky. Pravidelné aktualizace vám umožní sledovat, jak se problémy řeší.
 
-Publikujeme do Service Health také události plánované údržby, takže se dozvíte o změnách, které by mohly ovlivnit dostupnost vašich prostředků. Po nastavení upozornění služby Service Health můžete být informováni o problémech služby, plánované údržbě nebo dalších změnách, které mohou mít vliv na používané služby a oblasti Azure.
+Publikujeme do Service Health také události plánované údržby, takže se dozvíte o změnách, které můžou ovlivnit dostupnost prostředků. Nastavte upozornění služby Service Health tak, abyste byli informováni o problémech služby, plánované údržbě nebo dalších změnách, které mohou mít vliv na vaše služby a oblasti Azure.
 
 Azure Service Health zahrnuje:
 
@@ -125,13 +125,13 @@ Další informace najdete v [dokumentaci k vytváření pracovních prostorů Lo
 
 ::: zone-end
 
-Azure Monitor poskytuje jedno společné centrum pro všechna data monitorování a diagnostiky v Azure. Můžete ho použít k získání přehledu o prostředcích. Pomocí Azure Monitoru můžete najít a vyřešit problémy a optimalizovat výkon. Můžete také pochopit chování zákazníků.
+Azure Monitor poskytuje jedno společné centrum pro všechna data monitorování a diagnostiky v Azure a poskytuje přehled o vašich prostředcích. Pomocí Azure Monitoru můžete najít a vyřešit problémy a optimalizovat výkon. Můžete také pochopit chování zákazníků.
 
-- **Monitorování a vizualizace metrik.** Metriky jsou číselné hodnoty dodávané prostředky Azure, které nabízejí informace o stavu vašich systémů. Grafy můžete přizpůsobit pro řídicí panely a ke generování sestav používat sešity.
+- **Monitorování a vizualizace metrik.** Metriky jsou číselné hodnoty, které jsou dostupné z prostředků Azure. Pomůžou vám pochopit stav systémů. Grafy můžete přizpůsobit pro řídicí panely a ke generování sestav používat sešity.
 
 - **Dotazování a analýza protokolů.** Mezi protokoly patří protokoly aktivit a diagnostické protokoly z Azure. Shromažďujte další protokoly pro vaše cloudové nebo místní prostředky z jiných řešení pro monitorování a správu. Log Analytics slouží jako centrální úložiště pro agregaci všech těchto dat. Odtud můžete spouštět dotazy, které vám pomůžou řešit potíže nebo vizualizovat data.
 
-- **Nastavení upozornění a akcí.** Upozornění vás aktivně informují o kritických stavech. Na základě triggerů z metrik, protokolů nebo problémů se stavem služby je možné provádět opravné akce. Můžete nastavit různá oznámení a akce a odesílat data do vašich nástrojů pro správu IT služeb.
+- **Nastavení upozornění a akcí.** Upozornění vás informují o kritických stavech. Na základě triggerů z metrik, protokolů nebo problémů se stavem služby je možné provádět opravné akce. Můžete nastavit různá oznámení a akce a také odesílat data do vašich nástrojů pro správu IT služeb.
 
 ::: zone target="chromeless"
 
@@ -178,7 +178,7 @@ Existují dva přístupu k nasazení:
 - [Jeden virtuální počítač](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 - [Celé předplatné](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
 
-Jednotlivé články vás provedou postupem nasazení následujících řešení:
+Jednotlivé články vás provedou postupem nasazení těchto řešení:
 
 - Update Management
 - Change Tracking a Inventory
@@ -188,4 +188,4 @@ Jednotlivé články vás provedou postupem nasazení následujících řešení
 - Azure Monitor pro virtuální počítače
 - Azure Security Center
 
-Každé z výše uvedených řešení vám pomohou zajistit inventarizaci a získání přehledu.
+Každý z předchozích kroků vám pomůže zajistit inventarizaci a získání přehledu.

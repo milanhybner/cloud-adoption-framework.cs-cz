@@ -10,22 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557087"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565490"
 ---
 # <a name="operational-compliance-in-azure"></a>Provozní dodržování předpisů v Azure
 
-Provozní dodržování předpisů je druhou disciplínou v jakémkoli směrném plánu cloudové správy.
+_Provozní dodržování předpisů_ je druhou disciplínou v jakémkoli směrném plánu cloudové správy.
 
 ![Směrný plán cloudové správy](../../_images/manage/management-baseline.png)
 
-Zlepšení provozního dodržování předpisů snižuje pravděpodobnost výpadku souvisejícího s nekonzistentní konfigurací nebo ohrožení zabezpečení souvisejícího se systémy, které nejsou správně opraveny.
+Zlepšení provozního dodržování předpisů snižuje pravděpodobnost výpadku souvisejícího s nekonzistentní konfigurací nebo ohrožení zabezpečení souvisejícího se systémy, které jsou nesprávně opraveny.
 
-Pro jakékoli podnikové prostředí je v následující tabulce uvedeno navrhované minimum pro všechny směrné plány správy.
+V této tabulce je pro jednotlivá podniková prostředí uvedeno navrhované minimum pro směrný plán správy.
 
 |Proces  |Nástroj  |Účel  |
 |---------|---------|---------|
@@ -48,26 +48,29 @@ Počítače spravované pomocí Update Managementu používají k provádění p
 
 - Agenta Microsoft Monitoring Agent (MMA) pro Windows nebo Linux
 - Konfiguraci požadovaného stavu (DSC) PowerShellu pro Linux
-- Funkci Hybrid Runbook Worker služby Automation
+- Azure Automation Hybrid Runbook Worker
 - Služby Microsoft Update nebo Windows Server Update Services (WSUS) pro počítače s Windows
 
 Další informace najdete v tématu [Řešení Update Management](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 > [!WARNING]
-> Než začnete používat správu aktualizací, musíte do Log Analytics a Azure Automation nasadit (angl. „onboard“) virtuální počítače nebo celé předplatné.
-> U onboardingu existují dva přístupy – jednoho z nich byste se měli držet, než budete se správou aktualizací pokračovat:
+> Než začnete používat Update Management, musíte do Log Analytics a Azure Automation nasadit virtuální počítače nebo celé předplatné.
+>
+> Existují dva přístupu k nasazení:
 >
 > - [Jeden virtuální počítač](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [Celé předplatné](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> Před pokračováním v práci s řešením Update Management byste měli podle jednoho postupovat.
 
 ### <a name="manage-updates"></a>Správa aktualizací
 
 Použití zásady pro skupinu prostředků:
 
-1. Přejděte na [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
-2. Vyberte jeden z uvedených **účtů služby Automation**.
-3. V navigaci na portálu najděte část **Správa konfigurace**.
-4. K řízení stavu a provozního dodržování předpisů spravovaných virtuálních počítačů se dá použít Inventář, Správa změn a Konfigurace stavu.
+1. Přejděte do služby [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Vyberte **Účty služby Automation** a zvolte jeden z uvedených účtů.
+1. Přejděte na **Správu konfigurace**.
+1. K řízení stavu a provozního dodržování předpisů spravovaných virtuálních počítačů se dá použít **Inventář**, **Správa změn** a **Konfigurace stavu**.
 
 ::: zone target="chromeless"
 
@@ -90,13 +93,13 @@ Použití zásady pro skupinu prostředků:
 
 ::: zone-end
 
-Azure Policy se používá v rámci procesů zásad správného řízení. Je ale také vysoce užitečná v rámci procesů správy cloudu. Kromě auditování a napravování prostředků Azure může Azure Policy auditovat nastavení uvnitř počítače. Ověřování se provádí pomocí rozšíření Konfigurace hosta a prostřednictvím klienta. Toto rozšíření prostřednictvím klienta ověřuje nastavení, jako například:
+Azure Policy se používá v rámci procesů zásad správného řízení. Je také vysoce užitečná v rámci procesů správy cloudu. Azure Policy může auditovat a napravovat prostředky Azure a také může auditovat nastavení uvnitř počítače. Ověřování se provádí pomocí rozšíření Konfigurace hosta a prostřednictvím klienta. Toto rozšíření prostřednictvím klienta ověřuje nastavení, jako například:
 
 - Konfigurace operačního systému
 - Konfigurace nebo přítomnost aplikací
 - Nastavení prostředí
 
-Konfigurace hosta Azure Policy momentálně jenom audituje nastavení uvnitř počítače. Neaplikuje konfigurace.
+Konfigurace hosta Azure Policy momentálně audituje jenom nastavení uvnitř počítače. Neaplikuje konfigurace.
 
 ::: zone target="chromeless"
 
@@ -134,7 +137,9 @@ Další informace naleznete v tématu:
 
 ::: zone-end
 
-Azure Blueprints umožňuje cloudovým architektům a centrálním oddělením IT definovat opakovatelnou sadu prostředků Azure, která implementuje a dodržuje standardy, vzory a požadavky organizace. Vývojářským týmům Azure Blueprints umožňuje rychle vytvářet nová prostředí s důvěrou, že je vytvářejí v souladu s předpisy organizace, a s využitím sady předdefinovaných komponent – třeba síťových – ke zrychlení vývoje a distribuce.
+Pomocí Azure Blueprints můžou cloudoví architekti a centrální skupiny informačních technologií definovat opakující se sadu prostředků Azure. Tyto prostředky implementují standardy, vzory a požadavky organizace a vyhovují jim.
+
+Pomocí Azure Blueprints můžou vývojové týmy rychle sestavit a vytvořit nová prostředí. Týmy můžou taky důvěřovat, že provádějí sestavení v rámci dodržování předpisů organizace. Využívají k tomu sadu integrovaných komponent, jako jsou sítě, aby urychlili vývoj a doručování.
 
 Podrobné plány představují deklarativní způsob, jak orchestrovat nasazení různých šablon prostředků a dalších artefaktů jako:
 
@@ -143,7 +148,7 @@ Podrobné plány představují deklarativní způsob, jak orchestrovat nasazení
 - Šablony Azure Resource Manageru
 - Skupiny prostředků
 
-Použitím podrobného plánu je možné vynutit provozní dodržování předpisů v prostředí, pokud to ještě neudělal tým zásad správného řízení cloudu.
+Použitím podrobného plánu je možné vynutit provozní dodržování předpisů v prostředí, pokud toto vynucení neudělal tým zásad správného řízení cloudu.
 
 ### <a name="create-a-blueprint"></a>Vytvoření podrobného plánu
 
@@ -152,11 +157,12 @@ Vytvoření podrobného plánu:
 ::: zone target="chromeless"
 
 1. Přejděte na **Blueprints – Začínáme**.
-1. V části **Vytvořit podrobný plán** vyberte **Vytvořit**.
+1. V podokně **Vytvořit podrobný plán** vyberte **Vytvořit**.
 1. Vyfiltrujte seznam podrobných plánů a vyberte odpovídající podrobný plán.
-1. Zadejte **Název podrobného plánu** a vyberte odpovídající **Umístění definice**.
-1. Klikněte na **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
-1. Klikněte na **Uložit koncept**.
+1. Do pole **Název podrobného plánu** zadejte název podrobného plánu.
+1. Vyberte **Umístění definice** a zvolte příslušné umístění.
+1. Vyberte **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
+1. Vyberte **Uložit koncept**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Vytvoření podrobného plánu:
 ::: zone target="docs"
 
 1. Přejděte na [Blueprints – Začínáme](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
-1. V části **Vytvořit podrobný plán** vyberte **Vytvořit**.
+1. V podokně **Vytvořit podrobný plán** vyberte **Vytvořit**.
 1. Vyfiltrujte seznam podrobných plánů a vyberte odpovídající podrobný plán.
-1. Zadejte **Název podrobného plánu** a vyberte odpovídající **Umístění definice**.
-1. Klikněte na **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
-1. Klikněte na **Uložit koncept**.
+1. Do pole **Název podrobného plánu** zadejte název podrobného plánu.
+1. Vyberte **Umístění definice** a zvolte příslušné umístění.
+1. Vyberte **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
+1. Vyberte **Uložit koncept**.
 
 ::: zone-end
 
@@ -179,10 +186,12 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 ::: zone target="chromeless"
 
-1. Přejděte na **Blueprints – Definice podrobných plánů**.
+1. Přejděte na **Podrobné plány – Definice podrobných plánů**.
 1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
 1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
-1. Zadejte číslo **Verze** (například 1.0) a případné **Poznámky ke změnám** a pak vyberte **Publikovat**.
+1. Do pole **Verze** zadejte verzi, např. „1.0“.
+1. Do pole **Poznámky ke změnám** zadejte své poznámky.
+1. Vyberte **Publikovat**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -190,10 +199,14 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 ::: zone target="docs"
 
-1. Přejděte na [Blueprints – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Přejděte na [Podrobné plány – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
 1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
-1. Zadejte číslo **Verze** (například 1.0) a případné **Poznámky ke změnám** a pak vyberte **Publikovat**.
+1. Do pole **Verze** zadejte verzi, např. „1.0“.
+1. Do pole **Poznámky ke změnám** zadejte své poznámky.
+1. Vyberte **Publikovat**.
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>Další informace
 

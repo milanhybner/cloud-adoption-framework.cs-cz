@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564812"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753315"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
@@ -23,7 +23,7 @@ Azure se skládá z mnoha oblastí po celém světě. Každá z [oblastí Azure]
 1. **Dostupné služby:** Služby, které se nasazují do jednotlivých oblastí, se liší v závislosti na nejrůznějších faktorech. Pro nasazení vaší úlohy musíte vybrat oblast, která obsahuje požadovanou službu. V článku [Dostupné produkty v jednotlivých oblastech](https://azure.microsoft.com/global-infrastructure/services) najdete další informace o tom, které služby jsou v jednotlivých oblastech k dispozici.
 1. **Kapacita:** Každá oblast má maximální kapacitu. Přestože tyto informace se obvykle ke koncovému uživateli nedostanou, mohou mít vliv na to, jaké typy předplatných a služeb může nasadit a za jakých okolností. Je to něco jiného než kvóty předplatného. Pokud plánujete rozsáhlou migraci datacenter do Azure, budete pravděpodobně chtít konzultovat s místním provozním týmem Azure nebo account manažerem a ujistit se, že je možné nasazovat v potřebném měřítku.
 1. **Omezení:** Pro nasazení služeb v některých oblastech platí určitá omezení. Některé oblasti jsou například dostupné jenom jako cíl zálohování nebo převzetí služeb při selhání. Mezi další důležitá omezení, která je potřeba zmínit, patří [požadavky na suverenitu dat](https://azure.microsoft.com/global-infrastructure/geographies).
-1. **Suverenita:** Pro konkrétní suverénní entity jsou vyhrazené konkrétní oblasti. Přestože se stále jedná o oblasti Azure, jsou tyto suverénní oblasti zcela izolované od zbytku Azure, nemusí je spravovat Microsoft a mohou mít omezení typů zákazníků. Jde o tyto suverénní oblasti:
+1. **Suverenita:** Pro konkrétní suverénní entity jsou vyhrazené konkrétní oblasti. Přestože se stále jedná o oblasti Azure, jsou tyto suverénní oblasti zcela izolované od zbytku Azure, nemusí je spravovat Microsoft a mohou být omezené jenom na konkrétní typy zákazníků. Jde o tyto suverénní oblasti:
     1. [Azure (Čína)](https://azure.microsoft.com/global-infrastructure/china)
     1. [Azure (Německo)](https://azure.microsoft.com/global-infrastructure/germany) (vyřazuje se z provozu ve prospěch standardních oblastí Azure v Německu, které nejsou suverénní)
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
@@ -58,7 +58,7 @@ Každé robustní cloudové nasazení vyžaduje dobře rozváženou síť, kter�
 
 - Celá řada služeb PaaS v rámci Azure podporuje [koncové body webové služby](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) nebo [privátní propojení](https://docs.microsoft.com/azure/private-link/private-link-overview). Obě tato řešení podstatným způsobem ovlivňují síťové aspekty při úvahách o regionální odolnosti, migraci a zásadách správného řízení.
 
-- Řada služeb PaaS se spoléhá na vlastní řešení regionální odolnosti. Například Azure SQL Database umožňuje snadno replikovat do N dalších oblastí stejně jako CosmosDB. Některé služby nejsou závislé na oblastech, například Azure DNS. Když zvažujete, které služby budete během procesu přechodu využívat, je potřeba, abyste dobře rozuměli možnostem převzetí služeb při selhání a postupu obnovení, který může být pro jednotlivé služby Azure potřeba.
+- Řada služeb PaaS se spoléhá na vlastní řešení regionální odolnosti. Například Azure SQL Database stejně jako CosmosDB umožňuje snadno replikovat do _x_ dalších oblastí. Některé služby nejsou závislé na oblastech, například Azure DNS. Když zvažujete, které služby budete během procesu přechodu využívat, je potřeba, abyste dobře rozuměli možnostem převzetí služeb při selhání a postupu obnovení, který může být pro jednotlivé služby Azure potřeba.
 
 - Kromě podpory zotavení po havárii nasazením do více oblastí řada organizací volí nasazování v modelu aktivní-aktivní, takže žádné převzetí služeb při selhání není nutné. To přináší i další výhodu – zajištění globálního vyrovnávání zatížení a vyšší odolnost proti chybám a náhlému zvýšení výkonu sítě. Aby bylo možné tento model využít, musí vaše aplikace podporovat konfiguraci aktivní-aktivní v několika oblastech.
 
@@ -80,12 +80,12 @@ Přizpůsobte změny v rámci procesu migrace tak, aby řešily tento úvodní s
 
 Následující tabulka vám může pomoct při dokumentování zjištěných informací z výše uvedených kroků:
 
-|Oblast  |Země  |Místní zaměstnanci  |Místní externí uživatelé  |Místní datacentra nebo prostředky |Požadavky na suverenitu dat  |
-|---------|---------|---------|---------|---------|---------|
-|Severní Amerika     |USA         |Ano         |Partneři a zákazníci         |Ano         |Ne         |
-|Severní Amerika     |Kanada         |Ne         |Zákazníci         |Ano         |Ano         |
-|Evropa     |Německo         |Ano         |Partneři a zákazníci         |Ne – pouze síť         |Ano         |
-|Asie a Tichomoří     |Jižní Korea         |Ano         |Partneři         |Ano         |Ne         |
+| Oblast        | Země     | Místní zaměstnanci | Místní externí uživatelé   | Místní datacentra nebo prostředky | Požadavky na suverenitu dat |
+|---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
+| Severní Amerika | USA         | Ano             | Partneři a zákazníci | Ano                         | Ne                            |
+| Severní Amerika | Kanada      | Ne              | Zákazníci              | Ano                         | Ano                           |
+| Evropa        | Německo     | Ano             | Partneři a zákazníci | Ne – pouze síť           | Ano                           |
+| Asie a Tichomoří  | Jižní Korea | Ano             | Partneři               | Ano                         | Ne                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -93,7 +93,7 @@ Následující tabulka vám může pomoct při dokumentování zjištěných inf
 
 Organizace státní správy na celém světě začaly zavádět požadavky na suverenitu dat, jako je například Obecné nařízení o ochraně osobních údajů (GDPR). Požadavky na dodržování předpisů tohoto typu často vyžadují lokalizaci v konkrétní oblasti nebo dokonce v konkrétní zemi kvůli ochraně občanů. V některých případech musí být data týkající se zákazníků, zaměstnanců nebo partnerů uložená v cloudové platformě ve stejné oblasti, ve které se nachází koncový uživatel.
 
-Řešení těchto výzev významně motivuje globálně působící společnosti k migracím do cloudu. Kvůli udržování požadavků na dodržování předpisů se některé společnosti rozhodly nasazovat duplicitní IT prostředky u poskytovatelů cloudu v rámci dané oblasti. V tabulce s příklady výše by dobrým příkladem tohoto scénáře bylo Německo. V tomto příkladu se v Německu nachází zákazníci, partneři a zaměstnanci, ale žádné existující IT prostředky. Tato společnost se může rozhodnout nasadit některé prostředky do datacentra v rámci oblasti, na kterou se vztahuje GDPR, a potenciálně může dokonce využívat německá datacentra Azure. Pochopení toho, na která data má dopad GDPR, by pomohlo týmu přechodu na cloud určit, jaký je v tomto případě nejlepší přístup při migraci.
+Řešení těchto výzev významně motivuje globálně působící společnosti k migracím do cloudu. Kvůli udržování požadavků na dodržování předpisů se některé společnosti rozhodly nasazovat duplicitní IT prostředky u poskytovatelů cloudu v rámci dané oblasti. Dobrým příkladem tohoto scénáře ve výše uvedené tabulce je Německo. Tento příklad zahrnuje zákazníky, partnery a zaměstnance v Německu, ale žádné existující IT prostředky. Tato společnost se může rozhodnout nasadit některé prostředky do datacentra v rámci oblasti, na kterou se vztahuje GDPR, a potenciálně může dokonce využívat německá datacentra Azure. Pochopení toho, na která data má dopad GDPR, by pomohlo týmu přechodu na cloud určit, jaký je v tomto případě nejlepší přístup při migraci.
 
 ### <a name="why-is-the-location-of-end-users-relevant"></a>Proč hraje roli místo, kde se nachází koncoví uživatelé?
 
@@ -115,7 +115,7 @@ Tento přístup je založený na kvantifikovatelných informacích. Z tohoto dů
 
 Pokud rozsah migrace zahrnuje více oblastí, měl by tým přechodu na cloud vyhodnotit následující aspekty připravenosti:
 
-- Suverenita dat může vyžadovat lokalizaci některých prostředků, může však existovat mnoho prostředků, které se nemusí řídit těmito omezeními souvisejícími s dodržováním předpisů. Aktivity, jako je protokolování, generování sestav, směrování sítě, identita a další centrální IT služby, můžou mít oprávnění být hostované jako sdílené služby v rámci více předplatných nebo dokonce i více oblastí. Doporučujeme, aby tým pro přechod do cloudu vyhodnotil u těchto služeb model sdílených služeb, jak je uvedeno v [referenční architektuře hvězdicové topologie se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services).
+- Suverenita dat může vyžadovat lokalizaci některých prostředků, může však existovat mnoho prostředků, které se nemusí řídit těmito omezeními souvisejícími s dodržováním předpisů. Aktivity, jako je protokolování, generování sestav, směrování sítě, identita a další centrální IT služby, můžou mít oprávnění být hostované jako sdílené služby v rámci více předplatných nebo dokonce i více oblastí. Tým pro přechod do cloudu by měl pro tyto služby vyhodnotit použití modelu sdílených služeb, jak je uvedeno v [referenční architektuře hvězdicové topologie se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services).
 - Při nasazování více instancí podobných prostředí by mohl objekt pro vytváření prostředí zajistit konzistenci, zlepšit zásady správného řízení a urychlit nasazení. [Průvodce zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/index.md) zavádí přístup pro vytvoření prostředí, které se škáluje v rámci více oblastí.
 
 Jakmile tým stanoví vyhovující základní přístup a je k dispozici odpovídající připravenost, je třeba zvážit několik předpokladů řízených daty:
@@ -135,7 +135,7 @@ Při řešení složitostí globálních prostředků a uživatelských základe
 
 ### <a name="suggested-action-during-the-assess-process"></a>Navrhované akce během procesu posouzení
 
-**Vyhodnocení závislostí mezi datacentry:** [Nástroje pro vizualizaci závislostí v Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) vám můžou pomoct identifikovat závislosti. Použití této sady nástrojů před migrací je dobrý obecný osvědčený postup. Při řešení globální složitosti je to však nezbytný krok procesu posouzení. Prostřednictvím [seskupování závislostí](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) může vizualizace pomoct identifikovat IP adresy a porty všech prostředků vyžadovaných pro podporu dané úlohy.
+**Vyhodnocení závislostí mezi datacentry:** [Nástroje pro vizualizaci závislostí v Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) vám můžou pomoct identifikovat závislosti. Osvědčeným postupem je použití těchto nástrojů před migrací. Při řešení globální složitosti je to nezbytný krok procesu posouzení. Prostřednictvím [seskupování závislostí](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) může vizualizace pomoct identifikovat IP adresy a porty všech prostředků vyžadovaných pro podporu dané úlohy.
 
 > [!IMPORTANT]
 > Dvě důležité poznámky: Zaprvé, odborník, který rozumí umísťování prostředků a schématům IP adres, musí identifikovat prostředky, které se nachází v sekundárním datovém centru. Zadruhé je důležité vyhodnotit podřízené závislosti a klienty ve vizuálu a pochopit obousměrné závislosti.
@@ -162,7 +162,7 @@ Při migraci aplikace, která musí být nasazená ve více oblastech, musí tý
 **Synchronizace dat:** Největší využití šířky pásma je často způsobené synchronizací datové platformy. Jak je definováno v referenčních architekturách [webových aplikací pro více oblastí](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) a [n-vrstvých aplikací pro více oblastí](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server), synchronizace dat je často vyžadovaná kvůli udržování aplikací na stejné úrovni. Pokud je toto požadovaný provozní stav dané aplikace, může být před migrací aplikace a prostředků střední vrstvy vhodné dokončit synchronizaci mezi zdrojovou datovou platformou a všemi cloudovými platformami.
 **Synchronizace dat:** Největší využití šířky pásma je často způsobené synchronizací datové platformy. Jak je definováno v referenčních architekturách [webových aplikací pro více oblastí](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) a [n-vrstvých aplikací pro více oblastí](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server), synchronizace dat je často vyžadovaná kvůli udržování aplikací na stejné úrovni. Pokud je toto požadovaný provozní stav dané aplikace, může být před migrací aplikace a prostředků střední vrstvy vhodné dokončit synchronizaci mezi zdrojovou datovou platformou a všemi cloudovými platformami.
 
-**Zotavení po havárii Azure do Azure:** Pomocí alternativní možnosti můžete dále snížit složitost. Pokud časové plány a přístupy synchronizace dat vyžadují nasazení ve dvou krocích, může být [zotavení po havárii Azure do Azure](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) přijatelné řešení. V tomto scénáři je úloha nejprve migrována do prvního datacentra Azure pomocí jediného trezoru Site Recovery a návrhu konfiguračního nebo procesového serveru. Po otestování může být úloha obnovena z migrovaných prostředků do druhého datacentra Azure. Tento přístup omezuje dopad na prostředky ve zdrojovém datacentru a využívá rychlejší přenosové rychlosti a vysoké limity šířky pásma dostupné mezi datacentry Azure.
+**Zotavení po havárii Azure do Azure:** Alternativní možnost může složitost dál snížit. Pokud časové plány a přístupy synchronizace dat vyžadují nasazení ve dvou krocích, může být [zotavení po havárii Azure do Azure](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) přijatelné řešení. V tomto scénáři je úloha nejprve migrována do prvního datacentra Azure pomocí jediného trezoru Site Recovery a návrhu konfiguračního nebo procesového serveru. Po otestování může být úloha obnovena z migrovaných prostředků do druhého datacentra Azure. Tento přístup omezuje dopad na prostředky ve zdrojovém datacentru a využívá rychlejší přenosové rychlosti a vysoké limity šířky pásma dostupné mezi datacentry Azure.
 
 > [!NOTE]
 > Tento přístup může zvýšit krátkodobé náklady na migraci, protože by to mohlo znamenat další poplatky za šířku pásma pro výchozí přenos dat.
@@ -175,10 +175,10 @@ Při migraci aplikace, která musí být nasazená ve více oblastech, musí tý
 
 **Optimalizace pomocí předběžného testování:** Počáteční automatické testování může identifikovat potenciální možnosti optimalizace stejně jako při jakékoli migraci. V případě globálních úloh je důležité úlohu testovat v každé oblasti nezávisle, protože i malé změny konfigurace v síti nebo cílovém datacentru Azure můžou ovlivnit výkon.
 
-**Firemní plány změn:** U všech složitých scénářů migrace se doporučuje vytvořit firemní plán změn, aby se zajistila jasná komunikace týkající se jakýchkoli změn firemních procesů, uživatelského prostředí a načasování úsilí potřebného k integraci těchto změn. V případě globální migrace by měl tento plán zahrnovat důležité aspekty týkající se koncových uživatelů v každé ovlivněné geografické oblasti.
+**Firemní plány změn:** U všech složitých scénářů migrace by se měl vytvořit firemní plán změn, aby se zajistila jasná komunikace týkající se jakýchkoli změn firemních procesů, uživatelského prostředí a načasování úsilí potřebného k integraci těchto změn. V případě globální migrace by měl tento plán zahrnovat důležité aspekty týkající se koncových uživatelů v každé ovlivněné geografické oblasti.
 
 **Firemní testování:** Spolu s firemním plánem změn může být v každé oblasti vyžadováno firemní testování, aby se zajistil odpovídající výkon a kompatibilita s upravenými vzory směrování v síti.
 
-**Testování převedení:** Převedení se často provádí jako jedna aktivita, která přesměruje produkční provoz do migrovaných úloh. V případě vydávání v globálním rozsahu doporučujeme převedení provádět pomocí testovacích verzí (nebo u předem definovaných skupin uživatelů). To umožňuje týmu cloudové strategie a týmu přechodu na cloud lépe sledovat výkon a zlepšit podporu uživatelů v jednotlivých oblastech. Testovací verze převedení jsou často řízeny na úrovni sítě pomocí změn směrování konkrétních rozsahů IP adres ze zdrojových prostředků úloh na nově migrované prostředky. Po dokončení migrace určené skupiny koncových uživatelů je možné přesměrovat další skupinu.
+**Testování převedení:** Převedení se často provádí jako jedna aktivita, která přesměruje produkční provoz do migrovaných úloh. V případě vydávání v globálním rozsahu by se převedení mělo provádět pomocí testovacích verzí (nebo u předem definovaných skupin uživatelů). To umožňuje týmu cloudové strategie a týmu přechodu na cloud lépe sledovat výkon a zlepšit podporu uživatelů v jednotlivých oblastech. Testovací verze převedení jsou často řízeny na úrovni sítě pomocí změn směrování konkrétních rozsahů IP adres ze zdrojových prostředků úloh na nově migrované prostředky. Po dokončení migrace určené skupiny koncových uživatelů je možné přesměrovat další skupinu.
 
 **Optimalizace testování:** Jednou z výhod testovacích verzí převedení je to, že umožňuje podrobnější sledování a další optimalizaci nasazených prostředků. Po krátkém období používání první testovací verze jsou navržena další upřesnění migrovaných prostředků, když to umožňují provozní postupy IT.

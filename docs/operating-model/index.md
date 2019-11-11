@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564523"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753672"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Vytvoření provozního modelu pro cloud
 
@@ -40,9 +40,9 @@ Tato část architektury přechod na cloud poskytuje praktický provozní model,
 
 Cloud a digitální ekonomika odhalily potřebu několika provozních modelů. Tato potřeba někdy vychází z nutnosti podporovat několik veřejných cloudů. Častěji je ale tato potřeba důsledkem přechodu z místní verze na cloudovou. V obou scénářích je třeba srovnat provozní modely z hlediska maximálního výkonu a minimální redundance.
 
-Analytici predikují přechod na více cloudů s velkými objemy. Mnozí zákazníci směřují k této predikci. Zákazníci ale bohužel informují o značných výzvách v souvislosti s provozem více cloudů. Duplicitní prostředky, procesy, dovednosti a technologie vedou ke zvyšování nákladů, a ne k úsporám slibovaných predikcemi týkajícími se cloudů. Zákazníkům se doporučuje přejít na specializovaný provozní model, aby tento trend zvrátili. Při srovnávání provozních modelů by měl vždy existovat jeden **obecný provozní model**. Další **specializované provozní modely** by se využily pro specifické scénáře pro podporu odchylek od standardního modelu.
+Analytici predikují přechod na více cloudů s velkými objemy. Mnozí zákazníci směřují k této predikci. Zákazníci ale bohužel informují o značných výzvách v souvislosti s provozem více cloudů. Duplicitní prostředky, procesy, dovednosti a technologie vedou ke zvyšování nákladů, a ne k úsporám slibovaných predikcemi týkajícími se cloudů. Zákazníci by měli přejít na specializovaný provozní model, aby tento trend zvrátili. Při srovnávání provozních modelů by měl vždy existovat jeden **obecný provozní model**. Další **specializované provozní modely** by se použily pro specifické scénáře pro podporu odchylek od standardního modelu.
 
-- **Obecný provozní model:** Obecný provozní model je srovnán s jednou veřejnou nebo privátní cloudovou platformou. Provoz této platformy definuje provozní standardy, zásady a procesy. Tento provozní model by měl být primárním prostředkem tvořícím základ dopředné cloudové strategie. V tomto modelu je cílem využít primárního poskytovatele cloudu pro hromadný přechod na cloud.
+- **Obecný provozní model:** Obecný provozní model je srovnán s jednou veřejnou nebo privátní cloudovou platformou. Provoz této platformy definuje provozní standardy, zásady a procesy. Tento provozní model by měl být primárním prostředkem tvořícím základ dopředné cloudové strategie. V tomto modelu je cílem použít primárního poskytovatele cloudu pro hromadný přechod na cloud.
 
 - **Specializovaný provozní model:** Specifické obchodní výsledky mohou lépe korespondovat s alternativním poskytovatelem cloudu. V případě existence důležitého obchodního případu jsou pro nového poskytovatele cloudu použity standardy, zásady a procesy z obecného provozního modelu, následně jsou ale upraveny, aby korespondovaly se specializovaným případem použití.
 

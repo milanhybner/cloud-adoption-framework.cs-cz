@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023872"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753189"
 ---
 # <a name="identity-decision-guide"></a>Průvodce rozhodováním ohledně identity
 
@@ -26,7 +26,7 @@ Přejít na: [Určení požadavků na integraci identit](#determine-identity-int
 
 Pro správu identit v cloudovém prostředí je k dispozici několik možností. Tyto možnosti se liší náklady a složitostí. Klíčovým faktorem při strukturování cloudových služeb identit je požadovaná úroveň integrace se stávající místní infrastrukturou identit.
 
-V Azure zajišťuje základní úroveň řízení přístupu a správy identit pro cloudové prostředky služba Azure Active Directory (Azure AD). Pokud však místní infrastruktura Active Directory vaší organizace obsahuje složitou doménovou strukturu nebo přizpůsobené organizační jednotky, vaše cloudové úlohy můžou vyžadovat synchronizaci se službou Azure AD, která zajistí konzistenci identit, skupin a rolí mezi vaším místním a cloudovým prostředím. Pro zajištění podpory aplikací, které závisí na starších mechanismech ověřování, se může vyžadovat nasazení služby Active Directory Domain Services (AD DS) v cloudu.
+V Azure zajišťuje základní úroveň řízení přístupu a správy identit pro cloudové prostředky služba Azure Active Directory (Azure AD). Pokud ale místní infrastruktura Active Directory vaší organizace obsahuje složitou doménovou strukturu nebo přizpůsobené organizační jednotky, vaše cloudové úlohy mohou vyžadovat synchronizaci se službou Azure AD, která zajistí konzistenci identit, skupin a rolí mezi vaším místním a cloudovým prostředím. Pro zajištění podpory aplikací, které závisí na starších mechanismech ověřování, se může vyžadovat nasazení služby Active Directory Domain Services (AD DS) v cloudu.
 
 Správa cloudových identit je iterativní proces. Při počátečním nasazení můžete začít s řešeními nativními pro cloud a malou skupinou uživatelů a odpovídajících rolí. S tím, jak se bude vaše migrace vyvíjet, možná budete potřebovat pomocí synchronizace adresářů integrovat řešení identit nebo do svých cloudových nasazení přidat doménové služby. V každé iteraci procesu migrace si znovu projděte svou strategii pro identity.
 

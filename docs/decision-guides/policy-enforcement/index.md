@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564839"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753152"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Průvodce rozhodováním ohledně vynucování zásad
 
@@ -57,7 +57,7 @@ V Azure můžete uplatňovat konfigurační nastavení a pravidla vytváření p
 
 Když se vaše cloudová aktiva začnou rozšiřovat napříč mnoha předplatnými, která budou vyžadovat vynucování, budete se muset zaměřit na strategii vynucování pro všechna cloudová aktiva, abyste zajistili konzistenci zásad.
 
-Vzhledem k tomu, že zásady souvisejí s organizační strukturou, musí s nimi počítat váš [návrh předplatného](../subscriptions/index.md). Kromě toho, že [skupiny pro správu Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) pomáhají s podporou složitého uspořádání v rámci návrhu předplatného, je možné je také využít k přiřazování pravidel Azure Policy napříč několika předplatnými.
+Váš [návrh předplatného](../subscriptions/index.md) musí počítat s tím, že zásady souvisejí s organizační strukturou. Kromě toho, že [skupiny pro správu Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) pomáhají s podporou složitého uspořádání v rámci návrhu předplatného, je možné je také využít k přiřazování pravidel Azure Policy napříč několika předplatnými.
 
 ## <a name="automated-enforcement"></a>Automatizované vynucování
 
