@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565380"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752916"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specializace podle úloh pro správu cloudu
 
@@ -23,7 +23,7 @@ Specializace podle úloh je založená na konceptech popsaných v tématu [Speci
 
 ![Rozšíření směrného plánu správy cloudu](../../_images/manage/beyond-the-baseline.png)
 
-- **Provoz úloh:** Největší investice do provozu na úlohu a nejvyšší stupeň odolnosti. Doporučujeme provoz úloh pro přibližně 20 % úloh, které vytvářejí největší obchodní hodnoty. Tato specializace je obvykle vyhrazená jen pro nejdůležitější úlohy firmy.
+- **Provoz úloh:** Největší investice do provozu na úlohu a nejvyšší stupeň odolnosti. Provoz úloh doporučujeme pro přibližně 20 % úloh, které vytvářejí největší obchodní hodnoty. Tato specializace je obvykle vyhrazená jen pro nejdůležitější úlohy firmy.
 - **Provoz platforem:** Investice do provozu se rozloží mezi mnoho úloh. Vylepšení odolnosti mají vliv na všechny úlohy, které využívají definovanou platformu. Doporučujeme provoz platforem pro přibližně 20 % platforem, které jsou nejdůležitější. Tato specializace je obvykle vyhrazená pro úlohy střední až vysoké důležitosti.
 - **Vylepšený směrný plán správy:** Relativně nejnižší investice do provozu. Tato specializace mírně vylepšuje firemní závazky pomocí dalších nástrojů a procesů pro nativní cloudové operace.
 
@@ -46,7 +46,7 @@ V rámci tohoto modelu se provozní úlohy (jako je monitorování, nasazení, D
 
 Tyto centralizované týmy také vedou a instruují týmy specializované podle úloh ohledně operací spojených s příslušnými úlohami. Odpovědnost za každodenní provoz ale nese tým pro správu cloudu, jehož řízení nespadá do oblasti IT. Tento typ distribuovaného řízení je jedním z primárních ukazatelů vyspělosti vedoucího centra cloudu.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Nad rámec specializace podle platformy – Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Specializace nad rámec platformy: Application Insights
 
 Aby bylo možné zajistit přesný provoz úloh, je potřeba znát konkrétní úlohy podrobněji. Během fáze průběžného vylepšování se nástroj Application Insights stane nezbytným doplňkem sady nástrojů pro správu cloudu.
 

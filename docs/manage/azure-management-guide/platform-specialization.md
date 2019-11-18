@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5b775feb4b007629a6c93e762c8b02e5d5ef0a8a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565454"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752936"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specializace podle platformy pro správu cloudu
 
@@ -24,7 +24,7 @@ Podobně jako vylepšený směrný plán správy je specializace podle platformy
 ![Rozšíření směrného plánu správy cloudu](../../_images/manage/beyond-the-baseline.png)
 
 - **Provoz úloh:** Největší investice do provozu na úlohu a nejvyšší stupeň odolnosti. Provoz úloh doporučujeme pro přibližně 20 % úloh, které vytvářejí největší obchodní hodnoty. Tato specializace je obvykle vyhrazená jen pro nejdůležitější úlohy firmy.
-- **Provoz platforem:** Investice do provozu se rozloží mezi mnoho úloh. Vylepšení odolnosti mají vliv na všechny úlohy, které využívají definovanou platformu. Provoz platforem doporučujeme pro přibližně 20 % platforem, které jsou nejdůležitější. Tato specializace je obvykle vyhrazená pro úlohy střední až vysoké důležitosti.
+- **Provoz platforem:** Investice do provozu se rozloží mezi mnoho úloh. Vylepšení odolnosti mají vliv na všechny úlohy, které využívají definovanou platformu. Doporučujeme provoz platforem pro přibližně 20 % platforem, které jsou nejdůležitější. Tato specializace je obvykle vyhrazená pro úlohy střední až vysoké důležitosti.
 - **Vylepšený směrný plán správy:** Relativně nejnižší investice do provozu. Tato specializace mírně vylepšuje firemní závazky pomocí dalších nástrojů a procesů pro nativní cloudové operace.
 
 Pro provoz úloh i platforem jsou potřebné změny v principech návrhu a architektury. Tyto změny mohou nějakou dobu trvat a mohou mít za následek zvýšené provozní výdaje. Aby bylo možné snížit počet úloh, které vyžadují takové investice, může vylepšený směrný plán správy zajistit dostatečné vylepšení firemních závazků.

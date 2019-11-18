@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058543"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751550"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ Jednou z výhod cloudových řešení je schopnost rychleji získávat zpětnou 
 
 Azure App Service poskytuje vašim aplikacím hostitelské prostředí, které odstraňuje zátěž spojenou se správou infrastruktury a opravami chyb operačního systému. Poskytuje automatizaci škálování, aby byly splněny požadavky uživatelů, a současně je vázáno limity, které definujete, aby náklady zůstaly pod kontrolou.
 
-Azure App Service poskytuje prvotřídní podporu jazyků, jako jsou ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP nebo Python. Pokud potřebujete hostovat další zásobník modulu runtime, služba Web App for Containers umožňuje rychle a snadno hostovat kontejner Dockeru v prostředí Azure App Service, takže můžete hostovat vlastní zásobník kódu v prostředí, které je mimo server.
+Azure App Service poskytuje prvotřídní podporu jazyků, jako jsou ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP nebo Python. Pokud potřebujete hostovat další zásobník modulu runtime, služba Web App for Containers umožňuje rychle a snadno hostovat kontejner Dockeru ve službě Azure App Service, takže můžete hostovat vlastní zásobník kódu v prostředí, které je mimo server.
 
 ### <a name="action"></a>Akce
 
