@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752890"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160388"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Obchodní závazek ve správě cloudu
 
@@ -60,7 +60,7 @@ V tradičním místním prostředí se obvykle předpokládá, že náklady na s
 
 Organizace také mohou zvolit, že [některé z jejich probíhajících funkcí správy pro poskytovatele služeb](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Tito poskytovatelé služeb můžou využít [Azure Lighthouse](https://azure.com/lighthouse) k zajištění přesnější kontroly nad udělením přístupu ke svým prostředkům a lepším přehledem o akcích prováděných poskytovateli služeb.
 
-- **Delegovaná odpovědnost:** Vzhledem k tomu, že není nutné centralizovat a předpokládat provozní režii, operace IT pro mnoho organizací zvažuje nové přístupy. Jedním ze společného přístupu se říká _delegovaná odpovědnost_. V cloudovém středisku modelu vynikajících platforem můžou operace platforem a automatizace platforem poskytovat nástroje pro samoobslužné řízení, které mohou být používány provozními týmy výrobního oddělení, nezávisle na centrálním podnikovém provozu IT. Tento přístup dává obchodním stranám úplnou kontrolu nad rozpočty souvisejícími se správou. Umožňuje také týmu CCOE (Cloud Center of vynikající) zajistit, aby byla správně implementována minimální sada guardrails. V tomto modelu funguje jako zprostředkovatel a příručka, která usnadňuje rozhodování v podniku. Obchodní operace, které přihlíží ke každodenním operacím závislých úloh.
+- **Delegovaná odpovědnost:** Vzhledem k tomu, že není nutné centralizovat a předpokládat provozní režii, operace IT pro mnoho organizací zvažuje nové přístupy. Jedním ze společného přístupu se říká _delegovaná odpovědnost_. V cloudovém středisku modelu vynikajících platforem můžou operace platforem a automatizace platforem poskytovat nástroje pro samoobslužné řízení, které mohou být používány provozními týmy výrobního oddělení, nezávisle na centrálním podnikovém provozu IT. Tento přístup dává obchodním stranám úplnou kontrolu nad rozpočty souvisejícími se správou. Umožňuje také týmu CCoE (Cloud Center of vynikající) zajistit, aby byla správně implementována minimální sada guardrails. V tomto modelu funguje jako zprostředkovatel a příručka, která usnadňuje rozhodování v podniku. Obchodní operace, které přihlíží ke každodenním operacím závislých úloh.
 
 - **Centralizovaná odpovědnost:** Požadavky na dodržování předpisů, technická složitost a některé modely sdílených služeb můžou vyžadovat _centrální model IT_ . V tomto modelu se nadále vykonává odpovědnost za správu provozu. Návrh na životní prostředí, ovládací prvky pro správu a nástroje pro řízení přístupu mohou být centrálně spravovány a kontrolovány, což omezuje roli obchodních zúčastněných stran při řízení závazků. Vhledem k tomu, že jsou náklady a architektura cloudových přístupů mnohem jednodušší, je jejich centralizované, aby komunikovaly s náklady a úrovní správy pro jednotlivé úlohy.
 

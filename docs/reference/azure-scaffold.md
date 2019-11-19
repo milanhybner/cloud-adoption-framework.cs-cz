@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753775"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160456"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -40,7 +40,7 @@ Při vytváření sestavení se používá generování uživatelského rozhran�
 
 Generování uživatelského rozhraní je založené na postupech, které jsme shromáždili z mnoha zapojení s klienty různých velikostí. Tyto klienty se rozvíjejí od malých organizací, které využívají řešení v cloudu až po velké nadnárodní společnosti a nezávislé dodavatele softwaru, kteří migrují úlohy a vývoj řešení nativních pro Cloud. Podniková generátorová služba je navržená jako "účelově sestavená", aby podporovala tradiční úlohy IT i agilní úlohy, jako jsou vývojáři vytvářející aplikace SaaS (software jako služba) na základě schopností platformy Azure.
 
-Podniková generátorová aplikace by měla být základem každého nového předplatného v rámci Azure. Umožňuje správcům zajistit, aby úlohy splňovaly minimální požadavky na zásady správného řízení v organizaci, aniž by museli podnikovým skupinám a vývojářům rychle plnit své vlastní cíle. Naše zkušenosti ukazují, že se tím významně zrychluje a nebrání tak lepšímu růstu veřejného cloudu.
+Podnikové uživatelské rozhraní může sloužit jako základ pro každé nové předplatné v rámci Azure. Umožňuje správcům zajistit, aby úlohy splňovaly minimální požadavky na zásady správného řízení v organizaci, aniž by museli podnikovým skupinám a vývojářům rychle plnit své vlastní cíle. Naše zkušenosti ukazují, že se tím významně zrychluje a nebrání ve veřejném cloudu.
 
 > [!NOTE]
 > Společnost Microsoft vydala ve verzi Preview novou funkci nazvanou [plány Azure](https://docs.microsoft.com/azure/governance/blueprints/overview) , která vám umožní zabalit, spravovat a nasazovat běžné image, šablony, zásady a skripty napříč předplatnými a skupinami pro správu. Tato možnost je most mezi účelem generování uživatelského rozhraní jako referenční model a nasazení tohoto modelu do vaší organizace.
@@ -53,7 +53,7 @@ Následující obrázek ukazuje komponenty uživatelského rozhraní. Základ sp
 
 Základem tohoto uživatelského rozhraní je hierarchie a vztah registrace Azure Enterprise k předplatným a skupinám prostředků. Podniková registrace definuje tvar a používání služeb Azure v rámci vaší společnosti ze smluvního hlediska. V rámci smlouva Enterprise můžete prostředí dále rozdělit do oddělení, účtů, předplatných a skupin prostředků, aby odpovídaly struktuře vaší organizace.
 
-![hierarchie](../_images/reference/agreement.png)
+![Hierarchie](../_images/reference/agreement.png)
 
 Předplatné Azure je základní jednotkou, kde jsou všechny prostředky obsažené. Definuje také několik omezení v rámci Azure, jako je počet jader, virtuálních sítí a dalších prostředků. Skupiny prostředků slouží k dalšímu upřesnění modelu předplatného a k zajištění více přirozeného seskupení prostředků.
 
@@ -228,7 +228,7 @@ Shromažďování a analýza telemetrie, která poskytuje přehled o aktivitách
 
 Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále vylepšeny. Azure poskytuje možnosti **sdíleného**, **základního**a **hloubkového** monitorování prostředků Azure prostřednictvím služeb uvedených v následujícím diagramu.
 
-![sledovaný](../_images/reference/monitoring.png)
+![Sledování](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Sdílené možnosti
 
@@ -344,4 +344,4 @@ Azure nabízí interní funkce a funkce třetích stran z naší rozsáhlé part
 
 Zásady správného řízení jsou zásadní pro úspěch Azure. Tento článek se zaměřuje na technickou implementaci podnikového uživatelského rozhraní, ale jenom se dotýká širšího procesu a vztahů mezi komponentami. Zásady správného řízení zásad jsou vypočítány shora dolů a jsou určeny podle toho, co firma chce dosáhnout. Vytváření modelu zásad správného řízení pro Azure přirozeně zahrnuje i zástupce z něj, ale důležitější je, že by měl mít silné vyjádření od vedoucích obchodních skupin a zabezpečení a řízení rizik. V konečném případě je podniková generátor z důvodu zmírnění podnikového rizika, aby se usnadnila poslání a cíle organizace.
 
-Teď, když jste se seznámili se zásadou správného řízení předplatného, je čas zobrazit tato doporučení v praxi. Podívejte se [na příklady implementace zásad správného řízení předplatného Azure](./azure-scaffold-examples.md).
+Teď, když jste se seznámili se zásadou správného řízení předplatného, je čas zobrazit tato doporučení v praxi. Další informace najdete v tématu [osvědčené postupy pro připravenost na Azure](../ready/azure-best-practices/index.md).

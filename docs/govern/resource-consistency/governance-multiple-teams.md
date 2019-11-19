@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656693"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160474"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
@@ -82,6 +82,7 @@ Proto pokud chcete vytvořit model s nejnižším oprávněním, je nutné urči
 Pojďme se podívat na dva příklady modelů oprávnění, abyste tento koncept pochopili trochu lépe. V prvním příkladu model důvěřuje jenom správci služby a vytvoří skupiny prostředků. V druhém příkladu model přiřadí předdefinované role vlastníka pro každého vlastníka úlohy v oboru předplatného.
 
 V obou příkladech je k dispozici Správce služby předplatného, kterému je přiřazena předdefinovaná role vlastníka v oboru předplatného. Odvolat, že předdefinovaná role vlastníka uděluje všechna oprávnění, včetně správy přístupu k prostředkům.
+
 ![Správce služby předplatného s rolí vlastníka](../../_images/govern/design/governance-2-1.png)
 *Obrázek 3 – předplatné se správcem služeb přiřadilo integrovanou roli vlastníka.*
 

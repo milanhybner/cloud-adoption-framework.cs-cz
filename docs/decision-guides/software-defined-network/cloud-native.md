@@ -1,5 +1,5 @@
 ---
-title: 'Softwarově definované sítě: Model nativní pro cloud'
+title: 'Softwarově definované sítě: Cloud – nativní'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diskuze o virtuálních síťových službách, které jsou nativní pro Cloud
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023578"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160203"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Softwarově definované sítě: Model nativní pro cloud
+# <a name="software-defined-networking-cloud-native"></a>Softwarově definované sítě: Cloud – nativní
 
 Virtuální síť nativní pro Cloud je nutná při nasazení prostředků IaaS, jako jsou virtuální počítače, na cloudovou platformu. Přístup k virtuálním sítím z externích zdrojů, podobně jako na webu, je nutné explicitně zřídit. Tyto typy virtuálních sítí podporují vytváření podsítí, pravidla směrování a virtuální brány firewall a zařízení pro správu provozu.
 
@@ -37,9 +37,9 @@ Další problémy, které by týmy při přijímání cloudu měly zvážit při
 - Stávající úlohy navržené pro běh v místním datovém centru můžou potřebovat rozsáhlou úpravu, která bude využívat cloudové funkce, jako jsou služby úložiště nebo ověřování.
 - Cloudové nativní sítě se spravují výhradně prostřednictvím nástrojů pro správu cloudových platforem, a proto můžou v rámci svých stávajících standardů IT vést ke správě a zásadám, jako je čas.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Další informace o virtuálních sítích nativních pro Cloud v Azure najdete v těchto tématech:
 
-- [Azure Virtual Network: Návody](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nově vytvořené virtuální sítě Azure jsou ve výchozím nastavení cloudově nativní. Pomocí těchto průvodců můžete naplánovat návrh a nasazení virtuálních sítí.
-- [Omezení předplatného: Sítě](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Jedna virtuální síť a připojené prostředky můžou existovat jenom v rámci jednoho předplatného, které jsou svázané s omezeními předplatného.
+- [Azure Virtual Network: průvodci postupy](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nově vytvořené virtuální sítě Azure jsou ve výchozím nastavení cloudově nativní. Pomocí těchto průvodců můžete naplánovat návrh a nasazení virtuálních sítí.
+- [Omezení předplatného: sítě](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Jedna virtuální síť a připojené prostředky můžou existovat jenom v rámci jednoho předplatného, které jsou svázané s omezeními předplatného.

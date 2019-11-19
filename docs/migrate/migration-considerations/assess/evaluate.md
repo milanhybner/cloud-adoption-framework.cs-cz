@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753517"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159874"
 ---
 # <a name="evaluate-workload-readiness"></a>Vyhodnocení připravenosti úloh
 
@@ -23,7 +23,7 @@ Tato aktivita se zaměřuje na připravenost úlohy k migraci do cloudu. Při t�
 
 Většina obsahu, který popisuje principy v rámci architektury pro přijetí v cloudu, je cloudová nezávislá. Proces vyhodnocení připravenosti ale musí být z větší části specifický pro každou konkrétní cloudovou platformu. Následující pokyny předpokládají, že chcete migrovat do Azure. Dále předpokládají, že k [replikačním aktivitám](../migrate/replicate.md) použijete službu Azure Migrate (říká se jí také Azure Site Recovery). Alternativní nástroje najdete v [možnostech replikace](../migrate/replicate-options.md).
 
-Záměrem tohoto článku není zaznamenat všechny možné vyhodnocovací aktivity. Předpokládá se, že každé prostředí a obchodní výsledky diktují konkrétní požadavky. Abychom pomohli tyto požadavky rychleji vytvořit, podělíme se ve zbývající části tohoto článku o několik nejčastějších vyhodnocovacích aktivit, které se týkají hodnocení [infrastruktury](#common-infrastructure-evaluation-activities), [databáze](#common-database-evaluation-activities) a [sítě](#common-network-evaluation-activities).
+Tento článek nezachycuje všechny možné zkušební aktivity. Předpokládá se, že každé prostředí a obchodní výsledky diktují konkrétní požadavky. Abychom pomohli tyto požadavky rychleji vytvořit, podělíme se ve zbývající části tohoto článku o několik nejčastějších vyhodnocovacích aktivit, které se týkají hodnocení [infrastruktury](#common-infrastructure-evaluation-activities), [databáze](#common-database-evaluation-activities) a [sítě](#common-network-evaluation-activities).
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Běžné aktivity při vyhodnocení infrastruktury
 

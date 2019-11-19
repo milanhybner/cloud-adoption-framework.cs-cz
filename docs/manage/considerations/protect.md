@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752794"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160269"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrana a obnovení ve správě cloudu
 
@@ -31,7 +31,7 @@ Minimálně každý Asset, který podporuje určitou úlohu, by měl mít zákla
 
 ### <a name="recovery-time-objectives-rto"></a>Cíle pro čas obnovení (RTO)
 
-V případě, že dojde k započetí havárií, doba obnovení je čas, který by měl trvat k obnovení jakéhokoli systému do stavu před haváriemi. Pro každou úlohu by to zahrnoval dobu potřebnou k obnovení minimální nezbytné funkčnosti pro virtuální počítače a aplikace. Zahrnuje také množství času potřebného k obnovení dat vyžadovaných aplikacemi.
+V případě, že dojde k započetu havárií, čas obnovení je čas, který by měl trvat při obnovení jakéhokoli systému do stavu před havárií. Pro každou úlohu by to zahrnoval dobu potřebnou k obnovení minimální nezbytné funkčnosti pro virtuální počítače a aplikace. Zahrnuje také množství času potřebného k obnovení dat vyžadovaných aplikacemi.
 
 V rámci obchodních podmínek představuje RTO množství času, po který bude podnikový proces mimo provoz. Pro klíčové úlohy by měla být tato proměnná poměrně nízká, což umožňuje rychle obnovit obchodní procesy. U úloh s nižší prioritou nemusí standardní úroveň RTO mít znatelný dopad na výkon společnosti.
 

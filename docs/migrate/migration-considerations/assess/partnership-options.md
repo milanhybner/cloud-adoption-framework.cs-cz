@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564646"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159889"
 ---
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
@@ -84,7 +84,7 @@ Toto jsou hlavní fáze typického zapojení do programu FastTrack for Azure:
 
 **Migrovat/optimalizovat:** [Řešení moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) pro služby Microsoftu nabízí ucelený přístup k přesunu aplikací a infrastruktury do Azure a také k optimalizaci a modernizovatí po nasazení cloudu, které zajišťuje zjednodušená migrace.
 
-Inovace **:** [Řešení Cloud Center of vynikající verze společnosti Microsoft (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) nabízí DevOps výukovým Engagement a používá zásady DevOps v kombinaci s předm nativním cloudovým řízením služeb a bezpečnostními prvky zabezpečení, které vám pomůžou při firemních inovacích. Zvyšte flexibilitu a omezte čas na hodnotu v rámci zabezpečené, předvídatelné a flexibilní funkce pro poskytování služeb a provozu.
+Inovace **:** [Řešení Cloud Center of vynikající verze (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) společnosti Microsoft nabízí DevOps výukovým Engagement a používá zásady DevOps v kombinaci s předem navrženým řízením cloudových služeb a bezpečnostními prvky zabezpečení, které vám pomůžou zrychlit obchodní inovace, zvýšit flexibilitu a zkrátit dobu potřebnou v rámci zabezpečené, předvídatelné a flexibilní funkce pro poskytování a správu provozu služeb.
 
 ## <a name="azure-support"></a>Podpora Azure
 

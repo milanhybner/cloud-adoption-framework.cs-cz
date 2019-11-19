@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565157"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160349"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Kritická obchodní náročnost v Cloud managementu
 
-V každé firmě existuje malý počet úloh, které jsou příliš důležité k selhání. Považují se za klíčové. Pokud tyto úlohy vychází z výpadků nebo snížení výkonu, může být negativní dopad na výnosy a ziskovost v celé firmě.
+V každé firmě existuje malý počet úloh, které jsou příliš důležité k selhání. Tyto úlohy se považují za klíčové. Pokud tyto úlohy vychází z výpadků nebo snížení výkonu, může být negativní dopad na výnosy a ziskovost v celé firmě.
 
 Na druhém konci spektra můžou některé úlohy jít v měsících v čase bez použití. Nízký výkon nebo výpadky pro tyto úlohy nejsou žádoucí, ale dopad je izolovaný a omezený.
 
@@ -35,8 +35,8 @@ Prvním krokem v jakémkoli úsilí při sbližování obchodních operací je v
 | Klíčové |  Má vliv na poslání společnosti a může to znamenat, že se v podnikových příkazech a výsledovce projeví. |
 | Jednotka – kritické | Má vliv na poslání konkrétní obchodní jednotky a jejich příkazů zisku a ztráty. |
 | Vysoký | Nemusí bránit služební misi, ale má vliv na procesy s vysokou důležitostí. V případě výpadků se dají měřit měřitelná ztráta. |
-| Střednědobé používání | Dopad na procesy je pravděpodobný. Ztráty jsou nízké nebo neměřitelné, ale jsou nejspíš poškození značky nebo nepřesné ztráty. |
-| Nízká | Dopad na obchodní procesy není měřitelný. Nehrozí ani poškození značky ani nepřesné ztráty. Lokalizovaný dopad na jeden tým je pravděpodobný. |
+| Střední | Dopad na procesy je pravděpodobný. Ztráty jsou nízké nebo neměřitelné, ale jsou nejspíš poškození značky nebo nepřesné ztráty. |
+| Nízký | Dopad na obchodní procesy není měřitelný. Nehrozí ani poškození značky ani nepřesné ztráty. Lokalizovaný dopad na jeden tým je pravděpodobný. |
 | Nepodporované | Žádný obchodní vlastník, tým nebo proces, který je přidružený k tomuto pracovnímu zatížení, nemůže v průběhu průběžné správy úloh zdůvodnit žádnou investici. |
 
 Je běžné, že podniky budou zahrnovat další klasifikace pro kritické účely, které jsou specifické pro jejich obor, vertikální nebo konkrétní obchodní procesy. Mezi další klasifikace patří:

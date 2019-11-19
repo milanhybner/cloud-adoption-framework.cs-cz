@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 90fd78e45f71c6ca52ea76f5efe6a3aaae49af74
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752845"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160304"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Provoz a správa IT v cloudu
 
-Důležitost vhodné správy a provozu při přechodu na cloudový model je nedocenitelná. Bohužel ale jenom málo organizací je připravených na posun správy, který je nutný k zajištění úspěchu v provozním modelu zaměřeném primárně na cloud. Tato část architektury přechodu na cloud popisuje provozní model, procesy a nástroje, které se v cloudu osvědčily. Každá z těchto oblastí představuje malý, ale důležitý posun ve způsobu, jakým má podnik nahlížet na správu a provoz IT, když začíná přecházet na cloud.
+Důležitost vhodné správy a provozu při přechodu na cloudový model je nedocenitelná. Bohužel ale jenom málo organizací je připravených na posun správy, který je nutný k zajištění úspěchu v provozním modelu zaměřeném primárně na cloud. Tato část architektury přechodu na cloud popisuje provozní model, procesy a nástroje, které se v cloudu osvědčily. Každá z těchto oblastí představuje malou, ale důležitou změnu způsobu, jakým má podnik nahlížet na správu a provoz IT, když začíná přecházet na cloud.
 
 ## <a name="brief-history-of-it-management"></a>Stručná historie správy IT
 

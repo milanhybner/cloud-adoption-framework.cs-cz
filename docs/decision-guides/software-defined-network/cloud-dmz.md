@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6b96fbae9c3e31fc4c133ce6a19589324a86dd83
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023605"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160026"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwarově definované sítě: Cloud DMZ
 
 Architektura sítě Cloud DMZ umožňuje omezený přístup mezi místními i cloudovou sítí, a to pomocí virtuální privátní sítě (VPN) pro připojení sítí. I když se model DMZ běžně používá v případě, že chcete zabezpečit externí přístup k síti, architektura cloudových DMZ, kterou popisuje tady, je určená konkrétně k zabezpečení přístupu k místní síti z cloudových prostředků a naopak.
 
-![Zabezpečení hybridní síťové architektury](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
+![Zabezpečená hybridní síťová architektura](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
 
 Tato architektura je navržená tak, aby podporovala scénáře, ve kterých vaše organizace chce zahájit integraci cloudových úloh s místními úlohami, ale nemusí mít plně prozatímované zásady zabezpečení cloudu nebo nezískaly zabezpečené vyhrazené připojení WAN mezi Tato dvě prostředí. V důsledku toho by se měly cloudové sítě zacházet jako demilitarizovaná zóna, aby byly místní služby zabezpečené.
 
@@ -37,10 +37,10 @@ Nasazení cloudového DMZ zahrnuje tyto předpoklady:
 
 Při hledání implementace virtuální síťové architektury cloudové DMZ by týmy pro přijetí v cloudu měly brát v úvahu následující problémy:
 
-- Propojení místních sítí s cloudovou sítí zvyšuje složitost vašich požadavků na zabezpečení. I když jsou připojení mezi cloudovou sítí a místním prostředím zabezpečená, je stále potřeba zajistit zabezpečení cloudových prostředků. Všechny veřejné IP adresy vytvořené pro přístup ke cloudovým úlohám musí být správně zabezpečené pomocí [veřejné DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) nebo [Azure firewall](https://docs.microsoft.com/azure/firewall).
+- Propojení místních sítí s cloudovou sítí zvyšuje složitost vašich požadavků na zabezpečení. I když jsou připojení mezi cloudovou sítí a místním prostředím zabezpečená, je stále potřeba zajistit zabezpečení cloudových prostředků. Všechny veřejné IP adresy vytvořené pro přístup ke cloudovým úlohám musí být správně zabezpečené pomocí [veřejné DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) nebo [Azure firewall](https://docs.microsoft.com/azure/firewall).
 - Architektura cloudu DMZ se běžně používá jako krokování, zatímco připojení je dál zabezpečené a zarovnává se bezpečnostní zásady mezi místními a cloudovou sítí a umožňuje širší přijetí hybridní síťové architektury s plnou škálou. Může se ale vztahovat i na izolovaná nasazení s konkrétními požadavky na zabezpečení, identitu a připojení, které DMZ přístup ke cloudu.
 
-## <a name="learn-more"></a>Víc se uč
+## <a name="learn-more"></a>Další informace
 
 Další informace o implementaci cloudového DMZu v Azure najdete v tématech:
 

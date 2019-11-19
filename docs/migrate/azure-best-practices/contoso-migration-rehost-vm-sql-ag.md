@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566524"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160339"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Opětovné hostování místní aplikace na virtuálních počítačích Azure a skupin dostupnosti Always On SQL Server
 
@@ -214,7 +214,7 @@ Správci společnosti Contoso vytvoří účet úložiště následujícím způ
 
 Před nastavením clusteru správci společnosti Contoso pořídí snímek disku s operačním systémem obou počítačů.
 
-![Snímek](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Vytvoření snímku](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Potom spustí skript, který sestavili pro vytvoření clusteru s podporou převzetí služeb při selhání Windows.
 
@@ -439,7 +439,7 @@ Správci společnosti Contoso provedou tyto kroky následujícím způsobem:
 8. Znovu se přihlásí k počítači a automaticky se spustí průvodce správou konfiguračního serveru.
 9. V průvodci vyberou síťovou kartu pro příjem dat přenášených při replikaci. Po dokončení konfigurace není možné toto nastavení změnit.
 10. Vyberou předplatné, skupinu prostředků a trezor, ve kterém se má konfigurační server zaregistrovat.
-        ![Trezor](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+        ![vyberte Recovery Services trezor](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Potom stáhnou a nainstalují MySQL Server a VMware PowerCLI.
 12. Po ověření zadají plně kvalifikovaný název domény nebo IP adresu serveru vCenter nebo hostitele vSphere. Ponechají výchozí port a zadají popisný název serveru vCenter.

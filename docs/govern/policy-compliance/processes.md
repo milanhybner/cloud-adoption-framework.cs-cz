@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566117"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159835"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,17 +38,17 @@ Před definováním triggerů pro nápravu dodržování zásad je potřeba vytv
 
 ### <a name="assign-cloud-governance-team-members"></a>Přiřazení členů týmu zásad správného řízení pro Cloud
 
-Váš tým zásad správného řízení vašeho cloudu bude poskytovat průběžné pokyny k dodržování předpisů a zpracovávat problémy související se zásadami, které se objeví při nasazení a provozování vašich cloudových prostředků. Při sestavování tohoto týmu pozvat pracovníky z vaší organizace, kteří mají zkušenosti v oblastech, které jsou pokryté příkazy definovaných zásad a zjištěnými riziky.
+Váš tým zásad správného řízení vašeho cloudu bude poskytovat průběžné pokyny k dodržování předpisů a zpracovávat problémy související se zásadami, které se objeví při nasazení a provozování vašich cloudových prostředků. Při sestavování tohoto týmu pozvat pedagogy, kteří mají zkušenosti v oblasti zahrnuté v definovaných příkazech zásad a zjištěná rizika.
 
-U počátečních nasazení testů to může být omezeno na několik správců systému zodpovědných za vytvoření základů zásad správného řízení. V případě vyspělosti procesů zásad správného řízení si pravidelně prostudujte členství v týmu orientačního cloudu, abyste mohli správně řešit nová potenciální rizika a požadavky zásad. Identifikujte členy IT a obchodních pracovníků se souvisejícími zkušenostmi nebo zájmy v konkrétních oblastech zásad správného řízení a zahrňte je do týmů na trvalém nebo ad hoc bázi, jak potřebujete.
+U počátečních testovacích nasazení to může být omezeno na několik správců systému zodpovědných za vytvoření základních základů zásad správného řízení. V případě vyspělosti procesů zásad správného řízení si pravidelně prostudujte členství v týmu orientačního cloudu, abyste mohli správně řešit nová potenciální rizika a požadavky zásad. Identifikujte členy IT a podnikových pracovníků se souvisejícími zkušenostmi nebo zájmy v konkrétních oblastech zásad správného řízení a v případě potřeby je zahrňte do svých týmů na trvalém nebo dočasném základě.
 
 ### <a name="reviews-and-policy-iteration"></a>Recenze a iterace zásad
 
 Po nasazení dalších prostředků a úloh bude tým zásad správného řízení cloudu potřebovat zajistit, aby nové úlohy nebo prostředky splňovaly požadavky zásad. Vyhodnoťte nové požadavky z vývojových týmů úloh, abyste zajistili, že jejich plánovaná nasazení budou v souladu s vašimi vodítky návrhu, a aktualizujte zásady tak, aby tyto požadavky podporovaly.
 
-Naplánujte vyhodnocení nových potenciálních rizik a příkazů zásad aktualizace a vodítek návrhu podle potřeby. Pracujte s pracovníky IT a týmy úloh a průběžně vyhodnoťte nové funkce a služby Azure. Také můžete naplánovat pravidelné revize každé z pěti oborů zásad správného řízení, abyste zajistili aktuálnost a dodržování zásad.
+Naplánujte vyhodnocení nových potenciálních rizik a příkazů zásad aktualizace a vodítek návrhu podle potřeby. Pracujte s pracovníky IT a týmy úloh a průběžně vyhodnoťte nové funkce a služby Azure. Také můžete naplánovat pravidelné revize každé z pěti oborů zásad správného řízení, aby bylo zajištěno, že zásady jsou aktuální a v souladu s předpisy.
 
-### <a name="education"></a>Education
+### <a name="education"></a>Vzdělávání
 
 Dodržování zásad vyžaduje, aby pracovníci IT a vývojáři pochopili požadavky zásad, které mají vliv na jejich oblasti zodpovědnosti. Naplánujte vyhradit prostředky pro dokumentaci rozhodnutí a požadavky a informujte všechny příslušné týmy na návrhových průvodcích, které podporují vaše požadavky na zásady.
 
@@ -79,15 +79,15 @@ Některé příklady aktivačních událostí a akcí porušení:
 
 | Obor zásad správného řízení cloudu | Ukázka triggeru | Ukázková akce |
 |-----------------------------|----------------|---------------|
-| Cost Management | Útrata v měsíčním cloudu je větší než 20% vyšší, než se očekávalo. | Upozorněte vedoucího fakturační jednotky, který začne kontrolovat využití prostředků. |
-| Standardní hodnoty zabezpečení | Zjišťuje podezřelou aktivitu přihlášení uživatele. | Upozorněte tým zabezpečení IT a zakažte podezřelý uživatelský účet. |
+| Správa nákladů | Útrata v měsíčním cloudu je větší než 20% vyšší, než se očekávalo. | Upozorněte vedoucího fakturační jednotky, který začne kontrolovat využití prostředků. |
+| Standardní hodnoty zabezpečení | Zjišťuje podezřelou aktivitu uživatele. | Upozorněte tým zabezpečení IT a zakažte účet podezřelého uživatele. |
 | Konzistence prostředků | Využití CPU pro úlohu je větší než 90%. | Upozorněte tým oddělení IT a nahorizontální navýšení kapacity pro zpracování zatížení. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatizace monitorování a dodržování předpisů
 
 Po definování aktivačních událostí a akcí narušení dodržování předpisů můžete začít s plánováním, jak nejlépe využít nástroje protokolování a vytváření sestav, a další funkce cloudové platformy, které vám pomůžou automatizovat strategii monitorování a dodržování zásad.
 
-Pokyny k výběru nejlepšího vzoru monitorování pro vaše nasazení najdete v tématu [Průvodce pro protokolování a](../../decision-guides/logging-and-reporting/index.md) nastavování v cloudu.
+Nápovědu k výběru nejlepšího vzoru monitorování pro nasazení najdete v průvodci pro [účely protokolování a vytváření sestav](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Další kroky
 

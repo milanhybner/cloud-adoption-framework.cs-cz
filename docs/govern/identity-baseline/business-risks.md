@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222187"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160114"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivace standardních hodnot identity a obchodní rizika
 
@@ -24,7 +24,7 @@ Tento článek popisuje důvody, proč zákazníci obvykle přijímají pravidla
 
 ## <a name="identity-baseline-relevancy"></a>Relevanci úrovně identity
 
-Tradiční místní adresáře jsou navržené tak, aby podnikům umožnily přísně řídit oprávnění a zásady pro uživatele, skupiny a role v rámci svých interních sítí a datových center. To je obvykle určeno k podpoře implementace v jednom tenantovi a služeb, které platí pouze v místním prostředí.
+Tradiční místní adresáře jsou navržené tak, aby podnikům umožnily přísně řídit oprávnění a zásady pro uživatele, skupiny a role v rámci svých interních sítí a datových center. Tyto adresáře obvykle podporují implementace s jedním klientem a služby, které platí jenom v místním prostředí.
 
 Cloud identity Services rozšiřují ověřování a možnosti řízení přístupu organizace na Internet. Podporují víceklientské prostředí a dají se použít ke správě uživatelů a zásad přístupu napříč cloudovým aplikacemi a nasazeními. Veřejné cloudové platformy mají služby cloudových nativních identit, které podporují úlohy správy a nasazení a umožňují [různé úrovně integrace](../../decision-guides/identity/index.md) s vašimi stávajícími místními řešeními identity. Všechny tyto funkce můžou mít za následek složitější zásady identity cloudu, než vaše tradiční místní řešení vyžadují.
 

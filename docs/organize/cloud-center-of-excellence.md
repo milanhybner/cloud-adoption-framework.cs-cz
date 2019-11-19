@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564303"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160485"
 ---
 # <a name="cloud-center-of-excellence"></a>Vedoucí centrum cloudu
 
@@ -22,7 +22,7 @@ Provozní a technické flexibility představují základní cíle většiny IT o
 
 ## <a name="function-structure"></a>Struktura funkce
 
-CCoE vyžaduje spolupráci mezi všemi následujícími možnostmi:
+Model CCoE vyžaduje spolupráci mezi všemi následujícími možnostmi:
 
 - Přijetí do cloudu (konkrétně architekti řešení)
 - Strategie cloudu (konkrétně správci programu a projektů)
@@ -132,7 +132,7 @@ Kromě toho doporučujeme, aby zúčastněné obchodní strany informovaly o pr�
 
 ## <a name="next-steps"></a>Další kroky
 
-Cloudové centrum excelence vyžaduje [Možnosti cloudové platformy](./cloud-platform.md) i [Možnosti cloudové automatizace](./cloud-automation.md). Dalším krokem je zarovnat [Možnosti cloudové platformy](./cloud-platform.md).
+Model CCoE vyžaduje [Možnosti cloudové platformy](./cloud-platform.md) i [Možnosti automatizace cloudu](./cloud-automation.md). Dalším krokem je zarovnat [Možnosti cloudové platformy](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Zarovnává možnosti cloudové platformy](./cloud-platform.md)

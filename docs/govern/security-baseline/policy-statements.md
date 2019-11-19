@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221657"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160528"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Ukázkové příkazy zásad standardních hodnot zabezpečení
 
@@ -56,9 +56,9 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** K žádné podsíti obsahující chráněná data se dá přímo získat přímý pøístup přes veřejné Internet nebo přes datová centra. Přístup k těmto podsítím musí být směrován prostřednictvím zprostředkujících podsítí. Veškerý přístup k těmto podsítím se musí nacházet prostřednictvím řešení brány firewall schopnýho provádět funkce kontroly a blokování paketů.
 
-**Potenciální možnost návrhu:** V Azure Zabezpečte veřejné koncové body nasazením [DMZ mezi veřejným internetem a vaší cloudovou sítí](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Zvažte nasazení, konfiguraci a automatizaci [Azure firewall](https://docs.microsoft.com/azure/firewall).
+**Potenciální možnost návrhu:** V Azure Zabezpečte veřejné koncové body nasazením [DMZ mezi veřejným internetem a vaší cloudovou sítí](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Zvažte nasazení, konfiguraci a automatizaci [Azure firewall](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>DDoS Protection
+## <a name="ddos-protection"></a>Ochrana před útoky DDoS
 
 **Technické riziko:** K distribuovaným útokům DOS (Denial of Service) může dojít v případě výpadku.
 

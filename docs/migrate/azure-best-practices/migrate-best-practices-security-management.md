@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656711"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160051"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Osvědčené postupy pro zabezpečení a správu úloh migrovaných do Azure
 
@@ -38,10 +38,10 @@ Nejdůležitější úkol po migraci spočívá v zabezpečení migrovaných úl
 
 Microsoft usilovně pracuje na tom, aby měli správci tenantů Azure informace potřebné k povolení funkcí zabezpečení, které chrání úlohy před útoky. Azure Security Center poskytuje jednotnou správu zabezpečení. Security Center umožňuje uplatňovat zásady zabezpečení napříč úlohami, omezit vystavení vůči hrozbám, detekovat útoky a reagovat na ně. Security Center analyzuje prostředky a konfigurace napříč tenanty Azure a poskytuje doporučení v oblasti zabezpečení, například tato:
 
-- **Centralizovaná správa zásad** – Zajistěte dodržování předpisů společnosti nebo soulad se zákonnými požadavky na zabezpečení díky centrální správě zásad zabezpečení napříč všemi hybridními cloudovými úlohami.
-- **Nepřetržité posuzování zabezpečení** – Monitorujte stav zabezpečení počítačů, sítí, služeb úložiště, datových služeb a aplikací za účelem zjišťování potenciálních problémů se zabezpečením.
-- **Užitečná doporučení** – Napravujte ohrožení zabezpečení dříve, než je budou moci zneužít útočníci, díky užitečným doporučením zabezpečení s určenou prioritou.
-- **Výstrahy a incidenty s určenou prioritou** – Zaměřte se nejprve na nejdůležitější hrozby díky výstrahám a incidentům zabezpečení.
+- **Centralizovaná správa zásad:** Centrálně Spravujte zásady zabezpečení napříč všemi vašimi hybridními cloudy a zajistěte dodržování předpisů společnostem nebo regulativními požadavky na zabezpečení.
+- **Průběžné posuzování zabezpečení:** Monitorujte stav zabezpečení počítačů, sítí, úložišť a datových služeb a aplikací, abyste zjistili možné problémy se zabezpečením.
+- Užitečná **doporučení:** Napravit ohrožení zabezpečení před tím, než je budou moci zneužít útočníci, pomocí doporučení zabezpečení s určenou prioritou a s možností zásahu.
+- **Výstrahy a incidenty s určenou prioritou:** Nejprve se zaměřte na nejdůležitější hrozby s využitím výstrah a incidentů zabezpečení s určením priorit.
 
 Vedle hodnocení a doporučení poskytuje Azure Security Center i další funkce zabezpečení, které se dají povolit pro konkrétní prostředky.
 
@@ -135,8 +135,7 @@ Azure poskytuje hned několik řešení:
   - Dokáže za jednou bránou aplikací ochránit víc webových aplikací současně.
   - Brána firewall webových aplikací se dá monitorovat pomocí služby Azure Monitor a je integrovaná do Azure Security Center.
 
-![Zabezpečení webových aplikací](./media/migrate-best-practices-security-management/web-apps.png)
-
+![zabezpečené webové aplikace](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **Další informace:**
@@ -174,9 +173,8 @@ Azure Active Directory (Azure AD) poskytuje protokoly aktivit, které se zobrazu
 - Protokoly aktivit můžete směrovat do různých koncových bodů za účelem dlouhodobého uchovávání nebo získávání přehledu o datech.
 - Zvykněte si kontrolovat protokoly pravidelně nebo začněte používat nástroje pro správu akcí a informací o zabezpečení (SIEM), které budou automaticky kontrolovat abnormální hodnoty. Pokud nepoužíváte verzi Premium 1 nebo 2, budete muset sami nebo prostřednictvím systému SIEM provádět řadu analýz. K těmto analýzám patří vyhledávání rizikových přihlášení a událostí a dalších vzorců ukazujících na útok ze strany uživatelů.
 
-![Uživatelé a skupiny](./media/migrate-best-practices-security-management/azure-ad.png)
-
-*Uživatelé a skupiny Azure AD*
+![uživatelů a skupin](./media/migrate-best-practices-security-management/azure-ad.png)
+*uživatelů a skupin Azure AD*
 
 **Další informace:**
 
@@ -213,9 +211,8 @@ Když budou mít vaše skupiny prostředků smysluplné názvy, které správci 
 - Doporučujeme dodržovat zásady vytváření názvů Azure.
 - Pokud synchronizujete místní službu Active Directory do Azure AD pomocí nástroje Azure AD Connect, zamyslete se, jestli by nebylo vhodné přizpůsobit názvy místních skupin zabezpečení názvům prostředků v Azure.
 
-![Pojmenování](./media/migrate-best-practices-security-management/naming.png)
-
-*Pojmenování skupin prostředků*
+![pojmenovávání názvů](./media/migrate-best-practices-security-management/naming.png)
+*skupiny prostředků*
 
 **Další informace:**
 
@@ -225,9 +222,8 @@ Když budou mít vaše skupiny prostředků smysluplné názvy, které správci 
 
 To poslední, co potřebujete, je nemoct najít některou skupinu prostředků, protože ji někdo omylem odstranil. Doporučujeme vám implementovat zámky odstranění, aby se takové nehody nestávaly.
 
-![Zámky odstranění](./media/migrate-best-practices-security-management/locks.png)
-
-*Zámky odstranění*
+![odstranit zámky](./media/migrate-best-practices-security-management/locks.png)
+*Odstranit zámky*
 
 **Další informace:**
 
@@ -359,7 +355,7 @@ Azure Backup můžete použít k zálohování virtuálních počítačů někol
 - **Přímé zálohování v trezoru služby Recovery Services.** Virtuální počítače IaaS můžete zálohovat nasazením trezoru Azure Backup Recovery Services. Ten poskytuje jedno umístění pro sledování a správu záloh a také podrobné možnosti zálohování a obnovení. Zálohování probíhá na úrovni souborů/složek až třikrát denně. Nezahrnuje podporu aplikací a nepodporuje Linux. Na každý virtuální počítač, který chcete zálohovat pomocí této metody, nainstalujte agenta MARS (Microsoft Azure Recovery Services).
 - **Ochrana virtuálního počítače pomocí Azure Backup Serveru.** Azure Backup Server je ve službě Azure Backup k dispozici zdarma. Virtuální počítač se zálohuje do místního úložiště Azure Backup Serveru. Azure Backup Server potom zálohujete do Azure ve formě trezoru. Zálohování zahrnuje podporu aplikací a nabízí plnou kontrolu nad četností zálohování a dobou uchovávání záloh. Můžete zálohovat na úrovni aplikace, například zálohovat SQL Server nebo SharePoint.
 
-Z důvodu zabezpečení Azure Backup průběžně šifruje data pomocí AES 256 a posílá je do Azure přes protokol HTTPS. Zálohovaná neaktivní uložená data v Azure se šifrují pomocí [šifrování služby Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), včetně dat pro přenos a uložení.
+Z důvodu zabezpečení Azure Backup průběžně šifruje data pomocí AES 256 a posílá je do Azure přes protokol HTTPS. Zálohovaná neaktivní uložená data v Azure se šifrují pomocí [šifrování služby Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json), včetně dat pro přenos a uložení.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
@@ -401,7 +397,6 @@ Azure Site Recovery je primární služba Azure, která dbá na to, aby se mohly
 Site Recovery replikuje virtuální počítače z primární do sekundární oblasti Azure. Pokud dojde k výpadku, dojde k převzetí služeb virtuálních počítačů z primární oblasti a je možné k nim získat přístup v sekundární oblasti. Když se provoz vrátí do normálu, můžete služby virtuálních počítačů navrátit do primární oblasti.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **Další informace:**
@@ -419,9 +414,8 @@ Spravované disky Azure zjednodušují správu disků virtuálních počítačů
 - Existující disky můžete převést na spravované.
 - Měli byste vytvořit virtuální počítače ve skupinách dostupnosti, které zajišťují vysokou odolnost a dostupnost. Pokud dojde k plánovanému nebo neplánovanému výpadku, skupiny dostupnosti zajistí, aby byl dál dostupný aspoň jeden virtuální počítač ze skupiny.
 
-![Spravované disky](./media/migrate-best-practices-security-management/managed-disks.png)
-
-*Spravované disky*
+![spravované disky](./media/migrate-best-practices-security-management/managed-disks.png)
+*spravované disky*
 
 **Další informace:**
 

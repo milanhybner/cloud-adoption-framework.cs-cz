@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753474"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159907"
 ---
 # <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
@@ -95,7 +95,7 @@ Aby se snížila složitost, měli byste postupovat podle tradičního přístup
   - Pokud úloha není strategická, ale je kompatibilní s moderními cloudovými platformami pro hostování aplikací, může být vhodné provést v aplikaci menší refaktoring, aby se nasadila jako moderní aplikace. To může přispět k celkovým úsporám díky snížení celkových licenčních požadavků na IaaS a OS migrace do cloudu.
   - Pokud je úloha aplikací třetí strany a její data se neplánují používat v rámci inovace podřízeného systému, může být nejlepší ponechat ji v backlogu jako možnost změny hostitele.
 
-Tyto otázky by neměly být rozsahem kvalitativní analýzy pro jednotlivé úlohy, ale mají sloužit k tomu, aby řídily konverzaci, která pomáhá řešit složitost nevyváženého portfolia.
+Tyto otázky by neměly být v rozsahu kvalitativní analýzy dokončené pro každou úlohu, ale pomáhají při řešení složitosti nevyváženého portfolia.
 
 ## <a name="migrate-process-changes"></a>Změny procesu migrace
 

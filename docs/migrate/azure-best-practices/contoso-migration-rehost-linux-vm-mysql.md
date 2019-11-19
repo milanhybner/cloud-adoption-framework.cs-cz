@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058635"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160323"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL
 
@@ -250,7 +250,7 @@ Správci společnosti Contoso přitom postupují takto:
 10. V průvodci vyberou síťovou kartu pro příjem dat přenášených při replikaci. Po dokončení konfigurace není možné toto nastavení změnit.
 11. Vyberou předplatné, skupinu prostředků a trezor, ve kterém se má konfigurační server zaregistrovat.
 
-    ![Trezor](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
+    ![Výběr trezoru služby Recovery Services](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
 
 12. Potom stáhnou a nainstalují MySQL Server a VMware PowerCLI.
 13. Po ověření zadají plně kvalifikovaný název domény nebo IP adresu serveru vCenter nebo hostitele vSphere. Ponechají výchozí port a zadají popisný název serveru vCenter.

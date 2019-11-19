@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751842"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160377"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury migrace
 
@@ -299,7 +299,7 @@ Azure Backup umožňuje zálohovat a obnovovat disky virtuálních počítačů 
 - Zálohy jsou konzistentní vzhledem k aplikacím a zajišťují transakční konzistenci zálohovaných dat a spuštění aplikací po obnovení.
 - Pro případ selhání místního hardwaru podporuje služba Azure Backup místně redundantní úložiště (LRS) pro replikaci více kopií zálohovaných dat v datacentru.
 - V případě výpadku na úrovni oblasti služba Azure Backup podporuje také geograficky redundantní úložiště (GRS) a replikuje data záloh do sekundární spárované oblasti.
-- Azure Backup šifruje přenášená data pomocí AES 256. Zálohovaná neaktivní uložená data jsou zašifrovaná pomocí [šifrování služby Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- Azure Backup šifruje přenášená data pomocí AES 256. Zálohovaná neaktivní uložená data jsou zašifrovaná pomocí [šifrování služby Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 Společnost Contoso bude u všech produkčních virtuálních počítačů používat službu Azure Backup s geograficky redundantním úložištěm, která zajistí zálohování dat úloh a možnost jejich rychlé obnovy v případě výpadku nebo jiné události. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 

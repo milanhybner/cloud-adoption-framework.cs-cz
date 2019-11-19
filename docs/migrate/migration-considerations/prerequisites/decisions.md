@@ -1,5 +1,5 @@
 ---
-title: Rozhodnutí ovlivňující migraci
+title: Rozhodnutí, která ovlivňují migraci
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Důležitá rozhodnutí týkající se procesu migrace.
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564583"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159863"
 ---
-# <a name="decisions-that-affect-migration"></a>Rozhodnutí ovlivňující migraci
+# <a name="decisions-that-affect-migration"></a>Rozhodnutí, která ovlivňují migraci
 
 V průběhu migrace ovlivňuje rozhodovací a realizační činnosti několik faktorů. Tento článek vysvětluje ústřední motiv těchto rozhodnutí a zkoumá několik otázek, které přetrvávají v diskusi o principech migrace v této části dokumentace Architektura přechodu na cloud.
 
@@ -80,8 +80,8 @@ Migrace jsou často způsobeny závažnou obchodní událostí, která je citliv
 Než budete pokračovat, zdokumentujte následující předpoklady a nasdílejte je s týmem cloudové strategie a týmem přechodu na cloud:
 
 - Obchodní výsledky
-- Role. Bude zdokumentováno a upřesněno pro procesy migrace *Posouzení*, *Migrace*, *Optimalizace* a *Zabezpečení a správa*.
-- Definice dokončení. Bude zdokumentováno a upřesněno samostatně pro procesy migrace *Posouzení*, *Migrace*, *Optimalizace* a *Zabezpečení a správa*.
+- Role, dokumentované a vylepšené pro *vyhodnocení*, *migraci*, *optimalizaci*a *zabezpečení a správu* procesů migrace.
+- Definice hotových, dokumentovaných a rafinovaných samostatně pro účely *hodnocení*, *migrace*, *optimalizace*a *zabezpečení a správy* procesů migrace.
 - Typ úsilí
 - Rozsah úsilí
 - Načasování

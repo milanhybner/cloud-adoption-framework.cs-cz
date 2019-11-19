@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752716"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160260"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu
 
 Tento článek zahrnuje naši doporučenou strategii monitorování pro všechny modely nasazení v cloudu, a to na základě následujících kritérií:
 
-- Je potřeba zachovat svůj závazek na Operations Manager nebo jinou platformu pro monitorování podniku, protože je integrovaná s vašimi procesy IT, znalostmi a odbornými znalostmi a některé funkce nejsou ještě dostupné v Azure Monitor.
-- Potřebujete monitorovat úlohy místně i ve veřejném cloudu nebo jenom v cloudu.
+- Musíte zachovat svůj závazek na Operations Manager nebo jinou platformu pro monitorování podniku, protože je integrována s vašimi procesy IT, znalostmi a odbornými znalostmi a některé funkce nejsou ještě dostupné v Azure Monitor.
+- Musíte monitorovat úlohy místně i ve veřejném cloudu nebo jenom v cloudu.
 - Vaše strategie migrace do cloudu zahrnuje modernizaci IT operace a přechod na naše služby a řešení Cloud monitoring.
-- Je možné, že máte důležité systémy, které jsou gapped nebo fyzicky izolované, hostované v privátním cloudu nebo na fyzickém hardwaru. A systémy musí být monitorovány.
+- Je možné, že máte důležité systémy, které jsou gapped nebo fyzicky izolované nebo hostované v privátním cloudu nebo na fyzickém hardwaru. Tyto systémy je třeba monitorovat.
 
 Naše strategie zahrnuje podporu monitorování infrastruktury (výpočetní služby, úložiště a zatížení serveru), aplikace (koncového uživatele, výjimky a klienta) a síťových prostředků. Nabízí kompletní perspektivu monitorování orientované na služby.
 
@@ -104,7 +104,7 @@ Abyste mohli shromažďovat metriky a protokoly z prostředků infrastruktury a 
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Monitorování pomocí System Center Operations Manager
 
-I když byl System Center Operations Manager původně navržený jako místní řešení pro monitorování napříč aplikacemi, úlohami a infrastrukturou, které běží ve vašem IT prostředí, vyvinula se tak, aby zahrnovala možnosti cloudového monitorování. Integruje se s Azure, Office 365 a Amazon Web Services (AWS). Dá se monitorovat napříč různými prostředími pomocí sad Management Pack, které jsou navržené a aktualizované pro jejich podporu.  
+I když System Center Operations Manager původně navržený jako místní řešení pro monitorování napříč aplikacemi, úlohami a součástmi infrastruktury, které běží ve vašem IT prostředí, vyvinula se tak, aby zahrnovala monitorování cloudu. vestavěn. Integruje se s Azure, Office 365 a Amazon Web Services (AWS). Dá se monitorovat napříč různými prostředími pomocí sad Management Pack, které jsou navržené a aktualizované pro jejich podporu.  
 
 Pro zákazníky, kteří provedli významné investice do Operations Manager k zajištění komplexního monitorování, které je pevně integrovaná s jejich správa IT služeb procesy a nástroji nebo pro zákazníky, kteří jsou v Azure noví, je lepší položit následující postup: otázky
 
@@ -181,7 +181,7 @@ Holistický sledování Azure Stack můžete dosáhnout pomocí System Center Op
 
 Můžete také dosáhnout holistický monitoring s kombinací [možností monitorování infrastruktury](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) , které jsou součástí Azure Stack. Tyto funkce vám pomůžou zobrazit stav a výstrahy Azure Stack oblasti a [služby Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) v Azure Stack, které pro většinu služeb poskytují metriky a protokoly infrastruktury základní úrovně.
 
-Pokud jste už investovali do Operations Manager, můžete k monitorování dostupnosti a stavu nasazení Azure Stack použít Management Pack Azure Stack. To zahrnuje oblasti, poskytovatele prostředků, aktualizace, běhy aktualizací, jednotky škálování, uzly jednotek, role infrastruktury a jejich instance (logické entity skládající se z hardwarových prostředků). K komunikaci s Azure Stack používá rozhraní REST API poskytovatele stavu a aktualizace. Pokud chcete monitorovat fyzické servery a úložná zařízení, použijte dodavatele OEM Management Pack (například poskytované Lenovo, Hewlett Packard nebo Dell). Operations Manager může nativně monitorovat síťové přepínače a shromažďovat základní statistiky pomocí protokolu SNMP. Monitorování zatížení klientů je možné u Management Pack Azure pomocí dvou základních kroků. Nakonfigurujte předplatné, které chcete monitorovat, a přidejte monitory pro toto předplatné.
+Pokud jste už investovali do Operations Manager, použijte Management Pack Azure Stack k monitorování dostupnosti a stavu nasazení Azure Stack, včetně oblastí, poskytovatelů prostředků, aktualizací, běhů aktualizací, jednotek škálování, uzlů jednotek, infrastruktury. role a jejich instance (logické entity skládající se z hardwarových prostředků). Tato Management Pack ke komunikaci s Azure Stack používá rozhraní REST API poskytovatele prostředků a aktualizace. Pokud chcete monitorovat fyzické servery a úložná zařízení, použijte dodavatele OEM Management Pack (například poskytované Lenovo, Hewlett Packard nebo Dell). Operations Manager může nativně monitorovat síťové přepínače a shromažďovat základní statistiky pomocí protokolu SNMP. Monitorování zatížení klientů je možné u Management Pack Azure pomocí dvou základních kroků. Nakonfigurujte předplatné, které chcete monitorovat, a přidejte monitory pro toto předplatné.
 
 ## <a name="next-steps"></a>Další kroky
 
