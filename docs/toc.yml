@@ -1239,8 +1239,6 @@
       href: reference/cloud-operating-model.md
     - name: Vygenerované podnikové uživatelské prostředí v Azure
       href: reference/azure-scaffold.md
-    - name: Implementace vygenerovaného podnikového uživatelského prostředí v Azure
-      href: reference/azure-scaffold-examples.md
     - name: Virtuální datové centrum (VDC)
       href: reference/vdc.md
     - name: Jak funguje Azure?
