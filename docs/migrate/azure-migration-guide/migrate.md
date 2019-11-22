@@ -5,17 +5,17 @@ description: Migrace prostředků
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753558"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251823"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -265,7 +265,7 @@ Nejedná se o jediné dostupné nástroje. V komunitě projektových manažerů 
 
 Přechod na cloudové technologie představuje pro organizaci skvělou příležitost nachystat se na DevOps a CI/CD. I v případě, že vaše organizace spravuje jenom infrastrukturu, můžete začít spravovat infrastrukturu jako kód a díky použití oborových vzorů a postupů pro DevOps zvyšovat svou agilitu prostřednictvím kanálů CI/CD. To vám umožní rychlejší adaptaci na změny, růst, vydání produktů i obnovení.
 
-[Azure DevOps](https://dev.azure.com) poskytuje všechny požadované funkce a integraci s místním prostředím, Azure i jinými cloudy. Další informace najdete [tady](https://azure.microsoft.com/services/devops). Další školení najdete v článku o [rychlém zprovoznění CI a CD s Azure DevOps](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Azure DevOps poskytuje všechny požadované funkce a integraci s Azure, místním prostředími a dokonce i jinými cloudy. Další informace najdete v tématu věnovaném [Azure DevOps](https://azure.microsoft.com/services/devops). Školení s asistencí najdete v [rychlém zprovoznění CI a CD s Azure DevOps](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 # <a name="cost-managementtabmanagecost"></a>[Správa nákladů](#tab/ManageCost)
 
