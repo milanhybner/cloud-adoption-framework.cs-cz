@@ -1,5 +1,5 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: Podpora mluveného komentáře'
+title: 'Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu.
 author: BrianBlanchard
@@ -16,7 +16,7 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/04/2019
 ms.locfileid: "71967675"
 ---
-# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka zásad správného řízení pro komplexní podniky: Podpora mluveného komentáře
+# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře
 
 Následující mluvený komentář vytváří případ použití pro zásady [správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu](./index.md). Před jednáním s doporučeními v průvodci je důležité pochopit předpoklady a příčiny, které se projeví v tomto mluveném komentáři. Pak můžete strategii zásad správného řízení lépe sjednotit na cestu k přijetí cloudu vaší organizace.
 
@@ -58,7 +58,7 @@ Následující změny se odhadují v následujících několika letech:
 - CIO chce použít cloudovou migraci jako vynucenou funkci ke zvýšení konzistence a stability napříč obchodními jednotkami a geografickými oblastmi. Nicméně budoucí stav musí respektovat všechny požadavky na externí dodržování předpisů, které by vyžadovaly odchylku od standardních přístupů konkrétními IT týmy.
 - Pokud brzy experimenty ve vývoji aplikací a v BI ukazují přední indikátory úspěšnosti, je třeba, aby v příštích 24 měsících vyvolaly řešení malého množství produkčního prostředí do cloudu.
 - CIO a CFO přiřadili architekta a viceprezidenta infrastruktury, aby vytvořila analýzu nákladů a studii proveditelnosti. Tato snaha určí, jestli společnost může a má přesunout 5 000 prostředků do cloudu během příštích 36 měsíců. Úspěšná migrace umožní, aby CIO eliminovat dvě datová centra a snížila náklady prostřednictvím 100 milionů USD během pětiletého plánu. Pokud se tři až čtyři datacentra můžou setkat s podobnými výsledky, rozpočet se vrátí na černou, takže rozpočet CIO zajistí podporu inovativních iniciativ.
-    náklady na 0On a cenu za Azure a náklady na Azure, které demonstrují vrácení $100 milionů USD za následující pět let @ no__t-1 @no__t
+    ![místní náklady a náklady na Azure, které demonstrují vrácení $100 milionů USD za další pět let](../../../_images/govern/calculator-enterprise.png)
 - Kromě těchto úspor z ceny společnost plánuje změnu správy některých investic do IT tím, že přemístí potvrzené kapitálové výdaje jako provozní náklady v rámci IT. Tato změna zajistí větší náklady, kterou může využít k urychlení dalších plánovaných úsilí.
 
 ## <a name="next-steps"></a>Další kroky

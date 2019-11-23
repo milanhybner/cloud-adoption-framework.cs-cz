@@ -60,7 +60,7 @@ Následující tabulka obsahuje požadavky na několik běžných scénářů po
 | Potřebuji vysokou propustnost a stálý přístup k datům s nízkou latenci pro podporu rychlých a škálovatelných aplikací. | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
 | Potřebuji plně spravovanou škálovatelnou relační databázi MariaDB s vysokou dostupností a integrovaným zabezpečením bez dalších poplatků. | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
 
-## <a name="regional-availability"></a>Dostupnost podle oblastí
+## <a name="regional-availability"></a>Regionální dostupnost
 
 Azure vám umožňuje dodávat služby v měřítku, jaké potřebujete, abyste se mohli spojit se svými zákazníky a partnery,  _ať jsou kdekoli_. Klíčovým faktorem při plánování cloudového nasazení je určení, která oblast Azure bude hostovat prostředky vašich úloh.
 

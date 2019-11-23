@@ -61,7 +61,7 @@ Následující tabulka obsahuje několik běžných scénářů a doporučené v
 | Potřebuji plánovat úlohy a spravovat výpočty v cloudovém měřítku s možností škálování na desítky, stovky nebo tisíce virtuálních počítačů. | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | Potřebuji vytvářet vysoce dostupné škálovatelné cloudové aplikace a rozhraní API, které mi pomohou soustředit se na aplikace, a ne na hardware. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
-## <a name="regional-availability"></a>Dostupnost podle oblastí
+## <a name="regional-availability"></a>Regionální dostupnost
 
 Azure vám umožní dodávat služby v měřítku, jaké potřebujete, abyste mohli oslovit zákazníky a partnery,  _ať jsou kdekoli_. Klíčovým faktorem při plánování cloudového nasazení je určení, která oblast Azure bude hostovat prostředky vašich úloh.
 
