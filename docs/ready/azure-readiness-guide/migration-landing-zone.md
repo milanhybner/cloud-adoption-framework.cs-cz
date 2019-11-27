@@ -18,7 +18,7 @@ ms.locfileid: "74251431"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 
-Termín *cílová zóna migrace* se používá k popisu prostředí, které je zřízené a připravené k hostování úloh migrovaných z místního prostředí do Azure. A migration landing zone is the final deliverable of the Azure setup guide. Tento článek spojuje všechna témata týkající se připravenosti v tomto průvodci a používá rozhodnutí učiněná při nasazení první cílové zóny migrace.
+Termín *cílová zóna migrace* se používá k popisu prostředí, které je zřízené a připravené k hostování úloh migrovaných z místního prostředí do Azure. Zóna cílové migrace je finální doručení příručky pro instalaci Azure. Tento článek spojuje všechna témata týkající se připravenosti v tomto průvodci a používá rozhodnutí učiněná při nasazení první cílové zóny migrace.
 
 Následující oddíly popisují cílovou zónu, která se běžně používá k vytvoření prostředí vhodného pro použití během migrace. Prostředí nebo cílová zóna popsaná v tomto článku je také zachycená v podrobném plánu Azure. Podrobný plán cílové zóny migrace architektury přechodu na cloud můžete použít k nasazení definovaného prostředí jediným kliknutím.
 
@@ -44,10 +44,10 @@ Než použijete podrobný plán cílové zóny migrace architektury přechodu na
 
 Při definování této počáteční cílové zóny se použily následující předpoklady nebo omezení. Pokud tyto předpoklady odpovídají vašim omezením, můžete podrobný plán použít k vytvoření první cílové zóny. Plán lze také rozšířit a vytvořit tak podrobný plán cílové zóny, který vyhovuje vašim jedinečným omezením.
 
-- **Subscription limits:** This adoption effort isn't expected to exceed [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dva běžné indikátory jsou překročení 25 000 virtuálních počítačů nebo 10 000 vCPU.
-- **Compliance:** No third-party compliance requirements are needed in this landing zone.
-- **Architectural complexity:** Architectural complexity doesn't require additional production subscriptions.
-- **Shared services:** There are no existing shared services in Azure that require this subscription to be treated like a spoke in a hub and spoke architecture.
+- **Omezení předplatného:** Toto úsilí o přijetí neočekává překročení [limitů předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dva běžné indikátory jsou překročení 25 000 virtuálních počítačů nebo 10 000 vCPU.
+- **Dodržování předpisů:** V této cílové zóně nejsou potřeba žádné požadavky na dodržování předpisů od jiných výrobců.
+- **Složitost architektury:** Složitost architektury nevyžaduje další produkční odběry.
+- **Sdílené služby:** V Azure nejsou žádné sdílené služby, které vyžadují, aby se toto předplatné zpracovalo jako paprskový uzel v architektuře hvězdicové architektury.
 
 Pokud se zdá, že tyto předpoklady odpovídají vašemu aktuálnímu prostředí, může být tento plán dobrým základem pro zahájení vytváření cílové zóny.
 
@@ -61,21 +61,21 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 |Protokolování a monitorování|Bude zřízený pracovní prostor Operational Insights a účet úložiště pro diagnostiku.|         |
 |Síť|Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.|[Rozhodnutí o síti](../considerations/networking-options.md)|
 |Identita|Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory.|[Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
-|Zásady|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
+|Zásada|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
 |Návrh předplatného|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)|
 |Skupiny pro správu|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
 |Skupiny prostředků|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|Nevztahuje se|[Choose the correct SQL Server option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) and [Azure Data Store guidance](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Úložiště|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
-|Standardy pojmenování a označování|Nevztahuje se|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
-|Správa nákladů|Nevztahuje se|[Sledování nákladů](../azure-best-practices/track-costs.md)|
-|Služby Compute|Nevztahuje se|[Možnosti služby Compute](../considerations/compute-options.md)|
+|Data|Není k dispozici|[Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|Není k dispozici|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
+|Standardy pojmenování a označování|Není k dispozici|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
+|Správa nákladů|Není k dispozici|[Sledování nákladů](../azure-best-practices/track-costs.md)|
+|Compute|Není k dispozici|[Možnosti služby Compute](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Přizpůsobení nebo nasazení cílové zóny z tohoto podrobného plánu
 
-Learn more and download a reference sample of the Cloud Adoption Framework migrate landing zone blueprint for deployment or customization from [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples).
+Přečtěte si další informace a Stáhněte si referenční ukázku v tématu Migrace cílové zóny v rámcové dokumentaci k nasazení nebo přizpůsobení ze [vzorků Azure modrotisky](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Ukázky podrobných plánů jsou k dispozici také na portálu. For details of how to create a blueprint, see [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Ukázky podrobných plánů jsou k dispozici také na portálu. Podrobnosti o tom, jak vytvořit podrobný plán, najdete v tématu [plány Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Pokyny k přizpůsobení, které by se měly provést v tomto podrobném plánu nebo v výsledné cílové zóně, najdete v článcích o [aspektech cílových zón](../considerations/index.md).
 
