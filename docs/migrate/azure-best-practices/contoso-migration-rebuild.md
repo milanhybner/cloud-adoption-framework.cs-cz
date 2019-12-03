@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566601"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681803"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Opětovné sestavení místní aplikace v Azure
 
@@ -143,34 +143,45 @@ Správci společnosti Contoso spuštěním skriptu nasazení vytvoří spravovan
 
 Správci společnosti Contoso zřídí tyto služby takto:
 
-1. Otevřete složku pomocí Visual Studio Code a přejděte do adresáře **/Deploy/k8s** , který obsahuje skript **gen-AKS-env. ps1**.
+1. Otevřou složku pomocí Visual Studio Code a přesune se do adresáře **/Deploy/k8s** , který obsahuje skript **gen-AKS-env. ps1**.
+
 2. Spuštěním tohoto skriptu vytvoří spravovaný cluster Kubernetes pomocí služeb AKS a ACR.
-    ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
 3. V otevřeném souboru aktualizují parametr $location na **eastus2** a soubor uloží.
-    ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
 4. V editoru Visual Studio Code vyberou **Zobrazit** > **Integrovaný terminál** a otevřou integrovaný terminál.
-    ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
 5. V integrovaném terminálu PowerShellu se přihlásí do Azure pomocí příkazu Connect-AzureRmAccount. [Přečtěte si další informace](https://docs.microsoft.com/powershell/azure/get-started-azureps) o tom, jak začít používat PowerShell.
-    ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Ověřují Azure CLI spuštěním příkazu `az login` a podle pokynů k ověření pomocí webového prohlížeče. [Přečtěte si další informace](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) o přihlašování pomocí Azure CLI.
-    ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+
+6. Ověří Azure CLI tak, že spustí příkaz **az login** a postupem podle pokynů provedou ověření pomocí webového prohlížeče. [Přečtěte si další informace](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) o přihlašování pomocí Azure CLI.
+
+   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
 7. Spustí následující příkaz a předají název skupiny prostředků ContosoRG, název clusteru služby AKS smarthotel-aks-eus2 a název nového registru.
 
-    ```PowerShell
-    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-    ```
+   ```PowerShell
+   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
+   ```
 
-    ![AKS](./media/contoso-migration-rebuild/aks6.png)
+   ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure vytvoří další skupinu prostředků, která obsahuje prostředky pro cluster služby AKS.
 
-    ![AKS](./media/contoso-migration-rebuild/aks7.png)
+   ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. Po dokončení nasazování nainstalují nástroj příkazového řádku **kubectl**. V Azure CloudShell je tento nástroj už nainstalovaný.
 
-    ```console
-    az aks install-cli
-    ```
+   ```console
+   az aks install-cli
+   ```
 
 10. Spuštěním příkazu **kubectl get nodes** ověří připojení ke clusteru. Tento uzel má stejný název jako virtuální počítač v automaticky vytvořené skupině prostředků.
 
@@ -416,11 +427,11 @@ Správci společnosti Contoso zřídí na webu Azure Portal aplikaci funkcí.
 
 1. Vyberou **Function App**.
 
-    ![Vytvoření aplikace funkcí](./media/contoso-migration-rebuild/function-app1.png)
+   ![Vytvoření aplikace funkcí](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Zadají název aplikace (**smarthotelpetchecker**). Aplikaci umístí do produkční skupiny prostředků **ContosoRG**. Jako hostitelské místo nastaví **Plán Consumption** a umístí aplikaci do oblasti Východní USA 2. Vytvoří se nový účet úložiště společně s instancí Application Insights pro monitorování.
 
-    ![Nastavení aplikace funkcí](./media/contoso-migration-rebuild/function-app2.png)
+   ![Nastavení aplikace funkcí](./media/contoso-migration-rebuild/function-app2.png)
 
 3. Po nasazení aplikace přejdou na adresu aplikace a ověří, jestli se vytvořila úspěšně.
 
@@ -430,9 +441,10 @@ Správci společnosti Contoso vytvoří dva různé projekty pro front-endový w
 
 1. V Azure DevOps vytvoří projekt **SmartHotelFrontend**.
 
-    ![Front-endový projekt](./media/contoso-migration-rebuild/function-app1.png)
+   ![Front-endový projekt](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Do nového projektu naimportují úložiště Git [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-public-web.git).
+
 3. Pro aplikaci funkcí vytvoří další projekt Azure DevOps (SmartHotelPetChecker) a naimportují úložiště Git [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) do tohoto projektu.
 
 ### <a name="configure-the-web-app"></a>Konfigurace webové aplikace
@@ -572,14 +584,21 @@ Správci společnosti Contoso nasadí aplikaci následujícím způsobem.
 14. Jakmile je funkce nasazená, zobrazí se na webu Azure Portal se stavem **Running** (Spuštěno).
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function6.png)
-
+    
 15. Přejdou do aplikace a otestují, že aplikace Pet Checker na adrese [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets) funguje podle očekávání.
+
 16. Vyberou avatara pro odesílání obrázků.
+
     ![Nasazení funkce](./media/contoso-migration-rebuild/function7.png)
+    
 17. První fotku, kterou chtějí zkontrolovat, je fotka malého psa.
+
     ![Nasazení funkce](./media/contoso-migration-rebuild/function8.png)
+    
 18. Aplikace vrátí zprávu o přijetí.
+
     ![Nasazení funkce](./media/contoso-migration-rebuild/function9.png)
+    
 
 ## <a name="review-the-deployment"></a>Revize nasazení
 
@@ -607,3 +626,14 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 ## <a name="conclusion"></a>Závěr
 
 V tomto článku společnost Contoso znovu sestaví aplikaci SmartHotel360 v Azure. Front-endový virtuální počítač s místní aplikací je znovu sestaven pro webové aplikace služby Azure App Service. Back-end aplikace je sestaven pomocí mikroslužeb nasazených do kontejnerů spravovaných službou Azure Kubernetes Service (AKS). Společnost Contoso rozšíří funkce aplikace o aplikaci pro odesílání fotek domácích zvířat.
+
+## <a name="suggested-skills"></a>Navrhované dovednosti
+
+Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získat body a úrovně a dosáhnout více
+
+Tady je několik příkladů přizpůsobených studijních cest na Microsoft Learn, které jsou v Azure v souladu s aplikací contoso SmartHotel360.
+
+[Nasazení webu do Azure pomocí Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): webové aplikace v Azure umožňují publikování a správu webu snadno, aniž byste museli pracovat s podkladovým serverem, úložištěm nebo síťovými prostředky. Místo toho se můžete soustředit na funkce webu a spolehnout se, že zabezpečený přístup k vašemu webu poskytne robustní platforma Azure.
+
+[Zpracování a klasifikace imagí pomocí služeb Azure pro rozpoznávání](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)hlasu: Azure Cognitive Services nabízí předem sestavené funkce, které ve vašich aplikacích umožní funkce počítačové vize. Naučte se používat služby rozpoznávání zraku ke zjišťování tváře, značek a klasifikace obrázků a identifikaci objektů.
+
