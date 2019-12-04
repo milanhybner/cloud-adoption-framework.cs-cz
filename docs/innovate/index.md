@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752133"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681771"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudové inovace v architektuře přechodu na cloud
 
@@ -117,8 +117,21 @@ Během jednotlivých iterací vyvíjená řešení nabízejí způsob, jakým se
 
 Tento přístup vychází ze stávající metodiky štíhlé výroby. Je navržený tak, aby vám pomohl vytvořit cloudově zaměřené konverzace ohledně přijetí u zákazníků a vědecký model pro vytvoření obchodní hodnoty. Tento přístup také mapuje stávající služby Azure na spravovatelné rozhodovací procesy. Usnadňuje tak nalezení vhodných technických možností pro řešení konkrétních zákaznických potřeb nebo hypotéz.
 
+## <a name="suggested-skills"></a>Navrhované dovednosti
+
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
+
+Tady je několik příkladů studijních programů pro konkrétní role na Microsoft Learn, které jsou v souladu s částí architektury přechodu na cloud věnovanou inovacím.
+
+[Správa kontejnerů v Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/) Služba Azure Container Instances (ACI) představuje nejrychlejší a nejjednodušší způsob, jak spouštět kontejnery v Azure. V tomto studijním programu se naučíte vytvářet a spravovat kontejnery a využívat ACI k zajištění elastického škálování pro Kubernetes.
+
+[Vytváření bezserverových aplikací:](https://docs.microsoft.com/learn/paths/create-serverless-applications/) Služba Azure Functions umožňuje vytváření výpočetních systémů na vyžádání řízených událostmi, které mohou být aktivovány různými externími událostmi. Naučte se využívat funkce ke spouštění logiky na straně serveru a vytváření bezserverových architektur.
+
+Další studijní programy najdete v [katalogu platformy Learn](/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.
+
 ## <a name="next-steps"></a>Další kroky
 
 Prvním cvičením v rámci cloudových inovací je:
 > [!div class="nextstepaction"]
 > [Zajištění konsensu ohledně obchodní hodnoty inovace](./business-value.md)
+

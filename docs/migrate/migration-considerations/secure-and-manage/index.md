@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753432"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681791"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Nástroje pro monitorování a správu
 
@@ -71,3 +71,11 @@ Azure Advisor je průvodce s individuálními doporučeními pro osvědčené po
 - **Upozornění na nová doporučení:** Zajistěte si přehled o nových doporučeních, jako jsou další příležitosti k nastavení správné velikosti virtuálních počítačů a úspoře nákladů.
 
 Přečtěte si další informace o použití [Azure Advisoru ](https://docs.microsoft.com/azure/advisor/advisor-overview) při optimalizaci migrovaných prostředků.
+
+## <a name="suggested-skills"></a>Navrhované dovednosti
+
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
+
+Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který je v souladu s částí architektury přechodu na cloud věnovanou zabezpečení a správě: 
+
+[Zabezpečení cloudových dat:](https://docs.microsoft.com/learn/paths/secure-your-cloud-data/) Platforma Azure byla navržená tak, aby zajišťovala bezpečí a dodržování předpisů. Zjistěte, jak využít integrované služby k bezpečnému ukládání dat aplikací, abyste měli jistotu, že k nim budou mít přístup jenom autorizovaní klienti a služby.
