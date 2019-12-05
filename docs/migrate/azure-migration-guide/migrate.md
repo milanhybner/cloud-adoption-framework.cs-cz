@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251823"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681766"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -266,6 +266,14 @@ Nejedná se o jediné dostupné nástroje. V komunitě projektových manažerů 
 Přechod na cloudové technologie představuje pro organizaci skvělou příležitost nachystat se na DevOps a CI/CD. I v případě, že vaše organizace spravuje jenom infrastrukturu, můžete začít spravovat infrastrukturu jako kód a díky použití oborových vzorů a postupů pro DevOps zvyšovat svou agilitu prostřednictvím kanálů CI/CD. To vám umožní rychlejší adaptaci na změny, růst, vydání produktů i obnovení.
 
 Azure DevOps poskytuje všechny požadované funkce a integraci s Azure, místním prostředími a dokonce i jinými cloudy. Další informace najdete v tématu věnovaném [Azure DevOps](https://azure.microsoft.com/services/devops). Školení s asistencí najdete v [rychlém zprovoznění CI a CD s Azure DevOps](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+
+## <a name="suggested-skills"></a>Navrhované dovednosti
+
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové úkoly týkající se dovedností, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
+
+Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který doplňuje doprovodné materiály pro DevOps v architektuře přechodu na cloud. 
+
+[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení. 
 
 # <a name="cost-managementtabmanagecost"></a>[Správa nákladů](#tab/ManageCost)
 

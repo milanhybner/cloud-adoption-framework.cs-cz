@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: abfbdb31ccb9e0270f8ef93b1173726a372df53f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251457"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681702"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
@@ -52,6 +52,8 @@ Následující materiály vám pomohou držet krok s Azure:
 
 Podrobnější obsah, díky kterému budete mít přehled o Azure, najdete ve zde uvedených materiálech:
 
+- [Azure Charts](https://azurecharts.com/)
+  - Tento neoficiální prostředek vizualizuje všechny aktualizace Azure, ke kterým došlo za posledních 6 měsíců, a obsahuje další užitečné grafy a pomůcky, které vám pomůžou sledovat změny v Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Týdenní videa s inženýry, kteří budují Azure. Předvádějí ukázky, odpovídají na otázky a sdělují své poznatky.
   - Přihlaste se k odběru přes [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
