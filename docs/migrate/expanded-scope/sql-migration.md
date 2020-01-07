@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753537"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328918"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Urychlení migrace migrací instance SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Urychlení migrace migrací více databází nebo celých serverů SQL
 
 Migrace celých instancí SQL Server může urychlit úsilí migrace úloh. Následující doprovodné materiály rozšiřují rozsah [příručky migrace do Azure](../azure-migration-guide/index.md) tím, že migrují instanci SQL Server mimo úsilí s možností migrace zaměřené na úlohy. Tento přístup může naplnit migraci více úloh pomocí jedné migrace na platformě dat. Většina úsilí požadovaná v tomto rozsahu rozšíření probíhá během procesu migrace požadavků, posuzování, migrace a optimalizace.
 
@@ -27,7 +27,7 @@ Přístup doporučený v [Průvodci migrací Azure](../azure-migration-guide/ind
 
 Některé datové struktury ale můžete migrovat efektivněji prostřednictvím samostatné migrace dat na platformě. Tady je několik příkladů:
 
-- **Konec služby:** Rychlé přesunutí instance SQL Server, aby se předešlo problémům s koncovými službami, je použití této příručky mimo standardní úsilí při migraci.
+- **Konec služby:** Rychlé přesunutí instance SQL Server jako izolované iterace v rámci větší snahy migrace se může vyhnout problémům s ukončením služby. Tato příručka vám pomůže integrovat migraci SQL Server v širším procesu migrace. Pokud však migrujete nebo upgradujete SQL Server nezávisle na jakémkoli jiném úsilí při přijímání v cloudu, může SQL Server se v článcích [Přehled konce životnosti](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) nebo [SQL serverch článků v dokumentaci k migraci](/sql/sql-server/migrate/index) poskytnout jasný návod.
 - **SQL Server služby:** Struktura dat je součástí širšího řešení, které vyžaduje SQL Server běžící na virtuálním počítači. To je běžné pro řešení, která používají SQL Server služby, jako je SQL Server Reporting Services, služba SSIS (SQL Server Integration Services) nebo SQL Server Analysis Services.
 - **Vysoce hustota, databáze s nízkým využitím:** Instance SQL Server má vysokou hustotu databází. Každá z těchto databází má nedostatečné objemy transakcí a vyžaduje malým způsobem výpočetních prostředků. Měli byste zvážit další moderní řešení, ale přístup k infrastruktuře jako služby (IaaS) může mít za následek výrazné snížení provozních nákladů.
 - **Celkové náklady na vlastnictví:** V případě potřeby můžete použít [výhody hybridního využití Azure](https://azure.microsoft.com/pricing/hybrid-benefit) na ceníkovou cenu, která vytvoří nejnižší náklady na vlastnictví pro instance SQL Server. To je zvlášť běžné pro zákazníky, kteří hostují SQL Server ve scénářích s více cloudy.
@@ -46,26 +46,26 @@ Před provedením SQL Server migrace začněte s rozšířením digitální nemo
 
 Následuje příklad inventarizace serveru:
 
-|SQL Server|Účel|Version|[Závažnost](../../manage/considerations/criticality.md)|[Hlediska](../../govern/policy-compliance/data-classification.md)|Počet databází|SSIS|SSRS|SSAS|Cluster|Počet uzlů|
+|SQL Server|Účel|Verze|[Závažnost](../../manage/considerations/criticality.md)|[Hlediska](../../govern/policy-compliance/data-classification.md)|Počet databází|SSIS|SSRS|SSAS|Cluster|Počet uzlů|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |SQL-01|Základní aplikace|2016|Klíčové|Vysoce důvěrné|40|Nevztahuje se|Nevztahuje se|Nevztahuje se|Ano|3|
 |SQL-02|Základní aplikace|2016|Klíčové|Vysoce důvěrné|40|Nevztahuje se|Nevztahuje se|Nevztahuje se|Ano|3|
 |SQL-03|Základní aplikace|2016|Klíčové|Vysoce důvěrné|40|Nevztahuje se|Nevztahuje se|Nevztahuje se|Ano|3|
-|SQL – 04|BI|2012|Vysoký|CZK|6|Nevztahuje se|Přehled|Ano – multidimenzionální datová krychle|Ne|1\. místo|
+|SQL – 04|BI|2012|Vysoký|CZK|6|Nevztahuje se|Důvěrné informace|Ano – multidimenzionální datová krychle|Ne|1\. místo|
 |SQL-05|Integrace|2008 R2|Nízký|Obecné|20|Ano|Nevztahuje se|Nevztahuje se|Ne|1\. místo|
 
 ### <a name="database-inventory"></a>Inventář databáze
 
 Následuje příklad inventáře databáze pro jeden z výše uvedených serverů:
 
-|Server|Databáze|[Závažnost](../../manage/considerations/criticality.md)|[Hlediska](../../govern/policy-compliance/data-classification.md)|Výsledky Data Migration Assistant (DMA)|Řešení potíží s DMA|Cílová platforma|
+|Server|databáze|[Závažnost](../../manage/considerations/criticality.md)|[Hlediska](../../govern/policy-compliance/data-classification.md)|Výsledky Data Migration Assistant (DMA)|Řešení potíží s DMA|Cílová platforma|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Klíčové|Vysoce důvěrné|Kompatibility|Nevztahuje se|Azure SQL Database|
-|SQL-01|DB-2|Vysoký|Přehled|Je vyžadována Změna schématu.|Změny implementovány|Azure SQL Database|
-|SQL-01|DB-1|Vysoký|Obecné|Kompatibility|Nevztahuje se|Spravovaná instance Azure SQL|
-|SQL-01|DB-1|Nízký|Vysoce důvěrné|Je vyžadována Změna schématu.|Naplánované změny|Spravovaná instance Azure SQL|
-|SQL-01|DB-1|Klíčové|Obecné|Kompatibility|Nevztahuje se|Spravovaná instance Azure SQL|
-|SQL-01|DB-2|Vysoký|Přehled|Kompatibility|Nevztahuje se|Azure SQL Database|
+|SQL-01|DB-1|Klíčové|Velmi důvěrné|Kompatibilita|Nevztahuje se|Databáze SQL Azure|
+|SQL-01|DB-2|Vysoký|Důvěrné informace|Je vyžadována Změna schématu.|Změny implementovány|Databáze SQL Azure|
+|SQL-01|DB-3|Vysoký|Obecné|Kompatibilita|Nevztahuje se|Spravovaná instance Azure SQL|
+|SQL-01|DB-4|Nízký|Velmi důvěrné|Je vyžadována Změna schématu.|Naplánované změny|Spravovaná instance Azure SQL|
+|SQL-01|DB-5|Klíčové|Obecné|Kompatibilita|Nevztahuje se|Spravovaná instance Azure SQL|
+|SQL-01|DB-6|Vysoký|Důvěrné informace|Kompatibilita|Nevztahuje se|Databáze SQL Azure|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrace s plánem přijetí do cloudu
 
@@ -106,10 +106,10 @@ Volba nejlepšího návodu k migraci pomocí Azure Database Migration Service je
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server|Databáze SQL Azure|Database Migration Service|Offline|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Databáze SQL Azure|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Azure SQL Database – spravovaná instance|Database Migration Service|Offline|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Azure SQL Database – spravovaná instance|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server VP|Azure SQL Database (nebo spravovaná instance)|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Doprovodné materiály a kurzy pro různé služby pro ekvivalentní řešení PaaS
@@ -118,9 +118,9 @@ Po přesunu databází z instance SQL Server do Azure Database Migration Service
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
-|Služba SSIS (SQL Server Integration Services)|Prostředí Azure Data Factory Integration runtime|Azure Data Factory|Stav|[Kurz](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|SQL Server Analysis Services – tabulkový model|Azure Analysis Services|SQL Server Data Tools|Stav|[Kurz](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Server sestav Power BI|Power BI|Stav|[Kurz](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
+|Služba SSIS (SQL Server Integration Services)|Prostředí Azure Data Factory Integration runtime|Azure Data Factory|Offline|[Kurz](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|SQL Server Analysis Services – tabulkový model|Azure Analysis Services|SQL Server Data Tools|Offline|[Kurz](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Reporting Services|Server sestav Power BI|Power BI|Offline|[Kurz](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Doprovodné materiály a kurzy pro migraci z SQL Server do instance služby IaaS of SQL Server
 
@@ -130,7 +130,7 @@ Pomocí tohoto postupu můžete migrovat databáze nebo jiné služby na instanc
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
-|SQL Server jedné instance|SQL Server na IaaS|Řadu|Stav|[Kurz](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
+|SQL Server jedné instance|SQL Server na IaaS|Řadu|Offline|[Kurz](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
 ## <a name="optimization-process-changes"></a>Změny procesu optimalizace
 
