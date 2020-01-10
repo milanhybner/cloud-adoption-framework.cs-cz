@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f4cc7aaa9a937327a4dd2ede4bf1c3c619cc632a
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781432"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868038"
 ---
 # <a name="landing-zone-considerations"></a>Aspekty cílových zón
 
@@ -37,7 +37,7 @@ Všechny cílové zóny poskytují strukturu pro možnosti hostování. Tato str
 Každá cílová zóna je součástí širšího řešení pro uspořádání prostředků v cloudovém prostředí. Základy Azure jsou základními stavebními bloky pro uspořádání.
 
 - **[Základní koncepty Azure.](./fundamental-concepts.md)** Seznámíte se se základními koncepty a termíny používanými při uspořádání prostředků v Azure a také s tím, jak tyto koncepty vzájemně souvisejí.
-- **[Průvodce rozhodováním ohledně konzistence prostředků](../../decision-guides/resource-consistency/)** Jakmile pochopíte základy, může vám průvodce rozhodováním o uspořádání prostředků pomoct přijmout rozhodnutí, která ovlivní podobu cílové zóny.
+- **[Průvodce rozhodováním ohledně konzistence prostředků](../../decision-guides/resource-consistency/index.md)** Jakmile pochopíte základy, může vám průvodce rozhodováním o uspořádání prostředků pomoct přijmout rozhodnutí, která ovlivní podobu cílové zóny.
 
 ## <a name="governance-considerations"></a>Požadavky na zásady správného řízení
 
