@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564693"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781738"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
-Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](./approach.md) a agregovaného [inventáře](./inventory.md)může začít racionalizace v cloudu. [Racionalizace cloudu](./rationalize.md) popisuje nejběžnější možnosti racionalizace.
+Racionalizace cloudu je proces vyhodnocení prostředků k určení nejlepšího přístupu k hostování v cloudu. Po určení [přístupu](./approach.md) a agregovaného [inventáře](./inventory.md)může začít racionalizace v cloudu. Racionalizace cloudu popisuje nejběžnější možnosti racionalizace.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradiční pohled na racionalizaci
 

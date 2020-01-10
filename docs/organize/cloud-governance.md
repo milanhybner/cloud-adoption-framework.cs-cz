@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566793"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781450"
 ---
 # <a name="cloud-governance-capabilities"></a>Možnosti zásad správného řízení cloudu
 
@@ -26,6 +26,7 @@ V závislosti na požadovaných obchodních výsledcích by se měly dovednosti 
 
 - Zásady správného řízení IT
 - Podniková architektura
+- Zabezpečení
 - IT operace
 - IT infrastruktura
 - Sítě
@@ -33,6 +34,7 @@ V závislosti na požadovaných obchodních výsledcích by se měly dovednosti 
 - Virtualizace
 - Provozní kontinuita a zotavení po havárii
 - Vlastníci aplikace v rámci IT
+- Vlastníci finančních prostředků
 
 Schopnost zásad správného řízení cloudu identifikuje rizika související s aktuálními a budoucími verzemi. Tato možnost se zobrazuje v úsilí vyhodnotit rizika, porozumět potenciálním dopadům a rozhodnout o toleranci rizik. V takovém případě se plány dají rychle aktualizovat, aby odrážely měnící se potřeby [cloudové možnosti pro přijetí](./cloud-adoption.md).
 
@@ -69,7 +71,7 @@ Níže jsou zastoupeni účastníci, kteří se často účastní aktivit zásad
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Maturation možnosti zásad správného řízení cloudu
 
-Některé velké organizace mají stávající a vyhrazené týmy, které se zaměřují na řízení IT. Tyto týmy se specializují na řízení rizik v rámci portfolia IT prostřednictvím metodologií, jako je ITIL nebo ITSM. Když tyto týmy existují, můžete rychle zrychlit následující modely splatnosti. Tým pro řízení IT ale doporučuje zkontrolovat model zásad správného řízení pro Cloud a pochopit, jak se zásad správného řízení v cloudu mírně posouvá. Mezi klíčové články patří [rozšíření firemních zásad do cloudu](../govern/corporate-policy.md) a [pět oborů řízení cloudu](../govern/governance-disciplines.md).
+Některé velké organizace mají stávající a vyhrazené týmy, které se zaměřují na řízení IT. Tyto týmy se specializují na řízení rizik v rámci portfolia IT. Když tyto týmy existují, můžete rychle zrychlit následující modely splatnosti. Tým pro řízení IT ale doporučuje zkontrolovat model zásad správného řízení pro Cloud a pochopit, jak se zásad správného řízení v cloudu mírně posouvá. Mezi klíčové články patří [rozšíření firemních zásad do cloudu](../govern/corporate-policy.md) a [pět oborů řízení cloudu](../govern/governance-disciplines.md).
 
 **Bez zásad správného řízení:** Je běžné, že se organizace přesunou do cloudu bez jasných plánů pro řízení. V souvislosti s tím, že se v souvislosti se zabezpečením, náklady, škálováním a operacemi začnou začínat konverzace o potřebě modelu zásad správného řízení a lidem personálně přidružit procesy přidružené k tomuto modelu. Spuštění těchto konverzací před tím, než se stane obavy, je vždy dobrým prvním krokem k překonání antipatternu "bez zásad správného řízení". Tato konverzace může usnadnit oddíl [definování podnikových zásad](../govern/corporate-policy.md) .
 

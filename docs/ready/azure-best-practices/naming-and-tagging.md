@@ -1,5 +1,5 @@
 ---
-title: 'Připraveno: Doporučené konvence pojmenování a označování'
+title: Doporučené konvence pro tvorbu názvů a značek
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: V tomto článku najdete podrobná doporučení týkající se tvorby názvů a značek prostředků, která jsou konkrétně zaměřena na podporu snah o přijetí podnikového cloudu.
 author: BrianBlanchard
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
-ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
+ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74086802"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781551"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Připraveno: Doporučené konvence pojmenování a označování
 
@@ -66,7 +66,7 @@ Snažte se, aby byly komponenty názvu krátké a předešli jste tak překroče
 | Typ předplatného | Souhrnný popis účelu předplatného obsahujícího prostředek Často se dělí podle typu prostředí nasazení nebo konkrétních úloh. | *prod,* s*hared, client* |
 | Název aplikace nebo služby | Název aplikace, úlohy nebo služby, do které prostředek patří | *navigator*, *emissions*, *sharepoint*, *hadoop* |
 | Prostředí nasazení | Fáze životního cyklu vývoje pro úlohu, kterou prostředek podporuje | *prod, dev, qa, stage, test* |
-| Oblast | Oblast Azure, ve které je prostředek nasazen | *westus, eastus2, westeurope, usgovia* |
+| Region (Oblast) | Oblast Azure, ve které je prostředek nasazen | *westus, eastus2, westeurope, usgovia* |
 
 #### <a name="recommended-resource-type-prefixes"></a>Doporučené předpony typu prostředku
 
@@ -78,7 +78,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | ----------------------------------- | -------------------- |
 | Skupina prostředků                      | rg-                  |
 | Azure Virtual Network               | vnet-                |
-| Brána virtuální sítě             | vnet-gw-             |
+| Brána virtuální sítě             | vnetgw-              |
 | Připojení brány                  | cn-                  |
 | Podsíť                              | snet-                |
 | Skupina zabezpečení sítě              | nsg-                 |
@@ -86,39 +86,43 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Azure Virtual Machines              | vm-                  |
 | Účet úložiště virtuálního počítače                  | stvm                 |
 | Veřejná IP adresa                           | pip-                 |
-| Nástroj pro vyrovnávání zatížení Azure                 | lb-                  |
+| Azure Load Balancer                 | lb-                  |
 | NIC                                 | nic-                 |
 | Azure Key Vault                     | elektrické                  |
 | Azure Kubernetes Service            | AKS                 |
 | Azure Service Bus                   | sb-                  |
 | Fronty Azure Service Bus            | sbq-                 |
-| Aplikace služby Azure App Service              | azapp-               |
-| Aplikace Azure Functions                | azfun-               |
-| Azure Cloud Services                | azcs-                |
-| Azure SQL Database                  | sqldb-               |
-| Azure Cosmos DB (dříve Azure DocumentDB) | cosdb-               |
+| Azure Service Bus témata            | sbt-                 |
+| Plány Azure App Service             | rozhraní                |
+| Azure Web Apps                      | aplikace                 |
+| Funkce Azure                     | kláves                |
+| Azure Cloud Services                | nelze                 |
+| Server Azure SQL Database           | SQL                 |
+| Databáze SQL Azure                  | sqldb-               |
+| Azure Cosmos DB                     | Cosmos              |
 | Azure Cache for Redis               | redis-               |
 | Azure Database for MySQL            | mysql-               |
+| Azure Database for PostgreSQL       | psql                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | stor                 |
+| Azure Storage                       | St                   |
 | Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
-| Azure Cognitive Services            | cs-                  |
-| Pracovní prostor služby Azure Machine Learning    | aml-                 |
+| Azure Cognitive Services            | ozubeného kola                 |
+| Pracovní prostor služby Azure Machine Learning    | mlw-                 |
 | Azure Data Lake Storage             | dls                  |
 | Azure Data Lake Analytics           | dla                  |
 | Azure HDInsight – Spark             | hdis-                |
 | Azure HDInsight – Hadoop            | hdihd-               |
 | Azure HDInsight – R Server          | hdir-                |
 | Azure HDInsight – HBase             | hdihb-               |
-| Power BI Embedded                   | pbiemb               |
+| Power BI Embedded                   | PBI                 |
 | Azure Stream Analytics              | asa-                 |
-| Azure Data Factory                  | df-                  |
+| Azure Data Factory                  | ADF                 |
 | Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | aih-                 |
-| Azure Notification Hubs             | anh-                 |
-| Obor názvů Azure Notification Hubs   | anhns-               |
+| Azure IoT Hub                       | IoT                 |
+| Azure Notification Hubs             | ntf-                 |
+| Obor názvů Azure Notification Hubs   | ntfns-               |
 
 ### <a name="metadata-tags"></a>Značky metadat
 
@@ -164,8 +168,8 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Typ assetu               | Rozsah           | Formát                                                                | Příklady                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Azure Virtual Network          | Skupina prostředků  | vnet-\<Typ předplatného\>-\<Oblast\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Virtuální brána virtuální sítě     | Virtuální síť | vnet-gw-v-\<Typ předplatného\>-\<Oblast\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| Místní brána virtuální sítě       | Virtuální brána | vnet-gw-l-\<Typ předplatného\>-\<Oblast\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| Virtuální brána virtuální sítě     | Virtuální síť | vnetgw-v-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
+| Místní brána virtuální sítě       | Virtuální brána | Typ předplatného vnetgw-l-\<\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
 | Připojení typu Site-to-Site | Skupina prostředků  | cn-\<název místní brány\>-to-\<název virtuální brány\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Připojení k virtuální síti         | Skupina prostředků  | cn-\<předplatné1\>\<oblast1\>-to-\<předplatné2\>\<oblast2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
 | Podsíť                   | Virtuální síť | snet-\<předplatné\>-\<podoblast\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -179,16 +183,16 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Azure Virtual Machines    | Skupina prostředků | vm\<název zásady nebo název aplikace\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | Účet úložiště virtuálního počítače | Globální         | stvm\<typ výkonu\>\<název aplikace nebo produkční název\>\<oblast\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Název DNS          | Globální         | \<Záznam virtuálního počítače\>.[\<oblast\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
-| Nástroj pro vyrovnávání zatížení Azure      | Skupina prostředků | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
+| Azure Load Balancer      | Skupina prostředků | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
 | NIC                | Skupina prostředků | nic-\<\#\#\>-\<název virtuálního počítače\>-\<předplatné\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
 
 ### <a name="paas-services"></a>Služby PaaS
 
-| Typ assetu     | Rozsah  | Formát                                                              | Příklady                                                                                 |
-|----------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure App Service    | Globální | azapp-\<Název aplikace\>-\<Prostředí\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Aplikace Azure Functions   | Globální | azfun-\<Název aplikace\>-\<Prostředí\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>azfun-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Globální | azcs-\<Název aplikace\>-\<Prostředí\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>azcs-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Typ assetu           | Rozsah  | Formát                                                              | Příklady                                                                                 |
+|----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Azure Web Apps       | Globální | Název aplikace\<aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Funkce Azure      | Globální | Func-\<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Globální | \<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
@@ -196,53 +200,56 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
 | Azure Service Bus        | Globální      | sb-\<Název aplikace\>-\<Prostředí\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Fronty Azure Service Bus | Service Bus | sbq-\<popisovač dotazu\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
+| Azure Service Bus témata | Service Bus | popisovač dotazu SBT\<\>                                   | <ul><li>sbt-messagequery</li></ul>                   |
 
 ### <a name="databases"></a>Databáze
 
 | Typ assetu                          | Rozsah              | Formát                                | Příklady                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Azure SQL Database                  | Globální             | sqldb-\<Název aplikace\>-\<Prostředí\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
-| Azure Cosmos DB (dříve DocumentDB) | Globální             | cosdb-\<Název aplikace\>-\<Prostředí\>    | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Server Azure SQL Database           | Globální             | Název aplikace v jazyce SQL\<\>-prostředí \<\>      | <ul><li>SQL-navigátor-prod </li><li>SQL – emise – dev</li></ul>           |
+| Databáze SQL Azure                  | Databáze SQL Azure | SQLDB\<\<prostředí s názvem databáze\>| <ul><li>SQLDB – uživatelé – prod </li><li>SQLDB – uživatelé – dev</li></ul>               |
+| Azure Cosmos DB                     | Globální             | Cosmos\<název aplikace\>-prostředí \<\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
 | Azure Cache for Redis               | Globální             | redis-\<Název aplikace\>-\<Prostředí\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure Database for MySQL            | Globální             | mysql-\<Název aplikace\>-\<Prostředí\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
-| Azure SQL Data Warehouse                  | Globální             | sqldw-\<Název aplikace\>-\<Prostředí\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
-| SQL Server Stretch Database         | Azure SQL Database | sqlstrdb-\<Název aplikace\>-\<Prostředí\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
+| Azure Database for PostgreSQL       | Globální             | psql\<název aplikace\>-prostředí \<\>     | <ul><li>psql-navigátor-prod </li><li>psql – emise – dev</li></ul>         |
+| Azure SQL Data Warehouse            | Globální             | sqldw-\<Název aplikace\>-\<Prostředí\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
+| SQL Server Stretch Database         | Databáze SQL Azure | sqlstrdb-\<Název aplikace\>-\<Prostředí\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
-### <a name="storage"></a>Úložiště
+### <a name="storage"></a>Storage
 
 | Typ assetu                              | Rozsah  | Formát                                                                        | Příklady                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
 | Účet služby Azure Storage – obecné použití     | Globální | st\<název úložiště\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | Účet služby Azure Storage – diagnostické protokoly | Globální | stdiag\<první dvě písmena názvu předplatného a číslo\>\<oblast\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| Azure StorSimple                              | Globální | ssimp\<Název aplikace\>\<Prostředí\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure StorSimple                        | Globální | ssimp\<Název aplikace\>\<Prostředí\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
 ### <a name="ai--machine-learning"></a>AI a Machine Learning
 
 | Typ assetu                       | Rozsah          | Formát                            | Příklady                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
 | Azure Search                     | Globální         | srch-\<Název aplikace\>-\<Prostředí\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
-| Azure Cognitive Services               | Skupina prostředků | cs-\<Název aplikace\>-\<Prostředí\>   | <ul><li>cs-navigator-prod </li><li>cs-emissions-dev</li></ul>     |
-| Pracovní prostor služby Azure Machine Learning | Skupina prostředků | aml-\<Název aplikace\>-\<Prostředí\>  | <ul><li>aml-navigator-prod </li><li>aml-emissions-dev</li></ul>   |
+| Azure Cognitive Services         | Skupina prostředků | ozubeného kola\<název aplikace\>-prostředí \<\>   | <ul><li>ozubeného kola-navigátor-prod </li><li>ozubeného kola – emise – dev</li></ul>     |
+| Pracovní prostor služby Azure Machine Learning | Skupina prostředků | MLW\<název aplikace\>-prostředí \<\>   | <ul><li>MLW-navigátor-prod </li><li>MLW – emise – dev</li></ul>     |
 
-### <a name="analytics"></a>Analýzy
+### <a name="analytics"></a>Analýza
 
 | Typ assetu                | Rozsah  | Formát                             | Příklady                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
-| Azure Data Factory        | Globální | df-\<Název aplikace\>\<Prostředí\>     | <ul><li>df-navigator-prod </li><li>df-emissions-dev</li></ul>       |
+| Azure Data Factory        | Globální | ADF –\<název aplikace\>\<prostředí\>    | <ul><li>ADF – navigátor – prod </li><li>ADF – emise – vývoj</li></ul>     |
 | Azure Data Lake Storage   | Globální | dls\<Název aplikace\>\<Prostředí\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
 | Azure Data Lake Analytics | Globální | dla\<Název aplikace\>\<Prostředí\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
-| Azure HDInsight – Spark         | Globální | hdis-\<Název aplikace\>-\<Prostředí\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
-| Azure HDInsight – Hadoop        | Globální | hdihd-\<Název aplikace\>-\<Prostředí\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
-| Azure HDInsight – R Server      | Globální | hdir-\<Název aplikace\>-\<Prostředí\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
-| Azure HDInsight – HBase         | Globální | hdihb-\<Název aplikace\>-\<Prostředí\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
-| Power BI Embedded         | Globální | pbiemb\<Název aplikace\>\<Prostředí\>  | <ul><li>pbiem-navigator-prod </li><li>pbiem-emissions-dev</li></ul> |
+| Azure HDInsight – Spark   | Globální | hdis-\<Název aplikace\>-\<Prostředí\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
+| Azure HDInsight – Hadoop  | Globální | hdihd-\<Název aplikace\>-\<Prostředí\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
+| Azure HDInsight – R Server| Globální | hdir-\<Název aplikace\>-\<Prostředí\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
+| Azure HDInsight – HBase   | Globální | hdihb-\<Název aplikace\>-\<Prostředí\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
+| Power BI Embedded         | Globální | PBI\<název aplikace\>\<prostředí\>    | <ul><li>PBI-navigátor-prod </li><li>PBI – emise – dev</li></ul> |
 
-### <a name="internet-of-things-iot"></a>Internet věcí (IoT)
+### <a name="data-streams--internet-of-things-iot"></a>Datové proudy/Internet věcí (IoT)
 
 | Typ assetu                         | Rozsah          | Formát                             | Příklady                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
-| Azure Stream Analytics na hraničních zařízeních IoT | Skupina prostředků | asa-\<Název aplikace\>-\<Prostředí\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
-| Azure IoT Hub                      | Globální         | aih-\<Název aplikace\>-\<Prostředí\>   | <ul><li>aih-navigator-prod </li><li>aih-emissions-dev</li></ul>     |
-| Azure Event Hubs                          | Globální         | evh-\<Název aplikace\>-\<Prostředí\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure Notification Hubs                   | Skupina prostředků | anh-\<Název aplikace\>-\<Prostředí\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Obor názvů Azure Notification Hubs         | Globální         | anhns-\<Název aplikace\>-\<Prostředí\> | <ul><li>anhns-navigator-prod </li><li>anhns-emissions-dev</li></ul> |
+| Azure Stream Analytics             | Skupina prostředků | asa-\<Název aplikace\>-\<Prostředí\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
+| Azure IoT Hub                      | Globální         | Název aplikace pro IoT-\<\>-prostředí \<\>   | <ul><li>IoT-navigátor-prod </li><li>IoT – emise – dev</li></ul>     |
+| Azure Event Hubs                   | Globální         | evh-\<Název aplikace\>-\<Prostředí\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure Notification Hubs            | Skupina prostředků | NTF\<název aplikace\>-prostředí \<\>   | <ul><li>NTF-navigátor-prod </li><li>NTF – emise – dev</li></ul>     |
+| Obor názvů Azure Notification Hubs  | Globální         | ntfns\<název aplikace\>-prostředí \<\> | <ul><li>ntfns-navigátor-prod </li><li>ntfns – emise – dev</li></ul> |

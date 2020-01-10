@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565927"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781704"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
 
@@ -165,11 +165,11 @@ Každá z výše uvedených fází je součástí životního cyklu širšího p
 
 ## <a name="intent"></a>Záměr
 
-Cloud zásadně mění způsob, jakým podniky získávají a používají technologické prostředky. Tradičně podniky přebíraly vlastnictví všech aspektů technologií od infrastruktury až po software a také zodpovědnost za ně. Cloud podnikům umožňuje zřizovat a využívat prostředky, jenom když jsou potřeba. Přestože cloud nabízí obrovskou flexibilitu, co se možností návrhu týče, pro osvojení cloudových technologií podniky potřebují prověřené a konsistentní metodologie. Architektura přechodu na cloud pro Azure od Microsoftu tento požadavek splňuje a pomáhá s rozhodováním v průběhu celého přechodu na cloud.
+Cloud zásadně mění způsob, jakým podniky spravují, získávají a používají technologické prostředky. Tradičně podniky přebíraly vlastnictví všech aspektů technologií od infrastruktury až po software a také zodpovědnost za ně. Cloud podnikům umožňuje zřizovat a využívat prostředky, jenom když jsou potřeba. Přestože cloud nabízí obrovskou flexibilitu, co se možností návrhu týče, pro osvojení cloudových technologií podniky potřebují prověřené a konsistentní metodologie. Architektura přechodu na cloud pro Azure od Microsoftu tento požadavek splňuje a pomáhá s rozhodováním v průběhu celého přechodu na cloud.
 
 Přechod na cloud je však pouhým prostředkem k dosažení cíle. Úspěšný přechod na cloud začíná dlouho před výběrem dodavatele cloudové platformy. Začíná tehdy, když si pracovníci s rozhodovací pravomocí v oblasti obchodu a IT uvědomí, že cloud může zrychlit dosažení konkrétního cíle obchodní transformace. Architektura přechodu na cloud pomáhá sladit strategie obchodní, kulturní a technické změny a dosáhnout požadovaných obchodních výsledků.
 
-Architektura přechodu na cloud poskytuje technické pokyny pro Microsoft Azure. Vzhledem k tomu, že podnikoví zákazníci mohou ještě vybírat dodavatele cloudu, tato architektura poskytuje pokyny nezávislé na konkrétním cloudu pro strategické rozhodování, kdykoli je to možné.
+Architektura přechodu na cloud poskytuje technické pokyny pro Microsoft Azure. Vzhledem k tomu, že podnikoví zákazníci mohou ještě vybírat dodavatele cloudu nebo mohou mít záměrně multicloudovou strategii, tato architektura poskytuje pokyny nezávislé na konkrétním cloudu pro strategické rozhodování, kdykoli je to možné.
 
 ## <a name="intended-audience"></a>Zamýšlená cílová skupina
 

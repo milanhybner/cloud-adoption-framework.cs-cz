@@ -8,18 +8,18 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564681"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781677"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
 K zahájení cesty migrace do cloudu použijte rozhraní pro přijetí Microsoft Cloud pro Azure. Tato architektura poskytuje komplexní pokyny pro přechod úloh starších verzí aplikací do cloudu pomocí inovativních cloudových technologií.
 
-## <a name="executive-summary"></a>Shrnutí vedoucího
+## <a name="executive-summary"></a>Shrnutí
 
 Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace o cestě k přijetí cloudu, počínaje cílovým obchodním výsledkům a pak zarovnává připravenost a hodnocení cloudu s jasnými definovanými obchodními cíli. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na migraci místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
 
@@ -36,7 +36,7 @@ Migrace do cloudu můžou popomáhat firmám, které dosáhnou svých požadovan
 
 |Kritické obchodní události | Motivace migrace | Motivace inovací |
 |---------|---------|---------|
-| Ukončení Datacenter<br/><br/>Fúze, akvizice nebo divestiture<br/><br/>Snížení nákladů na velká písmena<br/><br/>Konec podpory pro klíčové technologie<br/><br/>Reakce na změny dodržování předpisů v legislativě<br/><br/>Splnění nových požadavků na svrchovanost dat<br/><br/>Snížení výpadků a vylepšení stability IT|Úspora nákladů<br/><br/>Snížení pro dodavatele nebo technickou složitost<br/><br/>Optimalizace interních operací<br/><br/>Zvýšení svižnosti firmy<br/><br/>Příprava na nové technické možnosti<br/><br/>Škálování pro splnění požadavků na trh<br/><br/>Škálování pro splnění geografických požadavků|Příprava na nové technické možnosti<br/><br/>Sestavování nových technických možností<br/><br/>Škálování pro splnění požadavků na trh<br/><br/>Škálování pro splnění geografických požadavků<br/><br/>Zlepšení zkušeností a zapojení zákazníků<br/><br/>Transformace produktů nebo služeb<br/><br/>Přerušení trhu novými produkty nebo službami|
+| Ukončení Datacenter<br/><br/>Fúze, akvizice nebo divestiture<br/><br/>Snížení nákladů na velká písmena<br/><br/>Konec podpory pro klíčové technologie<br/><br/>Reakce na změny dodržování předpisů v legislativě<br/><br/>Splnění nových požadavků na svrchovanost dat<br/><br/>Snížení výpadků a vylepšení stability IT|Úspora nákladů<br/><br/>Snížení pro dodavatele nebo technickou složitost<br/><br/>Optimalizace interních operací<br/><br/>Zvýšení svižnosti firmy<br/><br/>Příprava na nové technické možnosti<br/><br/>Škálování pro splnění požadavků na trh<br/><br/>Škálování pro splnění geografických nebo tržních požadavků|Příprava na nové technické možnosti<br/><br/>Sestavování nových technických možností<br/><br/>Modernizovat zabezpečení stav a ovládací prvky<br/><br/>Škálování pro splnění geografických nebo tržních požadavků<br/><br/>Zlepšení zkušeností a zapojení zákazníků<br/><br/>Transformace produktů nebo služeb<br/><br/>Přerušení trhu novými produkty nebo službami|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -64,7 +64,7 @@ Zaměření na toto úsilí je migrace nebo modernizace úloh. Úloha je kolekce
 
 Migrace do cloudu se často považují za jeden projekt v širším programu, aby se zjednodušily IT operace, náklady nebo složitost. Metodologie implementace v cloudu pomáhá sjednotit technické úsilí v rámci série migrací úloh na vyšší úroveň obchodních hodnot, které jsou uvedené v cloudové strategii a plánu.
 
-**Začínáme:** Pokud chcete začít s cloudovou implementací, průvodce [migrací Azure](../migrate/azure-migration-guide/index.md) a [Průvodce nastavením Azure](../ready/azure-setup-guide/index.md) popisují nástroje a procesy vysoké úrovně, které jsou potřeba k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Další aspekty by se měly předávat [rozšířenému kontrolnímu seznamu oboru](../migrate/expanded-scope/index.md), [osvědčeným postupům pro migraci](../migrate/azure-best-practices/index.md) a [úvahám](../migrate/migration-considerations/index.md), které umožňují zarovnat základní pokyny k jedinečným omezením, procesům, týmu struktury a cíle.
+**Začínáme:** Pokud chcete začít s cloudovou implementací, průvodce [migrací Azure](../migrate/azure-migration-guide/index.md) a [Průvodce nastavením Azure](../ready/azure-setup-guide/index.md) popisují nástroje a procesy vysoké úrovně, které jsou potřeba k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Další aspekty by se měly předávat [rozšířenému kontrolnímu seznamu oboru](../migrate/expanded-scope/index.md), [osvědčeným postupům migrace](../migrate/azure-best-practices/index.md) a [aspektům migrace](../migrate/migration-considerations/index.md)za účelem zarovnání základních pokynů s jedinečnými omezeními, procesy, týmovými strukturami a cíli vaší snahy.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategie a plánování cloudu
 
@@ -93,13 +93,13 @@ V rámci této migrace se tato architektura bude používat k řešení nejednoz
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>Společné kulturní změny vyplývající z dodržování této metodiky
 
-Snaha o dosažení požadovaných obchodních výsledků může aktivovat drobné změny v jazykové verzi a na určitou míru kultury firmy. Níže jsou uvedeny některé běžné kulturní změny, které se zobrazují v tomto procesu:
+Snaha o dosažení požadovaných obchodních výsledků může aktivovat drobné změny v jazykové verzi, zabezpečení a do jisté míry jako jazykovou verzi firmy. Níže jsou uvedeny některé běžné kulturní změny, které se zobrazují v tomto procesu:
 
-- Tým IT může přijímají nové dovednosti v podpoře úloh v cloudu.
+- Týmy IT a zabezpečení budou nejspíš přijímají nové dovednosti v podpoře úloh v cloudu.
 - Provádění migrace do cloudu podporuje iterativní nebo agilní přístupy.
 - Zahrnutí zásad správného řízení cloudu má také za následek inspirovat DevOps přístupy.
 - Vytvoření týmu cloudové strategie může vést k užší integraci mezi firmou a vedoucími IT.
-- Souhrnně tyto změny mají za následek flexibilitu firmy a IT.
+- Souhrnně tyto změny mají za následek větší firmu a flexibilitu IT.
 
 Kulturní změna není cílem migrace do cloudu nebo architektury pro přijetí v cloudu, ale jedná se o často známý výsledek.
 Kulturní změny se přímo neřídí, místo toho se v rámci těchto pokynů vloží jemných změn v jazykové verzi do navrhovaných procesů a přístupů.
@@ -114,7 +114,7 @@ Cloudová strategie a plánování často cílí na širokou škálu úloh a apl
 
 - Obchodní aplikace
 - Zákaznické aplikace
-- Aplikace třetích stran
+- Aplikace třetí strany
 - Platformy pro analýzu dat
 - Globálně distribuovaná řešení
 - Vysoce škálovatelná řešení
@@ -144,7 +144,7 @@ Rozhraní pro přijetí do cloudu je řešením životního cyklu. Je navržený
 >
 > [Inovace](../innovate/index.md)
 >
-> [Bude](../govern/index.md)
+> [Řízení](../govern/index.md)
 >
 > [Správa](../manage/index.md)
 >

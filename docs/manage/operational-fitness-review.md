@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564909"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781670"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Nastavení kontroly provozní vhodnosti
 
@@ -130,3 +130,5 @@ Přizpůsobte podrobnosti procesu a schůzky podle svých konkrétních potřeb.
     Tato příručka začíná definicí pojmu _odolnosti_ a souvisejících konceptů. Pak popisuje proces pro zajištění odolnosti pomocí strukturovaného přístupu po celou dobu životnosti aplikace, od návrhu a implementace až po nasazení a provoz.
 - [Vzory návrhu cloudu](https://docs.microsoft.com/azure/architecture/patterns).
     Tyto vzory návrhu jsou užitečné pro technické týmy při sestavování aplikací na pilířích kvality softwaru.
+- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
+    Advisor poskytuje doporučení, která jsou přizpůsobená podle vašich využití a konfigurací, které vám pomůžou optimalizovat prostředky pro zajištění vysoké dostupnosti, zabezpečení, výkonu a nákladů. 

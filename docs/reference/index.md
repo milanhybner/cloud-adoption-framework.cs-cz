@@ -9,14 +9,14 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683756"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781517"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Architektura přechodu na cloud pro Azure od Microsoftu
+# <a name="cloud-adoption-framework-roadmap"></a>Plán architektury přechodu na cloud
 
 Cloud zásadně mění způsob, jakým podniky získávají a používají technologické prostředky. Tradičně podniky přebíraly vlastnictví všech aspektů technologií od infrastruktury po software a zodpovědnost za ně. Cloud podnikům umožňuje zřizovat a využívat prostředky jenom podle potřeby. Přechod na cloud je však pouhým prostředkem k dosažení cíle. Firmy přecházejí na cloud, když si uvědomí, že umožní řešit všechny tyto obchodní příležitosti:
 
@@ -26,13 +26,13 @@ Cloud zásadně mění způsob, jakým podniky získávají a používají techn
   - Zvýšení svižnosti firmy
   - Snížení nákladů
   - Příprava na nové technické možnosti
-  - Škálování podle požadavků trhu nebo geografických zón
+  - Škálování podle požadavků trhu nebo nových geografických oblastí
 - Firmy mají motivaci **inovovat** s využitím cloudu pro zajištění těchto možností:
   - Zlepšení zkušeností zákazníků
   - Větší zapojení zákazníků
   - Transformace produktů
   - Příprava na nové technické možnosti a jejich realizace
-  - Škálování podle požadavků trhu nebo geografických zón
+  - Škálování podle požadavků trhu nebo nových geografických oblastí
 
 ## <a name="vision-and-objectives"></a>Vize a cíle
 
@@ -46,7 +46,7 @@ Odstranění hlavních překážek a umožnění změny ale vyžaduje víc než 
 
 Architektura přechodu na cloud je zastřešující architektura, která pokrývá fáze plánování, připravenosti a přijetí napříč motivací pro migrace a inovace pro přechod na cloud, s podporou pokynů pro zásady správného řízení a provozních pokynů.
 
-Společnost Microsoft tuto ambiciózní architekturu aktivně vytváří ve spolupráci se zákazníky, partnery a interními týmy. V rámci podpory partnerství se obsah vydá ve verzi Public Preview, jakmile bude k dispozici. Tyto verze Public Preview umožňují testování, ověřování a postupné vylepšování těchto pokynů. Architektura přejde do fáze obecné dostupnosti, jakmile se splní zamýšlené cíle.
+Tato architektura přešla do fáze obecné dostupnosti (GA). Tuto ambiciózní architekturu ale dál aktivně vytváříme ve spolupráci se zákazníky, partnery a interními týmy. V rámci podpory partnerství se obsah vydává, jakmile je k dispozici. Tyto veřejné verze umožňují testování, ověřování a postupné vylepšování těchto pokynů. 
 
 Pro zajištění úspěšného přechodu na cloud je potřeba, aby zákazník na tuto digitální transformaci připravil své lidi, technologie a procesy. Architektura přechodu na cloud obsahuje část popisující celý proces přechodu, migraci i inovace, ve formě přehledu pro zákazníky. Tato část se skládá z následujících fází cesty přechodu:
 
