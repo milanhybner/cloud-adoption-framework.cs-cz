@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781551"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868082"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Připraveno: Doporučené konvence pojmenování a označování
 
@@ -52,7 +52,7 @@ Virtuální síť má například obor skupiny prostředků, což znamená, že 
 
 Některé názvy prostředků, jako jsou služby PaaS s veřejnými koncovými body nebo názvy DNS virtuálního počítače, mají globální obory, což znamená, že musí být jedinečné napříč celou platformou Azure.
 
-Délka názvů prostředků je omezená. Důležité je, abyste při vývoji konvencí pro tvorbu názvů vyvážili kontext vložený v názvu s jeho oborem a délkou názvu. Další informace o pravidlech tvorby názvů týkajících se povolených znaků, oborů a délek názvů pro typy prostředků najdete v tématu [Zásady vytváření názvů pro prostředky Azure](/azure/architecture/best-practices/resource-naming).
+Délka názvů prostředků je omezená. Důležité je, abyste při vývoji konvencí pro tvorbu názvů vyvážili kontext vložený v názvu s jeho oborem a délkou názvu. Další informace o pravidlech tvorby názvů týkajících se povolených znaků, oborů a délek názvů pro typy prostředků najdete v tématu [Zásady vytváření názvů pro prostředky Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
 
 #### <a name="recommended-naming-components"></a>Doporučené komponenty názvů
 

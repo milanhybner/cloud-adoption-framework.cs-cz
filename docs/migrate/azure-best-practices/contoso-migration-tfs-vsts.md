@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557032"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868104"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services
 
@@ -63,7 +63,7 @@ Contoso dokončí proces migrace následujícím způsobem:
 
 ![Proces migrace](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 
@@ -72,7 +72,7 @@ Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
+**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 **Místní server TFS** | Je třeba, aby místní server používal TFS 2018 Upgrade 2, nebo aby byl v rámci tohoto procesu upgradován.
 
 ## <a name="scenario-steps"></a>Kroky scénáře
@@ -86,7 +86,7 @@ Contoso dokončí migraci tímto způsobem:
 > - **Krok 3: ověření kolekce.** Při přípravě na migraci společnost Contoso ověří kolekci TFS.
 > - **Krok 4: Sestavte soubor přípravy.** Contoso vytvoří migrační soubory pomocí nástroje pro migraci TFS.
 
-## <a name="step-1-create-a-storage-account"></a>Krok 1: vytvoření účtu úložiště
+## <a name="step-1-create-a-storage-account"></a>Krok 1: Vytvoření účtu úložiště
 
 1. Správce společnosti Contoso vytvoří na webu Azure Portal účet úložiště (**contosodevmigration**).
 2. Tento účet umístí do sekundární oblasti, kterou společnost používá pro převzetí služeb při selhání – USA – střed. Použije účet Standard pro obecné účely s místně redundantním úložištěm.
@@ -102,8 +102,8 @@ Contoso dokončí migraci tímto způsobem:
 
 Správce společnosti Contoso upgraduje server TFS na TFS 2018 Update 2. Než začne:
 
-- Stáhne [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads).
-- Ověří [požadavky na hardware](/azure/devops/server/requirements) a pročte si [poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) a [možná úskalí upgradu](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Stáhnou [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads).
+- Ověří [požadavky na hardware](https://docs.microsoft.com/azure/devops/server/requirements) a pročte si [poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) a [možná úskalí upgradu](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Upgrade provede takto:
 
@@ -132,7 +132,7 @@ Upgrade provede takto:
 
 **Potřebujete další pomoc?**
 
-Přečtěte si další informace o [upgradu TFS](/azure/devops/server/upgrade/get-started).
+Přečtěte si další informace o [upgradu TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Krok 3: ověření kolekce TFS
 
@@ -266,7 +266,7 @@ Před začátkem správce společnosti Contoso pořídí místní zálohu SQL Se
 Správce společnosti Contoso vytvoří zálohu (balíček DACPAC) pro import do Azure DevOps Services.
 
 - DACPAC se vytvoří pomocí nástroje SqlPackage.exe v nástrojích SQL Server Data Tools. S nástroji SQL Server Data Tools se nainstaluje více verzí nástroje SqlPackage.exe, které se nacházejí ve složkách s názvy, jako jsou 120, 130 a 140. Pro přípravu balíčku DACPAC je důležité použít správnou verzi nástroje.
-- Importy TFS 2018 vyžadují použití nástroje SqlPackage.exe ze složky 140 nebo vyšší. V případě CONTOSOTFS je tento soubor umístěný ve složce **C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- Importy TFS 2018 vyžadují použití nástroje SqlPackage.exe ze složky 140 nebo vyšší. V případě CONTOSOTFS je tento soubor umístěný ve složce C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140.
 
 Správce společnosti Contoso vygeneruje balíček DACPAC takto:
 

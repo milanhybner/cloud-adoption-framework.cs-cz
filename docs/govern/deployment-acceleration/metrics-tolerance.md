@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af2ce9e70dbc694679538b1910912febb552f695
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220706"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75867957"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Metriky akcelerace nasazení, indikátory a tolerance rizik
 
@@ -34,14 +34,14 @@ Rizika související s akcelerací nasazení jsou převážně v podstatě týka
 
 <!-- "en-us" location is required for the URL below. -->
 
-Tradiční firemní IT oddělení často vypracovali operace, zabezpečení a vývojové týmy, které často nespolupracují dobře nebo jsou dokonce Adversarial nebo nepřátelně navzájem. V brzké době se tyto výzvy uznávají a integrují klíčové účastníky z každého týmu, které vám pomůžou zajistit flexibilitu v průběhu vašeho cloudového přijetí a přitom zůstat zabezpečený a dobře řízený. Proto by se jedna měla zvážit přijetí DevOps nebo [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organizační kultury na začátku v cestě k přijetí vašeho cloudu. 
+Tradiční firemní IT oddělení často vypracovali operace, zabezpečení a vývojové týmy, které často nespolupracují dobře nebo jsou dokonce Adversarial nebo nepřátelně navzájem. V brzké době se tyto výzvy uznávají a integrují klíčové účastníky z každého týmu, které vám pomůžou zajistit flexibilitu v průběhu vašeho cloudového přijetí a přitom zůstat zabezpečený a dobře řízený. Proto by se jedna měla zvážit přijetí DevOps nebo [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organizační kultury na začátku v cestě k přijetí vašeho cloudu.
 
 Spolupracujte se svým DevSecOps týmem a obchodními stranami a Identifikujte [obchodní rizika](./business-risks.md) související s konfigurací a pak určíte přijatelné standardní hodnoty pro odolnost proti riziku konfigurace. V této části doprovodné materiály k rozhraní pro přijetí do cloudu najdete příklady, ale podrobná rizika a směrné plány vaší společnosti nebo nasazení se nejspíš budou lišit.
 
 Jakmile budete mít základnu, stanovte minimální srovnávací testy představující nepřijatelný nárůst zjištěných rizik. Tyto srovnávací testy fungují jako triggery, pokud potřebujete provést akci k nápravě těchto rizik. Následuje několik příkladů, jak se metriky související se konfigurací, jako jsou výše popsané výše, můžou zvýšit investice do oboru akcelerace nasazení.
 
 - **Aktivační události posunu konfigurace:** Společnost, u které dochází k neočekávaným změnám v konfiguraci klíčových systémových komponent nebo selhání při nasazení nebo aktualizacích systémů, by měla investovat do oboru akcelerace nasazení, aby identifikovala hlavní příčiny a kroky pro nápravu.
-- **Aktivační události mimo dodržování předpisů:** Pokud počet prostředků nesplňujících požadavky překročí stanovenou prahovou hodnotu (buď jako celkový počet prostředků, nebo procento z celkového počtu prostředků), společnost by měla investovat do vylepšení oboru akcelerace nasazení, aby se zajistilo, že se každý prostředek Konfigurace zůstává v souladu s životním cyklem daného prostředku.
+- **Aktivační události mimo dodržování předpisů:** Pokud počet prostředků nesplňujících požadavky překročí stanovenou prahovou hodnotu (buď jako celkový počet prostředků, nebo procento z celkového počtu prostředků), společnost by měla investovat do vylepšení oboru akcelerace nasazení, aby se zajistilo dodržování předpisů v celém životním cyklu daného prostředku.
 - **Aktivační události plánu projektu:** Pokud čas nasadit prostředky společnosti a aplikace často překračuje prahovou hodnotu definovat, společnost by měla investovat do procesů zrychlení nasazení, aby zavedla nebo vylepšila automatizované nasazení za účelem zajištění konzistence a předvídatelnosti. Doba nasazení měřená ve dnech nebo dokonce i v týdnech obvykle indikuje strategii akcelerace nasazení, která je v podoptimálním prostředí.
 
 ## <a name="next-steps"></a>Další kroky
