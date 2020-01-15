@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
+ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868082"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76023360"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Připraveno: Doporučené konvence pojmenování a označování
+# <a name="recommended-naming-and-tagging-conventions"></a>Doporučené konvence pro tvorbu názvů a značek
 
-Uspořádání cloudových prostředků tak, aby pomáhaly provozní správě a podporovaly požadavky na účtování, představuje častou výzvu, se kterou se při snahách o přijetí cloudu můžete setkat. Když se na prostředky hostované v cloudu použijí správně definované konvence pro tvorbu názvů a značek metadat, mohou IT pracovníci prostředky rychle vyhledat a spravovat. Správně definované názvy a značky také usnadňují obchodním týmům nastavit náklady na využití cloudu prostřednictvím mechanismů vrácení peněz a účtování metodou showback.
+Uspořádání cloudových prostředků způsobem, který podporuje provozní správu a požadavky na monitorování účtů, je běžným problémem při snaze o přijetí velkého cloudu. Když se na prostředky hostované v cloudu použijí správně definované konvence pro tvorbu názvů a značek metadat, mohou IT pracovníci prostředky rychle vyhledat a spravovat. Správně definované názvy a značky také usnadňují obchodním týmům nastavit náklady na využití cloudu prostřednictvím mechanismů vrácení peněz a účtování metodou showback.
 
-[Pravidla a omezení pro pojmenování cetrum architektury Azure pro prostředky Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) poskytují obecná doporučení a omezení platforem. Následující diskuze tyto obecné pokyny rozšiřuje o podrobnější doporučení zaměřená zejména na podporu snah o přijetí podnikového cloudu.
+Pokyny pro Cetrum architektury Azure pro [pravidla a omezení pro prostředky Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) poskytují obecná doporučení a omezení platforem. Následující diskuze přesahují tyto pokyny s podrobnějšími doporučeními, která jsou speciálně zaměřená na podporu podnikového nasazení v cloudu.
 
-Názvy prostředků může být obtížné změnit. Než zahájíte jakékoli větší nasazení cloudu, nastavte týmům pro přijetí cloudu prioritu, kterou je vytvoření ucelené konvence pro tvorbu názvů.
+Názvy prostředků může být obtížné změnit. Nastavte prioritu vytváření komplexních zásad vytváření názvů před zahájením jakéhokoli nasazení ve velkém cloudu.
 
 > [!NOTE]
-> Každá společnost má jiné požadavky na organizaci a správu. Doporučení v tomto článku slouží jako výchozí bod pro diskuze v týmech pro přijetí cloudu.
+> Každá společnost má jiné požadavky na organizaci a správu. Tato doporučení poskytují výchozí bod pro diskuze v rámci týmů pro přijetí do cloudu.
 >
-> Během těchto diskuzí můžete použít následující šablonu, kam můžete zapisovat rozhodnutí ohledně názvů a značek, která jsou výsledkem srovnání těchto doporučení a vašich konkrétních obchodních potřeb.
+> Jak budou tyto diskuze pokračovat, použijte následující šablonu k zaznamenání rozhodnutí o pojmenování a označování, která uděláte při zarovnání těchto doporučení podle konkrétních obchodních potřeb.
 >
 > Stáhněte si [šablonu pro sledování konvencí pro tvorbu názvů a značek](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx).
 
@@ -35,7 +35,7 @@ Názvy prostředků může být obtížné změnit. Než zahájíte jakékoli v�
 
 Strategie pro vytváření názvů a značek zahrnuje firemní a provozní údaje jako součásti názvů prostředků a značek metadat:
 
-- Firemní údaje v této strategii zajišťují, aby názvy a značky prostředků obsahovaly informace organizace, které jsou potřeba k identifikaci týmů. Použijte prostředek společně s vlastníky, kteří zodpovídají za náklady na prostředky.
+- Podnikatelská strana této strategie zajišťuje, že názvy prostředků a značky obsahují informace o organizaci potřebné k identifikaci týmů. Použijte prostředek společně s vlastníky, kteří zodpovídají za náklady na prostředky.
 - Provozní údaje zajišťují, aby názvy a značky obsahovaly informace, které IT týmy používají k identifikaci úloh, aplikací, prostředí, závažností a dalších informací užitečných pro správu prostředků.
 
 ### <a name="resource-naming"></a>Pojmenovávání prostředků
