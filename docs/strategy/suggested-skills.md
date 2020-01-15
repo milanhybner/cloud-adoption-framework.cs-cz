@@ -1,19 +1,19 @@
 ---
-title: Program připravenosti dovedností
+title: Cesta k připravenosti dovedností během plánování
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Přehled programu připravenosti dovedností
+description: Přehled cesty připravenosti dovedností během fáze plánování migrace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
+ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561644"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943464"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Cesta k připravenosti dovedností během fáze plánování cesty migrace
 
@@ -56,7 +56,7 @@ Převod obchodního případu a racionálního digitálního majetku na akční 
 V rámci připravené fáze vytvoří technický personál cílovou zónu umožňující hostování, provozování a řízení úloh, které byly migrovány do cloudu. Tyto výukové postupy vám můžou přispět k vývoji potřebných dovedností:
 
 - [Vytvořte účet Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). První krok při používání Azure spočívá ve vytvoření účtu. Váš účet obsahuje služby Azure, které zřizujete, a zpracovává vaše osobní nastavení, jako je identita, fakturace a předvolby.
-- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Projděte si funkce a služby na webu Azure Portal a přizpůsobte si portál.
+- [Azure Portal.](https://docs.microsoft.com/learn/modules/tour-azure-portal) Projděte si funkce a služby na webu Azure Portal a přizpůsobte si portál.
 - [Seznámení s Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Seznamte se s Azure vytvořením a konfigurací svého prvního virtuálního počítače v cloudu.
 - [Seznámení se zabezpečením v Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Seznamte se se základními koncepty ochrany vaší infrastruktury a dat při práci v cloudu. Poznejte svoje zodpovědnosti a zjistěte, o co se Azure postará za vás.
 - [Spravujte prostředky v Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Zjistěte, jak pomocí příkazového řádku Azure a webového portálu vytvářet, spravovat a řídit cloudové prostředky.
@@ -87,11 +87,11 @@ Pro účely [Microsoft Azure školení a zkoušek pro certifikace](https://www.m
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávat body, úrovně a dosáhnout více
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávat body, úrovně a dosáhnout více
 
 Tady je příklad přizpůsobených studijních cest, které odpovídají strategii Potion architektury pro přijetí do cloudu.
 
-[Seznamte se s obchodní hodnotou Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): Toto výukové prostředí vás zabere na cestu, která začíná zobrazením, jak digitální transformace a výkon cloudu můžou transformovat vaše podnikání. Pokryjeme, jak Microsoft Azure cloudové služby můžou vaši organizaci v důvěryhodné cloudové platformě vysílat. Nakonec se zabalíme tak, že ukážeme, jak tuto cestu udělat v reálném čase pro vaši organizaci.
+[Seznamte se s obchodní hodnotou Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): Toto výukové prostředí vás zabere na cestu, která začíná zobrazením, jak digitální transformace a výkon cloudu můžou transformovat vaše podnikání. Probereme, jak může vaše organizace využívat cloudové služby Microsoft Azure na důvěryhodné cloudové platformě. Nakonec si ukážeme, jak to uskutečnit v reálném prostředí ve vaší organizaci.
 
 ## <a name="learn-more"></a>Další informace
 
