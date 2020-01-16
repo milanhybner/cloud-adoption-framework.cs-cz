@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 770356c4c8254246794a7e71f6d1c565060dcf5b
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 9c10b4a7c46d59a761ae2bb009fdf26b410450ab
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251897"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868004"
 ---
 ::: zone target="docs"
 
@@ -72,7 +72,7 @@ Azure DevOps poskytuje prvotřídní nástroje pro každého vývojáře. Vývoj
 
 ::: zone target="docs"
 
-**Přejít do [dokumentace k Azure DevOps Projects](https://docs.microsoft.com/azure/devops-project)**
+**Přejít k [úvodní dokumentaci pro Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
 
 ::: zone-end
 

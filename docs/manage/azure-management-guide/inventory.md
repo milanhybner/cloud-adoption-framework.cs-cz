@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565466"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781772"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventarizace a získání přehledu v Azure
 
@@ -33,7 +33,7 @@ V následující tabulce je pro jednotlivá podniková prostředí uvedeno navrh
 |Centralizace protokolů|Log Analytics|Centrální protokolování pro všechny účely získání přehledu|
 |Centralizace monitorování|Azure Monitor|Centrální monitorování provozních dat a trendů|
 |Inventář virtuálních počítačů a sledování změn|Azure Change Tracking a Inventory|Inventarizace virtuálních počítačů a monitorování změn na úrovni hostovaného operačního systému|
-|Stav služeb|Protokol aktivit Azure|Monitorování změn na úrovni předplatného|
+|Monitorování předplatného|Protokol aktivit Azure|Monitorování změn na úrovni předplatného|
 |Monitorování hostovaného operačního systému|Azure Monitor pro virtuální počítače|Monitorování změn a výkonu virtuálních počítačů|
 |Monitorování sítě|Azure Network Watcher|Monitorování změn a výkonu sítě|
 |Monitorování systému DNS|DNS Analytics|Zabezpečení, výkon a operace systému DNS|
