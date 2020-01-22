@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240134"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520170"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -126,7 +126,7 @@ Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Použití Azure Cost Management k řízení nákladů AWS
 
-- [Integrace sestavy nákladů a využití služby AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Integrace sestavy nákladů a využití služby AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Správa nákladů AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Vytvoření přístupu, rolí a rozsahu

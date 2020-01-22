@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566530"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520204"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Změna hostitele místní linuxové aplikace na virtuální počítače Azure
 
@@ -48,7 +48,7 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 - Aplikace OSTicket obsahuje úrovně rozdělené mezi dva virtuální počítače (**OSTICKETWEB** a **OSTICKETMYSQL**).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
 - Společnost Contoso má místní datacentrum (**contoso-datacenter**) s místním řadičem domény (**contosodc1**).
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
@@ -57,7 +57,7 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 - Virtuální počítače se migrují do primární oblasti (Východní USA 2) a umístí se do produkční sítě (VNET-PROD-EUS2):
   - Webový virtuální počítač bude umístěný ve front-endové podsíti (PROD-FE-EUS2).
   - Virtuální počítač databáze se bude nacházet v databázové podsíti (PROD-DB-EUS2).
-- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
+- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
 
 ![Architektura scénáře](./media/contoso-migration-rehost-linux-vm/architecture.png)
 
@@ -70,7 +70,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Oba virtuální počítače aplikace se přesunou do Azure beze změn, takže bude migrace snadná.<br/><br/> Vzhledem k tomu, že společnost Contoso používá pro virtuální počítače s aplikacemi přístup typu výtah a Shift, nejsou pro databázi aplikací potřeba žádné speciální nástroje pro konfiguraci a migraci.<br/><br/> Contoso bude mít virtuální počítače aplikace v Azure stále plně pod kontrolou. <br/><br/> Virtuální počítače aplikace používají Ubuntu 16.04-TLS, což je schválená distribuce systému Linux. [Další informace](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Nevýhody** | Webová a datová vrstva aplikace zůstanou jediným bodem převzetí služeb při selhání. <br/><br/> Contoso bude muset dále podporovat aplikaci jako virtuální počítače Azure, místo aby ji přesunula do spravované služby jako Azure App Service a Azure Database for MySQL.<br/><br/> Společnost Contoso je vědomá tím, že při migraci virtuálních počítačů typu výtah a Shift zachovává jednoduché funkce, které nevyužívají [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (integrovaná vysoká dostupnost, předvídatelný výkon, jednoduché škálování, automatické zálohování a integrované zabezpečení).
+**Nevýhody** | Webová a datová vrstva aplikace zůstanou jediným bodem převzetí služeb při selhání. <br/><br/> Contoso bude muset dále podporovat aplikaci jako virtuální počítače Azure, místo aby ji přesunula do spravované služby jako Azure App Service a Azure Database for MySQL.<br/><br/> Společnost Contoso si je vědoma, že při migraci virtuálních počítačů typu výtah a Shift nevyužívá plně výhodu funkcí poskytovaných službou [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (integrovaná vysoká dostupnost, předvídatelný výkon, jednoduché škálování, automatické zálohování a integrované zabezpečení).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,9 +89,9 @@ Společnost Contoso provede migraci následujícím způsobem:
 
 **Služba** | **Popis** | **Náklady**
 --- | --- | ---
-[Migrace serverů Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tato služba orchestruje a spravuje migraci místních aplikací a úloh a instancí virtuálních počítačů AWS a GCP. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. [Další informace](https://azure.microsoft.com/pricing/details/azure-migrate) o poplatcích a cenách
+[Migrace serverů Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tato služba orchestruje a spravuje migraci místních aplikací a úloh a instancí virtuálních počítačů AWS a GCP. | Během replikace do Azure se účtují poplatky za Azure Storage. Vytvoří se virtuální počítače Azure a při převzetí služeb při selhání se za ně účtují poplatky. [Získejte další informace](https://azure.microsoft.com/pricing/details/azure-migrate) o poplatcích a cenách.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje.
 
@@ -100,7 +100,7 @@ Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje.
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** |  [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.<br/><br/> Další informace o konkrétních [požadavcích](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) na migraci serverů Azure Migrate
+**Infrastruktura Azure** |  [Přečtěte si](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.<br/><br/> Další informace o konkrétních [požadavcích](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) na migraci serverů Azure Migrate
 **Místní servery** | Místní servery vCenter by měly používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.
 **Místní virtuální počítače** | [Projděte si počítače s Linuxem](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), které mají schválený provoz v Azure.
 
@@ -185,7 +185,7 @@ Po dokončení zjišťování můžete zahájit replikaci virtuálních počíta
     - Vyberte **Ne**, pokud nechcete využít Zvýhodněné hybridní využití Azure. Pak klikněte na tlačítko **Další**.
     - Vyberte **Ano**, pokud máte počítače s Windows Serverem s aktivním Software Assurance nebo předplatným Windows Serveru a u migrovaných počítačů chcete využít tuto výhodu. Pak klikněte na tlačítko **Další**.
 
-8. V části **Výpočetní prostředky** zkontrolujte název, velikost, typ disku s operačním systémem a skupinu dostupnosti virtuálního počítače. Virtuální počítače musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. V části **Výpočetní prostředky** zkontrolujte název, velikost, typ disku s operačním systémem a skupinu dostupnosti virtuálního počítače. Virtuální počítače musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **Velikost virtuálního počítače:** Pokud používáte doporučení pro vyhodnocení, bude rozevírací seznam velikost virtuálního počítače obsahovat doporučenou velikost. Jinak Azure Migrate vybere velikost na základě nejbližší shody v předplatném Azure. Případně můžete velikost vybrat ručně v části **Velikost virtuálního počítače Azure**.
     - **Disk s operačním systémem:** Zadejte operační systém (spouštěcí) disk pro virtuální počítač. Disk s operačním systémem je disk, který obsahuje spouštěcí zavaděč a instalační program operačního systému.
@@ -206,7 +206,7 @@ Správci společnosti Contoso spustí rychlé testování převzetí služeb př
 
 ### <a name="run-a-test-failover"></a>Spuštění testovacího převzetí služeb při selhání
 
-1. V ** > ** **cíle migrace**  > **Azure Migrate: Migrace serveru**klikněte na **test migrovaných serverů**.
+1. V ** > ** **cíle migrace** > **Azure Migrate: Migrace serveru**klikněte na **test migrovaných serverů**.
 
      ![Test migrovaných serverů](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -225,7 +225,7 @@ Správci společnosti Contoso spustí rychlé testování převzetí služeb př
 
 Teď správci společnosti Contoso provedou úplné převzetí služeb při selhání, a tím dokončí migraci.
 
-1. V Azure Migrate Project > **servery**  > **Azure Migrate: Migrace serveru**klikněte na **replikovat servery**.
+1. V Azure Migrate Project > **servery** > **Azure Migrate: Migrace serveru**klikněte na **replikovat servery**.
 
     ![Replikace serverů](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -283,7 +283,7 @@ Společnost Contoso teď musí provést vyčištění následujícím způsobem:
 - Zkontrolovat všechny prostředky, které s virtuálními počítači spolupracují, a aktualizovat veškeré související nastavení nebo dokumentaci tak, aby odrážely novou konfiguraci
 - Společnost Contoso využila službu Azure Migrate s mapováním závislostí k posouzení virtuálních počítačů z hlediska migrace. Správci by měli odebrat Microsoft Monitoring Agent a pro tento účel nainstalovanou aplikaci Microsoft Dependency agent, z virtuálního počítače.
 
-## <a name="review-the-deployment"></a>Revize nasazení
+## <a name="review-the-deployment"></a>Kontrola nasazení
 
 Aplikace je teď spuštěná a společnost Contoso ji potřebuje v nové infrastruktuře plně zprovoznit a zabezpečit.
 
@@ -307,4 +307,4 @@ V zájmu zajištění provozní kontinuity a zotavení po havárii společnost C
 
 - Po nasazení prostředků společnost Contoso přiřadí značky Azure, které definovala během nasazení [infrastruktury Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Společnost Contoso nemá žádné problémy s licencováním na serverech Ubuntu.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.

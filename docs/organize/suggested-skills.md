@@ -1,7 +1,7 @@
 ---
-title: Program připravenosti dovedností
+title: Budování technických dovedností
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Přehled programu připravenosti dovedností
+description: Přehled cesty připravenosti dovedností v připravené fázi migrace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c8954fbb4e5c17ec43951270ded2708cfb3432df
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564247"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520153"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Cesta k připravenosti dovedností během migrace v "připravené" fázi
+# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Cesta připravenosti dovedností v připravené fázi migrace
 
 V rámci *připravené* fáze migrace je cílem připravit se na cestu předem. Tato fáze se dosahuje ve dvou primárních oblastech: připravenost organizace a prostředí (Technical). Oba můžou vyžadovat nové dovednosti pro pracovníky technického a netechnického přispěvatele. Následující informace mohou vaší organizaci pomáhat při sestavování nezbytných dovedností.
 
