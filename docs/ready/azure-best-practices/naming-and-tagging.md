@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
-ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
+ms.openlocfilehash: e1958d48eec112d11838835b853430c04601ab8b
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76023360"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726330"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Doporučené konvence pro tvorbu názvů a značek
 
@@ -40,7 +40,7 @@ Strategie pro vytváření názvů a značek zahrnuje firemní a provozní údaj
 
 ### <a name="resource-naming"></a>Pojmenovávání prostředků
 
-Efektivní konvence pro tvorbu názvů sestavuje názvy prostředků tak, že jako části názvu prostředku používá důležité údaje o prostředku. Například pomocí doporučených konvencí pro tvorbu názvů [popsaných dále v tomto článku](#sample-naming-convention) je prostředek veřejné IP adresy pro produkční úlohu SharePointu pojmenovaný takto: `pip-sharepoint-prod-westus-001`.
+Efektivní konvence pro tvorbu názvů sestavuje názvy prostředků tak, že jako části názvu prostředku používá důležité údaje o prostředku. Například pomocí těchto [doporučených konvencí pojmenování](#sample-naming-convention)se prostředek veřejné IP adresy pro produkční úlohy služby SharePoint jmenuje takto: `pip-sharepoint-prod-westus-001`.
 
 Takový název vám umožní rychle identifikovat typ prostředku, jeho přidruženou úlohu, prostředí nasazení a oblast Azure, která ho hostuje.
 
@@ -62,11 +62,11 @@ Snažte se, aby byly komponenty názvu krátké a předešli jste tak překroče
 
 | Komponenta názvu | Popis | Příklady |
 | --- | --- | --- |
-| Obchodní jednotka | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni V menších organizacích může tato komponenta představovat jeden organizační prvek nejvyšší úrovně. | *fin*, *mktg*, *product*, *it*, *corp* |
-| Typ předplatného | Souhrnný popis účelu předplatného obsahujícího prostředek Často se dělí podle typu prostředí nasazení nebo konkrétních úloh. | *prod,* s*hared, client* |
-| Název aplikace nebo služby | Název aplikace, úlohy nebo služby, do které prostředek patří | *navigator*, *emissions*, *sharepoint*, *hadoop* |
-| Prostředí nasazení | Fáze životního cyklu vývoje pro úlohu, kterou prostředek podporuje | *prod, dev, qa, stage, test* |
-| Region (Oblast) | Oblast Azure, ve které je prostředek nasazen | *westus, eastus2, westeurope, usgovia* |
+| Obchodní jednotka | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni V menších organizacích může tato komponenta představovat jeden organizační prvek nejvyšší úrovně. | _fin_, _mktg_, _product_, _it_, _corp_ |
+| Typ předplatného | Souhrnný popis účelu předplatného obsahujícího prostředek Často se dělí podle typu prostředí nasazení nebo konkrétních úloh. | _prod_, _Shared_, _klient_ |
+| Název aplikace nebo služby | Název aplikace, úlohy nebo služby, do které prostředek patří | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
+| Prostředí nasazení | Fáze životního cyklu vývoje pro úlohu, kterou prostředek podporuje | _prod_, _dev_, _QA_, _fáze_, _test_ |
+| Region (Oblast) | Oblast Azure, ve které je prostředek nasazen | _westus_, _eastus2_, _westeurope_, _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>Doporučené předpony typu prostředku
 
@@ -77,35 +77,38 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Typ prostředku                       | Předpona názvu prostředku |
 | ----------------------------------- | -------------------- |
 | Skupina prostředků                      | rg-                  |
-| Azure Virtual Network               | vnet-                |
+| Skupina dostupnosti                    | využil               |
+| Služba API Management              | API                 |
+| Virtuální síť                     | vnet-                |
 | Brána virtuální sítě             | vnetgw-              |
 | Připojení brány                  | cn-                  |
 | Podsíť                              | snet-                |
 | Skupina zabezpečení sítě              | nsg-                 |
 | Tabulka směrování                         | cestě               |
-| Azure Virtual Machines              | vm-                  |
+| Virtuální počítač                     | virtuální počítač                   |
 | Účet úložiště virtuálního počítače                  | stvm                 |
 | Veřejná IP adresa                           | pip-                 |
-| Azure Load Balancer                 | lb-                  |
+| Nástroj pro vyrovnávání zatížení                       | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Key Vault                     | elektrické                  |
-| Azure Kubernetes Service            | AKS                 |
-| Azure Service Bus                   | sb-                  |
-| Fronty Azure Service Bus            | sbq-                 |
-| Azure Service Bus témata            | sbt-                 |
-| Plány Azure App Service             | rozhraní                |
-| Azure Web Apps                      | aplikace                 |
-| Funkce Azure                     | kláves                |
-| Azure Cloud Services                | nelze                 |
+| Key Vault                           | elektrické                  |
+| Cluster AKS                         | AKS                 |
+| Kontejner AKS                       | př                 |
+| Service Bus                         | sb-                  |
+| Fronta Service Bus                   | sbq-                 |
+| Service Bus téma                   | sbt-                 |
+| Plán služby App Service                    | rozhraní                |
+| Webová aplikace                             | aplikace                 |
+| Function App                        | kláves                |
+| Cloudová služba                       | nelze                 |
 | Server Azure SQL Database           | SQL                 |
-| Databáze SQL Azure                  | sqldb-               |
-| Azure Cosmos DB                     | Cosmos              |
-| Azure Cache for Redis               | redis-               |
-| Azure Database for MySQL            | mysql-               |
-| Azure Database for PostgreSQL       | psql                |
+| Databáze Azure SQL                  | sqldb-               |
+| Cosmos DB databáze                  | Cosmos              |
+| Mezipaměť Azure pro Redis Cache         | redis-               |
+| Databáze MySQL                      | mysql-               |
+| Databáze PostgreSQL                 | psql                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | St                   |
+| Účet úložiště                     | St                   |
 | Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
 | Azure Cognitive Services            | ozubeného kola                 |
@@ -119,10 +122,10 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Power BI Embedded                   | PBI                 |
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | ADF                 |
-| Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | IoT                 |
-| Azure Notification Hubs             | ntf-                 |
-| Obor názvů Azure Notification Hubs   | ntfns-               |
+| Centrum událostí                           | evh-                 |
+| Centrum IoT                             | IoT                 |
+| Centra oznámení                   | ntf-                 |
+| Obor názvů Notification Hubs         | ntfns-               |
 
 ### <a name="metadata-tags"></a>Značky metadat
 
@@ -132,18 +135,18 @@ To, jaké značky se u prostředků používají a jaké značky jsou povinné n
 
 | Název značky                  | Popis                                                                                                                                                                                                    | Klíč               | Příklad hodnoty                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| Název aplikace          | Název aplikace, služby nebo úlohy, které je prostředek přidružen                                                                                                                                 | *NázevAplikace* | *{název aplikace}*                                    |
-| Jméno schvalovatele             | Osoba odpovědná za schvalování nákladů souvisejících s tímto prostředkem                                                                                                                                               | *Schvalovatel*        | *{e-mail}*                                       |
-| Požadovaný/schválený rozpočet  | Peníze přidělené pro tuto aplikaci, službu nebo úlohu                                                                                                                                                    | *VelikostRozpočtu*    | *{\$}*                                          |
-| Obchodní jednotka             | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni V menších organizacích může tato značka představovat jeden organizační prvek nebo sdílený organizační prvek nejvyšší úrovně. | *ObchodníJednotka*    | *FINANCE, MARKETING,{Název produktu}, CORP, SHARED* |
-| Nákladové středisko               | Účetní nákladové středisko přidružené tomuto prostředku                                                                                                                                                          | *NákladovéStředisko*      | *{číslo}*                                      |
-| Zotavení po havárii         | Obchodní důležitost aplikace, úlohy nebo služby                                                                                                                                                | *DR*              | *Mission-critical, Critical, Essential*         |
-| Koncové datum projektu   | Datum naplánovaného vyřazení aplikace, úlohy nebo služby z provozu                                                                                                                                  | *KoncovéDatum*         | *{datum}*                                        |
-| Prostředí               | Prostředí nasazení aplikace, úlohy nebo služby                                                                                                                                              | *Prostředí*             | *Prod, Dev, QA, Stage, Test*                    |
-| Jméno vlastníka                | Vlastník aplikace, úlohy nebo služby                                                                                                                                                                | *Vlastník*           | *{e-mail}*                                       |
-| Jméno žadatele            | Uživatel, který požádal o vytvoření této aplikace                                                                                                                                                          | *Žadatel*       | *{e-mail}*                                       |
-| Třída služby             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                       | *TřídaSlužby*    | *Dev, Bronze, Silver, Gold*                     |
-| Počáteční datum projektu | Datum prvního nasazení aplikace, úlohy nebo služby                                                                                                                                           | *PočátečníDatum*       | *{datum}*                                        |
+| Název aplikace          | Název aplikace, služby nebo úlohy, které je prostředek přidružen                                                                                                                                 | _NázevAplikace_ | _{název aplikace}_                                    |
+| Jméno schvalovatele             | Osoba odpovědná za schvalování nákladů souvisejících s tímto prostředkem                                                                                                                                               | _Schvalovatel_        | _{e-mail}_                                       |
+| Požadovaný/schválený rozpočet  | Peníze přidělené pro tuto aplikaci, službu nebo úlohu                                                                                                                                                    | _VelikostRozpočtu_    | _{\$}_                                          |
+| Obchodní jednotka             | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni V menších organizacích může tato značka představovat jeden organizační prvek nebo sdílený organizační prvek nejvyšší úrovně. | _ObchodníJednotka_    | _Finance_, _Marketing_, _{název produktu}_ , _Corp_, _Shared_ |
+| Nákladové středisko               | Účetní nákladové středisko přidružené tomuto prostředku                                                                                                                                                          | _NákladovéStředisko_      | _{číslo}_                                      |
+| Zotavení po havárii         | Obchodní důležitost aplikace, úlohy nebo služby                                                                                                                                                | _DR_              | _Klíčové,_ _kritické_, _nezbytné_         |
+| Koncové datum projektu   | Datum naplánovaného vyřazení aplikace, úlohy nebo služby z provozu                                                                                                                                  | _KoncovéDatum_         | _{datum}_                                        |
+| Prostředí               | Prostředí nasazení aplikace, úlohy nebo služby                                                                                                                                              | _Prostředí_             | _Prod_, _dev_, _QA_, _fáze_, _test_                    |
+| Jméno vlastníka                | Vlastník aplikace, úlohy nebo služby                                                                                                                                                                | _Vlastník_           | _{e-mail}_                                       |
+| Jméno žadatele            | Uživatel, který požádal o vytvoření této aplikace                                                                                                                                                          | _Žadatel_       | _{e-mail}_                                       |
+| Třída služby             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                       | _TřídaSlužby_    | _Vývoj_, _bronzová_, _stříbrná_, _zlatá_                     |
+| Počáteční datum projektu | Datum prvního nasazení aplikace, úlohy nebo služby                                                                                                                                           | _PočátečníDatum_       | _{datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Ukázková konvence pro tvorbu názvů
 
@@ -168,8 +171,8 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Typ assetu               | Rozsah           | Formát                                                                | Příklady                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Azure Virtual Network          | Skupina prostředků  | vnet-\<Typ předplatného\>-\<Oblast\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Virtuální brána virtuální sítě     | Virtuální síť | vnetgw-v-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| Místní brána virtuální sítě       | Virtuální brána | Typ předplatného vnetgw-l-\<\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| Virtuální brána virtuální sítě     | Virtuální síť | vnetgw-v-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnetgw-v-Shared-eastus2-001 </li><li>vnetgw-v-prod-westus-001 </li><li>vnetgw-v-Client-eastus2-001</li></ul>                   |
+| Místní brána virtuální sítě       | Virtuální brána | Typ předplatného vnetgw-l-\<\>-\<oblasti\>-\<\#\#\#\>                 | <ul><li>vnetgw-l-Shared-eastus2-001 </li><li>vnetgw-l-prod-westus-001 </li><li>vnetgw-l-Client-eastus2-001</li></ul>                   |
 | Připojení typu Site-to-Site | Skupina prostředků  | cn-\<název místní brány\>-to-\<název virtuální brány\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Připojení k virtuální síti         | Skupina prostředků  | cn-\<předplatné1\>\<oblast1\>-to-\<předplatné2\>\<oblast2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
 | Podsíť                   | Virtuální síť | snet-\<předplatné\>-\<podoblast\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -190,9 +193,9 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 
 | Typ assetu           | Rozsah  | Formát                                                              | Příklady                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | Globální | Název aplikace\<aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Funkce Azure      | Globální | Func-\<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Globální | \<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | Globální | Název aplikace\<aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Funkce Azure      | Globální | Func-\<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Globální | \<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
@@ -208,7 +211,7 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Server Azure SQL Database           | Globální             | Název aplikace v jazyce SQL\<\>-prostředí \<\>      | <ul><li>SQL-navigátor-prod </li><li>SQL – emise – dev</li></ul>           |
 | Databáze SQL Azure                  | Databáze SQL Azure | SQLDB\<\<prostředí s názvem databáze\>| <ul><li>SQLDB – uživatelé – prod </li><li>SQLDB – uživatelé – dev</li></ul>               |
-| Azure Cosmos DB                     | Globální             | Cosmos\<název aplikace\>-prostředí \<\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | Globální             | Cosmos\<název aplikace\>-prostředí \<\>   | <ul><li>Cosmos-navigátor-prod </li><li>Cosmos – emise – dev</li></ul>       |
 | Azure Cache for Redis               | Globální             | redis-\<Název aplikace\>-\<Prostředí\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure Database for MySQL            | Globální             | mysql-\<Název aplikace\>-\<Prostředí\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | Azure Database for PostgreSQL       | Globální             | psql\<název aplikace\>-prostředí \<\>     | <ul><li>psql-navigátor-prod </li><li>psql – emise – dev</li></ul>         |

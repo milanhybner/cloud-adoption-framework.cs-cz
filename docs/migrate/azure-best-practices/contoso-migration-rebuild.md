@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681803"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726333"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Opětovné sestavení místní aplikace v Azure
 
@@ -41,7 +41,7 @@ Tým společnosti Contoso pro přechod do cloudu specifikoval požadavky na apli
 - Služba rozhraní API používaná pro fotky domácích zvířat by měla být při běžném používání přesná a spolehlivá, protože rozhodnutí učiněná v aplikaci musí být respektována v příslušných hotelech. Každé domácí zvíře s povoleným přístupem se může v hotelech ubytovat.
 - Kvůli splnění požadavků na kanál DevOps bude společnost Contoso používat Azure DevOps pro správu zdrojového kódu a úložiště Git. K sestavování kódu a nasazování do služeb Azure App Service, Azure Functions a AKS bude použito automatizované sestavování a vydávání verzí.
 - Pro back-endové mikroslužby a front-endový web jsou potřeba různé kanály CI/CD.
-- Back-endové služby mají jiný cyklus vydávání verzí než front-endová webová aplikace. Kvůli splnění tohoto požadavku společnost nasadí dva různé kanály DevOps.
+- Back-endové služby mají jiný cyklus vydávání verzí než front-endová webová aplikace. Aby se tento požadavek splnil, nasadí dva různé kanály.
 - Společnost Contoso potřebuje, aby úplné nasazení front-endového webu schvaloval management, a kanál CI-CD musí tuto možnost poskytovat.
 
 ## <a name="solution-design"></a>Návrh řešení
@@ -52,13 +52,13 @@ Po specifikaci cílů a požadavků společnost Contoso navrhne a zkontroluje ř
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
-- Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
-- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
+- Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
+- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
 
-- Front-end aplikace je nasazen jako webová aplikace služby Azure App Service v primární oblasti Azure.
+- Front-end aplikace je nasazen jako Azure App Service webová aplikace v primární oblasti Azure.
 - Služba Azure Functions poskytuje funkci pro odesílání fotek domácích zvířat a web tuto funkci používá.
 - Funkce pro odesílání fotek domácích zvířat používá rozhraní API pro počítačové zpracování obrazu služby Azure Cognitive Services a databázi Cosmos DB.
 - Back-end webu je sestaven pomocí mikroslužeb. Ty budou nasazeny do kontejnerů spravovaných službou Azure Kubernetes Service (AKS).
@@ -77,7 +77,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Použití modelu PaaS a bezserverového řešení pro kompletní nasazení významně zkracuje čas potřebný pro správu, kterou společnost Contoso musí poskytovat.<br/><br/> Přechod na architekturu s mikroslužbami umožní společnosti Contoso řešení postupně snadno rozšiřovat.<br/><br/> Nové funkce je možné zprovoznit online, aniž by došlo k narušení základů kódu existujících řešení.<br/><br/> Webová aplikace bude nakonfigurována s několika instancemi bez kritického prvku způsobujícího selhání.<br/><br/> Bude povolené automatické škálování, aby aplikace mohla zpracovávat různé objemy přenosů dat.<br/><br/> Díky přechodu na služby PaaS může společnost Contoso vyřadit z provozu zastaralá řešení spouštěná v operačním systému Windows Server 2008 R2.<br/><br/> Databáze Cosmos DB má integrovanou odolnost proti chybám, která nevyžaduje žádné konfigurování ze strany společnosti Contoso. To znamená, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -100,7 +100,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Ukládá image pro všechny typy kontejnerových nasazení. | Náklady závisí na funkcích, úložišti a délce využití. [Další informace](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Využijte možnost rychlého sestavení, nasazení a škálování webových, mobilních a API aplikací na podnikové úrovni, které běží na libovolné platformě. | Plány služby App Service se účtují po sekundách. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje:
 
@@ -109,8 +109,8 @@ Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje:
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v jednom z předchozích článků. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.
-**Předpoklady pro vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15,5](https://www.visualstudio.com)<br/><br/> Povolené úlohy .NET<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows.
+**Infrastruktura Azure** | [Přečtěte si](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
+**Požadavky na vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15,5](https://www.visualstudio.com)<br/><br/> Povolené úlohy .NET<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -134,7 +134,7 @@ Správci společnosti Contoso spuštěním skriptu nasazení vytvoří spravovan
 - Pokyny v této části používají úložiště **SmartHotel360-Azure-backend**.
 - Úložiště **SmartHotel360-Azure-backend** v GitHubu obsahuje veškerý software pro tuto část nasazování.  
 
-### <a name="prerequisites"></a>Předpoklady
+### <a name="ensure-prerequisites"></a>Zajištění požadavků
 
 1. Než začnete, správci společnosti Contoso zajistěte, aby byl veškerý požadovaný software nainstalovaný na vývojovém počítači, který používají pro nasazení.
 2. Úložiště naklonují místně do tohoto počítače pro vývoj pomocí Gitu: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -445,7 +445,7 @@ Správci společnosti Contoso vytvoří dva různé projekty pro front-endový w
 
 2. Do nového projektu naimportují úložiště Git [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-public-web.git).
 
-3. Pro aplikaci funkcí vytvoří další projekt Azure DevOps (SmartHotelPetChecker) a naimportují úložiště Git [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) do tohoto projektu.
+3. Pro aplikaci funkcí vytvoří další projekt Azure DevOps (SmartHotelPetChecker) a naimportují úložiště Git [PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) do tohoto projektu.
 
 ### <a name="configure-the-web-app"></a>Konfigurace webové aplikace
 
@@ -584,23 +584,22 @@ Správci společnosti Contoso nasadí aplikaci následujícím způsobem.
 14. Jakmile je funkce nasazená, zobrazí se na webu Azure Portal se stavem **Running** (Spuštěno).
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. Přejdou do aplikace a otestují, že aplikace Pet Checker na adrese [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets) funguje podle očekávání.
 
 16. Vyberou avatara pro odesílání obrázků.
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. První fotku, kterou chtějí zkontrolovat, je fotka malého psa.
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. Aplikace vrátí zprávu o přijetí.
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function9.png)
-    
 
-## <a name="review-the-deployment"></a>Revize nasazení
+## <a name="review-the-deployment"></a>Kontrola nasazení
 
 Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso plně zprovoznit a zabezpečit novou infrastrukturu.
 
@@ -612,7 +611,7 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 ### <a name="backups-and-disaster-recovery"></a>Zálohování a zotavení po havárii
 
-- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Společnost Contoso by měla zvážit implementaci skupin pro převzetí služeb SQL při selhání a zajistit tak regionální převzetí služeb při selhání databáze. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Společnost Contoso může použít geografickou replikaci skladové položky ACR Premium. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
 - Databáze Cosmos DB se zálohuje automaticky. Společnost Contoso může získat [další informace](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) o tomto procesu.
@@ -621,7 +620,7 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 
@@ -629,11 +628,10 @@ V tomto článku společnost Contoso znovu sestaví aplikaci SmartHotel360 v Azu
 
 ## <a name="suggested-skills"></a>Navrhované dovednosti
 
-Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získat body a úrovně a dosáhnout více
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
 
 Tady je několik příkladů přizpůsobených studijních cest na Microsoft Learn, které jsou v Azure v souladu s aplikací contoso SmartHotel360.
 
 [Nasazení webu do Azure pomocí Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): webové aplikace v Azure umožňují publikování a správu webu snadno, aniž byste museli pracovat s podkladovým serverem, úložištěm nebo síťovými prostředky. Místo toho se můžete soustředit na funkce webu a spolehnout se, že zabezpečený přístup k vašemu webu poskytne robustní platforma Azure.
 
 [Zpracování a klasifikace imagí pomocí služeb Azure pro rozpoznávání](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)hlasu: Azure Cognitive Services nabízí předem sestavené funkce, které ve vašich aplikacích umožní funkce počítačové vize. Naučte se používat služby rozpoznávání zraku ke zjišťování tváře, značek a klasifikace obrázků a identifikaci objektů.
-
