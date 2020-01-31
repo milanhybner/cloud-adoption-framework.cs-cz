@@ -1,6 +1,5 @@
 ---
 title: Nasazení infrastruktury migrace
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak společnost Contoso nastaví infrastrukturu Azure pro migraci do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160377"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807508"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury migrace
 
@@ -55,7 +54,7 @@ Tento diagram znázorňuje aktuální místní infrastrukturu společnosti Conto
 - V rámci USA má ještě tři další místní pobočky.
 - Hlavní datacentrum je připojené k internetu přes optické připojení Metro Ethernet (500 Mb/s).
 - Každá pobočka je místně připojená k internetu přes podnikové přípojky s tunely VPN IPSec, které vedou zpátky do hlavního datacentra. Díky tomu může být celá síť trvale připojená a má optimální připojení k internetu.
-- Hlavní datové centrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje software vCenter Server 6.5.
+- Hlavní datacentrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje software vCenter Server 6.5.
 - Společnost Contoso používá službu Active Directory pro správu identit a servery DNS ve vnitřní síti.
 - Řadiče domény v datacentru běží na virtuálních počítačích VMware. Řadiče domény v místních pobočkách běží na fyzických serverech.
 

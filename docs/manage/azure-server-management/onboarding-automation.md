@@ -1,6 +1,5 @@
 ---
 title: Automatizace připojování
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Automatizace připojování
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751596"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808018"
 ---
 # <a name="automate-onboarding"></a>Automatizace připojování
 
@@ -41,10 +40,10 @@ V této ukázce se používají soubory popsané v následující tabulce. Můž
 |-----------|-------------|
 | New-AMSDeployment. ps1 | Hlavní a orchestrující skript, který automatizuje registraci. Vytvoří skupiny prostředků a účty umístění, pracovního prostoru a Automation, pokud už neexistují. Tento skript PowerShellu vyžaduje stávající předplatné. |
 | Pracovní prostor – AutomationAccount. JSON | Správce prostředků šablona, která nasazuje pracovní prostor a prostředky účtu služby Automation. |
-| WorkspaceSolutions. JSON | Správce prostředků šablona umožňující požadovaná řešení v pracovním prostoru Log Analytics |
-| Prosím. JSON | Správce prostředků šablona, která používá model výslovných přihlášení pro místní servery s řešením Change Tracking. Použití modelu výslovných výslovných přihlášení je volitelné. |
-| Enable-VMInsightsPerfCounters. ps1 | PowerShellový skript, který umožňuje přehledy virtuálních počítačů pro servery a nakonfiguruje čítače výkonu. |
-| Sledování změn ve-Filelist. JSON | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
+| WorkspaceSolutions.json | Správce prostředků šablona umožňující požadovaná řešení v pracovním prostoru Log Analytics |
+| ScopeConfig.json | Správce prostředků šablona, která používá model výslovných přihlášení pro místní servery s řešením Change Tracking. Použití modelu výslovných výslovných přihlášení je volitelné. |
+| Enable-VMInsightsPerfCounters.ps1 | PowerShellový skript, který umožňuje přehledy virtuálních počítačů pro servery a nakonfiguruje čítače výkonu. |
+| ChangeTracking-Filelist.json | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
 
 Pomocí následujícího příkazu spusťte New-AMSDeployment. ps1:
 

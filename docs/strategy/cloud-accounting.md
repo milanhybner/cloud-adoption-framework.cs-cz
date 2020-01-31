@@ -1,6 +1,5 @@
 ---
 title: Co je účtování cloudu?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení konceptu monitorování účtů cloudu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 834beb021b394e2d6ffe58723caced7519923b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027294"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806811"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +34,7 @@ Bez ohledu na model příjmů jsou modely centrálního účetnictví IT jedine�
 
 V centrálním modelu IT tým vyznačuje služby poskytované k tomu, aby se zohlednila režie, Správa a další odhadované náklady. Pak účtuje konkurenční obchodní jednotky pro označené služby. V tomto modelu se očekává, že CIO spravuje P & L spojené s prodejem těchto služeb. To může vytvořit ploché IT náklady a kolize mezi ústředním IT a obchodními jednotkami, zejména v případě, že potřebuje snížit náklady nebo nesouhlasí s dohodnutým SLA. V době, kdy došlo ke změně technologie nebo trhu, by jakákoli nová technologie způsobila narušení centrálního vývoje P & L, což ztěžuje transformaci.
 
-## <a name="chargeback"></a>Vratka
+## <a name="chargeback"></a>Vrácení peněz
 
 Jedním z běžných prvních kroků při změně reputace v podobě nákladového centra je implementace vrácení peněz modelu monitorování účtů. Tento model je zvlášť společný v menších podnicích nebo vysoce efektivních organizacích IT. V modelu vrácení peněz se všechny náklady na IT spojené s konkrétní obchodní jednotkou považují za provozní náklady v rozpočtu této obchodní jednotky. Tento postup snižuje celkové vlivy na něj, což umožňuje, aby se obchodní hodnoty zobrazovaly zřetelně.
 

@@ -1,6 +1,5 @@
 ---
 title: Návrh zásad správného řízení pro jednoduchou úlohu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Pokyny pro konfiguraci řízení zásad správného řízení Azure, aby uživatel mohl nasadit jednoduchou úlohu.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566006"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803853"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Návrh zásad správného řízení pro jednoduchou úlohu
 

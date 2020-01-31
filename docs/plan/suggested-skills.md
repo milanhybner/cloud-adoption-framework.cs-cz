@@ -1,6 +1,5 @@
 ---
 title: Začínáme s cestou připravenosti dovedností
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Začínáme s cestou připravenosti dovedností
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564201"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800147"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Začínáme s cestou připravenosti dovedností
 
@@ -40,7 +39,7 @@ Každá z předchozích tras výuky sdílí příležitosti pro více typů méd
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získat body a úrovně a dosáhnout více
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
 Tady je několik příkladů přizpůsobených studijních cest na Microsoft Learn, které jsou v souladu s oddílem plánu v architektuře pro přijetí v cloudu:
 
 [Vyvinuli jsme DevOps postupy](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops je sjednocení lidí, procesů a produktů, které umožní průběžné doručování hodnot koncovým uživatelům. Azure DevOps je sada služeb, která poskytuje nástroje, které potřebujete k tomu, abyste je mohli udělat jenom vy. Pomocí Azure DevOps můžete sestavovat, testovat a nasazovat libovolné aplikace, a to buď do cloudu, nebo místně.

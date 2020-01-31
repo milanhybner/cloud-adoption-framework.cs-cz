@@ -1,6 +1,5 @@
 ---
 title: Vylepšení oboru směrného plánu zabezpečení
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru směrného plánu zabezpečení
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221716"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808902"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu zabezpečení
 
@@ -119,6 +118,6 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 Teď, když rozumíte konceptu zásad správného řízení cloudového zabezpečení, přejděte na Další informace o [zásadách zabezpečení a osvědčených postupů, které Microsoft poskytuje](./azure-security-guidance.md) pro Azure.
 
 > [!div class="nextstepaction"]
-> [Přečtěte si o pokynech zabezpečení pro Azure](./azure-security-guidance.md)
-> [Úvod do Azure Security](https://docs.microsoft.com/azure/security/azure-security)
-> –[informace o protokolování, generování sestav a monitorování](../../decision-guides/logging-and-reporting/index.md) .
+> [Přečtěte si informace o zásadách zabezpečení pro azure](./azure-security-guidance.md)
+> [Úvod do zabezpečení Azure](https://docs.microsoft.com/azure/security/azure-security)
+> [o protokolování, generování sestav a monitorování](../../decision-guides/logging-and-reporting/index.md) .

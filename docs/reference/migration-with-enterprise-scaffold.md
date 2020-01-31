@@ -1,6 +1,5 @@
 ---
 title: Vygenerované podnikové uživatelské prostředí v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Popisuje podniková generování uživatelského rozhraní, které vám může přispět k zajištění zabezpečeného a spravovatelného prostředí.
 author: rdendtler
 ms.author: rodend
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 442282951d0b76b1d3041ee43d0e7e464d07fccf
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76521132"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798787"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 

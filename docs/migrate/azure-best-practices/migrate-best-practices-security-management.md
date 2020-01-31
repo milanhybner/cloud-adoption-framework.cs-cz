@@ -1,6 +1,5 @@
 ---
 title: Osvědčené postupy pro zabezpečení a správu úloh migrovaných do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si o osvědčených postupech pro provoz, správu a zabezpečení úloh po jejich migraci do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160051"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803836"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Osvědčené postupy pro zabezpečení a správu úloh migrovaných do Azure
 
@@ -27,14 +26,14 @@ Při plánování a návrhu migrace se kromě migrace samotné musíte zamyslet 
 Nejdůležitější úkol po migraci spočívá v zabezpečení migrovaných úloh před interními a externími hrozbami. S tím vám můžou pomoct osvědčené postupy:
 
 - [Práce s Azure Security Center](#best-practice-follow-azure-security-center-recommendations): Naučte se pracovat s monitorováním, posouzením a doporučeními, která poskytuje Azure Security Center.
-- [Šifrování dat](#best-practice-encrypt-data): Získejte osvědčené postupy pro šifrování vašich dat v Azure.
-- [Nastavení antimalwaru](#best-practice-protect-vms-with-antimalware): Chraňte své virtuální počítače před malwarem a škodlivými útoky.
-- [Zabezpečené webové aplikace](#best-practice-secure-web-apps): Udržujte důvěrné informace v migrovaných webových aplikacích.
-- [Kontrola předplatných](#best-practice-review-subscriptions-and-resource-permissions): Ověřte, kdo může po migraci získat přístup k předplatným Azure a prostředkům.
-- [Práce s protokoly](#best-practice-review-audit-and-security-logs): pravidelně zkontrolujte auditování a protokoly zabezpečení Azure.
-- [Kontrola dalších funkcí zabezpečení](#best-practice-evaluate-other-security-features): pochopení a vyhodnocení pokročilých funkcí zabezpečení, které Azure nabízí.
+- [Šifrování dat](#best-practice-encrypt-data): získání osvědčené postupy pro šifrování dat v Azure.
+- [Nastavení antimalwaru](#best-practice-protect-vms-with-antimalware): ochrana virtuálních počítačů před malwarem a útoky se zlými úmysly.
+- [Zabezpečení webové aplikace](#best-practice-secure-web-apps): Keep citlivých informací v zabezpečené migrovat webové aplikace.
+- [Zkontrolujte předplatná](#best-practice-review-subscriptions-and-resource-permissions): ověření, kdo má přístup k prostředkům a předplatná Azure po migraci.
+- [Práce s protokoly](#best-practice-review-audit-and-security-logs): Zkontrolujte Azure auditování a zabezpečení protokoly v pravidelných intervalech.
+- [Přečtěte si další funkce zabezpečení](#best-practice-evaluate-other-security-features): pochopit a vyhodnotit rozšířené funkce zabezpečení, které Azure nabízí.
 
-## <a name="best-practice-follow-azure-security-center-recommendations"></a>Osvědčený postup: Sledujte doporučení Azure Security Center
+## <a name="best-practice-follow-azure-security-center-recommendations"></a>Osvědčený postup: doporučení služby Security Center postupujte podle Azure
 
 Microsoft usilovně pracuje na tom, aby měli správci tenantů Azure informace potřebné k povolení funkcí zabezpečení, které chrání úlohy před útoky. Azure Security Center poskytuje jednotnou správu zabezpečení. Security Center umožňuje uplatňovat zásady zabezpečení napříč úlohami, omezit vystavení vůči hrozbám, detekovat útoky a reagovat na ně. Security Center analyzuje prostředky a konfigurace napříč tenanty Azure a poskytuje doporučení v oblasti zabezpečení, například tato:
 
@@ -99,7 +98,7 @@ Na rozdíl od modelu IaaS, ve kterém spravujete virtuální počítače a infra
 - [Přečtěte si](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) o transparentním šifrování dat pro Azure SQL Database.
 - [Přečtěte si](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) o transparentním šifrování dat s využitím možnosti Bring Your Own Key.
 
-## <a name="best-practice-protect-vms-with-antimalware"></a>Osvědčený postup: ochrana virtuálních počítačů pomocí antimalwarového programu
+## <a name="best-practice-protect-vms-with-antimalware"></a>Osvědčený postup: ochrana virtuálních počítačů s využitím antimalwaru
 
 Konkrétně starší verze virtuálních počítačů migrovaných do Azure nemusí mít nainstalovanou odpovídající úroveň antimalwarového softwaru. Azure poskytuje bezplatné řešení pro koncové body, které pomáhá chránit virtuální počítače proti virům, spywaru a dalšímu malwaru.
 
@@ -114,7 +113,7 @@ Konkrétně starší verze virtuálních počítačů migrovaných do Azure nemu
 
 - Získejte [další informace](https://docs.microsoft.com/azure/security/azure-security-antimalware) o řešení Microsoft Antimalware.
 
-## <a name="best-practice-secure-web-apps"></a>Osvědčený postup: zabezpečení webových aplikací
+## <a name="best-practice-secure-web-apps"></a>Osvědčený postup: zabezpečené webové aplikace
 
 Migrované webové aplikace se setkávají s několika problémy:
 
@@ -135,7 +134,7 @@ Azure poskytuje hned několik řešení:
   - Dokáže za jednou bránou aplikací ochránit víc webových aplikací současně.
   - Brána firewall webových aplikací se dá monitorovat pomocí služby Azure Monitor a je integrovaná do Azure Security Center.
 
-![zabezpečené webové aplikace](./media/migrate-best-practices-security-management/web-apps.png)
+![Zabezpečení webové aplikace](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **Další informace:**
@@ -146,7 +145,7 @@ Azure poskytuje hned několik řešení:
 - [Zjistěte](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault), jak nakonfigurovat webovou aplikaci, aby četla tajné kódy ze služby Key Vault.
 - [Získejte informace](https://docs.microsoft.com/azure/application-gateway/waf-overview) o bráně firewall webových aplikací.
 
-## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Osvědčený postup: Kontrola předplatných a oprávnění prostředků
+## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Osvědčený postup: Zkontrolujte oprávnění prostředků a předplatná
 
 Během migrace úloh a jejich spouštění k Azure dochází k obměnám personálu s přístupem k těmto úlohám. Váš tým zabezpečení by měl přístup k vašemu tenantovi Azure a skupinám prostředků pravidelně kontrolovat. Azure nabízí možnosti správy identit a zabezpečení řízení přístupu, včetně řízení přístupu na základě role (RBAC), které umožňují autorizaci oprávnění pro přístup k prostředkům Azure.
 
@@ -164,7 +163,7 @@ Během migrace úloh a jejich spouštění k Azure dochází k obměnám person�
 - [Zjistěte](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal), jak spravovat přístup pomocí řízení přístupu na základě role a webu Azure Portal.
 - Získejte [další informace](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) o vlastních rolích.
 
-## <a name="best-practice-review-audit-and-security-logs"></a>Osvědčený postup: Kontrola protokolů auditu a zabezpečení
+## <a name="best-practice-review-audit-and-security-logs"></a>Osvědčený postup: kontrolovat protokoly auditu a zabezpečení
 
 Azure Active Directory (Azure AD) poskytuje protokoly aktivit, které se zobrazují v Azure Monitoru. Protokoly zachycují operace provedené v architektuře tenantů Azure, čas jejich provedení a to, kdo je provedl.
 
@@ -173,15 +172,15 @@ Azure Active Directory (Azure AD) poskytuje protokoly aktivit, které se zobrazu
 - Protokoly aktivit můžete směrovat do různých koncových bodů za účelem dlouhodobého uchovávání nebo získávání přehledu o datech.
 - Zvykněte si kontrolovat protokoly pravidelně nebo začněte používat nástroje pro správu akcí a informací o zabezpečení (SIEM), které budou automaticky kontrolovat abnormální hodnoty. Pokud nepoužíváte verzi Premium 1 nebo 2, budete muset sami nebo prostřednictvím systému SIEM provádět řadu analýz. K těmto analýzám patří vyhledávání rizikových přihlášení a událostí a dalších vzorců ukazujících na útok ze strany uživatelů.
 
-![uživatelů a skupin](./media/migrate-best-practices-security-management/azure-ad.png)
-*uživatelů a skupin Azure AD*
+![Uživatelé a skupiny](./media/migrate-best-practices-security-management/azure-ad.png)
+*Azure AD Uživatelé a skupiny*
 
 **Další informace:**
 
 - Získejte [další informace](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) o protokolech aktivit Azure AD ve službě Azure Monitor.
 - [Naučte se](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) provádět audit sestav aktivit na portálu Azure AD.
 
-## <a name="best-practice-evaluate-other-security-features"></a>Osvědčený postup: vyhodnocení dalších funkcí zabezpečení
+## <a name="best-practice-evaluate-other-security-features"></a>Osvědčený postup: Vyzkoušejte jiné funkce zabezpečení
 
 Azure nabízí další funkce zabezpečení, které poskytují pokročilé možnosti zabezpečení. Některé z těchto osvědčených postupů vyžadují doplňkové licence a možnosti verze Premium.
 
@@ -194,42 +193,42 @@ Azure nabízí další funkce zabezpečení, které poskytují pokročilé možn
 
 V této části doporučujeme některé osvědčené postupy pro správu Azure, včetně těchto:
 
-- [Správa prostředků](#best-practice-name-resource-groups): osvědčené postupy pro skupiny prostředků Azure a prostředky, včetně inteligentního pojmenovávání, prevence náhodného odstranění, správy oprávnění prostředků a efektivního označování prostředků.
-- [Použití modrotisky](#best-practice-implement-blueprints): Získejte rychlý přehled o používání plánů pro vytváření a správu prostředí nasazení.
-- [Přečtěte si architektury](#best-practice-review-azure-reference-architectures): Projděte si ukázkové architektury Azure a Naučte se, jak sestavovat nasazení po migraci.
-- [Nastavení skupin pro správu](#best-practice-manage-resources-with-azure-management-groups): Pokud máte více předplatných, můžete je shromáždit do skupin pro správu a u těchto skupin použít nastavení zásad správného řízení.
-- [Nastavení zásad přístupu](#best-practice-deploy-azure-policy): zásady dodržování předpisů aplikujte na prostředky Azure.
-- [Implementujte strategii BCDR](#best-practice-implement-a-bcdr-strategy): Propojte strategii pro provozní kontinuitu a zotavení po havárii (BCDR), která zajistí bezpečnost dat, odolnost prostředí a prostředky v provozu, pokud dojde k výpadku.
-- [Správa virtuálních počítačů](#best-practice-use-managed-disks-and-availability-sets): virtuální počítače skupiny do skupin dostupnosti pro odolnost a vysokou dostupnost. Pokud si navíc chcete usnadnit správu disků a úložišť virtuálních počítačů, použijte spravované disky.
-- [Sledování využití prostředků](#best-practice-monitor-resource-usage-and-performance): umožňuje povolit protokolování diagnostiky pro prostředky Azure, vytvářet upozornění a playbooky pro proaktivní řešení potíží a používat řídicí panel Azure pro sjednocení vašeho stavu a stavu nasazení.
-- [Správa podpory a aktualizace](#best-practice-manage-updates): Seznamte se s plánem podpory Azure a postupem jeho implementace, Získejte osvědčené postupy pro udržování aktuálnosti virtuálních počítačů a umístěte procesy do správy změn.
+- [Správa prostředků](#best-practice-name-resource-groups): osvědčené postupy pro skupiny prostředků Azure a prostředky, včetně inteligentní pojmenování, zabraňuje nechtěnému odstranění, Správa oprávnění k prostředkům a označování efektivní prostředků.
+- [Použití podrobné plány](#best-practice-implement-blueprints): Získejte rychlý přehled o používání plány pro vytváření a správu prostředí nasazení.
+- [Kontrola architektury](#best-practice-review-azure-reference-architectures): revize ukázkové architektury Azure k poslechněte si, jak sestavit vaše nasazení po migraci.
+- [Nastavení skupin pro správu](#best-practice-manage-resources-with-azure-management-groups): Pokud máte více předplatných, můžete shromáždit do skupin pro správu a použít nastavení zásad správného řízení do těchto skupin.
+- [Nastavení zásad přístupu](#best-practice-deploy-azure-policy): použití zásad dodržování předpisů vašich prostředků Azure.
+- [Implementovat strategii BCDR](#best-practice-implement-a-bcdr-strategy): dohromady kontinuity podnikových procesů a po havárii (BCDR) strategii zotavení aby byla data v bezpečí, vaše prostředí, které jsou odolné a prostředky a spuštění když dojde k výpadku.
+- [Správa virtuálních počítačů](#best-practice-use-managed-disks-and-availability-sets): seskupení virtuálních počítačů do skupiny dostupnosti pro odolnost a vysoká dostupnost. Pokud si navíc chcete usnadnit správu disků a úložišť virtuálních počítačů, použijte spravované disky.
+- [Monitorovat využití prostředků](#best-practice-monitor-resource-usage-and-performance): povolení protokolování diagnostiky pro prostředky Azure, vytvářet výstrahy a playbooky proaktivní při řešení potíží a použít řídicí panel Azure jednotný přehled o stavu nasazení a stav.
+- [Správa podporu a aktualizace](#best-practice-manage-updates): pochopení vašeho plánu podpory Azure a jak ho implementovat, získat osvědčené postupy pro udržování aktuálnosti virtuální počítače a vložení procesy pro správu změn.
 
-## <a name="best-practice-name-resource-groups"></a>Osvědčené postupy: pojmenování skupin prostředků
+## <a name="best-practice-name-resource-groups"></a>Osvědčený postup: název skupiny prostředků
 
 Když budou mít vaše skupiny prostředků smysluplné názvy, které správci a členové týmu podpory snadno rozpoznají a zorientují se v nich, významně to přispěje ke zvýšení produktivity a efektivity.
 
 - Doporučujeme dodržovat zásady vytváření názvů Azure.
 - Pokud synchronizujete místní službu Active Directory do Azure AD pomocí nástroje Azure AD Connect, zamyslete se, jestli by nebylo vhodné přizpůsobit názvy místních skupin zabezpečení názvům prostředků v Azure.
 
-![pojmenovávání názvů](./media/migrate-best-practices-security-management/naming.png)
-*skupiny prostředků*
+![Pojmenování](./media/migrate-best-practices-security-management/naming.png)
+*pojmenování skupiny prostředků*
 
 **Další informace:**
 
 - [Získejte další informace](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) o zásadách vytváření názvů.
 
-## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Osvědčený postup: implementace zámků pro odstranění skupin prostředků
+## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Osvědčený postup: implementace odstranit zámky pro skupiny prostředků
 
 To poslední, co potřebujete, je nemoct najít některou skupinu prostředků, protože ji někdo omylem odstranil. Doporučujeme vám implementovat zámky odstranění, aby se takové nehody nestávaly.
 
-![odstranit zámky](./media/migrate-best-practices-security-management/locks.png)
-*Odstranit zámky*
+![Odstranit zámky](./media/migrate-best-practices-security-management/locks.png)
+*odstranit zámky*
 
 **Další informace:**
 
 - [Získejte informace](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) o uzamknutí prostředků, které brání neočekávaným změnám.
 
-## <a name="best-practice-understand-resource-access-permissions"></a>Osvědčený postup: pochopení oprávnění pro přístup k prostředkům
+## <a name="best-practice-understand-resource-access-permissions"></a>Osvědčený postup: pochopení oprávnění přístupu k prostředkům
 
 Vlastník předplatného má přístup ke všem skupinám prostředků a prostředkům v rámci vašeho předplatného.
 
@@ -242,7 +241,7 @@ Vlastník předplatného má přístup ke všem skupinám prostředků a prostř
 
 - [Získejte informace](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise) o uspořádání předplatných a skupin prostředků.
 
-## <a name="best-practice-tag-resources-effectively"></a>Osvědčené postupy: efektivní označení prostředků
+## <a name="best-practice-tag-resources-effectively"></a>Osvědčený postup: efektivně označení prostředků
 
 Použití jenom názvu skupiny prostředků, který se vztahuje k prostředkům, často neposkytne dostatek metadat pro efektivní implementaci mechanismů, jako je interní fakturace nebo správa v rámci předplatného.
 
@@ -260,7 +259,7 @@ Použití jenom názvu skupiny prostředků, který se vztahuje k prostředkům,
 - [Podívejte se](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) na příklady, jak nastavit vytváření značek v PowerShellu a CLI, a zjistěte, jak použít značky skupiny prostředků na obsažené prostředky.
 - [Přečtěte si](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) osvědčené postupy vytváření značek v Azure.
 
-## <a name="best-practice-implement-blueprints"></a>Osvědčený postup: implementace modrotisky
+## <a name="best-practice-implement-blueprints"></a>Osvědčený postup: provedení podrobné plány.
 
 Stejně jako technický nákres či podrobný plán (anglicky „blueprint“) umožňuje technikovi nebo architektovi načrtnout parametry návrhu projektu, služba Azure Blueprints umožňuje cloudovým architektům a centrálním oddělením IT definovat opakovatelnou sadu prostředků Azure, která implementuje a dodržuje standardy, vzory a požadavky organizace. Díky službě Azure Blueprints můžou vývojářské týmy rychle vytvářet nová prostředí, která vyhovují předpisům organizace a která obsahují sadu předdefinovaných komponent – třeba síťových – ke zrychlení vývoje a distribuce.
 
@@ -272,7 +271,7 @@ Stejně jako technický nákres či podrobný plán (anglicky „blueprint“) u
 - [Přečtěte si](https://docs.microsoft.com/azure/governance/blueprints/overview) o podrobných plánech.
 - [Prohlédněte si](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) příklad podrobného plánu, který slouží k urychlení AI ve zdravotnictví.
 
-## <a name="best-practice-review-azure-reference-architectures"></a>Osvědčený postup: Kontrola referenčních architektur Azure
+## <a name="best-practice-review-azure-reference-architectures"></a>Osvědčený postup: revize referenční architektury Azure
 
 Vytváření zabezpečených, škálovatelných a snadno spravovatelných úloh v Azure může být náročný úkol. Vzhledem k nepřetržitým změnám může být těžké držet krok s různými funkcemi pro optimální prostředí. Při návrhu a migraci úloh může být užitečné mít po ruce referenční architektury, ze kterých se můžete poučit. Azure a partneři Azure vytvořili několik takových ukázkových referenčních architektur pro různé typy prostředí. Tyto ukázky jsou vytvořené tak, aby poskytovaly nápady, kterými se můžete inspirovat a na kterých můžete stavět.
 
@@ -303,7 +302,7 @@ Následující diagram ukazuje příklad vytvoření hierarchie pro zásady spr�
 
 - [Přečtěte si víc](https://docs.microsoft.com/azure/governance/management-groups/index) o uspořádání prostředků do skupin pro správu.
 
-## <a name="best-practice-deploy-azure-policy"></a>Osvědčený postup: nasazení Azure Policy
+## <a name="best-practice-deploy-azure-policy"></a>Osvědčený postup: nasazení zásad Azure
 
 Azure Policy je služba v Azure, která slouží k vytváření, přiřazování a správě zásad.
 
@@ -320,7 +319,7 @@ Azure Policy je služba v Azure, která slouží k vytváření, přiřazování
 - [Získejte přehled](https://docs.microsoft.com/azure/governance/policy/overview) o službě Azure Policy.
 - [Získejte in](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) o vytváření a správě zásad, které umožňují prosazovat dodržování předpisů.
 
-## <a name="best-practice-implement-a-bcdr-strategy"></a>Osvědčené postupy: implementace strategie BCDR
+## <a name="best-practice-implement-a-bcdr-strategy"></a>Osvědčený postup: implementovat strategii BCDR
 
 Plánování provozní kontinuity a zotavení po havárii (BCDR) je zásadně důležitý úkon, který byste měli provést během procesu plánování migrace do Azure. Řečeno jazykem práva, vaše smlouvy můžou zahrnovat doložku o zásazích vyšší moci, která vás zbavuje závazků v případě zásahu vyšší moci, například hurikánu nebo zemětřesení. Zároveň ale máte určité závazky týkající se vaší schopnosti zajistit v případě přírodní katastrofy funkčnost služeb a v případě potřeby provést jejich obnovení. Tato schopnost může rozhodnout o budoucnosti vaší společnosti.
 
@@ -404,7 +403,7 @@ Site Recovery replikuje virtuální počítače z primární do sekundární obl
 - [Projděte si](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) scénáře zotavení po havárii pro virtuální počítače Azure.
 - [Zjistěte](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration), jak po migraci nastavit u virtuálního počítače v Azure zotavení po havárii.
 
-## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Osvědčený postup: použití spravovaných disků a skupin dostupnosti
+## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Osvědčený postup: použít spravované disky a skupiny dostupnosti
 
 Azure logicky seskupuje virtuální počítače do skupin dostupnosti a virtuální počítače v určité skupině izoluje od ostatních prostředků. Virtuální počítače ve skupině dostupnosti jsou rozptýlené do víc domén selhání s oddělenými subsystémy, aby byly chráněné před místními selháními, a jsou taky rozptýlené do víc aktualizačních domén, aby se všechny virtuální počítače ve stejné skupině nerestartovaly ve stejnou chvíli.
 
@@ -414,7 +413,7 @@ Spravované disky Azure zjednodušují správu disků virtuálních počítačů
 - Existující disky můžete převést na spravované.
 - Měli byste vytvořit virtuální počítače ve skupinách dostupnosti, které zajišťují vysokou odolnost a dostupnost. Pokud dojde k plánovanému nebo neplánovanému výpadku, skupiny dostupnosti zajistí, aby byl dál dostupný aspoň jeden virtuální počítač ze skupiny.
 
-![spravované disky](./media/migrate-best-practices-security-management/managed-disks.png)
+![Spravované disky](./media/migrate-best-practices-security-management/managed-disks.png)
 *spravované disky*
 
 **Další informace:**
@@ -478,7 +477,7 @@ Když u prostředků Azure povolíte protokolování diagnostiky, můžete zač�
 - [Získejte informace](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) o výstrahách.
 - [Získejte informace](https://docs.microsoft.com/azure/security-center/security-center-playbooks) o playboocích zabezpečení, které reagují na výstrahy služby Security Center.
 
-## <a name="best-practice-use-the-azure-dashboard"></a>Osvědčený postup: Použití řídicího panelu Azure
+## <a name="best-practice-use-the-azure-dashboard"></a>Osvědčený postup: pomocí řídicího panelu Azure
 
 Azure Portal je jednotná webová konzola, která umožňuje vytvářet, spravovat a sledovat všechno od jednoduchých webových aplikací až po složité cloudové aplikace. Zahrnuje přizpůsobitelné řídicí panely a možnosti usnadnění.
 
@@ -493,7 +492,7 @@ Azure Portal je jednotná webová konzola, která umožňuje vytvářet, spravov
 - [Zjistěte](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards), jak vytvořit řídicí panel.
 - [Získejte informace](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure) o struktuře řídicích panelů.
 
-## <a name="best-practice-understand-support-plans"></a>Osvědčený postup: principy plánů podpory
+## <a name="best-practice-understand-support-plans"></a>Osvědčený postup: pochopení podporu plánů
 
 Dřív nebo později nastane situace, kdy budete potřebovat spolupracovat s pracovníky podpory ve vaší společnosti nebo s pracovníky podpory Microsoftu. Je zásadně důležité mít vytvořenou sadu zásad a postupů podpory pro případy, jako je zotavení po havárii. Kromě toho by měli vaši správci a pracovníci podpory umět tyto zásady implementovat.
 
@@ -508,7 +507,7 @@ Dřív nebo později nastane situace, kdy budete potřebovat spolupracovat s pra
 - [Získejte přehled](https://azure.microsoft.com/support/options) informací o plánech podpory Azure.
 - [Získejte informace](https://azure.microsoft.com/support/legal/sla) o smlouvách o úrovni služeb (SLA).
 
-## <a name="best-practice-manage-updates"></a>Osvědčené postupy: Správa aktualizací
+## <a name="best-practice-manage-updates"></a>Osvědčený postup: Správa aktualizací
 
 Provádění pravidelných aktualizací operačního systému a softwaru virtuálních počítačů Azure představuje nesmírně náročný úkol. Je velmi důležité mít možnost přehledně si zobrazit všechny virtuální počítače, zjistit, jaké aktualizace potřebují, a tyto aktualizace automaticky nainstalovat.
 

@@ -1,6 +1,5 @@
 ---
 title: Metriky standardních hodnot zabezpečení, indikátory a tolerance rizik
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky standardních hodnot zabezpečení, indikátory a tolerance rizik
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1075563dd4596ad6bd1b4ac202a69a1ab1251cba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222854"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808851"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metriky standardních hodnot zabezpečení, indikátory a tolerance rizik
 

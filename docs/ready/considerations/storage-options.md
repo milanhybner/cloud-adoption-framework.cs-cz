@@ -1,6 +1,5 @@
 ---
 title: Zkontrolujte možnosti úložiště.
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Prohlédněte si možnosti úložiště pro úlohy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561732"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799025"
 ---
 # <a name="review-your-storage-options"></a>Zkontrolujte možnosti úložiště.
 
@@ -135,7 +134,7 @@ Tyto funkce zabezpečení se týkají úložiště objektů blob v Azure (blok a
 
 Služba Azure Disk Encryption vám umožní šifrovat neaktivní uložené i přenášené spravované disky, které jsou připojené k virtuálním počítačům IaaS jako operační systém a datové disky, pomocí klíčů uložených v [Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault). Ve Windows se jednotky šifrují pomocí standardní technologie šifrování [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). V Linuxu se disky šifrují pomocí subsystému [dm-crypt.](https://wikipedia.org/wiki/Dm-crypt) Proces šifrování je integrovaný s Azure Key Vault, abyste mohli řídit a spravovat klíče pro šifrování disků. Další informace najdete v tématu o službě [Azure Disk Encryption pro virtuální počítače IaaS se systémy Windows a Linux](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview).
 
-## <a name="regional-availability"></a>Regionální dostupnost
+## <a name="regional-availability"></a>Dostupnost podle oblastí
 
 S Azure můžete dodávat služby v měřítku, jaké potřebujete, abyste mohli oslovit zákazníky a partnery, *ať jsou kdekoli*. Stránky regionální dostupnosti pro [spravované disky](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks) a [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) zobrazují oblasti, ve kterých jsou tyto služby k dispozici. Kontrola regionální dostupnosti služby předem vám může pomoct přijmout správné rozhodnutí pro vaše úlohy a potřeby zákazníků.
 

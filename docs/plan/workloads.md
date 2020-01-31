@@ -1,6 +1,5 @@
 ---
 title: Určení priorit a definování úloh pro plán přijetí do cloudu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Určení priorit a definování úloh pro plán přijetí do cloudu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240190"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799977"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
 
@@ -27,7 +26,7 @@ Omezení plánu na 10 úloh podporuje flexibilitu a zarovnání priorit při zm�
 
 V souvislosti s přijetím cloudu je zatížení kolekce prostředků IT (servery, virtuální počítače, aplikace, data nebo zařízení), které společně podporují definovaný proces. Úlohy mohou podporovat více než jeden proces. Úlohy můžou záviset i na dalších sdílených prostředcích a větších platformách. Pracovní vytížení ale by mělo mít definované hranice týkající se závislých prostředků a procesů, které závisí na zatížení. Úlohy je často možné vizuálně vymezit monitorováním síťového provozu mezi prostředky IT.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Strategické vstupy ze seznamu požadovaných součástí vedou k tomu, že tyto úkoly jsou mnohem jednodušší. Nápovědu k shromažďování dat popsaných v tomto článku najdete v části [požadavky](./prerequisites.md).
 

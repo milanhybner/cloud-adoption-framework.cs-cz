@@ -1,6 +1,5 @@
 ---
 title: Posouzení cesty transformace
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Posouzení cesty transformace
 author: alexbuckgit
 ms.author: abuck
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 413a7023738f510f5b08692a3f88a88cd3333632
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026694"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806522"
 ---
 # <a name="assess-your-transformation-journey"></a>Posouzení cesty transformace
 
@@ -47,7 +46,7 @@ Nástroj pro srovnávací testy zásad správného řízení poskytuje přizpůs
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Začněte svou cestu zásad správného řízení s malou, snadno implementovanou sadou nástrojů zásad správného řízení. Tento počáteční základ zásad správného řízení se označuje jako minimální realizovatelný produkt (MVP – Minimum Viable Product).
 

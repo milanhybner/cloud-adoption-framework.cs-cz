@@ -1,6 +1,5 @@
 ---
-title: 'Softwarově definované sítě: Hybridní síť'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Softwarově definované sítě: hybridní síť'
 description: Diskuze o tom, jak hybridní sítě umožňují vašim cloudovým virtuálním sítím připojovat se k místním prostředkům.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 94e285f59442b6632209e1cd6a76c39cfccd337b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829485"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806607"
 ---
-# <a name="software-defined-networking-hybrid-network"></a>Softwarově definované sítě: Hybridní síť
+# <a name="software-defined-networking-hybrid-network"></a>Softwarově definované sítě: hybridní síť
 
 Architektura hybridní cloudové sítě umožňuje virtuálním sítím přistupovat k místním prostředkům a službám a naopak pomocí vyhrazeného připojení WAN, jako je ExpressRoute nebo jiná metoda připojení, přímo připojit sítě.
 
@@ -42,7 +41,7 @@ Týmy pro přijetí v cloudu by měly při hledání implementace hybridní virt
 - Škálování počtu a velikosti úloh v hybridním cloudovém prostředí může výrazně složitou složitost při směrování a správě provozu.
 - Budete potřebovat vyvinout kompatibilní zásady správy a řízení přístupu, abyste zachovali konzistentní řízení v celé organizaci.
 
-## <a name="learn-more"></a>Víc se uč
+## <a name="learn-more"></a>Další informace
 
 Další informace o hybridních sítích v Azure najdete v těchto tématech:
 

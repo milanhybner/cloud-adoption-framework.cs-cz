@@ -1,6 +1,5 @@
 ---
 title: 'Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s osvědčenými postupy pro zásady správného řízení ve standardních podnicích.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547494"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806794"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy
 

@@ -1,6 +1,5 @@
 ---
 title: 'Migrace sálového počítače: migrace sálové aplikace'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrujte aplikace z prostředí sálových počítačů do Azure, osvědčené, vysoce dostupné a škálovatelné infrastruktury pro systémy, které aktuálně běží na mainframech.
 author: njray
 ms.author: v-nanra
@@ -8,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239450"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808817"
 ---
-# <a name="mainframe-application-migration"></a>Migrace aplikace na sálové počítače
+# <a name="mainframe-application-migration"></a>Migrace mainframových aplikací
 
 Když migrujete aplikace z sálových prostředí do Azure, většina týmů bude postupovat podle toho, co je to možné, kdykoliv a kdykoli je to možné, a pak zahájit postupné nasazení, kde se aplikace přepíší nebo nahradí.
 
@@ -89,7 +88,7 @@ Použije
 
 - Paralelní zpracování, protože Azure se snadno škáluje pro paralelní zpracování a poskytuje více výpočetní výkon pro dávkovou práci.
 
-### <a name="storage"></a>Úložiště
+### <a name="storage"></a>Storage
 
 Použije
 
@@ -125,7 +124,7 @@ Distribuované architektury cloudu spoléhají na jinou sadu vývojářských n�
 
 ## <a name="migrate-databases-and-data"></a>Migrace databází a dat
 
-Migrace aplikace obvykle zahrnuje opětovné hostování datové vrstvy. Můžete migrovat SQL Server, open source a další relační databáze na plně spravovaná řešení v Azure, jako je například [Azure SQL Database Managed instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)a [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) s [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+Migrace aplikace obvykle zahrnuje opětovné hostování datové vrstvy. Můžete migrovat SQL Server, open source a další relační databáze na plně spravovaná řešení v Azure, jako je například [Azure SQL Database Managed instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)a [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) s [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Můžete například migrovat, pokud Datová vrstva sálového počítače používá:
 

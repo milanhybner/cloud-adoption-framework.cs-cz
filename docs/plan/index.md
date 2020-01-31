@@ -1,6 +1,5 @@
 ---
 title: Definování plánu přechodu na cloud
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vedení technického úsilí pomocí definovaného plánu přechodu na cloud
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: 5a3b46fe9f9eaf62e348f1b515e3dfd2c39d2b65
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3e4c32ae4168a1558ca2384b70596d07d915f734
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818297"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800470"
 ---
 <!-- markdownlint-disable MD026 -->
 

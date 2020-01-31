@@ -1,6 +1,5 @@
 ---
 title: Kontrola možností COMPUTE
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Projděte si možnosti výpočtů pro úlohy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561876"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799178"
 ---
 # <a name="review-your-compute-options"></a>Kontrola možností COMPUTE
 
@@ -61,7 +60,7 @@ Následující tabulka obsahuje několik běžných scénářů a doporučené v
 | Potřebuji plánovat úlohy a spravovat výpočty v cloudovém měřítku s možností škálování na desítky, stovky nebo tisíce virtuálních počítačů. | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | Potřebuji vytvářet vysoce dostupné škálovatelné cloudové aplikace a rozhraní API, které mi pomohou soustředit se na aplikace, a ne na hardware. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
-## <a name="regional-availability"></a>Regionální dostupnost
+## <a name="regional-availability"></a>Dostupnost podle oblastí
 
 Azure vám umožní dodávat služby v měřítku, jaké potřebujete, abyste mohli oslovit zákazníky a partnery,  _ať jsou kdekoli_. Klíčovým faktorem při plánování cloudového nasazení je určení, která oblast Azure bude hostovat prostředky vašich úloh.
 

@@ -1,6 +1,5 @@
 ---
 title: Služby a nástroje pro správu serveru Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Služby a nástroje pro správu serveru Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565284"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807933"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Služby a nástroje pro správu serveru Azure
 
@@ -85,7 +84,7 @@ Při přijetí a přesunu do cloudu se vytvoří nové výzvy ke správě. Při 
 
 Návrh zásad správného řízení pro standardní organizace se často liší od návrhu zásad správného řízení pro komplexní podniky. Další informace o osvědčených postupech pro zásady správného řízení pro standardní organizaci najdete v tématu [standardní příručka pro zásady správného řízení podniku](../../govern/guides/standard/index.md). Další informace o osvědčených postupech pro zásady správného řízení pro komplexní podnik najdete v [příručce pro zásady správného řízení pro komplexní podniky](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Fakturační údaje
+## <a name="billing-information"></a>Informace o fakturaci
 
 Další informace o cenách pro služby Azure Management Services najdete na těchto stránkách:
 
@@ -98,7 +97,7 @@ Další informace o cenách pro služby Azure Management Services najdete na tě
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), včetně:
-  - Konfigurace požadovaného stavu
+  - Požadovaná konfigurace stavu
   - Služba Azure Update Management
   - Služby Azure Change Tracking a Inventory Services
 

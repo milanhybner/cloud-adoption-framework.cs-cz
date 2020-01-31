@@ -1,6 +1,5 @@
 ---
 title: Možnosti cloudové strategie
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Popisuje tvorbu možností cloudové strategie
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027299"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800844"
 ---
 # <a name="cloud-strategy-capabilities"></a>Možnosti cloudové strategie
 
@@ -29,7 +28,7 @@ Tato funkce je běžně poskytována následujícími typy rolí. Pokud je defin
 - Finance
 - Odvětví firmy
 - Lidské zdroje
-- Operace
+- Operations
 - Podniková architektura
 - IT infrastruktura
 - Skupiny aplikací
@@ -38,7 +37,7 @@ Tato funkce je běžně poskytována následujícími typy rolí. Pokud je defin
 Tato funkce pomáhá zajistit kritické stanovení priorit a úsilí při zjišťování během přijetí cloudu. Může taky aktivovat změny v obchodních procesech, provádění operací, interakcí s zákazníky nebo vývoj produktů. Pokud je tato schopnost omezená, bude se omezit úspěch úsilí při přijetí na Cloud. Aby bylo možné řídit skutečnou změnu v podniku, musí být obchodní vedoucí primární zdrojem této možnosti. Tým definovaných cloudových strategií nabízí způsob, jak zamezit klíčové účastníky strukturovaným způsobem.
 
 > [!NOTE]
-> Generální ředitel a CIO organizace často přiřadí tým. Přiřazení jsou typicky založena na tom, že tento tým bude řídit změnu v různých různých organizacích v rámci podniku. Členové týmu cloudové strategie by měli být přiřazení na základě [motivace pro přijetí](../strategy/motivations.md)do cloudu, [obchodní výsledky](../strategy/business-outcomes/index.md)a relevantní [finanční modely](../strategy/financial-models.md).
+> Generální ředitel a CIO organizace často přiřadí tým. Přiřazení jsou typicky založena na tom, že tento tým bude řídit změnu v různých různých organizacích v rámci podniku. Členové týmu cloudové strategie by měli být přiřazení na základě [motivace pro přijetí do cloudu](../strategy/motivations.md), [obchodní výsledky](../strategy/business-outcomes/index.md)a relevantní [finanční modely](../strategy/financial-models.md).
 
 ## <a name="key-responsibilities"></a>Klíčové zodpovědnosti
 
@@ -47,7 +46,7 @@ Hlavním cílem cloudové strategie je ověřit a zachovat sbližování mezi ob
 ### <a name="early-planning-tasks"></a>Úlohy prvotního plánování
 
 - Přečtěte si a poskytněte zpětnou vazbu k [obchodním výsledkům](../strategy/business-outcomes/index.md) a [finančním modelům](../strategy/financial-models.md).
-- Podpora při vytváření jasných [motivů pro přijetí](../strategy/motivations.md) v cloudu, které jsou v souladu s podnikovými cíli.
+- Podpora při vytváření jasných [motivů pro přijetí v cloudu](../strategy/motivations.md) , které jsou v souladu s podnikovými cíli.
 - Definujte relevantní [výukové metriky](../strategy/learning-metrics.md) , které jasně sdělují pokrok v obchodních výstupech.
 - Seznamte se s [obchodními riziky](../govern/policy-compliance/risk-tolerance.md) zavedenými podle plánu, představuje [toleranci firmy pro rizika](../govern/policy-compliance/risk-tolerance.md).
 - Zkontrolujte a schvalte [racionalizaci digitální nemovitosti](../digital-estate/rationalize.md).
@@ -64,12 +63,12 @@ Hlavním cílem cloudové strategie je ověřit a zachovat sbližování mezi ob
 Úkoly uvedené v předchozí části můžou být časově náročné ve fázích prvotního plánování. Tady jsou některá doporučení pro přidělení času pro členy týmu cloudové strategie:
 
 - Během prvotního plánování přidělte každý týden každou hodinu ke splnění týmu. Po solidified plánu přijetí (obvykle do 4&ndash;6 týdnů) se můžou snížit požadavky na čas.
-- V průběhu snahy přidělte každý&ndash;měsíc 1 až 2 hodiny, abyste mohli kontrolovat průběh a ověřit nepřetržité priority.
-- Další čas se nejspíš vyžaduje u delegovaných členů týmu vedoucího v závislosti na tom, co je potřeba. Každý člen týmu cloudové strategie by měl jmenovat delegáta, který může přidělit&ndash;5 až 10 hodin za týden, aby podporovaly průběžné určování priorit a vykazovat případné naléhavé potřeby.
+- V průběhu snahy přidělte každý měsíc 1&ndash;2 hodiny, abyste mohli zkontrolovat průběh a ověřit nepřetržité priority.
+- Další čas se nejspíš vyžaduje u delegovaných členů týmu vedoucího v závislosti na tom, co je potřeba. Každý člen týmu cloudové strategie by měl jmenovat delegáta, který může přidělit 5&ndash;10 hodin týdně, aby podporovaly průběžné určování priorit a vykazovat případné naléhavé potřeby.
 
 ## <a name="next-steps"></a>Další kroky
 
-Strategie a plánování jsou důležité. Nic ale není možné bez [možností přijímání](./cloud-adoption.md)v cloudu dělat. Než začnete s úsilím o přijetí, pochopte si roli této důležité možnosti.
+Strategie a plánování jsou důležité. Nic ale není možné bez [možností přijímání v cloudu](./cloud-adoption.md)dělat. Než začnete s úsilím o přijetí, pochopte si roli této důležité možnosti.
 
 > [!div class="nextstepaction"]
 > [Zarovnání možností přijetí do cloudu](./cloud-adoption.md)

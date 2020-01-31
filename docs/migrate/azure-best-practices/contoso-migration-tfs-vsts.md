@@ -1,6 +1,5 @@
 ---
 title: Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak Contoso refaktoruje svoje místní nasazení TFS tím, že je migruje do sady Azure DevOps Services v Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 6a80ab660afc9b604a027d3475bb6e2d99f00c98
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868104"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807389"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services
 
@@ -72,7 +71,7 @@ Zde zjistíte, co Contoso potřebuje k realizaci tohoto scénáře.
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si [tento článek](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
+**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 **Místní server TFS** | Je třeba, aby místní server používal TFS 2018 Upgrade 2, nebo aby byl v rámci tohoto procesu upgradován.
 
 ## <a name="scenario-steps"></a>Kroky scénáře

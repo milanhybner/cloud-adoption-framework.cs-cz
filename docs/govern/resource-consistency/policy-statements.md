@@ -1,6 +1,5 @@
 ---
 title: Ukázkové zásady konzistence prostředků – příkazy
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ukázkové zásady konzistence prostředků – příkazy
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221986"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807253"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Ukázkové zásady konzistence prostředků – příkazy
 
@@ -35,7 +34,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 - Nasazené prostředky by měly být označeny následujícími hodnotami:
   - Náklady
   - Závažnost
-  - SLA
+  - Smlouva SLA
   - Prostředí
 - Nástroje zásad správného řízení musí ověřovat označování související s náklady, závažností, smlouvou SLA, aplikací a prostředím. Všechny hodnoty musí být zarovnané na předdefinované hodnoty, které spravuje tým zásad správného řízení.
 
@@ -68,7 +67,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Možné možnosti návrhu:** Konzistentní používání plánů [Azure](https://docs.microsoft.com/azure/governance/blueprints) ke správě automatizovaných nasazení umožňuje konzistentní nasazení prostředků Azure, které dodržují standardy a zásady správného řízení vaší organizace.
 
-## <a name="monitoring"></a>Monitorování
+## <a name="monitoring"></a>Sledování
 
 **Technické riziko:** Nesprávně implementované nebo nekonzistentně instrumentované monitorování může zabránit detekci problémů se stavem úloh nebo jiným narušením dodržování zásad.
 
@@ -77,7 +76,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 - Nástroje řízení správného řízení musí ověřit, jestli jsou všechny prostředky zahrnuté do monitorování pro vyčerpání prostředků, zabezpečení, dodržování předpisů a optimalizaci.
 - Nástroje správy zásad správného řízení musí ověřit, jestli jsou shromažďovány odpovídající úrovně protokolovaných dat pro všechny aplikace a data.
 
-**Možné možnosti návrhu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) je výchozí služba monitorování v Azure a při nasazování prostředků se dá vymáhat konzistentní monitorování prostřednictvím [Azure modrotisky](https://docs.microsoft.com/azure/governance/blueprints) .
+**Možnosti možností návrhu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) je výchozí služba monitorování v Azure a konzistentní monitorování se dá vyhovět prostřednictvím [Azure modrotisky](https://docs.microsoft.com/azure/governance/blueprints) při nasazování prostředků.
 
 ## <a name="disaster-recovery"></a>Zotavení po havárii
 

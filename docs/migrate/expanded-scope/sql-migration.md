@@ -1,6 +1,5 @@
 ---
 title: Urychlení migrace migrací instance SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrace celých instancí SQL Server může urychlit úsilí migrace úloh.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328918"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802986"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Urychlení migrace migrací více databází nebo celých serverů SQL
 
@@ -60,10 +59,10 @@ Následuje příklad inventáře databáze pro jeden z výše uvedených server�
 
 |Server|databáze|[Závažnost](../../manage/considerations/criticality.md)|[Hlediska](../../govern/policy-compliance/data-classification.md)|Výsledky Data Migration Assistant (DMA)|Řešení potíží s DMA|Cílová platforma|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Klíčové|Velmi důvěrné|Kompatibilita|Nevztahuje se|Databáze SQL Azure|
+|SQL-01|DB-1|Klíčové|Vysoce důvěrné|Kompatibilita|Nevztahuje se|Databáze SQL Azure|
 |SQL-01|DB-2|Vysoký|Důvěrné informace|Je vyžadována Změna schématu.|Změny implementovány|Databáze SQL Azure|
 |SQL-01|DB-3|Vysoký|Obecné|Kompatibilita|Nevztahuje se|Spravovaná instance Azure SQL|
-|SQL-01|DB-4|Nízký|Velmi důvěrné|Je vyžadována Změna schématu.|Naplánované změny|Spravovaná instance Azure SQL|
+|SQL-01|DB-4|Nízký|Vysoce důvěrné|Je vyžadována Změna schématu.|Naplánované změny|Spravovaná instance Azure SQL|
 |SQL-01|DB-5|Klíčové|Obecné|Kompatibilita|Nevztahuje se|Spravovaná instance Azure SQL|
 |SQL-01|DB-6|Vysoký|Důvěrné informace|Kompatibilita|Nevztahuje se|Databáze SQL Azure|
 

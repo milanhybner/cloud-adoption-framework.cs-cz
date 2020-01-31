@@ -1,6 +1,5 @@
 ---
 title: Vysvětlení možností partnerství a podpory
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Popisuje možnosti a přístupy k podpoře úsilí migrace.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159889"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802459"
 ---
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
@@ -78,9 +77,9 @@ Toto jsou hlavní fáze typického zapojení do programu FastTrack for Azure:
 
 ![Přístup k architektuře přechodu na cloud služeb Microsoftu](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Vyhodnotit:** Služby Microsoftu využívají [jednotný přístup založený na datech a základě nástrojů](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , který se skládá z architektonických seminářů, modelů Azure v reálném čase, modelů zabezpečení a identity a různých nástrojů, které poskytují přehled o výzvách, rizicích, doporučeních. a problémy s existujícím prostředím Azure s použitím klíčových výsledků, jako je například [plán modernizace vysoké úrovně](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Vyhodnotit:** Služby Microsoftu využívají [jednotný přístup založený na datech a základě nástrojů](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , který se skládá z architektonických seminářů, modelů Azure v reálném čase, modelů zabezpečení a identity a různých nástrojů k poskytování přehledů o problémech, rizicích, doporučeních a problémech s existujícím prostředím Azure s použitím klíčových výsledků, jako je například [plán modernizace vysoké úrovně](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Přijmout:** Prostřednictvím [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)pro služby Microsoftu můžete zřídit základní návrhy Azure, vzory a architekturu zásad správného řízení tím, že své požadavky namapujete na nejvhodnější referenční architekturu a naplánujete, navrhujete a nasazujete infrastrukturu. pro úlohy se vyžaduje Správa, zabezpečení a identita.
+**Přijmout:** Prostřednictvím [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)pro služby Microsoftu můžete zřídit základní návrhy Azure, vzory a architekturu zásad správného řízení tím, že své požadavky namapujete na nejvhodnější referenční architekturu a naplánujete, navrhujete a nasazujete infrastrukturu, správu, zabezpečení a identitu potřebnou pro úlohy.
 
 **Migrovat/optimalizovat:** [Řešení moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) pro služby Microsoftu nabízí ucelený přístup k přesunu aplikací a infrastruktury do Azure a také k optimalizaci a modernizovatí po nasazení cloudu, které zajišťuje zjednodušená migrace.
 

@@ -1,6 +1,5 @@
 ---
 title: Nasazení cílové zóny migrace v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak cílovou zónu migrace v Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251696"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799484"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 
@@ -59,17 +58,17 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 |---------|---------|---------|
 |Nástroje pro migraci|Nasadí se Azure Site Recovery a vytvoří se projekt Azure Migrate.|[Průvodce rozhodováním ohledně nástrojů pro migraci](../../decision-guides/migrate-decision-guide/index.md)|
 |Protokolování a monitorování|Bude zřízený pracovní prostor Operational Insights a účet úložiště pro diagnostiku.|         |
-|Síť|Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.|[Rozhodnutí o síti](../considerations/networking-options.md)|
+|Network (Síť)|Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.|[Rozhodnutí o síti](../considerations/networking-options.md)|
 |Identita|Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory.|[Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
-|Zásada|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
+|Zásady|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
 |Návrh předplatného|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)|
 |Skupiny pro správu|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
 |Skupiny prostředků|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|Není k dispozici|[Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|Není k dispozici|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
-|Standardy pojmenování a označování|Není k dispozici|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
-|Správa nákladů|Není k dispozici|[Sledování nákladů](../azure-best-practices/track-costs.md)|
-|Compute|Není k dispozici|[Možnosti služby Compute](../considerations/compute-options.md)|
+|Data|Nevztahuje se|[Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
+|Standardy pojmenování a označování|Nevztahuje se|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
+|Správa nákladů|Nevztahuje se|[Sledování nákladů](../azure-best-practices/track-costs.md)|
+|Služby Compute|Nevztahuje se|[Možnosti služby Compute](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Přizpůsobení nebo nasazení cílové zóny z tohoto podrobného plánu
 

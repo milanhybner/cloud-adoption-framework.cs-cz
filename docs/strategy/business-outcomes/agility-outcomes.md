@@ -1,6 +1,5 @@
 ---
 title: Příklady výsledků flexibility
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Příklady výsledků flexibility
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566631"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798498"
 ---
 # <a name="examples-of-agility-outcomes"></a>Příklady výsledků flexibility
 
@@ -25,7 +24,7 @@ Tradičně investiční důstojníci (ředitelé informačních technologií) a 
 
 ## <a name="why-is-agility-so-important"></a>Proč je flexibilita tak důležitá?
 
-Trhy se mění rychleji než kdykoli dřív. Od 88,6 &mdash;an verze 2015 byly v Fortune 500 61 ještě více než 57. To představuje změnu na trhu při dřív neúspěšnosti kurzu. Flexibilita nebo i obchodní agilní řešení pravděpodobně neovlivní seznam organizací na Fortune 500, ale tyto údaje nám pomohou pochopit tempo, ve kterém se trhy mění.
+Trhy se mění rychleji než kdykoli dřív. Od 2015 se v 88,6&mdash;letech Fortune 500 61 ještě více než 57. To představuje změnu na trhu při dřív neúspěšnosti kurzu. Flexibilita nebo i obchodní agilní řešení pravděpodobně neovlivní seznam organizací na Fortune 500, ale tyto údaje nám pomohou pochopit tempo, ve kterém se trhy mění.
 
 U provozovatelů a jejich zprovoznění může být flexibilita firmy rozdíl mezi úspěchem nebo selháním obchodní iniciativy. Rychlé přizpůsobování na změny v trhu může pomoct s bezkonkurenčními stávajícími zákazníky nebo nárokem na tržní podíl od konkurence. Výsledky týkající se flexibility v dalších částech můžou při transformaci přispět k sdělování hodnoty cloudu.
 

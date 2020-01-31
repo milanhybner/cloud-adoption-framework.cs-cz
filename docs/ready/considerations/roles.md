@@ -1,6 +1,5 @@
 ---
 title: Doporučené řízení přístupu na základě role
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Doporučené řízení přístupu na základě role
 author: rotycenh
 ms.author: brblanch
@@ -11,14 +10,14 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561781"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806862"
 ---
-# <a name="role-based-access-control"></a>Řízení přístupu na základě role
+# <a name="role-based-access-control"></a>Řízení přístupu založené na rolích
 
 Přístupová práva a oprávnění založená na skupině jsou osvědčeným postupem. Práce se skupinami namísto jednotlivých uživatelů zjednodušuje správu zásad přístupu, umožňuje jednotnou správu přístupu napříč týmy a snižuje riziko chyb při konfiguraci. Přiřazení uživatelů k příslušným skupinám a jejich odebírání pomáhá udržovat aktuální oprávnění konkrétního uživatele. [Řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) v Azure nabízí jemně odstupňovanou správu přístupu pro prostředky uspořádané podle uživatelských rolí.
 

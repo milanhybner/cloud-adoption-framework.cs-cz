@@ -1,6 +1,5 @@
 ---
 title: Metriky, ukazatele a tolerance standardních hodnot identity
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky, ukazatele a tolerance standardních hodnot identity
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220435"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806029"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriky, ukazatele a tolerance standardních hodnot identity
 
@@ -49,12 +48,12 @@ Jakmile budete mít základnu, stanovte minimální srovnávací testy představ
 
 - **Aktivační událost pro číslo uživatelského účtu.** Společnost s více než _x_ uživateli, skupinami nebo jinými objekty spravovanými v systémech identit by mohla těžit z investic do směrného plánu identity, aby bylo zajištěno efektivní řízení pro velký počet účtů.
 - **Místní Trigger závislosti identity** Společnost plánuje migrovat úlohy do cloudu, který vyžaduje funkce starší verze ověřování nebo Multi-Factor Authentication třetích stran by měly investovat do oboru standardních hodnot identity, aby se snížila rizika související s refaktoringem nebo dalším cloudem. nasazení infrastruktury
-- **Aktivační událost složitosti adresářových služeb.** Společnost, která udržuje více než _x_ počet of_ jednotlivých doménových struktur, domén nebo tenantů adresářů, by měla investovat do oboru standardních hodnot identity, aby se snížila rizika související se správou účtů a problémy s efektivitou související s více uživateli. přihlašovací údaje se šíří v různých systémech.
-- **Aktivační událost hostovaných adresářových služeb v cloudu** Společnost hostující virtuální počítače, které _jsou hostovány_ v cloudu a které mají na těchto cloudových serverech spravovány _x_ organizační jednotky (OU), můžou využívat investice do disciplíny standardních hodnot identity, aby se optimalizoval. integrace s místními nebo jinými externími službami identity.
+- **Aktivační událost složitosti adresářových služeb.** Společnost, která udržuje více než _x_ číslo of_ jednotlivých doménových struktur, domén nebo tenantů adresářů, by měla investovat do směrného plánu identity a snižovat tak rizika související se správou účtů a problémy s efektivitou související s více uživatelskými přihlašovacími údaji, které jsou v různých systémech rozdělené.
+- **Aktivační událost hostovaných adresářových služeb v cloudu** Společnost hostující virtuální počítače _, které jsou_ hostovány v cloudu a které mají na těchto cloudových serverech spravovány _x organizační_ jednotky (OU), můžou těžit z investic do směrného plánu identity, aby optimalizoval integraci s místními nebo jinými externími službami identity.
 - **Aktivační událost federace** Společnost implementující federaci identit se standardními systémy standardních identit _x_ (identity) může těžit z investice do směrného plánu identity, aby bylo zajištěno konzistentní zásady organizace napříč členy federace.
 - **Aktivační událost zvýšeného přístupu.** Společnost s více než _x%_ uživatelů se zvýšenými oprávněními k nástrojům pro správu a prostředkům by měla zvážit investování do směrného plánu identity, aby se minimalizovalo riziko neúmyslného nadměrného přestavení přístupu uživatelům.
 - **Aktivační událost RBAC** Společnost s v rámci _x%_ prostředků, které používají metody řízení přístupu na základě rolí, by měla zvážit investování do směrného plánu identity, aby identifikovala optimalizované způsoby přiřazování přístupu uživatelů k prostředkům.
-- **Aktivační událost při selhání ověřování.** Společnost, kde selhání ověřování představuje více než _x%_ pokusů, by měla investovat do směrného plánu identity, aby se zajistilo, že metody ověřování nejsou v oblasti externích útoků a že uživatelé mohou používat metody ověřování. správně.
+- **Aktivační událost při selhání ověřování.** Společnost, kde selhání ověřování reprezentuje více než _x%_ pokusů, by měla investovat do směrného plánu identity, aby se zajistilo, že metody ověřování nejsou v oblasti externích útoků a že uživatelé mohou správně používat metody ověřování.
 - **Aktivační událost při selhání autorizace** Společnost, kde jsou pokusy o přístup odmítnuty více než _x%_ času, by měly investovat do směrného plánu identity, aby se zlepšila aplikace a aktualizovala řízení přístupu a identifikovala potenciálně škodlivé pokusy o přístup.
 - **Došlo k ohrožení zabezpečení triggeru účtu.** Společnost s více než 1 ohroženým účtem by měla investovat do směrného plánu identity, aby vylepšila sílu a zabezpečení ověřovacích mechanismů a vylepšila mechanismy, aby opravila rizika související s ohroženými účty.
 

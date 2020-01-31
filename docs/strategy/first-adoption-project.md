@@ -1,6 +1,5 @@
 ---
-title: První projekt přijetí do cloudu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: První projekt přechodu na cloud
 description: Přečtěte si o implementaci prvního projektu pro přijetí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +7,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753797"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798175"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="first-cloud-adoption-project"></a>První projekt přijetí do cloudu
+# <a name="first-cloud-adoption-project"></a>První projekt přechodu na cloud
 
 Existuje výuková křivka a časový závazek spojený s plánováním přijetí cloudu. I u zkušených týmů trvalo plánování trvat delší dobu: čas k zarovnávání zúčastněných stran, čas potřebný ke shromažďování a analýze dat, čas potřebný k ověření dlouhodobých rozhodnutí a čas potřebný k zarovnávání osob, procesů a technologií. V rámci maximální produktivity při přijímání je plánování zaměřené na souběžné přijetí, vylepšení při každém vydání a při každé migraci zatížení do cloudu. Je důležité pochopit rozdíl mezi plánem přijetí do cloudu a strategií přijetí cloudu. Potřebujete dobře definovanou strategii, která usnadňuje implementaci plánu přijetí do cloudu a pomůže vám s ním.
 

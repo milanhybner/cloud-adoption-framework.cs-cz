@@ -1,6 +1,5 @@
 ---
 title: 'Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967675"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805553"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře
 

@@ -1,6 +1,5 @@
 ---
 title: Kontrolní seznam pro plánování migračního prostředí
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ověřte před migrací připravenost prostředí.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753451"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801405"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí: Ověření připravenosti na životní prostředí před migrací
 
@@ -27,7 +26,7 @@ V tomto článku a kontrolním seznamu se předpokládá, že migrace do cloudu 
 
 ## <a name="governance-alignment"></a>Sladění se zásadami správného řízení
 
-Prvním a nejdůležitějším rozhodnutím ohledně jakéhokoli prostředí připraveného k migraci je volba sladění se zásadami správného řízení. Bylo při sladění zásad správného řízení se základními prvky migrace dosaženo shody? Tým pro přijetí v cloudu musí mít minimálně na to, jestli se tato migrace prochází v jednom prostředí s omezeným zásadou správného řízení, s plně upraveným továrnou prostředí nebo s nějakou variantou mezi. Další možnosti a pokyny k uvedení zásad správného řízení do souladu najdete v článku o [Sladění se zásadami správného řízení a dodržováním předpisů](../../expanded-scope/governance-or-compliance.md).
+Prvním a nejdůležitějším rozhodnutím ohledně jakéhokoli prostředí připraveného k migraci je volba sladění se zásadami správného řízení. Shodují se základní prvky migrace se zásadami správného řízení? Tým pro přijetí v cloudu musí mít minimálně na to, jestli se tato migrace prochází v jednom prostředí s omezeným zásadou správného řízení, s plně upraveným továrnou prostředí nebo s nějakou variantou mezi. Další možnosti a pokyny k uvedení zásad správného řízení do souladu najdete v článku o [Sladění se zásadami správného řízení a dodržováním předpisů](../../expanded-scope/governance-or-compliance.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementace připravenosti na cloud
 
@@ -54,7 +53,7 @@ Před migrací by se měl zavést konzistentní přístup k pojmenování prost�
 
 Před migrací by se mělo učinit rozhodnutí týkající se nástrojů pro řízení prostředků. Tyto nástroje nemusí být plně implementované, ale měl by být vybrán a otestován určitý směr. Tým zásad správného řízení cloudu by měl před migrací definovat a vyžadovat implementaci minimálního životaschopného produktu (MVP) pro nástroje zásad správného řízení.
 
-## <a name="network"></a>Síť
+## <a name="network"></a>Network (Síť)
 
 Vaše cloudové úlohy budou pro podporu koncových uživatelů a správcovského přístupu vyžadovat zřízení virtuálních sítí. Na základě rozhodnutí týkajících se organizace prostředků a zásad správného řízení prostředků byste měli vybrat přístup k síti, který bude sladěný s požadavky na zabezpečení IT. Rozhodnutí ohledně sítě by navíc měla být v souladu se všemi omezeními hybridní sítě potřebné k provozování úloh v backlogu migrace a podporovat přístup k prostředkům hostovaným místně.
 

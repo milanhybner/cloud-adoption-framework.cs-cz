@@ -1,6 +1,5 @@
 ---
 title: Úvod k průvodci migrací do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Podrobné pokyny vám pomůžou efektivně migrovat služby vaší organizace do Azure.
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9f27c7fca9a9a5bd2f5c38f78b8db2092b24d014
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 6f5592c93bb78b14a85e37ffa67ffea697a12345
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251488"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807032"
 ---
 ::: zone target="docs"
 

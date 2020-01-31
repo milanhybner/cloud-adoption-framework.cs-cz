@@ -1,6 +1,5 @@
 ---
 title: Program připravenosti dovedností
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přehled programu připravenosti dovedností
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566710"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798770"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Program připravenosti dovedností během přípravné fáze na cestě k migraci
 
@@ -61,7 +60,7 @@ Využijte [certifikačních školení a zkoušky pro Microsoft Azure](https://ww
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn je nový přístup ke studiu. Připravenost na nové dovednosti a odpovědnosti, které se dodávají s cloudovým přijetím, nejdou snadno. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti.
+Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti a úkoly, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti.
 
 V následujících příkladech jsou několik přizpůsobených výukových cest na Microsoft Learn, které se rovnají připraveným částem rozhraní pro přijetí cloudu:
 

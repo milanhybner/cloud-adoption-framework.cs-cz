@@ -1,6 +1,5 @@
 ---
 title: Migrace prostředků
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrace prostředků
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681766"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807015"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
@@ -222,7 +221,7 @@ Cloudamize je služba nezávislého výrobce softwaru, která pokrývá všechny
 
 Zerto poskytuje zpracování replikace virtuálních počítačů pro prostředí Microsoft Hyper-V i VMware vSphere.
 
-[Další informace](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[Další informace](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps poskytuje všechny požadované funkce a integraci s Azure, místn�
 
 Microsoft Learn je nový přístup ke studiu. Připravenosti na nové úkoly týkající se dovedností, které souvisejí s přechodem do cloudu, není snadné dosáhnout. Microsoft Learn poskytuje efektivnější přístup k praktické výuce, který vám umožní dosáhnout vašich cílů rychleji. Získávejte body, nové úrovně a dovednosti!
 
-Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který doplňuje doprovodné materiály pro DevOps v architektuře přechodu na cloud. 
+Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který doplňuje doprovodné materiály pro DevOps v architektuře přechodu na cloud.
 
-[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení. 
+[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení.
 
 # <a name="cost-managementtabmanagecost"></a>[Správa nákladů](#tab/ManageCost)
 

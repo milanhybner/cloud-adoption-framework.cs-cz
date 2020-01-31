@@ -1,6 +1,5 @@
 ---
 title: Několik datových center
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Několik datových center
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024791"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803071"
 ---
 # <a name="multiple-datacenters"></a>Několik datových center
 
@@ -23,7 +22,7 @@ Rozsah migrace často zahrnuje i převedení několika datových center. Násled
 
 Většina činností požadovaných v tomto rozšíření rozsahu proběhne během procesů řešení požadavků, vyhodnocení a optimalizace migrace.
 
-## <a name="suggested-prerequisites"></a>Navrhované předpoklady
+## <a name="suggested-prerequisites"></a>Doporučené požadavky
 
 Před zahájením migrace byste měli v rámci nástroje pro správu projektů vytvořit náměty, které budou představovat jednotlivá migrovaná datová centra. Je pak důležité porozumět obchodním výsledkům a motivacím, které tuto migraci ospravedlňují. Tyto motivace lze použít k určení priorit seznamu námětů (nebo datových center). Pokud je například migrace hnaná snahou opustit datová centra před tím, než bude potřeba prodloužit nájem, jednotlivé náměty budou mít priority na základě data vypršení nájmu.
 
@@ -31,16 +30,16 @@ V rámci každého námětu budou úlohy, které se mají vyhodnocovat a migrova
 
 Sprinty nebo iterace se pak skládají z řady úkolů potřebných k migraci aktiv a uživatelských scénářů, potvrzených týmem přechodu na cloud. Vydání se pak skládají z jedné nebo několika úloh nebo funkcí, které mají být povýšeny do produkčního prostředí.
 
-## <a name="assess-process-changes"></a>Změny procesu vyhodnocení
+## <a name="assess-process-changes"></a>Změny procesu posouzení
 
 Největší změna procesu vyhodnocení při rozšiřování rozsahu na pokrytí více datových center se týká přesného záznamu a stanovení priorit úloh a závislostí mezi datovými centry.
 
 ### <a name="suggested-action-during-the-assess-process"></a>Navrhovaná akce během procesu vyhodnocení
 
-**Vyhodnocení závislostí mezi datacentry:** [Nástroje pro vizualizaci závislostí v Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) vám můžou pomoct identifikovat závislosti. Použití této sady nástrojů před migrací je dobrý obecný osvědčený postup. Při řešení globální složitosti je to však nezbytný krok procesu posouzení. Prostřednictvím [seskupování závislostí](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) může vizualizace pomoct identifikovat IP adresy a porty všech prostředků vyžadovaných pro podporu dané úlohy.
+**Vyhodnotit závislosti mezi datovými centru:** [Nástroje pro vizualizaci závislostí v Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) můžou přispět ke kotvícím závislostem. Použití této sady nástrojů před migrací je dobrý obecný osvědčený postup. Při řešení globální složitosti je to však nezbytný krok procesu posouzení. Prostřednictvím [seskupování závislostí](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) může vizualizace pomoct identifikovat IP adresy a porty všech prostředků vyžadovaných pro podporu dané úlohy.
 
 > [!IMPORTANT]
-> Dvě důležité poznámky: Zaprvé odborník, který rozumí umísťování aktiv a schématům IP adres, musí identifikovat aktiva, která se nachází v sekundárním datovém centru. Zadruhé je důležité vyhodnotit podřízené závislosti a klienty ve vizuálu a pochopit obousměrné závislosti.
+> Dvě důležité poznámky: Nejdřív je k identifikaci prostředků, které se nacházejí v sekundárním datacentru, nutný odborník na danou problematiku s porozuměním umístění prostředků a schématy IP adres. Zadruhé je důležité vyhodnotit podřízené závislosti a klienty ve vizuálu a pochopit obousměrné závislosti.
 
 ## <a name="migrate-process-changes"></a>Změny procesu migrace
 
@@ -50,8 +49,8 @@ Migrace několika datových center je podobná konsolidaci datových center. Po 
 
 Dál jsou uvedené aktivity, které silně ovlivňují úspěšnost migrace do cloudu:
 
-- **Vyhodnocení konfliktů sítě:** Při konsolidaci datových center k jednomu poskytovateli cloudu je pravděpodobné, že se vytvoří síťové konflikty, konflikty DNS nebo jiné. Během migrace je důležité testovat konflikty, aby nedocházelo k přerušením funkce produkčních systémů hostovaných v cloudu.
-- **Aktualizace směrovacích tabulek:** Při konsolidaci sítí nebo datových center jsou často potřeba úpravy směrovacích tabulek.
+- **Vyhodnotit konflikty sítě:** Při konsolidaci datových center do jednoho poskytovatele cloudu je pravděpodobné, že se vytvoří síť, DNS nebo jiné konflikty. Během migrace je důležité testovat konflikty, aby nedocházelo k přerušením funkce produkčních systémů hostovaných v cloudu.
+- **Aktualizovat směrovací tabulky:** Při konsolidaci sítí nebo datových center se často vyžadují úpravy směrovacích tabulek.
 
 ## <a name="optimize-and-promote-process-changes"></a>Změny procesu optimalizace a povýšení
 
@@ -61,7 +60,7 @@ Během optimalizace může být nutné provést další testování.
 
 Před povýšením je důležité zajistit během tohoto rozšiřování rozsahu další úrovně testování. Během testování je důležité otestovat směrování nebo jiné síťové konflikty. Dále je důležité izolovat nasazenou aplikaci a znovu otestovat, že byly všechny závislosti migrovány do cloudu. V tomto případě izolace znamená oddělení nasazeného prostředí od produkčních sítí. Při tom je možné zachytit přehlédnutá aktiva, která se pořád spouští místně.
 
-## <a name="secure-and-manage-process-changes"></a>Změny procesu zabezpečení a správy
+## <a name="secure-and-manage-process-changes"></a>Procesní změny týkající se zabezpečení a správy
 
 Toto rozšíření rozsahu by nemělo procesy zabezpečení a správy měnit.
 

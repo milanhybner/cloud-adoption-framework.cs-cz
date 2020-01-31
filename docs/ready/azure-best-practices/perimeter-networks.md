@@ -1,6 +1,5 @@
 ---
 title: Sítě perimetru
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Sítě perimetru
 author: tracsman
 ms.author: jonor
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 6125a428d67130d891623a30ca75a11527fbbe23
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160503"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799773"
 ---
 # <a name="perimeter-networks"></a>Sítě perimetru
 
@@ -74,7 +73,7 @@ Farma bran firewall obvykle má v porovnání s WAF méně specializovaný softw
 
 Pro přenosy, které pocházejí z internetu, použijte jednu sadu instancí Azure Firewall (nebo síťová virtuální zařízení) a jinou sadu pro provoz pocházející z místních sítí. Použití jenom jedné sady bran firewall pro oba typy přenosů představuje bezpečnostní riziko, protože mezi těmito dvěma sadami síťových přenosů neexistuje žádná bezpečnostní hranice. Použitím samostatných vrstev bran firewall se snižuje složitost pravidel pro kontrolu zabezpečení a zlepšuje se přehled o tom, která pravidla platí pro jednotlivé příchozí žádosti v síti.
 
-## <a name="azure-load-balancer"></a>Nástroj pro vyrovnávání zatížení Azure
+## <a name="azure-load-balancer"></a>Azure Load Balancer
 
 [Azure Load Balancer][ALB] nabízí službu s vysokou dostupností vrstvy 4 (TCP/UDP), která může distribuovat příchozí provoz mezi instancemi služby definovanými v sadě pro vyrovnávání zatížení. Provoz odeslaný do nástroje pro vyrovnávání zatížení z front-endových koncových bodů (koncových bodů veřejných IP adres nebo koncových bodů privátních IP adres) se dá předistribuovat s překladem adresy do fondu back-endových IP adres (například síťová virtuální zařízení nebo virtuální počítače) nebo bez něj.
 

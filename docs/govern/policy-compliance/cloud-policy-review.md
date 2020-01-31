@@ -1,6 +1,5 @@
 ---
 title: Provedení kontroly zásad cloudu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak provádět kontrolu zásad cloudu.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223846"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805060"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -37,12 +36,12 @@ Při provádění transformace cloudu se často řídí mnoho nástrojů, služe
 
 ## <a name="the-cloud-policy-review-process"></a>Proces kontroly zásad cloudu
 
-Recenze zásad cloudu zarovnají stávající zásady správného řízení IT a zabezpečení IT s [pěti disciplínami zásad správného řízení cloudu](../index.md): [Cost management](../cost-management/index.md), [směrného plánu zabezpečení](../security-baseline/index.md), [směrného plánu identity](../identity-baseline/index.md), [konzistenci prostředků](../resource-consistency/index.md)a [akceleraci nasazení](../deployment-acceleration/index.md).
+Kontroly zásad cloudu zarovnají stávající zásady správného řízení IT a zabezpečení IT s [pěti disciplínami zásad správného řízení cloudu](../index.md): [cost management](../cost-management/index.md), [směrného plánu zabezpečení](../security-baseline/index.md), [standardních hodnot identity](../identity-baseline/index.md), [konzistenci prostředků](../resource-consistency/index.md)a [akcelerace nasazení](../deployment-acceleration/index.md).
 
 U každého z těchto oborů se v procesu kontroly postupuje takto:
 
 1. Projděte si stávající místní zásady týkající se konkrétního oboru a vyhledejte dva klíčové datové body: starší závislosti a zjištěná obchodní rizika.
-2. Vyhodnoťte každé z obchodních rizik tak, že požádáme o jednoduchou otázku: "Podniková rizika stále existují v cloudovém modelu?"
+2. Vyhodnotit jednotlivá obchodní rizika tak, že požádáme o jednoduchou otázku: obchodní riziko ještě existuje v cloudovém modelu? "
 3. Pokud riziko ještě existuje, přepište zásadu tím, že zadáte nezbytné omezení pro obchodování, nikoli technické řešení.
 4. Projděte si aktualizované zásady s týmy pro přijetí cloudu, které vám pomohou porozumět potenciálním technickým řešením pro požadované zmírnění.
 

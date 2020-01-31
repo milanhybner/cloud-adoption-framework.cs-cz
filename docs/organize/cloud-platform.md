@@ -1,6 +1,5 @@
 ---
 title: Možnosti cloudové platformy
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Popisuje vytváření schopností cloudových platforem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028604"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800963"
 ---
 # <a name="cloud-platform-capabilities"></a>Možnosti cloudové platformy
 
@@ -50,7 +49,7 @@ V pravidelných intervalech se obvykle provádějí následující úkoly:
   - [motivace pro přijetí do cloudu](../strategy/motivations.md)
   - [obchodní rizika](../govern/policy-compliance/risk-tolerance.md)
   - [racionalizace digitální nemovitosti](../digital-estate/index.md)
-- Umožňuje monitorovat plány a průběh přijetí v rámci nevyřízených [položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md)s určenou prioritou.
+- Umožňuje monitorovat plány a průběh přijetí v rámci [nevyřízených položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md)s určenou prioritou.
 - Identifikujte a určete prioritu změn platformy, které jsou potřeba pro podporu nevyřízených položek migrace.
 
 ### <a name="technical-tasks"></a>Technické úkoly
@@ -70,7 +69,7 @@ V pravidelných intervalech se obvykle provádějí následující úkoly:
 
 Zkušenosti s cloudovou platformou většinou pocházejí od pracovního týmu. Očekává, že účastníci dopustí na práci s cloudovou platformou velkou část denních plánů. Příspěvky nejsou omezeny na schůzky a cykly zpětné vazby.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 I když je vaše cloudová platforma lépe definovaná, může se při zarovnávání [cloudu využít](./cloud-automation.md) k urychlení přijímání. Může také pomáhat vytvořit osvědčené postupy a zároveň omezit obchodní a technické riziko.
 

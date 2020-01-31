@@ -1,6 +1,5 @@
 ---
 title: Procesy dodržování předpisů zásad standardních hodnot identity
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesy dodržování předpisů zásad standardních hodnot identity
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566218"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807151"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy dodržování předpisů zásad standardních hodnot identity
 
@@ -32,7 +31,7 @@ Nástroje pro správu identit nabízejí možnosti a funkce, které výrazně po
 
 **Roční plánování:** Na roční bázi si Projděte vysokou úroveň strategie správy identit. Prozkoumejte plánované změny prostředí identity Services a aktualizujte strategie pro přijetí do cloudu, které identifikují potenciální zvýšení rizika nebo potřebují upravit aktuální vzory infrastruktury identit. Tuto dobu můžete také použít ke kontrole nejnovějších osvědčených postupů pro správu identit a jejich integraci do vašich zásad a kontrole procesů.
 
-**Čtvrtletní plánování:** Každý čtvrtletní základ provede obecnou kontrolu identity a auditu řízení přístupu a naplní se týmy pro přijímání v cloudu, aby identifikovala potenciální nová rizika nebo provozní požadavky, které by vyžadovaly aktualizaci zásad identity nebo změn v řízení přístupu. strategie.
+**Čtvrtletní plánování:** Každý čtvrtletní základ provede obecnou kontrolu identity a auditu řízení přístupu a naplní se týmy pro přijímání v cloudu, aby identifikovala potenciální nová rizika nebo provozní požadavky, které by vyžadovaly aktualizaci zásad identity nebo změn v strategii řízení přístupu.
 
 Tento proces plánování je také vhodný čas k vyhodnocení aktuálního členství týmu zásad správného řízení v souvislosti s novými nebo měnícími se zásadami a riziky týkajícími se identity. Přizvat relevantní pracovníky IT k účasti na recenzích a plánování jako na dočasné technické poradce nebo na trvalé členy týmu.
 

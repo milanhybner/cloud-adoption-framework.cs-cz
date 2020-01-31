@@ -1,6 +1,5 @@
 ---
 title: Seznámení s dodržováním předpisů
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznámení s dodržováním předpisů
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222025"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806114"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Seznámení s dodržováním předpisů
 
@@ -46,7 +45,7 @@ Jedním z nejdůležitějších vývojů v této oblasti je Obecné nařízení 
 
 ## <a name="compliant-foundation-in-azure"></a>Vyhovující základ v Azure
 
-Pro pomoc zákazníkům, kteří splnili vlastní povinnosti dodržování předpisů napříč regulovanými průmyslovými odvětvími a trhy po celém světě,&mdash;Azure udržuje největší portfolio dodržování předpisů v oboru (celkový počet nabídek) a také hloubku (počet služby pro zákazníky v oboru posouzení. Nabídky dodržování předpisů Azure se seskupují do čtyř segmentů: globálně použitelné, státní správa USA, Oborová, specifická pro konkrétní odvětví a oblast nebo země.
+Pro pomoc zákazníkům, kteří splnili vlastní povinnosti dodržování předpisů napříč regulovanými průmyslovými odvětvími a trhy po celém světě, Azure udržuje největší portfolio dodržování předpisů v oboru&mdash;v šířce (celkový počet nabídek) a také hloubku (počet služeb s přístupem zákazníků v oboru posouzení). Nabídky dodržování předpisů Azure se seskupují do čtyř segmentů: globálně použitelné, státní správa USA, Oborová, specifická pro konkrétní odvětví a oblast nebo země.
 
 Nabídky dodržování předpisů Azure vycházejí z různých typů ujištění, včetně formálních certifikací, atestů, ověření, autorizací a hodnocení vyprodukovaných nezávislými společnostmi auditování třetích stran, jakož i smluvních změn. samoobslužné posouzení a dokumenty s pokyny pro zákazníky, které vytvořil Microsoft. Popis každé nabídky v tomto dokumentu poskytuje aktuální příkaz Scope, který označuje, které služby Azure zaměřené na zákazníky jsou v oboru pro posouzení, a odkazy na materiály ke stažení, které pomáhají zákazníkům s jejich vlastním dodržováním předpisů. povinnosti.
 

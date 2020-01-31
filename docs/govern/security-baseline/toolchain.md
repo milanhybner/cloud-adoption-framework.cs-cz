@@ -1,6 +1,5 @@
 ---
 title: Nástroje pro základní hodnoty zabezpečení v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vysvětlení nástrojů, které mohou usnadnit vylepšené standardní hodnoty zabezpečení v Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565915"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808800"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Nástroje pro základní hodnoty zabezpečení v Azure
 
-[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na způsoby vytváření zásad, které chrání síť, prostředky a nejdůležitější data, která se budou nacházet v řešení poskytovatele cloudu. V rámci pěti oborů řízení cloudu zahrnuje základní pravidla zabezpečení klasifikaci digitálních nemovitostí a dat. Zahrnuje taky dokumentaci k rizikům, obchodním tolerancím a strategiím zmírňování, které souvisejí s bezpečností dat, prostředků a sítí. Z technického hlediska tato disciplína zahrnuje také zapojení do rozhodnutí týkajících se [šifrování](../../decision-guides/encryption/index.md), [požadavků na síť](../../decision-guides/software-defined-network/index.md), [strategií hybridních identit](../../decision-guides/identity/index.md)a nástrojů pro [automatizaci vynucování](../../decision-guides/policy-enforcement/index.md) zásad zabezpečení. v různých [skupinách prostředků](../../decision-guides/resource-consistency/index.md).
+[Základní úroveň zabezpečení](./index.md) je jedním z [pěti oborů zásad správného řízení cloudu](../governance-disciplines.md). Tato disciplína se zaměřuje na způsoby vytváření zásad, které chrání síť, prostředky a nejdůležitější data, která se budou nacházet v řešení poskytovatele cloudu. V rámci pěti oborů řízení cloudu zahrnuje základní pravidla zabezpečení klasifikaci digitálních nemovitostí a dat. Zahrnuje taky dokumentaci k rizikům, obchodním tolerancím a strategiím zmírňování, které souvisejí s bezpečností dat, prostředků a sítí. Z technického hlediska tato disciplína zahrnuje také zapojení do rozhodnutí týkajících se [šifrování](../../decision-guides/encryption/index.md), [požadavků na síť](../../decision-guides/software-defined-network/index.md), [strategií hybridních identit](../../decision-guides/identity/index.md)a nástrojů pro [automatizaci vynucování](../../decision-guides/policy-enforcement/index.md) zásad zabezpečení napříč [skupinami prostředků](../../decision-guides/resource-consistency/index.md).
 
 Následující seznam nástrojů Azure může pomoci při vyspělosti zásad a procesů, které podporují standardní hodnoty zabezpečení.
 

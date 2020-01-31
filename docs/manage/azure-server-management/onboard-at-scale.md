@@ -1,6 +1,5 @@
 ---
 title: Konfigurace služby Azure Server Management Services pro předplatné
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Konfigurace služby Azure Server Management Services pro předplatné
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656638"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808086"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurace škálování služby Azure Server Management Services
 
@@ -48,7 +47,7 @@ Azure Policy má předdefinovanou [iniciativu zásad](https://docs.microsoft.com
 
 Postup přiřazení zásad, které jsou popsané v předchozí části:
 
-1. V Azure Portal na **Azure Policy**  > **přiřazení**  > **přiřadit iniciativu**.
+1. V Azure Portal na **Azure Policy** > **přiřazení** > **přiřadit iniciativu**.
 
     ![Snímek obrazovky rozhraní zásad portálu](./media/onboarding-at-scale1.png)
 
@@ -132,7 +131,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
     > [!NOTE]
     > Název serveru musí přesně odpovídat hodnotě ve výrazu a nesmí obsahovat příponu názvu domény.
 
-1. Vyberte **Save** (Uložit). Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
+1. Vyberte **Uložit**. Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
 
 ### <a name="azure-activity-log"></a>Protokol aktivit Azure
 
@@ -140,7 +139,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení  > **řešení**.
+1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Activity Log Analytics** a vyberte ji.
 4. Vyberte **Create** (Vytvořit).
@@ -153,14 +152,14 @@ Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předc
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení  > **řešení**.
+1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Stav agenta Azure Log Analytics** a vyberte ho.
 4. Vyberte **Create** (Vytvořit).
 
 Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
-Po vytvoření se instance prostředku pracovního prostoru zobrazí **AgentHealthAssessment** , když vyberete **Zobrazit**  > **řešení**.
+Po vytvoření se instance prostředku pracovního prostoru zobrazí **AgentHealthAssessment** , když vyberete **Zobrazit** > **řešení**.
 
 ### <a name="antimalware-assessment"></a>Posouzení antimalwaru
 
@@ -168,14 +167,14 @@ Po vytvoření se instance prostředku pracovního prostoru zobrazí **AgentHeal
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení  > **řešení**.
+1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte a vyberte **antimalware Assessment**.
 4. Vyberte **Create** (Vytvořit).
 
 Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
-Po vytvoření se v instanci prostředku pracovního prostoru po výběru **zobrazit**  > **řešení**zobrazí **Antimalwarový** program.
+Po vytvoření se v instanci prostředku pracovního prostoru po výběru **zobrazit** > **řešení**zobrazí **Antimalwarový** program.
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor pro virtuální počítače
 
@@ -193,7 +192,7 @@ Pokud chcete povolit Azure Security Center úroveň Free, postupujte takto:
 4. Vyberte **Upravit nastavení** pro tento pracovní prostor.
 5. Vyberte **Cenová úroveň**.
 6. Vyberte možnost **Free** .
-7. Vyberte **Save** (Uložit).
+7. Vyberte **Uložit**.
 
 ## <a name="next-steps"></a>Další kroky
 

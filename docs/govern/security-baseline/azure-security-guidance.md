@@ -1,6 +1,5 @@
 ---
 title: Pokyny pro zabezpečení Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Jaké doprovodné materiály k zabezpečení poskytuje společnost Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058813"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804907"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="microsoft-security-guidance"></a>Doprovodné materiály k zabezpečení Microsoftu
 
-## <a name="tools"></a>Nástroje
+## <a name="tools"></a>nástroje
 
 Společnost Microsoft představila platformu a správce dodržování předpisů [Service trustu](https://servicetrust.microsoft.com) , která vám může pomáhat s těmito nástroji:
 
@@ -32,7 +31,7 @@ Tyto nástroje jsou navržené tak, aby pomáhaly organizacím, které splňují
 
 **Platforma STP (Service Trust Platform)** poskytuje podrobné informace a nástroje, které vám pomůžou splnit vaše požadavky na používání služby Microsoft Cloud Services, včetně Azure, Office 365, Dynamics 365 a Windows. STP je jedním z důvodů zabezpečení, regulace, dodržování předpisů a ochrany osobních údajů, které souvisejí s Microsoft Cloud. V takovém případě zveřejňujeme informace a prostředky, které jsou potřeba k tomu, aby bylo možné vyhodnotit rizika pro službu Cloud Services a nástroje. Vytvořili jsme STP, který vám pomůže sledovat aktivity dodržování předpisů v rámci Azure, včetně těchto:
 
-- **Správce dodržování předpisů:** Správce dodržování předpisů, nástroj pro vyhodnocení rizik na základě pracovního postupu na platformě Microsoft Service Trust Service, umožňuje sledovat, přiřazovat a ověřovat aktivity dodržování předpisů v souladu s Microsoft Cloud službami vaší organizace, jako je například Office 365, Dynamics. 365 a Azure. Další podrobnosti najdete v další části.
+- **Správce dodržování předpisů:** Správce dodržování předpisů, nástroj pro vyhodnocení rizik na základě pracovního postupu na platformě Microsoft Service Trust Service, umožňuje sledovat, přiřazovat a ověřovat aktivity dodržování předpisů v souladu s Microsoft Cloud službami vaší organizace, jako je například Office 365, Dynamics 365 a Azure. Další podrobnosti najdete v další části.
 - **Dokumenty důvěryhodnosti:** V současné době existují tři kategorie průvodců, které vám poskytnou bohatou prostředky k vyhodnocení Microsoft Cloud; Přečtěte si o provozu Microsoftu v souvislosti se zabezpečením, dodržováním předpisů a ochranou soukromí a pomáhá vám působit na vylepšení funkcí ochrany dat. Mezi ně patří:
 - **Sestavy auditování:** Sestavy auditu vám umožní udržet si aktuální informace o nejnovějších informacích o ochraně osobních údajů, zabezpečení a dodržování předpisů pro Microsoft Cloud služby. Patří mezi ně ISO, SOC, FedRAMP a další zprávy o auditu, mostové dopisy a materiály související s nezávislými audity třetích stran služby Microsoft Cloud Services, jako je Azure, Office 365, Dynamics 365 a další.
 - **Průvodci ochranou dat:** Průvodci ochranou dat poskytují informace o tom, jak Microsoft Cloud služby chrání vaše data a jak můžete spravovat zabezpečení cloudových dat a dodržování předpisů pro vaši organizaci. Patří sem obsáhlé dokumenty White Paper, které poskytují podrobné informace o tom, jak Microsoft navrhuje a provozuje cloudové služby, nejčastější dotazy, zprávy o posouzení zabezpečení na konci roku, výsledky testů průniku a Rady, které vám pomůžou při vyhodnocování rizik a zlepšování vašich dat. možnosti ochrany.
@@ -47,7 +46,7 @@ Tyto nástroje jsou navržené tak, aby pomáhaly organizacím, které splňují
   - **Žádosti subjektu údajů:** GDPR uděluje jednotlivcům (nebo subjektům údajů) určitá práva v souvislosti se zpracováním jejich osobních údajů. To zahrnuje právo opravit nepřesná data, vymazat data nebo omezit jejich zpracování, jakož i přijmout data a splnit požadavek na přenos dat na jiný kontroler.
   - **Porušení dat:** GDPR vyžaduje požadavky na oznámení pro řadiče a procesory dat v případě porušení osobních údajů. STP poskytuje informace o tom, jak se společnost Microsoft snaží zabránit narušením prvního místa, jak společnost Microsoft zjistí porušení a jak bude Microsoft reagovat v případě porušení a upozorní vás jako řadič dat.
   - **Posouzení dopadu na ochranu dat:** Microsoft pomáhá řadičům doplňovat GDPRy dopadu na ochranu dat. GDPR poskytuje úplný seznam případů, ve kterých je nutné provést DPIAs, jako je automatické zpracování pro účely profilace a podobných aktivit. zpracování ve velkém měřítku speciálních kategorií osobních údajů a systematického monitorování veřejně přístupné oblasti ve velkém měřítku.
-  - **Další zdroje informací:** Kromě pokynů uvedených v předchozích částech STP také poskytuje další zdroje, včetně regionálního dodržování předpisů, dalších prostředků pro Centrum zabezpečení a dodržování předpisů a nejčastější dotazy k platformě důvěryhodnosti služby. Správce dodržování předpisů a soukromí/GDPR.
+  - **Další zdroje informací:** Kromě pokynů uvedených v předchozích částech STP také poskytuje další zdroje, včetně regionálního dodržování předpisů, dalších prostředků pro Centrum zabezpečení a dodržování předpisů a nejčastější dotazy k platformě důvěryhodnosti služby, správci dodržování předpisů a ochraně osobních údajů a GDPR.
 - **Regionální dodržování předpisů:** STP poskytuje řadu dokumentů a pokynů pro dodržování předpisů pro Microsoft online služby, které splňují požadavky na dodržování předpisů pro různé oblasti, včetně České republiky, Polska a Rumunska.
 
 ## <a name="unique-intelligent-insights"></a>Jedinečné inteligentní přehledy

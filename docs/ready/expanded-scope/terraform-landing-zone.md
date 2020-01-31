@@ -1,6 +1,5 @@
 ---
 title: Použití Terraformu k sestavení zón odpočívadla
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Naučte se používat Terraformu k sestavování zón odpočívadl.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753749"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798974"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Použití Terraformu k sestavení zón odpočívadla
 
@@ -37,7 +36,7 @@ První cílová zóna nasadí do vašeho předplatného tyto komponenty:
 
 Nasazené komponenty a jejich účel jsou následující:
 
-| Součást | zodpovědní |
+| Součást | Zodpovědní |
 |---------|---------|
 | Skupiny prostředků | Základní skupiny prostředků, které jsou potřeba pro základ |
 | Protokolování aktivit | Auditování všech aktivit předplatného a archivace: </br> – Účet úložiště </br> – Azure Event Hubs |  
@@ -67,14 +66,14 @@ V zóně pro vykládku Terraformu jsou zastoupena tato rozhodnutí:
 | Součást | Rozhodnutí | Alternativní přístupy |
 | --- | --- | --- |
 |Protokolování a monitorování | Používá se pracovní prostor Azure Monitor Log Analytics. Účet úložiště diagnostiky i centrum událostí se zřídí. |         |
-|Síť | Není k dispozici síť, která je implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/networking-options.md) |
+|Network (Síť) | Není k dispozici síť, která je implementována v jiné cílové zóně. |[Rozhodnutí o síti](../considerations/networking-options.md) |
 |Identita | Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory. | [Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zásady | V této cílové zóně se v současné době předpokládá, že se nepoužívají žádné zásady Azure. | |
 |Návrh předplatného | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Skupiny pro správu | Neuvedeno – Navrženo pro jedno produkční předplatné. |[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Skupiny prostředků | Neuvedeno – Navrženo pro jedno produkční předplatné. | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Nevztahuje se | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Úložiště|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md) |
+|Storage|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md) |
 | Standardy pro vytváření názvů | Při vytvoření prostředí se vytvoří také jedinečná předpona. Tato předpona používá prostředky, které vyžadují globálně jedinečný název (například účty úložiště). Vlastní název je připojen s náhodnou příponou. Použití značky je udělené podle pokynů v následující tabulce. | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md) |
 | Správa nákladů | Nevztahuje se | [Sledování nákladů](../azure-best-practices/track-costs.md) |
 | Služby Compute | Nevztahuje se | [Možnosti služby Compute](../considerations/compute-options.md) |
@@ -83,15 +82,15 @@ V zóně pro vykládku Terraformu jsou zastoupena tato rozhodnutí:
 
 U všech prostředků a skupin prostředků se musí vyskytovat následující sada minimálních značek:
 
-| Název značky | Popis | Klíč | Příklad hodnoty |
+| název značky | Popis | Klíč | Příklad hodnoty |
 |--|--|--|--|
 | Organizační jednotka | Rozdělení vaší společnosti vlastnící předplatné nebo úlohu, do které prostředek patří, na nejvyšší úrovni | BusinessUnit | FINANCE, MARKETING, {název produktu}, CORP, SHAREd |
 | Nákladové středisko | Účetní nákladové středisko přidružené tomuto prostředku| CostCenter | Číslo |
 | Zotavení po havárii | Obchodní důležitost aplikace, úlohy nebo služby | DR | SE ZAPNUTÝM DR, BEZ DR |
 | Prostředí | Prostředí nasazení aplikace, úlohy nebo služby |  ENV | Prod, vývoj, QA, fáze, testování, školení |
 | Jméno vlastníka | Vlastník aplikace, úlohy nebo služby| Vlastník | e-mail |
-| Typ nasazení | Definuje způsob údržby prostředků. | Typ nasazení | Ruční, Terraformu |
-| Version | Verze podrobného plánu byla nasazena. | version | v 0,1 |
+| Typ nasazení | Definuje způsob údržby prostředků. | deploymentType | Ruční, Terraformu |
+| Verze | Verze podrobného plánu byla nasazena. | version | v 0,1 |
 | Název aplikace | Název přidružené aplikace, služby nebo úlohy přidružené k prostředku | ApplicationName | název aplikace |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Přizpůsobení a nasazení první cílové zóny

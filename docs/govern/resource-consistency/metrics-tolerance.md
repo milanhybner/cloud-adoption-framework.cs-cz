@@ -1,6 +1,5 @@
 ---
 title: Metriky konzistence prostředků, indikátory a tolerance rizik
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriky konzistence prostředků, indikátory a tolerance rizik
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548067"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805145"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriky konzistence prostředků, indikátory a tolerance rizik
 
@@ -55,10 +54,10 @@ V počátečních fázích přijímání v cloudu spolupracujete s vaším týme
 
 Jakmile budete mít základnu, stanovte minimální srovnávací testy představující nepřijatelný nárůst zjištěných rizik. Tyto srovnávací testy fungují jako triggery, pokud potřebujete provést akci k nápravě těchto rizik. Tady je několik příkladů, jak provozní metriky, jako jsou výše popsané, můžou zvýšit investice do oboru konzistence prostředků.
 
-- **Tagování a Trigger názvů.** Společnost s více než _x_ prostředky, které neobsahují požadované informace o označování nebo které nedodržují standardy pojmenování, by měla zvážit investování do oboru konzistence prostředků, aby se tyto standardy lépe vylepšit a zajistila konzistentní jejich uplatňování na prostředky nasazené v cloudu
+- **Tagování a Trigger názvů.** Společnost s více než _x_ prostředky, které neobsahují požadované informace o označování nebo které nedodržují standardy pojmenování, by měla zvážit investování do oboru konzistence prostředků, aby se tyto standardy lépe vylepšit a zajistila konzistentní jejich použití na prostředky nasazené v cloudu.
 - **Aktivační událost nadměrného zřízeného prostředku.** Pokud má společnost pravidelně více než _x%_ prostředků na základě malých objemů dostupné paměti, procesoru nebo sítě, navrhuje se investice do oboru konzistence prostředků, které vám pomůžou optimalizovat využití prostředků u těchto položek.
-- **Aktivační událost podzřízeného prostředků.** Pokud má společnost více než _x%_ prostředků pravidelně vyčerpáním kapacity dostupné paměti, procesoru nebo sítě, navrhne se investice do oboru konzistence prostředků, aby se zajistilo, že tyto prostředky budou mít prostředky nutné k tomu, aby se zabránilo. přerušení služeb.
-- **Aktivační událost stáří prostředku** Společnost s více než _x_ prostředky, které nebyly aktualizovány během více než x _měsíců,_ by mohla těžit z investic do oboru konzistence prostředků s cílem zajistit, aby byly aktivní prostředky opraveny a v pořádku, při vyřazování zastaralých nebo jinak nepoužívané prostředky.
+- **Aktivační událost podzřízeného prostředků.** Pokud má společnost více než _x%_ prostředků pravidelně vyčerpáním kapacity dostupné paměti, procesoru nebo sítě, navrhne se investice do oboru konzistence prostředků, aby se zajistilo, že tyto prostředky budou mít prostředky nezbytné k tomu, aby se předešlo přerušení služeb.
+- **Aktivační událost stáří prostředku** Společnost s více než _x_ prostředky, které se _během více než měsíců_ neaktualizovala, by mohla těžit z investic do oboru konzistence prostředků, která je určená k zajištění, že aktivní prostředky jsou opravené a v pořádku, při vyřazení zastaralých nebo jinak nepoužívaných prostředků.
 - **Aktivační událost smlouvy na úrovni služby.** Společnost, která nemůže splnit své smlouvy o úrovni služeb svým externím zákazníkům nebo interním partnerům, by měla investovat do disciplíny akcelerace nasazení, aby se snížil výpadek systému.
 - **Aktivační události pro čas obnovení.** Pokud společnost překročí požadované prahové hodnoty pro čas obnovení po selhání systému, měl by investovat do zvýšení disciplíny akcelerace nasazení a systémů, aby se snížily nebo odstranily chyby nebo vliv jednotlivých součástí výpadku.
 - **Aktivační událost stavu virtuálního počítače.** Společnost, která má více než _x%_ virtuálních počítačů, u kterých dochází k závažnému problému se stavem, by měla investovat do oboru konzistence prostředků, aby identifikovala problémy a vylepšila stabilitu virtuálních počítačů

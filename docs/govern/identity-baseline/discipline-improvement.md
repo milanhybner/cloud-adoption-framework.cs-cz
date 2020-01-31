@@ -1,6 +1,5 @@
 ---
 title: Vylepšení oboru směrného plánu identity
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru směrného plánu identity
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915053"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807185"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu identity
 
-Disciplína směrného plánu identity se zaměřuje na způsoby vytváření zásad, které zajišťují konzistenci a kontinuitu identit uživatelů bez ohledu na poskytovatele cloudu, který hostuje aplikaci nebo úlohu. V pěti oborech řízení cloudu zahrnuje základní údaje o rozhodnutích, která se týkají [strategie hybridních identit](../../decision-guides/identity/index.md), vyhodnocování a rozšíření úložišť identit, implementace jednotného přihlašování (stejné přihlášení), auditování a monitorování neoprávněného použití nebo škodlivých aktérů V některých případech může také dotýkat rozhodnutí modernizovat, konsolidace nebo integrace více zprostředkovatelů identity.
+Disciplína směrného plánu identity se zaměřuje na způsoby vytváření zásad, které zajišťují konzistenci a kontinuitu identit uživatelů bez ohledu na poskytovatele cloudu, který hostuje aplikaci nebo úlohu. V pěti oborech řízení cloudu zahrnuje základní údaje o rozhodnutích, která se týkají [strategie hybridních identit](../../decision-guides/identity/index.md), vyhodnocování a rozšíření úložišť identit, implementace jednotného přihlašování (stejné přihlášení), auditování a monitorování pro neoprávněné použití nebo škodlivé objekty actor. V některých případech může také dotýkat rozhodnutí modernizovat, konsolidace nebo integrace více zprostředkovatelů identity.
 
 Tento článek popisuje některé možné úkoly, které může vaše společnost zapojit do vývoje a vyspělosti směrného plánu identity. Tyto úlohy je možné rozdělit na plánování, sestavování, přijímání a provozní fáze implementace cloudového řešení, které se pak iterovat na to, že umožní vývoj [přírůstkového přístupu ke správě cloudu](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
