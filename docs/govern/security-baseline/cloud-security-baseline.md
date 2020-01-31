@@ -1,6 +1,5 @@
 ---
 title: Pochopení standardních hodnot zabezpečení cloudu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si o standardních hodnotách zabezpečení cloudu.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752166"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808885"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Pochopení standardních hodnot zabezpečení cloudu
 
@@ -36,7 +35,7 @@ Každá strategie cloudového zabezpečení by měla přinejmenším zvážit n�
 
 ## <a name="protecting-data-and-privacy"></a>Ochrana dat a ochrany osobních údajů
 
-Pro organizace v rámci světové &mdash;whether vlády, neziskové nebo firmy, které &mdash;cloud Computing, se stane klíčovou součástí své probíhající strategie IT. Služba Cloud Services poskytuje organizacím všech velikostí přístup k prakticky neomezenému úložišti dat a přitom je uvolňuje z nutnosti kupovat, udržovat a aktualizovat vlastní sítě a počítačové systémy. Microsoft a další poskytovatelé cloudu nabízejí infrastrukturu IT, platformu a software jako službu (SaaS) a umožňují zákazníkům rychle škálovat nahoru nebo dolů podle potřeby a platit jenom za výpočetní výkon a úložiště, které používají.
+Pro organizace v celém světě&mdash;, jestli se vlády, neziskové nebo firmy&mdash;cloud computingu staly klíčovou součástí své probíhající strategie IT. Služba Cloud Services poskytuje organizacím všech velikostí přístup k prakticky neomezenému úložišti dat a přitom je uvolňuje z nutnosti kupovat, udržovat a aktualizovat vlastní sítě a počítačové systémy. Microsoft a další poskytovatelé cloudu nabízejí infrastrukturu IT, platformu a software jako službu (SaaS) a umožňují zákazníkům rychle škálovat nahoru nebo dolů podle potřeby a platit jenom za výpočetní výkon a úložiště, které používají.
 
 Jelikož ale organizace i nadále využívají výhod cloudových služeb, jako je větší volba, flexibilita a flexibilita při zvyšování efektivity a snížení nákladů na IT, musí zvážit, jak by zavedení cloudových služeb mělo vliv na jejich Ochrana osobních údajů, zabezpečení a dodržování předpisů stav. Společnost Microsoft pracovala tak, aby své cloudové nabídky nejen škálovatelná, spolehlivá a spravovatelná, ale taky zajistila ochranu a používání dat našich zákazníků transparentním způsobem.
 

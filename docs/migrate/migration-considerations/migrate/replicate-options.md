@@ -1,6 +1,5 @@
 ---
 title: Možnosti replikace
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7433ddd9a1c3bb6bd62f9d065c79bbb0b1f52f1b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022708"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802136"
 ---
 # <a name="replication-options"></a>Možnosti replikace
 
@@ -42,13 +41,13 @@ Potom co vyhodnotíte místní a cloudovou infrastrukturu pro migraci, Azure Sit
 - Otestujte převzetí služeb při selhání, aby bylo jisté, že všechno funguje.
 - Spusťte jednorázové převzetí služeb při selhání do Azure.
 
-## <a name="azure-database-migration-service"></a>Služba Azure Database Migration
+## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
 Tato služba pomáhá zjednodušit migraci do cloudu pomocí jediné komplexní služby místo řady různých nástrojů. Služba [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) je navržená jako bezproblémové a ucelené řešení pro přesun místních databází SQL Serveru do cloudu. Jedná se o plně spravovanou službu, která má umožňovat bezproblémové migrace z více zdrojů databáze na datové platformy Azure s minimální dobou vyřazení z provozu. Integruje některé funkce stávajících nástrojů a služeb a poskytuje zákazníkům komplexní řešení s vysokou dostupností.
 
 Služba používá nástroj Data Migration Assistant k vygenerování sestav vyhodnocení poskytujících doporučení, která vás provedou nutnými změnami před provedením migrace. Provedení jakékoli požadované nápravy záleží na vás. Až budete připraveni zahájit proces migrace, Azure Database Migration Service provede všechny s tím spojené kroky. Své projekty migrace můžete v klidu spustit a dál je neřešit, protože proces využívá osvědčené postupy podle zkušeností Microsoftu.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po dokončení replikace můžou začít [přípravné aktivity](./stage.md).
 

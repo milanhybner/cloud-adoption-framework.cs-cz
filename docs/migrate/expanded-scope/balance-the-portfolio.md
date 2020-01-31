@@ -1,6 +1,5 @@
 ---
 title: Vyvážení portfolia
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Štíhlé vyvážení cloudového portfolia
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159907"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803292"
 ---
 # <a name="balance-the-portfolio"></a>Vyvážení portfolia
 
@@ -68,7 +67,7 @@ Pokud je odpověď na kteroukoli otázku záporná, může být vhodné vytvoři
 
 Požadavky, které jsou uvedené v průvodci směrným plánem, by měly být dostačující i pro řešení tohoto složitého tématu. Inventář assetů a digitální nemovitosti by však měly být zvýrazněny a v rámci těchto požadavků označeny tučně, protože tato data budou řídit následující činnosti.
 
-## <a name="assess-process-changes"></a>Vyhodnocení změn procesu
+## <a name="assess-process-changes"></a>Změny procesu posouzení
 
 Vyvážení portfolia vyžaduje další kvalitativní analýzu během procesu vyhodnocování, což pomůže jednoduché racionalizaci portfolia.
 
@@ -115,11 +114,11 @@ Opětovné **hostování:** Opětovné hostování vyžaduje, aby členové tým
 
 Během migrace by se mělo úsilí rozdělit třemi způsoby uvedenými výše a v příslušné iteraci provést vhodným týmem. I když byste portfolio měli rozrůznit, zajistěte také, aby úsilí zůstalo velmi zaměřené a oddělené.
 
-## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
+## <a name="optimize-and-promote-process-changes"></a>Změny procesu optimalizace a povýšení
 
 Během procesů optimalizace a propagace v rámci snahy o migraci nejsou potřeba žádné další změny.
 
-## <a name="secure-and-manage-process-changes"></a>Změny procesu zabezpečení a správy
+## <a name="secure-and-manage-process-changes"></a>Procesní změny týkající se zabezpečení a správy
 
 Během procesů zabezpečení a správy v rámci snahy o migraci nejsou potřeba žádné další změny.
 

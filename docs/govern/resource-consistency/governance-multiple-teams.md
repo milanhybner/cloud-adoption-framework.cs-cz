@@ -1,6 +1,5 @@
 ---
 title: Návrh zásad správného řízení v Azure pro více týmů
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Pokyny pro konfiguraci řízení zásad správného řízení Azure pro více týmů, více úloh a více prostředí.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160474"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804295"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
@@ -140,7 +139,7 @@ Teď, když jste navrhli model oprávnění s minimálním oprávněním, pojďm
 2. **Provozní prostředí:** Několik skupin prostředků, které představují několik produkčních úloh. Tyto prostředky se používají pro hostování privátních a veřejných artefaktů aplikace. Tyto prostředky mají typicky nejpřísnější modely zásad správného řízení a zabezpečení, aby chránily prostředky, kód aplikace a data před neoprávněným přístupem.
 3. Předprodukční **prostředí:** Několik skupin prostředků, které představují více úloh připravených k nevyužívání produktů Tyto prostředky se používají pro vývoj a testování. tyto prostředky můžou mít ještě uvolněný model zásad správného řízení, který umožňuje zvýšenou flexibilitu vývojářů. Zabezpečení v rámci těchto skupin by mělo zvýšit hodnotu "produkce", kterou proces vývoje aplikace získá.
 
-Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít znát průběžné **náklady na** **sdílenou infrastrukturu**, náklady vzniklé jednotlivcům v **předprodukčním i produkčním** prostředí a nakonec i celkové **náklady na předprodukční prostředí a**  **produkční** prostředí.
+Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít znát průběžné náklady na **sdílenou infrastrukturu**, náklady vzniklé jednotlivcům v **předprodukčním i produkčním** prostředí a nakonec i celkové **náklady na** **předprodukční** **a** produkční prostředí.
 
 Již jste se dozvěděli o tom, že prostředky jsou vymezeny na dvě úrovně: **předplatné** a **Skupina prostředků**. Proto první rozhodnutí slouží k uspořádání prostředí podle **předplatného**. K dispozici jsou pouze dvě možnosti: jedno předplatné nebo více předplatných.
 
@@ -216,7 +215,7 @@ Výsledný model správy je podobný prvnímu příkladu s několika klíčovým
 
 Teď se podívejme na model správy prostředků s použitím několika předplatných. V tomto modelu zarovnáváte každé ze tří prostředí do samostatného předplatného: předplatné **sdílených služeb** , **produkční** předplatné a nakonec **vývojové** předplatné. Požadavky pro tento model se podobají modelu s použitím jediného předplatného, které je potřeba rozhodnout o tom, jak se skupiny prostředků zarovnají s úlohami. Již bylo zjištěno, že vytvoření skupiny prostředků pro každou úlohu splňuje požadavek na izolaci úloh, takže v tomto příkladu vytvoříte tento model.
 
-1. V tomto modelu existují tři *předplatná*: *sdílená infrastruktura*, *produkce*a *vývoj*. Každé z těchto tří předplatných vyžaduje *vlastníka předplatného*a v jednoduchém příkladu použijete stejný uživatelský účet pro všechny tři. *Sdílené prostředky infrastruktury* se spravují podobně jako první dva příklady a první úloha je přidružená k *app1-RG* v *produkčním* prostředí a skupině prostředků se stejným názvem ve *vývoji.* prostředí. *Vlastník úlohy app1* se přidá do každé skupiny prostředků s rolí *Přispěvatel* .
+1. V tomto modelu existují tři *předplatná*: *sdílená infrastruktura*, *produkce*a *vývoj*. Každé z těchto tří předplatných vyžaduje *vlastníka předplatného*a v jednoduchém příkladu použijete stejný uživatelský účet pro všechny tři. *Sdílené prostředky infrastruktury* se spravují podobně jako první dva příklady a první úloha je přidružená k *app1-RG* v *produkčním* prostředí a skupině prostředků se stejným názvem ve *vývojovém* prostředí. *Vlastník úlohy app1* se přidá do každé skupiny prostředků s rolí *Přispěvatel* .
     ![přidávání přispěvatelů](../../_images/govern/design/governance-3-17.png)
 2. Stejně jako v předchozích příkladech vytvoří *vlastník úlohy app1* prostředky a požádá o připojení partnerského vztahu ke *sdílené infrastruktuře* virtuální sítě. *Vlastník úlohy app1* přidává jenom značku *ManagedBy* , protože už není potřeba tag *prostředí* . To znamená, že prostředky jsou pro každé prostředí seskupené ve stejném *předplatném* a značka *prostředí* je redundantní. Čítač limit je snížen na 999 virtuálních sítí zbývá.
     ![vytvoření připojení partnerského vztahu](../../_images/govern/design/governance-3-18.png)
@@ -259,8 +258,8 @@ Postupujte následovně:
 5. Správce účtu Azure [přidá vlastníka služby předplatného do každého předplatného](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 6. Vytvořte schvalovací proces pro **vlastníky úloh** , které vyžádají vytvoření skupin prostředků. Proces schvalování se dá implementovat mnoha způsoby, například přes e-maily, nebo můžete použít nástroj pro správu procesů, například [pracovní postupy SharePointu](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Proces schvalování může postupovat podle těchto kroků:
     - **Vlastník úlohy** připraví množství materiálů pro požadované prostředky Azure ve **vývojovém** prostředí, v **produkčním** prostředí nebo v obou a odešle je **vlastníkovi předplatného**.
-    - **Vlastník předplatného** zkontroluje množství materiálů a ověří požadované prostředky, aby bylo zajištěno, že požadované prostředky jsou vhodné pro jejich plánované použití, například kontrolu, zda jsou požadované [velikosti virtuálních počítačů](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) . odstranění.
-    - Pokud žádost není schválena, **vlastník úlohy** se oznámí. Pokud je žádost schválená, **vlastník předplatného** [vytvoří požadovanou skupinu prostředků](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) podle [konvencí vytváření názvů](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)vaší organizace a [přidá **vlastníka úlohy** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) do role [ **přispěvatele** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) . a pošle oznámení **vlastníkovi úlohy** , že se vytvořila skupina prostředků.
+    - **Vlastník předplatného** zkontroluje množství materiálů a ověří požadované prostředky, aby bylo zajištěno, že požadované prostředky jsou vhodné pro plánované použití, například kontrolu správnosti [velikosti požadovaných virtuálních počítačů](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) .
+    - Pokud žádost není schválena, **vlastník úlohy** se oznámí. Pokud je žádost schválená, **vlastník předplatného** [vytvoří požadovanou skupinu prostředků](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) podle [zásad vytváření názvů](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)vaší organizace, [přidá **vlastníka úlohy** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) [ **přispěvateli** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) a pošle oznámení **vlastníkovi pracovního** postupu, že se vytvořila skupina prostředků.
 7. Vytvořte schvalovací proces pro vlastníky úloh, které vyžádají připojení partnerského vztahu virtuální sítě od vlastníka sdílené infrastruktury. Stejně jako v předchozím kroku se tento proces schvalování dá implementovat pomocí e-mailu nebo nástroje pro správu procesů.
 
 Teď, když jste implementovali model zásad správného řízení, můžete nasadit své sdílené služby infrastruktury.

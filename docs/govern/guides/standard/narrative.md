@@ -1,6 +1,5 @@
 ---
 title: 'Standardní příručka pro zásady správného řízení podniku: mluvený komentář za strategií zásad správného řízení'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí v cloudu Standard.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547442"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805519"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standardní příručka pro zásady správného řízení podniku: mluvený komentář za strategií zásad správného řízení
 
@@ -52,7 +51,7 @@ Následující změny se odhadují v následujících několika letech:
 - CIO prohlíží zásady osobních údajů a finančních dat, aby bylo možné budoucí cíle stavu.
 - Vývoj aplikací a týmy BI chtějí uvolnit cloudová řešení do provozu v příštích 24 měsících na základě vize pro zákaznickou zapojení a nové produkty.
 - Tento rok IT tým dokončí vyřazení úloh zotavení po havárii datacentra DR pomocí migrace 2 000 virtuálních počítačů do cloudu. Očekává se, že se v následujících pěti letech vyprodukuje odhadované ceny za 25M USD.
-    náklady na ![On místní a náklady na Azure, které demonstrují vrácení $25M USD za další pět let ](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    ![místní náklady a náklady na Azure, které demonstrují vrácení $25M USD za další pět let](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Společnost plánuje změnu způsobu jejich investic tím, že přemístí potvrzené kapitálové výdaje jako provozní náklady v rámci IT. Tato změna zajistí větší náklady a umožní jí zrychlit další plánované úsilí.
 
 ## <a name="next-steps"></a>Další kroky

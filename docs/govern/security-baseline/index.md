@@ -1,6 +1,5 @@
 ---
 title: Disciplína standardních hodnot zabezpečení
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Disciplína standardních hodnot zabezpečení
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ecea5b28e64004f85b4312a35b78bef81048c050
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565947"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808970"
 ---
 # <a name="security-baseline-discipline-overview"></a>Disciplína standardních hodnot zabezpečení
 

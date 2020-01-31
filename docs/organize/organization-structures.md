@@ -1,6 +1,5 @@
 ---
 title: Vytvořit týmové struktury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vytvořit týmové struktury
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811093"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800912"
 ---
 # <a name="establish-team-structures"></a>Vytvořit týmové struktury
 
@@ -33,7 +32,7 @@ Organizační struktury se obvykle pohybují v rámci běžného modelu splatnos
 5. [Provozní zarovnání](#operational-alignment)
 6. [Cloudové centrum excelence (CCoE)](#cloud-center-of-excellence)
 
-Většina společností začíná s malým množstvím týmu, než je *tým pro přijetí*v cloudu. Doporučujeme však vytvořit organizační strukturu, která bude lépe podobná struktuře [osvědčených postupů MVP](#best-practice-minimum-viable-product-mvp) .
+Většina společností začíná s malým množstvím týmu, než je *tým pro přijetí v cloudu*. Doporučujeme však vytvořit organizační strukturu, která bude lépe podobná struktuře [osvědčených postupů MVP](#best-practice-minimum-viable-product-mvp) .
 
 ## <a name="cloud-adoption-team-only"></a>Jenom tým pro přijetí do cloudu
 
@@ -41,7 +40,7 @@ Nucleus všech úsilí o přijetí cloudu je tým pro přijetí cloudu. Tento t�
 
 ![Tým pro přijetí do cloudu s týmy pro řízení a zabezpečení](../_images/ready/org-ready-adoption-only.png)
 
-V případě snahy o řešení v malém měřítku nebo v rané fázi může být tento tým malým jménem jedné osoby. Ve velkém měřítku nebo v pozdní fázi je běžné, že máte několik týmů pro přijímání v cloudu, z nichž každý má zhruba šest techniků. Bez ohledu na velikost nebo úkoly je konzistentní aspekt každého týmu pro přijetí cloudu tím, že poskytuje prostředky k registraci řešení do cloudu. V některých organizacích může být to dostatečná organizační struktura. Článek o [přijetí](./cloud-adoption.md) do cloudu poskytuje více informací o struktuře, složení a funkci týmu pro přijetí cloudu.
+V případě snahy o řešení v malém měřítku nebo v rané fázi může být tento tým malým jménem jedné osoby. Ve velkém měřítku nebo v pozdní fázi je běžné, že máte několik týmů pro přijímání v cloudu, z nichž každý má zhruba šest techniků. Bez ohledu na velikost nebo úkoly je konzistentní aspekt každého týmu pro přijetí cloudu tím, že poskytuje prostředky k registraci řešení do cloudu. V některých organizacích může být to dostatečná organizační struktura. Článek o [přijetí do cloudu](./cloud-adoption.md) poskytuje více informací o struktuře, složení a funkci týmu pro přijetí cloudu.
 
 > [!WARNING]
 > V provozu *jenom* tým pro přijetí do cloudu (nebo několik týmů pro přijetí v cloudu) se považuje za *antipattern* a je třeba se jim vyhnout. Měli byste minimálně zvážit [osvědčené postupy MVP](#best-practice-minimum-viable-product-mvp).
@@ -50,12 +49,12 @@ V případě snahy o řešení v malém měřítku nebo v rané fázi může bý
 
 Doporučujeme, abyste měli dva týmy, abyste vytvořili rovnováhu mezi úsilím při přijímání v rámci cloudu. Tyto dva týmy zodpovídají za různé možnosti během úsilí o přijetí.
 
-- **Tým přechodu na cloud:** Tento tým je popsaný pro technická řešení, obchodní zarovnání, řízení projektů a operace pro přijatá řešení.
+- **Tým pro přijetí cloudu:** Tento tým je popsaný pro technická řešení, obchodní zarovnání, řízení projektů a operace pro přijatá řešení.
 - **Tým zásad správného řízení cloudu:** Aby bylo možné vyvážit tým pro přijetí do cloudu, tým zásad správného řízení cloudu je vyhrazen k zajištění vynikajících řešení v přijatých řešeních. Tým zásad správného řízení cloudu je pro vypořádání platforem, operací platforem, zásad správného řízení a automatizace účet.
 
 ![Přijetí do cloudu s využitím zásad správného řízení cloudu](../_images/ready/org-ready-best-practice.png)
 
-Tento prověřený přístup se považuje za MVP, protože nemusí být udržitelný. Každý tým má spoustu Hats, jak je uvedeno v odpovědných, prodaných, prodaných, příslušně, informách [ (RACI) grafech](./raci-alignment.md).
+Tento prověřený přístup se považuje za MVP, protože nemusí být udržitelný. Každý tým má spoustu Hats, jak je uvedeno v odpovědných, prodaných, prodaných, příslušně, [ *informách* (RACI) grafech](./raci-alignment.md).
 
 V následujících částech jsou popsány plně personální a prověřené organizační struktury spolu s přístupy k zajištění odpovídající struktury pro vaši organizaci.
 

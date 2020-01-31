@@ -1,6 +1,5 @@
 ---
 title: 'Průvodce monitorováním cloudu: Přehled monitorovacích platforem'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vyberte, kdy se má v Microsoft Azure použít Azure Monitor nebo System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751675"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807593"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Průvodce monitorováním cloudu: Přehled monitorovacích platforem
 
@@ -134,7 +133,7 @@ Azure Monitor neposkytuje uživatelsky definované metody implementace modelu sl
 
 - **Azure monitor pro virtuální počítače:** Poskytuje prostředí pro monitorování stavu pro hostované virtuální počítače Azure, podobně jako u Operations Manager, když monitoruje virtuální počítače s Windows a Linuxem. Vyhodnotí stav klíčových komponent operačního systému z perspektivy dostupnosti a výkonu a určí aktuální stav. Když zjistí, že virtuální počítač hosta má trvalé využívání prostředků, kapacitu místa na disku nebo problém související se základní funkcí operačního systému, vygeneruje výstrahu, která tento stav zaznamená do vaší pozornosti.
 
-- **Azure monitor pro kontejnery:** Monitoruje výkon a stav služby Azure Kubernetes nebo Azure Container Instances. Shromažďuje metriky paměti a procesoru z řadičů, uzlů a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik. Shromažďuje také protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předdefinovaná kritéria stavu, která jsou založená na shromážděných datech výkonu, vám pomůžou zjistit, jestli existuje problém s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
+- **Azure monitor pro kontejnery:** Monitoruje výkon a stav služby Azure Kubernetes nebo Azure Container Instances. Z řadiče, uzly a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik shromažďuje metriky paměti a procesoru. Shromažďuje také protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předdefinovaná kritéria stavu, která jsou založená na shromážděných datech výkonu, vám pomůžou zjistit, jestli existuje problém s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
 
 ## <a name="analyze-data"></a>Analyzujte data
 

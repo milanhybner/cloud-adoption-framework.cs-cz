@@ -1,6 +1,5 @@
 ---
 title: Vyřazení zastaralých prostředků
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vyřazení zastaralých prostředků
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ae2538263af35e8fdb2cf5c861a2c7b0537108d4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 933a9c42a55e58e5a58f9ef1c308b006e30e1abf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833359"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801932"
 ---
 # <a name="decommission-retired-assets"></a>Vyřazení zastaralých prostředků
 
@@ -35,7 +34,7 @@ I přes kvalitní plánování můžou sady funkcí povýšené do produkčního
 
 Často se stává, že během migrace se při procesu replikace ztratí data. Platí to především pro starší data, se kterými se pravidelně nepracuje. Jakmile vyřazený prostředek vypnete, je vhodné ho ještě chvíli ponechat jako dočasnou zálohu dat. Firmy by měly uchovat vyřazené prostředky alespoň po dobu 30 dní a zlikvidovat je až po testování dat.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Po vyřazení nepotřebných prostředků z provozu je migrace dokončená. Tím vzniká dobrá příležitost pro zlepšení procesu migrace. [Retrospektiva](./retrospective.md) umožní týmu přechodu na cloud zkontrolovat uvolnění prostředků a na základě získaných informací postup vylepšit.
 

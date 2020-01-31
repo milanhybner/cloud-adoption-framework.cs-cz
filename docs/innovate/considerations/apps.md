@@ -1,6 +1,5 @@
 ---
 title: 'Inovace v cloudu: zapojení aplikací'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Úvod do cloudových inovací – zapojení do aplikací
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752060"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808562"
 ---
 # <a name="engage-through-applications"></a>Zapojení aplikací
 
@@ -36,7 +35,7 @@ Aby bylo možné začít s inovacemi, měl by vývoj všech aplikací začínat 
 
 Profesionální vývojáři jsou důležitou součástí inovací. V případě, že hypotéza prokáže přesné škálování, je nutné, aby profesionální vývojáři mohli stabilizovat a připravit řešení pro škálování. Většina zásad, na které se odkazuje v tomto článku, vyžaduje podporu pro profesionální vývojáře. Aktuální trendy bohužel navrhují větší poptávku pro profesionální vývojáře, než je vývojář. Kromě toho může být náklady a tempo inovace méně vhodné, pokud je pro profesionální vývoj považována za nezbytná. V reakci na tyto výzvy poskytují vývojáři občanů způsob škálování úsilí při vývoji a urychlení testování hypotéz.
 
-Použití vývojářů občanů může být životaschopné a efektivní, pokud je možné provést ověření počáteční hypotézy prostřednictvím nástrojů jako [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pro rozhraní aplikace, [Tvůrce AI](https://docs.microsoft.com/powerapps/use-ai-builder) pro procesy a předpovědi, [Microsoft Flow](https://docs.microsoft.com/flow) pro pracovní postupy a [výkon. BI](https://docs.microsoft.com/power-bi) pro spotřebu dat
+Použití vývojářů občanů může být životaschopné a efektivní, pokud je možné pomocí nástrojů, jako je [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) pro rozhraní aplikace, [Tvůrce AI](https://docs.microsoft.com/powerapps/use-ai-builder) pro procesy a předpovědi, [Microsoft Flow](https://docs.microsoft.com/flow) pro pracovní postupy a [Power BI](https://docs.microsoft.com/power-bi) pro spotřebu dat.
 
 > [!NOTE]
 > Když se spoléháte na vývojáře občana k testování hypotézy, je vhodné mít k dispozici některé profesionální vývojáře, aby mohli poskytovat podporu, kontrolu a doprovodné materiály. Po ověření, že je hypotéza ve velkém měřítku, proces pro přechod aplikace do robustnějšího programovacího modelu zrychlí návratnost inovace. Díky zapojení profesionálních vývojářů v definicích procesů na začátku můžete později realizovat přechody čisticích procesů.

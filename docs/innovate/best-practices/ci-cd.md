@@ -1,6 +1,5 @@
 ---
 title: 'Inovace v cloudu: nástroje pro zajištění přijetí v Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nástroje pro zajištění přijetí v Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 203bd84154b038939b29cb42b53bfbac2b4d2360
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565895"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808698"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Nástroje pro zajištění přijetí v Azure
 
@@ -39,13 +38,13 @@ Pro týmy, které jsou vyspělé profesionální vývojové týmy s mnoha přisp
 Jak vaše potřeby roste, můžete tuto základnu rozšířit a používat další funkce nástroje. Rozšířená Foundation může zahrnovat nástroje jako:
 
 - Azure Blueprint
-- Azure Policy
+- Zásady Azure
 - Šablony Azure Resource Manageru
 - Azure Monitor
 
 Obsah na levé straně této stránky obsahuje pokyny pro jednotlivé nástroje a zarovnává se s dříve popsaným modelem splatnosti.
 
-## <a name="get-started"></a>Začínáme
+## <a name="get-started"></a>Začít
 
 Obsah na levé straně této stránky popisuje mnoho článků. Tyto články vám pomůžou začít s každým z nástrojů v tomto sada nástrojů.
 

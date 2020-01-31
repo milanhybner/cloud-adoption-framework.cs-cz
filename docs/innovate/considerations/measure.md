@@ -1,6 +1,5 @@
 ---
 title: 'Inovace v cloudu: měření'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Úvod do cloudových inovací – měření obsahu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752122"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808409"
 ---
 # <a name="measure-for-customer-impact"></a>Měření dopadu na zákazníky
 
@@ -23,7 +22,7 @@ Existuje několik způsobů, jak změřit dopad na zákazníky. Tento článek v
 
 Během [fáze strategie](../../strategy/index.md) životního cyklu přijetí do cloudu prověříme [podněty](../../strategy/motivations.md) a [obchodní výsledky](../../strategy/business-outcomes/index.md). Tyto postupy poskytují sadu metrik, podle kterých se má testovat dopad na zákazníky. Po úspěšném dokončení inovace se můžete podívat na výsledky, které jsou zarovnané k vašim strategickým cílům.
 
-Před vytvořením metriky učení definujte malý počet strategických metrik, které mají mít vliv na inovace. Obecně se tyto strategické metriky rovnají s jednou nebo více z následujících oblastí výsledků: [flexibilita firmy](../../strategy/business-outcomes/agility-outcomes.md), [zapojení zákazníků](../../strategy/business-outcomes/engagement-outcomes.md), [dosah zákazníků](../../strategy/business-outcomes/reach-outcomes.md), [finanční dopad](../../strategy/business-outcomes/fiscal-outcomes.md)nebo v případě provozní inovace: [řešení výkon](../../strategy/business-outcomes/fiscal-outcomes.md).
+Před vytvořením metriky učení definujte malý počet strategických metrik, které mají mít vliv na inovace. Obecně se tyto strategické metriky rovnají s jednou nebo více z následujících oblastí výsledků: [flexibilita firmy](../../strategy/business-outcomes/agility-outcomes.md), [zapojení zákazníků](../../strategy/business-outcomes/engagement-outcomes.md), [dosah zákazníků](../../strategy/business-outcomes/reach-outcomes.md), [finanční dopad](../../strategy/business-outcomes/fiscal-outcomes.md)nebo v případě provozní inovace: [výkon řešení](../../strategy/business-outcomes/fiscal-outcomes.md).
 
 Zdokumentujte dohodnuté metriky a sledujte jejich dopad často. Ale neočekáváme, že výsledky v žádné z těchto metrik se objeví pro několik iterací. Další informace o nastavení a zarovnání očekávání v rámci zúčastněných stran naleznete v tématu [závazek na iteraci](./index.md#commitment-to-iteration).
 

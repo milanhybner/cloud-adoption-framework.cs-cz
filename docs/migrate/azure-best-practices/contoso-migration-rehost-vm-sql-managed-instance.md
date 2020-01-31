@@ -1,6 +1,5 @@
 ---
 title: Změna hostitele místní aplikace migrací na virtuální počítače Azure a spravovanou instanci Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak společnost Contoso s využitím spravované instance Azure SQL Database provádí změnu hostitele místní aplikace na virtuální počítače Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781857"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807355"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
@@ -121,7 +120,7 @@ Společnost Contoso a další uživatelé musí v tomto scénáři splňovat ná
 Požadavky | Podrobnosti
 --- | ---
 **Předplatné Azure** | Při vyhodnocování v prvním článku této série už byste měli mít vytvořené předplatné. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste jeho správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.<br/><br/> Pokud potřebujete podrobnější oprávnění, přečtěte si téma [Správa přístupu ke službě Site Recovery s využitím řízení přístupu na základě role](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura Azure** | Společnost Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
+**Infrastruktura Azure** | Contoso nastaví svoji infrastrukturu Azure podle popisu v článku [Infrastruktura Azure pro migraci](./contoso-migration-infrastructure.md).
 **Site Recovery (místní)** | Vaše místní instance vCenter Serveru by měly používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Hostitel ESXi by měl používat verzi 5.5, 6.0 nebo 6.5.<br/><br/> Na hostiteli ESXi by měl být spuštěný jeden nebo více virtuálních počítačů VMware.<br/><br/> Virtuální počítače musí splňovat [požadavky Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Podporované konfigurace [sítě](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) a [úložiště](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)
 **Database Migration Service** | Pro službu Azure Database Migration Service potřebujete [kompatibilní místní zařízení VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Místní zařízení VPN musíte mít možnost konfigurovat. Zařízení musí mít externí veřejnou IPv4 adresu. Tato adresa nesmí být umístěná za zařízením NAT.<br/><br/> Ujistěte se, že máte přístup k místní databázi SQL Serveru.<br/><br/> Brána Windows Firewall by měla mít přístup ke zdrojovému databázovému stroji. Informace o [konfiguraci brány Windows Firewall pro přístup k databázovému stroji](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)<br/><br/> Pokud je před databázovým počítačem brána firewall, přidejte pravidla, která povolí přístup k databázi a souborům přes port SMB 445.<br/><br/> Přihlašovací údaje použité pro připojení ke zdrojové instanci SQL Serveru a cílové spravované instanci musí být členy role serveru sysadmin.<br/><br/> V místní databázi potřebujete sdílenou síťovou složku, kterou může služba Azure Database Migration Service použít k zálohování zdrojové databáze.<br/><br/> Ujistěte se, že účet služby, ve kterém je spuštěná zdrojová instance SQL Serveru, má pro tuto sdílenou síťovou složku oprávnění k zápisu.<br/><br/> Poznamenejte si uživatele Windows a jeho heslo s oprávněním Úplné řízení ke sdílené síťové složce. Služba Azure Database Migration Service zosobní tyto přihlašovací údaje uživatele za účelem nahrání záložních souborů do kontejneru služby Azure Storage.<br/><br/> V rámci instalace SQL Serveru Express se ve výchozím nastavení protokol TCP/IP nastaví jako **zakázaný**. Nezapomeňte ho povolit.
 
@@ -570,7 +569,7 @@ Teď musí společnost Contoso provést následující úlohy čištění:
 - Odebrat z interní dokumentace virtuální počítač SQLVM. Případně může společnost Contoso dokumentaci revidovat tak, aby obsahovala informaci o odstranění virtuálního počítače SQLVM z inventáře virtuálních počítačů.
 - Zkontrolovat všechny prostředky, které komunikují s vyřazenými virtuálními počítači. Aktualizovat příslušná nastavení a dokumentaci tak, aby odrážely novou konfiguraci.
 
-## <a name="review-the-deployment"></a>Revize nasazení
+## <a name="review-the-deployment"></a>Kontrola nasazení
 
 Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje plně zprovoznit a zabezpečit novou infrastrukturu.
 

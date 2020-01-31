@@ -1,6 +1,5 @@
 ---
 title: Průvodce rozhodováním ohledně konzistence prostředků
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s konzistencí prostředků při plánování migrace do Azure.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f995a3f6ffb26f408a45610d7d0674e02bf6a31
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564803"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806692"
 ---
 # <a name="resource-consistency-decision-guide"></a>Průvodce rozhodováním ohledně konzistence prostředků
 

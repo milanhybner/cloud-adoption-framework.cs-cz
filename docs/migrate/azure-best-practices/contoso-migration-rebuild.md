@@ -1,6 +1,5 @@
 ---
 title: Opětovné sestavení místní aplikace do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak Contoso opětovně sestaví aplikaci do Azure pomocí služeb Azure App Service, Azure Kubernetes Service, Cosmos DB, Azure Functions a Azure Cognitive Services.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
-ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
+ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76726333"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807491"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Opětovné sestavení místní aplikace v Azure
 

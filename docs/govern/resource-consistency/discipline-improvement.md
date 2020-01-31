@@ -1,6 +1,5 @@
 ---
 title: Vylepšení oboru konzistence prostředků
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšení oboru konzistence prostředků
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548087"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807236"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Vylepšení oboru konzistence prostředků
 
@@ -127,9 +126,9 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 
 ## <a name="next-steps"></a>Další kroky
 
-Teď, když rozumíte konceptu zásad správného řízení prostředků v cloudu, přejděte na Další informace o [tom, jak se v Azure spravuje přístup k prostředkům](./resource-access-management.md) v tématu Příprava na přípravu modelu zásad správného řízení pro [jednoduchou úlohu](./governance-simple-workload.md) nebo pro [více týmů](./governance-multiple-teams.md) . .
+Teď, když rozumíte konceptu zásad správného řízení prostředků v cloudu, můžete přejít na Další informace o [tom, jak se v Azure spravuje přístup k prostředkům](./resource-access-management.md) v tématu Příprava pro učení, jak navrhnout model zásad správného řízení pro [jednoduchou úlohu](./governance-simple-workload.md) nebo pro [více týmů](./governance-multiple-teams.md).
 
 > [!div class="nextstepaction"]
-> Přečtěte [si o správě přístupu k prostředkům v azure](./resource-access-management.md) 
-> [informace o smlouvách o úrovni služeb pro Azure](https://azure.microsoft.com/support/legal/sla) 
+> Přečtěte [si o správě přístupu k prostředkům v azure](./resource-access-management.md)
+> [informace o smlouvách o úrovni služeb pro Azure](https://azure.microsoft.com/support/legal/sla)
 > [informace o protokolování, vytváření sestav a monitorování](../../decision-guides/logging-and-reporting/index.md) .

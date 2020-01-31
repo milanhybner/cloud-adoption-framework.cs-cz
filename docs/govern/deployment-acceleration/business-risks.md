@@ -1,6 +1,5 @@
 ---
 title: Motivace a obchodní rizika, které řídí akceleraci nasazení
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Seznamte se s principem akcelerace nasazení v rámci strategie zásad správného řízení cloudu.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c9bdb912311aac6c926402753a678b9f191594c9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220718"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806386"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivace akcelerace a obchodní rizika pro nasazení
 

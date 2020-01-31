@@ -1,6 +1,5 @@
 ---
 title: Překročení síťové kapacity
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Požadavky na data přesahují kapacitu sítě během migrace.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753494"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803088"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Požadavky na data přesahují kapacitu sítě během migrace.
 
@@ -35,7 +34,7 @@ Existují také [partnerská řešení třetích stran](https://azuremarketplace
 
 ![Offline a online přenos dat pomocí služby Azure Data Box](../../_images/migrate/databox.png)
 
-## <a name="assess-process-changes"></a>Vyhodnocení změn procesu
+## <a name="assess-process-changes"></a>Změny procesu posouzení
 
 I když u jedné nebo více úloh požadavky na úložiště překračují kapacitu sítě, přesto můžete použít Azure Data Box k offline přenosu dat.
 
@@ -68,11 +67,11 @@ Dodejte **zařízení:** Po zkopírování dat je možné zařízení odeslat [s
 
 **Synchronizace:** Pokud je synchronizace posunu požadavkem na migrovaných assetů, můžete k synchronizaci souborů použít jedno z [partnerských řešení jiných výrobců](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) , než se Asset obnoví.
 
-## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
+## <a name="optimize-and-promote-process-changes"></a>Změny procesu optimalizace a povýšení
 
 Činnosti týkající se optimalizace pravděpodobně nebudou touto změnou dotčeny.
 
-## <a name="secure-and-manage-process-changes"></a>Změny procesu zabezpečení a správy
+## <a name="secure-and-manage-process-changes"></a>Procesní změny týkající se zabezpečení a správy
 
 Činnosti týkající se zabezpečení a správy pravděpodobně nebudou touto změnou dotčeny.
 

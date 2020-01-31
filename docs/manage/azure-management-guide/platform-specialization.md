@@ -1,6 +1,5 @@
 ---
 title: Specializace podle platformy pro správu cloudu v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vylepšete operace správy cloudu specifické pro jednotlivé platformy.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752936"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808171"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specializace podle platformy pro správu cloudu
 
@@ -33,7 +32,7 @@ Tato tabulka ukazuje několik běžných procesů, nástrojů a potenciálních 
 
 |Proces  |Nástroj  |Účel  |Navržená úroveň správy  |
 |---------|---------|---------|---------|
-|Vylepšení návrhu systémů|Rozhraní architektury Azure|Vylepšení návrhu architektury platformy za účelem vylepšení provozu|neuvedeno|
+|Vylepšení návrhu systémů|Rozhraní architektury Azure|Vylepšení návrhu architektury platformy za účelem vylepšení provozu|–|
 |Automatizace nápravy|Azure Automation|Odezva na rozšířené údaje o platformě s využitím automatizace specifické pro platformu|Provoz platforem|
 |Katalog služeb|Centrum spravovaných aplikací|Poskytnutí samoobslužného katalogu schválených řešení, která vyhovují standardům organizace|Provoz platforem|
 |Výkon kontejnerů|Azure Monitor pro kontejnery|Monitorování a diagnostika kontejnerů|Provoz platforem|

@@ -1,6 +1,5 @@
 ---
 title: Nástroje pro akceleraci nasazení v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nástroje pro akceleraci nasazení v Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d47162b3e1a6a303e8b346146948667bc42c2326
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222674"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806318"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Nástroje pro akceleraci nasazení v Azure
 
@@ -27,9 +26,9 @@ Následuje seznam nástrojů Azure, které mohou pomoci při vyspělosti zásad 
 |  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Skupiny pro správu Azure](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Graf prostředků Azure](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |Implementace podnikových zásad     |Ano |Ne  |Ne  |Ne | Ne |Ne |
-|Použití zásad v rámci předplatných     |Požadováno |Ano  |Ne  |Ne | Ne |Ne |
+|Použití zásad v rámci předplatných     |Požaduje se |Ano  |Ne  |Ne | Ne |Ne |
 |Nasazení definovaných prostředků     |Ne |Ne  |Ano  |Ne | Ne |Ne |
-|Vytváření plně vyhovujících prostředí      |Požadováno |Požadováno  |Požadováno  |Ano | Ne |Ne |
+|Vytváření plně vyhovujících prostředí      |Požaduje se |Požaduje se  |Požaduje se  |Ano | Ne |Ne |
 |Zásady auditu      |Ano |Ne  |Ne  |Ne | Ne |Ne |
 |Dotazování prostředků Azure      |Ne |Ne  |Ne  |Ne |Ano |Ne |
 |Sestava nákladů na prostředky      |Ne |Ne  |Ne  |Ne |Ne |Ano |

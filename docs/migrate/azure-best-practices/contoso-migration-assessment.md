@@ -1,6 +1,5 @@
 ---
 title: Posouzení místních úloh pro migraci do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak společnost Contoso posuzuje své místní počítače pro migraci do Azure pomocí služby Azure Migrate a nástroje Data Migration Assistant.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566494"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807474"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Posouzení místních úloh pro migraci do Azure
 
@@ -45,7 +44,7 @@ Tento diagram znázorňuje současnou místní infrastrukturu společnosti Conto
 - V rámci USA má společnost Contoso ještě tři další místní pobočky.
 - Hlavní datacentrum je připojené k internetu přes optické připojení Metro Ethernet (500 Mb/s).
 - Každá pobočka je místně připojená k internetu přes podnikové přípojky s tunely VPN IPSec, které vedou zpátky do hlavního datacentra. Díky tomuto nastavení může být celá síť společnosti Contoso trvale připojená a má optimální připojení k internetu.
-- Hlavní datové centrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje vCenter Server 6.5.
+- Hlavní datacentrum je plně virtualizované prostřednictvím VMware. Společnost Contoso má dva hostitele virtualizace ESXi 6.5, které spravuje vCenter Server 6.5.
 - Společnost Contoso ke správě identit používá Active Directory. Společnost Contoso využívá servery DNS v interní síti.
 - Řadiče domény v datacentru běží na virtuálních počítačích VMware. Řadiče domény v místních pobočkách běží na fyzických serverech.
 
@@ -98,7 +97,7 @@ V tomto scénáři společnost Contoso stáhne a spustí nástroj Data Migration
   - Na virtuálním počítači **OSTICKETWEB** běží Apache 2 a PHP 7.0.
   - Na virtuálním počítači **OSTICKETMYSQL** běží MySQL 5.7.22.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Společnost Contoso a další uživatelé musí splňovat následující požadavky pro posouzení:
 

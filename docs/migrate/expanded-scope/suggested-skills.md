@@ -1,6 +1,5 @@
 ---
 title: Připravenost dovedností pro migraci do cloudu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Připravenost dovedností pro migraci do cloudu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240260"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802935"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Připravenost dovedností pro migraci do cloudu
 
@@ -50,14 +49,14 @@ Následující kurz může připravit tým na aktivity migrace:
 - [Migrace fyzických a virtuálních serverů do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight kurz migrace serverů do Azure
 - [Import a export dat do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight kurz přesunu dat do a z Azure
 
-## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
+## <a name="optimize-and-promote-process-changes"></a>Změny procesu optimalizace a povýšení
 
 Následující nástroje mohou týmu pomoct optimalizovat prostředky a zvýšit úroveň na produkční prostředí:
 
 - [Náklady a určení velikosti](../azure-best-practices/migrate-best-practices-costs.md): Úprava velikosti pro zarovnání nákladů a rozpočtů.
 - [Zvýšení úrovně zatížení](../azure-best-practices/migrate-best-practices-networking.md): Změna konfigurace sítě pro přesměrování produkčních uživatelů na migrované úlohy.
 
-## <a name="secure-and-manage-process-changes"></a>Změny procesu zabezpečení a správy
+## <a name="secure-and-manage-process-changes"></a>Procesní změny týkající se zabezpečení a správy
 
 Následující nástroje mohou týmu pomáhat při hledání způsobů zabezpečení a správy migrovaných prostředků:
 

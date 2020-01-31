@@ -1,19 +1,18 @@
 ---
 title: Pokyny pro obchodní testování (UAT) během migrace
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci sad funkcí do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f1ba39ae283b1ab2fdb276310a9490af6bf87b7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825507"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801949"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Pokyny pro obchodní testování (UAT) během migrace
 
@@ -50,7 +49,7 @@ IT slouží jako jeden z příjemců výstupu obchodního testování. Smyčky z
 - Identifikace existujících automatizovaných testů, které by mohly zjednodušit testování zkušenými uživateli
 - U změn, které by mohly vyžadovat opakované nasazení nebo testování, prostudování procesů testování, definování srovnávacích testů a vytváření automatizace pro další zjednodušení testování zkušenými uživateli
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 V souvislosti s obchodním testováním může [optimalizace migrovaných aktiv](./optimize.md) vyladit náklady a výkon sady funkcí.
 

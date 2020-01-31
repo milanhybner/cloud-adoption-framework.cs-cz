@@ -1,6 +1,5 @@
 ---
 title: Motivace standardních hodnot zabezpečení a obchodní rizika
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivace standardních hodnot zabezpečení a obchodní rizika
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222280"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808953"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivace standardních hodnot zabezpečení a obchodní rizika
 
@@ -33,7 +32,7 @@ Velikost, kterou investujete do zásad zabezpečení a procesů, bude záviset n
 Základ směrného plánu zabezpečení pokrývá podnikové zásady a ruční procesy, které můžete zavést k ochraně vašeho cloudového nasazení proti bezpečnostním rizikům.
 
 > [!NOTE]
->I když je důležité pochopit [identitu identity](../identity-baseline/index.md) v kontextu standardních hodnot zabezpečení a jak se to týká Access Control, [pět oborů zásad správného řízení cloudu](../index.md) volá jako svůj vlastní obor stejnou [úroveň](../identity-baseline/index.md) identity, která se liší. ze směrného plánu zabezpečení.
+>I když je důležité pochopit [identitu identity](../identity-baseline/index.md) v kontextu standardních hodnot zabezpečení a jak se to týká Access Control, [pět oborů zásad správného řízení cloudu](../index.md) volá jako svůj vlastní obor [standardní](../identity-baseline/index.md) obory, oddělené od standardních hodnot zabezpečení.
 
 ## <a name="business-risk"></a>Obchodní riziko
 

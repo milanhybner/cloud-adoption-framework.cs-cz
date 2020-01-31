@@ -1,6 +1,5 @@
 ---
 title: Použití principů návrhu a pokročilých operací
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Použití principů návrhu a pokročilých operací
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752760"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807678"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Použití principů návrhu a pokročilých operací
 
@@ -96,7 +95,7 @@ Technický dluh nelze nebo neměl vyřešit. Řešení by například mohlo být
 
 Pokud vyřešení technického dluhu není požadovaným postupem, je obvykle dalším požadovaným krokem automatizovaná náprava. Ta se obvykle zajišťuje pomocí služeb Azure Automation a Azure Monitor, které detekují trendy a poskytují automatizovanou nápravu.
 
-Pokyny k automatizované nápravě najdete v tématu [Azure Automation a upozornění](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
+Další rady k automatizované nápravě najdete v tématu věnovaném [upozorněním a službě Azure Automation](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Škálování řešení pomocí katalogu služeb
 
@@ -110,6 +109,6 @@ Informace o publikování do katalogu služeb najdete v tématu série [publikov
 
 Specializace podle platformy i provoz platforem jsou silně závislé na smyčkách zpětné vazby mezi týmy přechodu, platforem, automatizace a správy. Zhmotnění těchto smyček zpětné vazby v datech umožňuje každému týmu přijímat moudrá rozhodnutí. Aby operace platforem dosáhly dlouhodobých obchodních závazků, je důležité využít přehledy, které jsou specifické pro centralizovanou platformu. Vzhledem k tomu, že kontejnery a SQL Server jsou dvě nejběžnější centrálně spravované platformy, zvažte, jak začít s shromažďováním dat průběžného zlepšování, a to pomocí následujících článků:
 
-- [Výkon kontejneru](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [Výkon databáze PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [Výkon databáze IaaS](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [Výkon kontejnerů](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
+- [Výkon databází PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
+- [Výkon databází IaaS](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)

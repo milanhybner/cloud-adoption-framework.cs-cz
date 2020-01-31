@@ -1,19 +1,18 @@
 ---
 title: Co je potřeba k převedení migrovaného prostředku do produkčního prostředí?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úlohy prováděné při migraci sady funkcí do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c5606c0081e01cd20456ec6490b4d6fcd7bd914
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548403"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801677"
 ---
 <!-- markdownlint-disable MD026 -->
 

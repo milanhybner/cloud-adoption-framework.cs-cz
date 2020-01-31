@@ -1,6 +1,5 @@
 ---
 title: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753205"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806233"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
@@ -126,7 +125,7 @@ Nové osvědčené postupy spadají do dvou kategorií: podniková IT (centra) a
     2. Nasaďte konfiguraci stavu Azure Automation na jakékoli instance podnikového předplatného. Azure Automation lze použít k nasazení DSC na virtuální počítače nasazené v podporovaných předplatných ve skupině pro správu.
     3. Aktuální plán plánu umožňuje povolit vlastní zásady konfigurace hostů. Po vydání této funkce již nebude nutné používat Azure Automation v tomto osvědčeném postupu.
 
-**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription` se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
+**Použití dodatečného řízení v rámci předplatného pro přijetí do cloudu (paprsky):** Při sestavování na `Corporate IT Subscription`se můžou v rámci každého předplatného, který je vyhrazený pro podporu aplikace archetypes, získat i drobné změny.
 
 V předchozích iterativních změnách osvědčených postupů jsme definovali skupiny zabezpečení sítě k blokování veřejného provozu a povoleného interního provozu. Kromě toho Azure detailly dočasně vytvořil služby DMZ a funkce Active Directory. V této iteraci tyto assety přizpůsobíme trochu a vytvoříme novou verzi plánu Azure details.
 

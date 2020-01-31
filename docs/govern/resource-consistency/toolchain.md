@@ -1,6 +1,5 @@
 ---
 title: Nástroje pro konzistenci prostředků v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nástroje pro konzistenci prostředků v Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222937"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805179"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Nástroje pro konzistenci prostředků v Azure
 
@@ -22,10 +21,10 @@ ms.locfileid: "71222937"
 
 Následuje seznam nástrojů Azure, které mohou pomoci při vyspělosti zásad a procesů, které podporují tento obor řízení.
 
-| Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Nástroj | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Nasazení prostředků                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
-| Spravovat prostředky                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
+| Správa prostředků                             | Ano | Ano | Ano | Ano | Ne  | Ne | Ne |
 | Nasazení prostředků pomocí šablon             | Ne  | Ano | Ne  | Ano | Ne  | Ne | Ne |
 | Nasazení orchestrace prostředí          | Ne  | Ne  | Ano | Ne  | Ne  | Ne | Ne |
 | Definování skupin prostředků                       | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
@@ -39,14 +38,14 @@ Následuje seznam nástrojů Azure, které mohou pomoci při vyspělosti zásad 
 | Použití značek u prostředků                      | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
 | Přiřadit pravidla Azure Policy                    | Ano | Ano | Ano | Ne  | Ne  | Ne | Ne |
 | Použít automatizovanou nápravu                  | Ne  | Ne  | Ne  | Ano | Ne  | Ne | Ne |
-| Spravovat fakturaci                               | Ano | Ne  | Ne  | Ne  | Ne  | Ne | Ne |
+| Správa fakturace                               | Ano | Ne  | Ne  | Ne  | Ne  | Ne | Ne |
 | Plánování prostředků pro zotavení po havárii         | Ano | Ano | Ano | Ne  | Ne  | Ano | Ano |
 |Obnovení dat během výpadku nebo porušení SLA     | Ne | Ne  | Ne  | Ne  | Ne  | Ano | Ano |
 |Obnovení aplikací a dat během výpadku nebo porušení SLA     | Ne | Ne  | Ne  | Ne  | Ne  | Ano | Ano |
 
 Spolu s těmito nástroji a funkcemi pro konzistenci prostředků budete muset monitorovat nasazené prostředky pro problémy s výkonem a stavem. [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) je výchozím řešením monitorování a vytváření sestav v Azure. Azure Monitor poskytuje funkce pro monitorování vašich cloudových prostředků. V tomto seznamu se dozvíte, která funkce řeší běžné požadavky na monitorování.
 
-| Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Rozhraní REST API pro Azure Monitor](https://docs.microsoft.com/rest/api/monitor) |
+| Nástroj | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Rozhraní REST API pro Azure Monitor](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | Protokolovat data telemetrie virtuálních počítačů                 | Ne           | Ne                   | Ano           | Ne                     |
 | Protokolovat data telemetrie virtuální sítě              | Ne           | Ne                   | Ano           | Ne                     |

@@ -1,7 +1,6 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: Vylepšení konzistence prostředků'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardní příručka pro zásady správného řízení podniku: Vylepšení konzistence prostředků'
+title: 'Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků'
+description: 'Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967454"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805995"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardní příručka pro zásady správného řízení podniku: Vylepšení konzistence prostředků
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků
 
 Tento článek popisuje mluvený komentář přidáním ovládacích prvků konzistence prostředků, které budou podporovat klíčové aplikace.
 

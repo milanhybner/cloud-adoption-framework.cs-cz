@@ -1,6 +1,5 @@
 ---
 title: Změna architektury aplikace na kontejner Azure a službu Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak Contoso mění architekturu aplikace na kontejnery Windows v Azure a Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566663"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807542"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Změna architektury místní aplikace na kontejner Azure a službu Azure SQL Database
 
@@ -55,9 +54,9 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
-- Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
-- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
+- Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
+- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
 
@@ -82,7 +81,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Pro migraci do Azure Service Fabric bude potřeba měnit kód aplikace SmartHotel360. Pokud se ale pro tyto změny použijí nástroje sady Service Fabric SDK, požadované úsilí bude minimální.<br/><br/> Díky přechodu na Service Fabric může společnost Contoso začít vyvíjet mikroslužby, které se dají do aplikace rychle přidávat bez ohrožení původního základu kódu.<br/><br/> Kontejnery Windows nabízejí stejné výhody jako kontejnery obecně. Vylepšují flexibilitu, přenositelnost a možnosti řízení.<br/><br/> Contoso může využít své investice do Software Assurance pomocí programu Zvýhodněné hybridní využití Azure pro SQL Server i Windows Server.<br/><br/> Po dokončení migrace už nebude potřeba podporovat Windows Server 2008 R2. [Další informace](https://support.microsoft.com/lifecycle).<br/><br/> Contoso může nakonfigurovat webovou vrstvu aplikace s využitím několika instancí, takže už nebude kritickým prvkem způsobujícím selhání.<br/><br/> Už nebude záviset na zastarávajícím SQL Serveru 2008 R2.<br/><br/> SQL Database podporuje technické požadavky společnosti Contoso. Správci Contoso vyhodnotili místní databázi pomocí Data Migration Assistanta a zjistili, že je kompatibilní.<br/><br/> SQL Database má integrovanou odolnost proti chybám, kterou Contoso nemusí nastavovat. Tím se zajistí, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso navýšit své znalosti, aby chápal Azure, kontejnery a mikroslužby pro aplikaci a dokázal je podporovat.<br/><br/> Pokud společnost Contoso používá Data Migration Assistant místo Azure Database Migration Service k migraci databáze, nebude mít infrastrukturu připravenou pro migraci databází se škálováním.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso navýšit své znalosti, aby chápal Azure, kontejnery a mikroslužby pro aplikaci a dokázal je podporovat.<br/><br/> Pokud společnost Contoso používá Data Migration Assistant místo Azure Database Migration Service k migraci databáze, nebude mít infrastrukturu připravenou pro migraci databází se škálováním.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -105,7 +104,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Sestavuje a provozuje vždy funkční, škálovatelné distribuované aplikace. | Náklady závisejí na velikosti, umístění a době trvání výpočetních uzlů. [Další informace](https://azure.microsoft.com/pricing/details/service-fabric).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Contoso k realizaci tohoto scénáře potřebuje:
 
@@ -115,7 +114,7 @@ Contoso k realizaci tohoto scénáře potřebuje:
 --- | ---
 **Předplatné Azure** | Firma Contoso vytvořila předplatná v dřívějším článku v této sérii. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
 **Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
-**Předpoklady pro vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15,5](https://www.visualstudio.com)<br/><br/> – Povolené úlohy .NET<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 nebo novější](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows
+**Požadavky na vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15,5](https://www.visualstudio.com)<br/><br/> – Povolené úlohy .NET<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 nebo novější](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows
 
 <!-- markdownlint-enable MD033 -->
 
@@ -576,7 +575,7 @@ Po dokončení migrace společnost Contoso potřebuje provést tyto kroky čišt
 - Aktualizovat interní dokumentaci tak, aby obsahovala nová umístění pro aplikaci SmartHotel360 Zobrazit databázi jako spuštěnou v databázi Azure SQL a front-end jako spuštěný ve službě Service Fabric
 - Zkontrolovat všechny prostředky, které s vyřazenými virtuálními počítači spolupracují, a aktualizovat veškeré související nastavení nebo dokumentaci tak, aby odrážely novou konfiguraci
 
-## <a name="review-the-deployment"></a>Revize nasazení
+## <a name="review-the-deployment"></a>Kontrola nasazení
 
 Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje plně zprovoznit a zabezpečit novou infrastrukturu.
 
@@ -588,7 +587,7 @@ Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje 
 
 ### <a name="backups"></a>Zálohování
 
-- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Správci Contoso by měli zvážit implementaci skupin převzetí služeb při selhání a zajistit tak regionální převzetí služeb při selhání pro databázi. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Pro SKU ACR úrovně Premium mohou využít výhody geografické replikace. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
 - Contoso musí zvážit nasazení webové aplikace v hlavní oblasti Východní USA 2 a v oblasti Střední USA, až bude dostupná funkce Web App for Containers. Správci Contoso mohou nakonfigurovat Traffic Manager, aby zajistili převzetí služeb při selhání v případě regionálních výpadků.
@@ -598,7 +597,7 @@ Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje 
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 

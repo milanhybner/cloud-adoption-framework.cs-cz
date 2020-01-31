@@ -1,6 +1,5 @@
 ---
 title: 'Inovace v cloudu: informace'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Úvod do cloudových inovací – informace o obsahu
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752995"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808426"
 ---
 # <a name="learn-with-customers"></a>Učení se zákazníky
 
@@ -56,4 +55,4 @@ Jako další krok pro porozumění této metodologii si můžou [běžné blokov
 > [!div class="nextstepaction"]
 > [Porozumění běžným blokováním a výzvám](./challenges.md)
 
-Některé z konceptů v tomto článku se sestavují na témata, která se poprvé popisují v [rámci štíhlého spuštění](https://theleanstartup.com/book), zapsaná službou Eric obnovení aplikace.
+Některé z konceptů v tomto článku se sestavují na témata, která se poprvé popisují v [rámci štíhlého spuštění](http://theleanstartup.com/book), zapsaná službou Eric obnovení aplikace.

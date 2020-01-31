@@ -1,6 +1,5 @@
 ---
 title: 'Inovace cloudu: Azure Database Migration Service'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Inovace v cloudu – Azure Database Migration Service
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752031"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808664"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Shromažďování dat migrací a modernizací stávajících zdrojů dat
 
@@ -49,14 +48,14 @@ Doporučujeme, abyste se rozhodli, že máte přijatelné provozní výpadky a o
 
 |Zdroj  |Výběr cílového umístění  |Nástroj  |Typ migrace  |Pokyny  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Spravovaná instance Azure SQL Database|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server|Databáze SQL Azure|Database Migration Service|Offline|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Databáze SQL Azure|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Azure SQL Database – spravovaná instance|Database Migration Service|Offline|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Azure SQL Database – spravovaná instance|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server VP|Azure SQL Database nebo Azure SQL Database spravované instance|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 |MySQL|Azure Database for MySQL|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
 |PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|Database Migration Service|Stav|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
+|MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|Database Migration Service|Offline|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Rozhraní API pro Azure Cosmos DB Mongo|Database Migration Service|Online|[Kurz](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
 |Oracle|Různé možnosti platformy jako služby (PaaS) a IaaS|Nástroj nebo Azure Migrate partnera|Offline nebo online|[Rozhodovací strom](../../migrate/expanded-scope/data-oracle-migration.md)|
 |Různé možnosti NoSQL DB|Možnosti Cosmo DB nebo IaaS|Postupy migrace a Azure Migrate|Offline nebo online|[Rozhodovací strom](../../migrate/expanded-scope/data-no-sql-migration.md)|

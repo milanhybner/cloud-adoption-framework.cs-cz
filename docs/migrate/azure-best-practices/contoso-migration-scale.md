@@ -1,6 +1,5 @@
 ---
 title: Škálování migrace do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak společnost Contoso zvládá škálovanou migraci do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566444"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807304"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -264,7 +263,7 @@ Společnost Contoso musí zjistit, jak tyto komponenty nasadit, na základě po�
 **Maximální propustnost** | Standardní účet úložiště Azure může zpracovávat maximálně 20 000 požadavků za sekundu a vstupně-výstupní operace za sekundu (IOPS) replikovaného virtuálního počítače by měly být v rámci tohoto limitu. Pokud má například virtuální počítač 5 disků a každý z nich vygeneruje na virtuálním počítači 120 IOPS (o velikosti 8 kB), pak bude v rámci limitu IOPS na disk v Azure (500).<br/><br/> Potřebný počet účtů úložiště můžete zjistit tak, že celkový počet vstupně-výstupních operací zdrojových počítačů za sekundu vydělíte 20 000. Replikovaný počítač může v Azure patřit jenom do jednoho účtu úložiště.
 **Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
 **Procesový server** | Contoso nasadí samostatný, vyhrazený procesový server, který dokáže replikovat 100 až 200 virtuálních počítačů:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Procesový server bude hodně vytížený, takže by měl být umístěný na hostiteli ESXi, který dokáže zpracovat vstupně-výstupní diskové operace, síťový provoz a výkon procesoru potřebné pro replikaci. Společnost Contoso bude pro tento účel uvažovat o vyhrazeném hostiteli.
-**Networking** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
+**Sítě** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
 **Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. V důsledku rychlosti a priority migrací se společnost Contoso rozhodla používat Premium SSD.<br/><br/>
 Rozhodla se používat spravované disky pro všechny virtuální počítače nasazené do Azure. Požadovaný počet vstupně-výstupních operací za sekundu rozhodne, jestli se budou používat disky HDD úrovně Standard, SSD úrovně Standard nebo SSD úrovně Premium.<br/><br/>
 
@@ -309,7 +308,7 @@ V zájmu co nejlepšího zužitkování investice do cloudu bude společnost Con
 - Toto licencované řešení vytvořila společnost Cloudyn, která je nyní pobočkou Microsoftu. Společnosti Contoso umožní transparentně a přesně spravovat útraty v cloudu. Poskytuje nástroje pro monitorování, přidělování a snižování nákladů na cloud.
 - Služba Azure Cost Management poskytuje jednoduché sestavy na řídicím panelu, které pomáhají s přidělováním, rozdělováním, analýzou a interním zúčtováním nákladů.
 - Služba Cost Management pomáhá optimalizovat výdaje za cloud díky identifikaci málo využitých prostředků, které pak společnost Contoso může spravovat a upravovat.
-- [Další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ![Správa nákladů](./media/contoso-migration-scale/cost-management.png)
 
