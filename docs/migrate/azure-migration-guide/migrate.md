@@ -1,6 +1,6 @@
 ---
 title: Migrace prostředků
-description: Migrace prostředků
+description: Tento návod vám pomůže zahájit migraci vašeho prostředí identifikací vhodných nástrojů pro dosažení stavu „hotovo“, včetně nativních nástrojů, nástrojů třetích stran a nástrojů pro správu projektů.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 41f52c8ddfa3ccc277569fde323161159344cb20
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807015"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994175"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrace prostředků (infrastruktury, aplikací a dat)
 
