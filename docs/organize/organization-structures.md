@@ -1,6 +1,6 @@
 ---
 title: Vytvořit týmové struktury
-description: Vytvořit týmové struktury
+description: Pomocí těchto příkladů běžných týmových struktur můžete najít organizační strukturu, která nejlépe odpovídá vašim provozním potřebám.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800912"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173400"
 ---
 # <a name="establish-team-structures"></a>Vytvořit týmové struktury
 
