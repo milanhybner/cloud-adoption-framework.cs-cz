@@ -1,18 +1,18 @@
 ---
 title: Co jsou digitální aktiva?
-description: Co jsou digitální aktiva?
+description: Přečtěte si, co jsou digitální aktiva, jak se dají měřit a jak je možné aktualizovat finanční model tak, aby odpovídal vašim digitálním aktivům.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a9e691016cba5fa33a16d92278c34c9bf02cdf96
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 380c50bdf55da7616d274ff038ec25d73c065459
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804618"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173342"
 ---
 <!-- markdownlint-disable MD026 -->
 
