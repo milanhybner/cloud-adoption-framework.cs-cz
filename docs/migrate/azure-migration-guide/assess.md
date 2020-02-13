@@ -1,6 +1,6 @@
 ---
 title: Vyhodnocení digitálních aktiv
-description: Vyhodnocení digitálních aktiv
+description: Tento oddíl průvodce migrací do Azure vám pomůže vyhodnotit vaše prostředí a určit, co by se mělo migrovat a které metody migrace je vhodné zvážit.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807066"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173389"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
