@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
+ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799841"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77213588"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Doporučené konvence pro tvorbu názvů a značek
 
@@ -65,7 +65,7 @@ Snažte se, aby byly komponenty názvu krátké a předešli jste tak překroče
 | Typ předplatného | Souhrnný popis účelu předplatného obsahujícího prostředek Často se dělí podle typu prostředí nasazení nebo konkrétních úloh. | _prod_, _Shared_, _klient_ |
 | Název aplikace nebo služby | Název aplikace, úlohy nebo služby, do které prostředek patří | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
 | Prostředí nasazení | Fáze životního cyklu vývoje pro úlohu, kterou prostředek podporuje | _prod_, _dev_, _QA_, _fáze_, _test_ |
-| Region (Oblast) | Oblast Azure, ve které je prostředek nasazen | _westus_, _eastus2_, _westeurope_, _usgovia_ |
+| Oblast | Oblast Azure, ve které je prostředek nasazen | _westus_, _eastus2_, _westeurope_, _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>Doporučené předpony typu prostředku
 
@@ -84,17 +84,17 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Podsíť                              | snet-                |
 | Skupina zabezpečení sítě              | nsg-                 |
 | Tabulka směrování                         | cestě               |
-| Virtuální počítač                     | virtuální počítač                   |
+| Virtuální počítač                     | vm                   |
 | Účet úložiště virtuálního počítače                  | stvm                 |
 | Veřejná IP adresa                           | pip-                 |
 | Nástroj pro vyrovnávání zatížení                       | lb-                  |
 | NIC                                 | nic-                 |
-| Key Vault                           | elektrické                  |
+| Trezor klíčů                           | elektrické                  |
 | Cluster AKS                         | AKS                 |
 | Kontejner AKS                       | př                 |
 | Service Bus                         | sb-                  |
-| Fronta Service Bus                   | sbq-                 |
-| Service Bus téma                   | sbt-                 |
+| Service Bus                   | sbq-                 |
+| Téma služby Service Bus                   | sbt-                 |
 | Plán služby App Service                    | rozhraní                |
 | Webová aplikace                             | aplikace                 |
 | Function App                        | kláves                |
@@ -122,7 +122,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | ADF                 |
 | Centrum událostí                           | evh-                 |
-| Centrum IoT                             | IoT                 |
+| IoT Hub                             | IoT                 |
 | Centra oznámení                   | ntf-                 |
 | Obor názvů Notification Hubs         | ntfns-               |
 
@@ -144,7 +144,7 @@ To, jaké značky se u prostředků používají a jaké značky jsou povinné n
 | Prostředí               | Prostředí nasazení aplikace, úlohy nebo služby                                                                                                                                              | _Prostředí_             | _Prod_, _dev_, _QA_, _fáze_, _test_                    |
 | Jméno vlastníka                | Vlastník aplikace, úlohy nebo služby                                                                                                                                                                | _Vlastník_           | _{e-mail}_                                       |
 | Jméno žadatele            | Uživatel, který požádal o vytvoření této aplikace                                                                                                                                                          | _Žadatel_       | _{e-mail}_                                       |
-| Třída služby             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                       | _TřídaSlužby_    | _Vývoj_, _bronzová_, _stříbrná_, _zlatá_                     |
+| Třída služby             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                       | _TřídaSlužby_    | _Vývoj_, _bronz_, _stříbrné_a Git _Gold_                     |
 | Počáteční datum projektu | Datum prvního nasazení aplikace, úlohy nebo služby                                                                                                                                           | _PočátečníDatum_       | _{datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Ukázková konvence pro tvorbu názvů
@@ -185,7 +185,7 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Azure Virtual Machines    | Skupina prostředků | vm\<název zásady nebo název aplikace\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | Účet úložiště virtuálního počítače | Globální         | stvm\<typ výkonu\>\<název aplikace nebo produkční název\>\<oblast\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Název DNS          | Globální         | \<Záznam virtuálního počítače\>.[\<oblast\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
-| Azure Load Balancer      | Skupina prostředků | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
+| Nástroj pro vyrovnávání zatížení Azure      | Skupina prostředků | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
 | NIC                | Skupina prostředků | nic-\<\#\#\>-\<název virtuálního počítače\>-\<předplatné\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
 
 ### <a name="paas-services"></a>Služby PaaS
@@ -193,7 +193,7 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Typ assetu           | Rozsah  | Formát                                                              | Příklady                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | Azure Web Apps       | Globální | Název aplikace\<aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Funkce Azure      | Globální | Func-\<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions      | Globální | Func-\<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
 | Azure Cloud Services | Globální | \<název aplikace\>-\<prostředí\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
@@ -209,15 +209,15 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Typ assetu                          | Rozsah              | Formát                                | Příklady                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Server Azure SQL Database           | Globální             | Název aplikace v jazyce SQL\<\>-prostředí \<\>      | <ul><li>SQL-navigátor-prod </li><li>SQL – emise – dev</li></ul>           |
-| Databáze SQL Azure                  | Databáze SQL Azure | SQLDB\<\<prostředí s názvem databáze\>| <ul><li>SQLDB – uživatelé – prod </li><li>SQLDB – uživatelé – dev</li></ul>               |
-| Azure Cosmos DB                     | Globální             | Cosmos\<název aplikace\>-prostředí \<\>   | <ul><li>Cosmos-navigátor-prod </li><li>Cosmos – emise – dev</li></ul>       |
+| Azure SQL Database                  | Azure SQL Database | SQLDB\<>\<prostředí s názvem databáze\>| <ul><li>SQLDB – uživatelé – prod </li><li>SQLDB – uživatelé – dev</li></ul>               |
+| Databáze Azure Cosmos                     | Globální             | Cosmos\<název aplikace\>-prostředí \<\>   | <ul><li>Cosmos-navigátor-prod </li><li>Cosmos – emise – dev</li></ul>       |
 | Azure Cache for Redis               | Globální             | redis-\<Název aplikace\>-\<Prostředí\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure Database for MySQL            | Globální             | mysql-\<Název aplikace\>-\<Prostředí\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | Azure Database for PostgreSQL       | Globální             | psql\<název aplikace\>-prostředí \<\>     | <ul><li>psql-navigátor-prod </li><li>psql – emise – dev</li></ul>         |
 | Azure SQL Data Warehouse            | Globální             | sqldw-\<Název aplikace\>-\<Prostředí\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
-| SQL Server Stretch Database         | Databáze SQL Azure | sqlstrdb-\<Název aplikace\>-\<Prostředí\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
+| SQL Server Stretch Database         | Azure SQL Database | sqlstrdb-\<Název aplikace\>-\<Prostředí\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
-### <a name="storage"></a>Storage
+### <a name="storage"></a>Úložiště
 
 | Typ assetu                              | Rozsah  | Formát                                                                        | Příklady                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
@@ -233,7 +233,7 @@ V následující části najdete příklady schémat tvorby názvů pro běžné
 | Azure Cognitive Services         | Skupina prostředků | ozubeného kola\<název aplikace\>-prostředí \<\>   | <ul><li>ozubeného kola-navigátor-prod </li><li>ozubeného kola – emise – dev</li></ul>     |
 | Pracovní prostor služby Azure Machine Learning | Skupina prostředků | MLW\<název aplikace\>-prostředí \<\>   | <ul><li>MLW-navigátor-prod </li><li>MLW – emise – dev</li></ul>     |
 
-### <a name="analytics"></a>Analýza
+### <a name="analytics"></a>Analýzy
 
 | Typ assetu                | Rozsah  | Formát                             | Příklady                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
