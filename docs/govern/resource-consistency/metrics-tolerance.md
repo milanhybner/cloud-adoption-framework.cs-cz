@@ -1,6 +1,6 @@
 ---
-title: Metriky konzistence prostředků, indikátory a tolerance rizik
-description: Metriky konzistence prostředků, indikátory a tolerance rizik
+title: Metriky a indikátory tolerance odchylky rizika konzistence prostředků
+description: Kvantitativní stanovení tolerance obchodního rizika souvisejícího s konzistencí prostředků v rozhraní Microsoft Cloud pro přijetí v Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805145"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567720"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriky konzistence prostředků, indikátory a tolerance rizik
 

@@ -1,6 +1,6 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků'
-description: 'Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků'
+title: 'Standardní zásady správného řízení podniku: vylepšení konzistence prostředků'
+description: Zlepšení standardních hodnot zásad správného řízení a náprava rizik zásad správného řízení prostředků přidáním ovládacích prvků pro obnovení, změnu velikosti a monitorování v rozhraní Microsoft Cloud pro přijetí pro Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805995"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567669"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardní příručka pro zásady správného řízení podniku: vylepšení konzistence prostředků
 
