@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
+ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803717"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599965"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure
 
@@ -38,7 +38,7 @@ K předpovědi měsíčních nákladů na migrované úlohy můžete využít n�
 
 - **Cenová Kalkulačka Azure:** Vyberte produkty, které chcete odhadnout, například virtuální počítače a úložiště. Do cenové kalkulačky zadáte vstupní náklady a vytvoříte odhad.
 
- ![Cenovou kalkulačku Azure](./media/migrate-best-practices-costs/pricing.png) *cenovou kalkulačku Azure*
+ ![cenové kalkulačky Azure](./media/migrate-best-practices-costs/pricing.png) *cenové kalkulačky Azure*
 
 - **Azure Migrate:** K odhadování nákladů potřebujete zkontrolovat a vyhodnotit všechny prostředky, které jsou potřebné ke spouštění vašich úloh v Azure. Tato data získáte tak, že vytvoříte inventář prostředků, včetně serverů, virtuálních počítačů, databází a úložiště. Ke shromáždění těchto informací můžete použít službu Azure Migrate.
 
@@ -152,7 +152,7 @@ Azure poskytuje různé typy účtů úložiště a úrovní výkonu.
 - [Srovnání](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) typů dat úložiště objektů blob, souborů a disků
 - [Další informace](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) o úrovních přístupu
 - [Přehled](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) různých typů účtů úložiště
-- Další informace o [redundanci úložiště](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) a [RA-GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- Další informace o [redundanci úložiště](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) a [RA-GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
 - [Další informace](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) o Azure Files
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Osvědčený postup: Využijte výhod hybridních výhod Azure
