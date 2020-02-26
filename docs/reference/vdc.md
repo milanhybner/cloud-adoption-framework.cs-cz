@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566674"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629211"
 ---
 # <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566674"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Virtuální datové centrum Azure: Z hlediska sítě</a></h3>
-        <p>Tento online článek poskytuje přehled modelů a návrhů sítě umožňujících odstranit řadu překážek v podobě škálování architektury, výkonu a zabezpečení, se kterými se řada zákazníků setkává při úvahách o kompletním přechodu na cloudovou platformu.</p>
+        <h3><a href="./networking-vdc.md">Virtuální datové centrum: Perspektiva sítě</a></h3>
+        <p>Tento přehled vzorů a návrhů sítě řeší problémy s architekturou, výkonem a zabezpečením, které zákazníci čelí při plánování rozsáhlé migrace do cloudu.</p>
     </td>
 </tr>
 <tr>

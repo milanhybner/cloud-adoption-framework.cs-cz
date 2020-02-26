@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798787"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629245"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -162,7 +162,7 @@ Po vytvoření zásad a jejich seskupení do logických iniciativ musíte zásad
 
 Najdete v něm několik příkladů zásad, které ukazují, jak se dají zásady a iniciativy použít u různých prostředků v Azure v tomto úložišti [GitHubu](https://github.com/Azure/azure-policy) .
 
-## <a name="identity-and-access-management"></a>Správa identit a přístupu
+## <a name="identity-and-access-management"></a>Správa identit a přístupu
 
 Jedním z prvních a nejdůležitějších otázek, se kterými se můžete dotazovat při zahájení s veřejným cloudem, je "kdo má mít přístup k prostředkům?" a "Jak lze řídit tento přístup?" Řízení přístupu k Azure Portal a prostředkům na portálu je důležité pro dlouhodobou bezpečnost vašich assetů v cloudu.
 
@@ -188,7 +188,7 @@ Plánování a příprava pro vaše identity a řízení přístupu a následuj�
 
 Jeden z největších blokování na přijetí do cloudu se tradičně dotýká zabezpečení. Správci rizik IT a bezpečnostní oddělení musí zajistit, aby prostředky v Azure byly ve výchozím nastavení chráněné a zabezpečené. Azure poskytuje možnosti, které můžete použít k ochraně prostředků při odhalování a odstraňování hrozeb na těchto prostředcích.
 
-### <a name="azure-security-center"></a>Centrum zabezpečení Azure
+### <a name="azure-security-center"></a>Azure Security Center
 
 Kromě rozšířené ochrany před internetovými útoky nabízí [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) jednotný přehled o stavu zabezpečení prostředků v celém prostředí. Azure Security Center je otevřená platforma, která umožňuje partnerům Microsoftu vytvářet software, který se připojuje a vylepšuje jeho schopnosti. Základní schopnosti Azure Security Center (bezplatná úroveň) poskytují vyhodnocení a doporučení, která zlepšují stav zabezpečení. Jeho placené úrovně umožňují další a cenné možnosti, jako je například přístup správce za běhu a adaptivní řízení aplikací (přidávání do seznamu povolených).
 
@@ -228,7 +228,7 @@ Shromažďování a analýza telemetrie, která poskytuje přehled o aktivitách
 
 Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále vylepšeny. Azure poskytuje možnosti **sdíleného**, **základního**a **hloubkového** monitorování prostředků Azure prostřednictvím služeb uvedených v následujícím diagramu.
 
-![Sledování](../_images/reference/monitoring.png)
+![Monitorování](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Sdílené možnosti
 
@@ -338,7 +338,7 @@ Poslední součástí referenčního modelu Azure pro generování uživatelské
 
 ### <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 
-Azure nabízí interní funkce a funkce třetích stran z naší rozsáhlé partnerské sítě, která vám umožní mít efektivní potřebujete pomoc podporují zabezpečení. Důležitější je, že Microsoft poskytuje osvědčené postupy a pokyny ve formě [Azure Virtual datacentra (VDC)](./networking-vdc.md). Při přesunu z jedné úlohy do několika úloh, které používají hybridní funkce, vám průvodce VDC poskytne "recepty", které umožní flexibilní síť, která se bude zvětšovat jako vaše zatížení v Azure.
+Azure poskytuje jak interní, tak i třetí strany z naší rozsáhlé partnerské sítě, které vám poskytnou efektivní potřebujete pomoc podporují zabezpečení. Důležitější je, že Microsoft poskytuje osvědčené postupy a pokyny ve formě [Azure Virtual datacentra (VDC)](./networking-vdc.md). Při přesunu z jedné úlohy do několika úloh, které používají hybridní funkce, vám průvodce VDC poskytne "recepty", které umožní flexibilní síť, která se bude zvětšovat jako vaše zatížení v Azure.
 
 ## <a name="next-steps"></a>Další kroky
 

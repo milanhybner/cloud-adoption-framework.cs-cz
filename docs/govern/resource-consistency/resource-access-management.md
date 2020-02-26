@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805621"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629296"
 ---
 # <a name="resource-access-management-in-azure"></a>Správa přístupu k prostředkům v Azure
 
@@ -58,7 +58,7 @@ Následující obrázek ukazuje tři klienty: [PowerShell](https://docs.microsof
 ![diagram klientů Azure, kteří se připojují k rozhraní Azure Resource Manager API](../../_images/govern/design/governance-1-13.png)
 *Obrázek 5 – klienti Azure se připojují k Azure Resource Manager rozhraní RESTful API.*
 
-I když se tito klienti připojují k Azure Resource Manager pomocí rozhraní API RESTful, Azure Resource Manager nezahrnuje funkce pro správu prostředků přímo. Většina typů prostředků v Azure ale má svého vlastního [**poskytovatele prostředků**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+I když se tito klienti připojují k Azure Resource Manager pomocí rozhraní API RESTful, Azure Resource Manager nezahrnuje funkce pro správu prostředků přímo. Většina typů prostředků v Azure ale má svého vlastního [poskytovatele prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![poskytovatelé prostředků Azure](../../_images/govern/design/governance-1-14.png)
 *Obrázek 6 – poskytovatelé prostředků Azure.*
