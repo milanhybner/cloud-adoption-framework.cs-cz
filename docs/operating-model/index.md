@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806947"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629279"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Vytvoření provozního modelu pro cloud
 
@@ -23,7 +23,7 @@ Tyto snahy o přechod se relativně snadno sledují a měří, a to i v případ
 
 **Pokud přechod popisuje to, co děláte, provozní model definuje na základní úrovni, kdo a jak, aby byl přechod možný.**
 
-Satya Nadella říká: **„Kultura si dá strategii k snídani.“** Provozní model je ztělesněním kultury IT zachyceným v mnoha měřitelných procesech. Pokud je základem cloudu silný provozní model, kultura aktivuje strategii, a tím se urychlí přechod a realizace obchodních hodnot. Pokud je naopak přechod úspěšný, ale není k dispozici provozní model, může být návrat působivý, ovšem jeho trvání je velmi krátké. Pro dlouhodobý úspěch je důležité, aby se přechod a provozní modely rozvíjely souběžně.
+„Kultura si dá strategii ke snídani“. Provozní model je ztělesněním kultury IT zachyceným v mnoha měřitelných procesech. Pokud je základem cloudu silný provozní model, kultura aktivuje strategii, a tím se urychlí přechod a realizace obchodních hodnot. Pokud je naopak přechod úspěšný, ale není k dispozici provozní model, může být návrat působivý, ovšem jeho trvání je velmi krátké. Pro dlouhodobý úspěch je důležité, aby se přechodové a provozní modely rozvíjely souběžně.
 
 ## <a name="establish-your-operating-model"></a>Vytvoření vašeho provozního modelu
 

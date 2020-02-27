@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799331"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567754"
 ---
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
@@ -22,7 +22,7 @@ Uspořádání cloudových prostředků je důležité pro zabezpečení, správ
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[skupiny pro správu Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[skupiny pro správu Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplatná, skupiny prostředků a prostředky. Následující obrázek ukazuje vztah mezi těmito úrovněmi.
 
@@ -121,7 +121,7 @@ Vytvořte skupinu prostředků sdružující prostředky, jako jsou webové apli
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Standardy pro vytváření názvů](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Standardy pro vytváření názvů](#tab/NamingStandards)
 
 Správný standard pro vytváření názvů pomáhá identifikovat prostředky na portálu Azure, na faktuře a ve skriptech. Ve strategii pro vytváření názvů byste jako součásti názvů měli používat firemní a provozní údaje:
 
@@ -146,7 +146,7 @@ Následující tabulka obsahuje vzory vytváření názvů pro několik ukázkov
 |Skupina dostupnosti |Skupina prostředků |1–80 |Malá a velká písmena se nerozlišují. |Alfanumerické znaky, podtržítka a pomlčky |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Značka |Související entita |512 (název), 256 (hodnota) |Malá a velká písmena se nerozlišují. |Alfanumerické znaky |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Značky prostředku](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Značky prostředku](#tab/ResourceTags)
 
 Značky jsou užitečné k rychlé identifikaci prostředků a skupin prostředků. Použijte značky na prostředky Azure pro jejich logické uspořádání podle kategorií. Každá značka se skládá z názvu a hodnoty. Můžete například použít název Prostředí a hodnotu Produkční na všechny prostředky v produkčním prostředí. Značky by měly obsahovat kontext týkající se úlohy nebo aplikace přiřazené k prostředku, provozních požadavků a informací o vlastnictví.
 
@@ -156,7 +156,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 
 - **Metadata a dokumentace:** Správci mohou snadno zobrazit podrobnosti o prostředcích, na kterých pracují, například pomocí značky „VlastníkProjektu“.
 - **Automatizace:** Možná máte pravidelně spouštěné skripty, které provádějí akce na základě hodnoty značky, jako je „ČasVypnutí“ nebo „DatumZrušeníZřízení“.
-- **Fakturace:** Značky se můžou zobrazit na vaší faktuře. S jejich pomocí můžete fakturu segmentovat například pomocí značek „NákladovéStředisko“ nebo „PříjemceFaktury“.
+- **Optimalizace nákladů:** Prostředky můžete přidělit týmům a osobám, které zodpovídají za náklady. Ve službě Azure Cost Management můžete použít značku nákladového střediska jako filtr, aby se poplatky nahlašovaly na základě využití týmu nebo oddělení.
 
 Každý prostředek nebo skupina prostředků může mít maximálně 50 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
 
