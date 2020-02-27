@@ -1,6 +1,6 @@
 ---
 title: Správa přístupu k prostředkům v Azure
-description: 'Vysvětlení konstrukcí správy přístupu k prostředkům v Azure: Azure Resource Manager, předplatná, skupiny prostředků a prostředky'
+description: Seznamte se s principy správy přístupu k prostředkům Azure, jako jsou Azure Resource Manager, předplatná, skupiny prostředků a prostředky.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629296"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709443"
 ---
 # <a name="resource-access-management-in-azure"></a>Správa přístupu k prostředkům v Azure
 

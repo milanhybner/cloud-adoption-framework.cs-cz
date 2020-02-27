@@ -1,6 +1,6 @@
 ---
-title: Motivace standardních hodnot identity a obchodní rizika
-description: Motivace standardních hodnot identity a obchodní rizika
+title: Obchodní rizika standardních hodnot identity
+description: Seznamte se s ukázkami typických zákaznických přijetím směrného plánu identity v rámci strategie zásad správného řízení v cloudu. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807134"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709324"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivace standardních hodnot identity a obchodní rizika
 

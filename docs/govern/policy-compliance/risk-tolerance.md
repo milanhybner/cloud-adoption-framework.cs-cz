@@ -1,18 +1,18 @@
 ---
 title: Vyhodnocení tolerance rizik
-description: Vysvětlení obchodních rizik spojených s transformací cloudu
+description: Pochopení obchodních rizik spojených s různými formami transformace cloudu a způsoby, jak vyhodnotit toleranci rizik pro firmu
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806012"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709494"
 ---
 # <a name="evaluate-risk-tolerance"></a>Vyhodnocení tolerance rizik
 

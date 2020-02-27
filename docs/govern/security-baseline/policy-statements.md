@@ -1,6 +1,6 @@
 ---
 title: Ukázkové příkazy zásad standardních hodnot zabezpečení
-description: Ukázkové příkazy zásad standardních hodnot zabezpečení
+description: Tyto ukázkové příkazy zásad standardních hodnot zabezpečení vám pomůžou v konceptech příkazů zásad, které řeší potřeby vaší organizace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808868"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707203"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Ukázkové příkazy zásad standardních hodnot zabezpečení
 

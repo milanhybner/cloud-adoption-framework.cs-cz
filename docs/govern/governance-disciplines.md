@@ -1,6 +1,6 @@
 ---
 title: Pět disciplín zásad správného řízení v cloudu
-description: Seznamte se s pěti disciplínami zásad správného řízení cloudu v architektuře pro přijetí v cloudu.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte o Cost Management, akceleraci nasazení, standardních hodnotách identity, konzistenci prostředků a směrném plánu zabezpečení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 022fafd48ae9c03ef8c2b19f7b966a73cab70081
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d50364a621e57b95e26f5686f4d470984530e161
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806335"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707675"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Pět disciplín zásad správného řízení v cloudu
 
@@ -69,7 +69,7 @@ U jakékoli cloudové platformy existují běžné disciplíny zásad správnéh
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Správa nákladů</h3>
+                        <h3>Cost Management</h3>
                         <p>Náklady jsou zásadním problémem pro uživatele cloudu. Vývoj zásad pro řízení nákladů pro všechny cloudové platformy.</p>
                     </div>
                 </div>

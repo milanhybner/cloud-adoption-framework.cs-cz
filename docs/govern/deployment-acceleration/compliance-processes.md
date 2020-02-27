@@ -1,6 +1,6 @@
 ---
 title: Procesy kompatibility zásad akcelerace nasazení
-description: Procesy kompatibility zásad akcelerace nasazení
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k získání přístupu k vytváření procesů, které podporují pravidla zásad správného řízení správy nasazení.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 149fe69eaa89fcc1b0ee7715dad8e4c46dadc963
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806369"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708763"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy kompatibility zásad akcelerace nasazení
 

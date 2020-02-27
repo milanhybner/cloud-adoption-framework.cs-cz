@@ -1,6 +1,6 @@
 ---
 title: Ustanovení procesů dodržování zásad
-description: Navažte procesy, aby se zajistilo dodržování podnikových zásad.
+description: Vytvořte strategii a procesy pro zajištění, že nasazení v cloudu zůstane v souladu s požadavky vašich zásad. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807168"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709460"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +47,7 @@ Po nasazení dalších prostředků a úloh bude tým zásad správného řízen
 
 Naplánujte vyhodnocení nových potenciálních rizik a příkazů zásad aktualizace a vodítek návrhu podle potřeby. Pracujte s pracovníky IT a týmy úloh a průběžně vyhodnoťte nové funkce a služby Azure. Také můžete naplánovat pravidelné revize každé z pěti oborů zásad správného řízení, aby bylo zajištěno, že zásady jsou aktuální a v souladu s předpisy.
 
-### <a name="education"></a>Vzdělávání
+### <a name="education"></a>Education
 
 Dodržování zásad vyžaduje, aby pracovníci IT a vývojáři pochopili požadavky zásad, které mají vliv na jejich oblasti zodpovědnosti. Naplánujte vyhradit prostředky pro dokumentaci rozhodnutí a požadavky a informujte všechny příslušné týmy na návrhových průvodcích, které podporují vaše požadavky na zásady.
 
@@ -78,7 +78,7 @@ Některé příklady aktivačních událostí a akcí porušení:
 
 | Obor zásad správného řízení cloudu | Ukázka triggeru | Ukázková akce |
 |-----------------------------|----------------|---------------|
-| Správa nákladů | Útrata v měsíčním cloudu je větší než 20% vyšší, než se očekávalo. | Upozorněte vedoucího fakturační jednotky, který začne kontrolovat využití prostředků. |
+| Cost Management | Útrata v měsíčním cloudu je větší než 20% vyšší, než se očekávalo. | Upozorněte vedoucího fakturační jednotky, který začne kontrolovat využití prostředků. |
 | Standardní hodnoty zabezpečení | Zjišťuje podezřelou aktivitu uživatele. | Upozorněte tým zabezpečení IT a zakažte účet podezřelého uživatele. |
 | Konzistence prostředků | Využití CPU pro úlohu je větší než 90%. | Upozorněte tým oddělení IT a nahorizontální navýšení kapacity pro zpracování zatížení. |
 

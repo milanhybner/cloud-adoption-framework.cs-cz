@@ -1,6 +1,6 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy'
-description: Seznamte se s osvědčenými postupy pro zásady správného řízení ve standardních podnicích.
+title: 'Standardní zásady správného řízení podniku: vysvětlení osvědčených postupů'
+description: Rozhraní pro přijetí v cloudu pro Azure umožňuje vytvořit minimální životaschopný produkt (MVP) pro zásady správného řízení, které odráží osvědčené postupy pro standard Enterprise.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806794"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709307"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy
 
@@ -77,7 +77,7 @@ Rozhodnutí označování prostředků určují, jak se metadata v rámci předp
 - Nasazené prostředky by měly být označeny:
   - Klasifikace dat
   - Závažnost
-  - Smlouva SLA
+  - SLA
   - Prostředí
 - Tyto čtyři hodnoty budou řídit řízení, provoz a rozhodnutí o zabezpečení.
 - Pokud je tato příručka zásad správného řízení implementovaná pro obchodní jednotku nebo tým v rámci většího podniku, měla by označení obsahovat také metadata fakturační jednotky.

@@ -1,18 +1,18 @@
 ---
-title: Průvodce připravenostmi na Cloud ředitelka zabezpečení informací
-description: Jak se dá ředitelka zabezpečení informací připravit pro Cloud
+title: Průvodce připravenostmi na cloudový zabezpečení ředitelka zabezpečení informací
+description: Přečtěte si, jak připravit hlavní kancelář pro zabezpečení informací (ředitelka zabezpečení informací) pro transformaci a přírůstkové řízení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804992"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709409"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>Průvodce připravenostmi na Cloud ředitelka zabezpečení informací
 

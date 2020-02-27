@@ -1,6 +1,6 @@
 ---
 title: Šablona Cost Management
-description: Tuto šablonu použijte jako model pro zachycení obchodních rizik, tolerance rizik, procesy dodržování předpisů a nástroje potřebné k definování Cost Managementch zásad vaší organizace.
+description: Pomocí této šablony můžete definovat Cost Managementé příkazy zásad, které zachytí podniková rizika, toleranci rizik, procesy dodržování předpisů a nástroje.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173262"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708797"
 ---
 # <a name="cost-management-template"></a>Šablona Cost Management
 

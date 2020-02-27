@@ -1,6 +1,6 @@
 ---
 title: 'Softwarově definované sítě: Cloud – nativní'
-description: Diskuze o virtuálních síťových službách, které jsou nativní pro Cloud
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k získání informací o virtuálních sítích nativních pro Cloud, které jsou potřeba pro nasazení virtuálních počítačů do cloudu.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806641"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708593"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwarově definované sítě: Cloud – nativní
 
-Virtuální síť nativní pro Cloud je nutná při nasazení prostředků IaaS, jako jsou virtuální počítače, na cloudovou platformu. Přístup k virtuálním sítím z externích zdrojů, podobně jako na webu, je nutné explicitně zřídit. Tyto typy virtuálních sítí podporují vytváření podsítí, pravidla směrování a virtuální brány firewall a zařízení pro správu provozu.
+Virtuální síť nativní pro Cloud se vyžaduje při nasazení prostředků IaaS, jako jsou virtuální počítače, na cloudovou platformu. Přístup k virtuálním sítím z externích zdrojů, podobně jako na webu, je nutné explicitně zřídit. Tyto typy virtuálních sítí podporují vytváření podsítí, pravidla směrování a virtuální brány firewall a zařízení pro správu provozu.
 
 Cloudová virtuální síť nemá žádné závislosti na místních nebo jiných necloudových prostředcích vaší organizace pro podporu úloh hostovaných v cloudu. Všechny požadované prostředky se zřídí buď ve virtuální síti, nebo pomocí spravovaných PaaS nabídek.
 

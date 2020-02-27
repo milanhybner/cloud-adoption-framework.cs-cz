@@ -1,6 +1,6 @@
 ---
 title: Ukázkové zásady konzistence prostředků – příkazy
-description: Ukázkové zásady konzistence prostředků – příkazy
+description: Pomocí architektury cloudového přijetí pro Azure získáte ukázkové příkazy zásad konzistence prostředků, které vám pomůžou při konceptu příkazů zásad vaší organizace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807253"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708134"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Ukázkové zásady konzistence prostředků – příkazy
 
@@ -34,7 +34,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 - Nasazené prostředky by měly být označeny následujícími hodnotami:
   - Náklady
   - Závažnost
-  - Smlouva SLA
+  - SLA
   - Prostředí
 - Nástroje zásad správného řízení musí ověřovat označování související s náklady, závažností, smlouvou SLA, aplikací a prostředím. Všechny hodnoty musí být zarovnané na předdefinované hodnoty, které spravuje tým zásad správného řízení.
 
@@ -67,7 +67,7 @@ Následující ukázkové příkazy zásad řeší běžná obchodní rizika sou
 
 **Možné možnosti návrhu:** Konzistentní používání plánů [Azure](https://docs.microsoft.com/azure/governance/blueprints) ke správě automatizovaných nasazení umožňuje konzistentní nasazení prostředků Azure, které dodržují standardy a zásady správného řízení vaší organizace.
 
-## <a name="monitoring"></a>Sledování
+## <a name="monitoring"></a>Monitorování
 
 **Technické riziko:** Nesprávně implementované nebo nekonzistentně instrumentované monitorování může zabránit detekci problémů se stavem úloh nebo jiným narušením dodržování zásad.
 

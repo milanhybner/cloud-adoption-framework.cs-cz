@@ -1,6 +1,6 @@
 ---
 title: 'Softwarově definované sítě: Cloud DMZ'
-description: Tato síťová architektura umožňuje omezený přístup mezi místními a cloudovou sítí.
+description: Přečtěte si o architektuře Cloud DMZ Network, která umožňuje omezený přístup mezi místními a cloudovou sítí pomocí sítě VPN.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: eee22d6a0322a94ef0968c901642700fdc6247ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ca545c662f7249b8afeb1c750f6b07bd274c1c02
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806658"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708610"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwarově definované sítě: Cloud DMZ
 
 Architektura sítě Cloud DMZ umožňuje omezený přístup mezi místními i cloudovou sítí, a to pomocí virtuální privátní sítě (VPN) pro připojení sítí. I když se model DMZ běžně používá v případě, že chcete zabezpečit externí přístup k síti, architektura cloudových DMZ, kterou popisuje tady, je určená konkrétně k zabezpečení přístupu k místní síti z cloudových prostředků a naopak.
 
-![Zabezpečená hybridní síťová architektura](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
+![Zabezpečení hybridní síťové architektury](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
 
 Tato architektura je navržená tak, aby podporovala scénáře, ve kterých vaše organizace chce zahájit integraci cloudových úloh s místními úlohami, ale nemusí mít plně prozatímované zásady zabezpečení cloudu nebo nezískaly zabezpečené vyhrazené připojení WAN mezi Tato dvě prostředí. V důsledku toho by se měly cloudové sítě zacházet jako demilitarizovaná zóna, aby byly místní služby zabezpečené.
 

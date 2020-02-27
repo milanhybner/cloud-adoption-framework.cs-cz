@@ -1,6 +1,6 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: počáteční podniková zásada za strategii zásad správného řízení'
-description: 'Standardní příručka pro zásady správného řízení podniku: počáteční podniková zásada za strategii zásad správného řízení'
+title: 'Standardní zásady správného řízení podniku: počáteční podniková zásada'
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k definování prvotního umístění zásad správného řízení, rizik prvotní fáze, počátečních příkazů zásad a procesů prvotního vynucení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f3afbeb33904473fbfd0d1590437cee68b80a7e4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806165"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709052"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardní příručka pro zásady správného řízení podniku: počáteční podniková zásada za strategii zásad správného řízení
 

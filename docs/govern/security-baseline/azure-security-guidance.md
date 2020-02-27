@@ -1,6 +1,6 @@
 ---
-title: Pokyny pro zabezpečení Azure
-description: Jaké doprovodné materiály k zabezpečení poskytuje společnost Microsoft?
+title: Pokyny k zabezpečení Azure
+description: Pro splnění složitých povinností dodržování předpisů a zlepšení ochrany dat použijte Microsoft Service Trust Platform a správce dodržování předpisů.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804907"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709528"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="microsoft-security-guidance"></a>Doprovodné materiály k zabezpečení Microsoftu
 
-## <a name="tools"></a>nástroje
+## <a name="tools"></a>Nástroje
 
 Společnost Microsoft představila platformu a správce dodržování předpisů [Service trustu](https://servicetrust.microsoft.com) , která vám může pomáhat s těmito nástroji:
 

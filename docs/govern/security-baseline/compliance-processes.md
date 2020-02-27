@@ -1,6 +1,6 @@
 ---
 title: Procesy dodržování předpisů zásad standardních hodnot zabezpečení
-description: Procesy dodržování předpisů zásad standardních hodnot zabezpečení
+description: Seznamte se s přístupem k vytváření procesů, které podporují pravidla zásad správného řízení zabezpečení v rámci architektury pro přijetí v cloudu pro Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b725a4867ec7e55f6b9d53cdba31c0874d61c80c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85286fd741cfdc1201eb436f3327993ac0337875
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808919"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707438"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Procesy dodržování předpisů zásad standardních hodnot zabezpečení
 

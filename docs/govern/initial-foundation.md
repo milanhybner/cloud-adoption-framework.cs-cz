@@ -1,6 +1,6 @@
 ---
-title: Navázat počáteční cloudový základ zásad správného řízení
-description: Začínáme se zásadami správného řízení cloudu vytvořením počátečního základu zásad správného řízení pro Cloud.
+title: Zavedení počátečního základu zásad správného řízení cloudu
+description: Využijte Azure Cloud Framework pro Azure a začněte se zásadou správy cloudu tím, že navedete počáteční Cloud zásad správného řízení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803785"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708355"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Navázat počáteční cloudový základ zásad správného řízení
 

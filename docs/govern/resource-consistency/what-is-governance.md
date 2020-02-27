@@ -1,18 +1,18 @@
 ---
 title: Co jsou zásady správného řízení cloudových prostředků?
-description: Vysvětlení řízení cloudových prostředků v Azure
+description: Přečtěte si o procesu správy, monitorování a auditování prostředků Azure, abyste splnili cíle a požadavky vaší organizace.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fdf63fd86b69a1c42276e5847d53deb71fcd2530
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807270"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706570"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "76807270"
 
 V článku [Jak funguje Azure?](../../getting-started/what-is-azure.md)jste se dozvěděli, že Azure je kolekce serverů a síťových hardwarových počítačů, které používají virtualizovaný hardware a software jménem uživatelů. Azure umožňuje vývoj aplikací a oddělení IT ve vaší organizaci tak, aby se usnadnilo vytváření, čtení, aktualizace a odstraňování prostředků podle potřeby.
 
-I když ale neomezený na prostředky může vývojářům pružnější práci zvýšit, může to vést k neočekávaným nákladům. Například vývojový tým může být schválen pro nasazení sady prostředků pro testování, ale nezapomeňte je odstranit při dokončení testování. Tyto prostředky budou i nadále používat náklady, i když již nebudou schváleny nebo nutné.
+Ale přestože neomezeným prostředkům může vývojářům pružnější práci zvýšit, může to vést k neočekávaným nákladům. Například vývojový tým může být schválen pro nasazení sady prostředků pro testování, ale nezapomeňte je odstranit při dokončení testování. Tyto prostředky budou i nadále používat náklady, i když již nebudou schváleny nebo nutné.
 
 Řešení je zásad správného řízení přístupu k prostředkům. **Zásad správného řízení** je nepřetržitý proces správy, monitorování a auditování používání prostředků Azure pro splnění cílů a požadavků vaší organizace.
 

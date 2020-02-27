@@ -1,6 +1,6 @@
 ---
-title: Cost Management metriky, ukazatele a tolerance rizik
-description: Vysvětlení služby Cost Management ve vztahu k zásadám správného řízení v cloudu
+title: Cost Management metriky a indikátory tolerance rizik
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k kvantifikaci Cost Management metriky a indikátory tolerance rizik ve vztahu ke zásadám správného řízení cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806454"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708814"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metriky, ukazatele a tolerance rizik
 

@@ -1,6 +1,6 @@
 ---
 title: Nástroje pro akceleraci nasazení v Azure
-description: Nástroje pro akceleraci nasazení v Azure
+description: Podívejte se, jak můžou Azure Native Tools pomoci při vyspělých zásadách a procesech, které podporují pravidla správy akcelerace nasazení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806318"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709001"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Nástroje pro akceleraci nasazení v Azure
 

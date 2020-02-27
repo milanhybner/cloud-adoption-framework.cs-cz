@@ -1,6 +1,6 @@
 ---
 title: Základní zásady zabezpečení pro Cloud – nativní
-description: Základní zásady zabezpečení pro Cloud – nativní
+description: Podívejte se na ukázkovou nativní cloudovou zásadu pro směrný plán zabezpečení, ve kterém jsou nástroje a platformy Azure dostačující ke správě obchodních rizik.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808936"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707488"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Základní zásady zabezpečení pro Cloud – nativní
 
@@ -26,7 +26,7 @@ ms.locfileid: "76808936"
 
 Tato ukázková zásada syntetizuje scénář cloudového nativního řešení, což znamená, že nástroje a platformy, které Azure poskytuje, jsou dostačující ke správě obchodních rizik, která se podílejí na nasazení. V tomto scénáři se předpokládá, že jednoduchá konfigurace výchozích služeb Azure zajišťuje dostatečnou ochranu prostředků.
 
-## <a name="cloud-security-and-compliance"></a>Dodržování předpisů a zabezpečení cloudu
+## <a name="cloud-security-and-compliance"></a>Zabezpečení a dodržování předpisů v cloudu
 
 Zabezpečení je integrované do všech aspektů Azure a nabízí jedinečné výhody zabezpečení odvozené z globálních nástrojů pro zabezpečení, sofistikované ovládací prvky zaměřené na zákazníky a zabezpečenou a posílenou infrastrukturou. Tato účinná kombinace pomáhá chránit vaše aplikace a data, podporuje snahu o dodržování předpisů a poskytuje nákladově efektivní zabezpečení pro organizace všech velikostí. Tento přístup vytvoří silnou počáteční pozici pro jakékoli zásady zabezpečení, ale neočekává se, že se neshodují stejně silné postupy zabezpečení související s používanými službami zabezpečení.
 

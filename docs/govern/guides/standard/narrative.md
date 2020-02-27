@@ -1,6 +1,6 @@
 ---
-title: 'Standardní příručka pro zásady správného řízení podniku: mluvený komentář za strategií zásad správného řízení'
-description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí v cloudu Standard.
+title: 'Standardní zásady správného řízení podniku: Předčítání za strategii zásad správného řízení'
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak vytvořit případ použití pro zásady správného řízení během provozu standardní podnikové cloudové cesty.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d963053806a6a43476c7597be5dd628b6e187e06
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805519"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709273"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standardní příručka pro zásady správného řízení podniku: mluvený komentář za strategií zásad správného řízení
 

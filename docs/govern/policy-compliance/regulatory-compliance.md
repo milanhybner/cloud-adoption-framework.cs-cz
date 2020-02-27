@@ -1,6 +1,6 @@
 ---
 title: Seznámení s dodržováním předpisů
-description: Seznámení s dodržováním předpisů
+description: Seznamte se s pravidly dodržování předpisů v různých odvětvích a geografických oblastech, které mohou mít vliv na řízení cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806114"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709375"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Seznámení s dodržováním předpisů
 
@@ -35,7 +35,7 @@ Aplikace zdravotní péče, která zpracovává chráněné informace o stavu (F
 
 Standard zabezpečení dat v odvětví platebních karet (PCI DSS) je bezpečnostní standard pro organizace, které zpracovávají kreditní karty od hlavních systémů, včetně víz, MasterCard, American Express, Discover a JCB. Standard PCI se řídí značkami karet a spravuje se v rámci Rady standardů zabezpečení v oboru platební karty. Byl vytvořen Standard, který zvyšuje ovládací prvky kolem dat karty SmartCard, aby se snížilo podvodná platební karta. Ověřování dodržování předpisů se provádí jednou ročně, buď pomocí externího nástroje QUALIFIED Security ASSESSOR (External Qualified Security posuzovatel), nebo pomocí nástroje ISA (Internal Security hodnotitel), který vytváří zprávu o dodržování předpisů (ROC) pro organizace, které zpracovávají velké objemy transakcí, nebo Dotazník pro samočinný odhad (SAQ) pro společnosti.
 
-## <a name="personal-data"></a>Osobní údaje
+## <a name="personal-data"></a>Osobní data
 
 Osobní údaje jsou informace, které se dají použít k identifikaci spotřebitele, zaměstnance, partnera nebo jakékoli jiné živé nebo právnické osoby. Řada nově vznikajících zákonů, zejména těch, které se týkají ochrany osobních údajů a osobních údajů, vyžadují, aby podniky samy dodržovaly a nahlásily dodržování předpisů a všechna porušení, která by mohla nastat.
 

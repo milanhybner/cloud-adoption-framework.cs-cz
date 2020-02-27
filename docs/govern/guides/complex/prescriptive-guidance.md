@@ -1,6 +1,6 @@
 ---
-title: 'Příručka zásad správného řízení pro komplexní podniky: vysvětlení osvědčených postupů'
-description: Seznamte se s osvědčenými postupy pro zásady správného řízení ve složitých podnicích.
+title: 'Komplexní řízení podniku: vysvětlené osvědčené postupy'
+description: Rozhraní pro přijetí v cloudu pro Azure umožňuje vytvořit minimální životaschopný produkt (MVP) pro zásady správného řízení, které odráží osvědčené postupy pro komplexní firmu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806267"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709205"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Příručka zásad správného řízení pro komplexní podniky: vysvětlení osvědčených postupů
 
@@ -79,7 +79,7 @@ Rozhodnutí označování prostředků určují, jak se metadata v rámci předp
   - Geografické
   - Klasifikace dat
   - Závažnost
-  - Smlouva SLA
+  - SLA
   - Prostředí
   - Archetype aplikace
   - Aplikace

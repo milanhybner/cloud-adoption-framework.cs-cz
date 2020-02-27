@@ -1,18 +1,18 @@
 ---
-title: Definování podnikových zásad pro zásady správného řízení cloudu
-description: Naučte se vytvářet zásady, které odpovídají a napravují rizika.
+title: Definování firemních zásad zásad správného řízení cloudu
+description: Pomocí architektury cloudového přijetí pro Azure se naučíte vytvářet zásady, které řeší známá rizika a tolerance rizik během cesty k transformaci cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806046"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706672"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definování podnikových zásad pro zásady správného řízení cloudu
 

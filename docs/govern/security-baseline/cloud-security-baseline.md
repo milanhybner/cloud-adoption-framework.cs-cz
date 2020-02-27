@@ -1,6 +1,6 @@
 ---
 title: Pochopení standardních hodnot zabezpečení cloudu
-description: Přečtěte si o standardních hodnotách zabezpečení cloudu.
+description: Seznamte se se směrným plánem cloudového zabezpečení, který je založený na pěti oborech zásad správného řízení cloudu pro vytvoření architektury zásad správného řízení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36aa64e35c5858e41d7cb4d29885289ca0c5435a
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808885"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707573"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Pochopení standardních hodnot zabezpečení cloudu
 
@@ -41,7 +41,7 @@ Jelikož ale organizace i nadále využívají výhod cloudových služeb, jako 
 
 Zabezpečení je základní součástí silné ochrany dat ve všech prostředích online computingu. Ale samotná zabezpečení není dostačující. Ochota spotřebitelů a firem používat konkrétní cloudový výpočetní produkt závisí také na jejich schopnosti důvěřovat, že soukromí svých informací bude chráněno a že jejich data budou použita pouze způsobem konzistentním se očekáváním zákazníků. . Další informace o přístupu Microsoftu k [ochraně dat a osobních údajů v cloudu](https://go.microsoft.com/fwlink/?LinkId=808242&clcid=0x409)
 
-## <a name="risk-mitigation"></a>Omezení rizik
+## <a name="risk-mitigation"></a>Zmírnění rizik
 
 Dvě největší rizika v jakémkoli datacentru se dají seskupovat do dvou zdrojů: systémy pro stárnutí a lidské chyby. Ochrana před těmito dvěma riziky je při definování strategie zabezpečení IT minimální. Totéž platí i v cloudu. Následuje několik příkladů ovládacích prvků, které je možné zavést k nápravě rizik a posílení strategie cloudového zabezpečení.
 

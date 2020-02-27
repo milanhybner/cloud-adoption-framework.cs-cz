@@ -1,6 +1,6 @@
 ---
-title: 'Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře'
-description: Tento mluvený komentář vytváří případ použití pro zásady správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu.
+title: 'Komplexní řízení podniku: podpora mluveného komentáře'
+description: Rozhraní pro přijetí v cloudu pro Azure slouží k vytvoření případu použití pro zásady správného řízení během cesty k podnikovému přijetí vaší složitosti v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805553"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706910"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře
 

@@ -1,6 +1,6 @@
 ---
 title: Metodologie zásad správného řízení pro Cloud
-description: Zajistěte základní porozumění metodologii, která v rámci architektury přechodu na cloud určuje zásady správného řízení v cloudu.
+description: Využijte přírůstkový přístup ke správě na základě minimální životaschopného produktu (MVP) k podpoře podnikových zásad a rychlému přesunu do cloudového přijetí.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807083"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709086"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologie zásad správného řízení pro Cloud
 
@@ -37,7 +37,7 @@ Model zásad správného řízení architektury přechodu na cloud identifikuje 
 
 **Pět oborů řízení cloudu:** Tyto disciplíny podporují podnikové zásady. Každá z disciplín chrání firmu před potenciálními nástrahami:
 
-- Správa nákladů
+- Cost Management
 - Standardní hodnoty zabezpečení
 - Konzistence prostředků
 - Standardní hodnoty identit

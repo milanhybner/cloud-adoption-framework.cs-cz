@@ -1,6 +1,6 @@
 ---
 title: Co je klasifikace dat?
-description: Klasifikace dat umožňuje určit a přiřadit hodnotu datům vaší organizace a je běžným výchozím bodem pro řízení.
+description: Použijte klasifikaci dat jako výchozí bod zásad správného řízení pro Cloud tím, že určíte a přiřadíte hodnotu datům vaší organizace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f476aaccfc88eab4a2bea1db17e7b1d33f31ee9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805077"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706689"
 ---
 <!-- markdownlint-disable MD026 -->
 
