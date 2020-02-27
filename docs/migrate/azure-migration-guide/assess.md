@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173389"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567737"
 ---
 # <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
 
@@ -24,7 +24,7 @@ Zdroje informací v této části vám pomůžou posoudit vaše prostředí, aby
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[Nástroje](#tab/Tools)
+# <a name="tools"></a>[Nástroje](#tab/Tools)
 
 K vyhodnocení prostředí můžete použít následující nástroje, abyste zjistili, jestli je migrace vhodná a jaký přístup je nejlepší. Užitečné informace o volbě správných nástrojů, které podporují migraci, najdete v [průvodci rozhodováním o migračních nástrojích pro architekturu přechodu na cloud](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -51,7 +51,7 @@ Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby A
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a na
 - [Používání řešení Service Map v Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate a Service Map: Vizualizace závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Scénáře a účastníci](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Scénáře a účastníci](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scénáře
 
@@ -105,7 +105,7 @@ Když vytvoříte základní tým cloudové strategie, který sestavíte z těch
 
 Další informace o přípravě organizace na migraci do cloudu najdete v článku o architektuře přechodu na cloud v [úvodním zařazení organizace](../../plan/initial-org-alignment.md).
 
-# <a name="timelinestabtimelines"></a>[Časové osy](#tab/Timelines)
+# <a name="timelines"></a>[Časové osy](#tab/Timelines)
 
 Obecně platí, že zákazníci potřebují na scénář migrace popisovaný v tomto průvodci od jednoho do šesti měsíců.
 
@@ -117,7 +117,7 @@ Některé skutečnosti, které je potřeba vzít v úvahu při hodnocení časov
 - **Správa změn:** Má firma zvláštní požadavky týkající se implementace a schvalování změn?
 - **Oborové předpisy:** Jste povinni dodržovat předpisy daného oboru nebo odvětví?
 
-# <a name="cost-managementtabmanagecost"></a>[Správa nákladů:](#tab/ManageCost)
+# <a name="cost-management"></a>[Správa nákladů:](#tab/ManageCost)
 
 Posouzení vašeho prostředí je dokonalou příležitostí k doplnění kroku spočívajícího v analýze nákladů. Když použijete data shromážděná při posuzovacích aktivitách, měli byste být schopni analyzovat náklady a předpovědět je. Předpověď nákladů musí kromě jednorázových nákladů (například na zvýšený příchozí přenos dat) zohledňovat i náklady na spotřebované služby.
 
