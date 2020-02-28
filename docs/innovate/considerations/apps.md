@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: zapojení aplikací'
-description: Úvod do cloudových inovací – zapojení do aplikací
+title: Zapojení přes aplikace k digitálnímu vynálezu
+description: Seznamte se s postupem vytváření řešení aplikací pro data obrazce a vytváření prostředí, která zákazníkům přibývají a podporují inovace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808562"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170660"
 ---
 # <a name="engage-through-applications"></a>Zapojení aplikací
 
@@ -54,7 +54,7 @@ Strojové učení a umělá logika jsou stále k dispozici vývojářům. Rozsá
 
 Přidání inteligentních funkcí do řešení může umožňovat převod řeči na text, překlad textu, počítačové zpracování a dokonce i vizuální vyhledávání. Díky těmto rozšířeným funkcím můžou vývojáři snadněji vytvářet řešení, která využívají inteligentní prostředí k vytváření interaktivního a moderního prostředí.
 
-### <a name="bots"></a>Roboti
+### <a name="bots"></a>Roboty
 
 Roboty poskytují prostředí, které je méně podobné jako při použití počítače a větší, jako je třeba práce s osobou, a to nejméně s inteligentním robotem. Dají se použít k posunování jednoduchých a opakujících se úloh (například vytvoření rezervace na večeři nebo shromáždění informací o profilu) na automatizované systémy, které už nemusí vyžadovat přímý zásah člověka. Uživatelé přejdou pomocí robota přes text, interaktivní karty a řeč. Interakce robota může být v rozsahu od rychlé otázky a odpovědi na propracované konverzace, která inteligentně poskytuje přístup ke službám.
 

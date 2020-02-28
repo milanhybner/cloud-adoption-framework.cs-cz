@@ -1,6 +1,6 @@
 ---
 title: Zarovnávání nákladových modelů s digitální nemovitosti
-description: Zarovnejte nákladové modely s digitální nemovitosti a odhadujte náklady na Cloud.
+description: Přečtěte si o cenových nástrojích Azure, které vám pomůžou s plánováním a správou cloudových výdajů s transparentností a přesností, abyste mohli využít Azure a další cloudy.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804703"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170116"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Zarovnání nákladových modelů k digitální nemovitosti k odhadování nákladů na Cloud
 
@@ -27,4 +27,4 @@ Cenové nástroje Azure vám pomůžou se správou cloudových výdajů s transp
 
 - [Cenová Kalkulačka Azure](https://azure.microsoft.com/pricing): pomocí cenové kalkulačky odhadujte očekávané měsíční poplatky. Pomocí fakturačního portálu vám kdykoli Sledujte skutečné využití účtu a faktury. Nastavením automatických e-mailových upozornění fakturace budete upozorněni na to, jestli vaše útrata překročí nakonfigurované množství.
 
-- [Azure cost management](https://azure.microsoft.com/services/cost-management): Azure cost management, licencovaný Cloudynem společnosti Microsoft, je řešení pro správu nákladů s více cloudy, které pomáhá efektivně používat a spravovat Azure a další cloudové prostředky. Shromažďovat data o využití cloudu a fakturách prostřednictvím rozhraní API (Application Program Interfaces) z Azure, Amazon Web Services a Google Cloud Platform. Na základě těchto dat získáte kompletní a unifikovaný přehled o spotřebě prostředků a nákladech napříč cloudovými platformami. Využijte možnost průběžného monitorování využití cloudu a trendů ve vývoji nákladů. Sledujte skutečné cloudové výdaje na svůj rozpočet, abyste se vyhnuli nadměrnému útratě. Odhalíte anomálie ve svých výdajích a neefektivní využití. Pomocí historických dat můžete zlepšit přesnost předpovědi pro využití cloudu a výdaje.
+- [Azure cost management](https://azure.microsoft.com/services/cost-management): Azure cost management, licencovaný Cloudynem společnosti Microsoft, je řešení pro správu nákladů s více cloudy, které pomáhá efektivně používat a spravovat Azure a další cloudové prostředky. Shromažďovat data o využití cloudu a fakturách prostřednictvím rozhraní API (Application Program Interfaces) z Azure, Amazon Web Services a Google Cloud Platform. S těmito daty získáte kompletní přehled o spotřebě prostředků a nákladech napříč cloudovým platformou v jediném jednotném zobrazení. Průběžně monitorujte využití cloudu a trendy nákladů. Sledujte skutečné cloudové výdaje na svůj rozpočet, abyste se vyhnuli nadměrnému útratě. Zjišťuje anomálie útraty a neefektivitu využití. Pomocí historických dat můžete zlepšit přesnost předpovědi pro využití cloudu a výdaje.

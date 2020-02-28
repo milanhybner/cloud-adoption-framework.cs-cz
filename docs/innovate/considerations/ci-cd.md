@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: podpora přijetí'
-description: Úvod do cloudových inovací – zajištění přijetí
+title: Zajištění přijetí pomocí digitální vynález
+description: Použijte model splatnosti metodologie inovace, abyste snížili tření, které zpomaluje přijetí, a přitom zachováváme osvědčené postupy.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808511"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170558"
 ---
 # <a name="empower-adoption"></a>Posílení přechodu
 
@@ -55,7 +55,7 @@ Každý bod zpětné vazby je potenciální řešení pro potřeby zákazníka. 
 
 [Azure DevOps](https://docs.microsoft.com/azure/devops) obsahuje způsoby [, jak vyžádat, poskytnout a spravovat zpětnou vazbu](https://docs.microsoft.com/azure/devops/project/feedback). Každý z těchto nástrojů slouží k centralizaci zpětné vazby, aby tým mohl provádět akce a poskytoval následný postup ve službě transparentní smyčky zpětné vazby.
 
-## <a name="continuous-integration"></a>Nepřetržitá integrace
+## <a name="continuous-integration"></a>Kontinuální integrace
 
 Vzhledem k tomu, že se přijímají škálování a hypotéza se přiblíží k skutečným inovacím ve velkém měřítku, může být počet menších hypotéz, který se má testovat, rychlejší rychleji. Pro přesné smyčky zpětné vazby a hladké procesy přijetí je důležité, aby každá z těchto hypotéz byla integrovaná a podpora primární hypotézy na základě inovace. To znamená, že se také musíte rychle přesunout na inovace a růst, což vyžaduje více vývojářů pro testování variací základní hypotézy. Pro účely pozdějšího vývoje můžete dokonce potřebovat více týmů vývojářů, přičemž každá z nich bude sdílet řešení. Nepřetržitá integrace je prvním krokem ke správě všech přesouvaných částí.
 

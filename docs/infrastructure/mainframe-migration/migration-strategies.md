@@ -1,18 +1,18 @@
 ---
-title: 'Migrace sálového počítače: přepnutí z sálových počítačů do Azure'
-description: Migrujte aplikace z sálových prostředí do Azure pro systémy, které se aktuálně spouštějí na sálových počítačích.
+title: Migrace aplikací z sálových počítačů do Azure
+description: Získejte technické pokyny pro přechod z sálové platformy do Azure a úložiště s vysokou dostupností v prostředí Azure s vysokým rozsahem.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808766"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171340"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Přepnutí z sálových počítačů do Azure
 
@@ -61,7 +61,7 @@ Zákazníci z sálových počítačů obvykle udržují weby pro zotavení po ha
 
 Automatizovaná geografická redundance je také k dispozici prostřednictvím spojovacího zařízení v rámci sálového počítače, a to i v případě skvělého výdaje a je obvykle vyhrazena pro klíčové systémy. Azure naopak nabízí snadno implementované a nákladově efektivní možnosti pro [zálohování](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [obnovu](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)a [redundanci](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na místních nebo regionálních úrovních nebo prostřednictvím geografické redundance.
 
-## <a name="storage"></a>Storage
+## <a name="storage"></a>Úložiště
 
 Část porozumění fungování sálových počítačů zahrnuje dekódování různých překrývajících se podmínek. Například centrální úložiště, skutečná paměť, reálné úložiště a hlavní úložiště obecně odkazují na úložiště připojené přímo k sálovému procesoru.
 

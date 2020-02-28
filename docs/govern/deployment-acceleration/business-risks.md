@@ -1,6 +1,6 @@
 ---
 title: Zrychlení nasazení – obchodní rizika
-description: Pochopení podnikových rizik v oboru akcelerace nasazení, který se dá použít v strategii zásad správného řízení v rozhraní Microsoft Cloud pro přijetí pro Azure.
+description: Rozhraní pro přijetí cloudu pro Azure použijte k pochopení podnikových rizik v oboru akcelerace nasazení, který se dá použít v strategii zásad správného řízení.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567686"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171425"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivace akcelerace a obchodní rizika pro nasazení
 

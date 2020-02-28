@@ -1,18 +1,18 @@
 ---
-title: 'Migrace sálového počítače: mýty a fakta'
-description: Migrujte aplikace z prostředí sálových počítačů do Azure, osvědčené, vysoce dostupné a škálovatelné infrastruktury pro systémy, které aktuálně běží na mainframech.
+title: Mýty a fakta migrace sálového počítače
+description: Naučte se rozlišovat mýtyy od reality k sálovým adresářům a vyhodnocovat úlohy pro sálové počítače, které jsou pro Azure nejvíce vhodné.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808749"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171306"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mýty sálového počítače a fakta
 

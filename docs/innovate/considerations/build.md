@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: sestavení pomocí zákaznických soucit'
-description: Naučte se sestavovat pomocí zákaznických soucit.
+title: Přijetí buildu s využitím Customer soucit
+description: Naučte se vytvářet řešení, která řídí inovace na základě zákaznických soucit, podrobné informace o zkušenostech zákazníka.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808545"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170626"
 ---
 # <a name="build-with-customer-empathy"></a>Sestavování s empatií vůči zákazníkům
 

@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: Demokratizujte data'
-description: Úvod do cloudových inovací – Demokratizujte data
+title: Demokratizujte dat pomocí digitálního vynálezu
+description: Přečtěte si o democratization, procesu získávání dat do správných rukou při testování hypotéz a inovace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808494"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170218"
 ---
 # <a name="democratize-data"></a>Demokratizace dat
 
@@ -43,7 +43,7 @@ Primární nástroje pro sdílení dat přímo s příjemci dat zahrnují samoob
 
 Sdílení dat může rychle vydávat MVP, který můžete použít v zákaznických konverzacích. Pokud ale chcete, aby se tato sdílená data mohla využít k užitečným znalostem, je potřeba trochu víc. Po ověření hypotézy prostřednictvím sdílení dat je v další fázi vývoje obvykle řízení dat.
 
-Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Například:
+Řízení dat je široké téma, které by mohlo vyžadovat vlastní vyhrazenou architekturu. Tato úroveň členitosti je mimo rozsah architektury pro přijetí do [cloudu](../../index.md). Existuje však několik aspektů zásad správného řízení dat, které byste měli zvážit, jakmile bude ověřena zákaznická hypotéza. Příklad:
 
 - **Je citlivá sdílená data?** [Data by měla být klasifikována](../../govern/policy-compliance/data-classification.md) před veřejným sdílením, aby chránila zájmy zákazníků a společnosti.
 - **Pokud jsou data citlivá, jsou zabezpečená?** Ochrana citlivých dat by měla být požadavek na všechna democratized data. Příklad úlohy zaměřené na [zabezpečení datových řešení](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) poskytuje několik odkazů na zabezpečení dat.

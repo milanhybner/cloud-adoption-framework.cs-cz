@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: problémy a blokování'
-description: Úvod do cloudových inovací – výzvy a blokování
+title: Výzvy a blokování pro přijetí zákazníků
+description: Použití architektury cloudového přijetí pro Azure pro pochopení běžných problémů souvisejících s přijetím a vynálezem pro inovace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808528"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170609"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Běžné blokování a výzvy k inovacím
 

@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: předpověď a vliv'
-description: Úvod do cloudových inovací – předpověď a vliv
+title: Předpověď a vliv na chování zákazníků
+description: Prediktivní modelování použijte k vývoji prediktivních funkcí prostřednictvím dat, přehledů, vzorů, předpovědi a interakcí.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808392"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171102"
 ---
 # <a name="predict-and-influence"></a>Predikce a ovlivňování
 
@@ -45,7 +45,7 @@ Data jsou nejvíce prvky výše zmíněných vlastností. Každé z oborů pro v
 
 K disřadě zdrojů dat lze využít k zajištění prediktivních funkcí:
 
-## <a name="insights"></a>Poznatky
+## <a name="insights"></a>Insights
 
 Odborníci na danou problematiku využívají data týkající se potřeb zákazníků a chování při vývoji základních obchodních přehledů z studie nezpracovaných dat. Tyto přehledy můžou určit výskyty požadovaného chování zákazníka (nebo případně nežádoucí výsledky). Během iterací na předpovědi můžou tyto přehledy pomoci při identifikaci potenciálních relací, které by mohly nakonec vygenerovat pozitivní výsledky. Pokyny k povolení odborníků na danou problematiku pro vývoj přehledů najdete v tématu [Democratizing data](./data.md).
 

@@ -1,18 +1,18 @@
 ---
-title: 'Migrace sálového počítače: migrace sálové aplikace'
-description: Migrujte aplikace z prostředí sálových počítačů do Azure, osvědčené, vysoce dostupné a škálovatelné infrastruktury pro systémy, které aktuálně běží na mainframech.
+title: Strategie migrace aplikací pro sálové počítače
+description: Naučte se strategie, jako je opětovné hostování, vyřazení, opětovné sestavení nebo nahrazení aplikací pro migraci z sálových prostředí do Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808817"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171408"
 ---
 # <a name="mainframe-application-migration"></a>Migrace mainframových aplikací
 
@@ -64,7 +64,7 @@ Monitory TP jsou k dispozici od různých dodavatelů a běží na virtuálních
 
 V Azure se prostředí emulace používají ke spuštění Správce TRANSAKČNÍho programu a dávkových úloh, které používají JCL. V datové vrstvě je DB2 nahrazuje [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), i když je možné použít také Microsoft SQL Server, DB2 LUW nebo Oracle Database. Emulátor podporuje rychlé zprávy, VSAM a SEQ. Nástroje pro správu systému z sálového počítače jsou nahrazené službami Azure a softwarem od jiných dodavatelů, kteří se spouštějí na virtuálních počítačích.
 
-Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Například:
+Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Příklad:
 
 - Virtuální počítače založené na Windows: Internet Information Server (IIS) spolu s ASP.NET pro zpracování obrazovky a obchodní logiku. Použijte ADO.NET pro přístup k datům a transakce.
 
@@ -76,7 +76,7 @@ Operace dávkového zpracování v Azure se liší od typického prostředí Bat
 
 Pokud chcete optimalizovat výkon služby Batch pomocí Azure, zvažte možnosti [výpočtů](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [úložiště](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [sítě](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)a [monitorování](https://docs.microsoft.com/azure/azure-monitor/overview) podle následujících pokynů.
 
-### <a name="compute"></a>Služby Compute
+### <a name="compute"></a>Compute
 
 Použije
 
@@ -88,7 +88,7 @@ Použije
 
 - Paralelní zpracování, protože Azure se snadno škáluje pro paralelní zpracování a poskytuje více výpočetní výkon pro dávkovou práci.
 
-### <a name="storage"></a>Storage
+### <a name="storage"></a>Úložiště
 
 Použije
 
@@ -102,7 +102,7 @@ Použije
 
 - K minimalizaci latence použijte [urychlené síťové sítě Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) .
 
-### <a name="monitoring"></a>Sledování
+### <a name="monitoring"></a>Monitorování
 
 - Pomocí nástrojů pro monitorování, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)a dokonce i v protokolech Azure můžete správcům umožnit monitorovat jakýkoli výkon dávkových běhů a vyhnout se kritickým bodům.
 
@@ -110,7 +110,7 @@ Použije
 
 Distribuované architektury cloudu spoléhají na jinou sadu vývojářských nástrojů, které poskytují výhody moderních postupů a programovacích jazyků. Pro usnadnění tohoto přechodu můžete použít vývojové prostředí s jinými nástroji, které jsou určeny k emulaci prostředí IBM z/OS. V následujícím seznamu jsou uvedeny možnosti od společnosti Microsoft a jiných dodavatelů:
 
-| Součást        | Možnosti Azure                                                                                                                                  |
+| Komponenta        | Možnosti Azure                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | z/OS             | Windows, Linux nebo UNIX                                                                                                                      |
 | CICS             | Služby Azure nabízené společností Micro Focus, Oracle, GT software (Fujitsu), TmaxSoft, Raincode a NTT data nebo přepište pomocí Kubernetes |
@@ -176,7 +176,7 @@ Azure poskytuje prověřenou, vysoce dostupnou a škálovatelnou infrastrukturu 
 
 ## <a name="learn-more"></a>Další informace
 
-Další informace najdete v následujících materiálech:
+Další informace najdete v následujících zdrojích:
 
 - [Začínáme s Azure](https://docs.microsoft.com/azure)
 

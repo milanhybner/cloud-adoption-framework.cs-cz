@@ -1,18 +1,18 @@
 ---
-title: 'Inovace v cloudu: nástroje pro demokratizujteí dat v Azure'
-description: Nástroje pro demokratizujteí dat v Azure
+title: Nástroje pro inovace k demokratizujteí dat
+description: Přečtěte si o Azure Data Catalog a dalších službách, které vám pomůžou rychle otestovat hypotézu před rozbalením do širších, dražších digitálních vynálezů.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808681"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171255"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Nástroje pro demokratizujteí dat v Azure
 
@@ -40,9 +40,9 @@ Všechny doprovodné materiály se mapují na čtyři předchozí procesy. Pokyn
 V Azure se běžně používají následující nástroje k urychlení digitálního vynálezování v předchozích fázích:
 
 - Power BI
-- Katalog dat Azure
+- Azure Data Catalog
 - Azure SQL Data Warehouse
-- Azure Cosmos DB
+- Databáze Azure Cosmos
 - Azure Database for PostgreSQL
 - Azure Database for MySQL
 - Azure Database for MariaDB
@@ -52,17 +52,17 @@ V Azure se běžně používají následující nástroje k urychlení digitáln
 - Azure SQL Database se spravovanými instancemi nebo bez nich
 - Azure Data Factory
 - Azure Stream Analytics
-- Služba SSIS (SQL Server Integration Services)
+- SQL Server Integration Services
 - Azure Stack
 - SQL Server Stretch Database
 - Microsoft Azure StorSimple
-- Azure Files
+- Soubory Azure
 - Synchronizace souborů Azure
 - PolyBase
 
 V rámci přístupů k vynálezu ve velkém měřítku vyžadují aspekty každého řešení vylepšení a technickou splatnost. Jak k tomu dojde, bude pravděpodobně vyžadováno více těchto služeb. Na levé straně této stránky můžete použít obsah pro doprovodné materiály k nástrojům Azure, které se týkají vašeho procesu testování hypotéz.
 
-## <a name="get-started"></a>Začít
+## <a name="get-started"></a>Začínáme
 
 Obsah na levé straně této stránky popisuje mnoho článků. Tyto články vám pomůžou začít s každým z nástrojů v tomto sada nástrojů.
 

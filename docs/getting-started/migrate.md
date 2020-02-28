@@ -1,24 +1,24 @@
 ---
 title: Zahájení cesty migrace do cloudu v Azure
-description: Zahajte cestu migrace do cloudu v Azure.
+description: Získejte ucelený návod pro přechod úloh starších verzí aplikací do cloudu pomocí inovativních cloudových technologií.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804448"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170184"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
 K zahájení cesty migrace do cloudu použijte rozhraní pro přijetí Microsoft Cloud pro Azure. Tato architektura poskytuje komplexní pokyny pro přechod úloh starších verzí aplikací do cloudu pomocí inovativních cloudových technologií.
 
-## <a name="executive-summary"></a>Shrnutí vedoucího
+## <a name="executive-summary"></a>Shrnutí
 
 Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace o cestě k přijetí cloudu, počínaje cílovým obchodním výsledkům a pak zarovnává připravenost a hodnocení cloudu s jasnými definovanými obchodními cíli. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na migraci místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
 

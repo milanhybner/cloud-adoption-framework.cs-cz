@@ -1,24 +1,24 @@
 ---
-title: 'Inovace v cloudu: informace'
-description: Úvod do cloudových inovací – informace o obsahu
+title: Naučte se zákazníky, kteří budou řídit inovace
+description: Seznamte se se zákazníky a od nich od zákazníků, abyste vytvořili řešení pro minimální životaschopné produkty (MVP) s soucit a generovali metriky dopadu zákazníků.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808426"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171153"
 ---
 # <a name="learn-with-customers"></a>Učení se zákazníky
 
 Naši současní zákazníci prezentují náš nejlepší prostředek pro učení. Díky partnerství s námi pomáhají se [sestavovat s Customer soucit](./build.md) a najít nejlepší řešení podle svých potřeb. Také vám pomůžou vytvořit řešení pro minimální životaschopné produkty (MVP) tím, že vygenerují metriky, ze kterých [měříme dopad na zákazníky](./measure.md). V tomto článku popíšeme, jak se naučit a od našich zákaznických partnerů.
 
-## <a name="continuous-learning"></a>Průběžné vzdělávání
+## <a name="continuous-learning"></a>Průběžné učení
 
 Na konci každé iterace máme příležitost učit se z cyklů sestavování a měření. Tento proces průběžného učení je poměrně jednoduchý. Následující obrázek nabízí přehled toku procesu.
 

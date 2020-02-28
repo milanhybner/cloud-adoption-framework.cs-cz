@@ -1,6 +1,6 @@
 ---
 title: Racionalizace cloudu
-description: Projděte si možnosti, které jsou k dispozici pro rationalizingi digitální nemovitosti.
+description: Přečtěte si o racionalizaci cloudu, procesu vyhodnocení prostředků k určení nejlepšího způsobu, jak migrovat nebo modernizovat jednotlivé assety v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806556"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170150"
 ---
 # <a name="cloud-rationalization"></a>Racionalizace cloudu
 
@@ -35,7 +35,7 @@ Teď si Projděte následující pět RS k racionalizaci, abyste se seznámili s
 
 Pět RS of racionalizace, které jsou zde uvedeny, popisují nejběžnější možnosti pro racionalizaci.
 
-## <a name="rehost"></a>Změna hostitele
+## <a name="rehost"></a>Opětovným hostováním
 
 I když se označuje jako migrace _výtahu a posunutí_ , přenáší úsilí o opětovné hostování aktuální stavový prostředek vybranému poskytovateli cloudu s minimální změnou na celkovou architekturu.
 
@@ -58,7 +58,7 @@ Kvalitativní faktory analýzy:
 - Kritické obchodní události
 - Závislosti procesů
 
-## <a name="refactor"></a>Refaktoring
+## <a name="refactor"></a>Refaktorovat
 
 Možnosti platformy jako služby (PaaS) můžou snižovat provozní náklady spojené s mnoha aplikacemi. Je vhodné trochu Refaktorovat aplikaci, aby odpovídala modelu založenému na PaaS.
 
@@ -110,7 +110,7 @@ Kvalitativní faktory analýzy:
 - Provozní náklady
 - Potenciální smyčky zpětné vazby a DevOps investice.
 
-## <a name="rebuild"></a>Opětovné sestavení
+## <a name="rebuild"></a>Sestavit znovu
 
 V některých scénářích je rozdíl mezi tím, že je nutné provést převzetí aplikace, může být příliš velký, aby se do ní dalo zabývat další investice. To platí zejména pro aplikace, které dříve splnily potřeby firmy, ale nyní jsou nepodporované nebo špatně zarovnané s aktuálními obchodními procesy. V tomto případě je vytvořen nový základ kódu pro zarovnávání s přístupem [nativním pro Cloud](https://azure.microsoft.com/overview/cloudnative) .
 
