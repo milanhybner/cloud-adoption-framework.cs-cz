@@ -1,6 +1,6 @@
 ---
 title: Průvodce rozhodováním ohledně pojmenování a označování prostředků
-description: Seznamte se s organizací a označováním prostředků jako základní službou při migraci do Azure.
+description: v rámci architektury přechodu na cloud pro Azure se seznamte s možnostmi a přístupy při vytváření názvů a označování při organizování cloudových prostředků.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90b69a21f1643d4545b2ea5bce46d0c3c499d9a3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806675"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708678"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Průvodce rozhodováním ohledně pojmenování a označování prostředků
 

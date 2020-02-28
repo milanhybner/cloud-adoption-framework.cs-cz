@@ -1,6 +1,6 @@
 ---
 title: Průvodce rozhodováním ohledně protokolování a generování sestav
-description: Seznamte se s protokolováním, generováním sestav a monitorováním jako základními službami při migraci do Azure.
+description: Vytvořte základní strategii protokolování, vytváření sestav a monitorování a zajistěte pro vaši organizaci splnění cílů související s dobou provozu, zabezpečením a dodržováním zásad.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806760"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707658"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 

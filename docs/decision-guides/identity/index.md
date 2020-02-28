@@ -1,6 +1,6 @@
 ---
 title: Průvodce rozhodováním ohledně identity
-description: Seznamte se s identitou jako základní službou při migraci do Azure.
+description: Získejte informace o tom, jak služby pro správu identit a přístupu (IAM) umožňují spravovat řízení přístupu v cloudu.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807100"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707998"
 ---
 # <a name="identity-decision-guide"></a>Průvodce rozhodováním ohledně identity
 

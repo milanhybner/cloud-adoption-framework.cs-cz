@@ -1,6 +1,6 @@
 ---
 title: Disciplína služby Cost Management
-description: Vysvětlení služby Cost Management ve vztahu k zásadám správného řízení v cloudu
+description: Seznamte se s přístupem k vývoji disciplíny správy nákladů jako součásti strategie zásad správného řízení v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: abba9da343342c99fcfa657aa0abd1c55daaef55
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806488"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708865"
 ---
 # <a name="cost-management-discipline-overview"></a>Disciplína služby Cost Management
 

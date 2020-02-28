@@ -1,6 +1,6 @@
 ---
 title: Průvodce rozhodováním ohledně softwarově definovaných sítí
-description: Seznamte se se softwarově definovanými sítěmi jako základní službou při migraci do Azure.
+description: Prostřednictvím architektury přechodu na cloud pro Azure se dozvíte, jak softwarově definované sítě prostřednictvím softwaru poskytují možnosti centrálně spravovaných virtualizovaných sítí.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4fa9f16a2636cf5e8f1340bf51ae39e8db3198b0
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806590"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708729"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Průvodce rozhodováním ohledně softwarově definovaných sítí
 

@@ -1,6 +1,6 @@
 ---
 title: Zásady správného řízení v architektuře přechodu na cloud pro Azure od Microsoftu
-description: Další informace o zásadách správného řízení v architektuře přechodu na cloud pro Azure od Microsoftu
+description: Využijte architekturu přechodu na cloud pro Azure a naučte se hodnotit stávající zásady, vytvářet počáteční základ zásad správného řízení a iterativně přidávat nástroje pro zásady správného řízení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/11/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 60f1672f314c37dda35c19668f3df17b2c54f7db
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223688"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706927"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Zásady správného řízení v architektuře přechodu na cloud pro Azure od Microsoftu
 

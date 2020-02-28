@@ -1,6 +1,6 @@
 ---
 title: Disciplína standardních hodnot identit
-description: Vysvětlení standardních hodnot identit ve vztahu k zásadám správného řízení v cloudu
+description: Seznamte se s přístupem k vývoji disciplíny standardních hodnot identit jako součásti strategie zásad správného řízení v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1ac3041abc6e4721366f8270ce37d6bf6885b140
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91096409b17bce6aced180bff989c57934698aa3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806182"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708984"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Disciplína standardních hodnot identit
 
