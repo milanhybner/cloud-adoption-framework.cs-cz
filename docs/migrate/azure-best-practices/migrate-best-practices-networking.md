@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803870"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225578"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
@@ -114,7 +114,7 @@ Když nasadíte virtuální síť, Azure ve výchozím nastavení přidá server
 - Servery DNS zadané pro síťové rozhraní nebo cloudovou službu mají přednost před servery DNS zadanými pro virtuální síť.
 - V modelu nasazení Azure Resource Manager můžete servery DNS pro virtuální síť a síťové rozhraní zadat, ale osvědčeným postupem je použít toto nastavení jenom ve virtuální síti.
 
-    ![Servery DNS](./media/migrate-best-practices-networking/dns2.png) *servery DNS pro virtuální síť*
+    ![DNS servery](./media/migrate-best-practices-networking/dns2.png) *servery DNS pro virtuální síť*
 
 **Další informace:**
 
@@ -131,14 +131,14 @@ Zóny dostupnosti zvyšují vysokou dostupnost a chrání vaše aplikace a data 
 - Fyzické oddělení zón dostupnosti v rámci oblasti chrání aplikace a data před selháním datacenter.
 - Zónově redundantní služby replikují vaše aplikace a data napříč zónami dostupnosti, aby je chránily před kritickými prvky způsobujícími selhání. – Díky zónám dostupnosti nabízí Azure smlouvu SLA s 99,99% dobou provozu virtuálních počítačů.
 
-    ![Zóna dostupnosti](./media/migrate-best-practices-networking/availability-zone.png) *zóně dostupnosti*
+    ![zóna dostupnosti](./media/migrate-best-practices-networking/availability-zone.png) *zóna dostupnosti*
 
 - Ve své architektuře migrace můžete naplánovat a vytvořit vysokou dostupnost tím, že sdružíte výpočetní prostředky, úložiště, sítě a datové prostředky v rámci zóny a budete je replikovat do jiných zón. Služby Azure, které podporují zóny dostupnosti, spadají do dvou kategorií:
   - Oblastmi služby: přiřadit prostředek s konkrétní zónu. Třeba virtuální počítače, spravované disky, IP adresy.
   - Zónově redundantní služby: prostředku se automaticky replikuje napříč zónami. Třeba zónově redundantní úložiště, Azure SQL Database.
 - Pro zajištění zonální odolnosti proti chybám můžete nasadit standardní nástroj pro vyrovnávání zatížení Azure s úlohami nebo aplikačními vrstvami s přístupem k internetu.
 
-    ![Nástroj pro vyrovnávání zatížení](./media/migrate-best-practices-networking/load-balancer.png) *nástroje pro vyrovnávání zatížení*
+    Nástroj pro vyrovnávání zatížení ![](./media/migrate-best-practices-networking/load-balancer.png) *Load Balancer*
 
 **Další informace:**
 
@@ -148,8 +148,8 @@ Zóny dostupnosti zvyšují vysokou dostupnost a chrání vaše aplikace a data 
 
 Pro úspěšnou migraci je důležité připojit k Azure místní podnikové sítě. Tím se vytvoří stále aktivní připojení označované jako hybridní cloudová síť, kde se služby podnikovým uživatelům poskytují z cloudu Azure. Existují dvě možnosti, jak tento typ sítě vytvořit:
 
-- **Síť Site-to-site VPN:** navázat připojení site-to-site mezi kompatibilní místní zařízení VPN a službou Azure VPN gateway, který je nasazený ve virtuální síti. K virtuální síti může přistupovat jakýkoli autorizovaný místní prostředek. Komunikace site-to-site se odesílají prostřednictvím šifrovaného tunelu přes internet.
-- **Azure ExpressRoute:** navázat připojení k Azure ExpressRoute mezi místní sítí a Azure prostřednictvím partnera ExpressRoute. Toto připojení je privátní a přenos neprobíhá přes internet.
+- Síť **VPN typu Site-to-site:** Vytvoříte připojení typu Site-to-site mezi kompatibilním místním zařízením VPN a bránou Azure VPN Gateway, která je nasazená ve virtuální síti. K virtuální síti může přistupovat jakýkoli autorizovaný místní prostředek. Komunikace site-to-site se odesílají prostřednictvím šifrovaného tunelu přes internet.
+- **ExpressRoute Azure:** Vytvoříte připojení Azure ExpressRoute mezi vaší místní sítí a Azure prostřednictvím partnera ExpressRoute. Toto připojení je privátní a přenos neprobíhá přes internet.
 
 **Další informace:**
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Povoluje provoz z internetu na webové servery. Výchozí pravidlo zabezpečení DenyAllInbound odepírá příchozí provoz z internetu, takže pro skupiny zabezpečení aplikace AsgLogic a AsgDb není potřeba žádné další pravidlo. | Priorita: 100<br/><br/> Zdroj: internet<br/><br/> Zdrojový port: *<br/><br/> Cíl: AsgWeb<br/><br/> Cílový port: 80<br/><br/> Protocol: TCP<br/><br/> Přístup: Povolit.
 Deny-Database-All | Výchozí pravidlo zabezpečení AllowVNetInBound povoluje veškerou komunikaci mezi prostředky ve stejné virtuální síti, takže toto pravidlo je potřeba k odepření provozu ze všech prostředků. | Priorita: 120<br/><br/> Zdroj: *<br/><br/> Zdrojový port: *<br/><br/> Cíl: AsgDb<br/><br/> Cílový port: 1433<br/><br/> Protokol: všechny<br/><br/> Přístup: odepřít.
-Allow-Database-BusinessLogic | Povoluje provoz ze skupiny zabezpečení aplikace AsgLogic do skupiny zabezpečení aplikace AsgDb. Priorita pro toto pravidlo je vyšší než pro pravidlo Deny-Database-All a zpracovává se před ním, takže se povolí provoz ze skupiny zabezpečení aplikace AsgLogic a veškerý ostatní provoz se zablokuje. | Priorita: 110<br/><br/> Zdroj: AsgLogic<br/><br/> Zdrojový port: *<br/><br/> Cíl: AsgDb<br/><br/> Cílový port: 1433<br/><br/> Protocol: TCP<br/><br/> Přístup: Povolit.
+Allow-Database-BusinessLogic | Povoluje provoz ze skupiny zabezpečení aplikace AsgLogic do skupiny zabezpečení aplikace AsgDb. Priorita pro toto pravidlo je vyšší než pravidlo Odepřít-Database-All, takže se toto pravidlo zpracuje jako první. Proto je povolen provoz ze skupiny zabezpečení aplikace AsgLogic a všechny ostatní přenosy budou zablokovány. | Priorita: 110<br/><br/> Zdroj: AsgLogic<br/><br/> Zdrojový port: *<br/><br/> Cíl: AsgDb<br/><br/> Cílový port: 1433<br/><br/> Protocol: TCP<br/><br/> Přístup: Povolit.
 
 <!--markdownlint-enable MD033 -->
 
@@ -497,7 +497,7 @@ V centru se hraniční síť (s přístupem k internetu) obvykle spravuje přes 
 **Typ brány firewall** | **Podrobnosti**
 --- | ---
 WAF | Webové aplikace jsou běžné a často bývají postižené ohroženími zabezpečení a potenciálními zneužitími.<br/><br/> WAF jsou navržené k detekci útoků proti webovým aplikacím (HTTP/HTTPS), a to konkrétněji než obecné brány firewall.<br/><br/> V porovnání s tradiční technologií brány firewall mají WAF sadu specifických funkcí, které chrání interní webové servery před hrozbami.
-Azure Firewall | Podobně jako farmy bran firewall síťových virtuálních zařízení používá Azure Firewall mechanismus společné správy a sadu pravidel zabezpečení k ochraně úloh hostovaných v paprskových sítích a k řízení přístupu k místním sítím.<br/><br/> Azure Firewall má integrovanou škálovatelnost.
+Brána Azure Firewall | Podobně jako farmy bran firewall síťových virtuálních zařízení používá Azure Firewall mechanismus společné správy a sadu pravidel zabezpečení k ochraně úloh hostovaných v paprskových sítích a k řízení přístupu k místním sítím.<br/><br/> Azure Firewall má integrovanou škálovatelnost.
 Brány firewall síťových virtuálních zařízení | Podobně jako Azure Firewall mají farmy bran firewall síťových virtuálních zařízení mechanismus společné správy a sadu pravidel zabezpečení k ochraně úloh hostovaných v paprskových sítích a k řízení přístupu k místním sítím.<br/><br/> Brány firewall síťových virtuálních zařízení se dají ručně škálovat za nástrojem pro vyrovnávání zatížení.<br/><br/> I když má brána firewall síťového virtuálního zařízení méně specializovaný software než WAF, má širší obor aplikace k filtrování a kontrole libovolného typu provozu v odchozích i příchozích přenosech.<br/><br/> Pokud chcete používat síťové virtuální zařízení, najdete je v Azure Marketplace.
 
 <!--markdownlint-enable MD033 -->

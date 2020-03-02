@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807593"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223029"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Průvodce monitorováním cloudu: Přehled monitorovacích platforem
 
 Společnost Microsoft poskytuje řadu možností monitorování ze dvou produktů: System Center Operations Manager, které byly navrženy místně a následně rozšířeny do cloudu, a Azure Monitor, které byly navrženy pro Cloud, ale mohou také monitorovat místní prostředí. OSI. Tyto dvě nabídky poskytují základní monitorovací služby, jako jsou například výstrahy, sledování doby provozu služby, monitorování stavu aplikace a infrastruktury, diagnostika a analýza.
@@ -50,7 +52,7 @@ Na konferenci 2018 Ignite jsme oznámili, že se značka Azure Monitor rozšíř
 Od 2015 do dubna 2018 byla Operations Management Suite (OMS) sdružením následujících služeb správy Azure pro účely licencování:
 
 - Application Insights
-- Azure Automation
+- Automatizace Azure
 - Azure Backup
 - Operational Insights (později Log Analytics)
 - Site Recovery
@@ -67,7 +69,7 @@ Operations Manager vyžaduje významnou infrastrukturu a údržbu pro podporu sk
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor je služba SaaS (software jako služba), kde veškerá infrastruktura, která ji podporuje, je spuštěná v Azure a spravovaná Microsoftem. Je navržená tak, aby prováděla monitorování, analýzu a diagnostiku ve velkém měřítku a je dostupná ve všech národních cloudech. Základní části infrastruktury (sběrače, metriky a úložiště protokolů a analýza), které jsou nezbytné pro podporu Azure Monitor, jsou uchovávány společností Microsoft.  
+Azure Monitor je nabídka typu software jako služba (SaaS), takže její podpůrná infrastruktura běží v Azure a je spravovaná Microsoftem. Provádí monitorování, analýzu a diagnostiku ve velkém měřítku. Je k dispozici ve všech národních cloudech. Základní části infrastruktury (sběrače, metriky a protokoly úložiště a analýzy), které podporují Azure Monitor, jsou spravovány společností Microsoft.  
 
 ![Diagram Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -115,11 +117,11 @@ Přehledy, jako je například Azure Monitor pro kontejnery a Azure Monitor pro 
 
 Azure Monitor odděluje shromažďování dat od akcí pořízených s těmito daty, která podporuje distribuované mikroslužby v cloudovém prostředí. Slučuje data z více zdrojů do Common data Platform a poskytuje možnosti analýzy, vizualizace a upozorňování na základě shromážděných dat.
 
-Všechna data, která jsou shromážděna pomocí Azure Monitor, jsou uložena jako protokoly nebo metriky a různé funkce monitorování spoléhají na jednu z nich. Metriky obsahují číselné hodnoty v časových řadách, které jsou vhodné pro výstrahy téměř v reálném čase a rychlé zjišťování problémů. Protokoly obsahují text nebo číselná data a podporují ho výkonný dotazovací jazyk, který je vhodný zejména pro provádění složitých analýz.
+Data shromážděná pomocí Azure Monitor se ukládají jako protokoly nebo metriky a různé funkce Azure Monitor spoléhají na obě funkce. Metriky obsahují číselné hodnoty v časových řadách, které jsou vhodné pro výstrahy téměř v reálném čase a rychlé zjišťování problémů. Protokoly obsahují text nebo číselná data a lze je dotazovat pomocí výkonného jazyka, zejména užitečného pro provádění složitých analýz.
 
-Vzhledem k tomu, že monitorování odděluje shromažďování dat od akcí proti těmto datům, nemusí být schopné v mnoha případech poskytovat výstrahy prakticky v reálném čase. Pro upozornění na data protokolu se dotazy spouštějí podle opakujícího se plánu definovaného v upozornění. Díky tomuto chování může Azure Monitor snadno korelovat data ze všech monitorovaných zdrojů a interaktivně analyzovat data různými způsoby. To je užitečné hlavně při provádění analýz hlavní příčiny a určení, kde k problému může dojít.
+Vzhledem k tomu, že Azure Monitor odděluje shromažďování dat z akcí proti těmto datům, nemusí být v mnoha případech možné poskytnout výstrahy téměř v reálném čase. Pro upozornění na data protokolu se dotazy spouštějí podle opakujícího se plánu definovaného v upozornění. Díky tomuto chování může Azure Monitor snadno korelovat data ze všech monitorovaných zdrojů a interaktivně analyzovat data různými způsoby. To je užitečné hlavně při provádění analýz hlavní příčiny a určení, kde k problému může dojít.
 
-## <a name="health-monitoring"></a>Sledování stavu
+## <a name="health-monitoring"></a>Monitorování stavu
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -135,7 +137,7 @@ Azure Monitor neposkytuje uživatelsky definované metody implementace modelu sl
 
 - **Azure monitor pro kontejnery:** Monitoruje výkon a stav služby Azure Kubernetes nebo Azure Container Instances. Z řadiče, uzly a kontejnerů, které jsou k dispozici v Kubernetes prostřednictvím rozhraní API metrik shromažďuje metriky paměti a procesoru. Shromažďuje také protokoly kontejnerů a data inventáře o kontejnerech a jejich obrázcích. Předdefinovaná kritéria stavu, která jsou založená na shromážděných datech výkonu, vám pomůžou zjistit, jestli existuje problém s kritickým prostředkem nebo kapacitou. Můžete také pochopit celkový výkon nebo výkon konkrétního typu objektu Kubernetes (pod, uzlem, kontrolérem nebo kontejnerem).
 
-## <a name="analyze-data"></a>Analyzujte data
+## <a name="analyze-data"></a>Analýza dat
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -153,7 +155,7 @@ Operations Manager poskytuje čtyři základní způsoby, jak analyzovat data po
 
 Pomocí výkonného analytického modulu Azure Monitor můžete interaktivně pracovat s daty protokolů a kombinovat je s dalšími daty monitorování pro účely trendů a dalších analýz dat. Zobrazení a řídicí panely umožňují vizualizovat data dotazů různými způsoby od Azure Portal a importovat je do Power BI. Mezi řešení monitorování patří dotazy a zobrazení, která prezentují data, která shromažďuje. Přehledy, jako jsou Application Insights, Azure Monitor pro virtuální počítače a Azure Monitor pro kontejnery, zahrnují přizpůsobené vizualizace pro podporu scénářů interaktivního monitorování.
 
-## <a name="alerting"></a>Upozorňování
+## <a name="alerting"></a>Zobrazení výstrah
 
 ### <a name="operations-manager"></a>Operations Manager
 

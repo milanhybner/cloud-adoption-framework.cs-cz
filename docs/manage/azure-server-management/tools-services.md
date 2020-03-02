@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807933"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223288"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Služby a nástroje pro správu serveru Azure
 
@@ -37,7 +37,7 @@ Služby migrace vám pomůžou migrovat vaše úlohy do Azure. Pro zajištění 
 
 ## <a name="protect"></a>Ochrana
 
-Pro ochranu vašich dat je potřeba naplánovat zálohování, vysokou dostupnost, šifrování, autorizaci a související provozní problémy. Tato témata jsou pokrytá rozsáhle online, takže se podíváme na sestavení plánu zotavení po havárii pro podnikovou kontinuitu (BCDR). Budeme obsahovat odkazy na dokumentaci, která podrobně popisuje, jak implementovat a nasadit tento typ plánu.
+Pro ochranu vašich dat je potřeba naplánovat zálohování, vysokou dostupnost, šifrování, autorizaci a související provozní problémy. Tato témata jsou pokrytá rozsáhle online, takže se můžete soustředit na vytvoření plánu provozní kontinuity a zotavení po havárii (BCDR). Budeme obsahovat odkazy na dokumentaci, která podrobně popisuje, jak implementovat a nasadit tento typ plánu.
 
 Při sestavování strategií ochrany dat zvažte nejprve rozdělení aplikací úloh do jejich různých vrstev. Tento přístup pomáhá, protože každá vrstva obvykle vyžaduje svůj vlastní jedinečný plán ochrany. Další informace o navrhování aplikací tak, aby byly odolné, najdete v tématu [navrhování odolných aplikací pro Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 
@@ -97,7 +97,7 @@ Další informace o cenách pro služby Azure Management Services najdete na tě
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), včetně:
-  - Požadovaná konfigurace stavu
+  - Desired State Configuration
   - Služba Azure Update Management
   - Služby Azure Change Tracking a Inventory Services
 

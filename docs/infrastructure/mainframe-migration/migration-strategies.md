@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171340"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223633"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Přepnutí z sálových počítačů do Azure
 
 Azure jako alternativní platforma pro spouštění tradičních sálových aplikací nabízí výpočetní výkon a úložiště v prostředí s vysokou dostupností. Získáte hodnotu a flexibilitu moderní cloudové platformy bez nákladů spojených s prostředím sálového počítače.
@@ -59,7 +61,7 @@ CF také nabízí vysoce spárované výpočetní prostředky, zatímco funkce �
 
 Zákazníci z sálových počítačů obvykle udržují weby pro zotavení po havárii nebo využívají nebo nezávislého poskytovatele sálového počítače při haváriích. Synchronizace s webem pro obnovení po havárii se obvykle provádí prostřednictvím offline kopií dat. Obě možnosti účtují vysoké náklady.
 
-Automatizovaná geografická redundance je také k dispozici prostřednictvím spojovacího zařízení v rámci sálového počítače, a to i v případě skvělého výdaje a je obvykle vyhrazena pro klíčové systémy. Azure naopak nabízí snadno implementované a nákladově efektivní možnosti pro [zálohování](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [obnovu](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)a [redundanci](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na místních nebo regionálních úrovních nebo prostřednictvím geografické redundance.
+K dispozici je taky automatizovaná geografická redundance prostřednictvím zařízení pro propojení sálového počítače. Tento přístup je nákladný a je obvykle vyhrazený pro klíčové systémy. Azure naopak nabízí snadno implementované a nákladově efektivní možnosti pro [zálohování](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [obnovu](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)a [redundanci](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na místních nebo regionálních úrovních nebo prostřednictvím geografické redundance.
 
 ## <a name="storage"></a>Úložiště
 

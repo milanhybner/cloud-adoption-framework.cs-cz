@@ -3,22 +3,22 @@ title: Přehled příkladů migrace aplikací pro Azure
 description: Poskytuje přehled příkladů migrace aplikací zahrnutých jako součást oddílu Architektura přechodu na cloud věnovaného migraci.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807372"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222977"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Příklady a vzory migrace aplikací
 
 V této části příručky Architektura přechodu na cloud najdete příklady několika běžných scénářů migrace, které demonstrují, jak se dá místní infrastruktura migrovat do cloudu [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure).
 
-## <a name="introduction"></a>Představení
+## <a name="introduction"></a>Úvod
 
 Azure poskytuje přístup ke komplexní sadě cloudových služeb. Jako vývojáři a IT specialisté můžete pomocí těchto služeb sestavovat, nasazovat a spravovat aplikace s využitím celé řady nástrojů a rozhraní a globální sítě datacenter. Když vaše firma čelí výzvám souvisejícím s digitalizací, cloud Azure vám pomůže zjistit, jak optimalizovat prostředky a operace, zapojit zákazníky i zaměstnance a transformovat vaše produkty.
 
@@ -28,7 +28,7 @@ V rámci strategie hybridního cloudu poskytuje Azure stále větší počet ře
 
 ## <a name="migration-patterns"></a>Vzory migrace
 
-Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změna hostování, refaktorování, změna architektury nebo opětovné sestavení. Strategie, kterou použijete, závisí na vašich obchodních faktorech a cílech migrace. Můžete také využít několik vzorů. Můžete se například rozhodnout, že změníte hostitele pro jednoduché aplikace nebo aplikace, které nejsou pro vaši firmu zásadní, ale u aplikací, které jsou složitější nebo slouží pro důležité obchodní informace, změníte architekturu. Podívejme se na tyto vzory blíž.
+Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změna hostování, refaktorování, změna architektury nebo opětovné sestavení. Strategie, kterou použijete, závisí na vašich obchodních faktorech a cílech migrace. Můžete také využít několik vzorů. Můžete se třeba rozhodnout, že budete chtít znovu hostovat jednoduché aplikace nebo aplikace, které nejsou pro vaši firmu důležité, ale přearchitektovat aplikace, které jsou složitější a důležité pro podnikání. Podívejme se na tyto vzory blíž.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 --- | --- | ---
 **Změna hostitele** | Často se označuje jako migrace _výtahu a posunutí_ . Tato možnost nevyžaduje změny kódu a umožňuje rychlou migraci stávajících aplikací do Azure. Každá aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik a nákladů spojených se změnami kódu. | Když potřebujete rychle přesunout aplikace do cloudu.<br/><br/> Když chcete aplikaci přesunout a neměnit ji.<br/><br/> Když je architektura vašich aplikací navržená tak, aby po dokončení migrace mohly využívat škálovatelnost [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas).<br/><br/> Když jsou aplikace pro vaši firmu důležité, ale nepotřebujete okamžitě změny jejich funkcí.
 **Refaktoring** | Refaktoring, který se často označuje jako „opětovné balení“, vyžaduje v aplikacích minimální změny, aby se mohly připojit [k Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) a používat cloudové nabídky.<br/><br/> Můžete například existující aplikace migrovat do služeb Azure App Service nebo Azure Kubernetes Service (AKS).<br/><br/> Můžete také refaktorovat relační i nerelační databáze do služeb, jako jsou Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL nebo Azure Cosmos DB. | Pokud se vaše aplikace dá snadno znovu zabalit pro práci v Azure.<br/><br/> Pokud chcete použít inovativní postupy DevOps, které poskytuje Azure, nebo uvažujete o DevOps s využitím kontejnerové strategie pro úlohy.<br/><br/> V souvislosti s refaktoringem je potřeba uvažovat o přenositelnosti stávajícího základu kódu a dostupnosti dovedností pro vývoj.
-**Změna architektury** | Změna architektury pro migraci se zaměřuje na úpravu a rozšíření funkčnosti aplikace a základu kódu s cílem optimalizovat architekturu aplikace pro zajištění cloudové škálovatelnosti.<br/><br/> Můžete například monolitickou aplikaci rozdělit do skupiny mikroslužeb, které fungují dohromady a snadno se škálují.<br/><br/> Nebo můžete změnit architekturu relačních i nerelačních databází na plně spravované databázové řešení, jako je Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL nebo Azure Cosmos DB. | Když vaše aplikace potřebuje velké úpravy pro za účelem začlenění nových funkcí nebo zajištění efektivnějšího fungování na cloudové platformě.<br/><br/> Pokud chcete využít stávající investice do aplikací, splnit požadavky na škálovatelnost, využít inovativní postupy Azure DevOps a minimalizovat použití virtuálních počítačů.
-**Opětovné sestavení** | Opětovné sestavení jde ještě o krok dál a aplikaci znovu sestaví od začátku pomocí cloudových technologií Azure.<br/><br/> Můžete například sestavit úplně nové aplikace s využitím technologií [nativních pro cloud](https://azure.com/cloudnative), jako jsou Azure Functions, Azure AI, Spravovaná instance Azure SQL Database nebo Azure Cosmos DB. | Když chcete zajistit rychlý vývoj a vaše stávající aplikace mají omezené funkce a životnost.<br/><br/> Až budete připravení urychlit obchodní inovace (včetně postupů DevOps, které poskytuje Azure), sestavte nové aplikace pomocí technologií nativních pro cloud a využijte pokroky v oblasti AI, blockchainů a IoT.
+**Změna architektury** | Změna architektury pro migraci se zaměřuje na úpravu a rozšíření funkčnosti aplikace a základu kódu s cílem optimalizovat architekturu aplikace pro zajištění cloudové škálovatelnosti.<br/><br/> Můžete například monolitickou aplikaci rozdělit do skupiny mikroslužeb, které fungují dohromady a snadno se škálují.<br/><br/> Nebo můžete změnit architekturu relačních i nerelačních databází na plně spravované databázové řešení, jako je Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL nebo Azure Cosmos DB. | Když vaše aplikace potřebuje velké úpravy pro za účelem začlenění nových funkcí nebo zajištění efektivnějšího fungování na cloudové platformě.<br/><br/> Pokud chcete používat stávající investice do aplikací, splňovat požadavky na škálovatelnost, použít inovativní postupy DevOps a minimalizovat používání virtuálních počítačů.
+**Nové sestavení** | Opětovné sestavení jde ještě o krok dál a aplikaci znovu sestaví od začátku pomocí cloudových technologií Azure.<br/><br/> Můžete například vytvořit aplikace se zeleným polem s technologiemi [nativní pro Cloud](https://azure.com/cloudnative) , jako je Azure Functions, Azure AI, Azure SQL Database Managed Instance a Azure Cosmos DB. | Když chcete zajistit rychlý vývoj a vaše stávající aplikace mají omezené funkce a životnost.<br/><br/> Až budete připravení urychlit obchodní inovace (včetně postupů DevOps, které poskytuje Azure), sestavte nové aplikace pomocí technologií nativních pro cloud a využijte pokroky v oblasti AI, blockchainů a IoT.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Články s příklady migrace
 
-Články v této části obsahují příklady několika běžných scénářů migrace. Každý z těchto příkladů zahrnuje základní informace a podrobné scénáře nasazení, které ilustrují způsob nastavení infrastruktury migrace a vyhodnocení vhodnosti místních prostředků pro migraci. Postupně budeme do této části přidávat další články.
+Tato část obsahuje příklady několika běžných scénářů migrace. Každý příklad zahrnuje základní informace a scénáře nasazení, které ilustrují způsob nastavení infrastruktury migrace a vyhodnocení vhodnosti místních prostředků pro migraci. Postupně budeme do této části přidávat další články.
 
 ![Běžné projekty migrace/modernizace](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Posouzení vhodnosti místních prostředků k migraci do Azure](./contoso-migration-assessment.md) | Tento článek ukazuje, jak spustit posouzení místní aplikace běžící na VMware. V příkladu vzorová organizace posuzuje virtuální počítače aplikace pomocí služby Azure Migrate a databázi SQL Serveru aplikace pomocí Data Migration Assistanta.
+[Posouzení vhodnosti místních prostředků k migraci do Azure](../../plan/contoso-migration-assessment.md) | Tento článek s osvědčenými postupy v metodologii plánování popisuje, jak spustit posouzení místní aplikace běžící na VMware. V tomto článku příklad organizace posuzuje virtuální počítače aplikace pomocí služby Azure Migrate a SQL Server databáze aplikace pomocí Data Migration Assistant.
 
 ### <a name="infrastructure"></a>Infrastruktura
 
@@ -84,7 +84,7 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 
 **Článek** | **Podrobnosti**
 --- | ---
-[Změna hostitele aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database](./contoso-migration-rehost-vm-sql-managed-instance.md) | V tomto článku najdete příklad migrace typu výtah a Shift do Azure pro místní aplikaci. Zahrnuje migraci virtuálního počítače front-endu aplikace pomocí služby [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) a migraci databáze aplikace do spravované instance Azure SQL Database s využitím [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Změna hostitele aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database](./contoso-migration-rehost-vm-sql-managed-instance.md) | V tomto článku najdete příklad migrace typu výtah a Shift do Azure pro místní aplikaci. Toto úsilí zahrnuje migraci front-end virtuálního počítače aplikace pomocí [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)a databáze aplikace do Azure SQL Database spravované Instance pomocí [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Tento příklad ukazuje, jak migrovat aplikaci a data pomocí virtuálních počítačů s SQL Serverem hostovaných v Azure. K migraci virtuálních počítačů aplikace používá Site Recovery a k migraci databáze aplikace do clusteru SQL Server, který je chráněný skupinou dostupnosti Always On, používá službu Azure Database Migration Service.
 
 ### <a name="aspnet-php-and-java-apps"></a>Aplikace ASP.NET, PHP a Java

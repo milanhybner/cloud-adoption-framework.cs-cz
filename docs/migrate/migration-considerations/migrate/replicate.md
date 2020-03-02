@@ -1,18 +1,18 @@
 ---
 title: Jakou roli hraje replikace a synchronizace v procesu migrace?
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci sad funkcí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802017"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222255"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ Replikace je tahounem úsilí o migraci. Je to proces zkopírování verze různ
 
 ## <a name="required-prerequisites-to-replication"></a>Vyžadované předpoklady pro replikaci
 
-Před replikací musí být *nová platforma* a hardware připravené pro příjem binárních kopií. Článek o [předpokladech](../prerequisites/index.md) popisuje minimální požadavky na prostředí, které pomůžou vytvořit bezpečnou, robustní a výkonnou platformu pro přijetí binárních replik.
+Před replikací musí být *nová platforma* a hardware připravené pro příjem binárních kopií. Článek o [požadavcích](../prerequisites/index.md) popisuje minimální požadavky na prostředí, které vám pomůžou vytvořit bezpečnou, robustní a vysoce výkonnou platformu pro příjem binárních replik.
 
 *Zdrojové binární soubory* musí být také pro replikaci a synchronizaci připravené. Články týkající se posouzení, architektury a nápravy řeší akce nezbytné k zajištění toho, aby byl zdrojový binární soubor připravený pro replikaci a synchronizaci.
 

@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807440"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223065"
 ---
+<!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
+
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoring místní aplikace do webové aplikace Azure App Service a databáze SQL Azure
 
 Tento článek ukazuje, jak fiktivní společnost Contoso v rámci migrace do Azure refaktoruje dvouúrovňovou aplikaci Windows .NET, která běží na virtuálních počítačích VMware. Front-endový virtuální počítač aplikace se bude migrovat do webové aplikace Azure App Service a databáze aplikace do databáze Azure SQL.
 
-Aplikace SmartHotel360 použitá v tomto příkladu je k dispozici jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
+Aplikace SmartHotel360 použitá v tomto příkladu je poskytována jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
 
 ## <a name="business-drivers"></a>Obchodní faktory
 
@@ -28,7 +30,7 @@ Tým vedení IT těsně spolupracoval s partnery ve firmě, aby zjistil, čeho c
 - **Řešení obchodního růstu.** Contoso roste a vzniká tak tlak na místních systémy a infrastrukturu.
 - **Zvýšení efektivity.** Společnost Contoso se potřebuje zbavit zbytečných postupů a zjednodušit procesy pro vývojáře i uživatele. Potřebuje IT k tomu, aby neztrácela čas ani peníze, byla rychlá a dokázala rychleji reagovat na požadavky zákazníků.
 - **Zvýšení agility.**  IT ve společnosti Contoso musí pohotověji reagovat na potřeby firmy. K zajištění úspěchu v globální ekonomice je nutné, aby IT dokázalo rychleji reagovat na změny na trhu. Nesmí stát v cestě a nesmí se stát obchodní překážkou.
-- **Škálování** Contoso se úspěšně rozšiřuje a IT musí poskytovat systémy, které jsou schopné rozvíjet se stejným tempem.
+- **Škálování** Společnost Contoso musí poskytovat systémy, které mohou růst ve stejném tempu, protože firma se úspěšně zvětšuje.
 - **Snížení nákladů.** Společnost Contoso chce minimalizovat náklady na licencování.
 
 ## <a name="migration-goals"></a>Cíle migrace
@@ -54,9 +56,9 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
-- Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
-- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
+- Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
+- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
 
 ### <a name="proposed-solution"></a>Navrhované řešení
 
@@ -101,7 +103,7 @@ Společnost Contoso vyhodnotí vytvořený návrh tím, že sestaví seznam pro 
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tvorba výkonných cloudových aplikací s využitím plně spravované platformy | Náklady závisejí na velikosti, umístění a využití. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Poskytuje kanál průběžné integrace a průběžného nasazování (CI/CD) pro vývoj aplikací. Součástí tohoto kanálu je úložiště Git pro správu kódu aplikace, systém sestavování pro vytváření balíčků a dalších artefaktů buildu a systém Release Management pro nasazování změn ve vývojových, testovacích a produkčních prostředích.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Contoso k realizaci tohoto scénáře potřebuje:
 
@@ -110,7 +112,7 @@ Contoso k realizaci tohoto scénáře potřebuje:
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Vytvořená předplatná Contoso z dřívějšího článku. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | [Přečtěte si](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
+**Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.
 
 <!--markdownlint-enable MD033 -->
 
@@ -125,7 +127,7 @@ Contoso provede migraci takto:
 > - **Krok 3: zřízení webových aplikací** Společnost Contoso zřídí dvě webové aplikace.
 > - **Krok 4: nastavte Azure DevOps.** Contoso vytvoří nový projekt Azure DevOps a naimportuje úložiště Git.
 > - **Krok 5: Konfigurace připojovacích řetězců.** Contoso nakonfiguruje připojovací řetězce tak, aby webová aplikace webové vrstvy, webová aplikace služby WCF a instance SQL mohly vzájemně komunikovat.
-> - **Krok 6: nastavte kanály sestavení a vydání.** V posledním kroku společnost Contoso vytvoří kanály buildu a verze pro vytvoření aplikace a nasadí je do dvou samostatných webových aplikací.
+> - **Krok 6: nastavte kanály sestavení a vydání.** V posledním kroku vytvoří společnost Contoso kanály sestavení a vydání pro vytvoření aplikace a nasadí je do dvou samostatných webových aplikací.
 
 ## <a name="step-1-provision-an-azure-sql-database"></a>Krok 1: zřízení Azure SQL Database
 
@@ -167,11 +169,11 @@ Správci Contoso budou migrovat databázi SmartHotel360 pomocí DMA.
 
 1. Tento nástroj si stáhnou z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) do místního virtuálního počítače s SQL Serverem (**SQLVM**).
 2. Na tomto virtuálním počítači spustí instalační program (DownloadMigrationAssistant.msi).
-3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit nástroj Microsoft Data Migration Assistant).
+3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit Microsoft Data Migration Assistanta).
 
 ### <a name="migrate-the-database-with-dma"></a>Migrace databáze s využitím DMA
 
-1. V DMA vytvoří nový projekt (**SmartHotelDB**) a vyberou **Migration** (Migrace).
+1. V případě přímého přístupu do paměti (DMA) vytvoří nový projekt (**SmartHotelDB**) a pak vyberte **migrace**.
 2. Jako typ zdrojového serveru vyberou **SQL Server** a jako typ cílového serveru zvolí **Azure SQL Database**.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-1.png)
@@ -180,7 +182,7 @@ Správci Contoso budou migrovat databázi SmartHotel360 pomocí DMA.
 
      ![DMA](media/contoso-migration-refactor-web-app-sql/dma-2.png)
 
-4. Zobrazí se jim chyba, která zdánlivě souvisí s ověřováním. Po prozkoumání ale zjistí, že problém způsobuje tečka (.) v názvu databáze. Jako alternativní řešení se rozhodnou zřídit novou databázi SQL s použitím názvu **SmartHotel-Registration**. Při opětovném spuštění DMA už mohou vybrat **SmartHotel-Registration** a pokračovat v průvodci.
+4. Zobrazí se jim chyba, která zdánlivě souvisí s ověřováním. Po prozkoumání ale zjistí, že problém způsobuje tečka (.) v názvu databáze. Jako alternativní řešení se rozhodnou zřídit novou databázi SQL s použitím názvu **SmartHotel-Registration**. Po opětovném spuštění DMA si můžou vybrat **SmartHotel-registrování**a pokračovat v průvodci.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-3.png)
 
@@ -230,7 +232,7 @@ Migrace databáze je dokončená a teď správci Contoso mohou zřídit dvě web
 
 Contoso pro tuto aplikaci potřebuje sestavit kanály a infrastrukturu DevOps. Správci Contoso k tomuto účelu vytvoří nový projekt DevOps, naimportují kód a potom nastaví kanály buildu a verze.
 
-1. V účtu Azure DevOps společnosti Contoso vytvoří nový projekt (**ContosoSmartHotelRefactor**) a pro správu verzí vyberou **Git**.
+1. V účtu contoso Azure DevOps vytvoří nový projekt (**ContosoSmartHotelRefactor**) a pak pro správu verzí vyberte **Git** .
 
     ![Nový projekt](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
@@ -285,7 +287,7 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
      ![Uložit a zařadit do fronty](./media/contoso-migration-refactor-web-app-sql/pipeline4.png)
 
-5. Tím se aktivuje první build. Vyberou číslo buildu, aby mohli celý proces sledovat. Po dokončení si mohou projít zpětnou vazbu k tomuto procesu, vybrat **Artefakty** a projít si výsledky buildu.
+5. Tím se aktivuje první build. Vyberou číslo buildu, aby mohli celý proces sledovat. Po dokončení můžou vidět svůj názor na proces a pak vybrat **artefakty** pro kontrolu výsledků sestavení.
 
     ![Revize](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
@@ -316,9 +318,9 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
      ![Výběr názvu služby App Service](./media/contoso-migration-refactor-web-app-sql/pipeline11.png)
 
-12. V kanálu > **Artifacts** vyberou **+Add an artifact** (Přidat artefakt) a vyberou, že budou sestavovat s využitím kanálu **ContosoSmarthotel360Refactor**.
+12. V kanálu > **artefakty**, vyberte **+ Přidat artefakt**a pak vyberte sestavení s kanálem **ContosoSmarthotel360Refactor** .
 
-     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Sestavení](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Zkontrolují, že ikona blesku na artefaktu je zaškrtnutá, aby byla povolená aktivační událost průběžného nasazování.
 
@@ -328,11 +330,11 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
     ![Povolené průběžné nasazování](./media/contoso-migration-refactor-web-app-sql/pipeline14.png)
 
-15. Teď přejdou zpátky k fázi 1 úloha, 1 úkol a vyberou **Deploy Azure App Service** (Nasadit Azure App Service).
+15. Nyní se přesunou úlohy fáze 1, úkoly a pak vyberte **nasadit Azure App Service**.
 
     ![Nasazení Azure App Service](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-16. V poli **Select a file or folder** (Vybrat soubor nebo složku) vyhledají soubor **SmartHotel.Registration.Wcf.zip**, který se vytvořil při sestavování buildu, a potom vyberou **Save** (Uložit).
+16. V části **Vybrat soubor nebo složku**vyhledejte soubor **SmartHotel. reg. WCF. zip** , který se vytvořil během sestavování, a pak vyberte **Uložit**.
 
     ![Uložení WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
@@ -348,7 +350,7 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps, aby mohli prové
 
      ![Souhrn kanálu verze](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-20. Přejdou zpátky k **buildu** a vyberou **Triggers** > **Enable continuous integration** (Aktivační události > Povolit kontinuální integraci). Tím je kanál povolený, takže při potvrzení změn v kódu dojde ke kompletnímu sestavení a vydání.
+20. Přesunou se zpátky na **Build**a pak vyberte **triggery** > **Povolit průběžnou integraci**. Tím je kanál povolený, takže při potvrzení změn v kódu dojde ke kompletnímu sestavení a vydání.
 
     ![Povolení kontinuální integrace](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 
@@ -375,7 +377,7 @@ Po dokončení migrace společnost Contoso potřebuje provést tyto kroky čišt
 - Aktualizovat interní dokumentaci tak, aby obsahovala nová umístění pro aplikaci SmartHotel360 Zobrazit databázi jako spuštěnou v databázi Azure SQL a front-end jako spuštěný ve dvou webových aplikacích
 - Zkontrolovat všechny prostředky, které s vyřazenými virtuálními počítači spolupracují, a aktualizovat veškeré související nastavení nebo dokumentaci tak, aby odrážely novou konfiguraci
 
-## <a name="review-the-deployment"></a>Kontrola nasazení
+## <a name="review-the-deployment"></a>Revize nasazení
 
 Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje plně zprovoznit a zabezpečit novou infrastrukturu.
 
@@ -386,16 +388,16 @@ Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje 
 
 ### <a name="backups"></a>Zálohování
 
-- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Contoso se také potřebuje dozvědět víc o správě zálohování a obnovení SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) o automatickém zálohování
 - Společnost Contoso by měla zvážit implementaci skupin převzetí služeb při selhání a zajistit tak regionální převzetí služeb při selhání pro databázi. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
-- Pro zajištění odolnosti musí Contoso zvážit nasazení webové aplikace v hlavní oblasti Východní USA 2 a v oblasti Střední USA. Společnost Contoso může nakonfigurovat Traffic Manager, aby zajistila převzetí služeb při selhání v případě regionálních výpadků.
+- Pro zajištění odolnosti musí Contoso zvážit nasazení webové aplikace v hlavní oblasti USA – východ 2 a v oblasti USA – střed. Společnost Contoso může nakonfigurovat Traffic Manager, aby zajistila převzetí služeb při selhání v případě regionálních výpadků.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

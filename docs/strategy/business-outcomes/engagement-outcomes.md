@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5ad76f9d1b5b34772396f28cd5c5ba829785f76c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798362"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225119"
 ---
+<!-- cSpell:ignore Exak -->
+
 # <a name="examples-of-customer-engagement-outcomes"></a>Příklady výsledků zapojení zákazníků
 
 Jak je popsáno v tématu [Přehled výsledků pro firmy](./index.md), může sloužit jako základ pro jakékoli případné konverzace při transformaci s firmou. Tento článek se zaměřuje na běžné obchodní opatření: zapojení zákazníka. Porozumění potřebám zákazníků a ekosystému v rámci zákazníků pomáhá s kointerpretací obchodních výsledků, které jsou cílem transformační cesty firmy.
@@ -28,7 +30,7 @@ Následují příklady a výsledky týkající se zapojení zákazníka:
 
 V rámci Obsessed transformací, jako je úsilí při inovacích aplikací s podporou cloudu, zákazníci reagují na přímou zapojení a možnost vidět jejich potřeby rychle ve vývojovém týmu. Doba cyklu je šest Sigma, který odkazuje na dobu od začátku do konce funkce. V případě obchodních vedoucích, kteří jsou zákazníky – Obsessed a investování do značné míry na zlepšení zapojení zákazníků, může být časem cyklu silný obchodní výsledek.
 
-- **Příklad:** Společnost poskytující služby, která poskytuje služby B2B (Business-to-Business), se snaží na konkurenčním trhu na trhu sdílet. Zákazníci, kteří opustili konkurenčního poskytovatele služeb, uvedli, že jejich příliš složité technické řešení je v konfliktu se svými obchodními procesy a je hlavním důvodem, proč je opustit. V takovém případě je čas cyklu nezbytný. V dnešní době trvá 12 měsíců, než funkce přejde z požadavku na vydání. Pokud je tento cyklus prioritou výkonného týmu, může být tento cyklus zmenšen na šest až devět měsíců. Prostřednictvím cloudové inovace aplikace, cloudové modely aplikací a integrace služby Azure DevOps bylo možné, že tým může zkrátit dobu trvání cyklu na jeden měsíc, což vývojářům podnikových a aplikačních aplikací umožní pracovat přímo s klientů.
+- **Příklad:** Společnost služby, která poskytuje služby B2B (Business-to-Business), se snaží zachovat podíl na trhu na konkurenčním trhu. Zákazníci, kteří opustili konkurenčního poskytovatele služeb, zjistili, že jejich nadsložitější technické řešení je v konfliktu se svými obchodními procesy a je hlavním důvodem, proč je opustit. V takovém případě je čas cyklu nezbytný. V dnešní době trvá od žádosti do vydání 12 měsíců, než se funkce dopustí. Pokud je tento cyklus prioritou výkonného týmu, může být tento cyklus zmenšen na šest až devět měsíců. Díky cloudovým prostředím, cloudovým modelům aplikací a integraci se službou Azure DevOps může tým vyříznout časový cyklus do jednoho měsíce, aby vývojové týmy pro firmy a aplikace komunikovaly s zákazníky přímo.
 
 > **ExakTime**
 >

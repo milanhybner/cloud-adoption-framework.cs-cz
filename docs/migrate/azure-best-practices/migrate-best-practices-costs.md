@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599965"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222622"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure
 
@@ -85,7 +85,7 @@ Při nasazování virtuálních počítačů Azure si můžete zvolit z různýc
 
 Ladění a údržba místního úložiště (SAN nebo NAS) a sítí, které je podporují, mohou být nákladné a časově náročné. Data ze souboru (úložiště) se běžně migrují do cloudu za účelem zmírnění problémů souvisejících s provozem a správou. Microsoft nabízí několik možností pro přesun dat do Azure a je třeba o nich rozhodnout. Výběr správného typu úložiště dat může každý měsíc vaší organizaci ušetřit několik tisíc dolarů. Několik důležitých informací:
 
-- Data, která nejsou příliš často využívaná a nejsou nezbytná pro chod firmy, není třeba umisťovat do nejdražšího úložiště.
+- Data, která se nedají použít hodně a nejsou nepostradatelná, nemusí být umístěna na nejlevnějších úložištích.
 - Pro důležitá podniková data byste naopak měli zvolit úložiště vyšší úrovně.
 - Při plánování migrace proveďte inventarizaci dat a klasifikujte je podle důležitosti, abyste je mohli namapovat na nejvhodnější úložiště. Vezměte v úvahu rozpočet a náklady, ale i výkon. Náklady nemusí nutně být hlavním rozhodujícím faktorem. Při výběru nejlacinější možnosti byste mohli úlohy vystavit problémům s výkonem a dostupností.
 

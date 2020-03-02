@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800810"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222290"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipatterny organizace: sila a fiefdoms
 
@@ -59,7 +59,7 @@ I v toxických kulturách by snaha CCoE a tým zásad správného řízení clou
 
 ## <a name="it-silos"></a>Sila IT
 
-Členové týmu v silu IT mohou definovat sami sebe prostřednictvím jejich zarovnání na malý počet dodavatelů IT nebo oblasti technické specializace. Nepleťte si ale své siloy IT fiefdoms. Siloy IT mají v úmyslu být založené na pohodlí a zaujetí a jsou obecně snazší překonat než obavy založené na fiefdoms.
+Členové týmu v silu IT mohou definovat sami sebe prostřednictvím jejich zarovnání na malý počet dodavatelů IT nebo oblasti technické specializace. Nepleťte si ale své sila s IT fiefdoms. Siloy by měly být založené na pohodlí a zaujetí a siloy často usnadňují jejich překonání než u obav řízených fiefdoms.
 
 Tento antipattern často vystává ze společného zaujetí pro konkrétní řešení. Siloy IT se pak posílí pokročilou dovedností týmu v důsledku investic do tohoto konkrétního řešení. Tato nadřazená dovednost může být akcelerátorem snahy o přijetí do cloudu, pokud se odolnost proti změnám může překonat. Může se také stát hlavním blokováním, pokud jsou sila rozčleněné nebo pokud členové týmu nemůžou přesně vyhodnotit možnosti. Naštěstí se siloy IT můžou často překonat bez jakýchkoli podstatných změn v organizačním diagramu.
 
@@ -77,9 +77,9 @@ Experimentování a vystavení jsou výkonné nástroje pro rozdělení překá�
 
 Během revize konkurenčního řešení použijte postupy uvedené v tématu [definování podnikových zásad](../govern/corporate-policy.md) , které vám pomůžou zdokumentovat hmotná rizika experimentu a vytvořit zásady, které pomůžou silou týmu lépe vyhovovat vašemu budoucímu stavu. Tím zveřejníte tým pro nová řešení a posílíte budoucí řešení.
 
-**Mít "** nejenom" hranici: Týmy, které řídí přijetí v oblasti cloudu, usnadňují nabízení hranic tím, že budou zkoumat zajímavá a nová řešení nativní pro Cloud. Jedná se o jednu polovinu přístupu k odebrání hranic. To však může dál posílit silou IT. Příliš rychlé doručování změn a bez ohledu na stávající jazykové verze může způsobit nefunkční tření a vede k přirozené rezistenci.
+**Být "bez ohraničení":** Týmy, které řídí přijetí v oblasti cloudu, usnadňují nabízení hranic tím, že budou zkoumat zajímavá a nová řešení nativní pro Cloud. Jedná se o jednu polovinu přístupu k odebrání hranic. To však může dál posílit silou IT. Příliš rychlé doručování změn a bez ohledu na stávající jazykové verze může způsobit nefunkční tření a vede k přirozené rezistenci.
 
-Když siloy začnou odolat, je důležité mít bez hranice ve svých vlastních řešeních. Je potřeba mít na vědomí jednu jednoduchou pravdivost: Cloud-Native není vždy nejlepším řešením. Uvažujte o hybridních řešeních, která by vám mohla nabídnout možnost roztáhnout stávající investice do sila IT do budoucna.
+Když siloy začnou odolat, je důležité mít ve svých vlastních řešeních "hranici bez omezení". Je potřeba mít na vědomí jednu jednoduchou pravdivost: Cloud-Native není vždy nejlepším řešením. Uvažujte o hybridních řešeních, která by vám mohla nabídnout možnost roztáhnout stávající investice do sila IT do budoucna.
 
 Zvažte také cloudové verze řešení, které tým silou IT používá nyní. Experimentujte s těmito řešeními a vystavte si je na pohled těch, kteří žijí v silu IT. V případě potřeby získáte novou perspektivu. V mnoha situacích se může stát, že se dodrží dostatečný ohled na to, jak snížit odolnost.
 

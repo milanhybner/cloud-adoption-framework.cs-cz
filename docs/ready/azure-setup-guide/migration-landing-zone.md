@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799484"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225339"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 
 Termín *cílová zóna migrace* se používá k popisu prostředí, které je zřízené a připravené k hostování úloh migrovaných z místního prostředí do Azure. Zóna cílové migrace je finální doručení příručky pro instalaci Azure. Tento článek spojuje všechna témata týkající se připravenosti v tomto průvodci a používá rozhodnutí učiněná při nasazení první cílové zóny migrace.
 
-Následující oddíly popisují cílovou zónu, která se běžně používá k vytvoření prostředí vhodného pro použití během migrace. Prostředí nebo cílová zóna popsaná v tomto článku je také zachycená v podrobném plánu Azure. Podrobný plán cílové zóny migrace architektury přechodu na cloud můžete použít k nasazení definovaného prostředí jediným kliknutím.
+Následující oddíly popisují cílovou zónu, která se běžně používá k vytvoření prostředí vhodného pro použití během migrace. Prostředí nebo cílová zóna popsaná v tomto článku je také zachycená v podrobném plánu Azure. K nasazení definovaného prostředí v jednom kroku můžete použít plán migrace cílové zóny v architektuře pro přijetí do cloudu.
 
 ## <a name="purpose-of-the-blueprint"></a>Účel podrobného plánu
 
@@ -54,21 +54,21 @@ Pokud se zdá, že tyto předpoklady odpovídají vašemu aktuálnímu prostřed
 
 V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 
-| Součást | Rozhodnutí | Alternativní přístupy |
+| Komponenta | Rozhodnutí | Alternativní přístupy |
 |---------|---------|---------|
 |Nástroje pro migraci|Nasadí se Azure Site Recovery a vytvoří se projekt Azure Migrate.|[Průvodce rozhodováním ohledně nástrojů pro migraci](../../decision-guides/migrate-decision-guide/index.md)|
 |Protokolování a monitorování|Bude zřízený pracovní prostor Operational Insights a účet úložiště pro diagnostiku.|         |
-|Network (Síť)|Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.|[Rozhodnutí o síti](../considerations/networking-options.md)|
+|Síť|Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.|[Rozhodnutí o síti](../considerations/networking-options.md)|
 |Identita|Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory.|[Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
-|Zásady|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
+|Zásada|Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.|         |
 |Návrh předplatného|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)|
 |Skupiny pro správu|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
 |Skupiny prostředků|Neuvedeno – Navrženo pro jedno produkční předplatné.|[Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|Nevztahuje se|[Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|Nevztahuje se|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
-|Standardy pojmenování a označování|Nevztahuje se|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
-|Správa nákladů|Nevztahuje se|[Sledování nákladů](../azure-best-practices/track-costs.md)|
-|Služby Compute|Nevztahuje se|[Možnosti služby Compute](../considerations/compute-options.md)|
+|Data|neuvedeno|[Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Úložiště|neuvedeno|[Pokyny k Azure Storage](../considerations/storage-options.md)         |
+|Standardy pojmenování a označování|neuvedeno|[Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)         |
+|Správa nákladů|neuvedeno|[Sledování nákladů](../azure-best-practices/track-costs.md)|
+|Compute|neuvedeno|[Možnosti služby Compute](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Přizpůsobení nebo nasazení cílové zóny z tohoto podrobného plánu
 

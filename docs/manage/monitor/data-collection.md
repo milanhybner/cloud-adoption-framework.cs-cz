@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807610"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223250"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Průvodce monitorováním cloudu: shromáždění správných dat
 
@@ -23,7 +23,7 @@ Chcete-li sledovat stav a dostupnost vašeho cloudového řešení, je nutné na
 
 Plánování monitorování a migrace je pečlivě plánováno. Začněte tím, že zahrnete vlastníka monitorovací služby, manažera provozu a další související pracovníky v průběhu plánovací fáze a v rámci cyklu vývoje a vydaných verzí pokračujete v jejich zapojení. Jejich fokus bude vyvíjet konfiguraci monitorování, která je založená na následujících kritériích:
 
-- Co je to složení služby a tyto závislosti se ještě dnes monitorují? Pokud ano, máte k dispozici několik nástrojů? Existuje možnost konsolidovat, aniž byste museli zavádět rizika?
+- Jaké je složení služby? Jsou tyto závislosti sledovány ještě dnes? Pokud ano, máte k dispozici několik nástrojů? Existuje možnost konsolidovat, aniž byste museli zavádět rizika?
 - Jaká je smlouva SLA služby a jak se dá změřit a ohlásit?
 - Jak by měl být řídicí panel služby při vyvolání incidentu stejný? Co má řídicí panel vypadat jako vlastník služby a pro tým, který podporuje službu?
 - Jaké metriky produkuje prostředek, který potřebuji monitorovat?  

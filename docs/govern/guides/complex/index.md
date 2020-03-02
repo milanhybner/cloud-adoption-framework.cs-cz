@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99f4a240f186af763c64f06aab580e5aecc4acc4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709137"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223958"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Průvodce zásadami správného řízení pro komplexní firmy
 
@@ -39,10 +39,14 @@ Následující diagram znázorňuje hierarchii MVP zásad správného řízení 
 Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a skupin prostředků měly nasazovat do vhodné oblasti. Při plánování nasazení tým zásad správného řízení v cloudu vytvoří v hierarchii potřebné uzly pro týmy přechodu na cloud.
 
 1. Pro každou obchodní jednotku definujte skupinu pro správu s podrobnou hierarchií, která odráží nejprve geografii, a pak typ prostředí (například produkční nebo neprodukční prostředí).
-2. Vytvořte produkční předplatné a neprodukční předplatné pro každou jedinečnou kombinaci diskrétní obchodní jednotky nebo zeměpisné oblasti. Vytváření více předplatných vyžaduje pečlivé zvážení. Další informace najdete v [Průvodci rozhodováním ohledně předplatného](../../../decision-guides/subscriptions/index.md).
-3. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/azure-best-practices/naming-and-tagging.md).
-4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu. Prostředky, které jsou vyvíjené společně, spravované společně a společně vyřazené, patří do stejné skupiny prostředků. Další informace o osvědčených postupech pro použití skupin prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
-5. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
+
+1. Vytvořte produkční předplatné a neprodukční předplatné pro každou jedinečnou kombinaci diskrétní obchodní jednotky nebo zeměpisné oblasti. Vytváření více předplatných vyžaduje pečlivé zvážení. Další informace najdete v [Průvodci rozhodováním ohledně předplatného](../../../decision-guides/subscriptions/index.md).
+
+1. Na všech úrovních této hierarchie seskupení používejte [konzistentní terminologii](../../../ready/azure-best-practices/naming-and-tagging.md).
+
+1. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu. Prostředky, které jsou vyvíjené společně, spravované společně a společně vyřazené, patří do stejné skupiny prostředků. Další informace o osvědčených postupech pro použití skupin prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
+
+1. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram organizace prostředků velké firmy](../../../_images/govern/large-enterprise-resource-organization.png)
 

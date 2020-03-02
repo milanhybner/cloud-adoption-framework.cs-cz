@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709341"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223871"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriky, ukazatele a tolerance standardních hodnot identity
 
@@ -53,7 +53,7 @@ Jakmile budete mít základnu, stanovte minimální srovnávací testy představ
 - **Aktivační událost federace** Společnost implementující federaci identit se standardními systémy standardních identit _x_ (identity) může těžit z investice do směrného plánu identity, aby bylo zajištěno konzistentní zásady organizace napříč členy federace.
 - **Aktivační událost zvýšeného přístupu.** Společnost s více než _x%_ uživatelů se zvýšenými oprávněními k nástrojům pro správu a prostředkům by měla zvážit investování do směrného plánu identity, aby se minimalizovalo riziko neúmyslného nadměrného přestavení přístupu uživatelům.
 - **Aktivační událost RBAC** Společnost s v rámci _x%_ prostředků, které používají metody řízení přístupu na základě rolí, by měla zvážit investování do směrného plánu identity, aby identifikovala optimalizované způsoby přiřazování přístupu uživatelů k prostředkům.
-- **Aktivační událost při selhání ověřování.** Společnost, kde selhání ověřování reprezentuje více než _x%_ pokusů, by měla investovat do směrného plánu identity, aby se zajistilo, že metody ověřování nejsou v oblasti externích útoků a že uživatelé mohou správně používat metody ověřování.
+- **Aktivační událost při selhání ověřování.** Společnost, kde selhání ověřování reprezentuje více než _x%_ pokusů, by měla investovat do směrného plánu identity, aby se zajistilo, že metody ověřování nejsou v rámci externích útoků a že uživatelé se mohou správně ověřit.
 - **Aktivační událost při selhání autorizace** Společnost, kde jsou pokusy o přístup odmítnuty více než _x%_ času, by měly investovat do směrného plánu identity, aby se zlepšila aplikace a aktualizovala řízení přístupu a identifikovala potenciálně škodlivé pokusy o přístup.
 - **Došlo k ohrožení zabezpečení triggeru účtu.** Společnost s více než 1 ohroženým účtem by měla investovat do směrného plánu identity, aby vylepšila sílu a zabezpečení ověřovacích mechanismů a vylepšila mechanismy, aby opravila rizika související s ohroženými účty.
 

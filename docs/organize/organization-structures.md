@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173400"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222222"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Vytvořit týmové struktury
 
 Všechny funkce cloudu poskytuje někdo při každém úsilí o přijetí do cloudu. Tato přiřazení a týmové struktury mohou být vyvíjeny organicky, nebo mohou být záměrně navrženy tak, aby odpovídaly definované struktuře týmu.
@@ -60,7 +62,7 @@ V následujících částech jsou popsány plně personální a prověřené org
 
 ## <a name="central-it"></a>Centrální IT
 
-V rámci škálování přijetí se tým zásad správného řízení cloudu může bojovat, aby se zajistilo, že bude postupovat od několika týmů při přijímání inovací. To platí zejména v prostředích, která mají vysoké požadavky na dodržování předpisů, operace nebo zabezpečení. V této fázi je běžné, že společnosti přesouvá odpovědnost za Cloud do stávajícího centrálního IT týmu. Pokud je tento tým schopný rehodnotit nástroje, procesy a lidi, aby lépe podporovaly přijímání do cloudu ve velkém měřítku, včetně centrálního IT týmu může přidat významnou hodnotu. Díky tomu, že odborníci na danou problematiku z provozu, automatizaci, zabezpečení a správu modernizovat centrální IT oddělení IT můžou řídit účinné provozní inovace.
+V rámci škálování přijetí se tým zásad správného řízení cloudu může bojovat, aby se zajistilo, že bude postupovat od několika týmů při přijímání inovací. To platí zejména v prostředích, která mají vysoké požadavky na dodržování předpisů, operace nebo zabezpečení. V této fázi je běžné, že společnosti přesouvá odpovědnost za Cloud do stávajícího centrálního IT týmu. Pokud může tento tým přehodnotit nástroje, procesy a lidi, aby lépe podporovaly přijetí do cloudu ve velkém měřítku, včetně centrálního IT týmu může přidat významnou hodnotu. Díky tomu, že odborníci na danou problematiku z provozu, automatizaci, zabezpečení a správu modernizovat centrální IT oddělení IT můžou řídit účinné provozní inovace.
 
 ![Přechod do cloudu s centrálním IT modelem](../_images/ready/org-ready-central-it.png)
 

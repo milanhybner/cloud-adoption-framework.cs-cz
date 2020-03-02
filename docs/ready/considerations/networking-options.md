@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799127"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225368"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>Kontrola možností sítě
 
 Návrh a implementace síťových funkcí Azure představuje důležitou součást vašeho úsilí o přechod na cloud. Budete muset přijmout taková rozhodnutí o návrhu sítě, aby správně podporovala úlohy a služby, které budou hostovány v cloudu. Síťové produkty a služby Azure podporují širokou škálu síťových funkcí. To, jak strukturujete tyto služby a zvolené síťové architektury, závisí na požadavcích vaší organizace na úlohy, zásady správného řízení a připojení.
@@ -72,14 +74,14 @@ Poté, co identifikujete síťové služby Azure, které potřebujete pro podpor
 
 V následující tabulce najdete přehled hlavních scénářů, které tyto vzory podporují:
 
-| **Scénář** | **Doporučená síťová architektura**
-| --- | --- |
-| Všechny úlohy hostované v Azure nasazené do vašeho cílového prostředí budou zcela PaaS, nevyžadují virtuální síť a nejsou součástí širšího úsilí o přechod na cloud, které bude zahrnovat prostředky IaaS. | [Jenom PaaS](../../decision-guides/software-defined-network/paas-only.md) |
-| Vaše úlohy hostované v Azure nasadí prostředky založené na IaaS, jako jsou virtuální počítače, nebo jinak vyžadují virtuální síť, ale nevyžadují připojení k vašemu místnímu prostředí. | [Model nativní pro cloud](../../decision-guides/software-defined-network/cloud-native.md) |
-| Vaše úlohy hostované v Azure vyžadují omezený přístup k místním prostředkům, cloudová připojení je ale nutné považovat za nedůvěryhodná. | [DMZ v cloudu](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Vaše úlohy hostované v Azure vyžadují omezený přístup k místním prostředkům a máte v úmyslu implementovat vyspělé zásady zabezpečení a zabezpečené propojení mezi cloudem a místním prostředím. | [Hybridní model](../../decision-guides/software-defined-network/hybrid.md) |
-| Potřebujete nasadit a spravovat velký počet virtuálních počítačů a úloh, potenciálně překračující [omezení předplatného Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), potřebujete sdílet služby napříč předplatnými nebo potřebujete více segmentovanou strukturu pro oddělení rolí, aplikací nebo oprávnění. | [Hvězdicová architektura](../../decision-guides/software-defined-network/hub-spoke.md) |
-| Máte mnoho poboček, které je třeba propojit navzájem a s Azure. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **Scénář**                                                                                                                                                                                                                                                                                                                        | **Doporučená síťová architektura**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Všechny úlohy hostované v Azure nasazené do vaší cílové zóny budou zcela PaaS, nevyžadují virtuální síť a nejsou součástí širšího úsilí o přijetí cloudu, které zahrnuje prostředky IaaS.                                                                                                                        | [Jenom PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
+| Vaše úlohy hostované v Azure nasadí prostředky založené na IaaS, jako jsou virtuální počítače, nebo jinak vyžadují virtuální síť, ale nevyžadují připojení k vašemu místnímu prostředí.                                                                                                                                          | [Model nativní pro cloud](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Vaše úlohy hostované v Azure vyžadují omezený přístup k místním prostředkům, cloudová připojení je ale nutné považovat za nedůvěryhodná.                                                                                                                                                                                           | [DMZ v cloudu](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Vaše úlohy hostované v Azure vyžadují omezený přístup k místním prostředkům a máte v úmyslu implementovat vyspělé zásady zabezpečení a zabezpečené propojení mezi cloudem a místním prostředím.                                                                                                                         | [Hybridní model](../../decision-guides/software-defined-network/hybrid.md)                  |
+| Potřebujete nasadit a spravovat velký počet virtuálních počítačů a úloh, potenciálně překračující [omezení předplatného Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), potřebujete sdílet služby napříč předplatnými nebo potřebujete více segmentovanou strukturu pro oddělení rolí, aplikací nebo oprávnění. | [Hvězdicová architektura](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| Máte mnoho poboček, které je třeba propojit navzájem a s Azure.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Virtuální datové centrum Azure
 

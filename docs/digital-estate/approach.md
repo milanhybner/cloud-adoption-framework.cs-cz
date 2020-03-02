@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170033"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222627"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Přístupy k plánování digitálních aktiv
 
@@ -23,7 +23,7 @@ Plánování digitálních nemovitostí může v závislosti na požadovaných v
 
 Přístup k vyhodnocování shora dolů vyhodnocuje aspekty zabezpečení. Zabezpečení zahrnuje kategorizaci dat (vysoký, střední nebo nízký dopad na firmu), požadavky na dodržování předpisů, svrchovanost a bezpečnostní riziko. Tento přístup vyhodnocuje složitost architektury na vysoké úrovni. Vyhodnocuje aspekty, jako je ověřování, datová struktura, požadavky na latenci, závislosti a očekávané životního cyklu aplikace.
 
-Přístup shora dolů také měří provozní požadavky aplikace, jako jsou úrovně služeb, integrace, časová období údržby, monitorování a přehled. Až se všechny tyto aspekty analyzují a berou v úvahu, výsledný výsledek odráží relativní obtížnost migrace této aplikace na každou cloudovou platformu: IaaS, PaaS a SaaS.
+Přístup shora dolů také měří provozní požadavky aplikace, jako jsou úrovně služeb, integrace, časová období údržby, monitorování a přehled. Až budou tyto aspekty analyzovány a zváženy, výsledné skóre odráží relativní obtížnost migrace této aplikace na každou cloudovou platformu: IaaS, PaaS a SaaS.
 
 Kromě toho posouzení shora dolů vyhodnocuje finanční přínosy aplikace, jako je provozní efektivita, celkové náklady na vlastnictví, návratnost investic a další vhodné finanční metriky. Posouzení také prověřuje sezónnost aplikace (například v případě špičky poptávky v roce) a celkové zátěžové zátěže.
 

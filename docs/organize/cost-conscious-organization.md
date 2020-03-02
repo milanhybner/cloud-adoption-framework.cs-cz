@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800895"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225387"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Sestavení organizace s důrazem na náklady
 
@@ -45,7 +45,7 @@ Následující části popisují role, které tým *cloudové strategie*, *tým 
 
 - **Zodpovědnost:** Rozpočty by měly být navázány mezi cloudovou strategií, zásadami [správného řízení cloudu](./cloud-governance.md)a týmy pro [přijetí cloudu](./cloud-adoption.md) na základě očekávaných aktivit přijetí. Pokud dojde ke odchylka od rozpočtu, tým cloudové strategie a tým zásad správného řízení cloudu musí být partnerem, aby rychle určili, co je nejlepší postup k nápravě odchylek.
 
-- **Optimalizace:** Během optimalizace může tým cloudové strategie představovat investici a vrátit hodnotu konkrétních úloh. Pokud má úloha strategickou hodnotu nebo finanční dopad na firmu, je potřeba monitorovat úsilí v rámci optimalizace nákladů pečlivě. Pokud se nejedná o strategický dopad na organizaci a žádné podstatné náklady na špatný výkon úlohy, tým cloudové strategie může tuto neplatnou optimalizaci schválit. Aby bylo možné řídit tato rozhodnutí, tým musí být schopný zobrazit náklady na rozsah jednotlivých projektů.
+- **Optimalizace:** Během optimalizace může tým cloudové strategie představovat investici a vrátit hodnotu konkrétních úloh. Pokud má úloha strategickou hodnotu nebo finanční dopad na firmu, je potřeba monitorovat úsilí v rámci optimalizace nákladů pečlivě. Pokud se nejedná o strategický dopad na organizaci a žádné podstatné náklady na špatný výkon úlohy, tým cloudové strategie může schválit optimalizaci. Aby bylo možné řídit tato rozhodnutí, tým musí být schopný zobrazit náklady na rozsah jednotlivých projektů.
 
 ## <a name="cloud-adoption-team"></a>Tým přijetí cloudu
 

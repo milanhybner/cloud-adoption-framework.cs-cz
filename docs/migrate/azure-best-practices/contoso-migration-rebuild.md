@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807491"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223091"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Opětovné sestavení místní aplikace v Azure
 
 Tento článek ukazuje, jak fiktivní společnost Contoso v rámci migrace do Azure opětovně sestaví dvouvrstvou aplikaci platformy Windows .NET, která běží na virtuálních počítačích VMware. Contoso migruje virtuální počítač front-endu aplikace do webové aplikace služby Azure App Service. Back-end aplikace je sestaven pomocí mikroslužeb nasazených do kontejnerů spravovaných službou Azure Kubernetes Service (AKS). Web komunikuje se službou Azure Functions, která poskytuje funkci pro zpracování fotek domácích zvířat.
 
-Aplikace SmartHotel360 použitá v tomto příkladu je k dispozici jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
+Aplikace SmartHotel360 použitá v tomto příkladu je poskytována jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
 
 ## <a name="business-drivers"></a>Obchodní faktory
 
@@ -27,7 +29,7 @@ Tým vedení IT těsně spolupracoval s partnery ve firmě, aby zjistil, čeho c
 
 - **Řešení obchodního růstu.** Společnost Contoso roste a chce na webech společnosti Contoso zákazníkům poskytovat diferencovaná prostředí.
 - **Agilita.** K zajištění úspěchu v globální ekonomice je nutné, aby společnost Contoso dokázala reagovat rychleji, než jak dochází ke změnám na trhu.
-- **Škálování** Společnost Contoso úspěšně roste a její tým IT musí poskytovat systémy, které jsou schopné růst stejným tempem.
+- **Škálování** Vzhledem k tomu, že se podnikání úspěšně roste, musí IT tým společnosti Contoso poskytovat systémy, které mohou růst ve stejném tempu.
 - **Snížení nákladů.** Společnost Contoso chce minimalizovat náklady na licencování.
 
 ## <a name="migration-goals"></a>Cíle migrace
@@ -51,9 +53,9 @@ Po specifikaci cílů a požadavků společnost Contoso navrhne a zkontroluje ř
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
-- Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
-- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
+- Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
+- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
 
@@ -75,8 +77,8 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 
 **Aspekty** | **Podrobnosti**
 --- | ---
-**Výhody** | Použití modelu PaaS a bezserverového řešení pro kompletní nasazení významně zkracuje čas potřebný pro správu, kterou společnost Contoso musí poskytovat.<br/><br/> Přechod na architekturu s mikroslužbami umožní společnosti Contoso řešení postupně snadno rozšiřovat.<br/><br/> Nové funkce je možné zprovoznit online, aniž by došlo k narušení základů kódu existujících řešení.<br/><br/> Webová aplikace bude nakonfigurována s několika instancemi bez kritického prvku způsobujícího selhání.<br/><br/> Bude povolené automatické škálování, aby aplikace mohla zpracovávat různé objemy přenosů dat.<br/><br/> Díky přechodu na služby PaaS může společnost Contoso vyřadit z provozu zastaralá řešení spouštěná v operačním systému Windows Server 2008 R2.<br/><br/> Databáze Cosmos DB má integrovanou odolnost proti chybám, která nevyžaduje žádné konfigurování ze strany společnosti Contoso. To znamená, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
+**Výhody** | Použití modelu PaaS a bezserverového řešení pro kompletní nasazení významně zkracuje čas potřebný pro správu, kterou společnost Contoso musí poskytovat.<br/><br/> Přechod na architekturu mikroslužeb umožňuje společnosti Contoso snadné rozšiřování řešení v průběhu času.<br/><br/> Nové funkce je možné zprovoznit online, aniž by došlo k narušení základů kódu existujících řešení.<br/><br/> Webová aplikace bude nakonfigurována s několika instancemi bez kritického prvku způsobujícího selhání.<br/><br/> Bude povolené automatické škálování, aby aplikace mohla zpracovávat různé objemy přenosů dat.<br/><br/> Díky přechodu na služby PaaS může společnost Contoso vyřadit z provozu zastaralá řešení spouštěná v operačním systému Windows Server 2008 R2.<br/><br/> Databáze Cosmos DB má integrovanou odolnost proti chybám, která nevyžaduje žádné konfigurování ze strany společnosti Contoso. To znamená, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -97,7 +99,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Zjednodušuje správu, nasazení a provoz prostředí Kubernetes. Poskytuje plně spravovanou službu orchestrace kontejnerů Kubernetes. | AKS je bezplatná služba. Platíte jenom za virtuální počítače a spotřebované přidružené prostředky úložišť a síťové prostředky. [Další informace](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Urychluje vývoj pomocí bezserverového výpočetního prostředí založeného na událostech. Umožňuje škálování na vyžádání. | Platíte jenom za spotřebované prostředky. Plán se účtuje v závislosti na využití prostředků za sekundu a počtu spuštění. [Další informace](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Ukládá image pro všechny typy kontejnerových nasazení. | Náklady závisí na funkcích, úložišti a délce využití. [Další informace](https://azure.microsoft.com/pricing/details/container-registry).
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Využijte možnost rychlého sestavení, nasazení a škálování webových, mobilních a API aplikací na podnikové úrovni, které běží na libovolné platformě. | Plány služby App Service se účtují po sekundách. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Umožňuje rychlé sestavení, nasazení a škálování webových, mobilních a API aplikací na podnikové úrovni, které běží na libovolné platformě. | Plány služby App Service se účtují po sekundách. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -108,7 +110,7 @@ Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje:
 **Požadavky** | **Podrobnosti**
 --- | ---
 **Předplatné Azure** | Společnost Contoso vytvořila předplatná v jednom z předchozích článků. Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Pokud vytvoříte bezplatný účet, jste správcem vašeho předplatného a můžete provádět všechny akce.<br/><br/> Pokud používáte existující předplatné a nejste správcem, musíte správce požádat, aby vám udělil oprávnění Vlastník nebo Přispěvatel.
-**Infrastruktura Azure** | [Přečtěte si](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavila infrastrukturu Azure.
+**Infrastruktura Azure** | [Přečtěte si víc](./contoso-migration-infrastructure.md) o tom, jak společnost Contoso nastavuje infrastrukturu Azure.
 **Požadavky na vývojáře** | Společnost Contoso potřebuje na vývojářské pracovní stanici následující nástroje:<br/><br/> - [Visual Studio 2017 Community Edition: verze 15,5](https://www.visualstudio.com)<br/><br/> Povolené úlohy .NET<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) nebo Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) nastavený pro použití kontejnerů Windows.
 
 <!-- markdownlint-enable MD033 -->
@@ -178,7 +180,7 @@ Správci společnosti Contoso zřídí tyto služby takto:
 
 9. Po dokončení nasazování nainstalují nástroj příkazového řádku **kubectl**. V Azure CloudShell je tento nástroj už nainstalovaný.
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Správci společnosti Contoso zřídí tyto služby takto:
 
 11. Spuštěním následujícího příkazu spustí řídicí panel Kubernetes:
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -244,7 +246,7 @@ Společnost Contoso vytvoří projekt Azure DevOps, nakonfiguruje sestavení CI,
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
-12. Znovu zadají soubor do souboru docker-compose.yaml, vyberou **Push service images** (Nasdílet image služeb) a zahrnou nejnovější značku. Když se akce změní na **Push service images** (Nasdílet image služeb), změní se název úlohy Azure DevOps na **Push services automatically** (Sdílet služby automaticky).
+12. Znovu zadají soubor do souboru Docker-tváře. yaml a pak vyberte **Image nabízených služeb** a zahrňte nejnovější značku. Když se akce změní na **Push service images** (Nasdílet image služeb), změní se název úlohy Azure DevOps na **Push services automatically** (Sdílet služby automaticky).
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -269,10 +271,11 @@ S vytvořeným clusterem služby AKS a sestavenými imagemi Dockeru teď správc
 
 Postup nasazení:
 
-1. Otevřou Developer Command Prompt a použijí příkaz „az login“ pro příslušné předplatné Azure.
+1. Otevřete příkazový řádek pro vývojáře a použijte příkaz `az login` pro předplatné Azure.
+
 2. Zadáním následujícího příkazu nasadí pomocí souboru deploy.cmd prostředky Azure do skupiny prostředků ContosoRG a oblasti EUS2:
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -353,7 +356,7 @@ Pokyny v této části používají úložiště [SmartHotel360-public-web](http
 
 ### <a name="create-blob-storage-containers"></a>Vytvoření kontejnerů služby Blob Storage
 
-1. Na webu Azure Portal otevřou vytvořený účet úložiště a vyberou **Objekty blob**.
+1. V Azure Portal otevřete účet úložiště, který jste vytvořili, a pak vyberte **objekty blob**.
 2. Vytvoří nový kontejner (**Pets** – domácí zvířata) s úrovní veřejného přístupu nastavenou na kontejner. Uživatelé budou do tohoto kontejneru odesílat fotky svých domácích zvířat.
 
     ![Objekt blob úložiště](./media/contoso-migration-rebuild/blob1.png)
@@ -374,7 +377,7 @@ Správci společnosti Contoso zřídí databázi Cosmos, která se bude použív
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. Zadají název (**contosomarthotel**), vyberou rozhraní SQL API a umístí ho do produkční skupiny prostředků ContosoRG v hlavní oblasti Východní USA 2.
+2. Určí název (**contososmarthotel**), vyberte rozhraní SQL API a umístěte ho do skupiny produkčních prostředků ContosoRG v oblasti Main východní USA 2.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -394,7 +397,7 @@ Správci společnosti Contoso zřídí rozhraní API pro počítačové zpracov�
 
      ![Computer Vision](./media/contoso-migration-rebuild/vision1.png)
 
-2. Zřídí rozhraní API (**smarthotelpets**) ve skupině produkčních prostředků ContosoRG v hlavní oblasti Východní USA 2.
+2. Zřídí rozhraní API (**smarthotelpets**) ve skupině produkčních prostředků ContosoRG v hlavní oblasti USA – východ 2.
 
     ![Computer Vision](./media/contoso-migration-rebuild/vision2.png)
 
@@ -428,7 +431,7 @@ Správci společnosti Contoso zřídí na webu Azure Portal aplikaci funkcí.
 
    ![Vytvoření aplikace funkcí](./media/contoso-migration-rebuild/function-app1.png)
 
-2. Zadají název aplikace (**smarthotelpetchecker**). Aplikaci umístí do produkční skupiny prostředků **ContosoRG**. Jako hostitelské místo nastaví **Plán Consumption** a umístí aplikaci do oblasti Východní USA 2. Vytvoří se nový účet úložiště společně s instancí Application Insights pro monitorování.
+2. Zadají název aplikace (**smarthotelpetchecker**). Aplikaci umístí do produkční skupiny prostředků **ContosoRG**. Jako hostitelské místo nastaví **Plán Consumption** a umístí aplikaci do oblasti USA – východ 2. Vytvoří se nový účet úložiště společně s instancí Application Insights pro monitorování.
 
    ![Nastavení aplikace funkcí](./media/contoso-migration-rebuild/function-app2.png)
 
@@ -493,9 +496,9 @@ Správci společnosti Contoso teď můžou web publikovat.
 
     ![Nastavení kanálu](./media/contoso-migration-rebuild/vsts-publishfront2.png)
 
-5. V části **Triggers** (Aktivační události) povolí kontinuální integraci a přidají hlavní větev. Tím je zajištěno, že pokaždé, když bude mít dané řešení nový kód, který se zapíše do hlavní větve, spustí se kanál buildu.
+5. V části **Aktivační události** povolí kontinuální integraci a přidají hlavní větev. Tím je zajištěno, že pokaždé, když bude mít dané řešení nový kód, který se zapíše do hlavní větve, spustí se kanál buildu.
 
-    ![Nepřetržitá integrace](./media/contoso-migration-rebuild/vsts-publishfront3.png)
+    ![Kontinuální integrace](./media/contoso-migration-rebuild/vsts-publishfront3.png)
 
 6. Výběrem **Save & Queue** (Uložit a zařadit do fronty) spustí sestavení.
 7. Po dokončení sestavení nakonfigurují kanál verze pomocí **nasazení Azure App Service**.
@@ -509,7 +512,7 @@ Správci společnosti Contoso teď můžou web publikovat.
 
 10. Vyberou ikonu blesku na artefaktu a povolí průběžné nasazování.
 
-    ![Nepřetržité nasazování](./media/contoso-migration-rebuild/vsts-publishfront6.png)
+    ![Průběžné nasazování](./media/contoso-migration-rebuild/vsts-publishfront6.png)
 11. V části **Environment** (Prostředí) vyberou **1 job, 1 task** (1 úloha, 1 úkol) v části **Staging** (Pracovní fáze).
 12. Po výběru předplatného a názvu aplikace otevřou úlohu **Deploy Azure App Service** (Nasadit službu Azure App Service). Nasazení je nakonfigurované tak, aby používalo slot pro nasazení **Staging**. Tím se v tomto slotu automaticky sestaví kód pro kontrolu a schválení.
 
@@ -520,7 +523,7 @@ Správci společnosti Contoso teď můžou web publikovat.
     ![Nové prostředí](./media/contoso-migration-rebuild/vsts-publishfront8.png)
 
 14. Vyberou **Azure App Service deployment with slot** (Nasazení služby Azure App Service se slotem) a prostředí pojmenují **Prod**.
-15. Vyberou **1 job, 2 task** (1 úloha, 2 úkoly) a vyberou předplatné, název služby aplikace a slot **Staging**.
+15. Vyberou **1 úlohu, 2 úlohy**a pak vyberte předplatné, název služby App Service a **přípravný** slot.
 
     ![Název prostředí](./media/contoso-migration-rebuild/vsts-publishfront10.png)
 
@@ -565,12 +568,12 @@ Správci společnosti Contoso nasadí aplikaci následujícím způsobem.
     ![Nasazení funkce](./media/contoso-migration-rebuild/function5.png)
 
 4. Potvrdí kód, synchronizují ho zpátky do Azure DevOps a nasdílí tak své změny.
-5. Přidají nový kanál buildu a jako zdroj vyberou **Azure DevOps Git**.
+5. Přidávají nový kanál sestavení a pak pro zdroj vyberte **Azure DevOps Git** .
 6. Vyberou šablonu **ASP.NET Core (.NET Framework)** .
 7. Přijmou výchozí nastavení šablony.
-8. V části **Triggers** (Aktivační události) pak vyberou **Enable continuous integration** (Povolit kontinuální integraci) a výběrem **Save & Queue** (Uložit a umístit do fronty) spustí sestavení.
+8. V **aktivačních událostech**vyberte, pokud chcete **Povolit průběžnou integraci**, a pak vyberte **Uložit & frontu** a spusťte sestavení.
 9. Po úspěšném vytvoření sestavení sestaví kanál buildu a přidají **Azure App Service deployment with slot** (Nasazení služby Azure App Service se slotem).
-10. Prostředí pojmenují jako **Prod** a vyberou předplatné. V poli **App type** (Typ aplikace) nastaví **Function App** (Aplikace funkcí) a jako název služby aplikace zadají **smarthotelpetchecker**.
+10. Pojmenuje **produkční**prostředí a pak vybere předplatné. V poli **App type** (Typ aplikace) nastaví **Function App** (Aplikace funkcí) a jako název služby aplikace zadají **smarthotelpetchecker**.
 
     ![Function App](./media/contoso-migration-rebuild/petchecker2.png)
 
@@ -578,7 +581,7 @@ Správci společnosti Contoso nasadí aplikaci následujícím způsobem.
 
     ![Artefakt](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. Povolí **Continuous deployment trigger** (Aktivace průběžného nasazování) a vyberou **Save** (Uložit).
+12. Povolují **Trigger průběžného nasazování**a pak vyberte **Uložit**.
 13. Výběrem **Queue new build** (Zařadit nové sestavení do fronty) spustí úplný kanál CI/CD.
 14. Jakmile je funkce nasazená, zobrazí se na webu Azure Portal se stavem **Running** (Spuštěno).
 
@@ -598,7 +601,7 @@ Správci společnosti Contoso nasadí aplikaci následujícím způsobem.
 
     ![Nasazení funkce](./media/contoso-migration-rebuild/function9.png)
 
-## <a name="review-the-deployment"></a>Kontrola nasazení
+## <a name="review-the-deployment"></a>Revize nasazení
 
 Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso plně zprovoznit a zabezpečit novou infrastrukturu.
 
@@ -610,16 +613,16 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 ### <a name="backups-and-disaster-recovery"></a>Zálohování a zotavení po havárii
 
-- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Společnost Contoso by měla zvážit implementaci skupin pro převzetí služeb SQL při selhání a zajistit tak regionální převzetí služeb při selhání databáze. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Společnost Contoso může použít geografickou replikaci skladové položky ACR Premium. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
-- Databáze Cosmos DB se zálohuje automaticky. Společnost Contoso může získat [další informace](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) o tomto procesu.
+- Cosmos DB se zálohuje automaticky. Společnost Contoso může získat [další informace](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) o tomto procesu.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

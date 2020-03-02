@@ -1,6 +1,6 @@
 ---
 title: Co je klasifikace dat?
-description: Použijte klasifikaci dat jako výchozí bod zásad správného řízení pro Cloud tím, že určíte a přiřadíte hodnotu datům vaší organizace.
+description: Klasifikace dat umožňuje určit a přiřadit hodnotu datům vaší organizace a poskytuje běžný výchozí bod pro řízení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706689"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223787"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>Co je klasifikace dat?
 
-Klasifikace dat umožňuje určit a přiřadit hodnotu datům vaší organizace a je běžným výchozím bodem pro řízení. Proces klasifikace dat kategorizuje data podle citlivosti a dopadu na firmu, aby bylo možné identifikovat rizika. Když jsou data klasifikována, můžete je spravovat způsobem, který chrání citlivá nebo důležitá data proti krádeži nebo ztrátě.
+Klasifikace dat umožňuje určit a přiřadit hodnotu datům vaší organizace a poskytuje běžný výchozí bod pro řízení. Proces klasifikace dat kategorizuje data podle citlivosti a dopadu na firmu, aby bylo možné identifikovat rizika. Když jsou data klasifikována, můžete je spravovat způsobem, který chrání citlivá nebo důležitá data proti krádeži nebo ztrátě.
 
 ## <a name="understand-data-risks-then-manage-them"></a>Pochopení rizik dat a jejich správa
 

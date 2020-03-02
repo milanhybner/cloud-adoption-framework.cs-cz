@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800317"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222154"
 ---
 # <a name="plan-for-cloud-adoption"></a>Plánování přijetí cloudu
 
@@ -22,7 +22,7 @@ Plán je základním požadavkem na úspěšné přijetí do cloudu. Plán přij
 
 Plány přijetí do cloudu začínají jasně definovanou strategií. Strategii by měla mít minimálně na přehled motivů, obchodních výsledků a obchodních odůvodnění pro účely přijetí cloudu. Tyto kladné návraty jsou pak vyvážené úsilím potřebným k jejich přijetí.
 
-Úsilí se začne s digitální nemovitosti (navrhovaná nebo stávající), která překládá strategii na větší hmotné úlohy a prostředky. Pak můžete tyto hmotné prvky namapovat na technickou práci. Odtud mohou pracovníci technického zpracování provádět i zkušení lidé ve správné organizační struktuře. Plán přijetí do cloudu kombinuje všechna tato témata do jednoho plánu, který je možné předpovědět, navýšit, implementovat a spravovat prostřednictvím agilních postupů pro správu projektů. Tato série článků vám pomůže vytvořit plán a nabízí několik šablon, které usnadňují práci s úlohou.
+Úsilí se začne s digitální nemovitosti (navrhovaná nebo stávající), která překládá strategii na větší hmotné úlohy a prostředky. Pak můžete tyto hmotné prvky namapovat na technickou práci. Odtud mohou pracovníci technického zpracování provádět i zkušení lidé ve správné organizační struktuře. Plán přijetí do cloudu kombinuje tato témata do jednoho plánu, který je možné předpovědět, navýšit, implementovat a spravovat prostřednictvím agilních postupů pro správu projektů. Tato série článků vám pomůže vytvořit plán a nabízí několik šablon, které usnadňují práci s úlohou.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Přechod z sekvenčního plánování na iterativní
 

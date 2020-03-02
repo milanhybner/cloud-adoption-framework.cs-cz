@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808103"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223506"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Povolit sledování a upozorňování na kritické změny
 
 Azure Change Tracking a inventář poskytují výstrahy týkající se stavu konfigurace hybridního prostředí a změny v tomto prostředí. Může ohlásit důležité změny souboru, služby, softwaru a registru, které mohou mít vliv na nasazené servery.
 
-Ve výchozím nastavení služba Azure Automation Inventory Service nemonitoruje nastavení souborů nebo registru. Řešení nabízí seznam klíčů registru, které doporučujeme monitorovat. Pokud chcete tento seznam zobrazit, přejděte na účet Automation v Azure Portal a vyberte **inventář** > **Upravit nastavení**.
+Ve výchozím nastavení služba Azure Automation Inventory Service nemonitoruje nastavení souborů nebo registru. Řešení nabízí seznam klíčů registru, které doporučujeme monitorovat. Pokud chcete tento seznam zobrazit, přejděte na účet Automation v Azure Portal a pak vyberte **inventář** > **Upravit nastavení**.
 
 ![Snímek obrazovky zobrazení inventáře Azure Automation v Azure Portal](./media/change-tracking1.png)
 

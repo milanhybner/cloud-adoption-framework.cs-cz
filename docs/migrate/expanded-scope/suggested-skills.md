@@ -3,16 +3,16 @@ title: Připravenost dovedností pro migraci do cloudu
 description: Připravenost dovedností pro migraci do cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
+ms.date: 02/25/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f24d619106674cedf12bc650cd0807e0f766e3c6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802935"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222307"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Připravenost dovedností pro migraci do cloudu
 
@@ -28,7 +28,7 @@ Implementace migračních procesů bude založena na dovednostech získaných b�
 
 Následující nástroje mohou týmu pomoci při provádění aktivit vyhodnocení:
 
-- [Vyvážení portfolia](./balance-the-portfolio.md): zajištění rovnováhy a správného rozdělení investic v rámci portfolia aplikací.
+- [Vyvážení portfolia](../../strategy/balance-the-portfolio.md): zajištění rovnováhy a správného rozdělení investic v rámci portfolia aplikací.
 - [Sestavte obchodní odůvodnění](../../strategy/cloud-migration-business-case.md): Vytvořte a pochopte obchodní odůvodnění, které řídí úsilí při migraci do cloudu.
 - [Racionalizovat se](../../digital-estate/rationalize.md)do digitální nemovitosti: racionalizovat assets.
 - [Vyhodnocení portfolia aplikací](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): kritéria pro rozhodování týkající se možností migrace nebo inovace v rámci portfolia aplikací.
@@ -49,14 +49,14 @@ Následující kurz může připravit tým na aktivity migrace:
 - [Migrace fyzických a virtuálních serverů do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight kurz migrace serverů do Azure
 - [Import a export dat do Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight kurz přesunu dat do a z Azure
 
-## <a name="optimize-and-promote-process-changes"></a>Změny procesu optimalizace a povýšení
+## <a name="optimize-and-promote-process-changes"></a>Optimalizace a propagace změn procesů
 
 Následující nástroje mohou týmu pomoct optimalizovat prostředky a zvýšit úroveň na produkční prostředí:
 
 - [Náklady a určení velikosti](../azure-best-practices/migrate-best-practices-costs.md): Úprava velikosti pro zarovnání nákladů a rozpočtů.
 - [Zvýšení úrovně zatížení](../azure-best-practices/migrate-best-practices-networking.md): Změna konfigurace sítě pro přesměrování produkčních uživatelů na migrované úlohy.
 
-## <a name="secure-and-manage-process-changes"></a>Procesní změny týkající se zabezpečení a správy
+## <a name="secure-and-manage-process-changes"></a>Zabezpečení a správa změn procesů
 
 Následující nástroje mohou týmu pomáhat při hledání způsobů zabezpečení a správy migrovaných prostředků:
 

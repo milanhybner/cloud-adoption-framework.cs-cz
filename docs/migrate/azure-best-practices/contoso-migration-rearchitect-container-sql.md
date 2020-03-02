@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807542"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223109"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
+
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Změna architektury místní aplikace na kontejner Azure a službu Azure SQL Database
 
 Tento článek ukazuje, jak fiktivní společnost Contoso v rámci migrace do Azure mění architekturu dvouúrovňové aplikace Windows .NET, která běží na virtuálních počítačích VMware. Contoso migruje front-endový virtuální počítač aplikace do kontejneru Windows v Azure a databázi aplikace do databáze Azure SQL.
 
-Aplikace SmartHotel360 použitá v tomto příkladu je k dispozici jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
+Aplikace SmartHotel360 použitá v tomto příkladu je poskytována jako open source. Pokud ji chcete použít pro vlastní testovací účely, můžete si ji stáhnout z [GitHubu](https://github.com/Microsoft/SmartHotel360).
 
 ## <a name="business-drivers"></a>Obchodní faktory
 
@@ -28,7 +30,7 @@ Tým vedení IT ve společnosti Contoso těsně spolupracoval s obchodními part
 - **Řešení obchodního růstu.** Contoso roste, čímž vzniká tlak na místní systémy a infrastrukturu.
 - **Zvýšení efektivity.** Společnost Contoso se potřebuje zbavit zbytečných postupů a zjednodušit procesy pro vývojáře i uživatele. Potřebuje IT k tomu, aby neztrácela čas ani peníze, byla rychlá a dokázala rychleji reagovat na požadavky zákazníků.
 - **Zvýšení agility.** IT ve společnosti Contoso musí pohotověji reagovat na potřeby firmy. K zajištění úspěchu v globální ekonomice je nutné, aby IT dokázalo rychleji reagovat na změny na trhu. Nesmí stát v cestě a nesmí se stát obchodní překážkou.
-- **Škálování** Contoso se úspěšně rozšiřuje a IT musí poskytovat systémy, které jsou schopné rozvíjet se stejným tempem.
+- **Škálování** Společnost Contoso musí poskytovat systémy, které mohou růst ve stejném tempu, protože firma se úspěšně zvětšuje.
 - **Snížení nákladů.** Společnost Contoso chce minimalizovat náklady na licencování.
 
 ## <a name="migration-goals"></a>Cíle migrace
@@ -39,7 +41,7 @@ Tým pro přechod společnosti Contoso na cloud přesně specifikoval cíle tét
 
 **Cíle** | **Podrobnosti**
 --- | ---
-**Požadavky na aplikaci** | Aplikace v Azure bude nadále stejně důležitá, jako je dnes.<br/><br/> Měla by mít stejné výkonové možnosti, jako má v současnosti ve VMware.<br/><br/> Společnost Contoso chce přestat podporovat Windows Server 2008 R2, na kterém teď tato aplikace běží, a je ochotná do ní investovat.<br/><br/> Contoso chce přejít z SQL Serveru 2008 R2 na moderní databázovou platformu PaaS a minimalizovat tak nutnost správy.<br/><br/> Contoso chce využít investici do licencování SQL Serveru a Software Assurance, kdykoli je to možné.<br/><br/> Contoso chce mít možnost vertikálně navýšit kapacitu webové vrstvy aplikace.
+**Požadavky na aplikaci** | Aplikace v Azure bude nadále stejně důležitá, jako je dnes.<br/><br/> Měla by mít stejné výkonové možnosti, jako má v současnosti ve VMware.<br/><br/> Společnost Contoso chce zastavit podporu systému Windows Server 2008 R2, který aktuálně hostuje aplikaci, a společnost Contoso je ochotna investovat do aplikace.<br/><br/> Společnost Contoso se chce přesunout od SQL Server 2008 R2 až po moderní, spravovanou databázovou platformu, která minimalizuje nutnost správy.<br/><br/> Contoso chce využít investici do licencování SQL Serveru a Software Assurance, kdykoli je to možné.<br/><br/> Společnost Contoso chce škálovat webovou vrstvu aplikace podle potřeby.
 **Omezení** | Tato aplikace se skládá z aplikace v ASP.NET a služby WCF běžící na stejném virtuálním počítači. Contoso ji chce rozdělit do dvou webových aplikací s využitím Azure App Service.
 **Požadavky na Azure** | Společnost Contoso chce přesunout aplikaci do Azure, spouštět ji v kontejneru a prodloužit tak její životní cyklus. Při implementaci aplikace v Azure nechce začínat úplně od začátku.
 **DevOps** | Společnost Contoso chce přejít na model DevOps a pro buildy kódu a verzí využívat Azure DevOps Services.
@@ -54,9 +56,9 @@ Po dokončení podrobné specifikace cílů a požadavků Contoso navrhne a zkon
 
 - Místní aplikace SmartHotel360 je rozvrstvená na dva virtuální počítače (WEBVM a SQLVM).
 - Tyto virtuální počítače jsou umístěné na hostiteli VMware ESXi **contosohost1.contoso.com** (verze 6.5).
-- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) spuštěný na virtuálním počítači.
-- Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
-- Po dokončení migrace budou místní virtuální počítače v datacentru společnosti Contoso vyřazeny z provozu.
+- Správu prostředí VMware zajišťuje vCenter Server 6.5 (**vcenter.contoso.com**) provozovaný na virtuálním počítači.
+- Společnost Contoso má místní datacentrum (contoso-datacenter) s místním řadičem domény (**contosodc1**).
+- Po dokončení migrace se místní virtuální počítače v datacentru Contoso vyřadí z provozu.
 
 ### <a name="proposed-architecture"></a>Navrhovaná architektura
 
@@ -81,16 +83,19 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Pro migraci do Azure Service Fabric bude potřeba měnit kód aplikace SmartHotel360. Pokud se ale pro tyto změny použijí nástroje sady Service Fabric SDK, požadované úsilí bude minimální.<br/><br/> Díky přechodu na Service Fabric může společnost Contoso začít vyvíjet mikroslužby, které se dají do aplikace rychle přidávat bez ohrožení původního základu kódu.<br/><br/> Kontejnery Windows nabízejí stejné výhody jako kontejnery obecně. Vylepšují flexibilitu, přenositelnost a možnosti řízení.<br/><br/> Contoso může využít své investice do Software Assurance pomocí programu Zvýhodněné hybridní využití Azure pro SQL Server i Windows Server.<br/><br/> Po dokončení migrace už nebude potřeba podporovat Windows Server 2008 R2. [Další informace](https://support.microsoft.com/lifecycle).<br/><br/> Contoso může nakonfigurovat webovou vrstvu aplikace s využitím několika instancí, takže už nebude kritickým prvkem způsobujícím selhání.<br/><br/> Už nebude záviset na zastarávajícím SQL Serveru 2008 R2.<br/><br/> SQL Database podporuje technické požadavky společnosti Contoso. Správci Contoso vyhodnotili místní databázi pomocí Data Migration Assistanta a zjistili, že je kompatibilní.<br/><br/> SQL Database má integrovanou odolnost proti chybám, kterou Contoso nemusí nastavovat. Tím se zajistí, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso navýšit své znalosti, aby chápal Azure, kontejnery a mikroslužby pro aplikaci a dokázal je podporovat.<br/><br/> Pokud společnost Contoso používá Data Migration Assistant místo Azure Database Migration Service k migraci databáze, nebude mít infrastrukturu připravenou pro migraci databází se škálováním.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso navýšit své znalosti, aby chápal Azure, kontejnery a mikroslužby pro aplikaci a dokázal je podporovat.<br/><br/> Pokud společnost Contoso používá Data Migration Assistant místo Azure Database Migration Service k migraci databáze, nebude mít infrastrukturu připravenou pro migraci databází se škálováním.
 
 <!-- markdownlint-enable MD033 -->
 
 ### <a name="migration-process"></a>Proces migrace
 
 1. Společnost Contoso zřídí cluster služby Azure Service Fabric pro Windows.
-2. Zřídí instanci SQL Azure a migruje do ní databázi SmartHotel360.
-3. Společnost Contoso převede virtuální počítač webové vrstva na kontejner Docker s využitím nástrojů sady Service Fabric SDK.
-4. Připojí cluster Service Fabric a ACR a nasadí aplikaci pomocí služby Azure Service Fabric.
+
+1. Zřídí instanci SQL Azure a migruje do ní databázi SmartHotel360.
+
+1. Společnost Contoso převede virtuální počítač webové vrstva na kontejner Docker s využitím nástrojů sady Service Fabric SDK.
+
+1. Připojí cluster Service Fabric a ACR a nasadí aplikaci pomocí služby Azure Service Fabric.
 
     ![Proces migrace](./media/contoso-migration-rearchitect-container-sql/migration-process.png)
 
@@ -142,24 +147,25 @@ Správci společnosti Contoso zřídí databázi SQL Azure.
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql1.png)
 
-2. Zadají název databáze, který odpovídá databázi spuštěné na místním virtuálním počítači (**SmartHotel.Registration**). Umístí tuto databázi do skupiny prostředků ContosoRG. Jedná se o skupinu prostředků, kterou používají pro produkční prostředky v Azure.
+1. Zadají název databáze, který odpovídá databázi spuštěné na místním virtuálním počítači (**SmartHotel.Registration**). Umístí tuto databázi do skupiny prostředků ContosoRG. Jedná se o skupinu prostředků, kterou používají pro produkční prostředky v Azure.
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql2.png)
 
-3. V primární oblasti nastaví novou instanci SQL Serveru (**sql-smarthotel-eus2**).
+1. V primární oblasti nastaví novou instanci SQL Serveru (**sql-smarthotel-eus2**).
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql3.png)
 
-4. Nastaví cenovou úroveň tak, aby odpovídala potřebám serveru a databáze. A rozhodnou se ušetřit prostřednictvím programu Zvýhodněné hybridní využití Azure, protože už mají licenci SQL Serveru.
-5. K nastavení velikosti využijí nákupní model založený na virtuálních jádrech a nastaví omezení pro očekávané požadavky.
+1. Nastaví cenovou úroveň tak, aby odpovídala potřebám serveru a databáze. A rozhodnou se ušetřit prostřednictvím programu Zvýhodněné hybridní využití Azure, protože už mají licenci SQL Serveru.
+
+1. K nastavení velikosti využijí nákupní model založený na virtuálních jádrech a nastaví omezení pro očekávané požadavky.
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql4.png)
 
-6. Potom vytvoří instanci databáze.
+1. Potom vytvoří instanci databáze.
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql5.png)
 
-7. Po vytvoření instance otevřou databázi a poznamenají si podrobnosti, které potřebují při migraci pomocí Data Migration Assistanta.
+1. Po vytvoření instance otevřou databázi a poznamenají si podrobnosti, které potřebují při migraci pomocí Data Migration Assistanta.
 
     ![Zřízení SQL](./media/contoso-migration-rearchitect-container-sql/provision-sql6.png)
 
@@ -176,7 +182,7 @@ Kontejner Azure se vytvoří pomocí exportovaných souborů z webového virtuá
 
      ![Container Registry](./media/contoso-migration-rearchitect-container-sql/container-registry1.png)
 
-2. Zadají název registru (**contosoacreus2**) a umístí ho v primární oblasti, a to ve skupině prostředků, kterou využívají pro prostředky infrastruktury. Povolí přístup pro uživatele s oprávněními správce a nastaví ho jako SKU úrovně Premium, aby bylo možné používat geografickou replikaci.
+1. Zadají název registru (**contosoacreus2**) a umístí ho v primární oblasti, a to ve skupině prostředků, kterou využívají pro prostředky infrastruktury. Povolí přístup pro uživatele s oprávněními správce a nastaví ho jako SKU úrovně Premium, aby bylo možné používat geografickou replikaci.
 
     ![Container Registry](./media/contoso-migration-rearchitect-container-sql/container-registry2.png)
 
@@ -188,49 +194,49 @@ Kontejner SmartHotel360 poběží v clusteru služby Azure Service Fabric. Sprá
 
      ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric1.png)
 
-2. Na kartě **Základní informace** pro cluster zadají jedinečný název DS a přihlašovací údaje pro přístup k místnímu virtuálnímu počítači. Prostředek umístí do skupina produkčních prostředků (**ContosoRG**) v primární oblasti Východní USA 2.
+1. Na kartě **Základní informace** pro cluster zadají jedinečný název DS a přihlašovací údaje pro přístup k místnímu virtuálnímu počítači. Prostředek umístí do skupina produkčních prostředků (**ContosoRG**) v primární oblasti USA – východ 2.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric2.png)
 
-3. V části **Konfigurace typu uzlu** zadají název typu uzlu, nastavení stálosti, velikost virtuálního počítače a koncové body aplikace.
+1. V části **Konfigurace typu uzlu** zadají název typu uzlu, nastavení stálosti, velikost virtuálního počítače a koncové body aplikace.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric3.png)
 
-4. V části **Vytvořit trezor klíčů** ve své skupině prostředků infrastruktury vytvoří nový trezor klíčů pro uložení certifikátu.
+1. V části **Vytvořit trezor klíčů** ve své skupině prostředků infrastruktury vytvoří nový trezor klíčů pro uložení certifikátu.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric4.png)
 
-5. V části **Zásady přístupu** povolí přístup k virtuálním počítačům pro nasazení trezoru klíčů.
+1. V části **Zásady přístupu** povolí přístup k virtuálním počítačům pro nasazení trezoru klíčů.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric5.png)
 
-6. Zadají název tohoto certifikátu.
+1. Zadají název tohoto certifikátu.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric6.png)
 
-7. Na stránce se souhrnem zkopírují odkaz, který se používá ke stažení certifikátu. Potřebují ho pro připojení ke clusteru Service Fabric.
+1. Na stránce se souhrnem zkopírují odkaz, který se používá ke stažení certifikátu. Potřebují ho pro připojení ke clusteru Service Fabric.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric7.png)
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric8.png)
 
-8. Po úspěšném ověření zřídí cluster.
+1. Po úspěšném ověření zřídí cluster.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric9.png)
 
-9. V Průvodci importem certifikátu naimportují stažený certifikát do vývojářských počítačů. Tento certifikát se používá k ověření pro cluster.
+1. V Průvodci importem certifikátu naimportují stažený certifikát do vývojářských počítačů. Tento certifikát se používá k ověření pro cluster.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric10.png)
 
-10. Po zřízení clusteru se připojí k Service Fabric Exploreru.
+1. Po zřízení clusteru se připojí k Service Fabric Exploreru.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric11.png)
 
-11. Musí vybrat správný certifikát.
+1. Musí vybrat správný certifikát.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric12.png)
 
-12. Service Fabric Explorer načte a správce společnosti Contoso může začít spravovat cluster.
+1. Service Fabric Explorer načte a správce společnosti Contoso může začít spravovat cluster.
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric13.png)
 
@@ -239,28 +245,30 @@ Kontejner SmartHotel360 poběží v clusteru služby Azure Service Fabric. Sprá
 Contoso potřebuje certifikáty clusteru pro umožnění přístupu Azure DevOps Services ke clusteru. Správci Contoso je nastaví.
 
 1. Otevřou Azure Portal a přejdou ke službě Key Vault.
-2. Otevřou certifikáty a zkopírují kryptografický otisk certifikátu vytvořený během procesu zřizování.
+
+1. Otevřou certifikáty a zkopírují kryptografický otisk certifikátu vytvořený během procesu zřizování.
 
     ![Zkopírování kryptografického otisku](./media/contoso-migration-rearchitect-container-sql/cert1.png)
 
-3. Zkopírují ho do textového souboru pro pozdější referenci.
-4. Teď přidají klientský certifikát, který se stane klientským certifikátem správce v clusteru. To sadě Azure DevOps Services umožňuje připojit se ke clusteru pro nasazení aplikace v kanálu verze. Otevřou proto Key Vault na portálu a vyberou **Certifikáty** > **Vygenerovat nebo importovat**.
+1. Zkopírují ho do textového souboru pro pozdější referenci.
+
+1. Teď přidají klientský certifikát, který se stane klientským certifikátem správce v clusteru. To sadě Azure DevOps Services umožňuje připojit se ke clusteru pro nasazení aplikace v kanálu verze. Pokud to chcete udělat, otevřou Key Vault na portálu a pak vyberte **certifikáty** > **vygenerovat/importovat**.
 
     ![Generování klientského certifikátu](./media/contoso-migration-rearchitect-container-sql/cert2.png)
 
-5. Zadají název certifikátu a do pole **Předmět** zadají rozlišující název X. 509.
+1. Zadají název certifikátu a do pole **Předmět** zadají rozlišující název X. 509.
 
      ![Název certifikátu](./media/contoso-migration-rearchitect-container-sql/cert3.png)
 
-6. Certifikát po vytvoření stáhnou do místního prostředí ve formátu PFX.
+1. Certifikát po vytvoření stáhnou do místního prostředí ve formátu PFX.
 
      ![Stažení certifikátu](./media/contoso-migration-rearchitect-container-sql/cert4.png)
 
-7. Nyní se vrátí zpátky k seznamu certifikátů ve službě Key Vault a zkopírují kryptografický otisk klientského certifikátu, který byl právě vytvořen. Uloží ho do textového souboru.
+1. Nyní se vrátí zpátky k seznamu certifikátů ve službě Key Vault a zkopírují kryptografický otisk klientského certifikátu, který byl právě vytvořen. Uloží ho do textového souboru.
 
      ![Kryptografický otisk klientského certifikátu](./media/contoso-migration-rearchitect-container-sql/cert5.png)
 
-8. Pro nasazení Azure DevOps Services musí zjistit hodnotu Base64 tohoto certifikátu. Použijí k tomu místní vývojářskou pracovní stanici a PowerShell. Výstup vloží do textového souboru pro pozdější použití.
+1. Pro nasazení Azure DevOps Services musí zjistit hodnotu Base64 tohoto certifikátu. Použijí k tomu místní vývojářskou pracovní stanici a PowerShell. Výstup vloží do textového souboru pro pozdější použití.
 
     ```powershell
     [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))
@@ -268,11 +276,11 @@ Contoso potřebuje certifikáty clusteru pro umožnění přístupu Azure DevOps
 
      ![Hodnota Base64](./media/contoso-migration-rearchitect-container-sql/cert6.png)
 
-9. Nakonec nový certifikát přidají do clusteru Service Fabric. Udělají to tak, že cluster otevřou na portálu a vyberou **Zabezpečení**.
+1. Nakonec nový certifikát přidají do clusteru Service Fabric. Provedete to tak, že na portálu otevřete cluster a pak vyberete **zabezpečení**.
 
      ![Přidání klientského certifikátu](./media/contoso-migration-rearchitect-container-sql/cert7.png)
 
-10. Vyberou **Přidat** > **Klientský certifikát správce** a vloží kryptografický otisk do nového klientského certifikátu. Potom vyberou **Přidat**. Tento proces může trvat až 15 minut.
+1. Vyberou **Přidat** > **Klientský certifikát správce** a vloží kryptografický otisk do nového klientského certifikátu. Potom vyberou **Přidat**. Tento proces může trvat až 15 minut.
 
      ![Přidání klientského certifikátu](./media/contoso-migration-rearchitect-container-sql/cert8.png)
 
@@ -283,15 +291,18 @@ Správci Contoso teď mohou migrovat databázi SmartHotel360 pomocí DMA.
 ### <a name="install-dma"></a>Instalace DMA
 
 1. Tento nástroj si stáhnou z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) do místního virtuálního počítače s SQL Serverem (**SQLVM**).
-2. Na tomto virtuálním počítači spustí instalační program (DownloadMigrationAssistant.msi).
-3. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit nástroj Microsoft Data Migration Assistant).
 
-### <a name="configure-the-firewall"></a>Konfigurace firewallu
+1. Na tomto virtuálním počítači spustí instalační program (DownloadMigrationAssistant.msi).
+
+1. Před dokončením průvodce na stránce **Finish** (Dokončit) vyberou **Launch Microsoft Data Migration Assistant** (Spustit Microsoft Data Migration Assistanta).
+
+### <a name="configure-the-firewall"></a>Konfigurace brány firewall
 
 Aby se mohli připojit k Azure SQL Database, správci společnosti Contoso nastaví pravidlo brány firewall pro povolení přístupu.
 
 1. Ve vlastnostech databáze **Brána firewall a virtuální sítě** umožní přístup ke službám Azure a přidají pravidlo pro IP adresu klienta místního virtuálního počítače s SQL Serverem.
-2. Vytvoří se pravidlo brány firewall na úrovni serveru.
+
+1. Vytvoří se pravidlo brány firewall na úrovni serveru.
 
     ![Brána firewall](./media/contoso-migration-rearchitect-container-sql/sql-firewall.png)
 
@@ -299,44 +310,45 @@ Aby se mohli připojit k Azure SQL Database, správci společnosti Contoso nasta
 
 [Seznamte se](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure) s vytvářením a správou pravidel brány firewall pro Azure SQL Database.
 
-### <a name="migrate"></a>Migrace
+### <a name="migrate"></a>Migrovat
 
 Správci společnosti Contoso teď migrují databázi.
 
-1. V DMA vytvoří nový projekt (**SmartHotelDB**) a vyberou **Migration** (Migrace).
-2. Jako typ zdrojového serveru vyberou **SQL Server** a jako typ cílového serveru zvolí **Azure SQL Database**.
+1. V části DMA vytvořte nový projekt (**SmartHotelDB**) a pak vyberte **migrace**.
+
+1. Jako typ zdrojového serveru vyberou **SQL Server** a jako typ cílového serveru zvolí **Azure SQL Database**.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-1.png)
 
-3. V podrobnostech o migraci doplní **SQLVM** jako zdrojový server a databázi **SmartHotel.Registration**.
+1. V podrobnostech o migraci doplní **SQLVM** jako zdrojový server a databázi **SmartHotel.Registration**.
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-2.png)
 
-4. Zobrazí se jim chyba, která zdánlivě souvisí s ověřováním. Po prozkoumání ale zjistí, že problém způsobuje tečka (.) v názvu databáze. Jako alternativní řešení se rozhodnou zřídit novou databázi SQL s použitím názvu **SmartHotel-Registration**. Při opětovném spuštění DMA už mohou vybrat **SmartHotel-Registration** a pokračovat v průvodci.
+1. Zobrazí se jim chyba, která zdánlivě souvisí s ověřováním. Po prozkoumání ale zjistí, že problém způsobuje tečka (.) v názvu databáze. Jako alternativní řešení se rozhodnou zřídit novou databázi SQL s použitím názvu **SmartHotel-Registration**. Když je znovu spustíte, můžete vybrat **SmartHotel-registrovat**a pokračovat v průvodci.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-3.png)
 
-5. V části **Vybrat objekty** vyberou databázové tabulky a vygenerují skript SQL.
+1. V části **Vybrat objekty** vyberou databázové tabulky a vygenerují skript SQL.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-4.png)
 
-6. Jakmile DMA vytvoří tento skript, vyberou **Nasadit schéma**.
+1. Jakmile DMA vytvoří tento skript, vyberou **Nasadit schéma**.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-5.png)
 
-7. DMA potvrdí, že nasazení proběhlo úspěšně.
+1. DMA potvrdí, že nasazení proběhlo úspěšně.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-6.png)
 
-8. Teď zahájí vlastní migraci.
+1. Teď zahájí vlastní migraci.
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-7.png)
 
-9. Po dokončení migrace mohou správci Contoso ověřit, jestli je databáze spuštěná v instanci SQL Azure.
+1. Po dokončení migrace mohou správci Contoso ověřit, jestli je databáze spuštěná v instanci SQL Azure.
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-8.png)
 
-10. Přebytečnou databázi SQL nazvanou **SmartHotel.Registration** odstraní na webu Azure Portal.
+1. Přebytečnou databázi SQL nazvanou **SmartHotel.Registration** odstraní na webu Azure Portal.
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-9.png)
 
@@ -344,16 +356,16 @@ Správci společnosti Contoso teď migrují databázi.
 
 Contoso pro tuto aplikaci potřebuje sestavit kanály a infrastrukturu DevOps. Správci Contoso k tomuto účelu vytvoří nový projekt Azure DevOps, naimportují kód a potom nastaví kanály buildu a verze.
 
-1. V účtu Azure DevOps společnosti Contoso vytvoří nový projekt (**ContosoSmartHotelRearchitect**) a pro správu verzí vyberou **Git**.
+1. V účtu contoso Azure DevOps vytvoří nový projekt (**ContosoSmartHotelRearchitect**) a pak pro správu verzí vyberte **Git** .
 ![Nový projekt](./media/contoso-migration-rearchitect-container-sql/vsts1.png)
 
-2. Naimportují úložiště Git, ve kterém je v současné době uložený kód aplikace. Je ve [veřejném úložišti](https://github.com/Microsoft/SmartHotel360-internal-booking-apps) a můžete si ho stáhnout.
+1. Naimportují úložiště Git, ve kterém je v současné době uložený kód aplikace. Je ve [veřejném úložišti](https://github.com/Microsoft/SmartHotel360-internal-booking-apps) a můžete si ho stáhnout.
 
     ![Stažení kódu aplikace](./media/contoso-migration-rearchitect-container-sql/vsts2.png)
 
-3. Po naimportování kódu k tomuto úložišti připojí sadu Visual Studio a naklonují kód pomocí Team Exploreru.
+1. Po naimportování kódu k tomuto úložišti připojí sadu Visual Studio a naklonují kód pomocí Team Exploreru.
 
-4. Když je úložiště ve vývojářském počítači naklonované, otevřou pro tuto aplikaci soubor řešení. Webová aplikace a služba wcf mají v tomto souboru samostatný projekt.
+1. Když je úložiště ve vývojářském počítači naklonované, otevřou pro tuto aplikaci soubor řešení. Webová aplikace a služba wcf mají v tomto souboru samostatný projekt.
 
     ![Soubor řešení](./media/contoso-migration-rearchitect-container-sql/vsts4.png)
 
@@ -371,38 +383,40 @@ Správci společnosti Contoso převedou aplikaci na kontejner pomocí sady Visua
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container2.png)
 
-2. Pravým tlačítkem myši na kliknou na webovou aplikaci > **Přidat** > **Podpora orchestrátoru kontejnerů**.
-3. V části **Přidat podporu orchestrátoru kontejnerů** vyberou **Service Fabric**.
+1. Pravým tlačítkem myši na kliknou na webovou aplikaci > **Přidat** > **Podpora orchestrátoru kontejnerů**.
+
+1. V části **Přidat podporu orchestrátoru kontejnerů** vyberou **Service Fabric**.
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container3.png)
 
-4. Tento proces zopakují i pro aplikaci SmartHotel.Registration.WCF.
-5. Potom zkontrolují, jak se řešení změnilo.
+1. Tento proces zopakují i pro aplikaci SmartHotel.Registration.WCF.
+
+1. Potom zkontrolují, jak se řešení změnilo.
 
     - Nová aplikace má název **SmartHotel.RegistrationApplication/**
     - Obsahuje dvě služby: **SmartHotel. Registration. WCF** a **SmartHotel. Registration. Web**.
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container4.png)
 
-6. Sada Visual Studio vytvořila soubor Docker a stáhla požadované image místně do vývojářského počítače.
+1. Sada Visual Studio vytvořila soubor Docker a stáhla požadované image místně do vývojářského počítače.
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container5.png)
 
-7. Sada Visual Studio vytvořila a otevřela soubor manifestu (**ServiceManifest.xml**). Tento soubor říká službě Service Fabric, jak nakonfigurovat kontejner při jeho nasazení do Azure.
+1. Sada Visual Studio vytvořila a otevřela soubor manifestu (**ServiceManifest.xml**). Tento soubor říká službě Service Fabric, jak nakonfigurovat kontejner při jeho nasazení do Azure.
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container6.png)
 
-8. Jiný soubor manifestu (**ApplicationManifest.xml) obsahuje konfigurační aplikace pro kontejnery.
+1. Jiný soubor manifestu (**ApplicationManifest.xml) obsahuje konfigurační aplikace pro kontejnery.
 
     ![Kontejner](./media/contoso-migration-rearchitect-container-sql/container7.png)
 
-9. Otevřou soubor **ApplicationParameters/Cloud.xml** a aktualizují připojovací řetězec pro připojení aplikace k databázi Azure SQL. Tento připojovací řetězec je umístěný v databázi na webu Azure Portal.
+1. Otevřou soubor **ApplicationParameters/Cloud.xml** a aktualizují připojovací řetězec pro připojení aplikace k databázi Azure SQL. Tento připojovací řetězec je umístěný v databázi na webu Azure Portal.
 
     ![Připojovací řetězec](./media/contoso-migration-rearchitect-container-sql/container8.png)
 
-10. Potvrdí aktualizovaný kód a nasdílejí změny do Azure DevOps Services.
+1. Potvrdí aktualizovaný kód a nasdílejí změny do Azure DevOps Services.
 
-    ![Potvrzení](./media/contoso-migration-rearchitect-container-sql/container9.png)
+    ![Potvrdit](./media/contoso-migration-rearchitect-container-sql/container9.png)
 
 ## <a name="step-8-build-and-release-pipelines-in-azure-devops-services"></a>Krok 8: kanály sestavení a vydání v Azure DevOps Services
 
@@ -412,72 +426,74 @@ Správci společnosti Contoso teď nakonfigurují Azure DevOps Services, aby moh
 
     ![Nový kanál](./media/contoso-migration-rearchitect-container-sql/pipeline1.png)
 
-2. Vyberou **Git Azure DevOps Services** a relevantní úložiště.
+1. Vyberou **Git Azure DevOps Services** a relevantní úložiště.
 
     ![Git a úložiště](./media/contoso-migration-rearchitect-container-sql/pipeline2.png)
 
-3. V části **Vybrat šablonu** vyberou prostředky infrastruktury s podporou Dockeru.
+1. V části **Vybrat šablonu** vyberou prostředky infrastruktury s podporou Dockeru.
 
      ![Fabric a Docker](./media/contoso-migration-rearchitect-container-sql/pipeline3.png)
 
-4. V poli Akce nastaví **Build an image** (Sestavit image) a nakonfigurují úlohu tak, aby využívala zřízenou službu ACR.
+1. V poli Akce nastaví **Build an image** (Sestavit image) a nakonfigurují úlohu tak, aby využívala zřízenou službu ACR.
 
      ![Registr](./media/contoso-migration-rearchitect-container-sql/pipeline4.png)
 
-5. V úloze **Push images** nakonfigurují image, která se nabídne do ACR, a vyberou, že se má zahrnout nejnovější značka.
-6. V části **Triggers** (Aktivační události) povolí kontinuální integraci a přidají hlavní větev.
+1. V úloze **Push images** nakonfigurují image, která se nabídne do ACR, a vyberou, že se má zahrnout nejnovější značka.
+
+1. V části **Aktivační události** povolí kontinuální integraci a přidají hlavní větev.
 
     ![Aktivační události](./media/contoso-migration-rearchitect-container-sql/pipeline5.png)
 
-7. Výběrem **Uložit a zařadit do fronty** spustí build.
-8. Po úspěšném sestavení přejdou ke kanálu verzí. V Azure DevOps Services zvolí **Vydání** > **Nový kanál**.
+1. Výběrem **Uložit a zařadit do fronty** spustí build.
+
+1. Po úspěšném sestavení přejdou ke kanálu verzí. V Azure DevOps Services zvolí **Vydání** > **Nový kanál**.
 
     ![Kanál verze](./media/contoso-migration-rearchitect-container-sql/pipeline6.png)
 
-9. Vyberou šablonu **nasazení Azure Service Fabric** a pojmenují fázi (**SmartHotelSF**).
+1. Vyberou šablonu **nasazení Azure Service Fabric** a pojmenují fázi (**SmartHotelSF**).
 
     ![Prostředí](./media/contoso-migration-rearchitect-container-sql/pipeline7.png)
 
-10. Zadají název kanálu (**ContosoSmartHotel360Rearchitect**). Pro fázi si vyberou **1 úloha, 1 úkol** pro konfiguraci nasazení služby Service Fabric.
+1. Zadají název kanálu (**ContosoSmartHotel360Rearchitect**). Pro fázi si vyberou **1 úloha, 1 úkol** pro konfiguraci nasazení služby Service Fabric.
 
     ![Fáze a úkol](./media/contoso-migration-rearchitect-container-sql/pipeline8.png)
 
-11. Potom vyberou **Nové** a přidají nové připojení clusteru.
+1. Potom vyberou **Nové** a přidají nové připojení clusteru.
 
     ![Nové připojení](./media/contoso-migration-rearchitect-container-sql/pipeline9.png)
 
-12. V části **Add Service Fabric service connection** (Přidat připojení služby Service Fabric) nakonfigurují toto připojení a nastavení ověřování, která bude služba Azure DevOps Services využije k nasazení aplikace. Koncový bod clusteru se dá najít na webu Azure Portal. Jako předponu přidají **tcp://** .
+1. V části **Add Service Fabric service connection** (Přidat připojení služby Service Fabric) nakonfigurují toto připojení a nastavení ověřování, která bude služba Azure DevOps Services využije k nasazení aplikace. Koncový bod clusteru se dá najít na webu Azure Portal. Jako předponu přidají **tcp://** .
 
-13. Informace o certifikátu, které zjistili, zadají do polí **Kryptografický otisk certifikátu serveru** a **Klientský certifikát**.
+1. Informace o certifikátu, které zjistili, zadají do polí **Kryptografický otisk certifikátu serveru** a **Klientský certifikát**.
 
     ![Certifikát](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
 
-14. Vyberou kanál > **Přidat artefakt**.
+1. Vyberou kanál > **Přidat artefakt**.
 
      ![Artefakt](./media/contoso-migration-rearchitect-container-sql/pipeline11.png)
 
-15. Vyberou projekt a kanál buildu a použijí nejnovější verzi.
+1. Vyberou projekt a kanál buildu a použijí nejnovější verzi.
 
-     ![Build](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
+     ![Sestavení](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
-16. Všimněte si, že ikona blesku na artefaktu je zaškrtnutá.
+1. Všimněte si, že ikona blesku na artefaktu je zaškrtnutá.
 
      ![Stav artefaktu](./media/contoso-migration-rearchitect-container-sql/pipeline13.png)
 
-17. Dál si všimněte, že je povolená aktivace průběžného nasazování.
+1. Dál si všimněte, že je povolená aktivace průběžného nasazování.
    ![Povolené průběžné nasazování](./media/contoso-migration-rearchitect-container-sql/pipeline14.png)
 
-18. Vyberou **Uložit** > **Vytvořit novou vydanou verzi**.
+1. Vyberou **Uložit** > **Vytvořit novou vydanou verzi**.
 
-    ![Vydání](./media/contoso-migration-rearchitect-container-sql/pipeline15.png)
+    ![Vydaná verze](./media/contoso-migration-rearchitect-container-sql/pipeline15.png)
 
-19. Po dokončení nasazení SmartHotel360 poběží ve službě Service Fabric.
+1. Po dokončení nasazení SmartHotel360 poběží ve službě Service Fabric.
 
-    ![Publikování](./media/contoso-migration-rearchitect-container-sql/publish4.png)
+    ![Publikovat](./media/contoso-migration-rearchitect-container-sql/publish4.png)
 
-20. Pro připojení k aplikaci směrují provoz na veřejnou IP adresu nástroje pro vyrovnávání zatížení Azure před uzly Service Fabric.
+1. Pro připojení k aplikaci směrují provoz na veřejnou IP adresu nástroje pro vyrovnávání zatížení Azure před uzly Service Fabric.
 
-    ![Publikování](./media/contoso-migration-rearchitect-container-sql/publish5.png)
+    ![Publikovat](./media/contoso-migration-rearchitect-container-sql/publish5.png)
 
 ## <a name="step-9-extend-the-app-and-republish"></a>Krok 9: rozšiřování aplikace a opětovné publikování
 
@@ -495,17 +511,19 @@ V prvním kroku zřídí správci společnosti Contoso databázi Azure Cosmos.
 
     ![Rozšíření](./media/contoso-migration-rearchitect-container-sql/extend1.png)
 
-2. Zadají název databáze (**contososmarthotel**), vyberou rozhraní SQL API a umístí prostředek pro skupiny produkčních prostředků v primární oblasti Východní USA 2.
+1. Zadají název databáze (**contososmarthotel**), vyberou rozhraní SQL API a umístí prostředek pro skupiny produkčních prostředků v primární oblasti USA – východ 2.
 
     ![Rozšíření](./media/contoso-migration-rearchitect-container-sql/extend2.png)
 
-3. V části **Začínáme** vyberou **Data Explorer** a přidají novou kolekci.
-4. V části **Přidat kolekci** zadají příslušná ID a nastaví propustnost a kapacitu úložiště.
+1. V části **Začínáme** vyberou **Data Explorer** a přidají novou kolekci.
+
+1. V části **Přidat kolekci** zadají příslušná ID a nastaví propustnost a kapacitu úložiště.
 
     ![Rozšíření](./media/contoso-migration-rearchitect-container-sql/extend3.png)
 
-5. Na portálu otevřou tuto novou databázi > **Kolekce** > **Dokumenty** a vyberou **Nový dokument**.
-6. Do okna dokumentu vloží následující kód JSON. Toto jsou ukázková data ve formě jednoho tweetu.
+1. Na portálu otevřou novou databázi > **kolekci** > **dokumentů**a pak vyberte **Nový dokument**.
+
+1. Do okna dokumentu vloží následující kód JSON. Toto jsou ukázková data ve formě jednoho tweetu.
 
     ```json
     {
@@ -528,7 +546,7 @@ V prvním kroku zřídí správci společnosti Contoso databázi Azure Cosmos.
 
     ![Rozšíření](./media/contoso-migration-rearchitect-container-sql/extend4.png)
 
-7. Vyhledají ověřovací klíč a koncový bod Cosmos DB. Aplikace je využívá pro připojení ke kolekci. V databázi vyberou **Klíče** a zkopírují URI a primární klíč do Poznámkového bloku.
+1. Vyhledají ověřovací klíč a koncový bod Cosmos DB. Aplikace je využívá pro připojení ke kolekci. V databázi vyberou **Klíče** a zkopírují URI a primární klíč do Poznámkového bloku.
 
     ![Rozšíření](./media/contoso-migration-rearchitect-container-sql/extend5.png)
 
@@ -540,7 +558,7 @@ Když je služba Cosmos DB zřízená, správci Contoso mohou nakonfigurovat apl
 
     ![Aplikace zjišťování mínění](./media/contoso-migration-rearchitect-container-sql/sentiment1.png)
 
-2. Doplní následující dva parametry:
+1. Doplní následující dva parametry:
 
    ```xml
    <Parameter Name="SentimentIntegration.CosmosDBEndpoint" Value="[URI]" />
@@ -558,11 +576,11 @@ Po rozšíření aplikace ji správci společnosti Contoso znovu publikují do A
 
 1. Potvrdí kód a nasdílejí ho do Azure DevOps Services. Tím se aktivují kanály buildu a verze.
 
-2. Po dokončení sestavení a nasazení SmartHotel360 poběží ve službě Service Fabric. Konzola pro správu Service Fabric teď zobrazuje tři služby.
+1. Po dokončení sestavení a nasazení SmartHotel360 poběží ve službě Service Fabric. Konzola pro správu Service Fabric teď zobrazuje tři služby.
 
     ![Opětovné publikování](./media/contoso-migration-rearchitect-container-sql/republish3.png)
 
-3. Mohou se teď těmito službami proklikat a vidí, že aplikace SentimentIntegration je spuštěná.
+1. Mohou se teď těmito službami proklikat a vidí, že aplikace SentimentIntegration je spuštěná.
 
     ![Opětovné publikování](./media/contoso-migration-rearchitect-container-sql/republish4.png)
 
@@ -575,7 +593,7 @@ Po dokončení migrace společnost Contoso potřebuje provést tyto kroky čišt
 - Aktualizovat interní dokumentaci tak, aby obsahovala nová umístění pro aplikaci SmartHotel360 Zobrazit databázi jako spuštěnou v databázi Azure SQL a front-end jako spuštěný ve službě Service Fabric
 - Zkontrolovat všechny prostředky, které s vyřazenými virtuálními počítači spolupracují, a aktualizovat veškeré související nastavení nebo dokumentaci tak, aby odrážely novou konfiguraci
 
-## <a name="review-the-deployment"></a>Kontrola nasazení
+## <a name="review-the-deployment"></a>Revize nasazení
 
 Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje plně zprovoznit a zabezpečit novou infrastrukturu.
 
@@ -585,19 +603,19 @@ Teď, když má prostředky migrované do Azure, společnost Contoso potřebuje 
 - Měli by zejména aktualizovat kontejner, aby využíval SSL s certifikáty.
 - Měli by zvážit použití služby Key Vault k ochraně tajných kódů pro aplikace Service Fabric. [Další informace](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management).
 
-### <a name="backups"></a>Zálohování
+### <a name="backups"></a>Zálohy
 
-- Společnost Contoso potřebuje zkontrolovat požadavky na zálohování databáze Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Contoso si potřebuje projít požadavky na zálohování pro Azure SQL Database. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 - Správci Contoso by měli zvážit implementaci skupin převzetí služeb při selhání a zajistit tak regionální převzetí služeb při selhání pro databázi. [Další informace](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Pro SKU ACR úrovně Premium mohou využít výhody geografické replikace. [Další informace](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
-- Contoso musí zvážit nasazení webové aplikace v hlavní oblasti Východní USA 2 a v oblasti Střední USA, až bude dostupná funkce Web App for Containers. Správci Contoso mohou nakonfigurovat Traffic Manager, aby zajistili převzetí služeb při selhání v případě regionálních výpadků.
-- Databáze Cosmos DB se zálohuje automaticky. Contoso si o tomto procesu [čte](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore), aby se dozvěděla víc.
+- Contoso musí zvážit nasazení webové aplikace v hlavní oblasti USA – východ 2 a v oblasti USA – střed, až bude dostupná funkce Web App for Containers. Správci Contoso mohou nakonfigurovat Traffic Manager, aby zajistili převzetí služeb při selhání v případě regionálních výpadků.
+- Cosmos DB se zálohuje automaticky. Contoso si o tomto procesu [čte](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore), aby se dozvěděla víc.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Společnost Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

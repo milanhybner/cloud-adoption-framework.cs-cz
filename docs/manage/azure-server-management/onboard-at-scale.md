@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808086"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223379"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurace škálování služby Azure Server Management Services
 
@@ -74,7 +74,7 @@ Po dokončení průvodce se přiřazení zásady nasadí do prostředí. Aby se 
 > [!NOTE]
 > Před zprovozněním služeb pro správu Azure serveru na servery vytvořte požadovaný [pracovní prostor Log Analytics a účet Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) .
 
-U místních serverů je potřeba stáhnout a nainstalovat [agenta Log Analytics a Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ručně a nakonfigurovat ho tak, aby se připojil ke správnému pracovnímu prostoru. Je nutné zadat ID a informace klíče pracovního prostoru. Tyto informace získáte tak, že v Azure Portal přejdete do svého pracovního prostoru Log Analytics a vyberete **nastavení** > **Upřesnit nastavení**.
+U místních serverů je potřeba stáhnout a nainstalovat [agenta Log Analytics a Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ručně a nakonfigurovat ho tak, aby se připojil ke správnému pracovnímu prostoru. Je nutné zadat ID a informace klíče pracovního prostoru. Tyto informace získáte tak, že v Azure Portal přejdete do svého pracovního prostoru Log Analytics a pak vyberete **nastavení** > **Upřesnit nastavení**.
 
 ![Snímek obrazovky s rozšířenými nastaveními Log Analytics pracovního prostoru v Azure Portal](./media/onboarding-on-premises.png)
 
@@ -82,7 +82,7 @@ U místních serverů je potřeba stáhnout a nainstalovat [agenta Log Analytics
 
 Pokud chcete povolit řešení, musíte nakonfigurovat pracovní prostor Log Analytics. Virtuální počítače Azure a místní servery získají řešení z Log Analytics pracovních prostorů, ke kterým jsou připojené.
 
-### <a name="update-management"></a>Správa aktualizací
+### <a name="update-management"></a>Update Management
 
 Řešení Update Management, Change Tracking a inventáře vyžadují Log Analytics pracovní prostor i účet Automation. Abyste měli jistotu, že tyto prostředky jsou správně nakonfigurované, doporučujeme vám, abyste provedli účet Automation. Další informace najdete v tématu připojení [řešení Update Management, Change Tracking a inventáře](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -131,7 +131,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
     > [!NOTE]
     > Název serveru musí přesně odpovídat hodnotě ve výrazu a nesmí obsahovat příponu názvu domény.
 
-1. Vyberte **Uložit**. Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
+1. Vyberte **Save** (Uložit). Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
 
 ### <a name="azure-activity-log"></a>Protokol aktivit Azure
 
@@ -139,10 +139,10 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
+1. V Azure Portal otevřete **všechny služby**a pak vyberte **Správa a zásady správného řízení** > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Activity Log Analytics** a vyberte ji.
-4. Vyberte **Create** (Vytvořit).
+4. Vyberte **Vytvořit**.
 
 Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
@@ -152,10 +152,10 @@ Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předc
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
+1. V Azure Portal otevřete **všechny služby**a pak vyberte **Správa a zásady správného řízení** > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte **Stav agenta Azure Log Analytics** a vyberte ho.
-4. Vyberte **Create** (Vytvořit).
+4. Vyberte **Vytvořit**.
 
 Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
@@ -167,10 +167,10 @@ Po vytvoření se instance prostředku pracovního prostoru zobrazí **AgentHeal
 
 Postup při implementaci tohoto řešení:
 
-1. V Azure Portal otevřete **všechny služby** a vyberte **Správa + zásady správného** řízení > **řešení**.
+1. V Azure Portal otevřete **všechny služby**a vyberte vybrat **Správa a zásady správného řízení** > **řešení**.
 2. V zobrazení **řešení** vyberte **Přidat**.
 3. Vyhledejte a vyberte **antimalware Assessment**.
-4. Vyberte **Create** (Vytvořit).
+4. Vyberte **Vytvořit**.
 
 Je nutné zadat **název** pracovního prostoru, který jste vytvořili v předchozí části, kde je řešení povoleno.
 
@@ -180,19 +180,19 @@ Po vytvoření se v instanci prostředku pracovního prostoru po výběru **zobr
 
 [Azure monitor pro virtuální počítače](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) můžete povolit prostřednictvím stránky zobrazení pro instanci virtuálního počítače, jak je popsáno v tématu [Povolení služeb správy na jednom virtuálním počítači pro vyhodnocení](./onboard-single-vm.md). Řešení byste neměli povolit přímo na stránce **řešení** , stejně jako u ostatních řešení, která jsou popsaná v tomto článku. U rozsáhlých nasazení může být snazší pomocí [Automatizace](./onboarding-automation.md) povolit správná řešení v pracovním prostoru. 
 
-### <a name="azure-security-center"></a>Centrum zabezpečení Azure
+### <a name="azure-security-center"></a>Azure Security Center
 
 Doporučujeme, abyste všechny servery připojili alespoň k Azure Security Center úrovně *Free* . Tato možnost poskytuje základní úroveň posouzení zabezpečení a užitečná doporučení zabezpečení pro vaše prostředí. Pokud upgradujete na úroveň *Standard* , získáte další výhody, které jsou podrobně popsány na [stránce s cenami Security Center](https://docs.microsoft.com/azure/security-center/security-center-pricing).
 
 Pokud chcete povolit Azure Security Center úroveň Free, postupujte takto:
 
 1. Přejít na stránku **Security Centerového** portálu.
-2. V části **zásady & dodržování předpisů**vyberte **zásady zabezpečení**.
+2. V části **zásady &AMP; dodržování předpisů**vyberte **zásady zabezpečení**.
 3. Vyhledejte prostředek pracovního prostoru Log Analytics, který jste vytvořili v podokně na pravé straně.
 4. Vyberte **Upravit nastavení** pro tento pracovní prostor.
 5. Vyberte **Cenová úroveň**.
 6. Vyberte možnost **Free** .
-7. Vyberte **Uložit**.
+7. Vyberte **Save** (Uložit).
 
 ## <a name="next-steps"></a>Další kroky
 

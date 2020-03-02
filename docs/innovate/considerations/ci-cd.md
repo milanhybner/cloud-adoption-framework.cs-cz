@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170558"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223482"
 ---
 # <a name="empower-adoption"></a>Posílení přechodu
 
@@ -45,7 +45,7 @@ Jak je popsáno v tématu [měření dopadu zákazníka](./measure.md), pozitivn
 
 Při škálování inovace není k dispozici žádný hodnotný nástroj než sdílený základ kódu pro řešení. Bohužel neexistuje spolehlivý způsob, jak předpovídat tuto iteraci, nebo který MVP poskytne vítěznou kombinaci. To je důvod, proč není nikdy příliš brzy pro vytvoření sdíleného základu kódu nebo úložiště. Toto je [technický technický špička](./build.md#reduce-complexity-and-delay-technical-spikes) , který by se nikdy neměl zpozdit. Když tým projde různými řešeními MVP, sdílené úložiště umožňuje snadnou spolupráci a urychlení vývoje. Když změny řešení přetáhnete dolů metriky učení, Správa verzí vám umožní vrátit se zpět na dřívější, účinnější verzi řešení.
 
-Nejpoužívanějším nástrojem pro správu úložišť kódu je [GitHub](https://guides.github.com), který umožňuje vytvořit úložiště se sdíleným kódem jen několika kliknutími. Kromě toho je možné pomocí funkce [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) služby Azure DevOps vytvořit úložiště [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) nebo [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
+Nejpoužívanějším nástrojem pro správu úložišť kódu je [GitHub](https://guides.github.com), který umožňuje vytvořit úložiště se sdíleným kódem v několika krocích. Kromě toho je možné pomocí funkce [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) služby Azure DevOps vytvořit úložiště [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) nebo [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 
 ## <a name="feedback-loops"></a>Smyčky zpětné vazby
 
@@ -61,7 +61,7 @@ Vzhledem k tomu, že se přijímají škálování a hypotéza se přiblíží k
 
 V nepřetržité integraci jsou změny kódu často sloučeny do hlavní větve. Automatizované procesy sestavení a testování zajistí, že kód v hlavní větvi je vždy provozní kvalita. Tím je zajištěno, že vývojáři společně pracují na vývoji sdílených řešení, která poskytují přesné a spolehlivé smyčky zpětné vazby.
 
-Azure DevOps a [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) poskytují možnosti nepřetržité integrace jenom několika kliknutími na GitHubu nebo v nejrůznějších úložištích.
+Azure DevOps a [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) poskytují možnosti průběžné integrace jenom s několika kroky na GitHubu nebo v nejrůznějších úložištích.
 Další informace o [průběžné integraci](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)nebo další informace najdete v [praktickém testovacím prostředí](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). K urychlení tvorby [kanálů CI/CD prostřednictvím Azure DevOps](https://azure.microsoft.com/solutions/devops)existují taky architektury řešení.
 
 ## <a name="reliable-testing"></a>Spolehlivé testování

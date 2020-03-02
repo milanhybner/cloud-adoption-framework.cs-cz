@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806930"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225411"
 ---
 # <a name="central-it-capabilities"></a>Centrální možnosti IT
 
@@ -108,7 +108,7 @@ Jeden z svých týmů pro přijetí v cloudu teď ale vyžaduje prostředí s vy
 
 **Klasifikace:** Vzhledem k tomu, že tým pro přijetí cloudu byl v počátečních fázích vytváření nového řešení a neobsahuje žádná citlivá data ani důležité požadavky na technickou podporu, prostředky v prostředí byly klasifikovány jako nízké riziko a nekritické. Efektivní klasifikace je znaménkem zralosti v centrálním IT oddělení. Klasifikace všech prostředků a prostředí umožňuje vymazat zásady.
 
-**Vyjednávání:** Samotná klasifikace není dostatečná. Sdílené služby byly implementovány tak, aby konzistentně fungovaly citlivé a klíčové prostředky. Změna pravidel by způsobila ohrožení zásad správného řízení a dodržování předpisů, které jsou navržené pro prostředky, které vyžadují vyšší ochranu. K přijetí nemůže dojít na náklady na stabilitu, zabezpečení nebo řízení. To vedlo k vyjednávání s týmem přijetí k zodpovězení konkrétních otázek. Mohl DevOps tým pro toto prostředí poskytnout správu operací? Bude toto řešení vyžadovat přímý přístup k jiným interním prostředkům? Pokud tým pro přijetí v cloudu vyhovuje těmto kompromisům, může být přenos příchozích dat možný.
+**Vyjednávání:** Samotná klasifikace není dostatečná. Sdílené služby byly implementovány tak, aby konzistentně fungovaly citlivé a klíčové prostředky. Změna pravidel by způsobila ohrožení zásad správného řízení a dodržování předpisů, které jsou navržené pro prostředky, které vyžadují vyšší ochranu. K přijetí nemůže dojít na náklady na stabilitu, zabezpečení nebo řízení. To vedlo k vyjednávání s týmem přijetí k zodpovězení konkrétních otázek. Mohl DevOps tým zajišťovat správu operací pro toto prostředí? Bude toto řešení vyžadovat přímý přístup k jiným interním prostředkům? Pokud tým pro přijetí v cloudu vyhovuje těmto kompromisům, může být přenos příchozích dat možný.
 
 **Izolace:** Vzhledem k tomu, že podnik může poskytovat svou vlastní správu probíhajících operací a vzhledem k tomu, že řešení nespoléhá na přímý provoz do jiných interních prostředků, může být uzavřené v novém předplatném. Toto předplatné je také přidáno do samostatného uzlu nové hierarchie skupiny pro správu.
 

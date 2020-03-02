@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798175"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225245"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Pro podporu výše uvedených kritérií poskytuje tento seznam příklad první
 
 Mezi další příklady projektů pro první přijetí patří:
 
-- **Zotavení po havárii a Kontinuita podnikových aplikací (DRBC):** Nad rámec Azure Site Recovery můžete implementovat několik strategií DRBC jako první projekt.
+- **Provozní kontinuita a zotavení po havárii (BCDR):** Nad rámec Azure Site Recovery můžete implementovat několik strategií BCDR jako první projekt.
 - **Neproduktivní:** Nasaďte nevýrobní instanci úlohy.
 - **Archiv:** Studené úložiště může dát do prostředků datového centra datový kmen. Přesun těchto dat do cloudu je plný rychlý Win.
 - **Konec podpory (EOS):** Migrace assetů, které dosáhly konce podpory, je další rychlý soubor, který vytváří technické dovednosti. Mohlo by také docházet k tomu, že se vyhnete nákladným smlouvám podpory nebo nákladům na licencování.

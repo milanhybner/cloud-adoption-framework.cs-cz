@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213605"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223256"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Navázat postupy provozní správy v cloudu
 
@@ -39,7 +39,7 @@ Oba tyto osvědčené postupy se sestavují s metodologií pro řízení provozu
 - **Provozní dodržování předpisů:** Běžnou správou konfigurace, velikosti, nákladů a výkonu assetů je klíč k udržení očekávání výkonu.
 - **Ochrana a obnovení:** Minimalizace provozních přerušení a urychlení obnovení pomůžou podniku vyhnout se ztrátám výkonu a nepříznivým výnosům. Základními aspekty této disciplíny jsou detekce a obnovení.
 - **Operace platformy:** Všechna IT prostředí obsahují sadu běžně používaných platforem. Tyto platformy můžou zahrnovat úložiště dat, například SQL Server nebo Azure HDInsight. Mezi další běžné platformy patří například řešení kontejnerů, jako je Azure Kubernetes Service (AKS). Bez ohledu na platformu se v operacích s platformou zaměřuje na přizpůsobení operací na základě způsobu nasazení, konfigurace a používání běžných platforem v úlohách.
-- **Operace úlohy:** V nejvyšší provozní zralosti můžou cloudové týmy provozu ladit operace s úlohami, které jsou zásadní pro úspěch firmy. Pro tyto úlohy s vysokou závažností může dostupná data pomoci při automatizaci nápravy, velikosti nebo ochrany úloh na základě jejich využití.
+- **Operace úlohy:** V nejvyšší úrovni provozní zralosti můžou cloudové provozní týmy ladit operace pro kritické úlohy. Pro tyto úlohy můžou dostupná data pomoct při automatizaci nápravy, velikosti nebo ochrany úloh na základě jejich využití.
 
 Další doprovodné materiály, jako je například [architektura pro kontrolu návrhu (název kódu: Principy návrhu cloudu)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), vám mohou pomoci při rozhodování o všech úlohách v rámci dříve popsaných oborů.
 

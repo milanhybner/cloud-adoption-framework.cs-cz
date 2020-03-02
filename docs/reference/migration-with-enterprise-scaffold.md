@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629245"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225264"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
 > [!NOTE]
@@ -47,7 +49,7 @@ Podnikové uživatelské rozhraní může sloužit jako základ pro každé nov�
 >
 Následující obrázek ukazuje komponenty uživatelského rozhraní. Základ spoléhá na plný plán pro hierarchii a odběry správy. Pilíře sestávají ze zásad Správce prostředků a silných standardů pojmenovávání. Zbývající část uživatelského rozhraní jsou základními funkcemi a funkcemi Azure, které umožňují a spojují zabezpečené a spravovatelné prostředí.
 
-![Podnikové generování uživatelského rozhraní](../_images/reference/scaffoldv2.png)
+![Podnikové generování uživatelského rozhraní](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>Definovat hierarchii
 
@@ -269,7 +271,7 @@ Tyto informace lze zobrazit a zpracovávat na více úrovních a jsou neustále 
 
 Jednou z hlavních změn, které se projeví při přesunu z místního cloudu do veřejného cloudu, je přechod z kapitálu (nákup hardwaru) na provozní výdaje (při jejich používání platí za službu). Tento přepínač také vyžaduje pečlivé řízení vašich nákladů. Výhodou cloudu je, že můžete v podstatě a v podstatě ovlivnit náklady na službu, kterou používáte, a to jenom v případě, že ji vypínáte nebo měníte jejich velikost, když ji nepotřebujete. Úmyslné řízení vašich nákladů v cloudu je osvědčeným postupem a jedním z nich je každý den v vyspělých zákaznících.
 
-Microsoft poskytuje několik nástrojů, které vám umožní vizualizovat, sledovat a spravovat vaše náklady. Poskytujeme také kompletní sadu rozhraní API, která vám umožní přizpůsobit a integrovat správu nákladů do vlastních nástrojů a řídicích panelů. Tyto nástroje se volně seskupují do možností Azure Portal a externích možností.
+Microsoft poskytuje několik nástrojů, které vám pomůžou vizualizovat, sledovat a spravovat vaše náklady. Poskytujeme také kompletní sadu rozhraní API, která vám umožní přizpůsobit a integrovat správu nákladů do vlastních nástrojů a řídicích panelů. Tyto nástroje se volně seskupují do možností Azure Portal a externích možností.
 
 ### <a name="azure-portal-capabilities"></a>Možnosti Azure Portal
 

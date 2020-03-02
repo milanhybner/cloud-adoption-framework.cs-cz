@@ -3,17 +3,17 @@ title: Racionalizace digitálních aktiv
 description: Používejte racionalizaci cloudu k vyhodnocení vašich digitálních prostředků a určení nejlepšího přístupu k hostování v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170133"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225286"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
@@ -83,7 +83,7 @@ V tradičním místním prostředí je hostování malých, nepoužívaných pro
 
 Když ale přejdete na model monitorování účtů cloudu, vyřazení prostředků může způsobit výrazné úspory za roční provozní náklady a úsilí na migraci vpřed.
 
-Po dokončení kvantitativní analýzy není pro organizace neobvyklá vyřazení 20% nebo více jeho digitálního majetku. Před rozhodnutím o takové akci doporučujeme provést další kvalitativní analýzu. Po potvrzení může odchod těchto prostředků vydávat první návratnost investic Victory v cloudové migraci. V mnoha případech se jedná o jeden z největších faktorů úspory nákladů. V takovém případě doporučujeme, aby tým cloudové strategie dohlíží na ověřování a vyřazení prostředků paralelně s fází sestavení procesu migrace, aby bylo možné získat včasnou finanční výhru.
+Po dokončení kvantitativní analýzy není pro organizace neobvyklá vyřazení 20% nebo více jeho digitálního majetku. Před provedením akce doporučujeme provést další kvalitativní analýzu. Po potvrzení se tyto prostředky vyřazením z provozu budou moci vydávat první návratnost Victory migrace do cloudu. Často se jedná o jeden z největších faktorů úspory nákladů. Proto by tým cloudové strategie měl dohlížet na ověřování a vyřazení prostředků paralelně s provedením [metodologie migrace](../migrate/index.md), aby se dosáhlo předčasného finančního úspěchu.
 
 ### <a name="program-adjustments"></a>Úpravy programu
 

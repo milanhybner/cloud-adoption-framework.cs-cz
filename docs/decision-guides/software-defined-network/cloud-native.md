@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708593"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222666"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwarově definované sítě: Cloud – nativní
 
@@ -41,4 +41,4 @@ Další problémy, které by týmy při přijímání cloudu měly zvážit při
 Další informace o virtuálních sítích nativních pro Cloud v Azure najdete v těchto tématech:
 
 - [Azure Virtual Network: průvodci postupy](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nově vytvořené virtuální sítě Azure jsou ve výchozím nastavení cloudově nativní. Pomocí těchto průvodců můžete naplánovat návrh a nasazení virtuálních sítí.
-- [Omezení předplatného: sítě](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Jedna virtuální síť a připojené prostředky můžou existovat jenom v rámci jednoho předplatného, které jsou svázané s omezeními předplatného.
+- [Omezení předplatného: sítě](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Každá virtuální síť a připojené prostředky existují v rámci jednoho předplatného. Tyto prostředky jsou vázané na omezení předplatného.

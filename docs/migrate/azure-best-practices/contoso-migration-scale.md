@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807304"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222823"
 ---
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
@@ -26,7 +26,7 @@ Tým vedení IT těsně spolupracoval s partnery ve firmě, aby zjistil, čeho c
 - **Řešení obchodního růstu.** Společnost Contoso roste a to způsobuje tlak na místní systémy a infrastrukturu.
 - **Zvýšení efektivity.** Společnost Contoso se potřebuje zbavit zbytečných postupů a zjednodušit procesy pro vývojáře i uživatele. Potřebuje IT k tomu, aby neztrácela čas ani peníze, byla rychlá a dokázala rychleji reagovat na požadavky zákazníků.
 - **Zvýšení agility.** IT ve společnosti Contoso musí pohotověji reagovat na potřeby firmy. K zajištění úspěchu v globální ekonomice je nutné, aby IT dokázalo rychleji reagovat na změny na trhu. Nesmí stát v cestě a nesmí se stát obchodní překážkou.
-- **Škálování** Společnost Contoso úspěšně roste a její tým IT musí poskytovat systémy, které jsou schopné růst stejným tempem.
+- **Škálování** Společnost Contoso úspěšně roste a její IT tým musí poskytovat systémy, které jsou schopné růst stejným tempem.
 - **Vylepšení nákladových modelů.** Společnost Contoso chce snížit kapitálové požadavky v oblasti rozpočtu na IT. Chce využívat možnosti škálování v cloudu a omezit potřebu nákladného hardwaru.
 - **Snížení nákladů na licencování.** Společnost Contoso chce minimalizovat náklady na cloud.
 
@@ -70,7 +70,7 @@ Tyto fáze neprobíhají v celé organizaci sériově. Každá část projektu m
 
 ## <a name="phase-1-assess"></a>Fáze 1: posouzení
 
-Společnost Contoso celý proces zahájí zjištěním a posouzením místních aplikací, dat a infrastruktury. Proto bude společnost Contoso postupovat takto:
+Společnost Contoso celý proces zahájí zjištěním a posouzením místních aplikací, dat a infrastruktury. Provede to takto:
 
 - Společnost Contoso potřebuje vyhledat aplikace, zmapovat závislosti mezi nimi a rozhodnout o pořadí a prioritě migrace.
 - Během posuzování vytvoří ucelený inventář aplikací a prostředků. Společně s novým inventářem bude společnost Contoso používat a aktualizovat existující databázi správy konfigurace (CMDB) a katalog služeb.
@@ -102,7 +102,7 @@ Problémy se zabezpečením | Ano / Ne | Existují známé problémy se zabezpe�
 V rámci procesu posouzení musí společnost Contoso identifikovat, kde jsou aplikace spuštěné, a zjistit závislosti a propojení mezi aplikačními servery. Společnost Contoso mapuje své prostředí v několika krocích.
 
 1. Jako první krok zjistí, jak jsou servery a počítače namapované na jednotlivé aplikace, síťová umístění a skupiny.
-2. Pomocí těchto informací může společnost Contoso jasně identifikovat aplikace, které mají málo závislostí, a jsou proto vhodné pro rychlou migraci.
+2. Pomocí těchto informací může společnost Contoso jasně identifikovat aplikace, které mají několik závislostí a jsou vhodné pro rychlou migraci.
 3. Pomocí mapování může společnost Contoso identifikovat složitější závislosti a komunikace mezi aplikačními servery. Společnost Contoso pak může tyto servery logicky seskupit jako reprezentanty aplikací a naplánovat strategii migrace na základě těchto skupin.
 
 Po dokončení mapování může společnost Contoso zajistit, aby se při vytváření plánu migrace identifikovaly a vzaly v úvahu všechny komponenty aplikací.
@@ -198,7 +198,7 @@ Existují čtyři široké strategie migrace, které může společnost Contoso 
 **Změna hostitele** | Tato možnost se často označuje jako migrace _výtahu a posunutí_ , takže se rychle migruje stávající aplikace do Azure.<br/><br/> Aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik nebo nákladů spojených se změnami kódu. | Společnost Contoso může změnu hostitele použít pro méně strategické aplikace, které nevyžadují žádné změny kódu.
 **Refaktoring** | Tato strategie se také označuje jako „opětovné zabalení“ a vyžaduje minimální změny kódu nebo konfigurace aplikací. Ty jsou potřebné pro připojení aplikací k Azure PaaS a lepšímu využití možností cloudu. | Společnost Contoso může refaktorovat strategické aplikace, které si mají zachovat stejné základní funkce, ale mají se přesunout a běžet na platformě Azure, jako je Azure App Service.<br/><br/> Tato strategie vyžaduje minimální změny kódu.<br/><br/> Na druhé straně bude společnost Contoso muset udržovat platformu virtuálních počítačů, protože tu nebude spravovat společnost Microsoft.
 **Změna architektury** | Při této strategii se upravuje nebo rozšiřuje základ kódu aplikace a optimalizuje se její architektura pro cloudové možnosti a škálování.<br/><br/> Aplikace se zmodernizuje na odolnou, vysoce škálovatelnou architekturu s možností nezávislého nasazení.<br/><br/> Pomocí služeb Azure je možné tento proces zrychlit, s jistotou škálovat aplikace a snadno je spravovat.
-**Opětovné sestavení** | Při této strategii se aplikace znovu sestaví od základu s využitím nativních cloudových technologií.<br/><br/> Platforma Azure jako služba (PaaS) poskytuje kompletní prostředí pro vývoj a nasazení v cloudu. Eliminuje některé náklady a složité aspekty související s licencemi na software a odstraňuje potřebu základní aplikační infrastruktury, middlewaru a dalších prostředků. | Společnost Contoso může kritické aplikace přepsat od základů a využít výhody cloudových technologií, jako jsou bezserverový počítač nebo mikroslužby.<br/><br/> Společnost Contoso bude spravovat aplikace a služby, které vyvíjí, a Azure bude spravovat všechno ostatní.
+**Nové sestavení** | Při této strategii se aplikace znovu sestaví od základu s využitím nativních cloudových technologií.<br/><br/> Platforma Azure jako služba (PaaS) poskytuje kompletní prostředí pro vývoj a nasazení v cloudu. Eliminuje některé náklady a složité aspekty související s licencemi na software a odstraňuje potřebu základní aplikační infrastruktury, middlewaru a dalších prostředků. | Společnost Contoso může kritické aplikace přepsat od základů a využít výhody cloudových technologií, jako jsou bezserverový počítač nebo mikroslužby.<br/><br/> Společnost Contoso bude spravovat aplikace a služby, které vyvíjí, a Azure bude spravovat všechno ostatní.
 
 <!--markdownlint-enable MD033 -->
 
@@ -206,7 +206,7 @@ Je také nutné vzít v úvahu data, zejména vzhledem k objemu databází, kter
 
 ### <a name="evaluate-migration-tools"></a>Vyhodnocení nástrojů pro migraci
 
-Společnost Contoso pro migraci primárně používá několik služeb a nástrojů Azure:
+Společnost Contoso primárně používá několik služeb a nástrojů Azure pro migraci:
 
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): orchestruje zotavení po havárii a migruje místní virtuální počítače do Azure.
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview): migruje místní databáze jako SQL Server, MySQL a Oracle do Azure.
@@ -263,8 +263,8 @@ Společnost Contoso musí zjistit, jak tyto komponenty nasadit, na základě po�
 **Maximální propustnost** | Standardní účet úložiště Azure může zpracovávat maximálně 20 000 požadavků za sekundu a vstupně-výstupní operace za sekundu (IOPS) replikovaného virtuálního počítače by měly být v rámci tohoto limitu. Pokud má například virtuální počítač 5 disků a každý z nich vygeneruje na virtuálním počítači 120 IOPS (o velikosti 8 kB), pak bude v rámci limitu IOPS na disk v Azure (500).<br/><br/> Potřebný počet účtů úložiště můžete zjistit tak, že celkový počet vstupně-výstupních operací zdrojových počítačů za sekundu vydělíte 20 000. Replikovaný počítač může v Azure patřit jenom do jednoho účtu úložiště.
 **Konfigurační server** | Na základě předpokladu společnosti Contoso, že bude replikaci provádět po dávkách zahrnujících 100 až 200 virtuálních počítačů, a [požadavků na velikost konfiguračního serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) došla společnost Contoso k tomu, že potřebuje takovýto konfigurační server:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Kromě požadavků na velikost bude muset společnost Contoso zajistit také optimální umístění konfiguračního serveru ve stejné síti a segmentu LAN, jako jsou virtuální počítače, které se budou migrovat.
 **Procesový server** | Contoso nasadí samostatný, vyhrazený procesový server, který dokáže replikovat 100 až 200 virtuálních počítačů:<br/><br/> CPU: 16 vCPU (2 sokety &#215; 8 jader @ 2,5 GHz)<br/><br/> Paměť: 32 GB<br/><br/> Disk mezipaměti: 1 TB<br/><br/> Frekvence změny dat: 1 TB až 2 TB.<br/><br/> Procesový server bude hodně vytížený, takže by měl být umístěný na hostiteli ESXi, který dokáže zpracovat vstupně-výstupní diskové operace, síťový provoz a výkon procesoru potřebné pro replikaci. Společnost Contoso bude pro tento účel uvažovat o vyhrazeném hostiteli.
-**Sítě** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso Východní USA 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Úložiště Azure** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. V důsledku rychlosti a priority migrací se společnost Contoso rozhodla používat Premium SSD.<br/><br/>
+**Networking** | Společnost Contoso zkontrolovala aktuální infrastrukturu site-to-site VPN a rozhodla se implementovat Azure ExpressRoute. Implementace je kritická, protože se tím snižuje latence a zvyšuje šířka pásma do primární oblasti Azure, kterou je pro společnost Contoso USA – východ 2.<br/><br/> **Monitorování:** Společnost Contoso bude muset pečlivě monitorovat tok dat z procesového serveru. Pokud data způsobí přetížení šířky pásma sítě, společnost Contoso zváží [omezení šířky pásma procesového serveru](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
+**Azure Storage** | Společnost Contoso musí pro migraci identifikovat správný typ a počet cílových účtů úložiště Azure. Služba Site Recovery replikuje data virtuálních počítačů do úložiště Azure.<br/><br/> Služba Site Recovery může replikovat do účtů úložiště Standard nebo Premium (SSD).<br/><br/> Při rozhodování o úložišti musí společnost Contoso zkontrolovat [omezení úložiště](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) a musí vzít v úvahu očekávaný nárůst a zvýšené využití v průběhu času. V důsledku rychlosti a priority migrací se společnost Contoso rozhodla používat Premium SSD.<br/><br/>
 Rozhodla se používat spravované disky pro všechny virtuální počítače nasazené do Azure. Požadovaný počet vstupně-výstupních operací za sekundu rozhodne, jestli se budou používat disky HDD úrovně Standard, SSD úrovně Standard nebo SSD úrovně Premium.<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -301,14 +301,14 @@ Kromě DMS může společnost Contoso k identifikaci informací o virtuálních 
 
 Jakmile společnost Contoso přesune prostředky do Azure, potřebuje je optimalizovat v zájmu zvýšení výkonu a maximalizovat návratnost investic pomocí nástrojů pro správu nákladů. Vzhledem k tomu, že Azure je služba, která se platí podle využití, je pro společnost Contoso důležité, aby rozuměla tomu, jaký mají systémy výkon, a zajistila, aby měly správnou velikost.
 
-### <a name="azure-cost-management"></a>Azure Cost Management
+### <a name="azure-cost-management"></a>Správa nákladů v Azure
 
 V zájmu co nejlepšího zužitkování investice do cloudu bude společnost Contoso využívat bezplatnou službu pro správu nákladů Azure Cost Management.
 
 - Toto licencované řešení vytvořila společnost Cloudyn, která je nyní pobočkou Microsoftu. Společnosti Contoso umožní transparentně a přesně spravovat útraty v cloudu. Poskytuje nástroje pro monitorování, přidělování a snižování nákladů na cloud.
 - Služba Azure Cost Management poskytuje jednoduché sestavy na řídicím panelu, které pomáhají s přidělováním, rozdělováním, analýzou a interním zúčtováním nákladů.
 - Služba Cost Management pomáhá optimalizovat výdaje za cloud díky identifikaci málo využitých prostředků, které pak společnost Contoso může spravovat a upravovat.
-- Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
+- [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ![Správa nákladů](./media/contoso-migration-scale/cost-management.png)
 
@@ -343,7 +343,7 @@ Společnost Contoso bude využívat službu Azure Security Center, která zajiš
 
 Přečtěte si [další informace](https://azure.microsoft.com/services/security-center) o službě Security Center.
 
-### <a name="monitoring"></a>Sledování
+### <a name="monitoring"></a>Monitorování
 
 Společnost Contoso potřebuje mít přehled o stavu a výkonu nově migrovaných aplikací, infrastruktury a dat, které teď má v Azure. Bude používat integrované nástroje pro monitorování cloudu Azure, jako jsou služba Azure Monitor, pracovní prostor služby Log Analytics a služba Application Insights.
 

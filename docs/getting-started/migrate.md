@@ -3,16 +3,16 @@ title: Zahájení cesty migrace do cloudu v Azure
 description: Získejte ucelený návod pro přechod úloh starších verzí aplikací do cloudu pomocí inovativních cloudových technologií.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170184"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223985"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
@@ -22,7 +22,7 @@ K zahájení cesty migrace do cloudu použijte rozhraní pro přijetí Microsoft
 
 Architektura pro přijetí do cloudu pomáhá zákazníkům provádět zjednodušenou cestu k přijetí do cloudu. Toto rozhraní obsahuje podrobné informace o cestě k přijetí cloudu, počínaje cílovým obchodním výsledkům a pak zarovnává připravenost a hodnocení cloudu s jasnými definovanými obchodními cíli. Tyto výsledky jsou dosaženy prostřednictvím definované cesty pro přijetí v cloudu. Při přijetí na základě migrace se definovaná cesta zaměřuje hlavně na migraci místních úloh do cloudu. Tato cesta někdy zahrnuje modernizaci úloh, aby se zvýšila návratnost investic z úsilí o migraci.
 
-Tato architektura je navržená hlavně pro cloudové architekty a týmy cloudové strategie, které provedou úsilí při přijímání v cloudu. Mnoho témat v tomto rozhraní je však relevantní pro jiné role napříč firmou. Cloudové architekty často slouží jako zprostředkovatelé k zapojení všech relevantních rolí. Tento souhrn výkonného vedení je navržený tak, aby před tím, než usnadnil konverzace, připravil různé role.
+Tato architektura je navržená hlavně pro cloudové architekty a týmy cloudové strategie, které provedou úsilí při přijímání v cloudu. Mnoho věcí v tomto rozhraní je však relevantní pro jiné role napříč podnikem. Cloudové architekty často slouží jako zprostředkovatelé k zapojení všech relevantních rolí. Tento souhrn výkonného vedení je navržený tak, aby před tím, než usnadnil konverzace, připravil různé role.
 
 > [!NOTE]
 > Tento návod je aktuálně ve verzi Public Preview. Terminologie, přístupy a pokyny jsou v této verzi Preview důkladně testovány se zákazníky, partnery a Microsoft Teams. V takovém případě se obsah a doprovodné materiály můžou v průběhu času mírně měnit.
@@ -55,7 +55,7 @@ Tento přístup se skládá ze dvou metodologií nebo oblastí zaostření: stra
 
 ## <a name="cloud-implementation"></a>Implementace cloudu
 
-Implementace cloudu je iterativní proces pro migraci a modernizacii digitální nemovitosti v rámci sbližování s cílenými podnikovými výsledky a ovládacími prvky pro správu změn. Během každé iterace jsou úlohy migrovány nebo moderní v souladu s strategií a plánem. Rozhodnutí týkající se IaaS, PaaS nebo hybridu jsou prováděna během fáze posuzování pro optimalizaci řízení a provádění. Tato rozhodnutí budou řídit nástroje používané během fáze migrace. Tento model se dá použít s minimální strategií a plánováním. Abychom ale zajistili největší obchodní návratnost, důrazně doporučujeme, aby IT i firmy byly zarovnané na jasné strategii a plán pro provádění aktivit implementace.
+Implementace cloudu je iterativní proces pro migraci a modernizacií digitálního majetku, který je zarovnaný k cíleným obchodním výsledkům a ovládacím prvkům pro správu změn. Během každé iterace jsou úlohy migrovány nebo moderní v souladu s strategií a plánem. Rozhodnutí týkající se IaaS, PaaS nebo hybridu jsou prováděna během fáze posuzování [metodologie migrace](../migrate/index.md) pro optimalizaci řízení a provádění. Tato rozhodnutí budou řídit nástroje používané během každé iterace fáze migrace v rámci stejné metodologie. Tento model se dá použít s minimální strategií a plánováním. Aby se ale zajistila největší obchodní návratnost, měla by IT i podnik zarovnávat jasně strategii a plán pro Průvodce aktivit implementace.
 
 ![Metodologie implementace cloudu v rozhraní pro přijetí do cloudu](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ Technologie migrované do cloudu se průběžně rozšiřují jako poskytovatel�
 
 - Windows a SQL Server
 - Databáze Linux a Open Source (OSS)
-- Nestrukturované/NoSQL databáze
+- Nestrukturované a NoSQL databáze
 - SAP v Azure
 - Analýza (datový sklad, Data Lake)
 

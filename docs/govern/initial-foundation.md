@@ -1,30 +1,30 @@
 ---
-title: Zavedení počátečního základu zásad správného řízení cloudu
+title: Navázat počáteční cloudový základ zásad správného řízení
 description: Využijte Azure Cloud Framework pro Azure a začněte se zásadou správy cloudu tím, že navedete počáteční Cloud zásad správného řízení.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 02/25/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708355"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223806"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Navázat počáteční cloudový základ zásad správného řízení
 
-Vytváření zásad správného řízení cloudu je široké iterativní úsilí. Je náročné zamezit efektivní rovnováhu mezi rychlostí a řízením, zejména při počátečních fázích přijetí cloudu. Pokyny pro zásady správného řízení v rozhraní pro přijetí do cloudu pomáhají poskytnout tuto rovnováhu prostřednictvím agilního přístupu k přijetí.
+Vytváření zásad správného řízení cloudu je široké iterativní úsilí. Je náročné zamezit efektivní rovnováhu mezi rychlostí a řízením, zejména při provádění počátečních metodik v rámci přijetí cloudu. Pokyny pro zásady správného řízení v rozhraní pro přijetí do cloudu pomáhají poskytnout tuto rovnováhu prostřednictvím agilního přístupu k přijetí.
 
 Tento článek poskytuje dvě možnosti, jak vytvořit počáteční základ pro řízení. Jedna z možností zajišťuje, aby se omezení zásad správného řízení mohla škálovat a rozšířila, protože plán přijetí je implementovaný a požadavky jsou jasně definovány. Ve výchozím nastavení předpokládá prvotní základ izolovanou polohu a řízení. Zaměřuje se taky na organizaci prostředků, než na zásady správného řízení prostředků. Tento odlehčený počáteční bod se nazývá _minimální životaschopný produkt (MVP)_ pro řízení. Cílem MVP je snižovat překážky při stanovení počátečního stupně řízení a pak umožnit rychlé maturation řešení, aby se vyřešilo celé množství hmotných rizik.
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Už se používá architektura pro přijetí do cloudu.
 
-Pokud jste spolu s architekturou pro přijetí v cloudu provedli následující postup, možná jste už nasadili MVP pro řízení. Doprovodné materiály k jednotlivým provozním modelům jsou základními aspekty. Je k dispozici během každé fáze životního cyklu přijetí do cloudu. V takovém případě rozhraní pro [přijetí do cloudu](../index.md) poskytuje pokyny, které vkládají zásady správného řízení do aktivit souvisejících s implementací vašeho [plánu přijetí do cloudu](../plan/index.md). Příkladem této integrace zásad správného řízení je použití plánů k nasazení jedné nebo více zón vykládku přítomných [v doprovodné dokumentaci](../ready/index.md) . Dalším příkladem jsou pokyny pro [škálování předplatných](../ready/azure-best-practices/scaling-subscriptions.md). Pokud jste postupovali s jedním z těchto doporučení, v následujících oddílech MVP jsou jenom recenze stávajících rozhodnutí o nasazení. Po rychlé kontrole přejděte k [vyspělému řešení zásad správného řízení a použijte osvědčené postupy](./foundation-improvements.md).
+Pokud jste spolu s architekturou pro přijetí v cloudu provedli následující postup, možná jste už nasadili MVP pro řízení. Zásady správného řízení jsou základními aspekty jakéhokoli provozního modelu. Je k dispozici v každé metodologii životního cyklu přijetí do cloudu. V takovém případě rozhraní pro [přijetí do cloudu](../index.md) poskytuje pokyny, které vkládají zásady správného řízení do aktivit souvisejících s implementací vašeho [plánu přijetí do cloudu](../plan/index.md). Příkladem této integrace zásad správného řízení je použití plánů k nasazení jedné nebo více zón vykládku přítomných [v doprovodné dokumentaci](../ready/index.md) . Dalším příkladem jsou pokyny pro [škálování předplatných](../ready/azure-best-practices/scaling-subscriptions.md). Pokud jste postupovali s jedním z těchto doporučení, v následujících oddílech MVP jsou jenom recenze stávajících rozhodnutí o nasazení. Po rychlé kontrole přejděte k [vyspělému řešení zásad správného řízení a použijte osvědčené postupy](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Vytvoření počátečního základu zásad správného řízení
 

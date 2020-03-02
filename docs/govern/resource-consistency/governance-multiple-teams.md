@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709579"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223898"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Návrh zásad správného řízení pro několik týmů
 
 Cílem těchto pokynů je pomoci naučit se postup navrhování modelu zásad správného řízení prostředků v Azure za účelem podpory více týmů, více úloh a více prostředí. Nejdřív se podíváte na sadu hypotetických požadavků zásad správného řízení a potom si Projděte několik ukázkových implementací, které tyto požadavky splňují.
@@ -127,7 +129,7 @@ Všimněte si, že v tomto modelu provedl **Správce služby** méně akcí než
 ![předplatné se skupinami prostředků a a B](../../_images/govern/design/governance-2-16.png)
 *Obrázek 5 – předplatné se správcem služby a dvěma vlastníky úloh, které má přiřazenou předdefinovanou roli vlastníka.*
 
-Vzhledem k tomu, že **vlastník úlohy** a a **vlastník úlohy B** mají přiřazenou předdefinovanou roli vlastníka v oboru předplatného, mají každý z nich děděnou předdefinovanou roli vlastníka pro skupinu prostředků. To znamená, že nemají k dispozici jenom úplný přístup k prostředkům jiných zdrojů, můžou taky delegovat přístup pro správu do skupin prostředků ostatních. Například **vlastník úlohy B** má práva k přidání dalšího uživatele do **skupiny prostředků** a a může jim přiřadit libovolnou roli, včetně předdefinované role vlastníka.
+Vzhledem k tomu, že **vlastník úlohy** a a **vlastník úlohy B** mají přiřazenou předdefinovanou roli vlastníka v oboru předplatného, mají každý z nich děděnou předdefinovanou roli vlastníka pro skupinu prostředků. To znamená, že nejen mají úplný přístup k prostředkům ostatních zdrojů, můžou taky delegovat přístup pro správu do skupin prostředků ostatních. Například **vlastník úlohy B** má práva k přidání dalšího uživatele do **skupiny prostředků** a a může jim přiřadit libovolnou roli, včetně předdefinované role vlastníka.
 
 Pokud každý příklad porovnáte s požadavky, uvidíte, že oba příklady podporují jednoho důvěryhodného uživatele v oboru předplatného s oprávněním pro udělení přístupových práv k prostředkům pro tyto dva vlastníky úloh. Každý ze dvou vlastníků úloh neměl ve výchozím nastavení přístup ke správě prostředků a vyžaduje, aby **Správce služby** explicitně přidělil oprávnění. Pouze první příklad však podporuje požadavek, aby prostředky přidružené k jednotlivým úlohám byly izolované od sebe, takže žádný vlastník úlohy nemá přístup k prostředkům žádné jiné úlohy.
 
@@ -185,7 +187,7 @@ Pojďme začít vyhodnocením první možnosti. Budete používat model oprávn�
 10. Druhý **vlastník úlohy** vytvoří podsíť ve virtuální síti virtuální sítě **VNet** a pak přidá dva virtuální počítače. Druhý **vlastník úlohy** používá pro jednotlivé prostředky značky *prostředí* a *ManagedBy* .
     ![vytváření podsítí](../../_images/govern/design/governance-3-8.png)
 
-Tento ukázkový model správy prostředků nám umožňuje spravovat prostředky ve třech požadovaných prostředích. Sdílené prostředky infrastruktury jsou chráněné, protože v předplatném je jenom jeden uživatel s oprávněním pro přístup k těmto prostředkům. Všichni vlastníci úloh můžou používat sdílené prostředky infrastruktury bez jakýchkoli oprávnění ke samotným sdíleným prostředkům. Tento model správy ale nesplňuje požadavky na izolaci úloh – každé ze dvou **vlastníků úloh** může získat přístup k prostředkům druhé úlohy.
+Tento ukázkový model správy prostředků nám umožňuje spravovat prostředky ve třech požadovaných prostředích. Sdílené prostředky infrastruktury jsou chráněné, protože oprávnění pro přístup k těmto prostředkům mají jenom jednotliví uživatelé v rámci předplatného. Každý vlastník úlohy může použít sdílené prostředky infrastruktury bez jakýchkoli oprávnění ke sdíleným prostředkům. Tento model správy ale nesplňuje požadavky na izolaci úloh, protože jak **vlastníci úloh** mají přístup k prostředkům jednotlivých úloh.
 
 Tento model má další důležité hledisko, které nemusí být okamžitě zřejmé. V tomto příkladu byl **app1 vlastník úlohy** , který požádal o připojení partnerského vztahu k síti s **rozbočovačem-VNet** pro poskytování připojení k místnímu prostředí. **Síťové operace** vyhodnotily požadavek na základě prostředků nasazených s touto úlohou. Když **vlastník předplatného** přidal k roli **přispěvatele** **vlastníka úlohy app2** , měl by mít tento uživatel práva pro správu pro všechny prostředky ve skupině prostředků **prod-RG** .
 
