@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707981"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222579"
 ---
 # <a name="encryption-decision-guide"></a>Průvodce rozhodováním ohledně šifrování
 
@@ -57,7 +57,7 @@ V případě přístupu spočívajícího v používání vlastního klíče vyg
 **Předpoklady pro používání vlastního klíče:** Při generování klíčů v místním prostředí a jejich používání v cloudovém systému správy klíčů se předpokládá následující:
 
 - S hostováním a používáním vašich klíčů a tajných klíčů důvěřujete základní infrastruktuře zabezpečení a řízení přístupu cloudové platformy.
-- Vaše aplikace nebo služby hostované v cloudu mají přístup ke klíčům a tajným klíčům a můžou je používat robustním a bezpečným způsobem.
+- Vaše aplikace nebo služby hostované v cloudu mají přístup ke klíčům a tajným klíčům a mohou je používat robustním a bezpečným způsobem.
 - Legislativní předpisy nebo zásady organizace vyžadují, abyste i nadále vytvářeli a spravovali klíče a tajné klíče vaší organizace v místním prostředí.
 
 ### <a name="on-premises-hold-your-own-key"></a>Místní prostředí (držení vlastního klíče)
@@ -128,7 +128,7 @@ Další informace o šifrování a správě klíčů v Azure najdete tady:
 
 ## <a name="next-steps"></a>Další kroky
 
-Šifrování je pouze jednou ze základních komponent infrastruktury, která během procesu přechodu na cloud vyžaduje rozhodnutí na úrovni architektury. Navštivte [přehled průvodců rozhodováním](../index.md), kde se dozvíte o alternativních modelech nebo modelech určených pro rozhodování o návrzích pro jiné typy architektur.
+Šifrování je pouze jednou ze základních komponent infrastruktury, která během procesu přechodu na cloud vyžaduje rozhodnutí na úrovni architektury. V [přehledu průvodců rozhodováním](../index.md) se dozvíte o alternativních modelech nebo modelech určených pro rozhodování o návrzích pro jiné typy architektur.
 
 > [!div class="nextstepaction"]
 > [Průvodci rozhodováním ohledně architektury](../index.md)

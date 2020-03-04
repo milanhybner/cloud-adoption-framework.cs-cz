@@ -42,9 +42,11 @@ items:
             href: strategy/financial-models.md
           - name: Principy účtování cloudu
             href: strategy/cloud-accounting.md
+          - name: Vyvážení portfolia
+            href: strategy/balance-the-portfolio.md
       - name: První projekt přechodu na cloud
         href: strategy/first-adoption-project.md
-      - name: Navrhované dovednosti
+      - name: Dovednosti související se strategií
         href: strategy/suggested-skills.md
   - name: Plánování
     items:
@@ -84,10 +86,16 @@ items:
             href: plan/iteration-paths.md
           - name: Odhadnutí časových os
             href: plan/timelines.md
-      - name: Navrhované dovednosti
-        href: plan/suggested-skills.md
-      - name: Adaptace pro cloud
-        href: plan/adapt-roles-skills-processes.md
+      - name: Plán připravenosti dovedností
+        items:
+          - name: Sestavení plánu připravenosti
+            href: plan/adapt-roles-skills-processes.md
+          - name: Mapování rolí a dovedností
+            href: plan/suggested-skills.md
+      - name: Osvědčené postupy
+        items:
+          - name: Posouzení digitálních aktiv v Azure
+            href: plan/contoso-migration-assessment.md
   - name: Připraveno
     items:
       - name: Přehled
@@ -108,32 +116,46 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Udržování aktuálního stavu s Azure
             href: ready/azure-setup-guide/staying-current.md
-          - name: Nasazení cílové zóny migrace
-            href: ready/azure-setup-guide/migration-landing-zone.md
-      - name: Aspekty cílové zóny
+      - name: První cílová zóna
+        items:
+          - name: Co je cílová zóna
+            href: ready/landing-zone/index.md
+          - name: Volba první cílové zóny
+            href: ready/landing-zone/first-landing-zone.md
+          - name: Podrobný plán cílové zóny migrace
+            href: ready/landing-zone/migrate-landing-zone.md
+          - name: Cílové zóny Terraformu
+            href: ready/landing-zone/terraform-landing-zone.md
+      - name: Rozšíření cílové zóny
         items:
           - name: Přehled
             href: ready/considerations/index.md
-          - name: Základní koncepty Azure
-            href: ready/considerations/fundamental-concepts.md
-          - name: Kontrola výpočetních možností
-            href: ready/considerations/compute-options.md
-          - name: Kontrola síťových možností
-            href: ready/considerations/networking-options.md
-          - name: Kontrola paměťových možností
-            href: ready/considerations/storage-options.md
-          - name: Kontrola datových možností
-            href: ready/considerations/data-options.md
-          - name: Řízení přístupu na základě rolí
-            href: ready/considerations/roles.md
-          - name: Vytvoření konzistentního hybridního cloudu
-            href: ready/considerations/hybrid-consistency.md
-      - name: Rozšířený rozsah
-        items:
-          - name: Cílové zóny Terraformu
-            href: ready/expanded-scope/terraform-landing-zone.md
-          - name: Zabezpečení hranic sítě
-            href: reference/networking-vdc.md
+          - name: Základní aspekty cílových zón
+            items:
+              - name: Základní koncepty Azure
+                href: ready/considerations/fundamental-concepts.md
+              - name: Kontrola výpočetních možností
+                href: ready/considerations/compute-options.md
+              - name: Kontrola síťových možností
+                href: ready/considerations/networking-options.md
+              - name: Kontrola paměťových možností
+                href: ready/considerations/storage-options.md
+              - name: Kontrola datových možností
+                href: ready/considerations/data-options.md
+              - name: Řízení přístupu na základě rolí
+                href: ready/considerations/roles.md
+              - name: Vytvoření konzistentního hybridního cloudu
+                href: ready/considerations/hybrid-consistency.md
+          - name: Vylepšení zabezpečení cílové zóny (citlivá data)
+            items:
+              - name: Implementace zabezpečené hybridní síťové architektury v Azure
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Osvědčené postupy správy identit a zabezpečení řízení přístupu v Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Osvědčené postupy zabezpečení sítí Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Osvědčené postupy provozního zabezpečení Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: Osvědčené postupy
         items:
           - name: Přehled
@@ -146,6 +168,8 @@ items:
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Sítě
             items:
+              - name: Zabezpečení hranic sítě
+                href: reference/networking-vdc.md
               - name: Plánování virtuálních sítí
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Osvědčené postupy zabezpečení sítě
@@ -188,7 +212,7 @@ items:
                 href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Monitorování využití a výdajů
                 href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-      - name: Navrhované dovednosti
+      - name: Dovednosti související s připraveností a cílovými zónami
         href: ready/suggested-skills.md
   - name: Přijetí
     items:
@@ -200,90 +224,40 @@ items:
             items:
               - name: Než začnete
                 href: migrate/azure-migration-guide/index.md
-              - name: Požadavky pro migraci do Azure
-                href: migrate/azure-migration-guide/prerequisites.md
-              - name: Posouzení digitálních aktiv
+              - name: Vyhodnocení jednotlivých úloh a zpřesnění plánů
                 href: migrate/azure-migration-guide/assess.md
               - name: Migrace prostředků úloh
                 href: migrate/azure-migration-guide/migrate.md
+              - name: 'Testování, optimalizace a zvýšení úrovně'
+                href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: Mechanismy kontroly nákladů se zaměřením na migraci
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: Optimalizace a transformace
-                href: migrate/azure-migration-guide/optimize-and-transform.md
-              - name: Zabezpečení a správa
-                href: migrate/azure-migration-guide/secure-and-manage.md
               - name: Získání pomoci
                 href: migrate/azure-migration-guide/assistance.md
-          - name: Rozšířený rozsah
-            items:
-              - name: Kontrolní seznam pro rozšířený rozsah
-                href: migrate/expanded-scope/index.md
-              - name: Vyvážení portfolia
-                href: migrate/expanded-scope/balance-the-portfolio.md
-              - name: Připravenost dovedností
-                href: migrate/expanded-scope/suggested-skills.md
-              - name: Migrace hostitele VMware
-                href: migrate/expanded-scope/vmware-host.md
-              - name: Migrace SQL Serveru
-                href: migrate/expanded-scope/sql-migration.md
-              - name: Několik datových center
-                href: migrate/expanded-scope/multiple-datacenters.md
-              - name: Požadavky na data překračují kapacitu sítě
-                href: migrate/expanded-scope/network-capacity-exceeded.md
-              - name: Zásady správného řízení a dodržování předpisů
-                href: migrate/expanded-scope/governance-or-compliance.md
-          - name: Osvědčené postupy
+          - name: Scénáře migrace
             items:
               - name: Přehled
-                href: migrate/azure-best-practices/index.md
-              - name: Posouzení úloh
+                href: migrate/azure-best-practices/contoso-migration-overview.md
+              - name: Úlohy Windows Serveru
                 items:
-                  - name: Posouzení místních úloh
-                    href: migrate/azure-best-practices/contoso-migration-assessment.md
-              - name: Migrace úloh
+                  - name: Změna hostitele aplikace pro Windows na virtuálních počítačích Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                  - name: Změna architektury aplikace pro Windows s využitím kontejnerů a Azure SQL
+                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+              - name: Linuxové úlohy
                 items:
-                  - name: Nastavení sítí pro migrované úlohy
-                    href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                  - name: Migrace aplikací
-                    items:
-                      - name: Přehled
-                        href: migrate/azure-best-practices/contoso-migration-overview.md
-                      - name: Nasazení infrastruktury pro migraci
-                        href: migrate/azure-best-practices/contoso-migration-infrastructure.md
-                      - name: Úlohy Windows Serveru
-                        items:
-                          - name: Změna hostitele aplikace pro Windows na virtuálních počítačích Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                          - name: Změna architektury aplikace pro Windows s využitím kontejnerů a Azure SQL
-                            href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
-                      - name: Linuxové úlohy
-                        items:
-                          - name: Změna hostitele linuxové aplikace na virtuální počítače Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
-                          - name: Změna hostitele linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                      - name: Úlohy SQL Serveru
-                        items:
-                          - name: Změna hostitele aplikace na virtuální počítače Azure a spravovanou instanci Azure SQL Database
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                          - name: Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
-                      - name: Aplikace v ASP.NET/PHP/Javě
-                        items:
-                          - name: Refaktorování aplikace do Azure App Service a Azure SQL Database
-                            href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                          - name: Refaktorování linuxové aplikace do App Service a Azure Database for MySQL
-                            href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
-                          - name: Opětovné sestavení aplikace v Azure
-                            href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                          - name: Migrace TFS na Azure DevOps Services
-                            href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-                      - name: Škálování migrace
-                        href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: Migrace hostitelů VMware
+                  - name: Změna hostitele linuxové aplikace na virtuální počítače Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                  - name: Změna hostitele linuxové aplikace na virtuální počítače Azure a Azure Database for MySQL
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                  - name: Refaktorování linuxové aplikace do App Service a Azure Database for MySQL
+                    href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+              - name: Hostitelé VMware
                 items:
                   - name: Přehled
                     href: migrate/azure-best-practices/vmware-host.md
+                  - name: Požadavky při migraci hostitelů VMWare
+                    href: migrate/expanded-scope/vmware-host.md
                   - name: Požadavky
                     items:
                       - name: Zabezpečení vašeho prostředí
@@ -336,7 +310,35 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Nastavení privátního cloudu jako lokality pro zotavení po havárii s využitím VMware SRM
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrace datových platforem
+              - name: Aplikace v ASP.NET
+                items:
+                  - name: Refaktorování aplikace do Azure App Service a Azure SQL Database
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: Opětovné sestavení aplikace v Azure
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: Migrace TFS na Azure DevOps Services
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Aplikace v Javě
+                items:
+                  - name: Možnosti migrace
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Spring do služby Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat do služby Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat do kontejnerů v AKS
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic do Azure Virtual Machines
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SQL Server
+                items:
+                  - name: Požadavky při migraci hostitelů SQL Serveru
+                    href: migrate/expanded-scope/sql-migration.md
+                  - name: Změna hostitele aplikace na virtuální počítače Azure a spravovanou instanci Azure SQL Database
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: Změna hostitele aplikace na virtuální počítače Azure a skupiny dostupnosti AlwaysOn pro SQL Server
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: Datové platformy
                 items:
                   - name: Přehled
                     href: migrate/azure-best-practices/sql-migration.md
@@ -420,7 +422,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Online migrace Oracle do Azure DB for PostgreSQL
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrace mainframů
+              - name: Mainframy
                 items:
                   - name: Přehled
                     href: infrastructure/mainframe-migration/index.md
@@ -430,45 +432,49 @@ items:
                     href: infrastructure/mainframe-migration/migration-strategies.md
                   - name: Migrace mainframových aplikací
                     href: infrastructure/mainframe-migration/application-strategies.md
-              - name: Optimalizace úloh
-                items:
-                  - name: Určení nákladů na úlohy a jejich velikosti
-                    href: migrate/azure-best-practices/migrate-best-practices-costs.md
-              - name: Zabezpečení a správa úloh
+              - name: Migrace zabezpečených úloh
                 items:
                   - name: Zabezpečení a správa úloh po dokončení migrace
                     href: migrate/azure-best-practices/migrate-best-practices-security-management.md
-                  - name: Další osvědčené postupy
-                    items:
-                      - name: Osvědčené postupy zabezpečení databáze v Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy šifrování a zabezpečení dat v Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy správy identit a zabezpečení řízení přístupu v Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy zabezpečení sítí Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy provozního zabezpečení Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy pro Azure PaaS
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy zabezpečení Azure Service Fabric
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy pro zabezpečení virtuálních počítačů Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Implementace zabezpečené hybridní síťové architektury v Azure
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy zabezpečení IoT
-                        href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpečení databází PaaS v Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpečení webových a mobilních aplikací PaaS pomocí Azure App Service
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpečení webových a mobilních aplikací PaaS pomocí Azure Storage
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Osvědčené postupy zabezpečení pro úlohy IaaS v Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: Požadavky na migraci
+                  - name: Osvědčené postupy zabezpečení databáze v Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy šifrování a zabezpečení dat v Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy pro Azure PaaS
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy zabezpečení Azure Service Fabric
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy pro zabezpečení virtuálních počítačů Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy zabezpečení IoT
+                    href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpečení databází PaaS v Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpečení webových a mobilních aplikací PaaS pomocí Azure App Service
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpečení webových a mobilních aplikací PaaS pomocí Azure Storage
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Osvědčené postupy zabezpečení pro úlohy IaaS v Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Osvědčené postupy
+            items:
+              - name: Přehled
+                href: migrate/azure-best-practices/index.md
+              - name: Několik datacenter
+                href: migrate/expanded-scope/multiple-datacenters.md
+              - name: Požadavky na data překračují kapacitu sítě
+                href: migrate/expanded-scope/network-capacity-exceeded.md
+              - name: Nastavení sítí pro migrované úlohy
+                href: migrate/azure-best-practices/migrate-best-practices-networking.md
+              - name: Nasazení infrastruktury pro migraci
+                href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+              - name: Optimalizace migrovaných úloh z hlediska nákladů
+                href: migrate/azure-best-practices/migrate-best-practices-costs.md
+              - name: Škálování migrace
+                href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: Zásady správného řízení a dodržování předpisů
+                href: migrate/expanded-scope/governance-or-compliance.md
+          - name: Vylepšení procesů
             items:
               - name: Přehled
                 href: migrate/migration-considerations/index.md
@@ -486,9 +492,9 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: Kontrola backlogu migrace
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: Posouzení prostředků a úloh
+              - name: Procesy hodnocení
                 items:
-                  - name: Posouzení prostředků před migrací
+                  - name: Ověření předpokladů posouzení před zahájením migrace – přidání upřesnění R
                     href: migrate/migration-considerations/assess/index.md
                   - name: Zajištění priorit
                     href: migrate/migration-considerations/assess/business-priorities.md
@@ -496,7 +502,7 @@ items:
                     href: migrate/migration-considerations/assess/evaluate.md
                   - name: Vytváření úloh
                     href: migrate/migration-considerations/assess/architect.md
-                  - name: Odhad nákladů na cloud
+                  - name: Aktualizace a upřesnění počátečních cloudových odhadů
                     href: migrate/migration-considerations/assess/estimate.md
                   - name: Vysvětlení možností partnerství
                     href: migrate/migration-considerations/assess/partnership-options.md
@@ -504,7 +510,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: Schválení změn architektury
                     href: migrate/migration-considerations/assess/approve.md
-              - name: Migrace jednotlivých prostředků
+              - name: Procesy migrace
                 items:
                   - name: Přehled
                     href: migrate/migration-considerations/migrate/index.md
@@ -518,7 +524,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Fáze úloh
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: Optimalizace a povýšení úloh
+              - name: 'Procesy testování, optimalizace a propagace'
                 items:
                   - name: Přehled
                     href: migrate/migration-considerations/optimize/index.md
@@ -536,10 +542,8 @@ items:
                     href: migrate/migration-considerations/optimize/decommission.md
                   - name: Provádění retrospektiv
                     href: migrate/migration-considerations/optimize/retrospective.md
-              - name: Zabezpečení a správa úloh v produkčním prostředí
-                items:
-                  - name: Přehled
-                    href: migrate/migration-considerations/secure-and-manage/index.md
+          - name: Dovednosti související s migrací
+            href: migrate/expanded-scope/suggested-skills.md
       - name: Inovace
         items:
           - name: Přehled
@@ -560,39 +564,7 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: Predikce a ovlivňování
                 href: innovate/innovation-guide/predict.md
-          - name: Požadavky
-            items:
-              - name: Přehled
-                href: innovate/considerations/index.md
-              - name: Konsensus ohledně obchodní hodnoty
-                href: innovate/business-value.md
-              - name: Přechod u zákazníků
-                items:
-                  - name: Smyčky zpětné vazby
-                    href: innovate/considerations/adoption.md
-                  - name: Sestavování s empatií vůči zákazníkům
-                    href: innovate/considerations/build.md
-                  - name: Měření dopadu na zákazníky
-                    href: innovate/considerations/measure.md
-                  - name: Učení se zákazníky
-                    href: innovate/considerations/learn.md
-                  - name: Výzvy a překážky pro zákazníky
-                    href: innovate/considerations/challenges.md
-              - name: Digitální vynález
-                items:
-                  - name: Vývoj digitálních vynálezů
-                    href: innovate/considerations/invention.md
-                  - name: Demokratizace dat
-                    href: innovate/considerations/data.md
-                  - name: Zapojení přes aplikace
-                    href: innovate/considerations/apps.md
-                  - name: Posílení přechodu
-                    href: innovate/considerations/ci-cd.md
-                  - name: Interakce se zařízeními
-                    href: innovate/considerations/devices.md
-                  - name: Predikce a ovlivňování
-                    href: innovate/considerations/predict.md
-          - name: Osvědčené postupy inovací
+          - name: Osvědčené postupy
             items:
               - name: Přehled a sada nástrojů Azure
                 href: innovate/best-practices/index.md
@@ -860,6 +832,38 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Zprovoznění ML Services v Azure HDInsight
                         href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Vylepšení procesů
+            items:
+              - name: Přehled
+                href: innovate/considerations/index.md
+              - name: Konsensus ohledně obchodní hodnoty
+                href: innovate/business-value.md
+              - name: Přechod u zákazníků
+                items:
+                  - name: Smyčky zpětné vazby
+                    href: innovate/considerations/adoption.md
+                  - name: Sestavování s empatií vůči zákazníkům
+                    href: innovate/considerations/build.md
+                  - name: Měření dopadu na zákazníky
+                    href: innovate/considerations/measure.md
+                  - name: Učení se zákazníky
+                    href: innovate/considerations/learn.md
+                  - name: Výzvy a překážky pro zákazníky
+                    href: innovate/considerations/challenges.md
+              - name: Digitální vynález
+                items:
+                  - name: Vývoj digitálních vynálezů
+                    href: innovate/considerations/invention.md
+                  - name: Demokratizace dat
+                    href: innovate/considerations/data.md
+                  - name: Zapojení přes aplikace
+                    href: innovate/considerations/apps.md
+                  - name: Posílení přechodu
+                    href: innovate/considerations/ci-cd.md
+                  - name: Interakce se zařízeními
+                    href: innovate/considerations/devices.md
+                  - name: Predikce a ovlivňování
+                    href: innovate/considerations/predict.md
   - name: Řízení
     items:
       - name: Přehled
@@ -1186,7 +1190,7 @@ items:
         href: organize/cost-conscious-organization.md
       - name: Antivzory – léna IT a sila IT
         href: organize/fiefdoms-silos.md
-  - name: Referenční informace
+  - name: Zdroje a prostředky
     items:
       - name: Plán architektury přechodu na cloud
         href: reference/index.md
@@ -1244,5 +1248,5 @@ items:
         href: reference/vdc.md
       - name: Jak funguje Azure?
         href: getting-started/what-is-azure.md
-  - name: Azure Architecture Center
-    href: 'https://docs.microsoft.com/azure/architecture'
+      - name: Azure Architecture Center
+        href: 'https://docs.microsoft.com/azure/architecture'

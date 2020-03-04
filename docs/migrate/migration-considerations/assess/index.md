@@ -1,20 +1,20 @@
 ---
-title: Posouzení prostředků před migrací
-description: Posouzení prostředků před migrací
+title: Ověření předpokladů posouzení před zahájením migrace
+description: Ověření předpokladů posouzení před zahájením migrace
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802493"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222273"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Posouzení prostředků před migrací
+# <a name="validate-assessment-assumptions-before-migration"></a>Ověření předpokladů posouzení před zahájením migrace
 
 Řada z vašich stávajících úloh je ideálními kandidáty pro migraci do cloudu, ale ne každý prostředek je kompatibilní s cloudovými platformami a ne všem úlohám přinese hostování v cloudu výhody. Díky [plánování digitálních aktiv](../../../digital-estate/index.md) můžete vygenerovat celkový [backlog migrace](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) potenciálních úloh, které se mají migrovat. Toto plánování je však úlohou nejvyšší úrovně. Spoléhá na předpoklady týmu cloudové strategie a nezabývá se hlouběji technickými aspekty.
 
@@ -44,11 +44,14 @@ Kromě odpovědnosti na nejvyšší úrovni existují akce, za které musí nés
 - **Obchodní priorita:** Tým rozumí účelu migrace této úlohy, včetně zamýšlených dopadů na firmu.
   - Konečnou odpovědnost za tuto aktivitu by měl nést některý ze členů týmu cloudové strategie pod vedením týmu přechodu na cloud.
 - **Sladění účastníků:** Tým sladí očekávání a priority s interními účastníky a identifikuje kritéria úspěchu migrace. Jak vypadá úspěch po migraci?
+- **Zpřesněná racionalizace:** Vyhodnotí se počáteční předpoklady týkající se racionalizace. Měl se pro migraci této konkrétní úlohy použít jiný [racionalizační přístup](../../../digital-estate/rationalize.md)?
+- **Rozhodnutí ohledně modernizace:** Měly se bez ohledu na rozhodnutí týkající se racionalizace, různé prostředky v rámci této úlohy modernizovat, aby se mohla využít řešení založená na PaaS?
 - **Náklady:** Vytvořil se odhad nákladů na cílovou architekturu a upravil se podle něj celkový rozpočet.
 - **Podpora migrace:** Tým se rozhodl, jak se provede technická část migrace, a přijal také rozhodnutí ohledně podpory partnerů nebo Microsoftu.
 - **Vyhodnocení:** U úlohy se vyhodnotí kompatibilita a závislosti.
   - Tato aktivita by se měla přiřadit odborníkovi na danou problematiku, který zná architekturu a operace kandidátské úlohy.
 - **Architektura:** Tým se shodl na konečném stavu architektury pro migrovanou úlohu.
+- **Migrační nástroje:** V závislosti na modernizaci a přístupů k architektuře se k automatizaci migrace dá použít celá řada migračních nástrojů. Bude (v závislosti na navržené architektuře) tato migrace využívat nejlepší [migrační nástroje](../../../decision-guides/migrate-decision-guide/index.md)?
 - **Sladění backlogů:** Tým přechodu na cloud zkontroluje požadavky a zaváže se k migraci kandidátské úlohy. Po přijetí závazku se odpovídajícím způsobem aktualizuje backlog vydaných verzí a backlog iterací.
 - **Strukturovaný rozpis prací nebo plán prací:** Tým vytvoří plán hlavních milníků, který stanoví cíle po dokončení procesů plánování, implementace a kontroly.
 - **Konečné schválení:** Všichni potřební schvalovatelé plán zkontrolovali a schválili přístup k migraci prostředku.

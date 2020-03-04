@@ -3,16 +3,16 @@ title: Kontrolní seznam pro rozšířený rozsah migrace do cloudu
 description: Kontrolní seznam pro rozšířený rozsah migrace do cloudu
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803105"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222324"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Rozšířený rozsah pro migraci do cloudu
 
@@ -22,11 +22,10 @@ Tento průvodce představuje efektivní směrný plán, který vám umožní sez
 
 ## <a name="cloud-migration-expanded-scope-checklist"></a>Kontrolní seznam pro rozšířený rozsah migrace do cloudu
 
-Následující kontrolní seznam popisuje běžné složité oblasti, které můžou vyžadovat rozšíření rozsahu migrace nad rámec [průvodce migrací do Azure](../azure-migration-guide/index.md).
+Následující kontrolní seznam popisuje běžné složité oblasti, které mohou vyžadovat rozšíření rozsahu migrace nad rámec [průvodce migrací do Azure](../azure-migration-guide/index.md).
 
 ### <a name="business-driven-scope-expansion"></a>Rozšíření rozsahu řízené obchodními procesy
 
-- **[Vyvážení portfolia:](./balance-the-portfolio.md)** Tým cloudové strategie se zajímá o výraznější investice do migrace (změnou hostitele stávajících úloh a aplikací s minimem úprav) nebo inovací (refaktorováním nebo opětovným sestavením těchto úloh a aplikací s využitím moderních cloudových technologií). Často je klíčem k úspěchu najít správnou rovnováhu mezi těmito dvěma prioritami. V tomto průvodci je téma vyvážení portfolia přechodu na cloud společné a řeší se v každém procesu migrace.
 - **[Podpora globálních trhů:](../../decision-guides/regions/index.md)** Firma působí v několika geografických oblastech s různorodými požadavky na suverenitu dat. Aby bylo možné splnit tyto požadavky, při kontrole požadavků a distribuci prostředků během migrace je potřeba vzít v úvahu další aspekty.
 
 ### <a name="technology-driven-scope-expansion"></a>Rozšíření rozsahu řízené technologiemi
@@ -43,7 +42,7 @@ Každému z těchto scénářů se věnuje samostatný článek v této části 
 
 ## <a name="next-steps"></a>Další kroky
 
-Pokud hledáte řešení konkrétních požadavků nebo změn rozsahu, projděte si obsah na levé straně. Případně pokud si chcete projít tyto scénáře, můžete začít prvním vylepšením rozsahu v seznamu – [Vyvážení portfolia](./balance-the-portfolio.md).
+Pokud hledáte řešení konkrétních požadavků nebo změn rozsahu, projděte si obsah na levé straně. Případně pokud si chcete projít tyto scénáře, můžete začít prvním vylepšením rozsahu v seznamu – [Podpora globálních trhů](../../decision-guides/regions/index.md).
 
 > [!div class="nextstepaction"]
-> [Vyvážení portfolia](./balance-the-portfolio.md)
+> [Podpora globálních trhů](../../decision-guides/regions/index.md)

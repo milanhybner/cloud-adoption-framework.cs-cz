@@ -29,7 +29,7 @@ Informace o definování vlastních zásad najdete v [dokumentaci ke službě Az
 
 Zásady Azure můžou být přiřazené na úrovni skupiny prostředků, předplatného a skupiny pro správu a můžou být součástí [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview). Přestože se požadavky zásad definované v tomto MVP zásad správného řízení vztahují na všechna aktuální předplatná, je velmi pravděpodobné, že budoucí nasazení budou vyžadovat výjimky nebo alternativní zásady. Z tohoto důvodu přiřazování zásad s využitím skupin pro správu, kde tato přiřazení dědí všechna podřízená předplatná, nemusí být dostatečně flexibilní pro zajištění podpory těchto scénářů.
 
-Služba Azure Blueprints umožňuje konzistentní přiřazování zásad a rolí, používání šablon Resource Manageru a nasazování skupin prostředků do několika předplatných. Stejně jako definice zásad se definice podrobných plánů ukládají do skupin pro správu nebo předplatných a díky dědičnosti jsou k dispozici pro všechny podřízené prvky v hierarchii skupiny pro správu.
+Služba Azure Blueprints umožňuje konzistentní přiřazování zásad a rolí, používání šablon Resource Manageru a nasazování skupin prostředků do několika předplatných. Definice podrobných plánů se stejně jako definice zásad ukládají do skupin pro správu nebo předplatných. Definice zásad jsou prostřednictvím dědičnosti dostupné pro všechny podřízené položky v hierarchii skupin pro správu.
 
 Tým zásad správného řízení v cloudu se rozhodl implementovat vynucování požadovaných přiřazení Azure Policy a RBAC napříč předplatnými prostřednictvím služby Azure Blueprints a přidružených artefaktů:
 

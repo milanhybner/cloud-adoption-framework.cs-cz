@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707658"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222783"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 
@@ -44,7 +44,7 @@ Pokud vaše organizace aktuálně nemá zavedené systémy protokolování a gen
 
 V tomto scénáři se veškerá data protokolů zaznamenávají a ukládají v cloudu, zatímco nástroje pro protokolování a generování sestav, které zpracovávají a zpřístupňují informace IT pracovníkům, poskytuje platforma Azure a služba Azure Monitor.
 
-V menších nebo experimentálních nasazeních je pro jednotlivá předplatná nebo jednotlivé úlohy možné ad hoc implementovat vlastní řešení protokolování založená na službě Azure Monitor, která jsou centrálně uspořádaná a umožňují monitorovat data protokolů napříč všemi cloudovými aktivy.
+Vlastní řešení protokolování založená na Azure Monitoru se dají podle potřeby implementovat pro jednotlivá předplatná nebo úlohy v menších nebo experimentálních nasazeních. Tato řešení jsou uspořádaná centrálně a monitorují data protokolů napříč všemi cloudovými aktivy.
 
 **Předpoklady pro model nativní pro cloud:** Při použití systémů protokolování a generování sestav nativního pro cloud se předpokládá následující:
 

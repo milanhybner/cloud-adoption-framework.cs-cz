@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708491"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222603"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
 Azure se skládá z mnoha oblastí po celém světě. Každá z [oblastí Azure](https://azure.microsoft.com/global-infrastructure/regions) má specifickou sadu charakteristik, kvůli kterým je výběr oblasti, která se má použít, mimořádně důležitý.
 
 1. **Dostupné služby:** Služby, které se nasazují do jednotlivých oblastí, se liší v závislosti na nejrůznějších faktorech. Pro nasazení vaší úlohy musíte vybrat oblast, která obsahuje požadovanou službu. V článku [Dostupné produkty v jednotlivých oblastech](https://azure.microsoft.com/global-infrastructure/services) najdete další informace o tom, které služby jsou v jednotlivých oblastech k dispozici.
-1. **Kapacita:** Každá oblast má maximální kapacitu. Přestože tyto informace se obvykle ke koncovému uživateli nedostanou, mohou mít vliv na to, jaké typy předplatných a služeb může nasadit a za jakých okolností. Je to něco jiného než kvóty předplatného. Pokud plánujete rozsáhlou migraci datacenter do Azure, budete pravděpodobně chtít konzultovat s místním provozním týmem Azure nebo account manažerem a ujistit se, že je možné nasazovat v potřebném měřítku.
+1. **Kapacita:** Každá oblast má maximální kapacitu. Přestože tyto informace se obvykle ke koncovému uživateli nedostanou, mohou mít vliv na to, jaké typy předplatných a služeb může nasadit a za jakých okolností. Je to něco jiného než kvóty předplatného. Pokud plánujete rozsáhlou migraci datacenter do Azure, budete pravděpodobně chtít konzultovat s místním provozním týmem Azure nebo account manažerem a ujistit se, že můžete nasazovat v potřebném měřítku.
 1. **Omezení:** Pro nasazení služeb v některých oblastech platí určitá omezení. Některé oblasti jsou například dostupné jenom jako cíl zálohování nebo převzetí služeb při selhání. Mezi další důležitá omezení, která je potřeba zmínit, patří [požadavky na suverenitu dat](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suverenita:** Pro konkrétní suverénní entity jsou vyhrazené konkrétní oblasti. Přestože se stále jedná o oblasti Azure, jsou tyto suverénní oblasti zcela izolované od zbytku Azure, nemusí je spravovat Microsoft a mohou být omezené jenom na konkrétní typy zákazníků. Jde o tyto suverénní oblasti:
     1. [Azure (Čína)](https://azure.microsoft.com/global-infrastructure/china)

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0dfab31bbdc9dc7aae6c5d82f77f8640dcc01874
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808222"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223461"
 ---
 ::: zone target="docs"
 
@@ -53,7 +53,7 @@ Směrný plán správy je minimální sada nástrojů a procesů, které by se m
 ::: zone target="docs"
 
 > [!TIP]
-> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a vyberte **Průvodce správou Azure**. Potom postupujte podle podrobných pokynů.
+> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a potom vyberte **Průvodce správou Azure**. Potom postupujte podle podrobných pokynů.
 
 Dalším krokem je [inventarizace a zajištění přehledu](./inventory.md).
 

@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171374"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223670"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Přehled migrace mainframů
 
 Řada společností a organizací s výhodou využívá přesun některých nebo všech mainframových úloh, aplikací a databází do cloudu. Azure poskytuje funkce podobné jako mainframy v cloudovém měřítku a bez řad nevýhod, které jsou se sálovými počítači spojené.
@@ -34,7 +36,7 @@ Tyto materiály pomáhají IT organizacím zahájit diskuzi o migraci. Je pravd�
 
 Sálové počítače byly navrženy na sklonku 50. let minulého století jako škálovací servery pro spouštění dávkového zpracování a online transakcí s velkým objemem. Z tohoto důvodu sálové počítače mají software pro online transakční formuláře (někdy označované jako zelené obrazovky) a vysoce výkonné vstupně-výstupní systémy pro zpracování dávkových běhů.
 
-Sálové počítače mají pověst vysoce spolehlivých a dostupných systémů a jsou známé svou schopností spouštět obrovské online transakce a dávkové úlohy. Transakce je výsledkem zpracování iniciovaného jedním požadavkem, zpravidla od uživatele na terminálu. Transakce mohou také pocházet z řady dalších zdrojů, včetně webových stránek, vzdálených pracovních stanic a aplikací z jiných informačních systémů. Transakce se také může aktivovat automaticky v předdefinovaném čase, jak ukazuje následující obrázek.
+Sálové počítače jsou známé vysokou spolehlivostí a dostupností a také schopností spouštět obrovské online transakce a dávkové úlohy. Transakce je výsledkem zpracování iniciovaného jedním požadavkem, zpravidla od uživatele na terminálu. Transakce mohou také pocházet z řady dalších zdrojů, včetně webových stránek, vzdálených pracovních stanic a aplikací z jiných informačních systémů. Transakce se také může aktivovat automaticky v předdefinovaném čase, jak ukazuje následující obrázek.
 
 ![Komponenty typické architektury sálového počítače IBM](../../_images/mainframe-migration/mainframe-architecture.png)
 
