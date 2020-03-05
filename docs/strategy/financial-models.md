@@ -1,6 +1,6 @@
 ---
-title: Vytvoření finančního modelu pro cloudovou transformaci
-description: Jak vytvořit finanční model pro transformaci cloudu.
+title: Finanční model pro migraci do cloudu
+description: Seznamte se s tím, co potřebujete k vytvoření finančního modelu, který přesně představuje úplnou obchodní hodnotu cloudové transformace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 49cce1f4ade76350a820dae2f638edeacb380aa6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ebc85c5a76d9f53b0117567fc79de51488e9b51d
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798600"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337991"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Vytvoření finančního modelu pro cloudovou transformaci
 

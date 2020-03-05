@@ -1,6 +1,6 @@
 ---
-title: Vypracování obchodního odůvodnění migrace do cloudu
-description: Požadavky na vytvoření obchodního odůvodnění migrace do cloudu
+title: Obchodní odůvodnění migrace cloudu
+description: Pomocí architektury cloudového přijetí pro Azure se naučíte, jak začít vyvíjet obchodní odůvodnění pro migraci do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798583"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337963"
 ---
-# <a name="build-a-business-justification-for-cloud-migration"></a>Vypracování obchodního odůvodnění migrace do cloudu
+# <a name="build-a-business-justification-for-cloud-migration"></a>Sestavení obchodního odůvodnění pro migraci do cloudu
 
 Migrace do cloudu můžou vygenerovat včasnou návratnost investic z úsilí o transformaci cloudu (návratnost investic). Ale vývoj jasného obchodního odůvodnění s hmotnými, relevantními náklady a vrácení může být složitý proces. Tento článek vám pomůže se domnívat, jaká data potřebujete k vytvoření finančního modelu, který se zarovnává s výsledky migrace do cloudu. Nejdřív si Dispel pár mýty o migraci do cloudu, aby se vaše organizace mohla vyhnout nějakým běžným chybám.
 
