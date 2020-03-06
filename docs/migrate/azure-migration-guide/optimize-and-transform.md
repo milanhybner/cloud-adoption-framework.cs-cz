@@ -1,28 +1,34 @@
 ---
-title: Optimalizace a transformace
+title: Optimalizace a zvýšení úrovně
 description: Tato část Průvodce migrací do Azure se zabývá různými oblastmi optimalizace, včetně kontroly návrhu řešení, určení vhodného rozsahu služeb a analýzy nákladů.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994164"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222497"
 ---
-# <a name="optimize-and-transform"></a>Optimalizace a transformace
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-Další fází po migraci vašich služeb do Azure je kontrola řešení a hledání možností jeho optimalizace. To může zahrnovat kontrolu návrhu řešení, nastavení správné velikosti služeb a analýzu nákladů.
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Testování, optimalizace a zvýšení úrovně
+
+Další fází po migraci vašich služeb do Azure je kontrola řešení a hledání možností jeho optimalizace. Toto úsilí může zahrnovat kontrolu návrhu řešení, nastavení správné velikosti služeb a analýzu nákladů.
 
 Tato fáze také nabízí příležitost k optimalizaci prostředí a případně k jeho transformaci. Například jste mohli provést migraci, která spočívala ve změně hostitele. Teď, když máte služby spuštěné v Azure, můžete překontrolovat konfiguraci řešení nebo konfiguraci používaných služeb, případně provést refaktoring, abyste modernizovali nebo zvýšili funkčnost svého řešení.
 
-# <a name="right-size-assetstaboptimize"></a>[Správná velikost prostředků](#tab/optimize)
+Zbývající část tohoto článku se zaměřuje na nástroje pro optimalizaci migrovaných úloh. Po dosažení rovnováhy mezi výkonem a náklady je úloha připravená pro produkční prostředí. Pokud hledáte další informace o možnostech zvýšení úrovně, projděte si články věnované vylepšování procesů v části [Optimalizace a zvýšení úrovně](../migration-considerations/optimize/index.md).
+
+# <a name="right-size-assets"></a>[Správná velikost prostředků](#tab/optimize)
 
 Všem službám Azure, které nabízejí nákladový model založený na využití, můžete změnit velikost. Můžete k tomu použít Azure Portal, CLI nebo PowerShell. Prvním krokem při nastavování správné velikosti služby je kontrola metrik využití. Přístup k těmto metrikám nabízí služba Azure Monitor. Pro analyzovanou službu pravděpodobně budete muset nakonfigurovat kolekci metrik a pak nějakou dobu počkat, až se na základě způsobu používání úloh shromáždí vypovídající data.
 
@@ -48,8 +54,7 @@ Pokud jste k vytvoření nebo migraci virtuálních počítačů použili jiný 
 1. Vyberte **Velikost** a ze seznamu vyberte požadovanou novou velikost. K vyhledání potřebné velikosti možná budete muset upravit filtry.
 1. Vyberte **Změnit velikost**.
 
-Pokud měníte velikost virtuálních počítačů za provozu, může dojít k přerušení služby. Proto se pokuste nastavit správnou velikost virtuálních počítačů, než je nasadíte do ostrého provozu.
-
+Změna velikosti virtuálních počítačů v produkčním prostředí může způsobit přerušení služby. Proto se pokuste nastavit správnou velikost virtuálních počítačů, než je nasadíte do ostrého provozu.
 
 ::: zone target="chromeless"
 
@@ -95,7 +100,7 @@ Partneři můžou kontrolovat použití v Partnerském centru.
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Správa nákladů:](#tab/ManageCost)
+# <a name="cost-management"></a>[Správa nákladů:](#tab/ManageCost)
 
 Průběžná analýza a kontrola nákladů je důležitá. Umožní vám podle potřeby měnit velikost prostředků, abyste vyvážili náklady a používané úlohy.
 

@@ -1,52 +1,56 @@
 ---
-title: Vyhodnocení digitálních aktiv
+title: Vyhodnocení jednotlivých úloh a zpřesnění plánů
 description: Tento oddíl průvodce migrací do Azure vám pomůže vyhodnotit vaše prostředí a určit, co by se mělo migrovat a které metody migrace je vhodné zvážit.
 author: matticusau
 ms.author: mlavery
-ms.date: 08/08/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567737"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225553"
 ---
-# <a name="assess-the-digital-estate"></a>Vyhodnocení digitálních aktiv
+# <a name="assess-each-workload-and-refine-plans"></a>Vyhodnocení jednotlivých úloh a zpřesnění plánů
 
-Při ideální migraci by každý prostředek (infrastruktura, aplikace nebo data) byl kompatibilní s cloudovou platformou a byl by připraven k migraci. Ve skutečnosti se ale všechno do cloudu migrovat nedá. Navíc ne každý prostředek je kompatibilní s cloudovými platformami. Proto než budete úlohu migrovat do cloudu, je důležité vyhodnotit nejen ji, ale také každý související prostředek (infrastrukturu, aplikace a data).
-
-Zdroje informací v této části vám pomůžou posoudit vaše prostředí, abyste dokázali určit, jestli je pro migraci vhodné a jaké metody připadají v úvahu.
+Zdroje informací v tomto průvodci vám pomohou vyhodnotit jednotlivé úlohy, kriticky zhodnotit předpokládanou vhodnost úloh pro migraci a dokončit architektonické rozhodování o možnostech migrace.
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="tools"></a>[Nástroje](#tab/Tools)
 
-K vyhodnocení prostředí můžete použít následující nástroje, abyste zjistili, jestli je migrace vhodná a jaký přístup je nejlepší. Užitečné informace o volbě správných nástrojů, které podporují migraci, najdete v [průvodci rozhodováním o migračních nástrojích pro architekturu přechodu na cloud](../../decision-guides/migrate-decision-guide/index.md).
+Pokud jste nevyužili pokyny u výše uvedených odkazů, budete k zajištění informovaných rozhodnutí ohledně migrace pravděpodobně potřebovat data a nástroj pro posouzení. Azure Migrate je nativní nástroj pro vyhodnocení **a** migrace do Azure. Pokud jste to ještě neudělali, pomocí těchto kroků vytvořte nový projekt migrace serveru a shromážděte potřebná data.
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Služba Azure Migrate posuzuje vhodnost místní infrastruktury, aplikací a dat k migraci do Azure. Služba posoudí vhodnost místních prostředků k migraci, nastaví velikost na základě výkonu a nabízí odhad nákladů na provoz místních prostředků v Azure. Pokud uvažujete o migracích typu „lift and shift“ nebo jste v počáteční fázi vyhodnocování migrace, je tato služba určená právě vám. Po dokončení posouzení je možné pomocí služby Azure Migrate spustit migraci.
+Azure Migrate posuzuje vhodnost místní infrastruktury, aplikací a dat k migraci do Azure. Tato služba:
 
-![Přehled služby Azure Migrate](./media/assess/azuremigrate-overview-1.png)
+- Vyhodnotí vhodnost migrace pro prostředky v místním prostředí.
+- Určí velikost na základě výkonu.
+- Poskytne odhad nákladů na provoz místních aktiv v Azure.
+
+Pokud uvažujete o migracích typu „lift and shift“ nebo jste v počáteční fázi vyhodnocování migrace, je tato služba určená právě vám. Po dokončení posouzení můžete pomocí služby Azure Migrate spustit migraci.
+
+![Přehled služby Azure Migrate](./media/assess/azure-migrate-overview-1.png)
 
 ### <a name="create-a-new-server-migration-project"></a>Vytvoření nového projektu migrace serveru
 
-Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby Azure Migrate, postupujte následovně:
+Začněte s posouzením vhodnosti serveru k migraci pomocí služby Azure Migrate a postupujte následovně:
 
 1. Vyberte **Azure Migrate**.
-1. V části **Přehled** klikněte na **Posoudit a migrovat servery**.
+1. V části **Přehled** vyberte **Posoudit a migrovat servery**.
 1. Vyberte **Přidat nástroje**.
-1. V části **Zjistit, posoudit a migrovat servery** klikněte na **Přidat nástroje**.
-1. V části **Projekt migrace** vyberte své předplatné Azure a vytvořte skupinu prostředků, pokud ji ještě nemáte.
-1. V části **Podrobnosti o projektu** zadejte název projektu a zeměpisnou oblast, ve které chcete projekt vytvořit, a klikněte na **Další**.
+1. V části **Zjistit, posoudit a migrovat servery** vyberte **Přidat nástroje**.
+1. V části **Projekt migrace** vyberte předplatné Azure a potom vytvořte skupinu prostředků, pokud ji ještě nemáte.
+1. V části **Podrobnosti o projektu** zadejte název projektu a zeměpisnou oblast, ve které chcete projekt vytvořit, a potom vyberte **Další**.
 1. V části **Vybrat nástroj pro posouzení** vyberte **V tuto chvíli přeskočit přidání nástroje pro posouzení > Další**.
 1. V části **Vybrat nástroj pro migraci** vyberte **Azure Migrate: Migrace serveru > Další**.
-1. V části **Zkontrolovat a přidat nástroje** zkontrolujte nastavení a klikněte na **Přidat nástroje**.
+1. V části **Kontrola a přidání nástrojů** zkontrolujte nastavení a potom vyberte **Přidat nástroje**.
 1. Po přidání se nástroj zobrazí v části **Projekt Azure Migrate > Servery > Nástroje pro migraci**.
 
 ::: zone target="chromeless"
@@ -69,11 +73,11 @@ Pokud chcete začít s posouzením vhodnosti serveru k migraci pomocí služby A
 
 Service Map automaticky rozpozná komponenty aplikace v systémech Windows a Linux a mapuje komunikaci mezi službami. Service Map zobrazuje vaše servery tak, jak o nich přemýšlíte, tzn. jako propojené systémy, které zajišťují důležité služby. Service Map zobrazuje propojení serverů, procesů, latenci příchozích a odchozích připojení a porty v libovolné architektuře propojené protokolem TCP. Kromě instalace agenta se nevyžaduje žádná konfigurace.
 
-Služba Azure Migrate používá službu Service Map ke zlepšení možností vytváření sestav a závislostí v celém prostředí. Veškeré podrobnosti o této integraci jsou popsány v tématu o [vizualizaci závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Pokud používáte službu Azure Migration, nemusíte provádět žádné další kroky, abyste nakonfigurovali službu Service Map a získali výhody, které nabízí. Následující pokyny jsou pro vaši informaci, pokud budete chtít používat Service Map k jiným účelům nebo projektům.
+Služba Azure Migrate používá službu Service Map ke zlepšení možností vytváření sestav a závislostí v celém prostředí. Veškeré podrobnosti o této integraci najdete v tématu o [vizualizaci závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Pokud používáte službu Azure Migration, nemusíte provádět žádné další kroky, abyste nakonfigurovali službu Service Map a získali výhody, které nabízí. Následující pokyny jsou pro vaši informaci, pokud byste chtěli Service Map používat k jiným účelům nebo projektům.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Povolení vizualizace závislostí ve službě Service Map
 
-Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a nainstalovat agenty na každý místní počítač, který chcete analyzovat.
+Pokud chcete používat vizualizaci závislostí, stáhněte si agenty a nainstalujte je na každý místní počítač, který chcete analyzovat.
 
 - Na každém počítači musí být nainstalovaný [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows).
 - Na každý počítač je potřeba nainstalovat [agenta závislostí Microsoftu](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows).
@@ -86,30 +90,62 @@ Pokud chcete používat vizualizaci závislostí, potřebujete si stáhnout a na
 - [Používání řešení Service Map v Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate a Service Map: Vizualizace závislostí](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
+# <a name="challenge-assumptions"></a>[Kritické zhodnocení předpokladů](#tab/Challenge-Assumptions)
+
+Při ideální migraci by každý prostředek (infrastruktura, aplikace nebo data) byl kompatibilní s cloudovou platformou a byl by připraven k migraci nebo modernizaci. Ve skutečnosti se ale všechno do cloudu migrovat nedá. Ne každý prostředek je kompatibilní s cloudovými platformami. Proto než budete úlohu migrovat do cloudu, je důležité vyhodnotit nejen ji, ale také všechny související prostředky (infrastrukturu, aplikace a data).
+
+[Metodika plánu architektury přechodu na cloud](../../plan/index.md) radí čtenářům, aby k posouzení migrace a jejímu naplánování využili [postupnou (přírůstkovou) racionalizaci](../../digital-estate/rationalize.md#incremental-rationalization) a [strategii Power of 10](../../digital-estate/rationalize.md#release-planning). Tyto doprovodné materiály také obsahují podrobný popis osvědčeného postupu [použití služby Azure Migrate k vyhodnocení digitálních aktiv](../../plan/contoso-migration-assessment.md).
+
+Výše uvedené odkazy naznačují, že vytváření předpokladů je přijatelné a často se při plánování migrace podporuje. Teď ale nastává čas přejít k akci. Před zahájením migrace do cloudu je třeba pro jednotlivé úlohy tyto předpoklady kriticky posoudit.
+
+## <a name="two-steps-of-incremental-rationalization"></a>Dva kroky postupné racionalizace
+
+K úspěšnému zajištění [postupné racionalizace](../../digital-estate/rationalize.md#incremental-rationalization) jsou potřeba dva stejně důležité kroky. Oba tyto kroky vyžadují data a přehled o prostředí. Každý z přístupů ale respektuje množství času a podrobnosti nutné k zajištění úspěšné migrace.
+
+- **[Plánování vydávání verzí se strategií Power of 10](../../digital-estate/rationalize.md#release-planning):** Během počáteční racionalizace a plánování vydaných verzí se při posuzování použije jenom jedno z [5R racionalizace](../../digital-estate/5-rs-of-rationalization.md). K odhadování a plánování využijte tu možnost racionalizace, která nejlépe odpovídá celkové motivaci definované v [dokumentu Strategie přechodu na cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+
+- **Podrobné posouzení jednotlivých úloh:** Předpoklady spojené s plánováním vydávání verzí se strategií Power of 10 jsou dostatečně přijatelné pro sestavení plánu. Tyto tytéž předpoklady ale mohou způsobovat významné problémy, pokud se před migrací nevyhodnotí.
+
+## <a name="challenge-assumptions-and-update-the-plan"></a>Kritické zhodnocení předpokladů a aktualizace plánu
+
+Podrobně zkontrolujte data posouzení ve službě Azure Migrate nebo zvoleném nástroji pro posouzení. Tato data vám poskytnou přehled o problémech s kompatibilitou, požadavcích na nápravu, návrzích velikosti a dalších aspektech.
+
+Před zahájením migrace využijte tato data společně se zjišťovacími konverzacemi s vlastníkem produktu, vývojovými týmy, správci a dalšími osobami k vyhodnocení proveditelnosti migrace této konkrétní úlohy. Toto zjištění využijte ke kritickému zhodnocení základních předpokladů o této úloze. Pokud zjištěné výsledky mění plán migrace nebo přechodu, odpovídajícím způsobem ho aktualizujte.
+
+Prvním krokem při kritickém posouzení těchto předpokladů je [kontrola všech 5 R](../../digital-estate/rationalize.md).
+
+    - Funguje předpokládaný racionalizační přístup pro tuto úlohu? Je to ten nejlepší přístup?
+    - Bude mít [fyzická stránka replikace](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) vliv na migraci této úlohy?
+    - Vyžaduje tato úloha před zahájením migrace nějaké [opravné aktivity](../migration-considerations/assess/evaluate.md)?
+
+Tyto typy otázek pomáhají kriticky vyhodnotit předpoklady a vedou k nejlepší cestě pro jednotlivé úlohy.
+
+Rozšířený seznam otázek a definovaný proces pro ověřování předpokladů najdete v [přehledu vylepšení procesu vyhodnocení](../migration-considerations/assess/index.md).
+
 # <a name="scenarios-and-stakeholders"></a>[Scénáře a účastníci](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scénáře
 
-V tomto průvodci se zaměříme na následující scénáře:
+Tento průvodce se zaměřuje na následující scénáře:
 
 - **Starší hardware:** Migrujete, protože už nechcete být závislí na starším hardwaru, kterému se blíží konec podpory nebo životnosti.
-- **Růst kapacity:** Potřebujete zvýšit kapacitu prostředků (infrastruktury, aplikací a dat), kterou vám vaše aktuální infrastruktura nemůže poskytnout.
-- **Modernizace datového centra:** Potřebujete rozšířit nebo modernizovat datové centrum o cloudové technologie, aby vaše firma byla stále aktuální a konkurenceschopná.
+- **Růst kapacity:** Chcete zvýšit kapacitu prostředků (infrastruktury, aplikací a dat), kterou vám vaše aktuální infrastruktura nemůže poskytnout.
+- **Modernizace datového centra:** Chcete rozšířit nebo modernizovat datové centrum o cloudové technologie, aby vaše firma byla stále aktuální a konkurenceschopná.
 - **Modernizace aplikací nebo služeb:** Chcete aktualizovat aplikace, protože chcete získat výhody nativních cloudových funkcí. I kdyby vaším původním záměrem byla jenom strategie migrace spočívající ve změně hostitele, je možnost vytvoření plánů na kontrolu aplikací nebo služeb a jejich potenciální modernizace běžným procesem při každé migraci.
 
 ### <a name="organizational-alignment-and-stakeholders"></a>Organizace a účastníci
 
-Úplný seznam účastníků se u jednotlivých projektů migrace liší. Nejlépe uděláte, když budete vycházet z předpokladu, že na začátku plánování migrace neznáte všechny zúčastněné strany, protože účastníci se často objeví až v určitých fázích projektu. Před zahájením projektu migrace ale můžete určit klíčové vedoucí pracovníky z finančního oddělení, z oddělení infrastruktury IT a ze skupin aplikací, které budou zainteresovány na migraci celé organizace do cloudu.
+Úplný seznam účastníků se u jednotlivých projektů migrace liší. Nejlépe uděláte, když budete vycházet z předpokladu, že na začátku plánování migrace neznáte všechny zúčastněné strany, protože účastníci se často objeví až v určitých fázích projektu. Před zahájením projektu migrace ale určete klíčové vedoucí pracovníky z finančního oddělení, z oddělení infrastruktury IT a ze skupin aplikací, kteří jsou zainteresovaní na migraci celé organizace do cloudu.
 
 Když vytvoříte základní tým cloudové strategie, který sestavíte z těchto klíčových vedoucích účastníků, pomůže vám to připravit organizaci na osvojení cloudu, protože tento tým povede celý proces migrace do cloudu. Tento tým bude odpovědný za pochopení cloudových technologií a migračních procesů, zajistí obchodní odůvodnění migrací a určí nejlepší hlavní řešení používaná k migraci. Dále tým pomáhá identifikovat konkrétní aplikace a firemní účastníky a spolupracuje s nimi, aby zajistil jejich úspěšnou migraci.
 
-Další informace o přípravě organizace na migraci do cloudu najdete v článku o architektuře přechodu na cloud v [úvodním zařazení organizace](../../plan/initial-org-alignment.md).
+Další informace o přípravě organizace na migraci do cloudu najdete v pokynech architektury přechodu na cloud věnovaných [počátečnímu sladění organizace](../../plan/initial-org-alignment.md).
 
 # <a name="timelines"></a>[Časové osy](#tab/Timelines)
 
 Obecně platí, že zákazníci potřebují na scénář migrace popisovaný v tomto průvodci od jednoho do šesti měsíců.
 
-Některé skutečnosti, které je potřeba vzít v úvahu při hodnocení časové osy migrace:
+Při hodnocení časové osy migrace je potřeba vzít v úvahu tyto skutečnosti:
 
 - **Migrované prostředky (infrastruktura, aplikace a data):** Počet prostředků a jejich různorodost.
 - **Připravenost personálu:** Jsou vaši pracovníci připraveni na správu nového prostředí nebo potřebují školení?
@@ -117,9 +153,9 @@ Některé skutečnosti, které je potřeba vzít v úvahu při hodnocení časov
 - **Správa změn:** Má firma zvláštní požadavky týkající se implementace a schvalování změn?
 - **Oborové předpisy:** Jste povinni dodržovat předpisy daného oboru nebo odvětví?
 
-# <a name="cost-management"></a>[Správa nákladů:](#tab/ManageCost)
+# <a name="cost-management"></a>[Správa nákladů](#tab/ManageCost)
 
-Posouzení vašeho prostředí je dokonalou příležitostí k doplnění kroku spočívajícího v analýze nákladů. Když použijete data shromážděná při posuzovacích aktivitách, měli byste být schopni analyzovat náklady a předpovědět je. Předpověď nákladů musí kromě jednorázových nákladů (například na zvýšený příchozí přenos dat) zohledňovat i náklady na spotřebované služby.
+Vyhodnocení vašeho prostředí přináší skvělou příležitost pro zahrnutí kroku analýzy nákladů. Když použijete data shromážděná při posuzovacích aktivitách, měli byste být schopni analyzovat náklady a předpovědět je. Předpověď nákladů musí kromě jednorázových nákladů (například na zvýšený příchozí přenos dat) zohledňovat i náklady na spotřebované služby.
 
 Rozhodování a realizaci během migrace ovlivňují určité okolnosti:
 

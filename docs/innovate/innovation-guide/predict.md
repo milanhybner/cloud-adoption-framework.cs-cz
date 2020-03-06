@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Predikce a ovlivňování'
-description: Naučte se předpovídat a ovlivňovat využití Azure.
+title: 'Inovace Azure: Predikce a ovlivňování'
+description: Další informace o řešeních Azure pro predikci potřeb zákazníků a integraci predikcí do vašeho řešení s cílem ovlivnit chování zákazníků
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808256"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170966"
 ---
 ::: zone target="docs"
 
@@ -38,7 +38,7 @@ Následující tabulka vám může pomoct najít nejlepší řešení na základ
 |Azure Machine Learning Studio|Ano|Ano|Ne|Obecné pochopení prediktivních algoritmů|
 |Služba Azure Machine Learning|Ano|Ano|Ano|Odborník přes data|
 
-## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
+## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
 Nejrychlejší a nejjednodušší cestu k předvídání potřeb zákazníků představují služby Azure Cognitive Services. Služba Cognitive Services umožňuje vytváření předpovědí na základě existujících modelů, aniž by bylo nutné nějaké další trénování. Tyto služby jsou optimální a efektivní, pokud v týmu není žádný odborník přes data, který by mohl prediktivní model natrénovat. U některých služeb není žádné trénování nutné. Další služby vyžadují jenom minimální trénování.
 
@@ -70,7 +70,7 @@ Přejděte přímo na Cognitive Services na webu [Azure Portal](https://portal.a
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
 Pokud existující modely v rámci služeb Cognitive Services neodpovídají vámi požadovaným predikcím, pak možnost, jak tyto předpovědi sestavit, aniž by to vyžadovalo hluboké znalosti v oblasti datových věd, může představovat Azure Machine Learning Studio.
 
@@ -101,7 +101,7 @@ Přejděte přímo na Azure Machine Learning Studio na webu [Azure Portal](https
 
 ::: zone-end
 
-## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Služba Azure Machine Learning](#tab/MachineLearningService)
+## <a name="azure-machine-learning-service"></a>[Služba Azure Machine Learning](#tab/MachineLearningService)
 
 Azure Machine Learning Service poskytuje hlubší přístup založený na kódu, který je nutný k podrobnějšímu trénování podle zákaznických datových sad. Odborníci přes data můžou algoritmus, který bude předpovídat potřeby zákazníků, natrénovat a vytvořit pomocí jazyka, jako je Python.
 

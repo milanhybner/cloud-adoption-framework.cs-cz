@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Posílení přechodu'
-description: Zjistěte, jak posílit přechod s využitím Azure.
+title: 'Inovace Azure: Posílení přechodu'
+description: Pomoc vývojářským týmům při zajištění produktivního sestavování, podpoře bezpečné globální spolupráce a odstranění překážek bránících škálování inovací v Azure
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808324"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171051"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Organizace, které úspěšně inovují, považují za fundamentální prvky viz
 
 Inovací se dosahuje tak, že organizace podporují své lidi k vytváření hledaných hodnot. Katalyzátorem inovací je jedna skupina těchto lidí – vývojáři. Hrají stále zásadnější roli ve vytváření hodnot a podněcování růstu ve všech odvětvích. Jsou staviteli naší epochy – píšou kód světa a jsou srdcem inovací. Inovativní organizace tvoří kulturu, která posiluje vývojáře při dosahování lepších výsledků.
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[Produktivita vývojářů](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[Produktivita vývojářů](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>Rychlost vývojářů
 
@@ -93,7 +93,7 @@ Pokud chcete vytvořit projekt DevOps, postupujte takto:
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[Inovace ve spolupráci](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[Inovace ve spolupráci](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>Inovace prostřednictvím spolupráce
 
@@ -111,7 +111,7 @@ Mnoho vývojářů využívá k inovacím opensourcový kód. 80 až 90 % vývo
 
 **Přejít do [dokumentace k Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams)**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[Charakteristiky inovací](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[Charakteristiky inovací](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>Inovace s využitím Azure DevOps
 
@@ -127,7 +127,7 @@ Podněcování inovací pro uživatelská prostředí a obchodní aplikace je pr
 
 Azure má jedinečnou nabídku, která vám pomůže podněcovat a škálovat inovace ve vaší organizaci. K podpoře více inovací můžou dnes profesionální vývojáři vytvářet aplikace a stavební bloky, které posílí další odborníky ve vaší organizaci při úsilí o vytváření aplikací na spolehlivém základu. S Azure získají zabezpečení od počátku s podporou týmu odborníků a aktivním dodržováním předpisů, kterému důvěřují podniky, vládní instituce i startupy.
 
-# <a name="liveops-innovationtabliveops"></a>[Inovace LiveOps](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[Inovace LiveOps](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>Připraveno na budoucnost: LiveOps
 

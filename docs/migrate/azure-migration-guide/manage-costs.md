@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803513"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222656"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
@@ -34,7 +34,7 @@ Procesy popsané v tomto článku můžou vyžadovat spolupráci s manažery IT,
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[Odhad nákladů na virtuální počítače před migrací](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[Odhad nákladů na virtuální počítače před migrací](#tab/EstimateVMCosts)
 
 Před migrací jakéhokoliv prostředku (infrastruktury, aplikace nebo dat) je k dispozici možnost odhadnout náklady a upřesnit potřebnou velikost na základě pozorovaných kritérií výkonu pro dané prostředky. Odhad nákladů slouží ke dvěma účelům: umožňuje řízení nákladů a poskytuje kontrolní bod pro zajištění, že jsou aktuální rozpočty dostatečné pro nezbytné požadavky na výkon.
 
@@ -54,13 +54,13 @@ Tyto manuální kalkulačky nákladů je možné využít samostatně pro předp
 Azure Migrate vypočítá **odhady měsíčních nákladů** na základě dat zachycených kolektorem a mapou služeb. Odhadované náklady je možné načíst takto:
 
 1. Na portálu přejděte na Posouzení Azure Migrate.
-2. Na stránce **Přehled** projektu vyberte **+Vytvořit posouzení**.
-3. Kliknutím na **Zobrazit vše** zobrazíte vlastnosti posouzení.
-4. Vytvořte skupinu a pojmenujte ji.
-5. Vyberte virtuální počítače, které do ní chcete přidat.
-6. Kliknutím na tlačítko **Vytvořit posouzení** vytvoříte skupinu a posouzení.
-7. Po vytvoření můžete posouzení zobrazit v části Přehled > Řídicí panel.
-8. V navigaci na portálu vyberte v části Podrobnosti o posouzení možnost **Podrobnosti nákladů**.
+1. Na stránce **Přehled** projektu vyberte **+Vytvořit posouzení**.
+1. Pokud chcete zobrazit vlastnosti posouzení, vyberte **Zobrazit vše**.
+1. Vytvořte skupinu a pojmenujte ji.
+1. Vyberte virtuální počítače, které do ní chcete přidat.
+1. Pokud chcete vytvořit skupinu a posouzení, vyberte **Vytvořit posouzení**.
+1. Po vytvoření můžete posouzení zobrazit v části Přehled > Řídicí panel.
+1. V navigaci na portálu vyberte v části Podrobnosti o posouzení možnost **Podrobnosti nákladů**.
 
 Výsledný odhad, jehož příklad je uvedený níže, identifikuje měsíční náklady na výpočty a úložiště, které často představují největší část nákladů na cloud.
 
@@ -72,7 +72,7 @@ Výsledný odhad, jehož příklad je uvedený níže, identifikuje měsíční 
 - [Nastavení a kontrola posouzení pomocí Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - Pokud potřebujete komplexnější plán správy nákladů pro větší počet prostředků (infrastruktury, aplikací a dat), podívejte se na [model zásad správného řízení architektury přechodu na cloud](../../govern/guides/index.md). Důležité jsou zejména pokyny týkající se [disciplíny služby Cost Management](../../govern/cost-management/index.md) a [vylepšování služby Cost Management v průvodci zásadami správného řízení pro komplexní firmy](../../govern/guides/complex/cost-management-improvement.md).
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Odhad a optimalizace nákladů na virtuální počítače během migrace a po ní](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Odhad a optimalizace nákladů na virtuální počítače během migrace a po ní](#tab/EstimateOptimize)
 
 Odhad nákladů před migrací poskytuje solidní cíl pro očekávání ohledně nákladů. Poskytuje také příležitosti ke zvážení, jaké jsou požadavky na výkon a náklady na jednotlivé prostředky (infrastruktura, aplikace a data), které se budou migrovat. Je to ale stále jenom odhad. Po migraci prostředku a jeho uvedení do provozu je možné provádět přesnější výpočty nákladů na základě skutečné nebo syntetizované zátěže.
 
@@ -94,7 +94,7 @@ Požadavky: Zbývající část této karty předpokládá, že jste během doko
 
 Data analýzy nákladů služby Azure Cost Management můžete pro svá předplatná načíst takto:
 
-1. Na portálu přejděte na **Správa nákladů a fakturace**. Pokud položku Správa nákladů a fakturace nevidíte v levém podokně, klikněte na **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Správa nákladů a fakturace**.
+1. Na portálu přejděte na **Správa nákladů a fakturace**. Pokud položka Správa nákladů a fakturace není v levém podokně zobrazená, vyberte **Všechny služby**. V podokně s nabídkou služeb vyberte v části **Monitorování a správa** položku **Správa nákladů a fakturace**.
 2. V části Správa nákladů a fakturace vyberte v levém navigačním podokně možnost **Správa nákladů** a můžete začít analyzovat a optimalizovat náklady na cloud.
 3. V části Správa nákladů vyberte **Analýza nákladů**.
     a. Pomocí možnosti **Obor** můžete v analýze nákladů přepnout na jiný obor.
@@ -107,7 +107,7 @@ Tato analýza vám umožní zkontrolovat celkové náklady, rozpočet (pokud je 
 - Další informace o službě Azure Advisor najdete v článku o [snížení nákladů na služby pomocí Azure Advisoru](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Další informace o službě Azure Cost Management najdete v článcích o [principech oborů a práci s nimi](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) a o [prozkoumání a analýze nákladů pomocí analýzy nákladů](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Tipy a triky pro optimalizaci nákladů](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[Tipy a triky pro optimalizaci nákladů](#tab/TipsTricks)
 
 Kromě nástrojů uvedených v tomto článku jsou k dispozici některé tipy a triky, které vám můžou pomoct s rychlým snížením celkových nákladů na cloud. Tady je několik obecných tipů, o kterých je dobré vědět:
 

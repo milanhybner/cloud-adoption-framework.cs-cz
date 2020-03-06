@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Interakce prostřednictvím zařízení'
-description: Průvodce inovacemi Azure – Interakce prostřednictvím zařízení
+title: 'Inovace Azure: Interakce prostřednictvím zařízení'
+description: Azure poskytuje rámec pro budování působivých a efektivních obchodních řešení prostřednictvím připojených citlivých hraničních zařízení.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808307"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171017"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Zákazníci Azure využívají průběžně se rozšiřující sadu propojených
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[Služby IoT v globálním měřítku](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[Služby IoT v globálním měřítku](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Vytvoření služby IoT Hub Device Provisioning:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Vytvářejte opakovatelně použitelná a vysoce škálovatelná prostředí přizpůsobená prostoru, která propojují streamovaná data v digitálním a fyzickém světě. Vylepšete zapojení zákazníků pomocí komplexních modelů fyzických prostředí. Generujte grafy prostorové inteligence pro modelování vztahů a interakcí mezi lidmi, prostory a zařízeními. Využijte možnost dotazovat se na data z fyzického prostoru, a ne z mnoha různorodých senzorů.
 
@@ -136,7 +136,7 @@ Vytvoření služby Azure Digital Twins:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Inteligentní informace o poloze](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Inteligentní informace o poloze](#tab/AzureMaps)
 
 Kromě tradičních funkcí určování polohy, jako jsou zařízení v okolí, provoz a směrování, služba Azure Maps umožňuje podnikům vytvářet řešení s využitím informací o poloze v reálném čase, které využívají špičkové technologie pro mobilitu společností **TomTom**  a **Moovit**. Snadno integrujte pokročilé funkce mobility a určování polohy do svých aplikací s využitím geoprostorových služeb.
 
@@ -169,7 +169,7 @@ Použití inteligentních informací o poloze:
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Prostorová prostředí](#tab/spatial)
+## <a name="spatial-experiences"></a>[Prostorová prostředí](#tab/spatial)
 
 Azure Spatial Anchors umožňuje vývojářům pracovat s platformami smíšené reality, vnímat prostory, navrhovat přesné body zájmu a vyvolávat tyto body zájmu z podporovaných zařízení.
 
@@ -204,7 +204,7 @@ Použití prostorových prostředí:
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Vykreslujte vysoce kvalitní interaktivní 3D obsah v cloudu a streamujte ho do zařízení v reálném čase. Úlohy vykreslování se často využívají pro zvláštní efekty (VFX) v mediálním a zábavním odvětví. Vykreslování se používá i v mnoha dalších odvětvích, jako je reklama, maloobchodní prodej, ropný a plynárenský průmysl nebo výroba.
 

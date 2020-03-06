@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808188"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223555"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Provozní dodržování předpisů v Azure
 
 _Provozní dodržování předpisů_ je druhou disciplínou v jakémkoli směrném plánu cloudové správy.
@@ -40,7 +42,7 @@ V této tabulce je pro jednotlivá podniková prostředí uvedeno navrhované mi
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[Správa aktualizací](#tab/UpdateManagement)
+## <a name="update-management"></a>[Správa aktualizací](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ Použití zásady pro skupinu prostředků:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Další informace naleznete v tématu:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 ::: zone-end
 
@@ -188,7 +190,7 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 1. Přejděte na **Podrobné plány – Definice podrobných plánů**.
 1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
-1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
+1. Zkontrolujte definici podrobného plánu a potom vyberte **Publikovat podrobný plán**.
 1. Do pole **Verze** zadejte verzi, např. „1.0“.
 1. Do pole **Poznámky ke změnám** zadejte své poznámky.
 1. Vyberte **Publikovat**.
@@ -201,7 +203,7 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 1. Přejděte na [Podrobné plány – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
-1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
+1. Zkontrolujte definici podrobného plánu a potom vyberte **Publikovat podrobný plán**.
 1. Do pole **Verze** zadejte verzi, např. „1.0“.
 1. Do pole **Poznámky ke změnám** zadejte své poznámky.
 1. Vyberte **Publikovat**.

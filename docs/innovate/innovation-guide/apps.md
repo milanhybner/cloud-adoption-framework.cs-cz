@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Zapojení zákazníků přes aplikace'
-description: Naučte se inovovat zapojením zákazníků přes aplikace s využitím Azure.
+title: 'Inovace Azure: Zapojení přes aplikace'
+description: Přečtěte si o službách Azure, které vám pomohou snadno modernizovat vaše stávající webové aplikace a aplikace API a vytvářet aplikace nativní pro cloud.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808341"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171068"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Pomocí spravovaných služeb, jako je Azure Kubernetes Service, Azure Container
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[Rychlejší uvedení do provozu](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[Rychlejší uvedení do provozu](#tab/DeliverValueFaster)
 
 Jednou z výhod cloudových řešení je schopnost rychleji získávat zpětnou vazbu a začít poskytovat hodnotu uživateli. Nezáleží na tom, zda je uživatelem externí zákazník nebo uživatel ve vaší vlastní společnosti, čím rychleji získáte zpětnou vazbu ke svým aplikacím, tím lépe.
 
@@ -131,7 +131,7 @@ Visual Studio App Center poskytuje také službu oznámení, která umožňuje p
 - [Dokumentace k sadě Azure SDK pro Go](https://docs.microsoft.com/azure/go)
 - [Řešení DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[Vytváření aplikací nativních pro cloud](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[Vytváření aplikací nativních pro cloud](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Azure Red Hat OpenShift poskytuje flexibilní samoobslužné nasazení plně spr
 
 **Přejděte na [Úvod do Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)** .
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Izolaci oblastí s chybami](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[Izolaci oblastí s chybami](#tab/IsolatePointsOfFailure)
 
 Jakmile začnete přecházet z počáteční fáze testování, vyhodnoťte způsoby, jak izolovat a odstranit oblasti s chybami. Vzhledem k distribuované povaze cloudové platformy Azure můžete svou aplikaci navrhnout tak, aby minimalizovala chyby a zároveň zlepšovala výkon.
 

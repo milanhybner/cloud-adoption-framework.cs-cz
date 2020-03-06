@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Demokratizace dat'
-description: Zjistěte, jak demokratizovat data s využitím Azure.
+title: 'Inovace Azure: Demokratizace dat'
+description: Seznamte se se službami Azure Data Catalog, Azure Data Share a dalšími nástroji, které vylepšují vyhledatelnost dat a jejich pochopení.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808290"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223447"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Průvodce inovacemi Azure: Demokratizace dat
@@ -32,7 +34,7 @@ Jedním z prvních kroků při demokratizaci dat je zlepšení zjistitelnosti da
 
 Služby Azure, které poskytují zpracování dat,jako jsou Azure Time Series Insights a Stream Analytics, představují další možnosti, které zákazníci a partneři úspěšně využívají k inovacím.
 
-# <a name="catalogtabcatalog"></a>[Katalog](#tab/Catalog)
+# <a name="catalog"></a>[Katalog](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -69,7 +71,7 @@ Vytvoření katalogu dat Azure pro vaši organizaci:
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Sdílení](#tab/Share)
+# <a name="share"></a>[Sdílení](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
@@ -106,7 +108,7 @@ Vytvoření sdílené datové složky:
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[Přehledy](#tab/Insights)
+# <a name="insights"></a>[Přehledy](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

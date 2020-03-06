@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799212"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222046"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
@@ -22,7 +22,7 @@ Cloudové platformy, jako je Microsoft Azure, se mění rychleji, než na co je 
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resourcestabtopresources"></a>[Nejdůležitější materiály](#tab/TopResources)
+# <a name="top-resources"></a>[Nejdůležitější materiály](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -45,14 +45,14 @@ Následující materiály vám pomohou držet krok s Azure:
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resourcestabadditionalresources"></a>[Další materiály](#tab/AdditionalResources)
+# <a name="additional-resources"></a>[Další materiály](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
 Podrobnější obsah, díky kterému budete mít přehled o Azure, najdete ve zde uvedených materiálech:
 
 - [Azure Charts](https://azurecharts.com/)
-  - Tento neoficiální prostředek vizualizuje všechny aktualizace Azure, ke kterým došlo za posledních 6 měsíců, a obsahuje další užitečné grafy a pomůcky, které vám pomůžou sledovat změny v Azure.
+  - Tato neoficiální vizualizace ukazuje všechny aktualizace Azure provedené za posledních šest měsíců. Obsahuje další užitečné grafy a nástroje, které vám pomohou sledovat změny v Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Týdenní videa s inženýry, kteří budují Azure. Předvádějí ukázky, odpovídají na otázky a sdělují své poznatky.
   - Přihlaste se k odběru přes [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).

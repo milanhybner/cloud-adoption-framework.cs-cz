@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce inovacemi Azure: Příprava na zpětnou vazbu od zákazníků'
-description: Příprava na zpětnou vazbu od zákazníků
+title: 'Inovace Azure: Příprava na zpětnou vazbu'
+description: Naučte se používat nástroje Azure ke shromažďování kvantitativních a kvalitativních připomínek k webovým aplikacím a rozhraním API hostovaným na GitHubu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808358"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171085"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Před integrací smyček zpětné vazby musíte pro své řešení mít sdílen�
 
 Všechny následující nástroje v Azure umožňují integraci (nebo jsou kompatibilní) s projekty hostovanými na GitHubu:
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Kvantitativní zpětná vazba pro webové aplikace](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Kvantitativní zpětná vazba pro webové aplikace](#tab/Quantitative-Apps)
 
 Application Insights je monitorovací nástroj, který téměř v reálném čase poskytuje kvantitativní zpětnou vazbu k využití vašich aplikací. Tato zpětná vazba vám může pomoct s otestováním a ověřením vaší aktuální hypotézy za účelem zformování další funkce nebo uživatelského scénáře v backlogu.
 
@@ -74,7 +74,7 @@ Pokud chcete zobrazit data týkající se vašich aplikací, přejděte na web [
 - [Začínáme s Application Insights služby Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Vytvoření řídicího panelu telemetrie](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Kvantitativní zpětná vazba pro rozhraní API](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[Kvantitativní zpětná vazba pro rozhraní API](#tab/Quantitative-APIs)
 
 Propojená ekonomika mění způsob, jakým podniky provádí inovace. Trhy a jednotlivá odvětví procházejí nebývale rychlými změnami. Tyto změny mají mnoho podob a firmy se tak musí potýkat s takzvaným _inovátorským dilematem_ – jak rychlé tempo pro změny stanovit, aby se nestřetly se stávajícími obchodními aktivitami.
 
@@ -116,7 +116,7 @@ Pokud chcete otevřít služby API Management, přejděte na web [Azure Portal](
 
 - [Získání zpětné vazby k rozhraním API s využitím služby Azure Monitor](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[Kvalitativní zpětná vazba](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[Kvalitativní zpětná vazba](#tab/Qualitative)
 
 Zpětná vazba se zaznamenává jako uživatelské scénáře v backlogu (neboli na panelu). Tady můžete také sledovat související práce jako úlohy s praktickým využitím. Azure Boards je možné přímo integrovat do GitHubu, což vám umožní bezproblémovou spolupráci mezi správou zpětné vazby a související práce a libovolným zdrojovým kódem.
 
@@ -154,7 +154,7 @@ Tyto články vám pomůžou centralizovat a spravovat zpětnou vazbu s využit�
 - [Začínáme se službou Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards a GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Uzavření smyčky pomocí kanálů](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[Uzavření smyčky pomocí kanálů](#tab/pipelines)
 
 Reakcí na zpětnou vazbu nemusí vždy být přidání funkce, kterou zákazník žádal. Každý datový bod by ale měl vést ke změně. Může se jednat jak o změnu ve vašem myšlení, tak o technickou změnu, která se ale naprosto liší od toho, co bylo požadováno. Prostřednictvím kanálů a nástrojů nasazení, jako je Azure Pipelines, můžete jakékoli změny vždy rychle publikovat a pravidelně je sdílet se zákazníkem.
 

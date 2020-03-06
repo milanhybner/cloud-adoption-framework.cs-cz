@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994098"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222489"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>Zabezpečení a správa
 
 Po migraci prostředí do Azure je důležité zvážit zabezpečení a metody používané pro správu prostředí. Azure poskytuje mnoho funkcí a možností, které těmto potřebám ve vašem řešení odpovídají.
 
-# <a name="azure-monitortabmonitor"></a>[Azure Monitor](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 Azure Monitor maximalizuje dostupnost a výkon vašich aplikací tím, že poskytuje ucelené řešení pro shromažďování, analýzu a telemetrii z vašich cloudových a místních prostředí. Pomůže vám při zjišťování stavu vašich aplikací a proaktivně identifikuje problémy, které je ovlivňují, a prostředky, na kterých jsou závislé.
 
@@ -44,7 +46,7 @@ Azure Monitor maximalizuje dostupnost a výkon vašich aplikací tím, že posky
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
 
 Azure Service Health nabízí pokyny a podporu na míru v situacích, kdy vás ovlivňují problémy ve službách Azure. Mohou vás upozornit, pomohou vám zjistit dopad případných potíží a upozorní vás na průběh jejich řešení. Také vám pomohou připravit se na plánovanou údržbu a změny, které by mohly ovlivnit dostupnost vašich prostředků.
 
@@ -75,7 +77,7 @@ Další informace najdete v [dokumentaci ke službě Azure Service Health](https
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Azure Advisor](#tab/advisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure Advisor je přizpůsobený cloudový konzultant, který pomáhá dodržovat osvědčené postupy pro optimalizaci nasazení Azure. Analyzuje telemetrii využití a konfiguraci prostředků. Na jejich základě doporučuje řešení, která pomáhají zajistit vysoký výkon, zabezpečení a dostupnost vašich prostředků, a současně hledá možnosti, jak snížit vaše celkové náklady na Azure.
 
@@ -98,7 +100,7 @@ Azure Advisor je přizpůsobený cloudový konzultant, který pomáhá dodržova
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Azure Security Center](#tab/security)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
 
 Azure Security Center je jednotný systém pro správu zabezpečení infrastruktury, který posiluje stav zabezpečení vašich datacenter a poskytuje pokročilou ochranu před hrozbami pro vaše místní nebo cloudové hybridní úlohy, ať už jsou v Azure, nebo nikoli.
 
@@ -121,13 +123,13 @@ Azure Security Center je jednotný systém pro správu zabezpečení infrastrukt
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Azure Backup](#tab/backup)
+# <a name="azure-backup"></a>[Azure Backup](#tab/backup)
 
 Azure Backup je služba Azure, kterou můžete využívat k zálohování (ochraně) a obnovování vašich dat v Microsoft Cloudu. Azure Backup nahrazuje současná řešení místního nebo odlehlého zálohování spolehlivým, bezpečným a cenově konkurenceschopným cloudovým řešením.
 
 ## <a name="enable-backup-for-an-azure-vm"></a>Povolení zálohování pro virtuální počítač Azure
 
-1. Na webu Azure Portal vyberte **Virtuální počítače** a vyberte virtuální počítač, který chcete replikovat.
+1. Na webu Azure Portal vyberte **Virtuální počítače** a potom vyberte virtuální počítač, který chcete replikovat.
 1. V části **Operace** vyberte **Zálohování**.
 1. Vytvořte nebo vyberte existující trezor služby Recovery Services.
 1. Vyberte **Vytvořit (nebo upravit) nové zásady**.
@@ -147,7 +149,7 @@ Azure Backup je služba Azure, kterou můžete využívat k zálohování (ochra
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 Výše v tomto průvodci jsme diskutovali o tom, jak lze Azure Site Recovery použít jako součást provádění migrace. Po dokončení migrace ale Azure Site Recovery zároveň tvoří nezbytnou součást vaší strategie zotavení po havárii.
 
@@ -164,7 +166,7 @@ Následující kroky popisují proces použití služby Site Recovery k replikac
 
 ## <a name="enable-replication-for-the-azure-vm"></a>Povolení replikace virtuálního počítače Azure
 
-1. Na webu Azure Portal vyberte **Virtuální počítače** a vyberte virtuální počítač, který chcete replikovat.
+1. Na webu Azure Portal vyberte **Virtuální počítače** a potom vyberte virtuální počítač, který chcete replikovat.
 1. V části **Operace** vyberte **Zotavení po havárii**.
 1. V části **Konfigurovat zotavení po havárii** > **Cílová oblast** vyberte cílovou oblast, do které chcete replikaci provést.
 1. Pro účely tohoto rychlého startu přijměte výchozí nastavení.

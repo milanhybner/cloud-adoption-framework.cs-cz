@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808171"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223518"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specializace podle platformy pro správu cloudu
 
@@ -55,7 +55,7 @@ Specializace podle platformy zahrnuje disciplinované provádění následujíc�
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Vylepšení návrhu systémů](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Vylepšení návrhu systémů](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ V průběhu vylepšování návrhu systémů se můžete k tomuto článku vrace
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Automatizovaná náprava](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Automatizovaná náprava](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Další rady k automatizované nápravě najdete v tématu věnovaném [upozorn�
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Škálování řešení pomocí katalogu služeb](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Škálování řešení pomocí katalogu služeb](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Pokyny k publikování do katalogu služeb najdete v řadě článků o [publiko
 
 1. Na webu Azure Portal přejděte do **Centra spravovaných aplikací (Preview)** .
 2. V podokně **Procházet** vyberte **Aplikace katalogu služeb**.
-3. Klikněte na **+ Přidat** a zvolte definici aplikace z katalogu služeb vaší společnosti.
+3. Vyberte **+ Přidat** a zvolte definici aplikace z katalogu služeb vaší společnosti.
 
 Zobrazí se tu veškeré spravované aplikace, které vaše společnost obsluhuje.
 
@@ -153,7 +153,7 @@ Zobrazí se tu veškeré spravované aplikace, které vaše společnost obsluhuj
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Průběžné vylepšování](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Průběžné vylepšování](#tab/ContinuousImprovement)
 
 ::: zone-end
 
