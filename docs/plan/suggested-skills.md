@@ -1,18 +1,18 @@
 ---
 title: Začínáme s cestou připravenosti dovedností
-description: Začínáme s cestou připravenosti dovedností
+description: Zapojte se do přijetí cloudových služeb tím, že pomůžete organizaci pochopit a využít související změny, a to tak, že začnete s cestou připravenosti na dovednosti.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800147"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342027"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Začínáme s cestou připravenosti dovedností
 

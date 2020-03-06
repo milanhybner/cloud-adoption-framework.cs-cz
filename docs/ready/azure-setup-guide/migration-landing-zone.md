@@ -1,6 +1,6 @@
 ---
-title: Nasazení cílové zóny migrace v Azure
-description: Přečtěte si, jak cílovou zónu migrace v Azure.
+title: Nasazení cílové zóny migrace Azure
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak používat k nasazení definovaného prostředí plán cílové zóny.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ba20999ecaf3b0abbde371fb965618fc24ee2479
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225339"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341878"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Nasazení cílové zóny migrace
 

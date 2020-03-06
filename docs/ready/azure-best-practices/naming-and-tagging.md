@@ -1,6 +1,6 @@
 ---
 title: Doporučené konvence pro tvorbu názvů a značek
-description: V tomto článku najdete podrobná doporučení týkající se tvorby názvů a značek prostředků, která jsou konkrétně zaměřena na podporu snah o přijetí podnikového cloudu.
+description: Seznamte se s podrobnými doporučeními pro vytváření názvů a označování prostředků, která jsou určená speciálně při podpoře úsilí podnikového Cloud
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/01/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 915e974e3968e873c8cf23ec7696f66469f01c82
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337868"
+ms.locfileid: "78342010"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Doporučené konvence pro tvorbu názvů a značek
 

@@ -1,18 +1,18 @@
 ---
 title: Nastavení kontroly provozní vhodnosti
-description: Doprovodné materiály k provozním základům
+description: Vytvořte kontroler provozní vhodnosti, abyste plně pochopili problémy, které vedou ke spouštění úloh v produkčním prostředí.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807559"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341806"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Nastavení kontroly provozní vhodnosti
 
@@ -119,7 +119,7 @@ Přizpůsobte podrobnosti procesu a schůzky podle svých konkrétních potřeb.
 
 6. Nakonec tým provede kontrolu průběžné nápravné práce. Každá metrika přehledu výkonnostních metrik pro probíhající práci je přezkoumána podle očekávaných kritérií. Pro součásti, které splňují kritéria metriky, vlastník služby prezentuje data protokolování a monitorování a potvrzuje, že jsou splněna kritéria. Pro ty součásti, které nesplňují kritéria metriky, každý technický vlastník vysvětluje problémy, které brání splnění kritérií, a prezentuje nové návrhy pro nápravu.
 
-## <a name="recommended-resources"></a>Doporučené materiály
+## <a name="recommended-resources"></a>Doporučené prostředky
 
 - [Pilíře kvality softwaru](https://docs.microsoft.com/azure/architecture/guide/pillars).
     Tato část Průvodce architekturou aplikací Azure popisuje pět pilířů kvality softwaru: škálovatelnost, dostupnost, odolnost, Správa a zabezpečení.

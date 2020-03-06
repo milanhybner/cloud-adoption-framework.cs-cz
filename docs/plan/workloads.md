@@ -1,18 +1,18 @@
 ---
-title: Určení priorit a definování úloh pro plán přijetí do cloudu
-description: Určení priorit a definování úloh pro plán přijetí do cloudu
+title: Určení priorit a definování úloh pro přijetí do cloudu
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak určit prioritu a definovat úlohy pro plán přijetí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799977"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341908"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
 
@@ -26,7 +26,7 @@ Omezení plánu na 10 úloh podporuje flexibilitu a zarovnání priorit při zm�
 
 V souvislosti s přijetím cloudu je zatížení kolekce prostředků IT (servery, virtuální počítače, aplikace, data nebo zařízení), které společně podporují definovaný proces. Úlohy mohou podporovat více než jeden proces. Úlohy můžou záviset i na dalších sdílených prostředcích a větších platformách. Pracovní vytížení ale by mělo mít definované hranice týkající se závislých prostředků a procesů, které závisí na zatížení. Úlohy je často možné vizuálně vymezit monitorováním síťového provozu mezi prostředky IT.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Strategické vstupy ze seznamu požadovaných součástí vedou k tomu, že tyto úkoly jsou mnohem jednodušší. Nápovědu k shromažďování dat popsaných v tomto článku najdete v části [požadavky](./prerequisites.md).
 
@@ -78,7 +78,7 @@ Po definování počátečních priorit a přidání úloh do plánu je možné 
 | Dodržování předpisů | Existují pro tuto úlohu nějaké požadavky na dodržování předpisů třetích stran? |         |
 | Vlastníci aplikace | Kdo má za to, jaký má obchodní dopad na jakékoli aplikace přidružené k tomuto zatížení? |         |
 | Doba zablokování podniku | Existují nějaké časy, během kterých podnik nepovoluje změnu? |         |
-| Zeměpisné oblasti | Jsou všechny geografické oblasti ovlivněné touto úlohou? |         |
+| Zeměpisných oblastech | Jsou všechny geografické oblasti ovlivněné touto úlohou? |         |
 
 ### <a name="technical-inputs"></a>Technické vstupy
 

@@ -1,6 +1,6 @@
 ---
-title: Cloudový model je teď rozhraní Microsoft Cloud pro přijetí pro Azure.
-description: Naučte se používat cloudové postupy pro cloudové modely v rámci architektury pro přijetí do cloudu.
+title: Cloudový model je teď prostředím pro přijetí v cloudu pro Azure.
+description: K získání informací o tom, proč a jak Urychlete přijetí cloudu, využijte rozhraní pro přijetí cloudu pro Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048139"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341993"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloudový model je teď součástí rozhraní pro přijetí Microsoft Cloud pro Azure.
 
 Začátkem roku 2018 Microsoft vydal COM (Cloud Operating Model). Model COM byl průvodcem, který zákazníkům pomáhá pochopit, **co** a **Proč** digitální transformaci. Díky tomu mají zákazníci představu o všech oblastech, které jsou potřeba řešit: obchodní strategie, strategie kultury a technologická strategie. To, co se v modelu COM nepoužívá, byly konkrétní _postupy_, na kterých se zákazníci zajímá.
 
-V říjnu 2018 jsme zahájili kontrolu všech modelů, které jsme převzali v komunitě Microsoftu, našli jsme zhruba 60 různých modelů pro přijetí do cloudu. Tým mezi Microsoftem byl vytvořen tak, aby všechno dohromady používal jako vyhrazený technický produkt s definovanými implementacemi napříč službami, prodejem a marketingem. Toto úsilí bylo ukončeno při vytváření jediného modelu, Microsoft Cloudho rozhraní pro přijetí pro Azure, navržené tak, aby zákazníkům pomohla pochopit, **co** a **Proč** a poskytovali sjednocené pokyny, **jak** jim pomoci zrychlit jejich přijetí do cloudu. Cílem tohoto projektu je vytvořit jeden přístup Microsoftu k přijetí cloudu.
+V říjnu 2018 jsme zahájili kontrolu všech modelů, které jsme převzali v komunitě Microsoftu, našli jsme zhruba 60 různých modelů pro přijetí do cloudu. Tým mezi Microsoftem byl vytvořen tak, aby všechno dohromady používal jako vyhrazený technický produkt s definovanými implementacemi napříč službami, prodejem a marketingem. Toto úsilí bylo ukončeno vytvořením jednoho modelu, Microsoft Cloudho rozhraní pro přijetí pro Azure, navržené tak, aby zákazníkům pomohla pochopit, **co** a **Proč** a poskytovali sjednocené pokyny **, které vám** pomohou zrychlit jejich přijetí v cloudu. Cílem tohoto projektu je vytvořit jeden přístup Microsoftu k přijetí cloudu.
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>Použití postupů cloudového modelu v rámci architektury pro přijetí v cloudu
 
@@ -47,7 +47,7 @@ Obory vysoké úrovně cloudového provozního modelu a rozhraní pro přijetí 
 > [!NOTE]
 > Rozsah rozhraní pro přijetí do cloudu má dva důležité body, které je srozumitelnější. V rámci architektury pro přijetí do cloudu se obchodní strategie překročí v dokumentaci k nákladům na Cloud&mdash;o tom, jaké jsou informace o motivech, požadovaných výsledcích, návratnosti a nákladech na Cloud, abyste mohli vytvářet plány s akcí a vymazat obchodní odůvodnění. V rámci architektury pro přijetí do cloudu se strategie pro lidi vykoná mimo školení, aby zahrnovala přístupy, které vytvářejí prokazatelnou kulturní splatnost. Několik oblastí v plánu zahrnuje ukázky dopadu agilní správy, DevOps integrací, zákaznických soucit a Obsession a vývoje produktů pro vývoj produktů pro Lean.
 
-## <a name="structure"></a>strukturované
+## <a name="structure"></a>Struktura
 
 Model COM zahrnuje infografika, který obsahuje různá rozhodnutí a akce potřebné během úsilí o přijetí v cloudu. Tento obrázek poskytl jasné prostředky pro komunikaci s dalšími kroky a závislými rozhodnutími.
 

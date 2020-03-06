@@ -1,18 +1,18 @@
 ---
-title: Obchodní dopad – cloudová správa a operace
-description: Obchodní dopad – cloudová správa a operace
+title: Dopad na firmu v Cloud managementu
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak určit a pochopit dopad, který může mít výpadky nebo snížení výkonu ve vaší firmě.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807797"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341177"
 ---
 # <a name="business-impact-in-cloud-management"></a>Dopad na firmu v Cloud managementu
 

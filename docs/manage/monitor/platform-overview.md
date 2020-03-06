@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce monitorováním cloudu: Přehled monitorovacích platforem'
-description: Vyberte, kdy se má v Microsoft Azure použít Azure Monitor nebo System Center Operations Manager.
+title: Přehled platforem monitorování cloudu
+description: Získejte podrobný přehled dvou monitorovacích platforem, které vám pomůžou pochopit, jak jednotlivé funkce nástroje poskytují základní monitorování.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223029"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341194"
 ---
 <!-- cspell:ignore opsman ITSM -->
 
@@ -52,7 +52,7 @@ Na konferenci 2018 Ignite jsme oznámili, že se značka Azure Monitor rozšíř
 Od 2015 do dubna 2018 byla Operations Management Suite (OMS) sdružením následujících služeb správy Azure pro účely licencování:
 
 - Application Insights
-- Automatizace Azure
+- Azure Automation
 - Azure Backup
 - Operational Insights (později Log Analytics)
 - Site Recovery

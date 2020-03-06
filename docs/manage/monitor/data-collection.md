@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce monitorováním cloudu: shromáždění správných dat'
-description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
+title: Shromažďování dat monitorování v cloudu
+description: Naučte se sledovat stav a dostupnost vašeho cloudového řešení, abyste mohli shromažďovat správná data monitorování.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b537caf193601057da458b07cb62bdba64a7b6b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341102"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Průvodce monitorováním cloudu: shromáždění správných dat
 

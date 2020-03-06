@@ -1,6 +1,6 @@
 ---
-title: 'Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu'
-description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
+title: Strategie monitorování pro modely nasazení v cloudu
+description: Pomocí architektury cloudového přijetí pro Azure zjistíte, kterou strategii monitorování má cloudová správa využívat.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341823"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu
 
@@ -48,7 +48,7 @@ Vrstva | Prostředek | Rozsah | Metoda
 Aplikace | Webová aplikace, která běží na platformě .NET, .NET Core, Java, JavaScriptu a Node. js na virtuálním počítači Azure, Azure App Services, Azure Service Fabric, Azure Functions a Azure Cloud Services. | Monitorovat živou webovou aplikaci, aby automaticky zjišťoval anomálie výkonu, identifikovala výjimky a problémy kódu a shromažďují analýzy chování uživatelů. |  Azure Monitor (Application Insights).
 Prostředky Azure – platforma jako služba (PaaS) | Služby Azure Database (například SQL nebo MySQL). | Metriky výkonu Azure Database for SQL. | Povolí protokolování diagnostiky pro streamování dat SQL pro Azure Monitor protokolů.
 Prostředky Azure – infrastruktura jako služba (IaaS) | 1. Azure Storage<br/> 2. Application Gateway Azure<br/> 3. skupiny zabezpečení sítě<br/> 4. Azure Traffic Manager<br/> 5. Virtual Machines Azure<br/> 6. Služba Azure Kubernetes/Azure Container Instances | 1. kapacita, dostupnost a výkon.<br/> 2. protokoly výkonu a diagnostiky (aktivita, přístup, výkon a brána firewall).<br/> 3. Sledujte události při použití pravidel a čítač pravidla pro počet použití pravidla na odepřít nebo povolit.<br/> 4. monitorování dostupnosti stavu koncového bodu.<br/> 5. Sledujte kapacitu, dostupnost a výkon v operačním systému hostovaného virtuálního počítače (OS). Namapujte závislosti aplikací hostované na každém virtuálním počítači, včetně viditelnosti aktivních síťových připojení mezi servery, latencí příchozího a odchozího připojení a portů v rámci libovolné architektury připojené k protokolu TCP.<br/> 6. Sledujte kapacitu, dostupnost a výkon úloh běžících na kontejnerech a instancích kontejnerů. | 1. metrika úložiště pro Blob Storage.<br/> 2. Povolte protokolování diagnostiky a nakonfigurujte streamování na Azure Monitor protokoly.<br/> 3. Povolte diagnostické protokolování skupin zabezpečení sítě a nakonfigurujete streamování na Azure Monitor protokoly.<br/> 4. Povolte protokolování diagnostiky koncových bodů Traffic Manager a nakonfigurujte streamování na Azure Monitor protokoly.<br/> 5. Povolte Azure Monitor pro virtuální počítače.<br/> 6. Povolte Azure Monitor pro kontejnery.
-Network (Síť) | Komunikace mezi virtuálním počítačem a jedním nebo více koncovými body (jiný virtuální počítač, plně kvalifikovaný název domény, identifikátor URI nebo adresa IPv4). | Sledujte dostupnost, latenci a změny topologie sítě, ke kterým dochází mezi virtuálním počítačem a koncovým bodem. | Network Watcher Azure.
+Síť | Komunikace mezi virtuálním počítačem a jedním nebo více koncovými body (jiný virtuální počítač, plně kvalifikovaný název domény, identifikátor URI nebo adresa IPv4). | Sledujte dostupnost, latenci a změny topologie sítě, ke kterým dochází mezi virtuálním počítačem a koncovým bodem. | Network Watcher Azure.
 Předplatné Azure | Stav služby Azure a základní stav prostředků. | <li> Akce správy prováděné u služby nebo prostředku.<br/><li> Stav služby se službou Azure je v nedostupném stavu.<br/><li> Zjistili jsme problémy se stavem prostředku Azure z hlediska služby Azure.<br/><li> Operace prováděné s Azure Autoscale indikují chybu nebo výjimku. <br/><li> Operace prováděné s Azure Policy označují, že došlo k povolené nebo odepřené akci.<br/><li> Záznam upozornění generovaných Azure Security Center. | Doručit v protokolu aktivit za účelem monitorování a upozorňování pomocí Azure Resource Manager.
 Tenant Azure | Azure Active Directory || Povolte protokolování diagnostiky a nakonfigurujete streamování na Azure Monitor protokoly.
 

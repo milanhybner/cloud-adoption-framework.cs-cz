@@ -1,18 +1,18 @@
 ---
-title: Provoz úloh – Správa a provoz cloudu
-description: Provoz úloh – Správa a provoz cloudu
+title: Provoz úloh ve správě cloudu
+description: Seznamte se s přístupem k investicím do pokračujících operací těchto úloh s vysokou prioritou, abyste vylepšili lepší obchodní závazky.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43399d4d84d824f03a7fb19da493223f3baea717
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807695"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341245"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Provoz úloh ve správě cloudu
 

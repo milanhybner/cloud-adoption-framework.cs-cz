@@ -1,18 +1,18 @@
 ---
-title: Povolení služby správy serveru na jednom virtuálním počítači pro vyhodnocení
-description: Povolení služby správy serveru na jednom virtuálním počítači pro vyhodnocení
+title: Povolení služby správy serveru na virtuálním počítači
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak na jednom virtuálním počítači povolit služby pro správu Azure serveru.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808035"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341687"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Povolení služby správy serveru na jednom virtuálním počítači pro vyhodnocení
 
@@ -25,7 +25,7 @@ Je jednoduché připojit služby pro správu Azure serveru do jednotlivých virt
 
 ![Snímek obrazovky s nastavením virtuálního počítače v Azure Portal](./media/onboarding-single-vm.png)
 
-## <a name="related-resources"></a>Související materiály
+## <a name="related-resources"></a>Související prostředky
 
 Další informace o tom, jak tato řešení připojit k jednotlivým virtuálním počítačům, najdete v těchto tématech:
 
