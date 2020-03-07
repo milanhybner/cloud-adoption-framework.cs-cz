@@ -1,18 +1,18 @@
 ---
-title: Konfigurace služby Azure Server Management Services pro předplatné
-description: Konfigurace služby Azure Server Management Services pro předplatné
+title: Konfigurace služby pro předplatné
+description: Naučte se konfigurovat služby pro správu Azure serveru pro předplatné tím, že nasadíte agenty služby na vaše servery a povolíte řešení pro správu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341576"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurace škálování služby Azure Server Management Services
 
@@ -82,7 +82,7 @@ U místních serverů je potřeba stáhnout a nainstalovat [agenta Log Analytics
 
 Pokud chcete povolit řešení, musíte nakonfigurovat pracovní prostor Log Analytics. Virtuální počítače Azure a místní servery získají řešení z Log Analytics pracovních prostorů, ke kterým jsou připojené.
 
-### <a name="update-management"></a>Update Management
+### <a name="update-management"></a>Správa aktualizací
 
 Řešení Update Management, Change Tracking a inventáře vyžadují Log Analytics pracovní prostor i účet Automation. Abyste měli jistotu, že tyto prostředky jsou správně nakonfigurované, doporučujeme vám, abyste provedli účet Automation. Další informace najdete v tématu připojení [řešení Update Management, Change Tracking a inventáře](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -133,7 +133,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
 
 1. Vyberte **Save** (Uložit). Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
 
-### <a name="azure-activity-log"></a>Protokol aktivit Azure
+### <a name="azure-activity-log"></a>Protokol aktivit v Azure
 
 [Protokol aktivit Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) je také součástí Azure monitor. Poskytuje přehled o událostech na úrovni předplatného, ke kterým dochází v Azure.
 
