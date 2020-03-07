@@ -1,6 +1,6 @@
 ---
 title: Inovace v digitální ekonomice
-description: Zaměřte se na to, abyste porozuměli potřebám zákazníků a rychle vytvářeli cloudové inovace, které určují způsob interakce vašich zákazníků s vašimi produkty.
+description: Zaměřte se na porozumění potřebám zákazníků a rychle Sestavujte inovace v cloudu, které formují, jak vaši zákazníci komunikují s produkty.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
-ms.translationtype: HT
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171170"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337480"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Inovace v digitální ekonomice
 
@@ -35,7 +35,7 @@ Následující část popisuje osnovu pro inovace a závazky nutné k úspěšn�
 
 ## <a name="formula-for-innovation"></a>Osnova pro inovace
 
-Úspěšná inovace není velkým třeskem, při kterém dojde k transformaci, ani nepolapitelným kouzelným jednorožcem. Úspěch díky inovacím je spíš vyvažovací operace, kterou ilustruje jednoduchá rovnice: **inovace = vynález + přechod**.
+Úspěšná inovace není velkým třeskem, při kterém dojde k transformaci, ani nepolapitelným kouzelným jednorožcem. Úspěch v inovacích je více než jedna z vyrovnávání operace, kterou ilustruje jednoduchá rovnice: **inovace = vynález a přijetí**.
 
 K inovacím dochází v průsečíku vynálezu a přechodu. Skutečná inovace je výsledkem pomalého přizpůsobování lidských zkušeností prostřednictvím nových přístupů, nových procesů a nových technologií. V rámci této osnovy vynález představuje vytvoření nového řešení, které splňuje požadavky zákazníka. Přechod naopak znamená využití nového řešení tak, aby utvářelo lidské chování a interakce. Hledání rovnováhy mezi vynálezem a přechodem vyžaduje iterace, rozhodování na základě dat, průběžné učení a růstové myšlení. Vyžaduje taky technologie, které dokážou držet krok s nesčetnými příležitostmi k učení v dnešní digitální společnosti.
 
