@@ -1,18 +1,18 @@
 ---
-title: Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
-description: Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
+title: Sledování nákladů napříč obchodními jednotkami a prostředími
+description: Rozhraní pro přijetí v cloudu pro Azure vám pomůže pochopit rozhodování a implementační postupy pro vytváření mechanismů sledování.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799654"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78893081"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -114,14 +114,14 @@ Azure Cost Management je dobře zdokumentovaný nástroj pro stanovení rozpočt
 
 ### <a name="get-started-with-azure-cost-management"></a>Začínáme s Azure Cost Management
 
-Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management, najdete v tématu pojednávajícím o [optimalizaci investic do cloudu pomocí Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
+Další informace o tom, jak začít s pracovat nástrojem Azure Cost Management, najdete v tématu pojednávajícím o [optimalizaci investic do cloudu pomocí Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
-### <a name="use-azure-cost-management"></a>Použití služby Azure Cost Management
+### <a name="use-azure-cost-management"></a>Práce s nástrojem Azure Cost Management
 
-- [Vytváření a správa rozpočtů](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [Export dat o nákladech](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Použití upozornění na náklady ke sledování využití a výdajů](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Vytváření a správa rozpočtů](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Export dat o nákladech](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Použití upozornění na náklady ke sledování využití a výdajů](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Použití Azure Cost Management k řízení nákladů AWS
 
