@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170167"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892238"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Povolit úspěch během cesty k přijetí cloudu
 
@@ -22,7 +22,7 @@ Rozhraní pro přijetí do cloudu je bezplatný samoobslužný nástroj, který 
 V rámci této architektury je povolený klíčový motiv. Následující kontrolní seznam rozepisuje základní zásady pro přijetí do cloudu, které zajišťují, že je cesta k přijetí v rámci IT i firmy považována za úspěšnou:
 
 - **Plán:** Stanovení jasných [obchodních výsledků](../strategy/business-outcomes/index.md), jasně definovaného [plánu digitální nemovitosti](../digital-estate/index.md)a dobře srozumitelného [přijímání](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)nevyřízených položek.
-- **Připraveno:** Zajistěte připravenost pracovníků prostřednictvím [dovedností a studijních plánů](../ready/technical-skills.md).
+- **Připraveno:** Zajistěte připravenost pracovníků prostřednictvím [dovedností a studijních plánů](../ready/suggested-skills.md).
 - **Provoz:** Definujte spravovatelný provozní model, který bude provádět činnosti během a dlouho po přijetí.
   - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.
   - **Řídit:** Přiřaďte správné [obory zásad správného řízení](../govern/index.md) , aby se konzistentně vyrovnaly řízení nákladů, zmírnění rizik, dodržování předpisů a standardních hodnot zabezpečení v rámci veškerého přijetí cloudu.
@@ -77,7 +77,7 @@ Kromě architektury pro přijetí do cloudu Microsoft pokrývá další témata,
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225264"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892510"
 ---
 <!-- cSpell:ignore rodend subscope ITSM -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
 > [!NOTE]
-> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/azure-setup-guide/migration-landing-zone.md)a [informace o cílové zóně](../ready/considerations/index.md).
+> Prostředí Azure Enterprise vygenerovaná v rámci rozhraní Microsoft Cloud pro přijetí bylo integrováno. Obsah tohoto článku je nyní reprezentován v oddílu [připraveném](../ready/index.md) v novém rozhraní. Tento článek bude v brzké 2020 zastaralý. Pokud chcete začít používat nový proces, přečtěte si téma [připravený přehled](../ready/index.md), [Vytvoření první cílové zóny](../ready/landing-zone/migrate-landing-zone.md)a [informace o cílové zóně](../ready/considerations/index.md).
 
 Podniky stále stále přijímají veřejný cloud pro zajištění flexibility a flexibility. Spoléhají na síly cloudu, aby vygenerovaly výnosy a optimalizují využití prostředků pro firmu. Microsoft Azure poskytuje spoustu služeb a schopností, které podniky sestavují jako stavební bloky pro řešení nejrůznějších úloh a aplikací.
 
@@ -77,7 +77,7 @@ Existují tři běžné vzory pro registrace do Azure:
 
   ![Zeměpisný vzor](../_images/reference/geographic.png)
 
-I když má každý z těchto vzorů své místo, je pro svou flexibilitu při modelování nákladového modelu organizace stále důležitější, a to i v případě **, že se** odráží rozsah řízení. Microsoft Core Engineering and Operations Group vytvořila efektivní podmnožinu vzorů **organizační jednotky** ve formátu **federální**, **státní**a **místní**. Další informace najdete v tématu [uspořádání předplatných a skupin prostředků v rámci podniku](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+I když má každý z těchto vzorů své místo, je pro svou flexibilitu při modelování nákladového modelu organizace stále důležitější, a to i v případě **, že se** odráží rozsah řízení. Microsoft Core Engineering and Operations Group vytvořila efektivní podmnožinu vzorů **organizační jednotky** ve formátu **federální**, **státní**a **místní**. Další informace najdete v tématu [uspořádání předplatných a skupin prostředků v rámci podniku](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Skupiny pro správu Azure
 

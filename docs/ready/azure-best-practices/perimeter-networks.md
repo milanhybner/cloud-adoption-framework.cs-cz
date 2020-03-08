@@ -1,6 +1,6 @@
 ---
 title: Sítě perimetru
-description: Přečtěte si, jak hraniční sítě, označované taky jako zóny demilitarizovaná (zóny DMZ), využívají funkce a služby Azure.
+description: Přečtěte si, jak hraniční sítě (označované také jako zóny DMZ) využívají funkce a služby Azure.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994225"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892663"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>Sítě perimetru
 
 [Hraniční sítě][perimeter-network] umožňují zabezpečené připojení mezi cloudovými sítěmi a vašimi místními sítěmi nebo fyzickými sítěmi datacentra, spolu s internetovým připojením. Označují se také jako demilitarizované zóny (zóny DMZ).
@@ -41,9 +43,9 @@ Hraniční sítě využívají následující funkce a služby Azure:
 
 Za definování požadavků pro provoz hraničních sítí obvykle zodpovídají centrální tým IT a tým zabezpečení.
 
-![Příklad síťové topologie centra a paprsků][7]
+![Příklad síťové topologie centra a paprsků](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-Předchozí diagram znázorňuje ukázkovou [síťovou topologii rozbočovače a paprsku](./hub-spoke-network-topology.md) , která implementuje vynucování dvou hraničních zařízení s přístupem k Internetu a místní sítí. Obě hranice se nacházejí v centru DMZ. V centru DMZ se hraniční síť pro přístup k internetu může škálovat, aby podporovala řadu obchodních aplikací. Ke škálování slouží několik farem WAF a instancí Azure Firewall, které pomáhají chránit paprskové virtuální sítě. Podle potřeby centrum taky umožňuje připojení prostřednictvím sítě VPN nebo Azure ExpressRoute.
+Výše uvedený diagram znázorňuje ukázkovou [síťovou topologii rozbočovače a paprsku](./hub-spoke-network-topology.md) , která implementuje vynucování dvou hraničních zařízení s přístupem k Internetu a místní sítí. Obě hranice se nacházejí v centru DMZ. V centru DMZ se hraniční síť pro přístup k internetu může škálovat, aby podporovala řadu obchodních aplikací. Ke škálování slouží několik farem WAF a instancí Azure Firewall, které pomáhají chránit paprskové virtuální sítě. Podle potřeby centrum taky umožňuje připojení prostřednictvím sítě VPN nebo Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Virtuální sítě
 
@@ -55,7 +57,7 @@ Pomocí [uživatelem definovaných tras][user-defined-routes] můžou zákazníc
 
 V příkladu sítě typu centrum a paprsky zaručujete, že provoz generovaný virtuálními počítači, které se nacházejí v paprskech, projde správnými virtuálními zařízeními v centru, vyžaduje trasu definovanou uživatelem, která je definovaná v podsítích paprsku. Tato trasa nastaví front-end IP adresu interního nástroje pro vyrovnávání zatížení jako další segment směrování. Interní nástroj pro vyrovnávání zatížení distribuuje interní provoz na virtuální zařízení (back-endový fond nástroje pro vyrovnávání zatížení).
 
-## <a name="azure-firewall"></a>Azure Firewall
+## <a name="azure-firewall"></a>Brána Azure Firewall
 
 [Azure Firewall][AzFW] je spravovaná cloudová služba, která chrání vaše prostředky ve virtuálních sítích Azure. Jde o plně stavovou spravovanou bránu firewall s integrovanou vysokou dostupností a neomezenou cloudovou škálovatelností. Můžete centrálně vytvářet, vynucovat a protokolovat zásady připojení k aplikacím a sítím napříč různými předplatnými a virtuálními sítěmi.
 
@@ -73,7 +75,7 @@ Farma bran firewall obvykle má v porovnání s WAF méně specializovaný softw
 
 Pro přenosy, které pocházejí z internetu, použijte jednu sadu instancí Azure Firewall (nebo síťová virtuální zařízení) a jinou sadu pro provoz pocházející z místních sítí. Použití jenom jedné sady bran firewall pro oba typy přenosů představuje bezpečnostní riziko, protože mezi těmito dvěma sadami síťových přenosů neexistuje žádná bezpečnostní hranice. Použitím samostatných vrstev bran firewall se snižuje složitost pravidel pro kontrolu zabezpečení a zlepšuje se přehled o tom, která pravidla platí pro jednotlivé příchozí žádosti v síti.
 
-## <a name="azure-load-balancer"></a>Azure Load Balancer
+## <a name="azure-load-balancer"></a>Nástroj pro vyrovnávání zatížení Azure
 
 [Azure Load Balancer][ALB] nabízí službu s vysokou dostupností vrstvy 4 (TCP/UDP), která může distribuovat příchozí provoz mezi instancemi služby definovanými v sadě pro vyrovnávání zatížení. Provoz odeslaný do nástroje pro vyrovnávání zatížení z front-endových koncových bodů (koncových bodů veřejných IP adres nebo koncových bodů privátních IP adres) se dá předistribuovat s překladem adresy do fondu back-endových IP adres (například síťová virtuální zařízení nebo virtuální počítače) nebo bez něj.
 
@@ -107,40 +109,13 @@ Zásady ochrany můžete ladit prostřednictvím vyhrazeného monitorování pro
 
 Prostřednictvím zobrazení Azure Monitor je k dispozici telemetrie v reálném čase, a to jak během útoku, tak pro historické účely. Pomocí firewallu webových aplikací v Azure Application Gateway můžete přidat ochranu na úrovni aplikací. Jsou chráněny veřejné IP adresy IPv4 Azure.
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Příklady překrytí komponent"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Příklad vysoké úrovně hvězdicové topologie"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster sítí s hvězdicovou topologií"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Propojení mezi paprsky"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram úrovně bloku hvězdicové topologie"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Uživatelé, skupiny, předplatná a projekty"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagram vysoké úrovně infrastruktury"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagram vysoké úrovně infrastruktury"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNet Peering a hraniční sítě"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagram vysoké úrovně pro monitorování"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagram vysoké úrovně pro úlohu"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Prostřednictvím zobrazení Azure Monitor je k dispozici telemetrie v reálném
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 481a617d3a09ae1f81fe313dd557314aed8f4f29
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2ab2fa1cce7e779538137302a326ca49a291ad28
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706837"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892089"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Průvodce zásadami správného řízení pro standardní firmy
 
@@ -42,7 +42,7 @@ Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a sku
 2. Dvě předplatná, jedno pro produkční a druhé pro neprodukční úlohy
 3. Na všech úrovních této hierarchie seskupení by se měla používat [konzistentní terminologie](../../../ready/azure-best-practices/naming-and-tagging.md).
 4. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu: všechno, co se vyvíjí dohromady, se také dohromady spravuje a vyřazuje z provozu. Další informace o osvědčených postupech pro skupiny prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
-5. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
+5. [Výběr oblasti](../../../migrate/azure-best-practices/multiple-regions.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 
 Tady je příklad použití tohoto vzoru:
 

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225578"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892697"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
@@ -40,7 +40,7 @@ Při plánování topologie virtuální sítě byste měli zvážit, jak uspoř�
 
 Když vytvoříte virtuální sítě jako součást migrace, je důležité naplánovat adresní prostor IP adres virtuální sítě.
 
-- Pro každou virtuální síť byste měli přiřadit adresní prostor, který není větší než rozsah CIDR /16. Virtuální sítě umožňují použití 65536 IP adres a přiřazení menší předpony než /16 by způsobilo ztrátu IP adres. Je důležité IP adresami neplýtvat, i když jsou v privátních rozsazích definovaných v RFC 1918.
+- Pro každou virtuální síť byste měli přiřadit adresní prostor, který není větší než rozsah CIDR /16. Virtuální sítě umožňuje použití IP adres 65 536 a přiřazení menší předpony než/16, například a/15, která má 131 072 adres, by způsobila, že se nadbytečné IP adresy stanou unusuable jinde. Je důležité IP adresami neplýtvat, i když jsou v privátních rozsazích definovaných v RFC 1918.
 - Adresní prostor virtuální sítě by se neměl překrývat s rozsahy místní sítě.
 - Neměl by se používat překlad adres (NAT).
 - Překrývající se adresy můžou způsobit, že se sítě nemůžou připojit a směrování správně nefunguje. Pokud se sítě překrývají, budete muset změnit návrh sítě nebo použít překlad adres (NAT).

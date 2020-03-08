@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f00377f4da5a3c95114571af36e4a759a26c63f3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707947"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892408"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -91,7 +91,7 @@ Hierarchie skupin pro správu mohou mít až šest úrovní. Máte tak možnost 
 
 - [Správa přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Několik vrstev zásad správného řízení ve velkých firmách](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Několik geografických oblastí](../regions/index.md)
+- [Několik geografických oblastí](../../migrate/azure-best-practices/multiple-regions.md)
 
 ## <a name="next-steps"></a>Další kroky
 

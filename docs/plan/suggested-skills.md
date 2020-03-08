@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342027"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892680"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Začínáme s cestou připravenosti dovedností
 
@@ -28,7 +28,7 @@ Rozhraní pro přijetí do cloudu vás seznámí s úplným životním cyklem pr
 - **[Připraveno](../ready/suggested-skills.md):** Vývoj dovedností potřebných k přípravě podnikání, kultury, lidí a prostředí pro změny.
 
 - **Přijmout:** Dovednosti při přijetí jsou zarovnané na různé technické úsilí:
-  - **[Migrace](../migrate/expanded-scope/suggested-skills.md):** Získejte dovednosti potřebné k implementaci plánu migrace do cloudu.
+  - **[Migrace](../migrate/suggested-skills.md):** Získejte dovednosti potřebné k implementaci plánu migrace do cloudu.
   - Inovace **:** Získejte potřebné dovednosti k poskytování inovativních nových řešení.
 
 - **Provoz:** Dovednosti související s operačním modelem pro přijetí v cloudu jsou zarovnané na různé příležitosti, které vám pomůžou získat dovednosti:

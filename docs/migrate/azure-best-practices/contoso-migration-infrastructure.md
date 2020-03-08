@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223137"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892304"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Služba Azure Policy vyhodnocuje vaše prostředky a vyhledává mezi nimi ty, k
 
 Zásady určují definici zásady a přiřazení zásady určuje rozsah, ve kterém se má určitá zásada použít. Rozsah může sahat od skupiny pro správu až po skupinu prostředků. [Přečtěte si](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) o vytváření a správě zásad.
 
-Společnost Contoso chce začít jen s dvěma zásadami:
+Společnost Contoso si chce začít několik zásad:
 
 - Chce zásady zajistit, aby se prostředky mohly nasadit jenom v oblastech EUS2 a kapacitní jednotky.
 - Chce omezit skladové položky virtuálních počítačů jenom na schválené skladové položky. Cílem je zajistit, aby se nepoužívaly drahé skladové jednotky virtuálních počítačů.
@@ -784,7 +784,7 @@ Skupiny zabezpečení sítě přidružené ke skupinám zabezpečení aplikace b
 Povolit | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Povolit | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Povolit | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Odepřít | DenyAllInbound | Vše | Vše | Vše
+Odepřít | DenyAllInbound | Všechny | Všechny | Všechny
 
 ### <a name="encrypt-data"></a>Šifrování dat
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223985"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892153"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
@@ -63,7 +63,7 @@ Zaměření na toto úsilí je migrace nebo modernizace úloh. Úloha je kolekce
 
 Migrace do cloudu se často považují za jeden projekt v širším programu, aby se zjednodušily IT operace, náklady nebo složitost. Metodologie implementace v cloudu pomáhá sjednotit technické úsilí v rámci série migrací úloh na vyšší úroveň obchodních hodnot, které jsou uvedené v cloudové strategii a plánu.
 
-**Začínáme:** Pokud chcete začít s cloudovou implementací, průvodce [migrací Azure](../migrate/azure-migration-guide/index.md) a [Průvodce nastavením Azure](../ready/azure-setup-guide/index.md) popisují nástroje a procesy vysoké úrovně, které jsou potřeba k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Další aspekty by se měly předávat [rozšířenému kontrolnímu seznamu oboru](../migrate/expanded-scope/index.md), [osvědčeným postupům migrace](../migrate/azure-best-practices/index.md) a [aspektům migrace](../migrate/migration-considerations/index.md)za účelem zarovnání základních pokynů s jedinečnými omezeními, procesy, týmovými strukturami a cíli vaší snahy.
+**Začínáme:** Zahajte implementaci cloudu pomocí [Průvodce migrací Azure](../migrate/azure-migration-guide/index.md) a [příručky pro instalaci Azure](../ready/azure-setup-guide/index.md), která popisuje nástroje a procesy vysoké úrovně potřebné k úspěšnému provedení implementace cloudu. Migrace prvního zatížení pomocí těchto průvodců pomůže týmu překonat počáteční výukové křivky včas v procesu plánování. Následně by se měly další informace předávat [osvědčeným postupům migrace](../migrate/azure-best-practices/index.md) a [důležitým](../migrate/migration-considerations/index.md) postupům k migraci za účelem zarovnání základních pokynů s jedinečnými omezeními, procesy, týmy týmu a cíli vaší snahy.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategie a plánování cloudu
 

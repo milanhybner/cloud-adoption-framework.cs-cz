@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04f8c5e53eea03c0a25c84c03a09c4fa0ec60bff
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223958"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892082"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Průvodce zásadami správného řízení pro komplexní firmy
 
@@ -46,7 +46,7 @@ Jednotlivé aplikace by se v hierarchii skupin pro správu, předplatných a sku
 
 1. Skupiny prostředků by se měly nasadit způsobem, který bere v úvahu životní cyklus jejich obsahu. Prostředky, které jsou vyvíjené společně, spravované společně a společně vyřazené, patří do stejné skupiny prostředků. Další informace o osvědčených postupech pro použití skupin prostředků [najdete tady](../../../decision-guides/resource-consistency/index.md).
 
-1. [Výběr oblasti](../../../decision-guides/regions/index.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
+1. [Výběr oblasti](../../../migrate/azure-best-practices/multiple-regions.md) je mimořádně důležitý a musí se zvážit, aby bylo možné v případě převzetí služeb při selhání nebo navrácení služeb po obnovení použít sítě, monitorování, auditování a také potvrzení, že [požadované skladové položky jsou dostupné v upřednostňovaných oblastech](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram organizace prostředků velké firmy](../../../_images/govern/large-enterprise-resource-organization.png)
 

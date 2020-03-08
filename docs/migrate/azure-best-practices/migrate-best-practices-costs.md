@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222622"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892578"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure
 
@@ -241,9 +241,9 @@ Ve službě Cost Management můžete provádět tyto akce:
 **Další informace:**
 
 - [Přehled](https://docs.microsoft.com/azure/cost-management/overview) služby Azure Cost Management
-- [Postup](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) optimalizace investice do cloudu pomocí služby Azure Cost Management
+- [Postup](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) optimalizace investice do cloudu pomocí služby Azure Cost Management
 - [Postup](https://docs.microsoft.com/azure/cost-management/use-reports) využití sestav služby Azure Cost Management
-- [Kurz](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) optimalizace nákladů na základě doporučení
+- [Kurz](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) optimalizace nákladů na základě doporučení
 - [Přehled](https://docs.microsoft.com/rest/api/consumption/budgets) rozhraní API služby Azure Consumption
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Osvědčený postup: monitorování využití prostředků
@@ -260,7 +260,7 @@ V Azure platíte za to, co používáte, a to pouze tehdy, když prostředky vyu
 
 - Přehled služby [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) a [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)
 - [Doporučení](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) k nákladům od služby Advisor
-- [Další informace o [optimalizaci nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) a [prevenci neočekávaných poplatků](https://docs.microsoft.com/azure/billing/billing-getting-started)]
+- [Další informace o [optimalizaci nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) a [prevenci neočekávaných poplatků](https://docs.microsoft.com/azure/billing/billing-getting-started)]
 - Další informace o [sadě nástrojů Azure Resource Optimization (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Osvědčený postup: implementace rozpočty skupiny prostředků
@@ -273,7 +273,7 @@ Skupiny prostředků se často používají k vyjádření hranic nákladů. Spo
 **Další informace:**
 
 - [Postup](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) správy nákladů s využitím rozpočtů Azure
-- [Kurz](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) vytváření a správy rozpočtu Azure
+- [Kurz](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) vytváření a správy rozpočtu Azure
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Osvědčený postup: optimalizace uchovávání Azure Monitor
 

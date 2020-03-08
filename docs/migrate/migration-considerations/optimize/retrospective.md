@@ -1,18 +1,18 @@
 ---
 title: Jak retrospektivní schůzky pomáhají budovat růstové myšlení?
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
+description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci sad funkcí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801507"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891899"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ Vysoce efektivní týmy retrospektivní schůzky jen nepořádají. Oni retrospe
 Nový růst je hmatatelně vyjádřen změnami v backlogu vydaných verzí a backlogu iterací.
 
 Retrospektivní schůzka značí konec vydané verze nebo iterace, protože týmy získají zkušenosti a poznatky a upraví [backlog vydaných verzí a backlog iterací](../assess/release-iteration-backlog.md) tak, aby odrážely nové procesy a experimenty, které se mají otestovat. Tím se spustí další iterace procesy migrace.
-
-## <a name="next-steps"></a>Další kroky
-
-Část [Zabezpečení a správa](../secure-and-manage/index.md) tohoto obsahu může čtenáři pomoci připravit se na přechod od migrace k operacím.
-
-> [!div class="nextstepaction"]
-> [Nástroje pro monitorování a správu](../secure-and-manage/index.md)

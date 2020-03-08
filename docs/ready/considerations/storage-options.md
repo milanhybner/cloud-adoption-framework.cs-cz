@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6fb28316b55d92d0dc7c130d3e3c86bab942149
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341959"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892493"
 ---
 # <a name="review-your-storage-options"></a>Zkontrolujte možnosti úložiště.
 
@@ -128,7 +128,7 @@ Aby vám pomohla chránit vaše data v cloudu, nabízí služba Azure Storage n�
 - Udělit delegovaný přístup k datovým objektům v Azure Storage pomocí sdílených přístupových podpisů.
 - Pomocí analýzy sledovat metodu ověřování, kterou někdo používá při přístupu k úložiště v Azure.
 
-Tyto funkce zabezpečení se týkají úložiště objektů blob v Azure (blok a stránka) a do službu Azure Files. Podrobné pokyny k zabezpečení úložiště najdete v [průvodci zabezpečením Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide).
+Tyto funkce zabezpečení se týkají úložiště objektů blob v Azure (blok a stránka) a do službu Azure Files. Podrobné pokyny k zabezpečení úložiště najdete v [průvodci zabezpečením Azure Storage](https://docs.microsoft.com/azure/storage/blobs/security-recommendations).
 
 [Šifrování služby Storage](https://docs.microsoft.com/azure/storage/storage-service-encryption) poskytuje šifrování neaktivních uložených dat a chrání vaše data, aby splňovala závazky vaší organizace z hlediska zabezpečení a dodržování předpisů. Šifrování služby Storage je ve výchozím nastavení povolené pro všechny spravované disky, snímky a bitové kopie ve všech oblastech Azure. Od 10. června 10, 2017 se všechny nové spravované disky, snímky, image a nová data zapsaná na existující spravované disky automaticky šifrují v neaktivním uloženém stavu pomocí klíčů, které spravuje Microsoft. Další podrobnosti najdete na stránce s [nejčastějšími dotazy ke spravovaným diskům](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption).
 
