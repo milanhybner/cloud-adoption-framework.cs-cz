@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798498"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023926"
 ---
 # <a name="examples-of-agility-outcomes"></a>Příklady výsledků flexibility
 
 Jak je popsáno v tématu [Přehled výsledků pro firmy](./index.md), může sloužit jako základ pro jakékoli případné konverzace při transformaci s firmou. Tento článek se zaměřuje na obchodní míru timeliest: flexibilita firmy. Porozumět firemní situaci na pracovišti a konkurenční na krajině vám může pomáhat při vyjadřujíí obchodních výsledků, které jsou cílem transformační cesty firmy.
 
-Tradičně investiční důstojníci (ředitelé informačních technologií) a týmy IT byly považovány za zdroj stability v základních procesech, které jsou zásadní. To je stále pravda. V případě, že je jejich platforma pro IT nestabilní, může několik firem fungovat dobře. V dnešním obchodním světě se ale očekává mnohem víc. Spolupracuje s podnikovým centrem, aby poskytovala výhody na trhu. Mnoho ředitelé informačních technologií a vedoucích pracovníků předpokládá, že je stabilita jednoduše základní. U těchto vedoucích obchodních flexibilit je míra jejich přínosu pro podnikání.
+Tradičně investiční důstojníci a IT týmy byly považovány za zdroj stability v základních procesech, které jsou zásadní. To je stále pravda. V případě, že je jejich platforma pro IT nestabilní, může několik firem fungovat dobře. V dnešním obchodním světě se ale očekává mnohem víc. Spolupracuje s podnikovým centrem, aby poskytovala výhody na trhu. Mnoho vedoucích investičních úředníků a vedoucích pracovníků předpokládá, že stabilita je pro ni jednoduše základní. U těchto vedoucích obchodních flexibilit je míra jejich přínosu pro podnikání.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ Během úsilí při inovacích s povoleným cloudem je doba uvedení na trh klí
 ### <a name="aurora-health-care"></a>Zdravotní péče Aurora
 
 Systém zdravotnictví transformuje online služby do popisného digitálního prostředí. K transformaci svých digitálních služeb Aurora Health Health migrovali své weby na Microsoft Azure platformu a přijali strategii nepřetržité inovace.
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > "Jako tým se zaměřujeme na vysoce kvalitní řešení a rychlost. Zvolíte-li Azure, bylo transformativní rozhodnutí pro nás. "  
 > Jamey Shiels  

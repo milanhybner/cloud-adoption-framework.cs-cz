@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897976"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023747"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie pro zásady správného řízení nebo dodržování předpisů
 
@@ -52,8 +52,8 @@ Chcete-li lépe porozumět zásadám správného řízení, přečtěte si přeh
 
 - [Správa nákladů](../../govern/cost-management/template.md)
 - [Standardní hodnoty zabezpečení](../../govern/security-baseline/template.md)
-- [Konzistence prostředků].. /.. /govern/resource-consistency/template.md)
-- [Směrný plán identity]... /.. /govern/identity-baseline/template.md)
+- [Konzistence prostředků](../../govern/resource-consistency/template.md)
+- [Standardní hodnoty identit](../../govern/identity-baseline/template.md)
 - [Zrychlení nasazení](../../govern/deployment-acceleration/template.md)
 
 Rady k vytvoření pokynů pro zásady správného řízení na základě modelu zásad správného řízení Architektury přechodu na cloud najdete v článku [Implementace strategie zásad správného řízení v cloudu](../../govern/corporate-policy.md).

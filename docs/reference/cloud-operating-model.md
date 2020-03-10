@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341993"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023852"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloudový model je teď součástí rozhraní pro přijetí Microsoft Cloud pro Azure.
 
-Začátkem roku 2018 Microsoft vydal COM (Cloud Operating Model). Model COM byl průvodcem, který zákazníkům pomáhá pochopit, **co** a **Proč** digitální transformaci. Díky tomu mají zákazníci představu o všech oblastech, které jsou potřeba řešit: obchodní strategie, strategie kultury a technologická strategie. To, co se v modelu COM nepoužívá, byly konkrétní _postupy_, na kterých se zákazníci zajímá.
+Začátkem roku 2018 Microsoft vydal COM (Cloud Operating Model). Model COM byl průvodcem, který zákazníkům pomáhá pochopit, **co** a **Proč** digitální transformaci. Díky tomu mají zákazníci představu o všech oblastech, které jsou potřeba řešit: obchodní strategie, strategie kultury a technologická strategie. To, co se v modelu COM nepřidalo, bylo konkrétní _postup_ , kterým se zákazníci zajímá.
 
 V říjnu 2018 jsme zahájili kontrolu všech modelů, které jsme převzali v komunitě Microsoftu, našli jsme zhruba 60 různých modelů pro přijetí do cloudu. Tým mezi Microsoftem byl vytvořen tak, aby všechno dohromady používal jako vyhrazený technický produkt s definovanými implementacemi napříč službami, prodejem a marketingem. Toto úsilí bylo ukončeno vytvořením jednoho modelu, Microsoft Cloudho rozhraní pro přijetí pro Azure, navržené tak, aby zákazníkům pomohla pochopit, **co** a **Proč** a poskytovali sjednocené pokyny **, které vám** pomohou zrychlit jejich přijetí v cloudu. Cílem tohoto projektu je vytvořit jeden přístup Microsoftu k přijetí cloudu.
 

@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892510"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023945"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise lešení: zásady správného řízení předplatného
 
@@ -314,7 +314,7 @@ Automatizace je úloha v plném rozsahu a rychle se stane jednou z nejdůležit�
 
 ## <a name="templates-and-devops"></a>Šablony a DevOps
 
-Jak je zvýrazněné v části automatizovat, váš cíl jako organizace by měl být cílem zřídit prostředky prostřednictvím šablon a skriptů spravovaných zdrojem a minimalizovat interaktivní konfiguraci vašich prostředí. Tento přístup "infrastruktury jako kódu" společně s oborem DevOps procesu pro průběžné nasazování může zajistit konzistenci a snížit snížení úrovně napříč prostředími. Skoro každý prostředek Azure je možno nasadit prostřednictvím [šablon Azure Resource Manager JSON](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) ve spojení s PowerShellem nebo pomocí rozhraní příkazového řádku (CLI) pro různé platformy Azure, jako je například Terraformu z Hashicorp (který má první podporu a integrovaný do Azure Cloud Shell).
+Jak je zvýrazněné v části automatizovat, váš cíl jako organizace by měl být cílem zřídit prostředky prostřednictvím šablon a skriptů spravovaných zdrojem a minimalizovat interaktivní konfiguraci vašich prostředí. Tento přístup "infrastruktury jako kódu" společně s oborem DevOps procesu pro průběžné nasazování může zajistit konzistenci a snížit snížení úrovně napříč prostředími. Skoro každý prostředek Azure je možno nasadit prostřednictvím [šablon Azure Resource Manager JSON](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) ve spojení s PowerShellem nebo pomocí rozhraní příkazového řádku (CLI) pro různé platformy Azure, jako je například Terraformu z HashiCorp (který má první podporu a integrovaný do Azure Cloud Shell).
 
 Článek, jako například [osvědčené postupy pro používání šablon Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) , nabízí vynikající diskuzi o osvědčených postupech a lekcích, které se naučily při použití přístupu DevOps k Azure Resource Manager šablonám pomocí [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) sada nástrojů. Vezměte v úvahu čas a úsilí pro vývoj základní sady šablon specifických pro požadavky vaší organizace a pro vývoj průběžných kanálů doručování s využitím DevOps sady nástrojů (jako je Azure DevOps, Jenkinse, Bamboo, TeamCity a další), zejména pro vaše produkční prostředí a prostředí pro kontrolu kvality. Existuje rozsáhlá knihovna šablon pro [rychlý Start Azure](https://github.com/Azure/azure-quickstart-templates) na GitHubu, kterou můžete použít jako výchozí bod pro šablony, a můžete rychle vytvořit cloudové kanály pro doručování s využitím Azure DevOps.
 

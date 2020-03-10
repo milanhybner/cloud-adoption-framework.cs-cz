@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806845"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023841"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Příklady fiskální výsledků
 
@@ -55,6 +55,8 @@ Cloud Computing může snížit kapitálové výdaje na hardware a software, nas
 - **Příklad #1:** Datové centrum společnosti spotřebovává vysoké procento ročního rozpočtu na IT. Rozhodne se provést migraci do cloudu a přenese prostředky v tomto datovém centru do řešení infrastruktury jako služby (IaaS), čímž se vytvoří snížení nákladů na tři roky.
 - **Příklad #2:** Holdingová společnost nedávno získala novou firmu. V rámci akvizice výrazy určují, že by nová entita měla být z aktuálních datových center odebrána do šesti měsíců. Pokud to neuděláte, bude výsledkem 1 000 000 USD za měsíc holdingové společnosti. Přesunutí digitálních prostředků do cloudu v rámci migrace do cloudu může umožňovat rychlé vyřazení starých prostředků z provozu.
 - **Příklad #3:** Podniková daňová společnost, která se v průběhu prvních tří měsíců v roce v rámci svých ročních příjmů dorazí na 70 procent svých ročních výnosů. Ve zbytku roku je jeho investice do značné klidové velikosti poměrně neaktivní. Migrace do cloudu by mohla dovolit nasazovat výpočetní nebo hostitelskou kapacitu potřebnou pro tyto tři měsíce. Během zbývajících devíti měsíců se IaaS náklady výrazně snížily tím, že se zmenší výpočetní nároky.
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Příklad: Coverdell
 

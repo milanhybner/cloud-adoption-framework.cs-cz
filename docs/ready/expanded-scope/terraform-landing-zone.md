@@ -7,16 +7,18 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 55724c594d75464827350c57e6a371f8876b17a0
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c9b517bf3dee1cd75d578531b86e4fb5cc33739f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342926"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023956"
 ---
+<!-- cSpell:ignore arnaud arnaudlh arnaul vCPUs tfvars southeastasia eastasia lalogs -->
+
 # <a name="use-terraform-to-build-your-landing-zones"></a>Použití Terraformu k sestavení zón odpočívadla
 
-Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který se zákazníkům a partnerům často používá k nasazení cílových zón, je Terraformu Hashicorp. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
+Azure poskytuje nativní služby pro nasazení zón vykládku. K tomuto úsilí mohou také pomáhat další nástroje třetích stran. Jeden takový nástroj, který se zákazníkům a partnerům často používá k nasazení cílových zón, je Terraformu HashiCorp. V této části se dozvíte, jak použít zónu pro vykládku prototypů k nasazení základních možností protokolování, monitorování účtů a zabezpečení pro předplatné Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Účel cílové zóny
 

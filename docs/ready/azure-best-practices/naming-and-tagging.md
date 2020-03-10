@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 84102816304188bf1b22534938fb6aea267f0d8c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892646"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023728"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -75,6 +75,8 @@ Každá úloha se může skládat z mnoha jednotlivých prostředků a služeb. 
 
 Následující seznam obsahuje doporučené předpony typů prostředků Azure, které se mají používat při definování konvencí pro tvorbu názvů.
 
+<!-- cSpell:disable -->
+
 ### <a name="general"></a>Obecné
 
 | Typ assetu                      | Předpona názvu |
@@ -100,6 +102,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Připojení VPN                   | cn-         |
 | Application Gateway              | agw-        |
 | Tabulka směrování                      | cestě      |
+| Profil služby Traffic Manager          | traf-       |
 
 ### <a name="compute-and-web"></a>Výpočetní prostředí a Web
 
@@ -149,7 +152,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Azure Cognitive Services         | ozubeného kola        |
 | Pracovní prostor služby Azure Machine Learning | mlw-        |
 
-## <a name="analytics-and-iot"></a>Analýzy a IoT
+### <a name="analytics-and-iot"></a>Analýzy a IoT
 
 | Typ assetu                      | Předpona názvu |
 |---------------------------------|-------------|
@@ -196,6 +199,8 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Instance Database Migration Service | dokumentů        |
 | Trezor služby Recovery Services             | rsv-        |
 
+<!-- cSpell:enable -->
+
 ## <a name="metadata-tags"></a>Značky metadat
 
 Když použijete značky metadat na cloudové prostředky, můžete zahrnout informace o těch prostředcích, které nemohly být do názvu prostředku zahrnuty. Tyto informace můžete použít k propracovanějšímu filtrování prostředků a vytváření sestav o prostředcích. Tyto značky by měly obsahovat kontext týkající se úlohy nebo aplikace přiřazené k prostředku, provozních požadavků a informací o vlastnictví. Informace pak můžou využít IT týmy nebo obchodní týmy k vyhledání prostředků nebo k vygenerování sestav týkajících se využití prostředků a fakturace.
@@ -221,6 +226,8 @@ To, jaké značky se u prostředků používají a jaké značky jsou povinné n
 
 V následující části najdete některé příklady názvů běžných typů prostředků Azure v podnikovém nasazení v podnikovém cloudu.
 
+<!-- cSpell:disable -->
+
 <!-- markdownlint-disable MD024 MD033 -->
 
 ### <a name="example-names-general"></a>Příklady názvů: Obecné
@@ -239,7 +246,7 @@ V následující části najdete některé příklady názvů běžných typů p
 | Podsíť                       | Virtuální síť | snet-\<předplatné\>-\<podoblast\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
 | Síťové rozhraní (NIC)      | Skupina prostředků  | nic-\<\#\#\>-\<název virtuálního počítače\>-\<předplatné\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Veřejná IP adresa            | Skupina prostředků  | pip-\<název virtuálního počítače nebo název aplikace\>-\<Prostředí\>-\<podoblast\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
-| Load Balancer                | Skupina prostředků  | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| Nástroj pro vyrovnávání zatížení                | Skupina prostředků  | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
 | Skupina zabezpečení sítě (NSG) | Podsíť nebo NIC   | NSG\<název zásady nebo název aplikace\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
 | Brána místní sítě        | Virtuální brána | LGW-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                      | <ul><li>LGW-Shared-eastus2-001 </li><li>LGW-prod-westus-001 </li><li>LGW-Client-eastus2-001</li></ul>                         |
 | Brána virtuální sítě      | Virtuální síť | vgw-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                      | <ul><li>vgw-Shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-Client-eastus2-001</li></ul>                         |

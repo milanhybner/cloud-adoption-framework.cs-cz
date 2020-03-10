@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 016f0502108fa771490293bd6588f3fe7193fb07
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806811"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023833"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ Cloud mění způsob, jakým IT účty vychází, jak je popsáno v [tématu vyt
 
 To je často přesné, aby se mu mohla považovat nákladové středisko. V tradičním modelu IT Accounting konsoliduje kupní sílu pro všechny prostředky IT. Jak jsme odkazovali na článek o [finančních modelech](./financial-models.md) , může tato konsolidace napájení zahrnovat licence na software, opakované poplatky za licencování CRM, nákup stolních počítačů a další velké náklady.
 
-Pokud to slouží jako nákladové středisko, vnímaná hodnota je z velké části zobrazená v rámci objektivu řízení zásobování. V tomto vnímání je obtížné, aby Rada nebo jiní pracovníci pochopili skutečnou hodnotu, kterou poskytuje. Náklady na nákup mají za následek, že se jejich zobrazení převažuje na základě většího množství jiné hodnoty přidané organizací. V tomto zobrazení se dozvíte, proč se často používá zodpovědnost za COO nebo oddělení. JEHO vnímání je omezené a může být krátké.
+Pokud to slouží jako nákladové středisko, vnímaná hodnota je z velké části zobrazená v rámci objektivu řízení zásobování. V tomto vnímání je obtížné, aby Rada nebo jiní pracovníci pochopili skutečnou hodnotu, kterou poskytuje. Náklady na nákup mají za následek, že se jejich zobrazení převažuje na základě většího množství jiné hodnoty přidané organizací. V tomto zobrazení se dozvíte, proč se často zabývá odpovědností vedoucího finančního důstojníka nebo ředitele. JEHO vnímání je omezené a může být krátké.
 
 ## <a name="central-it-accounting-profit-center-model"></a>Centrální účetní oddělení (model ziskového centra)
 
