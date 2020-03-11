@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222497"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892459"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 
@@ -130,7 +130,7 @@ K získání doporučení ohledně možné úspory nákladů také můžete pou�
 
 ::: zone target="docs"
 
-- [Kurz: Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Kurz: Optimalizace nákladů na základě doporučení](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Jak zabránit neočekávaným poplatkům v rámci fakturace Azure a správy nákladů](https://docs.microsoft.com/azure/billing/billing-getting-started)
 - [Prozkoumání a analýza nákladů pomocí služby Analýzy nákladů](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 

@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799399"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024004"
 ---
+<!-- cSpell:ignore timleyden tileyden -->
+
 # <a name="monitoring-and-reporting-in-azure"></a>Monitorování a generování sestav v Azure
 
 Azure nabízí řadu služeb, které společně poskytují komplexní řešení pro shromažďování dat, analýzy a akce na základě telemetrie z vašich aplikací a prostředků Azure, které je podporují. Navíc jde tyto služby rozšířit na monitorování důležitých místních prostředků s cílem poskytovat prostředí hybridního monitorování.
 
-# <a name="azure-monitortabazuremonitor"></a>[Azure Monitor](#tab/AzureMonitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 Azure Monitor poskytuje jedno společné centrum pro všechna data monitorování a diagnostiky v Azure. Můžete ho použít k získání přehledu o prostředcích. Pomocí Azure Monitoru můžete najít a vyřešit problémy a optimalizovat výkon. Můžete také pochopit chování zákazníků.
 
@@ -51,13 +53,15 @@ Další informace najdete v [dokumentaci ke službě Azure Monitor](https://docs
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
 ## <a name="action"></a>Akce
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 Azure Service Health poskytuje přizpůsobené zobrazení stavu služeb a oblastí Azure, které využíváte. Informace o aktivních problémech se odešle do služby Service Health, aby vám pomohla porozumět dopadu na vaše prostředky. Pravidelné aktualizace vám umožní sledovat, jak se problém řeší.
 
@@ -95,7 +99,7 @@ Další informace najdete v [dokumentaci ke službě Azure Service Health](https
 
 ::: zone-end
 
-# <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor je bezplatný přizpůsobený cloudový konzultant, který pomáhá dodržovat a implementovat osvědčené postupy pro nasazení Azure. Analyzuje telemetrii využití a konfiguraci vašich prostředků a následně doporučí řešení, která mohou pomoci optimalizovat vaše prostředí. Doporučení se dělí do následujících kategorií:
 
@@ -125,7 +129,7 @@ Další informace najdete v [dokumentaci k Azure Advisoru](https://docs.microsof
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Důležitou roli ve strategii monitorování hraje také Azure Security Center. Pomůže vám monitorovat zabezpečení počítačů, sítí, úložišť, datových služeb a aplikací. Security Center poskytuje rozšířenou detekci hrozeb s využitím strojového učení a behaviorální analýzy, která pomáhá identifikovat aktivní hrozby cílené na vaše prostředky Azure. Poskytuje také ochranu před hrozbami, která blokuje malware a jiný nežádoucí kód a omezuje možnosti útoku hrubou silou a jiných síťových útoků.
 
