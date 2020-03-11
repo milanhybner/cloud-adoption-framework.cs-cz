@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799586"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024063"
 ---
+<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Správa přístupu k prostředí Azure s využitím řízení přístupu na základě role
 
 Správa přístupu uživatelů k prostředkům a předplatným Azure představuje důležitou součást strategie zásad správného řízení Azure. Jedním z vhodných postupů je přidělování přístupových práv a oprávnění, která jsou založená na skupinách. Práce se skupinami namísto jednotlivých uživatelů zjednodušuje správu zásad přístupu, umožňuje jednotnou správu přístupu napříč týmy a snižuje riziko chyb při konfiguraci. Hlavní metodou správy přístupu v Azure je řízení přístupu na základě role (RBAC).

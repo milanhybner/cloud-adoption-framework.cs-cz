@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: baeac7d27ff7aa71c011a2578968811820ebe22e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802425"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094738"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migrace architektury přechodu na cloud
 
@@ -50,7 +50,7 @@ Nástroje pro migraci do cloudu, jako je [Azure Site Recovery](https://docs.micr
 
 Principy, na kterých stojí tento inkrementální model, vycházejí z provádění procesů a požadavků, na které odkazuje následující infografika.
 
-![Model migrace architektury přechodu na cloud](../../_images/operational-transformation-migrate.png)
+![Model migrace architektury přechodu na cloud](../../_images/migrate/methodology.png)
 
 Konzistentní uplatňování těchto principů představuje konečný cíl procesů migrace do cloudu, a nemělo by se považovat za požadovaný výchozí bod. Pokyny v této části vám pomůžou definovat nejlepší procesy pro zajištění podpory potřeb vaší organizace s tím, jak se vaše migrace budou rozvíjet.
 
