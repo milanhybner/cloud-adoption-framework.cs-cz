@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337932"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092383"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Jaké obchodní výsledky jsou spojené s procesy transformace?
 
-Nejúspěšnější procesy transformace začínají přemýšlením nad obchodními výsledky. Přechod na cloud může být nákladný a časově náročný. Klíčovým předpokladem úspěchu je zajištění správné úrovně podpory od IT pracovníků a v dalších obchodních oblastech. [Architektura obchodních výsledků](../index.md) Microsoftu je navržená tak, aby zákazníkům pomohla identifikovat obchodní výsledky, které jsou stručné, dobře definované a umožňují dosáhnout pozorovatelných výsledků nebo změn obchodního výkonu, které se opírají o konkrétní měření.
+Nejúspěšnější procesy transformace začínají přemýšlením nad obchodními výsledky. Přechod na cloud může být nákladný a časově náročný. Klíčovým předpokladem úspěchu je zajištění správné úrovně podpory od IT pracovníků a v dalších obchodních oblastech. Tato série článků je navržená tak, aby zákazníkům pomohla identifikovat stručně definované obchodní výsledky a dosáhnout pozorovatelných výsledků nebo změn obchodního výkonu, které se opírají o konkrétní měření.
 
 Během jakékoli cloudové transformace platí, že schopnost vyjádřit obchodní výsledky podporuje transparentnost a partnerství napříč působnostmi. Architektura obchodních výsledků začíná jednoduchou šablonou, která technicky zdatným jednotlivcům pomůže s dokumentací a dosažením konsensu. Tuto šablonu můžete použít společně s několika obchodními partnery ke shromáždění různých obchodních výsledků, které může proces transformace společnosti ovlivnit. Tuto šablonu můžete použít v elektronické podobě. Ještě lepší by však bylo nakreslit ji na tabuli a zapojit do diskuze o výsledcích nejvyšší manažery a zúčastněné strany.
 

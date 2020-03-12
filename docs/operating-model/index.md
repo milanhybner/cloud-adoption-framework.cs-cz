@@ -1,6 +1,6 @@
 ---
 title: Úvod do provozního modelu
-description: Seznámení s provozním modelem architektury přechodu na cloud
+description: Využijte architekturu přechodu na cloud pro Azure k seznámení s tím, jak vytvořit provozní model cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 9080bbafb2877e58c1a69cfe264657a33cfd4d98
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629279"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094043"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Vytvoření provozního modelu pro cloud
 

@@ -1,18 +1,18 @@
 ---
 title: Osvědčené postupy pro připravenost pro Azure
-description: Úvod k osvědčeným postupům pro připravenost pro Azure
+description: Seznamte se s osvědčenými postupy a dalšími pokyny, které vašemu týmu pomohou vytvořit a připravit prostředí Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d7889b4020d906bb452ded413f6ff5e603bb9881
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892612"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093563"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Osvědčené postupy pro připravenost pro Azure
 

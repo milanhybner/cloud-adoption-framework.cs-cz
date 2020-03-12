@@ -1,6 +1,6 @@
 ---
 title: Příprava na přechod na cloud
-description: Příprava prostředí pro následný přechod na cloud
+description: Seznamte se s tím, jak vytvořit cílovou zónu k hostování úloh, které plánujete sestavovat v cloudu nebo migrovat do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892476"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092526"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Přečtěte si Průvodce nastavením Azure a seznamte se s nástroji a přístup
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Přečtěte si Průvodce nastavením Azure a seznamte se s nástroji a přístup
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>První cílová zóna</h3>
-Vyhodnoťte podrobný plán cílové zóny migrace architektury přechodu na cloud. Pomocí tohoto podrobného plánu vytvořte svou první cílovou zónu připravenou pro migraci, abyste mohli rychle experimentovat a učit se.
+Zvolte nejvhodnější možnost cílové zóny a vytvořte si pro vaše prostředí výchozí bod založený na kódu.
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Vyhodnoťte podrobný plán cílové zóny migrace architektury přechodu na clo
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Rozšíření podrobného plánu</h3>
-Využijte aspekty cílové zóny k identifikaci a provedení potřebných změn šablony podrobného plánu.
+                            <h3>Rozšíření cílové zóny</h3>
+Rozšíření první cílové zóny využijte ke splnění požadavků platformy pro plán přechodu na cloud.
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Využijte aspekty cílové zóny k identifikaci a provedení potřebných změn 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Osvědčené postupy</h3>
-Ověřte úpravy cílové zóny proti oddílům osvědčených postupů, abyste zajistili správnou konfiguraci aktuální a budoucí cílové zóny.
+Ověřte úpravy cílové zóny s využitím osvědčených postupů, abyste zajistili správnou konfiguraci aktuální a budoucí cílové zóny.
                         </div>
                     </div>
                 </div>

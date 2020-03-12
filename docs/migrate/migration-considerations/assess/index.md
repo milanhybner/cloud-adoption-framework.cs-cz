@@ -1,18 +1,18 @@
 ---
 title: Ověření předpokladů posouzení před zahájením migrace
-description: Ověření předpokladů posouzení před zahájením migrace
+description: Využijte architekturu přechodu na cloud pro Azure k seznámení s tím, jak ověřit předpoklady posouzení před zahájením migrace do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222273"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094112"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Ověření předpokladů posouzení před zahájením migrace
 
@@ -62,7 +62,7 @@ Kromě odpovědnosti na nejvyšší úrovni existují akce, za které musí nés
 
 ## <a name="next-steps"></a>Další kroky
 
-Když máte obecný přehled o procesu posuzování, jste připraveni zahájit proces posouzení [sladěním obchodních priorit](./business-priorities.md).
+Když máte obecný přehled o procesu posuzování, jste připraveni zahájit proces posouzení [Klasifikací úloh](./classify.md).
 
 > [!div class="nextstepaction"]
-> [Sladění obchodních priorit](./business-priorities.md)
+> [Klasifikace úloh](./classify.md)

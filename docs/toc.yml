@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Principy účtování cloudu
             href: strategy/cloud-accounting.md
-          - name: Vyvážení portfolia
-            href: strategy/balance-the-portfolio.md
       - name: První projekt přechodu na cloud
         href: strategy/first-adoption-project.md
       - name: Další aspekty
         items:
+          - name: Vyvážení konkurenčních priorit
+            href: strategy/balance-competing-priorities.md
+          - name: Vyvážení portfolia
+            href: strategy/balance-the-portfolio.md
           - name: Globální trhy
             href: strategy/global-markets.md
       - name: Dovednosti související se strategií
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: Hostitelé VMware
                 items:
-                  - name: Přehled
+                  - name: Aspekty změny hostitele pro VMWare
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Požadavky
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: Ověření předpokladů posouzení před zahájením migrace – přidání upřesnění R
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Klasifikace úloh
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Zajištění priorit
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Vyhodnocení připravenosti úloh
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Fáze úloh
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Procesy testování, optimalizace a propagace'
+              - name: Procesy zvýšení úrovně
                 items:
                   - name: Přehled
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: Plán architektury přechodu na cloud
         href: reference/index.md
+      - name: Co je nového
+        href: reference/whats-new.md
       - name: Provozní model
         items:
           - name: Přehled
