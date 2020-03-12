@@ -1,6 +1,6 @@
 ---
 title: Možnosti přijetí do cloudu
-description: Popisuje tvorbu možností pro přijetí do cloudu
+description: Rozhraní pro přijetí v cloudu pro Azure vám pomůže pochopit možnosti přijímání v cloudu a vhodně navýšit zaměstnance vašich týmů.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: fdd8c6234cfc66f4216ce2e6c4bcc8725ad2f079
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d0f4faf86322729f468ddd7cfc6bd60e48240ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801168"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092686"
 ---
 # <a name="cloud-adoption-capabilities"></a>Možnosti přijetí do cloudu
 
@@ -30,7 +30,7 @@ V závislosti na požadovaných obchodních výsledcích můžou dovednosti pot�
 - Implementátori infrastruktury
 - DevOps technici
 - Vývojáři aplikací
-- Odborníci na data
+- Vědečtí data
 - Specialisté na data nebo aplikační platformy
 
 Pro zajištění optimální spolupráce a efektivity doporučujeme, aby týmy pro přijetí v cloudu měly průměrnou velikost týmu pro šest lidí. Tyto týmy by se měly samy organizovat z perspektivy technického provádění. Důrazně doporučujeme, aby tyto týmy také zahrnovaly odbornost řízení projektů, s hloubkovým prostředím v agilních, Scrum nebo jiných iterativních modelech. Tento tým je nejúčinnější, pokud je spravovaný pomocí ploché struktury.

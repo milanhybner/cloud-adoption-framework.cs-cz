@@ -1,18 +1,18 @@
 ---
 title: Plánování přijetí cloudu
-description: Plánování přijetí cloudu
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak plán přijetí v cloudu pomáhá firmám vyrovnávat své portfolio IT a spravovat přechody v průběhu času.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222154"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093548"
 ---
 # <a name="plan-for-cloud-adoption"></a>Plánování přijetí cloudu
 

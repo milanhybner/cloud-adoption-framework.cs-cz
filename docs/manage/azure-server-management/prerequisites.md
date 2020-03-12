@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341577"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094644"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fáze 1: plánování požadavků pro služby Azure Server Management Services
 
@@ -97,7 +97,7 @@ Chcete-li vytvořit pracovní prostor Log Analytics pomocí Azure Portal, přeč
 > [!NOTE]
 > Když vytvoříte účet Automation pomocí Azure Portal, portál se ve výchozím nastavení pokusí vytvořit účty Spustit jako pro prostředky Azure Resource Manager a model nasazení Classic. Pokud nemáte klasické virtuální počítače ve vašem prostředí a nejste spolusprávcem předplatného, portál vytvoří účet Spustit jako pro Správce prostředků, ale při nasazení účtu Spustit jako pro Classic vygeneruje chybu. Pokud nechcete podporovat klasické prostředky, můžete tuto chybu ignorovat.
 >
-> Účty Spustit jako můžete vytvořit také pomocí [prostředí PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
+> Účty Spustit jako můžete vytvořit také pomocí [prostředí PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
 ## <a name="next-steps"></a>Další kroky
 

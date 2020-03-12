@@ -1,6 +1,6 @@
 ---
 title: 'Průvodce monitorováním cloudu: upozorňování'
-description: Vyberte, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak určit, kdy použít Azure Monitor nebo System Center Operations Manager v Microsoft Azure.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 9c13333e6d0e834a4c66d4a1bd6a72ccc9a1bdbb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807644"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091291"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: upozorňování
 
@@ -78,7 +78,7 @@ Azure Monitor zahrnují podporu pro integraci s dalšími monitorovacími platfo
 
 [Řešení pro správu](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) většinou ukládají svá data v úložišti protokolů Azure. Tyto dvě výjimky jsou Azure Monitor pro virtuální počítače a Azure Monitor pro kontejnery. Následující tabulka popisuje možnosti upozorňování na základě konkrétního datového typu a místa, kde je uložený.
 
-Řešení| Data type | Chování výstrahy
+Řešení| Typ dat | Chování výstrahy
 :---|:---|:---
 Azure Monitor pro kontejnery | Vypočtená Průměrná data o výkonu z uzlů a lusky se zapisují do úložiště metrik. | Upozornění na metriku můžete vytvořit, pokud chcete být upozorňováni na základě variace měřené míry využití, agregovaně v čase.
 || Vypočtená údaje o výkonu, které používají percentily z uzlů, řadičů, kontejnerů a lusků, se zapisují do úložiště Logs. Do úložiště protokolů se zapisují také protokoly kontejnerů a informace o inventáři. | Pokud chcete být upozorňováni na základě variace měřeného využití z clusterů a kontejnerů, vytvořte výstrahy dotazování protokolu. Výstrahy dotazů na protokol se dají nakonfigurovat taky na základě počtu fází a počtu uzlů stavu.

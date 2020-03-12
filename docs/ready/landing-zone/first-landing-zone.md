@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b451ec6f58a684bd4fb5998f1915dc79761b7a44
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228441"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092970"
 ---
 # <a name="first-landing-zone"></a>První cílová zóna
 
@@ -33,7 +33,8 @@ C. Některé plány přijetí do cloudu se řídí požadavky na externí dodrž
 
 D. Když partner poskytne průběžné spravované služby nebo se doručí na plán přijetí, obvykle poskytne vlastní cílovou zónu. Použití zóny partnerského přistání by mohlo urychlit úsilí o přijetí a zajistit konzistentní požadavky na provozní správu. Poskytněte ale další aspekty interního řízení a požadavků na zabezpečení, aby se zajistilo jejich zarovnání.
 
-E. Týmy, které mají Midterm cíl (během 24 měsíců) a **hostují více než 1 000 prostředků (aplikace, infrastruktury nebo datové assety) v cloudu**, by měly být v rámci architektury platforem a vykládacích zón Northstar jako průvodce. Northstar je pokročilejší plán, včetně architektury platformy cílového stavu a referenční implementace. Tento plán zahrnuje aspekty paralelních metodologií, včetně zásad správného řízení a operací, které vám pomají lepší přípravu na přijetí zásadně důležitých, bezpečných, složitých a dodržování předpisů.
+> [!NOTE]
+> Předtím, než budete pokračovat s přístupem zaměřeném na kód a refaktoring, by čtenáři měli být obeznámeni s [konkurenčními prioritami za toto rozhodnutí](../../strategy/balance-competing-priorities.md#balance-during-ready). Při volbě přístupu k zóně vyzkoušení je důležité pochopit, jaký je nutný zůstatek mezi "časem přijetí" a "dlouhodobými operacemi".
 
 ## <a name="choosing-a-first-landing-zone"></a>Výběr první cílové zóny
 
@@ -46,10 +47,10 @@ Výběr první cílové zóny závisí na počtu proměnných. Následující m�
 
 V následující tabulce jsou uvedené stejné zóny pro vykládku z mírně odlišné perspektivy, aby bylo možné seznámení s více technickými procesy rozhodování.
 
-| Cílová zóna                                 | Centrum                          | Paprsku    | Cloudový model | Technologie      |
+| Cílová zóna                                 | Rozbočovač                          | Paprsku    | Cloudový model | Technologie      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [Migrace CAF](./migrate-landing-zone.md)     | Vyžaduje se refaktoring.            | Zahrnuje | Jenom Azure  | Azure Blueprint |
-| [CAF Terraformu](./terraform-landing-zone.md) | Zahrnuto v modulu NorthStar | Zahrnuje | Více cloudů  | Terraform       |
+| [Migrace CAF](./migrate-landing-zone.md)     | Vyžaduje se refaktoring.            | Zahrnuto | Jenom Azure  | Azure Blueprint |
+| [CAF Terraformu](./terraform-landing-zone.md) | Zahrnuto v modulu VDC       | Zahrnuto | Více cloudů  | Terraform       |
 
 ## <a name="next-steps"></a>Další kroky
 

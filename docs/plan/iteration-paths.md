@@ -1,18 +1,18 @@
 ---
 title: Nastavení iterací a plánu vydávání
-description: Nastavení iterací a plánu vydávání
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak definovat iterace a plány vydání, které vám pomůžou se správou vaší implementace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: bdd0150aef6c04b43121b5bef1224bea93191e2c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8aaee4546568301eabbe774cea08c3d5d975bb3e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800334"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092682"
 ---
 # <a name="establish-iterations-and-release-plans"></a>Nastavení iterací a plánu vydávání
 

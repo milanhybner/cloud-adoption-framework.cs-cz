@@ -1,6 +1,6 @@
 ---
 title: Nasazení infrastruktury pro migraci
-description: Přečtěte si, jak společnost Contoso nastaví infrastrukturu Azure pro migraci do Azure.
+description: Pomocí architektury cloudového přijetí pro Azure se naučíte, jak nastavit infrastrukturu Azure pro migraci do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892304"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092436"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -784,7 +784,7 @@ Skupiny zabezpečení sítě přidružené ke skupinám zabezpečení aplikace b
 Povolit | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Povolit | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Povolit | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Odepřít | DenyAllInbound | Všechny | Všechny | Všechny
+Odepřít | DenyAllInbound | Vše | Vše | Vše
 
 ### <a name="encrypt-data"></a>Šifrování dat
 

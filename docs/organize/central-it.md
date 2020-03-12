@@ -1,6 +1,6 @@
 ---
 title: Centrální možnosti IT
-description: Přečtěte si o tvorbě centrálních funkcí IT.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak zřídit centralizovaný tým IT pro práci v cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 00cf24b493bbeacae5e3f3d35d2951cbe838219e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225411"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094000"
 ---
 # <a name="central-it-capabilities"></a>Centrální možnosti IT
 

@@ -1,18 +1,18 @@
 ---
 title: Kontrola možností COMPUTE
-description: Projděte si možnosti výpočtů pro úlohy Azure.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak určit výpočetní požadavky pro hostování vašich úloh.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b2712867c8b5dbdf79e5f235ebd45fe02ae4bf20
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799178"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092564"
 ---
 # <a name="review-your-compute-options"></a>Kontrola možností COMPUTE
 
@@ -60,7 +60,7 @@ Následující tabulka obsahuje několik běžných scénářů a doporučené v
 | Potřebuji plánovat úlohy a spravovat výpočty v cloudovém měřítku s možností škálování na desítky, stovky nebo tisíce virtuálních počítačů. | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | Potřebuji vytvářet vysoce dostupné škálovatelné cloudové aplikace a rozhraní API, které mi pomohou soustředit se na aplikace, a ne na hardware. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
-## <a name="regional-availability"></a>Dostupnost podle oblastí
+## <a name="regional-availability"></a>Regionální dostupnost
 
 Azure vám umožní dodávat služby v měřítku, jaké potřebujete, abyste mohli oslovit zákazníky a partnery,  _ať jsou kdekoli_. Klíčovým faktorem při plánování cloudového nasazení je určení, která oblast Azure bude hostovat prostředky vašich úloh.
 

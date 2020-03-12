@@ -1,18 +1,18 @@
 ---
 title: Základní koncepty Azure
-description: Poznejte základní koncepty a termíny používané v Azure a zjistěte, jak spolu tyto koncepty vzájemně souvisejí.
+description: Rozhraní pro přijetí v cloudu pro Azure vám umožní zjistit základní koncepty a pojmy používané v Azure a jak se na sebe vztahují koncepty.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799144"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092576"
 ---
 # <a name="azure-fundamental-concepts"></a>Základní koncepty Azure
 
@@ -79,7 +79,7 @@ Předplatné není vázané na konkrétní oblast Azure. Každý prostředek Azu
 > [!NOTE]
 > Většina prostředků Azure se nasazuje do konkrétní oblasti. Určité typy prostředků se ale považují za globální prostředky, například zásady, které nastavíte pomocí služby Azure Policy.
 
-## <a name="related-resources"></a>Související materiály
+## <a name="related-resources"></a>Související prostředky
 
 Následující materiály obsahují podrobné informace o konceptech rozebraných v tomto článku:
 

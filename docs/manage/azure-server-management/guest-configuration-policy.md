@@ -1,18 +1,18 @@
 ---
 title: Zásada konfigurace hosta
-description: Naučte se používat rozšíření Azure Policy Host Configuration k auditu nastavení konfigurace na virtuálním počítači Azure (VM).
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak pomocí rozšíření konfigurace hosta Azure Policy auditovat nastavení konfigurace ve virtuálním počítači Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6e935288ce58af0570717c973c21b406ee94ebc0
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 73373e5cc56ef7e5804151171a22ad9f541f1cd3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173295"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094700"
 ---
 # <a name="guest-configuration-policy"></a>Zásada konfigurace hosta
 

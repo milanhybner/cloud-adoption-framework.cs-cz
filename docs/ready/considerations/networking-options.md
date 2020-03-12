@@ -1,18 +1,18 @@
 ---
 title: Kontrola možností sítě
-description: Projděte si možnosti sítě pro úlohy Azure.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak identifikovat možnosti sítě, které vaše cílová zóna potřebuje k podpoře úloh Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 71c3a135a89d3ff09cf8511ca619c47db21e1ac9
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225368"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093150"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898002"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094829"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Požadavky na data přesahují kapacitu sítě během migrace.
 
 Při migraci do cloudu se prostředky replikují a synchronizují po síti mezi stávajícím datacentrem a cloudem. Není neobvyklé, že požadavky vyplývající z velikosti stávajících dat různých úloh překračují kapacitu sítě. V takových scénářích se může postup migrace výrazně zpomalit a v některých případech i úplně zastavit. Následující pokyny rozšiřují obsah [příručky k migraci do Azure](../azure-migration-guide/index.md) a nabízejí řešení, jak obejít omezení sítě.
@@ -28,7 +30,7 @@ Většina práce požadované v tomto rozšíření obsahu probíhá v rámci p�
 
 **Offline přenos nezávislých úložišť dat:** Obrázek v následujícím diagramu je příkladem přenosů dat online i offline s Azure Data Box. Tyto postupy můžete použít k přenosu velkých objemů dat do cloudu ještě před migrací úloh. Při offline přenosu dat se zdrojová data zkopírují do služby Azure Data Box a následně se fyzicky přesunou do Microsoftu, který je přenese do účtu úložiště Azure jako soubor nebo objekt blob. Tento postup je možné použít před dalšími migračními úkoly k přesunu dat, která nejsou přímo spojena s určitou úlohou. Tímto způsobem snížíte množství dat, které je potřeba přesunout po síti, abyste mohli dokončit migraci i s omezeními sítě.
 
-Tento přístup je možné použít k přenosu dat HDFS, záloh, archivů, souborových serverů, aplikací apod. Stávající technické pokyny vysvětlují, jak tento přístup použít k přenosu dat z [úložiště HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) nebo z disků pomocí [protokolu SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [systému souborů NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [architektury REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) nebo [služby kopírování dat](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do Data Boxu.
+Tento přístup se dá použít k přenosu dat ze HDFS, zálohování, archivů, souborových serverů a aplikací. Stávající technické pokyny vysvětlují, jak tento přístup použít k přenosu dat z [úložiště HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) nebo z disků pomocí [protokolu SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [systému souborů NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [architektury REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) nebo [služby kopírování dat](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do Data Boxu.
 
 Existují také [partnerská řešení třetích stran](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box), která používají Azure Data Box k migraci typu „Seed and Feed“, kdy se k přesunu velkých objemů dat používají offline přenosy, ale později se v menším měřítku provádí synchronizace po síti.
 

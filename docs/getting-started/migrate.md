@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892153"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094445"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
@@ -57,7 +57,7 @@ Tento přístup se skládá ze dvou metodologií nebo oblastí zaostření: stra
 
 Implementace cloudu je iterativní proces pro migraci a modernizacií digitálního majetku, který je zarovnaný k cíleným obchodním výsledkům a ovládacím prvkům pro správu změn. Během každé iterace jsou úlohy migrovány nebo moderní v souladu s strategií a plánem. Rozhodnutí týkající se IaaS, PaaS nebo hybridu jsou prováděna během fáze posuzování [metodologie migrace](../migrate/index.md) pro optimalizaci řízení a provádění. Tato rozhodnutí budou řídit nástroje používané během každé iterace fáze migrace v rámci stejné metodologie. Tento model se dá použít s minimální strategií a plánováním. Aby se ale zajistila největší obchodní návratnost, měla by IT i podnik zarovnávat jasně strategii a plán pro Průvodce aktivit implementace.
 
-![Metodologie implementace cloudu v rozhraní pro přijetí do cloudu](../_images/operational-transformation-migrate.png)
+![Metodologie implementace cloudu v rozhraní pro přijetí do cloudu](../_images/migrate/methodology.png)
 
 Zaměření na toto úsilí je migrace nebo modernizace úloh. Úloha je kolekce infrastruktury, aplikací a dat, která souhrnně podporuje běžný obchodní cíl, nebo provádění běžného obchodního procesu. Příklady úloh můžou zahrnovat například obchodní aplikace, řešení výplaty v PERSONÁLNÍm oddělení, řešení CRM, pracovní postup schvalování finančních dokumentů nebo řešení business intelligence. Úlohy mohou zahrnovat i sdílené technické prostředky, jako je datový sklad, který podporuje několik dalších řešení. V některých případech může být pracovní postup reprezentován jedním prostředkem, jako je například server, aplikace nebo datová platforma.
 

@@ -1,6 +1,6 @@
 ---
 title: Sítě perimetru
-description: Přečtěte si, jak hraniční sítě (označované také jako zóny DMZ) využívají funkce a služby Azure.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak efektivně nastavit Azure pro vaši organizaci.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892663"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093237"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -57,7 +57,7 @@ Pomocí [uživatelem definovaných tras][user-defined-routes] můžou zákazníc
 
 V příkladu sítě typu centrum a paprsky zaručujete, že provoz generovaný virtuálními počítači, které se nacházejí v paprskech, projde správnými virtuálními zařízeními v centru, vyžaduje trasu definovanou uživatelem, která je definovaná v podsítích paprsku. Tato trasa nastaví front-end IP adresu interního nástroje pro vyrovnávání zatížení jako další segment směrování. Interní nástroj pro vyrovnávání zatížení distribuuje interní provoz na virtuální zařízení (back-endový fond nástroje pro vyrovnávání zatížení).
 
-## <a name="azure-firewall"></a>Brána Azure Firewall
+## <a name="azure-firewall"></a>Azure Firewall
 
 [Azure Firewall][AzFW] je spravovaná cloudová služba, která chrání vaše prostředky ve virtuálních sítích Azure. Jde o plně stavovou spravovanou bránu firewall s integrovanou vysokou dostupností a neomezenou cloudovou škálovatelností. Můžete centrálně vytvářet, vynucovat a protokolovat zásady připojení k aplikacím a sítím napříč různými předplatnými a virtuálními sítěmi.
 

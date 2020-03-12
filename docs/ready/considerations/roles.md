@@ -1,6 +1,6 @@
 ---
 title: Doporučené řízení přístupu na základě role
-description: Doporučené řízení přístupu na základě role
+description: Přečtěte si, jak oddělit povinnosti v rámci svého týmu a udělit řízení přístupu na základě rolí, aby uživatelé a skupiny mohli provádět své úlohy.
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
@@ -10,14 +10,14 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4777f062725a74a98233bfe6851180d70bdfbf8
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806862"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092452"
 ---
-# <a name="role-based-access-control"></a>Řízení přístupu založené na rolích
+# <a name="role-based-access-control"></a>Řízení přístupu na základě role
 
 Přístupová práva a oprávnění založená na skupině jsou osvědčeným postupem. Práce se skupinami namísto jednotlivých uživatelů zjednodušuje správu zásad přístupu, umožňuje jednotnou správu přístupu napříč týmy a snižuje riziko chyb při konfiguraci. Přiřazení uživatelů k příslušným skupinám a jejich odebírání pomáhá udržovat aktuální oprávnění konkrétního uživatele. [Řízení přístupu na základě role (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) v Azure nabízí jemně odstupňovanou správu přístupu pro prostředky uspořádané podle uživatelských rolí.
 
@@ -74,7 +74,7 @@ Následující tabulka zobrazuje běžný vzor rozdělení IT odpovědností na 
 
 <!-- markdownlint-disable MD033 -->
 
-| Skupina | Běžný název role | Odpovědnost |
+| Skupina | Běžný název role | Odpovědnosti |
 | --- | --- | --- |
 | Operace zabezpečení | SecOps | Poskytuje obecnou kontrolu zabezpečení.<br/><br/> Vytváří a vynucuje zásady zabezpečení, například šifrování neaktivních dat.<br/><br/> Spravuje šifrovací klíče.<br/><br/> Spravuje pravidla brány firewall. |
 | Síťové operace | NetOps | Spravuje konfiguraci sítě a operace v rámci virtuálních sítí, jako jsou trasy a peering. |
