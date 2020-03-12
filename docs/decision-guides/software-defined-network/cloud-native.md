@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0903b816dbbdf6d227870d8bae99fd585d1734e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222666"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140316"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwarově definované sítě: Cloud – nativní
 
 Virtuální síť nativní pro Cloud se vyžaduje při nasazení prostředků IaaS, jako jsou virtuální počítače, na cloudovou platformu. Přístup k virtuálním sítím z externích zdrojů, podobně jako na webu, je nutné explicitně zřídit. Tyto typy virtuálních sítí podporují vytváření podsítí, pravidla směrování a virtuální brány firewall a zařízení pro správu provozu.
 
-Cloudová virtuální síť nemá žádné závislosti na místních nebo jiných necloudových prostředcích vaší organizace pro podporu úloh hostovaných v cloudu. Všechny požadované prostředky se zřídí buď ve virtuální síti, nebo pomocí spravovaných PaaS nabídek.
+Virtuální síť cloudového nativního prostředí nemá žádné závislosti na místních nebo jiných necloudových prostředcích vaší organizace, aby podporovala úlohy hostované v cloudu. Všechny požadované prostředky se zřídí buď ve virtuální síti, nebo pomocí spravovaných PaaS nabídek.
 
 ## <a name="cloud-native-assumptions"></a>Předpoklady cloudu – nativní
 

@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a5eb582f994aee6869f9bec0a340b2a966cf1413
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092436"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140667"
 ---
-<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>Nasazení infrastruktury pro migraci
 
@@ -784,7 +784,7 @@ Skupiny zabezpečení sítě přidružené ke skupinám zabezpečení aplikace b
 Povolit | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Povolit | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Povolit | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Odepřít | DenyAllInbound | Vše | Vše | Vše
+Odepřít | DenyAllInbound | Všechny | Všechny | Všechny
 
 ### <a name="encrypt-data"></a>Šifrování dat
 

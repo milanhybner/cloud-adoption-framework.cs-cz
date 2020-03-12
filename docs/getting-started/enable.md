@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 5f611494bb395a06a763a500d7b94377177d3c71
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892238"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140265"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Povolit úspěch během cesty k přijetí cloudu
 
@@ -29,7 +29,7 @@ V rámci této architektury je povolený klíčový motiv. Následující kontro
   - **Spravovat:** Průběžná [provozní Správa](../manage/index.md) portfolia IT, aby se minimalizovala přerušení podnikových procesů a zajistila se stabilita IT portfolia.
   - **Podpora:** Zarovnejte správné [partnerství a možnosti podpory](../migrate/migration-considerations/assess/partnership-options.md).
 
-Dalším základním motivem je zabezpečení, což je důležitý atribut kvality pro úspěšné přijetí do cloudu. Zabezpečení je integrováno v rámci této architektury, aby poskytovalo integrované pokyny k zachování důvěrnosti, integrity a záruk dostupnosti pro vaše cloudové úlohy. 
+Dalším základním motivem je zabezpečení, což je důležitý atribut kvality pro úspěšné přijetí do cloudu. Zabezpečení je integrováno v rámci této architektury, aby poskytovalo integrované pokyny k zachování důvěrnosti, integrity a záruk dostupnosti pro vaše cloudové úlohy.
 
 ## <a name="additional-tools"></a>Další nástroje
 

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801337"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140633"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Příprava na technicky složité prostředí: Agilní správa změn
 
 Pokud je možné zrušit a znovu vytvořit celé datové centrum pomocí jednoho řádku kódu, tradiční postupy nedokážou s těmi moderními držet krok. Pokyny obsažené v dokumentu Architektura přechodu na cloud vycházejí z metod, jako je řízení IT služeb (ITSM), rámec TOGAF (The Open Group Architecture Framework) a další. Aby byla po provedení obchodních změn zajištěná agilita a rychlost odezvy, tato architektura pracuje s danými postupy tak, aby byly v souladu s agilními metodologiemi a přístupy modelu DevOps.
@@ -76,7 +78,7 @@ Tým cloudové strategie a tým přechodu na cloud by měly spolupracovat a ke v
 
 - **Upřesněný inventář.** Ověření požadovaných prostředků, u kterých proběhne migrace. Ověření často probíhá pomocí protokolu nebo monitorování dat na úrovni hostitele, sítě nebo operačního systému. Cílem je důkladně se seznámit se závislostmi jednotlivých prostředků na síti a hardwaru při standardním zatížení.
 - **Vzorce používání.** Pomáhají porozumět tomu, jak koncoví uživatelé pracují s danými prostředky. Součástí těchto vzorců je často analýza geografického rozmístění koncových uživatelů, síťových tras, pravidelných špiček v provozu, denních a hodinových špiček a složení koncových uživatelů (poměr interních a externích).
-- **Očekávaný výkon.** Analýza dostupných dat z protokolu, která se na zaměřuje na propustnost, počet zobrazení stránek, síťové trasy a další údaje o výkonu potřebné pro replikaci prostředí pro koncové uživatele.
+- **Očekávaný výkon.** Analýza dostupných dat protokolů propustnosti, zobrazení stránek, síťových tras a dalších údajů o výkonu, které jsou nezbytné pro replikaci prostředí koncových uživatelů.
 - **Závislosti:** Analýza síťového provozu a vzorců pro práci s aplikacemi, která identifikuje všechny doplňující závislosti sady funkcí, které by měly být zohledněny při posuzování připravenosti prostředí. Mezi uvolněné prostředky nezahrnujte sadu funkcí, dokud nebudete moct splnit některé z následujících kritérií:
   - Všechny závislé sady funkcí prošly migrací.
   - Byly implementovány konfigurace sítě a zabezpečení, které dané sadě funkcí umožňují mít přístup ke všem závislostem tak, aby byly splněny stávající požadavky na výkon.

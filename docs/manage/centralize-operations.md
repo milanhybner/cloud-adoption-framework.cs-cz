@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 312be5ae3b716ad8d6aa609749bcbb615f6ef1c5
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094459"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140418"
 ---
+<!-- cSpell:ignore jenhayes -->
+
 # <a name="centralize-management-operations"></a>Centralizace operací správy
 
-U většiny organizací používá jeden tenant Azure Active Directory (Azure AD) pro všechny uživatele zjednodušení operací správy a snižuje náklady na údržbu. Důvodem je to, že všechny úlohy správy můžou být určenými uživateli, skupinami uživatelů nebo instančními objekty v rámci tohoto tenanta. 
+U většiny organizací používá jeden tenant Azure Active Directory (Azure AD) pro všechny uživatele zjednodušení operací správy a snižuje náklady na údržbu. Důvodem je to, že všechny úlohy správy můžou být určenými uživateli, skupinami uživatelů nebo instančními objekty v rámci tohoto tenanta.
 
 Pokud je to možné, doporučujeme, abyste pro vaši organizaci používali jenom jednoho tenanta Azure AD. Některé situace ale můžou vyžadovat, aby organizace udržovala více tenantů Azure AD z následujících důvodů:
 

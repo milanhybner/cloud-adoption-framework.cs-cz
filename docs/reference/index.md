@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798651"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140565"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Plán architektury přechodu na cloud
 
@@ -45,7 +45,7 @@ Odstranění hlavních překážek a umožnění změny ale vyžaduje víc než 
 
 Architektura přechodu na cloud je zastřešující architektura, která pokrývá fáze plánování, připravenosti a přijetí napříč motivací pro migrace a inovace pro přechod na cloud, s podporou pokynů pro zásady správného řízení a provozních pokynů.
 
-Tato architektura přešla do fáze obecné dostupnosti (GA). Tuto ambiciózní architekturu ale dál aktivně vytváříme ve spolupráci se zákazníky, partnery a interními týmy. V rámci podpory partnerství se obsah vydává, jakmile je k dispozici. Tyto veřejné verze umožňují testování, ověřování a postupné vylepšování těchto pokynů. 
+Tato architektura přešla do fáze obecné dostupnosti (GA). Tuto ambiciózní architekturu ale dál aktivně vytváříme ve spolupráci se zákazníky, partnery a interními týmy. V rámci podpory partnerství se obsah vydává, jakmile je k dispozici. Tyto veřejné verze umožňují testování, ověřování a postupné vylepšování těchto pokynů.
 
 Pro zajištění úspěšného přechodu na cloud je potřeba, aby zákazník na tuto digitální transformaci připravil své lidi, technologie a procesy. Architektura přechodu na cloud obsahuje část popisující celý proces přechodu, migraci i inovace, ve formě přehledu pro zákazníky. Tato část se skládá z následujících fází cesty přechodu:
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892408"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140684"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -55,7 +55,7 @@ Když jste připravení nasadit úlohu do produkčního prostředí, měli byste
 
 Když organizace přidává do cloudu nové úlohy, může mít různé vlastnictví nebo základní rozdělení zodpovědností za následek několik předplatných v produkčních i neprodukčních skupinách pro správu. Přestože tento přístup zajišťuje základní oddělení úloh, nevyužívá významných výhod modelu dědičnosti k automatickému uplatnění zásad napříč podmnožinou předplatných.
 
-![Model oddělení úloh](../../_images/ready/management-group-hierarchy.png)
+![Model oddělení úloh](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>Model kategorií aplikací
 

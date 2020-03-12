@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341908"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140616"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
 
@@ -21,6 +21,8 @@ Stanovení jasných a napadnutelných priorit je jedním z tajných kódů, aby 
 Místo toho doporučujeme, aby se váš tým zaměřil na důkladné stanovení priorit a nadokumentování prvních 10 úloh. Po zahájení nasazení plánu přijetí může tým udržovat seznam dalších 10 úloh s nejvyšší prioritou. Tento přístup poskytuje dostatek informací pro plánování následujících několika iterací.
 
 Omezení plánu na 10 úloh podporuje flexibilitu a zarovnání priorit při změně obchodních kritérií. Díky tomuto přístupu se taky snaží tým pro přijetí cloudu seznámit s odhadem a Upřesnit odhady. Nejdůležitějším způsobem je odebrání rozsáhlého plánování jako bariéra pro efektivní obchodní změnu.
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>Co je zatížení?
 

@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341925"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140599"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plán přijetí do cloudu a Azure DevOps
 
-Azure DevOps je sada cloudových nástrojů pro zákazníky Azure, kteří spravují iterativní projekty. Zahrnuje také nástroje pro správu kanálů nasazení a další důležité aspekty DevOps. 
+Azure DevOps je sada cloudových nástrojů pro zákazníky Azure, kteří spravují iterativní projekty. Zahrnuje také nástroje pro správu kanálů nasazení a další důležité aspekty DevOps.
 
 V tomto článku se dozvíte, jak rychle nasadit nevyřízené položky do Azure DevOps pomocí šablony plánu přijetí v cloudu. Tato šablona zarovnává úsilí o přijetí cloudu do standardizovaného procesu na základě pokynů v rozhraní pro přijetí do cloudu.
 

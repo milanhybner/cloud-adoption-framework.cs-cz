@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341432"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140650"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Vytváření obchodních zarovnání v Cloud managementu
 
@@ -22,7 +22,7 @@ V místních prostředích IT prostředky (aplikace, virtuální počítače, ho
 
 Prvním krokem při vytváření zarovnání firmy je zajištění toho, aby se zajistilo zarovnání termínu. Správa IT, jako je většina inženýrských povolání, amassed kolekci žargonu nebo vysoce technické výrazy. Tyto výrazy mohou vést k nejasnostem u obchodních zúčastněných stran a obtížně mapovat služby správy na obchodní hodnotu.
 
-Naštěstí proces vývoje strategie přijetí do cloudu a plánu přijetí do cloudu vytvoří ideální příležitost k přemapování těchto podmínek. Proces také vytvoří příležitosti k přemýšlení závazků na provozní správu ve spolupráci s firmou. Následující série článků vás provedou tímto novým přístupem v rámci tří konkrétních podmínek, které mohou pomoci vylepšit konverzace mezi podnikovými účastníky: 
+Naštěstí proces vývoje strategie přijetí do cloudu a plánu přijetí do cloudu vytvoří ideální příležitost k přemapování těchto podmínek. Proces také vytvoří příležitosti k přemýšlení závazků na provozní správu ve spolupráci s firmou. Následující série článků vás provedou tímto novým přístupem v rámci tří konkrétních podmínek, které mohou pomoci vylepšit konverzace mezi podnikovými účastníky:
 
 - **[Závažnost](./criticality.md):** Mapování úloh na obchodní procesy. Nepostradatelné řazení pro zaměření investic
 - **[Dopad](./impact.md):** Pochopíte dopad potenciálních výpadků na podporu při vyhodnocování návratnosti investic do správy cloudu.
