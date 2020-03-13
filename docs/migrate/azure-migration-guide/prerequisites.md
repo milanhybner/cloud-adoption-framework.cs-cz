@@ -1,6 +1,6 @@
 ---
 title: Požadavky na migraci do Azure
-description: Požadavky na migraci do Azure
+description: Pomocí architektury přechodu na cloud pro Azure se dozvíte, jak připravit migraci Azure a jaké požadavky potřebujete pro úspěšný projekt migrace.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806981"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094804"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806981"
 
 Prostředky v této části vám pomohou připravit vaše aktuální prostředí na migraci do Azure.
 
-# <a name="overviewtaboverview"></a>[Přehled](#tab/Overview)
+# <a name="overview"></a>[Přehled](#tab/Overview)
 
 Mezi důvody migrace do Azure patří eliminace rizik spojených se starším hardwarem, snížení investičních nákladů, uvolnění prostoru v datovém centru a rychlá návratnost investic.
 
@@ -58,7 +58,7 @@ Cílem tohoto postupu migrace je dosažení následujících bodů:
 > - [Windows Server 2008 a Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008)
 > - [SQL Server 2008 a SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008)
 
-# <a name="understand-migration-approachestabapproach"></a>[Porozumění přístupům k migraci](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Porozumění přístupům k migraci](#tab/Approach)
 
 Strategie a nástroje, které použijete k migraci aplikace do Azure, budou do značné míry záviset na vašich obchodních motivacích, požadavcích na technologie, časových osách, a také na hlubokém porozumění vlastním migrovaným úlohám a prostředkům (infrastruktura, aplikace a data).
 
@@ -73,7 +73,7 @@ Při posuzování migrovaných úloh zjistěte, které aplikace mohou běžet za
 - [Průvodce rozhodováním ohledně nástrojů pro migraci pro architekturu přechodu na cloud](../../decision-guides/migrate-decision-guide/index.md)
 - [5R racionalizace](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Kontrolní seznam pro plánování](#tab/Checklist)
+# <a name="planning-checklist"></a>[Kontrolní seznam pro plánování](#tab/Checklist)
 
 Než začnete s migrací, je potřeba splnit některé předpoklady. Přesné podrobnosti těchto činností se liší v závislosti na migrovaném prostředí. Obecně ale platí následující kontrolní seznam:
 

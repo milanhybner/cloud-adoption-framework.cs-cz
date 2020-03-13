@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892442"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140231"
 ---
 # <a name="architectural-decision-guides"></a>Průvodci rozhodováním ohledně architektury
 

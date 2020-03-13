@@ -1,6 +1,6 @@
 ---
 title: Jak získat pomoc
-description: Jak získat pomoc v průběhu přechodu k Azure
+description: Naučte se, jak během procesu migrace do Azure získat pomoc. Správná pomoc může pomoct zrychlit vaše úsilí při migraci.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803479"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094233"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76803479"
 
 Víme, že získání správné podpory ve správný čas urychlí vaší snahu o migraci. Prohlédněte si níže uvedené způsoby pomoci vyhovující vašim potřebám.
 
-# <a name="support-planstabsupportplans"></a>[Plány podpory](#tab/SupportPlans)
+# <a name="support-plans"></a>[Plány podpory](#tab/SupportPlans)
 
 ## <a name="microsoft-support"></a>Podpora společnosti Microsoft
 
@@ -101,7 +101,7 @@ Následující online komunity poskytují podporu založenou na komunitě:
 
 ::: zone-end
 
-# <a name="partnerstabpartners"></a>[Partneři](#tab/Partners)
+# <a name="partners"></a>[Partneři](#tab/Partners)
 
 ## <a name="azure-solutions-partner"></a>Partner pro řešení Azure
 

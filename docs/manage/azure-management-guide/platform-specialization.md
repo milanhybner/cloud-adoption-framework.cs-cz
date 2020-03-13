@@ -1,6 +1,6 @@
 ---
-title: Specializace podle platformy pro správu cloudu v Azure
-description: Vylepšete operace správy cloudu specifické pro jednotlivé platformy.
+title: Specializované platformy pro správu cloudu
+description: Pomocí architektury přechodu na cloud pro Azure můžete zlepšit operace správy cloudu specifické pro platformu, včetně vylepšení návrhu systému a automatizované nápravy.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 12643d3e26620760e9a13e29936617bfb246fe29
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223518"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341738"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specializace podle platformy pro správu cloudu
 

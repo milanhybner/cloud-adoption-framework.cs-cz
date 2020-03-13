@@ -1,6 +1,6 @@
 ---
 title: Inventarizace a získání přehledu v Azure
-description: Zjistěte, jak u prostředí pro správu Azure nastavit inventarizaci, monitorování, generování sestav a upozornění.
+description: Zjistěte víc o nástrojích, které poskytují inventarizaci i přehled stavu spuštění inventarizace pro sběr provozních dat.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808205"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092128"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventarizace a získání přehledu v Azure
 
@@ -44,7 +44,7 @@ V následující tabulce je pro jednotlivá podniková prostředí uvedeno navrh
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Další informace najdete v [dokumentaci ke službě Azure Service Health](https
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Další informace najdete v [dokumentaci k vytváření pracovních prostorů Lo
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Další informace najdete v [dokumentaci ke službě Azure Monitor](https://docs
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[Nasazení řešení](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[Nasazení řešení](#tab/Configure-solutions)
 
 ::: zone-end
 

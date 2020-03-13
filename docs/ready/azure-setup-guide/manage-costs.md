@@ -1,6 +1,6 @@
 ---
 title: Správa nákladů a fakturace prostředků Azure
-description: Seznamte se s fakturami a zjistěte, jak nastavit rozpočty a platby za prostředky Azure.
+description: Pomocí architektury přechodu na cloud pro Azure se seznamte s fakturami a zjistěte, jak nastavit rozpočty a platby za prostředky Azure.
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799518"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024035"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Správa nákladů a fakturace prostředků Azure
 
 Správa nákladů je proces, při kterém efektivně plánujete a řídíte náklady své firmy. Úlohy správy nákladů zpravidla provádějí finanční, správcovské a aplikační týmy. Služba Azure Cost Management vám pomáhá plánovat s ohledem na náklady. Pomáhá také efektivně analyzovat náklady a optimalizovat útratu za cloud.

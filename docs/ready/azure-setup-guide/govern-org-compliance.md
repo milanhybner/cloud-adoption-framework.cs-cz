@@ -1,6 +1,6 @@
 ---
-title: Zásady správného řízení, zabezpečení a dodržování předpisů v Azure
-description: Zjistěte, jak pro vaše prostředí Azure nastavit zásady správného řízení, zabezpečení a dodržování předpisů.
+title: Zásady správného řízení Azure, zabezpečení a dodržování předpisů
+description: Pomocí architektury přechodu na cloud pro Azure zjistěte, jak pro vaše prostředí Azure nastavit zásady správného řízení, zabezpečení a dodržování předpisů.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799603"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024078"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Zásady správného řízení, zabezpečení a dodržování předpisů v Azure
 
 Při vytváření podnikových zásad a plánování strategie zásad správného řízení můžete pomocí nástrojů a služeb, jako jsou Azure Policy, Azure Blueprints a Azure Security Center, prosazovat a automatizovat rozhodnutí organizace v zásad správného řízení. Než začnete s plánováním zásad správného řízení, identifikujte pomocí [nástroje Governance Benchmark](https://cafbaseline.com) možné mezery v přístupu vaší organizace k zásadám správného řízení. Další informace o vývoji procesů zásad správného řízení najdete v [pokynech pro zásady správného řízení Architektury přechodu na cloud pro Azure](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 Azure Blueprints umožňuje cloudovým architektům a centrálním oddělením IT definovat opakovatelnou sadu prostředků Azure, která implementuje a dodržuje standardy, vzory a požadavky organizace. Vývojářským týmům Azure Blueprints umožňuje rychle vytvářet nová prostředí s důvěrou, že je vytvářejí v souladu s předpisy organizace, a s využitím sady předdefinovaných komponent – třeba síťových – ke zrychlení vývoje a distribuce.
 
@@ -40,9 +44,9 @@ Vytvoření podrobného plánu:
 1. Přejděte na **Blueprints – Začínáme**.
 1. V části **Vytvořit podrobný plán** vyberte **Vytvořit**.
 1. Vyfiltrujte seznam podrobných plánů a vyberte odpovídající podrobný plán.
-1. Zadejte **Název podrobného plánu** a vyberte odpovídající **Umístění definice**.
-1. Klikněte na **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
-1. Klikněte na **Uložit koncept**.
+1. Zadejte **název podrobného plánu** a potom vyberte odpovídající **umístění definice**.
+1. Vyberte **Další: Artefakty >>** a potom zkontrolujte artefakty, které jsou součástí podrobného plánu.
+1. Vyberte **Uložit koncept**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -53,9 +57,9 @@ Vytvoření podrobného plánu:
 1. Přejděte na [Blueprints – Začínáme](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. V části **Vytvořit podrobný plán** vyberte **Vytvořit**.
 1. Vyfiltrujte seznam podrobných plánů a vyberte odpovídající podrobný plán.
-1. Zadejte **Název podrobného plánu** a vyberte odpovídající **Umístění definice**.
-1. Klikněte na **Další: Artefakty >>** a zkontrolujte artefakty, které jsou součástí podrobného plánu.
-1. Klikněte na **Uložit koncept**.
+1. Zadejte **název podrobného plánu** a potom vyberte odpovídající **umístění definice**.
+1. Vyberte **Další: Artefakty >>** a potom zkontrolujte artefakty, které jsou součástí podrobného plánu.
+1. Vyberte **Uložit koncept**.
 
 ::: zone-end
 
@@ -67,7 +71,7 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 1. Přejděte na **Blueprints – Definice podrobných plánů**.
 1. Vyberte podrobný plán, který jste vytvořili v předchozích krocích.
-1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
+1. Zkontrolujte definici podrobného plánu a potom vyberte **Publikovat podrobný plán**.
 1. Zadejte číslo **Verze** (například _1.0_) a případné **Poznámky ke změnám** a pak vyberte **Publikovat**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
@@ -78,7 +82,7 @@ Publikování artefaktů podrobného plánu v předplatném:
 
 1. Přejděte na [Podrobné plány – Definice podrobných plánů](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Vyberte definici podrobného plánu, kterou jste vytvořili v předchozích krocích.
-1. Zkontrolujte definici podrobného plánu a vyberte **Publikovat podrobný plán**.
+1. Zkontrolujte definici podrobného plánu a potom vyberte **Publikovat podrobný plán**.
 1. Zadejte číslo **Verze** (například _1.0_) a případné **Poznámky ke změnám** a pak vyberte **Publikovat**.
 
 ::: zone-end
@@ -95,7 +99,7 @@ Další informace naleznete v tématu:
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy je služba, která slouží k vytváření, přiřazování a správě zásad. Tyto zásady vynucují na vašich prostředcích pravidla, aby tyto prostředky dodržovaly předpisy vyplývající z vašich firemních standardů a ze smluv o úrovni služeb. Azure Policy prohledává vaše prostředky s cílem identifikovat prostředky, které nedodržují předpisy vyplývající z implementovaných zásad. Například můžete mít zásadu, která ve vašem prostředí povoluje pouze určitou velikost virtuálních počítačů. Když tuto zásadu implementujete, vyhodnotí stávající virtuální počítače ve vašem prostředí i všechny nové virtuální počítače, které jsou nasazené. Vyhodnocení zásad pro vás vygeneruje události dodržování předpisů, které můžete použít k monitorování a generování sestav.
 
@@ -129,12 +133,12 @@ Použití zásady pro skupinu prostředků:
 
 Další informace naleznete v tématu:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Architektura přechodu na cloud: Průvodce rozhodováním ohledně vynucování zásad](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center hraje důležitou roli ve strategii správného řízení. Pomůže vám udržovat si přehled o zabezpečení, protože:
 

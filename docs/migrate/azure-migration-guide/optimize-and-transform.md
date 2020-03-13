@@ -1,6 +1,6 @@
 ---
 title: Optimalizace a zvýšení úrovně
-description: Tato část Průvodce migrací do Azure se zabývá různými oblastmi optimalizace, včetně kontroly návrhu řešení, určení vhodného rozsahu služeb a analýzy nákladů.
+description: Zjistěte, jak zkontrolovat řešení z hlediska možných oblastí optimalizace, včetně návrhu řešení, určení vhodného rozsahu služeb a analýzy nákladů.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: ab8ff4d3b73e38a0d88455fa675870da6a7f22ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892459"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094820"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 

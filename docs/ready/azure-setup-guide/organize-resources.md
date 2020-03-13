@@ -1,6 +1,6 @@
 ---
 title: Efektivní uspořádání prostředků Azure
-description: Osvědčené postupy efektivního uspořádání prostředků Azure, které usnadňují správu
+description: Seznamte se s osvědčenými postupy efektivního uspořádání prostředků Azure, které usnadňují správu.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567754"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024005"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
 Uspořádání cloudových prostředků je důležité pro zabezpečení, správu a sledování nákladů souvisejících s vašimi úlohami. K uspořádání prostředků můžete použít hierarchie pro správu v rámci platformy Azure, implementovat správné konvence pojmenování a opatřit prostředky značkami.
@@ -156,7 +158,7 @@ Značky můžete použít také k celé řadě dalších účelů. Mezi běžné
 
 - **Metadata a dokumentace:** Správci mohou snadno zobrazit podrobnosti o prostředcích, na kterých pracují, například pomocí značky „VlastníkProjektu“.
 - **Automatizace:** Možná máte pravidelně spouštěné skripty, které provádějí akce na základě hodnoty značky, jako je „ČasVypnutí“ nebo „DatumZrušeníZřízení“.
-- **Optimalizace nákladů:** Prostředky můžete přidělit týmům a osobám, které zodpovídají za náklady. Ve službě Azure Cost Management můžete použít značku nákladového střediska jako filtr, aby se poplatky nahlašovaly na základě využití týmu nebo oddělení.
+- **Optimalizace nákladů:** Ve službě Azure Cost Management můžete použít značku nákladového střediska jako filtr, aby se poplatky nahlašovaly na základě využití týmu nebo oddělení.
 
 Každý prostředek nebo skupina prostředků může mít maximálně 50 dvojic název/hodnota značky. Toto omezení se vztahuje jen na značky použité přímo u prostředku nebo skupiny prostředků.
 

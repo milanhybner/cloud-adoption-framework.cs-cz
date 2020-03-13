@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171085"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891949"
 ---
 ::: zone target="docs"
 
@@ -124,8 +124,7 @@ Zpětná vazba se zaznamenává jako uživatelské scénáře v backlogu (neboli
 
 ### <a name="action"></a>Akce
 
-Azure Boards a Azure Pipelines vyžadují portál nezávislý na GitHubu a Azure.
-Pokud chcete s některým z těchto nástrojů začít, přejděte na [Azure DevOps](https://dev.azure.com).
+Azure Boards a Azure Pipelines vyžadují portál nezávislý na GitHubu a Azure. Začínáme s využitím [Azure DevOps](https://dev.azure.com)
 
 ::: zone-end
 
