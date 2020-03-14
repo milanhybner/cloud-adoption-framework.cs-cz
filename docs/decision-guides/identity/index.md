@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 62a101b8c9dd957a8eae2279f77c5cf0c4381796
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222785"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312233"
 ---
+<!-- cSpell:ignore Kerberos NTLM SAML -->
+
 # <a name="identity-decision-guide"></a>Průvodce rozhodováním ohledně identity
 
 IT pracovníci v jakémkoli prostředí, ať už se jedná o místní, hybridní nebo výhradně cloudové prostředí, potřebují řídit, kteří správci, uživatelé a skupiny mají přístup k prostředkům. Služby pro správu identit a přístupu (IAM) umožňují spravovat řízení přístupu v cloudu.

@@ -1,18 +1,18 @@
 ---
-title: Osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure
-description: Získejte osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure.
+title: Úlohy s náklady a velikostí migrovány do Azure
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k získání osvědčených postupů pro náklady a úlohy, které se migrují do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892578"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311910"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Osvědčené postupy pro určování nákladů a velikostí úloh migrovaných do Azure
 

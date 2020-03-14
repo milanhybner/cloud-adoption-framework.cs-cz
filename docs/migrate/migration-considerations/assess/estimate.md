@@ -1,18 +1,18 @@
 ---
 title: Odhad nákladů na cloud před migrací
-description: Vysvětlení procesu odhadu nákladů na cloud před migrací.
+description: Seznamte se s faktory, které mohou ovlivnit rozhodování a aktivity spuštění, a také různé možnosti pro odhad nákladů na Cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0618676a995971951a27a5bdba66b7e9b126d7d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4e245937f6990cd6d7d13ffaccae60a2301fcb23
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802578"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312063"
 ---
 # <a name="estimate-cloud-costs"></a>Odhad nákladů na cloud
 

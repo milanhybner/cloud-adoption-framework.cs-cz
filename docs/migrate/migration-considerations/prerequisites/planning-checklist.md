@@ -1,18 +1,18 @@
 ---
 title: Kontrolní seznam pro plánování migračního prostředí
-description: Ověřte před migrací připravenost prostředí.
+description: Pro ověření připravenosti na životní prostředí před migrací použijte kontrolní seznam pro plánování prostředí migrace.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222239"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311978"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí: Ověření připravenosti na životní prostředí před migrací
 

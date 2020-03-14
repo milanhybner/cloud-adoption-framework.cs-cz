@@ -1,18 +1,18 @@
 ---
-title: Změna hostitele linuxové aplikace technické podpory na Azure a Azure Database for MySQL
-description: Přečtěte si, jak Contoso mění hostitele místní linuxové aplikaci tím, že ji migruje do virtuálních počítačů Azure a Azure Database for MySQL.
+title: Opětovné hostování aplikace pro Linux Service Desk v Azure a Azure Database for MySQL
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak znovu hostovat místní aplikaci pro Linux migrací do virtuálních počítačů Azure a Azure Database for MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223018"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311468"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 

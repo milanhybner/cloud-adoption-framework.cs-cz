@@ -1,6 +1,6 @@
 ---
-title: Refaktoring nasazení sady Team Foundation Server do sady Azure DevOps Services v Azure
-description: Přečtěte si, jak Contoso refaktoruje svoje místní nasazení TFS tím, že je migruje do sady Azure DevOps Services v Azure.
+title: Refaktoring Team Foundation Server nasazení do Azure DevOps Services
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak refaktorovat místní nasazení TFS tím, že ho migrujete do Azure DevOps Services v Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 003a5674116f7964971710c5c8c67fc51fa03493
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222875"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311621"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 

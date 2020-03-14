@@ -7,16 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341576"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312473"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurace škálování služby Azure Server Management Services
 
 Aby bylo možné na vaše servery připojit služby pro správu Azure serveru, musíte provést tyto dvě úlohy:
+
 - Nasazení agentů služeb na vaše servery
 - Povolit řešení pro správu
 
@@ -82,7 +85,7 @@ U místních serverů je potřeba stáhnout a nainstalovat [agenta Log Analytics
 
 Pokud chcete povolit řešení, musíte nakonfigurovat pracovní prostor Log Analytics. Virtuální počítače Azure a místní servery získají řešení z Log Analytics pracovních prostorů, ke kterým jsou připojené.
 
-### <a name="update-management"></a>Správa aktualizací
+### <a name="update-management"></a>Update Management
 
 Řešení Update Management, Change Tracking a inventáře vyžadují Log Analytics pracovní prostor i účet Automation. Abyste měli jistotu, že tyto prostředky jsou správně nakonfigurované, doporučujeme vám, abyste provedli účet Automation. Další informace najdete v tématu připojení [řešení Update Management, Change Tracking a inventáře](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -133,7 +136,7 @@ Chcete-li vytvořit nebo upravit uložené hledání, postupujte podle následuj
 
 1. Vyberte **Save** (Uložit). Ve výchozím nastavení je konfigurace oboru propojená s **MicrosoftDefaultComputerGroup** uloženým hledáním. Automaticky se aktualizuje.
 
-### <a name="azure-activity-log"></a>Protokol aktivit v Azure
+### <a name="azure-activity-log"></a>Protokol aktivit Azure
 
 [Protokol aktivit Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) je také součástí Azure monitor. Poskytuje přehled o událostech na úrovni předplatného, ke kterým dochází v Azure.
 
@@ -178,7 +181,7 @@ Po vytvoření se v instanci prostředku pracovního prostoru po výběru **zobr
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor pro virtuální počítače
 
-[Azure monitor pro virtuální počítače](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) můžete povolit prostřednictvím stránky zobrazení pro instanci virtuálního počítače, jak je popsáno v tématu [Povolení služeb správy na jednom virtuálním počítači pro vyhodnocení](./onboard-single-vm.md). Řešení byste neměli povolit přímo na stránce **řešení** , stejně jako u ostatních řešení, která jsou popsaná v tomto článku. U rozsáhlých nasazení může být snazší pomocí [Automatizace](./onboarding-automation.md) povolit správná řešení v pracovním prostoru. 
+[Azure monitor pro virtuální počítače](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) můžete povolit prostřednictvím stránky zobrazení pro instanci virtuálního počítače, jak je popsáno v tématu [Povolení služeb správy na jednom virtuálním počítači pro vyhodnocení](./onboard-single-vm.md). Řešení byste neměli povolit přímo na stránce **řešení** , stejně jako u ostatních řešení, která jsou popsaná v tomto článku. U rozsáhlých nasazení může být snazší pomocí [Automatizace](./onboarding-automation.md) povolit správná řešení v pracovním prostoru.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

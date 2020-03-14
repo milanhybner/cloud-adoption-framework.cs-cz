@@ -1,18 +1,18 @@
 ---
-title: 'Příprava na technicky složité prostředí: Agilní správa změn'
-description: Příprava na technicky složité prostředí – agilní správa změn
+title: Příprava na složitost správy agilních změn
+description: Pomocí architektury cloudového přijetí pro Azure Připravte cloudové architekty pro konverzaci se správou projektů a vysvětlete koncept správy změn.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140633"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311825"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 

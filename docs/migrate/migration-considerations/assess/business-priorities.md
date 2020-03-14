@@ -1,18 +1,18 @@
 ---
-title: Zachování obchodních priorit během dlouhodobého procesu transformace
-description: Zachovejte během dlouhodobého procesu transformace své obchodní priority.
+title: Obchodní priority během procesu transformace
+description: Pomocí architektury cloudového přijetí pro Azure se naučíte udržovat obchodní zarovnání během dlouhodobě transformačního procesu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a48dad8cb7d64b766dc5b9a445aeda4245854e7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df41ee9dfe94d0279f8a0c29982e8aff2dd83782
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802714"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312046"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Obchodní priority: zachování zarovnání
 

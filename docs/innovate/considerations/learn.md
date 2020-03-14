@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337549"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312538"
 ---
 # <a name="learn-with-customers"></a>Učení se zákazníky
 

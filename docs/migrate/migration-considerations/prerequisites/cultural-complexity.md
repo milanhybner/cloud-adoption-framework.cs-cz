@@ -1,18 +1,18 @@
 ---
-title: 'Příprava na kulturní komplikace: sladění rolí a zodpovědností'
-description: Připraví se na kulturní složitost zarovnáním rolí a odpovědností.
+title: Kulturní složitost zarovnání rolí a odpovědností
+description: Rozhraní pro přijetí v cloudu pro Azure můžete použít k přípravě na kulturní složitost tím, že zarovnáte role a zodpovědnosti, abyste během procesu migrace propravili přehlednost.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801490"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311791"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Příprava na kulturní komplikace: sladění rolí a zodpovědností
 
@@ -52,8 +52,8 @@ Každý proces v rámci diskuse o principech migrace Architektury přechodu na c
 | Posouzení | Architektura | Rozebráním prvotních předpokladů definujte cílovou architekturu na základě metrik využití. | Tým přechodu na cloud |
 | Posouzení | Schválení | Schvalte navrhovanou architekturu. | Tým cloudové strategie |
 | Migrace | Přístup k replikaci | Zpřístupněním existujících místních hostitelů a prostředků zřiďte procesy replikace. | Tým přechodu na cloud |
-| Optimalizace | Připravenost | Před povýšením ověřte, že systém splňuje požadavky na výkon a náklady. | Tým přechodu na cloud |
-| Optimalizace | Povýšení | Oprávnění k povýšení úlohy do produkce a přesměrování produkčního provozu. | Tým přechodu na cloud |
+| Optimalizace | Připraveno | Před povýšením ověřte, že systém splňuje požadavky na výkon a náklady. | Tým přechodu na cloud |
+| Optimalizace | Převedení | Oprávnění k povýšení úlohy do produkce a přesměrování produkčního provozu. | Tým přechodu na cloud |
 | Zabezpečení a správa | Přechod provozu | Před provozními operacemi zdokumentujte produkční systémy. | Tým přechodu na cloud |
 
 > [!CAUTION]

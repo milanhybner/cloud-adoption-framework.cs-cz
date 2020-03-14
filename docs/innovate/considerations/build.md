@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337536"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312525"
 ---
 # <a name="build-with-customer-empathy"></a>Sestavování s empatií vůči zákazníkům
 
@@ -101,7 +101,7 @@ Pokud je zákazník soucit silný, je třeba snadno identifikovat jasně existuj
 
 Existuje mnoho právních požadavků, dodržování předpisů a odvětví, které mohou vyžadovat alternativní přístup. Pokud veřejné verze vývojového řešení vytvoří riziko pro patentové časování, ochranu duševních vlastností, nevracení zákaznických dat nebo porušení požadavků na dodržování předpisů, nemusí být tento přístup vhodný. V případě pozorovaných rizik, která by taková existence existovala, se poraďte s právním poradcem před tím, než si vyžádáte jakýkoli postup
 
-## <a name="references"></a>Reference
+## <a name="references"></a>Odkazy
 
 Některé z konceptů v tomto článku se sestavují v tématech popsaných v tématu [*štíhlé spuštění*](http://theleanstartup.com/book) (Eric Internet Explorer, koruna Business, 2011).
 

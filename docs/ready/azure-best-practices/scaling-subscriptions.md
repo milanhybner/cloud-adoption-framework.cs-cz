@@ -1,22 +1,22 @@
 ---
-title: Škálování s využitím několika předplatných Azure
-description: Naučte se škálovat s využitím několika předplatných Azure.
+title: Škálování pomocí předplatných Azure
+description: Pomocí architektury cloudového přijetí pro Azure se naučíte vyvíjet strategii pro škálování s více předplatnými Azure.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799790"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312655"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Škálování s více předplatnými Azure
 
-Organizace často potřebují více než jedno předplatné Azure v důsledku omezení prostředků a dalších doporučení týkajících se správy. Je důležité mít pro škálování předplatných strategii.
+Organizace obvykle potřebují několik předplatných Azure v důsledku omezení prostředků a dalších doporučení týkajících se správy. Definování strategie pro škálování vašich předplatných je důležité.
 
 ## <a name="production-and-nonproduction-workloads"></a>Produkční a nevýrobní úlohy
 
@@ -62,7 +62,7 @@ Další předplatná se také můžete rozhodnout vytvořit z jiných obchodníc
 
 ## <a name="manage-multiple-subscriptions"></a>Správa více předplatných
 
-Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Pokud ale máte velké množství předplatných, měli byste zvážit vytvoření hierarchie skupin pro správu, která zjednodušuje správu předplatných a prostředků.
+Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Pokud ale máte mnoho předplatných, vytvořte hierarchii skupiny pro správu, která zjednoduší správu předplatných a prostředků.
 
 Skupiny pro správu umožňují efektivní správu přístupu, zásad a dodržování předpisů u předplatných organizace. Každá skupina pro správu je kontejnerem pro jedno nebo více předplatných.
 
@@ -71,7 +71,7 @@ Skupiny pro správu jsou uspořádány v jedné hierarchii. Tuto hierarchii defi
 Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplatná, skupiny prostředků a prostředky. Jakýkoli přístup nebo zásady použité na jedné úrovni v hierarchii se dědí úrovněmi pod ní. Vlastník prostředku nebo vlastník předplatného nemůže zděděné zásady změnit. Toto omezení pomáhá zlepšit zásady správného řízení.
 
 > [!NOTE]
-> Všimněte si, že dědičnost značek není aktuálně k dispozici, ale bude brzy k dispozici.
+> Všimněte si, že dědičnost značek není v současné době podporovaná, ale bude brzy k dispozici.
 
 Když se spoléháte na tento model dědičnosti, můžete uspořádat předplatná v hierarchii tak, aby každé předplatné odpovídalo příslušným zásadám a ovládacím prvkům zabezpečení.
 
@@ -79,11 +79,11 @@ Když se spoléháte na tento model dědičnosti, můžete uspořádat předplat
 
 Všechna přiřazení přístupu nebo zásad v kořenové skupině pro správu se použijí pro všechny prostředky v rámci příslušného adresáře. Pečlivě zvažte, které položky v tomto oboru definujete. Zahrňte pouze ta přiřazení, která potřebujete.
 
-Když na začátku definujete hierarchii skupin pro správu, nejprve vytvoříte kořenovou skupinu pro správu. Potom přesunete všechna existující předplatná v adresáři do kořenové skupiny pro správu. Nová předplatná se vždy vytvoří v kořenové skupině pro správu. Později je můžete přesunout do jiné skupiny pro správu.
+Při definování hierarchie skupiny pro správu je třeba nejprve vytvořit kořenovou skupinu pro správu. Potom přesunete všechna existující předplatná v adresáři do kořenové skupiny pro správu. Nová předplatná se vždy vytvoří v kořenové skupině pro správu. Později je můžete přesunout do jiné skupiny pro správu.
 
-Když přesunete předplatné do existující skupiny pro správu, zdědí zásady a přiřazení rolí z hierarchie skupin pro správu nad ní. Jakmile pro úlohy Azure vytvoříte více předplatných, měli byste vytvořit další předplatná, která by obsahovala služby Azure sdílené ostatními předplatnými.
+Když přesunete předplatné do existující skupiny pro správu, zdědí to zásady a přiřazení rolí z hierarchie skupiny pro správu nad ním. Jakmile pro úlohy Azure vytvoříte více předplatných, měli byste vytvořit další předplatná, která by obsahovala služby Azure sdílené ostatními předplatnými.
 
-![Příklad hierarchie skupiny pro správu](../../_images/ready/management-group-hierarchy.png)
+![Příklad hierarchie skupiny pro správu](../../_images/ready/management-group-hierarchy-v2.png)
 
 Další informace najdete v tématu [Uspořádání vašich prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
@@ -95,7 +95,7 @@ Další informace najdete v tématu [Uspořádání vašich prostředků s využ
 - Pokud je to možné, použijte k vytvoření nových předplatných [instanční objekt](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Definujte skupinu zabezpečení, která může vyžadovat nová předplatná prostřednictvím automatizovaného pracovního postupu.
 - Pokud jste zákazníkem se smlouvou Enterprise, požádejte podporu Azure, aby pro vaši organizaci zablokovala vytváření předplatných bez smlouvy Enterprise.
 
-## <a name="related-resources"></a>Související materiály
+## <a name="related-resources"></a>Související prostředky
 
 - [Základní koncepty Azure.](../considerations/fundamental-concepts.md)
 - [Uspořádání prostředků s využitím skupin pro správu Azure.](https://docs.microsoft.com/azure/governance/management-groups)

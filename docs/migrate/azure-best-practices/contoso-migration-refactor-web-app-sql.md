@@ -1,6 +1,6 @@
 ---
-title: Refaktoring aplikace migrací do Azure App Service a Azure SQL Database
-description: Přečtěte si, jak Contoso přesouvá hostování místní aplikace migrací do webové aplikace Azure App Service a databáze Azure SQL Serveru.
+title: Migrace aplikace na Azure App Service a SQL Database
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak refaktorovat aplikaci tím, že ji migrujete do Azure App Service a Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223065"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311995"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
 

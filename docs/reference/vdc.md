@@ -1,6 +1,6 @@
 ---
 title: Virtuální datové centrum Azure
-description: Prostředky pro virtuální datové centrum Microsoft Azure
+description: Azure Virtual Datacenter je teď rozhraní pro přijetí Microsoft Cloud pro Azure. Seznamte se s prostředky, které jsou k dispozici pro podporu tohoto přechodu.
 author: tracsman
 ms.author: jonor
 ms.date: 06/12/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 0a4c1777cc256b72fb3897b47d76c1c224b578da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891740"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311553"
 ---
 <!-- cSpell:ignore tracsman jonor -->
 

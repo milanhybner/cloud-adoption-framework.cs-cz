@@ -1,18 +1,18 @@
 ---
 title: Vysvětlení možností partnerství a podpory
-description: Popisuje možnosti a přístupy k podpoře úsilí migrace.
+description: K pochopení možností a přístupů k partnerům pro podporu nákladů na migraci použijte rozhraní pro přijetí cloudu pro Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802459"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311859"
 ---
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
@@ -42,13 +42,13 @@ Pokud organizace plánuje migraci do Azure vlastními silami, vždy je tu Micros
 
 Program [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure) poskytuje přímou asistenci odborníků na Azure a ve spolupráci s partnery pomáhá zákazníkům rychle a bez obav sestavovat řešení Azure. FastTrack přináší osvědčené postupy a nástroje z reálných zákaznických prostředí a pomáhá zákazníkům od instalace, konfigurace a vývoje po produkci řešení Azure, jako například:
 
-- Migrace datacentra
-- Windows Server ve službě Azure
+- Migrace datacenter
+- Windows Server v Azure
 - Linux v Azure
 - SAP v Azure
 - Provozní kontinuita a zotavení po havárii (BCDR)
 - Vysokovýkonné výpočetní prostředí*
-- Aplikace nativních pro cloud
+- Aplikace nativní pro cloud
 - DevOps
 - Modernizace aplikací
 - Analýzy v cloudovém měřítku**

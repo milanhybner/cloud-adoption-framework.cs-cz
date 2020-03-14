@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78893081"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312681"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -98,6 +98,8 @@ Následující nastavení rozsahu a rolí vytvoří požadovanou viditelnost pro
 - [Tým zásad správného řízení cloudu](../../organize/cloud-governance.md). Odpovědnost za správu nákladů, sladění rozpočtu a vykazování v rámci všech činností přechodu na cloud vyžaduje přístup Přispěvatel služby Cost Management na kořenové úrovni hierarchie skupiny pro správu.
 
   - V dobře spravovaném prostředí má tým zásad správného řízení cloudu pravděpodobně ještě vyšší úroveň přístupu, takže další přiřazení rozsahu [Přispěvatel pro Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) není nutné.
+
+<!-- cSpell:ignore automations -->
 
 - [CCoE](../../organize/cloud-center-of-excellence.md). Zodpovědnost za správu nákladů souvisejících se sdílenými službami vyžaduje přístup Přispěvatel služby Cost Management na úrovni předplatného. Kromě toho může tento tým vyžadovat přístup Přispěvatel služby Cost Management ke skupinám prostředků nebo předplatným, které obsahují prostředky nasazené automatizacemi CCoE, aby porozuměli tomu, jak tyto automatizace ovlivňují náklady.
 

@@ -1,18 +1,18 @@
 ---
 title: Příprava migrované aplikace pro produkční prostředí
-description: Proces v rámci migrace do cloudu, který se zaměřuje na úkoly při migraci úloh do cloudu.
+description: Rozhraní pro přijetí v cloudu pro Azure použijte k pochopení ověření, které je součástí přípravy migrované aplikace na produkční povýšení.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801609"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312012"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Příprava migrované aplikace pro produkční prostředí
 

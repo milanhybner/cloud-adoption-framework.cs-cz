@@ -1,6 +1,6 @@
 ---
-title: Změna hostitele místní aplikace migrací na virtuální počítače Azure a spravovanou instanci Azure SQL Database
-description: Přečtěte si, jak společnost Contoso s využitím spravované instance Azure SQL Database provádí změnu hostitele místní aplikace na virtuální počítače Azure.
+title: Opětovné hostování v Azure a Azure SQL Database spravované instance
+description: Pomocí architektury cloudového prostředí pro Azure se dozvíte, jak rehostovat místní aplikaci na virtuálních počítačích Azure pomocí Azure SQL Database spravované instance.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223084"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311961"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
