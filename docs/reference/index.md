@@ -1,6 +1,6 @@
 ---
 title: Plán
-description: Další informace o plánu nasazení architektury přechodu na cloud pro Azure od Microsoftu
+description: Využijte architekturu přechodu na cloud k seznámení se sladěním obchodních, kulturních a technologických strategií pro dosažení požadovaných obchodních výsledků.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: c8bf289019e2200b5689a760e4a633ba901540c1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140565"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311570"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Plán architektury přechodu na cloud
 

@@ -1,6 +1,6 @@
 ---
 title: Migrace do cloudu
-description: Migrace do cloudu v architektuře přechodu na cloud
+description: Seznamte se s vytvářením iterativních procesů k posouzení, migraci, optimalizaci, zabezpečení a správě úloh, které chcete migrovat do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337808"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312301"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migrace do cloudu v architektuře přechodu na cloud
 
@@ -21,12 +21,12 @@ Všechny [plány přechodu na cloud](../plan/index.md) na podnikové úrovni bud
 
 ## <a name="getting-started"></a>Začínáme
 
-Chcete-li se připravit na tato fáze životního cyklu přechodu na cloud, architektura navrhuje následujících pět cvičení:
+V rámci přípravy na tuto fázi životního cyklu přechodu na cloud architektura navrhuje následující cvičení:
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/prerequisites.md?tabs=Checklist">
+        <a href="./azure-migration-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -36,27 +36,8 @@ Chcete-li se připravit na tato fáze životního cyklu přechodu na cloud, arch
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Předpoklad migrace</h3>
-Ověřte, že cílová zóna je nasazená a je připravená k hostování prvních několika úloh, které se budou migrovat do Azure. Pokud nebyly vytvořeny strategie přechodu na cloud a plán přechodu na cloud, ověřte, že obě úsilí probíhají.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
                             <h3>Migrace vaší první úlohy</h3>
-Využijte Průvodce migrací do Azure jako vodítka při migraci vaší první úlohy. To vám pomůže seznámit se s nástroji a přístupy potřebnými ke škálování úsilí o přechod.
+Využijte průvodce migrací do Azure a seznamte se s nativními nástroji Azure a s přístupem k migraci.
                         </div>
                     </div>
                 </div>
@@ -70,12 +51,12 @@ Využijte Průvodce migrací do Azure jako vodítka při migraci vaší první �
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Rozšířené scénáře migrace</h3>
-Využijte rozšířený kontrolní seznam oboru k identifikaci scénářů, které by vyžadovaly změny týkající se rozhodnutí o budoucí architektuře, procesech migrace, konfiguracích cílové zóny nebo nástrojích migrace.
+                            <h3>Scénáře migrace</h3>
+Využijte další migrační nástroje a přístupy k zajištění dalších scénářů migrace.
                         </div>
                     </div>
                 </div>
@@ -89,12 +70,12 @@ Využijte rozšířený kontrolní seznam oboru k identifikaci scénářů, kter
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Osvědčené postupy</h3>
-Ověřte všechny změny proti části osvědčených postupů, abyste zajistili správnou implementaci rozšířeného oboru nebo specifických přístupů k migraci úloh nebo architektury.
+Použitím konzistentních osvědčených postupů vyřešte běžné požadavky migrace.
                         </div>
                     </div>
                 </div>
@@ -108,12 +89,12 @@ Ověřte všechny změny proti části osvědčených postupů, abyste zajistili
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/5.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Vylepšení procesů</h3>
-Migrace je aktivita úzce související s procesy. Při škálování úsilí o migraci využijte část s popisem požadavků na migrace a vyhodnoťte a dolaďte různé aspekty vašich procesů.
+Migrace je aktivita úzce související s procesy. Při škálování úsilí o migraci využijte vylepšení těchto procesů k vyhodnocení a doladění různých aspektů migrace.
                         </div>
                     </div>
                 </div>
@@ -123,11 +104,16 @@ Migrace je aktivita úzce související s procesy. Při škálování úsilí o 
 </ul>
 <!-- markdownlint-enable MD033 -->
 
+Tato metodologie a výše uvedené kroky staví na následujících předpokladech:
+
+- Před zahájením migrace byla identifikována a nakonfigurována nejméně jedna [cílová zóna](../ready/index.md), která byla nasazena tak, aby splňovala požadavky krátkodobého plánu přechodu na cloud.
+- S migrací jsou spojené termíny jako _„lift and shift“_ nebo _změna hostitele_. Tato metodologie a výše uvedené kroky vycházejí z premisy, že žádné datové centrum (a jenom velmi málo úloh) by se nemělo migrovat čistě změnou hostitele. I když je možné u řady úloh změnit hostitele, zákazníci se častěji rozhodnou, že budou v rámci jednotlivých úloh modernizovat konkrétní prostředky. Během tohoto iterativního procesu je často předmětem diskuze zajištění rovnováhy mezi rychlostí a modernizací.
+
 ## <a name="iterative-migration-process"></a>Iterativní proces migrace
 
 Ve své podstatě migrace do cloudu sestává ze čtyř jednoduchých fází: Posouzení, migrace, optimalizace a zabezpečení a správa. V této části architektury přechodu na cloud vás naučíme maximalizovat návratnost každé fáze procesu a dát tyto fáze do souladu s plánem přechodu na cloud. Tato fáze iterativního přístupu jsou znázorněné na následujícím obrázku:
 
-![Model migrace architektury přechodu na cloud](../_images/operational-transformation-migrate.png)
+![Model migrace architektury přechodu na cloud](../_images/migrate/methodology.png)
 
 ## <a name="create-a-balanced-cloud-portfolio"></a>Vytvoření vyrovnaného cloudového portfolia
 
@@ -143,7 +129,7 @@ Efektivní cesta potřebuje cíl. Před provedením prvního kroku si udělejte 
 
 Tyto články popisují dvě cesty s podobným cílem &mdash; migrovat velkou část stávajících prostředků do Azure. Požadované procesy k realizaci však budou výrazně ovlivněné obchodními výsledky a aktuálním stavem. Tyto drobné odchylky mají za následek dva zcela rozdílné přístupy k dosažení podobného koncového stavu.
 
-![Model migrace architektury přechodu na cloud](../_images/operational-transformation-migrate.png)
+![Model migrace architektury přechodu na cloud](../_images/migrate/methodology.png)
 
 Kvůli vedení inkrementálního spouštění během přechodu do koncového stavu tento model rozděluje migraci na dvě oblasti zájmu.
 
@@ -173,48 +159,9 @@ Stále se však vyžaduje přístup využívající přírůstkovou migraci. Ve 
 
 Přístup využívající přírůstkovou migraci v architektuře přechodu na cloud pomáhá vytvořit inkrementální plán, který zohledňuje a dokumentuje technická a kulturní omezení. Cílem tohoto modelu je maximalizovat rychlost migrace a zároveň minimalizovat režii pro IT i firmu. Níže jsou uvedené dva příklady provedení přírůstkové migrace na základě backlogu migrace.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./azure-migration-guide/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Průvodce migrací do Azure</h3>
-                        <p><b>Popisné shrnutí:</b> Zákazník migruje méně než 1 000 virtuálních počítačů. Vlastník aplikací, který není součástí IT oddělení, vlastní méně než deset podporovaných aplikací. Zbývající aplikace, virtuální počítače a související data vlastní a podporují členové týmu přechodu na cloud. Členové týmu přechodu na cloud mají přístup pro správu k produkčním prostředím ve stávajícím datacentru.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./expanded-scope/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Průvodce komplexním scénářem</h3>
-                        <p><b>Popisné shrnutí:</b> Migrace tohoto zákazníka je složitá z hlediska obchodu, kultury a technologií. Tento průvodce obsahuje několik konkrétních složitých výzev a způsoby, jak je překonat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
-
-Tyto dvě cesty představují dva extrémy prostředí pro zákazníky, kteří investují do migrace do cloudu. Většina společností využívá kombinaci obou výše uvedených scénářů. Až si projdete příslušnou cestu, využijte model migrace architektury přechodu na cloudu k zahájení diskusí o migraci a úpravě základních cest tak, aby lépe odpovídaly vašim potřebám.
-
 ## <a name="next-steps"></a>Další kroky
 
-Zvolte si jednu z těchto cest:
+Začněte tím, že se seznámíte s [průvodcem migrací do Azure](./azure-migration-guide/index.md).
 
 > [!div class="nextstepaction"]
 > [Průvodce migrací do Azure](./azure-migration-guide/index.md)
->
-> [Rozšířený průvodce](./expanded-scope/index.md)

@@ -1,6 +1,6 @@
 ---
 title: Úvod k průvodci migrací do Azure
-description: Podrobné pokyny vám pomůžou efektivně migrovat služby vaší organizace do Azure.
+description: Využijte architekturu přechodu na cloud pro Azure k seznámení s efektivní migrací služeb vaší organizace do Azure.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4d2bb420609bb703a1f32b0912eb9c17ccabe4e9
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5c9c4b5477537cd71947e8ddbeff5a64eeb378c4
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225506"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311876"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Průvodce migrací do Azure: Než začnete
 
