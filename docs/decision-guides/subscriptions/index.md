@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508028"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
@@ -49,7 +49,7 @@ Jedno předplatné na účet může být dostačující pro organizace, které p
 
 Když jste připravení nasadit úlohu do produkčního prostředí, měli byste přidat další předplatné. Pomůže vám udržet vaše produkční data a další aktiva mimo prostředí pro vývoj a testování. Můžete také snadno využít dvě různé sady zásad napříč prostředky ve dvou předplatných.
 
-![Model produkčních a neprodukčních předplatných](../../_images/ready/basic-subscription-model.png)
+![Model produkčních a neprodukčních předplatných](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Model oddělení úloh
 
