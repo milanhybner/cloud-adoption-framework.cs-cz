@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508096"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy dodržování předpisů v zásadách konzistence prostředků
 
@@ -59,7 +59,7 @@ Následující triggery a akce vynucení poskytují příklady, které vám pom�
 - **Byl zjištěn nezřízený prostředek.** Prostředky zjištěné při použití více než 80% kapacity procesoru nebo paměti by měly automaticky škálovat a zřizovat další prostředky, aby se zajistila další kapacita.
 - **Vytváření netagovaných prostředků.** Všechny požadavky na vytvoření prostředku bez požadovaných meta značek budou automaticky odmítnuty.
 - **Bylo zjištěno závažné výpadky prostředků.** Pracovníci IT jsou informováni o všech zjištěných výpadkech nepostradatelných výpadků. Pokud není výpadek okamžitě přeložitelný, zaměstnanci problém vyřeší a upozorní na vlastníky úloh a tým zásad správného řízení pro Cloud. Tým zásad správného řízení cloudu bude tento problém sledovat, dokud nebudou pokyny k vyřešení a aktualizaci, pokud je nutná revize zásad, aby nedocházelo k budoucím incidentům
-- **Posun konfigurace** Prostředky, které nejsou v souladu se zavedenými směrnými plány, by měly aktivovat upozornění a automaticky je opravovat pomocí nástrojů pro správu konfigurace, jako jsou Azure Automation, Puppet, Ansible atd.
+- **Posun konfigurace** Prostředky, které nejsou v souladu se zavedenými směrnými plány, by měly aktivovat upozornění a automaticky je opravovat pomocí nástrojů pro správu konfigurace, jako jsou Azure Automation, Puppet, nebo Ansible.
 
 ## <a name="next-steps"></a>Další kroky
 

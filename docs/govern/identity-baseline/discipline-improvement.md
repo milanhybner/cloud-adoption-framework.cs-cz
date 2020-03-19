@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709358"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508113"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu identity
 
@@ -119,7 +119,7 @@ Po dokončení transformace musí být zásady správného řízení a provoz v 
 **Potenciální aktivity:**
 
 - Provádějte pravidelné audity zásad identity a postupů dodržování předpisů.
-- Zajistěte, aby u citlivých uživatelských účtů (generální ředitel, ředitel, náměstek atd.) byla vždy povolena aplikace Multi-Factor Authentication a neobvyklé pro zjišťování přihlášení.
+- Zajistěte, aby u citlivých uživatelských účtů (například účtů vedoucích společnosti) byla vždy povolená aplikace Multi-Factor Authentication a neobvyklé rozpoznávání přihlášení.
 - Pravidelně kontrolují škodlivé objekty actor a porušení dat, zejména těch, které se týkají podvodů s totožností, jako je například potenciální převzetí účtu správce.
 - Nakonfigurujte Nástroj pro monitorování a vytváření sestav.
 - Zvažte lepší integraci se zabezpečením a systémy ochrany před podvody.

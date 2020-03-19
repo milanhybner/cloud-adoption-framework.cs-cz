@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312097"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508419"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -99,7 +99,7 @@ V tomto scénáři společnost Contoso stáhne a spustí nástroj Data Migration
   - Na virtuálním počítači **OSTICKETWEB** běží Apache 2 a PHP 7.0.
   - Na virtuálním počítači **OSTICKETMYSQL** běží MySQL 5.7.22.
 
-## <a name="prerequisites"></a>Předpoklady
+## <a name="prerequisites"></a>Požadavky
 
 Společnost Contoso a další uživatelé musí splňovat následující požadavky pro posouzení:
 
@@ -130,7 +130,7 @@ Společnost Contoso provede posouzení následujícím způsobem:
 > - **Krok 6: posouzení virtuálních počítačů pomocí Azure Migrate.** Společnost Contoso zkontroluje závislosti, seskupí virtuální počítače a spustí posouzení. Jakmile bude posouzení připravené, společnost Contoso v rámci přípravy na migraci provede analýzu posouzení.
 
     > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
+    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1: stažení a instalace Data Migration Assistant
 

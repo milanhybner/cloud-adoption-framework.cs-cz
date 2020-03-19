@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508130"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -30,7 +30,7 @@ Požadavky:
 - Podpora více **prostředí**. Prostředí je logické seskupení prostředků, jako jsou virtuální počítače, virtuální sítě a služby směrování provozu sítě. Tyto skupiny prostředků mají podobné požadavky na správu a zabezpečení a jsou obvykle používány pro konkrétní účel, jako je testování nebo produkce. V tomto příkladu je požadavek pro čtyři prostředí:
   - **Prostředí sdílené infrastruktury** , které zahrnuje prostředky sdílené úlohami v jiných prostředích. Například virtuální síť s podsítí brány, která poskytuje připojení místně.
   - **Produkční prostředí** s nejpřísnějšími zásadami zabezpečení. Může zahrnovat interní nebo externí úlohy.
-  - Předprodukční **prostředí** pro vývoj a testování práce. Toto prostředí má zásady zabezpečení, dodržování předpisů a nákladů, které se liší od těch, které jsou v produkčním prostředí. V Azure to má podobu Enterprise pro vývoj/testování předplatného.
+  - **Nevýrobní prostředí** pro vývoj a testování práce. Toto prostředí má zásady zabezpečení, dodržování předpisů a nákladů, které se liší od těch, které jsou v produkčním prostředí. V Azure to má podobu Enterprise pro vývoj/testování předplatného.
   - **Prostředí izolovaného prostoru (sandbox)** pro testování konceptu a vzdělávání. Toto prostředí se obvykle přiřazuje jednomu zaměstnanci, který se účastní vývoje aktivit a má přísné procesní a provozní kontrolní mechanismy, aby se zabránilo vybudování firemních dat. V Azure mají tyto předplatné formu předplatných sady Visual Studio. Tato předplatná by _se taky neměla_ přivázat k podnikovým Azure Active Directory.
 - **Model oprávnění s minimálním** oprávněním, ke kterému nemají uživatelé ve výchozím nastavení žádná oprávnění. Model musí podporovat následující:
   - Jeden důvěryhodný uživatel (považovaný za účet služby) v oboru předplatného s oprávněním k přiřazení přístupových práv k prostředkům.
@@ -141,7 +141,7 @@ Teď, když jste navrhli model oprávnění s minimálním oprávněním, pojďm
 2. **Provozní prostředí:** Několik skupin prostředků, které představují několik produkčních úloh. Tyto prostředky se používají pro hostování privátních a veřejných artefaktů aplikace. Tyto prostředky mají typicky nejpřísnější modely zásad správného řízení a zabezpečení, aby chránily prostředky, kód aplikace a data před neoprávněným přístupem.
 3. Předprodukční **prostředí:** Několik skupin prostředků, které představují více úloh připravených k nevyužívání produktů Tyto prostředky se používají pro vývoj a testování. tyto prostředky můžou mít ještě uvolněný model zásad správného řízení, který umožňuje zvýšenou flexibilitu vývojářů. Zabezpečení v rámci těchto skupin by mělo zvýšit hodnotu "produkce", kterou proces vývoje aplikace získá.
 
-Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít znát průběžné náklady na **sdílenou infrastrukturu**, náklady vzniklé jednotlivcům v **předprodukčním i produkčním** prostředí a nakonec i celkové **náklady na** **předprodukční** **a** produkční prostředí.
+Pro každé z těchto tří prostředí je potřeba sledovat nákladová data podle **vlastníka úlohy**, **prostředí**nebo obojího. To znamená, že budete chtít znát průběžné náklady na **sdílenou infrastrukturu**, náklady vzniklé jednotlivcům v **neprodukčním i produkčním** prostředí a nakonec celkové **náklady na** nevýrobní **a** **produkční** prostředí.
 
 Již jste se dozvěděli o tom, že prostředky jsou vymezeny na dvě úrovně: **předplatné** a **Skupina prostředků**. Proto první rozhodnutí slouží k uspořádání prostředí podle **předplatného**. K dispozici jsou pouze dvě možnosti: jedno předplatné nebo více předplatných.
 

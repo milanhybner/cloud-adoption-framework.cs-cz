@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094829"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508368"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -59,7 +59,7 @@ Pokud používáte offline přenosové mechanismy, nebudou [replikační procesy
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Doporučované akce během procesu migrace
 
-**Kopírování úložiště:** Tento přístup se dá použít k přenosu dat HDFS, zálohování, archivů, souborových serverů, aplikací atd... Stávající technické pokyny vysvětlují, jak tento přístup použít k přenosu dat z [úložiště HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) nebo z disků pomocí [protokolu SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [systému souborů NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [architektury REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) nebo [služby kopírování dat](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do Data Boxu.
+**Kopírování úložiště:** Tento přístup se dá použít k přenosu dat HDFS, zálohování, archivů, souborových serverů nebo aplikací. Stávající technické pokyny vysvětlují, jak tento přístup použít k přenosu dat z [úložiště HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) nebo z disků pomocí [protokolu SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [systému souborů NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [architektury REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) nebo [služby kopírování dat](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do Data Boxu.
 
 Existují také [partnerská řešení třetích stran](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box), která používají Azure Data Box k migraci typu „Seed and Feed“, kdy se k přesunu velkého objemu dat používá offline přenos, ale později se v menším měřítku provádí synchronizace po síti.
 
