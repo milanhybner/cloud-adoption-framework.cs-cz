@@ -1,5 +1,5 @@
 ---
-title: Co je cílová zóna
+title: Co je cílová zóna?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zjistěte, jakým způsobem cílové zóny poskytují základní stavební bloky libovolného prostředí přechodu na cloud.
 author: BrianBlanchard
@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6db16b50115f2ba145dd4980dc5d57867f438de7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fe53435fe09873a619b2860a63e7bf67fe7bca93
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228355"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508303"
 ---
 <!-- markdownlint-disable MD026 -->
 

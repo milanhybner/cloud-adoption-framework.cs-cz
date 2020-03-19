@@ -1,6 +1,6 @@
 ---
 title: Mechanismy kontroly nákladů se zaměřením na migraci
-description: Zjistěte, jak nastavit rozpočty a platby a jak porozumět informacím na fakturách za prostředky Azure.
+description: Pomocí architektury přechodu na cloud pro Azure se naučte nastavovat rozpočty a platby a seznamte se s fakturami za prostředky Azure.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222656"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312114"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanismy kontroly nákladů se zaměřením na migraci
 
 Cloud přináší několik posunů ve způsobu, jakým pracujeme, bez ohledu na naši roli v rámci technologického týmu. Skvělým příkladem tohoto posunu jsou náklady. V minulosti se náklady na prostředky IT (infrastrukturu, aplikace a data) zabývalo jenom finanční oddělení a vedení IT. Cloud umožňuje každému členovi IT dělat kroky a přijímat rozhodnutí v zájmu lepší podpory koncového uživatele. S těmito možnostmi ale přichází také zodpovědnost brát do úvahy náklady.
@@ -45,7 +47,7 @@ Pro ruční výpočty nákladů jsou k dispozici dvě praktické kalkulačky, kt
 - [Cenová kalkulačka](https://azure.microsoft.com/pricing/calculator) Azure poskytuje odhad nákladů na základě ručně zadaných produktů Azure.
 - Někdy je při rozhodování potřeba porovnat budoucí náklady na cloud a aktuální náklady na místní prostředí. Toto porovnání může poskytnout [kalkulačka celkových nákladů na vlastnictví](https://azure.microsoft.com/pricing/tco/calculator).
 
-Tyto manuální kalkulačky nákladů je možné využít samostatně pro předpověď potenciálních výdajů a úspor. Dají se také použít společně s nástroji pro prognózování nákladů služby Azure Migrate, abyste mohli upravit očekávané náklady s ohledem na alternativní architektury nebo omezení výkonu.
+Tyto manuální kalkulačky nákladů je možné využít samostatně pro předpověď potenciálních výdajů a úspor. Dají se také použít společně s nástroji pro prognózování nákladů služby Azure Migrate a umožní vám upravit očekávané náklady s ohledem na alternativní architektury nebo omezení výkonu.
 
 ## <a name="azure-migrate-calculations"></a>Výpočty v službě Azure Migrate
 

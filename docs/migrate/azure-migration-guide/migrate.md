@@ -1,6 +1,6 @@
 ---
 title: Migrace prostředků
-description: Zahajte migraci do Azure tím, že identifikujete vhodné nástroje, které se mají použít, včetně nativních nástrojů, nástrojů třetích stran a nástrojů pro správu projektů.
+description: Identifikujte vhodné nástroje k použití, včetně nativních nástrojů, nástrojů třetích stran a nástrojů pro správu projektů, a zahajte migraci do Azure.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -10,11 +10,11 @@ ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
 ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092515"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312335"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,8 +46,8 @@ Pokud chcete provést migraci pomocí služby Azure Migrate, postupujte následo
 1. Vyberte **Všechny služby** a vyhledejte Azure Migrate. Pokračujte výběrem položky **Azure Migrate**.
 1. Zahajte projekt migrace tak, že vyberete **Přidat nástroj**.
 1. Vyberte předplatné, skupinu prostředků a geografii pro hostování migrace.
-1. Vyberte **Vybrat nástroj pro vyhodnocení** > **Azure Migrate: posouzení serveru** >  **Další**.
-1. Vyberte **Zkontrolovat a přidat nástroje** a ověřte konfiguraci. Vyberte **Přidat nástroje** a inicializujte úlohu k vytvoření projektu migrace a zaregistrujte vybraná řešení.
+1. Zvolte **Vybrat nástroj pro posouzení** > **Azure Migrate: Server Assessment** >  **Další**.
+1. Vyberte **Zkontrolovat a přidat nástroje** a ověřte konfiguraci. Vyberte **Přidat nástroje** a zahajte úlohu pro vytvoření projektu migrace a registraci vybraných řešení.
 
 ### <a name="learn-more"></a>Další informace
 
@@ -68,15 +68,15 @@ Následující kroky popisují obecný proces použití Site Recovery k migraci:
 1. Pokud jste si ještě nevytvořili trezor pro obnovení, vytvořte pomocí průvodce prostředek **Trezor služby Recovery Services**.
 1. V nabídce **Prostředek** vyberte **Site Recovery > Připravit infrastrukturu > Cíl ochrany**.
 1. V části **Cíl ochrany** vyberte, co chcete migrovat.
-    1. **VMware:** Vyberte **do Azure > Ano a VMware vSphere hypervisor**.
-    1. **Fyzický počítač:** Vyberte **do Azure > nevirtualizované/jiné**.
-    1. **Hyper-V:** Vyberte **do Azure > Ano, s technologií Hyper-V**. Pokud jsou virtuální počítače Hyper-V spravované nástrojem VMM, vyberte **Ano**.
+    1. **VMware:** Vyberte **Do Azure > Ano, pomocí VMware vSphere Hypervisoru**.
+    1. **Fyzický počítač:** Vyberte **Do Azure > Nevirtualizované nebo jiné**.
+    1. **Hyper-V:** Vyberte **Do Azure > Ano, pomocí Hyper-V**. Pokud jsou virtuální počítače Hyper-V spravované nástrojem VMM, vyberte **Ano**.
 
 ### <a name="configure-migration-settings"></a>Konfigurace nastavení migrace
 
 1. Podle potřeby nastavte zdrojové prostředí.
 1. Nastavte cílové prostředí.
-    1. Vyberte **připravit infrastrukturu > cíl**a pak vyberte předplatné Azure, které chcete použít.
+    1. Vyberte **Připravit infrastrukturu > Cíl** a potom vyberte předplatné Azure, které chcete použít.
     1. Zadejte model nasazení Resource Manager.
     1. Site Recovery zkontroluje, že máte minimálně jednu kompatibilní síť a účet úložiště Azure.
 1. Nastavte zásadu replikace.
@@ -128,7 +128,7 @@ Pokud službu Azure Database Migration Service používáte poprvé, budete muse
 Po registraci poskytovatele prostředků můžete vytvořit instanci služby Azure Database Migration Service.
 
 1. Vyberte **+Vytvořit prostředek** a na Marketplace vyhledejte **Azure Database Migration Service**.
-1. Dokončete průvodce **vytvořením migrační služby** a pak vyberte **vytvořit**.
+1. Dokončete **průvodce vytvořením služby migrace** a potom vyberte **Vytvořit**.
 
 Služba je teď připravená migrovat podporované zdrojové databáze (například SQL Server, MySQL, PostgreSQL nebo MongoDb).
 
@@ -145,7 +145,7 @@ Další informace naleznete v tématu:
 - [Přehled služby Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
 - [Vytvoření instance služby Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Služba Azure Migrate na webu Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
-- [Azure Portal: vytvoření projektu migrace](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+- [Azure Portal: Vytvoření projektu migrace](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
 
@@ -157,14 +157,14 @@ Nástroj Data Migration Assistant (DMA) pomáhá s upgradem na moderní datovou 
 > Pro velké migrace (s ohledem na počet a velikost databází) doporučujeme použít službu Azure Database Migration Service, která dokáže migrovat databáze ve velkém měřítku.
 >
 
-Začněte používat Data Migration Assistant s těmito kroky:
+Začněte využívat Data Migration Assistanta pomocí následujících kroků:
 
-1. Stáhněte a nainstalujte Data Migration Assistant z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
-1. Vyhodnocení vytvořte tak, že vyberete ikonu **Nová (+)** a pak vyberete typ projektu **vyhodnocení** .
-1. Nastavte typ zdrojového a cílového serveru a pak vyberte **vytvořit**.
+1. Stáhněte a nainstalujte si nástroj Data Migration Assistant z webu [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Výběrem **Nové (+)** vytvořte posouzení a jako typ projektu vyberte **Posouzení**.
+1. Nastavte typ zdrojového a cílového serveru a potom vyberte **Vytvořit**.
 1. Podle potřeby nakonfigurujte možnosti posouzení (doporučujeme ponechat všechna výchozí nastavení).
 1. Přidejte databáze, které chcete posoudit.
-1. Kliknutím na tlačítko **Další** zahajte posouzení.
+1. Vyberte **Další** a spusťte posouzení.
 1. Podívejte se na výsledky v rámci sady nástrojů Data Migration Assistant.
 
 V případě velkého podniku doporučujeme postupovat podle článku o [posouzení podnikových prostředků a konsolidaci posuzujících sestav pomocí nástroje DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports). Podle něj můžete posoudit více serverů, sloučit sestavy a pak analyzovat výsledky pomocí poskytovaných sestav Power BI.
@@ -189,9 +189,9 @@ Pomocník pro experimentování s databázemi (DEA) je nové řešení testován
 
 Pomocník pro experimentování s databázemi obsahuje následující aktivity pracovního postupu:
 
-- **Zachytit:** Prvním krokem SQL Server A/B testování je zachycení trasování na zdrojovém serveru. Zdrojovým serverem je obvykle produkční server.
-- **Přehrát znovu:** Druhým krokem SQL Server A/B testování je přehrát trasovací soubor, který byl zachycen na vašich cílových serverech. Pak se z přehrání shromáždí rozsáhlá trasování pro analýzu.
-- **Analýza:** Posledním krokem je vygenerování sestavy analýzy pomocí trasování přehrání. Analytická sestava vám může pomoct získat přehled o dopadech chystané změny na výkon.
+- **Zachycení:** Prvním krokem při testování A/B SQL Serveru je zachycení trasování na vašem zdrojovém serveru. Zdrojovým serverem je obvykle produkční server.
+- **Přehrání:** Druhým krokem při testování A/B SQL Serveru je přehrání zachyceného trasovacího souboru na vašich cílových serverech. Pak se z přehrání shromáždí rozsáhlá trasování pro analýzu.
+- **Analýza:** Posledním krokem je vygenerování analytické sestavy pomocí trasování z přehrání. Analytická sestava vám může pomoct získat přehled o dopadech chystané změny na výkon.
 
 Další informace naleznete v tématu:
 
@@ -213,7 +213,7 @@ S procesem migrace vám může pomoct několik nástrojů a služeb od nezávisl
 
 ## <a name="unifycloud"></a>UnifyCloud
 
-UnifyCloud je služba nezávislé na softwaru, která poskytuje nástroje pro automatizaci, migraci a modernizaci.
+UnifyCloud je služba ISV, která poskytuje nástroje pro automatizaci, migraci a modernizaci.
 
 [Další informace](https://www.unifycloud.com/)
 
@@ -259,10 +259,10 @@ Azure DevOps je navrhovaným nástrojem pro správu projektů během migrace do 
 
 Microsoft také nabízí následující nástroje pro řízení projektů, které můžou ve spolupráci poskytovat širší možnosti:
 
-- [Microsoft Planner](https://tasks.office.com): jednoduchý vizuální způsob organizace pro týmovou práci.
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Správa projektů a portfolia, správa kapacity prostředků, finanční řízení, časový rozvrh a Správa plánu.
-- [Microsoft](https://products.office.com/microsoft-teams)Teams: týmová spolupráce a nástroj pro komunikaci. Aplikace Teams se také může v zájmu vylepšení spolupráce integrovat s Plannerem a dalšími nástroji.
-- [Azure DevOps](https://dev.azure.com): Šablona plánování rozhraní pro přijetí v cloudu není nutná k použití Azure DevOps. Službu můžete použít bez šablony a spravovat svou infrastrukturu jako kód nebo používat pracovní položky a panely k řízení projektů. Zkušenější organizace můžou využívat možnosti CI/CD.
+- [Microsoft Planner](https://tasks.office.com): Poskytuje jednoduchý vizuální způsob, jak organizovat týmovou práci.
+- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Poskytuje funkce pro řízení projektů a portfolia, správu kapacit zdrojů, finanční řízení a správu časových rozvrhů a plánů.
+- [Microsoft Teams](https://products.office.com/microsoft-teams): Nástroj pro týmovou spolupráci a komunikaci. Aplikace Teams se také může v zájmu vylepšení spolupráce integrovat s Plannerem a dalšími nástroji.
+- [Azure DevOps](https://dev.azure.com): Šablona plánování architektury přechodu na cloud není pro použití Azure DevOps nutná. Službu můžete použít bez šablony a spravovat svou infrastrukturu jako kód nebo používat pracovní položky a panely k řízení projektů. Zkušenější organizace můžou využívat možnosti CI/CD.
 
 Nejedná se o jediné dostupné nástroje. V komunitě projektových manažerů se široce používá mnoho dalších nástrojů od třetích stran.
 
@@ -278,8 +278,8 @@ Microsoft Learn je nový přístup ke studiu. Připravenosti na nové úkoly tý
 
 Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který doplňuje doprovodné materiály pro DevOps v architektuře přechodu na cloud.
 
-[Sestavování aplikací pomocí Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): spolupráce s ostatními umožňuje sestavovat aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení.
+[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení.
 
 # <a name="cost-management"></a>[Správa nákladů](#tab/ManageCost)
 
-Při a po migraci prostředků do cloudového prostředí je důležité provádět pravidelnou analýzu nákladů. To vám pomůže vyhnout se neočekávaným poplatkům za využití, protože proces migrace může přinášet zvýšené požadavky na využití služeb. Můžete také změnit velikost prostředků podle potřeby a vyrovnávat náklady a zatížení (podrobněji podrobnější informace najdete v části **[optimalizace a transformace](./optimize-and-transform.md)** ).
+Při a po migraci prostředků do cloudového prostředí je důležité provádět pravidelnou analýzu nákladů. To vám pomůže vyhnout se neočekávaným poplatkům za využití, protože proces migrace může přinášet zvýšené požadavky na využití služeb. Můžete také podle potřeby měnit velikost prostředků, aby byly náklady v rovnováze s vytížením (podrobnější informace najdete v oddílu o **[optimalizaci a transformaci](./optimize-and-transform.md)** ).

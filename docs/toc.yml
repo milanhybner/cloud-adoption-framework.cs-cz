@@ -2,6 +2,8 @@ items:
   - name: Architektura přechodu na cloud
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: Co je nového
+    href: getting-started/whats-new.md
   - name: Začínáme
     items:
       - name: Zahájení procesu migrace
@@ -124,7 +126,7 @@ items:
             href: ready/azure-setup-guide/staying-current.md
       - name: První cílová zóna
         items:
-          - name: Co je cílová zóna
+          - name: Co je cílová zóna?
             href: ready/landing-zone/index.md
           - name: Volba první cílové zóny
             href: ready/landing-zone/first-landing-zone.md
@@ -608,7 +610,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Správa velkých objemů podnikových dat pomocí Azure Data Lake Storage
                         href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Co je to datové jezero
+                      - name: Co je datové jezero?
                         href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Shromažďování dat
                     items:
