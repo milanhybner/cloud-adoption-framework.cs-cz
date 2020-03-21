@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9e60e84659828efdc9802c45cf2f91ad945c8cda
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312499"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069796"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -82,7 +82,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Typ assetu                      | Předpona názvu |
 |---------------------------------|-------------|
 | Skupina prostředků                  | rg-         |
-| Definice zásady               | politických     |
+| Definice zásad               | politických     |
 | Instance služby API Management | APIM       |
 
 ### <a name="networking"></a>Sítě
@@ -135,6 +135,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Databáze MySQL                 | mysql-      |
 | Databáze PostgreSQL            | psql       |
 | Azure SQL Data Warehouse       | sqldw-      |
+| Azure Synapse Analytics        | znaky        |
 | SQL Server Stretch Database    | sqlstrdb-   |
 
 ### <a name="storage"></a>Úložiště
@@ -144,7 +145,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 | Účet úložiště  | St          |
 | Azure StorSimple | ssimp       |
 
-### <a name="ai--machine-learning"></a>AI a Machine Learning
+### <a name="ai--machine-learning"></a>AI a strojové učení
 
 | Typ assetu                       | Předpona názvu |
 |----------------------------------|-------------|
@@ -187,7 +188,7 @@ Následující seznam obsahuje doporučené předpony typů prostředků Azure, 
 |-------------------------|-------------|
 | Podrobného plánu               | kontrol         |
 | Trezor klíčů               | elektrické         |
-| Pracovní prostor služby Log Analytics | protokolu        |
+| Pracovní prostor Log Analytics | protokolu        |
 | Application Insights    | appi-       |
 | Trezor služby Recovery Services | rsv-        |
 
@@ -219,7 +220,7 @@ To, jaké značky se u prostředků používají a jaké značky jsou povinné n
 | Prostředí               | Prostředí nasazení aplikace, úlohy nebo služby                                                                                                                                                     | _Prostředí_             | _Prod_, _dev_, _QA_, _fáze_, _test_                       |
 | Jméno vlastníka                | Vlastník aplikace, úlohy nebo služby                                                                                                                                                                      | _Vlastník_           | _{e-mail}_                                                  |
 | Jméno žadatele            | Uživatel, který požádal o vytvoření této aplikace                                                                                                                                                                 | _Žadatel_       | _{e-mail}_                                                  |
-| Třída služby             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                              | _TřídaSlužby_    | _Vývoj_, _bronzová_, _stříbrná_, _zlatá_                          |
+| Services – třída             | Úroveň smlouvy o úrovni služeb aplikace, úlohy nebo služby                                                                                                                                              | _TřídaSlužby_    | _Vývoj_, _bronzová_, _stříbrná_, _zlatá_                          |
 | Počáteční datum projektu | Datum prvního nasazení aplikace, úlohy nebo služby                                                                                                                                                  | _PočátečníDatum_       | _{datum}_                                                   |
 
 ## <a name="example-names"></a>Příklady názvů
@@ -232,7 +233,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-general"></a>Příklady názvů: Obecné
 
-| Typ assetu                      | Rozsah                              | Formát                                                      | Příklady                                                                                                                |
+| Typ assetu                      | Obor                              | Formát                                                      | Příklady                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Předplatné                    | Zohledňují <br/>Smlouva Enterprise | \<Obchodní jednotka\>-\<Typ předplatného\>-\<\#\#\#\>          | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul>                                        |
 | Skupina prostředků                  | Předplatné                       | RG-\<název aplikace nebo služby\>-\<typ předplatného\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
@@ -240,13 +241,13 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-networking"></a>Příklady názvů: sítě
 
-| Typ assetu                   | Rozsah           | Formát                                                               | Příklady                                                                                                                      |
+| Typ assetu                   | Obor           | Formát                                                               | Příklady                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Virtuální síť              | Skupina prostředků  | vnet-\<Typ předplatného\>-\<Oblast\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Podsíť                       | Virtuální síť | snet-\<předplatné\>-\<podoblast\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
 | Síťové rozhraní (NIC)      | Skupina prostředků  | nic-\<\#\#\>-\<název virtuálního počítače\>-\<předplatné\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Veřejná IP adresa            | Skupina prostředků  | pip-\<název virtuálního počítače nebo název aplikace\>-\<Prostředí\>-\<podoblast\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
-| Nástroj pro vyrovnávání zatížení                | Skupina prostředků  | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| Load Balancer                | Skupina prostředků  | lb-\<název aplikace nebo role\>\<Prostředí\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
 | Skupina zabezpečení sítě (NSG) | Podsíť nebo NIC   | NSG\<název zásady nebo název aplikace\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
 | Brána místní sítě        | Virtuální brána | LGW-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                      | <ul><li>LGW-Shared-eastus2-001 </li><li>LGW-prod-westus-001 </li><li>LGW-Client-eastus2-001</li></ul>                         |
 | Brána virtuální sítě      | Virtuální síť | vgw-\<typ předplatného\>-\<oblasti\>-\<\#\#\#\>                      | <ul><li>vgw-Shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-Client-eastus2-001</li></ul>                         |
@@ -257,7 +258,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-compute-and-web"></a>Příklady názvů: COMPUTE a Web
 
-| Typ assetu                  | Rozsah          | Formát                                                              | Příklady                                                                                                                          |
+| Typ assetu                  | Obor          | Formát                                                              | Příklady                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Virtuální počítač             | Skupina prostředků | vm\<název zásady nebo název aplikace\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | Účet úložiště virtuálního počítače          | Globální         | stvm\<typ výkonu\>\<název aplikace nebo produkční název\>\<oblast\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
@@ -269,7 +270,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-databases"></a>Příklady názvů: databáze
 
-| Typ assetu                     | Rozsah              | Formát                                 | Příklady                                                                  |
+| Typ assetu                     | Obor              | Formát                                 | Příklady                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Server Azure SQL Database      | Globální             | Název aplikace v jazyce SQL\<\>-prostředí \<\>       | <ul><li>SQL-navigátor-prod </li><li>SQL – emise – dev</li></ul>           |
 | Databáze Azure SQL             | Azure SQL Database | SQLDB\<>\<prostředí s názvem databáze\> | <ul><li>SQLDB – uživatelé – prod </li><li>SQLDB – uživatelé – dev</li></ul>               |
@@ -282,7 +283,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-storage"></a>Příklady názvů: Storage
 
-| Typ assetu                        | Rozsah  | Formát                                                                        | Příklady                                                              |
+| Typ assetu                        | Obor  | Formát                                                                        | Příklady                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | Účet úložiště (obecné použití)     | Globální | st\<název úložiště\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | Účet úložiště (diagnostické protokoly) | Globální | stdiag\<první dvě písmena názvu předplatného a číslo\>\<oblast\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
@@ -290,7 +291,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-ai--machine-learning"></a>Příklady názvů: AI + Machine Learning
 
-| Typ assetu                       | Rozsah          | Formát                            | Příklady                                                          |
+| Typ assetu                       | Obor          | Formát                            | Příklady                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
 | Azure Cognitive Search           | Globální         | srch-\<Název aplikace\>-\<Prostředí\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
 | Azure Cognitive Services         | Skupina prostředků | ozubeného kola\<název aplikace\>-prostředí \<\>  | <ul><li>ozubeného kola-navigátor-prod </li><li>ozubeného kola – emise – dev</li></ul>   |
@@ -298,7 +299,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-analytics-and-iot"></a>Příklady názvů: analýzy a IoT
 
-| Typ assetu                  | Rozsah          | Formát                              | Příklady                                                              |
+| Typ assetu                  | Obor          | Formát                              | Příklady                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
 | Azure Data Factory          | Globální         | ADF –\<název aplikace\>\<prostředí\>     | <ul><li>ADF – navigátor – prod </li><li>ADF – emise – vývoj</li></ul>       |
 | Azure Stream Analytics      | Skupina prostředků | asa-\<Název aplikace\>-\<Prostředí\>    | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>       |
@@ -313,7 +314,7 @@ V následující části najdete některé příklady názvů běžných typů p
 
 ### <a name="example-names-integration"></a>Příklady názvů: integrace
 
-| Typ assetu        | Rozsah       | Formát                                                     | Příklady                                                      |
+| Typ assetu        | Obor       | Formát                                                     | Příklady                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
 | Service Bus       | Globální      | sb-\<Název aplikace\>-\<Prostředí\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Service Bus | Service Bus | sbq-\<popisovač dotazu\>                                   | <ul><li>sbq-messagequery</li></ul>                            |

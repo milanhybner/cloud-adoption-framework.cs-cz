@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228454"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069752"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ Předtím, než použijete cílovou zónu migrace v rámci architektury pro při
 
 Tato počáteční cílová zóna zahrnuje následující předpoklady nebo omezení. Pokud tyto předpoklady odpovídají vašim omezením, můžete podrobný plán použít k vytvoření první cílové zóny. Plán lze také rozšířit a vytvořit tak podrobný plán cílové zóny, který vyhovuje vašim jedinečným omezením.
 
-- **Omezení předplatného:** Toto úsilí o přijetí neočekává překročení [limitů předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dva běžné indikátory jsou překročení 25 000 virtuálních počítačů nebo 10 000 vCPU.
+- **Omezení předplatného:** Toto úsilí o přijetí neočekává překročení [limitů předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Dodržování předpisů:** V této cílové zóně nejsou potřeba žádné požadavky na dodržování předpisů od jiných výrobců.
 - **Složitost architektury:** Složitost architektury nevyžaduje další produkční odběry.
 - **Sdílené služby:** V Azure nejsou žádné sdílené služby, které vyžadují, aby se toto předplatné zpracovalo jako paprskový uzel v architektuře hvězdicové architektury.
@@ -50,15 +50,15 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 | Protokolování a monitorování       | Bude zřízený pracovní prostor Operational Insights a účet úložiště pro diagnostiku.                |                                                                                                                                                                                                                                                                                      |
 | Síť                      | Vytvoří se virtuální síť s podsítěmi pro bránu, firewall, jumpbox a cílovou zónu.  | [Rozhodnutí o síti](../considerations/networking-options.md)                                                                                                                                                                                                                      |
 | Identita                     | Předpokládá se, že předplatné je už přidružené k instanci Azure Active Directory. | [Osvědčené postupy správy identit](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json) |
-| Zásada                       | Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.                        |                                                                                                                                                                                                                                                                                      |
+| Zásady                       | Tento podrobný plán v současné době předpokládá, že se nemají použít žádné zásady Azure.                        |                                                                                                                                                                                                                                                                                      |
 | Návrh předplatného          | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)                                                                                                                                                                                                            |
 | Skupiny pro správu            | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)                                                                                                                                                                                                            |
 | Skupiny prostředků              | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Škálování předplatných](../azure-best-practices/scaling-subscriptions.md)                                                                                                                                                                                                            |
-| Data                         | neuvedeno                                                                                               | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                      |
-| Úložiště                      | neuvedeno                                                                                               | [Pokyny k Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                       |
-| Standardy pojmenování a označování | neuvedeno                                                                                               | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                   |
-| Správa nákladů              | neuvedeno                                                                                               | [Sledování nákladů](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                             |
-| Compute                      | neuvedeno                                                                                               | [Možnosti služby Compute](../considerations/compute-options.md)                                                                                                                                                                                                                              |
+| Data                         | NEUŽÍVÁ SE.                                                                                               | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                      |
+| Úložiště                      | NEUŽÍVÁ SE.                                                                                               | [Pokyny k Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                       |
+| Standardy pojmenování a označování | NEUŽÍVÁ SE.                                                                                               | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                   |
+| Správa nákladů              | NEUŽÍVÁ SE.                                                                                               | [Sledování nákladů](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                             |
+| Výpočty                      | NEUŽÍVÁ SE.                                                                                               | [Možnosti služby Compute](../considerations/compute-options.md)                                                                                                                                                                                                                              |
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Přizpůsobení nebo nasazení cílové zóny
 
