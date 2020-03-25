@@ -574,6 +574,18 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: Predikce a ovlivňování
                 href: innovate/innovation-guide/predict.md
+          - name: Inovační scénáře
+            items:
+              - name: Kubernetes
+                items:
+                  - name: Přehled inovačních scénářů
+                    href: innovate/kubernetes/index.md
+                  - name: Vývoj a nasazení aplikací
+                    href: innovate/kubernetes/application-development.md
+                  - name: Návrh a provoz clusterů
+                    href: innovate/kubernetes/cluster-design-operations.md
+                  - name: Zabezpečení aplikací a clusterů
+                    href: innovate/kubernetes/cluster-application-security.md
           - name: Osvědčené postupy
             items:
               - name: Přehled a sada nástrojů Azure
