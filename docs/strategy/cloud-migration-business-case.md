@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337963"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225713"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Sestavení obchodního odůvodnění pro migraci do cloudu
 
@@ -68,7 +68,7 @@ Tuto rovnici můžeme rozbalit a získat tak pohled na vzorce pro vstupní prom�
 
 ## <a name="migration-specific-initial-investment"></a>Počáteční investice specifické pro migraci
 
-- Poskytovatelé cloudu jako Azure nabízejí kalkulačky k odhadu investic do cloudu. [Cenová Kalkulačka Azure](https://azure.microsoft.com/pricing) je jedním příkladem.
+- Poskytovatelé cloudu jako Azure nabízejí kalkulačky k odhadu investic do cloudu. [Cenová Kalkulačka Azure](https://azure.com/calculator) je jedním příkladem.
 - Někteří poskytovatelé cloudu také poskytují cenové a rozdílové kalkulačky. [Kalkulačka celkové náklady na vlastnictví Azure](https://azure.com/tco) je jedním z příkladů.
 - Pro přesnější cenové struktury Vezměte v úvahu [plánování digitálního majetku](../digital-estate/index.md) .
 - Odhadnout náklady na migraci.

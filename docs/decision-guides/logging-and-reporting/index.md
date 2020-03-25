@@ -2,18 +2,18 @@
 title: Průvodce rozhodováním ohledně protokolování a generování sestav
 description: Vytvořte základní strategii protokolování, vytváření sestav a monitorování a zajistěte pro vaši organizaci splnění cílů související s dobou provozu, zabezpečením a dodržováním zásad.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: de7f52a4649ce4ff6885f60c5916262448de787b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222783"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225903"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Průvodce rozhodováním ohledně protokolování a generování sestav
 

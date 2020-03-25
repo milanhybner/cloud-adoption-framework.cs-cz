@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1ec13eca60f8e3ed4f2d30b9c4c1b6b0138905a3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510806"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225951"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Co je nového v rozhraní Microsoft Cloud pro přijímání pro Azure
 
@@ -20,7 +20,19 @@ Tady je seznam posledních změn, které byly provedeny v rozhraní pro přijet�
 
 Tato architektura je postavená na spolupráci se zákazníky, partnery a interními týmy Microsoftu. Nový a aktualizovaný obsah se uvolní, jakmile bude k dispozici. Tyto verze umožňují testování, ověřování a upřesnění pokynů spolu s námi. Doporučujeme, abyste s námi spolupracujeme s vytvářením architektury pro přijetí cloudu pro Azure.
 
-## <a name="march-2020"></a>Březen 2020
+## <a name="march-20-2020"></a>20. března 2020
+
+Přidali jsme Doporučené doprovodné materiály, které zahrnují nástroje, programy a obsah zařazené do kategorií, aby bylo možné úspěšně nasazovat aplikace na Kubernetes, od ověření konceptu až po produkční prostředí a za ním i škálováním a optimalizací.
+
+### <a name="kubernetes"></a>Kubernetes
+
+| Článek                                                                                     | Popis                                                                                                                                                                           |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Vývoj a nasazení aplikací](../innovate/kubernetes/application-development.md) | **Nový článek** Poskytuje kontrolní seznamy, prostředky a osvědčené postupy pro plánování vývoje aplikací, konfiguraci kanálů DevOps a implementaci technologie spolehlivosti pro Kubernetes. |
+| [Návrh a operace clusteru](../innovate/kubernetes/cluster-design-operations.md) | **Nový článek** Poskytuje kontrolní seznamy, prostředky a osvědčené postupy pro konfiguraci clusteru, návrh sítě, škálovatelnost budoucích prostředků, kontinuitu podnikových procesů a zotavení po havárii pro Kubernetes. |
+| [Zabezpečení clusteru a aplikací](../innovate/kubernetes/cluster-application-security.md) | **Nový článek** Poskytuje kontrolní seznamy, prostředky a osvědčené postupy pro plánování, produkci a škálování zabezpečení Kubernetes. |
+
+## <a name="march-2-2020"></a>2\. března 2020
 
 V reakci na zpětnou vazbu týkající se kontinuity přístupu k migraci prostřednictvím několika oddílů rozhraní pro přijetí do cloudu, včetně strategie, plánování, připravenosti a migrace, jsme udělali následující aktualizace. Tyto aktualizace jsou navržené tak, aby vám usnadnily pochopení plánování a přijetí dalších informací, když budete pokračovat v cestě k migraci.
 
