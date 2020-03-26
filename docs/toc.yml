@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: Přehled monitorovacích platforem
                 href: manage/monitor/platform-overview.md
+              - name: Dovednosti související s monitorováním
+                href: manage/monitor/suggested-skills.md
           - name: Centralizace operací správy
             href: manage/centralize-operations.md
           - name: Nastavení kontroly provozní vhodnosti

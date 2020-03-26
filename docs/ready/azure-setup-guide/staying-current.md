@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341976"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225798"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
@@ -51,11 +51,15 @@ Následující materiály vám pomohou držet krok s Azure:
 
 Podrobnější obsah, díky kterému budete mít přehled o Azure, najdete ve zde uvedených materiálech:
 
-- [Azure Charts](https://azurecharts.com/)
-  - Tato neoficiální vizualizace ukazuje všechny aktualizace Azure provedené za posledních šest měsíců. Obsahuje další užitečné grafy a nástroje, které vám pomohou sledovat změny v Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Týdenní videa s inženýry, kteří budují Azure. Předvádějí ukázky, odpovídají na otázky a sdělují své poznatky.
   - Přihlaste se k odběru přes [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Weekly](https://azureweekly.info)
-  - Tento zpravodaj je neoficiální materiál, jehož autorem je [endjin](https://endjin.com). Obsahuje týdenní shrnutí hlavních zpráv o Microsoft Azure. Obsahuje také zajímavý historický obsah.
+- [Azure Charts](https://azurecharts.com/)*
+  - Tato vizualizace ukazuje všechny aktualizace Azure provedené za posledních šest měsíců. Obsahuje další užitečné grafy a nástroje, které vám pomohou sledovat změny v Azure.
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Sledování verzí a změn funkcí Azure Governance (např. Azure Policy, iniciativy zásad, aliasy zásad a RBAC).
+- [Azure Weekly](https://azureweekly.info)*
+  - Tento bulletin, který zajišťuje [endjin](https://endjin.com), obsahuje týdenní shrnutí hlavních zpráv o Microsoft Azure. Obsahuje také zajímavý historický obsah.
   - Přihlaste se k odběru přes [e-mail](https://azureweekly.info).
+
+\* *Tyto materiály poskytuje komunita a Microsoft je oficiálně nespravuje.*
