@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 77d95d4d4be65bea8d37a722abe6f0459d43e43f
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
+ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024042"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80299059"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -49,7 +49,7 @@ Dozvíte se, jak provést tyto akce:
 ::: zone target="docs"
 
 > [!TIP]
-> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), vyberte **Úvod do nastavení Azure** a potom postupujte podle podrobných pokynů.
+> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), vyberte **Průvodce nastavením Azure** a potom postupujte podle podrobných pokynů.
 
 Další kroky: [Uspořádání prostředků pro zjednodušení používání nastavení](./organize-resources.md)
 
