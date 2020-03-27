@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706808"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357068"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Příručka zásad správného řízení pro komplexní podniky: zlepšení pravidla směrného plánu zabezpečení
 
@@ -40,7 +40,7 @@ Od té doby se změnily některé věci, které budou mít vliv na zásady sprá
 - Do cloudu byly nasazeny tisíce IT a firemních prostředků.
 - Vývojový tým aplikace implementoval kanál průběžné integrace a nasazování (CI/CD) pro nasazení nativní aplikace cloudu s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravená pro produkční prostředí.
 - Tým Business Intelligence v rámci IT aktivně vystavuje data v cloudu z logistiky, inventáře a dat třetích stran. Tato data se používají k řízení nových předpovědi, která by mohla tvarovat obchodní procesy. Nicméně tyto předpovědi a přehledy nejsou vhodné, dokud se zákazníci a finanční data nedají integrovat do datové platformy.
-- IT tým pokračuje v plánech CIO a CFO, aby vyřazení dvou datových center. Téměř 3 500 prostředků ve dvou datacentrech bylo vyřazeno nebo Migrováno.
+- IT tým provádí pokrok v plánech CIO a CFO k vyřazení dvou datových center. Téměř 3 500 prostředků ve dvou datacentrech bylo vyřazeno nebo Migrováno.
 - Zásady týkající se citlivých osobních a finančních dat byly moderní. Nové podnikové zásady jsou ale závislé na implementaci souvisejících zásad zabezpečení a zásad správného řízení. Týmy jsou stále zablokované.
 
 ### <a name="incrementally-improve-the-future-state"></a>Přírůstkové zlepšení budoucího stavu
@@ -133,7 +133,7 @@ V předchozích iterativních změnách osvědčených postupů jsme definovali 
     1. Referenční architektura z předchozí části, [topologie centra a paprsků se sdílenými službami](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)vygenerovala šablonu správce prostředků pro povolení partnerského vztahu virtuální sítě.
     2. Tuto šablonu lze použít jako vodítko pro úpravu šablony DMZ z předchozí iterace zásad správného řízení.
     3. Nyní přidáváme partnerský vztah virtuálních sítí k virtuální síti DMZ, která byla dříve připojena k místnímu hraničnímu zařízení přes síť VPN.
-    4. SÍŤ VPN by se taky měla z této šablony odebrat a zároveň zajistit, aby se žádný provoz nesměroval přímo do místního datového centra bez předávání podnikového a bezpečnostního řešení v podniku. Tuto síť VPN můžete nastavit také jako okruh převzetí služeb při selhání v případě outge okruhu ExpressRoute.
+    4. SÍŤ VPN by se taky měla z této šablony odebrat a zároveň zajistit, aby se žádný provoz nesměroval přímo do místního datového centra bez předávání podnikového a bezpečnostního řešení v podniku. Tuto síť VPN můžete nastavit také jako okruh převzetí služeb při selhání v případě výpadku okruhu ExpressRoute.
     5. Azure Automation pro použití DSC na hostované virtuální počítače bude vyžadovat další [konfiguraci sítě](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) .
 2. Upravte skupinu zabezpečení sítě. Zablokuje všechny veřejné **a** přímé místní přenosy ve skupině zabezpečení sítě. Jediný příchozí provoz by měl projít partnerským vztahem virtuální sítě v podnikovém předplatném IT.
     1. V předchozí iteraci se vytvořila skupina zabezpečení sítě, která blokuje veškerý veřejný provoz a seznam povolených interních přenosů. Teď chceme tuto skupinu zabezpečení sítě posunout o bit.

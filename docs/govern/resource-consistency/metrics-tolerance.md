@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171357"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356910"
 ---
+<!-- cSpell:ignore MTBF MTTR -->
+
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriky konzistence prostředků, indikátory a tolerance rizik
 
 Tento článek vám pomůže kvantifikovat toleranci obchodního rizika v souvislosti s konzistencí prostředků. Definování metrik a indikátorů vám pomůže vytvořit obchodní případ pro zajištění investic do splatnosti oboru konzistence prostředků.

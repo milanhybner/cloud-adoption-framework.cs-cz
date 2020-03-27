@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67b0db7d1f85ef38972df273c1fa722f426d208d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311536"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356218"
 ---
+<!-- cSpell:ignore NSGs WEBVM SQLVM contosoadmin contosohost contosodc contosovmsacc cswiz vcenter iisreset inetpub SQLAOG shaog sourcedb SQLAOGAVSET contosocloudwitness BEPOOL MSSQLSERVER alwayson -->
+
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Opětovné hostování místní aplikace s využitím Azure Virtual Machines a skupin dostupnosti Always On SQL Server
 
 Tento článek ukazuje, jak fiktivní společnost Contoso v rámci migrace do Azure provádí hostování aplikace Windows .NET, která běží na virtuálních počítačích VMware (VM). Společnost Contoso provede migraci front-endového virtuálního počítače aplikace na virtuální počítač Azure a databázi aplikace na virtuální počítač Azure s SQL Serverem v clusteru s podporou převzetí služeb při selhání Windows Serveru a se skupinami dostupnosti AlwaysOn pro SQL Server.
@@ -313,7 +315,7 @@ Contoso potřebuje k nasazení Site Recovery tyto komponenty Azure:
 
 - Virtuální síť, ve které se budou nacházet virtuální počítače vytvořené během převzetí služeb při selhání
 - Účet úložiště Azure, ve kterém se budou uchovávat replikovaná data
-- Trezor služby Recovery Services v Azure.
+- Trezor služby Recovery Services v Azure
 
 Správci společnosti Contoso je nastaví následujícím způsobem:
 
@@ -353,7 +355,7 @@ Site Recovery potřebuje přístup k serverům VMware z těchto důvodů:
 - Orchestrace replikace, převzetí služeb při selhání a navrácení služeb po obnovení.
 - Vyžaduje se alespoň účet jen pro čtení. Potřebujete účet, který může spouštět operace, jako jsou vytváření a odebírání disků a zapínání virtuálních počítačů.
 
-Správci společnosti Contoso nastaví tento účet následujícím způsobem:
+Správci společnosti Contoso nastaví účet následujícím způsobem:
 
 1. Vytvoří roli na úrovni vCenter.
 2. Potom této roli přiřadí požadovaná oprávnění.
@@ -409,7 +411,7 @@ Dále musí potvrdit, že provedli plánování nasazení, výběrem možnosti *
 
 ### <a name="set-up-the-source-environment"></a>Nastavení zdrojového prostředí
 
-Správci společnosti Contoso musejí nakonfigurovat zdrojové prostředí. K tomu si musejí stáhnout šablonu OVF a pomocí ní nasadit konfigurační server Site Recovery jako místní virtuální počítač VMware s vysokou dostupností. Po nastavení a spuštění zaregistrují konfigurační server v trezoru.
+Správci společnosti Contoso musejí nakonfigurovat zdrojové prostředí. K tomu si musí stáhnout šablonu OVF a pomocí ní nasadit konfigurační server Site Recovery jako místní virtuální počítač VMware s vysokou dostupností. Po nastavení a spuštění zaregistrují konfigurační server v trezoru.
 
 Konfigurační server spustí několik komponent:
 
@@ -442,11 +444,11 @@ Správci společnosti Contoso provedou tyto kroky následujícím způsobem:
 
 11. Potom stáhnou a nainstalují MySQL Server a VMware PowerCLI.
 12. Po ověření zadají plně kvalifikovaný název domény nebo IP adresu serveru vCenter nebo hostitele vSphere. Ponechají výchozí port a zadají popisný název serveru vCenter.
-13. Zadají účet, který vytvořili pro automatické zjišťování, a přihlašovací údaje, které slouží k automatické instalaci služby Mobility Service. V případě virtuálních počítačů s Windows je nutné, aby na nich měl tento účet oprávnění místního správce.
+13. Zadají účet, který vytvořili pro automatické zjišťování, a přihlašovací údaje, které slouží k automatické instalaci Mobility Service. V případě virtuálních počítačů s Windows je nutné, aby na nich měl tento účet oprávnění místního správce.
 
     ![vCenter](./media/contoso-migration-rehost-vm-sql-ag/cswiz2.png)
 
-14. Po dokončení registrace zkontrolují na webu Azure Portal, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i více.
+14. Po dokončení registrace zkontrolují na webu Azure Portal, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i víc.
 15. Potom se služba Site Recovery připojí k serverům VMware pomocí zadaného nastavení a vyhledá virtuální počítače.
 
 ### <a name="set-up-the-target"></a>Nastavení cíle
@@ -596,7 +598,7 @@ Spuštění testovacího převzetí služeb při selhání slouží k ověření
     - Převzetí služeb při selhání tato data zpracuje, aby se mohl vytvořit virtuální počítač Azure. Pokud jste vybrali nejnovější bod obnovení, vytvoří se z těchto dat nový.
     - Pomocí dat zpracovaných v předchozím kroku se vytvoří virtuální počítač Azure.
 
-4. Po dokončení převzetí služeb při selhání se na webu Azure Portal objeví replika virtuálního počítače Azure. Zkontrolují, že virtuální počítač má odpovídající velikost, je připojený ke správné síti a běží.
+4. Po dokončení převzetí služeb při selhání se na portálu Azure Portal objeví replika virtuálního počítače Azure. Zkontrolují, že virtuální počítač má odpovídající velikost, je připojený ke správné síti a běží.
 5. Po ověření vyčistí převzetí služeb při selhání a zaznamenají a uloží případné poznámky.
 
 ### <a name="run-a-failover"></a>Spuštění převzetí služeb při selhání
@@ -671,7 +673,7 @@ V zájmu zajištění provozní kontinuity a zotavení po havárii (BCDR) spole�
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 1. Společnost Contoso má stávající licence pro virtuální počítač WEBVM a bude využívat Zvýhodněné hybridní využití Azure. Společnost Contoso převede stávající virtuální počítače Azure, aby mohla tyto ceny využít.
-2. Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+2. Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 

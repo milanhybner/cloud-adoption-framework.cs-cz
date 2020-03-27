@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311961"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356162"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Změna hostitele místní aplikace na virtuální počítač Azure a spravovanou instanci Azure SQL Database
 
 Tento článek ukazuje, jak fiktivní společnost Contoso s využitím služby Azure Site Recovery migruje dvouúrovňovou front-endovou aplikaci Windows .NET, která běží na virtuálních počítačích VMware, na virtuální počítač Azure. Také ukazuje, jak společnost Contoso migruje databázi aplikace na spravovanou instanci Azure SQL Database.
@@ -275,7 +277,7 @@ Společnost Contoso k nastavení služby Site Recovery pro migraci virtuálního
 
 - Virtuální síť, která bude obsahovat prostředky po převzetí služeb při selhání
 - Účet úložiště, ve kterém se budou uchovávat replikovaná data
-- Trezor služby Recovery Services v Azure.
+- Trezor služby Recovery Services v Azure
 
 Správci společnosti Contoso nastaví Site Recovery následujícím způsobem:
 
@@ -392,14 +394,14 @@ Při nastavování zdrojového prostředí správci společnosti Contoso postupu
 
     ![Výběr trezoru služby Recovery Services](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz1.png)
 
-10. Stáhnou a nainstalují MySQL Server a VMware PowerCLI. Pak ověří nastavení serveru.
+10. Stahují a instalují Server MySQL a VMware PowerCLI. Pak ověří nastavení serveru.
 11. Po ověření zadají plně kvalifikovaný název domény nebo IP adresu instance vCenter Serveru nebo hostitele vSphere. Ponechají výchozí port a zadají zobrazovaný název instance vCenter Serveru v Azure.
 12. Určí dříve vytvořený účet, aby služba Site Recovery mohla automaticky zjišťovat virtuální počítače VMware, které jsou k dipozici pro replikaci.
 13. Zadají přihlašovací údaje, aby se po povolení replikace automaticky nainstalovala služba Mobility Service. V případě počítačů s Windows je nutné, aby na nich měl tento účet oprávnění místního správce.
 
     ![Konfigurace vCenter Serveru](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz2.png)
 
-14. Po dokončení registrace na webu Azure Portal znovu ověří, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i více.
+14. Po dokončení registrace na webu Azure Portal znovu ověří, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i víc.
 15. Site Recovery se připojí k serverům VMware pomocí zadaného nastavení a vyhledá virtuální počítače.
 
 ### <a name="set-up-the-target"></a>Nastavení cíle

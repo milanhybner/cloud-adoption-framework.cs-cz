@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171306"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356871"
 ---
+<!-- cSpell:ignore njray nanra chargebacks IPLs -->
+
 # <a name="mainframe-myths-and-facts"></a>Mýty sálového počítače a fakta
 
 Sálové počítače jsou výrazně v historii výpočetního prostředí a zůstávají životaschopné pro vysoce specifické úlohy. Nejvíc souhlasíte s tím, že sálové počítače jsou prověřené platformy s dlouhodobě zavedenými provozními postupy, které zajistí jejich spolehlivé a robustní prostředí. Software se spouští na základě využití, měřeno v milionech instrukcí za sekundu (MIPS) a pro vratek jsou k dispozici rozsáhlé sestavy o využití.

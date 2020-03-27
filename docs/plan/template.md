@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140599"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354759"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plán přijetí do cloudu a Azure DevOps
 
@@ -30,7 +30,7 @@ Pokud chcete nasadit plán pro přijetí do cloudu, otevřete [generátor ukáze
 4. Vyberte **vytvořit projekt** pro vytvoření nového projektu ve vašem tenantovi na základě šablony plánu. Indikátor průběhu zobrazuje pokrok k nasazení projektu.
 5. Po dokončení nasazení vyberte možnost **Přejít do projektu** a zobrazí se nový projekt.
 
-Po vytvoření projektu pokračujte v této sérii článků, abyste viděli, jak můžete upravit šablonu, aby se narovnala vašemu plánu přijetí do cloudu.
+Po vytvoření projektu pokračujte v této sérii článků a Naučte se, jak upravit šablonu, aby odpovídala vašemu plánu přijetí do cloudu.
 
 Další podporu a pokyny k tomuto nástroji naleznete v tématu [Azure DevOps Services demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 

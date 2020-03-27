@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094631"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356388"
 ---
 # <a name="automate-onboarding"></a>Automatizace připojování
 
@@ -43,7 +43,7 @@ V této ukázce se používají soubory popsané v následující tabulce. Můž
 | WorkspaceSolutions.json | Správce prostředků šablona umožňující požadovaná řešení v pracovním prostoru Log Analytics |
 | ScopeConfig.json | Správce prostředků šablona, která používá model výslovných přihlášení pro místní servery s řešením Change Tracking. Použití modelu výslovných výslovných přihlášení je volitelné. |
 | Enable-VMInsightsPerfCounters.ps1 | PowerShellový skript, který umožňuje přehledy virtuálních počítačů pro servery a nakonfiguruje čítače výkonu. |
-| ChangeTracking-Filelist.json | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
+| Sledování změn ve-FileList. JSON | Správce prostředků šablona definující seznam souborů, které budou Change Tracking monitorovány. |
 
 Pomocí následujícího příkazu spusťte New-AMSDeployment. ps1:
 

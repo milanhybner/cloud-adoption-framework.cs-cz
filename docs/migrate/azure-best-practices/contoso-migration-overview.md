@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: b7ea46fb1723e0603aa7251f135caa51b9f998ad
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312577"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356067"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Příklady a vzory migrace aplikací
 
@@ -34,7 +34,7 @@ Strategie migrace do cloudu se dají rozdělit do čtyř hlavních vzorů: změn
 
 **Vzor** | **Definice** | **Kdy ho použít**
 --- | --- | ---
-**Změna hostitele** | Často se označuje jako migrace _výtahu a posunutí_ . Tato možnost nevyžaduje změny kódu a umožňuje rychlou migraci stávajících aplikací do Azure. Každá aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik a nákladů spojených se změnami kódu. | Když potřebujete rychle přesunout aplikace do cloudu.<br/><br/> Když chcete aplikaci přesunout a neměnit ji.<br/><br/> Když je architektura vašich aplikací navržená tak, aby po dokončení migrace mohly využívat škálovatelnost [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas).<br/><br/> Když jsou aplikace pro vaši firmu důležité, ale nepotřebujete okamžitě změny jejich funkcí.
+**Změna hostitele** | Často se označuje jako migrace _výtahu a posunutí_ . Tato možnost nevyžaduje změny kódu a umožňuje rychlou migraci stávajících aplikací do Azure. Každá aplikace se migruje tak, jak je, s výhodami cloudu a bez rizik a nákladů spojených se změnami kódu. | Když potřebujete rychle přesunout aplikace do cloudu.<br/><br/> Když chcete aplikaci přesunout a neměnit ji.<br/><br/> Když jsou vaše aplikace navržené tak, aby po migraci mohly využít škálovatelnost [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) .<br/><br/> Když jsou aplikace pro vaši firmu důležité, ale nepotřebujete okamžitě změny jejich funkcí.
 **Refaktoring** | Refaktoring, který se často označuje jako „opětovné balení“, vyžaduje v aplikacích minimální změny, aby se mohly připojit [k Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) a používat cloudové nabídky.<br/><br/> Můžete například existující aplikace migrovat do služeb Azure App Service nebo Azure Kubernetes Service (AKS).<br/><br/> Můžete také refaktorovat relační i nerelační databáze do služeb, jako jsou Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL nebo Azure Cosmos DB. | Pokud se vaše aplikace dá snadno znovu zabalit pro práci v Azure.<br/><br/> Pokud chcete použít inovativní postupy DevOps, které poskytuje Azure, nebo uvažujete o DevOps s využitím kontejnerové strategie pro úlohy.<br/><br/> V souvislosti s refaktoringem je potřeba uvažovat o přenositelnosti stávajícího základu kódu a dostupnosti dovedností pro vývoj.
 **Změna architektury** | Změna architektury pro migraci se zaměřuje na úpravu a rozšíření funkčnosti aplikace a základu kódu s cílem optimalizovat architekturu aplikace pro zajištění cloudové škálovatelnosti.<br/><br/> Můžete například monolitickou aplikaci rozdělit do skupiny mikroslužeb, které fungují dohromady a snadno se škálují.<br/><br/> Nebo můžete změnit architekturu relačních i nerelačních databází na plně spravované databázové řešení, jako je Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL nebo Azure Cosmos DB. | Když vaše aplikace potřebuje velké úpravy pro za účelem začlenění nových funkcí nebo zajištění efektivnějšího fungování na cloudové platformě.<br/><br/> Pokud chcete používat stávající investice do aplikací, splňovat požadavky na škálovatelnost, použít inovativní postupy DevOps a minimalizovat používání virtuálních počítačů.
 **Nové sestavení** | Opětovné sestavení jde ještě o krok dál a aplikaci znovu sestaví od začátku pomocí cloudových technologií Azure.<br/><br/> Můžete například vytvořit aplikace se zeleným polem s technologiemi [nativní pro Cloud](https://azure.com/cloudnative) , jako je Azure Functions, Azure AI, Azure SQL Database Managed Instance a Azure Cosmos DB. | Když chcete zajistit rychlý vývoj a vaše stávající aplikace mají omezené funkce a životnost.<br/><br/> Až budete připravení urychlit obchodní inovace (včetně postupů DevOps, které poskytuje Azure), sestavte nové aplikace pomocí technologií nativních pro cloud a využijte pokroky v oblasti AI, blockchainů a IoT.

@@ -1,22 +1,22 @@
 ---
 title: Vyvážení konkurenčních priorit
-description: Objevte strategie pro vyrovnávání konkurenčních priorit
+description: Objevte strategie pro vyrovnávání konkurenčních priorit.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312408"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353691"
 ---
 # <a name="balance-competing-priorities"></a>Vyvážení konkurenčních priorit
 
-Nastupování na cestě digitální transformace funguje jako vynucená funkce pro zúčastněné strany napříč obchodními a technologickými týmy. Cesta k úspěchu je pevně směrována v organizacích, aby bylo možné vyrovnávat konkurenční priority.
+Nastupování na cestě digitální transformace funguje jako vynucená funkce pro zúčastněné strany napříč obchodními a technologickými týmy. Cesta k úspěchu je pevně rootovaná pro schopnost organizace vyrovnat konkurenční priority.
 
 Podobně jako u jiných digitálních transformací bude při přijetí v rámci cloudu vystavení konkurenčních priorit během životního cyklu. Podobně jako u jiných forem transformace bude mít schopnost najít rovnováhu v těchto prioritách významný dopad na realizaci obchodních hodnot. Vyvážení těchto konkurenčních priorit bude vyžadovat otevřené (a někdy obtížné) konverzace mezi zúčastněnými stranami (a v časech s jednotlivými přispěvateli).
 
@@ -40,8 +40,8 @@ Základním cílem metodologie strategie je vyvíjet sbližování mezi zúčast
 
 **Konkurenční priority:**
 
-- **Hloubka odůvodnění**: účastníci často chtějí mít rozsáhlou finanční analýzu a plný obchodní odůvodnění, aby se mohli přizpůsobit strategickému směru. Tato úroveň analýzy bohužel může vyžadovat prodloužený časový interval, který umožňuje shromažďování a analýzu dat.
-- **Čas na obchodní dopad**: v opačném případě se účastníci často uchovávají za účelem poskytování obchodních výsledků v rámci definovaných časových rámců. Časově náročná analýza a posouzení můžou tyto výsledky dát do nebezpečí před tím, než bude technická práce dokonce zahájena.
+- **Hloubka odůvodnění:** Účastníci často chtějí zajistit důkladnou finanční analýzu a plný obchodní odůvodnění, aby se mohli přizpůsobit strategickému směru. Tato úroveň analýzy bohužel může vyžadovat prodloužený časový interval, který umožňuje shromažďování a analýzu dat.
+- **Čas na obchodní dopad:** V opačném případě se účastníci často uchovávají za účelem poskytování obchodních výsledků v rámci definovaných časových rámců. Časově náročná analýza a posouzení můžou tyto výsledky dát do nebezpečí před tím, než bude technická práce dokonce zahájena.
 
 **Minimální rozsah:** Hledání tohoto zůstatku vyžaduje diskuze mezi zúčastněnými stranami v brzkém průběhu procesu. Metodologie strategie navrhuje omezení rozsahu zarovnání během tohoto počátečního úsilí. V navrhovaném přístupu se účastníci zaměřují na zarovnání kolem sady základních motivů, měřitelných výsledků a vysokého obchodního odůvodnění. Doporučujeme, aby se zúčastněné strany rychle dopustily na malý počet počátečních projektů nebo pilotních projektů, které vám pomůžou vyřídit požadované příležitosti učení.
 
@@ -137,3 +137,10 @@ Konkurenční priority v rámci tohoto článku se odrážejí z jednotky, kter�
 **Minimální rozsah:** Většina organizací prochází přirozenou sadou vývojů v průběhu času. Metodologie uspořádání popisuje nejběžnější řady vývojů. Doporučené pokyny jsou pro týmy, které se snaží přesunout do cloudového centra struktury s cílem zajistit přístup k delegovaným řízením.
 
 **Příklad rozšířeného oboru:** Existuje mnoho situací, které by mohly aktivovat potřebu centralizovaného řízení. Požadavky na dodržování předpisů třetích stran a dočasné bezpečnostní ozáření představují dva příklady aktivačních událostí pro centralizovaný ovládací prvek. V těchto situacích se běžně vyžaduje, abyste navázali omezující zásady a tuhé a pevné ovládací prvky. Aby bylo možné pokračovat v inovaci a přijetí, doporučujeme, aby týmy centrálního IT poskytovaly tyto ovládací prvky na základě závažnosti a citlivosti jednotlivých úloh. Poskytování prostředí s menším řízením, ale zmenšeným rozsahem nebo rizikovým profilem, umožňuje flexibilitu i v případě, že je vyžadováno řízení.
+
+## <a name="next-steps"></a>Další kroky
+
+Přečtěte si [, jak vyrovnávat migraci, inovace a experimenty](./balance-the-portfolio.md) , aby se maximalizovala hodnota, kterou migrace do cloudu umožňuje.
+
+> [!div class="nextstepaction"]
+> [Vyvážení portfolia](./balance-the-portfolio.md)

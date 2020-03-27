@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7a8b70d43ef68137418f0c2cfc731871561844f0
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a3874de7d2dc78edfcf9e483661748749856cc17
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311366"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355745"
 ---
+<!-- cSpell:ignore NSGs WEBVM SQLVM contosohost vcenter contosodc agentless -->
+
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Opětovné hostování místní aplikace na virtuálních počítačích Azure
 
 Tento článek ukazuje, jak fiktivní společnost Contoso mění hostitele dvouúrovňové front-endové aplikace Windows .NET, která běží na virtuálních počítačích VMware, formou migrace virtuálních počítačů aplikace na virtuální počítače Azure.
@@ -294,7 +296,7 @@ V zájmu zajištění provozní kontinuity a zotavení po havárii (BCDR) spole�
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 1. Společnost Contoso má stávající licence pro své virtuální počítače a bude využívat Zvýhodněné hybridní využití Azure. Společnost Contoso převede stávající virtuální počítače Azure, aby mohla tyto ceny využít.
-2. Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+2. Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 

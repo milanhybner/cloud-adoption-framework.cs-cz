@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094073"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355189"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ Předtím, než učiníte rozhodnutí, která by mohla mít dlouhodobý vliv na 
 
 V případě jakékoli migrace významné škály (více než 250 virtuálních počítačů) se assety migrují pomocí nejrůznějších možností přechodu, které jsou popsané v pěti RS odůvodnění: opětovné *hostování*, *refaktorování*, změna *architekt*, *opětovné sestavení*a *nahrazení*.
 
-Některé úlohy se modernizují prostřednictvím procesu *opětovného sestavení* nebo *změny architektury*, kdy vzniknou modernější aplikace s novými funkcemi a technickými možnostmi. Jiné prostředky procházejí procesem *refaktoringu*, kdy se například přesunou do kontejnerů nebo jiných modernějších hostingových a provozních metod, které nemusí nezbytně ovlivnit základ kódu daného řešení. Virtuální počítače a další prostředky, které jsou lépe navázány, přecházejí prostřednictvím procesu opětovného *hostování* a převádějí tyto prostředky z datového centra do cloudu. Některé úlohy by mohly být migrovány do cloudu, ale je třeba je *nahradit* pomocí cloudových služeb založených na službě (SaaS), které splňují stejný podnikovou potřebu&mdash;například pomocí Office 365 jako alternativu k migraci instancí Exchange serveru.
+Některé úlohy se modernizují prostřednictvím procesu *opětovného sestavení* nebo *změny architektury*, kdy vzniknou modernější aplikace s novými funkcemi a technickými možnostmi. Jiné prostředky přecházejí prostřednictvím *refaktoru* , například přesunutí na kontejnery nebo jiné moderní hostování a provozní přístupy, které nemusí nutně ovlivnit základ kódu řešení. Virtuální počítače a další prostředky, které jsou lépe navázány, přecházejí prostřednictvím procesu opětovného *hostování* a převádějí tyto prostředky z datového centra do cloudu. Některé úlohy by mohly být migrovány do cloudu, ale je třeba je *nahradit* pomocí cloudových služeb založených na službě (SaaS), které splňují stejný podnikovou potřebu&mdash;například pomocí Office 365 jako alternativu k migraci instancí Exchange serveru.
 
 Ve většině situací dojde k tomu, že nějaká obchodní událost způsobí dočasnou migraci velkého procenta prostředků pomocí procesu *změny hostitele*, následovanou významnějším sekundárním přechodem s využitím některé z ostatních migračních strategií. Tento proces se běžně označuje jako *přechod do cloudu*.
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709307"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357039"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardní příručka pro zásady správného řízení podniku: vysvětlené osvědčené postupy
 
@@ -50,7 +50,7 @@ Tým zásad správného řízení cloudu zodpovídá za následující rozhodnut
 
 ### <a name="subscription-design"></a>Návrh předplatného
 
-Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se předplatná Azure získají strukturovaná a jak se skupiny pro správu Azure budou používat k efektivní správě přístupu, zásad a dodržování předpisů pro toto předplatné. V tomto mluveném komentáři tým zásad správného řízení vybral vzor návrhu předplatného [výroby a neprodukce](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern) .
+Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se předplatná Azure získají strukturovaná a jak se skupiny pro správu Azure budou používat k efektivní správě přístupu, zásad a dodržování předpisů pro toto předplatné. V tomto mluveném komentáři tým zásad správného řízení navázal předplatné pro produkční a nevýrobní úlohy, které jsou v [produkčním prostředí a](../../../ready/azure-best-practices/initial-subscriptions.md) neproduktivní.
 
 - Oddělení se pravděpodobně nevyžadují při aktuálním výběru. Očekává se, že nasazení budou omezená v rámci jedné fakturační jednotky. Ve fázi přijetí se nemusí ani stát smlouvou Enterprise k centralizaci fakturace. Je možné, že tato úroveň přijetí je spravovaná jedním předplatným Azure s průběžnými platbami.
 - Bez ohledu na používání portálu EA nebo existence smlouvy Enterprise by se model předplatného měl ještě definovat a souhlasit s tím, aby se minimalizovala Správa přeslyšela nad rámec pouhého fakturace.

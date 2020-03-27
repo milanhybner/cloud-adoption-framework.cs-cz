@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311485"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356253"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refaktoring linuxové aplikace do více oblastí pomocí služeb Azure App Service, Traffic Manager a Azure Database for MySQL
 
 V tomto článku se dozvíte, jak fiktivní firma Contoso refaktoruje dvouvrstvou linuxovou aplikaci Apache MySQL PHP (LAMP) tím, že ji migruje z místního prostředí do Azure pomocí Azure App Service s integrací GitHubu a Azure Database for MySQL.
@@ -72,7 +74,7 @@ Zde je navrhovaná architektura:
 
 Contoso dokončí proces migrace následujícím způsobem:
 
-1. V prvním kroku správci Contoso nastaví infrastrukturu Azure včetně zřízení Azure App Service, nastavení Traffic Manageru a zřízení instance Azure Database for MySQL.
+1. Jako první krok si správci contoso nastavili infrastrukturu Azure, včetně zřizování Azure App Service, nastavení Traffic Manager a zřízení instance Azure Database for MySQL.
 2. Po přípravě Azure migrují databázi nástrojem MySQL Workbench.
 3. Po spuštění databáze v Azure vytvoří privátní úložiště GitHubu pro Azure App Service s průběžným doručováním a načtou do něho aplikaci osTicket.
 4. Na webu Azure Portal načtou aplikaci z GitHubu do kontejneru Dockeru, ve kterém běží Azure App Service.
@@ -291,7 +293,7 @@ V posledním kroku tohoto procesu migrace nakonfigurují správci Contoso u webo
 
     ![Konfigurace aplikace](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. U webových aplikací **osticket-eus2** a **osticket-cus** nakonfigurují možnost vlastních názvů hostitele.
+8. Konfigurují webové aplikace **osTicket-eus2** i **osTicket-kapacitní jednotky** tak, aby umožňovaly vlastní názvy hostitelů.
 
     ![Konfigurace aplikace](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 
@@ -336,4 +338,4 @@ Tým zabezpečení Contoso zkontroloval aplikaci a určil případné problémy 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - U nasazení PaaS nejsou žádné licenční problémy.
-- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.

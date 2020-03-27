@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092576"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353651"
 ---
 # <a name="azure-fundamental-concepts"></a>Základní koncepty Azure
 
@@ -29,7 +29,7 @@ Než začnete vyvíjet úsilí o přechod do cloudu Azure, je užitečné poznat
 - **Azure Active Directory (Azure AD):** Cloudová služba pro správu identit a přístupu od Microsoftu. Azure AD umožňuje vašim zaměstnancům se přihlásit a získat přístup k prostředkům.
 - **Tenant Azure AD:** Vyhrazená a důvěryhodná instance služby Azure AD. Tenant Azure AD se automaticky vytvoří, když si vaše organizace poprvé zaregistruje předplatné cloudových služeb Microsoftu, jako je Microsoft Azure, Microsoft Intune nebo Office 365. Tenant Azure představuje jednu organizaci.
 - **Adresář služby Azure AD:** Každý tenant služby Azure AD má jeden, vyhrazený a důvěryhodný adresář. Tento adresář obsahuje uživatele, skupiny a aplikace tenanta. Slouží k provádění funkcí správy identit a přístupu pro prostředky tenanta. Adresář může být přidružen k několika předplatným, ale každé předplatné je přidruženo jen k jednomu adresáři.
-- **Skupiny prostředků:** Logické kontejnery, které slouží k seskupení souvisejících prostředků v rámci předplatného. Každý prostředek může existovat jen v jedné skupině prostředků. Skupiny prostředků umožňují podrobnější seskupení v rámci předplatného. Běžně se používá k reprezentaci kolekce assetů vyžadovaných k podpoře úloh, aplikací nebo konkrétní funkce v rámci předplatného.
+- **Skupiny prostředků:** Logické kontejnery, které slouží k seskupení souvisejících prostředků v rámci předplatného. Každý prostředek může existovat jen v jedné skupině prostředků. Skupiny prostředků umožňují podrobnější seskupení v rámci předplatného a často se používají ke znázornění kolekce assetů vyžadovaných k podpoře úloh, aplikací nebo konkrétní funkce v rámci předplatného.
 - **Skupiny pro správu:** Logické kontejnery, které používáte pro jedno nebo více předplatných. Definováním hierarchie skupin pro správu, předplatných, skupin prostředků a prostředků můžete efektivně spravovat přístup, zásady a dodržování předpisů prostřednictvím dědičnosti.
 - **Oblast:** Sada datacenter Azure, která je nasazená v hraničním prostředí definovaném pro latenci. Datacentra jsou propojena prostřednictvím vyhrazené oblastní sítě s nízkou latencí. Většina prostředků Azure se provozuje v konkrétní oblasti Azure.
 
@@ -94,7 +94,7 @@ Následující materiály obsahují podrobné informace o konceptech rozebranýc
 
 ## <a name="next-steps"></a>Další kroky
 
-Teď, když rozumíte základním konceptům Azure, se dozvíte, jak [škálovat s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md).
+Teď, když rozumíte základním konceptům Azure, se dozvíte, jak [škálovat s využitím několika předplatných Azure](../azure-best-practices/scale-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md)
+> [Škálování s využitím několika předplatných Azure](../azure-best-practices/scale-subscriptions.md)

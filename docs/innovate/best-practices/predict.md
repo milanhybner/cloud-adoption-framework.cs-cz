@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a1201c3e1bf05f7fc704b1a12744d8f031607169
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170762"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356829"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Nástroje k předvídání a ovlivnění dat v Azure
 
@@ -34,10 +34,10 @@ V předchozím obrázku se data a přehledy zarovnají s osvědčenými postupy 
 
 V Azure se běžně používají následující nástroje k urychlení digitálního vynálezování v každé z předchozích fází:
 
-- Azure Machine Learning
-- Azure HDInsight
-- Škálování pro Hadoop R
-- Azure SQL Data Warehouse
+- [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
+- [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
+- [Škálování pro Hadoop R](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
+- [Azure synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
 
 Způsob, jakým jednotlivé nástroje pomáhají s každou fází prediktivního a ovlivnění, se projeví v obsahu na levé straně této stránky.
 

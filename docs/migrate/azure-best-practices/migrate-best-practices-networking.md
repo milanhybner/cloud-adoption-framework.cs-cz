@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312148"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354123"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Osvědčené postupy pro nastavení sítě pro úlohy migrované do Azure
 
 Při plánování a navrhování migrace je jedním z nejdůležitějších kroků kromě samotné migrace navrhnutí a implementace sítě Azure. Tento článek popisuje osvědčené postupy pro sítě při migraci na implementace IaaS a PaaS v Azure.
@@ -40,7 +42,7 @@ Při plánování topologie virtuální sítě byste měli zvážit, jak uspoř�
 
 Když vytvoříte virtuální sítě jako součást migrace, je důležité naplánovat adresní prostor IP adres virtuální sítě.
 
-- Pro každou virtuální síť byste měli přiřadit adresní prostor, který není větší než rozsah CIDR /16. Virtuální sítě umožňuje použití IP adres 65 536 a přiřazení menší předpony než/16, například a/15, která má 131 072 adres, by způsobila, že se nadbytečné IP adresy stanou unusuable jinde. Je důležité IP adresami neplýtvat, i když jsou v privátních rozsazích definovaných v RFC 1918.
+- Pro každou virtuální síť byste měli přiřadit adresní prostor, který není větší než rozsah CIDR /16. Virtuální sítě umožňuje použití IP adres 65 536 a přiřazení menší předpony než/16, například a/15, která má 131 072 adres, by způsobila, že se nadbytečné IP adresy stanou nepoužitelnými jinde. Je důležité IP adresami neplýtvat, i když jsou v privátních rozsazích definovaných v RFC 1918.
 - Adresní prostor virtuální sítě by se neměl překrývat s rozsahy místní sítě.
 - Neměl by se používat překlad adres (NAT).
 - Překrývající se adresy můžou způsobit, že se sítě nemůžou připojit a směrování správně nefunguje. Pokud se sítě překrývají, budete muset změnit návrh sítě nebo použít překlad adres (NAT).
@@ -177,7 +179,7 @@ Při nastavování site-to-site VPN:
 - Vytvoříte bránu VPN, určíte typ brány (VPN) a jestli je brána založená na zásadách nebo na směrování. SÍŤ VPN založená na trasách je považována za větší schopnost a budoucí kontrolu.
 - Vytvoříte místní síťovou bránu a nakonfigurujete místní zařízení VPN.
 - Vytvoříte připojení site-to-site VPN s podporou převzetí služeb při selhání mezi bránou virtuální sítě a místním zařízením. Použití VPN založeného na směrování umožňuje aktivní-pasivní nebo aktivní-aktivní připojení k Azure. Založení na směrování také podporuje souběžná připojení site-to-site (z libovolného počítače) i point-to-site (z jednoho počítače).
-- Určíte SKU brány, kterou chcete použít. To bude záviset na požadavcích na úlohy, propustnosti, funkcích a smlouvách SLA.
+- Určíte SKU brány, kterou chcete použít. To bude záviset na požadavcích na úlohy, propustnosti, funkcích a SLA.
 - Protokol BGP (Border Gateway Protocol) je volitelná funkce, kterou můžete použít s Azure ExpressRoute a branami VPN založenými na směrování k šíření místních tras BGP do vaší virtuální sítě.
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)

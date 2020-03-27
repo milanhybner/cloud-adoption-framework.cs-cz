@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f34938fc6690949d017ee538c444a4ccef389aef
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707709"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357028"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardní příručka pro zásady správného řízení podniku: vylepšení pravidla směrného plánu zabezpečení
 
@@ -37,7 +37,7 @@ Od té doby se změnily některé věci, které budou mít vliv na zásady sprá
 
 - Vývojový tým aplikace implementoval kanál CI/CD pro nasazení nativní cloudové aplikace s vylepšeným uživatelským prostředím. Tato aplikace ještě nekomunikuje s chráněnými daty, takže není připravená pro produkční prostředí.
 - Tým Business Intelligence v rámci IT aktivně vystavuje data v cloudu z logistiky, inventáře a zdrojů třetích stran. Tato data se používají k řízení nových předpovědi, která by mohla tvarovat obchodní procesy. Nicméně tyto předpovědi a přehledy nejsou vhodné, dokud se zákazníci a finanční data nedají integrovat do datové platformy.
-- IT tým pokračuje v plánech CIO a CFO na vyřazení datacentra DR. V datacentru DR bylo vyřazeno nebo Migrováno více než 1 000 prostředků 2 000.
+- IT tým pokračuje v plánech CIO a CFO k vyřazení datacentra DR. V datacentru DR bylo vyřazeno nebo Migrováno více než 1 000 prostředků 2 000.
 - Volně definované zásady týkající se osobních údajů a finančních dat byly moderní. Nové podnikové zásady jsou ale závislé na implementaci souvisejících zásad zabezpečení a zásad správného řízení. Týmy jsou stále zablokované.
 
 ### <a name="incrementally-improve-the-future-state"></a>Přírůstkové zlepšení budoucího stavu

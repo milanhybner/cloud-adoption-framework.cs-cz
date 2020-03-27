@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709409"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356943"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>Průvodce připravenostmi na Cloud ředitelka zabezpečení informací
 
 Pokyny společnosti Microsoft, jako je rozhraní pro přijetí v cloudu, nejsou umístěny k určení nebo vodítkí jedinečného omezení zabezpečení tisíců podniků, které tato dokumentace podporuje. Při přechodu do cloudu se v cloudových technologiích supplanted role ředitele Information Security důstojníka nebo hlavní kancelář zabezpečení informací (ředitelka zabezpečení informací). V rozporu s ředitelka zabezpečení informací a kanceláří ředitelka zabezpečení informací se stane víc engrained a integrovaných. Tato příručka předpokládá, že čtenář je obeznámený s ředitelka zabezpečení informací procesy a snaží se modernizovat tyto procesy, aby umožnil transformaci cloudu.

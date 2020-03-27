@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709494"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356924"
 ---
 # <a name="evaluate-risk-tolerance"></a>Vyhodnocení tolerance rizik
 
 Každé obchodní rozhodnutí vytvoří nová rizika. Investice do nějakého podílu vzniká rizikem ztrát. Nové produkty nebo služby vytvářejí rizika při selhání trhu. Změny stávajících produktů nebo služeb můžou snížit podíl na trhu. Transformace cloudu neposkytuje řešení Magical pro běžné obchodní riziko. V opačném případě připojená řešení (v cloudu nebo v místním prostředí) zavádějí nová rizika. Nasazení prostředků do libovolného zařízení připojeného k síti také rozbalí potenciální profil hrozeb tím, že odhalí slabiny zabezpečení mnohem širší a globální komunitě. Naštěstí poskytovatelé cloudu mají informace o změnách, zvýšení a přidání rizik. Investovaly do značné míry ke snížení a správě těchto rizik jménem svých zákazníků.
 
-Tento článek se nezaměřuje na rizika cloudu. Místo toho se postará o obchodní rizika spojená s různými formami cloudové transformace. V níže uvedeném článku se diskuze přesune na diskuzi o způsobech, jak porozumět toleranci firmy při riziku.
+Tento článek se nezaměřuje na rizika cloudu. Místo toho se postará o obchodní rizika spojená s různými formami cloudové transformace. V níže uvedeném článku se diskuze přesune na diskuzi o způsobech, jak pochopit toleranci firmy při jejich riziku.
 
 <!-- markdownlint-disable MD026 -->
 

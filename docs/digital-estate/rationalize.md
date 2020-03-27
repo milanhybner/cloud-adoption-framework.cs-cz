@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312421"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357264"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizace digitálních aktiv
 
@@ -124,7 +124,7 @@ Paralelně s pokračující racionalizací může tým pro přijetí cloudu zač
 - Posílit dovednosti s platformou poskytovatele cloudu.
 - Definujte základní služby (a standardy Azure) potřebné k tomu, aby odpovídaly dlouhodobému záměru.
 - Lépe pochopíte, jak může operace později v transformaci vyžadovat změnu.
-- Seznamte se s případnými podnikovými riziky a tolerancemi firmy pro tato rizika.
+- Pochopení jakýchkoli obchodních rizik a tolerance firmy pro tato rizika.
 - Vytvořte směrný plán nebo minimální životaschopný produkt (MVP) pro řízení na základě tolerance rizika firmy.
 
 ## <a name="release-planning"></a>Plánování vydání

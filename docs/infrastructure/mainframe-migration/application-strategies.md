@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171408"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356838"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>Migrace mainframových aplikací
 
 Když migrujete aplikace z sálových prostředí do Azure, většina týmů bude postupovat podle toho, co je to možné, kdykoliv a kdykoli je to možné, a pak zahájit postupné nasazení, kde se aplikace přepíší nebo nahradí.
@@ -30,7 +32,7 @@ Migrace aplikací obvykle zahrnuje jednu nebo více následujících strategií:
 
 - **Nahradit:** Tento přístup nahrazuje sálové funkce pomocí ekvivalentních funkcí v cloudu. Software jako služba (SaaS) je jedna možnost, která používá řešení vytvořené speciálně pro podnikovou práci, jako jsou finance, lidské zdroje, výroba nebo plánování podnikových zdrojů. Kromě toho je teď k dispozici mnoho aplikací specifických pro konkrétní odvětví pro řešení problémů, které vlastní Sálová řešení používala k předchozímu řešení.
 
-Měli byste zvážit, že naplánujete úlohy, které chcete zpočátku migrovat, a pak určíte tyto požadavky na přesun přidružených aplikací, starších základů kódu a databází.
+Měli byste zvážit, že naplánujete úlohy, které chcete zpočátku migrovat, a pak určíte tyto požadavky pro přesun přidružených aplikací, starší verze kódu a databáze.
 
 ## <a name="mainframe-emulation-in-azure"></a>Emulace sálového počítače v Azure
 
@@ -64,7 +66,7 @@ Monitory TP jsou k dispozici od různých dodavatelů a běží na virtuálních
 
 V Azure se prostředí emulace používají ke spuštění Správce TRANSAKČNÍho programu a dávkových úloh, které používají JCL. V datové vrstvě je DB2 nahrazuje [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), i když je možné použít také Microsoft SQL Server, DB2 LUW nebo Oracle Database. Emulátor podporuje rychlé zprávy, VSAM a SEQ. Nástroje pro správu systému z sálového počítače jsou nahrazené službami Azure a softwarem od jiných dodavatelů, kteří se spouštějí na virtuálních počítačích.
 
-Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Příklad:
+Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Například:
 
 - Virtuální počítače založené na Windows: Internet Information Server (IIS) spolu s ASP.NET pro zpracování obrazovky a obchodní logiku. Použijte ADO.NET pro přístup k datům a transakce.
 

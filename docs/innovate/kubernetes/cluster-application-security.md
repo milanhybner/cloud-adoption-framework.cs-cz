@@ -8,13 +8,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8f94e2b559f2f0e373c4ae1c2f05c9b90fa57fb
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 17450c59ff257e78a8f5603638eca35fe72e3abd
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226552"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356565"
 ---
+<!-- cSpell:ignore asabbour sabbour kured -->
+
 # <a name="cluster-and-application-security"></a>Zabezpečení clusteru a aplikací
 
 Seznamte se s Kubernetes Security Essentials a Projděte si pokyny k zabezpečení nastavení clusterů a zabezpečení aplikací.
@@ -32,7 +34,7 @@ Po spuštění vám kontrolní seznam a zdroje informací pomůžou při plánov
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Prostředky |
+> | Kontrolní seznam  | Zdroje a prostředky |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Seznamte se s dokumentací White paper k zabezpečení Essentials.** Primárními cíli zabezpečeného prostředí Kubernetes je zajistit, že aplikace, které spouštíte, jsou chráněné, že problémy se zabezpečením se dají identifikovat a rychle vyřešit a že se jim budou zabývat budoucí podobné problémy. | [Konečný průvodce zabezpečením Kubernetes (dokument White Paper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **Projděte si nastavení posílení zabezpečení pro uzly clusteru.** Hostitelský operační systém s posíleným zabezpečením omezuje oblast útoku a umožňuje bezpečné nasazení kontejnerů. | [Posílení zabezpečení v hostitelích virtuálních počítačů s AKS](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
@@ -52,7 +54,7 @@ Při přípravě aplikace na produkční prostředí byste měli implementovat m
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Prostředky |
+> | Kontrolní seznam  | Zdroje a prostředky |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Řízení přístupu ke clusterům pomocí členství ve skupině.** Nakonfigurujte Kubernetes řízení přístupu na základě role (RBAC), abyste omezili přístup k prostředkům clusteru na základě identity uživatele nebo členství ve skupině. | [Řízení přístupu ke clusterům pomocí RBAC a skupin Azure AD](https://docs.microsoft.com/azure/aks/azure-ad-rbac)    |
 > | **Vytvořte zásady správy tajných kódů.** Bezpečně nasaďte a spravujte citlivé informace, jako jsou hesla a certifikáty, pomocí správy tajných klíčů v Kubernetes. | [Pochopení správy tajných kódů v Kubernetes (video)](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) |
@@ -75,7 +77,7 @@ Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat p
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Prostředky |
+> | Kontrolní seznam  | Zdroje a prostředky |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Vynutilit zásady zásad správného řízení clusteru.** Využijte vynucené vynucování a zabezpečení vašich clusterů v centralizovaném, konzistentním způsobem. | [Řízení nasazení pomocí Azure Policy](https://docs.microsoft.com/azure/governance/policy/concepts/rego-for-aks)    |
 > | **Pravidelně otáčejte certifikáty clusteru.** Kubernetes používá certifikáty pro ověřování s mnoha jeho součástmi. Tyto certifikáty možná budete chtít pravidelně střídat z důvodů zabezpečení nebo zásad. | [Otočení certifikátů ve službě Azure Kubernetes (AKS)](https://docs.microsoft.com/azure/aks/certificate-rotation)    |

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093273"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354798"
 ---
 # <a name="review-rationalization-decisions"></a>Kontrola racionalizačních rozhodnutí
 
@@ -68,7 +68,7 @@ V případě rozsáhlých složitých plánů přijetí s více různými projek
 
 ## <a name="next-steps"></a>Další kroky
 
-[Definujte iterace a vydání](./iteration-paths.md) pro zahájení plánování práce.
+[Stanovte iterace a plány vydávání](./iteration-paths.md) , abyste mohli začít plánovat práci.
 
 > [!div class="nextstepaction"]
-> [Definujte iterace a vydání](./iteration-paths.md) pro zahájení plánování práce.
+> [Stanovte iterace a plány vydávání](./iteration-paths.md) , abyste mohli začít plánovat práci.

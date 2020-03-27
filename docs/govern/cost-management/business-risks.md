@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 544c425e94e9fa2cc4a687608f0dece80b3e9251
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 38fb0523b2c5915a351223fdb603dbb0cacbf602
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707879"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357154"
 ---
+<!-- cSpell:ignore prepurchases -->
+
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motivace a obchodních rizik
 
 Tento článek popisuje důvody, proč zákazníci obvykle přijímají Cost Management disciplíny v rámci strategie zásad správného řízení cloudu. Poskytuje také několik příkladů obchodních rizik, které řídí příkazy zásad.

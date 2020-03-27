@@ -1,20 +1,20 @@
 ---
-title: Určení priorit a definování úloh pro přijetí do cloudu
-description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak určit prioritu a definovat úlohy pro plán přijetí do cloudu.
+title: Definování a stanovení priorit úloh pro přijetí do cloudu
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak definovat a upřednostnit úlohy pro plán přijetí do cloudu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354695"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Určení priorit a definování úloh pro plán přijetí do cloudu
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definování a stanovení priorit úloh pro plán přijetí do cloudu
 
 Stanovení jasných a napadnutelných priorit je jedním z tajných kódů, aby bylo možné provést úspěšné přijetí do cloudu. Přirozeným pokušení je investovat čas do definování všech úloh, které by mohly být ovlivněné při přijetí cloudu. Ale to je counterproductive, zejména v rané fázi procesu přijetí.
 

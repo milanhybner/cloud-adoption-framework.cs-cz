@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311621"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356272"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Tým společnosti Contoso pro přechod na cloud přesně specifikoval cíle tét
 - Je třeba migrovat data a historie pracovních položek za poslední rok.
 - Nechtějí nastavovat nová uživatelská jména a hesla. Musí být zachována všechna aktuální přiřazení systému.
 - Kontrolu zdrojového kódu chtějí přesunout z technologie Správa verzí Team Foundation (TFVC) do Gitu.
-- Přechod do Gitu bude "Tip migrace", která importuje pouze nejnovější verzi zdrojového kódu. Migrace proběhne během odstávky, kdy se veškerá práce pozastaví, protože se přesune základ kódu. Chápou, že po přesunu bude k dispozici pouze historie aktuální hlavní větve.
+- Přechod do Gitu bude "Tip migrace", která importuje pouze nejnovější verzi zdrojového kódu. Dojde k tomu během výpadku, kdy se veškerá práce zastaví, když se základní kód posune. Chápou, že po přesunu bude k dispozici pouze historie aktuální hlavní větve.
 - Tato změna jim dělá starosti a chtějí ji před úplným přesunem otestovat. Přístup k TFS chtějí zachovat i po přechodu na Azure DevOps Services.
 - Mají několik kolekcí a chtějí začít s jednou, která obsahuje pouze několik projektů, aby lépe porozuměli celému procesu.
 - Chápou, že kolekce TFS mají vztah s jednotlivými organizacemi sady Azure DevOps Services, a proto budou mít více adres URL. To ale odpovídá jejich aktuálnímu modelu oddělení kódu a projektů.

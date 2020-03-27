@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708814"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357186"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metriky, ukazatele a tolerance rizik
 
@@ -34,7 +34,7 @@ Následují příklady užitečných metrik, které byste měli shromáždit, ab
 
 ## <a name="risk-tolerance-indicators"></a>Indikátory tolerance rizik
 
-Během předčasného malého nasazení, jako je vývoj a testování nebo experimentální první pracovní vytížení, Cost Management pravděpodobně relativně nízké riziko. Při nasazení většího objemu prostředků se riziko zvýší a tolerance firmy se bude nejspíš odmítat. Kromě toho, protože více týmů pro přijetí cloudu má možnost konfigurovat nebo nasazovat prostředky do cloudu, roste riziko a sníží se jejich tolerance. Naopak rostoucí obor Cost Management převezme uživatele z fáze pro přijetí do cloudu, aby mohli nasadit pokročilejší nové technologie.
+Během předčasného malého nasazení, jako je vývoj a testování nebo experimentální první pracovní vytížení, Cost Management pravděpodobně relativně nízké riziko. Po nasazení většího objemu prostředků se riziko zvýší a tolerance podnikového rizika je zřejmě zamítnuto. Kromě toho, protože více týmů pro přijetí cloudu má možnost konfigurovat nebo nasazovat prostředky do cloudu, roste riziko a sníží se jejich tolerance. Naopak rostoucí obor Cost Management převezme uživatele z fáze pro přijetí do cloudu, aby mohli nasadit pokročilejší nové technologie.
 
 V počátečních fázích přijetí cloudu budete pracovat s vaší firmou a určit základní hodnoty tolerance rizik. Jakmile budete mít směrný plán, budete muset určit kritéria, která aktivují investici v oboru Cost Management. Tato kritéria budou pravděpodobně pro každou organizaci odlišná.
 

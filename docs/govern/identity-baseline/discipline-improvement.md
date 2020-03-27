@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508113"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356996"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>Vylepšení oboru směrného plánu identity
 
 Disciplína směrného plánu identity se zaměřuje na způsoby vytváření zásad, které zajišťují konzistenci a kontinuitu identit uživatelů bez ohledu na poskytovatele cloudu, který hostuje aplikaci nebo úlohu. V pěti oborech řízení cloudu zahrnuje základní údaje o rozhodnutích, která se týkají [strategie hybridních identit](../../decision-guides/identity/index.md), vyhodnocování a rozšíření úložišť identit, implementace jednotného přihlašování (stejné přihlášení), auditování a monitorování pro neoprávněné použití nebo škodlivé objekty actor. V některých případech může také dotýkat rozhodnutí modernizovat, konsolidace nebo integrace více zprostředkovatelů identity.

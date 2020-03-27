@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092864"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354072"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>Co je účtování cloudu?
@@ -58,7 +60,7 @@ Tento model poskytuje rovnováhu mezi skutečným modelem vrácení peněz a rů
 
 Možnost výběru účetních modelů je zásadní pro návrh systému. Volba modelu monitorování účtů může ovlivnit strategie předplatného, standardy pojmenování, standardy označování a návrh zásad a podrobných plánů.
 
-Po práci s firmou pro rozhodování o modelu cloudového účetnictví a [globálních trzích](./global-markets.md)máte dostatek informací pro [vývoj platformy Azure Foundation](../ready/index.md).
+Po práci s firmou pro rozhodování o modelu monitorování účtů cloudu a [globálních trzích](./global-markets.md)máte dostatek informací pro [Výběr prvního projektu pro přijetí do cloudu](./first-adoption-project.md).
 
 > [!div class="nextstepaction"]
-> [Vývoj pro Azure Foundation](../ready/index.md)
+> [Výběr prvního projektu pro přijetí do cloudu](./first-adoption-project.md)

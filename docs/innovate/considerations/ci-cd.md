@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223482"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356755"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>Posílení přechodu
 
 Špičkový test inovace je reakce zákazníků na vynález. Prokázala se hypotéza jako true? Používají zákazníci řešení? Je potřeba se škálovat tak, aby splňovala požadavky požadovaného procenta uživatelů? Co je nejdůležitější, udělejte si zpátky? Žádná z těchto otázek se nemůže zeptat, dokud nebude nasazené řešení pro minimální životaschopné produkty (MVP). V tomto článku se zaměříme na obor, který umožňuje přijetí.
@@ -43,7 +45,7 @@ Aby se minimalizovaly technické špičky, Přepokládejme, že v každé z těc
 
 Jak je popsáno v tématu [měření dopadu zákazníka](./measure.md), pozitivní ověření jakékoli hypotézy vyžaduje iteraci a určení. Během jakýchkoli inovačních cyklů dojde k většímu počtu chyb než WINS. To se očekává. Pokud ale zákazník potřebuje, hypotéza a řešení ve velkém měřítku, svět se rychle změní.
 
-Při škálování inovace není k dispozici žádný hodnotný nástroj než sdílený základ kódu pro řešení. Bohužel neexistuje spolehlivý způsob, jak předpovídat tuto iteraci, nebo který MVP poskytne vítěznou kombinaci. To je důvod, proč není nikdy příliš brzy pro vytvoření sdíleného základu kódu nebo úložiště. Toto je [technický technický špička](./build.md#reduce-complexity-and-delay-technical-spikes) , který by se nikdy neměl zpozdit. Když tým projde různými řešeními MVP, sdílené úložiště umožňuje snadnou spolupráci a urychlení vývoje. Když změny řešení přetáhnete dolů metriky učení, Správa verzí vám umožní vrátit se zpět na dřívější, účinnější verzi řešení.
+Při škálování inovace není pro řešení k dispozici žádný hodnotný nástroj, než je základem sdíleného kódu. Bohužel neexistuje spolehlivý způsob, jak předpovídat tuto iteraci, nebo který MVP poskytne vítěznou kombinaci. To je důvod, proč není nikdy příliš brzy k navázání sdíleného základního kódu nebo úložiště. Toto je [technický technický špička](./build.md#reduce-complexity-and-delay-technical-spikes) , který by se nikdy neměl zpozdit. Když tým projde různými řešeními MVP, sdílené úložiště umožňuje snadnou spolupráci a urychlení vývoje. Když změny řešení přetáhnete dolů metriky učení, Správa verzí vám umožní vrátit se zpět na dřívější, účinnější verzi řešení.
 
 Nejpoužívanějším nástrojem pro správu úložišť kódu je [GitHub](https://guides.github.com), který umožňuje vytvořit úložiště se sdíleným kódem v několika krocích. Kromě toho je možné pomocí funkce [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) služby Azure DevOps vytvořit úložiště [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) nebo [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 

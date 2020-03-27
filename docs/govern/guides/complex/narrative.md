@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706910"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357104"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Příručka pro zásady správného řízení pro komplexní podniky: podpora mluveného komentáře
 
 Následující mluvený komentář vytváří případ použití pro zásady [správného řízení během cesty k podnikovému přijetí ve složitém podnikovém cloudu](./index.md). Před jednáním s doporučeními v průvodci je důležité pochopit předpoklady a příčiny, které se projeví v tomto mluveném komentáři. Pak můžete strategii zásad správného řízení lépe sjednotit na cestu k přijetí cloudu vaší organizace.

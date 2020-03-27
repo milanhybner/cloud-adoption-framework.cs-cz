@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223806"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356969"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Navázat počáteční cloudový základ zásad správného řízení
 
@@ -24,7 +24,9 @@ Tento článek poskytuje dvě možnosti, jak vytvořit počáteční základ pro
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Už se používá architektura pro přijetí do cloudu.
 
-Pokud jste spolu s architekturou pro přijetí v cloudu provedli následující postup, možná jste už nasadili MVP pro řízení. Zásady správného řízení jsou základními aspekty jakéhokoli provozního modelu. Je k dispozici v každé metodologii životního cyklu přijetí do cloudu. V takovém případě rozhraní pro [přijetí do cloudu](../index.md) poskytuje pokyny, které vkládají zásady správného řízení do aktivit souvisejících s implementací vašeho [plánu přijetí do cloudu](../plan/index.md). Příkladem této integrace zásad správného řízení je použití plánů k nasazení jedné nebo více zón vykládku přítomných [v doprovodné dokumentaci](../ready/index.md) . Dalším příkladem jsou pokyny pro [škálování předplatných](../ready/azure-best-practices/scaling-subscriptions.md). Pokud jste postupovali s jedním z těchto doporučení, v následujících oddílech MVP jsou jenom recenze stávajících rozhodnutí o nasazení. Po rychlé kontrole přejděte k [vyspělému řešení zásad správného řízení a použijte osvědčené postupy](./foundation-improvements.md).
+Pokud jste spolu s architekturou pro přijetí v cloudu provedli následující postup, možná jste už nasadili MVP pro řízení. Zásady správného řízení jsou základními aspekty jakéhokoli provozního modelu. Je k dispozici v každé metodologii životního cyklu přijetí do cloudu. V takovém případě rozhraní pro [přijetí do cloudu](../index.md) poskytuje pokyny, které vkládají zásady správného řízení do aktivit souvisejících s implementací vašeho [plánu přijetí do cloudu](../plan/index.md).
+
+Příkladem této integrace zásad správného řízení je použití plánů k nasazení jedné nebo více zón vykládku přítomných [v doprovodné dokumentaci](../ready/index.md) . Dalším příkladem jsou pokyny k [organizování a správě předplatných](../ready/azure-best-practices/organize-subscriptions.md). Pokud jste postupovali s jedním z těchto doporučení, v následujících oddílech MVP jsou jenom recenze stávajících rozhodnutí o nasazení. Po rychlé kontrole přejděte k [vyspělému řešení zásad správného řízení a použijte osvědčené postupy](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Vytvoření počátečního základu zásad správného řízení
 
@@ -40,7 +42,7 @@ Níže jsou uvedeny dva různé příklady počátečních základů zásad spr�
                 <div class="card">
                     <div class="cardText">
                         <h3>Standardní průvodce zásadami správného řízení</h3>
-                        <p>Průvodce pro většinu organizací vycházející z doporučeného modelu dvou předplatných, který je navržený pro nasazení v několika oblastech, ale nepokrývá veřejné a suverénní cloudy a cloudy pro státní správu</p>
+                        <p>Příručka pro většinu organizací založenou na doporučeném počátečním modelu se dvěma odběry, který je určený pro nasazení ve více oblastech, ale nepokrývá veřejné a státní cloudy.</p>
                     </div>
                 </div>
             </div>

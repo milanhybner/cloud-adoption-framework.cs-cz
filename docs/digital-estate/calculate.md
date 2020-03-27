@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ffe9e81eb0bdd2d3a859885d6b01bd61abd9f719
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170116"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355362"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Zarovnání nákladových modelů k digitální nemovitosti k odhadování nákladů na Cloud
 
@@ -25,6 +25,6 @@ Cenové nástroje Azure vám pomůžou se správou cloudových výdajů s transp
 
 - [Kalkulačka celkových nákladů na vlastnictví](https://azure.microsoft.com/pricing/tco/calculator): Snižte celkové náklady na vlastnictví místní infrastruktury pomocí cloudové platformy Azure. Využijte kalkulačku celkových nákladů na Azure k odhadu úspory nákladů, které můžete realizovat migrací úloh aplikací do Azure. Zadáním stručného popisu místního prostředí získáte okamžitou sestavu.
 
-- [Cenová Kalkulačka Azure](https://azure.microsoft.com/pricing): pomocí cenové kalkulačky odhadujte očekávané měsíční poplatky. Pomocí fakturačního portálu vám kdykoli Sledujte skutečné využití účtu a faktury. Nastavením automatických e-mailových upozornění fakturace budete upozorněni na to, jestli vaše útrata překročí nakonfigurované množství.
+- [Cenová Kalkulačka Azure](https://azure.microsoft.com/pricing/calculator): pomocí cenové kalkulačky odhadujte očekávané měsíční poplatky. Pomocí fakturačního portálu vám kdykoli Sledujte skutečné využití účtu a faktury. Nastavením automatických e-mailových upozornění fakturace budete upozorněni na to, jestli vaše útrata překročí nakonfigurované množství.
 
 - [Azure cost management](https://azure.microsoft.com/services/cost-management): Azure cost management, licencovaný Cloudynem společnosti Microsoft, je řešení pro správu nákladů s více cloudy, které pomáhá efektivně používat a spravovat Azure a další cloudové prostředky. Shromažďovat data o využití cloudu a fakturách prostřednictvím rozhraní API (Application Program Interfaces) z Azure, Amazon Web Services a Google Cloud Platform. S těmito daty získáte kompletní přehled o spotřebě prostředků a nákladech napříč cloudovým platformou v jediném jednotném zobrazení. Průběžně monitorujte využití cloudu a trendy nákladů. Sledujte skutečné cloudové výdaje na svůj rozpočet, abyste se vyhnuli nadměrnému útratě. Zjišťuje anomálie útraty a neefektivitu využití. Pomocí historických dat můžete zlepšit přesnost předpovědi pro využití cloudu a výdaje.
