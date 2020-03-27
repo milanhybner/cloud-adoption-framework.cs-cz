@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311825"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355159"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ Smyslem tohoto akronymu není jeho přísné dodržování. Měl by sloužit jak
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Backlog migrace: zarovnání obchodních priorit a časování
 
-Backlog migrace umožňuje sledovat portfolio vašich nejdůležitějších sad funkcí, které jsou určené pro migraci. Před zahájením migrace by tým cloudové strategie a tým přechodu na cloud měly provést kontrolu aktuálního [stavu digitálního prostředí](../../../digital-estate/index.md) a shodnout se na seznamu prioritních sad funkcí, které se budou migrovat. Tento seznam bude sloužit jako výchozí backlog migrace.
+Nevyřízené položky migrace umožňují sledovat portfolio úloh nejvyšší úrovně, které se dají migrovat. Před zahájením migrace by tým cloudové strategie a tým přechodu na cloud měly provést kontrolu aktuálního [stavu digitálního prostředí](../../../digital-estate/index.md) a shodnout se na seznamu prioritních sad funkcí, které se budou migrovat. Tento seznam bude sloužit jako výchozí backlog migrace.
 
 Sady funkcí obsažené v backlogu migrace nebudou na začátku pravděpodobně splňovat kritéria INVEST popsaná v předchozí části. Budou představovat logické seskupení prostředků z počátečního inventáře a bude se od nich odvíjet budoucí práce. Jako zástupné symboly nemusí být technicky přesné, ale budou sloužit jako základ pro koordinaci postupu s firmou.
 

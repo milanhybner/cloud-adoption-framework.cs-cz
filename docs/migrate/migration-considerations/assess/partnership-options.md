@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311859"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355304"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>Vysvětlení možností partnerství
 
 Při migraci tým přechodu na cloud provádí skutečnou migraci úloh do cloudu. Na rozdíl od úkolů spolupráce a řešení problémů při definování [digitálních aktiv](../../../digital-estate/index.md) nebo při vytváření základní cloudové infrastruktury má migrace tendenci stát se řadou opakujících se prováděných úkolů. Kromě aspektů opakování existují pravděpodobně akce testování a optimalizace, které vyžaduje důkladné znalosti zvoleného poskytovatele cloudu. Opakující se povaha tohoto procesu může být někdy nejlépe zvládnutá partnerem, což snižuje nároky na stálé zaměstnance. Kromě toho se mohou partneři lépe vyrovnat s potřebou hlubokých technických vědomostí, když se při provádění opakujících se procesů vyskytnou anomálie.
@@ -96,7 +98,7 @@ Certifikovaní poskytovatelé řešení Microsoftu se specializují na poskytov�
 Získejte pomoc od partnerů s předem připravenými nebo vlastními řešeními Azure a partnerů, kteří vám můžou pomoct s nasazením a správou těchto řešení:
 
 - **[Najděte partnera pro cloudová řešení](https://www.microsoft.com/solution-providers/home).** Certifikovaný partner CSP může pomoct plně využít výhod cloudu vyhodnocením obchodních cílů pro přechod na cloud, určením správného cloudového řešení, které vyhovuje obchodním potřebám a pomůže větší agilitě a efektivitě podnikání.
-- **[Najděte partnera pro spravované služby](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Partner pro spravované služby Azure (MSP) vás při přesunu podnikání do Azure pomůže provést všemi aspekty přechodu na cloud. Cloudoví partneři MSP ukáží zákazníkům všechny výhody, které přechod na cloud poskytuje, od konzultací po správu migrace a provozu. Fungují také jako jednotné místo pro obecnou podporu, zřizování a fakturaci, a to vše s flexibilním obchodním modelem průběžných plateb (PAYG).
+- **[Najděte partnera pro spravované služby](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Partner pro spravované služby Azure (MSP) vás při přesunu podnikání do Azure pomůže provést všemi aspekty přechodu na cloud. Cloudoví partneři MSP ukáží zákazníkům všechny výhody, které přechod na cloud poskytuje, od konzultací po správu migrace a provozu. Slouží také jako dlouhodobá prodejna pro běžnou podporu, zřizování a účtování, a to vše s flexibilním obchodním modelem průběžných plateb.
 
 ## <a name="next-steps"></a>Další kroky
 

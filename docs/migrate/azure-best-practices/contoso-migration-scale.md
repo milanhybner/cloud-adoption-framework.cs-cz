@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091931"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355626"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>Škálování migrace do Azure
 
 Tento článek ukazuje, jak fiktivní společnost Contoso provádí migraci do Azure ve velkém měřítku. Zvažuje, jak naplánovat a provést migraci více než 3 000 sad funkcí, 8 000 databází a 10 000 virtuálních počítačů.
@@ -26,7 +28,7 @@ Tým vedení IT těsně spolupracoval s partnery ve firmě, aby zjistil, čeho c
 - **Řešení obchodního růstu.** Společnost Contoso roste a to způsobuje tlak na místní systémy a infrastrukturu.
 - **Zvýšení efektivity.** Společnost Contoso se potřebuje zbavit zbytečných postupů a zjednodušit procesy pro vývojáře i uživatele. Potřebuje IT k tomu, aby neztrácela čas ani peníze, byla rychlá a dokázala rychleji reagovat na požadavky zákazníků.
 - **Zvýšení agility.** IT ve společnosti Contoso musí pohotověji reagovat na potřeby firmy. K zajištění úspěchu v globální ekonomice je nutné, aby IT dokázalo rychleji reagovat na změny na trhu. Nesmí stát v cestě a nesmí se stát obchodní překážkou.
-- **Škálování** Společnost Contoso úspěšně roste a její IT tým musí poskytovat systémy, které jsou schopné růst stejným tempem.
+- **Škálování** Společnost Contoso úspěšně roste a její tým IT musí poskytovat systémy, které jsou schopné růst stejným tempem.
 - **Vylepšení nákladových modelů.** Společnost Contoso chce snížit kapitálové požadavky v oblasti rozpočtu na IT. Chce využívat možnosti škálování v cloudu a omezit potřebu nákladného hardwaru.
 - **Snížení nákladů na licencování.** Společnost Contoso chce minimalizovat náklady na cloud.
 
@@ -301,14 +303,14 @@ Kromě DMS může společnost Contoso k identifikaci informací o virtuálních 
 
 Jakmile společnost Contoso přesune prostředky do Azure, potřebuje je optimalizovat v zájmu zvýšení výkonu a maximalizovat návratnost investic pomocí nástrojů pro správu nákladů. Vzhledem k tomu, že Azure je služba, která se platí podle využití, je pro společnost Contoso důležité, aby rozuměla tomu, jaký mají systémy výkon, a zajistila, aby měly správnou velikost.
 
-### <a name="azure-cost-management"></a>Azure Cost Management
+### <a name="azure-cost-management"></a>Správa nákladů v Azure
 
 V zájmu co nejlepšího zužitkování investice do cloudu bude společnost Contoso využívat bezplatnou službu pro správu nákladů Azure Cost Management.
 
 - Toto licencované řešení vytvořila společnost Cloudyn, která je nyní pobočkou Microsoftu. Společnosti Contoso umožní transparentně a přesně spravovat útraty v cloudu. Poskytuje nástroje pro monitorování, přidělování a snižování nákladů na cloud.
-- Služba Azure Cost Management poskytuje jednoduché sestavy na řídicím panelu, které pomáhají s přidělováním, rozdělováním, analýzou a interním zúčtováním nákladů.
+- Azure Cost Management poskytuje jednoduché sestavy řídicích panelů, které vám pomůžou při přidělování nákladů, chargeback a vratek.
 - Služba Cost Management pomáhá optimalizovat výdaje za cloud díky identifikaci málo využitých prostředků, které pak společnost Contoso může spravovat a upravovat.
-- [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ![Správa nákladů](./media/contoso-migration-scale/cost-management.png)
 
@@ -319,7 +321,7 @@ Společnost Contoso bude také používat skripty k vyhledání nepoužívaných
 - Během velkých migrací se často vyskytnou „zůstatková“ data, například virtuální pevné disky, za které se platí poplatky, ale neposkytují společnosti žádnou hodnotu. Skripty jsou k dispozici v úložišti GitHub.
 - Společnost Contoso bude využívat práci, kterou provede IT oddělení Microsoftu, a zvažte implementaci sady nástrojů pro optimalizaci prostředků Azure (ARO).
 - Společnost Contoso může do svého předplatného nasadit účet služby Azure Automation s předem konfigurovanými runbooky a plány, které pomůžou šetřit peníze. Po povolení nebo vytvoření plánu probíhá optimalizace prostředků Azure v předplatném automaticky, a to včetně optimalizace nových prostředků.
-- To poskytuje decentralizované možnosti automatizace, které snižují náklady. Mezi hlavní funkce patří:
+- To poskytuje decentralizované možnosti automatizace, které snižují náklady. K funkcím patří:
   - Automatické zastavení virtuálních počítačů Azure na základě nízkého výkonu procesoru
   - Plánování zastavení a spuštění virtuálních počítačů Azure
   - Plánování zastavení nebo spuštění virtuálních počítačů Azure ve vzestupném a sestupném pořadí pomocí značek Azure

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171187"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356740"
 ---
 # <a name="develop-digital-inventions"></a>Vývoj digitálních vynálezů
 
@@ -22,7 +22,7 @@ Jak je popsáno v [části inovace v digitální ekonomice](./index.md), inovace
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Shrnutí každého oboru digitálního vynálezení
 
-Následující obory nejsou *všechny* potřebné k tomu, aby bylo možné v jakémkoli případě inovovat inovace. Podle pokynů v části [sestavování s Customer soucit](./build.md)je cílem otestovat hypotézu v každé iteraci. Tím, že definujete výstup každé iterace jako [minimální životaschopný produkt (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), umožníte tím, že zadáte nejmenší možný počet oborů.
+Následující obory nejsou *všechny* potřebné k tomu, aby bylo možné v jakémkoli případě inovovat inovace. Podle pokynů v části [sestavování s Customer soucit](./build.md)je cílem otestovat hypotézu v každé iteraci. Tím, že definujete výstup každé iterace jako [minimální životaschopný produkt (MVP)](../../govern/policy-compliance/index.md), umožníte tím, že zadáte nejmenší možný počet oborů.
 
 - **[Demokratizujte data](./data.md):** Získáním dat do rukou zákazníků, partnerů a zaměstnanců můžete podpořit inovativní sledování. Ingestování, centralizace, řízení a sdílení dat.
 - **[Zapojení aplikací](./apps.md):** Lidé se s poznatky připojují prostřednictvím aplikací a prostředí. Umožněte vývojářům v profesionálním a občanům vytvářet aplikace rychle.

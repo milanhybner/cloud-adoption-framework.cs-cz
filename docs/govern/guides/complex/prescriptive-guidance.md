@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312382"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357114"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Příručka zásad správného řízení pro komplexní podniky: vysvětlení osvědčených postupů
 
@@ -50,7 +50,7 @@ Tým zásad správného řízení cloudu bude zodpovědný za následující roz
 
 ### <a name="subscription-design"></a>Návrh předplatného
 
-Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se předplatná Azure získají strukturovaná a jak se skupiny pro správu Azure budou používat k efektivní správě přístupu, zásad a dodržování předpisů pro toto předplatné. V tomto mluveném komentáři tým zásad správného řízení vybral vzor návrhu **[smíšeného](../../../decision-guides/subscriptions/index.md#mixed-patterns)** předplatného.
+Rozhodnutí o tom, jaký návrh předplatných se má použít, určuje, jak se předplatná Azure získají strukturovaná a jak se skupiny pro správu Azure budou používat k efektivní správě přístupu, zásad a dodržování předpisů pro toto předplatné. V tomto mluveném komentáři tým zásad správného řízení vybral **[strategii smíšeného předplatného](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
 
 - Vzhledem k novým požadavkům na prostředky Azure by se mělo zřídit "oddělení" pro každou hlavní organizační jednotku v jednotlivých provozních zeměpisných oblastech. V rámci každého oddělení by se pro každou aplikaci Archetype vytvořit předplatné.
 - Archetype aplikací je způsob seskupení aplikací s podobnými potřebami. Mezi běžné příklady patří: aplikace s chráněnými daty, řízené aplikace (například HIPAA nebo FedRAMP), aplikace s nízkým rizikem, aplikace s místními závislostmi, SAP nebo jiné sálové aplikace v Azure nebo aplikace, které rozšiřuje místní aplikace SAP nebo sálové. Každá organizace má jedinečné potřeby na základě klasifikace dat a typů aplikací, které podporují firmu. Mapování závislostí digitální nemovitosti může přispět k definování aplikace archetypes v organizaci.

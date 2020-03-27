@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091291"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356312"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>Průvodce monitorováním cloudu: upozorňování
 
 V letech se organizace IT struggled, aby pomohly potírat únavu výstrah, kterou vytvořily nástroje pro monitorování nasazené v podniku. Řada systémů generuje velmi velký objem výstrah, často se považují za nevýznamné, zatímco jiné výstrahy jsou relevantní, ale jsou buď překládány nebo ignorovány. V důsledku toho struggled IT a vývojářské operace, aby splnily kvalitu na úrovni služby, kterou přislíbili interním nebo externím zákazníkům. Aby se zajistila spolehlivost, je důležité pochopit stav vaší infrastruktury a aplikací. Chcete-li minimalizovat snížení úrovně služeb a přerušení nebo snížit vliv nebo snížit počet incidentů, je nutné identifikovat příčiny rychle.

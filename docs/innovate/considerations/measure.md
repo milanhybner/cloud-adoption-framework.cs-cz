@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ba4cc99b210784c7503085234c25c1d9a0ae634
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fe1bed4da302041998ec09efd2224be3d94fe3aa
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507994"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356721"
 ---
 # <a name="measure-for-customer-impact"></a>Měření dopadu na zákazníky
 
@@ -70,5 +70,7 @@ Jak se shromažďují metriky učení, tým se může začít [učit se zákazn�
 
 > [!div class="nextstepaction"]
 > [Seznamte se se zákazníky](./learn.md)
+
+<!-- cSpell:ignore Ries -->
 
 Některé z konceptů v tomto článku se sestavují na témata, která se poprvé popisují v [rámci štíhlého spuštění](http://theleanstartup.com/book), zapsaná službou Eric obnovení aplikace.

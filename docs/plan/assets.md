@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342061"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354945"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Zarovnání prostředků na úlohy s upřednostněním priorit
 
-Zatížení je koncepční popis kolekce assetů: virtuální počítače, aplikace a zdroje dat. Předchozí článek, určení [priorit a definování úloh](./workloads.md), měl doprovodné materiály pro shromažďování dat, která budou definovat zatížení. Před migrací vyžaduje některé technické vstupy v tomto seznamu další ověření. Tento článek vám pomůže s ověřováním následujících vstupů:
+Zatížení je koncepční popis kolekce assetů: virtuální počítače, aplikace a zdroje dat. V předchozím článku [Definujte a určete prioritu](./workloads.md), která poskytuje pokyny pro shromažďování dat, která budou definovat zatížení. Před migrací vyžaduje některé technické vstupy v tomto seznamu další ověření. Tento článek vám pomůže s ověřováním následujících vstupů:
 
 - **Aplikace:** Vypíše všechny aplikace, které jsou součástí této úlohy.
 - **Virtuální počítače a servery:** Vypíše všechny virtuální počítače nebo servery, které jsou součástí úlohy.

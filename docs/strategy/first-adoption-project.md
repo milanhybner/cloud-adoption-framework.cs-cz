@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092500"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353542"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Mezi další příklady projektů pro první přijetí patří:
 
 ## <a name="next-steps"></a>Další kroky
 
-Po zahájení prvního projektu pro přijetí do cloudu může tým cloudové strategie změnit svůj pozornost na dlouhodobý [plán přijímání do cloudu](../plan/index.md).
+Přečtěte si o strategiích pro [Vyrovnávání konkurenčních priorit](./balance-competing-priorities.md).
 
 > [!div class="nextstepaction"]
-> [Sestavení plánu přijetí cloudu](../plan/index.md)
+> [Vyvážení konkurenčních priorit](./balance-competing-priorities.md)

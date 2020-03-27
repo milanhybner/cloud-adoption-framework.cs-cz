@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342044"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354875"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Předpoklady pro efektivní plán přijetí cloudu
 
@@ -40,7 +40,7 @@ Tyto otázky jsou zásadní pro přesnost plánu přijetí do cloudu. Aby bylo m
 
 ## <a name="next-steps"></a>Další kroky
 
-Jakmile tým bude vyhovovat strategickým vstupům a vstupům pro racionalizaci digitálních nemovitostí, může začít další krok [stanovení priorit úloh](./workloads.md) .
+[Nasaďte šablonu plánu přijetí do cloudu](./template.md) do Azure DevOps.
 
 > [!div class="nextstepaction"]
-> [Určení priorit a definování úloh](./workloads.md)
+> [Nasazení šablony do Azure DevOps](./template.md)

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092801"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355232"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Náprava prostředků před migrací
 
@@ -36,7 +36,7 @@ V každém firemním prostředí existuje technický dluh. Ten je do určité m�
 
 Pokud je datové centrum správně udržované, má nainstalované opravy a je aktualizované, náprava pravděpodobně nebude potřeba. Prostředí vyžadující rozsáhlou nápravu spíše najdete ve velkých organizacích a v organizacích, které procházejí výrazným zeštíhlováním IT. Platí to také o některých starších prostředích spravovaných služeb a o prostředích s velkým podílem akvizic. Ve všech těchto typech prostředí může náprava spotřebovat značnou část úsilí spojeného s migrací. Pokud se následující úlohy nápravy vyskytují často, což negativně ovlivňuje rychlost nebo jednotnost migrace, bude pravděpodobně rozumnější rozdělit nápravu do paralelních úloh a týmů (podobně jako běží paralelně osvojování cloudu a zásady správného řízení cloudu).
 
-- **Časté upgrady hostitele.** Pokud je dokončení migrace podmíněno upgradem velkého počtu hostitelů, bude mít migrační tým pravděpodobně zpoždění. Proto může být rozumné rozdělit dotyčné aplikace a řešit nápravná opatření ještě předtím, než tyto aplikace zahrnete do plánovaných vydání verzí.
+- **Časté upgrady hostitele.** Pokud je dokončení migrace podmíněno upgradem velkého počtu hostitelů, bude mít migrační tým pravděpodobně zpoždění. Může být vhodné přerušit ovlivněné aplikace a vyřešit kroky nápravy před zahrnutím ovlivněných aplikací v jakémkoli plánovaném vydání.
 - **Časté upgrady OS hostitele.** Velké organizace mají často servery, na kterých běží zastaralé verze Linuxu nebo Windows. Když odhlédneme od zřejmých bezpečnostních rizik spočívajících v provozu zastaralého OS, jsou zde také problémy s nekompatibilitou, které brání migraci dotyčných úloh. Pokud nápravu OS vyžaduje velký počet virtuálních počítačů, může být rozumnější rozdělit tyto úkoly do paralelních iterací.
 - **Rozsáhlé změny kódu.** Starší vlastní aplikace můžou vyžadovat podstatně větší úpravy, aby byly připraveny na nasazení PaaS. V takovém případě může být rozumnější, když je úplně odeberete z migračního backlogu a budete je spravovat ve zcela odděleném programu.
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: d8cd22e929841a4f580b00dc5d2033c8be227bce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311468"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356191"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 
@@ -117,7 +117,7 @@ Pro Site Recovery Contoso potřebuje několik komponent Azure:
 
 - Virtuální síť, která bude obsahovat prostředky po převzetí služeb při selhání. Společnost Contoso už tuto virtuální síť vytvořila během [nasazení infrastruktury Azure](./contoso-migration-infrastructure.md).
 - Nový účet úložiště Azure, ve kterém se budou uchovávat replikovaná data.
-- Trezor služby Recovery Services v Azure.
+- Trezor služby Recovery Services v Azure
 
 Správci společnosti Contoso vytvoří účet úložiště a trezor následujícím způsobem:
 
@@ -151,7 +151,7 @@ Site Recovery potřebuje přístup k serverům VMware z těchto důvodů:
 - Automatické zjišťování virtuálních počítačů. Vyžaduje se alespoň účet jen pro čtení.
 - Orchestrace replikace, převzetí služeb při selhání a navrácení služeb po obnovení. Potřebujete účet, který může spouštět operace, jako jsou vytváření a odebírání disků a zapínání virtuálních počítačů.
 
-Správci společnosti Contoso nastaví tento účet následujícím způsobem:
+Správci společnosti Contoso nastaví účet následujícím způsobem:
 
 1. Vytvoří roli na úrovni vCenter.
 2. Potom této roli přiřadí požadovaná oprávnění.
@@ -259,7 +259,7 @@ Správci společnosti Contoso přitom postupují takto:
 
     ![vCenter](./media/contoso-migration-rehost-linux-vm-mysql/cswiz2.png)
 
-15. Po dokončení registrace zkontrolují na webu Azure Portal, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i více.
+15. Po dokončení registrace zkontrolují na webu Azure Portal, jestli je ve vybraném trezoru na stránce **Zdroj** uvedený konfigurační server a server VMware. Zjišťování může trvat 15 minut nebo i víc.
 16. Když je všechno připravené, Site Recovery se připojí k serverům VMware a vyhledá virtuální počítače.
 
 ### <a name="set-up-the-target"></a>Nastavení cíle
@@ -360,7 +360,7 @@ Spuštění testovacího převzetí služeb při selhání pomáhá ověřit, je
     - Převzetí služeb při selhání tato data zpracuje, aby se mohl vytvořit virtuální počítač Azure. Pokud jste vybrali nejnovější bod obnovení, vytvoří se z těchto dat nový.
     - Pomocí dat zpracovaných v předchozím kroku se vytvoří virtuální počítač Azure.
 
-4. Po dokončení převzetí služeb při selhání se na webu Azure Portal objeví replika virtuálního počítače Azure. Zkontrolují, že virtuální počítač má odpovídající velikost, je připojený ke správné síti a běží.
+4. Po dokončení převzetí služeb při selhání se na portálu Azure Portal objeví replika virtuálního počítače Azure. Zkontrolují, že virtuální počítač má odpovídající velikost, je připojený ke správné síti a běží.
 5. Po ověření vyčistí převzetí služeb při selhání a zaznamenají a uloží případné poznámky.
 
 ### <a name="migrate-the-vm"></a>Migrace virtuálního počítače
@@ -453,11 +453,11 @@ Další informace najdete v tématu [osvědčené postupy zabezpečení pro úlo
 
 V zájmu zajištění provozní kontinuity a zotavení po havárii společnost Contoso provede tyto akce:
 
-- **Zajištění bezpečnosti dat:** Společnost Contoso zazálohuje data na virtuálním počítači aplikace pomocí služby Azure Backup. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). Nepotřebují konfigurovat zálohování databáze. Azure Database for MySQL automaticky vytváří a ukládá zálohy serveru. Rozhodli se u databáze využít geografickou redundanci, takže je odolná a připravená pro produkční prostředí.
+- **Zajištění bezpečnosti dat:** Společnost Contoso zazálohuje data na virtuálním počítači aplikace pomocí služby Azure Backup. [Další informace](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup). Nepotřebují konfigurovat zálohování databáze. Azure Database for MySQL automaticky vytváří a ukládá zálohy serveru. Rozhodli se u databáze využít geografickou redundanci, takže je odolná a připravená pro produkční prostředí.
 - **Zajištění nepřetržitého provozu aplikací:** Společnost Contoso replikuje virtuální počítače aplikace v Azure do sekundární oblasti pomocí Site Recovery. [Další informace](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencování a optimalizace nákladů
 
 - Po nasazení prostředků společnost Contoso přiřadí značky Azure, a to v souladu s rozhodnutími, které udělala během nasazení [infrastruktury Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - U serverů Ubuntu nejsou žádné licenční problémy.
-- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.

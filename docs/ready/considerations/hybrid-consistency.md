@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093041"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353667"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>Vytvoření konzistentního hybridního cloudu
 
 Tento článek vás provede vysokou úrovní přístupů k vytvoření konzistence hybridního cloudu.
@@ -51,7 +53,7 @@ Azure a Azure Stack otevřít nové hybridní případy použití pro zákaznick
 
 - **Hraniční a odpojená řešení.** Aby zákazníci mohli řešit požadavky na latenci a připojení, můžou data místně zpracovávat v Azure Stack a pak je agregovat v Azure pro další analýzy. Můžou používat běžnou aplikační logiku napříč oběma. Mnohé zákazníky mají zájem o tento hraniční scénář v různých kontextech, jako jsou produkční podlahová místa, přepravní lodí a hřídele.
 - **Cloudové aplikace, které vyhovují různým předpisům.** Zákazníci můžou vyvíjet a nasazovat aplikace v Azure s plnou flexibilitou pro nasazení místně na Azure Stack, aby splňovaly zákonné požadavky nebo požadavky zásad. Nevyžadují se žádné změny kódu. Mezi příklady aplikací patří globální audit, finanční vykazování, obchodování s cizím systémem Exchange, hraní online her a generování sestav výdajů. Zákazníci někdy v závislosti na obchodních a technických požadavcích nasadí různé instance stejné aplikace do Azure nebo Azure Stack. I když Azure splňuje většinu požadavků, Azure Stack v případě potřeby doplňují přístup k nasazení.
-- **Model cloudové aplikace v místním prostředí.** Zákazníci můžou použít webové služby, kontejnery, bez serveru a architektury mikroslužeb k aktualizaci a rozšiřování existujících aplikací nebo sestavování nových. V rámci Azure v cloudu můžete používat konzistentní procesy DevOps a Azure Stack v místním prostředí. Existuje rostoucí podíl na modernizaci aplikací, a to i pro klíčové klíčové aplikace.
+- **Model cloudové aplikace v místním prostředí.** Zákazníci můžou použít webové služby, kontejnery, mikroslužby a architektury bez serveru, aby mohli aktualizovat a rozkrývat existující aplikace nebo vytvářet nové. V rámci Azure v cloudu můžete používat konzistentní procesy DevOps a Azure Stack v místním prostředí. Existuje rostoucí podíl na modernizaci aplikací, a to i pro klíčové klíčové aplikace.
 
 Azure Stack se nabízí přes dvě možnosti nasazení:
 
@@ -61,6 +63,8 @@ Azure Stack se nabízí přes dvě možnosti nasazení:
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Azure Stack ekosystém pro jeden Cloud
 
 Azure Stack iniciativ můžete urychlit pomocí kompletního ekosystému Azure:
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure zajišťuje, že většina aplikací a služeb, které jsou certifikované pro Azure, budou fungovat na Azure Stack. Několik výrobců ISV rozšiřuje svá řešení na Azure Stack. Tito výrobci softwaru zahrnují Bitnami, Docker, kemp technologie, Pivoted Cloud Foundry, Red Hat Enterprise Linux a SUSE Linux.
 - Můžete se rozhodnout, že budete Azure Stack doručovat a provozovat jako plně spravovanou službu. Několik partnerů bude mít v Azure nabídky spravované služby a brzy Azure Stack. Mezi tyto partnery patří Tieto, Yourhosting, revera, pohonné a NTT. Tito partneři dodávají spravované služby pro Azure prostřednictvím programu Cloud Solution Provider (CSP). Rozšiřují své nabídky tak, aby zahrnovaly hybridní řešení.

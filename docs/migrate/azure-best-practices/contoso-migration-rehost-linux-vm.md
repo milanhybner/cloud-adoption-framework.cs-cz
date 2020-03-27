@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3130494f151897d005a5ded28268d056f15bd15c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311944"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355953"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -290,7 +290,7 @@ Aplikace je teď spuštěná a společnost Contoso ji potřebuje v nové infrast
 
 ### <a name="security"></a>Zabezpečení
 
-Tým zabezpečení společnosti Contoso kontroluje virtuální počítače OSTICKETWEB a OSTICKETMYSQL a zjišťuje případné problémy se zabezpečením.
+Tým zabezpečení společnosti Contoso si přečtěte virtuální počítače s OSTICKETWEB a OSTICKETMYSQL, abyste zjistili případné problémy se zabezpečením.
 
 - V rámci řízení přístupu tým kontroluje skupiny zabezpečení sítě pro virtuální počítače. Skupiny zabezpečení sítě zajišťují, aby se k aplikaci dostal jen povolený provoz.
 - Tým také zvažuje zabezpečení dat na discích virtuálních počítačů pomocí služeb Disk Encryption a Azure Key Vault.
@@ -308,4 +308,4 @@ V zájmu zajištění provozní kontinuity a zotavení po havárii společnost C
 
 - Po nasazení prostředků společnost Contoso přiřadí značky Azure, které definovala během nasazení [infrastruktury Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Společnost Contoso nemá žádné problémy s licencováním na serverech Ubuntu.
-- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. Jedná se o multicloudové řešení správy nákladů, které pomáhá využívat a spravovat Azure a další cloudové prostředky. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.

@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069738"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356268"
 ---
+<!-- cSpell:ignore savision -->
+
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Průvodce monitorováním cloudu: strategie monitorování pro modely nasazení v cloudu
 
 Tento článek zahrnuje naši doporučenou strategii monitorování pro všechny modely nasazení v cloudu, a to na základě následujících kritérií:
@@ -43,7 +45,7 @@ Náš doporučený postup pro monitorování jednotlivých vrstev zásobníku je
 
 <!-- markdownlint-disable MD033 -->
 
-Vrstva | Prostředek | Obor | Metoda
+Vrstva | Prostředek | Rozsah | Metoda
 ---|---|---|----
 Aplikace | Webová aplikace, která běží na platformě .NET, .NET Core, Java, JavaScriptu a Node. js na virtuálním počítači Azure, Azure App Services, Azure Service Fabric, Azure Functions a Azure Cloud Services. | Monitorovat živou webovou aplikaci, aby automaticky zjišťoval anomálie výkonu, identifikovala výjimky a problémy kódu a shromažďují analýzy chování uživatelů. |  Azure Monitor (Application Insights).
 Prostředky Azure – platforma jako služba (PaaS) | Služby Azure Database (například SQL nebo MySQL). | Metriky výkonu Azure Database for SQL. | Povolí protokolování diagnostiky pro streamování dat SQL pro Azure Monitor protokolů.

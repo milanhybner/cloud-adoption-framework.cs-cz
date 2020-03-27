@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 34444c31aa977e6088c7aabbb916a27c008c2b04
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311808"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355217"
 ---
+<!-- cSpell:ignore CISO prepromotion -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Co je potřeba k převedení migrovaného prostředku do produkčního prostředí?

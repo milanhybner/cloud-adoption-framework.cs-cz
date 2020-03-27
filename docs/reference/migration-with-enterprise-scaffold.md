@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311604"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353741"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Existují tři běžné vzory pro registrace do Azure:
 
   ![Zeměpisný vzor](../_images/reference/geographic.png)
 
-I když má každý z těchto vzorů své místo, je pro svou flexibilitu při modelování nákladového modelu organizace stále důležitější, a to i v případě **, že se** odráží rozsah řízení. Microsoft Core Engineering and Operations Group vytvořila efektivní podmnožinu vzorů **organizační jednotky** ve formátu **federální**, **státní**a **místní**. Další informace najdete v tématu [uspořádání předplatných a skupin prostředků v rámci podniku](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
+I když má každý z těchto vzorů své místo, je pro svou flexibilitu při modelování nákladového modelu organizace stále důležitější, a to i v případě **, že se** odráží rozsah řízení. Microsoft Core Engineering and Operations Group vytvořila efektivní podmnožinu vzorů **organizační jednotky** ve formátu **federální**, **státní**a **místní**. Další informace najdete v tématu [uspořádání předplatných a skupin prostředků](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Skupiny pro správu Azure
 
@@ -216,7 +216,7 @@ Sada Secure DevOps Kit for Azure (AzSK) je kolekce skriptů, nástrojů, rozší
 
 AzSK je bohatá sada nástrojů, skriptů a informací, které jsou důležitou součástí úplného plánu zásad správného řízení Azure a jejich zahrnutí do vašeho uživatelského rozhraní je důležité pro podporu vašich organizací pro řízení rizik.
 
-### <a name="azure-update-management"></a>Update Management Azure
+### <a name="azure-update-management"></a>Azure Update Management
 
 Jedna z klíčových úloh, které můžete udělat, abyste zajistili bezpečnost svého prostředí, zajistíte, aby byly servery opraveny s nejnovějšími aktualizacemi. I když existuje mnoho nástrojů k tomu, Azure poskytuje řešení [azure Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) , které řeší identifikaci a zavedení důležitých oprav operačního systému. Používá Azure Automation, popsaný v části [Automatizace](#automate) dále v této příručce.
 

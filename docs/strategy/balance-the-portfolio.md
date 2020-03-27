@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508351"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353468"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "79508351"
 
 Přijetí do cloudu je úsilí pro správu portfolia, které cleverly zamaskováno jako technickou implementaci. Stejně jako u jakéhokoli cvičení řízení portfolia je vyrovnávání portfolia důležité. Na strategické úrovni to znamená vyvážení migrace, inovace a experimentování za účelem co nejlepšího využití cloudu. V případě, že úsilí o přijetí v cloudu je příliš daleko v jednom směru, složitost zjistí způsob, jakým se snaží přijmout. Tento článek provede čtenáře přístupy k dosažení rovnováhy v portfoliu.
 
-## <a name="general-scope-expansion"></a>Rozšíření obecného rozsahu
+## <a name="general-scope-expansion"></a>Obecné rozšíření rozsahu
 
 Vyvážení portfolia je strategicky v podstatě. Proto je strategický také přístup v tomto článku použitý. Kvůli ukotvení strategie v rozhodnutích vycházejících z dat se v tomto článku předpokládá, že čtenář už vyhodnotil existující [digitální majetek](../digital-estate/index.md) (nebo to právě provádí). Cílem tohoto přístupu je pomoci při vyhodnocování úloh, aby se zajistilo řádné vyvážení v rámci portfolia prostřednictvím kvalitativních otázek a vylepšení portfolia.
 
@@ -105,3 +105,10 @@ Opětovné **hostování:** Opětovné hostování vyžaduje, aby členové tým
 **Vedlejší refaktoring:** Některé aplikace mohou být moderní s menším refaktoringem na úrovni dat nebo aplikací. Tato práce vyžaduje, aby členové týmu nasadili data do cloudových datových platforem nebo provedli drobné změny konfigurace v aplikaci. To může vyžadovat omezenou podporu pro odborníky na problematiku dat nebo vývoje aplikací. Tato práce se ale podobá práci prováděné implementátory IT při nasazování aplikací třetích stran. Tato práce je vhodná pro tým pro migraci do cloudu nebo tým pro cloudovou strategii. I když tato snaha není zdaleka tak rychlá jako migrace se změnou hostitele, zabere méně času než refaktoring.
 
 Během migrace by se mělo úsilí rozdělit třemi způsoby uvedenými výše a v příslušné iteraci provést vhodným týmem. I když byste portfolio měli rozrůznit, zajistěte také, aby úsilí zůstalo velmi zaměřené a oddělené.
+
+## <a name="next-steps"></a>Další kroky
+
+Seznamte se s tím, jak může [globální rozhodnutí o trhu](./global-markets.md) ovlivnit vaši cestu transformace.
+
+> [!div class="nextstepaction"]
+> [Principy globálních trhů](./global-markets.md)

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341772"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356766"
 ---
 # <a name="engage-through-applications"></a>Zapojení aplikací
 
@@ -105,7 +105,7 @@ V rámci řešení je údržba, což znamená pomalejší řešení. To znamená
 
 V rámci přípravy na celou řadu iterací potřebných k zajištění inovativního řešení je důležité si představit předem. Můžete například minimalizovat provozní zatížení na začátku v procesu tím, že se přihlásíte k možnostem bez serveru. V Azure můžou možnosti aplikace bez serveru zahrnovat [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) nebo [kontejnery](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
-Paralelně poskytuje Azure možnosti pro data transakcí bez serveru, které také omezují režijní náklady. [Seznam databázových produktů](/azure/) poskytuje možnosti pro hostování dat bez nutnosti celé datové platformy.
+Paralelně poskytuje Azure možnosti pro data transakcí bez serveru, které také omezují režijní náklady. [Katalog produktů Azure](https://docs.microsoft.com/azure) poskytuje možnosti databáze, které hostují data bez nutnosti celé datové platformy.
 
 ## <a name="next-steps"></a>Další kroky
 

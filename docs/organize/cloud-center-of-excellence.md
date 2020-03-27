@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092658"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355041"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>Vedoucí centrum cloudu
 
 Provozní a technické flexibility představují základní cíle většiny IT organizací. Cloudová centra vynikajících funkcí (CCoE) je funkce, která vytváří rovnováhu mezi rychlostí a stabilitou.
@@ -59,7 +61,7 @@ CCoE je funkce, kterou si zaměstnanci připracovali čtyřmi týmy pro vysokou 
 
 ## <a name="solutions-and-controls"></a>Řešení a ovládací prvky
 
-Každý člen CCoEu se vystavuje pomocí porozumění potřebným omezením, rizikům a ochranám, které vedly k aktuální sadě ovládacích prvků IT. Kolektivní úsilí služby CCoE by mělo toto porozumění do nativních nebo hybridních řešení nebo ovládacích prvků, které umožňují požadované výsledky samoobslužné služby, zapínat. Při vytváření řešení se sdílí s různými týmy ve formě ovládacích prvků nebo automatizace, které slouží jako guardrails pro různé úsilí. Tyto guardrailsy usnadňují směrování aktivit v oblasti bezplatného toku různých týmů a zároveň přiděluje zodpovědnost účastníkům v různých případech migrace nebo inovace.
+Každý člen CCoEu se vystavuje pomocí porozumění potřebným omezením, rizikům a ochranám, které vedly k aktuální sadě ovládacích prvků IT. Kolektivní úsilí služby CCoE by mělo toto porozumění do nativních nebo hybridních řešení nebo ovládacích prvků, které umožňují požadované výsledky samoobslužné služby, zapínat. Při vytváření řešení se sdílí s různými týmy ve formě ovládacích prvků nebo automatizovaných procesů, které slouží jako guardrails pro různé úsilí. Tyto guardrailsy usnadňují směrování aktivit v oblasti bezplatného toku různých týmů a zároveň přiděluje zodpovědnost účastníkům v různých případech migrace nebo inovace.
 
 Příklady tohoto přechodu:
 

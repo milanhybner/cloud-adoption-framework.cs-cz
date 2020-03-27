@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312080"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353840"
 ---
+<!-- cSpell:ignore architected ITIL -->
+
 # <a name="approve-architecture-changes-before-migration"></a>Schválení změn architektury před migrací
 
 Během procesu posuzování migrace prochází každá úloha vyhodnocením, návrhem architektury a odhadem, aby pro ni bylo možné připravit plán budoucího stavu. Některé úlohy můžou být migrovány do cloudu bez změny architektury. Pokud zachováte místní konfiguraci a architekturu, snížíte tím riziko a zjednodušíte postup migrace. Bohužel každá aplikace nepoběží v cloudu beze změn architektury. Pokud potřebujete změnit architekturu, pomůže vám tento článek změnu klasifikovat a najdete v něm také pokyny, jak správně schvalovat aktivity.

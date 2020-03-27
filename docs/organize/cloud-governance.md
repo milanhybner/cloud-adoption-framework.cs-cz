@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093888"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355005"
 ---
 # <a name="cloud-governance-capabilities"></a>Možnosti zásad správného řízení cloudu
 
@@ -46,13 +46,13 @@ Tyto úlohy obvykle provádí funkce zásad správného řízení cloudu na měs
 **Úlohy prvotního plánování:**
 
 - Pochopení [obchodních rizik](../govern/policy-compliance/risk-tolerance.md) zavedených podle plánu
-- Vyjádření [tolerance firmy pro riziko](../govern/policy-compliance/risk-tolerance.md)
+- Představuje [toleranci firmy při riziku](../govern/policy-compliance/risk-tolerance.md) .
 - Podpora při vytváření MVP pro zásady [správného řízení](../govern/guides/index.md)
 
 **Probíhající měsíční úkoly:**
 
 - Pochopení [obchodních rizik](../govern/policy-compliance/risk-tolerance.md) zavedených během každé vydané verze
-- Vyjádření [tolerance firmy pro riziko](../govern/policy-compliance/risk-tolerance.md)
+- Představuje [toleranci firmy při riziku](../govern/policy-compliance/risk-tolerance.md) .
 - Podpora při přírůstkovém zlepšování [zásad a požadavků na dodržování předpisů](../govern/policy-compliance/index.md)
 
 ## <a name="meeting-cadence"></a>Tempo schůzky
@@ -90,7 +90,7 @@ I když je rozdíl malý, je důležité rozlišovat při sestavování jazykov�
 
 Strážci cloudu začínají pokročilejším způsobem správného řízení, který urychluje nasazování platforem a usnadňuje týmům jejich potřebám v oblasti životního prostředí, takže se můžou rychleji pohybovat. Příklady těchto pokročilejších funkcí se zobrazují v přírůstkových vylepšeních MVP pro řízení MVP, jako je například [zlepšení standardních hodnot zabezpečení](../govern/guides/complex/security-baseline-improvement.md).
 
-**Cloudové akcelerátory:** Cloudové strážce a cloudové starají přirozeně vylove skripty a automatizace, které urychlují nasazení prostředí, platforem nebo dokonce součástí různých aplikací. Dodržení a sdílení těchto skriptů kromě centralizovaných odpovědností zásad správného řízení vyvíjí pro tyto architekty v celém IT vysokou úroveň dodržování.
+**Cloudové akcelerátory:** Strážce cloudu a cloudové starají přirozeně vylove skripty a automatizované procesy, které urychlují nasazení prostředí, platforem nebo dokonce součástí různých aplikací. Dodržení a sdílení těchto skriptů kromě centralizovaných odpovědností zásad správného řízení vyvíjí pro tyto architekty v celém IT vysokou úroveň dodržování.
 
 Specialisté na zásady správného řízení, kteří otevřou své spravované skripty, můžou rychleji poskytovat technologické projekty a vkládat zásady správného řízení do architektury úloh. Tento vliv na úlohy a podporu dobrých vzorů návrhu zvyšují akcelerátory cloudu na vyšší úroveň specialisty na zásady správného řízení.
 

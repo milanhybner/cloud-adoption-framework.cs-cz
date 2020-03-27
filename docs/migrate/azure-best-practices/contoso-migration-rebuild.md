@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223091"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356341"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -78,7 +78,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Použití modelu PaaS a bezserverového řešení pro kompletní nasazení významně zkracuje čas potřebný pro správu, kterou společnost Contoso musí poskytovat.<br/><br/> Přechod na architekturu mikroslužeb umožňuje společnosti Contoso snadné rozšiřování řešení v průběhu času.<br/><br/> Nové funkce je možné zprovoznit online, aniž by došlo k narušení základů kódu existujících řešení.<br/><br/> Webová aplikace bude nakonfigurována s několika instancemi bez kritického prvku způsobujícího selhání.<br/><br/> Bude povolené automatické škálování, aby aplikace mohla zpracovávat různé objemy přenosů dat.<br/><br/> Díky přechodu na služby PaaS může společnost Contoso vyřadit z provozu zastaralá řešení spouštěná v operačním systému Windows Server 2008 R2.<br/><br/> Databáze Cosmos DB má integrovanou odolnost proti chybám, která nevyžaduje žádné konfigurování ze strany společnosti Contoso. To znamená, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -101,7 +101,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Ukládá image pro všechny typy kontejnerových nasazení. | Náklady závisí na funkcích, úložišti a délce využití. [Další informace](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Umožňuje rychlé sestavení, nasazení a škálování webových, mobilních a API aplikací na podnikové úrovni, které běží na libovolné platformě. | Plány služby App Service se účtují po sekundách. [Další informace](https://azure.microsoft.com/pricing/details/app-service/windows).
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 
 Tady je seznam toho, co Contoso k realizaci tohoto scénáře potřebuje:
 
@@ -375,19 +375,19 @@ Správci společnosti Contoso zřídí databázi Cosmos, která se bude použív
 
 1. Vytvoří prostředek **Azure Cosmos DB** v Azure Marketplace.
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
+    ![Databáze Cosmos](./media/contoso-migration-rebuild/cosmos1.png)
 
 2. Určí název (**contososmarthotel**), vyberte rozhraní SQL API a umístěte ho do skupiny produkčních prostředků ContosoRG v oblasti Main východní USA 2.
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
+    ![Databáze Cosmos](./media/contoso-migration-rebuild/cosmos2.png)
 
 3. Do databáze přidají novou kolekci s výchozí kapacitou a propustností.
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos3.png)
+    ![Databáze Cosmos](./media/contoso-migration-rebuild/cosmos3.png)
 
 4. Poznamenají si informace o připojení k databázi pro budoucí referenci.
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos4.png)
+    ![Databáze Cosmos](./media/contoso-migration-rebuild/cosmos4.png)
 
 ### <a name="provision-computer-vision"></a>Zřízení počítačového zpracování obrazu
 
@@ -395,15 +395,15 @@ Správci společnosti Contoso zřídí rozhraní API pro počítačové zpracov�
 
 1. Vytvoří instanci **Computer Vision** pro počítačové zpracování obrazu v Azure Marketplace.
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision1.png)
+     ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision1.png)
 
 2. Zřídí rozhraní API (**smarthotelpets**) ve skupině produkčních prostředků ContosoRG v hlavní oblasti USA – východ 2.
 
-    ![Computer Vision](./media/contoso-migration-rebuild/vision2.png)
+    ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision2.png)
 
 3. Uloží nastavení připojení rozhraní API do textového souboru pro pozdější referenci.
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision3.png)
+     ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision3.png)
 
 ### <a name="provision-the-azure-web-app"></a>Zřízení webové aplikace Azure
 
@@ -622,7 +622,7 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
+- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
 
 ## <a name="conclusion"></a>Závěr
 
@@ -634,6 +634,6 @@ Microsoft Learn je nový přístup ke studiu. Připravenosti na nové dovednosti
 
 Tady je několik příkladů přizpůsobených studijních cest na Microsoft Learn, které jsou v Azure v souladu s aplikací contoso SmartHotel360.
 
-[Nasazení webu do Azure pomocí Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): webové aplikace v Azure umožňují publikování a správu webu snadno, aniž byste museli pracovat s podkladovým serverem, úložištěm nebo síťovými prostředky. Místo toho se můžete soustředit na funkce webu a spolehnout se, že zabezpečený přístup k vašemu webu poskytne robustní platforma Azure.
+[Nasazení webu do Azure pomocí Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service): webové aplikace v Azure umožňují publikování a správu webu snadno, aniž byste museli pracovat s podkladovým serverem, úložištěm nebo síťovými prostředky. Místo toho se můžete soustředit na funkce webu a spolehnout se, že zabezpečený přístup k vašemu webu poskytne robustní platforma Azure.
 
-[Zpracování a klasifikace imagí pomocí služeb Azure pro rozpoznávání](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)hlasu: Azure Cognitive Services nabízí předem sestavené funkce, které ve vašich aplikacích umožní funkce počítačové vize. Naučte se používat služby rozpoznávání zraku ke zjišťování tváře, značek a klasifikace obrázků a identifikaci objektů.
+[Zpracování a klasifikace imagí pomocí služeb Azure pro rozpoznávání](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services)hlasu: Azure Cognitive Services nabízí předem sestavené funkce, které ve vašich aplikacích umožní funkce počítačové vize. Naučte se používat služby rozpoznávání zraku ke zjišťování tváře, značek a klasifikace obrázků a identifikaci objektů.

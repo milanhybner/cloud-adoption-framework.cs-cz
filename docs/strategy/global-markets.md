@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337832"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353488"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ Je stejně důležité pochopit vzory využití externích uživatelů, jako jso
 
 ## <a name="next-steps"></a>Další kroky
 
-Po uskutečnění a předání celosvětového rozhodnutí na trhu je tým připraven zahájit [vytváření technických standardů](../digital-estate/index.md) na základě těchto metrik.
-Výsledkem bude [nevyřízené položky transformace nebo nevyřízené položky migrace](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
+Přečtěte si o [dovednostech potřebných během fáze strategie](./suggested-skills.md) vaší cesty k vašemu cloudu.
 
 > [!div class="nextstepaction"]
-> [Posouzení digitální nemovitosti](../digital-estate/index.md)
+> [Dovednosti týkající se strategie](./suggested-skills.md)

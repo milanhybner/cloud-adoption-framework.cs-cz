@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093548"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354870"
 ---
 # <a name="plan-for-cloud-adoption"></a>Plánování přijetí cloudu
 
@@ -36,9 +36,9 @@ Tato řada článků vás provede jednotlivými kroky překladu strategie a úsi
 
 1. **Požadavky:** Před vytvořením plánu potvrďte, že byly dokončeny všechny požadované kroky.
 2. **Definování a stanovení priorit úloh:** Nastavte prioritu prvních 10 úloh pro stanovení počátečních nevyřízených položek pro přijetí.
-3. **Zarovnat prostředky:** Určení prostředků (navrhovaných nebo existujících) potřebných k podpoře prioritních úloh.
-4. **Kontrola racionalizace:** Projděte si rozhodnutí o racionalizaci k upřesnění rozhodnutí o přijetí a umístění: migrace nebo inovace.
-5. **Definování iterací a verzí:** *iterace* jsou časové bloky, které jsou přiděleny k práci. *Verze* jsou definice práce, která se má provést před aktivací změny v produkčních procesech.
+3. **Zarovnat prostředky k úlohám:** Určení prostředků (navrhovaných nebo existujících) potřebných k podpoře prioritních úloh.
+4. **Kontrola racionalizace rozhodnutí:** Projděte si rozhodnutí o racionalizaci k upřesnění rozhodnutí o přijetí a umístění: migrace nebo inovace.
+5. **Navázat iterace a plány vydání:** *iterace* jsou časové bloky, které jsou přiděleny k práci. *Verze* jsou definice práce, která se má provést před aktivací změny v produkčních procesech.
 6. **Odhadnout časové osy:** Vytvořte hrubou časovou osu pro účely plánování vydání na základě počátečních odhadů.
 
 ## <a name="next-steps"></a>Další kroky

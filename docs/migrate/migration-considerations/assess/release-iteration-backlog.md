@@ -1,18 +1,18 @@
 ---
 title: Backlog iterace a vydání
-description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak vytvořit mezibacklog a nevyřízenou verzi pro uspořádání úkolů.
+description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, jak vytvořit iteraci a nevyřízené položky pro uspořádání úkolů.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7204511d8b3f83d18f8179e04c4fd400151a7f3a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4cbf0c7760ed2c471e1b462ae2712c544e9d0e8c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094167"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355501"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Správa změn v průběhu přírůstkové migrace
 

@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312681"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354536"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Sledování nákladů napříč organizačními jednotkami, prostředími a projekty
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312681"
 
 Řízení nákladů, podobně jako zásady správného řízení a jiné konstrukce správy, závisí na dobře spravovaném prostředí. Vytvoření takového prostředí (zejména složitého) vyžaduje konzistentní procesy v klasifikaci a organizaci všech prostředků.
 
-Prostředky zahrnují všechny virtuální počítače, zdroje dat a aplikace nasazené do cloudu. Azure poskytuje několik mechanismů pro klasifikaci a organizování prostředků. V tématu o [škálování s více předplatnými Azure](../azure-best-practices/scaling-subscriptions.md) naleznete podrobné informace o možnostech organizace prostředků na základě více kritérií za účelem vytvoření dobře spravovaného prostředí. Tento článek se zaměřuje na použití základních konceptů Azure k zajištění viditelnosti nákladů na cloud.
+Prostředky zahrnují všechny virtuální počítače, zdroje dat a aplikace nasazené do cloudu. Azure poskytuje několik mechanismů pro klasifikaci a organizování prostředků. [Uspořádejte a spravujte možnosti podrobností o předplatných Azure](../azure-best-practices/organize-subscriptions.md) pro uspořádání prostředků na základě více kritérií k vytvoření dobře spravovaného prostředí. Tento článek se zaměřuje na použití základních konceptů Azure k zajištění viditelnosti nákladů na cloud.
 
 ### <a name="classification"></a>Classification
 
@@ -58,15 +58,16 @@ Diagram zobrazuje osvědčené postupy, ale nezahrnuje tyto možnosti:
 
 Zbývající část tohoto článku předpokládá použití osvědčeného postupu popsaného v předchozím diagramu. Následující články vám můžou pomoct aplikovat přístup k organizaci prostředků, který nejlépe vyhovuje vaší společnosti:
 
-- [Škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md)
-- [Nasazení MVP pro zásady správného řízení k řízení standardů dobře spravovaného prostředí](../../govern/guides/complex/index.md)
+- [Škálování prostředí Azure s několika předplatnými](../azure-best-practices/scale-subscriptions.md)
+- [Uspořádání a Správa předplatných Azure](../azure-best-practices/organize-subscriptions.md)
+- [Nasazení MVP MVP pro řízení standardů dobře spravovaných prostředí](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Poskytnutí správné úrovně přístupu k nákladům
 
 Správa nákladů je týmová aktivita. Část připravenosti organizace v architektuře přechodu na cloud definuje malý počet základních týmů a popisuje, jak tyto týmy podporují přechod na cloud. Tento článek vysvětluje definice týmů a definuje rozsah a role, které mají být přiřazeny členům každého týmu, kvůli zajištění správné úrovně viditelnosti dat správy nákladů.
 
-- *Role* definují, co může uživatel provádět s různými prostředky.
-- *Rozsah* definuje, se kterými prostředky (uživatel, skupina, instanční objekt nebo spravovaná identita) uživatel může tyto akce provádět.
+- **Role** definují, co může uživatel provádět s různými prostředky.
+- **Rozsah** definuje, se kterými prostředky (uživatel, skupina, instanční objekt nebo spravovaná identita) uživatel může tyto akce provádět.
 
 Obecně doporučujeme použít při přidělování osob k různým rolím a rozsahům model s minimálním oprávněním.
 
