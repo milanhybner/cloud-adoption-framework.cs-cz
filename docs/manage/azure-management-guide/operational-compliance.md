@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094734"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356452"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Další informace najdete v tématu [Řešení Update Management](https://docs.m
 >
 > Existují dva přístupu k nasazení:
 >
-> - [Jeden virtuální počítač](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [Celé předplatné](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [Jeden virtuální počítač](../../manage/azure-server-management/onboard-single-vm.md)
+> - [Celé předplatné](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Před pokračováním v práci s řešením Update Management byste měli podle jednoho postupovat.
 
@@ -69,7 +69,7 @@ Další informace najdete v tématu [Řešení Update Management](https://docs.m
 
 Použití zásady pro skupinu prostředků:
 
-1. Přejděte do služby [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Přejděte do služby [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Vyberte **Účty služby Automation** a zvolte jeden z uvedených účtů.
 1. Přejděte na **Správu konfigurace**.
 1. K řízení stavu a provozního dodržování předpisů spravovaných virtuálních počítačů se dá použít **Inventář**, **Správa změn** a **Konfigurace stavu**.
@@ -78,7 +78,7 @@ Použití zásady pro skupinu prostředků:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

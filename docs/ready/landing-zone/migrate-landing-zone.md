@@ -1,6 +1,5 @@
 ---
 title: Nasazení cílové zóny migrace v Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si, jak cílovou zónu migrace v Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b38d0f17b0b8e96adec4ac461e0dbf8337dc0089
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed7e64e2c18187621f2c7703b5b1d9f2056997ea
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354133"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392627"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -54,11 +53,11 @@ V podrobném plánu cílové zóny jsou zastoupena následující rozhodnutí.
 | Návrh předplatného          | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Vytvoření počátečních předplatných](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | Skupiny prostředků              | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Škálování předplatných](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | Skupiny pro správu            | Neuvedeno – Navrženo pro jedno produkční předplatné.                                              | [Uspořádání a Správa předplatných](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| Data                         | Není k dispozici                                                                                               | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
-| Úložiště                      | Není k dispozici                                                                                               | [Pokyny k Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
-| Standardy pojmenování a označování | Není k dispozici                                                                                               | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
-| Správa nákladů              | Není k dispozici                                                                                               | [Sledování nákladů](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
-| Compute                      | Není k dispozici                                                                                               | [Možnosti služby Compute](../considerations/compute-options.md)                                                                                                                                                                                                                               |
+| Data                         | neuvedeno                                                                                               | [Výběr správné možnosti SQL Server v dokumentaci k Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) a [Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
+| Úložiště                      | neuvedeno                                                                                               | [Pokyny k Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
+| Standardy pojmenování a označování | neuvedeno                                                                                               | [Osvědčené postupy pojmenování a označování](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
+| Správa nákladů              | neuvedeno                                                                                               | [Sledování nákladů](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
+| Compute                      | neuvedeno                                                                                               | [Možnosti služby Compute](../considerations/compute-options.md)                                                                                                                                                                                                                               |
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Přizpůsobení nebo nasazení cílové zóny
 

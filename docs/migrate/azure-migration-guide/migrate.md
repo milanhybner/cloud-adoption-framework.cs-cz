@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312335"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353898"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ S procesem migrace vám může pomoct několik nástrojů a služeb od nezávisl
 
 UnifyCloud je služba ISV, která poskytuje nástroje pro automatizaci, migraci a modernizaci.
 
-[Další informace](https://www.unifycloud.com/)
+[Další informace](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn je nový přístup ke studiu. Připravenosti na nové úkoly tý
 
 Tady je příklad přizpůsobeného studijního programu na Microsoft Learn, který doplňuje doprovodné materiály pro DevOps v architektuře přechodu na cloud.
 
-[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení.
+[Vytváření aplikací pomocí Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops) Spolupracujte s ostatními a sestavujte své aplikace pomocí Azure Pipelines a GitHubu. Spouštějte v kanálu automatizované testy, abyste ověřili kvalitu kódu. Vyhledávejte ve zdrojovém kódu a komponentách třetích stran potenciální ohrožení zabezpečení. Definujte více kanálů, které pracují společně při sestavování aplikace. Sestavujte aplikace s využitím agentů hostovaných Microsoftem i vlastních agentů sestavení.
 
 # <a name="cost-management"></a>[Správa nákladů](#tab/ManageCost)
 

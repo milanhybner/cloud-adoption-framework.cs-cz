@@ -1,23 +1,22 @@
 ---
 title: Aspekty cílových zón Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zjistěte, jakým způsobem cílové zóny poskytují základní stavební bloky libovolného prostředí přechodu na cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092970"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392656"
 ---
 # <a name="first-landing-zone"></a>První cílová zóna
 
-Infrastruktura jako kód je přirozený přechod během většiny úsilí o přijetí do cloudu. Nasazení první zóny pro vykládku v cloudu je obvyklým výchozím bodem přesunu do prostředí založeného na kódu. Tento článek vám pomůže pochopit pojem _cílové zóny_ a rozhodnout, která cílová zóna je nejvhodnější pro vaše aktuální potřeby přijetí.
+Infrastruktura jako kód představuje přirozený přechod během většiny snah o přechod na cloud. Nasazení první zóny pro vykládku v cloudu je obvyklým výchozím bodem přesunu do prostředí založeného na kódu. Tento článek vám pomůže pochopit pojem _cílové zóny_ a rozhodnout, která cílová zóna je nejvhodnější pro vaše aktuální potřeby přijetí.
 
 ## <a name="code-first-approach-to-landing-zones"></a>Přístup z kódu na zóny pro vykládku
 
@@ -47,10 +46,10 @@ Výběr první cílové zóny závisí na počtu proměnných. Následující m�
 
 V následující tabulce jsou uvedené stejné zóny pro vykládku z mírně odlišné perspektivy, aby bylo možné seznámení s více technickými procesy rozhodování.
 
-| Cílová zóna                                 | Rozbočovač                          | Paprsku    | Cloudový model | Technologie      |
+| Cílová zóna                                 | Centrum                          | Paprsku    | Cloudový model | Technologie      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [Migrace CAF](./migrate-landing-zone.md)     | Vyžaduje se refaktoring.            | Zahrnuto | Jenom Azure  | Azure Blueprint |
-| [CAF Terraformu](./terraform-landing-zone.md) | Zahrnuto v modulu VDC       | Zahrnuto | Více cloudů  | Terraform       |
+| [Migrace CAF](./migrate-landing-zone.md)     | Vyžaduje se refaktoring.            | Zahrnuje | Jenom Azure  | Azure Blueprint |
+| [CAF Terraformu](./terraform-landing-zone.md) | Zahrnuto v modulu VDC       | Zahrnuje | Více cloudů  | Terraform       |
 
 ## <a name="next-steps"></a>Další kroky
 

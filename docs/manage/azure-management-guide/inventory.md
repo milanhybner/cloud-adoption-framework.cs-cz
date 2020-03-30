@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0caf14e402c2c91b1c7b297df7f648d924f9e449
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092128"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356506"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventarizace a získání přehledu v Azure
 
@@ -103,7 +103,7 @@ Další informace najdete v [dokumentaci ke službě Azure Service Health](https
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.OperationalInsights%2Fworkspaces]" submitText="Explore Azure Monitor" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.OperationalInsights%2FWorkspaces]" submitText="Explore Azure Monitor" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -174,8 +174,8 @@ Pokud chcete povolit řešení, musíte nakonfigurovat pracovní prostor Log Ana
 
 Existují dva přístupu k nasazení:
 
-- [Jeden virtuální počítač](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-- [Celé předplatné](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+- [Jeden virtuální počítač](../../manage/azure-server-management/onboard-single-vm.md)
+- [Celé předplatné](../../manage/azure-server-management/onboard-at-scale.md)
 
 Jednotlivé články vás provedou postupem nasazení těchto řešení:
 

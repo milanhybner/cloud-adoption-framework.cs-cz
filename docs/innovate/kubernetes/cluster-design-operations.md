@@ -1,6 +1,5 @@
 ---
-title: Návrh a operace clusteru
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Návrh a provoz clusterů
 description: Seznamte se s Kubernetes v rozhraní pro přijetí cloudu pro návrh a operace clusteru.
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356554"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392736"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
-# <a name="cluster-design-and-operations"></a>Návrh a operace clusteru
+# <a name="cluster-design-and-operations"></a>Návrh a provoz clusterů
 
-Identifikujte konfiguraci clusteru a návrh sítě. Budoucí škálovatelnost díky automatizaci zřizování infrastruktury. Udržujte vysokou dostupnost díky plánování kontinuity podnikových aplikací a zotavení po havárii.
+Zjistěte vše nezbytné pro konfiguraci clusterů a návrh sítě. Budoucí škálovatelnost díky automatizaci zřizování infrastruktury. Udržujte vysokou dostupnost díky plánování pro zajištění provozní kontinuity a zotavení po havárii.
 
 ## <a name="plan-train-and-proof"></a>Plánování, výuka a kontrola
 
@@ -36,7 +35,7 @@ Po spuštění vám kontrolní seznam a prostředky pomůžou naplánovat návrh
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Zdroje a prostředky |
+> | Kontrolní seznam  | Zdroje |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Identifikujte požadavky na návrh sítě.** Pochopení požadavků na návrh sítě clusterů, porovnání síťových modelů a výběr modulu plug-in Kubernetes Networking, který vyhovuje vašim potřebám.    | [Kubenet a Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Používání sítě kubenet s vlastními rozsahy IP adres ve službě Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurace sítě Azure CNI ve službě Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Zabezpečení návrhu sítě pro cluster AKS](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **Vytvořte více fondů uzlů.** Pokud chcete podporovat aplikace, které mají různé výpočetní prostředky nebo požadavky na úložiště, můžete nakonfigurovat cluster s několika fondy uzlů. Například použijte další fondy uzlů k poskytnutí GPU pro aplikace náročné na výpočetní výkon nebo přístup k vysoce výkonnému úložišti SSD.   | [Vytvoření a Správa fondů více uzlů pro cluster ve službě Azure Kubernetes](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
@@ -55,7 +54,7 @@ Při přípravě aplikace na produkční prostředí byste měli implementovat m
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Zdroje a prostředky                                                                                                     |
+> | Kontrolní seznam  | Zdroje                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automatizujte zřizování clusteru.** Díky infrastruktuře jako kódu můžete automatizovat zřizování infrastruktury a zajistit tak větší odolnost během katastrof a získat flexibilitu pro rychlé nasazení infrastruktury podle potřeby.     | [Vytvoření clusteru Kubernetes pomocí služby Azure Kubernetes Service pomocí Terraformu](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks)|
 > | **Plánování dostupnosti pomocí rozpočtů přerušení pod.** Chcete-li zachovat dostupnost aplikací, definujte v podsystému soubory PDB, aby bylo zajištěno, že během selhání hardwaru nebo upgrady clusteru bude v clusteru k dispozici minimální počet lusků. | [Plánování dostupnosti pomocí rozpočtů přerušení pod](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)  |
@@ -75,7 +74,7 @@ Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat p
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Zdroje a prostředky |
+> | Kontrolní seznam  | Zdroje |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automaticky Škálujte cluster tak, aby splňoval požadavky aplikace.** Aby se zajistilo splnění požadavků aplikace, může být potřeba upravit počet uzlů, které spouštějí vaše úlohy automaticky pomocí automatického škálování clusteru. | [Konfigurace automatického škálování clusteru Kubernetes](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
 > | **Plán pro provozní kontinuitu a zotavení po havárii.** Naplánujte nasazení ve více oblastech, vytvořte plán migrace úložiště a povolte geografickou replikaci pro Image kontejnerů. | [Osvědčené postupy pro nasazení ve více oblastech](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry geografickou replikaci](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |

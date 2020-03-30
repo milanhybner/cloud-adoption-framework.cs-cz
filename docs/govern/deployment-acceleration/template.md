@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6b859de12681e93912f934f6aa5e55c42fcfb9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171391"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392593"
 ---
 # <a name="deployment-acceleration-template"></a>Šablona akcelerace nasazení
 
@@ -24,11 +24,7 @@ Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro 
 > [!IMPORTANT]
 > Tato šablona je omezená ukázka. Než tuto šablonu aktualizujete tak, aby odrážela vaše požadavky, měli byste si projít následující kroky, které vám umožní definovat platný princip akcelerace nasazení v rámci strategie zásad správného řízení cloudu.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx">Stáhnout šablonu pravidla zásad správného řízení</a>
-
-<!-- markdownlint-enable MD033 -->
+[Stažení šablony pravidla zásad správného řízení](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Další kroky
 

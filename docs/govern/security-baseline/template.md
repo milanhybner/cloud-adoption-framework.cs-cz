@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707165"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392777"
 ---
 # <a name="security-baseline-template"></a>Šablona standardních hodnot zabezpečení
 
@@ -24,11 +24,7 @@ Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro 
 > [!IMPORTANT]
 > Tato šablona je omezená ukázka. Než tuto šablonu aktualizujete tak, aby odrážela vaše požadavky, měli byste si projít následující kroky pro definování efektivního pravidla směrného plánu zabezpečení v rámci strategie zásad správného řízení cloudu.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx">Stáhnout šablonu pravidla zásad správného řízení</a>
-
-<!-- markdownlint-enable MD033 -->
+[Stažení šablony pravidla zásad správného řízení](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Další kroky
 

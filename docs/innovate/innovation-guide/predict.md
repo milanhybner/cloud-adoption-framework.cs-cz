@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: adb39a25cfb232b19bd983e5d4e0ab7d7370add1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170966"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356599"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Seznam dostupných služeb a požadovaný rozsah trénování najdete v tématu 
 
 Použití rozhraní API služeb Cognitive Services:
 
-1. Na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) přejděte do části **Cognitive Services**.
+1. Na webu [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) přejděte do části **Cognitive Services**.
 2. Vyberte **Přidat** a na webu Azure Marketplace vyhledejte rozhraní API služeb Cognitive Services.
 3. Proveďte jednu z následujících akcí:
    - Pokud znáte název služby, kterou chcete použít, zadejte ho do pole **Hledat na Marketplace**.
@@ -58,7 +58,7 @@ Použití rozhraní API služeb Cognitive Services:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts]" submitText="Go to Cognitive Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -66,7 +66,7 @@ Použití rozhraní API služeb Cognitive Services:
 
 ::: zone target="docs"
 
-Přejděte přímo na Cognitive Services na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts).
+Přejděte přímo na Cognitive Services na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts).
 
 ::: zone-end
 
@@ -80,7 +80,7 @@ Pokud existující modely v rámci služeb Cognitive Services neodpovídají vá
 
 Pomocí nástroje Azure Machine Learning Studio můžete následujícím způsobem vytvořit model a experimentovat s ním:
 
-1. Na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) přejděte do části **Azure Machine Learning Studio**.
+1. Na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) přejděte do části **Azure Machine Learning Studio**.
 2. Vyberte **Vytvořit pracovní prostor Machine Learning Studio** a pak podle zobrazených výzev vytvořte pracovní prostor.
 
    Nový pracovní prostor poskytuje rozhraní podporující přetahování, které umožňuje vytvořit model a experimentovat s ním – jde o alternativu k podrobnému tréninku.
@@ -89,7 +89,7 @@ Pomocí nástroje Azure Machine Learning Studio můžete následujícím způsob
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -97,7 +97,7 @@ Pomocí nástroje Azure Machine Learning Studio můžete následujícím způsob
 
 ::: zone target="docs"
 
-Přejděte přímo na Azure Machine Learning Studio na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces).
+Přejděte přímo na Azure Machine Learning Studio na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces).
 
 ::: zone-end
 
@@ -117,7 +117,7 @@ Odborník přes data může pomocí služby Azure Machine Learning Service natr�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -125,7 +125,7 @@ Odborník přes data může pomocí služby Azure Machine Learning Service natr�
 
 ::: zone target="docs"
 
-Přejděte přímo na Azure Machine Learning Studio na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces).
+Přejděte přímo na Azure Machine Learning Studio na webu [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces).
 
 ::: zone-end
 

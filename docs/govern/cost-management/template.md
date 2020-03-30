@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708797"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392486"
 ---
 # <a name="cost-management-template"></a>Šablona Cost Management
 
@@ -24,11 +24,7 @@ Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro 
 > [!IMPORTANT]
 > Tato šablona je omezená ukázka. Než tuto šablonu aktualizujete tak, aby odrážela vaše požadavky, měli byste si projít následující kroky, které vám umožní definovat platný obor Cost Management v rámci strategie zásad správného řízení pro Cloud.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">Stáhnout šablonu pravidla zásad správného řízení</a>
-
-<!-- markdownlint-enable MD033 -->
+[Stažení šablony pravidla zásad správného řízení](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Další kroky
 

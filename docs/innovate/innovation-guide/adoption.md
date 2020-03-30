@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891949"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356672"
 ---
 ::: zone target="docs"
 
@@ -56,7 +56,7 @@ Pokud chcete zobrazit kvantitativní data aplikací, postupujte takto:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Go to Application Insights" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents]" submitText="Go to Application Insights" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -64,7 +64,7 @@ Pokud chcete zobrazit kvantitativní data aplikací, postupujte takto:
 
 ::: zone target="docs"
 
-Pokud chcete zobrazit data týkající se vašich aplikací, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents).
+Pokud chcete zobrazit data týkající se vašich aplikací, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
 
 ::: zone-end
 
@@ -100,7 +100,7 @@ Pokud chcete zobrazit kvantitativní data vašich rozhraní API, postupujte takt
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -108,7 +108,7 @@ Pokud chcete zobrazit kvantitativní data vašich rozhraní API, postupujte takt
 
 ::: zone target="docs"
 
-Pokud chcete otevřít služby API Management, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice).
+Pokud chcete otevřít služby API Management, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService).
 
 ::: zone-end
 
@@ -140,7 +140,7 @@ Pokud chcete vytvořit projekt DevOps, postupujte takto:
 2. Vyberte **Vytvořit projekt DevOps**.
 3. Vyberte **Modul runtime, architektura a služba**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -169,7 +169,7 @@ Aktuální nasazení zobrazíte v kanálu takto:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -177,7 +177,7 @@ Aktuální nasazení zobrazíte v kanálu takto:
 
 ::: zone target="docs"
 
-Pokud chcete aplikaci zobrazit ve službě App Service, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites).
+Pokud chcete aplikaci zobrazit ve službě App Service, přejděte na web [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites).
 
 ::: zone-end
 

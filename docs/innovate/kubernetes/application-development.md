@@ -1,6 +1,5 @@
 ---
 title: Vývoj a nasazení aplikací
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Přečtěte si o používání Kubernetes v rozhraní cloudu pro přijetí pro vývoj a architekturu aplikací.
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 317119a6bdc2e2057c37c78b773cab5f9052fa81
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356588"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392765"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
 
 # <a name="application-development-and-deployment"></a>Vývoj a nasazení aplikací
 
-Prostudujte si vzory a postupy pro vývoj aplikací, nakonfigurujte kanály DevOps a implementujte osvědčené postupy SRE (site spolehlivost Engineering).
+Prostudujte si vzory a postupy pro vývoj aplikací, nakonfigurujte kanály DevOps a implementujte osvědčené postupy SRE (Site Reliability Engineering).
 
 ## <a name="plan-train-and-proof"></a>Plánování, výuka a kontrola
 
@@ -35,7 +34,7 @@ Jak začít, níže uvedený kontrolní seznam a prostředky vám pomůžou napl
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam | Zdroje a prostředky |
+> | Kontrolní seznam | Zdroje |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Připravte vývojové prostředí.** Nakonfigurujte své prostředí pomocí nástrojů, které potřebujete k vytvoření kontejnerů, a nastavte pracovní postup vývoje. | [Práce s Docker v Visual Studio Code](https://code.visualstudio.com/docs/azure/docker) <br/>[Práce&nbsp;s&nbsp;Kubernetes&nbsp;v&nbsp;Visual&nbsp;Studio Code](https://code.visualstudio.com/docs/azure/kubernetes) <br/> [Úvod do Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/about) |
 > | **Kontejnerizace svoji aplikaci.** Seznamte se s komplexním vývojářským prostředím Kubernetes, včetně aplikačních rozhraní, pracovních postupů vnitřních smyček, architektur pro správu aplikací, CI/CD kanálů, agregace protokolů, monitorování a metriky aplikací. | [Kontejnerizace své aplikace pomocí Docker a Kubernetes (elektronická kniha)](https://azure.microsoft.com/resources/containerize-your-apps-with-docker-and-kubernetes) <br/> [Komplexní vývojové prostředí Kubernetes v Azure (webinář)](https://info.microsoft.com/AU-AzureApp-WBNR-FY20-11Nov-12-ContainerizeYourApplicationswithKubernetesonAzure-SRDEM10557_LP02OnDemandRegistration-ForminBody.html) |
@@ -58,7 +57,7 @@ Při přípravě aplikace na produkční prostředí byste měli implementovat m
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Zdroje a prostředky                                                                                                     |
+> | Kontrolní seznam  | Zdroje                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Nakonfigurujte připravenost a kontroly stavu živých.** Kubernetes používá kontroly připravenosti a živého využívání k tomu, abyste věděli, kdy je vaše aplikace připravená přijmout provoz a kdy je potřeba ji restartovat. Bez definování takových kontrol nebude Kubernetes moct zjistit, jestli je vaše aplikace spuštěná.   | [Živý a kontrol připravenosti](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes) |
 > | **Konfigurace protokolování, monitorování aplikací a upozorňování.** Monitorování kontejnerů je důležité, zejména v případě, že spouštíte produkční cluster ve velkém měřítku, s několika aplikacemi.  Doporučená metoda protokolování pro kontejnery aplikací je zapsána do datových proudů standardního výstupu (stdout) a Standard Error (stderr).   | [Přihlášení Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging) <br/> [Začínáme s monitorováním a upozorňováním na Kubernetes (video)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor pro kontejnery](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Povolení a kontrola protokolů hlavních uzlů Kubernetes ve službě Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/view-master-logs)  <br/> [Zobrazit protokoly Kubernetes, události a metriky pod v reálném čase](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-livedata-overview) |
@@ -79,7 +78,7 @@ Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat p
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Kontrolní seznam  | Zdroje a prostředky                                                                                                     |
+> | Kontrolní seznam  | Zdroje                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Nasaďte bránu API.** Brána API slouží jako přední dveře ke mikroslužbám, rozděluje klienty od vašich mikroslužeb, přidává další vrstvu zabezpečení a snižuje složitost vašich mikroslužeb tím, že odstraňuje zatížení pro zpracování průřezů.     | [Použití Azure API Management s mikroslužbami nasazenými ve službě Azure Kubernetes](https://docs.microsoft.com/azure/api-management/api-management-kubernetes) |
 > | **Nasaďte síť.** Síť nabízí možnosti, jako je Správa provozu, odolnost, zásady, zabezpečení, silná identita a pozorování vašich úloh. Vaše aplikace je oddělená od těchto provozních schopností a síť je přesune z aplikační vrstvy do vrstvy infrastruktury.     | [Jak služba&nbsp;&nbsp;sítě&nbsp;pracovní&nbsp;ve&nbsp;Kubernetes&nbsp;(video)](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s) <br/> [Seznamte se s sítí pro služby](https://docs.microsoft.com/azure/aks/servicemesh-about) <br/> [Použití Istio se službou Azure Kubernetes](https://docs.microsoft.com/azure/aks/servicemesh-istio-about) <br/> [Použití linkeru se službou Azure Kubernetes](https://docs.microsoft.com/azure/aks/servicemesh-linkerd-about) <br/> [Použití Consul se službou Azure Kubernetes](https://docs.microsoft.com/azure/aks/servicemesh-consul-about) |

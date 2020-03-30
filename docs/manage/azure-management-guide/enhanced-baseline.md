@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 223d6bf040987b7266d284d9175b588d08806c9f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092332"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356517"
 ---
+<!-- cSpell:ignore ITSMC -->
+
 # <a name="enhanced-management-baseline-in-azure"></a>Vylepšený směrný plán správy v Azure
 
 První tři disciplíny správy cloudu popisují směrný plán správy. Předchozí články v tomto průvodci představily minimální realizovatelný produkt pro služby správy cloudu, který se označuje jako směrný plán správy. V tomto článku si popíšeme několik běžných vylepšení tohoto směrného plánu.
@@ -74,7 +76,7 @@ Základní jednotkou kódu pro zajištění automatizované nápravy je runbook.
 
 Pokud chcete vytvářet nebo spravovat runbooky:
 
-1. Přejděte do služby [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Přejděte do služby [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Vyberte **Účty služby Automation** a zvolte jeden z uvedených účtů.
 1. Přejděte na **Automatizaci procesů**.
 1. Uvedené možnosti umožňují vytvářet nebo spravovat runbooky, plány a další funkce automatizované nápravy.
@@ -83,7 +85,7 @@ Pokud chcete vytvářet nebo spravovat runbooky:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b17a4aaaaa26d7cc1be33dd95f6a8905e1adc2b
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 71b16800dde767b7b257e4ac8bb63cf4083ddd23
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173199"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392360"
 ---
 # <a name="identity-baseline-template"></a>Šablona standardních hodnot identity
 
@@ -24,11 +24,7 @@ Jak vaše diskuze postupují, použijte strukturu této šablony jako model pro 
 > [!IMPORTANT]
 > Tato šablona je omezená ukázka. Než tuto šablonu aktualizujete tak, aby odrážela vaše požadavky, měli byste si projít následující kroky, které vám umožní definovat platnou pravidla směrného plánu identity v rámci strategie zásad správného řízení cloudu
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx">Stáhnout šablonu pravidla zásad správného řízení</a>
-
-<!-- markdownlint-enable MD033 -->
+[Stažení šablony pravidla zásad správného řízení](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Další kroky
 

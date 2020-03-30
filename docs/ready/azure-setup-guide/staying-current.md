@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225798"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353815"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>Udržování aktuálního stavu s Microsoft Azure
 
 Cloudové platformy, jako je Microsoft Azure, se mění rychleji, než na co je většina organizací zvyklá. Rychlost této změny znamená, že organizace musí přizpůsobit lidi i procesy novému tempu. Pokud zodpovídáte za to, aby organizace tuto změnu stíhala, možná toho občas máte až nad hlavu. Materiály uvedené v této části vám s tímto úkolem pomohou.
@@ -54,9 +56,9 @@ Podrobnější obsah, díky kterému budete mít přehled o Azure, najdete ve zd
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Týdenní videa s inženýry, kteří budují Azure. Předvádějí ukázky, odpovídají na otázky a sdělují své poznatky.
   - Přihlaste se k odběru přes [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Charts](https://azurecharts.com/)*
+- [Azure Charts](https://azurecharts.com)*
   - Tato vizualizace ukazuje všechny aktualizace Azure provedené za posledních šest měsíců. Obsahuje další užitečné grafy a nástroje, které vám pomohou sledovat změny v Azure.
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Sledování verzí a změn funkcí Azure Governance (např. Azure Policy, iniciativy zásad, aliasy zásad a RBAC).
 - [Azure Weekly](https://azureweekly.info)*
   - Tento bulletin, který zajišťuje [endjin](https://endjin.com), obsahuje týdenní shrnutí hlavních zpráv o Microsoft Azure. Obsahuje také zajímavý historický obsah.
