@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092605"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354983"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -110,7 +110,7 @@ Stáhněte si [šablonu strategie a plánování architektury přechodu na cloud
 
 ## <a name="next-steps"></a>Další kroky
 
-Začněte vytvářet plán přechodu na cloud se zaměřením [digitální aktiva](../digital-estate/index.md).
+Seznamte se s [pěti zásadami cloudové racionalizace](../digital-estate/5-rs-of-rationalization.md) a začněte sestavovat plán přechodu na cloud.
 
 > [!div class="nextstepaction"]
-> [Digitální aktiva](../digital-estate/index.md)
+> [Pět zásad cloudové racionalizace](../digital-estate/5-rs-of-rationalization.md)

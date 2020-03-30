@@ -170,8 +170,12 @@ items:
             href: ready/azure-best-practices/index.md
           - name: Organizace prostředků
             items:
+              - name: Vytvoření počátečních předplatných
+                href: ready/azure-best-practices/initial-subscriptions.md
               - name: Škálování s několika předplatnými
-                href: ready/azure-best-practices/scaling-subscriptions.md
+                href: ready/azure-best-practices/scale-subscriptions.md
+              - name: Uspořádání předplatných
+                href: ready/azure-best-practices/organize-subscriptions.md
               - name: Pojmenování a označování
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Sítě

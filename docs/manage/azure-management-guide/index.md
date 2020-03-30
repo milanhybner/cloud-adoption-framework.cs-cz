@@ -1,6 +1,6 @@
 ---
 title: Přehled správy Azure
-description: Prostřednictvím těchto informací o základních nástrojích potřebných pro správu provozních prostředí Azure blíže seznámíte s architekturou přechodu na cloud pro Azure.
+description: Prostřednictvím těchto informací o základních nástrojích potřebných pro správu provozních prostředí Azure se blíže seznámíte s architekturou přechodu na cloud pro Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140282"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356478"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Průvodce správou Azure: Než začnete
-
-> [!NOTE]
-> Tento průvodce je výchozím bodem pro pokyny k inovacím v architektuře přechodu na cloud. Je k dispozici také v Centru rychlého startu Azure. Odkaz na Centrum rychlého startu Azure najdete v tipu v další části tohoto článku.
 
 ::: zone-end
 
@@ -31,7 +28,7 @@ ms.locfileid: "79140282"
 
 ::: zone-end
 
-Průvodce správou Azure pomáhá zákazníkům Azure s vytvořením směrného plánu správy k zajištění konzistence prostředků napříč Azure. Tento průvodce popisuje základní nástroje potřebné pro libovolné provozní prostředí Azure, zejména pro prostředí, která hostují citlivá data. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v [oddílu připravenosti architektury přechodu na cloud](../index.md).
+Průvodce správou Azure pomáhá zákazníkům Azure s vytvořením směrného plánu správy k zajištění konzistence prostředků napříč Azure. Tento průvodce popisuje základní nástroje potřebné pro libovolné provozní prostředí Azure, zejména pro prostředí, která hostují citlivá data. Další informace, osvědčené postupy a důležité informace související s přípravou vašeho cloudového prostředí najdete v architektuře přechodu na cloud v [oddílu věnovaném připravenosti](../index.md).
 
 ## <a name="scope-of-this-guide"></a>Rozsah této příručky
 
@@ -51,9 +48,6 @@ V této příručce se dozvíte, jak nastavit sadu nástrojů pro směrný plán
 Směrný plán správy je minimální sada nástrojů a procesů, které by se měly aplikovat na všechna aktiva v daném prostředí. Do směrného plánu správy je možné zahrnout několik dalších možností. Několik dalších článků urychlí možnosti správy cloudu tím, že se místo všech dostupných možností zaměří jenom na minimální nezbytné možnosti.
 
 ::: zone target="docs"
-
-> [!TIP]
-> Pokud chcete interaktivní prostředí, zobrazte tuto příručku na webu Azure Portal. Na webu Azure Portal přejděte do [Centra rychlého startu Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) a potom vyberte **Průvodce správou Azure**. Potom postupujte podle podrobných pokynů.
 
 Dalším krokem je [inventarizace a zajištění přehledu](./inventory.md).
 

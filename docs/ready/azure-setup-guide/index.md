@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299059"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354481"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -41,10 +41,10 @@ Dozvíte se, jak provést tyto akce:
 >
 > - **Uspořádání prostředků:** Nastavte hierarchii správy pro konzistentní uplatňování řízení přístupu, zásad a dodržování předpisů u skupin prostředků a s využitím značek sledujte související prostředky.
 > - **Správa přístupu:** S využitím správy přístupu na základě role zajistěte, aby uživatelé měli jen ta oprávnění, která skutečně potřebují.
-> - **Správa nákladů a fakturace:** Identifikujte typ vašeho předplatného a zjistěte, jak funguje fakturace, a podívejte se, jak můžete řídit náklady.
+> - **Správa nákladů a fakturace:** Identifikujte typ vašeho předplatného a zjistěte, jak funguje fakturace a jak můžete řídit náklady.
 > - **Plánování z hlediska zásad správného řízení, zabezpečení a dodržování předpisů:** Vynucujte a automatizujte zásady a nastavení zabezpečení, která vám pomůžou splňovat příslušné zákonné požadavky.
-> - **Používání monitorování a generování sestav:** Získejte přehled o prostředcích, který vám pomůže vyhledávat a řešit problémy, optimalizovat výkon nebo získat přehled o chování zákazníků.
-> - **Udržování aktuálního stavu s Azure:** Sledujte aktualizace produktů, abyste mohli aktivně spravovat změny.
+> - **Používání monitorování a generování sestav:** Získejte přehled o zdrojích informací, které vám pomohou vyhledávat a řešit problémy, optimalizovat výkon a získat přehled o chování zákazníků.
+> - **Udržování aktuálního stavu s Azure:** Sledujte aktualizace produktů a zajistěte aktivní přístup ke správě změn.
 
 ::: zone target="docs"
 

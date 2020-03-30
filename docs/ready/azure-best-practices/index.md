@@ -7,25 +7,26 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093563"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354649"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Osvědčené postupy pro připravenost pro Azure
 
-Velkou část zajištění připravenosti pro cloud tvoří zajištění technických dovedností, které personál potřebuje k zahájení úsilí o přechod na cloud a k přípravě cílového prostředí migrace na aktiva a úlohy, které se budou přesouvat do cloudu. Přečtěte si tyto osvědčené postupy a další pokyny, které vašemu týmu pomohou připravit prostředí Azure.
+Připravenost pro cloud vyžaduje zajištění technických dovedností, které personál potřebuje k zahájení úsilí o přechod na cloud a k přípravě cílového prostředí migrace na aktiva a úlohy, které se budou přesouvat do cloudu. Přečtěte si tyto osvědčené postupy a další pokyny, které vašemu týmu pomohou připravit prostředí Azure.
 
 ## <a name="azure-fundamentals"></a>Základy Azure
 
 Uspořádejte a nasaďte vaše aktiva v prostředí Azure.
 
 - [Základní koncepty Azure.](../considerations/fundamental-concepts.md) Seznamte se s klíčovými pojmy a koncepcemi Azure a jejich vzájemnými souvislostmi.
-- [Doporučené zásady označování a vytváření názvů.](../azure-best-practices/naming-and-tagging.md) Projděte si podrobná doporučení k vytváření názvů a označování prostředků. Tato doporučení podporují úsilí o přechod na podnikový cloud.
-- [Škálování s využitím několika předplatných Azure.](../azure-best-practices/scaling-subscriptions.md) Seznámíte se se strategiemi pro škálování s využitím několika předplatných Azure.
-- [Uspořádání prostředků s využitím skupin pro správu Azure.](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Zjistíte, jak skupiny pro správu spravují prostředky, role, zásady a nasazení napříč několika předplatnými.
+- [Vytvoření počátečních předplatných](./initial-subscriptions.md) Vytvořte počáteční sadu předplatných Azure pro zahájení přechodu na cloud.
+- [Škálování prostředí Azure pomocí několika předplatných](../azure-best-practices/scale-subscriptions.md). Seznamte se s důvody a strategiemi pro vytváření dalších předplatných pro škálování prostředí Azure.
+- [Uspořádání prostředků s využitím skupin pro správu Azure.](../azure-best-practices/organize-subscriptions.md) Zjistíte, jak skupiny pro správu spravují prostředky, role, zásady a nasazení napříč několika předplatnými.
+- [Využijte doporučené konvence pro tvorbu názvů a značek](../azure-best-practices/naming-and-tagging.md). Projděte si podrobná doporučení k vytváření názvů a označování prostředků. Tato doporučení podporují úsilí o přechod na podnikový cloud.
 - [Vytvoření konzistentního hybridního cloudu.](../considerations/hybrid-consistency.md) Budete mít možnost vytvořit hybridní cloudová řešení, která poskytují výhody cloudových inovací a současně si zachovávají řadu výhod správy v místním prostředí.
 
 ## <a name="networking"></a>Sítě

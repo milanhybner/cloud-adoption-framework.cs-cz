@@ -1,6 +1,6 @@
 ---
 title: Průvodce rozhodováním ohledně předplatného
-description: Seznamte se se způsoby návrhu předplatného a skupinami pro správu jako základní služby pro uspořádání prostředků během migrací do Azure.
+description: Zorientujte se ve strategiích návrhu předplatných a hierarchiích skupin pro správu pro uspořádání prostředků Azure
 author: alexbuckgit
 ms.author: abuck
 ms.date: 10/17/2019
@@ -8,29 +8,26 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: e733280147a16287e92ab93334111950a2583497
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508028"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355458"
 ---
 # <a name="subscription-decision-guide"></a>Průvodce rozhodováním ohledně předplatného
 
-Efektivní návrh předplatného pomáhá organizacím vytvořit strukturu pro uspořádání prostředků v Azure během přechodu na cloud.
+Efektivní návrh předplatného pomáhá organizacím vytvořit strukturu pro uspořádání a správu prostředků v Azure během přechodu na cloud. Tento průvodce vám pomůže rozhodnout, kdy vytvořit další předplatná a rozšířit hierarchii skupin pro správu v rámci podpory vašich obchodních priorit.
 
-Každý prostředek v Azure, jako je třeba virtuální počítač nebo databáze, je přidružený k předplatnému. Zavádění Azure začíná vytvořením předplatného Azure, jeho přidružením k účtu a nasazením prostředků do tohoto předplatného. Přehled těchto pojmů najdete v článku věnovaném [základní koncepci Azure](../../ready/considerations/fundamental-concepts.md).
+## <a name="prerequisites"></a>Požadavky
 
-Jak se vaše digitální aktiva v Azure budou rozšiřovat, budete pro splnění vašich požadavků pravděpodobně muset vytvořit další předplatná. Azure umožňuje definovat hierarchii skupin pro správu sloužící k uspořádání předplatných a snadno propojovat zásady s odpovídajícími prostředky. Další informace najdete v tématu věnovaném [škálování s využitím několika předplatných Azure](../../ready/azure-best-practices/scaling-subscriptions.md).
+Zavádění Azure začíná vytvořením předplatného Azure, jeho přidružením k účtu a nasazením prostředků, jako jsou virtuální počítače a databáze, do tohoto předplatného. Přehled těchto pojmů najdete v článku věnovaném [základní koncepci Azure](../../ready/considerations/fundamental-concepts.md).
 
-Tady je několik základních příkladů využití skupin pro správu k oddělení různých úloh:
+- [Vytvoření počátečních předplatných](../../ready/azure-best-practices/initial-subscriptions.md)
+- [Vytvořte další předplatná](../../ready/azure-best-practices/scale-subscriptions.md) pro škálování vašeho prostředí Azure.
+- [Uspořádejte a spravujte předplatná](../../ready/azure-best-practices/organize-subscriptions.md) pomocí skupin pro správu Azure.
 
-- **Produkční úlohy v porovnání s neprodukčními:** Některé podniky vytvářejí skupiny pro správu za účelem oddělení svých produkčních a neprodukčních předplatných. Skupiny pro správu těmto uživatelům umožňují snadnější správu rolí a zásad. Například v neprodukčním předplatném můžou mít vývojáři povolený přístup **přispěvatele**, ale v produkčním prostředí můžou mít pouze přístup **čtenáře**.
-- **Interní služby v porovnání s externími službami:** Podobně jako v případě produkčních a neprodukčních úloh podniky pro interní služby a externí služby určené pro zákazníky často mají různé požadavky, zásady a role.
-
-Tento průvodce rozhodováním pomáhá porovnat různé přístupy k uspořádání hierarchie skupin pro správu.
-
-## <a name="subscription-design-patterns"></a>Způsoby návrhu předplatného
+## <a name="modeling-your-organization"></a>Modelování vaší organizace
 
 Protože každá organizace je jiná, jsou skupiny pro správu Azure navržené tak, aby byly flexibilní. Modelování vašich cloudových aktiv tak, aby odráželo hierarchii vaší organizace, pomáhá definovat a aplikovat zásady na vyšších úrovních hierarchie a využívat dědičnost k zajištění toho, že se tyto zásady automaticky uplatní i pro skupiny pro správu, které jsou v hierarchii níž. Přestože se předplatná dají mezi různými skupinami pro správu přesouvat, je vhodné navrhnout takovou počáteční hierarchii skupin pro správu, která odpovídá očekávaným potřebám vaší organizace.
 
@@ -39,53 +36,45 @@ Před dokončením návrhu předplatného také zvažte, jak váš návrh můžo
 > [!NOTE]
 > Smlouvy Enterprise (EA) pro Azure umožňují definovat jinou organizační hierarchii pro fakturační účely. Tato hierarchie se liší od hierarchie skupin pro správu, která se zaměřuje na zajištění modelu dědičnosti pro snadné využití vhodných zásad a řízení přístupu pro vaše prostředky.
 
-Následující modely předplatného odrážejí postupné zvyšování propracovanosti návrhu předplatného. Po nich následuje několik pokročilejších hierarchií, které by vaší organizaci mohly vyhovovat:
+## <a name="subscription-design-strategies"></a>Strategie návrhu předplatného
 
-### <a name="single-subscription"></a>Jedno předplatné
+Vezměte v úvahu následující strategie návrhu předplatného, které vám umožní řešit obchodní priority.
 
-Jedno předplatné na účet může být dostačující pro organizace, které potřebují nasadit malé množství prostředků hostovaných v cloudu. Jedná se o první model předplatného, který implementujete v začátcích přechodu na cloud a který umožňuje méně rozsáhlá experimentální nebo testovací nasazení za účelem prozkoumání jeho možností.
-
-### <a name="production-and-nonproduction-pattern"></a>Model produkčního a neprodukčního prostředí
-
-Když jste připravení nasadit úlohu do produkčního prostředí, měli byste přidat další předplatné. Pomůže vám udržet vaše produkční data a další aktiva mimo prostředí pro vývoj a testování. Můžete také snadno využít dvě různé sady zásad napříč prostředky ve dvou předplatných.
-
-![Model produkčních a neprodukčních předplatných](../../_images/ready/initial-subscription-model.png)
-
-### <a name="workload-separation-pattern"></a>Model oddělení úloh
+### <a name="workload-separation-strategy"></a>Strategie oddělení úloh
 
 Když organizace přidává do cloudu nové úlohy, může mít různé vlastnictví nebo základní rozdělení zodpovědností za následek několik předplatných v produkčních i neprodukčních skupinách pro správu. Přestože tento přístup zajišťuje základní oddělení úloh, nevyužívá významných výhod modelu dědičnosti k automatickému uplatnění zásad napříč podmnožinou předplatných.
 
-![Model oddělení úloh](../../_images/ready/management-group-hierarchy-v2.png)
+![Strategie oddělení úloh](../../_images/ready/management-group-hierarchy-v2.png)
 
-### <a name="application-category-pattern"></a>Model kategorií aplikací
+### <a name="application-category-strategy"></a>Strategie kategorií aplikací
 
-Jak se cloudová stopa organizace zvětšuje, obvykle se vytvářejí další předplatná, a to kvůli zajištění podpory aplikací, které se zásadně liší z hlediska obchodní důležitosti, požadavků na dodržování předpisů, řízení přístupu nebo požadavků na ochranu dat. Na základě modelu produkčních a neprodukčních předplatných jsou předplatná podporující tyto aplikační kategorie uspořádaná v rámci odpovídající produkční nebo neprodukční skupiny pro správu. Tato předplatná obvykle vlastní a spravuje personál starající se o centrální provoz IT.
+Jak se cloudová stopa organizace zvětšuje, obvykle se vytvářejí další předplatná, a to kvůli zajištění podpory aplikací, které se zásadně liší z hlediska obchodní důležitosti, požadavků na dodržování předpisů, řízení přístupu nebo požadavků na ochranu dat. Na základě počátečních produkčních a neprodukčních předplatných jsou předplatná podporující tyto aplikační kategorie uspořádaná v rámci odpovídající produkční nebo neprodukční skupiny pro správu. Tato předplatná obvykle vlastní a spravuje personál starající se o centrální provoz IT.
 
-![Model kategorií aplikací](../../_images/infra-subscriptions/application.png)
+![Strategie kategorií aplikací](../../_images/infra-subscriptions/application.png)
 
-Každá organizace si volí jiný způsob kategorizace aplikací a předplatná často rozděluje v závislosti na konkrétních aplikacích nebo službách nebo podle archetypů aplikací. Tato kategorizace je často navržená tak, aby podporovala úlohy, u kterých se předpokládá využití většiny limitů prostředků předplatného, nebo oddělila klíčové úlohy, aby se zajistilo, že v rámci těchto limitů nebudou soupeřit s jinými úlohami. Mezi úlohy, u kterých by v rámci tohoto modelu mohlo být odůvodnitelné použití samostatného předplatného, patří:
+Každá organizace si volí jiný způsob kategorizace aplikací a předplatná často rozděluje v závislosti na konkrétních aplikacích nebo službách nebo podle archetypů aplikací. Tato kategorizace je často navržená tak, aby podporovala úlohy, u kterých se předpokládá využití většiny limitů prostředků předplatného, nebo oddělila klíčové úlohy, aby se zajistilo, že v rámci těchto limitů nebudou soupeřit s jinými úlohami. Mezi úlohy, u kterých by mohlo být odůvodnitelné použití samostatného předplatného, patří:
 
 - Klíčové úlohy
 - Aplikace, které jsou součástí „nákladů prodaného zboží“ (COGS) ve vaší společnosti. Příklad: Každá instance widgetu společnosti X obsahuje modul Azure IoT, který odesílá telemetrii. Může to vyžadovat vyhrazené předplatné pro účely účtování / zásad správného řízení v rámci COGS.
 - Aplikace podléhající zákonným požadavkům, jako je HIPAA nebo FedRAMP.
 
-### <a name="functional-pattern"></a>Funkční model
+### <a name="functional-strategy"></a>Funkční strategie
 
-Funkční model na základě hierarchie skupin pro správu organizuje předplatná a účty podle jejich funkcí, jako jsou finance, prodej nebo IT podpora, a to s využitím hierarchie skupin pro správu.
+Funkční strategie organizuje předplatná a účty podle jejich funkcí, jako jsou finance, prodej nebo IT podpora, a to s využitím hierarchie skupin pro správu.
 
-### <a name="business-unit-pattern"></a>Model obchodních jednotek
+### <a name="business-unit-strategy"></a>Strategie obchodních jednotek
 
-Model obchodních jednotek na základě hierarchie skupin pro správu seskupuje předplatná a účty podle kategorie zisků a ztrát, obchodní jednotky, oddělení, centra zisku nebo podobné obchodní struktury.
+Strategie obchodních jednotek na základě hierarchie skupin pro správu seskupuje předplatná a účty podle kategorie zisků a ztrát, obchodní jednotky, oddělení, centra zisku nebo podobné obchodní struktury.
 
-### <a name="geographic-pattern"></a>Geografický model
+### <a name="geographic-strategy"></a>Geografická strategie
 
-Pro organizace fungující v globálním měřítku geografický model na základě hierarchie skupin pro správu seskupuje předplatná a účty podle geografických oblastí.
+Pro organizace fungující v globálním měřítku geografická strategie na základě hierarchie skupin pro správu seskupuje předplatná a účty podle geografických oblastí.
 
-## <a name="mixed-patterns"></a>Smíšené modely
+## <a name="mixing-subscription-strategies"></a>Smíšení strategií předplatných
 
-Hierarchie skupin pro správu mohou mít až šest úrovní. Máte tak možnost flexibilně vytvářet hierarchie, které kombinují několik těchto modelů tak, aby vyhovovaly potřebám vaší organizace. Například následující diagram znázorňuje organizační hierarchii, která kombinuje model obchodních jednotek s geografickým modelem.
+Hierarchie skupin pro správu mohou mít až šest úrovní. Máte tak možnost flexibilně vytvářet hierarchie, které kombinují několik těchto strategií tak, aby vyhovovaly potřebám vaší organizace. Například následující diagram znázorňuje organizační hierarchii, která kombinuje strategii obchodních jednotek s geografickou strategií.
 
-![Model smíšených předplatných](../../_images/infra-subscriptions/mixed.png)
+![Strategie smíšených předplatných](../../_images/infra-subscriptions/mixed.png)
 
 ## <a name="related-resources"></a>Související prostředky
 
@@ -95,7 +84,7 @@ Hierarchie skupin pro správu mohou mít až šest úrovní. Máte tak možnost 
 
 ## <a name="next-steps"></a>Další kroky
 
-Návrh předplatného je pouze jedna ze základních komponent infrastruktury, která během přechodu na cloud vyžaduje rozhodování na úrovni architektury. Navštivte [přehled průvodců rozhodováním](../index.md), kde se dozvíte o alternativních modelech nebo modelech určených pro rozhodování o návrzích pro jiné typy architektur.
+Návrh předplatného je pouze jedna ze základních komponent infrastruktury, která během přechodu na cloud vyžaduje rozhodování na úrovni architektury. Navštivte [přehled průvodců rozhodováním](../index.md), kde se dozvíte o dalších strategiích používaných při rozhodování o návrzích pro jiné typy architektur.
 
 > [!div class="nextstepaction"]
 > [Průvodci rozhodováním ohledně architektury](../index.md)
