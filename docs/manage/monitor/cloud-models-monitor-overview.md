@@ -4,16 +4,16 @@ description: Pomocí architektury cloudového přijetí pro Azure zjistíte, kte
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8c27e37ac357fa4ab86377501da527a43eda017f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356268"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430032"
 ---
 <!-- cSpell:ignore savision -->
 

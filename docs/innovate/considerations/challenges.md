@@ -4,15 +4,15 @@ description: Použití architektury cloudového přijetí pro Azure pro pochopen
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 3c41a207ed16364d4fc91625beeb9883bf6a8d0b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170609"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433352"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Běžné blokování a výzvy k inovacím
 

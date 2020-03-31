@@ -4,16 +4,16 @@ description: Klasifikace dat umožňuje určit a přiřadit hodnotu datům vaš�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 380229fd898fa36e425f4c4792de221139b64cec
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223787"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430834"
 ---
 <!-- markdownlint-disable MD026 -->
 

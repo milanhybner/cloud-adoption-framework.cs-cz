@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171119"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427420"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudové inovace v architektuře přechodu na cloud
 
@@ -126,7 +126,7 @@ Tady je několik příkladů studijních programů pro konkrétní role na Micro
 
 [Vytváření bezserverových aplikací:](https://docs.microsoft.com/learn/paths/create-serverless-applications) Služba Azure Functions umožňuje vytváření výpočetních systémů na vyžádání řízených událostmi, které mohou být aktivovány různými externími událostmi. Naučte se využívat funkce ke spouštění logiky na straně serveru a vytváření bezserverových architektur.
 
-Další studijní programy najdete v [katalogu platformy Learn](/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.
+Další studijní programy najdete v [katalogu platformy Learn](https://docs.microsoft.com/learn/browse). Pomocí filtru **Role** můžete najít studijní programy pro svou roli.
 
 ## <a name="next-steps"></a>Další kroky
 

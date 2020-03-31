@@ -4,23 +4,23 @@ description: Přečtěte si víc o oblastech cloudových platforem a faktorech a
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508334"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433025"
 ---
 # <a name="azure-regions"></a>Oblast Azure
 
 Azure se skládá z mnoha oblastí po celém světě. Každá z [oblastí Azure](https://azure.microsoft.com/global-infrastructure/regions) má specifickou sadu charakteristik, kvůli kterým je výběr oblasti, která se má použít, mimořádně důležitý.
 
 1. **Dostupné služby:** Služby, které se nasazují do jednotlivých oblastí, se liší v závislosti na různých faktorech. Pro nasazení vaší úlohy musíte vybrat oblast, která obsahuje požadovanou službu. V článku [Dostupné produkty v jednotlivých oblastech](https://azure.microsoft.com/global-infrastructure/services) najdete další informace o tom, které služby jsou v jednotlivých oblastech k dispozici.
-1. **Kapacita:** Každá oblast má maximální kapacitu. I když je obvykle abstraktní od koncového uživatele, může to mít vliv na to, které typy předplatných můžou nasazovat typy služeb a za jakých okolností. Je to něco jiného než kvóty předplatného. Pokud plánujete rozsáhlou migraci Datacenter do Azure, můžete se obrátit na svého místního týmu pole Azure nebo správce účtů a ověřit, jestli můžete nasadit v potřebném měřítku.
+1. **Kapacita:** Každá oblast má maximální kapacitu. Přestože tyto informace se obvykle ke koncovému uživateli nedostanou, mohou mít vliv na to, jaké typy předplatných a služeb může nasadit a za jakých okolností. Je to něco jiného než kvóty předplatného. Pokud plánujete rozsáhlou migraci datacenter do Azure, budete pravděpodobně chtít konzultovat s místním provozním týmem Azure nebo account manažerem a ujistit se, že můžete nasazovat v potřebném měřítku.
 1. **Omezení:** Některá omezení jsou umístěna na nasazení služeb v určitých oblastech. Některé oblasti jsou například dostupné jenom jako cíl zálohování nebo převzetí služeb při selhání. Mezi další důležitá omezení, která je potřeba zmínit, patří [požadavky na suverenitu dat](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suverenita:** Některé oblasti jsou vyhrazeny pro konkrétní entity svrchovan. Přestože se stále jedná o oblasti Azure, jsou tyto suverénní oblasti zcela izolované od zbytku Azure, nemusí je spravovat Microsoft a mohou být omezené jenom na konkrétní typy zákazníků. Jde o tyto suverénní oblasti:
     1. [Azure (Čína)](https://azure.microsoft.com/global-infrastructure/china)

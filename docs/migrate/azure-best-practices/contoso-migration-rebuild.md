@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2713ce102d115c4f5cd16ef37baaaa22a06acfc8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356341"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431086"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -78,7 +78,7 @@ Společnost Contoso vyhodnotí vytvořený návrh sestavením seznamu výhod a n
 **Aspekty** | **Podrobnosti**
 --- | ---
 **Výhody** | Použití modelu PaaS a bezserverového řešení pro kompletní nasazení významně zkracuje čas potřebný pro správu, kterou společnost Contoso musí poskytovat.<br/><br/> Přechod na architekturu mikroslužeb umožňuje společnosti Contoso snadné rozšiřování řešení v průběhu času.<br/><br/> Nové funkce je možné zprovoznit online, aniž by došlo k narušení základů kódu existujících řešení.<br/><br/> Webová aplikace bude nakonfigurována s několika instancemi bez kritického prvku způsobujícího selhání.<br/><br/> Bude povolené automatické škálování, aby aplikace mohla zpracovávat různé objemy přenosů dat.<br/><br/> Díky přechodu na služby PaaS může společnost Contoso vyřadit z provozu zastaralá řešení spouštěná v operačním systému Windows Server 2008 R2.<br/><br/> Databáze Cosmos DB má integrovanou odolnost proti chybám, která nevyžaduje žádné konfigurování ze strany společnosti Contoso. To znamená, že datová vrstva už nebude jediným bodem převzetí služeb při selhání.
-**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto strmou křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
+**Nevýhody** | Kontejnery jsou složitější než ostatní možnosti migrace. Křivka osvojování znalostí by mohla být pro společnost Contoso problémem. Zavádějí zcela novou úroveň složitosti, která má i přes tuto křivku řadu předností.<br/><br/> Provozní tým ve společnosti Contoso musí získat nové znalosti, aby porozuměl Azure, kontejnerům a mikroslužbám pro aplikaci a dokázal je podporovat.<br/><br/> Společnost Contoso nemá plně implementované DevOps pro celé řešení. To musí společnost Contoso brát v úvahu také při nasazování služeb do AKS, Azure Functions a Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -162,7 +162,7 @@ Správci společnosti Contoso zřídí tyto služby takto:
 
    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
-6. Ověří Azure CLI tak, že spustí příkaz **az login** a postupem podle pokynů provedou ověření pomocí webového prohlížeče. [Přečtěte si další informace](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) o přihlašování pomocí Azure CLI.
+6. Ověří Azure CLI tak, že spustí příkaz **az login** a postupem podle pokynů provedou ověření pomocí webového prohlížeče. [Přečtěte si další informace](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) o přihlašování pomocí Azure CLI.
 
    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
@@ -395,15 +395,15 @@ Správci společnosti Contoso zřídí rozhraní API pro počítačové zpracov�
 
 1. Vytvoří instanci **Computer Vision** pro počítačové zpracování obrazu v Azure Marketplace.
 
-     ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision1.png)
+     ![Computer Vision](./media/contoso-migration-rebuild/vision1.png)
 
 2. Zřídí rozhraní API (**smarthotelpets**) ve skupině produkčních prostředků ContosoRG v hlavní oblasti USA – východ 2.
 
-    ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision2.png)
+    ![Computer Vision](./media/contoso-migration-rebuild/vision2.png)
 
 3. Uloží nastavení připojení rozhraní API do textového souboru pro pozdější referenci.
 
-     ![Počítačové zpracování obrazu](./media/contoso-migration-rebuild/vision3.png)
+     ![Computer Vision](./media/contoso-migration-rebuild/vision3.png)
 
 ### <a name="provision-the-azure-web-app"></a>Zřízení webové aplikace Azure
 
@@ -622,7 +622,7 @@ Teď, když jsou prostředky migrované do Azure, potřebuje společnost Contoso
 
 - Po nasazení všech prostředků by společnost Contoso měla na základě [plánování infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging) přiřadit značky Azure.
 - Veškeré licencování je součástí nákladů na služby PaaS, které společnost Contoso spotřebovává. Náklady se odečtou ze smlouvy EA.
-- Contoso povolí službu Azure Cost Management licencovanou Cloudynem, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. Přečtěte si [další informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management.
+- Contoso povolí službu Azure Cost Management licencovanou společností Cloudyn, dceřinou společností Microsoftu. To je multicloudové řešení pro řízení nákladů, které pomáhá s využitím a správou Azure a dalších cloudových prostředků. [Informace](https://docs.microsoft.com/azure/cost-management/overview) o službě Azure Cost Management
 
 ## <a name="conclusion"></a>Závěr
 

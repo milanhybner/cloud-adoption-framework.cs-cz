@@ -4,15 +4,15 @@ description: Získejte ucelený návod pro přechod úloh starších verzí apli
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3ec14b513bc8030d2b04144465ecc0cbb48b97fc
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357234"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434794"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Zahájení cesty migrace do cloudu v Azure
 
@@ -83,7 +83,7 @@ Jak je znázorněno na obrázku výše, toto rozhraní zarovnává strategická 
 - **[Připraveno](../ready/index.md):** Příprava podnikání, jazykové verze, lidí a prostředí pro změny vede k úspěchu v každém úsilí a zrychluje implementaci a změny projektů.
 - **Přijmout:** Zajistěte správnou implementaci požadovaných změn napříč IT a obchodními procesy, abyste dosáhli obchodních výsledků.
   - **[Migrace](../migrate/index.md):** iterativní provádění [metodologie implementace v cloudu](#cloud-implementation) , která se řídí testovaným procesem vyhodnocování, migrace, optimalizace a zabezpečení & pro vytvoření opakovaného procesu pro migraci úloh.
-  - Inovace  **[](../innovate/index.md):** Využijte provozní hodnoty prostřednictvím inovačních aktivit, které rozšiřují nové technické dovednosti a rozšířené obchodní možnosti.
+  - Inovace  **[Innovate](../innovate/index.md):** Využijte provozní hodnoty prostřednictvím inovačních aktivit, které rozšiřují nové technické dovednosti a rozšířené obchodní možnosti.
 - **[Řídit](../govern/index.md):** Zarovnejte podnikové zásady s hmotnými riziky, které jsou omezeny prostřednictvím zásad, procesů a cloudových nástrojů zásad správného řízení.
 - **[Spravovat](../manage/index.md):** Rozšiřte IT operace a zajistěte, aby cloudová řešení mohla být provozována prostřednictvím bezpečných a cenově výhodnějších procesů s využitím moderních cloudových nástrojů pro operace.
 - **[Uspořádání](../organize/index.md):** Zarovnejte lidi a týmy s cílem zajistit správné cloudové operace a přijetí.

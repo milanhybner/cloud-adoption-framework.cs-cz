@@ -4,16 +4,16 @@ description: Seznamte se s principy správy přístupu k prostředkům Azure, ja
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: fe478b76aa44da56620517ea0df4cea7357ea23b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709443"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80435004"
 ---
 # <a name="resource-access-management-in-azure"></a>Správa přístupu k prostředkům v Azure
 

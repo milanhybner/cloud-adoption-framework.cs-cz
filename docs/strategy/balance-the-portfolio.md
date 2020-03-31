@@ -4,15 +4,15 @@ description: Objevte strategie pro vyvážení migrace, inovace a experimentová
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 381359391d7fc39281d49d202f66edf5691be293
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353468"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433799"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80353468"
 
 Přijetí do cloudu je úsilí pro správu portfolia, které cleverly zamaskováno jako technickou implementaci. Stejně jako u jakéhokoli cvičení řízení portfolia je vyrovnávání portfolia důležité. Na strategické úrovni to znamená vyvážení migrace, inovace a experimentování za účelem co nejlepšího využití cloudu. V případě, že úsilí o přijetí v cloudu je příliš daleko v jednom směru, složitost zjistí způsob, jakým se snaží přijmout. Tento článek provede čtenáře přístupy k dosažení rovnováhy v portfoliu.
 
-## <a name="general-scope-expansion"></a>Obecné rozšíření rozsahu
+## <a name="general-scope-expansion"></a>Rozšíření obecného rozsahu
 
 Vyvážení portfolia je strategicky v podstatě. Proto je strategický také přístup v tomto článku použitý. Kvůli ukotvení strategie v rozhodnutích vycházejících z dat se v tomto článku předpokládá, že čtenář už vyhodnotil existující [digitální majetek](../digital-estate/index.md) (nebo to právě provádí). Cílem tohoto přístupu je pomoci při vyhodnocování úloh, aby se zajistilo řádné vyvážení v rámci portfolia prostřednictvím kvalitativních otázek a vylepšení portfolia.
 

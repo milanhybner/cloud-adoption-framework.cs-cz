@@ -4,15 +4,15 @@ description: Pomocí architektury cloudu pro přijetí v Azure se naučíte vyv�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd052e42bc9685701df831878c12ed37ed42395c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3d879119e84bb2beebacce7a8086f2e356132bc2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359761"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433220"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>Vytvoření dalších předplatných pro škálování prostředí Azure
 

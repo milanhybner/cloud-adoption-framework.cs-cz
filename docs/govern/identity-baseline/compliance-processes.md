@@ -4,16 +4,16 @@ description: Pomocí architektury cloudového prostředí pro Azure se naučíte
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba23836fdcfcd8dee6f90707487142f755e525b8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 75f85ef971bdf96fe14f1ddc72462edafbfd8473
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706979"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433089"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy dodržování předpisů zásad standardních hodnot identity
 

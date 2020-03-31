@@ -4,18 +4,18 @@ description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, j
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d5e906caf5f0b9c2c241520a96311c48df565234
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093237"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433233"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -57,7 +57,7 @@ Pomocí [uživatelem definovaných tras][user-defined-routes] můžou zákazníc
 
 V příkladu sítě typu centrum a paprsky zaručujete, že provoz generovaný virtuálními počítači, které se nacházejí v paprskech, projde správnými virtuálními zařízeními v centru, vyžaduje trasu definovanou uživatelem, která je definovaná v podsítích paprsku. Tato trasa nastaví front-end IP adresu interního nástroje pro vyrovnávání zatížení jako další segment směrování. Interní nástroj pro vyrovnávání zatížení distribuuje interní provoz na virtuální zařízení (back-endový fond nástroje pro vyrovnávání zatížení).
 
-## <a name="azure-firewall"></a>Azure Firewall
+## <a name="azure-firewall"></a>Brána Azure Firewall
 
 [Azure Firewall][AzFW] je spravovaná cloudová služba, která chrání vaše prostředky ve virtuálních sítích Azure. Jde o plně stavovou spravovanou bránu firewall s integrovanou vysokou dostupností a neomezenou cloudovou škálovatelností. Můžete centrálně vytvářet, vynucovat a protokolovat zásady připojení k aplikacím a sítím napříč různými předplatnými a virtuálními sítěmi.
 
@@ -85,7 +85,7 @@ Jako příklad použití síťové topologie centra a paprsků můžete nasadit 
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-Služba [Azure Front Door Service][AFD] je vysoce dostupná a škálovatelná platforma Microsoftu pro zrychlení webových aplikací a globální nástroj pro vyrovnávání zatížení HTTPS. Službu Azure Front Door Service můžete použít k sestavení, provozování a škálování dynamické webové aplikace a statického obsahu. Běží na více než 100 umístěních na okraji globální sítě Microsoftu.
+Služba [Azure Front Door Service][AFD] je vysoce dostupná a škálovatelná platforma Microsoftu pro zrychlení webových aplikací a globální nástroj pro vyrovnávání zatížení HTTPS. Službu Azure Front Door Service můžete použít k sestavení, provozování a škálování dynamické webové aplikace a statického obsahu na více instancí. Běží na více než 100 umístěních na okraji globální sítě Microsoftu.
 
 Služba Azure Front Door Service zajišťuje pro vaši aplikaci jednotnou automatizaci údržby razítek v různých oblastech, automatizaci BCDR, jednotné informace o klientech a uživatelích, ukládání do mezipaměti a přehledy služeb. Tato platforma nabízí výkon, spolehlivost a podporu SLA. Nabízí také certifikaci dodržování předpisů a auditovatelné postupy zabezpečení, které jsou vyvíjeny, provozovány a nativně podporovány v Azure.
 

@@ -4,15 +4,15 @@ description: Rozhraní Azure Enterprise se integruje do rozhraní pro přijetí 
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: cf8fa441dc69e073b3f78052b2acfa1e092129db
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: cdc36832b39c1219a3e0d80a8bf09b7449a3b78d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023903"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431868"
 ---
 <!-- cSpell:ignore rodend -->
 

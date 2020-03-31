@@ -4,15 +4,15 @@ description: Seznamte se s postupem vytváření řešení aplikací pro data ob
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 85939b1932f7eaf5f40b43bb54e75aa30e53d941
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356766"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433396"
 ---
 # <a name="engage-through-applications"></a>Zapojení aplikací
 

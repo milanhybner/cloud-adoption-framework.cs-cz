@@ -4,15 +4,15 @@ description: Pomocí architektury cloudového přijetí pro Azure se dozvíte o 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341575"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434079"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Služby a nástroje pro správu serveru Azure
 
@@ -73,7 +73,7 @@ Do této kategorie patří několik služeb. Můžou vám:
 
 Tyto služby jsou nezbytné pro podporu pokračujících operací:
 
-- [Update Management](/azure/automation/automation-update-management) automatizuje nasazení oprav v celém prostředí, včetně nasazení instancí operačního systému spuštěných mimo Azure. Podporuje operační systémy Windows i Linux a sleduje klíčové chyby zabezpečení operačního systému a neshodu v důsledku chybějících oprav.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) automatizuje nasazení oprav v celém prostředí, včetně nasazení instancí operačního systému spuštěných mimo Azure. Podporuje operační systémy Windows i Linux a sleduje klíčové chyby zabezpečení operačního systému a neshodu v důsledku chybějících oprav.
 - [Change Tracking a inventář](https://docs.microsoft.com/azure/automation/change-tracking) nabízí přehled o softwaru, který je spuštěný ve vašem prostředí, a zvýrazní všechny změny, ke kterým došlo.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umožňuje spouštět skripty Pythonu a PowerShellu a runbooky pro automatizaci úloh ve vašem prostředí. Pokud používáte automatizaci s [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), můžete své Runbooky také rozmístit na místní prostředky.
 - [Konfigurace stavu Azure Automation](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umožňuje doručovat konfigurace požadovaných stavů prostředí PowerShell přímo z Azure. DSC taky umožňuje monitorovat a uchovávat konfigurace hostovaných operačních systémů a úloh.

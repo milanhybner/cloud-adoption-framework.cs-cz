@@ -4,21 +4,21 @@ description: Strategie pro zásady správného řízení nebo dodržování pře
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 42eba9c774a063fe915db50b6615a3a59ce261c6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355564"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434017"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie pro zásady správného řízení nebo dodržování předpisů
 
 Když se v průběhu migrace vyžadují zásady správného řízení nebo dodržování předpisů, je zapotřebí rozšířit rozsah. Následující pokyny rozšíří rozsah [Průvodce migrací do Azure](../azure-migration-guide/index.md) o různé přístupy při řešení požadavků na zásady správného řízení nebo dodržování předpisů.
 
-## <a name="general-scope-expansion"></a>Obecné rozšíření rozsahu
+## <a name="general-scope-expansion"></a>Rozšíření obecného rozsahu
 
 Při požadavku na zásady správného řízení nebo dodržování předpisů jsou nejvíce ovlivněny aktivity související s předpoklady. Během posouzení, migrace a optimalizace mohou být vyžadovány další úpravy.
 
@@ -40,7 +40,7 @@ Konfigurace základního prostředí Azure se při integraci požadavků na zás
 - **Modernizace cloudu:** Řešení [moderního cloudu](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) nabízíme jako ucelený přístup k přesunu aplikací, dat a infrastruktury do cloudu připraveného pro podniky a také k optimalizaci a modernizovatí po nasazení cloudu.
 - Inovace **pomocí cloudu:** Zapojte zákazníka prostřednictvím inovativního a jedinečného řešení [Cloud Center vynikajícího cloudu (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) , které vytvoří moderní organizaci IT, která umožní flexibilitu ve velkém měřítku s DevOps a přitom zůstává v řízení. Implementuje agilní přístup k zaznamenání firemních požadavků, opakovanému použití balíčků nasazení v souladu se zásadami zabezpečení, dodržování předpisů a správy služeb, a udržuje platformu Azure v souladu s provozními postupy.
 
-## <a name="assess-process-changes"></a>Změny procesu vyhodnocení
+## <a name="assess-process-changes"></a>Posouzení změn procesu
 
 Během posuzování je potřeba učinit další rozhodnutí, aby bylo vše v souladu s požadovaným přístupem k zásadám správného řízení. Tým zásad správného řízení cloudu by měl všem členům týmu přechodu na cloud před posouzením úlohy poskytnout všechny zprávy o zásadách, pokyny k architektuře nebo požadavky na zásady správného řízení/dodržování předpisů.
 

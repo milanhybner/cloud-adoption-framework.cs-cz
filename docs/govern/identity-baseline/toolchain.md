@@ -4,16 +4,16 @@ description: Podívejte se, jak můžou Azure Native Tools pomoci při vyspělý
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709392"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434959"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Nástroje pro základní identitu identity v Azure
 
@@ -46,7 +46,7 @@ Když zvolíte tuto metodu, Azure AD bude zpracovávat přihlašovací proces u�
 
 Když si zvolíte tuto metodu, Azure AD předá proces ověřování samostatnému systému ověřování, jako je místní Active Directory Federation Services (AD FS) (AD FS) nebo poskytovatel federačních třetích stran, aby ověřil heslo uživatele.
 
-Článek [Výběr správné metody ověřování pro Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) obsahuje rozhodovací strom, který vám umožní vybrat nejlepší řešení pro vaši organizaci.
+Článek [Výběr správné metody ověřování pro Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) obsahuje rozhodovací strom, který vám umožní vybrat nejlepší řešení pro vaši organizaci.
 
 Následující tabulka obsahuje seznam nativních nástrojů, které mohou pomoci při vyspělosti zásad a procesů, které podporují tento obor řízení.
 

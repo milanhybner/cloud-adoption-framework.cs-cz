@@ -4,15 +4,15 @@ description: Pomocí architektury cloudového přijetí pro Azure můžete pocho
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341449"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426465"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Kritická obchodní náročnost v Cloud managementu
 

@@ -4,16 +4,16 @@ description: Seznamte se se základy interní struktury a fungování cloudové 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6cc61ff3b6dee171983ceef94c77d3aab715b2c7
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 91bfb288c841dbfaa367120d7c904642a3d9fb38
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357157"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434750"
 ---
 <!-- markdownlint-disable MD026 -->
 

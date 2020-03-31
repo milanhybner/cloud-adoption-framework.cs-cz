@@ -4,16 +4,16 @@ description: Tuto šablonu použijte jako výchozí bod pro dokumentování a ko
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 378fa753a2b4ca793d8ad13de8d0c7ed4ec44dfa
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 8cb96fc97e8e0ac4695ca28dbcad964d246f95e5
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392616"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433655"
 ---
 # <a name="resource-consistency-template"></a>Šablona konzistence prostředků
 

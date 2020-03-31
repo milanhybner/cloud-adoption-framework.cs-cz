@@ -4,16 +4,16 @@ description: Pomocí architektury cloudového přijetí pro Azure se naučíte, 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ebcc6d1a2ed45ad199c0b0da880d72d253f21c3e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354099"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431643"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Sestavení obchodního odůvodnění pro migraci do cloudu
 

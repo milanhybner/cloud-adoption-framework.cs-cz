@@ -4,15 +4,15 @@ description: Definujte požadovaný tok zákazníka a vytvořte metriky učení,
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe1bed4da302041998ec09efd2224be3d94fe3aa
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356721"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427396"
 ---
 # <a name="measure-for-customer-impact"></a>Měření dopadu na zákazníky
 

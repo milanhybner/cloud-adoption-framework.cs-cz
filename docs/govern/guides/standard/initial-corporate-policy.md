@@ -4,16 +4,16 @@ description: Rozhraní pro přijetí v cloudu pro Azure použijte k definování
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 20282136ad3a7132e9a4458723db3fda5160eeb9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170932"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434285"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardní příručka pro zásady správného řízení podniku: počáteční podniková zásada za strategii zásad správného řízení
 

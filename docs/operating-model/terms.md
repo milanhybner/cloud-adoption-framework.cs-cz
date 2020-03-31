@@ -4,16 +4,16 @@ description: Seznamte se s terminologií spojenou s operačními modely. Termino
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 03064395f85470335fc6cdb20bb0f9d7411ca678
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092749"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428838"
 ---
 # <a name="operating-model-terminology"></a>Terminologie operačního modelu
 
