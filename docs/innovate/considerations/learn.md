@@ -4,15 +4,15 @@ description: Seznamte se se zákazníky a od nich od zákazníků, abyste vytvo�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a7b717b9a8d4e81ac6dc644e51593d89e6fc3089
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 80eba5ddb0d92bef638cb2925515268818c50735
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356711"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427415"
 ---
 <!-- cSpell:ignore Satya Nadella Ries -->
 

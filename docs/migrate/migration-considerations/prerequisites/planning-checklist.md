@@ -4,15 +4,15 @@ description: Pro ověření připravenosti na životní prostředí před migrac
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311978"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428981"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Kontrolní seznam pro plánování migračního prostředí: Ověření připravenosti na životní prostředí před migrací
 

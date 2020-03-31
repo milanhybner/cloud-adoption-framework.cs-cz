@@ -4,15 +4,15 @@ description: Přečtěte si důležitost přípravy na potenciální výpadek ú
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 322f08ba65aa513d5d76c772c45bfb6563662ffd
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340991"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430220"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrana a obnovení ve správě cloudu
 

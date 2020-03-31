@@ -4,16 +4,16 @@ description: Podívejte se, jak můžou Azure Native Tools pomoci při vyspělý
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85b0d88d4a275c7215a498b95e0af6717bfac169
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: db3be7ca7577cb8b42f4efc556b88b25d6e1f23e
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707063"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425835"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Nástroje pro základní hodnoty zabezpečení v Azure
 

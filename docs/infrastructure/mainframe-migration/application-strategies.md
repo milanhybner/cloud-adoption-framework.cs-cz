@@ -4,15 +4,15 @@ description: Naučte se strategie, jako je opětovné hostování, vyřazení, o
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356838"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425816"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
@@ -66,7 +66,7 @@ Monitory TP jsou k dispozici od různých dodavatelů a běží na virtuálních
 
 V Azure se prostředí emulace používají ke spuštění Správce TRANSAKČNÍho programu a dávkových úloh, které používají JCL. V datové vrstvě je DB2 nahrazuje [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), i když je možné použít také Microsoft SQL Server, DB2 LUW nebo Oracle Database. Emulátor podporuje rychlé zprávy, VSAM a SEQ. Nástroje pro správu systému z sálového počítače jsou nahrazené službami Azure a softwarem od jiných dodavatelů, kteří se spouštějí na virtuálních počítačích.
 
-Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Například:
+Funkce pro zpracování obrazovky a zadávání formulářů se běžně implementují pomocí webových serverů, které se dají kombinovat s databázovými rozhraními API, jako jsou ADO, ODBC a JDBC, pro přístup k datům a transakce. Přesné řádky komponent Azure IaaS, které se mají použít, závisí na operačním systému, který dáváte přednost. Příklad:
 
 - Virtuální počítače založené na Windows: Internet Information Server (IIS) spolu s ASP.NET pro zpracování obrazovky a obchodní logiku. Použijte ADO.NET pro přístup k datům a transakce.
 

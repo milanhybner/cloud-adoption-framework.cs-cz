@@ -4,16 +4,16 @@ description: Pomocí architektury cloudového přijetí pro Azure se dozvíte, j
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f1fa9c4705aaa437a0a532fd6463fe502f4df0bb
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 1191b2f359f2220c8ba73ffd0926859936f78b7d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092619"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428214"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Cesta připravenosti dovedností v připravené fázi migrace
 
