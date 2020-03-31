@@ -3,16 +3,16 @@ title: Obchodní výsledky vyplývající z transformačních procesů
 description: Architekturu přechodu na cloud pro Azure můžete využít k pochopení obchodních výsledků spojených s procesy transformacemi.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092383"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392504"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Následuje několik obchodních výsledků, které jsou obvykle impulzem k zahá
 
 ## <a name="sample-outcomes-by-category"></a>Ukázkové výsledky podle kategorie
 
-Řadě technicky smýšlejícím lidem může mluvení o obchodních výsledcích připadat jako cizí jazyk. Pro usnadnění překladu Microsoft v [architektuře obchodních výsledků](../index.md) spravuje sadu příkladů obchodních výsledků. Pomocí těchto ukázek můžete inspirovat a předvádět obchodní výsledky založené na skutečných procesech transformace.
+Řadě technicky smýšlejícím lidem může mluvení o obchodních výsledcích připadat jako cizí jazyk. Pro usnadnění „překladu“ jsme vytvořili kurátorovanou sadu příkladů obchodních výsledků. Pomocí těchto ukázek můžete inspirovat a předvádět obchodní výsledky založené na skutečných procesech transformace.
 
 Abychom vám pomohli obchodní výsledky snáze určit, rozdělili jsme je do následujících kategorií. Tento přístup posiluje diskuze zaměřené na zajištění konsensu napříč obchodními jednotkami.
 
