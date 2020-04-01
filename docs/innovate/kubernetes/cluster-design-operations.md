@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 31ea5b2e5906f08de5197906b57cbe32337e80f9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426847"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527183"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -62,7 +62,7 @@ Při přípravě aplikace na produkční prostředí byste měli implementovat m
 
 ## <a name="optimize-and-scale"></a>Optimalizace a škálování
 
-Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat pracovní postup a připravit svoji aplikaci a tým pro škálování? Využijte kontrolní seznam optimalizace a škálování pro přípravu. Měli byste být schopni odpovědět na tyto otázky:
+Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat pracovní postup a připravit svoji aplikaci a tým pro škálování? Připravte ho pomocí kontrolního seznamu optimalizace a škálování. Měli byste být schopni odpovědět na tyto otázky:
 
 > [!div class="checklist"]
 >
@@ -77,5 +77,5 @@ Teď, když je aplikace v produkčním prostředí, jak můžete optimalizovat p
 > | Kontrolní seznam  | Zdroje |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automaticky Škálujte cluster tak, aby splňoval požadavky aplikace.** Aby se zajistilo splnění požadavků aplikace, může být potřeba upravit počet uzlů, které spouštějí vaše úlohy automaticky pomocí automatického škálování clusteru. | [Konfigurace automatického škálování clusteru Kubernetes](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Plán pro provozní kontinuitu a zotavení po havárii.** Naplánujte nasazení ve více oblastech, vytvořte plán migrace úložiště a povolte geografickou replikaci pro Image kontejnerů. | [Osvědčené postupy pro nasazení ve více oblastech](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry geografickou replikaci](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Plán pro provozní kontinuitu a zotavení po havárii.** Naplánujte nasazení ve více oblastech, vytvořte plán migrace úložiště a povolte geografickou replikaci pro Image kontejnerů. | [Osvědčené postupy pro nasazení oblastí](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry geografickou replikaci](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **Nakonfigurujte monitorování a řešení potíží ve velkém měřítku.** Nastavte výstrahy a monitorování pro aplikace v Kubernetes. Přečtěte si o výchozí konfiguraci, postupu při integraci pokročilejších metrik a o tom, jak přidat vlastní monitorování a upozorňování, abyste mohli spolehlivě provozovat svoji aplikaci. | [Začínáme s monitorováním a upozorňováním na Kubernetes (video)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Konfigurace výstrah pomocí Azure Monitor pro kontejnery](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Zkontrolujte protokoly diagnostiky pro hlavní součásti.](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Diagnostika služby Azure Kubernetes (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

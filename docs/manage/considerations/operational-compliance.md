@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45493245571d5df8d0ad349ba11cb1fe109027e5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426070"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527649"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Provozní dodržování předpisů ve správě cloudu
 
@@ -54,7 +54,7 @@ Všechny základní hodnoty správy cloudu by měly zahrnovat způsob plánován
 
 Kvůli lepšímu směrnému plánu pro správu cloudu můžou některé úlohy využívat automatizovanou nápravu. Pokud se často setkáte s problémy, které se nedají vyřešit prostřednictvím kódu nebo architektury, automatizace nápravy může přispět ke snížení zátěže správy cloudu a zvýšení spokojenosti uživatelů.
 
-Mnohé z nich by tvrdí, že všechny problémy, které jsou dostatečně běžné pro automatizaci, by se měly vyřešit prostřednictvím rozlišení technického dluhu. Pokud je dlouhodobé rozlišení obezřetné, mělo by se jednat o výchozí možnost. Řada obchodních scénářů ale obtížně odůvodňuje velké investice do řešení technického dluhu. Pokud takové řešení není možné zdůvodnit, ale náprava je běžným a nákladným zatížením, jedná se o další nejlepší řešení automatizované nápravy.
+Mnohé z nich by tvrdí, že všechny problémy, které jsou dostatečně běžné pro automatizaci, by se měly vyřešit prostřednictvím rozlišení technického dluhu. Pokud je dlouhodobé rozlišení obezřetné, mělo by se jednat o výchozí možnost. Některé obchodní scénáře však obtížně opravňují velké investice do řešení technického dluhu. Pokud takové řešení není možné zdůvodnit, ale náprava je běžným a nákladným zatížením, jedná se o další nejlepší řešení automatizované nápravy.
 
 ## <a name="next-steps"></a>Další kroky
 

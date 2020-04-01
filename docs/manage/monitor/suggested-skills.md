@@ -7,18 +7,18 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 128aa99a978f70525e2279868d2317dec8c965cb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433579"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527028"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>Připravenost na dovednosti pro monitorování cloudu
 
-Během fáze plánování cesty migrace je cílem vyvinout plány potřebné k implementaci příručky. Plány musí také zahrnovat způsob, jakým budete pracovat s těmito úlohami před jejich přechodem nebo uvolněním do produkčního prostředí, a ne následně. Obchodní účastníci očekávají cenné služby a očekávají je bez přerušení. Zaměstnanci oddělení IT si uvědomují, že potřebují se naučit nové dovednosti a přizpůsobovat jim, aby mohli efektivně využívat integrované služby Azure pro efektivní monitorování prostředků v Azure a hybridních prostředích.
+Během fáze plánování cesty migrace je cílem vyvinout plány potřebné k implementaci příručky. Plány musí také zahrnovat způsob, jakým budete pracovat s těmito úlohami před jejich přechodem nebo uvolněním do produkčního prostředí, a ne následně. Obchodní účastníci očekávají cenné služby a očekávají je bez přerušení. Zaměstnanci oddělení IT si uvědomuje, že potřebují vědět nové dovednosti a přizpůsobovat jim, aby mohli efektivně využívat integrované služby Azure pro efektivní monitorování prostředků v Azure a hybridních prostředích.
 
 Rozvoj potřebných dovedností lze urychlit pomocí následujících studijních programů:
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 03064395f85470335fc6cdb20bb0f9d7411ca678
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 03843aa441188bb0bd91d0febfdd5681d6a6670b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428838"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526825"
 ---
 # <a name="operating-model-terminology"></a>Terminologie operačního modelu
 
@@ -35,7 +35,7 @@ Přijetí do cloudu je "co máme" k tomu, abychom si vyuvědomili obchodní hodn
 
 ## <a name="next-steps"></a>Další kroky
 
-[Využijte provozní model](./index.md) poskytovaný rozhraním pro přijetí v cloudu k vývoji provozní zralosti.
+Pro vývoj provozní zralosti [použijte operační model](./index.md) poskytovaný rozhraním pro přijetí v cloudu.
 
 > [!div class="nextstepaction"]
-> [Využití operačního modelu](./index.md)
+> [Použití operačního modelu](./index.md)

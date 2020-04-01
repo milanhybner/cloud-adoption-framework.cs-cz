@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8d0265ff32f7cad82a98fd1dbc1070db40aa6167
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426887"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527244"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ Při přípravě aplikace na produkční prostředí byste měli implementovat m
 > | **Zabezpečte síťový provoz uvnitř pod sebou pomocí zásad sítě.** Použijte princip nejnižších oprávnění k řízení toku provozu sítě mezi lusky v clusteru. | [Zabezpečení provozu uvnitř pod sebou pomocí zásad sítě](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **Omezte přístup k serveru rozhraní API pomocí autorizovaných IP adres.** Vylepšete zabezpečení clusteru a minimalizujte plochu útoku tím, že omezíte přístup k serveru rozhraní API na omezené sady rozsahů IP adres. | [Zabezpečený přístup k serveru rozhraní API](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **Omezte provoz odchozího provozu clusteru.** Zjistěte, jaké porty a adresy se mají povolit, pokud omezíte odchozí přenosy clusteru. K zabezpečení odchozího provozu a definování potřebných portů a adres můžete použít Azure Firewall nebo zařízení brány firewall jiného výrobce. | [Řízení přenosů dat pro uzly clusteru v AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Zabezpečte provoz pomocí firewallu webových aplikací (WAF).** Využijte Azure Application Gateway jako kontroler příchozího přenosu pro clustery Kubernetes.  | [Konfigurace Azure Application Gateway jako řadiče pro příchozí přenosy dat](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Zabezpečte provoz pomocí firewallu webových aplikací (WAF).** Pro clustery Kubernetes použijte Azure Application Gateway jako kontroler příchozího přenosu dat.  | [Konfigurace Azure Application Gateway jako řadiče pro příchozí přenosy dat](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Použijte aktualizace zabezpečení a jádra u pracovních uzlů.** Pochopení možnosti aktualizace uzlů AKS V zájmu ochrany clusterů se aktualizace zabezpečení automaticky aplikují na uzly Linux v AKS. Tyto aktualizace zahrnují opravy zabezpečení operačního systému nebo aktualizace jádra. Některé z těchto aktualizací vyžadují k dokončení procesu restart uzlu. | [Použití kured k automatickému restartování uzlů pro použití aktualizací](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **Konfigurace řešení pro prohledávání kontejnerů a clusterů.** Prověřování kontejnerů, které se přehrály do Azure Container Registry a získají hlubší přehled o uzlech clusteru, cloudovém provozu a ovládacích prvcích zabezpečení. | [Azure Container Registry integrace s Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integrace služby Azure Kubernetes s Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ccb7a6e428075a69532238f25fd89e825f2a4b35
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c57b2326475f9434aee0b98cf69bf85956ce076e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426347"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527113"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Úroveň správy napříč obory pro správu cloudu
 
@@ -27,14 +27,14 @@ Vzhledem k tomu, že se úlohy v portfoliu IT liší, je pravděpodobné, že pr
 Jako výchozí bod zvažte vytvoření úrovní správy, které jsou uvedeny v předchozím diagramu a navržena v následujícím seznamu:
 
 - **Standardní hodnoty správy:** Směrný plán správy cloudu (nebo standardní hodnota správy) je definovaná sada nástrojů, procesů a konzistentní ceny, které slouží jako základ pro veškerou správu cloudu v Azure. Pokud chcete vytvořit směrný plán správy cloudu a určit, které nástroje se mají do vaší firmy zahrnout, Projděte si seznam v části obory pro správu cloudu.
-- **Rozšířené základní hodnoty:** Řada úloh může vyžadovat vylepšení standardních hodnot, které nemusí být nutně specifická pro jednu platformu nebo úlohu. I když tato vylepšení nejsou nákladově efektivní pro každou úlohu, měly by se provádět běžné procesy, nástroje a řešení pro všechny úlohy, které mohou zdůvodnit náklady na dodatečnou podporu pro správu.
+- **Rozšířené základní hodnoty:** Některé úlohy můžou vyžadovat vylepšení standardních hodnot, které nemusí být nutně specifické pro jednu platformu nebo úlohu. I když tato vylepšení nejsou nákladově efektivní pro každou úlohu, měly by se provádět běžné procesy, nástroje a řešení pro všechny úlohy, které mohou zdůvodnit náklady na dodatečnou podporu pro správu.
 - **Specializace platformy:** V jakémkoli daném prostředí jsou některé běžné platformy používány různými úlohami. Toto obecné společné architektury se nemění, když firmy přijímají Cloud. Specializace platformy je zvýšená úroveň správy, která se vztahuje na data a odbornosti v oblasti architektury za účelem zajištění vyšší úrovně provozní správy. Příklady specializace platforem zahrnují funkce správy, které jsou specifické pro SQL Server, kontejnery, služby Active Directory nebo jiné služby, které je možné lépe spravovat prostřednictvím konzistentních, opakujících se procesů, nástrojů a architektur.
 - **Specializace úloh:** Pro úlohy, které jsou skutečně důležité, může dojít k výraznému snížení nákladů na správu této úlohy. Specializace úloh používá telemetrii úloh k určení pokročilejších přístupů ke každodenní správě. Stejná data často označují vylepšení automatizace, nasazení a návrhu, která by vedla k větší stabilitě, spolehlivosti a odolnosti nad rámec toho, co je možné jenom v provozní správě.
 - **Nepodporované:** Stejně důležité je, abyste komunikovali s běžnými procesy správy, které se nebudou dodávat prostřednictvím oborů správy cloudu pro úlohy klasifikované jako nepodporované nebo nepostradatelné.
 
 Organizace se také mohou rozhodnout, že [externí funkce související s jednou nebo více z těchto úrovní správy k poskytovateli služeb](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Tito poskytovatelé služeb můžou využít [Azure Lighthouse](https://azure.com/lighthouse) k zajištění větší přesnosti a transparentnosti.
 
-Zbývající články v této sérii popisují řadu procesů, které se běžně vyskytují v rámci každého z těchto oborů.
+Zbývající články v této sérii popisují procesy, které se běžně nacházejí v rámci každé z těchto oborů.
 V rámci paralelní [příručky Azure Management](../azure-management-guide/index.md) demonstruje nástroje, které můžou podporovat jednotlivé procesy. Pokud potřebujete pomoc s vytvářením standardních hodnot správy, začněte s průvodcem pro správu Azure. Po vytvoření směrného plánu vám tato série článků a doprovodné osvědčené postupy mohou pomoci tuto základnu rozšířit a definovat další úrovně podpory správy.
 
 ## <a name="cloud-management-disciplines"></a>Obory pro správu cloudu

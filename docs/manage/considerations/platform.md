@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d40789f1ef65711e7e6347b106e2fc9ce8784190
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434040"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527629"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Operace s platformou ve správě cloudu
 
 Základní plán správy cloudu, který pokrývá [inventář a viditelnost](./inventory.md), [provozní dodržování předpisů](./operational-compliance.md)a [ochrana a obnovení](./protect.md) , může poskytovat dostatečnou úroveň správy cloudu pro většinu úloh v portfoliu IT. Nicméně tento směrný plán je pro podporu celého portfolia dostatečně málo. Tento článek sestaví na nejběžnějším dalším kroku správy cloudu, operací portfolia.
 
-Rychlá studie prostředků v portfoliu IT zvýrazňuje vzory napříč úlohami, které jsou podporované. V rámci těchto úloh bude existovat řada běžných platforem. V závislosti na minulých technických rozhodnutích v rámci společnosti se tyto platformy můžou výrazně lišit.
+Rychlá studie prostředků v portfoliu IT zvýrazňuje vzory napříč úlohami, které jsou podporované. V rámci těchto úloh budou existovat běžné platformy. V závislosti na minulých technických rozhodnutích v rámci společnosti se tyto platformy můžou výrazně lišit.
 
 U některých organizací dojde k těžké závislosti na SQL Server, Oracle nebo jiných open source datových platformách. V jiných organizacích může být commonalities rootem na hostujících platformách pro virtuální počítače (VM) nebo kontejnery. Další mohou mít i jiné společné závislosti na aplikacích nebo systémech pro plánování podnikových zdrojů (ERP), jako jsou například SAP, Oracle nebo jiné.
 

@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ed7d27dc57b957655f4fd2adbfac6f026c57ff5
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353672"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527005"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Co je nového v rozhraní pro přijetí Microsoft Cloud
 
@@ -37,7 +37,7 @@ První zóna pro vykládku se vyžádala z Průvodce připravenosti, aby slouži
 
 - [Co je cílová zóna?](../ready/landing-zone/index.md)definuje termín cílové zóny.
 - [První cílová zóna](../ready/landing-zone/first-landing-zone.md): rozbalí porovnání různých zón vykládku.
-- [Migrace cílové zóny](../ready/landing-zone/migrate-landing-zone.md): přesunuli jsme předchozí článek podrobného podrobného povýšení zóny, aby se rozvedla definice CAF podrobného plánu od výběru první cílové zóny, která umožňuje další možnosti cílové zóny.
+- [Migrace cílové zóny](../ready/landing-zone/migrate-landing-zone.md): přesunuli jsme předchozí článek podrobného podrobného povýšení zóny, abyste mohli oddělit definici podrobného plánu od výběru první cílové zóny, aby bylo možné další možnosti pro vykládku.
 - Článek o [cílové zóně terraformu](../ready/landing-zone/terraform-landing-zone.md) : přesunuli jsme se z oddílu "rozšířeného rozsahu" připravené metodologie na novou "cílovou zónu" v části připravená metodologie, aby se terraformu první občan třídy v konverzaci k cílové zóně.
 - Seskupí požadavky na cílové zóny v obsahu v části základní požadavky na cílovou zónu.
 - Doporučené postupy zabezpečení z metodologie migrace do nové cílové zóny: Vylepšete zabezpečení cílové zóny (citlivá data) k vystavení čtenářům výše v životním cyklu.

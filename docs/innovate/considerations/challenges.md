@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3c41a207ed16364d4fc91625beeb9883bf6a8d0b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433352"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527664"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Běžné blokování a výzvy k inovacím
 
@@ -40,7 +40,7 @@ Následující seznam uvádí některé z nejběžnějších výzev k přijetí 
 
 Před širším přijetím cloudu byly vynálezové cykly, které závisejí na informační technologii, pracné a časově náročné. Cykly zásobování a zřizování často odchází zásadním prvním postupem pro všechna nová řešení. Náklady na řešení DevOps a smyčky zpětné vazby jsou schopné spolupracovat na rané fázi ideation a vynálezu. Náklady související s vývojářskými prostředími a datovými platformami zabraňují všem, ale vysoce vyškoleným profesionálním vývojářům v účasti na vytváření nových řešení.
 
-Cloud překoná mnohé z těchto problémů s vynálezem, protože poskytuje samoobslužné automatizované zřizování, vývojové nástroje pro vývoj a nasazení a příležitosti pro profesionální vývojáře a občany občanů, aby spolupracovali při tvorbě rychlých návrhů. určená. Využití cloudu pro inovace významně snižuje výzvy zákazníků a zablokování na stranu vynálezu z rovnice pro inovace.
+Cloud překoná mnohé z těchto problémů s vynálezem, protože poskytuje samoobslužné automatizované zřizování, vývojové nástroje pro vývoj a nasazení a příležitosti pro profesionální vývojáře a občany občanů, aby spolupracovali při tvorbě rychlých návrhů. určená. Používání cloudu pro inovace významně snižuje výzvy zákazníků a zablokování na stranu vynálezu z rovnice pro inovace.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Vynálezení problémů v digitální ekonomice
 

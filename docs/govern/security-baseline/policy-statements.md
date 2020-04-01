@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425948"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527523"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Ukázkové příkazy zásad standardních hodnot zabezpečení
 
@@ -87,7 +87,7 @@ Následující vzorové příkazy zásad řeší běžná obchodní rizika souvi
 
 **Prohlášení o zásadách:** Díky trendům a potenciálním útokům, které by mohly mít vliv na nasazení v cloudu, je třeba pravidelně kontrolovat bezpečnostní tým, aby poskytoval aktualizace nástroje pro základní hodnoty zabezpečení používané v cloudu.
 
-**Potenciální možnost návrhu:** Navažte běžnou schůzku kontroly zabezpečení, která zahrnuje relevantní členy týmu IT a zásad správného řízení. Projděte si stávající data a metriky zabezpečení a zaveďte mezery v aktuálních zásadách a nástrojích pro základní hodnoty zabezpečení a aktualizujte zásady tak, aby opravily všechna nová rizika. Využijte [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) a [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) k získání užitečných přehledů o nově vznikajících hrozbách, které jsou specifické pro vaše nasazení.
+**Potenciální možnost návrhu:** Navažte běžnou schůzku kontroly zabezpečení, která zahrnuje relevantní členy týmu IT a zásad správného řízení. Projděte si stávající data a metriky zabezpečení a zaveďte mezery v aktuálních zásadách a nástrojích pro základní hodnoty zabezpečení a aktualizujte zásady tak, aby opravily všechna nová rizika. Pomocí [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) a [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) získáte užitečné poznatky o nově vznikajících hrozbách, které jsou specifické pro vaše nasazení.
 
 ## <a name="next-steps"></a>Další kroky
 

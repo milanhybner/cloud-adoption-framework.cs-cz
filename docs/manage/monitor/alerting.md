@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: f8399e540b81154ce9de8c5ec1d0512c18d90ed8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3053d26f5b2cf3c7d1589f165fb32702b007d49f
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430038"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527557"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -93,7 +93,7 @@ Latence je jedním z nepostradatelných rozhodnutí při řízení výstrah a ry
 
 K tomuto pravidlu se říká několik důležitých poznámek pod čarou.
 
-**Telemetrie hostovaného operačního systému** má několik cest, které se mají do systému dostat.
+**Telemetrie hostovaného operačního systému** má několik cest k získání do systému.
 
 - Nejrychlejší způsob, jak upozornit na tato data, je importovat jako vlastní metriky. Použijte k tomu rozšíření Azure Diagnostics a pak použijte upozornění na metriku. Vlastní metriky jsou ale momentálně ve verzi Preview a jsou [dražší než jiné možnosti](https://azure.microsoft.com/pricing/details/monitor).
 

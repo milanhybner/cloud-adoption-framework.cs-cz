@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18357fc22ee7cd482d5799bffcf7454bfaa77afa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431690"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526979"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Příklady výsledků globálního dosahu
 
@@ -30,7 +30,7 @@ Rozšiřování na nový trh může být jedním z nejcennějších obchodních 
 
 ## <a name="data-sovereignty"></a>Suverenita dat
 
-Provoz na nových trzích přináší další omezení zásad správného řízení. GDPR je jedním z příkladů kritérií zásad správného řízení, která by mohla způsobit významnou finanční rekurzi. Azure poskytuje nabídky dodržování předpisů, které zákazníkům pomůžou splnit povinnosti dodržování předpisů napříč regulovanými průmyslovými odvětvími a globálními trhy. Další informace najdete v tématu [Přehled dodržování předpisů Microsoft Azure](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
+Provoz na nových trzích přináší další omezení zásad správného řízení. GDPR je jedním z příkladů kritérií zásad správného řízení, která by mohla způsobit významnou finanční rekurzi. Azure poskytuje nabídky dodržování předpisů, které zákazníkům pomůžou splnit povinnosti dodržování předpisů napříč regulovanými průmyslovými odvětvími a globálními trhy. Další informace najdete v tématu [Přehled dodržování předpisů Microsoft Azure](https://azure.microsoft.com/overview/trusted-cloud/compliance).
 
 - **Příklad:** Poskytovatel nástrojů na bázi USA udělil kontrakt pro poskytování nástrojů v Kanadě. Zákon o kanadských suverenitách dat vyžaduje, aby se kanadská data zůstala v Kanadě. Tato společnost pracovala jako způsob, jakým je úsilí v rámci inovace aplikace s podporou cloudu na roky. V důsledku toho je možné jejich software nasadit prostřednictvím plně spouštěných DevOps procesů. S několika menšími změnami základu kódu byly schopné nasadit pracovní kopii kódu do datacentra Azure v Kanadě, dodržování předpisů na suverenitu dat a udržení zákazníka.
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a7d5dede975dbc4a8571bcc54cbff71fa1588200
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392656"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527295"
 ---
 # <a name="first-landing-zone"></a>První cílová zóna
 
@@ -37,7 +37,7 @@ D. Když partner poskytne průběžné spravované služby nebo se doručí na p
 
 ## <a name="choosing-a-first-landing-zone"></a>Výběr první cílové zóny
 
-Výběr první cílové zóny závisí na počtu proměnných. Následující mřížka zachycuje některé možnosti pro první cílové zóny, spolu s proměnnými, které mohou toto rozhodnutí řídit.
+Výběr první cílové zóny závisí na více proměnných. Následující mřížka zachycuje některé možnosti pro první cílové zóny, spolu s proměnnými, které mohou toto rozhodnutí řídit.
 
 | Cílová zóna                                 | Cloudové prostředí  | Měřítko             | Čas zjišťování | Připravené na produkci | Hybridní             | Citlivá data     | Kritická poslání   | Dodržování předpisů         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|

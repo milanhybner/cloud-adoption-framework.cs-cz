@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 95841468b109b4561d0632905c5004d6e4435954
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433828"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527043"
 ---
 # <a name="balance-competing-priorities"></a>Vyvážení konkurenčních priorit
 
@@ -36,14 +36,14 @@ V některých případech může být nejednoznačnost scarier (nebo více nebez
 
 ## <a name="balance-during-strategy"></a>Zůstatek během strategie
 
-Základním cílem metodologie strategie je vyvíjet sbližování mezi zúčastněnými stranami. Po definování bude tato strategická pozice zarovnaná s chováním v každé z metod, aby bylo zajištěno, že technické rozhodnutí budou v souladu s požadovanými obchodními výsledky. Při podpoře zarovnání mezi zúčastněnými stranami se vytvoří společná konkurenční priorita: **Hloubka odůvodnění v** **čase s obchodním dopadem**.
+Základním cílem metodologie strategie je vyvíjet sbližování mezi zúčastněnými stranami. Po definování bude tato strategická pozice zarovnaná s chováním v každé z metod, aby bylo zajištěno, že technické rozhodnutí budou v souladu s požadovanými obchodními výsledky. Při podpoře zarovnání mezi zúčastněnými stranami se vytvoří společné nastavení konkurenčních priorit: **Hloubka odůvodnění v** **čase až po obchodní dopad**.
 
 **Konkurenční priority:**
 
 - **Hloubka odůvodnění:** Účastníci často chtějí zajistit důkladnou finanční analýzu a plný obchodní odůvodnění, aby se mohli přizpůsobit strategickému směru. Tato úroveň analýzy bohužel může vyžadovat prodloužený časový interval, který umožňuje shromažďování a analýzu dat.
 - **Čas na obchodní dopad:** V opačném případě se účastníci často uchovávají za účelem poskytování obchodních výsledků v rámci definovaných časových rámců. Časově náročná analýza a posouzení můžou tyto výsledky dát do nebezpečí před tím, než bude technická práce dokonce zahájena.
 
-**Minimální rozsah:** Hledání tohoto zůstatku vyžaduje diskuze mezi zúčastněnými stranami v brzkém průběhu procesu. Metodologie strategie navrhuje omezení rozsahu zarovnání během tohoto počátečního úsilí. V navrhovaném přístupu se účastníci zaměřují na zarovnání kolem sady základních motivů, měřitelných výsledků a vysokého obchodního odůvodnění. Doporučujeme, aby se zúčastněné strany rychle dopustily na malý počet počátečních projektů nebo pilotních projektů, které vám pomůžou vyřídit požadované příležitosti učení.
+**Minimální rozsah:** Vyhledání tohoto zůstatku vyžaduje diskuze mezi zúčastněnými stranami včas v průběhu procesu. Metodologie strategie navrhuje omezení rozsahu zarovnání během tohoto počátečního úsilí. V navrhovaném přístupu se účastníci zaměřují na zarovnání kolem sady základních motivů, měřitelných výsledků a vysokého obchodního odůvodnění. Doporučujeme, aby se zúčastněné strany rychle dopustily na malý počet počátečních projektů nebo pilotních projektů, které vám pomůžou vyřídit požadované příležitosti učení.
 
 **Příklad rozšířeného oboru:** Pokud počáteční obchodní analýza indikuje vysoké riziko negativního vlivu na firmu, může se stát, že účastníci budou muset zpomalit a lépe zhodnotit hlubší analýzu během obchodní odůvodnění.
 
@@ -56,13 +56,13 @@ Podobně jako u priorit strategie se v průběhu plánování vyžaduje vyváži
 - **Hloubka prvotního plánování** v souvislosti s technickou implementací v cloudu často obsahuje velký počet předpokladů. Hlavně v případě, že tým má prodlevy, prostředí se zahodí z otvorů zjišťování nebo úlohy nemají jasně definované architektury end-stavy. Všechny tyto předpoklady jsou běžné v podrobných plánech pro přijetí do cloudu. K odebrání těchto předpokladů se vyžadují experimenty, pilotní nasazení a kvalitativní analýza.
 - **Opožděná technická rozhodnutí** předpokládají, že je možné provést pozdější technické rozhodnutí, tím přesnější bude toto rozhodnutí. Následující zásady agilního plánování produktů vám pomohou zpozdit technické rozhodnutí a zajistit, aby k nim docházelo ve správný čas a měly dostatečné informace. Tento přístup ale má za následek mnohem vyšší stupeň nejednoznačnosti v počátečním plánu.
 
-**Minimální rozsah:** V rámci spravovatelných plánů je navržený přístup k vývoji agilních produktů. Pro dosažení tohoto zůstatku vyrovnává metodologie plánu následující kroky. Využijte k inventarizaci celé digitální nemovitosti pomocí nástrojů pro automatizované zjišťování, ale použijte přírůstkovou racionalizaci k plánování až na dalších 1-3 měsíců práce. Zajistěte rychlé přesunutí správného přizpůsobení organizace. Vytvořte plán připravenosti dovedností pro přiřazený tým. K rychlému nasazení počátečních nevyřízených položek Využijte šablonu plánu přijetí do cloudu.
+**Minimální rozsah:** V rámci spravovatelných plánů je navržený přístup k vývoji agilních produktů. Pro dosažení tohoto zůstatku vyrovnává metodologie plánu následující kroky. Využijte k inventarizaci celé digitální nemovitosti pomocí nástrojů pro automatizované zjišťování, ale použijte přírůstkovou racionalizaci k plánování až na dalších 1-3 měsíců práce. Zajistěte rychlé přesunutí správného přizpůsobení organizace. Vytvořte plán připravenosti dovedností pro přiřazený tým. K rychlému nasazení počátečních nevyřízených položek použijte šablonu plánu přijetí do cloudu.
 
 **Příklad rozšířeného oboru:** V některých případech může doručení plánu přijetí do cloudu reagovat na podnikovou událost, která je časově citlivá nebo má vysokou dopad. Pokud úspěch vyžaduje pohyb vysokého počtu prostředků v určitém časovém období, jsou výše uvedené kroky často následovány hlubším úsilím plánování. Klíčem k úspěchu v těchto scénářích je naplánování dostatečného plánu, aby bylo možné se vrátit a následně naplánovat na celou službu Engagement. Tento přístup omezuje pravděpodobnost plánování blokování obchodních výsledků.
 
 ## <a name="balance-during-ready"></a>Zůstatek během připravenosti
 
-Když se týmy přijetí připravují k prvním krokům do cloudu, často jsou konkurenční priority mezi časem přijetí a dlouhodobých operací. Tým se může bojovat, aby se dobře hodí k zajištění toho, aby poskytoval úkol v rukou a byl dobře spravovaný. Tato bojovat je nezbytná v tradičních IT prostředích, kde Act z vývoje platformy vyžaduje fyzické prostředky a cykly pořízení. Pokud je však celá IT platforma definována v kódu, tradiční vývojové taktiku (jako refaktoring) snižuje nutnost jejich správné správy od začátku.
+Když se týmy přijetí připravují k prvním krokům do cloudu, často jsou konkurenční priority mezi časem přijetí a dlouhodobých operací. Tým se může bojovat, aby se dobře hodí k zajištění správné správy úlohy. Tato bojovat je nezbytná v tradičních IT prostředích, kde Act z vývoje platformy vyžaduje fyzické prostředky a cykly pořízení. Pokud je však celá IT platforma definována v kódu, tradiční vývojové taktiku (jako refaktoring) snižuje nutnost jejich správné správy od začátku.
 
 **Konkurenční priority:**
 
@@ -75,7 +75,7 @@ Když se týmy přijetí připravují k prvním krokům do cloudu, často jsou k
 
 ## <a name="balance-during-migrate"></a>Zůstatek během migrace
 
-Během migrace je běžné, že týmy pro přijímání budou předpokládat, že se úlohy budou v cloudu v aktuální konfiguraci "tak," hostovat v cloudu. Tím se přímo soutěží se zobrazením s možností dopředné, aby se zajistilo jejich uspořádání, aby lépe využily cloudové možnosti. Bohužel se tyto dva vzájemně nevylučují a můžou být při správě prostřednictvím běžného procesu bezplatné.
+Během migrace je běžné, že týmy pro přijímání budou předpokládat, že se úlohy budou v cloudu v aktuální konfiguraci "tak," hostovat v cloudu. Tím se přímo bude soutěžit s dopředný zobrazením, aby se zajistilo jejich architekt, aby lépe využili výhod cloudových možností. Bohužel se tyto dva vzájemně nevylučují a můžou být při správě prostřednictvím běžného procesu bezplatné.
 
 **Konkurenční priority:**
 
@@ -84,7 +84,7 @@ Během migrace je běžné, že týmy pro přijímání budou předpokládat, ž
 
 **Minimální rozsah:** Během plánování prvotní fáze použijte pro plánování možnost opětovného hostování, s jasným porozuměním, že tato možnost je počátečním podnikovým předpokladem a není technickým rozhodnutím. V rámci metodologie migrace by tým přijetí mohl tento předpoklad vyvolávat pro každou migrovaná úlohu. Tato metodika se řídí kroky vyhodnocení, migrace, zvýšení úrovně pro každou úlohu nebo skupinu nebo úlohy vytvářející továrnu migrace. Během fáze hodnocení vyhodnocuje tým přijetí technické potřeby a architekturu jednotlivých úloh. Tato snaha posouzení zřídka vede k čistému přístupu a posunu, protože mnohé z komponent v architektuře jsou pro refaktoring a modernizaci obvykle vybrány.
 
-**Příklad rozšířeného oboru:** Pro úlohy kritické nebo vysoké citlivosti, jako je například sálové a vícevrstvé aplikace mikroslužeb, může být během fáze hodnocení vyžadováno hlubší hodnocení úloh. V těchto situacích je navrženo, že zákazníci využívají kontrolu architektury Azure a architekturu architektury Azure k vylepšení požadavků na úlohy během posouzení.
+**Příklad rozšířeného oboru:** Pro úlohy kritické nebo vysoké citlivosti, jako je například sálové a vícevrstvé aplikace mikroslužeb, může být během fáze hodnocení vyžadováno hlubší hodnocení úloh. V těchto situacích by zákazníci měli při vyhodnocování upřesnit požadavky na úlohy pomocí kontroly architektury Azure a architektury architektury Azure.
 
 ## <a name="balance-during-innovate"></a>Zůstatek během inovací
 
@@ -97,7 +97,7 @@ Pravdivé inovace zaměřené na zákazníky vytváří společné konfliktní p
 
 **Minimální rozsah:** Metodologie inovací ukazuje, jak integrovat strategii a plány na základě konsensu obchodních hodnot. Příručka pak zavádí nástroje cloudového nativního řešení, které můžou urychlit jednotlivé obory inovací a doprovodné osvědčené postupy pro jejich implementaci. Nakonec v části vylepšení procesu se dozvíte o přístupech k sestavování zákaznických soucit a jejich plánování a strategií napříč cestou k přijetí do cloudu. Tento přístup se zaměřuje na poskytování inovace s využitím co nejmenší technologie.
 
-**Příklad rozšířeného oboru:** V některých případech může být inovace závislá na důležitých úlohách s vysokou citlivostí. Pokud je "zákazníkem" interní uživatel, vývojové úsilí může být kritické a vysoké citlivosti v průběhu prvního opakování. V těchto scénářích se doporučuje, aby týmy přijímání využily kontrolu architektury Azure a architekturu architektury Azure k vyhodnocení pokročilého návrhu architektury včas v rámci procesu.
+**Příklad rozšířeného oboru:** V některých případech může být inovace závislá na důležitých úlohách s vysokou citlivostí. Pokud je "zákazníkem" interní uživatel, vývojové úsilí může být kritické a vysoké citlivosti v průběhu prvního opakování. V těchto scénářích by týmy pro přijímání měly používat kontrolu architektury Azure a architekturu architektury Azure k vyhodnocení pokročilých návrhů architektury včas v průběhu tohoto procesu.
 
 ## <a name="balance-during-govern"></a>Zůstatek během řízení
 
@@ -118,12 +118,12 @@ Obchodní model IT týkající se správy provozu se neustále vyvíjí za posle
 
 **Konkurenční priority:**
 
-- Široká investice: investice do výpadku, rychlé obnovení a monitorování v celém prostředí je tradiční pohled na správu provozu. Tento přístup může být nákladný a v době duplikace podpůrných produktů zpřístupněných dodavatelem cloudu.
-- Žádná operace/nenejnižší operace: Využijte nástroje pro operace cloudového nativního řešení, abyste minimalizovali opakované a opakované úlohy, které dříve dodali zaměstnanci na plný úvazek. Snížení těchto provozních závislostí v modelu Operations managementu uvolňují tyto zaměstnance za účelem zvýšení hodnoty. Tento přístup může vést k podpoře subpar operací.
+- **Široké investice:** Bez ohledu na výpadek výpadku, rychlé obnovení a monitorování v celém prostředí je tradiční pohled na správu provozu. Tento přístup může být nákladný a v době duplikace podpůrných produktů zpřístupněných dodavatelem cloudu.
+- **Žádná operace a nízká operace:** Pomocí nástrojů pro operace nativního cloudu můžete minimalizovat opakované a opakované úlohy, které dříve dodali zaměstnanci na plný úvazek. Snížení těchto provozních závislostí v modelu Operations managementu uvolňují tyto zaměstnance za účelem zvýšení hodnoty. Tento přístup může vést k podpoře subpar operací.
 
 **Minimální rozsah:** Metodologie Manage navrhuje vytváření standardních hodnot správy bez operací v cloudu. Potvrdilo se, že žádné standardní hodnoty OPS nesplňují všechny obchodní potřeby, pracují s firmou a definují závazky a lépe sbližovat investice. Rozšiřte směrný plán tak, aby splňoval běžné potřeby pro všechny úlohy. Pak můžete vývojářům platforem nebo konkrétním pracovním týmům udržovat dobře spravovaná řešení v rámci dobře spravovaného prostředí.
 
-**Příklad rozšířeného oboru:** Ve většině prostředí má malé procento úloh, jejichž obchodní hodnota odůvodňuje hloubkové investice do provozu. V těchto scénářích může tým IT chtít využít kontrolu architektury Azure a architekturu architektury Azure a pořídit hlubší provoz.
+**Příklad rozšířeného oboru:** Ve většině prostředí má malé procento úloh, jejichž obchodní hodnota odůvodňuje hloubkové investice do provozu. V těchto scénářích může tým IT chtít použít kontrolu architektury Azure a architekturu architektury Azure k seznámení s hlubšími operacemi.
 
 ## <a name="balance-during-organize"></a>Zůstatek během uspořádání
 

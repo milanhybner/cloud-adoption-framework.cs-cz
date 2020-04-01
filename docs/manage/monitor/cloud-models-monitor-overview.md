@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8c27e37ac357fa4ab86377501da527a43eda017f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430032"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527076"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -160,7 +160,7 @@ Tato strategie nabízí viditelnost síťové vrstvy bez nutnosti SNMP. Může t
 
 ### <a name="monitor-with-azure-monitor"></a>Monitorování pomocí služby Azure Monitor
 
-I když migrace do cloudu představuje mnoho výzev, zahrnuje také řadu příležitostí. Umožňuje vaší organizaci migrovat z jednoho nebo několika místních nástrojů pro monitorování podniku nejen na to, aby mohly snižovat kapitálové výdaje a provozní náklady, ale také využil výhody výhod, které cloudová monitorovací platforma jako Azure Monitor může poskytovat škálování v cloudu. Projděte si požadavky na monitorování a výstrahy, konfiguraci existujících nástrojů pro monitorování a převeďte úlohy do cloudu. Po dokončení plánu nakonfigurujte Azure Monitor.
+I když migrace do cloudu představuje mnoho výzev, nabízí také příležitosti. Umožňuje vaší organizaci migrovat z jednoho nebo několika místních nástrojů pro monitorování podniku nejen na to, aby mohly snižovat kapitálové výdaje a provozní náklady, ale také využil výhody výhod, které cloudová monitorovací platforma jako Azure Monitor může poskytovat škálování v cloudu. Projděte si požadavky na monitorování a výstrahy, konfiguraci existujících nástrojů pro monitorování a převeďte úlohy do cloudu. Po dokončení plánu nakonfigurujte Azure Monitor.
 
 - Monitorujte hybridní infrastrukturu a aplikace z jednoduché nebo vícevrstvé architektury, kde se komponenty hostují mezi Azure, jinými poskytovateli cloudu a firemní sítí. Komponenty mohou zahrnovat jeden nebo více virtuálních počítačů, několik virtuálních počítačů umístěných ve skupině dostupnosti nebo sadě virtuálních počítačů nebo kontejnerové aplikace nasazené do služby Azure Kubernetes Service (AKS) spuštěné v kontejnerech systému Windows Server nebo Linux.
 

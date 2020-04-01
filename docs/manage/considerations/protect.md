@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 322f08ba65aa513d5d76c772c45bfb6563662ffd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430220"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527572"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrana a obnovení ve správě cloudu
 
@@ -62,7 +62,7 @@ Další informace o tomto myšlenkovém procesu najdete v tématu [obor provozu 
 
 ### <a name="protect-and-recover-vms"></a>Ochrana a obnovení virtuálních počítačů
 
-Většina úloh má určitou závislost na virtuálních počítačích, které hostují různé aspekty řešení. Aby úloha podporovala obchodní procesy po selhání systému, je potřeba rychle obnovit určitý počet virtuálních počítačů.
+Většina úloh má určitou závislost na virtuálních počítačích, které hostují různé aspekty řešení. Aby zatížení podporovalo obchodní procesy po selhání systému, je nutné rychle obnovit některé virtuální počítače.
 
 Každou minutu výpadků na těchto virtuálních počítačích by mohlo dojít ke ztrátě výnosů nebo snížení ziskovosti. Pokud má výpadek virtuálních počítačů přímý dopad na fiskální výkon firmy, je RTO velmi důležité. Virtuální počítače je možné rychleji obnovit pomocí replikace do sekundární lokality a automatizovaného obnovení, modelu, který se označuje jako model obnovení Hot-teple. V nejvyšší stav obnovení lze virtuální počítače replikovat do plně funkčního, sekundárního webového serveru. Tento dražší přístup se označuje jako model obnovení s vysokou dostupností nebo za horkou.
 
