@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3e191c89a33d09315c332680b82a72caf0785e2f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094233"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353921"
 ---
+<!-- cSpell:ignore MSPs -->
+
 ::: zone target="chromeless"
 
 # <a name="assistance"></a>Asistence
@@ -110,4 +112,4 @@ Certifikovaní poskytovatelé řešení Microsoftu se specializují na poskytov�
 Získejte pomoc od partnerů s předem připravenými nebo vlastními řešeními Azure a partnerů, kteří vám můžou pomoct s nasazením a správou těchto řešení:
 
 - [Najděte partnera pro cloudová řešení](https://www.microsoft.com/solution-providers/home). Certifikovaný partner CSP může pomoct plně využít výhod cloudu vyhodnocením obchodních cílů pro přechod na cloud, určením správného cloudového řešení, které vyhovuje obchodním potřebám a pomůže větší agilitě a efektivitě podnikání.
-- [Najděte partnera pro spravované služby](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner pro spravované služby Azure (MSP) vás při přesunu podnikání do Azure pomůže provést všemi aspekty přechodu na cloud. Cloudoví partneři MSP ukáží zákazníkům všechny výhody, které přechod na cloud poskytuje, od konzultací po správu migrace a provozu. Fungují také jako jednotné místo pro obecnou podporu, zřizování a fakturaci, a to vše s flexibilním obchodním modelem průběžných plateb (PAYG).
+- [Najděte partnera pro spravované služby](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner pro spravované služby Azure (MSP) vás při přesunu podnikání do Azure pomůže provést všemi aspekty přechodu na cloud. Cloudoví partneři MSP ukáží zákazníkům všechny výhody, které přechod na cloud poskytuje, od konzultací po správu migrace a provozu. Fungují také jako jednotné místo pro obecnou podporu, zřizování a fakturaci, a to vše s flexibilním obchodním modelem průběžných plateb.

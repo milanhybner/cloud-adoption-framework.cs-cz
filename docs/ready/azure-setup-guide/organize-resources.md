@@ -9,29 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024005"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354335"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>Uspořádání prostředků Azure
 
-Uspořádání cloudových prostředků je důležité pro zabezpečení, správu a sledování nákladů souvisejících s vašimi úlohami. K uspořádání prostředků můžete použít hierarchie pro správu v rámci platformy Azure, implementovat správné konvence pojmenování a opatřit prostředky značkami.
+Uspořádání cloudových prostředků je důležité pro zabezpečení, správu a sledování nákladů souvisejících s vašimi úlohami. Pokud chcete uspořádat prostředky, definujte hierarchii skupin pro správu, dodržujte dobře promyšlené zásady vytváření názvů a využijte označování prostředků.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[skupiny pro správu Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure poskytuje čtyři úrovně rozsahu správy: skupiny pro správu, předplatná, skupiny prostředků a prostředky. Následující obrázek ukazuje vztah mezi těmito úrovněmi.
 
-   ![Diagram znázorňující vztahy v hierarchii správy](./media/organize-resources/scope-levels.png)
+   ![Diagram znázorňující vztahy úrovní hierarchie správy](./media/organize-resources/scope-levels.png)
 
 - **Skupiny pro správu:** Tyto skupiny jsou kontejnery, které pomáhají při správě přístupu, zásad a dodržování předpisů pro několik předplatných. Všechna předplatná ve skupině pro správu automaticky dědí podmínky, které se na příslušnou skupinu pro správu vztahují.
-- **Předplatná:** Předplatné seskupuje uživatelské účty a prostředky, které byly vytvořeny těmito uživatelskými účty. Každé předplatné má limity nebo kvóty pro množství prostředků, které můžete vytvořit a využívat. Organizace můžou pomocí předplatných spravovat náklady a prostředky vytvořené uživateli, týmy nebo v rámci projektů.
+- **Předplatná:** Předplatné logicky seskupuje uživatelské účty a prostředky, které byly těmito uživatelskými účty vytvořeny. Každé předplatné má limity nebo kvóty pro množství prostředků, které můžete vytvořit a využívat. Organizace můžou pomocí předplatných spravovat náklady a prostředky vytvořené uživateli, týmy nebo v rámci projektů.
 - **Skupiny prostředků:** Skupina prostředků je logický kontejner, ve kterém se nasazují a spravují prostředky Azure, jako například webové aplikace, databáze a účty úložiště.
 - **Zdroje a prostředky:** Prostředky jsou instance vytvořených služeb, jako například virtuální počítače, úložiště nebo databáze SQL.
 
@@ -41,7 +42,7 @@ Nastavení správy, jako jsou zásady a řízení přístupu na základě role, 
 
 Obvykle je vhodné používat důležitá nastavení na vyšších úrovních a nastavení související s požadavky konkrétního projektu na nižších úrovních. Například můžete chtít zajistit, aby se všechny prostředky vaší organizace nasazovaly do konkrétních oblastí. Provedete to tak, že pro předplatné použijete zásadu, která udává povolená umístění. Když ostatní uživatelé ve vaší organizaci přidají nové skupiny prostředků a prostředky, automaticky se vynutí použití některého z povolených umístění. Další informace o zásadách najdete v částech tohoto průvodce věnovaných zásadám správného řízení, zabezpečení a dodržování předpisů.
 
-Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Se zvyšováním počtu používaných předplatných zvažte vytvoření hierarchie skupin pro správu, která zjednodušuje správu předplatných a prostředků. Další informace o správě více předplatných najdete v článku o [škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md).
+Pokud máte jen několik předplatných, je poměrně snadné je spravovat nezávisle. Se zvyšováním počtu používaných předplatných zvažte vytvoření hierarchie skupin pro správu, která zjednodušuje správu předplatných a prostředků. Další informace najdete v článku věnovaném [uspořádání a správě předplatných Azure](../azure-best-practices/organize-subscriptions.md).
 
 Při plánování strategie dodržování předpisů spolupracujte s lidmi, kteří ve vaší organizaci mají na starost zabezpečení a dodržování předpisů, správu IT, podnikovou architekturu, sítě, finance a pořizování.
 
@@ -80,9 +81,11 @@ Vytvořte skupinu prostředků sdružující prostředky, jako jsou webové apli
 Další informace naleznete v tématu:
 
 - [Základy Azure](../considerations/fundamental-concepts.md)
-- [Škálování s využitím několika předplatných Azure](../azure-best-practices/scaling-subscriptions.md)
-- [Principy správy přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Vytvoření počátečních předplatných](../azure-best-practices/initial-subscriptions.md)
+- [Vytvoření dalších předplatných pro škálování vašeho prostředí Azure](../azure-best-practices/scale-subscriptions.md)
+- [Uspořádání a správa předplatných Azure](../azure-best-practices/organize-subscriptions.md)
 - [Uspořádání prostředků s využitím skupin pro správu Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Principy správy přístupu k prostředkům v Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Omezení služeb předplatného](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Vytvořte skupinu prostředků sdružující prostředky, jako jsou webové apli
 
 # <a name="naming-standards"></a>[Standardy pro vytváření názvů](#tab/NamingStandards)
 
-Správný standard pro vytváření názvů pomáhá identifikovat prostředky na portálu Azure, na faktuře a ve skriptech. Ve strategii pro vytváření názvů byste jako součásti názvů měli používat firemní a provozní údaje:
+Správný standard pro vytváření názvů pomáhá identifikovat prostředky na webu Azure Portal, na výpisech z účtu a v automatizačních skriptech. Ve strategii pro vytváření názvů byste jako součásti názvů měli používat firemní a provozní údaje:
 
 - Firemní údaje by v této strategii měly zajistit, aby názvy prostředků obsahovaly informace organizace, které jsou potřeba k identifikaci týmů. Použijte prostředek společně s vlastníky, kteří zodpovídají za náklady na prostředky.
 
 - Provozní údaje by měly zajistit, aby názvy obsahovaly informace, které potřebuje tým IT. Použijte údaje identifikující úlohy, aplikace, prostředí, důležitost a další informace, které jsou užitečné pro správu prostředků.
 
-Různé typy prostředků mohou mít různé délkové limity a povolené znaky, z nichž mnohé jsou uvedené v [článku s osvědčenými postupy pro pojmenování v Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../azure-best-practices/naming-and-tagging.md) v článku Architektura přechodu na cloud.
+Různé typy prostředků mají různá [pravidla pojmenování a omezení](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Další informace a doporučení zaměřená konkrétně na podporu přechodu do cloudu najdete v [pokynech k pojmenování a označování](../azure-best-practices/naming-and-tagging.md) v článku Architektura přechodu na cloud.
 
 Následující tabulka obsahuje vzory vytváření názvů pro několik ukázkových typů prostředků Azure.
 
@@ -170,7 +173,7 @@ Další doporučení a příklady značek najdete v [pokynech k označování](.
 
 Použití značky na skupinu prostředků:
 
-1. Přejděte do části [Skupiny prostředků](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Přejděte do části [Skupiny prostředků](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
 1. Vyberte skupinu prostředků.
 1. Vyberte **Přiřadit značky**.
 1. Zadejte nový název a hodnotu nebo pomocí rozevíracího seznamu vyberte existující název a hodnotu.
@@ -194,6 +197,6 @@ Použití značky na skupinu prostředků:
 1. Vyberte **Značky**.
 1. Zadejte nový název a hodnotu nebo vyberte existující název a hodnotu.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end
