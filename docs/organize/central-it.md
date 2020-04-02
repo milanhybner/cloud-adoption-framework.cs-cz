@@ -56,7 +56,7 @@ Následující úkoly jsou obvykle spouštěny pravidelně:
   - [motivace pro přijetí do cloudu](../strategy/motivations.md)
   - [obchodní rizika](../govern/policy-compliance/risk-tolerance.md)
   - [racionalizace digitální nemovitosti](../digital-estate/index.md)
-- Umožňuje monitorovat plány a průběh přijetí v rámci [nevyřízených položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md)s určenou prioritou.
+- Umožňuje monitorovat plány a průběh přijetí v rámci [nevyřízených položek migrace](../migrate/migration-considerations/assess/release-iteration-backlog.md) s určenou prioritou.
 - Identifikujte a určete prioritu změn platformy, které jsou potřeba pro podporu nevyřízených položek migrace.
 - Působit jako zprostředkující nebo převodní vrstva mezi potřebou pro přijetí do cloudu a stávajícími týmy IT.
 - Využijte výhod stávajících IT týmů, abyste urychlili možnosti platformy a umožnili jejich přijetí.
